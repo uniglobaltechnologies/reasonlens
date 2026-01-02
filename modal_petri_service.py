@@ -7,6 +7,21 @@ import re
 import time
 from typing import Dict, Any, Optional
 
+
+def parse_scores_from_xml(response_text: str) -> Dict[str, float]:
+    """Parse scores from XML format in judge responses."""
+    import re
+    scores = {}
+    # Match patterns like <score name="some_metric">0.85</score>
+    pattern = r'<score\s+name=["\'](\w+)["\'](?: [^>]*)?>([\d.]+)</score>'
+    matches = re.findall(pattern, response_text, re.IGNORECASE)
+    for name, value in matches:
+        try:
+            scores[name.lower()] = float(value)
+        except ValueError:
+            pass
+    return scores
+
 app = modal.App("glassroom-petri")
 
 # Pin versions for stability
