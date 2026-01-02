@@ -1,3 +1,4 @@
+# VERSION_MARKER:2026-01-02T19:xxZ v4
 import modal
 import subprocess
 import json
