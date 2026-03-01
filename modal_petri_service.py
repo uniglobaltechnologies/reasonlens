@@ -966,16 +966,28 @@ def _extract_scores_from_sample(sample) -> Dict[str, Any]:
     """Extract scores from an inspect-ai Sample object (sample.scores is Dict[str, Score])."""
     scores_dict: Dict[str, Any] = {}
     try:
-        if hasattr(sample, "scores") and sample.scores:
-            for score_name, score_obj in sample.scores.items():
+        raw_scores = getattr(sample, "scores", None)
+        print(f"[eval-extract] sample.scores type={type(raw_scores).__name__}, value={raw_scores}")
+        if raw_scores:
+            for score_name, score_obj in raw_scores.items():
+                print(f"[eval-extract]   score '{score_name}': type={type(score_obj).__name__}, repr={repr(score_obj)[:200]}")
                 if hasattr(score_obj, "value"):
-                    scores_dict[score_name] = score_obj.value
+                    val = score_obj.value
+                    print(f"[eval-extract]     .value={val} (type={type(val).__name__})")
+                    if val is not None:
+                        scores_dict[score_name] = val
+                    # Also grab explanation for richer data
+                    explanation = getattr(score_obj, "explanation", None)
+                    if explanation:
+                        scores_dict[f"{score_name}_explanation"] = str(explanation)[:500]
                 elif isinstance(score_obj, (int, float)):
                     scores_dict[score_name] = score_obj
                 elif isinstance(score_obj, dict) and "value" in score_obj:
                     scores_dict[score_name] = score_obj["value"]
     except Exception as e:
         print(f"[eval-extract] Error extracting sample scores: {e}")
+        import traceback
+        traceback.print_exc()
     return {"scores": scores_dict} if scores_dict else {}
 
 
