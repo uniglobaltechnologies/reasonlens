@@ -186,6 +186,7 @@ def _build_run_env(api_keys: Optional[Dict[str, str]]) -> Dict[str, str]:
         openai_key = api_keys.get("openai")
         anthropic_key = api_keys.get("anthropic")
         google_key = api_keys.get("google")
+        azure_key = api_keys.get("azure")
         if openai_key:
             env["OPENAI_API_KEY"] = openai_key
         if anthropic_key:
@@ -193,6 +194,12 @@ def _build_run_env(api_keys: Optional[Dict[str, str]]) -> Dict[str, str]:
         if google_key:
             env["GOOGLE_API_KEY"] = google_key
             env["GEMINI_API_KEY"] = google_key  # LiteLLM expects this for gemini/ provider
+        if azure_key:
+            env["AZURE_API_KEY"] = azure_key
+    # Pass through Azure OpenAI env vars for azure/ model prefix
+    for azure_var in ("AZURE_API_KEY", "AZURE_API_BASE", "AZURE_API_VERSION"):
+        if azure_var in os.environ and azure_var not in env:
+            env[azure_var] = os.environ[azure_var]
     return env
 
 
