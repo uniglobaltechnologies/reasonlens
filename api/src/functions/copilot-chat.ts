@@ -201,6 +201,24 @@ async function handler(
       context?: any;
     };
 
+    // Input validation
+    if (!Array.isArray(messages) || messages.length === 0 || messages.length > 50) {
+      return {
+        status: 400,
+        headers: { ...corsHeaders(), "Content-Type": "application/json" },
+        body: JSON.stringify({ error: "Messages must be an array of 1-50 items" }),
+      };
+    }
+    for (const m of messages) {
+      if (typeof m.content !== "string" || m.content.length > 10000) {
+        return {
+          status: 400,
+          headers: { ...corsHeaders(), "Content-Type": "application/json" },
+          body: JSON.stringify({ error: "Each message must be under 10,000 characters" }),
+        };
+      }
+    }
+
     const user = await validateToken(req);
     const userContext = user
       ? await fetchUserContext(user.userId)

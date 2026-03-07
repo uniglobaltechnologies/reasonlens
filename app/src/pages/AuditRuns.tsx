@@ -9,7 +9,7 @@ import {
   ChevronRight,
 } from "lucide-react";
 import Header from "@/components/Header";
-import { apiPost } from "@/lib/api";
+import { apiGet } from "@/lib/api";
 
 interface AuditRun {
   id: string;

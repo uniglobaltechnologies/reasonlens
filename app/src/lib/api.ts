@@ -111,7 +111,9 @@ export async function apiStream(
           const parsed = JSON.parse(data);
           if (parsed.content) onChunk(parsed.content);
           if (parsed.error) onError?.(parsed.error);
-        } catch {}
+        } catch (parseErr) {
+          console.warn("SSE parse error:", parseErr, "data:", data);
+        }
       }
     }
   }

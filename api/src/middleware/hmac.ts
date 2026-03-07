@@ -11,7 +11,8 @@ export function validateHmac(
   const signature = req.headers.get("x-signature");
   const timestamp = req.headers.get("x-timestamp");
 
-  if (!signature || !timestamp || !secret) return false;
+  if (!secret) throw new Error("PETRI_CALLBACK_SECRET not configured");
+  if (!signature || !timestamp) return false;
 
   // Replay protection
   const ts = parseInt(timestamp, 10);

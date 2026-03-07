@@ -5,6 +5,7 @@ import {
   InvocationContext,
 } from "@azure/functions";
 import { generateWithTools } from "../shared/ai";
+import { requireAuth, AuthError } from "../shared/auth";
 import { getFrameworkContext } from "../shared/framework-context";
 import { PLATFORM_PREAMBLE } from "../shared/prompt-preamble";
 import { corsHeaders, handleCors } from "../middleware/cors";
@@ -17,6 +18,8 @@ async function handler(
   if (cors) return cors;
 
   try {
+    await requireAuth(req);
+
     const { taskDescription, userContext } = (await req.json()) as {
       taskDescription: string;
       userContext?: {
@@ -117,13 +120,14 @@ EVALUATION INSTRUCTIONS:
       body: JSON.stringify(result),
     };
   } catch (err) {
+    if (err instanceof AuthError) {
+      return { status: err.statusCode, headers: { ...corsHeaders(), "Content-Type": "application/json" }, body: JSON.stringify({ error: err.message }) };
+    }
     context.error("task-evaluator error:", err);
     return {
       status: 500,
       headers: { ...corsHeaders(), "Content-Type": "application/json" },
-      body: JSON.stringify({
-        error: err instanceof Error ? err.message : "Unknown error",
-      }),
+      body: JSON.stringify({ error: "Internal server error" }),
     };
   }
 }

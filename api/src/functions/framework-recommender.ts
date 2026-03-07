@@ -5,6 +5,7 @@ import {
   InvocationContext,
 } from "@azure/functions";
 import { generateWithTools } from "../shared/ai";
+import { requireAuth, AuthError } from "../shared/auth";
 import {
   getFrameworkContext,
   getFrameworkPaths,
@@ -23,6 +24,8 @@ async function handler(
   if (cors) return cors;
 
   try {
+    await requireAuth(req);
+
     const { answers } = (await req.json()) as {
       answers: {
         role: string;
@@ -134,13 +137,14 @@ Use the recommend_frameworks function to return your recommendation.`;
       body: JSON.stringify({ recommendation }),
     };
   } catch (err) {
+    if (err instanceof AuthError) {
+      return { status: err.statusCode, headers: { ...corsHeaders(), "Content-Type": "application/json" }, body: JSON.stringify({ error: err.message }) };
+    }
     context.error("framework-recommender error:", err);
     return {
       status: 500,
       headers: { ...corsHeaders(), "Content-Type": "application/json" },
-      body: JSON.stringify({
-        error: err instanceof Error ? err.message : "Unknown error",
-      }),
+      body: JSON.stringify({ error: "Internal server error" }),
     };
   }
 }

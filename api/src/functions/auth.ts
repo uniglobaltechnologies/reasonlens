@@ -49,11 +49,19 @@ async function handler(
         };
       }
 
-      if (password.length < 6) {
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
         return {
           status: 400,
           headers: { ...corsHeaders(), "Content-Type": "application/json" },
-          body: JSON.stringify({ error: "Password must be at least 6 characters" }),
+          body: JSON.stringify({ error: "Invalid email format" }),
+        };
+      }
+
+      if (password.length < 8) {
+        return {
+          status: 400,
+          headers: { ...corsHeaders(), "Content-Type": "application/json" },
+          body: JSON.stringify({ error: "Password must be at least 8 characters" }),
         };
       }
 

@@ -58,10 +58,9 @@ async function handler(
     }
 
     // Fetch scenarios
-    const placeholders = body.scenario_ids.map((_, i) => `$${i + 1}`).join(",");
     const scenarios = await query(
-      `SELECT id, pack_id, seed_instruction FROM scenarios WHERE id IN (${placeholders})`,
-      body.scenario_ids
+      `SELECT id, pack_id, seed_instruction FROM scenarios WHERE id = ANY($1::uuid[])`,
+      [body.scenario_ids]
     );
 
     if (scenarios.length === 0) {
