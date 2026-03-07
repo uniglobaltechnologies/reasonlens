@@ -2,6 +2,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Hub from "./pages/Hub";
 import Audit from "./pages/Audit";
 import AuditRuns from "./pages/AuditRuns";
+import AuditDetail from "./pages/AuditDetail";
 import Evaluate from "./pages/Evaluate";
 import Frameworks from "./pages/Frameworks";
 import FrameworkDetail from "./pages/FrameworkDetail";
@@ -21,6 +22,7 @@ function App() {
         {/* Audit */}
         <Route path="/audit" element={<Audit />} />
         <Route path="/audit/runs" element={<AuditRuns />} />
+        <Route path="/audit/runs/:id" element={<AuditDetail />} />
         {/* Assessment */}
         <Route path="/assess" element={<Assess />} />
         <Route path="/assess/:framework" element={<Assess />} />

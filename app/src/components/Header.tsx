@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { ScanEye, LogIn, LogOut, BarChart3, FolderOpen, Award } from "lucide-react";
 import { isAuthenticated, clearToken } from "@/lib/api";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Header() {
   const authed = isAuthenticated();
@@ -64,6 +65,7 @@ export default function Header() {
               <span className="hidden sm:inline">Sign In</span>
             </Link>
           )}
+          <ThemeToggle />
         </div>
       </div>
     </header>
