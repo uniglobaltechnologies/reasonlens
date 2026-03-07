@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ScanEye, LogIn, LogOut, BarChart3, FolderOpen, Award } from "lucide-react";
 import { isAuthenticated, clearToken } from "@/lib/api";
 import ThemeToggle from "./ThemeToggle";
+import AIGELogo from "@/assets/aige-logo.png";
 
 export default function Header() {
   const authed = isAuthenticated();
@@ -14,15 +15,26 @@ export default function Header() {
   return (
     <header className="border-b border-border bg-card/50 backdrop-blur-sm sticky top-0 z-50">
       <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4 flex items-center justify-between">
-        <Link to="/" className="flex items-center gap-2">
-          <ScanEye className="h-6 w-6 text-primary" />
-          <div>
-            <h1 className="text-xl font-bold text-foreground">ReasonLens</h1>
-            <p className="text-xs text-muted-foreground hidden sm:block">
-              Clarity Through Ethical AI Evaluation
-            </p>
-          </div>
-        </Link>
+        <div className="flex items-center gap-3 sm:gap-4">
+          <a
+            href="https://aiforglobaleducation.org"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:opacity-80 transition-opacity hidden sm:block"
+          >
+            <img src={AIGELogo} alt="AI For Global Education" className="h-9 w-9 rounded" />
+          </a>
+          <div className="h-8 w-px bg-border hidden sm:block" />
+          <Link to="/" className="flex items-center gap-2">
+            <ScanEye className="h-6 w-6 text-primary" />
+            <div>
+              <h1 className="text-xl font-bold text-foreground">ReasonLens</h1>
+              <p className="text-xs text-muted-foreground hidden sm:block">
+                Clarity Through Ethical AI Evaluation
+              </p>
+            </div>
+          </Link>
+        </div>
         <div className="flex items-center gap-2 sm:gap-3">
           {authed && (
             <>
