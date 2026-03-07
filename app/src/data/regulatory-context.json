@@ -1,0 +1,337 @@
+{
+  "metadata": {
+    "created": "2026-03-07",
+    "purpose": "Regulatory context for AI-in-education policy generation",
+    "regions": ["eu", "uk", "us", "international"],
+    "licence_note": "Contains extracts from public legislative and guidance documents for reference purposes"
+  },
+  "eu": {
+    "framework_name": "EU AI Act (Regulation 2024/1689)",
+    "status": "Partially in force, fully applicable Aug 2026",
+    "authoritative_source": "https://eur-lex.europa.eu/eli/reg/2024/1689/oj",
+    "timeline": [
+      {
+        "date": "2025-02-02",
+        "milestone": "AI literacy (Art.4) and prohibited practices (Art.5) in force"
+      },
+      {
+        "date": "2025-08-02",
+        "milestone": "GPAI model obligations in force"
+      },
+      {
+        "date": "2026-08-02",
+        "milestone": "High-risk AI system rules (Annex III) applicable"
+      },
+      {
+        "date": "2027-08-02",
+        "milestone": "High-risk systems in regulated products applicable"
+      }
+    ],
+    "provisions": [
+      {
+        "id": "eu-art-4",
+        "article": "Article 4",
+        "title": "AI Literacy",
+        "status": "in_force",
+        "effective_date": "2025-02-02",
+        "source_url": "https://www.artificial-intelligence-act.com/Artificial_Intelligence_Act_Article_4.html",
+        "full_text": "Providers and deployers of AI systems shall take measures to ensure, to their best extent, a sufficient level of AI literacy of their staff and other persons dealing with the operation and use of AI systems on their behalf, taking into account their technical knowledge, experience, education and training and the context the AI systems are to be used in, and considering the persons or groups of persons on whom the AI systems are to be used【428550334366747†L22-L27】.",
+        "education_relevance": "Universities must ensure that staff and students using AI systems have sufficient AI literacy. The obligation covers training, education and awareness and requires considering the context of use and the groups of people affected. Non-compliance does not carry direct fines but may create civil liability.",
+        "policy_types": ["ai-governance", "ai-acceptable-use", "staff-development"],
+        "related_recitals": "Recitals 49–50 clarify that AI literacy means the skills, knowledge and understanding allowing providers, deployers and affected persons to make informed decisions and to use AI safely."
+      },
+      {
+        "id": "eu-art-5",
+        "article": "Article 5",
+        "title": "Prohibited AI Practices",
+        "status": "in_force",
+        "effective_date": "2025-02-02",
+        "source_url": "https://www.artificial-intelligence-act.com/Artificial_Intelligence_Act_Article_5.html",
+        "full_text": "Article 5 prohibits eight categories of AI practices. 1. The placing on the market, putting into service or use of AI systems that deploy subliminal, manipulative or deceptive techniques beyond a person’s consciousness with the objective or effect of materially distorting behaviour and causing significant harm【362737557192654†L22-L31】. 2. AI systems exploiting vulnerabilities of a person or group due to age, disability or social situation to materially distort behaviour and cause harm【362737557192654†L33-L39】. 3. AI systems evaluating or classifying persons over time based on social behaviour or personal characteristics (social scoring) that leads to detrimental treatment in unrelated contexts or that is unjustified or disproportionate【362737557192654†L41-L53】. 4. AI systems making risk assessments of persons to predict criminal offences solely based on profiling or personality traits【362737557192654†L55-L62】. 5. AI systems creating facial recognition databases through untargeted scraping of facial images【362737557192654†L64-L67】. 6. AI systems inferring emotions of a natural person in workplace or education settings, except where intended for medical or safety reasons【362737557192654†L69-L73】. 7. AI systems performing biometric categorisation that deduces sensitive traits such as race, political opinions, religious beliefs or sexual orientation【362737557192654†L75-L80】. 8. Real‑time remote biometric identification in public spaces for law‑enforcement purposes, subject to narrow exceptions and authorisation requirements【362737557192654†L84-L103】. Paragraphs 2–3 regulate law‑enforcement use and require authorisation and human rights impact assessment before deployment【362737557192654†L107-L143】.",
+        "education_relevant_subsections": [
+          {
+            "reference": "Article 5(1)(a)",
+            "topic": "Subliminal/manipulative techniques",
+            "summary": "Bans AI systems that use subliminal, manipulative or deceptive techniques beyond a person’s consciousness to materially distort behaviour and cause significant harm.",
+            "text": "The placing on the market, putting into service or use of an AI system that deploys subliminal techniques beyond a person’s consciousness or purposefully manipulative or deceptive techniques with the objective or effect of materially distorting the behaviour of a person or group by appreciably impairing their ability to make an informed decision, thereby causing them to take a decision they would not have otherwise taken in a manner that causes or is reasonably likely to cause significant harm, is prohibited【362737557192654†L22-L31】."
+          },
+          {
+            "reference": "Article 5(1)(c)",
+            "topic": "Social scoring",
+            "summary": "Prohibits AI systems that evaluate or classify people based on social behaviour or personal characteristics leading to detrimental treatment.",
+            "text": "It is prohibited to place on the market, put into service or use AI systems for the evaluation or classification of natural persons or groups over a certain period of time based on their social behaviour or known, inferred or predicted personal or personality characteristics, where the social score leads to detrimental or unfavourable treatment in unrelated contexts or is unjustified or disproportionate【362737557192654†L41-L53】."
+          },
+          {
+            "reference": "Article 5(1)(f)",
+            "topic": "Emotion inference in education",
+            "summary": "Bans AI systems that infer emotions of students or staff in education, unless used for medical or safety reasons.",
+            "text": "The placing on the market, putting into service or use of AI systems to infer emotions of a natural person in the areas of workplace and education institutions is prohibited, except where the use is intended for medical or safety reasons【362737557192654†L69-L73】."
+          }
+        ],
+        "policy_types": ["ai-acceptable-use", "ai-assessment", "ai-proctoring"]
+      },
+      {
+        "id": "eu-art-6",
+        "article": "Article 6",
+        "title": "Classification rules for high‑risk AI systems",
+        "status": "upcoming",
+        "effective_date": "2026-08-02",
+        "source_url": "https://www.artificial-intelligence-act.com/Artificial_Intelligence_Act_Article_6.html",
+        "full_text": "Article 6 establishes when an AI system is considered high‑risk. A system is high‑risk if it is a safety component of a product covered by Union harmonisation legislation listed in Annex I and is subject to third‑party conformity assessment【370539164006343†L22-L34】. AI systems listed in Annex III are automatically high‑risk unless they pose no significant risk to health, safety or fundamental rights【370539164006343†L37-L43】. A system listed in Annex III may be exempt if it performs only narrow procedural tasks, improves a previously completed human activity, detects patterns without replacing a human assessment or performs preparatory tasks【370539164006343†L45-L58】; however, any system in Annex III that performs profiling is always high‑risk【370539164006343†L60-L63】. Providers who consider their systems not high‑risk must document their assessment and register the system【370539164006343†L64-L69】. The Commission is empowered to provide guidelines and adopt delegated acts modifying the conditions and to publish examples of high‑risk and non‑high‑risk use cases【370539164006343†L70-L91】.",
+        "education_relevance": "Annex III includes education use cases. If an AI system performs tasks listed in Annex III (e.g., admissions decisions, learning outcome evaluation, monitoring exams) it will be categorised as high‑risk unless it only performs narrow procedural or preparatory tasks without influencing decision‑making. Universities must therefore treat such systems as high‑risk and follow Articles 9–29 obligations.",
+        "policy_types": ["ai-governance", "ai-risk-management"]
+      },
+      {
+        "id": "eu-annex-iii-s3",
+        "article": "Annex III, Section 3",
+        "title": "Education and Vocational Training High‑Risk Use Cases",
+        "status": "upcoming",
+        "effective_date": "2026-08-02",
+        "source_url": "https://artificialintelligenceact.eu/annex/3/",
+        "use_cases": [
+          {
+            "reference": "Annex III, 3(a)",
+            "text": "AI systems intended to be used for the purpose of determining a person’s eligibility or access to education or vocational training institutions, including automated admissions and assignment to educational institutions【367400090962490†L484-L501】.",
+            "plain_summary": "AI used to make or support admissions or assignment decisions for students is classified as high‑risk."
+          },
+          {
+            "reference": "Annex III, 3(b)",
+            "text": "AI systems intended to be used for the purpose of evaluating the learning outcomes of persons participating in or applying for education or vocational training, and determining a person’s eligibility to continue or to complete an educational pathway【367400090962490†L484-L501】.",
+            "plain_summary": "AI tools that assess learning outcomes or steer learning, such as adaptive learning platforms or grading systems, are high‑risk."
+          },
+          {
+            "reference": "Annex III, 3(c)",
+            "text": "AI systems intended to be used for the purpose of determining a person’s level of educational attainment and determining their suitability for an educational pathway【367400090962490†L484-L501】.",
+            "plain_summary": "AI systems used to assess a person’s appropriate education level or stream (e.g., placement tests) are high‑risk."
+          },
+          {
+            "reference": "Annex III, 3(d)",
+            "text": "AI systems intended to be used for the purpose of monitoring and detecting in real time school or university students’ or participants’ behaviour during tests, including to detect, prevent or discourage cheating【367400090962490†L484-L501】.",
+            "plain_summary": "AI used to monitor students during tests or detect prohibited behaviours (e.g., proctoring systems) is high‑risk."
+          }
+        ],
+        "policy_types": ["ai-governance", "ai-assessment", "ai-proctoring", "ai-admissions"]
+      },
+      {
+        "id": "eu-art-9",
+        "article": "Article 9",
+        "title": "Risk Management System",
+        "status": "upcoming",
+        "effective_date": "2026-08-02",
+        "source_url": "https://www.artificial-intelligence-act.com/Artificial_Intelligence_Act_Article_9.html",
+        "full_text": "Article 9 requires providers of high‑risk AI systems to establish, implement, document and maintain a continuous and iterative risk management system throughout the AI system’s lifecycle【988705759466738†L22-L28】. The system must identify and analyse foreseeable risks【988705759466738†L30-L33】, estimate and evaluate risks under normal use and reasonably foreseeable misuse【988705759466738†L35-L38】, evaluate additional risks based on post‑market monitoring【988705759466738†L39-L43】 and adopt targeted risk‑management measures【988705759466738†L42-L44】. Measures must aim to eliminate or reduce risks through design, implement mitigation and control measures, and provide information and training to deployers【988705759466738†L59-L70】. High‑risk AI systems must be tested to ensure consistent performance【988705759466738†L77-L88】. Providers must consider impacts on persons under 18 and other vulnerable groups【988705759466738†L91-L94】.",
+        "education_relevance": "Universities deploying high‑risk AI systems must ensure risk management processes identify risks to students and staff, implement mitigation measures, test systems for performance and consider vulnerable groups, including minors.",
+        "policy_types": ["ai-governance", "ai-risk-management"]
+      },
+      {
+        "id": "eu-art-10",
+        "article": "Article 10",
+        "title": "Data and Data Governance",
+        "status": "upcoming",
+        "effective_date": "2026-08-02",
+        "source_url": "https://www.artificial-intelligence-act.com/Artificial_Intelligence_Act_Article_10.html",
+        "full_text": "Article 10 mandates that high‑risk AI systems using training data must be developed using training, validation and testing datasets that meet quality criteria【187288738997018†L22-L25】. Data governance practices must address design choices, data collection processes, data preparation (annotation, cleaning, labelling), assumptions, assessment of data availability and suitability, bias examination and mitigation, and identification of data gaps【187288738997018†L27-L55】. Data sets must be relevant, representative and, where possible, free of errors and complete【187288738997018†L57-L61】, and must account for geographical and contextual characteristics【187288738997018†L64-L68】. Special categories of personal data may be processed only when strictly necessary for bias detection and correction, subject to stringent safeguards including pseudonymisation, restricted access and deletion once bias correction is complete【187288738997018†L70-L97】. These requirements apply to testing data sets even where the model does not involve training【187288738997018†L105-L107】.",
+        "education_relevance": "Universities deploying high‑risk AI for admissions or assessment must ensure the training and testing data are representative of diverse student populations, evaluate and mitigate bias, and apply strict safeguards when special category data are used.",
+        "policy_types": ["ai-data-governance"]
+      },
+      {
+        "id": "eu-art-13",
+        "article": "Article 13",
+        "title": "Transparency and Provision of Information to Deployers",
+        "status": "upcoming",
+        "effective_date": "2026-08-02",
+        "source_url": "https://www.artificial-intelligence-act.com/Artificial_Intelligence_Act_Article_13.html",
+        "full_text": "Article 13 requires that high‑risk AI systems be designed to ensure transparency so that deployers can interpret outputs and use the system appropriately【396051699234259†L22-L27】. The system must be accompanied by concise, complete and clear instructions for use【396051699234259†L28-L31】. Instructions must include the provider’s identity, characteristics, capabilities and limitations of the system, intended purpose, accuracy and robustness metrics, known risks, interpretability information, performance on specific user groups, input data specifications, and human oversight measures【396051699234259†L33-L74】. They must also detail changes predetermined at conformity assessment, technical measures for human oversight, computational resources, expected lifetime, maintenance and logging mechanisms【396051699234259†L68-L83】.",
+        "education_relevance": "Universities must receive and follow detailed instructions for high‑risk AI systems used in admissions or assessment, including information on accuracy, limitations, risks, appropriate data inputs and required human oversight.",
+        "policy_types": ["ai-governance", "ai-acceptable-use"]
+      },
+      {
+        "id": "eu-art-14",
+        "article": "Article 14",
+        "title": "Human Oversight",
+        "status": "upcoming",
+        "effective_date": "2026-08-02",
+        "source_url": "https://www.artificial-intelligence-act.com/Artificial_Intelligence_Act_Article_14.html",
+        "full_text": "Article 14 requires high‑risk AI systems to be designed and developed with appropriate human‑machine interface tools so that natural persons can effectively oversee their operation【54563383519826†L22-L24】. Human oversight aims to prevent or minimise risks to health, safety or fundamental rights【54563383519826†L26-L29】. Oversight measures must match the system’s risk level and may include built‑in measures or measures implemented by deployers【54563383519826†L32-L43】. Deployers must be able to understand system capabilities and limitations, detect anomalies, avoid automation bias, interpret outputs, decide not to use the system or override decisions, and intervene or stop the system【54563383519826†L44-L66】. For certain biometric identification systems (Annex III point 1(a)), a decision cannot be based on the system output unless verified by at least two humans【54563383519826†L68-L72】, except in specific law‑enforcement contexts【54563383519826†L75-L77】.",
+        "education_relevance": "Human oversight is critical for AI grading and admissions. Universities must assign trained staff to monitor high‑risk AI systems, understand their limitations, override outputs when necessary and ensure decisions are verified by humans.",
+        "policy_types": ["ai-governance", "ai-assessment", "ai-admissions"]
+      },
+      {
+        "id": "eu-art-26",
+        "article": "Article 26",
+        "title": "Obligations of Deployers of High‑Risk AI Systems",
+        "status": "upcoming",
+        "effective_date": "2026-08-02",
+        "source_url": "https://www.artificial-intelligence-act.com/Artificial_Intelligence_Act_Article_26.html",
+        "full_text": "Article 26 imposes obligations on deployers of high‑risk AI systems. Deployers must take technical and organisational measures to use systems in accordance with instructions【946234693704491†L22-L24】 and assign human oversight to competent staff【946234693704491†L26-L28】. They must ensure input data are relevant and representative【946234693704491†L34-L37】, monitor operation, report incidents, suspend use when risks arise and inform authorities【946234693704491†L39-L45】. Deployers must keep logs for at least six months【946234693704491†L61-L65】, inform workers before deploying AI at the workplace【946234693704491†L72-L77】, and comply with registration obligations【946234693704491†L79-L83】. They must also conduct data protection impact assessments using information from providers【946234693704491†L86-L89】 and seek judicial authorisation for post‑remote biometric identification in investigations【946234693704491†L91-L100】. Further paragraphs prohibit untargeted use of such systems and require annual reporting to authorities【946234693704491†L108-L131】 and notification of individuals subject to high‑risk AI decisions【946234693704491†L136-L139】.",
+        "education_relevance": "Universities deploying high‑risk AI must use the system only according to instructions, assign human oversight, monitor and report incidents, keep logs, inform staff and students, register systems, conduct impact assessments, seek authorisation for biometric identification and notify individuals subject to AI decisions.",
+        "policy_types": ["ai-governance", "ai-acceptable-use", "ai-risk-management"]
+      },
+      {
+        "id": "eu-art-27",
+        "article": "Article 27",
+        "title": "Fundamental Rights Impact Assessment",
+        "status": "upcoming",
+        "effective_date": "2026-08-02",
+        "source_url": "https://www.artificial-intelligence-act.com/Artificial_Intelligence_Act_Article_27.html",
+        "full_text": "Article 27 requires deployers that are public bodies or provide public services to conduct a fundamental rights impact assessment before deploying high‑risk AI systems (except those listed in Annex III section 2). The assessment must describe the deployer’s processes, duration and frequency of use, categories of affected persons, risks of harm, human oversight measures and mitigation measures【318163517742317†L22-L48】. Deployers must update assessments when circumstances change【318163517742317†L50-L56】 and notify market surveillance authorities of the results【318163517742317†L58-L63】. The assessment may complement data protection impact assessments【318163517742317†L64-L68】. The AI Office will provide a template to facilitate compliance【318163517742317†L70-L72】.",
+        "education_relevance": "Public universities and institutions must assess impacts on fundamental rights (e.g., equality, privacy, non‑discrimination) before using high‑risk AI systems. They must document affected groups, risks, oversight measures and mitigation steps, update assessments, and notify authorities.",
+        "policy_types": ["ai-governance", "ai-risk-management"]
+      },
+      {
+        "id": "eu-art-50",
+        "article": "Article 50",
+        "title": "Transparency obligations for providers and deployers of certain AI systems",
+        "status": "upcoming",
+        "effective_date": "2026-08-02",
+        "source_url": "https://www.artificial-intelligence-act.com/Artificial_Intelligence_Act_Article_50.html",
+        "full_text": "Article 50 imposes transparency obligations for AI systems that interact with people or generate content. Providers must ensure users are informed when interacting with an AI system unless it is obvious【925261256949560†L23-L27】. Outputs of AI systems that generate synthetic audio, image, video or text must be marked as artificially generated【925261256949560†L34-L43】. Deployers of emotion recognition or biometric categorisation systems must inform individuals exposed and comply with data protection law【925261256949560†L49-L56】. Deployers of deep‑fake generation systems must disclose that content has been artificially generated or manipulated, except where the use is authorised by law or involves artistic or editorial works【925261256949560†L58-L76】. The information must be provided clearly at the first interaction【925261256949560†L79-L81】. The AI Office will facilitate codes of practice to implement these obligations【925261256949560†L88-L97】.",
+        "education_relevance": "Universities using chatbots, virtual tutors or content‑generation tools must inform students and staff that they are interacting with AI, label AI‑generated content, disclose deep fakes and comply with data protection requirements. Proctoring tools using emotion recognition must notify students and process data lawfully.",
+        "policy_types": ["ai-acceptable-use", "academic-integrity"]
+      }
+    ]
+  },
+  "uk": {
+    "framework_name": "UK Regulatory Guidance (no AI-specific legislation)",
+    "status": "Guidance-based approach, no binding AI law",
+    "documents": [
+      {
+        "id": "uk-dfe-genai",
+        "title": "Generative Artificial Intelligence (AI) in Education",
+        "publisher": "Department for Education",
+        "date": "2025-06-10",
+        "last_updated": "2025-08-12",
+        "source_url": "https://www.gov.uk/government/publications/generative-artificial-intelligence-in-education",
+        "document_type": "policy_paper",
+        "full_text": "The DfE’s policy paper discusses the opportunities and risks of generative AI in schools and universities. It recognises that AI can free teachers’ time by automating lesson planning and administrative tasks, but warns that AI outputs may be inaccurate, inappropriate or biased and must be critically evaluated【410520857586231†L240-L297】. Teacher‑facing AI use is generally supported where it saves time and improves efficiency, provided staff remain accountable and do not over‑rely on AI【410520857586231†L266-L283】. Pupil‑facing use must be carefully managed: schools have legal responsibilities for safeguarding, data protection, equality, health and safety and intellectual property and must consider the teacher‑learner relationship and potential bias and misinformation【410520857586231†L266-L283】. The guidance recommends risk assessments for AI tools, supervision of pupils, adherence to age restrictions and content filtering, and developing policies for unsupervised study【410520857586231†L299-L359】. Schools should not input personal data into AI tools without a lawful basis and consent; if used, they must provide privacy notices and comply with data protection legislation【410520857586231†L369-L392】. The paper highlights copyright implications: student or teacher work (e.g., essays, lesson plans, prompts) cannot be used to train AI without permission; schools should avoid secondary infringement by ensuring AI providers have licences【410520857586231†L403-L456】. For formal assessments, teachers must follow Joint Council for Qualifications guidance to prevent malpractice and report AI misuse【410520857586231†L476-L491】.",
+        "key_positions": [
+          {
+            "topic": "Teacher use of AI",
+            "position": "AI tools can free teacher time but outputs may be inaccurate or biased. Teachers must critically judge AI suggestions, remain accountable and use AI to support rather than replace professional expertise【410520857586231†L240-L297】."
+          },
+          {
+            "topic": "Student use of AI",
+            "position": "Pupil‑facing AI requires careful management. Schools must ensure safeguarding, data protection, equality, health and safety and intellectual property compliance; they should supervise use, conduct risk assessments, enforce age restrictions and provide policies for unsupervised study【410520857586231†L266-L283】【410520857586231†L299-L359】."
+          },
+          {
+            "topic": "Assessment and academic integrity",
+            "position": "Assessments should maintain integrity. Teachers should follow guidance from exam boards, supervise assessments, remind students that AI use can constitute malpractice and report misuse【410520857586231†L476-L491】."
+          },
+          {
+            "topic": "Data protection",
+            "position": "Personal data should not be input into AI tools without a lawful basis. Schools must provide clear privacy notices, obtain consent where required and comply with the Data Protection Act 2018 and UK GDPR【410520857586231†L369-L392】."
+          },
+          {
+            "topic": "Safety",
+            "position": "AI tools must be used safely. Schools should conduct risk assessments, supervise pupils, adhere to age restrictions and ensure content filtering and monitoring are in place【410520857586231†L299-L359】."
+          },
+          {
+            "topic": "Bias and fairness",
+            "position": "Schools should be aware of potential bias and misinformation in AI outputs and ensure that AI does not discriminate against pupils. Teachers must critically evaluate content and maintain the teacher‑learner relationship【410520857586231†L266-L283】."
+          },
+          {
+            "topic": "Copyright and IP",
+            "position": "Schools must respect copyright. Student and teacher work cannot be used to train AI without permission, and AI outputs may be subject to copyright. Institutions should ensure AI providers have appropriate licences and avoid secondary infringement【410520857586231†L403-L456】."
+          }
+        ],
+        "policy_types": ["ai-acceptable-use", "ai-assessment", "staff-development", "student-guidance"]
+      },
+      {
+        "id": "uk-dfe-safety",
+        "title": "Generative AI: Product Safety Standards",
+        "publisher": "Department for Education",
+        "date": "2025-01-22",
+        "last_updated": "2026-01-19",
+        "source_url": "https://www.gov.uk/government/publications/generative-ai-product-safety-standards",
+        "document_type": "guidance",
+        "full_text": "The guidance sets safety standards for generative AI products used in education. Developers must state the product’s purpose, target demographic and educational use cases and should not exaggerate capabilities【138840768943384†L145-L181】. Content filtering is required to prevent harmful material; filtering should adapt to different ages and devices and align with the Online Safety Act【138840768943384†L195-L265】. Products must log all prompts and responses, provide real‑time alerts to supervisors when harmful content is generated, maintain safeguarding contact details and offer reports to teachers and parents【138840768943384†L272-L341】. Security standards require preventing jailbreaking, unauthorised modifications and role bypasses, and ensuring regular updates and vulnerability disclosure【138840768943384†L342-L376】. Data protection standards require a lawful basis for data collection, clear privacy notices, data protection impact assessments and compliance with UK GDPR and the Children’s Code; products must not use personal data for training without consent【138840768943384†L392-L450】. Intellectual property standards prohibit collecting or using copyrighted works, including student or teacher content, without consent【138840768943384†L460-L484】. Design and testing must be child‑centred, include diverse stakeholder testing and mitigate bias; compliance with the Equality Act 2010 and Public Sector Equality Duty is emphasised【138840768943384†L494-L537】. Governance, cognitive and emotional development sections stress risk assessments, complaints mechanisms, progressive disclosure of capabilities, prevention of anthropomorphism and protection of emotional and social development【138840768943384†L527-L689】.",
+        "education_relevance": "The standards guide schools on procuring and evaluating AI products. They emphasise safety, filtering, monitoring, security, data protection, IP compliance, child‑centred design and governance, providing a benchmark for contracts and due diligence.",
+        "policy_types": ["ai-governance", "ai-procurement"]
+      }
+    ],
+    "additional_legal_context": [
+      {
+        "id": "uk-gdpr",
+        "title": "UK GDPR and ICO AI Guidance",
+        "source_url": "https://ico.org.uk/for-organisations/uk-gdpr-guidance-and-resources/artificial-intelligence/",
+        "summary": "The Information Commissioner’s Office (ICO) provides guidance on applying data protection law to AI. The updated guidance emphasises fairness and clarifies that controllers must perform data protection impact assessments (DPIAs) for high‑risk AI projects, including those using generative AI【98593874707302†L70-L86】. Key sections cover accountability and governance (including DPIA considerations), transparency and lawfulness, accuracy and security, and fairness【98593874707302†L102-L165】. The fairness chapter explains the difference between data protection fairness and algorithmic bias, sets out high‑level considerations for evaluating fairness, and covers technical bias mitigation methods and safeguards for automated decision‑making under Article 22【98593874707302†L146-L165】. Guidance reminds organisations to establish a lawful basis, respect individuals’ rights, minimise data collection, and implement appropriate technical and organisational measures. Special category data (e.g., health or ethnicity) requires additional justification and safeguards. Children’s data require enhanced protections under the Children’s Code."
+      }
+    ]
+  },
+  "us": {
+    "framework_name": "US Federal Guidance (no federal AI-specific education legislation)",
+    "status": "Non-binding guidance plus FERPA (binding)",
+    "documents": [
+      {
+        "id": "us-doe-ai",
+        "title": "Artificial Intelligence and the Future of Teaching and Learning",
+        "publisher": "US Department of Education, Office of Educational Technology",
+        "source_url": "https://tech.ed.gov/ai/",
+        "full_text": "The Department of Education’s 2023 report outlines four foundations for AI in education. **Foundation 1: Center People** – AI policy should centre on students, teachers and families; systems must involve human‑in‑the‑loop oversight and respect privacy【457654013482033†L638-L683】. **Foundation 2: Advance Equity** – AI can increase or decrease disparities; policies should ensure datasets are representative, address algorithmic bias and pursue digital equity【457654013482033†L690-L706】. **Foundation 3: Ensure Safety, Ethics and Effectiveness** – AI systems must protect data privacy and security and ensure models are aligned with FERPA and state privacy laws; generic AI models may not meet these standards【457654013482033†L770-L792】. **Foundation 4: Promote Transparency** – Decision‑makers need to understand how AI models work; systems must be explainable, provide human alternatives and include affected communities in development【457654013482033†L816-L851】. The report emphasises minimising bias, protecting data privacy, providing notice and explanation, ensuring human fallback and involving stakeholders【457654013482033†L858-L872】.",
+        "policy_types": ["ai-governance", "ai-acceptable-use"]
+      },
+      {
+        "id": "us-ai-bill-of-rights",
+        "title": "Blueprint for an AI Bill of Rights",
+        "publisher": "White House Office of Science and Technology Policy",
+        "source_url": "https://www.whitehouse.gov/ostp/ai-bill-of-rights/",
+        "principles": [
+          {
+            "name": "Safe and Effective Systems",
+            "text": "People should be protected from unsafe or ineffective AI systems. Developers and deployers should consult diverse communities, perform pre‑deployment testing, identify and mitigate risks, monitor systems after deployment, adhere to domain‑specific standards and perform independent evaluations; they should be prepared not to deploy or to remove systems when necessary【514290812004673†L124-L141】."
+          },
+          {
+            "name": "Algorithmic Discrimination Protections",
+            "text": "People should not face discrimination by algorithms. Designers and deployers should perform proactive equity assessments, use representative data, protect against demographic proxies, ensure accessibility, conduct pre‑deployment and ongoing disparity testing, mitigate biases, and provide public algorithmic impact assessments to confirm protections【553614885026026†L126-L145】."
+          },
+          {
+            "name": "Data Privacy",
+            "text": "People should be protected from abusive data practices. Data collection should be limited to what is necessary; individuals should have agency over how their data are used; consent must be meaningful and not obscured by design; enhanced protections are required for sensitive domains like education and for youth; individuals should be protected from surveillance and continuous monitoring in education【254433544687006†L125-L150】."
+          },
+          {
+            "name": "Notice and Explanation",
+            "text": "Individuals should know when an automated system is being used and understand how it affects them. Designers must provide plain‑language documentation of system functions, responsible parties and outcomes; notify individuals of significant changes; provide explanations that are meaningful and calibrated to risk; and make reports public【65056118646357†L126-L141】."
+          },
+          {
+            "name": "Human Alternatives, Consideration and Fallback",
+            "text": "Individuals should be able to opt out and have access to a human alternative. They should receive timely human review and remedy, especially in sensitive domains like education. Institutions must have escalation processes, oversight, training and public reporting of human governance processes【239772800266989†L126-L144】."
+          }
+        ],
+        "policy_types": ["ai-governance", "ai-acceptable-use"]
+      },
+      {
+        "id": "us-ferpa",
+        "title": "FERPA (Family Educational Rights and Privacy Act)",
+        "source_url": "https://studentprivacy.ed.gov/ferpa",
+        "status": "binding_law",
+        "summary": "FERPA is a US federal law protecting the privacy of student education records. It grants parents and eligible students the right to inspect and review education records, request amendments and consent to disclosures. Consent must be signed and dated, specify the records to be disclosed, state the purpose and identify the recipients; oral consent does not meet FERPA requirements【455832198598460†L70-L76】. Schools must provide annual notice of rights and maintain procedures for inspection, amendment and hearings. FERPA generally requires written consent before disclosing personally identifiable information from education records, but Section 99.31 allows disclosure without consent when certain conditions are met. These include disclosures to school officials with legitimate educational interests (including contractors under the institution’s control)【18567418450465†L84-L116】, disclosures to another school where the student seeks to enrol【18567418450465†L122-L125】, disclosures related to financial aid【18567418450465†L149-L159】, disclosures to state or local officials under statute【18567418450465†L170-L183】, organisations conducting studies for educational institutions【18567418450465†L186-L239】, accrediting organisations and parents of dependent students【18567418450465†L251-L256】, compliance with judicial orders or subpoenas with notice【18567418450465†L259-L275】, and health and safety emergencies. FERPA permits schools to disclose ‘directory information’ (information not generally harmful or invasive) without consent if the school has given public notice of the types of directory information, allowed parents or eligible students to opt out and provided a reasonable time to do so【648542044375384†L73-L88】. AI systems processing student data must therefore have a legitimate educational interest or consent, comply with directory information policies, protect data privacy and security, and avoid secondary disclosure.\nFERPA applies to educational agencies or institutions receiving US Department of Education funds and covers both primary and higher education【214821944391310†L186-L222】."
+      }
+    ]
+  },
+  "international": {
+    "framework_name": "UNESCO International Standards",
+    "documents": [
+      {
+        "id": "unesco-ethics-ai",
+        "title": "Recommendation on the Ethics of Artificial Intelligence",
+        "publisher": "UNESCO",
+        "year": 2021,
+        "source_url": "https://www.unesco.org/en/artificial-intelligence/recommendation-ethics",
+        "adoption": "193 member states",
+        "status": "non_binding",
+        "principles": "UNESCO’s Recommendation sets out ten core principles for ethical AI: (1) **Proportionality and Do No Harm** – AI use must not go beyond what is necessary to achieve legitimate aims and should prevent harm through risk assessment【641586381249845†L535-L543】. (2) **Safety and Security** – AI actors must avoid unwanted harms and security vulnerabilities【641586381249845†L543-L546】. (3) **Right to Privacy and Data Protection** – Privacy must be protected throughout the AI lifecycle, supported by adequate data protection frameworks【641586381249845†L548-L552】. (4) **Multi‑stakeholder and Adaptive Governance & Collaboration** – Respect international law and national sovereignty, and involve diverse stakeholders in AI governance【641586381249845†L553-L557】. (5) **Responsibility and Accountability** – AI systems should be auditable and traceable with oversight, impact assessments and due diligence【641586381249845†L559-L563】. (6) **Transparency and Explainability** – AI deployment requires transparency and explainability appropriate to context【641586381249845†L565-L569】. (7) **Human Oversight and Determination** – AI systems must not displace human responsibility; humans remain accountable【641586381249845†L572-L575】. (8) **Sustainability** – Assess AI’s impacts on sustainability and support the UN Sustainable Development Goals【641586381249845†L577-L582】. (9) **Awareness & Literacy** – Promote public understanding of AI through education, digital skills, media and information literacy【641586381249845†L583-L587】. (10) **Fairness and Non‑Discrimination** – Promote social justice, fairness and non‑discrimination, ensuring AI benefits are accessible to all【641586381249845†L589-L592】.",
+        "education_relevant_sections": "The Recommendation emphasises the need for awareness and literacy (principle 9) and calls on Member States to promote open and accessible education and AI ethics training【641586381249845†L583-L587】. It encourages multi‑stakeholder governance (principle 4) involving educators and learners【641586381249845†L553-L557】. Human oversight (principle 7) is particularly important in education to ensure teachers retain control【641586381249845†L572-L575】. The principles of fairness, non‑discrimination and accountability require that educational AI systems do not perpetuate bias and that decision‑making processes are transparent and auditable【641586381249845†L559-L563】【641586381249845†L589-L592】.",
+        "policy_types": ["ai-governance", "ai-acceptable-use"]
+      },
+      {
+        "id": "unesco-beijing-consensus",
+        "title": "Beijing Consensus on Artificial Intelligence and Education",
+        "publisher": "UNESCO",
+        "year": 2019,
+        "source_url": "https://teachertaskforce.org/sites/default/files/2023-07/2021_UNESCO_Beijing-consensus-on-AI-and-education_EN-FR-ES-AR-RU-ZH.pdf",
+        "recommendations": "The Beijing Consensus is a detailed outcome document of the 2019 International Conference on AI and Education. It recommends that governments and stakeholders: (1) **Plan AI in education policies** – align AI initiatives with education policy, adopt whole‑government and multi‑stakeholder approaches and set strategic priorities【525704841685315†L157-L169】. (2) **Invest strategically** – identify funding sources (public, private, international) and consider AI’s potential to improve decision‑making【525704841685315†L170-L181】. (3) **Upgrade education management** – integrate AI into education management information systems to enhance data collection and personalised provision【525704841685315†L184-L189】. (4) **Introduce new delivery models** – develop AI‑enabled models for teaching and learning that serve students, staff, parents and communities【525704841685315†L190-L193】. (5) **Empower teachers** – ensure AI supports teachers rather than replacing them, protect teachers’ rights, update teacher roles and provide capacity‑building programmes【525704841685315†L194-L203】. (6) **Support AI‑driven learning and assessment** – integrate AI tools in curricula for well‑defined tasks, run pilot tests and develop adaptive learning systems and large‑scale assessments【525704841685315†L205-L225】. (7) **Develop skills for the AI era** – anticipate labour market changes, integrate AI literacy into curricula, enhance foundational skills and provide lifelong learning opportunities【525704841685315†L226-L244】. (8) **Promote lifelong learning for all** – use AI platforms and analytics to build integrated lifelong learning systems and support older learners【525704841685315†L250-L266】. (9) **Ensure inclusion and equity** – use AI to improve access for vulnerable groups and ensure AI does not deepen the digital divide【525704841685315†L267-L277】. (10) **Ensure gender equality** – develop AI applications free from gender bias, promote gender‑sensitive datasets and empower girls and women【525704841685315†L287-L298】. (11) **Ensure ethical, transparent use of education data and algorithms** – recognise bias risks, adopt privacy‑ and security‑by‑design and develop data protection laws【525704841685315†L298-L314】. (12) **Develop regulatory frameworks** – adjust or adopt laws to ensure responsible AI use in education【525704841685315†L320-L324】. (13) **Support monitoring, evaluation and research** – study AI impacts on learning outcomes and establish monitoring mechanisms【525704841685315†L327-L335】. (14) **Coordinate international cooperation and financing** – address the AI divide, share technology and capacity building, support South–South and North–South cooperation【525704841685315†L337-L376】. (15) **Develop UNESCO tools** – create an ‘AI for Education’ clearinghouse, guidelines, capacity‑building programmes and follow‑up actions【525704841685315†L376-L405】.",
+        "policy_types": ["ai-governance", "ai-acceptable-use", "staff-development"]
+      }
+    ]
+  }
+}

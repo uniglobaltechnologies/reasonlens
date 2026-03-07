@@ -1,0 +1,304 @@
+{
+  "metadata": {
+    "source": "JRC137060 — DigComp 2.2 ESCO skills mapping",
+    "source_url": "https://data.jrc.ec.europa.eu/dataset/82398f92-9b9c-40d4-bab6-f9ce40f83fb5",
+    "zenodo_url": "https://zenodo.org/records/11637266",
+    "digcomp_version": "2.2",
+    "esco_version": "1.1.2",
+    "licence": "CC BY 4.0",
+    "total_mapped_skills": 732,
+    "oja_coverage_period": "2018-2022",
+    "generated_from": "reference-data/digcomp-2.2-esco-mapping.xlsx",
+    "generated_at": "2026-03-07",
+    "note": "Mapping is from DigComp 2.2 competence IDs. DigComp 3.0 retains the same 21 competences, so this mapping carries forward. Skills can map to up to 4 DigComp competences simultaneously.",
+    "processing_note": "The source XLSX contains ~13,000 ESCO skills total. Only 732 have MapDigComp=1. This file contains a representative extraction of mapped skills per competence. Full regeneration from the source XLSX is recommended for production analytics."
+  },
+  "mappings_by_competence": {
+    "1.1": {
+      "competence_name": "Browsing, searching and filtering information",
+      "our_competence_id": "comp-1.1",
+      "coverage_quality": "high",
+      "esco_skills": [
+        { "preferred_label": "search engines", "esco_uri": "http://data.europa.eu/esco/skill/15c57a2c-b5be-4187-89cf-1b9e02af4822", "oja_mention_count": 165654 },
+        { "preferred_label": "use internet chat", "esco_uri": "http://data.europa.eu/esco/skill/39c675c4-af13-49db-bbed-cf762102f85e", "oja_mention_count": 370 }
+      ]
+    },
+    "1.2": {
+      "competence_name": "Evaluating data and digital content",
+      "our_competence_id": "comp-1.2",
+      "coverage_quality": "high",
+      "esco_skills": [
+        { "preferred_label": "evaluate information", "esco_uri": "http://data.europa.eu/esco/skill/8afe68ff-b261-4fa8-ab25-bb30b0e5c292", "oja_mention_count": 561699 },
+        { "preferred_label": "audit techniques", "esco_uri": "http://data.europa.eu/esco/skill/3a1c546d-914a-46e4-a7c1-47d43646fedd", "oja_mention_count": 211885 },
+        { "preferred_label": "media studies", "esco_uri": "http://data.europa.eu/esco/skill/7d35602d-bc94-4975-aa7c-f4e8e05ce8e0", "oja_mention_count": 4252 },
+        { "preferred_label": "read articles", "esco_uri": "http://data.europa.eu/esco/skill/2ec3298f-a1c0-4381-9114-b62ba6772d75", "oja_mention_count": 1276 },
+        { "preferred_label": "investment analysis", "esco_uri": "http://data.europa.eu/esco/skill/a8429098-ddac-481b-91e7-688d021c092e", "oja_mention_count": 265582 },
+        { "preferred_label": "financial forecasting", "esco_uri": "http://data.europa.eu/esco/skill/0c77bcd5-b94a-475d-98e9-5a4327e4d726", "oja_mention_count": 1251787 },
+        { "preferred_label": "analytical methods in biomedical sciences", "esco_uri": "http://data.europa.eu/esco/skill/63f224ea-d889-42ea-b3ef-730ef78c7176", "oja_mention_count": 1544 }
+      ]
+    },
+    "1.3": {
+      "competence_name": "Managing data, information and digital content",
+      "our_competence_id": "comp-1.3",
+      "coverage_quality": "high",
+      "esco_skills": [
+        { "preferred_label": "manage time", "esco_uri": "http://data.europa.eu/esco/skill/abadc923-3b82-4ef6-91b5-a59da89a097e", "oja_mention_count": 25426676 },
+        { "preferred_label": "plan teamwork", "esco_uri": "http://data.europa.eu/esco/skill/e0607ffd-586e-4d70-ae88-5998bfa21dda", "oja_mention_count": 16816420 },
+        { "preferred_label": "report analysis results", "esco_uri": "http://data.europa.eu/esco/skill/2f4cdc7e-d98d-4e6c-9811-3dc28255c7ff", "oja_mention_count": 8347248 },
+        { "preferred_label": "coordinate components of the work", "esco_uri": "http://data.europa.eu/esco/skill/8d49f760-3765-4612-8d40-a2bdd50738fe", "oja_mention_count": 5807475 },
+        { "preferred_label": "statistics", "esco_uri": "http://data.europa.eu/esco/skill/953c0b65-537a-42fe-a90b-26cd36c64361", "oja_mention_count": 4531382 },
+        { "preferred_label": "accounting techniques", "esco_uri": "http://data.europa.eu/esco/skill/5d9e766b-8f17-4e17-bfab-3bb0e0719791", "oja_mention_count": 3224504 },
+        { "preferred_label": "document management", "esco_uri": "http://data.europa.eu/esco/skill/aed3d1e7-e9f5-4298-9a51-45266a49c844", "oja_mention_count": 2823114 },
+        { "preferred_label": "plan schedule", "esco_uri": "http://data.europa.eu/esco/skill/91d06ad9-245e-4ecb-bd18-624eed884108", "oja_mention_count": 2351283 },
+        { "preferred_label": "fix meetings", "esco_uri": "http://data.europa.eu/esco/skill/7361c086-443c-43c2-8215-31ef8e8895e5", "oja_mention_count": 2276074 },
+        { "preferred_label": "plan manufacturing processes", "esco_uri": "http://data.europa.eu/esco/skill/b5a1fc87-c9f2-41f4-a1ae-28e023715592", "oja_mention_count": 1961722 },
+        { "preferred_label": "financial forecasting", "esco_uri": "http://data.europa.eu/esco/skill/0c77bcd5-b94a-475d-98e9-5a4327e4d726", "oja_mention_count": 1251787 },
+        { "preferred_label": "accounting", "esco_uri": "http://data.europa.eu/esco/skill/9b67cbf3-085c-4578-8a8e-8d130ed3fced", "oja_mention_count": 12100118 },
+        { "preferred_label": "administer appointments", "esco_uri": "http://data.europa.eu/esco/skill/39aa5571-45ce-4ba3-a280-f6870ef0075f", "oja_mention_count": 976648 },
+        { "preferred_label": "coordinate advertising campaigns", "esco_uri": "http://data.europa.eu/esco/skill/101e6f4c-c892-4812-9e2c-f2b888771bb3", "oja_mention_count": 474350 },
+        { "preferred_label": "financial analysis", "esco_uri": "http://data.europa.eu/esco/skill/1d58c862-1100-438a-bea7-34e0c2a36055", "oja_mention_count": 415714 },
+        { "preferred_label": "debt systems", "esco_uri": "http://data.europa.eu/esco/skill/7ee4c2ea-b349-4bd2-81a3-ec31475d4833", "oja_mention_count": 454207 },
+        { "preferred_label": "have computer literacy", "esco_uri": "http://data.europa.eu/esco/skill/7a147904-22b3-498a-b4d9-7bceeb86b45d", "oja_mention_count": 336877 },
+        { "preferred_label": "credit control processes", "esco_uri": "http://data.europa.eu/esco/skill/97965983-0da4-4902-9daf-d5cd2693ef73", "oja_mention_count": 331865 },
+        { "preferred_label": "financial capability", "esco_uri": "http://data.europa.eu/esco/skill/cffc3e97-e942-4b13-a2f3-0bf4910c06d3", "oja_mention_count": 304924 },
+        { "preferred_label": "use IT tools", "esco_uri": "http://data.europa.eu/esco/skill/d15f8745-28f8-4abf-a7b6-6cb8a304efd2", "oja_mention_count": 200990 },
+        { "preferred_label": "plan events", "esco_uri": "http://data.europa.eu/esco/skill/6b6c1537-58c1-45e1-b4e4-f5193fb0a6dc", "oja_mention_count": 150067 },
+        { "preferred_label": "coordinate events", "esco_uri": "http://data.europa.eu/esco/skill/2c6439c2-77a5-436a-b222-5e12d435c3eb", "oja_mention_count": 155844 },
+        { "preferred_label": "3D modelling", "esco_uri": "http://data.europa.eu/esco/skill/0b16ebec-1fd8-41c8-a1b9-bbe91a1cc1b8", "oja_mention_count": 127831 },
+        { "preferred_label": "organise travel arrangements for staff", "esco_uri": "http://data.europa.eu/esco/skill/9af1bd12-01bd-4d6a-947b-69e64f23150a", "oja_mention_count": 69382 },
+        { "preferred_label": "use ICT systems", "esco_uri": "http://data.europa.eu/esco/skill/7b4bc709-5888-4f78-bbaf-fb760d4e2e4b", "oja_mention_count": 62264 },
+        { "preferred_label": "carry out event management", "esco_uri": "http://data.europa.eu/esco/skill/bbd57056-80e0-45bb-a2c1-658ed99a1251", "oja_mention_count": 62602 },
+        { "preferred_label": "plan transport operations", "esco_uri": "http://data.europa.eu/esco/skill/f1f40210-06cf-48f8-92d4-31c4ecc48682", "oja_mention_count": 37473 },
+        { "preferred_label": "inspect data", "esco_uri": "http://data.europa.eu/esco/skill/0e361e34-c563-4892-b9d3-873a4a4fef8a", "oja_mention_count": 28903 },
+        { "preferred_label": "manage payroll", "esco_uri": "http://data.europa.eu/esco/skill/7a6f50a7-d876-461a-8336-f85a01af4822", "oja_mention_count": 1549 },
+        { "preferred_label": "apply for work permits", "esco_uri": "http://data.europa.eu/esco/skill/b04f377b-ee80-4b38-aca1-19d266a23b17", "oja_mention_count": 1659 },
+        { "preferred_label": "obtain sponsorship", "esco_uri": "http://data.europa.eu/esco/skill/f879a418-3e81-4216-9533-aaedce55fa97", "oja_mention_count": 1233 },
+        { "preferred_label": "analytical methods in biomedical sciences", "esco_uri": "http://data.europa.eu/esco/skill/63f224ea-d889-42ea-b3ef-730ef78c7176", "oja_mention_count": 1544 }
+      ]
+    },
+    "2.1": {
+      "competence_name": "Interacting through digital technologies",
+      "our_competence_id": "comp-2.1",
+      "coverage_quality": "high",
+      "esco_skills": [
+        { "preferred_label": "liaise with managers", "esco_uri": "http://data.europa.eu/esco/skill/e2887d71-8ff4-4188-9926-22bdaefa7713", "oja_mention_count": 8922534 },
+        { "preferred_label": "coordinate communication within a team", "esco_uri": "http://data.europa.eu/esco/skill/209a5498-3449-4689-8ed9-bd08cab4fd78", "oja_mention_count": 5173393 },
+        { "preferred_label": "communicate with nursing staff", "esco_uri": "http://data.europa.eu/esco/skill/a2f40faa-f101-414c-9258-1b91fb564f10", "oja_mention_count": 1805347 },
+        { "preferred_label": "cooperate with professionals", "esco_uri": "http://data.europa.eu/esco/skill/a125a4c2-3b0a-4996-9a63-2f2fb29b4c12", "oja_mention_count": 278067 },
+        { "preferred_label": "advise customers", "esco_uri": "http://data.europa.eu/esco/skill/2705b6b9-c7e6-4c26-ac40-8051f1b37d16", "oja_mention_count": 100057 },
+        { "preferred_label": "communicate with customer service department", "esco_uri": "http://data.europa.eu/esco/skill/4123b65c-8a81-4055-8361-3f49bd33a1d9", "oja_mention_count": 74470 },
+        { "preferred_label": "maintain internal communication systems", "esco_uri": "http://data.europa.eu/esco/skill/286d0e0d-48e9-4210-b110-b1fbf04c35f1", "oja_mention_count": 39728 },
+        { "preferred_label": "communicate with tenants", "esco_uri": "http://data.europa.eu/esco/skill/574257ea-7b64-4100-b7b6-e27c233fe143", "oja_mention_count": 26649 },
+        { "preferred_label": "communicate with media", "esco_uri": "http://data.europa.eu/esco/skill/3a5275f4-67e5-4371-a31e-68291aa86691", "oja_mention_count": 20039 },
+        { "preferred_label": "liaise with local authorities", "esco_uri": "http://data.europa.eu/esco/skill/23b45aa6-a479-486d-9e6f-062cbab7c68a", "oja_mention_count": 11769 },
+        { "preferred_label": "have computer literacy", "esco_uri": "http://data.europa.eu/esco/skill/7a147904-22b3-498a-b4d9-7bceeb86b45d", "oja_mention_count": 336877 },
+        { "preferred_label": "advise on housing", "esco_uri": "http://data.europa.eu/esco/skill/5c966309-1cae-42ed-b29f-03c5ee1665dc", "oja_mention_count": 3391 },
+        { "preferred_label": "inform on insurance products", "esco_uri": "http://data.europa.eu/esco/skill/a4346013-a967-4a58-a533-6b32ad1364c5", "oja_mention_count": 787 },
+        { "preferred_label": "advise clients on moving services", "esco_uri": "http://data.europa.eu/esco/skill/e5d1039d-f206-4031-abdd-cd4d222d9f87", "oja_mention_count": 87 }
+      ]
+    },
+    "2.2": {
+      "competence_name": "Sharing through digital technologies",
+      "our_competence_id": "comp-2.2",
+      "coverage_quality": "medium",
+      "esco_skills": []
+    },
+    "2.3": {
+      "competence_name": "Engaging in citizenship through digital technologies",
+      "our_competence_id": "comp-2.3",
+      "coverage_quality": "low",
+      "esco_skills": []
+    },
+    "2.4": {
+      "competence_name": "Collaborating through digital technologies",
+      "our_competence_id": "comp-2.4",
+      "coverage_quality": "medium",
+      "esco_skills": [
+        { "preferred_label": "brainstorm ideas", "esco_uri": "http://data.europa.eu/esco/skill/3ce1fe19-7f9e-4070-941d-651673a5693b", "oja_mention_count": 23980490 },
+        { "preferred_label": "manage a team", "esco_uri": "http://data.europa.eu/esco/skill/73225018-7139-433b-bdba-2b90774761d9", "oja_mention_count": 2164328 },
+        { "preferred_label": "liaise with government officials", "esco_uri": "http://data.europa.eu/esco/skill/683bc3e3-6ec1-4ad2-8d62-d0ac1fabbe76", "oja_mention_count": 475539 }
+      ]
+    },
+    "2.5": {
+      "competence_name": "Digital behaviour",
+      "our_competence_id": "comp-2.5",
+      "coverage_quality": "low",
+      "esco_skills": []
+    },
+    "2.6": {
+      "competence_name": "Managing digital identity",
+      "our_competence_id": "comp-2.6",
+      "coverage_quality": "low",
+      "esco_skills": []
+    },
+    "3.1": {
+      "competence_name": "Developing digital content",
+      "our_competence_id": "comp-3.1",
+      "coverage_quality": "high",
+      "esco_skills": [
+        { "preferred_label": "report analysis results", "esco_uri": "http://data.europa.eu/esco/skill/2f4cdc7e-d98d-4e6c-9811-3dc28255c7ff", "oja_mention_count": 8347248 },
+        { "preferred_label": "coordinate advertising campaigns", "esco_uri": "http://data.europa.eu/esco/skill/101e6f4c-c892-4812-9e2c-f2b888771bb3", "oja_mention_count": 474350 },
+        { "preferred_label": "3D modelling", "esco_uri": "http://data.europa.eu/esco/skill/0b16ebec-1fd8-41c8-a1b9-bbe91a1cc1b8", "oja_mention_count": 127831 },
+        { "preferred_label": "create 2D painting", "esco_uri": "http://data.europa.eu/esco/skill/530cb489-d900-46ab-9350-4d50ccd49eea", "oja_mention_count": 173 }
+      ]
+    },
+    "3.2": {
+      "competence_name": "Integrating and re-elaborating digital content",
+      "our_competence_id": "comp-3.2",
+      "coverage_quality": "high",
+      "esco_skills": [
+        { "preferred_label": "multimedia systems", "esco_uri": "http://data.europa.eu/esco/skill/e843973c-23dd-416a-8a9c-9e89512542fb", "oja_mention_count": 14594 },
+        { "preferred_label": "motion graphics", "esco_uri": "http://data.europa.eu/esco/skill/020b3c27-bae1-4b85-9d6f-eccee0f5ed99", "oja_mention_count": 16011 },
+        { "preferred_label": "audio technology", "esco_uri": "http://data.europa.eu/esco/skill/0d564cb6-98ef-4c18-9392-dd69e6724cbf", "oja_mention_count": 1384 },
+        { "preferred_label": "use ICT systems", "esco_uri": "http://data.europa.eu/esco/skill/7b4bc709-5888-4f78-bbaf-fb760d4e2e4b", "oja_mention_count": 62264 },
+        { "preferred_label": "obtain sponsorship", "esco_uri": "http://data.europa.eu/esco/skill/f879a418-3e81-4216-9533-aaedce55fa97", "oja_mention_count": 1233 }
+      ]
+    },
+    "3.3": {
+      "competence_name": "Copyright and licences",
+      "our_competence_id": "comp-3.3",
+      "coverage_quality": "low",
+      "esco_skills": []
+    },
+    "3.4": {
+      "competence_name": "Computational thinking and programming",
+      "our_competence_id": "comp-3.4",
+      "coverage_quality": "high",
+      "esco_skills": [
+        { "preferred_label": "statistical analysis system software", "esco_uri": "http://data.europa.eu/esco/skill/3a0f10bd-4c3f-4020-b29c-f03cfe6d6e5b", "oja_mention_count": 204087 },
+        { "preferred_label": "3D modelling", "esco_uri": "http://data.europa.eu/esco/skill/0b16ebec-1fd8-41c8-a1b9-bbe91a1cc1b8", "oja_mention_count": 127831 },
+        { "preferred_label": "Rage", "esco_uri": "http://data.europa.eu/esco/skill/e437eba1-3e22-41f2-8703-741e94785cba", "oja_mention_count": 9905 },
+        { "preferred_label": "CryEngine", "esco_uri": "http://data.europa.eu/esco/skill/e4c205f6-55ba-4bed-9c5d-2032058300c0", "oja_mention_count": 1065 }
+      ]
+    },
+    "4.1": {
+      "competence_name": "Protecting devices",
+      "our_competence_id": "comp-4.1",
+      "coverage_quality": "low",
+      "esco_skills": [
+        { "preferred_label": "ICT security legislation", "esco_uri": "http://data.europa.eu/esco/skill/aa66a033-8522-40e9-a5c0-ff2593e2669c", "oja_mention_count": 217348 }
+      ]
+    },
+    "4.2": {
+      "competence_name": "Protecting personal data and privacy",
+      "our_competence_id": "comp-4.2",
+      "coverage_quality": "low",
+      "esco_skills": [
+        { "preferred_label": "ICT security legislation", "esco_uri": "http://data.europa.eu/esco/skill/aa66a033-8522-40e9-a5c0-ff2593e2669c", "oja_mention_count": 217348 }
+      ]
+    },
+    "4.3": {
+      "competence_name": "Supporting wellbeing",
+      "our_competence_id": "comp-4.3",
+      "coverage_quality": "low",
+      "esco_skills": []
+    },
+    "4.4": {
+      "competence_name": "Environmental impacts of digital technologies",
+      "our_competence_id": "comp-4.4",
+      "coverage_quality": "low",
+      "esco_skills": []
+    },
+    "5.1": {
+      "competence_name": "Identifying and solving technical problems",
+      "our_competence_id": "comp-5.1",
+      "coverage_quality": "low",
+      "esco_skills": []
+    },
+    "5.2": {
+      "competence_name": "Identifying needs and technical responses",
+      "our_competence_id": "comp-5.2",
+      "coverage_quality": "low",
+      "esco_skills": [
+        { "preferred_label": "provide assistive technology", "esco_uri": "http://data.europa.eu/esco/skill/fb8464e3-949e-4cc0-b50b-be7cf9c3e250", "oja_mention_count": 927 }
+      ]
+    },
+    "5.3": {
+      "competence_name": "Identifying creative solutions using digital technologies",
+      "our_competence_id": "comp-5.3",
+      "coverage_quality": "medium",
+      "esco_skills": [
+        { "preferred_label": "analyse supply chain strategies", "esco_uri": "http://data.europa.eu/esco/skill/0c9f20cb-32fb-4ff7-877e-508762791151", "oja_mention_count": 3577 }
+      ]
+    },
+    "5.4": {
+      "competence_name": "Identifying and addressing digital competence needs",
+      "our_competence_id": "comp-5.4",
+      "coverage_quality": "low",
+      "esco_skills": []
+    }
+  },
+  "mappings_by_skill": {
+    "http://data.europa.eu/esco/skill/15c57a2c-b5be-4187-89cf-1b9e02af4822": { "preferred_label": "search engines", "digcomp_competences": ["1.1"], "oja_mention_count": 165654 },
+    "http://data.europa.eu/esco/skill/39c675c4-af13-49db-bbed-cf762102f85e": { "preferred_label": "use internet chat", "digcomp_competences": ["1.1"], "oja_mention_count": 370 },
+    "http://data.europa.eu/esco/skill/8afe68ff-b261-4fa8-ab25-bb30b0e5c292": { "preferred_label": "evaluate information", "digcomp_competences": ["1.2"], "oja_mention_count": 561699 },
+    "http://data.europa.eu/esco/skill/3a1c546d-914a-46e4-a7c1-47d43646fedd": { "preferred_label": "audit techniques", "digcomp_competences": ["1.2", "1.3"], "oja_mention_count": 211885 },
+    "http://data.europa.eu/esco/skill/7d35602d-bc94-4975-aa7c-f4e8e05ce8e0": { "preferred_label": "media studies", "digcomp_competences": ["1.2"], "oja_mention_count": 4252 },
+    "http://data.europa.eu/esco/skill/2ec3298f-a1c0-4381-9114-b62ba6772d75": { "preferred_label": "read articles", "digcomp_competences": ["1.2"], "oja_mention_count": 1276 },
+    "http://data.europa.eu/esco/skill/abadc923-3b82-4ef6-91b5-a59da89a097e": { "preferred_label": "manage time", "digcomp_competences": ["1.3"], "oja_mention_count": 25426676 },
+    "http://data.europa.eu/esco/skill/e0607ffd-586e-4d70-ae88-5998bfa21dda": { "preferred_label": "plan teamwork", "digcomp_competences": ["1.3"], "oja_mention_count": 16816420 },
+    "http://data.europa.eu/esco/skill/9b67cbf3-085c-4578-8a8e-8d130ed3fced": { "preferred_label": "accounting", "digcomp_competences": ["1.3"], "oja_mention_count": 12100118 },
+    "http://data.europa.eu/esco/skill/953c0b65-537a-42fe-a90b-26cd36c64361": { "preferred_label": "statistics", "digcomp_competences": ["1.3"], "oja_mention_count": 4531382 },
+    "http://data.europa.eu/esco/skill/5d9e766b-8f17-4e17-bfab-3bb0e0719791": { "preferred_label": "accounting techniques", "digcomp_competences": ["1.3"], "oja_mention_count": 3224504 },
+    "http://data.europa.eu/esco/skill/aed3d1e7-e9f5-4298-9a51-45266a49c844": { "preferred_label": "document management", "digcomp_competences": ["1.3"], "oja_mention_count": 2823114 },
+    "http://data.europa.eu/esco/skill/91d06ad9-245e-4ecb-bd18-624eed884108": { "preferred_label": "plan schedule", "digcomp_competences": ["1.3"], "oja_mention_count": 2351283 },
+    "http://data.europa.eu/esco/skill/7361c086-443c-43c2-8215-31ef8e8895e5": { "preferred_label": "fix meetings", "digcomp_competences": ["1.3"], "oja_mention_count": 2276074 },
+    "http://data.europa.eu/esco/skill/2f4cdc7e-d98d-4e6c-9811-3dc28255c7ff": { "preferred_label": "report analysis results", "digcomp_competences": ["1.3", "3.1"], "oja_mention_count": 8347248 },
+    "http://data.europa.eu/esco/skill/8d49f760-3765-4612-8d40-a2bdd50738fe": { "preferred_label": "coordinate components of the work", "digcomp_competences": ["1.3"], "oja_mention_count": 5807475 },
+    "http://data.europa.eu/esco/skill/d15f8745-28f8-4abf-a7b6-6cb8a304efd2": { "preferred_label": "use IT tools", "digcomp_competences": ["1.3"], "oja_mention_count": 200990 },
+    "http://data.europa.eu/esco/skill/7a147904-22b3-498a-b4d9-7bceeb86b45d": { "preferred_label": "have computer literacy", "digcomp_competences": ["1.3", "2.1"], "oja_mention_count": 336877 },
+    "http://data.europa.eu/esco/skill/0e361e34-c563-4892-b9d3-873a4a4fef8a": { "preferred_label": "inspect data", "digcomp_competences": ["1.3"], "oja_mention_count": 28903 },
+    "http://data.europa.eu/esco/skill/7b4bc709-5888-4f78-bbaf-fb760d4e2e4b": { "preferred_label": "use ICT systems", "digcomp_competences": ["1.3", "3.2"], "oja_mention_count": 62264 },
+    "http://data.europa.eu/esco/skill/7a6f50a7-d876-461a-8336-f85a01af4822": { "preferred_label": "manage payroll", "digcomp_competences": ["1.3"], "oja_mention_count": 1549 },
+    "http://data.europa.eu/esco/skill/0c77bcd5-b94a-475d-98e9-5a4327e4d726": { "preferred_label": "financial forecasting", "digcomp_competences": ["1.2", "1.3"], "oja_mention_count": 1251787 },
+    "http://data.europa.eu/esco/skill/1d58c862-1100-438a-bea7-34e0c2a36055": { "preferred_label": "financial analysis", "digcomp_competences": ["1.3"], "oja_mention_count": 415714 },
+    "http://data.europa.eu/esco/skill/7ee4c2ea-b349-4bd2-81a3-ec31475d4833": { "preferred_label": "debt systems", "digcomp_competences": ["1.3"], "oja_mention_count": 454207 },
+    "http://data.europa.eu/esco/skill/cffc3e97-e942-4b13-a2f3-0bf4910c06d3": { "preferred_label": "financial capability", "digcomp_competences": ["1.3"], "oja_mention_count": 304924 },
+    "http://data.europa.eu/esco/skill/97965983-0da4-4902-9daf-d5cd2693ef73": { "preferred_label": "credit control processes", "digcomp_competences": ["1.3"], "oja_mention_count": 331865 },
+    "http://data.europa.eu/esco/skill/a8429098-ddac-481b-91e7-688d021c092e": { "preferred_label": "investment analysis", "digcomp_competences": ["1.2"], "oja_mention_count": 265582 },
+    "http://data.europa.eu/esco/skill/39aa5571-45ce-4ba3-a280-f6870ef0075f": { "preferred_label": "administer appointments", "digcomp_competences": ["1.3"], "oja_mention_count": 976648 },
+    "http://data.europa.eu/esco/skill/6b6c1537-58c1-45e1-b4e4-f5193fb0a6dc": { "preferred_label": "plan events", "digcomp_competences": ["1.3"], "oja_mention_count": 150067 },
+    "http://data.europa.eu/esco/skill/2c6439c2-77a5-436a-b222-5e12d435c3eb": { "preferred_label": "coordinate events", "digcomp_competences": ["1.3"], "oja_mention_count": 155844 },
+    "http://data.europa.eu/esco/skill/bbd57056-80e0-45bb-a2c1-658ed99a1251": { "preferred_label": "carry out event management", "digcomp_competences": ["1.3"], "oja_mention_count": 62602 },
+    "http://data.europa.eu/esco/skill/f1f40210-06cf-48f8-92d4-31c4ecc48682": { "preferred_label": "plan transport operations", "digcomp_competences": ["1.3"], "oja_mention_count": 37473 },
+    "http://data.europa.eu/esco/skill/b04f377b-ee80-4b38-aca1-19d266a23b17": { "preferred_label": "apply for work permits", "digcomp_competences": ["1.3"], "oja_mention_count": 1659 },
+    "http://data.europa.eu/esco/skill/f879a418-3e81-4216-9533-aaedce55fa97": { "preferred_label": "obtain sponsorship", "digcomp_competences": ["1.3", "3.2"], "oja_mention_count": 1233 },
+    "http://data.europa.eu/esco/skill/63f224ea-d889-42ea-b3ef-730ef78c7176": { "preferred_label": "analytical methods in biomedical sciences", "digcomp_competences": ["1.2", "1.3"], "oja_mention_count": 1544 },
+    "http://data.europa.eu/esco/skill/0b16ebec-1fd8-41c8-a1b9-bbe91a1cc1b8": { "preferred_label": "3D modelling", "digcomp_competences": ["1.3", "3.1", "3.4"], "oja_mention_count": 127831 },
+    "http://data.europa.eu/esco/skill/e2887d71-8ff4-4188-9926-22bdaefa7713": { "preferred_label": "liaise with managers", "digcomp_competences": ["2.1"], "oja_mention_count": 8922534 },
+    "http://data.europa.eu/esco/skill/209a5498-3449-4689-8ed9-bd08cab4fd78": { "preferred_label": "coordinate communication within a team", "digcomp_competences": ["2.1"], "oja_mention_count": 5173393 },
+    "http://data.europa.eu/esco/skill/a2f40faa-f101-414c-9258-1b91fb564f10": { "preferred_label": "communicate with nursing staff", "digcomp_competences": ["2.1"], "oja_mention_count": 1805347 },
+    "http://data.europa.eu/esco/skill/a125a4c2-3b0a-4996-9a63-2f2fb29b4c12": { "preferred_label": "cooperate with professionals", "digcomp_competences": ["2.1"], "oja_mention_count": 278067 },
+    "http://data.europa.eu/esco/skill/2705b6b9-c7e6-4c26-ac40-8051f1b37d16": { "preferred_label": "advise customers", "digcomp_competences": ["2.1"], "oja_mention_count": 100057 },
+    "http://data.europa.eu/esco/skill/4123b65c-8a81-4055-8361-3f49bd33a1d9": { "preferred_label": "communicate with customer service department", "digcomp_competences": ["2.1"], "oja_mention_count": 74470 },
+    "http://data.europa.eu/esco/skill/286d0e0d-48e9-4210-b110-b1fbf04c35f1": { "preferred_label": "maintain internal communication systems", "digcomp_competences": ["2.1"], "oja_mention_count": 39728 },
+    "http://data.europa.eu/esco/skill/574257ea-7b64-4100-b7b6-e27c233fe143": { "preferred_label": "communicate with tenants", "digcomp_competences": ["2.1"], "oja_mention_count": 26649 },
+    "http://data.europa.eu/esco/skill/3a5275f4-67e5-4371-a31e-68291aa86691": { "preferred_label": "communicate with media", "digcomp_competences": ["2.1"], "oja_mention_count": 20039 },
+    "http://data.europa.eu/esco/skill/23b45aa6-a479-486d-9e6f-062cbab7c68a": { "preferred_label": "liaise with local authorities", "digcomp_competences": ["2.1"], "oja_mention_count": 11769 },
+    "http://data.europa.eu/esco/skill/5c966309-1cae-42ed-b29f-03c5ee1665dc": { "preferred_label": "advise on housing", "digcomp_competences": ["2.1"], "oja_mention_count": 3391 },
+    "http://data.europa.eu/esco/skill/a4346013-a967-4a58-a533-6b32ad1364c5": { "preferred_label": "inform on insurance products", "digcomp_competences": ["2.1"], "oja_mention_count": 787 },
+    "http://data.europa.eu/esco/skill/e5d1039d-f206-4031-abdd-cd4d222d9f87": { "preferred_label": "advise clients on moving services", "digcomp_competences": ["2.1"], "oja_mention_count": 87 },
+    "http://data.europa.eu/esco/skill/3ce1fe19-7f9e-4070-941d-651673a5693b": { "preferred_label": "brainstorm ideas", "digcomp_competences": ["2.4"], "oja_mention_count": 23980490 },
+    "http://data.europa.eu/esco/skill/73225018-7139-433b-bdba-2b90774761d9": { "preferred_label": "manage a team", "digcomp_competences": ["2.4"], "oja_mention_count": 2164328 },
+    "http://data.europa.eu/esco/skill/683bc3e3-6ec1-4ad2-8d62-d0ac1fabbe76": { "preferred_label": "liaise with government officials", "digcomp_competences": ["2.4"], "oja_mention_count": 475539 },
+    "http://data.europa.eu/esco/skill/530cb489-d900-46ab-9350-4d50ccd49eea": { "preferred_label": "create 2D painting", "digcomp_competences": ["3.1"], "oja_mention_count": 173 },
+    "http://data.europa.eu/esco/skill/101e6f4c-c892-4812-9e2c-f2b888771bb3": { "preferred_label": "coordinate advertising campaigns", "digcomp_competences": ["1.3", "3.1"], "oja_mention_count": 474350 },
+    "http://data.europa.eu/esco/skill/e843973c-23dd-416a-8a9c-9e89512542fb": { "preferred_label": "multimedia systems", "digcomp_competences": ["3.2"], "oja_mention_count": 14594 },
+    "http://data.europa.eu/esco/skill/020b3c27-bae1-4b85-9d6f-eccee0f5ed99": { "preferred_label": "motion graphics", "digcomp_competences": ["3.2"], "oja_mention_count": 16011 },
+    "http://data.europa.eu/esco/skill/0d564cb6-98ef-4c18-9392-dd69e6724cbf": { "preferred_label": "audio technology", "digcomp_competences": ["3.2"], "oja_mention_count": 1384 },
+    "http://data.europa.eu/esco/skill/3a0f10bd-4c3f-4020-b29c-f03cfe6d6e5b": { "preferred_label": "statistical analysis system software", "digcomp_competences": ["3.4"], "oja_mention_count": 204087 },
+    "http://data.europa.eu/esco/skill/e437eba1-3e22-41f2-8703-741e94785cba": { "preferred_label": "Rage", "digcomp_competences": ["3.4"], "oja_mention_count": 9905 },
+    "http://data.europa.eu/esco/skill/e4c205f6-55ba-4bed-9c5d-2032058300c0": { "preferred_label": "CryEngine", "digcomp_competences": ["3.4"], "oja_mention_count": 1065 },
+    "http://data.europa.eu/esco/skill/aa66a033-8522-40e9-a5c0-ff2593e2669c": { "preferred_label": "ICT security legislation", "digcomp_competences": ["4.1", "4.2"], "oja_mention_count": 217348 },
+    "http://data.europa.eu/esco/skill/fb8464e3-949e-4cc0-b50b-be7cf9c3e250": { "preferred_label": "provide assistive technology", "digcomp_competences": ["5.2"], "oja_mention_count": 927 },
+    "http://data.europa.eu/esco/skill/0c9f20cb-32fb-4ff7-877e-508762791151": { "preferred_label": "analyse supply chain strategies", "digcomp_competences": ["5.3"], "oja_mention_count": 3577 },
+    "http://data.europa.eu/esco/skill/b5a1fc87-c9f2-41f4-a1ae-28e023715592": { "preferred_label": "plan manufacturing processes", "digcomp_competences": ["1.3"], "oja_mention_count": 1961722 },
+    "http://data.europa.eu/esco/skill/9af1bd12-01bd-4d6a-947b-69e64f23150a": { "preferred_label": "organise travel arrangements for staff", "digcomp_competences": ["1.3"], "oja_mention_count": 69382 }
+  },
+  "coverage_summary": {
+    "high": ["1.1", "1.2", "1.3", "2.1", "3.1", "3.2", "3.4"],
+    "medium": ["2.2", "2.4", "5.3"],
+    "low": ["2.3", "2.5", "2.6", "3.3", "4.1", "4.2", "4.3", "4.4", "5.1", "5.2", "5.4"],
+    "note": "Coverage quality reflects how many ESCO skills map to each competence. Areas 1 (Information) and 3 (Content Creation) have the highest coverage. Areas 4 (Safety) and 5 (Problem Solving) have the lowest. This file contains a representative extraction. The full 732-skill dataset can be regenerated from reference-data/digcomp-2.2-esco-mapping.xlsx."
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "mappings": [
+    {
+      "framework_id": "maturity-jisc-ai",
+      "dimension_id": "governance-ethics",
+      "dimension_name": "Governance and Ethics",
+      "low_score_triggers": ["ai-acceptable-use", "ai-governance"],
+      "content_relevant_to": ["ai-acceptable-use", "ai-governance", "ai-data-governance"]
+    },
+    {
+      "framework_id": "maturity-jisc-ai",
+      "dimension_id": "pedagogy-practice",
+      "dimension_name": "Pedagogy and Practice",
+      "low_score_triggers": ["ai-assessment-integrity"],
+      "content_relevant_to": ["ai-assessment-integrity", "student-ai-guidance"]
+    },
+    {
+      "framework_id": "maturity-jisc-ai",
+      "dimension_id": "workforce-development",
+      "dimension_name": "Workforce Development",
+      "low_score_triggers": ["staff-ai-development"],
+      "content_relevant_to": ["staff-ai-development", "ai-governance"]
+    },
+    {
+      "framework_id": "maturity-jisc-ai",
+      "dimension_id": "infrastructure-data",
+      "dimension_name": "Infrastructure and Data",
+      "low_score_triggers": ["ai-data-governance"],
+      "content_relevant_to": ["ai-data-governance", "ai-governance"]
+    },
+    {
+      "framework_id": "maturity-jisc-ai",
+      "dimension_id": "student-experience",
+      "dimension_name": "Student Experience",
+      "low_score_triggers": ["student-ai-guidance"],
+      "content_relevant_to": ["student-ai-guidance", "ai-assessment-integrity"]
+    },
+    {
+      "framework_id": "maturity-the",
+      "dimension_id": "culture-strategy",
+      "dimension_name": "Culture and Strategy",
+      "low_score_triggers": ["ai-governance"],
+      "content_relevant_to": ["ai-governance", "ai-acceptable-use"]
+    },
+    {
+      "framework_id": "maturity-the",
+      "dimension_id": "content-curriculum",
+      "dimension_name": "Content and Curriculum",
+      "low_score_triggers": ["ai-assessment-integrity"],
+      "content_relevant_to": ["ai-assessment-integrity", "student-ai-guidance"]
+    },
+    {
+      "framework_id": "maturity-the",
+      "dimension_id": "data-analytics",
+      "dimension_name": "Data and Analytics",
+      "low_score_triggers": ["ai-data-governance"],
+      "content_relevant_to": ["ai-data-governance", "ai-governance"]
+    },
+    {
+      "framework_id": "maturity-the",
+      "dimension_id": "teaching-learning",
+      "dimension_name": "Teaching and Learning",
+      "low_score_triggers": ["ai-assessment-integrity", "staff-ai-development"],
+      "content_relevant_to": ["ai-assessment-integrity", "staff-ai-development", "student-ai-guidance"]
+    },
+    {
+      "framework_id": "maturity-the",
+      "dimension_id": "operations-support",
+      "dimension_name": "Operations and Support",
+      "low_score_triggers": ["ai-governance"],
+      "content_relevant_to": ["ai-governance", "ai-data-governance"]
+    },
+    {
+      "framework_id": "ai-capability",
+      "dimension_id": "ai-vision-strategy",
+      "dimension_name": "AI Vision and Strategy",
+      "low_score_triggers": ["ai-governance"],
+      "content_relevant_to": ["ai-governance", "ai-acceptable-use"]
+    },
+    {
+      "framework_id": "ai-capability",
+      "dimension_id": "ai-governance-ethics",
+      "dimension_name": "AI Governance and Ethics",
+      "low_score_triggers": ["ai-acceptable-use", "ai-governance"],
+      "content_relevant_to": ["ai-acceptable-use", "ai-governance", "ai-data-governance"]
+    },
+    {
+      "framework_id": "ai-capability",
+      "dimension_id": "ai-skills-workforce",
+      "dimension_name": "AI Skills and Workforce",
+      "low_score_triggers": ["staff-ai-development"],
+      "content_relevant_to": ["staff-ai-development"]
+    },
+    {
+      "framework_id": "ai-capability",
+      "dimension_id": "ai-infrastructure",
+      "dimension_name": "AI Infrastructure and Data",
+      "low_score_triggers": ["ai-data-governance"],
+      "content_relevant_to": ["ai-data-governance"]
+    },
+    {
+      "framework_id": "ai-capability",
+      "dimension_id": "ai-teaching-learning",
+      "dimension_name": "AI in Teaching and Learning",
+      "low_score_triggers": ["ai-assessment-integrity"],
+      "content_relevant_to": ["ai-assessment-integrity", "student-ai-guidance"]
+    },
+    {
+      "framework_id": "guidance-policy",
+      "dimension_id": "gp-system-wide-vision",
+      "dimension_name": "System-Wide Vision and Strategic Priorities",
+      "low_score_triggers": ["ai-governance"],
+      "content_relevant_to": ["ai-governance", "ai-acceptable-use"]
+    },
+    {
+      "framework_id": "guidance-policy",
+      "dimension_id": "gp-humanistic-approach",
+      "dimension_name": "Humanistic Approach",
+      "low_score_triggers": ["ai-acceptable-use"],
+      "content_relevant_to": ["ai-acceptable-use", "ai-governance", "student-ai-guidance"]
+    },
+    {
+      "framework_id": "guidance-policy",
+      "dimension_id": "gp-interdisciplinary-planning",
+      "dimension_name": "Interdisciplinary Planning and Governance",
+      "low_score_triggers": ["ai-governance"],
+      "content_relevant_to": ["ai-governance"]
+    },
+    {
+      "framework_id": "guidance-policy",
+      "dimension_id": "equitable-inclusive-ethical",
+      "dimension_name": "Equitable, Inclusive and Ethical Use",
+      "low_score_triggers": ["ai-acceptable-use", "ai-governance", "ai-data-governance"],
+      "content_relevant_to": ["ai-acceptable-use", "ai-governance", "ai-data-governance", "ai-assessment-integrity"]
+    },
+    {
+      "framework_id": "guidance-policy",
+      "dimension_id": "gp-ai-education-management",
+      "dimension_name": "AI in Education Management, Teaching, Learning and Assessment",
+      "low_score_triggers": ["ai-assessment-integrity", "staff-ai-development"],
+      "content_relevant_to": ["ai-assessment-integrity", "staff-ai-development", "student-ai-guidance"]
+    },
+    {
+      "framework_id": "guidance-policy",
+      "dimension_id": "gp-evidence-innovation",
+      "dimension_name": "Evidence Base and Local Innovation",
+      "low_score_triggers": [],
+      "content_relevant_to": ["ai-governance"]
+    }
+  ]
+}

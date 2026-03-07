@@ -1,0 +1,1174 @@
+{
+  "framework": {
+    "id": "bdc-researcher",
+    "name": "JISC BDC Researcher Role Profile",
+    "short_name": "BDC Researcher",
+    "type": "capability",
+    "scope": "individual",
+    "target_audience": [
+      "researchers",
+      "research_students"
+    ],
+    "source_url": "https://digitalcapability.jisc.ac.uk",
+    "source_pdfs": [
+      "https://repository.jisc.ac.uk/8862/13/2025_RESEARCHER_PROFILE_ENG_FINAL.pdf"
+    ],
+    "version": "2025",
+    "licence": "CC BY-NC-ND",
+    "key_principles": [
+      "This is one lens on the BDC framework, not a separate competency framework",
+      "No one will have all capabilities listed",
+      "The profile does not define levels of achievement natively",
+      "AI maturity level mapping is an interpretive overlay",
+      "Distinguishes researcher-level and organisational-level capabilities for each element. Digital Research & Problem Solving emphasised. Open research, data management, and international collaboration prominent. Maps to Vitae RDF descriptors."
+    ],
+    "cross_reference_frameworks": [
+      {
+        "name": "Vitae Researcher Development Framework (RDF) 2025",
+        "mapping_type": "aligned",
+        "url": "https://vitae.ac.uk/vitae-researcher-development-framework/"
+      },
+      {
+        "name": "JISC AI Maturity Model for Education",
+        "mapping_type": "aligned",
+        "url": ""
+      }
+    ],
+    "role_specific_context": {
+      "research_practice_areas": [
+        "Digital research design and methods",
+        "Research data management",
+        "Open research and publishing",
+        "Research impact and dissemination",
+        "Research collaboration tools",
+        "AI in research methodology"
+      ]
+    }
+  },
+  "aspects": [
+    {
+      "id": "bdc-proficiency-productivity",
+      "order": 1,
+      "name": "Digital Proficiency and Productivity",
+      "description": "The ability to use digital devices, networks, applications, software and services. How you use digital skills to accomplish tasks effectively and productively.",
+      "parent_dimension_id": null,
+      "sub_elements": [
+        {
+          "id": "bdc-1-proficiency",
+          "name": "Digital Proficiency",
+          "description": "Ability to use digital devices, networks, applications, AI, software and services; confident adoption of new tools; capacity to deal with problems."
+        },
+        {
+          "id": "bdc-1-productivity",
+          "name": "Digital Productivity",
+          "description": "Using digital tools and services to carry out tasks effectively; choosing the right tools for each task including AI; adapting tools to personal needs."
+        }
+      ],
+      "keywords": [
+        "devices",
+        "software",
+        "tools",
+        "AI assistants",
+        "generative AI",
+        "productivity",
+        "proficiency",
+        "adoption"
+      ]
+    },
+    {
+      "id": "bdc-creation-innovation",
+      "order": 2,
+      "name": "Digital Creation, Problem-Solving and Innovation",
+      "description": "Digital production of content, using digital evidence to solve problems and make decisions, and willingness to try new practices with digital technology including AI.",
+      "parent_dimension_id": null,
+      "sub_elements": [
+        {
+          "id": "bdc-2-creation",
+          "name": "Digital Creation",
+          "description": "Digital production of content including AI-generated content; understanding different digital production processes."
+        },
+        {
+          "id": "bdc-2-problem-solving",
+          "name": "Digital Research and Problem-Solving",
+          "description": "Using digital evidence including AI-generated evidence to solve problems, make decisions and answer questions."
+        },
+        {
+          "id": "bdc-2-innovation",
+          "name": "Digital Innovation",
+          "description": "Willingness to try new practices with digital technology including Generative AI; assessing benefits, risks and accessibility."
+        }
+      ],
+      "keywords": [
+        "creation",
+        "problem-solving",
+        "innovation",
+        "research",
+        "AI-generated content",
+        "evidence",
+        "enterprise"
+      ]
+    },
+    {
+      "id": "bdc-learning-development",
+      "order": 3,
+      "name": "Digital Learning and Development",
+      "description": "Learning in digital settings and through digital media. Includes digital teaching practices for those in teaching roles.",
+      "parent_dimension_id": null,
+      "sub_elements": [
+        {
+          "id": "bdc-3-learning",
+          "name": "Digital Learning",
+          "description": "Learning effectively in technology-rich environments; using digital networks for CPD; reflecting on digital practices."
+        },
+        {
+          "id": "bdc-3-teaching",
+          "name": "Digital Teaching",
+          "description": "Teaching effectively with digital tools and in digital environments. For Teacher profile, covers eight areas of digital teaching practice."
+        }
+      ],
+      "keywords": [
+        "learning",
+        "teaching",
+        "CPD",
+        "pedagogy",
+        "assessment",
+        "LTA",
+        "AI in teaching"
+      ]
+    },
+    {
+      "id": "bdc-literacies",
+      "order": 4,
+      "name": "Information, Data and Media Literacies",
+      "description": "Finding, evaluating, managing and sharing digital information, data and media content including AI-generated content.",
+      "parent_dimension_id": null,
+      "sub_elements": [
+        {
+          "id": "bdc-4-information",
+          "name": "Information Literacy",
+          "description": "Finding, evaluating, managing and sharing information in digital environments."
+        },
+        {
+          "id": "bdc-4-data",
+          "name": "Data Literacy",
+          "description": "Understanding and working with data including collection, analysis, interpretation and visualisation."
+        },
+        {
+          "id": "bdc-4-media",
+          "name": "Media Literacy",
+          "description": "Critically reading, creating and evaluating media content including AI-generated media."
+        }
+      ],
+      "keywords": [
+        "information",
+        "data",
+        "media",
+        "literacy",
+        "evaluation",
+        "misinformation",
+        "AI-generated"
+      ]
+    },
+    {
+      "id": "bdc-communication-collaboration",
+      "order": 5,
+      "name": "Digital Communication, Collaboration and Participation",
+      "description": "Communicating effectively in digital media, collaborating in digital teams, and participating in digital communities.",
+      "parent_dimension_id": null,
+      "sub_elements": [
+        {
+          "id": "bdc-5-communication",
+          "name": "Digital Communication",
+          "description": "Communicating effectively in digital media and spaces; designing digital communications including using AI."
+        },
+        {
+          "id": "bdc-5-collaboration",
+          "name": "Digital Collaboration",
+          "description": "Participating in digital teams using shared tools including AI-powered collaboration tools."
+        },
+        {
+          "id": "bdc-5-participation",
+          "name": "Digital Participation",
+          "description": "Participating in digital communities, civic engagement and professional networks."
+        }
+      ],
+      "keywords": [
+        "communication",
+        "collaboration",
+        "participation",
+        "teams",
+        "communities",
+        "AI-powered tools"
+      ]
+    },
+    {
+      "id": "bdc-identity-wellbeing",
+      "order": 6,
+      "name": "Digital Identity and Wellbeing",
+      "description": "Managing professional digital identity and presence, and maintaining health and wellbeing in digital and AI-mediated environments.",
+      "parent_dimension_id": null,
+      "sub_elements": [
+        {
+          "id": "bdc-6-identity",
+          "name": "Digital Identity Management",
+          "description": "Building and managing professional digital identity, reputation and presence."
+        },
+        {
+          "id": "bdc-6-wellbeing",
+          "name": "Digital Wellbeing",
+          "description": "Managing health, safety, relationships and work-life balance in digital environments; using technology aligned with values."
+        }
+      ],
+      "keywords": [
+        "identity",
+        "wellbeing",
+        "safety",
+        "privacy",
+        "reputation",
+        "values",
+        "work-life balance"
+      ]
+    }
+  ],
+  "progression_levels": [
+    {
+      "id": "level-1",
+      "order": 1,
+      "name": "Approaching and Understanding",
+      "description": "Interest in AI; understanding impact on other sectors. No formal AI activity. Basic digital capabilities developing at individual level. At institutional level, digital activities are dispersed and project-based.",
+      "target": "Foundational awareness of AI concepts and their relevance to role and organisation",
+      "overall_curricular_goal": "Develop understanding of what AI is, how it works at a basic level, and why it matters for education",
+      "data_maturity_expectation": "L1 Reactive: No formal data management; embryonic processes; data not viewed as important",
+      "source_terminology": {
+        "dt_model_level": "Emerging to Established (lower band)",
+        "bdc_org_level": "Emerging (early)",
+        "data_maturity_level": "L1 Reactive",
+        "discovery_tool_level": "Developing (early)",
+        "beetham_sharpe": "Access",
+        "cmmi": "Level 1 - Initial",
+        "educause_3d": "Digitize",
+        "hesa_data": "Chaotic",
+        "digiready": "DR-D (0-10)",
+        "jisc_elevation": "Pre-Foundations",
+        "qub_adaptation": "Planning to Emerging"
+      }
+    },
+    {
+      "id": "level-2",
+      "order": 2,
+      "name": "Experimenting and Exploring",
+      "description": "Pilots within existing processes; data culture emerging; responsible AI processes established; initial AI guidance produced. Individuals actively experimenting with AI tools.",
+      "target": "Active exploration of AI tools and responsible use habits within existing workflows",
+      "overall_curricular_goal": "Build practical skills through guided experimentation with AI tools relevant to role",
+      "data_maturity_expectation": "L2 Working towards proactive: Nascent capability emerging; informal roles; some trust in key outputs",
+      "source_terminology": {
+        "dt_model_level": "Emerging to Established (upper band)",
+        "bdc_org_level": "Emerging (advanced)",
+        "data_maturity_level": "L2 Working towards proactive",
+        "discovery_tool_level": "Developing (advanced)",
+        "beetham_sharpe": "Functional Skills",
+        "cmmi": "Level 2 - Managed",
+        "educause_3d": "Digitize/Digitalize",
+        "hesa_data": "Reactive",
+        "digiready": "DR-C1 (10-30)",
+        "jisc_elevation": "Foundations",
+        "qub_adaptation": "Emerging to Established (Reactive)"
+      }
+    },
+    {
+      "id": "level-3",
+      "order": 3,
+      "name": "Operational",
+      "description": "Institutional AI principles established; systemic staff AI skills/literacy approach; everyday AI used institution-wide; task-specific AI for one or more processes. Confident, routine AI-augmented practice.",
+      "target": "Routine, informed AI-augmented practice integrated into professional workflows",
+      "overall_curricular_goal": "Demonstrate confident, systematic and responsible application of AI within professional domain",
+      "data_maturity_expectation": "L3 Proactive: Data management embedded for key datasets; roles emerged; quality measurement patchy",
+      "source_terminology": {
+        "dt_model_level": "Established to Enhanced (full band)",
+        "bdc_org_level": "Established",
+        "data_maturity_level": "L3 Proactive",
+        "discovery_tool_level": "Capable",
+        "beetham_sharpe": "Practices",
+        "cmmi": "Level 3 - Defined",
+        "educause_3d": "Digitalize",
+        "hesa_data": "Stable",
+        "digiready": "DR-C3 (45-60)",
+        "jisc_elevation": "Transform",
+        "qub_adaptation": "Established to Enhanced (Proactive)"
+      }
+    },
+    {
+      "id": "level-4",
+      "order": 4,
+      "name": "Embedded",
+      "description": "AI embedded in strategy (not standalone); data maturity allows AI consideration for all new systems; mature lifecycle management including procurement and continuous monitoring. Leading AI integration.",
+      "target": "AI-enhanced practice as default; strategic use; mentoring others; contributing to institutional AI strategy",
+      "overall_curricular_goal": "Lead AI integration in professional domain; contribute to organisational AI strategy and governance",
+      "data_maturity_expectation": "L4 Working towards integrated: Key organisational capability; most outputs automated; data governance formalised",
+      "source_terminology": {
+        "dt_model_level": "Enhanced to Mature (lower band)",
+        "bdc_org_level": "Enhanced (developing)",
+        "data_maturity_level": "L4 Working towards integrated",
+        "discovery_tool_level": "Proficient (developing)",
+        "beetham_sharpe": "Practices (advanced)",
+        "cmmi": "Level 4 - Quantitatively Managed",
+        "educause_3d": "Digitalize/Transform",
+        "hesa_data": "Proactive",
+        "digiready": "DR-B (60-90)",
+        "jisc_elevation": "Transform/Elevate",
+        "qub_adaptation": "Enhanced to Mature (Integrated) - lower"
+      }
+    },
+    {
+      "id": "level-5",
+      "order": 5,
+      "name": "Optimised/Transformed",
+      "description": "AI supports delivery of learning optimising outcomes for all learners; right tasks automated freeing staff for creativity and human interaction. Sector leadership in AI innovation.",
+      "target": "Innovative, transformative AI practice; optimised workflows; recognised leadership in AI application",
+      "overall_curricular_goal": "Shape sector practices; innovate transformative AI-enabled approaches; champion ethical and inclusive AI adoption",
+      "data_maturity_expectation": "L5 Integrated: Strategic capability; foundation for innovative services; predictive analytics; fully integrated",
+      "source_terminology": {
+        "dt_model_level": "Enhanced to Mature (upper band)",
+        "bdc_org_level": "Enhanced (mature)",
+        "data_maturity_level": "L5 Integrated",
+        "discovery_tool_level": "Proficient (mature)",
+        "beetham_sharpe": "Identity",
+        "cmmi": "Level 5 - Optimising",
+        "educause_3d": "Transform",
+        "hesa_data": "Predictive",
+        "digiready": "DR-A (90-100)",
+        "jisc_elevation": "Elevate",
+        "qub_adaptation": "Enhanced to Mature (Integrated) - upper"
+      }
+    }
+  ],
+  "competency_blocks": [
+    {
+      "id": "block-1-1",
+      "aspect_id": "bdc-proficiency-productivity",
+      "level_id": "level-1",
+      "name": "Digital Proficiency and Productivity at Approaching and Understanding",
+      "description": "What digital proficiency and productivity looks like for researcher roles at AI maturity level 1: Approaching and Understanding.",
+      "curricular_goals": [
+        "Understand what AI is and how it relates to existing digital tools and services",
+        "Recognise where AI features are already present in everyday tools"
+      ],
+      "learning_objectives": [
+        "Identify AI-powered features in tools they already use",
+        "Describe the basic concept of generative AI",
+        "Access and use institutional platforms and services"
+      ],
+      "contextual_activities": [
+        "Try an AI assistant for a simple productivity task",
+        "Complete AI awareness module in Discovery Tool",
+        "Identify AI features in Microsoft 365 or Google Workspace"
+      ],
+      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Researcher-specific capability statements extracted from https://repository.jisc.ac.uk/8862/13/2025_RESEARCHER_PROFILE_ENG_FINAL.pdf. Distinguishes researcher-level and organisational-level capabilities for each element. Digital Research & Problem Solving emphasised. Open research, data management, and international collaboration prominent. Maps to Vitae RDF descriptors.",
+      "source_terminology": {
+        "original_level": "Developing (early)",
+        "mapping_band": "lower",
+        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 1."
+      }
+    },
+    {
+      "id": "block-1-2",
+      "aspect_id": "bdc-proficiency-productivity",
+      "level_id": "level-2",
+      "name": "Digital Proficiency and Productivity at Experimenting and Exploring",
+      "description": "What digital proficiency and productivity looks like for researcher roles at AI maturity level 2: Experimenting and Exploring.",
+      "curricular_goals": [
+        "Experiment with AI tools to enhance personal productivity",
+        "Develop habits for evaluating AI tool outputs"
+      ],
+      "learning_objectives": [
+        "Use AI assistants for drafting, summarising or organising content",
+        "Evaluate AI-generated outputs for accuracy and fitness for purpose",
+        "Configure AI tools to support personal workflow preferences"
+      ],
+      "contextual_activities": [
+        "Use Copilot to draft meeting notes or summarise documents",
+        "Compare AI-generated output with manual approach for a routine task",
+        "Explore AI features in specialist professional software"
+      ],
+      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Researcher-specific capability statements extracted from https://repository.jisc.ac.uk/8862/13/2025_RESEARCHER_PROFILE_ENG_FINAL.pdf. Distinguishes researcher-level and organisational-level capabilities for each element. Digital Research & Problem Solving emphasised. Open research, data management, and international collaboration prominent. Maps to Vitae RDF descriptors.",
+      "source_terminology": {
+        "original_level": "Developing (advanced)",
+        "mapping_band": "upper",
+        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 2."
+      }
+    },
+    {
+      "id": "block-1-3",
+      "aspect_id": "bdc-proficiency-productivity",
+      "level_id": "level-3",
+      "name": "Digital Proficiency and Productivity at Operational",
+      "description": "What digital proficiency and productivity looks like for researcher roles at AI maturity level 3: Operational.",
+      "curricular_goals": [
+        "Integrate AI tools systematically into professional workflows",
+        "Make informed decisions about when AI adds value and when it does not"
+      ],
+      "learning_objectives": [
+        "Select appropriate AI and non-AI tools for different professional tasks",
+        "Manage data privacy and security when using AI tools",
+        "Support colleagues in basic AI tool adoption"
+      ],
+      "contextual_activities": [
+        "Build an AI-augmented workflow for a recurring professional process",
+        "Conduct a personal AI tool audit identifying where AI helps and where it hinders",
+        "Deliver a peer demonstration of an effective AI workflow"
+      ],
+      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Researcher-specific capability statements extracted from https://repository.jisc.ac.uk/8862/13/2025_RESEARCHER_PROFILE_ENG_FINAL.pdf. Distinguishes researcher-level and organisational-level capabilities for each element. Digital Research & Problem Solving emphasised. Open research, data management, and international collaboration prominent. Maps to Vitae RDF descriptors.",
+      "source_terminology": {
+        "original_level": "Capable",
+        "mapping_band": "full",
+        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 3."
+      }
+    },
+    {
+      "id": "block-1-4",
+      "aspect_id": "bdc-proficiency-productivity",
+      "level_id": "level-4",
+      "name": "Digital Proficiency and Productivity at Embedded",
+      "description": "What digital proficiency and productivity looks like for researcher roles at AI maturity level 4: Embedded.",
+      "curricular_goals": [
+        "Lead AI-enhanced productivity practices across a team or department",
+        "Contribute to institutional AI tool evaluation and procurement"
+      ],
+      "learning_objectives": [
+        "Mentor colleagues in effective and responsible AI tool use",
+        "Evaluate AI tools against institutional criteria (ethics, accessibility, sustainability, data protection)",
+        "Design workflows that optimise AI-human collaboration"
+      ],
+      "contextual_activities": [
+        "Lead a team workshop on AI-enhanced productivity",
+        "Contribute to an institutional AI tool evaluation process",
+        "Develop documentation for an AI-augmented departmental process"
+      ],
+      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Researcher-specific capability statements extracted from https://repository.jisc.ac.uk/8862/13/2025_RESEARCHER_PROFILE_ENG_FINAL.pdf. Distinguishes researcher-level and organisational-level capabilities for each element. Digital Research & Problem Solving emphasised. Open research, data management, and international collaboration prominent. Maps to Vitae RDF descriptors.",
+      "source_terminology": {
+        "original_level": "Proficient (developing)",
+        "mapping_band": "lower",
+        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 4."
+      }
+    },
+    {
+      "id": "block-1-5",
+      "aspect_id": "bdc-proficiency-productivity",
+      "level_id": "level-5",
+      "name": "Digital Proficiency and Productivity at Optimised/Transformed",
+      "description": "What digital proficiency and productivity looks like for researcher roles at AI maturity level 5: Optimised/Transformed.",
+      "curricular_goals": [
+        "Shape institutional and sector approaches to AI-enhanced productivity",
+        "Innovate new AI-enabled workflows and processes"
+      ],
+      "learning_objectives": [
+        "Design strategic approaches to AI adoption that balance innovation with responsibility",
+        "Contribute to sector guidance on AI tool use",
+        "Champion accessible, inclusive and sustainable AI practices"
+      ],
+      "contextual_activities": [
+        "Publish a case study on AI-enhanced professional practice",
+        "Contribute to sector working group on AI in professional practice",
+        "Lead institutional pilot of emerging AI tool with full evaluation framework"
+      ],
+      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Researcher-specific capability statements extracted from https://repository.jisc.ac.uk/8862/13/2025_RESEARCHER_PROFILE_ENG_FINAL.pdf. Distinguishes researcher-level and organisational-level capabilities for each element. Digital Research & Problem Solving emphasised. Open research, data management, and international collaboration prominent. Maps to Vitae RDF descriptors.",
+      "source_terminology": {
+        "original_level": "Proficient (mature)",
+        "mapping_band": "upper",
+        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 5."
+      }
+    },
+    {
+      "id": "block-2-1",
+      "aspect_id": "bdc-creation-innovation",
+      "level_id": "level-1",
+      "name": "Digital Creation, Problem-Solving and Innovation at Approaching and Understanding",
+      "description": "What digital creation, problem-solving and innovation looks like for researcher roles at AI maturity level 1: Approaching and Understanding.",
+      "curricular_goals": [
+        "Understand how AI can generate and assist with content creation",
+        "Recognise the role of AI in evidence gathering and problem-solving"
+      ],
+      "learning_objectives": [
+        "Describe what AI-generated content is and how it is produced",
+        "Identify examples of AI use in research and problem-solving",
+        "Understand that AI outputs require human evaluation"
+      ],
+      "contextual_activities": [
+        "Examine examples of AI-generated text, images or code",
+        "Discuss the concept of AI hallucination and its implications",
+        "Review an example of AI-assisted data analysis"
+      ],
+      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Researcher-specific capability statements extracted from https://repository.jisc.ac.uk/8862/13/2025_RESEARCHER_PROFILE_ENG_FINAL.pdf. Distinguishes researcher-level and organisational-level capabilities for each element. Digital Research & Problem Solving emphasised. Open research, data management, and international collaboration prominent. Maps to Vitae RDF descriptors.",
+      "source_terminology": {
+        "original_level": "Developing (early)",
+        "mapping_band": "lower",
+        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 1."
+      }
+    },
+    {
+      "id": "block-2-2",
+      "aspect_id": "bdc-creation-innovation",
+      "level_id": "level-2",
+      "name": "Digital Creation, Problem-Solving and Innovation at Experimenting and Exploring",
+      "description": "What digital creation, problem-solving and innovation looks like for researcher roles at AI maturity level 2: Experimenting and Exploring.",
+      "curricular_goals": [
+        "Experiment with AI for content creation, editing and problem-solving",
+        "Develop skills in evaluating AI-generated content and evidence"
+      ],
+      "learning_objectives": [
+        "Use AI to draft, edit or enhance digital content",
+        "Apply AI tools to gather or analyse evidence for a professional task",
+        "Assess the quality and reliability of AI-generated outputs"
+      ],
+      "contextual_activities": [
+        "Use generative AI to create a first draft then critically edit it",
+        "Apply an AI tool to analyse a dataset or synthesise information",
+        "Pilot an AI approach to a professional challenge and evaluate results"
+      ],
+      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Researcher-specific capability statements extracted from https://repository.jisc.ac.uk/8862/13/2025_RESEARCHER_PROFILE_ENG_FINAL.pdf. Distinguishes researcher-level and organisational-level capabilities for each element. Digital Research & Problem Solving emphasised. Open research, data management, and international collaboration prominent. Maps to Vitae RDF descriptors.",
+      "source_terminology": {
+        "original_level": "Developing (advanced)",
+        "mapping_band": "upper",
+        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 2."
+      }
+    },
+    {
+      "id": "block-2-3",
+      "aspect_id": "bdc-creation-innovation",
+      "level_id": "level-3",
+      "name": "Digital Creation, Problem-Solving and Innovation at Operational",
+      "description": "What digital creation, problem-solving and innovation looks like for researcher roles at AI maturity level 3: Operational.",
+      "curricular_goals": [
+        "Produce professional content using AI where appropriate with critical oversight",
+        "Apply AI-enhanced methods to research and problem-solving systematically"
+      ],
+      "learning_objectives": [
+        "Create high-quality outputs using AI as part of an established workflow",
+        "Use AI to identify patterns, generate hypotheses or test solutions",
+        "Evaluate AI applications and share findings with colleagues"
+      ],
+      "contextual_activities": [
+        "Integrate AI into a content production pipeline with quality controls",
+        "Use AI-assisted analysis to inform a professional decision",
+        "Present findings on an AI application to a team or working group"
+      ],
+      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Researcher-specific capability statements extracted from https://repository.jisc.ac.uk/8862/13/2025_RESEARCHER_PROFILE_ENG_FINAL.pdf. Distinguishes researcher-level and organisational-level capabilities for each element. Digital Research & Problem Solving emphasised. Open research, data management, and international collaboration prominent. Maps to Vitae RDF descriptors.",
+      "source_terminology": {
+        "original_level": "Capable",
+        "mapping_band": "full",
+        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 3."
+      }
+    },
+    {
+      "id": "block-2-4",
+      "aspect_id": "bdc-creation-innovation",
+      "level_id": "level-4",
+      "name": "Digital Creation, Problem-Solving and Innovation at Embedded",
+      "description": "What digital creation, problem-solving and innovation looks like for researcher roles at AI maturity level 4: Embedded.",
+      "curricular_goals": [
+        "Lead creative approaches to AI-enhanced content and research",
+        "Drive evidence-based evaluation of AI innovation in professional practice"
+      ],
+      "learning_objectives": [
+        "Model creative approaches to AI-augmented content and problem-solving",
+        "Lead evaluation of AI applications and contribute to institutional knowledge",
+        "Generate new projects and ideas leveraging AI capabilities"
+      ],
+      "contextual_activities": [
+        "Lead an AI innovation project within the department",
+        "Develop an evaluation framework for AI use in professional practice",
+        "Act as an AI champion driving innovation and sharing practice"
+      ],
+      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Researcher-specific capability statements extracted from https://repository.jisc.ac.uk/8862/13/2025_RESEARCHER_PROFILE_ENG_FINAL.pdf. Distinguishes researcher-level and organisational-level capabilities for each element. Digital Research & Problem Solving emphasised. Open research, data management, and international collaboration prominent. Maps to Vitae RDF descriptors.",
+      "source_terminology": {
+        "original_level": "Proficient (developing)",
+        "mapping_band": "lower",
+        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 4."
+      }
+    },
+    {
+      "id": "block-2-5",
+      "aspect_id": "bdc-creation-innovation",
+      "level_id": "level-5",
+      "name": "Digital Creation, Problem-Solving and Innovation at Optimised/Transformed",
+      "description": "What digital creation, problem-solving and innovation looks like for researcher roles at AI maturity level 5: Optimised/Transformed.",
+      "curricular_goals": [
+        "Shape sector understanding of AI-enabled creation and research",
+        "Develop novel AI applications for professional domains"
+      ],
+      "learning_objectives": [
+        "Contribute to sector discourse on AI in professional creation and research",
+        "Innovate transformative AI approaches that others adopt",
+        "Advocate for open, accessible and inclusive AI innovation"
+      ],
+      "contextual_activities": [
+        "Publish research or guidance on AI-enhanced professional practice",
+        "Develop a novel AI application adopted by others in the sector",
+        "Lead a cross-institutional AI innovation initiative"
+      ],
+      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Researcher-specific capability statements extracted from https://repository.jisc.ac.uk/8862/13/2025_RESEARCHER_PROFILE_ENG_FINAL.pdf. Distinguishes researcher-level and organisational-level capabilities for each element. Digital Research & Problem Solving emphasised. Open research, data management, and international collaboration prominent. Maps to Vitae RDF descriptors.",
+      "source_terminology": {
+        "original_level": "Proficient (mature)",
+        "mapping_band": "upper",
+        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 5."
+      }
+    },
+    {
+      "id": "block-3-1",
+      "aspect_id": "bdc-learning-development",
+      "level_id": "level-1",
+      "name": "Digital Learning and Development at Approaching and Understanding",
+      "description": "What digital learning and development looks like for researcher roles at AI maturity level 1: Approaching and Understanding.",
+      "curricular_goals": [
+        "Understand how AI is changing learning and professional development",
+        "Recognise AI's potential impact on teaching and learning"
+      ],
+      "learning_objectives": [
+        "Describe how AI tools might support personal learning and CPD",
+        "Identify examples of AI in educational contexts",
+        "Reflect on personal AI learning needs"
+      ],
+      "contextual_activities": [
+        "Complete an introductory AI literacy module",
+        "Explore an AI-powered learning platform",
+        "Discuss AI's impact on professional practice with peers"
+      ],
+      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Researcher-specific capability statements extracted from https://repository.jisc.ac.uk/8862/13/2025_RESEARCHER_PROFILE_ENG_FINAL.pdf. Distinguishes researcher-level and organisational-level capabilities for each element. Digital Research & Problem Solving emphasised. Open research, data management, and international collaboration prominent. Maps to Vitae RDF descriptors.",
+      "source_terminology": {
+        "original_level": "Developing (early)",
+        "mapping_band": "lower",
+        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 1."
+      }
+    },
+    {
+      "id": "block-3-2",
+      "aspect_id": "bdc-learning-development",
+      "level_id": "level-2",
+      "name": "Digital Learning and Development at Experimenting and Exploring",
+      "description": "What digital learning and development looks like for researcher roles at AI maturity level 2: Experimenting and Exploring.",
+      "curricular_goals": [
+        "Explore AI-enhanced learning experiences and teaching approaches",
+        "Experiment with AI tools in learning, teaching or CPD contexts"
+      ],
+      "learning_objectives": [
+        "Use AI tools to support personal learning or professional development",
+        "Pilot AI tools in a teaching or learning support context",
+        "Reflect on how AI changes learning and teaching practices"
+      ],
+      "contextual_activities": [
+        "Use AI to create a personalised learning plan",
+        "Pilot an AI tool in one teaching session and gather feedback",
+        "Participate in an AI-focused CPD workshop or community event"
+      ],
+      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Researcher-specific capability statements extracted from https://repository.jisc.ac.uk/8862/13/2025_RESEARCHER_PROFILE_ENG_FINAL.pdf. Distinguishes researcher-level and organisational-level capabilities for each element. Digital Research & Problem Solving emphasised. Open research, data management, and international collaboration prominent. Maps to Vitae RDF descriptors.",
+      "source_terminology": {
+        "original_level": "Developing (advanced)",
+        "mapping_band": "upper",
+        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 2."
+      }
+    },
+    {
+      "id": "block-3-3",
+      "aspect_id": "bdc-learning-development",
+      "level_id": "level-3",
+      "name": "Digital Learning and Development at Operational",
+      "description": "What digital learning and development looks like for researcher roles at AI maturity level 3: Operational.",
+      "curricular_goals": [
+        "Integrate AI tools routinely into learning, teaching and development",
+        "Design learning experiences that build AI literacy"
+      ],
+      "learning_objectives": [
+        "Design learning activities that integrate AI tools where pedagogically appropriate",
+        "Support learners in developing AI literacy as part of their programme",
+        "Apply AI-informed approaches to assessment and feedback"
+      ],
+      "contextual_activities": [
+        "Redesign a module activity to integrate AI tools with clear learning outcomes",
+        "Develop AI literacy guidance for students in your discipline",
+        "Use AI-assisted feedback on student work with human review"
+      ],
+      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Researcher-specific capability statements extracted from https://repository.jisc.ac.uk/8862/13/2025_RESEARCHER_PROFILE_ENG_FINAL.pdf. Distinguishes researcher-level and organisational-level capabilities for each element. Digital Research & Problem Solving emphasised. Open research, data management, and international collaboration prominent. Maps to Vitae RDF descriptors.",
+      "source_terminology": {
+        "original_level": "Capable",
+        "mapping_band": "full",
+        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 3."
+      }
+    },
+    {
+      "id": "block-3-4",
+      "aspect_id": "bdc-learning-development",
+      "level_id": "level-4",
+      "name": "Digital Learning and Development at Embedded",
+      "description": "What digital learning and development looks like for researcher roles at AI maturity level 4: Embedded.",
+      "curricular_goals": [
+        "Lead development of AI-enhanced pedagogies and curriculum",
+        "Mentor colleagues in AI-enhanced teaching and learning practices"
+      ],
+      "learning_objectives": [
+        "Design curriculum that embeds AI literacy outcomes",
+        "Lead CPD sessions on AI in learning and teaching",
+        "Use learning analytics and AI to personalise and improve learning"
+      ],
+      "contextual_activities": [
+        "Lead a curriculum review embedding AI literacy across a programme",
+        "Deliver a staff development programme on AI-enhanced pedagogy",
+        "Implement AI-driven personalised learning pathways for students"
+      ],
+      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Researcher-specific capability statements extracted from https://repository.jisc.ac.uk/8862/13/2025_RESEARCHER_PROFILE_ENG_FINAL.pdf. Distinguishes researcher-level and organisational-level capabilities for each element. Digital Research & Problem Solving emphasised. Open research, data management, and international collaboration prominent. Maps to Vitae RDF descriptors.",
+      "source_terminology": {
+        "original_level": "Proficient (developing)",
+        "mapping_band": "lower",
+        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 4."
+      }
+    },
+    {
+      "id": "block-3-5",
+      "aspect_id": "bdc-learning-development",
+      "level_id": "level-5",
+      "name": "Digital Learning and Development at Optimised/Transformed",
+      "description": "What digital learning and development looks like for researcher roles at AI maturity level 5: Optimised/Transformed.",
+      "curricular_goals": [
+        "Shape sector approaches to AI in learning and teaching",
+        "Innovate transformative AI-enabled learning experiences"
+      ],
+      "learning_objectives": [
+        "Lead research and scholarship on AI in education",
+        "Develop AI-enhanced learning approaches adopted across the sector",
+        "Champion equitable and inclusive AI-enhanced learning"
+      ],
+      "contextual_activities": [
+        "Publish on AI-enhanced pedagogy in a peer-reviewed outlet",
+        "Lead a national or international project on AI in education",
+        "Develop an open educational resource on AI literacy adopted by multiple institutions"
+      ],
+      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Researcher-specific capability statements extracted from https://repository.jisc.ac.uk/8862/13/2025_RESEARCHER_PROFILE_ENG_FINAL.pdf. Distinguishes researcher-level and organisational-level capabilities for each element. Digital Research & Problem Solving emphasised. Open research, data management, and international collaboration prominent. Maps to Vitae RDF descriptors.",
+      "source_terminology": {
+        "original_level": "Proficient (mature)",
+        "mapping_band": "upper",
+        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 5."
+      }
+    },
+    {
+      "id": "block-4-1",
+      "aspect_id": "bdc-literacies",
+      "level_id": "level-1",
+      "name": "Information, Data and Media Literacies at Approaching and Understanding",
+      "description": "What information, data and media literacies looks like for researcher roles at AI maturity level 1: Approaching and Understanding.",
+      "curricular_goals": [
+        "Understand that AI can generate information, data and media content",
+        "Recognise the need to evaluate AI outputs critically"
+      ],
+      "learning_objectives": [
+        "Describe how AI generates text, images and data",
+        "Identify the risk of AI hallucination and misinformation",
+        "Understand basic concepts of data quality and bias"
+      ],
+      "contextual_activities": [
+        "Examine examples of AI-generated vs human-generated content",
+        "Discuss deepfakes and AI-generated media in a group setting",
+        "Review a dataset for basic quality issues"
+      ],
+      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Researcher-specific capability statements extracted from https://repository.jisc.ac.uk/8862/13/2025_RESEARCHER_PROFILE_ENG_FINAL.pdf. Distinguishes researcher-level and organisational-level capabilities for each element. Digital Research & Problem Solving emphasised. Open research, data management, and international collaboration prominent. Maps to Vitae RDF descriptors.",
+      "source_terminology": {
+        "original_level": "Developing (early)",
+        "mapping_band": "lower",
+        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 1."
+      }
+    },
+    {
+      "id": "block-4-2",
+      "aspect_id": "bdc-literacies",
+      "level_id": "level-2",
+      "name": "Information, Data and Media Literacies at Experimenting and Exploring",
+      "description": "What information, data and media literacies looks like for researcher roles at AI maturity level 2: Experimenting and Exploring.",
+      "curricular_goals": [
+        "Experiment with AI tools for information discovery, data analysis and media creation",
+        "Develop skills in critical evaluation of AI-generated content"
+      ],
+      "learning_objectives": [
+        "Use AI tools to search, filter and synthesise information",
+        "Apply AI tools to explore or visualise data",
+        "Evaluate AI-generated media content for accuracy and bias"
+      ],
+      "contextual_activities": [
+        "Use an AI research assistant to synthesise literature on a topic",
+        "Explore a dataset using AI-assisted analysis tools",
+        "Fact-check AI-generated content using established verification methods"
+      ],
+      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Researcher-specific capability statements extracted from https://repository.jisc.ac.uk/8862/13/2025_RESEARCHER_PROFILE_ENG_FINAL.pdf. Distinguishes researcher-level and organisational-level capabilities for each element. Digital Research & Problem Solving emphasised. Open research, data management, and international collaboration prominent. Maps to Vitae RDF descriptors.",
+      "source_terminology": {
+        "original_level": "Developing (advanced)",
+        "mapping_band": "upper",
+        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 2."
+      }
+    },
+    {
+      "id": "block-4-3",
+      "aspect_id": "bdc-literacies",
+      "level_id": "level-3",
+      "name": "Information, Data and Media Literacies at Operational",
+      "description": "What information, data and media literacies looks like for researcher roles at AI maturity level 3: Operational.",
+      "curricular_goals": [
+        "Apply AI tools confidently for information management, data analysis and media production",
+        "Teach or support others in AI-related information and data literacy"
+      ],
+      "learning_objectives": [
+        "Integrate AI into information management workflows with quality controls",
+        "Apply data literacy skills to evaluate AI training data and outputs",
+        "Guide others in critical evaluation of AI-generated information and media"
+      ],
+      "contextual_activities": [
+        "Build an AI-augmented literature review or evidence synthesis workflow",
+        "Evaluate an AI system's data sources and potential biases",
+        "Deliver training on evaluating AI-generated content"
+      ],
+      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Researcher-specific capability statements extracted from https://repository.jisc.ac.uk/8862/13/2025_RESEARCHER_PROFILE_ENG_FINAL.pdf. Distinguishes researcher-level and organisational-level capabilities for each element. Digital Research & Problem Solving emphasised. Open research, data management, and international collaboration prominent. Maps to Vitae RDF descriptors.",
+      "source_terminology": {
+        "original_level": "Capable",
+        "mapping_band": "full",
+        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 3."
+      }
+    },
+    {
+      "id": "block-4-4",
+      "aspect_id": "bdc-literacies",
+      "level_id": "level-4",
+      "name": "Information, Data and Media Literacies at Embedded",
+      "description": "What information, data and media literacies looks like for researcher roles at AI maturity level 4: Embedded.",
+      "curricular_goals": [
+        "Lead data governance and AI ethics practices in information and media contexts",
+        "Design frameworks for evaluating AI-generated information"
+      ],
+      "learning_objectives": [
+        "Contribute to institutional data governance policy in AI contexts",
+        "Develop training or resources on AI, data and media literacies",
+        "Champion data-driven and AI-informed decision making"
+      ],
+      "contextual_activities": [
+        "Develop an institutional guide on evaluating AI-generated research outputs",
+        "Lead a data literacy programme that addresses AI-specific challenges",
+        "Contribute to a data governance review for AI deployment"
+      ],
+      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Researcher-specific capability statements extracted from https://repository.jisc.ac.uk/8862/13/2025_RESEARCHER_PROFILE_ENG_FINAL.pdf. Distinguishes researcher-level and organisational-level capabilities for each element. Digital Research & Problem Solving emphasised. Open research, data management, and international collaboration prominent. Maps to Vitae RDF descriptors.",
+      "source_terminology": {
+        "original_level": "Proficient (developing)",
+        "mapping_band": "lower",
+        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 4."
+      }
+    },
+    {
+      "id": "block-4-5",
+      "aspect_id": "bdc-literacies",
+      "level_id": "level-5",
+      "name": "Information, Data and Media Literacies at Optimised/Transformed",
+      "description": "What information, data and media literacies looks like for researcher roles at AI maturity level 5: Optimised/Transformed.",
+      "curricular_goals": [
+        "Shape sector approaches to information, data and media literacy in the AI era",
+        "Lead research on AI's impact on information ecosystems"
+      ],
+      "learning_objectives": [
+        "Contribute to sector frameworks for AI-era information and data literacy",
+        "Innovate new approaches to AI-augmented data analysis and media evaluation",
+        "Drive policy on responsible AI data use and algorithmic transparency"
+      ],
+      "contextual_activities": [
+        "Lead a sector working group on AI and information literacy",
+        "Publish research on AI's impact on data practices or media literacy",
+        "Develop open resources on AI-era critical literacy adopted across institutions"
+      ],
+      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Researcher-specific capability statements extracted from https://repository.jisc.ac.uk/8862/13/2025_RESEARCHER_PROFILE_ENG_FINAL.pdf. Distinguishes researcher-level and organisational-level capabilities for each element. Digital Research & Problem Solving emphasised. Open research, data management, and international collaboration prominent. Maps to Vitae RDF descriptors.",
+      "source_terminology": {
+        "original_level": "Proficient (mature)",
+        "mapping_band": "upper",
+        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 5."
+      }
+    },
+    {
+      "id": "block-5-1",
+      "aspect_id": "bdc-communication-collaboration",
+      "level_id": "level-1",
+      "name": "Digital Communication, Collaboration and Participation at Approaching and Understanding",
+      "description": "What digital communication, collaboration and participation looks like for researcher roles at AI maturity level 1: Approaching and Understanding.",
+      "curricular_goals": [
+        "Understand how AI is changing digital communication and collaboration",
+        "Recognise AI-powered features in communication and collaboration tools"
+      ],
+      "learning_objectives": [
+        "Identify AI features in communication tools (e.g. smart compose, translation, transcription)",
+        "Describe how AI might enhance or complicate digital collaboration",
+        "Understand basic digital communication norms and accessibility needs"
+      ],
+      "contextual_activities": [
+        "Identify AI features in Teams, Zoom or email tools",
+        "Discuss how AI translation or transcription might help or hinder communication",
+        "Review accessibility features of AI-powered communication tools"
+      ],
+      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Researcher-specific capability statements extracted from https://repository.jisc.ac.uk/8862/13/2025_RESEARCHER_PROFILE_ENG_FINAL.pdf. Distinguishes researcher-level and organisational-level capabilities for each element. Digital Research & Problem Solving emphasised. Open research, data management, and international collaboration prominent. Maps to Vitae RDF descriptors.",
+      "source_terminology": {
+        "original_level": "Developing (early)",
+        "mapping_band": "lower",
+        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 1."
+      }
+    },
+    {
+      "id": "block-5-2",
+      "aspect_id": "bdc-communication-collaboration",
+      "level_id": "level-2",
+      "name": "Digital Communication, Collaboration and Participation at Experimenting and Exploring",
+      "description": "What digital communication, collaboration and participation looks like for researcher roles at AI maturity level 2: Experimenting and Exploring.",
+      "curricular_goals": [
+        "Experiment with AI-enhanced communication and collaboration tools",
+        "Explore AI's role in professional networking and community participation"
+      ],
+      "learning_objectives": [
+        "Use AI tools to enhance written or visual communications",
+        "Pilot AI-powered collaboration features (e.g. AI meeting summaries, co-authoring)",
+        "Participate in discussions about AI in professional communities"
+      ],
+      "contextual_activities": [
+        "Use AI to draft and refine a professional communication",
+        "Try AI meeting summarisation or transcription for a team meeting",
+        "Join an AI-focused professional community or discussion group"
+      ],
+      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Researcher-specific capability statements extracted from https://repository.jisc.ac.uk/8862/13/2025_RESEARCHER_PROFILE_ENG_FINAL.pdf. Distinguishes researcher-level and organisational-level capabilities for each element. Digital Research & Problem Solving emphasised. Open research, data management, and international collaboration prominent. Maps to Vitae RDF descriptors.",
+      "source_terminology": {
+        "original_level": "Developing (advanced)",
+        "mapping_band": "upper",
+        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 2."
+      }
+    },
+    {
+      "id": "block-5-3",
+      "aspect_id": "bdc-communication-collaboration",
+      "level_id": "level-3",
+      "name": "Digital Communication, Collaboration and Participation at Operational",
+      "description": "What digital communication, collaboration and participation looks like for researcher roles at AI maturity level 3: Operational.",
+      "curricular_goals": [
+        "Integrate AI tools into communication and collaboration workflows",
+        "Participate actively in communities focused on AI in professional practice"
+      ],
+      "learning_objectives": [
+        "Use AI to enhance communications for different audiences",
+        "Integrate AI tools into collaborative processes with agreed team protocols",
+        "Contribute to AI-related professional communities and discussions"
+      ],
+      "contextual_activities": [
+        "Develop team protocols for AI use in collaborative projects",
+        "Use AI to produce accessible communications across languages or formats",
+        "Present on AI-enhanced collaboration at a professional event"
+      ],
+      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Researcher-specific capability statements extracted from https://repository.jisc.ac.uk/8862/13/2025_RESEARCHER_PROFILE_ENG_FINAL.pdf. Distinguishes researcher-level and organisational-level capabilities for each element. Digital Research & Problem Solving emphasised. Open research, data management, and international collaboration prominent. Maps to Vitae RDF descriptors.",
+      "source_terminology": {
+        "original_level": "Capable",
+        "mapping_band": "full",
+        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 3."
+      }
+    },
+    {
+      "id": "block-5-4",
+      "aspect_id": "bdc-communication-collaboration",
+      "level_id": "level-4",
+      "name": "Digital Communication, Collaboration and Participation at Embedded",
+      "description": "What digital communication, collaboration and participation looks like for researcher roles at AI maturity level 4: Embedded.",
+      "curricular_goals": [
+        "Lead AI-enhanced communication and collaboration strategies",
+        "Build and facilitate AI-focused professional communities"
+      ],
+      "learning_objectives": [
+        "Design communication strategies that leverage AI effectively",
+        "Lead collaborative processes that use AI tools inclusively",
+        "Facilitate communities of practice focused on AI in professional domains"
+      ],
+      "contextual_activities": [
+        "Lead development of institutional guidelines for AI in communications",
+        "Facilitate a cross-departmental AI community of practice",
+        "Design an AI-enhanced collaborative project framework"
+      ],
+      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Researcher-specific capability statements extracted from https://repository.jisc.ac.uk/8862/13/2025_RESEARCHER_PROFILE_ENG_FINAL.pdf. Distinguishes researcher-level and organisational-level capabilities for each element. Digital Research & Problem Solving emphasised. Open research, data management, and international collaboration prominent. Maps to Vitae RDF descriptors.",
+      "source_terminology": {
+        "original_level": "Proficient (developing)",
+        "mapping_band": "lower",
+        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 4."
+      }
+    },
+    {
+      "id": "block-5-5",
+      "aspect_id": "bdc-communication-collaboration",
+      "level_id": "level-5",
+      "name": "Digital Communication, Collaboration and Participation at Optimised/Transformed",
+      "description": "What digital communication, collaboration and participation looks like for researcher roles at AI maturity level 5: Optimised/Transformed.",
+      "curricular_goals": [
+        "Shape sector practices for AI-enabled communication and collaboration",
+        "Innovate new models of AI-human collaborative practice"
+      ],
+      "learning_objectives": [
+        "Lead cross-institutional AI collaboration initiatives",
+        "Develop novel approaches to AI-human collaboration adopted by others",
+        "Drive policy on ethical AI use in professional communication"
+      ],
+      "contextual_activities": [
+        "Lead a sector collaboration project using AI-enhanced tools",
+        "Publish on AI-human collaboration models in education",
+        "Develop open guidance on inclusive AI-enabled collaboration"
+      ],
+      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Researcher-specific capability statements extracted from https://repository.jisc.ac.uk/8862/13/2025_RESEARCHER_PROFILE_ENG_FINAL.pdf. Distinguishes researcher-level and organisational-level capabilities for each element. Digital Research & Problem Solving emphasised. Open research, data management, and international collaboration prominent. Maps to Vitae RDF descriptors.",
+      "source_terminology": {
+        "original_level": "Proficient (mature)",
+        "mapping_band": "upper",
+        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 5."
+      }
+    },
+    {
+      "id": "block-6-1",
+      "aspect_id": "bdc-identity-wellbeing",
+      "level_id": "level-1",
+      "name": "Digital Identity and Wellbeing at Approaching and Understanding",
+      "description": "What digital identity and wellbeing looks like for researcher roles at AI maturity level 1: Approaching and Understanding.",
+      "curricular_goals": [
+        "Understand how AI affects digital identity, privacy and wellbeing",
+        "Recognise AI-related risks to personal data and digital footprint"
+      ],
+      "learning_objectives": [
+        "Describe how AI systems use personal data",
+        "Identify basic risks to privacy from AI tools",
+        "Understand the concept of AI's impact on work patterns and wellbeing"
+      ],
+      "contextual_activities": [
+        "Review privacy settings for AI-enabled tools",
+        "Discuss how AI might affect professional identity and reputation",
+        "Reflect on personal experience of AI's impact on workload and wellbeing"
+      ],
+      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Researcher-specific capability statements extracted from https://repository.jisc.ac.uk/8862/13/2025_RESEARCHER_PROFILE_ENG_FINAL.pdf. Distinguishes researcher-level and organisational-level capabilities for each element. Digital Research & Problem Solving emphasised. Open research, data management, and international collaboration prominent. Maps to Vitae RDF descriptors.",
+      "source_terminology": {
+        "original_level": "Developing (early)",
+        "mapping_band": "lower",
+        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 1."
+      }
+    },
+    {
+      "id": "block-6-2",
+      "aspect_id": "bdc-identity-wellbeing",
+      "level_id": "level-2",
+      "name": "Digital Identity and Wellbeing at Experimenting and Exploring",
+      "description": "What digital identity and wellbeing looks like for researcher roles at AI maturity level 2: Experimenting and Exploring.",
+      "curricular_goals": [
+        "Explore how AI tools affect professional digital identity",
+        "Develop strategies for maintaining wellbeing in AI-mediated environments"
+      ],
+      "learning_objectives": [
+        "Manage digital footprint considering AI data collection",
+        "Experiment with AI tools for professional profile management",
+        "Develop personal strategies for AI-era digital wellbeing"
+      ],
+      "contextual_activities": [
+        "Audit personal data shared with AI tools and services",
+        "Use AI to enhance professional profiles or portfolios",
+        "Develop a personal AI-wellbeing strategy addressing screen time, automation anxiety, and workload"
+      ],
+      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Researcher-specific capability statements extracted from https://repository.jisc.ac.uk/8862/13/2025_RESEARCHER_PROFILE_ENG_FINAL.pdf. Distinguishes researcher-level and organisational-level capabilities for each element. Digital Research & Problem Solving emphasised. Open research, data management, and international collaboration prominent. Maps to Vitae RDF descriptors.",
+      "source_terminology": {
+        "original_level": "Developing (advanced)",
+        "mapping_band": "upper",
+        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 2."
+      }
+    },
+    {
+      "id": "block-6-3",
+      "aspect_id": "bdc-identity-wellbeing",
+      "level_id": "level-3",
+      "name": "Digital Identity and Wellbeing at Operational",
+      "description": "What digital identity and wellbeing looks like for researcher roles at AI maturity level 3: Operational.",
+      "curricular_goals": [
+        "Manage digital identity effectively across AI-enhanced platforms",
+        "Implement AI-era digital wellbeing strategies consistently"
+      ],
+      "learning_objectives": [
+        "Curate a professional digital identity that reflects AI-enhanced capabilities",
+        "Model responsible AI use aligned with personal and organisational values",
+        "Support others in managing digital identity and wellbeing around AI"
+      ],
+      "contextual_activities": [
+        "Maintain a professional digital presence that demonstrates AI capability",
+        "Implement and model digital wellbeing practices for team members",
+        "Deliver wellbeing-focused guidance on working with AI tools"
+      ],
+      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Researcher-specific capability statements extracted from https://repository.jisc.ac.uk/8862/13/2025_RESEARCHER_PROFILE_ENG_FINAL.pdf. Distinguishes researcher-level and organisational-level capabilities for each element. Digital Research & Problem Solving emphasised. Open research, data management, and international collaboration prominent. Maps to Vitae RDF descriptors.",
+      "source_terminology": {
+        "original_level": "Capable",
+        "mapping_band": "full",
+        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 3."
+      }
+    },
+    {
+      "id": "block-6-4",
+      "aspect_id": "bdc-identity-wellbeing",
+      "level_id": "level-4",
+      "name": "Digital Identity and Wellbeing at Embedded",
+      "description": "What digital identity and wellbeing looks like for researcher roles at AI maturity level 4: Embedded.",
+      "curricular_goals": [
+        "Lead institutional digital wellbeing and identity initiatives in the AI context",
+        "Champion ethical AI practices that protect identity and personal data"
+      ],
+      "learning_objectives": [
+        "Contribute to institutional policy on AI, identity and data protection",
+        "Develop frameworks for AI-aware digital citizenship",
+        "Mentor others in professional identity management in AI contexts"
+      ],
+      "contextual_activities": [
+        "Lead development of institutional AI wellbeing guidance",
+        "Contribute to DPIA processes for AI tool deployments",
+        "Design a digital citizenship programme that addresses AI"
+      ],
+      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Researcher-specific capability statements extracted from https://repository.jisc.ac.uk/8862/13/2025_RESEARCHER_PROFILE_ENG_FINAL.pdf. Distinguishes researcher-level and organisational-level capabilities for each element. Digital Research & Problem Solving emphasised. Open research, data management, and international collaboration prominent. Maps to Vitae RDF descriptors.",
+      "source_terminology": {
+        "original_level": "Proficient (developing)",
+        "mapping_band": "lower",
+        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 4."
+      }
+    },
+    {
+      "id": "block-6-5",
+      "aspect_id": "bdc-identity-wellbeing",
+      "level_id": "level-5",
+      "name": "Digital Identity and Wellbeing at Optimised/Transformed",
+      "description": "What digital identity and wellbeing looks like for researcher roles at AI maturity level 5: Optimised/Transformed.",
+      "curricular_goals": [
+        "Shape sector policies on AI, identity and digital wellbeing",
+        "Innovate approaches to human-centred AI that prioritise wellbeing"
+      ],
+      "learning_objectives": [
+        "Lead sector discourse on AI's impact on professional identity and wellbeing",
+        "Develop innovative approaches to AI-human balance that others adopt",
+        "Champion institutional cultures that balance AI adoption with staff and student wellbeing"
+      ],
+      "contextual_activities": [
+        "Publish on AI wellbeing or digital identity in AI contexts",
+        "Lead a sector initiative on responsible AI and human flourishing",
+        "Develop open resources on AI-era wellbeing adopted across institutions"
+      ],
+      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Researcher-specific capability statements extracted from https://repository.jisc.ac.uk/8862/13/2025_RESEARCHER_PROFILE_ENG_FINAL.pdf. Distinguishes researcher-level and organisational-level capabilities for each element. Digital Research & Problem Solving emphasised. Open research, data management, and international collaboration prominent. Maps to Vitae RDF descriptors.",
+      "source_terminology": {
+        "original_level": "Proficient (mature)",
+        "mapping_band": "upper",
+        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 5."
+      }
+    }
+  ],
+  "metadata": {
+    "total_aspects": 6,
+    "total_sub_elements": 15,
+    "total_levels": 5,
+    "total_competency_blocks": 30,
+    "cross_cutting_themes": [
+      "AI literacy across all six elements",
+      "Accessibility, inclusion and equity",
+      "Environmental sustainability",
+      "Ethical and responsible use",
+      "Data literacy as foundation"
+    ],
+    "data_maturity_underpins": true,
+    "implementation_notes": "This file forks bdc-individual.json with role-specific content for BDC Researcher. Competency block curricular_goals, learning_objectives and contextual_activities should be replaced with role-specific content extracted from the profile PDF. The role_contextualisation_notes field in each block provides guidance on what to specialise. Generic BDC content is provided as a starting template.",
+    "generation_date": "2026-03-02",
+    "schema_version": "1.0.0"
+  }
+}

@@ -1,0 +1,415 @@
+{
+  "policy_types": [
+    {
+      "id": "ai-acceptable-use",
+      "name": "AI Acceptable Use Policy",
+      "description": "Defines permitted and prohibited uses of AI tools within the institution",
+      "target_audience": "All staff and students",
+      "typical_triggers": ["low_governance_score", "no_existing_ai_policy", "new_ai_tool_deployment"],
+      "estimated_pages": "8-12",
+      "sections": [
+        {
+          "id": "purpose-scope",
+          "title": "Purpose and Scope",
+          "required": true,
+          "content_sources": ["institution_metadata", "framework_description"],
+          "copilot_instruction": "Write a purpose statement explaining why this policy exists, what it covers, and who it applies to. Reference the institution's strategic context and the framework's overview."
+        },
+        {
+          "id": "definitions",
+          "title": "Definitions",
+          "required": true,
+          "content_sources": ["regulatory_context"],
+          "copilot_instruction": "Define key terms: artificial intelligence, generative AI, high-risk AI system, AI literacy. Use definitions from the regulatory context for the user's region."
+        },
+        {
+          "id": "permitted-uses",
+          "title": "Permitted Uses",
+          "required": true,
+          "content_sources": ["framework_blocks_current", "framework_blocks_target"],
+          "copilot_instruction": "List permitted uses of AI tools based on the framework competency blocks at the institution's current and target maturity levels. Be specific about which tools and contexts are approved."
+        },
+        {
+          "id": "prohibited-uses",
+          "title": "Prohibited Uses",
+          "required": true,
+          "content_sources": ["regulatory_context", "framework_ethics"],
+          "copilot_instruction": "List prohibited uses based on EU Art.5 prohibitions (if EU region) and framework ethics dimension indicators. Include emotion recognition bans in education contexts."
+        },
+        {
+          "id": "roles-responsibilities",
+          "title": "Roles and Responsibilities",
+          "required": true,
+          "content_sources": ["framework_governance"],
+          "copilot_instruction": "Define roles and responsibilities for AI governance based on framework governance indicators. Include senior leadership, IT, academic staff, and students."
+        },
+        {
+          "id": "data-protection",
+          "title": "Data Protection and Privacy",
+          "required": true,
+          "content_sources": ["regulatory_context"],
+          "copilot_instruction": "Address data protection requirements using GDPR/FERPA/UK GDPR provisions from the regulatory context. Cover consent, data minimisation, and student data."
+        },
+        {
+          "id": "academic-integrity",
+          "title": "Academic Integrity",
+          "required": true,
+          "content_sources": ["framework_assessment"],
+          "copilot_instruction": "Address AI use in assessments. Define expectations for disclosure, attribution, and what constitutes academic misconduct involving AI."
+        },
+        {
+          "id": "monitoring-review",
+          "title": "Monitoring and Review",
+          "required": true,
+          "content_sources": ["framework_governance", "regulatory_context"],
+          "copilot_instruction": "Define monitoring mechanisms and review schedules. Reference EU Art.26 deployer obligations if applicable."
+        },
+        {
+          "id": "training-requirements",
+          "title": "Training Requirements",
+          "required": true,
+          "content_sources": ["regulatory_context", "framework_individual"],
+          "copilot_instruction": "Define AI literacy training requirements based on EU Art.4 obligations and the institution's individual framework learning objectives."
+        },
+        {
+          "id": "review-schedule",
+          "title": "Review Schedule",
+          "required": false,
+          "content_sources": [],
+          "copilot_instruction": "Recommend an annual review schedule with triggers for interim review (e.g., significant regulatory change, major AI incident)."
+        }
+      ],
+      "regulatory_provisions": {
+        "eu": ["eu-art-4", "eu-art-5", "eu-annex-iii-s3", "eu-art-26", "eu-art-50"],
+        "uk": ["uk-dfe-genai", "uk-dfe-safety", "uk-gdpr"],
+        "us": ["us-ferpa", "us-ai-bill-of-rights"],
+        "international": ["unesco-ethics-ai", "unesco-beijing-consensus"]
+      }
+    },
+    {
+      "id": "ai-governance",
+      "name": "AI Governance Policy",
+      "description": "Establishes strategic AI governance structures, risk management, and accountability frameworks",
+      "target_audience": "Senior leadership, governance boards, IT directors",
+      "typical_triggers": ["low_governance_score", "low_strategy_score", "institutional_ai_expansion"],
+      "estimated_pages": "10-15",
+      "sections": [
+        {
+          "id": "governance-structure",
+          "title": "Governance Structure and Accountability",
+          "required": true,
+          "content_sources": ["framework_governance", "framework_strategy"],
+          "copilot_instruction": "Define the AI governance structure including committees, roles, and reporting lines. Reference UNESCO Policy dimensions 1 and 3, and institutional framework governance blocks."
+        },
+        {
+          "id": "risk-classification",
+          "title": "AI Risk Classification Process",
+          "required": true,
+          "content_sources": ["regulatory_context", "framework_risk"],
+          "copilot_instruction": "Define how the institution classifies AI systems by risk level. Reference EU Annex III mapping and institutional framework risk indicators."
+        },
+        {
+          "id": "procurement-validation",
+          "title": "Procurement and Validation of AI Tools",
+          "required": true,
+          "content_sources": ["framework_operations", "regulatory_context"],
+          "copilot_instruction": "Define procurement criteria for AI tools including safety standards, accessibility, and pedagogical value. Reference DfE product safety standards (UK) if applicable."
+        },
+        {
+          "id": "human-oversight",
+          "title": "Human Oversight Requirements",
+          "required": true,
+          "content_sources": ["regulatory_context", "framework_governance"],
+          "copilot_instruction": "Define human oversight requirements for AI systems. Reference EU Art.14 and framework oversight indicators."
+        },
+        {
+          "id": "incident-reporting",
+          "title": "Incident Reporting and Response",
+          "required": true,
+          "content_sources": ["regulatory_context"],
+          "copilot_instruction": "Define incident reporting procedures for AI-related issues. Reference EU Art.26 deployer obligations."
+        },
+        {
+          "id": "rights-impact",
+          "title": "Fundamental Rights Impact Assessment",
+          "required": false,
+          "content_sources": ["regulatory_context"],
+          "copilot_instruction": "Define when and how to conduct fundamental rights impact assessments for AI deployments. Reference EU Art.27 requirements for public institutions."
+        },
+        {
+          "id": "literacy-programme",
+          "title": "Staff AI Literacy Programme",
+          "required": true,
+          "content_sources": ["regulatory_context", "framework_individual"],
+          "copilot_instruction": "Define the AI literacy programme based on EU Art.4 requirements and the institution's individual framework competency targets."
+        },
+        {
+          "id": "monitoring-evaluation",
+          "title": "Monitoring, Evaluation and Continuous Improvement",
+          "required": true,
+          "content_sources": ["framework_monitoring"],
+          "copilot_instruction": "Define monitoring and evaluation frameworks. Reference UNESCO Policy dimension 6 and framework monitoring indicators."
+        }
+      ],
+      "regulatory_provisions": {
+        "eu": ["eu-art-4", "eu-art-14", "eu-art-26", "eu-art-27"],
+        "uk": ["uk-dfe-genai", "uk-dfe-safety"],
+        "us": ["us-ai-bill-of-rights"],
+        "international": ["unesco-ethics-ai", "unesco-beijing-consensus"]
+      }
+    },
+    {
+      "id": "ai-assessment-integrity",
+      "name": "AI Assessment Integrity Policy",
+      "description": "Governs the use of AI in educational assessment, including academic integrity and AI-assisted marking",
+      "target_audience": "Academic staff, quality assurance teams, students",
+      "typical_triggers": ["low_assessment_score", "low_pedagogy_score", "ai_assessment_incidents"],
+      "estimated_pages": "6-10",
+      "sections": [
+        {
+          "id": "principles",
+          "title": "Principles for AI in Assessment",
+          "required": true,
+          "content_sources": ["framework_assessment"],
+          "copilot_instruction": "Establish core principles for AI use in assessment including fairness, transparency, and maintaining academic standards."
+        },
+        {
+          "id": "classification",
+          "title": "Classification of AI Use in Assessment",
+          "required": true,
+          "content_sources": ["regulatory_context", "framework_assessment"],
+          "copilot_instruction": "Define categories of AI use in assessment (formative vs summative, permitted vs restricted). Reference EU Annex III 3(b) classification."
+        },
+        {
+          "id": "student-expectations",
+          "title": "Student Expectations and Disclosure",
+          "required": true,
+          "content_sources": ["framework_ethics", "regulatory_context"],
+          "copilot_instruction": "Define student obligations for AI disclosure and attribution. Reference EU Art.50 transparency requirements."
+        },
+        {
+          "id": "detection-response",
+          "title": "Detection and Response to AI Misuse",
+          "required": true,
+          "content_sources": ["framework_integrity"],
+          "copilot_instruction": "Define how AI misuse in assessment will be detected and handled. Include graduated response procedures."
+        },
+        {
+          "id": "ai-marking",
+          "title": "AI-Assisted Marking and Feedback Guidelines",
+          "required": false,
+          "content_sources": ["framework_assessment", "regulatory_context"],
+          "copilot_instruction": "Define guidelines for using AI in marking and feedback. Reference DfE guidance (UK) and framework assessment blocks."
+        },
+        {
+          "id": "proctoring",
+          "title": "Exam Proctoring Policy",
+          "required": false,
+          "content_sources": ["regulatory_context", "framework_ethics"],
+          "copilot_instruction": "Address AI-based proctoring with reference to EU Art.5 emotion recognition ban and Annex III 3(d)."
+        },
+        {
+          "id": "appeals",
+          "title": "Appeals Process",
+          "required": true,
+          "content_sources": ["framework_governance"],
+          "copilot_instruction": "Define appeals procedures for AI-related assessment decisions."
+        }
+      ],
+      "regulatory_provisions": {
+        "eu": ["eu-annex-iii-s3", "eu-art-5", "eu-art-50"],
+        "uk": ["uk-dfe-genai"],
+        "us": ["us-ferpa"],
+        "international": ["unesco-ethics-ai"]
+      }
+    },
+    {
+      "id": "staff-ai-development",
+      "name": "Staff AI Development Policy",
+      "description": "Defines AI literacy requirements, training programmes, and professional development pathways for staff",
+      "target_audience": "HR, professional development teams, all staff",
+      "typical_triggers": ["low_workforce_score", "low_cpd_score", "eu_art4_compliance"],
+      "estimated_pages": "6-10",
+      "sections": [
+        {
+          "id": "literacy-requirements",
+          "title": "AI Literacy Requirements and Timeline",
+          "required": true,
+          "content_sources": ["regulatory_context", "framework_individual"],
+          "copilot_instruction": "Define mandatory AI literacy requirements with implementation timeline. Reference EU Art.4 obligations and the individual framework's progression levels."
+        },
+        {
+          "id": "competency-alignment",
+          "title": "Competency Framework Alignment",
+          "required": true,
+          "content_sources": ["framework_individual"],
+          "copilot_instruction": "Map training requirements to the user's selected individual competency framework (e.g., UNESCO Teacher, BDC, DigComp)."
+        },
+        {
+          "id": "training-structure",
+          "title": "Training Programme Structure",
+          "required": true,
+          "content_sources": ["framework_individual"],
+          "copilot_instruction": "Design a training programme structure mapped to framework learning objectives and progression levels."
+        },
+        {
+          "id": "role-pathways",
+          "title": "Role-Specific Pathways",
+          "required": false,
+          "content_sources": ["framework_individual"],
+          "copilot_instruction": "Define role-specific development pathways using framework role-specific content (e.g., BDC profiles, ISTE audience variants)."
+        },
+        {
+          "id": "recognition",
+          "title": "Recognition and Certification",
+          "required": false,
+          "content_sources": ["framework_individual"],
+          "copilot_instruction": "Define how progression through the framework levels translates to recognition and certification milestones."
+        },
+        {
+          "id": "ongoing-cpd",
+          "title": "Ongoing CPD and Review",
+          "required": true,
+          "content_sources": ["framework_individual"],
+          "copilot_instruction": "Define ongoing CPD expectations with the framework's highest-level descriptors as long-term targets."
+        }
+      ],
+      "regulatory_provisions": {
+        "eu": ["eu-art-4"],
+        "uk": ["uk-dfe-genai"],
+        "us": [],
+        "international": ["unesco-ethics-ai"]
+      }
+    },
+    {
+      "id": "ai-data-governance",
+      "name": "AI Data Governance Policy",
+      "description": "Governs data processing, protection, and privacy in AI systems used by the institution",
+      "target_audience": "Data protection officers, IT teams, senior leadership",
+      "typical_triggers": ["low_data_score", "low_infrastructure_score", "new_ai_data_processing"],
+      "estimated_pages": "8-12",
+      "sections": [
+        {
+          "id": "data-classification",
+          "title": "Data Classification and Sensitivity",
+          "required": true,
+          "content_sources": ["regulatory_context"],
+          "copilot_instruction": "Define data classification categories and sensitivity levels relevant to AI processing. Reference GDPR/FERPA categories."
+        },
+        {
+          "id": "consent-transparency",
+          "title": "Consent and Transparency",
+          "required": true,
+          "content_sources": ["regulatory_context"],
+          "copilot_instruction": "Define consent requirements and transparency obligations for AI data processing. Reference EU Art.13."
+        },
+        {
+          "id": "system-inventory",
+          "title": "AI System Data Inventory",
+          "required": true,
+          "content_sources": ["framework_infrastructure"],
+          "copilot_instruction": "Define requirements for maintaining an inventory of AI systems and their data flows. Reference framework infrastructure/operations indicators."
+        },
+        {
+          "id": "dpia",
+          "title": "Data Protection Impact Assessments",
+          "required": true,
+          "content_sources": ["regulatory_context"],
+          "copilot_instruction": "Define when and how DPIAs should be conducted for AI systems. Reference regulatory DPIA requirements."
+        },
+        {
+          "id": "third-party",
+          "title": "Third-Party Data Sharing",
+          "required": true,
+          "content_sources": ["framework_governance", "regulatory_context"],
+          "copilot_instruction": "Define policies for sharing data with third-party AI providers. Include due diligence and contractual requirements."
+        },
+        {
+          "id": "retention-deletion",
+          "title": "Retention and Deletion",
+          "required": true,
+          "content_sources": ["regulatory_context"],
+          "copilot_instruction": "Define data retention periods and deletion procedures for AI-processed data."
+        },
+        {
+          "id": "student-data",
+          "title": "Student Data Specific Provisions",
+          "required": true,
+          "content_sources": ["regulatory_context"],
+          "copilot_instruction": "Define specific protections for student data in AI systems. Reference FERPA (US), UK GDPR children's provisions, and age-appropriate access controls."
+        }
+      ],
+      "regulatory_provisions": {
+        "eu": ["eu-art-13", "eu-art-26", "eu-art-27"],
+        "uk": ["uk-gdpr", "uk-dfe-safety"],
+        "us": ["us-ferpa"],
+        "international": ["unesco-ethics-ai"]
+      }
+    },
+    {
+      "id": "student-ai-guidance",
+      "name": "Student AI Guidance",
+      "description": "Student-facing guidance on responsible and effective use of AI tools in learning",
+      "target_audience": "Students (all levels)",
+      "typical_triggers": ["any_institutional_assessment", "student_ai_literacy_gap"],
+      "estimated_pages": "4-6",
+      "sections": [
+        {
+          "id": "what-is-ai",
+          "title": "What AI Tools Are and How They Work",
+          "required": true,
+          "content_sources": ["framework_individual"],
+          "copilot_instruction": "Explain what AI tools are and how they work in plain, student-friendly language. Draw from AI literacy framework content."
+        },
+        {
+          "id": "when-to-use",
+          "title": "When You Can and Cannot Use AI",
+          "required": true,
+          "content_sources": ["framework_assessment"],
+          "copilot_instruction": "Clearly define when AI use is permitted and when it is not. Cross-reference the institution's acceptable use policy."
+        },
+        {
+          "id": "academic-integrity",
+          "title": "Academic Integrity and AI",
+          "required": true,
+          "content_sources": ["framework_ethics"],
+          "copilot_instruction": "Explain academic integrity expectations regarding AI use. Define disclosure, attribution, and what constitutes misconduct."
+        },
+        {
+          "id": "data-privacy",
+          "title": "Protecting Your Data and Privacy",
+          "required": true,
+          "content_sources": ["framework_digital_citizenship"],
+          "copilot_instruction": "Advise students on protecting their personal data when using AI tools. Draw from digital citizenship framework blocks."
+        },
+        {
+          "id": "critical-evaluation",
+          "title": "Critical Evaluation of AI Outputs",
+          "required": true,
+          "content_sources": ["framework_critical_thinking"],
+          "copilot_instruction": "Teach students to critically evaluate AI-generated content. Reference critical thinking framework blocks."
+        },
+        {
+          "id": "reporting",
+          "title": "Reporting Concerns",
+          "required": true,
+          "content_sources": ["framework_governance"],
+          "copilot_instruction": "Explain how students can report concerns about AI tools or their misuse."
+        },
+        {
+          "id": "learn-more",
+          "title": "Where to Learn More",
+          "required": false,
+          "content_sources": [],
+          "copilot_instruction": "Provide links and resources for further AI literacy learning. Flag as [NEEDS INSTITUTIONAL INPUT] for institution-specific resources."
+        }
+      ],
+      "regulatory_provisions": {
+        "eu": ["eu-art-4", "eu-art-50"],
+        "uk": ["uk-dfe-genai"],
+        "us": ["us-ferpa"],
+        "international": ["unesco-ethics-ai"]
+      }
+    }
+  ]
+}
