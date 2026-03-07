@@ -207,7 +207,7 @@ async function handler(
       : null;
 
     const systemPrompt = buildSystemPrompt(chatContext, userContext);
-    const stream = generateContentStream("gemini-2.5-flash", systemPrompt, messages);
+    const stream = generateContentStream(systemPrompt, messages);
 
     return {
       status: 200,

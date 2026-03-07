@@ -131,7 +131,7 @@ async function handler(
       assessment_summary: body.assessment_summary,
     });
 
-    const stream = generateContentStream("gemini-2.5-pro", SYSTEM_PROMPT, [
+    const stream = generateContentStream(SYSTEM_PROMPT, [
       { role: "user", content: userPrompt },
     ]);
 

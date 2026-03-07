@@ -127,7 +127,6 @@ User Context:
 Return ONLY the JSON object, no markdown fences.`;
 
     const aiResponse = await generateContent(
-      "gemini-2.5-flash",
       systemPrompt,
       [{ role: "user", content: userPrompt }]
     );

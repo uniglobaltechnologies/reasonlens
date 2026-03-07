@@ -61,58 +61,47 @@ EVALUATION INSTRUCTIONS:
 8. If the task involves student-facing AI, always include safeguards around transparency and appeal mechanisms.`;
 
     const result = await generateWithTools(
-      "gemini-2.5-flash",
       systemPrompt,
       [{ role: "user", content: `Evaluate this task: ${taskDescription}` }],
       [
         {
-          name: "evaluate_task",
-          description:
-            "Evaluate if AI can handle a given educational task",
-          parameters: {
-            type: "OBJECT" as any,
-            properties: {
-              feasibility: {
-                type: "NUMBER" as any,
-                description:
-                  "Score from 1-5 indicating how well AI can handle this task",
+          type: "function" as const,
+          function: {
+            name: "evaluate_task",
+            description: "Evaluate if AI can handle a given educational task",
+            parameters: {
+              type: "object",
+              properties: {
+                feasibility: {
+                  type: "number",
+                  description: "Score from 1-5 indicating how well AI can handle this task",
+                },
+                recommendation: {
+                  type: "string",
+                  enum: ["augment", "automate", "avoid"],
+                  description: "Whether to augment (AI assists), automate (AI leads), or avoid using AI",
+                },
+                reasoning: {
+                  type: "string",
+                  description: "Brief explanation of the recommendation, referencing relevant framework indicators",
+                },
+                safeguards: {
+                  type: "array",
+                  items: { type: "string" },
+                  description: "List of safeguards needed, tailored to the user's region and sector",
+                },
+                risks: {
+                  type: "array",
+                  items: { type: "string" },
+                  description: "Potential risks to consider",
+                },
+                implementation: {
+                  type: "string",
+                  description: "Concrete, step-by-step implementation guidance",
+                },
               },
-              recommendation: {
-                type: "STRING" as any,
-                enum: ["augment", "automate", "avoid"],
-                description:
-                  "Whether to augment (AI assists), automate (AI leads), or avoid using AI",
-              },
-              reasoning: {
-                type: "STRING" as any,
-                description:
-                  "Brief explanation of the recommendation, referencing relevant framework indicators",
-              },
-              safeguards: {
-                type: "ARRAY" as any,
-                items: { type: "STRING" as any },
-                description:
-                  "List of safeguards needed, tailored to the user's region and sector",
-              },
-              risks: {
-                type: "ARRAY" as any,
-                items: { type: "STRING" as any },
-                description: "Potential risks to consider",
-              },
-              implementation: {
-                type: "STRING" as any,
-                description:
-                  "Concrete, step-by-step implementation guidance",
-              },
+              required: ["feasibility", "recommendation", "reasoning", "safeguards", "risks", "implementation"],
             },
-            required: [
-              "feasibility",
-              "recommendation",
-              "reasoning",
-              "safeguards",
-              "risks",
-              "implementation",
-            ],
           },
         },
       ]

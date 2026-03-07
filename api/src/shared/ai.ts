@@ -1,93 +1,88 @@
-import {
-  GoogleGenerativeAI,
-  Content,
-  FunctionDeclaration,
-  GenerateContentResult,
-  Tool,
-} from "@google/generative-ai";
+import { AzureOpenAI } from "openai";
+import type {
+  ChatCompletionMessageParam,
+  ChatCompletionTool,
+} from "openai/resources/chat/completions";
 
-let genAI: GoogleGenerativeAI | null = null;
+let client: AzureOpenAI | null = null;
 
-function getClient(): GoogleGenerativeAI {
-  if (!genAI) {
-    const key = process.env.GOOGLE_AI_API_KEY;
-    if (!key) throw new Error("GOOGLE_AI_API_KEY not configured");
-    genAI = new GoogleGenerativeAI(key);
+function getClient(): AzureOpenAI {
+  if (!client) {
+    const endpoint = process.env.AZURE_OPENAI_ENDPOINT;
+    const apiKey = process.env.AZURE_OPENAI_API_KEY;
+    if (!endpoint || !apiKey) {
+      throw new Error("AZURE_OPENAI_ENDPOINT and AZURE_OPENAI_API_KEY must be configured");
+    }
+    client = new AzureOpenAI({
+      endpoint,
+      apiKey,
+      apiVersion: "2024-12-01-preview",
+    });
   }
-  return genAI;
+  return client;
 }
 
-// Convert OpenAI-style messages to Google AI format
-function toGoogleContents(
+function getDeployment(): string {
+  return process.env.AZURE_OPENAI_DEPLOYMENT || "gpt-5.2";
+}
+
+function buildMessages(
+  systemPrompt: string,
   messages: Array<{ role: string; content: string }>
-): Content[] {
-  return messages
-    .filter((m) => m.role !== "system")
-    .map((m) => ({
-      role: m.role === "assistant" ? "model" : "user",
-      parts: [{ text: m.content }],
-    }));
+): ChatCompletionMessageParam[] {
+  return [
+    { role: "system", content: systemPrompt },
+    ...messages.map((m) => ({
+      role: m.role as "user" | "assistant",
+      content: m.content,
+    })),
+  ];
 }
 
 // Non-streaming generation
 export async function generateContent(
-  modelName: string,
   systemPrompt: string,
   messages: Array<{ role: string; content: string }>
 ): Promise<string> {
-  const model = getClient().getGenerativeModel({
-    model: modelName,
-    systemInstruction: systemPrompt,
+  const result = await getClient().chat.completions.create({
+    model: getDeployment(),
+    messages: buildMessages(systemPrompt, messages),
   });
-  const result = await model.generateContent({
-    contents: toGoogleContents(messages),
-  });
-  return result.response.text();
+  return result.choices[0]?.message?.content || "";
 }
 
 // Streaming generation — returns an async iterable of text chunks
 export async function* generateContentStream(
-  modelName: string,
   systemPrompt: string,
   messages: Array<{ role: string; content: string }>
 ): AsyncGenerator<string> {
-  const model = getClient().getGenerativeModel({
-    model: modelName,
-    systemInstruction: systemPrompt,
+  const stream = await getClient().chat.completions.create({
+    model: getDeployment(),
+    messages: buildMessages(systemPrompt, messages),
+    stream: true,
   });
-  const result = await model.generateContentStream({
-    contents: toGoogleContents(messages),
-  });
-  for await (const chunk of result.stream) {
-    const text = chunk.text();
+  for await (const chunk of stream) {
+    const text = chunk.choices[0]?.delta?.content;
     if (text) yield text;
   }
 }
 
 // Tool calling (structured output)
 export async function generateWithTools(
-  modelName: string,
   systemPrompt: string,
   messages: Array<{ role: string; content: string }>,
-  functionDeclarations: FunctionDeclaration[]
+  tools: ChatCompletionTool[]
 ): Promise<Record<string, any> | null> {
-  const model = getClient().getGenerativeModel({
-    model: modelName,
-    systemInstruction: systemPrompt,
-    tools: [{ functionDeclarations }] as Tool[],
+  const result = await getClient().chat.completions.create({
+    model: getDeployment(),
+    messages: buildMessages(systemPrompt, messages),
+    tools,
+    tool_choice: "auto",
   });
 
-  const result: GenerateContentResult = await model.generateContent({
-    contents: toGoogleContents(messages),
-  });
-
-  const candidate = result.response.candidates?.[0];
-  const functionCall = candidate?.content?.parts?.find(
-    (p) => "functionCall" in p
-  );
-
-  if (functionCall && "functionCall" in functionCall) {
-    return (functionCall as any).functionCall.args as Record<string, any>;
+  const toolCall = result.choices[0]?.message?.tool_calls?.[0] as any;
+  if (toolCall?.function?.arguments) {
+    return JSON.parse(toolCall.function.arguments);
   }
   return null;
 }

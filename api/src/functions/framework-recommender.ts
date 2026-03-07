@@ -66,58 +66,45 @@ MATCHING RULES:
 Use the recommend_frameworks function to return your recommendation.`;
 
     const result = await generateWithTools(
-      "gemini-2.5-flash",
       systemPrompt,
       [{ role: "user", content: userPrompt }],
       [
         {
-          name: "recommend_frameworks",
-          description: "Return framework recommendations for the user",
-          parameters: {
-            type: "OBJECT" as any,
-            properties: {
-              primary_name: {
-                type: "STRING" as any,
-                enum: [...FRAMEWORK_NAMES_ENUM],
-                description:
-                  "The exact name of the primary recommended framework",
-              },
-              primary_reason: {
-                type: "STRING" as any,
-                description:
-                  "One concise sentence (max 20 words) explaining why this is the best match",
-              },
-              secondary: {
-                type: "ARRAY" as any,
-                items: {
-                  type: "OBJECT" as any,
-                  properties: {
-                    name: {
-                      type: "STRING" as any,
-                      enum: [...FRAMEWORK_NAMES_ENUM],
-                      description: "Exact framework name",
-                    },
-                    reason: {
-                      type: "STRING" as any,
-                      description: "One concise sentence (max 15 words)",
-                    },
-                  },
-                  required: ["name", "reason"],
+          type: "function" as const,
+          function: {
+            name: "recommend_frameworks",
+            description: "Return framework recommendations for the user",
+            parameters: {
+              type: "object",
+              properties: {
+                primary_name: {
+                  type: "string",
+                  enum: [...FRAMEWORK_NAMES_ENUM],
+                  description: "The exact name of the primary recommended framework",
                 },
-                description: "1-2 secondary framework recommendations",
+                primary_reason: {
+                  type: "string",
+                  description: "One concise sentence (max 20 words) explaining why this is the best match",
+                },
+                secondary: {
+                  type: "array",
+                  items: {
+                    type: "object",
+                    properties: {
+                      name: { type: "string", enum: [...FRAMEWORK_NAMES_ENUM], description: "Exact framework name" },
+                      reason: { type: "string", description: "One concise sentence (max 15 words)" },
+                    },
+                    required: ["name", "reason"],
+                  },
+                  description: "1-2 secondary framework recommendations",
+                },
+                start_with: {
+                  type: "string",
+                  description: "One sentence (max 25 words) describing the immediate next step",
+                },
               },
-              start_with: {
-                type: "STRING" as any,
-                description:
-                  "One sentence (max 25 words) describing the immediate next step",
-              },
+              required: ["primary_name", "primary_reason", "secondary", "start_with"],
             },
-            required: [
-              "primary_name",
-              "primary_reason",
-              "secondary",
-              "start_with",
-            ],
           },
         },
       ]
