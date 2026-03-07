@@ -12,12 +12,14 @@
   "dependencies": {
     "@azure/functions": "^4.6.0",
     "@azure/storage-blob": "^12.26.0",
+    "bcryptjs": "^3.0.3",
     "jsonwebtoken": "^9.0.2",
     "openai": "^6.27.0",
     "pg": "^8.13.1",
     "zod": "^3.25.0"
   },
   "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
     "@types/jsonwebtoken": "^9.0.7",
     "@types/node": "^20.17.0",
     "@types/pg": "^8.11.10",

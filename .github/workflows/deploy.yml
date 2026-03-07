@@ -1,0 +1,42 @@
+name: Deploy ReasonLens
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+jobs:
+  deploy-api:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install and build API
+        working-directory: api
+        run: npm ci && npm run build
+      - name: Deploy API to Azure Functions
+        uses: Azure/functions-action@v1
+        with:
+          app-name: reasonlens-api
+          package: api
+          publish-profile: ${{ secrets.AZURE_FUNCTIONS_PUBLISH_PROFILE }}
+
+  deploy-app:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Install and build frontend
+        working-directory: app
+        run: npm ci && npx vite build && cp staticwebapp.config.json dist/
+      - name: Deploy to Azure Static Web Apps
+        uses: Azure/static-web-apps-deploy@v1
+        with:
+          azure_static_web_apps_api_token: ${{ secrets.SWA_DEPLOYMENT_TOKEN }}
+          action: upload
+          app_location: app/dist
+          skip_app_build: true
