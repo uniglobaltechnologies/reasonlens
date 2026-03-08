@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeft, FileText, Loader2, Copy, Download, Check } from "lucide-react";
+import { Document, Packer, Paragraph, HeadingLevel } from "docx";
 import Header from "@/components/Header";
 import { apiStream, isAuthenticated } from "@/lib/api";
 
@@ -27,6 +28,7 @@ export default function Policy() {
   const [region, setRegion] = useState("uk");
   const [content, setContent] = useState("");
   const [generating, setGenerating] = useState(false);
+  const [downloadingDocx, setDownloadingDocx] = useState(false);
   const [copied, setCopied] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
@@ -54,6 +56,46 @@ export default function Policy() {
     navigator.clipboard.writeText(content);
     setCopied(true);
     setTimeout(() => setCopied(false), 2000);
+  };
+
+  const handleDownloadWord = async () => {
+    if (!content.trim() || downloadingDocx) return;
+
+    setDownloadingDocx(true);
+    try {
+      const lines = content.split("\n");
+      const children = lines.map((raw) => {
+        const line = raw.trimEnd();
+        if (!line.trim()) return new Paragraph("");
+        if (line.startsWith("## ")) {
+          return new Paragraph({
+            text: line.slice(3),
+            heading: HeadingLevel.HEADING_2,
+          });
+        }
+        if (line.startsWith("# ")) {
+          return new Paragraph({
+            text: line.slice(2),
+            heading: HeadingLevel.HEADING_1,
+          });
+        }
+        return new Paragraph(line);
+      });
+
+      const doc = new Document({
+        sections: [{ children }],
+      });
+
+      const blob = await Packer.toBlob(doc);
+      const a = document.createElement("a");
+      const url = URL.createObjectURL(blob);
+      a.href = url;
+      a.download = `${selectedType || "policy"}-draft.docx`;
+      a.click();
+      URL.revokeObjectURL(url);
+    } finally {
+      setDownloadingDocx(false);
+    }
   };
 
   return (
@@ -138,7 +180,11 @@ export default function Policy() {
                     {copied ? "Copied" : "Copy"}
                   </button>
                   <button onClick={() => { const blob = new Blob([content], { type: "text/plain" }); const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = `${selectedType}-draft.txt`; a.click(); }} className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm border border-border rounded-lg hover:bg-muted">
-                    <Download className="h-3.5 w-3.5" />Download
+                    <Download className="h-3.5 w-3.5" />Text
+                  </button>
+                  <button onClick={handleDownloadWord} disabled={downloadingDocx} className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm border border-border rounded-lg hover:bg-muted disabled:opacity-50">
+                    {downloadingDocx ? <Loader2 className="h-3.5 w-3.5 animate-spin" /> : <Download className="h-3.5 w-3.5" />}
+                    Word
                   </button>
                 </div>
               )}
