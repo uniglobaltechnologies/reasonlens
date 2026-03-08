@@ -1,11 +1,13 @@
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { ScanEye, ArrowLeft, Loader2 } from "lucide-react";
-import { setToken, apiPost } from "@/lib/api";
+import { setToken, apiPost, ApiError } from "@/lib/api";
+
+type Mode = "login" | "signup" | "set-password";
 
 export default function Auth() {
   const navigate = useNavigate();
-  const [isSignUp, setIsSignUp] = useState(false);
+  const [mode, setMode] = useState<Mode>("login");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [name, setName] = useState("");
@@ -18,10 +20,19 @@ export default function Auth() {
     setLoading(true);
 
     try {
-      const action = isSignUp ? "signup" : "login";
-      const body = isSignUp
-        ? { email, password, full_name: name }
-        : { email, password };
+      let action: string;
+      let body: Record<string, string>;
+
+      if (mode === "signup") {
+        action = "signup";
+        body = { email, password, full_name: name };
+      } else if (mode === "set-password") {
+        action = "set-password";
+        body = { email, password };
+      } else {
+        action = "login";
+        body = { email, password };
+      }
 
       const res = await apiPost<{ token: string; user: any }>(
         `/auth?action=${action}`,
@@ -31,11 +42,41 @@ export default function Auth() {
       setToken(res.token);
       navigate("/");
     } catch (err: any) {
+      // Handle pre-bcrypt accounts that need a password set
+      if (err instanceof ApiError && err.status === 409) {
+        try {
+          const parsed = JSON.parse(err.message);
+          if (parsed === "password_not_set" || err.message.includes("password_not_set")) {
+            setMode("set-password");
+            setPassword("");
+            setError("This account needs a password. Please set one below.");
+            return;
+          }
+        } catch {
+          // Check raw message
+          if (err.message.includes("password_not_set") || err.message.includes("needs a password")) {
+            setMode("set-password");
+            setPassword("");
+            setError("This account needs a password. Please set one below.");
+            return;
+          }
+        }
+      }
       setError(err.message || "Something went wrong");
     } finally {
       setLoading(false);
     }
   };
+
+  const title =
+    mode === "signup" ? "Create Account" :
+    mode === "set-password" ? "Set Password" :
+    "Sign In";
+
+  const buttonLabel =
+    mode === "signup" ? "Create Account" :
+    mode === "set-password" ? "Set Password" :
+    "Sign In";
 
   return (
     <div className="min-h-screen bg-background flex items-center justify-center">
@@ -50,13 +91,17 @@ export default function Auth() {
 
         <div className="p-6 rounded-xl border border-border bg-card">
           <h2 className="text-lg font-semibold text-foreground mb-4 text-center">
-            {isSignUp ? "Create Account" : "Sign In"}
+            {title}
           </h2>
 
-          {error && <p className="text-sm text-red-500 mb-4 text-center">{error}</p>}
+          {error && (
+            <p className={`text-sm mb-4 text-center ${mode === "set-password" ? "text-amber-500" : "text-red-500"}`}>
+              {error}
+            </p>
+          )}
 
           <form onSubmit={handleSubmit} className="space-y-4">
-            {isSignUp && (
+            {mode === "signup" && (
               <div>
                 <label className="text-sm font-medium text-foreground block mb-1">Full Name</label>
                 <input type="text" value={name} onChange={(e) => setName(e.target.value)} className="w-full px-3 py-2 text-sm bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50" />
@@ -64,24 +109,46 @@ export default function Auth() {
             )}
             <div>
               <label className="text-sm font-medium text-foreground block mb-1">Email</label>
-              <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required className="w-full px-3 py-2 text-sm bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50" />
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+                disabled={mode === "set-password"}
+                className="w-full px-3 py-2 text-sm bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50 disabled:opacity-60"
+              />
             </div>
             <div>
-              <label className="text-sm font-medium text-foreground block mb-1">Password</label>
-              <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required minLength={6} className="w-full px-3 py-2 text-sm bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50" />
+              <label className="text-sm font-medium text-foreground block mb-1">
+                {mode === "set-password" ? "New Password" : "Password"}
+              </label>
+              <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required minLength={8} className="w-full px-3 py-2 text-sm bg-background border border-border rounded-lg focus:outline-none focus:ring-2 focus:ring-primary/50" />
+              {(mode === "signup" || mode === "set-password") && (
+                <p className="text-xs text-muted-foreground mt-1">Minimum 8 characters</p>
+              )}
             </div>
             <button type="submit" disabled={loading} className="w-full py-2.5 bg-primary text-primary-foreground text-sm font-medium rounded-lg hover:bg-primary/90 transition-colors disabled:opacity-50 inline-flex items-center justify-center gap-2">
               {loading && <Loader2 className="h-4 w-4 animate-spin" />}
-              {isSignUp ? "Create Account" : "Sign In"}
+              {buttonLabel}
             </button>
           </form>
 
-          <p className="text-sm text-center text-muted-foreground mt-4">
-            {isSignUp ? "Already have an account?" : "Don't have an account?"}{" "}
-            <button onClick={() => { setIsSignUp(!isSignUp); setError(""); }} className="text-primary hover:underline">
-              {isSignUp ? "Sign in" : "Sign up"}
-            </button>
-          </p>
+          {mode !== "set-password" && (
+            <p className="text-sm text-center text-muted-foreground mt-4">
+              {mode === "signup" ? "Already have an account?" : "Don't have an account?"}{" "}
+              <button onClick={() => { setMode(mode === "signup" ? "login" : "signup"); setError(""); }} className="text-primary hover:underline">
+                {mode === "signup" ? "Sign in" : "Sign up"}
+              </button>
+            </p>
+          )}
+
+          {mode === "set-password" && (
+            <p className="text-sm text-center text-muted-foreground mt-4">
+              <button onClick={() => { setMode("login"); setError(""); setPassword(""); }} className="text-primary hover:underline">
+                Back to sign in
+              </button>
+            </p>
+          )}
         </div>
       </div>
     </div>

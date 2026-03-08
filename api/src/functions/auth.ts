@@ -122,11 +122,20 @@ async function handler(
         [email.toLowerCase()]
       );
 
-      if (!user || !user.password_hash) {
+      if (!user) {
         return {
           status: 401,
           headers: { ...corsHeaders(req), "Content-Type": "application/json" },
           body: JSON.stringify({ error: "Invalid email or password" }),
+        };
+      }
+
+      // Account exists but has no password (pre-bcrypt migration)
+      if (!user.password_hash) {
+        return {
+          status: 409,
+          headers: { ...corsHeaders(req), "Content-Type": "application/json" },
+          body: JSON.stringify({ error: "password_not_set", message: "This account needs a password. Please set one to continue." }),
         };
       }
 
@@ -174,10 +183,78 @@ async function handler(
       };
     }
 
+    // POST /api/auth?action=set-password
+    // For pre-bcrypt accounts that have no password_hash
+    if (req.method === "POST" && action === "set-password") {
+      const { email, password } = (await req.json()) as {
+        email: string;
+        password: string;
+      };
+
+      if (!email || !password) {
+        return {
+          status: 400,
+          headers: { ...corsHeaders(req), "Content-Type": "application/json" },
+          body: JSON.stringify({ error: "Email and password are required" }),
+        };
+      }
+
+      if (password.length < 8) {
+        return {
+          status: 400,
+          headers: { ...corsHeaders(req), "Content-Type": "application/json" },
+          body: JSON.stringify({ error: "Password must be at least 8 characters" }),
+        };
+      }
+
+      const user = await queryOne<{
+        id: string;
+        email: string;
+        full_name: string | null;
+        password_hash: string | null;
+      }>(
+        "SELECT id, email, full_name, password_hash FROM profiles WHERE email = $1",
+        [email.toLowerCase()]
+      );
+
+      if (!user) {
+        return {
+          status: 404,
+          headers: { ...corsHeaders(req), "Content-Type": "application/json" },
+          body: JSON.stringify({ error: "Account not found" }),
+        };
+      }
+
+      if (user.password_hash) {
+        return {
+          status: 409,
+          headers: { ...corsHeaders(req), "Content-Type": "application/json" },
+          body: JSON.stringify({ error: "Password already set. Use login instead." }),
+        };
+      }
+
+      const hash = await bcrypt.hash(password, SALT_ROUNDS);
+      await execute(
+        "UPDATE profiles SET password_hash = $1, auth_provider_id = $2 WHERE id = $3",
+        [hash, `local:${email.toLowerCase()}`, user.id]
+      );
+
+      const token = signToken(user.id, user.email);
+
+      return {
+        status: 200,
+        headers: { ...corsHeaders(req), "Content-Type": "application/json" },
+        body: JSON.stringify({
+          token,
+          user: { id: user.id, email: user.email, full_name: user.full_name },
+        }),
+      };
+    }
+
     return {
       status: 400,
       headers: { ...corsHeaders(req), "Content-Type": "application/json" },
-      body: JSON.stringify({ error: "Invalid action. Use ?action=signup, ?action=login, or ?action=me" }),
+      body: JSON.stringify({ error: "Invalid action. Use ?action=signup, ?action=login, ?action=set-password, or ?action=me" }),
     };
   } catch (err) {
     context.error("auth error:", err);
