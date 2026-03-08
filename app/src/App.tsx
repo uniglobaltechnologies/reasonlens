@@ -10,6 +10,7 @@ const Evaluate = lazy(() => import("./pages/Evaluate"));
 const Frameworks = lazy(() => import("./pages/Frameworks"));
 const FrameworkDetail = lazy(() => import("./pages/FrameworkDetail"));
 const Assess = lazy(() => import("./pages/Assess"));
+const LearningPath = lazy(() => import("./pages/LearningPath"));
 const Policy = lazy(() => import("./pages/Policy"));
 const MyProgress = lazy(() => import("./pages/MyProgress"));
 const Portfolio = lazy(() => import("./pages/Portfolio"));
@@ -30,6 +31,7 @@ function App() {
           {/* Assessment */}
           <Route path="/assess" element={<Assess />} />
           <Route path="/assess/:framework" element={<Assess />} />
+          <Route path="/learning-path/:frameworkId" element={<LearningPath />} />
           {/* Frameworks */}
           <Route path="/frameworks" element={<Frameworks />} />
           <Route path="/frameworks/:id" element={<FrameworkDetail />} />

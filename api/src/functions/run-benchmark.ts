@@ -28,7 +28,7 @@ async function handler(
     if (!body.benchmark_type || !body.target_model) {
       return {
         status: 400,
-        headers: { ...corsHeaders(), "Content-Type": "application/json" },
+        headers: { ...corsHeaders(req), "Content-Type": "application/json" },
         body: JSON.stringify({ error: "benchmark_type and target_model required" }),
       };
     }
@@ -36,7 +36,7 @@ async function handler(
     if (!["crows_pairs", "truthfulqa"].includes(body.benchmark_type)) {
       return {
         status: 400,
-        headers: { ...corsHeaders(), "Content-Type": "application/json" },
+        headers: { ...corsHeaders(req), "Content-Type": "application/json" },
         body: JSON.stringify({ error: "Unsupported benchmark_type" }),
       };
     }
@@ -60,7 +60,7 @@ async function handler(
       if (!keyRow) {
         return {
           status: 403,
-          headers: { ...corsHeaders(), "Content-Type": "application/json" },
+          headers: { ...corsHeaders(req), "Content-Type": "application/json" },
           body: JSON.stringify({ error: `API key required for ${model.provider_slug}` }),
         };
       }
@@ -102,21 +102,21 @@ async function handler(
 
     return {
       status: 200,
-      headers: { ...corsHeaders(), "Content-Type": "application/json" },
+      headers: { ...corsHeaders(req), "Content-Type": "application/json" },
       body: JSON.stringify({ success: true, run_id: run.id, status: "running" }),
     };
   } catch (err) {
     if (err instanceof AuthError) {
       return {
         status: err.statusCode,
-        headers: { ...corsHeaders(), "Content-Type": "application/json" },
+        headers: { ...corsHeaders(req), "Content-Type": "application/json" },
         body: JSON.stringify({ error: err.message }),
       };
     }
     context.error("run-benchmark error:", err);
     return {
       status: 500,
-      headers: { ...corsHeaders(), "Content-Type": "application/json" },
+      headers: { ...corsHeaders(req), "Content-Type": "application/json" },
       body: JSON.stringify({ error: "Internal server error" }),
     };
   }

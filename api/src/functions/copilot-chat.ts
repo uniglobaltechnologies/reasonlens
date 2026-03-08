@@ -205,7 +205,7 @@ async function handler(
     if (!Array.isArray(messages) || messages.length === 0 || messages.length > 50) {
       return {
         status: 400,
-        headers: { ...corsHeaders(), "Content-Type": "application/json" },
+        headers: { ...corsHeaders(req), "Content-Type": "application/json" },
         body: JSON.stringify({ error: "Messages must be an array of 1-50 items" }),
       };
     }
@@ -213,7 +213,7 @@ async function handler(
       if (typeof m.content !== "string" || m.content.length > 10000) {
         return {
           status: 400,
-          headers: { ...corsHeaders(), "Content-Type": "application/json" },
+          headers: { ...corsHeaders(req), "Content-Type": "application/json" },
           body: JSON.stringify({ error: "Each message must be under 10,000 characters" }),
         };
       }
@@ -230,7 +230,7 @@ async function handler(
     return {
       status: 200,
       headers: {
-        ...corsHeaders(),
+        ...corsHeaders(req),
         "Content-Type": "text/event-stream",
         "Cache-Control": "no-cache",
         Connection: "keep-alive",
@@ -241,7 +241,7 @@ async function handler(
     context.error("copilot-chat error:", err);
     return {
       status: 500,
-      headers: { ...corsHeaders(), "Content-Type": "application/json" },
+      headers: { ...corsHeaders(req), "Content-Type": "application/json" },
       body: JSON.stringify({
         error: err instanceof Error ? err.message : "Unknown error",
       }),

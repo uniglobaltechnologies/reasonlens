@@ -312,7 +312,7 @@ async function handler(
 
     if (!validateHmac(req, bodyText, secret)) {
       context.warn("petri-audit-callback: Invalid HMAC signature");
-      return { status: 401, headers: { ...corsHeaders(), "Content-Type": "application/json" }, body: JSON.stringify({ error: "Invalid signature" }) };
+      return { status: 401, headers: { ...corsHeaders(req), "Content-Type": "application/json" }, body: JSON.stringify({ error: "Invalid signature" }) };
     }
 
     const body = JSON.parse(bodyText) as {
@@ -331,7 +331,7 @@ async function handler(
     // Fetch run
     const run = await queryOne<any>("SELECT * FROM audit_runs WHERE id = $1", [body.run_id]);
     if (!run) {
-      return { status: 404, headers: { ...corsHeaders(), "Content-Type": "application/json" }, body: JSON.stringify({ error: "Run not found" }) };
+      return { status: 404, headers: { ...corsHeaders(req), "Content-Type": "application/json" }, body: JSON.stringify({ error: "Run not found" }) };
     }
 
     const currentIsTerminal = TERMINAL_STATES.has(run.status);
@@ -339,7 +339,7 @@ async function handler(
 
     // Idempotent: ignore "running" on terminal runs
     if (currentIsTerminal && incomingStatus === "running") {
-      return { status: 200, headers: { ...corsHeaders(), "Content-Type": "application/json" }, body: JSON.stringify({ success: true, ignored: true }) };
+      return { status: 200, headers: { ...corsHeaders(req), "Content-Type": "application/json" }, body: JSON.stringify({ success: true, ignored: true }) };
     }
 
     let newStatus = incomingStatus;
@@ -423,10 +423,10 @@ async function handler(
        JSON.stringify({ previous: run.status, new: newStatus, transcripts: body.transcripts?.length || 0 })]
     );
 
-    return { status: 200, headers: { ...corsHeaders(), "Content-Type": "application/json" }, body: JSON.stringify({ success: true }) };
+    return { status: 200, headers: { ...corsHeaders(req), "Content-Type": "application/json" }, body: JSON.stringify({ success: true }) };
   } catch (err) {
     context.error("petri-audit-callback error:", err);
-    return { status: 500, headers: { ...corsHeaders(), "Content-Type": "application/json" }, body: JSON.stringify({ error: "Internal server error" }) };
+    return { status: 500, headers: { ...corsHeaders(req), "Content-Type": "application/json" }, body: JSON.stringify({ error: "Internal server error" }) };
   }
 }
 

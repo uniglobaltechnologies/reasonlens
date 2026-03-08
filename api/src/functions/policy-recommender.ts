@@ -67,7 +67,7 @@ async function handler(
     if (results.length === 0) {
       return {
         status: 200,
-        headers: { ...corsHeaders(), "Content-Type": "application/json" },
+        headers: { ...corsHeaders(req), "Content-Type": "application/json" },
         body: JSON.stringify({
           recommendations: [],
           message: "Complete an institutional framework assessment first to get policy recommendations.",
@@ -131,21 +131,21 @@ async function handler(
 
     return {
       status: 200,
-      headers: { ...corsHeaders(), "Content-Type": "application/json" },
+      headers: { ...corsHeaders(req), "Content-Type": "application/json" },
       body: JSON.stringify({ recommendations }),
     };
   } catch (err) {
     if (err instanceof AuthError) {
       return {
         status: err.statusCode,
-        headers: { ...corsHeaders(), "Content-Type": "application/json" },
+        headers: { ...corsHeaders(req), "Content-Type": "application/json" },
         body: JSON.stringify({ error: err.message }),
       };
     }
     context.error("policy-recommender error:", err);
     return {
       status: 500,
-      headers: { ...corsHeaders(), "Content-Type": "application/json" },
+      headers: { ...corsHeaders(req), "Content-Type": "application/json" },
       body: JSON.stringify({ error: "Internal server error" }),
     };
   }

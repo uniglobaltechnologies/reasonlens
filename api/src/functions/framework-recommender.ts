@@ -133,17 +133,17 @@ Use the recommend_frameworks function to return your recommendation.`;
 
     return {
       status: 200,
-      headers: { ...corsHeaders(), "Content-Type": "application/json" },
+      headers: { ...corsHeaders(req), "Content-Type": "application/json" },
       body: JSON.stringify({ recommendation }),
     };
   } catch (err) {
     if (err instanceof AuthError) {
-      return { status: err.statusCode, headers: { ...corsHeaders(), "Content-Type": "application/json" }, body: JSON.stringify({ error: err.message }) };
+      return { status: err.statusCode, headers: { ...corsHeaders(req), "Content-Type": "application/json" }, body: JSON.stringify({ error: err.message }) };
     }
     context.error("framework-recommender error:", err);
     return {
       status: 500,
-      headers: { ...corsHeaders(), "Content-Type": "application/json" },
+      headers: { ...corsHeaders(req), "Content-Type": "application/json" },
       body: JSON.stringify({ error: "Internal server error" }),
     };
   }

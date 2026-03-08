@@ -52,7 +52,7 @@ async function handler(
     if (!body.scenario_ids?.length || !body.auditor_model || !body.target_model || !body.judge_model) {
       return {
         status: 400,
-        headers: { ...corsHeaders(), "Content-Type": "application/json" },
+        headers: { ...corsHeaders(req), "Content-Type": "application/json" },
         body: JSON.stringify({ error: "scenario_ids, auditor_model, target_model, and judge_model are required" }),
       };
     }
@@ -66,7 +66,7 @@ async function handler(
     if (scenarios.length === 0) {
       return {
         status: 400,
-        headers: { ...corsHeaders(), "Content-Type": "application/json" },
+        headers: { ...corsHeaders(req), "Content-Type": "application/json" },
         body: JSON.stringify({ error: "No valid scenarios found" }),
       };
     }
@@ -105,7 +105,7 @@ async function handler(
         if (!keyRow) {
           return {
             status: 403,
-            headers: { ...corsHeaders(), "Content-Type": "application/json" },
+            headers: { ...corsHeaders(req), "Content-Type": "application/json" },
             body: JSON.stringify({ error: `API key required for ${provider}. Add it in Settings.` }),
           };
         }
@@ -174,7 +174,7 @@ async function handler(
 
     return {
       status: 200,
-      headers: { ...corsHeaders(), "Content-Type": "application/json" },
+      headers: { ...corsHeaders(req), "Content-Type": "application/json" },
       body: JSON.stringify({
         success: true,
         run_id: run.id,
@@ -186,14 +186,14 @@ async function handler(
     if (err instanceof AuthError) {
       return {
         status: err.statusCode,
-        headers: { ...corsHeaders(), "Content-Type": "application/json" },
+        headers: { ...corsHeaders(req), "Content-Type": "application/json" },
         body: JSON.stringify({ error: err.message }),
       };
     }
     context.error("run-petri-audit error:", err);
     return {
       status: 500,
-      headers: { ...corsHeaders(), "Content-Type": "application/json" },
+      headers: { ...corsHeaders(req), "Content-Type": "application/json" },
       body: JSON.stringify({ error: "Internal server error" }),
     };
   }

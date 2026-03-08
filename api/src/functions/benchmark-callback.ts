@@ -25,7 +25,7 @@ async function handler(
       context.warn("benchmark-callback: Invalid HMAC signature");
       return {
         status: 401,
-        headers: { ...corsHeaders(), "Content-Type": "application/json" },
+        headers: { ...corsHeaders(req), "Content-Type": "application/json" },
         body: JSON.stringify({ error: "Invalid signature" }),
       };
     }
@@ -41,7 +41,7 @@ async function handler(
     if (!body.run_id || !body.status) {
       return {
         status: 400,
-        headers: { ...corsHeaders(), "Content-Type": "application/json" },
+        headers: { ...corsHeaders(req), "Content-Type": "application/json" },
         body: JSON.stringify({ error: "run_id and status required" }),
       };
     }
@@ -55,7 +55,7 @@ async function handler(
     if (!existing) {
       return {
         status: 404,
-        headers: { ...corsHeaders(), "Content-Type": "application/json" },
+        headers: { ...corsHeaders(req), "Content-Type": "application/json" },
         body: JSON.stringify({ error: "Benchmark run not found" }),
       };
     }
@@ -65,7 +65,7 @@ async function handler(
       context.log(`benchmark-callback: Run ${body.run_id} already in terminal state ${existing.status}, ignoring`);
       return {
         status: 200,
-        headers: { ...corsHeaders(), "Content-Type": "application/json" },
+        headers: { ...corsHeaders(req), "Content-Type": "application/json" },
         body: JSON.stringify({ success: true, message: "Already terminal" }),
       };
     }
@@ -100,14 +100,14 @@ async function handler(
 
     return {
       status: 200,
-      headers: { ...corsHeaders(), "Content-Type": "application/json" },
+      headers: { ...corsHeaders(req), "Content-Type": "application/json" },
       body: JSON.stringify({ success: true }),
     };
   } catch (err) {
     context.error("benchmark-callback error:", err);
     return {
       status: 500,
-      headers: { ...corsHeaders(), "Content-Type": "application/json" },
+      headers: { ...corsHeaders(req), "Content-Type": "application/json" },
       body: JSON.stringify({ error: "Internal server error" }),
     };
   }

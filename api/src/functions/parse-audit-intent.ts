@@ -82,7 +82,7 @@ async function handler(
     if (!message?.trim()) {
       return {
         status: 400,
-        headers: { ...corsHeaders(), "Content-Type": "application/json" },
+        headers: { ...corsHeaders(req), "Content-Type": "application/json" },
         body: JSON.stringify({ error: "message is required" }),
       };
     }
@@ -130,7 +130,7 @@ async function handler(
 
     return {
       status: 200,
-      headers: { ...corsHeaders(), "Content-Type": "application/json" },
+      headers: { ...corsHeaders(req), "Content-Type": "application/json" },
       body: JSON.stringify({
         response: `I'll set up a safety audit for your use case. I've selected the "${matchedPack}" scenario pack targeting ${targetModel}.`,
         confirmation_message: `Ready to run a safety audit on ${targetModel} using the "${matchedPack}" scenario pack. This will test the AI's responses across multiple safety dimensions. Shall I start?`,
@@ -141,10 +141,10 @@ async function handler(
     };
   } catch (err) {
     if (err instanceof AuthError) {
-      return { status: err.statusCode, headers: { ...corsHeaders(), "Content-Type": "application/json" }, body: JSON.stringify({ error: err.message }) };
+      return { status: err.statusCode, headers: { ...corsHeaders(req), "Content-Type": "application/json" }, body: JSON.stringify({ error: err.message }) };
     }
     context.error("parse-audit-intent error:", err);
-    return { status: 500, headers: { ...corsHeaders(), "Content-Type": "application/json" }, body: JSON.stringify({ error: "Internal server error" }) };
+    return { status: 500, headers: { ...corsHeaders(req), "Content-Type": "application/json" }, body: JSON.stringify({ error: "Internal server error" }) };
   }
 }
 

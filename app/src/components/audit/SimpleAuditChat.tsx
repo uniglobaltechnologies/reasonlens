@@ -11,7 +11,7 @@ import {
   GraduationCap,
   MessageSquare,
 } from "lucide-react";
-import { apiPost } from "@/lib/api";
+import { apiPost, isAuthenticated } from "@/lib/api";
 
 interface Message {
   id: string;
@@ -77,6 +77,18 @@ export default function SimpleAuditChat() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!input.trim() || isLoading) return;
+    if (!isAuthenticated()) {
+      setMessages((prev) => [
+        ...prev,
+        {
+          id: Date.now().toString(),
+          role: "assistant",
+          content: "Please sign in first to run audits.",
+          timestamp: new Date(),
+        },
+      ]);
+      return;
+    }
 
     const userMessage: Message = {
       id: Date.now().toString(),
@@ -131,6 +143,18 @@ export default function SimpleAuditChat() {
 
   const handleRunAudit = async () => {
     if (!extractedConfig?.suggested_config || isRunning) return;
+    if (!isAuthenticated()) {
+      setMessages((prev) => [
+        ...prev,
+        {
+          id: Date.now().toString(),
+          role: "assistant",
+          content: "Please sign in first to run audits.",
+          timestamp: new Date(),
+        },
+      ]);
+      return;
+    }
     setIsRunning(true);
 
     try {

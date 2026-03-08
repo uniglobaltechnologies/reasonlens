@@ -10,7 +10,7 @@ import {
   Shield,
 } from "lucide-react";
 import Header from "@/components/Header";
-import { apiPost } from "@/lib/api";
+import { apiPost, isAuthenticated } from "@/lib/api";
 
 interface EvalResult {
   feasibility: number;
@@ -36,6 +36,10 @@ export default function Evaluate() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (!task.trim() || loading) return;
+    if (!isAuthenticated()) {
+      setError("Please sign in to run AI evaluations.");
+      return;
+    }
 
     setLoading(true);
     setResult(null);

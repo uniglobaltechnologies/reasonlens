@@ -34,7 +34,7 @@ async function handler(
       }
       return {
         status: 200,
-        headers: { ...corsHeaders(), "Content-Type": "application/json" },
+        headers: { ...corsHeaders(req), "Content-Type": "application/json" },
         body: JSON.stringify({ results: rows }),
       };
     }
@@ -53,7 +53,7 @@ async function handler(
       if (!body.results?.length) {
         return {
           status: 400,
-          headers: { ...corsHeaders(), "Content-Type": "application/json" },
+          headers: { ...corsHeaders(req), "Content-Type": "application/json" },
           body: JSON.stringify({ error: "results array required" }),
         };
       }
@@ -80,18 +80,18 @@ async function handler(
 
       return {
         status: 200,
-        headers: { ...corsHeaders(), "Content-Type": "application/json" },
+        headers: { ...corsHeaders(req), "Content-Type": "application/json" },
         body: JSON.stringify({ saved: body.results.length }),
       };
     }
 
-    return { status: 405, headers: corsHeaders(), body: "Method not allowed" };
+    return { status: 405, headers: corsHeaders(req), body: "Method not allowed" };
   } catch (err) {
     if (err instanceof AuthError) {
-      return { status: err.statusCode, headers: { ...corsHeaders(), "Content-Type": "application/json" }, body: JSON.stringify({ error: err.message }) };
+      return { status: err.statusCode, headers: { ...corsHeaders(req), "Content-Type": "application/json" }, body: JSON.stringify({ error: err.message }) };
     }
     context.error("assessments error:", err);
-    return { status: 500, headers: { ...corsHeaders(), "Content-Type": "application/json" }, body: JSON.stringify({ error: "Internal server error" }) };
+    return { status: 500, headers: { ...corsHeaders(req), "Content-Type": "application/json" }, body: JSON.stringify({ error: "Internal server error" }) };
   }
 }
 

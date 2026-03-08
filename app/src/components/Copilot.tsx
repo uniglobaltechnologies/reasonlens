@@ -13,6 +13,7 @@ const PAGE_LABELS: Record<string, string> = {
   "/audit": "Test an AI Tool",
   "/audit/runs": "My Audit Runs",
   "/assess": "Assess Your AI Readiness",
+  "/learning-path": "Learning Path",
   "/frameworks": "Framework Explorer",
   "/policy": "Policy Generator",
   "/evaluate": "Can AI Do This?",
@@ -24,6 +25,7 @@ const PAGE_LABELS: Record<string, string> = {
 const SUGGESTED_PROMPTS: Record<string, string[]> = {
   "/": ["Where should I start?", "What's the difference between an audit and an assessment?"],
   "/assess": ["Which framework should I start with?", "What do the levels mean?"],
+  "/learning-path": ["How do I action these recommendations this month?", "Which recommendation should I prioritise first?"],
   "/frameworks": ["How do the 22 frameworks relate to each other?", "Which framework suits an educator?"],
   "/policy": ["What policy type do I need?", "How is the policy grounded in evidence?"],
   "/evaluate": ["How do I interpret the feasibility score?", "What does 'augment' vs 'automate' mean?"],
@@ -37,6 +39,7 @@ function getPageLabel(pathname: string): string {
   if (PAGE_LABELS[pathname]) return PAGE_LABELS[pathname];
   if (pathname.startsWith("/audit/runs/")) return "Audit Run Detail";
   if (pathname.startsWith("/assess/")) return "Framework Assessment";
+  if (pathname.startsWith("/learning-path/")) return "Learning Path";
   if (pathname.startsWith("/frameworks/")) return "Framework Detail";
   return "ReasonLens";
 }
@@ -50,6 +53,7 @@ function getSuggestions(pathname: string): string[] {
   if (SUGGESTED_PROMPTS[pathname]) return SUGGESTED_PROMPTS[pathname];
   if (pathname.startsWith("/frameworks/")) return ["Explain this framework's levels", "How does this compare to DigComp?"];
   if (pathname.startsWith("/assess/")) return ["What does each level mean?", "Which dimension should I focus on first?"];
+  if (pathname.startsWith("/learning-path/")) return ["How should I tackle these actions in 30 days?", "Which actions need evidence in my portfolio?"];
   return [];
 }
 

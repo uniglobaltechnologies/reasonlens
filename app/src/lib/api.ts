@@ -29,14 +29,26 @@ async function request<T = any>(
     headers["Authorization"] = `Bearer ${token}`;
   }
 
-  const res = await fetch(`${API_BASE}${path}`, {
-    ...options,
-    headers,
-  });
+  let res: Response;
+  try {
+    res = await fetch(`${API_BASE}${path}`, {
+      ...options,
+      headers,
+    });
+  } catch {
+    throw new ApiError(
+      "Failed to reach API (network/CORS). Check custom domain CORS and API URL.",
+      0
+    );
+  }
 
   if (!res.ok) {
     const body = await res.json().catch(() => ({ error: res.statusText }));
-    throw new ApiError(body.error || res.statusText, res.status);
+    const message = body.error || res.statusText;
+    if (res.status === 401) {
+      throw new ApiError(`${message}. Please sign in.`, res.status);
+    }
+    throw new ApiError(message, res.status);
   }
 
   return res.json();
@@ -74,15 +86,24 @@ export async function apiStream(
   };
   if (token) headers["Authorization"] = `Bearer ${token}`;
 
-  const res = await fetch(`${API_BASE}${path}`, {
-    method: "POST",
-    headers,
-    body: JSON.stringify(body),
-  });
+  let res: Response;
+  try {
+    res = await fetch(`${API_BASE}${path}`, {
+      method: "POST",
+      headers,
+      body: JSON.stringify(body),
+    });
+  } catch {
+    onError?.(
+      "Failed to reach API (network/CORS). Check custom domain CORS and API URL."
+    );
+    return;
+  }
 
   if (!res.ok) {
     const err = await res.json().catch(() => ({ error: res.statusText }));
-    onError?.(err.error || res.statusText);
+    const message = err.error || res.statusText;
+    onError?.(res.status === 401 ? `${message}. Please sign in.` : message);
     return;
   }
 

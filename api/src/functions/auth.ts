@@ -44,7 +44,7 @@ async function handler(
       if (!email || !password) {
         return {
           status: 400,
-          headers: { ...corsHeaders(), "Content-Type": "application/json" },
+          headers: { ...corsHeaders(req), "Content-Type": "application/json" },
           body: JSON.stringify({ error: "Email and password are required" }),
         };
       }
@@ -52,7 +52,7 @@ async function handler(
       if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
         return {
           status: 400,
-          headers: { ...corsHeaders(), "Content-Type": "application/json" },
+          headers: { ...corsHeaders(req), "Content-Type": "application/json" },
           body: JSON.stringify({ error: "Invalid email format" }),
         };
       }
@@ -60,7 +60,7 @@ async function handler(
       if (password.length < 8) {
         return {
           status: 400,
-          headers: { ...corsHeaders(), "Content-Type": "application/json" },
+          headers: { ...corsHeaders(req), "Content-Type": "application/json" },
           body: JSON.stringify({ error: "Password must be at least 8 characters" }),
         };
       }
@@ -73,7 +73,7 @@ async function handler(
       if (existing) {
         return {
           status: 409,
-          headers: { ...corsHeaders(), "Content-Type": "application/json" },
+          headers: { ...corsHeaders(req), "Content-Type": "application/json" },
           body: JSON.stringify({ error: "Email already registered" }),
         };
       }
@@ -92,7 +92,7 @@ async function handler(
 
       return {
         status: 201,
-        headers: { ...corsHeaders(), "Content-Type": "application/json" },
+        headers: { ...corsHeaders(req), "Content-Type": "application/json" },
         body: JSON.stringify({ token, user: { id: user.id, email: user.email, full_name } }),
       };
     }
@@ -107,7 +107,7 @@ async function handler(
       if (!email || !password) {
         return {
           status: 400,
-          headers: { ...corsHeaders(), "Content-Type": "application/json" },
+          headers: { ...corsHeaders(req), "Content-Type": "application/json" },
           body: JSON.stringify({ error: "Email and password are required" }),
         };
       }
@@ -125,7 +125,7 @@ async function handler(
       if (!user || !user.password_hash) {
         return {
           status: 401,
-          headers: { ...corsHeaders(), "Content-Type": "application/json" },
+          headers: { ...corsHeaders(req), "Content-Type": "application/json" },
           body: JSON.stringify({ error: "Invalid email or password" }),
         };
       }
@@ -134,7 +134,7 @@ async function handler(
       if (!valid) {
         return {
           status: 401,
-          headers: { ...corsHeaders(), "Content-Type": "application/json" },
+          headers: { ...corsHeaders(req), "Content-Type": "application/json" },
           body: JSON.stringify({ error: "Invalid email or password" }),
         };
       }
@@ -143,7 +143,7 @@ async function handler(
 
       return {
         status: 200,
-        headers: { ...corsHeaders(), "Content-Type": "application/json" },
+        headers: { ...corsHeaders(req), "Content-Type": "application/json" },
         body: JSON.stringify({
           token,
           user: { id: user.id, email: user.email, full_name: user.full_name },
@@ -157,7 +157,7 @@ async function handler(
       if (!authUser) {
         return {
           status: 401,
-          headers: { ...corsHeaders(), "Content-Type": "application/json" },
+          headers: { ...corsHeaders(req), "Content-Type": "application/json" },
           body: JSON.stringify({ error: "Not authenticated" }),
         };
       }
@@ -169,21 +169,21 @@ async function handler(
 
       return {
         status: 200,
-        headers: { ...corsHeaders(), "Content-Type": "application/json" },
+        headers: { ...corsHeaders(req), "Content-Type": "application/json" },
         body: JSON.stringify({ user: profile }),
       };
     }
 
     return {
       status: 400,
-      headers: { ...corsHeaders(), "Content-Type": "application/json" },
+      headers: { ...corsHeaders(req), "Content-Type": "application/json" },
       body: JSON.stringify({ error: "Invalid action. Use ?action=signup, ?action=login, or ?action=me" }),
     };
   } catch (err) {
     context.error("auth error:", err);
     return {
       status: 500,
-      headers: { ...corsHeaders(), "Content-Type": "application/json" },
+      headers: { ...corsHeaders(req), "Content-Type": "application/json" },
       body: JSON.stringify({ error: "Internal server error" }),
     };
   }

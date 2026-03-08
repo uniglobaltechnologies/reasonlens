@@ -110,7 +110,7 @@ async function handler(
     if (!body.policy_type) {
       return {
         status: 400,
-        headers: { ...corsHeaders(), "Content-Type": "application/json" },
+        headers: { ...corsHeaders(req), "Content-Type": "application/json" },
         body: JSON.stringify({ error: "policy_type is required" }),
       };
     }
@@ -138,7 +138,7 @@ async function handler(
     return {
       status: 200,
       headers: {
-        ...corsHeaders(),
+        ...corsHeaders(req),
         "Content-Type": "text/event-stream",
         "Cache-Control": "no-cache",
         Connection: "keep-alive",
@@ -149,14 +149,14 @@ async function handler(
     if (err instanceof AuthError) {
       return {
         status: err.statusCode,
-        headers: { ...corsHeaders(), "Content-Type": "application/json" },
+        headers: { ...corsHeaders(req), "Content-Type": "application/json" },
         body: JSON.stringify({ error: err.message }),
       };
     }
     context.error("policy-generator error:", err);
     return {
       status: 500,
-      headers: { ...corsHeaders(), "Content-Type": "application/json" },
+      headers: { ...corsHeaders(req), "Content-Type": "application/json" },
       body: JSON.stringify({
         error: err instanceof Error ? err.message : "Unknown error",
       }),

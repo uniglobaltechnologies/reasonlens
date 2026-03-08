@@ -28,7 +28,7 @@ async function handler(
         [runId, user.userId]
       );
       if (!run) {
-        return { status: 404, headers: { ...corsHeaders(), "Content-Type": "application/json" }, body: JSON.stringify({ error: "Run not found" }) };
+        return { status: 404, headers: { ...corsHeaders(req), "Content-Type": "application/json" }, body: JSON.stringify({ error: "Run not found" }) };
       }
 
       const transcripts = await query(
@@ -50,7 +50,7 @@ async function handler(
 
       return {
         status: 200,
-        headers: { ...corsHeaders(), "Content-Type": "application/json" },
+        headers: { ...corsHeaders(req), "Content-Type": "application/json" },
         body: JSON.stringify({ run, transcripts, posthoc, benchmarks, report }),
       };
     }
@@ -66,15 +66,15 @@ async function handler(
 
     return {
       status: 200,
-      headers: { ...corsHeaders(), "Content-Type": "application/json" },
+      headers: { ...corsHeaders(req), "Content-Type": "application/json" },
       body: JSON.stringify({ runs }),
     };
   } catch (err) {
     if (err instanceof AuthError) {
-      return { status: err.statusCode, headers: { ...corsHeaders(), "Content-Type": "application/json" }, body: JSON.stringify({ error: err.message }) };
+      return { status: err.statusCode, headers: { ...corsHeaders(req), "Content-Type": "application/json" }, body: JSON.stringify({ error: err.message }) };
     }
     context.error("audit-runs error:", err);
-    return { status: 500, headers: { ...corsHeaders(), "Content-Type": "application/json" }, body: JSON.stringify({ error: "Internal server error" }) };
+    return { status: 500, headers: { ...corsHeaders(req), "Content-Type": "application/json" }, body: JSON.stringify({ error: "Internal server error" }) };
   }
 }
 

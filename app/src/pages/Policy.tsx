@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeft, FileText, Loader2, Copy, Download, Check } from "lucide-react";
 import Header from "@/components/Header";
-import { apiStream } from "@/lib/api";
+import { apiStream, isAuthenticated } from "@/lib/api";
 
 const policyTypes = [
   { id: "ai-acceptable-use", name: "AI Acceptable Use Policy", desc: "Defines permitted and prohibited uses of AI tools" },
@@ -28,8 +28,15 @@ export default function Policy() {
   const [content, setContent] = useState("");
   const [generating, setGenerating] = useState(false);
   const [copied, setCopied] = useState(false);
+  const [error, setError] = useState<string | null>(null);
 
   const handleGenerate = async () => {
+    if (!isAuthenticated()) {
+      setError("Please sign in to generate policy drafts.");
+      return;
+    }
+
+    setError(null);
     setGenerating(true);
     setContent("");
     setStep(3);
@@ -65,6 +72,12 @@ export default function Policy() {
             <div key={s} className={`h-1.5 flex-1 rounded-full ${step >= s ? "bg-primary" : "bg-muted"}`} />
           ))}
         </div>
+
+        {error && (
+          <div className="p-4 rounded-xl bg-red-500/10 border border-red-500/20 mb-6">
+            <p className="text-sm text-red-600">{error}</p>
+          </div>
+        )}
 
         {step === 1 && (
           <>

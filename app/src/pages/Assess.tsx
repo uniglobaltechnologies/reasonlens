@@ -1,13 +1,12 @@
 import { useState } from "react";
-import { Link, useNavigate, useParams } from "react-router-dom";
-import { ArrowLeft, ArrowRight, CheckCircle2 } from "lucide-react";
+import { Link, useParams } from "react-router-dom";
+import { ArrowLeft, ArrowRight, CheckCircle2, Loader2 } from "lucide-react";
 import Header from "@/components/Header";
 import { getFrameworkById, FRAMEWORKS } from "@/data/frameworks";
 import { apiPost } from "@/lib/api";
 
 export default function Assess() {
   const { framework: frameworkId } = useParams<{ framework: string }>();
-  const navigate = useNavigate();
 
   // If no framework selected, show picker
   if (!frameworkId) return <FrameworkPicker />;
@@ -50,10 +49,12 @@ function FrameworkPicker() {
 }
 
 function AssessmentFlow({ framework: fw }: { framework: any }) {
-  const navigate = useNavigate();
   const [currentQ, setCurrentQ] = useState(0);
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [showResults, setShowResults] = useState(false);
+  const [isSaving, setIsSaving] = useState(false);
+  const [saveError, setSaveError] = useState<string | null>(null);
+  const [savedCount, setSavedCount] = useState<number>(0);
 
   const questions = fw.assessmentQuestions || [];
   const question = questions[currentQ];
@@ -63,16 +64,42 @@ function AssessmentFlow({ framework: fw }: { framework: any }) {
     setAnswers((prev) => ({ ...prev, [question.id]: value }));
   };
 
-  const handleNext = () => {
-    if (currentQ < questions.length - 1) {
-      setCurrentQ((prev) => prev + 1);
-    } else {
+  const saveAssessment = async () => {
+    if (isSaving) return;
+    setIsSaving(true);
+    setSaveError(null);
+
+    try {
+      const results = questions
+        .filter((q: any) => !!answers[q.id])
+        .map((q: any) => ({
+          framework_id: fw.id,
+          framework_name: fw.name,
+          question_id: q.id,
+          dimension: q.dimension,
+          selected_level: answers[q.id],
+        }));
+
+      const res = await apiPost<{ saved: number }>("/assessments", { results });
+      setSavedCount(res.saved || results.length);
+    } catch (err: any) {
+      setSaveError(err?.message || "Failed to save assessment");
+    } finally {
+      setIsSaving(false);
       setShowResults(true);
     }
   };
 
+  const handleNext = () => {
+    if (currentQ < questions.length - 1) {
+      setCurrentQ((prev) => prev + 1);
+    } else {
+      void saveAssessment();
+    }
+  };
+
   const handlePrev = () => {
-    if (currentQ > 0) setCurrentQ((prev) => prev - 1);
+    if (currentQ > 0 && !isSaving) setCurrentQ((prev) => prev - 1);
   };
 
   if (showResults) {
@@ -102,6 +129,11 @@ function AssessmentFlow({ framework: fw }: { framework: any }) {
                 <p className="text-sm text-muted-foreground">{total} questions answered</p>
               </div>
             </div>
+            {saveError ? (
+              <p className="text-sm text-red-600 mb-4">{saveError}</p>
+            ) : (
+              <p className="text-sm text-green-700 mb-4">Saved {savedCount || total} responses.</p>
+            )}
             <div className="space-y-3">
               {Object.entries(levelCounts).map(([level, count]) => (
                 <div key={level}>
@@ -167,18 +199,27 @@ function AssessmentFlow({ framework: fw }: { framework: any }) {
         <div className="flex justify-between">
           <button
             onClick={handlePrev}
-            disabled={currentQ === 0}
+            disabled={currentQ === 0 || isSaving}
             className="px-4 py-2 text-sm border border-border rounded-lg hover:bg-muted transition-colors disabled:opacity-30"
           >
             Previous
           </button>
           <button
             onClick={handleNext}
-            disabled={!answers[question.id]}
+            disabled={!answers[question.id] || isSaving}
             className="inline-flex items-center gap-2 px-4 py-2 bg-primary text-primary-foreground text-sm font-medium rounded-lg hover:bg-primary/90 transition-colors disabled:opacity-50"
           >
-            {currentQ < questions.length - 1 ? "Next" : "See Results"}
-            <ArrowRight className="h-4 w-4" />
+            {isSaving ? (
+              <>
+                <Loader2 className="h-4 w-4 animate-spin" />
+                Saving...
+              </>
+            ) : (
+              <>
+                {currentQ < questions.length - 1 ? "Next" : "See Results"}
+                <ArrowRight className="h-4 w-4" />
+              </>
+            )}
           </button>
         </div>
       </div>

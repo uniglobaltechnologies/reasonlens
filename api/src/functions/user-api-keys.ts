@@ -32,7 +32,7 @@ async function handler(
       );
       return {
         status: 200,
-        headers: { ...corsHeaders(), "Content-Type": "application/json" },
+        headers: { ...corsHeaders(req), "Content-Type": "application/json" },
         body: JSON.stringify({ keys }),
       };
     }
@@ -45,7 +45,7 @@ async function handler(
       if (!body.provider || !body.api_key) {
         return {
           status: 400,
-          headers: { ...corsHeaders(), "Content-Type": "application/json" },
+          headers: { ...corsHeaders(req), "Content-Type": "application/json" },
           body: JSON.stringify({ error: "provider and api_key required" }),
         };
       }
@@ -63,7 +63,7 @@ async function handler(
 
       return {
         status: 200,
-        headers: { ...corsHeaders(), "Content-Type": "application/json" },
+        headers: { ...corsHeaders(req), "Content-Type": "application/json" },
         body: JSON.stringify({ success: true, provider: body.provider }),
       };
     }
@@ -73,7 +73,7 @@ async function handler(
       if (!body.provider) {
         return {
           status: 400,
-          headers: { ...corsHeaders(), "Content-Type": "application/json" },
+          headers: { ...corsHeaders(req), "Content-Type": "application/json" },
           body: JSON.stringify({ error: "provider required" }),
         };
       }
@@ -85,28 +85,28 @@ async function handler(
 
       return {
         status: 200,
-        headers: { ...corsHeaders(), "Content-Type": "application/json" },
+        headers: { ...corsHeaders(req), "Content-Type": "application/json" },
         body: JSON.stringify({ success: true }),
       };
     }
 
     return {
       status: 405,
-      headers: corsHeaders(),
+      headers: corsHeaders(req),
       body: "Method not allowed",
     };
   } catch (err) {
     if (err instanceof AuthError) {
       return {
         status: err.statusCode,
-        headers: { ...corsHeaders(), "Content-Type": "application/json" },
+        headers: { ...corsHeaders(req), "Content-Type": "application/json" },
         body: JSON.stringify({ error: err.message }),
       };
     }
     context.error("user-api-keys error:", err);
     return {
       status: 500,
-      headers: { ...corsHeaders(), "Content-Type": "application/json" },
+      headers: { ...corsHeaders(req), "Content-Type": "application/json" },
       body: JSON.stringify({ error: "Internal server error" }),
     };
   }
