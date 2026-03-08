@@ -158,11 +158,11 @@ Return ONLY the JSON object, no markdown fences.`;
     // Persist to learning_paths table
     const frameworkName = getFrameworkNameById(frameworkId);
     await execute(
-      `INSERT INTO learning_paths (user_id, framework_id, framework_name, dimension_gaps, ai_recommendations, generated_at)
-       VALUES ($1, $2, $3, $4, $5, now())
+      `INSERT INTO learning_paths (user_id, framework_id, framework_name, recommendations, overall_progress, dimension_gaps, ai_recommendations, generated_at)
+       VALUES ($1, $2, $3, $4, 0, $5, $6, now())
        ON CONFLICT (user_id, framework_id) DO UPDATE SET
-         dimension_gaps = $4, ai_recommendations = $5, generated_at = now(), updated_at = now()`,
-      [user.userId, frameworkId, frameworkName, JSON.stringify(gapSummary), JSON.stringify(recommendations)]
+         recommendations = $4, dimension_gaps = $5, ai_recommendations = $6, generated_at = now(), updated_at = now()`,
+      [user.userId, frameworkId, frameworkName, JSON.stringify(recommendations), JSON.stringify(gapSummary), JSON.stringify(recommendations)]
     );
 
     return {
