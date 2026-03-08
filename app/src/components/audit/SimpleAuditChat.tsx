@@ -81,7 +81,7 @@ export default function SimpleAuditChat() {
       setMessages((prev) => [
         ...prev,
         {
-          id: Date.now().toString(),
+          id: crypto.randomUUID(),
           role: "assistant",
           content: "Please sign in first to run audits.",
           timestamp: new Date(),
@@ -130,7 +130,7 @@ export default function SimpleAuditChat() {
       setMessages((prev) => [
         ...prev,
         {
-          id: (Date.now() + 1).toString(),
+          id: crypto.randomUUID(),
           role: "assistant",
           content: `Sorry, something went wrong: ${err.message}`,
           timestamp: new Date(),
@@ -147,7 +147,7 @@ export default function SimpleAuditChat() {
       setMessages((prev) => [
         ...prev,
         {
-          id: Date.now().toString(),
+          id: crypto.randomUUID(),
           role: "assistant",
           content: "Please sign in first to run audits.",
           timestamp: new Date(),
@@ -173,7 +173,7 @@ export default function SimpleAuditChat() {
       setMessages((prev) => [
         ...prev,
         {
-          id: Date.now().toString(),
+          id: crypto.randomUUID(),
           role: "assistant",
           content: `Failed to start audit: ${err.message}`,
           timestamp: new Date(),
@@ -183,8 +183,35 @@ export default function SimpleAuditChat() {
     }
   };
 
-  const handleSuggested = (text: string) => {
-    setInput(text);
+  const sendDirectMessage = async (text: string) => {
+    if (!text.trim() || isLoading) return;
+    if (!isAuthenticated()) {
+      setMessages((prev) => [
+        ...prev,
+        { id: crypto.randomUUID(), role: "assistant", content: "Please sign in first to run audits.", timestamp: new Date() },
+      ]);
+      return;
+    }
+
+    const userMessage: Message = { id: crypto.randomUUID(), role: "user", content: text.trim(), timestamp: new Date() };
+    setMessages((prev) => [...prev, userMessage]);
+    setInput("");
+    setIsLoading(true);
+
+    try {
+      const result = await apiPost<{
+        response: string; confirmation_message?: string; ready_to_run?: boolean; extracted: ExtractedConfig; suggested_config?: any;
+      }>("/parse-audit-intent", { message: userMessage.content });
+
+      const config: ExtractedConfig = { ...result.extracted, suggested_config: result.suggested_config, confirmation_message: result.confirmation_message, ready_to_run: result.ready_to_run };
+      setExtractedConfig(config);
+
+      setMessages((prev) => [...prev, { id: crypto.randomUUID(), role: "assistant", content: result.response, timestamp: new Date(), extractedConfig: config }]);
+    } catch (err: any) {
+      setMessages((prev) => [...prev, { id: crypto.randomUUID(), role: "assistant", content: `Sorry, something went wrong: ${err.message}`, timestamp: new Date() }]);
+    } finally {
+      setIsLoading(false);
+    }
   };
 
   return (
@@ -279,7 +306,7 @@ export default function SimpleAuditChat() {
               return (
                 <button
                   key={i}
-                  onClick={() => handleSuggested(prompt.text)}
+                  onClick={() => sendDirectMessage(prompt.text)}
                   className="w-full text-left px-3 py-2 text-sm rounded-lg border border-border hover:bg-muted/50 transition-colors flex items-center gap-2"
                 >
                   <Icon className="h-4 w-4 text-primary flex-shrink-0" />

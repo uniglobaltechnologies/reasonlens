@@ -9,7 +9,7 @@ import {
   ChevronRight,
 } from "lucide-react";
 import Header from "@/components/Header";
-import { apiGet } from "@/lib/api";
+import { apiGet, isAuthenticated } from "@/lib/api";
 
 interface AuditRun {
   id: string;
@@ -40,11 +40,32 @@ const statusColors: Record<string, string> = {
 export default function AuditRuns() {
   const [runs, setRuns] = useState<AuditRun[]>([]);
   const [loading, setLoading] = useState(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
-    // TODO: Add a /api/audit-runs CRUD endpoint
-    // For now, show empty state
-    setLoading(false);
+    if (!isAuthenticated()) {
+      setLoading(false);
+      setError("Please sign in to view your audit runs.");
+      return;
+    }
+
+    let cancelled = false;
+
+    async function load() {
+      setLoading(true);
+      setError(null);
+      try {
+        const res = await apiGet<{ runs: AuditRun[] }>("/audit-runs");
+        if (!cancelled) setRuns(res.runs);
+      } catch (err: any) {
+        if (!cancelled) setError(err?.message || "Failed to load audit runs.");
+      } finally {
+        if (!cancelled) setLoading(false);
+      }
+    }
+
+    void load();
+    return () => { cancelled = true; };
   }, []);
 
   return (
@@ -64,6 +85,12 @@ export default function AuditRuns() {
         <h2 className="text-2xl font-bold text-foreground mb-6">
           Your Audit Runs
         </h2>
+
+        {error && (
+          <div className="p-4 rounded-xl bg-red-500/10 border border-red-500/20 mb-6">
+            <p className="text-sm text-red-600">{error}</p>
+          </div>
+        )}
 
         {loading ? (
           <div className="flex items-center justify-center py-12">

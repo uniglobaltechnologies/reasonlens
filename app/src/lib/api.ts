@@ -12,8 +12,24 @@ export function clearToken() {
   localStorage.removeItem("reasonlens_token");
 }
 
+function isTokenExpired(token: string): boolean {
+  try {
+    const payload = JSON.parse(atob(token.split(".")[1]));
+    if (!payload.exp) return false;
+    return Date.now() >= payload.exp * 1000;
+  } catch {
+    return true;
+  }
+}
+
 export function isAuthenticated(): boolean {
-  return !!getToken();
+  const token = getToken();
+  if (!token) return false;
+  if (isTokenExpired(token)) {
+    clearToken();
+    return false;
+  }
+  return true;
 }
 
 async function request<T = any>(
@@ -46,6 +62,7 @@ async function request<T = any>(
     const body = await res.json().catch(() => ({ error: res.statusText }));
     const message = body.error || res.statusText;
     if (res.status === 401) {
+      clearToken();
       throw new ApiError(`${message}. Please sign in.`, res.status);
     }
     throw new ApiError(message, res.status);
@@ -138,6 +155,23 @@ export async function apiStream(
       }
     }
   }
+
+  // Process any remaining data in the buffer
+  if (buffer.trim()) {
+    if (buffer.startsWith("data: ")) {
+      const data = buffer.slice(6).trim();
+      if (data !== "[DONE]") {
+        try {
+          const parsed = JSON.parse(data);
+          if (parsed.content) onChunk(parsed.content);
+          if (parsed.error) onError?.(parsed.error);
+        } catch {
+          // ignore trailing partial data
+        }
+      }
+    }
+  }
+
   onDone?.();
 }
 

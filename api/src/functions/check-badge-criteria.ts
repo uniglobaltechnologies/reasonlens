@@ -29,11 +29,25 @@ async function handler(
     const user = await requireAuth(req);
 
     const allBadges = await query<Badge>("SELECT * FROM badges");
-    const earnedRows = await query<{ badge_id: string }>(
-      "SELECT badge_id FROM user_badges WHERE user_id = $1",
+    const earnedRows = await query<{ badge_id: string; earned_at: string }>(
+      "SELECT badge_id, created_at as earned_at FROM user_badges WHERE user_id = $1",
       [user.userId]
     );
     const earnedBadgeIds = new Set(earnedRows.map((b) => b.badge_id));
+
+    // GET: return all badges with earned status (no side effects)
+    if (req.method === "GET") {
+      const badges = allBadges.map((b) => ({
+        ...b,
+        earned: earnedBadgeIds.has(b.id),
+        earned_at: earnedRows.find((r) => r.badge_id === b.id)?.earned_at ?? null,
+      }));
+      return {
+        status: 200,
+        headers: { ...corsHeaders(req), "Content-Type": "application/json" },
+        body: JSON.stringify({ badges }),
+      };
+    }
     const newlyEarned: Badge[] = [];
 
     for (const badge of allBadges) {
@@ -146,7 +160,7 @@ async function handler(
 }
 
 app.http("check-badge-criteria", {
-  methods: ["POST", "OPTIONS"],
+  methods: ["GET", "POST", "OPTIONS"],
   authLevel: "anonymous",
   handler,
 });

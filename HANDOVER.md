@@ -28,7 +28,7 @@ Everything has been rebuilt on Azure (PostgreSQL, Functions, Static Web Apps, Op
 - Data migrated from original Supabase projects (profiles, runs, reports etc.)
 - Schema is at `db/001_unified_schema.sql`
 
-### API (17 Azure Functions)
+### API (18 Azure Functions)
 All deployed to `reasonlens-api` (Consumption plan, Node.js 20):
 
 | Function | What it does |
@@ -37,7 +37,7 @@ All deployed to `reasonlens-api` (Consumption plan, Node.js 20):
 | `assessments` | Assessment results CRUD |
 | `audit-runs` | Run list and detail retrieval |
 | `benchmark-callback` | Receives benchmark results via HMAC-protected POST |
-| `check-badge-criteria` | Rule-based badge eligibility |
+| `check-badge-criteria` | Rule-based badge eligibility (GET returns all badges with earned status, POST checks criteria) |
 | `copilot-chat` | Streaming AI copilot (Azure OpenAI gpt-5.2), personalised from 7 DB queries |
 | `framework-recommender` | Tool-calling LLM recommendation from quiz |
 | `learning-path-ai` | AI-generated learning paths |
@@ -50,6 +50,7 @@ All deployed to `reasonlens-api` (Consumption plan, Node.js 20):
 | `task-evaluator` | AI feasibility scoring (1–5, augment/automate/avoid) |
 | `user-api-keys` | BYOK key management (AES-GCM encrypted at rest) |
 | `user-progress` | Aggregated progress stats |
+| `portfolio` | Portfolio evidence items CRUD (GET/POST/DELETE) |
 
 ### Frontend (15 routes)
 React 19, Vite 7, Tailwind v3. Deployed to `reasonlens-app` (Azure Static Web Apps):
@@ -185,3 +186,31 @@ External Services
 - `My Progress` now reads live stats from `/user-progress` instead of placeholder zeros.
 - Simple Audit flow now launches by `scenario_pack` (backend supports `scenario_ids` or `scenario_pack`).
 - Policy page now supports Word (`.docx`) export in addition to copy and plain text download.
+
+## QA Sweep (2026-03-08)
+
+Code review identified and fixed 16 issues across 12 files:
+
+### Critical (broken features fixed)
+1. **AuditRuns page** (`app/src/pages/AuditRuns.tsx`) — was never fetching data (TODO stub). Now calls `GET /audit-runs` with auth check.
+2. **Badges page** (`app/src/pages/Badges.tsx`) — was fully hardcoded with 6 badges all `earned: false`. Now fetches live status from `GET /check-badge-criteria`.
+3. **Portfolio page** (`app/src/pages/Portfolio.tsx`) — "Add Evidence" button did nothing. Built full add-evidence form + item list + delete. New API endpoint: `api/src/functions/portfolio.ts` (GET/POST/DELETE).
+4. **MyProgress empty state** (`app/src/pages/MyProgress.tsx`) — "Complete an assessment" CTA always showed, even after completing assessments. Now conditional.
+
+### High (data loss / incorrect behaviour)
+5. **Policy text download memory leak** (`app/src/pages/Policy.tsx`) — blob URL never revoked. Added `URL.revokeObjectURL()`.
+6. **Word export incomplete** (`app/src/pages/Policy.tsx`) — only handled `#`/`##` headings. Added `###`, bullet lists, numbered lists, bold, italic support.
+7. **SSE streaming drops last line** (`app/src/lib/api.ts`) — remaining buffer never processed after stream ends. Added buffer flush.
+8. **Expired JWT tokens** (`app/src/lib/api.ts`) — `isAuthenticated()` only checked localStorage existence. Now decodes JWT `exp` claim; clears token on 401 responses.
+
+### Medium (UX)
+9. **AuditDetail no polling** (`app/src/pages/AuditDetail.tsx`) — page fetched once and never refreshed. Added 8-second polling while status is `running`/`queued`.
+10. **LearningPath blank when no data** (`app/src/pages/LearningPath.tsx`) — no empty state. Added fallback with link to start assessment.
+11. **SimpleAuditChat suggested prompts** (`app/src/components/audit/SimpleAuditChat.tsx`) — clicking only set input text, didn't submit. Now auto-sends.
+12. **Copilot conversation reset** (`app/src/components/Copilot.tsx`) — reset on every URL change. Now only resets on top-level section change.
+
+### Low (defensive)
+13. **CORS origin leak** (`api/src/middleware/cors.ts`) — returned first allowed origin for unrecognised requests. Now returns empty string.
+14. **BYOK lookup used raw model IDs** (`api/src/functions/run-petri-audit.ts`) — DB query used un-normalised IDs. Now uses normalised IDs.
+15. **PETRI failure leaves run stuck** (`api/src/functions/run-petri-audit.ts`) — fire-and-forget only logged errors. Now marks run as `failed` in DB.
+16. **Message ID collisions** (`app/src/components/audit/SimpleAuditChat.tsx`) — used `Date.now()`. Replaced with `crypto.randomUUID()`.

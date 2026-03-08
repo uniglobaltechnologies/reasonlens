@@ -122,6 +122,18 @@ export default function LearningPath() {
           </div>
         )}
 
+        {!loading && !error && data && !data.message && !data.recommendations?.length && (
+          <div className="p-6 rounded-xl border-2 border-dashed border-border text-center">
+            <p className="text-muted-foreground mb-4">No recommendations yet. Complete an assessment for this framework first.</p>
+            <Link
+              to={`/assess/${frameworkId || ""}`}
+              className="inline-flex px-4 py-2 bg-primary text-primary-foreground text-sm font-medium rounded-lg hover:bg-primary/90"
+            >
+              Start Assessment
+            </Link>
+          </div>
+        )}
+
         {!loading && !error && data?.recommendations?.length ? (
           <div className="space-y-4">
             {data.recommendations.map((rec, i) => (

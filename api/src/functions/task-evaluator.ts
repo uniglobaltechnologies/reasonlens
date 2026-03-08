@@ -6,7 +6,7 @@ import {
 } from "@azure/functions";
 import { generateWithTools } from "../shared/ai";
 import { requireAuth, AuthError } from "../shared/auth";
-import { getFrameworkContext } from "../shared/framework-context";
+import { getFrameworkIndex } from "../shared/framework-context";
 import { PLATFORM_PREAMBLE } from "../shared/prompt-preamble";
 import { corsHeaders, handleCors } from "../middleware/cors";
 
@@ -32,7 +32,7 @@ async function handler(
       };
     };
 
-    const frameworkContext = getFrameworkContext();
+    const frameworkIndex = getFrameworkIndex();
 
     let userContextBlock = "";
     if (userContext) {
@@ -50,18 +50,45 @@ async function handler(
     const systemPrompt = `${PLATFORM_PREAMBLE}
 ${userContextBlock}
 
-FRAMEWORK CONTEXT (use to inform your evaluation):
-${frameworkContext}
+FRAMEWORK INDEX (for cross-referencing):
+${frameworkIndex}
 
-EVALUATION INSTRUCTIONS:
-1. Consider the user's institutional context — region affects regulatory requirements (UK → DfE guidance, EU → EU AI Act risk categories, International → UNESCO principles), sector affects risk tolerance.
-2. Map feasibility to the user's current maturity level if assessment data is available. An "Emerging" institution needs more safeguards than an "Advanced" one.
-3. Reference specific framework indicators that relate to the task.
-4. Be realistic about AI capabilities. Distinguish between what AI *can* do technically and what it *should* do in an educational context.
-5. Always consider student welfare, academic integrity, and data protection.
-6. For the "implementation" field, provide concrete, step-by-step guidance — not vague suggestions.
-7. Tailor safeguards to the user's region: cite GDPR for EU, UK GDPR + DPA 2018 for UK, FERPA for US institutions.
-8. If the task involves student-facing AI, always include safeguards around transparency and appeal mechanisms.`;
+EVALUATION METHOD:
+Step 1 — CLASSIFY THE TASK using OECD categories:
+- Routine Cognitive: rule-based, predictable (e.g., marking multiple choice, generating rubrics from criteria)
+- Non-Routine Cognitive: judgment, creativity, ambiguity (e.g., providing pastoral feedback, designing novel assessments)
+- Interpersonal: relationship-dependent, emotional (e.g., student welfare conversations, conflict resolution)
+- Manual: physical presence required (e.g., lab supervision, physical demonstrations)
+
+Step 2 — ASSESS FEASIBILITY on a 1–5 scale:
+1 = Not Feasible: AI cannot meaningfully perform this task (e.g., in-person student mentoring, physical lab safety)
+2 = Low Feasibility: AI can assist minimally but human judgment dominates (e.g., complex pastoral care, novel research supervision)
+3 = Moderate: AI can handle structured components but needs human oversight (e.g., initial essay feedback with educator review)
+4 = High Feasibility: AI can perform most of the task with light human oversight (e.g., generating quiz questions from syllabus)
+5 = Highly Suitable: AI can handle this reliably with standard guardrails (e.g., summarising meeting notes, translating materials)
+
+Step 3 — RECOMMEND one of:
+- "augment": AI assists a human who retains control and final decision
+- "automate": AI performs the task end-to-end with periodic human review
+- "avoid": AI should not be used for this task
+
+Step 4 — IDENTIFY SAFEGUARDS tailored to the user's region:
+- UK → UK GDPR, DPA 2018, DfE guidance on AI in education
+- EU → EU AI Act risk categories, GDPR
+- US → FERPA, NIST AI RMF, state-level regulations
+- International → UNESCO Guidance principles
+
+CALIBRATION EXAMPLES:
+- "Grade 200 multiple-choice exams" → Routine Cognitive, feasibility 5, automate. Safeguards: verify answer key, random audit 5%.
+- "Write personalised feedback on student essays" → Non-Routine Cognitive, feasibility 3, augment. Safeguards: educator reviews all AI feedback before release, student informed AI was used.
+- "Conduct a student disciplinary hearing" → Interpersonal, feasibility 1, avoid. Reasoning: requires procedural fairness, emotional sensitivity, legal accountability that AI cannot provide.
+
+RULES:
+1. Be realistic about AI capabilities. Distinguish between what AI *can* do technically and what it *should* do in an educational context.
+2. Always consider student welfare, academic integrity, and data protection.
+3. For the "implementation" field, provide concrete, step-by-step guidance — not vague suggestions.
+4. If the task involves student-facing AI, always include safeguards around transparency and appeal mechanisms.
+5. Reference the OECD category in your reasoning.`;
 
     const result = await generateWithTools(
       systemPrompt,
@@ -112,6 +139,17 @@ EVALUATION INSTRUCTIONS:
 
     if (!result) {
       throw new Error("No tool call in AI response");
+    }
+
+    // Output validation: clamp feasibility, validate recommendation
+    if (typeof result.feasibility === "number") {
+      result.feasibility = Math.max(1, Math.min(5, Math.round(result.feasibility)));
+    } else {
+      result.feasibility = 3; // Default to moderate
+    }
+    const validRecommendations = ["augment", "automate", "avoid"];
+    if (!validRecommendations.includes(result.recommendation)) {
+      result.recommendation = "augment"; // Safe default
     }
 
     return {

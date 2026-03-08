@@ -18,7 +18,7 @@ function getAllowedOrigin(req: HttpRequest): string {
   const origin = req.headers.get("origin") || "";
   if (ALLOWED_ORIGINS.includes("*")) return "*";
   if (ALLOWED_ORIGINS.includes(origin)) return origin;
-  return ALLOWED_ORIGINS[0];
+  return "";
 }
 
 export function corsHeaders(req?: HttpRequest): Record<string, string> {

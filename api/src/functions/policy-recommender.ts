@@ -7,6 +7,7 @@ import {
 import { query } from "../shared/db";
 import { requireAuth, AuthError } from "../shared/auth";
 import { corsHeaders, handleCors } from "../middleware/cors";
+import { levelToScore } from "../shared/level-mapping";
 
 const dimensionMappings = [
   { framework_id: "maturity-jisc-ai", dimension_id: "governance-ethics", low_score_triggers: ["ai-acceptable-use", "ai-governance"] },
@@ -34,16 +35,6 @@ const policyTypeInfo: Record<string, { name: string; description: string }> = {
   "ai-data-governance": { name: "AI Data Governance Policy", description: "Governs data processing and privacy in AI systems" },
   "student-ai-guidance": { name: "Student AI Guidance", description: "Student-facing guidance on responsible AI use" },
 };
-
-function levelToScore(level: string): number {
-  const l = level.toLowerCase();
-  if (l.includes("emerging") || l.includes("initial") || l.includes("level-1") || l === "1") return 1;
-  if (l.includes("developing") || l.includes("level-2") || l === "2") return 2;
-  if (l.includes("established") || l.includes("defined") || l.includes("level-3") || l === "3") return 3;
-  if (l.includes("advanced") || l.includes("embedded") || l.includes("level-4") || l === "4") return 4;
-  if (l.includes("leading") || l.includes("optimising") || l.includes("level-5") || l === "5") return 5;
-  return 2;
-}
 
 async function handler(
   req: HttpRequest,

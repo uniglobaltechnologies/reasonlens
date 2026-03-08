@@ -7,7 +7,7 @@ import {
 import { query, queryOne, execute } from "../shared/db";
 import { requireAuth, AuthError } from "../shared/auth";
 import { generateContent } from "../shared/ai";
-import { getFrameworkContextById } from "../shared/framework-context";
+import { getFrameworkContextById, getFrameworkNameById } from "../shared/framework-context";
 import { PLATFORM_PREAMBLE } from "../shared/prompt-preamble";
 import { corsHeaders, handleCors } from "../middleware/cors";
 
@@ -86,15 +86,22 @@ You are a learning path advisor. Generate personalised, actionable learning reco
 FRAMEWORK DETAIL:
 ${frameworkDetail || "Framework detail not available."}
 
+PRIORITISATION CRITERIA (in order):
+1. Largest gap first: dimensions where the user scored lowest get highest priority.
+2. Self-reported over evidenced: dimensions without evidence are less reliable and need development attention.
+3. Dependency ordering: if dimension B requires skills from dimension A, recommend A first.
+4. Comfort-level matching: if user comfort is 1-2, prioritise foundational actions; if 4-5, include stretch activities.
+
 INSTRUCTIONS:
 1. For each dimension, identify the user's current level and what the next level requires.
-2. Reference specific indicators, curricular goals, and contextual activities from the framework data.
-3. Generate 3-5 concrete, actionable recommendations per gap dimension.
-4. Include estimated time for each recommendation.
-5. Prioritise dimensions where the user scored lowest.
-6. Consider the user's institution type, region, and comfort level.
-7. Dimensions with evidence should get lower priority than self-reported ones.
-8. Use UK English throughout.
+2. Reference specific indicators from the framework data. Quote the indicator description, do not paraphrase.
+3. Cap total recommendations at 8 across all dimensions (not 3-5 per dimension).
+4. Include estimated time for each action.
+5. Consider the user's institution type, region, and comfort level.
+6. Use UK English for UK users, US English for US users, International English otherwise.
+7. Each action MUST specify a resource_type from: self-study, workshop, peer-activity, tool-exploration, reflection, institutional-action.
+8. At least 50% of actions should include a portfolio_evidence suggestion — a concrete artefact the user can create to evidence their learning (e.g., "Write a 500-word reflection on...", "Create a rubric for...", "Document a case study of...").
+9. For frameworks without clear level progression (e.g., ISTE Standards), focus on competency indicators rather than "next level".
 
 OUTPUT FORMAT:
 Return a JSON object with this structure:
@@ -106,7 +113,13 @@ Return a JSON object with this structure:
       "currentLevel": "level name",
       "nextLevel": "target level name",
       "actions": [
-        { "title": "short title", "description": "detailed action", "estimatedTime": "2-3 hours" }
+        {
+          "title": "short title",
+          "description": "detailed action",
+          "estimatedTime": "2-3 hours",
+          "resource_type": "self-study",
+          "portfolio_evidence": "optional: concrete artefact to create"
+        }
       ],
       "frameworkIndicators": ["specific indicators to target"]
     }
@@ -143,12 +156,13 @@ Return ONLY the JSON object, no markdown fences.`;
     }
 
     // Persist to learning_paths table
+    const frameworkName = getFrameworkNameById(frameworkId);
     await execute(
       `INSERT INTO learning_paths (user_id, framework_id, framework_name, dimension_gaps, ai_recommendations, generated_at)
-       VALUES ($1, $2, $2, $3, $4, now())
+       VALUES ($1, $2, $3, $4, $5, now())
        ON CONFLICT (user_id, framework_id) DO UPDATE SET
-         dimension_gaps = $3, ai_recommendations = $4, generated_at = now(), updated_at = now()`,
-      [user.userId, frameworkId, JSON.stringify(gapSummary), JSON.stringify(recommendations)]
+         dimension_gaps = $4, ai_recommendations = $5, generated_at = now(), updated_at = now()`,
+      [user.userId, frameworkId, frameworkName, JSON.stringify(gapSummary), JSON.stringify(recommendations)]
     );
 
     return {

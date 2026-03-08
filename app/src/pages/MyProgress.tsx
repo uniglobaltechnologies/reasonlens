@@ -87,10 +87,12 @@ export default function MyProgress() {
           </div>
         </div>
 
-        <div className="p-8 rounded-xl border-2 border-dashed border-border text-center">
-          <p className="text-muted-foreground mb-4">Complete an assessment to see your progress here.</p>
-          <Link to="/assess" className="px-4 py-2 bg-primary text-primary-foreground text-sm font-medium rounded-lg hover:bg-primary/90 transition-colors">Start Assessment</Link>
-        </div>
+        {!loading && !error && data.assessmentCount === 0 && data.badgeCount === 0 && data.portfolioCount === 0 && (
+          <div className="p-8 rounded-xl border-2 border-dashed border-border text-center">
+            <p className="text-muted-foreground mb-4">Complete an assessment to see your progress here.</p>
+            <Link to="/assess" className="px-4 py-2 bg-primary text-primary-foreground text-sm font-medium rounded-lg hover:bg-primary/90 transition-colors">Start Assessment</Link>
+          </div>
+        )}
       </div>
     </div>
   );

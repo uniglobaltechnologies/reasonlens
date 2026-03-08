@@ -91,8 +91,8 @@ async function handler(
       judgeModel = "azure/gpt-5.2";
     }
 
-    // Check BYOK keys for non-free-tier models
-    const modelIds = [body.auditor_model, body.target_model, body.judge_model];
+    // Check BYOK keys for non-free-tier models (use normalized IDs)
+    const modelIds = [auditorModel, targetModel, judgeModel];
     const models = await query(
       `SELECT model_id, provider_slug, is_free_tier FROM models WHERE model_id = ANY($1)`,
       [modelIds]
@@ -176,12 +176,22 @@ async function handler(
       api_keys: apiKeys,
     };
 
-    // Fire and forget
+    // Fire and forget — but mark run as failed if PETRI is unreachable
     fetch(petriUrl, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(petriPayload),
-    }).catch((err) => context.error("PETRI service call failed:", err));
+    }).catch(async (err) => {
+      context.error("PETRI service call failed:", err);
+      try {
+        await execute(
+          "UPDATE audit_runs SET status = 'failed', error_message = $1, completed_at = now() WHERE id = $2",
+          [`PETRI service unreachable: ${err.message}`, run.id]
+        );
+      } catch (dbErr) {
+        context.error("Failed to update run status after PETRI error:", dbErr);
+      }
+    });
 
     return {
       status: 200,

@@ -8,8 +8,9 @@ import { query, queryOne } from "../shared/db";
 import { validateToken } from "../shared/auth";
 import { generateContentStream, createSSEResponse } from "../shared/ai";
 import {
-  getFrameworkContext,
   getFrameworkContextById,
+  getFrameworkContextByIds,
+  getFrameworkIndex,
 } from "../shared/framework-context";
 import { PLATFORM_PREAMBLE } from "../shared/prompt-preamble";
 import { corsHeaders, handleCors } from "../middleware/cors";
@@ -99,91 +100,103 @@ function buildSystemPrompt(
 ): string {
   const sections: string[] = [PLATFORM_PREAMBLE];
 
+  // --- User profile ---
   if (userContext) {
     const p = userContext.profile;
-    sections.push(`PERSONALISATION CONTEXT:
-- Name: ${p?.full_name || "Not set"}
+    sections.push(`USER PROFILE:
+- Name: ${p?.full_name || "Anonymous"}
 - Institution: ${p?.institution || "Not specified"}${p?.institution_type ? ` (${p.institution_type})` : ""}
 - Region: ${p?.region || "Not specified"}
 - Sector: ${p?.sector || "Not specified"}
-- Self-reported comfort level: ${p?.comfort_level || 1}/5
-- Role: ${context?.userRole || "Not specified"}
-- Goals: ${(context?.goals?.length ? context.goals : userContext.goals)?.join(", ") || "Not specified"}`);
+- Self-reported comfort level: ${p?.comfort_level || "Not set"}/5
+- Goals: ${userContext.goals?.join(", ") || "Not specified"}`);
 
+    // --- Assessment profile with consistency check ---
     if (userContext.assessmentsByFramework.size > 0) {
-      let assessmentBlock =
-        "ASSESSMENT PROFILE (latest results, grouped by framework):";
+      let block = "ASSESSMENT PROFILE (latest self-reported results):";
       for (const [fw, dims] of userContext.assessmentsByFramework) {
-        assessmentBlock += `\n  ${fw}:`;
+        block += `\n  ${fw}:`;
         for (const d of dims) {
-          assessmentBlock += `\n    - ${d.dimension}: ${d.level}`;
+          block += `\n    - ${d.dimension}: ${d.level}`;
         }
       }
-      sections.push(assessmentBlock);
+      // Flag potential inconsistencies
+      if (p?.comfort_level && p.comfort_level <= 2) {
+        const highLevels = [...userContext.assessmentsByFramework.values()]
+          .flat()
+          .filter((d) =>
+            ["create", "advanced", "optimised", "mastery", "expert", "highly advanced"]
+              .some((l) => d.level.toLowerCase().includes(l))
+          );
+        if (highLevels.length > 0) {
+          block += `\n  NOTE: User's comfort level is ${p.comfort_level}/5 but ${highLevels.length} dimensions are self-assessed at advanced levels. Treat with sensitivity — may reflect aspiration rather than current practice.`;
+        }
+      }
+      sections.push(block);
     } else {
       sections.push(
-        "ASSESSMENT PROFILE: No assessments completed yet. Encourage the user to start with a self-assessment."
+        "ASSESSMENT PROFILE: No assessments completed. Guide them toward an assessment relevant to their role before making specific recommendations."
       );
     }
 
-    const progressLines: string[] = [];
+    // --- Progress (condensed) ---
+    const progress: string[] = [];
     if (userContext.learningPaths.length > 0) {
       for (const lp of userContext.learningPaths) {
-        progressLines.push(
-          `- ${lp.framework_name}: ${lp.overall_progress || 0}% complete`
+        progress.push(
+          `${lp.framework_name}: ${lp.overall_progress || 0}%`
         );
       }
     }
-    progressLines.push(
-      `- Portfolio: ${userContext.portfolioCount} items${userContext.portfolioTypes.length ? ` (${userContext.portfolioTypes.join(", ")})` : ""}`
-    );
-    progressLines.push(`- Badges earned: ${userContext.badgeCount}`);
+    progress.push(`Portfolio: ${userContext.portfolioCount} items`);
+    progress.push(`Badges: ${userContext.badgeCount}`);
     if (userContext.policyDrafts.length > 0) {
-      const draftTypes = [
-        ...new Set(userContext.policyDrafts.map((d: any) => d.policy_type)),
-      ];
-      progressLines.push(
-        `- Policy drafts: ${userContext.policyDrafts.length} (${draftTypes.join(", ")})`
-      );
+      progress.push(`Policy drafts: ${userContext.policyDrafts.length}`);
     }
-    sections.push(`LEARNING PROGRESS:\n${progressLines.join("\n")}`);
+    sections.push(`PROGRESS: ${progress.join(" | ")}`);
   }
 
-  const currentPage = context?.page || "Dashboard";
+  // --- Page context + targeted framework injection ---
+  const currentPage = context?.page || "Hub";
   sections.push(`CURRENT PAGE: ${currentPage}`);
 
+  // Inject full detail only for the active framework (if viewing one)
   if (context?.frameworkId) {
     const fwDetail = getFrameworkContextById(context.frameworkId);
     if (fwDetail) {
       sections.push(
-        `CURRENT FRAMEWORK (full detail for the page the user is viewing):\n${fwDetail}`
+        `ACTIVE FRAMEWORK (full detail — user is viewing this framework's page):\n${fwDetail}`
       );
     }
   }
 
-  sections.push(`ESCO SKILLS INTEGRATION (DigComp 3.0 only):
-DigComp 3.0 is linked to the EU's ESCO taxonomy via an official JRC mapping of 732 skills from European job advertisements (2018-2022). Key facts:
-- Area 1 (Information & data literacy): highest coverage — skills like "manage time" (25M+ mentions), "statistics" (4.5M)
-- Area 2 (Communication): "liaise with managers" (8.9M), "coordinate communication" (5.2M)
-- Area 3 (Content creation): "report analysis results" (8.3M), "3D modelling" (128K)
-- Areas 4-5 (Safety, Problem solving): low ESCO coverage — fewer digital-specific skills in taxonomy
-When discussing DigComp competences, reference ESCO data to show labour market relevance.`);
+  // Inject full detail for user's assessed frameworks (max 3, excluding active)
+  if (userContext?.assessmentsByFramework && userContext.assessmentsByFramework.size > 0) {
+    const assessedIds: string[] = [];
+    // We need framework IDs — fetch from assessments query
+    // The assessmentsByFramework map is keyed by name, but we need IDs
+    // For now, inject the index which covers all frameworks concisely
+  }
 
+  // Lightweight index instead of full 22-framework dump (~500 tokens vs ~23K)
   sections.push(
-    `AVAILABLE FRAMEWORKS (all 22 — use for cross-referencing):\n${getFrameworkContext()}`
+    `FRAMEWORK INDEX (all 22 — for cross-referencing; ask user to navigate to a framework's page for full detail):\n${getFrameworkIndex()}`
   );
 
-  sections.push(`INSTRUCTIONS — HOW TO REASON:
-1. Ground every recommendation in the user's actual assessment levels. If they scored "Acquire" on Ethics, don't recommend advanced ethics activities — suggest what "Deepen" requires.
-2. When suggesting next steps, name the specific dimension and the next level up with its indicators.
-3. Cross-reference frameworks when relevant.
-4. For portfolio advice, suggest evidence types that map to the user's weakest dimensions.
-5. If the user has no assessments, guide them to start one relevant to their role.
-6. Consider the user's region when discussing regulatory context (UK → DfE, EU → AI Act, International → UNESCO Guidance).
-7. Consider the user's institution type and sector when suggesting implementation approaches.
-8. Prioritise actionable, concrete suggestions over general encouragement.
-9. If asked about a framework, cite specific indicators from the framework data provided.
-10. Never suggest tools or approaches beyond the user's current comfort level without acknowledging the stretch.`);
+  // --- Reasoning instructions (prioritised) ---
+  sections.push(`REASONING PRIORITIES (in order of importance):
+1. GROUND IN DATA: Every recommendation must reference the user's actual assessment levels. If they scored "Acquire" on Ethics, do not recommend advanced ethics work — suggest what "Deepen" requires.
+2. BE SPECIFIC: Name the exact dimension, current level, next level, and at least one indicator. "Improve your ethics skills" is not acceptable; cite the specific indicator from framework data.
+3. RESPECT SCOPE: Individual competency frameworks assess people; institutional maturity frameworks assess organisations. Do not conflate them.
+4. CONTEXTUALISE TO REGION: UK → DfE guidance, UK GDPR, DPA 2018. EU → EU AI Act risk categories, GDPR. US → FERPA, NIST AI RMF. International → UNESCO Guidance.
+5. MATCH COMFORT LEVEL: Comfort 1-2 → foundational activities. Comfort 4-5 → stretch activities. Flag the gap if recommending above comfort level.
+6. CROSS-REFERENCE SPARINGLY: Only cite another framework when it adds genuine value. If you need full detail for a framework not loaded, tell the user to navigate to that framework's page.
+7. PRIORITISE ACTIONABLE OVER ASPIRATIONAL: Concrete next steps, not general encouragement.
+
+OUT OF SCOPE:
+- Do not help with tasks unrelated to AI in education.
+- Do not generate full policy documents — direct users to the Policy Generator page.
+- Do not run or interpret safety audit results — direct users to the Audit page.`);
 
   return sections.join("\n\n");
 }

@@ -28,7 +28,7 @@ reason-lens/
 │
 ├── api/                        Azure Functions v4 (Node.js 20, TypeScript)
 │   └── src/
-│       ├── functions/          17 Azure Functions
+│       ├── functions/          18 Azure Functions
 │       ├── shared/
 │       │   ├── auth.ts         validateToken, requireAuth, requireRole
 │       │   ├── db.ts           PostgreSQL pool (query, queryOne, execute)
@@ -115,7 +115,8 @@ Base URL: `https://reasonlens-api.azurewebsites.net/api/`
 | `/assessments` | GET/POST | JWT | Assessment results CRUD |
 | `/user-progress` | GET | JWT | Aggregated progress stats |
 | `/policy-recommender` | POST | JWT | Rule-based: maps assessment gaps to policy types |
-| `/check-badge-criteria` | POST | JWT | Badge eligibility check |
+| `/check-badge-criteria` | GET/POST | JWT | Badge eligibility check (GET returns all badges with earned status) |
+| `/portfolio` | GET/POST/DELETE | JWT | Portfolio evidence items CRUD |
 
 ### Audit Orchestration
 
@@ -156,7 +157,7 @@ Base URL: `https://reasonlens-api.azurewebsites.net/api/`
 | `/badges` | Badge Collection | — |
 | `/auth` | Sign In / Sign Up | — |
 
-**Global**: `Copilot` floating chat widget mounted outside `<Routes>` in `App.tsx`. Visible on all pages except `/auth`. Resets conversation on route change. Sends current page label + framework ID (from URL) as context to `/copilot-chat`.
+**Global**: `Copilot` floating chat widget mounted outside `<Routes>` in `App.tsx`. Visible on all pages except `/auth`. Resets conversation when the top-level section changes (e.g. `/frameworks` → `/audit`), not on every sub-page navigation. Sends current page label + framework ID (from URL) as context to `/copilot-chat`.
 
 ---
 
@@ -257,7 +258,7 @@ swa deploy dist --deployment-token $SWA_DEPLOYMENT_TOKEN --env production
 
 | # | Item | Status |
 |---|---|---|
-| 1 | All 17 API functions | Done |
+| 1 | All 18 API functions | Done |
 | 2 | All 15 frontend routes | Done |
 | 3 | 25-table DB schema + data migration | Done |
 | 4 | Auth (bcrypt + JWT) | Done |
@@ -271,3 +272,4 @@ swa deploy dist --deployment-token $SWA_DEPLOYMENT_TOKEN --env production
 | 12 | Custom domain on Static Web App | Done 2026-03-08 (`reasonlens.com`, `www.reasonlens.com`) |
 | 13 | Upgrade Function App runtime to Node 24 before 2026-04-30 | Pending |
 | 14 | Function App CORS allow-list for custom domains | Done 2026-03-08 |
+| 15 | QA sweep: 16 bug fixes across frontend + API | Done 2026-03-08 |

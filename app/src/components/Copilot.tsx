@@ -1,5 +1,5 @@
 import { useState, useRef, useEffect } from "react";
-import { useLocation, useParams } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { MessageCircle, X, Send, Loader2, Plus, Bot, User } from "lucide-react";
 import { apiStream } from "@/lib/api";
 
@@ -76,10 +76,11 @@ export default function Copilot() {
     if (isOpen) inputRef.current?.focus();
   }, [isOpen]);
 
-  // Reset conversation when navigating to a different section
+  // Reset conversation only when navigating to a different top-level section
+  const section = pathname.split("/")[1] || "";
   useEffect(() => {
     setMessages([]);
-  }, [pathname]);
+  }, [section]);
 
   if (HIDE_ON.includes(pathname)) return null;
 

@@ -7,6 +7,7 @@ import {
 import { query, execute } from "../shared/db";
 import { requireAuth, AuthError } from "../shared/auth";
 import { corsHeaders, handleCors } from "../middleware/cors";
+import { validateAssessmentResults } from "../shared/framework-schema";
 
 async function handler(
   req: HttpRequest,
@@ -55,6 +56,19 @@ async function handler(
           status: 400,
           headers: { ...corsHeaders(req), "Content-Type": "application/json" },
           body: JSON.stringify({ error: "results array required" }),
+        };
+      }
+
+      // Validate levels against framework schemas
+      const validationErrors = validateAssessmentResults(body.results);
+      if (validationErrors.length > 0) {
+        return {
+          status: 400,
+          headers: { ...corsHeaders(req), "Content-Type": "application/json" },
+          body: JSON.stringify({
+            error: "Invalid assessment levels",
+            details: validationErrors,
+          }),
         };
       }
 

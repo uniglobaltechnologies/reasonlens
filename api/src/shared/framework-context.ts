@@ -865,6 +865,50 @@ const frameworks: FrameworkContext[] = [
   },
 ];
 
+/** Returns the raw framework data array for schema validation and direct access. */
+export function getFrameworkData(): FrameworkContext[] {
+  return frameworks;
+}
+
+/** Lightweight one-line-per-framework index (~500 tokens instead of ~23K). */
+export function getFrameworkIndex(): string {
+  return frameworks
+    .map(
+      (f, i) =>
+        `${i + 1}. ${f.name} (${f.scope}, ${f.type}, audience: ${f.targetAudience.join("/")})`
+    )
+    .join("\n");
+}
+
+/** Returns the human-readable name for a framework ID, or the ID itself if not found. */
+export function getFrameworkNameById(id: string): string {
+  const f = frameworks.find((fw) => fw.id === id);
+  return f ? f.name : id;
+}
+
+/** Returns framework IDs relevant to a user's role and assessed frameworks. */
+export function getRelevantFrameworkIds(
+  assessedFrameworkIds: string[],
+  currentFrameworkId?: string | null,
+  maxTotal: number = 3
+): string[] {
+  const ids = new Set<string>();
+  if (currentFrameworkId) ids.add(currentFrameworkId);
+  for (const id of assessedFrameworkIds) {
+    if (ids.size >= maxTotal) break;
+    ids.add(id);
+  }
+  return [...ids];
+}
+
+/** Returns full context for multiple frameworks by ID. */
+export function getFrameworkContextByIds(ids: string[]): string {
+  return ids
+    .map((id) => getFrameworkContextById(id))
+    .filter(Boolean)
+    .join("\n\n---\n\n");
+}
+
 export function getFrameworkContext(): string {
   return frameworks
     .map((f, i) => {

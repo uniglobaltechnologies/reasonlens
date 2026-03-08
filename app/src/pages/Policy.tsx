@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeft, FileText, Loader2, Copy, Download, Check } from "lucide-react";
-import { Document, Packer, Paragraph, HeadingLevel } from "docx";
+import { Document, Packer, Paragraph, HeadingLevel, TextRun } from "docx";
 import Header from "@/components/Header";
 import { apiStream, isAuthenticated } from "@/lib/api";
 
@@ -64,25 +64,55 @@ export default function Policy() {
     setDownloadingDocx(true);
     try {
       const lines = content.split("\n");
+
+      const parseInlineRuns = (text: string): TextRun[] => {
+        const runs: TextRun[] = [];
+        const regex = /\*\*(.+?)\*\*|\*(.+?)\*/g;
+        let lastIndex = 0;
+        let match;
+        while ((match = regex.exec(text)) !== null) {
+          if (match.index > lastIndex) {
+            runs.push(new TextRun(text.slice(lastIndex, match.index)));
+          }
+          if (match[1]) {
+            runs.push(new TextRun({ text: match[1], bold: true }));
+          } else if (match[2]) {
+            runs.push(new TextRun({ text: match[2], italics: true }));
+          }
+          lastIndex = regex.lastIndex;
+        }
+        if (lastIndex < text.length) {
+          runs.push(new TextRun(text.slice(lastIndex)));
+        }
+        return runs.length > 0 ? runs : [new TextRun(text)];
+      };
+
       const children = lines.map((raw) => {
         const line = raw.trimEnd();
         if (!line.trim()) return new Paragraph("");
+        if (line.startsWith("### ")) {
+          return new Paragraph({ text: line.slice(4), heading: HeadingLevel.HEADING_3 });
+        }
         if (line.startsWith("## ")) {
-          return new Paragraph({
-            text: line.slice(3),
-            heading: HeadingLevel.HEADING_2,
-          });
+          return new Paragraph({ text: line.slice(3), heading: HeadingLevel.HEADING_2 });
         }
         if (line.startsWith("# ")) {
-          return new Paragraph({
-            text: line.slice(2),
-            heading: HeadingLevel.HEADING_1,
-          });
+          return new Paragraph({ text: line.slice(2), heading: HeadingLevel.HEADING_1 });
         }
-        return new Paragraph(line);
+        if (/^[-*] /.test(line)) {
+          return new Paragraph({ children: parseInlineRuns(line.slice(2)), bullet: { level: 0 } });
+        }
+        if (/^\d+\.\s/.test(line)) {
+          const text = line.replace(/^\d+\.\s/, "");
+          return new Paragraph({ children: parseInlineRuns(text), numbering: { reference: "default-numbering", level: 0 } });
+        }
+        return new Paragraph({ children: parseInlineRuns(line) });
       });
 
       const doc = new Document({
+        numbering: {
+          config: [{ reference: "default-numbering", levels: [{ level: 0, format: "decimal", text: "%1.", alignment: "start" as any }] }],
+        },
         sections: [{ children }],
       });
 
@@ -179,7 +209,7 @@ export default function Policy() {
                     {copied ? <Check className="h-3.5 w-3.5 text-green-500" /> : <Copy className="h-3.5 w-3.5" />}
                     {copied ? "Copied" : "Copy"}
                   </button>
-                  <button onClick={() => { const blob = new Blob([content], { type: "text/plain" }); const a = document.createElement("a"); a.href = URL.createObjectURL(blob); a.download = `${selectedType}-draft.txt`; a.click(); }} className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm border border-border rounded-lg hover:bg-muted">
+                  <button onClick={() => { const blob = new Blob([content], { type: "text/plain" }); const a = document.createElement("a"); const url = URL.createObjectURL(blob); a.href = url; a.download = `${selectedType}-draft.txt`; a.click(); URL.revokeObjectURL(url); }} className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm border border-border rounded-lg hover:bg-muted">
                     <Download className="h-3.5 w-3.5" />Text
                   </button>
                   <button onClick={handleDownloadWord} disabled={downloadingDocx} className="inline-flex items-center gap-1.5 px-3 py-1.5 text-sm border border-border rounded-lg hover:bg-muted disabled:opacity-50">

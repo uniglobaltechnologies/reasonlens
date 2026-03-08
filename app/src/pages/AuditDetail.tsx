@@ -63,11 +63,27 @@ export default function AuditDetail() {
 
   useEffect(() => {
     if (!id) return;
-    apiGet<RunDetail>(`/audit-runs?id=${id}`)
-      .then(setData)
-      .catch((err) => setError(err.message))
-      .finally(() => setLoading(false));
-  }, [id]);
+
+    let cancelled = false;
+
+    const fetchData = () => {
+      apiGet<RunDetail>(`/audit-runs?id=${id}`)
+        .then((res) => { if (!cancelled) setData(res); })
+        .catch((err) => { if (!cancelled) setError(err.message); })
+        .finally(() => { if (!cancelled) setLoading(false); });
+    };
+
+    fetchData();
+
+    // Poll every 8 seconds while the run is still in progress
+    const interval = setInterval(() => {
+      if (data?.run.status === "running" || data?.run.status === "queued") {
+        fetchData();
+      }
+    }, 8000);
+
+    return () => { cancelled = true; clearInterval(interval); };
+  }, [id, data?.run.status]);
 
   if (loading) {
     return (
