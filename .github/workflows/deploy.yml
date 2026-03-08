@@ -21,8 +21,7 @@ jobs:
           set -euo pipefail
           cd api
           npm prune --omit=dev
-          cd ..
-          zip -qr api-package.zip api
+          zip -qr ../api-package.zip .
       - name: Upload API package to Blob Storage
         env:
           STORAGE_ACCOUNT: reasonlensfuncstor
