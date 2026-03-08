@@ -15,7 +15,7 @@ Everything has been rebuilt on Azure (PostgreSQL, Functions, Static Web Apps, Op
 
 **Local working directory**: `/Users/catorolea/Documents/GitHub/reason-lens/`
 **GitHub repo**: `https://github.com/AI-For-Global-Education/reasonlens` (private)
-**Live frontend**: `https://purple-hill-0a1de9703.1.azurestaticapps.net`
+**Live frontend**: `https://reasonlens.com` (also `https://www.reasonlens.com`)
 **Live API**: `https://reasonlens-api.azurewebsites.net/api/`
 
 ---
@@ -28,7 +28,7 @@ Everything has been rebuilt on Azure (PostgreSQL, Functions, Static Web Apps, Op
 - Data migrated from original Supabase projects (profiles, runs, reports etc.)
 - Schema is at `db/001_unified_schema.sql`
 
-### API (16 Azure Functions)
+### API (17 Azure Functions)
 All deployed to `reasonlens-api` (Consumption plan, Node.js 20):
 
 | Function | What it does |
@@ -51,56 +51,44 @@ All deployed to `reasonlens-api` (Consumption plan, Node.js 20):
 | `user-api-keys` | BYOK key management (AES-GCM encrypted at rest) |
 | `user-progress` | Aggregated progress stats |
 
-### Frontend (14 routes)
+### Frontend (15 routes)
 React 19, Vite 7, Tailwind v3. Deployed to `reasonlens-app` (Azure Static Web Apps):
 
-- Hub, Audit (Simple + Pro), AuditRuns, AuditDetail, Evaluate, Frameworks, FrameworkDetail, Assess, Policy, MyProgress, Portfolio, Badges, Auth
+- Hub, Audit (Simple + Pro), AuditRuns, AuditDetail, Evaluate, Frameworks, FrameworkDetail, Assess, LearningPath, Policy, MyProgress, Portfolio, Badges, Auth
+- Policy page supports copy, plain text download, and Word (`.docx`) download of generated drafts.
 
 **Copilot widget** (`app/src/components/Copilot.tsx`) — floating chat, all pages, SSE streaming to `/copilot-chat`, context-aware by route.
 
 **Code splitting** — all pages lazy-loaded. Build output: main bundle ~192KB (down from 1.1MB), framework data chunk ~862KB (unavoidable — it's 22 large data definitions).
 
 ### CI/CD
-`.github/workflows/deploy.yml` — push to `main` deploys API + frontend. **GitHub Actions secrets are NOT yet set** (see Pending section).
+`.github/workflows/deploy.yml` — push to `main` deploys API + frontend.
 
 ---
 
+## Production Config Status (Verified 2026-03-08)
+
+### Completed
+- Azure Function App settings are configured, including AI + PETRI settings.
+- `PETRI_SERVICE_URL` now points to the live POST endpoint: `https://petri-service.icyplant-d7ce5d44.uksouth.azurecontainerapps.io/api` (root URL returns 404).
+- `TOXICITY_SERVICE_URL` and `BENCHMARK_SERVICE_URL` are configured to:
+  - `https://petri-service.icyplant-d7ce5d44.uksouth.azurecontainerapps.io/toxicity`
+  - `https://petri-service.icyplant-d7ce5d44.uksouth.azurecontainerapps.io/benchmark`
+- PETRI callback secret wiring is confirmed end-to-end:
+  - Function App `PETRI_CALLBACK_SECRET` matches Container App `callback-secret`.
+- `JWT_SECRET` rotated from dev placeholder to a strong random value (existing sessions invalidated and must re-login).
+- GitHub Actions deploy secrets are configured (`AZURE_FUNCTIONS_PUBLISH_PROFILE`, `FUNCTIONS_STORAGE_ACCOUNT_KEY`, `SWA_DEPLOYMENT_TOKEN`).
+- Custom domains are configured and `Ready` on `reasonlens-app`:
+  - `reasonlens.com`
+  - `www.reasonlens.com`
+- Function App platform CORS allow-list includes production domains and localhost:
+  - `https://reasonlens.com`, `https://www.reasonlens.com`, `https://purple-hill-0a1de9703.1.azurestaticapps.net`, `http://localhost:5173`
+
 ## What Is Pending (Start Here)
 
-### 1. GitHub Actions Secrets (unblocks CI/CD)
-Go to `https://github.com/AI-For-Global-Education/reasonlens/settings/secrets/actions` and add:
-
-| Secret | Where to get it |
-|---|---|
-| `AZURE_FUNCTIONS_PUBLISH_PROFILE` | Azure Portal → `reasonlens-api` → Get publish profile |
-| `SWA_DEPLOYMENT_TOKEN` | Azure Portal → `reasonlens-app` → Manage deployment token |
-
-Once set, push to `main` will auto-deploy everything.
-
-### 2. Azure Function App Env Vars (unblocks all AI features)
-Go to Azure Portal → `reasonlens-api` → Configuration → Application settings and add:
-
-| Variable | Value |
-|---|---|
-| `JWT_SECRET` | Generate a strong random string (32+ chars) |
-| `BYOK_ENC_SECRET` | Generate a strong random string (32+ chars) |
-| `PETRI_SERVICE_URL` | `https://petri-service.icyplant-d7ce5d44.uksouth.azurecontainerapps.io` |
-| `PETRI_CALLBACK_SECRET` | A shared secret — must also be set on the PETRI service side |
-| `TOXICITY_SERVICE_URL` | URL of the toxicity scoring service (check GlassRoom Lab infra) |
-| `BENCHMARK_SERVICE_URL` | URL of the benchmark runner service (check GlassRoom Lab infra) |
-| `AZURE_OPENAI_ENDPOINT` | `https://aige-petri-resource.cognitiveservices.azure.com` |
-| `AZURE_OPENAI_API_KEY` | From Azure Portal → `aige-petri-resource` → Keys |
-| `AZURE_OPENAI_DEPLOYMENT` | `gpt-5.2` |
-| `DATABASE_URL` | Already in `api/local.settings.json` — copy to Azure |
-
-### 3. PETRI Callback Secret
-The PETRI service must send `x-signature` (HMAC-SHA256) and `x-timestamp` headers on callbacks. The secret used must match `PETRI_CALLBACK_SECRET`. Check the PETRI Container App config — this may already be wired up in the old GlassRoom Lab deployment.
-
-### 4. Toxicity + Benchmark Services
-These were originally Modal deployments in GlassRoom Lab. Check `uniglobaltechnologies/reasonlens` (old repo) or the GlassRoom Lab codebase for the Modal function URLs. They need to be reachable by the Azure Function App.
-
-### 5. Custom Domain
-Azure Portal → `reasonlens-app` → Custom domains → Add. DNS CNAME to `purple-hill-0a1de9703.1.azurestaticapps.net`.
+### 1. Runtime Upgrade (Time-sensitive)
+Azure warns Node.js 20 support for Functions reaches end-of-life on **2026-04-30**.
+- Plan and perform runtime upgrade to Node.js 24 for `reasonlens-api`.
 
 ---
 
@@ -113,7 +101,7 @@ Browser
             └─ lib/api.ts — fetch wrapper, SSE streaming, JWT in localStorage
 
 Azure Functions (uksouth, Consumption)
-  └─ api/src/functions/* (16 functions)
+  └─ api/src/functions/* (17 functions)
        ├─ shared/db.ts — pg Pool → reasonlens-db.postgres.database.azure.com
        ├─ shared/auth.ts — bcrypt + JWT validation
        ├─ shared/ai.ts — Azure OpenAI streaming (gpt-5.2)
@@ -162,6 +150,8 @@ External Services
 
 7. **The old repos** (`uniglobaltechnologies/reasonlens` at `/Users/catorolea/Documents/GitHub/reasonlens/`) is the OLD GlassRoom Lab — not this project. Do not confuse them.
 
+8. **CORS is strict allow-list based**. Ensure `ALLOWED_ORIGINS` in Function App settings includes all frontend domains (at least `https://purple-hill-0a1de9703.1.azurestaticapps.net`, `https://reasonlens.com`, and `https://www.reasonlens.com`).
+
 ---
 
 ## Source Projects (for reference only — do not modify)
@@ -177,9 +167,21 @@ External Services
 
 - Built entire platform from scratch (merged two products)
 - 25-table PostgreSQL schema + data migration from Supabase
-- 16 Azure Functions (auth, assessments, audit orchestration, AI features)
+- 17 Azure Functions (auth, assessments, audit orchestration, AI features)
 - 14 React pages + routing
 - CI/CD via GitHub Actions
 - **Copilot floating widget** — `app/src/components/Copilot.tsx` — SSE streaming to `/copilot-chat`, context-aware, page-specific suggested prompts
 - **Code splitting** — lazy page loading via `React.lazy`, `manualChunks` in `vite.config.ts`, main bundle 192KB (was 1.1MB)
 - Updated `README.md` and this `HANDOVER.md`
+
+## Recent Updates (2026-03-08)
+
+- Added custom domain support end-to-end:
+  - Static Web App hostnames live (`reasonlens.com`, `www.reasonlens.com`)
+  - Function App CORS allow-list includes production domains
+- Fixed CORS handling in API responses (`corsHeaders(req)` across functions) to reflect request origin correctly.
+- Assessment flow now persists results to `/assessments` before showing results.
+- Added `/learning-path/:frameworkId` route and page to generate/view recommendations from `/learning-path-ai`.
+- `My Progress` now reads live stats from `/user-progress` instead of placeholder zeros.
+- Simple Audit flow now launches by `scenario_pack` (backend supports `scenario_ids` or `scenario_pack`).
+- Policy page now supports Word (`.docx`) export in addition to copy and plain text download.
