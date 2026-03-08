@@ -36,7 +36,8 @@ async function handler(
     const user = await requireRole(req, "runner", "admin");
 
     const body = (await req.json()) as {
-      scenario_ids: string[];
+      scenario_ids?: string[];
+      scenario_pack?: string;
       auditor_model: string;
       target_model: string;
       judge_model: string;
@@ -49,19 +50,29 @@ async function handler(
       benchmark_packs?: string[];
     };
 
-    if (!body.scenario_ids?.length || !body.auditor_model || !body.target_model || !body.judge_model) {
+    if ((!body.scenario_ids?.length && !body.scenario_pack) || !body.auditor_model || !body.target_model || !body.judge_model) {
       return {
         status: 400,
         headers: { ...corsHeaders(req), "Content-Type": "application/json" },
-        body: JSON.stringify({ error: "scenario_ids, auditor_model, target_model, and judge_model are required" }),
+        body: JSON.stringify({ error: "scenario_ids or scenario_pack, auditor_model, target_model, and judge_model are required" }),
       };
     }
 
     // Fetch scenarios
-    const scenarios = await query(
-      `SELECT id, pack_id, seed_instruction FROM scenarios WHERE id = ANY($1::uuid[])`,
-      [body.scenario_ids]
-    );
+    const scenarios = body.scenario_ids?.length
+      ? await query(
+          `SELECT id, pack_id, seed_instruction
+           FROM scenarios
+           WHERE id = ANY($1::uuid[]) AND (is_default = true OR owner_id = $2::uuid)`,
+          [body.scenario_ids, user.userId]
+        )
+      : await query(
+          `SELECT id, pack_id, seed_instruction
+           FROM scenarios
+           WHERE pack_id = $1 AND (is_default = true OR owner_id = $2::uuid)
+           ORDER BY created_at ASC`,
+          [body.scenario_pack, user.userId]
+        );
 
     if (scenarios.length === 0) {
       return {

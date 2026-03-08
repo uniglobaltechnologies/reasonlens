@@ -160,7 +160,7 @@ export default function SimpleAuditChat() {
     try {
       const config = extractedConfig.suggested_config;
       const result = await apiPost<{ run_id: string }>("/run-petri-audit", {
-        scenario_ids: [], // Will be resolved by pack
+        scenario_pack: config.scenario_pack,
         auditor_model: config.auditor_model,
         target_model: config.target_model,
         judge_model: config.judge_model,
