@@ -75,7 +75,7 @@ jobs:
             exit 1
           fi
 
-          python3 - <<'PY'
+          mapfile -t KUDU_CREDS < <(python3 - <<'PY'
           import os
           import xml.etree.ElementTree as ET
 
@@ -87,16 +87,15 @@ jobs:
           if profile is None:
               raise SystemExit("ZipDeploy publish profile not found")
 
-          host = profile.attrib["publishUrl"].split(":")[0]
-          with open("/tmp/kudu.env", "w", encoding="utf-8") as f:
-              f.write(f'SCM_USER={profile.attrib["userName"]}\n')
-              f.write(f'SCM_PASS={profile.attrib["userPWD"]}\n')
-              f.write(f'SCM_HOST={host}\n')
+          print(profile.attrib["userName"])
+          print(profile.attrib["userPWD"])
+          print(profile.attrib["publishUrl"].split(":")[0])
           PY
+          )
 
-          set -a
-          source /tmp/kudu.env
-          set +a
+          SCM_USER="${KUDU_CREDS[0]}"
+          SCM_PASS="${KUDU_CREDS[1]}"
+          SCM_HOST="${KUDU_CREDS[2]}"
 
           payload="$(python3 - <<'PY'
           import json
