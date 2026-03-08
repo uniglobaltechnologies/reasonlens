@@ -16,12 +16,108 @@ jobs:
       - name: Install and build API
         working-directory: api
         run: npm ci && npm run build
-      - name: Deploy API to Azure Functions
-        uses: Azure/functions-action@v1
-        with:
-          app-name: reasonlens-api
-          package: api
-          publish-profile: ${{ secrets.AZURE_FUNCTIONS_PUBLISH_PROFILE }}
+      - name: Create API package
+        run: |
+          set -euo pipefail
+          cd api
+          npm prune --omit=dev
+          cd ..
+          zip -qr api-package.zip api
+      - name: Upload API package to Blob Storage
+        env:
+          STORAGE_ACCOUNT: reasonlensfuncstor
+          STORAGE_CONTAINER: function-releases
+          STORAGE_KEY: ${{ secrets.FUNCTIONS_STORAGE_ACCOUNT_KEY }}
+        run: |
+          set -euo pipefail
+          if [ -z "${STORAGE_KEY:-}" ]; then
+            echo "Missing secret: FUNCTIONS_STORAGE_ACCOUNT_KEY"
+            exit 1
+          fi
+
+          BLOB_NAME="api-${GITHUB_SHA::12}-$(date -u +%Y%m%d%H%M%S).zip"
+          az storage container create \
+            --name "$STORAGE_CONTAINER" \
+            --account-name "$STORAGE_ACCOUNT" \
+            --account-key "$STORAGE_KEY" \
+            --auth-mode key \
+            >/dev/null
+
+          az storage blob upload \
+            --account-name "$STORAGE_ACCOUNT" \
+            --account-key "$STORAGE_KEY" \
+            --container-name "$STORAGE_CONTAINER" \
+            --name "$BLOB_NAME" \
+            --file api-package.zip \
+            --overwrite true \
+            >/dev/null
+
+          EXPIRY="$(date -u -d '+10 years' '+%Y-%m-%dT%H:%MZ')"
+          SAS="$(az storage blob generate-sas \
+            --account-name "$STORAGE_ACCOUNT" \
+            --account-key "$STORAGE_KEY" \
+            --container-name "$STORAGE_CONTAINER" \
+            --name "$BLOB_NAME" \
+            --permissions r \
+            --https-only \
+            --expiry "$EXPIRY" \
+            -o tsv)"
+
+          PACKAGE_URL="https://${STORAGE_ACCOUNT}.blob.core.windows.net/${STORAGE_CONTAINER}/${BLOB_NAME}?${SAS}"
+          echo "PACKAGE_URL=$PACKAGE_URL" >> "$GITHUB_ENV"
+      - name: Point Function App to new package
+        env:
+          PUBLISH_PROFILE: ${{ secrets.AZURE_FUNCTIONS_PUBLISH_PROFILE }}
+        run: |
+          set -euo pipefail
+          if [ -z "${PUBLISH_PROFILE:-}" ]; then
+            echo "Missing secret: AZURE_FUNCTIONS_PUBLISH_PROFILE"
+            exit 1
+          fi
+
+          python3 - <<'PY'
+          import os
+          import xml.etree.ElementTree as ET
+
+          root = ET.fromstring(os.environ["PUBLISH_PROFILE"])
+          profile = next(
+              (p for p in root.findall("publishProfile") if p.attrib.get("publishMethod") == "ZipDeploy"),
+              None
+          )
+          if profile is None:
+              raise SystemExit("ZipDeploy publish profile not found")
+
+          host = profile.attrib["publishUrl"].split(":")[0]
+          with open("/tmp/kudu.env", "w", encoding="utf-8") as f:
+              f.write(f'SCM_USER={profile.attrib["userName"]}\n')
+              f.write(f'SCM_PASS={profile.attrib["userPWD"]}\n')
+              f.write(f'SCM_HOST={host}\n')
+          PY
+
+          set -a
+          source /tmp/kudu.env
+          set +a
+
+          payload="$(python3 - <<'PY'
+          import json
+          import os
+          print(json.dumps({
+              "WEBSITE_RUN_FROM_PACKAGE": os.environ["PACKAGE_URL"],
+              "WEBSITE_MOUNT_ENABLED": "1"
+          }))
+          PY
+          )"
+
+          curl -fsS -u "$SCM_USER:$SCM_PASS" \
+            -H "Content-Type: application/json" \
+            -X POST \
+            "https://$SCM_HOST/api/settings" \
+            --data "$payload"
+
+          # Apply new app setting immediately
+          curl -fsS -u "$SCM_USER:$SCM_PASS" \
+            -X POST \
+            "https://$SCM_HOST/api/app/restart"
 
   deploy-app:
     runs-on: ubuntu-latest
