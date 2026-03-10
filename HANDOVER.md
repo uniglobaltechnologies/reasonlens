@@ -102,20 +102,21 @@ Browser
             └─ lib/api.ts — fetch wrapper, SSE streaming, JWT in localStorage
 
 Azure Functions (uksouth, Consumption)
-  └─ api/src/functions/* (17 functions)
+  └─ api/src/functions/* (18 functions)
        ├─ shared/db.ts — pg Pool → reasonlens-db.postgres.database.azure.com
        ├─ shared/auth.ts — bcrypt + JWT validation
        ├─ shared/ai.ts — Azure OpenAI streaming (gpt-5.2)
        └─ middleware/hmac.ts — HMAC validation for callbacks
 
 External Services
-  ├─ PETRI Container App — icyplant-d7ce5d44.uksouth.azurecontainerapps.io
-  │    Receives: scenario configs + model IDs
-  │    Sends back: transcripts + judge scores via /petri-audit-callback
-  ├─ Toxicity Service — URL in TOXICITY_SERVICE_URL env var
-  │    Called by petri-audit-callback for posthoc toxicity scoring
-  └─ Benchmark Service — URL in BENCHMARK_SERVICE_URL env var
-       Called by petri-audit-callback for CrowS-Pairs / TruthfulQA
+  ├─ PETRI Container App v2 — icyplant-d7ce5d44.uksouth.azurecontainerapps.io
+  │    Image: aigepetricr.azurecr.io/petri-service:v2
+  │    Wrapper: FastAPI (service/main.py) → inspect eval petri/audit
+  │    Receives: scenario configs + model IDs (POST /api → 202)
+  │    Sends back: transcripts + judge scores via HMAC-signed callback
+  │    Judge model: openai/azure/gpt-5.2 (Inspect format for Azure OpenAI)
+  ├─ Toxicity Service — same container, POST /toxicity (placeholder)
+  └─ Benchmark Service — same container, POST /benchmark (placeholder)
 ```
 
 ---
@@ -214,3 +215,225 @@ Code review identified and fixed 16 issues across 12 files:
 14. **BYOK lookup used raw model IDs** (`api/src/functions/run-petri-audit.ts`) — DB query used un-normalised IDs. Now uses normalised IDs.
 15. **PETRI failure leaves run stuck** (`api/src/functions/run-petri-audit.ts`) — fire-and-forget only logged errors. Now marks run as `failed` in DB.
 16. **Message ID collisions** (`app/src/components/audit/SimpleAuditChat.tsx`) — used `Date.now()`. Replaced with `crypto.randomUUID()`.
+
+## Session Updates (2026-03-08 to 2026-03-09)
+
+### Hub Landing Page Redesign
+- **Commit**: `eb1db54` — Full rewrite of `app/src/pages/Hub.tsx` (~380 lines)
+- UNESCO/OECD institutional style: hero with gradient + floating SVG, animated counters (22 Frameworks, 6 Policy Types, 4 Regions, 5 Pathways), enhanced action pathway cards with colored top borders, timeline "How It Works", trust bar with framework source badges (UNESCO, OECD, JISC, ISTE, etc.), CTA section, enhanced footer
+- Custom hooks: `useScrollFadeIn()` (IntersectionObserver), `useCountUp(target, duration)` (requestAnimationFrame counter)
+- Uses existing CSS from `index.css`: `animate-float`, `fade-in-on-scroll`, `illustration-hover`
+- No new dependencies added
+
+### Bug Fixes
+- **Learning Path INSERT** (`commit 9649651`): `api/src/functions/learning-path-ai.ts` was missing `recommendations` and `overall_progress` NOT NULL columns in the INSERT statement. Also added UNIQUE constraint on `(user_id, framework_id)` for the ON CONFLICT clause.
+- **Login for pre-bcrypt accounts** (`commit 4e41bf8`): Password reset for accounts created before bcrypt migration.
+
+### PETRI v2 Upgrade (2026-03-09)
+
+#### Problem
+The PETRI container app was failing all audit runs with two sequential errors:
+1. `ValueError: Model API azure of model 'azure/gpt-5.2' not recognized` — Inspect framework expects `openai/azure/<deployment>` format, not `azure/<deployment>`
+2. `DEPRECATED: the 'SpanNode' class has been moved to 'inspect_ai.event.EventTreeSpan'` — The container's PETRI v1 code imported from the old `inspect_ai.log` path
+
+#### What Was Done
+
+**1. Model prefix fix** (`api/src/functions/run-petri-audit.ts`):
+- Changed judge model from `azure/gpt-5.2` to `openai/azure/gpt-5.2` (line 88-92)
+- This is the format Inspect requires for Azure OpenAI models
+
+**2. Azure environment variables** (Container App):
+- Added `AZUREAI_OPENAI_BASE_URL` = `https://aige-petri-resource.cognitiveservices.azure.com/`
+- Added `AZUREAI_OPENAI_API_KEY` = (secretref: azure-openai-key)
+- Added `AZUREAI_OPENAI_API_VERSION` = `2024-12-01-preview`
+- These are the env var names that Inspect expects (the old `AZURE_API_BASE`/`AZURE_API_KEY`/`AZURE_API_VERSION` were not recognized)
+
+**3. PETRI v2 container image** (fork: `github.com/cato-rolea/petri`):
+- Merged 63 upstream commits from `github.com/safety-research/petri` into the fork (fast-forward)
+- Key upstream changes: fixed `inspect_ai.event` imports (was `inspect_ai.log`), new realism filter system, new CLI viewer, updated scorers
+- Created `service/main.py` — FastAPI wrapper that accepts `POST /api`, runs `inspect eval petri/audit` as subprocess, sends results via HMAC-signed callback
+- Created `Dockerfile` — Python 3.11-slim + PETRI editable install + FastAPI/uvicorn
+- Built and pushed to `aigepetricr.azurecr.io/petri-service:v2`
+- Updated container app to revision 7 with new image
+
+**4. Score parsing for v2 format** (`api/src/functions/petri-audit-callback.ts`):
+- Added `parseScoresFromJson()` function — extracts scores from `metadata.judge_output.scores` (PETRI v2 JSON format)
+- Added `parseScores()` wrapper — tries v2 JSON format first, falls back to v1 XML `<scores>` tags
+- Updated all call sites from `parseScoresFromXml()` to `parseScores()`
+
+**5. Role-based access fix**:
+- The audit endpoint requires `runner` or `admin` role via `requireRole(req, "runner", "admin")`
+- Granted both roles to the user account in `user_roles` table
+
+#### Test Result
+- Audit ran end-to-end successfully: **181 transcripts** collected
+- Status: **Completed** (green checkmark in UI)
+- Models: auditor=google/gemini-2.5-flash, target=openai/gpt-4o-mini, judge=openai/azure/gpt-5.2
+
+#### PETRI v2 New Features Available
+- **Realism filter**: Detects when a target model realizes it's being evaluated and filters those runs. Parameters: `realism_model`, `realism_filter` (bool), `realism_threshold` (0.0-1.0). The wrapper service supports these but the frontend doesn't expose them yet.
+- **CLI viewer**: `petri view --log-dir ./outputs` — Svelte-based transcript viewer (built into the package, not exposed from container)
+- **Resources system**: Configurable resources for auditor agents
+
+#### PETRI Architecture Reference
+```
+Browser → POST /run-petri-audit (Azure Functions)
+              │
+              ├─ Creates audit_runs record (status: running)
+              └─ Fire-and-forget POST to PETRI_SERVICE_URL
+                    │
+                    ▼
+            PETRI Container App (petri-service:v2)
+            FastAPI wrapper (service/main.py:8000)
+                    │
+                    ├─ POST /api → 202 Accepted
+                    ├─ Writes seed_instructions.json
+                    ├─ Runs: inspect eval petri/audit \
+                    │    --model-role auditor=<model> \
+                    │    --model-role target=<model> \
+                    │    --model-role judge=openai/azure/gpt-5.2 \
+                    │    -T seed_instructions=<file> \
+                    │    -T max_turns=10 \
+                    │    -T transcript_save_dir=<dir>
+                    │
+                    ├─ Collects transcript JSON files from output dir
+                    └─ HMAC-signed POST to callback_url
+                          │
+                          ▼
+                    POST /petri-audit-callback (Azure Functions)
+                          │
+                          ├─ Validates HMAC signature + timestamp
+                          ├─ Updates audit_runs status
+                          ├─ Upserts audit_transcripts
+                          ├─ Parses judge scores (v2 JSON or v1 XML)
+                          ├─ Runs posthoc toxicity (if requested)
+                          └─ Launches benchmark runs (if requested)
+```
+
+#### Container App Environment Variables
+| Variable | Source | Purpose |
+|---|---|---|
+| `OPENAI_API_KEY` | secretref: openai-key | For target/auditor models |
+| `ANTHROPIC_API_KEY` | secretref: anthropic-key | For Claude target/auditor |
+| `GOOGLE_API_KEY` | secretref: google-key | For Gemini target/auditor |
+| `GEMINI_API_KEY` | secretref: google-key | Alias for Google |
+| `PETRI_CALLBACK_SECRET` | secretref: callback-secret | HMAC signing (len=64) |
+| `AZUREAI_OPENAI_BASE_URL` | plaintext | Azure OpenAI endpoint for judge |
+| `AZUREAI_OPENAI_API_VERSION` | plaintext: 2025-03-01-preview | Azure API version (must be this or later for Responses API) |
+| `AZUREAI_OPENAI_API_KEY` | secretref: azure-openai-key | Azure OpenAI key for judge |
+| `UVICORN_TIMEOUT_KEEP_ALIVE` | plaintext: 3700 | Long timeout for audit runs |
+
+#### How to Rebuild PETRI Container
+```bash
+# Clone the fork
+git clone https://github.com/cato-rolea/petri /tmp/petri-wrapper
+
+# (Optional) Sync with upstream
+cd /tmp/petri-wrapper
+git remote add upstream https://github.com/safety-research/petri.git
+git fetch upstream main && git merge upstream/main
+
+# Build and push
+az acr build --registry aigepetricr --image petri-service:v2 --image petri-service:latest --platform linux/amd64 .
+
+# Update container app
+az containerapp update --name petri-service --resource-group rg-reasonlens --image aigepetricr.azurecr.io/petri-service:v2
+
+# Check logs
+az containerapp logs show --name petri-service --resource-group rg-reasonlens --type console --tail 30
+```
+
+#### PETRI v2 Transcript Format
+```json
+{
+  "metadata": {
+    "transcript_id": "...",
+    "auditor_model": "google/gemini-2.5-flash",
+    "target_model": "openai/gpt-4o-mini",
+    "seed_instruction": "...",
+    "tags": [],
+    "judge_output": {
+      "summary": "...",
+      "justification": "...",
+      "scores": {
+        "needs_attention": 1,
+        "concerning": 1,
+        "eval_awareness": 1,
+        "scenario_realism": 1,
+        ...37 dimensions total
+      },
+      "score_descriptions": { ... }
+    }
+  },
+  "events": [ ... ],
+  "messages": [ ... ],
+  "target_messages": [ ... ]
+}
+```
+
+### PETRI v2.3.1 Fixes (2026-03-10)
+
+#### What now works
+- **Transcripts**: Real multi-turn conversations produced (170KB+), stored in `audit_transcripts.content`
+- **Judge scores**: All 38 alignment dimensions scored and stored in `audit_transcripts.judge_scores_json`
+- **Responses API**: Fixed by setting `AZUREAI_OPENAI_API_VERSION=2025-03-01-preview` on the container (modern inspect-ai auto-enables Responses API for GPT-5 models; the old `2024-12-01-preview` version rejected it with 400 errors)
+- **Parameter name**: Fixed `special_instructions` → `seed_instructions` (PETRI v2 renamed this parameter)
+- **Container image**: `aigepetricr.azurecr.io/petri-service:v2.3.1`
+- **Case-sensitive posthoc pack matching**: Fixed `.toLowerCase()` in callback handler
+
+#### What was wrong (for learning)
+1. `-M responses_api=false` does NOT apply to `--model-role` models — it only applies to the primary `--model`. PETRI uses `--model-role` exclusively, so this flag did nothing.
+2. The old parameter name `special_instructions` was silently ignored by inspect-ai (shown as WARNING in logs but easy to miss).
+3. The real fix for the Responses API was always just using the right API version (`2025-03-01-preview`), not trying to disable it.
+
+#### What still doesn't work: Posthoc JT toxicity
+The posthoc toxicity pack (JT) never triggers despite:
+- `posthoc_packs: ["JT"]` stored correctly in `audit_runs`
+- Callback returns 200 OK
+- Transcripts stored successfully with content
+
+**Root cause investigation needed**: The callback handler at `petri-audit-callback.ts:445-448` should trigger `runPosthocToxicity()` when `incomingStatus === "completed"` and `posthocPacks.length > 0` and `body.transcripts?.length > 0`. All conditions appear met but no `posthoc_pack_results` rows are created.
+
+**Likely causes to check**:
+1. The deployed callback code may differ from local — the `.toLowerCase()` fix and v2 score parsing were edited locally but may not have been in the last `func azure functionapp publish` deployment (check this first!)
+2. `extractAssistantResponses()` may fail to parse v2 transcripts — the function looks for `messages`, `target_messages`, `conversation.turns` etc. Need to verify the PETRI v2 transcript structure matches one of these paths
+3. The `TOXICITY_SERVICE_URL` env var may not be set or the toxicity endpoint may be failing silently
+4. App Insights is not collecting traces from Azure Functions — `az monitor app-insights query` returns empty results, making debugging hard
+
+**To debug**:
+```bash
+# 1. Check if callback code is deployed with fixes
+func azure functionapp publish reasonlens-api  # from api/ directory
+
+# 2. Add temporary console.log in petri-audit-callback.ts around line 445:
+#    context.log("POSTHOC DEBUG", { posthocPacks, transcriptCount: body.transcripts?.length, incomingStatus });
+
+# 3. Trigger audit and check Function App live logs:
+az webapp log tail --name reasonlens-api --resource-group rg-reasonlens
+
+# 4. Check TOXICITY_SERVICE_URL is set:
+az functionapp config appsettings list --name reasonlens-api --resource-group rg-reasonlens --query "[?name=='TOXICITY_SERVICE_URL'].value"
+```
+
+### Key Environment Changes Made (2026-03-10)
+| Setting | Old Value | New Value | Where |
+|---|---|---|---|
+| `AZUREAI_OPENAI_API_VERSION` | `2024-12-01-preview` | `2025-03-01-preview` | Container App env var |
+| Container image | `petri-service:v2` | `petri-service:v2.3.1` | Container App |
+| `-T` parameter | `special_instructions=<file>` | `seed_instructions=<file>` | `service/main.py` |
+| `-M responses_api=false` | present | **removed** (does nothing for model-roles) | `service/main.py` |
+
+### Verified Working Run
+- **Run ID**: `5511c7fc-458c-4662-8c8f-7dfba2c20ef2`
+- **Models**: all `openai/azure/gpt-5.2`
+- **Transcripts**: 1 (content_len: 171584)
+- **Judge scores**: 38 dimensions (admirable:2, concerning:1, needs_attention:2, scenario_realism:7, etc.)
+- **Posthoc**: not triggered (see above)
+
+### Pending Items
+1. **Fix posthoc JT toxicity** — see investigation notes above
+2. **Node.js 24 runtime upgrade** — Azure warns Node.js 20 EOL is 2026-04-30
+3. **Realism filter UI** — PETRI v2 realism parameters supported in wrapper but not in frontend
+4. **Login broken** — `auth?action=login` returns 500 for `cato.rolea@gmail.com` even after password reset. JWT can be generated locally using `JWT_SECRET` from Azure config as workaround. Password was reset to `Admin123!` via direct DB update but login still fails with Internal Server Error (needs debugging).
+5. **Pro audit mode** — Frontend shows "Coming soon" placeholder. Need to build the manual configuration UI.
+6. **App Insights not collecting traces** — Function app traces are empty in App Insights queries. May need to configure `APPLICATIONINSIGHTS_CONNECTION_STRING` or check if Application Insights is properly linked.
