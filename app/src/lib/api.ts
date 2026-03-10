@@ -12,7 +12,7 @@ export function clearToken() {
   localStorage.removeItem("reasonlens_token");
 }
 
-function isTokenExpired(token: string): boolean {
+export function isTokenExpired(token: string): boolean {
   try {
     const payload = JSON.parse(atob(token.split(".")[1]));
     if (!payload.exp) return false;

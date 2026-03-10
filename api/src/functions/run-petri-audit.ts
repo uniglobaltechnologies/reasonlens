@@ -85,10 +85,12 @@ async function handler(
     // Normalize model IDs
     const auditorModel = normalizeModelId(body.auditor_model);
     const targetModel = normalizeModelId(body.target_model);
-    // Force judge to azure/gpt-5.2 for PETRI compatibility (unless already Azure)
+    // Force judge to openai/azure/gpt-5.2 for PETRI compatibility (Inspect requires openai/ prefix)
     let judgeModel = normalizeModelId(body.judge_model);
-    if (!judgeModel.startsWith("azure/")) {
-      judgeModel = "azure/gpt-5.2";
+    if (!judgeModel.includes("azure/")) {
+      judgeModel = "openai/azure/gpt-5.2";
+    } else if (judgeModel === "azure/gpt-5.2") {
+      judgeModel = "openai/azure/gpt-5.2";
     }
 
     // Check BYOK keys for non-free-tier models (use normalized IDs)

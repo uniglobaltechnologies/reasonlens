@@ -14,7 +14,7 @@ const ALLOWED_ORIGINS = (
   .map((origin) => origin.trim())
   .filter(Boolean);
 
-function getAllowedOrigin(req: HttpRequest): string {
+export function getAllowedOrigin(req: HttpRequest): string {
   const origin = req.headers.get("origin") || "";
   if (ALLOWED_ORIGINS.includes("*")) return "*";
   if (ALLOWED_ORIGINS.includes(origin)) return origin;

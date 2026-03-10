@@ -7,7 +7,9 @@
     "build": "tsc",
     "watch": "tsc -w",
     "start": "func start",
-    "prestart": "npm run build"
+    "prestart": "npm run build",
+    "test": "vitest run",
+    "test:watch": "vitest"
   },
   "dependencies": {
     "@azure/functions": "^4.6.0",
@@ -23,6 +25,7 @@
     "@types/jsonwebtoken": "^9.0.7",
     "@types/node": "^20.17.0",
     "@types/pg": "^8.11.10",
-    "typescript": "^5.8.3"
+    "typescript": "^5.8.3",
+    "vitest": "^4.0.18"
   }
 }
