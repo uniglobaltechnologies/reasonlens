@@ -387,33 +387,49 @@ az containerapp logs show --name petri-service --resource-group rg-reasonlens --
 3. The real fix for the Responses API was always just using the right API version (`2025-03-01-preview`), not trying to disable it.
 
 #### What still doesn't work: Posthoc JT toxicity
-The posthoc toxicity pack (JT) never triggers despite:
-- `posthoc_packs: ["JT"]` stored correctly in `audit_runs`
-- Callback returns 200 OK
-- Transcripts stored successfully with content
 
-**Root cause investigation needed**: The callback handler at `petri-audit-callback.ts:445-448` should trigger `runPosthocToxicity()` when `incomingStatus === "completed"` and `posthocPacks.length > 0` and `body.transcripts?.length > 0`. All conditions appear met but no `posthoc_pack_results` rows are created.
+**ROOT CAUSE FOUND**: `extractAssistantResponses()` in `petri-audit-callback.ts` can't extract text from PETRI v2 transcripts.
 
-**Likely causes to check**:
-1. The deployed callback code may differ from local — the `.toLowerCase()` fix and v2 score parsing were edited locally but may not have been in the last `func azure functionapp publish` deployment (check this first!)
-2. `extractAssistantResponses()` may fail to parse v2 transcripts — the function looks for `messages`, `target_messages`, `conversation.turns` etc. Need to verify the PETRI v2 transcript structure matches one of these paths
-3. The `TOXICITY_SERVICE_URL` env var may not be set or the toxicity endpoint may be failing silently
-4. App Insights is not collecting traces from Azure Functions — `az monitor app-insights query` returns empty results, making debugging hard
+In PETRI v2, the auditor uses tool calls to talk to the target. The transcript structure is:
+- `messages[]` — auditor conversation. Assistant messages have `content: []` (empty arrays). Target responses are inside `tool` role messages as XML: `<target_response>...</target_response>`
+- `target_messages[]` — target's perspective. Assistant messages also have `content: []` (empty arrays) because the Responses API puts content through tool calls.
 
-**To debug**:
+The old `extractAssistantResponses()` only checked `role === "assistant"` which returns empty content. The actual text is in `tool` messages.
+
+**Fix already applied and deployed** (but not yet tested — run `5d9f5f2b` was still in progress):
+- Updated `extractAssistantResponses()` to also extract text from `<target_response>` XML inside `tool` messages
+- Added debug logging to `runPosthocToxicity()`
+- Deployed via `func azure functionapp publish`
+
+**Two separate issues were at play**:
+1. **Recent v2.3.1 runs** (5511c7fc, 58d9fb5d, 7dfeb390): No posthoc rows at all — the callback code hadn't been deployed with the `.toLowerCase()` fix until this session
+2. **Older runs** (353130f7, 2c454ea5): Posthoc DID trigger but failed with "No assistant responses found" — this is the `extractAssistantResponses` parsing bug described above
+
+**Run `5d9f5f2b` is currently in progress** with the fix deployed. When it completes, check:
 ```bash
-# 1. Check if callback code is deployed with fixes
-func azure functionapp publish reasonlens-api  # from api/ directory
-
-# 2. Add temporary console.log in petri-audit-callback.ts around line 445:
-#    context.log("POSTHOC DEBUG", { posthocPacks, transcriptCount: body.transcripts?.length, incomingStatus });
-
-# 3. Trigger audit and check Function App live logs:
-az webapp log tail --name reasonlens-api --resource-group rg-reasonlens
-
-# 4. Check TOXICITY_SERVICE_URL is set:
-az functionapp config appsettings list --name reasonlens-api --resource-group rg-reasonlens --query "[?name=='TOXICITY_SERVICE_URL'].value"
+# Check posthoc results
+node -e "
+const { Client } = require('pg');
+const c = new Client({ connectionString: '<DB_URL>' });
+c.connect().then(async () => {
+  const p = await c.query(\"SELECT pack_id, status, metrics_json, error_message FROM posthoc_pack_results WHERE run_id = '5d9f5f2b-1e00-4844-b59a-4e64a98929b4'\");
+  console.log(JSON.stringify(p.rows, null, 2));
+  await c.end();
+});
+"
 ```
+
+**If it still fails** with "No assistant responses found", the `<target_response>` regex may not match the actual format. Check a real tool message:
+```bash
+# Inspect actual tool message content in a transcript
+node -e "
+const parsed = JSON.parse(transcriptContent);
+const toolMsgs = parsed.messages.filter(m => m.role === 'tool');
+toolMsgs.forEach(m => console.log(m.content?.substring(0, 300)));
+"
+```
+
+**TOXICITY_SERVICE_URL** is confirmed set to: `https://petri-service.icyplant-d7ce5d44.uksouth.azurecontainerapps.io/toxicity`
 
 ### Key Environment Changes Made (2026-03-10)
 | Setting | Old Value | New Value | Where |

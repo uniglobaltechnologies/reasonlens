@@ -32,6 +32,34 @@ function parseScoresFromXml(content: string): Record<string, number> {
   return scores;
 }
 
+// Parse PETRI v2.0 JSON scores from metadata.judge_output.scores
+function parseScoresFromJson(content: string): Record<string, number> {
+  const scores: Record<string, number> = {};
+  try {
+    const parsed = JSON.parse(content);
+    const judgeScores = parsed?.metadata?.judge_output?.scores;
+    if (judgeScores && typeof judgeScores === "object") {
+      for (const [key, val] of Object.entries(judgeScores)) {
+        const num = Number(val);
+        if (Number.isFinite(num)) {
+          scores[key.toLowerCase()] = num;
+        }
+      }
+    }
+  } catch {}
+  return scores;
+}
+
+// Try all score extraction methods
+function parseScores(content: string): Record<string, number> {
+  // Try v2 JSON format first, then fall back to XML
+  let scores = parseScoresFromJson(content);
+  if (Object.keys(scores).length === 0) {
+    scores = parseScoresFromXml(content);
+  }
+  return scores;
+}
+
 function extractTextContent(content: any): string {
   if (!content) return "";
   if (typeof content === "string") return content;
@@ -47,8 +75,14 @@ function extractTextContent(content: any): string {
 
 function getMessagesFromParsed(parsed: any): any[] | null {
   if (!parsed || typeof parsed !== "object") return null;
-  if (Array.isArray(parsed.target_messages)) return parsed.target_messages;
-  if (Array.isArray(parsed.metadata?.target_messages)) return parsed.metadata.target_messages;
+  // Check target_messages first, but only if it has assistant messages
+  if (Array.isArray(parsed.target_messages) && parsed.target_messages.some((m: any) => m?.role === "assistant")) {
+    return parsed.target_messages;
+  }
+  if (Array.isArray(parsed.metadata?.target_messages) && parsed.metadata.target_messages.some((m: any) => m?.role === "assistant")) {
+    return parsed.metadata.target_messages;
+  }
+  // Fall through to messages (PETRI v2 stores conversation here)
   if (Array.isArray(parsed.messages)) return parsed.messages;
   if (Array.isArray(parsed.conversation?.turns)) return parsed.conversation.turns;
   if (Array.isArray(parsed.turns)) return parsed.turns;
@@ -66,9 +100,24 @@ function extractAssistantResponses(transcripts: Array<{ content?: string | null 
     if (!messages) continue;
     for (const msg of messages) {
       const role = (msg?.role || msg?.type || "").toString().toLowerCase();
+      // PETRI v2: target responses are in tool messages as <target_response> XML
+      if (role === "tool") {
+        const text = extractTextContent(msg.content ?? msg.message ?? msg.text);
+        const match = text?.match(/<target_response[^>]*>([\s\S]*?)<\/target_response>/);
+        if (match?.[1]?.trim()) responses.push(match[1].trim());
+        continue;
+      }
       if (role !== "assistant") continue;
       const text = extractTextContent(msg.content ?? msg.message ?? msg.text);
       if (text?.trim()) responses.push(text.trim());
+    }
+    // Also check target_messages directly for assistant content
+    if (parsed.target_messages && Array.isArray(parsed.target_messages)) {
+      for (const msg of parsed.target_messages) {
+        if (msg.role !== "assistant") continue;
+        const text = extractTextContent(msg.content ?? msg.message ?? msg.text);
+        if (text?.trim()) responses.push(text.trim());
+      }
     }
   }
   return responses;
@@ -141,7 +190,7 @@ function analyzeTranscriptsForErrors(transcripts: Array<{ content?: string | nul
     } else if (t.judge_scores && Object.keys(t.judge_scores).length > 0) {
       validCount++;
     } else if (t.content) {
-      const parsed = parseScoresFromXml(t.content);
+      const parsed = parseScores(t.content);
       if (Object.keys(parsed).length > 0) validCount++;
       else { errorCount++; errorMessages.push("Transcript has content but no parseable judge scores"); }
     }
@@ -156,7 +205,9 @@ async function runPosthocToxicity(
   transcripts: Array<{ content?: string | null }>,
   context: InvocationContext
 ) {
-  const requested = packs.filter(p => POSTHOC_PACKS.has(p));
+  context.log(`POSTHOC TOXICITY: packs=${JSON.stringify(packs)}, transcripts=${transcripts.length}`);
+  const requested = packs.filter(p => POSTHOC_PACKS.has(p.toLowerCase()));
+  context.log(`POSTHOC TOXICITY: requested=${JSON.stringify(requested)}`);
   if (!requested.length) return;
 
   const existing = await query<{ pack_id: string; status: string }>(
@@ -167,6 +218,7 @@ async function runPosthocToxicity(
     const match = existing.find(r => r.pack_id === p);
     return !match || match.status !== "completed";
   });
+  context.log(`POSTHOC TOXICITY: pending=${JSON.stringify(pending)}`);
   if (!pending.length) return;
 
   // Mark as running
@@ -179,6 +231,7 @@ async function runPosthocToxicity(
   }
 
   const assistantTexts = extractAssistantResponses(transcripts).slice(0, MAX_POSTHOC_TEXTS);
+  context.log(`POSTHOC TOXICITY: assistantTexts=${assistantTexts.length}`);
   if (!assistantTexts.length) {
     for (const packId of pending) {
       await execute(
@@ -245,7 +298,7 @@ async function runPosthocToxicity(
 // --- Posthoc benchmarks ---
 async function runPosthocBenchmarks(run: any, context: InvocationContext) {
   const packs = Array.isArray(run.benchmark_packs) ? run.benchmark_packs : [];
-  const requested = packs.filter((p: string) => BENCHMARK_PACKS.has(p));
+  const requested = packs.filter((p: string) => BENCHMARK_PACKS.has(p.toLowerCase()));
   if (!requested.length) return;
 
   const benchmarkUrl = process.env.BENCHMARK_SERVICE_URL;
@@ -388,7 +441,7 @@ async function handler(
 
         let judgeScores = t.judge_scores || {};
         if (Object.keys(judgeScores).length === 0 && t.content) {
-          judgeScores = parseScoresFromXml(t.content);
+          judgeScores = parseScores(t.content);
         }
 
         // Upsert transcript
@@ -410,8 +463,16 @@ async function handler(
     // Posthoc processing on completion
     if (incomingStatus === "completed") {
       const posthocPacks = Array.isArray(run.posthoc_packs) ? run.posthoc_packs : [];
+      context.log(`POSTHOC DEBUG: incomingStatus=${incomingStatus}, posthocPacks=${JSON.stringify(posthocPacks)}, transcriptCount=${body.transcripts?.length || 0}`);
       if (posthocPacks.length && body.transcripts?.length) {
-        await runPosthocToxicity(body.run_id, posthocPacks, body.transcripts, context);
+        try {
+          await runPosthocToxicity(body.run_id, posthocPacks, body.transcripts, context);
+          context.log("POSTHOC DEBUG: runPosthocToxicity completed successfully");
+        } catch (posthocErr) {
+          context.error("POSTHOC DEBUG: runPosthocToxicity threw:", posthocErr);
+        }
+      } else {
+        context.log(`POSTHOC DEBUG: skipped — packs=${posthocPacks.length}, transcripts=${body.transcripts?.length || 0}`);
       }
       await runPosthocBenchmarks(run, context);
     }
