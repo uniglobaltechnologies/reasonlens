@@ -5,7 +5,7 @@ import {
   InvocationContext,
 } from "@azure/functions";
 import { query, queryOne, execute } from "../shared/db";
-import { requireRole, AuthError } from "../shared/auth";
+import { requireRole, hasRole, AuthError } from "../shared/auth";
 import { decryptValue } from "../shared/crypto";
 import { corsHeaders, handleCors } from "../middleware/cors";
 
@@ -93,7 +93,8 @@ async function handler(
       judgeModel = "openai/azure/gpt-5.2";
     }
 
-    // Check BYOK keys for non-free-tier models (use normalized IDs)
+    // Check BYOK keys for non-free-tier models (admins bypass)
+    const isAdmin = await hasRole(user.userId, "admin");
     const modelIds = [auditorModel, targetModel, judgeModel];
     const models = await query(
       `SELECT model_id, provider_slug, is_free_tier FROM models WHERE model_id = ANY($1)`,
@@ -104,7 +105,7 @@ async function handler(
     );
 
     let apiKeys: Record<string, string> = {};
-    if (nonFreeProviders.size > 0) {
+    if (nonFreeProviders.size > 0 && !isAdmin) {
       const secret = process.env.BYOK_ENC_SECRET;
       if (!secret) throw new Error("BYOK_ENC_SECRET not configured");
 
@@ -119,7 +120,7 @@ async function handler(
           return {
             status: 403,
             headers: { ...corsHeaders(req), "Content-Type": "application/json" },
-            body: JSON.stringify({ error: `API key required for ${provider}. Add it in Settings.` }),
+            body: JSON.stringify({ error: `API key required for ${provider}. Add it in Settings → API Keys.` }),
           };
         }
         apiKeys[provider] = await decryptValue(keyRow.encrypted_key, secret);
@@ -179,10 +180,13 @@ async function handler(
     };
 
     // Fire and forget — but mark run as failed if PETRI is unreachable
+    const petriAbort = new AbortController();
+    setTimeout(() => petriAbort.abort(), 30000);
     fetch(petriUrl, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(petriPayload),
+      signal: petriAbort.signal,
     }).catch(async (err) => {
       context.error("PETRI service call failed:", err);
       try {

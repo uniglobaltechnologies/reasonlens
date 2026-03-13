@@ -30,12 +30,13 @@ async function handler(
       };
     }
 
-    // Fetch user's assessment results for this framework
+    // Fetch user's assessment results for this framework (prefer scenario-based over self-report)
     const results = await query<{
       dimension: string;
       selected_level: string;
+      assessment_method: string;
     }>(
-      "SELECT DISTINCT ON (dimension) dimension, selected_level FROM assessment_results WHERE user_id = $1 AND framework_id = $2 ORDER BY dimension, completed_at DESC",
+      "SELECT DISTINCT ON (dimension) dimension, selected_level, COALESCE(assessment_method, 'self_report') AS assessment_method FROM assessment_results WHERE user_id = $1 AND framework_id = $2 ORDER BY dimension, CASE WHEN assessment_method = 'scenario' THEN 0 ELSE 1 END, completed_at DESC",
       [user.userId, frameworkId]
     );
 
@@ -76,6 +77,7 @@ async function handler(
     const gapSummary = results.map(r => ({
       dimension: r.dimension,
       currentLevel: r.selected_level,
+      assessmentMethod: r.assessment_method,
       hasEvidence: evidencedDimensions.has(r.dimension),
     }));
 

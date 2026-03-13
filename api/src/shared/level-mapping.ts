@@ -28,7 +28,7 @@ const LEVEL_PATTERNS: Array<{ score: number; patterns: string[] }> = [
   {
     score: 3,
     patterns: [
-      "established", "defined", "operational", "practice", "proficient",
+      "established", "defined", "operational", "practice", "proficient", "capable",
       "create", "integrated", "mature",
       "level-3", "level 3",
       // THE composite
@@ -57,7 +57,7 @@ const LEVEL_PATTERNS: Array<{ score: number; patterns: string[] }> = [
  * Convert a framework level name/ID to a numeric score (1–5).
  * Handles all 22 framework vocabularies:
  * - UNESCO: Acquire/Deepen/Create (1/2/3)
- * - BDC: Approaching/Experimenting/Operational/Embedded/Optimised (1/2/3/4/5)
+ * - BDC: Developing/Capable/Proficient (2/3/3) — corrected 3-level individual model
  * - THE: Incidental/Intentional/Integrated/Optimised (1/2/3/5)
  * - JISC AI: Exploring/Developing/Defined/Managed/Optimising (1/2/3/4/5)
  * - DigComp: Basic/Intermediate/Advanced/Highly Advanced (1/2/4/4)

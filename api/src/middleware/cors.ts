@@ -1,10 +1,12 @@
 import { HttpRequest, HttpResponseInit } from "@azure/functions";
 
+const IS_LOCAL = process.env.FUNCTIONS_WORKER_RUNTIME && !process.env.WEBSITE_HOSTNAME;
+
 const DEFAULT_ALLOWED_ORIGINS = [
   "https://purple-hill-0a1de9703.1.azurestaticapps.net",
   "https://reasonlens.com",
   "https://www.reasonlens.com",
-  "http://localhost:5173",
+  ...(IS_LOCAL ? ["http://localhost:5173"] : []),
 ];
 
 const ALLOWED_ORIGINS = (

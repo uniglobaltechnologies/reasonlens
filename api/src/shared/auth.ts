@@ -18,7 +18,10 @@ export async function validateToken(
   if (!secret) throw new Error("JWT_SECRET not configured");
 
   try {
-    const decoded = jwt.verify(token, secret) as {
+    const decoded = jwt.verify(token, secret, {
+      issuer: "reasonlens",
+      audience: "reasonlens-api",
+    }) as {
       sub: string;
       email: string;
     };
@@ -39,20 +42,28 @@ export async function requireRole(
   ...roles: string[]
 ): Promise<AuthUser> {
   const user = await requireAuth(req);
-  const hasRole = await queryOne<{ has_role: boolean }>(
-    `SELECT has_role($1::uuid, $2::app_role) as has_role`,
-    [user.userId, roles[0]]
+  const result = await queryOne<{ has_role: boolean }>(
+    `SELECT EXISTS(
+      SELECT 1 FROM user_roles WHERE user_id = $1::uuid AND role = ANY($2::app_role[])
+    ) AS has_role`,
+    [user.userId, roles]
   );
+  if (result?.has_role) return user;
 
-  for (const role of roles) {
-    const result = await queryOne<{ has_role: boolean }>(
-      `SELECT has_role($1::uuid, $2::app_role) as has_role`,
-      [user.userId, role]
-    );
-    if (result?.has_role) return user;
-  }
+  throw new AuthError("You don't have the required role for this action", 403);
+}
 
-  throw new AuthError("Forbidden", 403);
+export async function hasRole(
+  userId: string,
+  ...roles: string[]
+): Promise<boolean> {
+  const result = await queryOne<{ has_role: boolean }>(
+    `SELECT EXISTS(
+      SELECT 1 FROM user_roles WHERE user_id = $1::uuid AND role = ANY($2::app_role[])
+    ) AS has_role`,
+    [userId, roles]
+  );
+  return result?.has_role ?? false;
 }
 
 export class AuthError extends Error {

@@ -212,6 +212,9 @@ export default function AuditDetail() {
                       Avg: {p.metrics_json.summary.avg?.toFixed(3)} · Max: {p.metrics_json.summary.max?.toFixed(3)} · Flagged: {p.metrics_json.summary.flagged}
                     </p>
                   )}
+                  {p.status === "failed" && p.error_message && (
+                    <p className="text-xs text-red-600/80 mt-1">{p.error_message}</p>
+                  )}
                 </div>
               ))}
             </div>

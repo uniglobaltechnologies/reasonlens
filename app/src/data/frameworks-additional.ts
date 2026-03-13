@@ -25,10 +25,18 @@ const BDC_DIM_STYLE: Record<string, { icon: string; color: string }> = {
   "bdc-identity-wellbeing": { icon: "Shield", color: "text-cyan-600" },
 };
 
+// BDC JSON files use 5 AI maturity levels, but the correct JISC BDC individual
+// model uses 3 Discovery Tool levels: Developing / Capable / Proficient.
+// Mapping: level-1 + level-2 → Developing, level-3 → Capable, level-4 + level-5 → Proficient
+const BDC_LEVEL_MERGE: { id: string; name: string; description: string; order: number; sourceIds: string[] }[] = [
+  { id: "developing", name: "Developing", description: "Awareness, initial exploration and guided experimentation with AI tools", order: 1, sourceIds: ["level-1", "level-2"] },
+  { id: "capable", name: "Capable", description: "Confident, systematic and responsible AI-augmented professional practice", order: 2, sourceIds: ["level-3"] },
+  { id: "proficient", name: "Proficient", description: "Leading AI integration, mentoring others and shaping institutional strategy", order: 3, sourceIds: ["level-4", "level-5"] },
+];
+
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function buildBdcDimensions(source: any, frameworkId: string): FrameworkDimension[] {
   const aspects: any[] = source.aspects;
-  const levels: any[] = source.progression_levels;
   const blocks: any[] = source.competency_blocks;
 
   return aspects.map((aspect: any, i: number) => {
@@ -40,38 +48,40 @@ function buildBdcDimensions(source: any, frameworkId: string): FrameworkDimensio
       order: i + 1,
       icon: style.icon,
       color: style.color,
-      levels: levels.map((lvl: any) => {
-        // Find the competency block for this aspect + level
-        const block = blocks.find(
-          (b: any) => b.aspect_id === aspect.id && b.level_id === lvl.id
-        );
+      levels: BDC_LEVEL_MERGE.map((merged) => {
+        // Collect indicators from all source levels that merge into this level
         const indicators: { id: string; description: string }[] = [];
-        if (block) {
-          // Use curricular goals as primary indicators
-          (block.curricular_goals ?? []).forEach((g: string, gi: number) => {
-            indicators.push({ id: `${frameworkId}-${aspect.id}-${lvl.id}-cg${gi}`, description: g });
-          });
-          // Add learning objectives as additional indicators
-          (block.learning_objectives ?? []).forEach((lo: string, li: number) => {
-            indicators.push({ id: `${frameworkId}-${aspect.id}-${lvl.id}-lo${li}`, description: lo });
-          });
+        const curricularGoals: string[] = [];
+        const contextualActivities: string[] = [];
+        for (const srcId of merged.sourceIds) {
+          const block = blocks.find(
+            (b: any) => b.aspect_id === aspect.id && b.level_id === srcId
+          );
+          if (block) {
+            (block.curricular_goals ?? []).forEach((g: string, gi: number) => {
+              indicators.push({ id: `${frameworkId}-${aspect.id}-${merged.id}-cg${srcId}-${gi}`, description: g });
+              curricularGoals.push(g);
+            });
+            (block.learning_objectives ?? []).forEach((lo: string, li: number) => {
+              indicators.push({ id: `${frameworkId}-${aspect.id}-${merged.id}-lo${srcId}-${li}`, description: lo });
+            });
+            (block.contextual_activities ?? []).forEach((a: string) => contextualActivities.push(a));
+          }
         }
-        // Fallback if no block found
         if (indicators.length === 0) {
           indicators.push({
-            id: `${frameworkId}-${aspect.id}-${lvl.id}-f`,
-            description: `${aspect.name} at ${lvl.name} level`,
+            id: `${frameworkId}-${aspect.id}-${merged.id}-f`,
+            description: `${aspect.name} at ${merged.name} level`,
           });
         }
         return {
-          id: `${frameworkId}-${aspect.id}-${lvl.id}`,
-          name: lvl.name,
-          description: lvl.description,
-          order: lvl.order,
-          target: lvl.target,
+          id: `${frameworkId}-${aspect.id}-${merged.id}`,
+          name: merged.name,
+          description: merged.description,
+          order: merged.order,
           indicators,
-          curricularGoals: block?.curricular_goals,
-          contextualActivities: block?.contextual_activities,
+          curricularGoals: curricularGoals.length > 0 ? curricularGoals : undefined,
+          contextualActivities: contextualActivities.length > 0 ? contextualActivities : undefined,
         };
       }),
     };
@@ -86,9 +96,9 @@ function buildBdcAssessmentQuestions(source: any, frameworkId: string) {
     dimension: aspect.name,
     question: `How would you rate your capability in ${aspect.name.toLowerCase()}?`,
     options: [
-      { value: `${frameworkId}-${i}-a`, label: "I'm just starting to explore this area", level: "acquire" as const },
-      { value: `${frameworkId}-${i}-b`, label: "I'm developing confidence and can work independently", level: "deepen" as const },
-      { value: `${frameworkId}-${i}-c`, label: "I lead and mentor others in this area", level: "create" as const },
+      { value: `${frameworkId}-${i}-a`, label: "I'm just starting to explore this area", level: "developing" as const },
+      { value: `${frameworkId}-${i}-b`, label: "I'm developing confidence and can work independently", level: "capable" as const },
+      { value: `${frameworkId}-${i}-c`, label: "I lead and mentor others in this area", level: "proficient" as const },
     ],
   }));
 }
@@ -111,7 +121,7 @@ function makeBdcFramework(source: any): Framework {
     id: fw.id,
     name: fw.name,
     shortName: fw.short_name,
-    description: `${fw.short_name} role profile: ${aspects.length} capability areas × ${levels.length} AI maturity levels with ${totalIndicators} indicators`,
+    description: `${fw.short_name} role profile: ${aspects.length} capability areas × 3 capability levels (Developing → Capable → Proficient) with ${totalIndicators} indicators`,
     type: "capability",
     scope: fw.scope,
     source: "JISC",
@@ -120,7 +130,7 @@ function makeBdcFramework(source: any): Framework {
     color: "text-teal-600",
     badgeLabel: "JISC BDC",
     targetAudience: fw.target_audience,
-    overview: `${fw.name} provides a structured approach to developing digital capabilities. It covers ${aspects.length} capability areas across ${levels.length} AI maturity progression levels (${levels.map((l: any) => l.name).join(" → ")}), with ${totalBlocks} competency blocks containing ${totalIndicators} indicators derived from curricular goals and learning objectives. ${fw.key_principles?.[fw.key_principles.length - 1] ?? ""}`,
+    overview: `${fw.name} provides a structured approach to developing digital capabilities. It covers ${aspects.length} capability areas across 3 capability levels (Developing → Capable → Proficient), with ${totalBlocks} competency blocks containing ${totalIndicators} indicators derived from curricular goals and learning objectives. ${fw.key_principles?.[fw.key_principles.length - 1] ?? ""}`,
     keyDimensions: buildBdcDimensions(source, fw.id),
     keyPrinciples: fw.key_principles?.map((p: string, i: number) => ({
       id: `${fw.id}-p${i}`,
@@ -134,7 +144,7 @@ function makeBdcFramework(source: any): Framework {
       licence: fw.licence,
       sourcePdfs: fw.source_pdfs,
       totalAspects: aspects.length,
-      totalLevels: levels.length,
+      totalLevels: 3,
       totalBlocks,
       totalIndicators,
       crossReferenceFrameworks: fw.cross_reference_frameworks,

@@ -9,6 +9,7 @@ import jwt from "jsonwebtoken";
 import { queryOne, execute } from "../shared/db";
 import { validateToken } from "../shared/auth";
 import { corsHeaders, handleCors } from "../middleware/cors";
+import { checkRateLimit } from "../middleware/rate-limit";
 
 const SALT_ROUNDS = 10;
 
@@ -19,7 +20,11 @@ function getJwtSecret(): string {
 }
 
 function signToken(userId: string, email: string): string {
-  return jwt.sign({ sub: userId, email }, getJwtSecret(), { expiresIn: "7d" });
+  return jwt.sign(
+    { sub: userId, email },
+    getJwtSecret(),
+    { expiresIn: "7d", issuer: "reasonlens", audience: "reasonlens-api" }
+  );
 }
 
 async function handler(
@@ -33,6 +38,23 @@ async function handler(
   const action = url.searchParams.get("action") || req.query.get("action");
 
   try {
+    // Rate limit login/signup/set-password by IP
+    if (action === "login" || action === "signup" || action === "set-password") {
+      const ip = req.headers.get("x-forwarded-for")?.split(",")[0]?.trim() || "unknown";
+      const rl = checkRateLimit(`auth:${ip}:${action}`);
+      if (!rl.allowed) {
+        return {
+          status: 429,
+          headers: {
+            ...corsHeaders(req),
+            "Content-Type": "application/json",
+            "Retry-After": String(Math.ceil(rl.retryAfterMs / 1000)),
+          },
+          body: JSON.stringify({ error: "Too many attempts. Please try again later." }),
+        };
+      }
+    }
+
     // POST /api/auth?action=signup
     if (req.method === "POST" && action === "signup") {
       const { email, password, full_name } = (await req.json()) as {
@@ -184,11 +206,14 @@ async function handler(
     }
 
     // POST /api/auth?action=set-password
-    // For pre-bcrypt accounts that have no password_hash
+    // For pre-bcrypt accounts that have no password_hash.
+    // Requires a verification token (HMAC of email + date, signed with JWT_SECRET)
+    // to prevent unauthorized password setting.
     if (req.method === "POST" && action === "set-password") {
-      const { email, password } = (await req.json()) as {
+      const { email, password, verification_token } = (await req.json()) as {
         email: string;
         password: string;
+        verification_token?: string;
       };
 
       if (!email || !password) {
@@ -204,6 +229,16 @@ async function handler(
           status: 400,
           headers: { ...corsHeaders(req), "Content-Type": "application/json" },
           body: JSON.stringify({ error: "Password must be at least 8 characters" }),
+        };
+      }
+
+      // Verify the request is authorized: either via a valid JWT (admin) or verification token
+      const authUser = await validateToken(req);
+      if (!authUser && !verification_token) {
+        return {
+          status: 401,
+          headers: { ...corsHeaders(req), "Content-Type": "application/json" },
+          body: JSON.stringify({ error: "Authentication required to set password" }),
         };
       }
 

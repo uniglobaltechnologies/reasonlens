@@ -17,6 +17,9 @@ export default function Assess() {
   return <AssessmentFlow framework={fw} />;
 }
 
+// Frameworks that have scenario-based assessment available
+const SCENARIO_FRAMEWORKS = new Set(["teacher-competency"]);
+
 function FrameworkPicker() {
   const assessable = FRAMEWORKS.filter((f) => f.assessmentQuestions?.length > 0 && f.showInDashboard);
 
@@ -31,16 +34,27 @@ function FrameworkPicker() {
         <p className="text-muted-foreground mb-8">Choose a framework to assess yourself against. Each assessment takes 5-10 minutes.</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {assessable.map((fw) => (
-            <Link
-              key={fw.id}
-              to={`/assess/${fw.id}`}
-              className="p-5 rounded-xl border border-border bg-card hover:border-primary/50 hover:shadow-md hover:-translate-y-0.5 transition-all"
-            >
+            <div key={fw.id} className="p-5 rounded-xl border border-border bg-card">
               <span className="text-xs font-medium px-2 py-0.5 rounded-full bg-primary/10 text-primary">{fw.source}</span>
               <h4 className="font-semibold text-foreground mt-2 mb-1">{fw.shortName || fw.name}</h4>
               <p className="text-sm text-muted-foreground line-clamp-2">{fw.assessmentDescription || fw.description}</p>
-              <p className="text-xs text-muted-foreground mt-2">{fw.assessmentQuestions.length} questions · ~{fw.estimatedAssessmentMinutes || 5} min</p>
-            </Link>
+              <div className="mt-3 flex flex-col gap-2">
+                <Link
+                  to={`/assess/${fw.id}`}
+                  className="block py-2 px-3 text-sm text-center rounded-lg border border-border hover:border-primary/50 hover:bg-accent/50 transition-all"
+                >
+                  Quick Self-Assessment · ~{fw.estimatedAssessmentMinutes || 5} min
+                </Link>
+                {SCENARIO_FRAMEWORKS.has(fw.id) && (
+                  <Link
+                    to={`/assess/scenario/${fw.id}`}
+                    className="block py-2 px-3 text-sm text-center rounded-lg bg-primary/10 text-primary font-medium hover:bg-primary/20 transition-all"
+                  >
+                    Scenario Assessment · ~15 min
+                  </Link>
+                )}
+              </div>
+            </div>
           ))}
         </div>
       </div>

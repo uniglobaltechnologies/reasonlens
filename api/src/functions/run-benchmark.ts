@@ -87,6 +87,8 @@ async function handler(
 
     const callbackUrl = `https://${process.env.WEBSITE_HOSTNAME || "reasonlens-api.azurewebsites.net"}/api/benchmark-callback`;
 
+    const benchAbort = new AbortController();
+    setTimeout(() => benchAbort.abort(), 30000);
     fetch(benchmarkUrl, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
@@ -98,7 +100,18 @@ async function handler(
         callback_url: callbackUrl,
         api_keys: apiKeys,
       }),
-    }).catch((err) => context.error("Benchmark service call failed:", err));
+      signal: benchAbort.signal,
+    }).catch(async (err) => {
+      context.error("Benchmark service call failed:", err);
+      try {
+        await execute(
+          "UPDATE benchmark_runs SET status = 'failed', error_message = $1, completed_at = now() WHERE id = $2",
+          [`Benchmark service unreachable: ${err.message}`, run.id]
+        );
+      } catch (dbErr) {
+        context.error("Failed to update benchmark run after service error:", dbErr);
+      }
+    });
 
     return {
       status: 200,

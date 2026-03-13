@@ -4,3 +4,4 @@ dist/
 *.local
 local.settings.json
 .funcignore
+.github/skills/

@@ -5,7 +5,7 @@ import {
   InvocationContext,
 } from "@azure/functions";
 import { query, queryOne } from "../shared/db";
-import { validateToken } from "../shared/auth";
+import { requireAuth, AuthError } from "../shared/auth";
 import { generateContentStream, createSSEResponse } from "../shared/ai";
 import {
   getFrameworkContextById,
@@ -37,7 +37,7 @@ async function fetchUserContext(
           [userId]
         ),
         query(
-          "SELECT framework_name, framework_id, dimension, selected_level, completed_at FROM assessment_results WHERE user_id = $1 ORDER BY completed_at DESC LIMIT 100",
+          "SELECT framework_name, framework_id, dimension, selected_level, completed_at, COALESCE(assessment_method, 'self_report') AS assessment_method FROM assessment_results WHERE user_id = $1 ORDER BY completed_at DESC LIMIT 100",
           [userId]
         ),
         query(
@@ -232,10 +232,8 @@ async function handler(
       }
     }
 
-    const user = await validateToken(req);
-    const userContext = user
-      ? await fetchUserContext(user.userId)
-      : null;
+    const user = await requireAuth(req);
+    const userContext = await fetchUserContext(user.userId);
 
     const systemPrompt = buildSystemPrompt(chatContext, userContext);
     const stream = generateContentStream(systemPrompt, messages);
@@ -251,6 +249,13 @@ async function handler(
       body: createSSEResponse(stream),
     };
   } catch (err) {
+    if (err instanceof AuthError) {
+      return {
+        status: err.statusCode,
+        headers: { ...corsHeaders(req), "Content-Type": "application/json" },
+        body: JSON.stringify({ error: err.message }),
+      };
+    }
     context.error("copilot-chat error:", err);
     return {
       status: 500,

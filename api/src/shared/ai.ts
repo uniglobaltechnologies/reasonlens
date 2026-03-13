@@ -16,7 +16,7 @@ function getClient(): AzureOpenAI {
     client = new AzureOpenAI({
       endpoint,
       apiKey,
-      apiVersion: "2024-12-01-preview",
+      apiVersion: "2025-01-01-preview",
     });
   }
   return client;

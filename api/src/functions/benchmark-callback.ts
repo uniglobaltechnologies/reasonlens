@@ -86,10 +86,15 @@ async function handler(
       ]
     );
 
-    // Audit log
+    // Audit log (user_id from the benchmark run's creator)
+    const benchRun = await queryOne<{ created_by: string }>(
+      "SELECT created_by FROM benchmark_runs WHERE id = $1",
+      [body.run_id]
+    );
     await execute(
-      "INSERT INTO audit_log (run_id, action, details) VALUES ($1, $2, $3)",
+      "INSERT INTO audit_log (user_id, run_id, action, details) VALUES ($1, $2, $3, $4)",
       [
+        benchRun?.created_by ?? null,
         body.run_id,
         "benchmark_callback_received",
         JSON.stringify({ status: body.status, benchmark_type: body.benchmark_type }),

@@ -51,7 +51,7 @@ jobs:
             --overwrite true \
             >/dev/null
 
-          EXPIRY="$(date -u -d '+10 years' '+%Y-%m-%dT%H:%MZ')"
+          EXPIRY="$(date -u -d '+1 year' '+%Y-%m-%dT%H:%MZ')"
           SAS="$(az storage blob generate-sas \
             --account-name "$STORAGE_ACCOUNT" \
             --account-key "$STORAGE_KEY" \

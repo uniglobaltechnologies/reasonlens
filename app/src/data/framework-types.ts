@@ -142,11 +142,9 @@ export const STUDENT_LEVELS: Omit<Level, "indicators">[] = [
 ];
 
 export const BDC_LEVELS: Omit<Level, "indicators">[] = [
-  { id: "discovery", name: "Discovery", description: "Awareness and initial exploration", order: 1 },
-  { id: "development", name: "Development", description: "Building skills with support", order: 2 },
-  { id: "established", name: "Established", description: "Confident independent practice", order: 3 },
-  { id: "leading", name: "Leading", description: "Guiding and mentoring others", order: 4 },
-  { id: "strategic", name: "Strategic", description: "Shaping strategy and culture", order: 5 },
+  { id: "developing", name: "Developing", description: "Awareness, initial exploration and guided experimentation with AI tools", order: 1 },
+  { id: "capable", name: "Capable", description: "Confident, systematic and responsible AI-augmented professional practice", order: 2 },
+  { id: "proficient", name: "Proficient", description: "Leading AI integration, mentoring others and shaping institutional strategy", order: 3 },
 ];
 
 export const DIGCOMP_LEVELS: Omit<Level, "indicators">[] = [

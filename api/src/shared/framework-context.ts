@@ -344,44 +344,44 @@ const frameworks: FrameworkContext[] = [
 
   // ═══════════════════════════════════════════════════
   // 9–15. BDC Role Profiles (from source JSON data)
-  // Each has 6 aspects × 5 AI maturity levels with real
-  // curricular goals and learning objectives
+  // Uses correct JISC Discovery Tool 3-level individual model:
+  // Developing / Capable / Proficient
   // ═══════════════════════════════════════════════════
   ...[
     {
       id: "bdc-individual", name: "JISC BDC Individual Framework",
       audience: ["all_staff", "all_students"],
-      overview: "Generic digital capability framework for all roles. 6 capability areas × 5 AI maturity levels (Approaching → Optimised) with curricular goals, learning objectives and contextual activities.",
+      overview: "Generic digital capability framework for all roles. 6 capability areas × 3 capability levels (Developing → Capable → Proficient).",
     },
     {
       id: "bdc-teacher-he", name: "JISC BDC Teacher HE Profile",
       audience: ["educator", "teaching_staff_he"],
-      overview: "Teaching-focused digital capabilities for HE lecturers. Covers 8 areas of digital teaching practice. Higher-level descriptors align with AI maturity levels 4-5. Maps to PSF 2023 dimensions.",
+      overview: "Teaching-focused digital capabilities for HE lecturers. 6 capability areas × 3 levels (Developing → Capable → Proficient). Maps to PSF 2023 dimensions.",
     },
     {
       id: "bdc-researcher", name: "JISC BDC Researcher Profile",
       audience: ["researchers", "research_students"],
-      overview: "Research-focused digital capabilities. Distinguishes researcher-level and organisational-level capabilities. Emphasises open research, data management, and international collaboration. Maps to Vitae RDF.",
+      overview: "Research-focused digital capabilities. 6 capability areas × 3 levels (Developing → Capable → Proficient). Emphasises open research and data management. Maps to Vitae RDF.",
     },
     {
       id: "bdc-professional-services", name: "JISC BDC Professional Services Profile",
       audience: ["professional_services_staff"],
-      overview: "Digital capabilities for professional services staff. Covers administrative digital processes, data-driven service delivery, and operational efficiency.",
+      overview: "Digital capabilities for professional services staff. 6 capability areas × 3 levels (Developing → Capable → Proficient).",
     },
     {
       id: "bdc-learning-technology", name: "JISC BDC Learning Technology Profile",
       audience: ["learning_technologists"],
-      overview: "Digital capabilities for learning technology specialists. Technical depth across all elements. Bridges technical and pedagogical perspectives. AI tool evaluation and implementation prominent.",
+      overview: "Digital capabilities for learning technology specialists. 6 capability areas × 3 levels (Developing → Capable → Proficient). Bridges technical and pedagogical perspectives.",
     },
     {
       id: "bdc-digital-leader", name: "JISC BDC Digital Leader Profile",
       audience: ["senior_leaders", "strategic_leaders", "governors"],
-      overview: "Strategic digital leadership capabilities. Uniquely includes BOTH professional-level AND organisational-level capabilities. AI strategy and responsible AI governance particularly prominent.",
+      overview: "Strategic digital leadership capabilities. 6 capability areas × 3 levels (Developing → Capable → Proficient). AI strategy and responsible AI governance prominent.",
     },
     {
       id: "bdc-educational-developer", name: "JISC BDC Educational Developer Profile",
       audience: ["educational_developers"],
-      overview: "Digital capabilities for educational development professionals. Bridges individual teacher capability and institutional strategy. Key enablers for moving institutions from AI maturity levels 2-3 to 4-5.",
+      overview: "Digital capabilities for educational development professionals. 6 capability areas × 3 levels (Developing → Capable → Proficient). Bridges individual teacher capability and institutional strategy.",
     },
   ].map(profile => ({
     id: profile.id, name: profile.name, source: "JISC", type: "capability" as const,
@@ -391,86 +391,90 @@ const frameworks: FrameworkContext[] = [
     crossReferences: ["maturity-jisc-ai"],
     dimensions: [
       { id: `${profile.id}-prof`, name: "Digital Proficiency and Productivity", description: "Using digital devices, networks, applications, AI, software and services effectively and productively", order: 1, levels: [
-        { id: `${profile.id}-prof-l1`, name: "Approaching and Understanding", description: "Interest in AI; understanding impact; basic digital capabilities developing", order: 1, indicators: [
-          { id: `${profile.id}-prof-l1-1`, description: "Understand what AI is and how it relates to existing digital tools" },
-          { id: `${profile.id}-prof-l1-2`, description: "Identify AI-powered features in tools they already use" },
+        { id: `${profile.id}-prof-developing`, name: "Developing", description: "Awareness, exploration and guided experimentation with AI-enhanced productivity tools", order: 1, indicators: [
+          { id: `${profile.id}-prof-dev-1`, description: "Understand what AI is and how it relates to existing digital tools" },
+          { id: `${profile.id}-prof-dev-2`, description: "Identify AI-powered features in tools they already use" },
+          { id: `${profile.id}-prof-dev-3`, description: "Experiment with AI tools to enhance personal productivity" },
+          { id: `${profile.id}-prof-dev-4`, description: "Evaluate AI-generated outputs for accuracy and fitness for purpose" },
         ]},
-        { id: `${profile.id}-prof-l2`, name: "Experimenting and Exploring", description: "Pilots within existing processes; responsible AI habits forming", order: 2, indicators: [
-          { id: `${profile.id}-prof-l2-1`, description: "Experiment with AI tools to enhance personal productivity" },
-          { id: `${profile.id}-prof-l2-2`, description: "Evaluate AI-generated outputs for accuracy and fitness for purpose" },
+        { id: `${profile.id}-prof-capable`, name: "Capable", description: "Confident, systematic AI-augmented professional practice", order: 2, indicators: [
+          { id: `${profile.id}-prof-cap-1`, description: "Integrate AI tools systematically into professional workflows" },
+          { id: `${profile.id}-prof-cap-2`, description: "Select appropriate AI and non-AI tools for different professional tasks" },
+          { id: `${profile.id}-prof-cap-3`, description: "Support colleagues in basic AI tool adoption" },
         ]},
-        { id: `${profile.id}-prof-l3`, name: "Operational", description: "Systematic AI integration; confident routine AI-augmented practice", order: 3, indicators: [
-          { id: `${profile.id}-prof-l3-1`, description: "Integrate AI tools systematically into professional workflows" },
-          { id: `${profile.id}-prof-l3-2`, description: "Select appropriate AI and non-AI tools for different professional tasks" },
-        ]},
-        { id: `${profile.id}-prof-l4`, name: "Embedded", description: "AI embedded in strategy; leading AI integration", order: 4, indicators: [
-          { id: `${profile.id}-prof-l4-1`, description: "Lead AI-enhanced productivity practices across a team or department" },
-          { id: `${profile.id}-prof-l4-2`, description: "Mentor colleagues in effective and responsible AI tool use" },
-        ]},
-        { id: `${profile.id}-prof-l5`, name: "Optimised/Transformed", description: "AI supports optimised outcomes; sector leadership", order: 5, indicators: [
-          { id: `${profile.id}-prof-l5-1`, description: "Shape institutional and sector approaches to AI-enhanced productivity" },
-          { id: `${profile.id}-prof-l5-2`, description: "Design strategic approaches to AI adoption balancing innovation with responsibility" },
+        { id: `${profile.id}-prof-proficient`, name: "Proficient", description: "Leading AI integration and shaping institutional strategy", order: 3, indicators: [
+          { id: `${profile.id}-prof-pro-1`, description: "Lead AI-enhanced productivity practices across a team or department" },
+          { id: `${profile.id}-prof-pro-2`, description: "Mentor colleagues in effective and responsible AI tool use" },
+          { id: `${profile.id}-prof-pro-3`, description: "Shape institutional and sector approaches to AI-enhanced productivity" },
         ]},
       ]},
       { id: `${profile.id}-creation`, name: "Digital Creation, Problem-Solving and Innovation", description: "Digital production of content including AI-generated content; using digital evidence to solve problems", order: 2, levels: [
-        { id: `${profile.id}-creat-l1`, name: "Approaching and Understanding", description: "Understanding AI content generation", order: 1, indicators: [
-          { id: `${profile.id}-creat-l1-1`, description: "Understand how AI can generate and assist with content creation" },
-          { id: `${profile.id}-creat-l1-2`, description: "Describe what AI-generated content is and how it is produced" },
+        { id: `${profile.id}-creat-developing`, name: "Developing", description: "Understanding and experimenting with AI content generation", order: 1, indicators: [
+          { id: `${profile.id}-creat-dev-1`, description: "Understand how AI can generate and assist with content creation" },
+          { id: `${profile.id}-creat-dev-2`, description: "Experiment with AI tools for content creation including text, image and code generation" },
+          { id: `${profile.id}-creat-dev-3`, description: "Use AI to generate initial drafts or prototypes for professional tasks" },
         ]},
-        { id: `${profile.id}-creat-l2`, name: "Experimenting and Exploring", description: "Experimenting with AI content tools", order: 2, indicators: [
-          { id: `${profile.id}-creat-l2-1`, description: "Experiment with AI tools for content creation including text, image and code generation" },
-          { id: `${profile.id}-creat-l2-2`, description: "Use AI to generate initial drafts or prototypes for professional tasks" },
+        { id: `${profile.id}-creat-capable`, name: "Capable", description: "Routine AI-enhanced creation and problem-solving", order: 2, indicators: [
+          { id: `${profile.id}-creat-cap-1`, description: "Integrate AI into creative and problem-solving workflows" },
+          { id: `${profile.id}-creat-cap-2`, description: "Evaluate AI-generated solutions critically before implementation" },
         ]},
-        { id: `${profile.id}-creat-l3`, name: "Operational", description: "Routine AI-enhanced creation", order: 3, indicators: [
-          { id: `${profile.id}-creat-l3-1`, description: "Integrate AI into creative and problem-solving workflows" },
-          { id: `${profile.id}-creat-l3-2`, description: "Evaluate AI-generated solutions critically before implementation" },
-        ]},
-        { id: `${profile.id}-creat-l4`, name: "Embedded", description: "Leading AI innovation practices", order: 4, indicators: [
-          { id: `${profile.id}-creat-l4-1`, description: "Lead AI-enhanced innovation within team or department" },
-          { id: `${profile.id}-creat-l4-2`, description: "Develop frameworks for evaluating AI-generated content quality" },
-        ]},
-        { id: `${profile.id}-creat-l5`, name: "Optimised/Transformed", description: "Sector-leading AI innovation", order: 5, indicators: [
-          { id: `${profile.id}-creat-l5-1`, description: "Shape sector approaches to AI in creative and problem-solving contexts" },
-          { id: `${profile.id}-creat-l5-2`, description: "Pioneer new AI-enabled approaches to digital creation and innovation" },
+        { id: `${profile.id}-creat-proficient`, name: "Proficient", description: "Leading AI innovation and shaping sector practices", order: 3, indicators: [
+          { id: `${profile.id}-creat-pro-1`, description: "Lead AI-enhanced innovation within team or department" },
+          { id: `${profile.id}-creat-pro-2`, description: "Develop frameworks for evaluating AI-generated content quality" },
+          { id: `${profile.id}-creat-pro-3`, description: "Pioneer new AI-enabled approaches to digital creation and innovation" },
         ]},
       ]},
       { id: `${profile.id}-learning`, name: "Digital Learning and Development", description: "Learning in digital settings including AI-enhanced learning and digital teaching practices", order: 3, levels: [
-        { id: `${profile.id}-learn-l1`, name: "Approaching and Understanding", description: "Awareness of AI in learning", order: 1, indicators: [
-          { id: `${profile.id}-learn-l1-1`, description: "Understand how AI can support learning and professional development" },
+        { id: `${profile.id}-learn-developing`, name: "Developing", description: "Awareness and exploration of AI in learning", order: 1, indicators: [
+          { id: `${profile.id}-learn-dev-1`, description: "Understand how AI can support learning and professional development" },
+          { id: `${profile.id}-learn-dev-2`, description: "Experiment with AI-powered learning tools for personal development" },
         ]},
-        { id: `${profile.id}-learn-l2`, name: "Experimenting and Exploring", description: "Trying AI learning tools", order: 2, indicators: [
-          { id: `${profile.id}-learn-l2-1`, description: "Experiment with AI-powered learning tools for personal development" },
+        { id: `${profile.id}-learn-capable`, name: "Capable", description: "Systematic AI-enhanced learning practice", order: 2, indicators: [
+          { id: `${profile.id}-learn-cap-1`, description: "Integrate AI into CPD and learning activities systematically" },
         ]},
-        { id: `${profile.id}-learn-l3`, name: "Operational", description: "Routine AI-enhanced learning", order: 3, indicators: [
-          { id: `${profile.id}-learn-l3-1`, description: "Integrate AI into CPD and learning activities systematically" },
-        ]},
-        { id: `${profile.id}-learn-l4`, name: "Embedded", description: "Leading AI in learning", order: 4, indicators: [
-          { id: `${profile.id}-learn-l4-1`, description: "Lead institutional approaches to AI-enhanced learning and development" },
-        ]},
-        { id: `${profile.id}-learn-l5`, name: "Optimised/Transformed", description: "Transforming learning with AI", order: 5, indicators: [
-          { id: `${profile.id}-learn-l5-1`, description: "Shape sector approaches to AI in learning and professional development" },
+        { id: `${profile.id}-learn-proficient`, name: "Proficient", description: "Leading AI-enhanced learning approaches", order: 3, indicators: [
+          { id: `${profile.id}-learn-pro-1`, description: "Lead institutional approaches to AI-enhanced learning and development" },
+          { id: `${profile.id}-learn-pro-2`, description: "Shape sector approaches to AI in learning and professional development" },
         ]},
       ]},
       { id: `${profile.id}-literacies`, name: "Information, Data and Media Literacies", description: "Finding, evaluating, managing and sharing digital information including AI-generated content", order: 4, levels: [
-        { id: `${profile.id}-lit-l1`, name: "Approaching and Understanding", order: 1, description: "Awareness", indicators: [{ id: `${profile.id}-lit-l1-1`, description: "Understand how AI affects information reliability and media authenticity" }] },
-        { id: `${profile.id}-lit-l2`, name: "Experimenting and Exploring", order: 2, description: "Exploring", indicators: [{ id: `${profile.id}-lit-l2-1`, description: "Experiment with AI tools for information gathering and data analysis" }] },
-        { id: `${profile.id}-lit-l3`, name: "Operational", order: 3, description: "Routine use", indicators: [{ id: `${profile.id}-lit-l3-1`, description: "Systematically evaluate AI-generated information for accuracy and bias" }] },
-        { id: `${profile.id}-lit-l4`, name: "Embedded", order: 4, description: "Leading", indicators: [{ id: `${profile.id}-lit-l4-1`, description: "Lead institutional data literacy practices including AI-generated content evaluation" }] },
-        { id: `${profile.id}-lit-l5`, name: "Optimised/Transformed", order: 5, description: "Transforming", indicators: [{ id: `${profile.id}-lit-l5-1`, description: "Shape sector approaches to AI-era information and media literacy" }] },
+        { id: `${profile.id}-lit-developing`, name: "Developing", order: 1, description: "Awareness and exploration of AI's impact on information", indicators: [
+          { id: `${profile.id}-lit-dev-1`, description: "Understand how AI affects information reliability and media authenticity" },
+          { id: `${profile.id}-lit-dev-2`, description: "Experiment with AI tools for information gathering and data analysis" },
+        ]},
+        { id: `${profile.id}-lit-capable`, name: "Capable", order: 2, description: "Systematic evaluation of AI-generated information", indicators: [
+          { id: `${profile.id}-lit-cap-1`, description: "Systematically evaluate AI-generated information for accuracy and bias" },
+        ]},
+        { id: `${profile.id}-lit-proficient`, name: "Proficient", order: 3, description: "Leading AI-era information literacy practices", indicators: [
+          { id: `${profile.id}-lit-pro-1`, description: "Lead institutional data literacy practices including AI-generated content evaluation" },
+          { id: `${profile.id}-lit-pro-2`, description: "Shape sector approaches to AI-era information and media literacy" },
+        ]},
       ]},
       { id: `${profile.id}-comms`, name: "Digital Communication, Collaboration and Participation", description: "Communicating effectively in digital media including AI-powered collaboration tools", order: 5, levels: [
-        { id: `${profile.id}-com-l1`, name: "Approaching and Understanding", order: 1, description: "Awareness", indicators: [{ id: `${profile.id}-com-l1-1`, description: "Understand how AI can enhance digital communication and collaboration" }] },
-        { id: `${profile.id}-com-l2`, name: "Experimenting and Exploring", order: 2, description: "Exploring", indicators: [{ id: `${profile.id}-com-l2-1`, description: "Experiment with AI-powered communication and collaboration tools" }] },
-        { id: `${profile.id}-com-l3`, name: "Operational", order: 3, description: "Routine use", indicators: [{ id: `${profile.id}-com-l3-1`, description: "Integrate AI tools into team collaboration workflows" }] },
-        { id: `${profile.id}-com-l4`, name: "Embedded", order: 4, description: "Leading", indicators: [{ id: `${profile.id}-com-l4-1`, description: "Lead AI-enhanced collaboration practices across teams" }] },
-        { id: `${profile.id}-com-l5`, name: "Optimised/Transformed", order: 5, description: "Transforming", indicators: [{ id: `${profile.id}-com-l5-1`, description: "Shape sector approaches to AI-powered collaboration and participation" }] },
+        { id: `${profile.id}-com-developing`, name: "Developing", order: 1, description: "Awareness and exploration of AI collaboration tools", indicators: [
+          { id: `${profile.id}-com-dev-1`, description: "Understand how AI can enhance digital communication and collaboration" },
+          { id: `${profile.id}-com-dev-2`, description: "Experiment with AI-powered communication and collaboration tools" },
+        ]},
+        { id: `${profile.id}-com-capable`, name: "Capable", order: 2, description: "Routine AI-enhanced collaboration", indicators: [
+          { id: `${profile.id}-com-cap-1`, description: "Integrate AI tools into team collaboration workflows" },
+        ]},
+        { id: `${profile.id}-com-proficient`, name: "Proficient", order: 3, description: "Leading AI-powered collaboration practices", indicators: [
+          { id: `${profile.id}-com-pro-1`, description: "Lead AI-enhanced collaboration practices across teams" },
+          { id: `${profile.id}-com-pro-2`, description: "Shape sector approaches to AI-powered collaboration and participation" },
+        ]},
       ]},
       { id: `${profile.id}-identity`, name: "Digital Identity and Wellbeing", description: "Managing professional digital identity and wellbeing in AI-mediated environments", order: 6, levels: [
-        { id: `${profile.id}-id-l1`, name: "Approaching and Understanding", order: 1, description: "Awareness", indicators: [{ id: `${profile.id}-id-l1-1`, description: "Understand AI's impact on digital identity, privacy and wellbeing" }] },
-        { id: `${profile.id}-id-l2`, name: "Experimenting and Exploring", order: 2, description: "Exploring", indicators: [{ id: `${profile.id}-id-l2-1`, description: "Explore how AI affects personal data and digital footprint" }] },
-        { id: `${profile.id}-id-l3`, name: "Operational", order: 3, description: "Routine use", indicators: [{ id: `${profile.id}-id-l3-1`, description: "Manage digital identity and wellbeing proactively in AI-mediated environments" }] },
-        { id: `${profile.id}-id-l4`, name: "Embedded", order: 4, description: "Leading", indicators: [{ id: `${profile.id}-id-l4-1`, description: "Lead institutional digital wellbeing practices for AI-mediated work" }] },
-        { id: `${profile.id}-id-l5`, name: "Optimised/Transformed", order: 5, description: "Transforming", indicators: [{ id: `${profile.id}-id-l5-1`, description: "Shape sector approaches to digital identity and wellbeing in AI era" }] },
+        { id: `${profile.id}-id-developing`, name: "Developing", order: 1, description: "Awareness and exploration of AI's impact on identity and wellbeing", indicators: [
+          { id: `${profile.id}-id-dev-1`, description: "Understand AI's impact on digital identity, privacy and wellbeing" },
+          { id: `${profile.id}-id-dev-2`, description: "Explore how AI affects personal data and digital footprint" },
+        ]},
+        { id: `${profile.id}-id-capable`, name: "Capable", order: 2, description: "Proactive management of digital identity in AI contexts", indicators: [
+          { id: `${profile.id}-id-cap-1`, description: "Manage digital identity and wellbeing proactively in AI-mediated environments" },
+        ]},
+        { id: `${profile.id}-id-proficient`, name: "Proficient", order: 3, description: "Leading digital wellbeing practices for AI era", indicators: [
+          { id: `${profile.id}-id-pro-1`, description: "Lead institutional digital wellbeing practices for AI-mediated work" },
+          { id: `${profile.id}-id-pro-2`, description: "Shape sector approaches to digital identity and wellbeing in AI era" },
+        ]},
       ]},
     ],
   } as FrameworkContext)),
