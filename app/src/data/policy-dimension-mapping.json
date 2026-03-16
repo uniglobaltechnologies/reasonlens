@@ -37,38 +37,66 @@
     },
     {
       "framework_id": "maturity-the",
-      "dimension_id": "culture-strategy",
-      "dimension_name": "Culture and Strategy",
+      "dimension_id": "the-tl-strategy",
+      "dimension_name": "Strategy (T&L)",
       "low_score_triggers": ["ai-governance"],
       "content_relevant_to": ["ai-governance", "ai-acceptable-use"]
     },
     {
       "framework_id": "maturity-the",
-      "dimension_id": "content-curriculum",
-      "dimension_name": "Content and Curriculum",
-      "low_score_triggers": ["ai-assessment-integrity"],
-      "content_relevant_to": ["ai-assessment-integrity", "student-ai-guidance"]
+      "dimension_id": "the-tl-people",
+      "dimension_name": "People & Culture (T&L)",
+      "low_score_triggers": ["staff-ai-development"],
+      "content_relevant_to": ["staff-ai-development", "ai-governance"]
     },
     {
       "framework_id": "maturity-the",
-      "dimension_id": "data-analytics",
-      "dimension_name": "Data and Analytics",
+      "dimension_id": "the-tl-data",
+      "dimension_name": "Data (T&L)",
       "low_score_triggers": ["ai-data-governance"],
       "content_relevant_to": ["ai-data-governance", "ai-governance"]
     },
     {
       "framework_id": "maturity-the",
-      "dimension_id": "teaching-learning",
-      "dimension_name": "Teaching and Learning",
-      "low_score_triggers": ["ai-assessment-integrity", "staff-ai-development"],
-      "content_relevant_to": ["ai-assessment-integrity", "staff-ai-development", "student-ai-guidance"]
+      "dimension_id": "the-re-technology",
+      "dimension_name": "Technology (Research)",
+      "low_score_triggers": ["ai-data-governance"],
+      "content_relevant_to": ["ai-data-governance", "ai-governance"]
     },
     {
       "framework_id": "maturity-the",
-      "dimension_id": "operations-support",
-      "dimension_name": "Operations and Support",
+      "dimension_id": "the-re-utilization",
+      "dimension_name": "Utilisation (Research)",
+      "low_score_triggers": ["ai-assessment-integrity"],
+      "content_relevant_to": ["ai-assessment-integrity", "student-ai-guidance"]
+    },
+    {
+      "framework_id": "maturity-the",
+      "dimension_id": "the-ps-strategy",
+      "dimension_name": "Strategy (Prof Services)",
       "low_score_triggers": ["ai-governance"],
-      "content_relevant_to": ["ai-governance", "ai-data-governance"]
+      "content_relevant_to": ["ai-governance", "ai-acceptable-use"]
+    },
+    {
+      "framework_id": "maturity-the",
+      "dimension_id": "the-ps-data",
+      "dimension_name": "Data (Prof Services)",
+      "low_score_triggers": ["ai-data-governance"],
+      "content_relevant_to": ["ai-data-governance", "ai-governance"]
+    },
+    {
+      "framework_id": "maturity-the",
+      "dimension_id": "the-pg-people",
+      "dimension_name": "People & Culture (Planning & Gov)",
+      "low_score_triggers": ["staff-ai-development"],
+      "content_relevant_to": ["staff-ai-development", "ai-governance"]
+    },
+    {
+      "framework_id": "maturity-the",
+      "dimension_id": "the-pg-technology",
+      "dimension_name": "Technology (Planning & Gov)",
+      "low_score_triggers": ["ai-data-governance"],
+      "content_relevant_to": ["ai-data-governance", "ai-governance"]
     },
     {
       "framework_id": "ai-capability",

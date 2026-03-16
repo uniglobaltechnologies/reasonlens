@@ -2,7 +2,7 @@
 // Shared Framework Types
 // ============================================================
 
-export type CompetencyLevel = "acquire" | "deepen" | "create";
+export type CompetencyLevel = string;
 
 export interface AssessmentQuestion {
   id: string;

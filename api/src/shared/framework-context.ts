@@ -191,37 +191,458 @@ const frameworks: FrameworkContext[] = [
   // ═══════════════════════════════════════════════════
   // 5. THE Digital Maturity Index
   // ═══════════════════════════════════════════════════
+  // 4 pillars × 5 cross-cutting dimensions = 20 child dimensions, each with 4 maturity levels
   {
     id: "maturity-the",
     name: "THE Digital Maturity Index",
     source: "THE", type: "maturity", scope: "institutional",
     targetAudience: ["leader", "admin"],
-    overview: "Based on 3,863 respondents from 1,949 institutions in 100 countries. 4 pillars × 5 dimensions × 4 maturity levels (Incidental→Optimised).",
+    overview: "Based on 3,863 respondents from 1,949 institutions in 100 countries. 4 pillars (Teaching & Learning, Research, Professional Services, Planning & Governance) × 5 cross-cutting dimensions (Strategy, People & Culture, Technology, Data, Utilisation) × 4 maturity levels (Incidental→Intentional→Integrated→Optimised).",
     crossReferences: ["maturity-jisc", "ai-capability"],
     dimensions: [
-      { id: "the-teaching", name: "Teaching & Learning", description: "Digital pedagogy transformation", order: 1, levels: [
-        { id: "the-tl-incidental", name: "Incidental", description: "Ad-hoc activities", order: 1, indicators: [{ id: "the-tl-i1", description: "Uncoordinated digital teaching" }] },
-        { id: "the-tl-intentional", name: "Intentional", description: "Deliberate initiatives", order: 2, indicators: [{ id: "the-tl-d1", description: "Planned digital teaching pilots" }] },
-        { id: "the-tl-integrated", name: "Integrated", description: "Coordinated systems", order: 3, indicators: [{ id: "the-tl-g1", description: "Integrated digital learning platforms" }] },
-        { id: "the-tl-optimised", name: "Optimised", description: "Adaptive excellence", order: 4, indicators: [{ id: "the-tl-o1", description: "Data-driven adaptive teaching" }] },
+      // ─── Pillar 1: Teaching & Learning ───
+      { id: "the-tl-strategy", name: "Strategy (T&L)", description: "Teaching & Learning — Strategic digital transformation planning", order: 1, levels: [
+        { id: "the-tl-strategy-incidental", name: "Incidental", description: "Sporadic, independent digital activities with no coordinated strategy", order: 1, indicators: [
+          { id: "the-tl-str-1-01", description: "No formal digital transformation strategy exists for teaching and learning" },
+          { id: "the-tl-str-1-02", description: "Technology decisions for T&L are made reactively without alignment to institutional goals" },
+          { id: "the-tl-str-1-03", description: "IT budget allocation for teaching technology is ad hoc and unplanned" },
+        ]},
+        { id: "the-tl-strategy-intentional", name: "Intentional", description: "Purposeful digital activities with emerging strategy", order: 2, indicators: [
+          { id: "the-tl-str-2-01", description: "An emerging digital strategy is being developed for teaching and learning" },
+          { id: "the-tl-str-2-02", description: "Some technology investments are beginning to align with institutional teaching goals" },
+          { id: "the-tl-str-2-03", description: "IT budget planning for T&L is becoming more structured and purposeful" },
+        ]},
+        { id: "the-tl-strategy-integrated", name: "Integrated", description: "Digital strategy fully integrated into T&L planning", order: 3, indicators: [
+          { id: "the-tl-str-3-01", description: "Digital strategy is fully integrated into teaching and learning planning" },
+          { id: "the-tl-str-3-02", description: "Technology investments for T&L are aligned with institutional KPIs and strategic goals" },
+          { id: "the-tl-str-3-03", description: "Change management for digital teaching initiatives is embedded in institutional processes" },
+        ]},
+        { id: "the-tl-strategy-optimised", name: "Optimised", description: "Continuous improvement and sector leadership", order: 4, indicators: [
+          { id: "the-tl-str-4-01", description: "Digital transformation is a core priority with continuous improvement cycles in teaching and learning" },
+          { id: "the-tl-str-4-02", description: "Proactive technology forecasting informs T&L strategic planning" },
+          { id: "the-tl-str-4-03", description: "The institution is recognized externally as a leader in digital teaching strategy" },
+        ]},
       ]},
-      { id: "the-research", name: "Research", description: "Digital research workflows", order: 2, levels: [
-        { id: "the-re-incidental", name: "Incidental", description: "Ad-hoc", order: 1, indicators: [{ id: "the-re-i1", description: "Individual digital tool use" }] },
-        { id: "the-re-intentional", name: "Intentional", description: "Planned", order: 2, indicators: [{ id: "the-re-d1", description: "Department-level digital research" }] },
-        { id: "the-re-integrated", name: "Integrated", description: "Coordinated", order: 3, indicators: [{ id: "the-re-g1", description: "Institution-wide research platforms" }] },
-        { id: "the-re-optimised", name: "Optimised", description: "Adaptive", order: 4, indicators: [{ id: "the-re-o1", description: "AI-enhanced research workflows" }] },
+      { id: "the-tl-people", name: "People & Culture (T&L)", description: "Teaching & Learning — Digital skills, confidence, and organizational culture", order: 2, levels: [
+        { id: "the-tl-people-incidental", name: "Incidental", description: "No established culture of exploring teaching technologies", order: 1, indicators: [
+          { id: "the-tl-ppl-1-01", description: "There is no established culture of exploring or adopting new teaching technologies" },
+          { id: "the-tl-ppl-1-02", description: "Teaching staff do not engage in ongoing professional development for digital skills" },
+          { id: "the-tl-ppl-1-03", description: "Digital competence is not recognized in recruitment, evaluations, or promotions for educators" },
+        ]},
+        { id: "the-tl-people-intentional", name: "Intentional", description: "Emerging innovation culture for teaching", order: 2, indicators: [
+          { id: "the-tl-ppl-2-01", description: "An innovative environment for exploring new teaching technologies is beginning to emerge" },
+          { id: "the-tl-ppl-2-02", description: "Teaching staff are beginning to engage in professional development for digital skills" },
+          { id: "the-tl-ppl-2-03", description: "Digital competence is beginning to be considered in HR processes for educators" },
+        ]},
+        { id: "the-tl-people-integrated", name: "Integrated", description: "Culture of innovation with regular digital CPD", order: 3, indicators: [
+          { id: "the-tl-ppl-3-01", description: "A culture of innovation that explores and adopts new teaching technologies is established" },
+          { id: "the-tl-ppl-3-02", description: "Teaching staff regularly engage in professional development to stay current with technology" },
+          { id: "the-tl-ppl-3-03", description: "Digital competence is systematically recognized in recruitment, evaluations, and promotions" },
+        ]},
+        { id: "the-tl-people-optimised", name: "Optimised", description: "Innovation is a defining institutional characteristic", order: 4, indicators: [
+          { id: "the-tl-ppl-4-01", description: "Innovation culture is a defining institutional characteristic with continuous exploration of emerging teaching technologies" },
+          { id: "the-tl-ppl-4-02", description: "Professional development for digital teaching skills is embedded, continuous, and sector-leading" },
+          { id: "the-tl-ppl-4-03", description: "Digital competence is a core requirement across all teaching roles and career pathways" },
+        ]},
       ]},
-      { id: "the-services", name: "Professional Services", description: "Digital operational efficiency", order: 3, levels: [
-        { id: "the-ps-incidental", name: "Incidental", description: "Ad-hoc", order: 1, indicators: [{ id: "the-ps-i1", description: "Manual processes predominate" }] },
-        { id: "the-ps-intentional", name: "Intentional", description: "Planned", order: 2, indicators: [{ id: "the-ps-d1", description: "Key processes being digitised" }] },
-        { id: "the-ps-integrated", name: "Integrated", description: "Coordinated", order: 3, indicators: [{ id: "the-ps-g1", description: "Integrated service delivery" }] },
-        { id: "the-ps-optimised", name: "Optimised", description: "Adaptive", order: 4, indicators: [{ id: "the-ps-o1", description: "AI-optimised service delivery" }] },
+      { id: "the-tl-technology", name: "Technology (T&L)", description: "Teaching & Learning — Infrastructure integration and emerging tech adoption", order: 3, levels: [
+        { id: "the-tl-technology-incidental", name: "Incidental", description: "Unreliable infrastructure and limited platform availability", order: 1, indicators: [
+          { id: "the-tl-tch-1-01", description: "Internet access on campus is unreliable or inconsistent for teaching activities" },
+          { id: "the-tl-tch-1-02", description: "Emerging technologies such as AI and immersive tech are not explored for teaching" },
+          { id: "the-tl-tch-1-03", description: "Learning management systems are not widely available or adopted for teaching" },
+        ]},
+        { id: "the-tl-technology-intentional", name: "Intentional", description: "Improving reliability with growing LMS adoption", order: 2, indicators: [
+          { id: "the-tl-tch-2-01", description: "Internet access is increasingly reliable across most teaching areas" },
+          { id: "the-tl-tch-2-02", description: "Some emerging technologies are being explored or piloted for teaching" },
+          { id: "the-tl-tch-2-03", description: "LMS is increasingly adopted for course delivery and assessment" },
+        ]},
+        { id: "the-tl-technology-integrated", name: "Integrated", description: "Reliable infrastructure with integrated learning technologies", order: 3, indicators: [
+          { id: "the-tl-tch-3-01", description: "Reliable internet access is provided consistently across the entire campus" },
+          { id: "the-tl-tch-3-02", description: "Emerging technologies including AI and immersive tech are actively adopted for teaching" },
+          { id: "the-tl-tch-3-03", description: "LMS and learning technologies are fully integrated into teaching, learning, and assessment" },
+        ]},
+        { id: "the-tl-technology-optimised", name: "Optimised", description: "Best-in-class infrastructure with sector-leading learning tech", order: 4, indicators: [
+          { id: "the-tl-tch-4-01", description: "Campus-wide internet infrastructure is best-in-class and continuously optimized" },
+          { id: "the-tl-tch-4-02", description: "The institution leads in the adoption and development of emerging teaching technologies" },
+          { id: "the-tl-tch-4-03", description: "LMS and learning technologies are at the leading edge with sector-leading innovation" },
+        ]},
       ]},
-      { id: "the-governance", name: "Planning & Governance", description: "Strategic digital leadership", order: 4, levels: [
-        { id: "the-pg-incidental", name: "Incidental", description: "Ad-hoc", order: 1, indicators: [{ id: "the-pg-i1", description: "No formal digital strategy" }] },
-        { id: "the-pg-intentional", name: "Intentional", description: "Planned", order: 2, indicators: [{ id: "the-pg-d1", description: "Digital strategy being developed" }] },
-        { id: "the-pg-integrated", name: "Integrated", description: "Coordinated", order: 3, indicators: [{ id: "the-pg-g1", description: "Funded, institution-wide strategy" }] },
-        { id: "the-pg-optimised", name: "Optimised", description: "Adaptive", order: 4, indicators: [{ id: "the-pg-o1", description: "Adaptive, data-driven governance" }] },
+      { id: "the-tl-data", name: "Data (T&L)", description: "Teaching & Learning — Data analytics, integration, and evidence-based decision-making", order: 4, levels: [
+        { id: "the-tl-data-incidental", name: "Incidental", description: "Inconsistent data collection with no learning analytics", order: 1, indicators: [
+          { id: "the-tl-dat-1-01", description: "Data collection and storage for teaching are inconsistent or not digitized" },
+          { id: "the-tl-dat-1-02", description: "Data systems for T&L are siloed with no integration across platforms" },
+          { id: "the-tl-dat-1-03", description: "Learning analytics and student performance data are not collected or used" },
+        ]},
+        { id: "the-tl-data-intentional", name: "Intentional", description: "Emerging digital data collection with basic learning analytics", order: 2, indicators: [
+          { id: "the-tl-dat-2-01", description: "Teaching data is increasingly collected and stored in digital formats" },
+          { id: "the-tl-dat-2-02", description: "Initial efforts to integrate T&L data across systems are underway" },
+          { id: "the-tl-dat-2-03", description: "Basic learning analytics are being explored for student support" },
+        ]},
+        { id: "the-tl-data-integrated", name: "Integrated", description: "Comprehensive data with analytics-informed teaching", order: 3, indicators: [
+          { id: "the-tl-dat-3-01", description: "Teaching data is comprehensively collected and stored in well-managed digital systems" },
+          { id: "the-tl-dat-3-02", description: "Data for T&L is effectively integrated across systems to maximize usage" },
+          { id: "the-tl-dat-3-03", description: "Learning analytics inform personalized student support and course optimization" },
+        ]},
+        { id: "the-tl-data-optimised", name: "Optimised", description: "Fully automated data with predictive learning models", order: 4, indicators: [
+          { id: "the-tl-dat-4-01", description: "Teaching data storage and management are fully automated and optimized" },
+          { id: "the-tl-dat-4-02", description: "Data ecosystems for T&L are fully integrated with no silos between systems" },
+          { id: "the-tl-dat-4-03", description: "Advanced learning analytics and predictive models drive personalized learning at scale" },
+        ]},
+      ]},
+      { id: "the-tl-utilization", name: "Utilisation (T&L)", description: "Teaching & Learning — Adoption and effective use of digital tools", order: 5, levels: [
+        { id: "the-tl-utilization-incidental", name: "Incidental", description: "Available teaching technologies underutilized", order: 1, indicators: [
+          { id: "the-tl-utl-1-01", description: "Available teaching technologies are underutilized and not leveraged to improve pedagogy" },
+          { id: "the-tl-utl-1-02", description: "There is a gap between available technology and its effective application in teaching" },
+          { id: "the-tl-utl-1-03", description: "LMS is not utilized for blended, hybrid, or online learning options" },
+        ]},
+        { id: "the-tl-utilization-intentional", name: "Intentional", description: "Growing adoption with emerging blended learning", order: 2, indicators: [
+          { id: "the-tl-utl-2-01", description: "Technology utilization in teaching is growing more purposeful with increasing adoption" },
+          { id: "the-tl-utl-2-02", description: "Efforts are underway to close the gap between teaching technology availability and usage" },
+          { id: "the-tl-utl-2-03", description: "LMS is increasingly utilized for blended and hybrid learning" },
+        ]},
+        { id: "the-tl-utilization-integrated", name: "Integrated", description: "Strategic utilization with diverse learning modalities", order: 3, indicators: [
+          { id: "the-tl-utl-3-01", description: "Technology is strategically utilized across all teaching and learning activities" },
+          { id: "the-tl-utl-3-02", description: "Technology systematically supports evidence-based teaching decisions" },
+          { id: "the-tl-utl-3-03", description: "LMS is fully utilized for diverse learning modalities, providing flexibility and accommodating various learning styles" },
+        ]},
+        { id: "the-tl-utilization-optimised", name: "Optimised", description: "Maximized utilization with sector-leading flexible learning", order: 4, indicators: [
+          { id: "the-tl-utl-4-01", description: "Technology utilization in teaching is maximized and continuously optimized" },
+          { id: "the-tl-utl-4-02", description: "Data and technology comprehensively drive all teaching and learning decisions" },
+          { id: "the-tl-utl-4-03", description: "Learning technologies are used innovatively to create sector-leading flexible learning experiences" },
+        ]},
+      ]},
+      // ─── Pillar 2: Research ───
+      { id: "the-re-strategy", name: "Strategy (Research)", description: "Research — Strategic digital transformation planning", order: 6, levels: [
+        { id: "the-re-strategy-incidental", name: "Incidental", description: "No coordinated digital research strategy", order: 1, indicators: [
+          { id: "the-re-str-1-01", description: "No formal digital transformation strategy exists for research" },
+          { id: "the-re-str-1-02", description: "Technology decisions for research are made reactively without alignment to institutional goals" },
+          { id: "the-re-str-1-03", description: "Change management processes for digital research initiatives are absent" },
+        ]},
+        { id: "the-re-strategy-intentional", name: "Intentional", description: "Emerging digital research strategy", order: 2, indicators: [
+          { id: "the-re-str-2-01", description: "An emerging digital strategy is being developed for research" },
+          { id: "the-re-str-2-02", description: "Some research technology investments are beginning to align with institutional goals" },
+          { id: "the-re-str-2-03", description: "Initial change management processes are being developed for digital research initiatives" },
+        ]},
+        { id: "the-re-strategy-integrated", name: "Integrated", description: "Digital strategy fully integrated into research planning", order: 3, indicators: [
+          { id: "the-re-str-3-01", description: "Digital strategy is fully integrated into research planning" },
+          { id: "the-re-str-3-02", description: "Research technology investments are aligned with institutional KPIs and strategic goals" },
+          { id: "the-re-str-3-03", description: "IT budget for research is coordinated across departments with clear funding strategy" },
+        ]},
+        { id: "the-re-strategy-optimised", name: "Optimised", description: "Continuous improvement and sector leadership in research strategy", order: 4, indicators: [
+          { id: "the-re-str-4-01", description: "Digital transformation is a core priority with continuous improvement cycles in research" },
+          { id: "the-re-str-4-02", description: "Digital research strategy is regularly benchmarked against global standards and peers" },
+          { id: "the-re-str-4-03", description: "The institution is recognized externally as a leader in digital research strategy" },
+        ]},
+      ]},
+      { id: "the-re-people", name: "People & Culture (Research)", description: "Research — Digital skills, confidence, and organizational culture", order: 7, levels: [
+        { id: "the-re-people-incidental", name: "Incidental", description: "No culture of exploring research technologies", order: 1, indicators: [
+          { id: "the-re-ppl-1-01", description: "There is no established culture of exploring or adopting new research technologies" },
+          { id: "the-re-ppl-1-02", description: "Research staff do not engage in ongoing professional development for digital skills" },
+          { id: "the-re-ppl-1-03", description: "Dedicated research technology support teams are absent or under-resourced" },
+        ]},
+        { id: "the-re-people-intentional", name: "Intentional", description: "Emerging innovation culture for research", order: 2, indicators: [
+          { id: "the-re-ppl-2-01", description: "An innovative environment for exploring new research technologies is beginning to emerge" },
+          { id: "the-re-ppl-2-02", description: "Research staff are beginning to engage in professional development for digital skills" },
+          { id: "the-re-ppl-2-03", description: "A dedicated research technology team is being established or expanded" },
+        ]},
+        { id: "the-re-people-integrated", name: "Integrated", description: "Established innovation culture with regular CPD", order: 3, indicators: [
+          { id: "the-re-ppl-3-01", description: "A culture of innovation that explores and adopts new research technologies is established" },
+          { id: "the-re-ppl-3-02", description: "Research staff regularly engage in professional development to stay current with technology" },
+          { id: "the-re-ppl-3-03", description: "A dedicated, mature technology team supports research staff across the institution" },
+        ]},
+        { id: "the-re-people-optimised", name: "Optimised", description: "Sector-leading digital research culture", order: 4, indicators: [
+          { id: "the-re-ppl-4-01", description: "Innovation culture is a defining institutional characteristic with continuous exploration of emerging research technologies" },
+          { id: "the-re-ppl-4-02", description: "Professional development for digital research skills is embedded, continuous, and sector-leading" },
+          { id: "the-re-ppl-4-03", description: "Digital leadership in research is a defining feature of governance with leaders serving as sector exemplars" },
+        ]},
+      ]},
+      { id: "the-re-technology", name: "Technology (Research)", description: "Research — Infrastructure integration and emerging tech adoption", order: 8, levels: [
+        { id: "the-re-technology-incidental", name: "Incidental", description: "Limited research platforms and collaboration tools", order: 1, indicators: [
+          { id: "the-re-tch-1-01", description: "Core digital platforms and tools for research are not widely available or adopted" },
+          { id: "the-re-tch-1-02", description: "Emerging technologies such as AI are not explored for research" },
+          { id: "the-re-tch-1-03", description: "Research collaboration platforms and data tools are limited or unavailable" },
+        ]},
+        { id: "the-re-technology-intentional", name: "Intentional", description: "Research platforms being adopted and expanded", order: 2, indicators: [
+          { id: "the-re-tch-2-01", description: "Core digital platforms for research are adopted and in use across departments" },
+          { id: "the-re-tch-2-02", description: "Some emerging technologies are being explored or piloted for research" },
+          { id: "the-re-tch-2-03", description: "Research collaboration platforms are being adopted and expanded" },
+        ]},
+        { id: "the-re-technology-integrated", name: "Integrated", description: "Fully integrated research tools and collaboration platforms", order: 3, indicators: [
+          { id: "the-re-tch-3-01", description: "Core digital platforms are fully integrated into research workflows" },
+          { id: "the-re-tch-3-02", description: "Emerging technologies including AI are actively adopted for research" },
+          { id: "the-re-tch-3-03", description: "Research tools and collaboration platforms are fully integrated into the research lifecycle" },
+        ]},
+        { id: "the-re-technology-optimised", name: "Optimised", description: "Cutting-edge, globally connected research infrastructure", order: 4, indicators: [
+          { id: "the-re-tch-4-01", description: "Digital platforms for research are at the leading edge with continuous innovation" },
+          { id: "the-re-tch-4-02", description: "The institution leads in the adoption and development of emerging research technologies" },
+          { id: "the-re-tch-4-03", description: "Research technology infrastructure enables cutting-edge, globally connected research" },
+        ]},
+      ]},
+      { id: "the-re-data", name: "Data (Research)", description: "Research — Data analytics, integration, and evidence-based decision-making", order: 9, levels: [
+        { id: "the-re-data-incidental", name: "Incidental", description: "Inconsistent research data management", order: 1, indicators: [
+          { id: "the-re-dat-1-01", description: "Research data collection and storage are inconsistent or not digitized" },
+          { id: "the-re-dat-1-02", description: "Research data systems are siloed with no integration across platforms" },
+          { id: "the-re-dat-1-03", description: "Research data management practices are absent or inconsistent" },
+        ]},
+        { id: "the-re-data-intentional", name: "Intentional", description: "Developing research data management practices", order: 2, indicators: [
+          { id: "the-re-dat-2-01", description: "Research data is increasingly collected and stored in digital formats" },
+          { id: "the-re-dat-2-02", description: "Initial efforts to integrate research data across systems are underway" },
+          { id: "the-re-dat-2-03", description: "Research data management practices are being developed" },
+        ]},
+        { id: "the-re-data-integrated", name: "Integrated", description: "Well-managed research data with open data practices", order: 3, indicators: [
+          { id: "the-re-dat-3-01", description: "Research data is comprehensively collected and stored in well-managed digital systems" },
+          { id: "the-re-dat-3-02", description: "Predictive analytics are used for research decision-making" },
+          { id: "the-re-dat-3-03", description: "Research data is well-managed with open data practices and cross-collaboration sharing" },
+        ]},
+        { id: "the-re-data-optimised", name: "Optimised", description: "Automated research data with comprehensive open data", order: 4, indicators: [
+          { id: "the-re-dat-4-01", description: "Research data storage and management are fully automated and optimized" },
+          { id: "the-re-dat-4-02", description: "Data ecosystems for research are fully integrated with no silos between systems" },
+          { id: "the-re-dat-4-03", description: "Research data management is automated with comprehensive open data practices and global sharing" },
+        ]},
+      ]},
+      { id: "the-re-utilization", name: "Utilisation (Research)", description: "Research — Adoption and effective use of digital tools", order: 10, levels: [
+        { id: "the-re-utilization-incidental", name: "Incidental", description: "Digital tools not used for research collaboration", order: 1, indicators: [
+          { id: "the-re-utl-1-01", description: "Available research technologies are underutilized and not leveraged to improve processes" },
+          { id: "the-re-utl-1-02", description: "Technology is not employed to support evidence-based research decision-making" },
+          { id: "the-re-utl-1-03", description: "Digital tools are not used for research collaboration or dissemination" },
+        ]},
+        { id: "the-re-utilization-intentional", name: "Intentional", description: "Researchers beginning to use digital networks", order: 2, indicators: [
+          { id: "the-re-utl-2-01", description: "Research technology utilization is growing more purposeful with increasing adoption" },
+          { id: "the-re-utl-2-02", description: "Technology is increasingly used to support some research decision-making processes" },
+          { id: "the-re-utl-2-03", description: "Researchers are beginning to use digital networks for collaboration" },
+        ]},
+        { id: "the-re-utilization-integrated", name: "Integrated", description: "Effective digital collaboration and dissemination", order: 3, indicators: [
+          { id: "the-re-utl-3-01", description: "Technology is strategically utilized across all research activities" },
+          { id: "the-re-utl-3-02", description: "Technology systematically supports evidence-based research decision-making" },
+          { id: "the-re-utl-3-03", description: "Digital networks are used effectively for research collaboration and dissemination" },
+        ]},
+        { id: "the-re-utilization-optimised", name: "Optimised", description: "Sector-leading digital scholarship and open research", order: 4, indicators: [
+          { id: "the-re-utl-4-01", description: "Technology utilization in research is maximized and continuously optimized" },
+          { id: "the-re-utl-4-02", description: "Data and technology comprehensively drive all research decisions" },
+          { id: "the-re-utl-4-03", description: "Digital scholarship and open research practices are sector-leading" },
+        ]},
+      ]},
+      // ─── Pillar 3: Professional Services ───
+      { id: "the-ps-strategy", name: "Strategy (Prof Services)", description: "Professional Services — Strategic digital transformation planning", order: 11, levels: [
+        { id: "the-ps-strategy-incidental", name: "Incidental", description: "No coordinated digital strategy for operations", order: 1, indicators: [
+          { id: "the-ps-str-1-01", description: "No formal digital transformation strategy exists for professional services" },
+          { id: "the-ps-str-1-02", description: "Technology decisions for operations are made reactively without alignment to institutional goals" },
+          { id: "the-ps-str-1-03", description: "IT budget allocation for professional services is ad hoc and unplanned" },
+        ]},
+        { id: "the-ps-strategy-intentional", name: "Intentional", description: "Emerging digital strategy for operations", order: 2, indicators: [
+          { id: "the-ps-str-2-01", description: "An emerging digital strategy is being developed for professional services" },
+          { id: "the-ps-str-2-02", description: "Some operational technology investments are beginning to align with institutional goals" },
+          { id: "the-ps-str-2-03", description: "Initial change management processes are being developed for digital service initiatives" },
+        ]},
+        { id: "the-ps-strategy-integrated", name: "Integrated", description: "Digital strategy fully integrated into operations planning", order: 3, indicators: [
+          { id: "the-ps-str-3-01", description: "Digital strategy is fully integrated into professional services planning" },
+          { id: "the-ps-str-3-02", description: "Technology investments for operations are aligned with institutional KPIs and strategic goals" },
+          { id: "the-ps-str-3-03", description: "IT budget for professional services is coordinated across departments with clear funding strategy" },
+        ]},
+        { id: "the-ps-strategy-optimised", name: "Optimised", description: "Continuous improvement and sector leadership in operational strategy", order: 4, indicators: [
+          { id: "the-ps-str-4-01", description: "Digital transformation is a core priority with continuous improvement cycles in professional services" },
+          { id: "the-ps-str-4-02", description: "Proactive technology forecasting informs operational strategic planning" },
+          { id: "the-ps-str-4-03", description: "The institution is recognized externally as a leader in digital operational strategy" },
+        ]},
+      ]},
+      { id: "the-ps-people", name: "People & Culture (Prof Services)", description: "Professional Services — Digital skills, confidence, and organizational culture", order: 12, levels: [
+        { id: "the-ps-people-incidental", name: "Incidental", description: "No culture of exploring operational technologies", order: 1, indicators: [
+          { id: "the-ps-ppl-1-01", description: "There is no established culture of exploring or adopting new operational technologies" },
+          { id: "the-ps-ppl-1-02", description: "Professional services staff do not engage in ongoing professional development for digital skills" },
+          { id: "the-ps-ppl-1-03", description: "Digital leadership is not cultivated or modeled by operational decision-makers" },
+        ]},
+        { id: "the-ps-people-intentional", name: "Intentional", description: "Emerging innovation culture for operations", order: 2, indicators: [
+          { id: "the-ps-ppl-2-01", description: "An innovative environment for exploring new operational technologies is beginning to emerge" },
+          { id: "the-ps-ppl-2-02", description: "Professional services staff are beginning to engage in professional development for digital skills" },
+          { id: "the-ps-ppl-2-03", description: "Some operational leaders are beginning to model and promote digital behaviors" },
+        ]},
+        { id: "the-ps-people-integrated", name: "Integrated", description: "Established innovation culture with mature support teams", order: 3, indicators: [
+          { id: "the-ps-ppl-3-01", description: "A culture of innovation that explores and adopts new operational technologies is established" },
+          { id: "the-ps-ppl-3-02", description: "Professional services staff regularly engage in professional development to stay current with technology" },
+          { id: "the-ps-ppl-3-03", description: "A dedicated, mature technology team supports staff across professional services" },
+        ]},
+        { id: "the-ps-people-optimised", name: "Optimised", description: "Sector-leading digital operational culture", order: 4, indicators: [
+          { id: "the-ps-ppl-4-01", description: "Innovation culture is a defining institutional characteristic with continuous exploration of emerging operational technologies" },
+          { id: "the-ps-ppl-4-02", description: "Professional development for digital operational skills is embedded, continuous, and sector-leading" },
+          { id: "the-ps-ppl-4-03", description: "Digital competence is a core requirement across all professional services roles and career pathways" },
+        ]},
+      ]},
+      { id: "the-ps-technology", name: "Technology (Prof Services)", description: "Professional Services — Infrastructure integration and emerging tech adoption", order: 13, levels: [
+        { id: "the-ps-technology-incidental", name: "Incidental", description: "Basic and fragmented administrative platforms", order: 1, indicators: [
+          { id: "the-ps-tch-1-01", description: "Core digital platforms and tools for operations are not widely available or adopted" },
+          { id: "the-ps-tch-1-02", description: "Network infrastructure lacks flexibility and secure design for services" },
+          { id: "the-ps-tch-1-03", description: "Administrative and IT service platforms are basic and fragmented" },
+        ]},
+        { id: "the-ps-technology-intentional", name: "Intentional", description: "Administrative platforms becoming more integrated", order: 2, indicators: [
+          { id: "the-ps-tch-2-01", description: "Core digital platforms for operations are adopted and in use across departments" },
+          { id: "the-ps-tch-2-02", description: "Network infrastructure improvements are underway with growing attention to security" },
+          { id: "the-ps-tch-2-03", description: "Administrative platforms are becoming more integrated and user-friendly" },
+        ]},
+        { id: "the-ps-technology-integrated", name: "Integrated", description: "Effective operational platforms with secure infrastructure", order: 3, indicators: [
+          { id: "the-ps-tch-3-01", description: "Core digital platforms are fully integrated into operational workflows" },
+          { id: "the-ps-tch-3-02", description: "A flexible, secure network infrastructure is established and maintained" },
+          { id: "the-ps-tch-3-03", description: "Administrative and IT platforms effectively support all operational services" },
+        ]},
+        { id: "the-ps-technology-optimised", name: "Optimised", description: "Fully automated and optimized operational technology", order: 4, indicators: [
+          { id: "the-ps-tch-4-01", description: "Digital platforms for operations are at the leading edge with continuous innovation" },
+          { id: "the-ps-tch-4-02", description: "Technology infrastructure is fully automated, secure, and serves as a sector benchmark" },
+          { id: "the-ps-tch-4-03", description: "Operational technology is fully automated and optimized for efficiency" },
+        ]},
+      ]},
+      { id: "the-ps-data", name: "Data (Prof Services)", description: "Professional Services — Data analytics, integration, and evidence-based decision-making", order: 14, levels: [
+        { id: "the-ps-data-incidental", name: "Incidental", description: "Fragmented operational data across systems", order: 1, indicators: [
+          { id: "the-ps-dat-1-01", description: "Operational data collection and storage are inconsistent or not digitized" },
+          { id: "the-ps-dat-1-02", description: "Data security practices for professional services are weak or absent" },
+          { id: "the-ps-dat-1-03", description: "Operational and administrative data are fragmented across systems" },
+        ]},
+        { id: "the-ps-data-intentional", name: "Intentional", description: "Operational data systems being consolidated", order: 2, indicators: [
+          { id: "the-ps-dat-2-01", description: "Operational data is increasingly collected and stored in digital formats" },
+          { id: "the-ps-dat-2-02", description: "Data security awareness is growing with initial measures in place for services" },
+          { id: "the-ps-dat-2-03", description: "Operational data systems are beginning to be consolidated" },
+        ]},
+        { id: "the-ps-data-integrated", name: "Integrated", description: "Integrated data across HR, finance, and administration", order: 3, indicators: [
+          { id: "the-ps-dat-3-01", description: "Operational data is comprehensively collected and stored in well-managed digital systems" },
+          { id: "the-ps-dat-3-02", description: "Data security is managed through comprehensive policies and technology for services" },
+          { id: "the-ps-dat-3-03", description: "Operational data is integrated across HR, finance, and student administration" },
+        ]},
+        { id: "the-ps-data-optimised", name: "Optimised", description: "Fully automated, predictive institutional management", order: 4, indicators: [
+          { id: "the-ps-dat-4-01", description: "Operational data storage and management are fully automated and optimized" },
+          { id: "the-ps-dat-4-02", description: "Data governance and cybersecurity practices for services are exemplary and continuously improved" },
+          { id: "the-ps-dat-4-03", description: "Operational data drives fully automated, predictive institutional management" },
+        ]},
+      ]},
+      { id: "the-ps-utilization", name: "Utilisation (Prof Services)", description: "Professional Services — Adoption and effective use of digital tools", order: 15, levels: [
+        { id: "the-ps-utilization-incidental", name: "Incidental", description: "Administrative platforms underutilized", order: 1, indicators: [
+          { id: "the-ps-utl-1-01", description: "Available operational technologies are underutilized and not leveraged to improve processes" },
+          { id: "the-ps-utl-1-02", description: "Digital tools for operational collaboration and communication are not effectively used" },
+          { id: "the-ps-utl-1-03", description: "Administrative platforms are underutilized across operations" },
+        ]},
+        { id: "the-ps-utilization-intentional", name: "Intentional", description: "Growing adoption with increasing IT support", order: 2, indicators: [
+          { id: "the-ps-utl-2-01", description: "Operational technology utilization is growing more purposeful with increasing adoption" },
+          { id: "the-ps-utl-2-02", description: "Digital tools are beginning to improve operational collaboration and communication" },
+          { id: "the-ps-utl-2-03", description: "Administrative platforms are increasingly adopted with growing IT support" },
+        ]},
+        { id: "the-ps-utilization-integrated", name: "Integrated", description: "Effective platforms with robust IT support", order: 3, indicators: [
+          { id: "the-ps-utl-3-01", description: "Technology is strategically utilized across all professional services" },
+          { id: "the-ps-utl-3-02", description: "Digital tools effectively enhance operational collaboration and break down silos" },
+          { id: "the-ps-utl-3-03", description: "Administrative platforms are effectively used with robust IT support ensuring smooth operation" },
+        ]},
+        { id: "the-ps-utilization-optimised", name: "Optimised", description: "Fully optimized operational technology as sector benchmark", order: 4, indicators: [
+          { id: "the-ps-utl-4-01", description: "Technology utilization in professional services is maximized and continuously optimized" },
+          { id: "the-ps-utl-4-02", description: "Data and technology comprehensively drive all operational decisions" },
+          { id: "the-ps-utl-4-03", description: "Operational technology utilization is fully optimized and serves as a sector benchmark" },
+        ]},
+      ]},
+      // ─── Pillar 4: Planning & Governance ───
+      { id: "the-pg-strategy", name: "Strategy (Planning & Gov)", description: "Planning & Governance — Strategic digital transformation planning", order: 16, levels: [
+        { id: "the-pg-strategy-incidental", name: "Incidental", description: "No coordinated digital governance strategy", order: 1, indicators: [
+          { id: "the-pg-str-1-01", description: "No formal digital transformation strategy exists for institutional governance" },
+          { id: "the-pg-str-1-02", description: "Technology decisions for governance are made reactively without alignment to institutional goals" },
+          { id: "the-pg-str-1-03", description: "Change management processes for digital governance initiatives are absent" },
+        ]},
+        { id: "the-pg-strategy-intentional", name: "Intentional", description: "Emerging digital governance strategy", order: 2, indicators: [
+          { id: "the-pg-str-2-01", description: "An emerging digital strategy is being developed for institutional governance" },
+          { id: "the-pg-str-2-02", description: "Some governance technology investments are beginning to align with institutional goals" },
+          { id: "the-pg-str-2-03", description: "IT budget planning for governance is becoming more structured and purposeful" },
+        ]},
+        { id: "the-pg-strategy-integrated", name: "Integrated", description: "Digital strategy fully integrated into governance planning", order: 3, indicators: [
+          { id: "the-pg-str-3-01", description: "Digital strategy is fully integrated into institutional governance and planning" },
+          { id: "the-pg-str-3-02", description: "Technology investments for governance are aligned with institutional KPIs and strategic goals" },
+          { id: "the-pg-str-3-03", description: "Change management for digital governance initiatives is embedded in institutional processes" },
+        ]},
+        { id: "the-pg-strategy-optimised", name: "Optimised", description: "Continuous improvement and sector leadership in governance strategy", order: 4, indicators: [
+          { id: "the-pg-str-4-01", description: "Digital transformation is a core priority with continuous improvement cycles in governance" },
+          { id: "the-pg-str-4-02", description: "Digital governance strategy is regularly benchmarked against global standards and peers" },
+          { id: "the-pg-str-4-03", description: "The institution is recognized externally as a leader in digital governance strategy" },
+        ]},
+      ]},
+      { id: "the-pg-people", name: "People & Culture (Planning & Gov)", description: "Planning & Governance — Digital skills, confidence, and organizational culture", order: 17, levels: [
+        { id: "the-pg-people-incidental", name: "Incidental", description: "No culture of digital governance leadership", order: 1, indicators: [
+          { id: "the-pg-ppl-1-01", description: "There is no established culture of exploring or adopting new governance technologies" },
+          { id: "the-pg-ppl-1-02", description: "Governance staff do not engage in ongoing professional development for digital skills" },
+          { id: "the-pg-ppl-1-03", description: "Digital leadership is not cultivated or modeled by governance decision-makers" },
+        ]},
+        { id: "the-pg-people-intentional", name: "Intentional", description: "Emerging digital governance leadership", order: 2, indicators: [
+          { id: "the-pg-ppl-2-01", description: "An innovative environment for exploring new governance technologies is beginning to emerge" },
+          { id: "the-pg-ppl-2-02", description: "Governance staff are beginning to engage in professional development for digital skills" },
+          { id: "the-pg-ppl-2-03", description: "Some governance leaders are beginning to model and promote digital behaviors" },
+        ]},
+        { id: "the-pg-people-integrated", name: "Integrated", description: "Governance leaders cultivate digital leadership through self-assessment", order: 3, indicators: [
+          { id: "the-pg-ppl-3-01", description: "A culture of innovation that explores and adopts new governance technologies is established" },
+          { id: "the-pg-ppl-3-02", description: "Governance staff regularly engage in professional development to stay current with technology" },
+          { id: "the-pg-ppl-3-03", description: "Digital leadership is cultivated through self-assessment and modeling by governance decision-makers" },
+        ]},
+        { id: "the-pg-people-optimised", name: "Optimised", description: "Sector-leading digital governance leadership", order: 4, indicators: [
+          { id: "the-pg-ppl-4-01", description: "Innovation culture is a defining institutional characteristic with continuous exploration of emerging governance technologies" },
+          { id: "the-pg-ppl-4-02", description: "Professional development for digital governance skills is embedded, continuous, and sector-leading" },
+          { id: "the-pg-ppl-4-03", description: "Digital leadership in governance is a defining feature with leaders serving as sector exemplars" },
+        ]},
+      ]},
+      { id: "the-pg-technology", name: "Technology (Planning & Gov)", description: "Planning & Governance — Infrastructure integration and emerging tech adoption", order: 18, levels: [
+        { id: "the-pg-technology-incidental", name: "Incidental", description: "Absent or rudimentary governance systems", order: 1, indicators: [
+          { id: "the-pg-tch-1-01", description: "Core digital platforms and tools for governance are not widely available or adopted" },
+          { id: "the-pg-tch-1-02", description: "Emerging technologies such as AI are not explored for governance" },
+          { id: "the-pg-tch-1-03", description: "Governance and decision-support systems are absent or rudimentary" },
+        ]},
+        { id: "the-pg-technology-intentional", name: "Intentional", description: "Governance dashboards and planning tools being introduced", order: 2, indicators: [
+          { id: "the-pg-tch-2-01", description: "Core digital platforms for governance are adopted and in use across departments" },
+          { id: "the-pg-tch-2-02", description: "Some emerging technologies are being explored or piloted for governance" },
+          { id: "the-pg-tch-2-03", description: "Governance dashboards and planning tools are being introduced" },
+        ]},
+        { id: "the-pg-technology-integrated", name: "Integrated", description: "Enterprise-level governance tools supporting strategic decisions", order: 3, indicators: [
+          { id: "the-pg-tch-3-01", description: "Core digital platforms are fully integrated into governance workflows" },
+          { id: "the-pg-tch-3-02", description: "Emerging technologies including AI are actively adopted for governance and planning" },
+          { id: "the-pg-tch-3-03", description: "Enterprise-level governance tools and dashboards support strategic decision-making" },
+        ]},
+        { id: "the-pg-technology-optimised", name: "Optimised", description: "Real-time, comprehensive institutional intelligence", order: 4, indicators: [
+          { id: "the-pg-tch-4-01", description: "Digital platforms for governance are at the leading edge with continuous innovation" },
+          { id: "the-pg-tch-4-02", description: "The institution leads in the adoption and development of emerging governance technologies" },
+          { id: "the-pg-tch-4-03", description: "Governance technology provides real-time, comprehensive institutional intelligence" },
+        ]},
+      ]},
+      { id: "the-pg-data", name: "Data (Planning & Gov)", description: "Planning & Governance — Data analytics, integration, and evidence-based decision-making", order: 19, levels: [
+        { id: "the-pg-data-incidental", name: "Incidental", description: "Institutional performance data not used for planning", order: 1, indicators: [
+          { id: "the-pg-dat-1-01", description: "Data collection and storage for governance are inconsistent or not digitized" },
+          { id: "the-pg-dat-1-02", description: "Predictive analytics are not used for institutional planning" },
+          { id: "the-pg-dat-1-03", description: "Institutional performance data is not used for strategic planning" },
+        ]},
+        { id: "the-pg-data-intentional", name: "Intentional", description: "Institutional data dashboards being developed", order: 2, indicators: [
+          { id: "the-pg-dat-2-01", description: "Governance data is increasingly collected and stored in digital formats" },
+          { id: "the-pg-dat-2-02", description: "Basic predictive analytics are being explored for institutional planning" },
+          { id: "the-pg-dat-2-03", description: "Institutional data dashboards are being developed for strategic use" },
+        ]},
+        { id: "the-pg-data-integrated", name: "Integrated", description: "Comprehensive evidence-based governance and planning", order: 3, indicators: [
+          { id: "the-pg-dat-3-01", description: "Governance data is comprehensively collected and stored in well-managed digital systems" },
+          { id: "the-pg-dat-3-02", description: "Predictive analytics are used for governance decision-making" },
+          { id: "the-pg-dat-3-03", description: "Institutional data comprehensively supports evidence-based governance and strategic planning" },
+        ]},
+        { id: "the-pg-data-optimised", name: "Optimised", description: "Fully automated institutional intelligence with real-time dashboards", order: 4, indicators: [
+          { id: "the-pg-dat-4-01", description: "Governance data storage and management are fully automated and optimized" },
+          { id: "the-pg-dat-4-02", description: "Predictive modeling comprehensively drives governance strategy and operations" },
+          { id: "the-pg-dat-4-03", description: "Institutional intelligence is fully automated with real-time, comprehensive governance dashboards" },
+        ]},
+      ]},
+      { id: "the-pg-utilization", name: "Utilisation (Planning & Gov)", description: "Planning & Governance — Adoption and effective use of digital tools", order: 20, levels: [
+        { id: "the-pg-utilization-incidental", name: "Incidental", description: "Communication tools do not break down silos", order: 1, indicators: [
+          { id: "the-pg-utl-1-01", description: "Available governance technologies are underutilized and not leveraged to improve processes" },
+          { id: "the-pg-utl-1-02", description: "Technology is not employed to support evidence-based governance decision-making" },
+          { id: "the-pg-utl-1-03", description: "Communication tools do not break down organizational silos" },
+        ]},
+        { id: "the-pg-utilization-intentional", name: "Intentional", description: "Communication tools beginning to improve coordination", order: 2, indicators: [
+          { id: "the-pg-utl-2-01", description: "Governance technology utilization is growing more purposeful with increasing adoption" },
+          { id: "the-pg-utl-2-02", description: "Technology is increasingly used to support some governance decision-making processes" },
+          { id: "the-pg-utl-2-03", description: "Communication tools are beginning to improve cross-department coordination" },
+        ]},
+        { id: "the-pg-utilization-integrated", name: "Integrated", description: "Effective cross-functional governance with digital tools", order: 3, indicators: [
+          { id: "the-pg-utl-3-01", description: "Technology is strategically utilized across all governance activities" },
+          { id: "the-pg-utl-3-02", description: "Available technology is well-matched to governance needs and fully leveraged" },
+          { id: "the-pg-utl-3-03", description: "Communication tools effectively break down silos and support cross-functional governance" },
+        ]},
+        { id: "the-pg-utilization-optimised", name: "Optimised", description: "Fully data-driven governance with sector-leading utilization", order: 4, indicators: [
+          { id: "the-pg-utl-4-01", description: "Technology utilization in governance is maximized and continuously optimized" },
+          { id: "the-pg-utl-4-02", description: "Collaboration is seamless with no communication barriers across governance" },
+          { id: "the-pg-utl-4-03", description: "Governance processes are fully data-driven with sector-leading strategic technology utilization" },
+        ]},
       ]},
     ],
   },

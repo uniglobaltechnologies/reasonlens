@@ -18,7 +18,7 @@ export default function Assess() {
 }
 
 // Frameworks that have scenario-based assessment available
-const SCENARIO_FRAMEWORKS = new Set(["teacher-competency"]);
+const SCENARIO_FRAMEWORKS = new Set(["teacher-competency", "maturity-the"]);
 
 function FrameworkPicker() {
   const assessable = FRAMEWORKS.filter((f) => f.assessmentQuestions?.length > 0 && f.showInDashboard);
@@ -74,6 +74,13 @@ function AssessmentFlow({ framework: fw }: { framework: any }) {
   const question = questions[currentQ];
   const progress = ((currentQ + 1) / questions.length) * 100;
 
+  // Resolve dimension IDs to human-readable names from keyDimensions
+  const dimNameMap = new Map<string, string>();
+  for (const dim of fw.keyDimensions || []) {
+    dimNameMap.set(dim.id, dim.name);
+  }
+  const dimLabel = (dim: string) => dimNameMap.get(dim) || dim;
+
   const handleSelect = (value: string) => {
     setAnswers((prev) => ({ ...prev, [question.id]: value }));
   };
@@ -86,13 +93,17 @@ function AssessmentFlow({ framework: fw }: { framework: any }) {
     try {
       const results = questions
         .filter((q: any) => !!answers[q.id])
-        .map((q: any) => ({
-          framework_id: fw.id,
-          framework_name: fw.name,
-          question_id: q.id,
-          dimension: q.dimension,
-          selected_level: answers[q.id],
-        }));
+        .map((q: any) => {
+          const selectedValue = answers[q.id];
+          const option = q.options.find((o: any) => o.value === selectedValue);
+          return {
+            framework_id: fw.id,
+            framework_name: fw.name,
+            question_id: q.id,
+            dimension: q.dimension,
+            selected_level: option?.level || selectedValue,
+          };
+        });
 
       const res = await apiPost<{ saved: number }>("/assessments", { results });
       setSavedCount(res.saved || results.length);
@@ -190,7 +201,7 @@ function AssessmentFlow({ framework: fw }: { framework: any }) {
           <div className="bg-primary rounded-full h-1.5 transition-all" style={{ width: `${progress}%` }} />
         </div>
 
-        <p className="text-xs text-muted-foreground mb-2">Question {currentQ + 1} of {questions.length} · {question.dimension}</p>
+        <p className="text-xs text-muted-foreground mb-2">Question {currentQ + 1} of {questions.length} · {dimLabel(question.dimension)}</p>
         <h3 className="text-lg font-semibold text-foreground mb-6">{question.question}</h3>
 
         <div className="space-y-3 mb-8">

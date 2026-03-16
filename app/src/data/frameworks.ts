@@ -1666,41 +1666,80 @@ const maturityTHE: Framework = {
   useCases: ["Benchmarking digital maturity globally", "Identifying gaps in digital strategy", "Planning technology investments", "Reporting to leadership on transformation progress"],
   crossReferences: ["maturity-jisc", "ai-capability"],
   assessmentQuestions: [
-    { id: "the-q1", dimension: "Strategy (T&L)", question: "How clearly defined is your institution's digital transformation strategy?", options: [
-      { value: "the-a1", label: "No formal digital strategy exists", level: "acquire" },
-      { value: "the-a2", label: "Strategy exists but isn't well-communicated or funded", level: "deepen" },
-      { value: "the-a3", label: "Clear, funded strategy with measurable outcomes", level: "create" },
+    // ── Teaching & Learning ──
+    { id: "the-q1", dimension: "the-tl-strategy", question: "How clearly defined is your institution's digital strategy for teaching and learning?", options: [
+      { value: "the-q1-a", label: "No formal digital strategy exists for teaching and learning", level: "incidental" },
+      { value: "the-q1-b", label: "An emerging T&L digital strategy is being developed but not yet funded or widely communicated", level: "intentional" },
+      { value: "the-q1-c", label: "Digital strategy is fully integrated into T&L planning with aligned KPIs and coordinated funding", level: "integrated" },
+      { value: "the-q1-d", label: "T&L digital strategy is continuously improved, benchmarked against global peers, and drives sector innovation", level: "optimised" },
     ]},
-    { id: "the-q2", dimension: "People & Culture (T&L)", question: "How digitally confident are your staff and students?", options: [
-      { value: "the-b1", label: "Significant digital skills gaps across the institution", level: "acquire" },
-      { value: "the-b2", label: "Training available but uptake is inconsistent", level: "deepen" },
-      { value: "the-b3", label: "Strong digital culture with continuous development", level: "create" },
+    { id: "the-q2", dimension: "the-tl-people", question: "How would you describe the digital culture and skills development among teaching staff?", options: [
+      { value: "the-q2-a", label: "Staff lack digital skills and there is no culture of exploring new teaching technologies", level: "incidental" },
+      { value: "the-q2-b", label: "Some staff engage in digital skills training but uptake is inconsistent and not incentivised", level: "intentional" },
+      { value: "the-q2-c", label: "Regular professional development is established and digital competence is recognised in evaluations", level: "integrated" },
+      { value: "the-q2-d", label: "Digital skills development is embedded and continuous; digital leadership is modelled at all levels", level: "optimised" },
     ]},
-    { id: "the-q3", dimension: "Technology (T&L)", question: "How well-integrated are your technology systems?", options: [
-      { value: "the-c1", label: "Many siloed, legacy systems with poor integration", level: "acquire" },
-      { value: "the-c2", label: "Key systems are integrated but gaps remain", level: "deepen" },
-      { value: "the-c3", label: "Fully integrated, cloud-based infrastructure", level: "create" },
+    { id: "the-q3", dimension: "the-tl-data", question: "How effectively does your institution use learning analytics and student data?", options: [
+      { value: "the-q3-a", label: "Learning analytics and student performance data are not collected or used", level: "incidental" },
+      { value: "the-q3-b", label: "Basic learning analytics are being explored for student support in some departments", level: "intentional" },
+      { value: "the-q3-c", label: "Learning analytics inform personalised student support and course optimisation across programmes", level: "integrated" },
+      { value: "the-q3-d", label: "Advanced predictive models drive personalised learning at scale with real-time dashboards", level: "optimised" },
     ]},
-    { id: "the-q4", dimension: "Data (T&L)", question: "How effectively does your institution use data for decision-making?", options: [
-      { value: "the-d1", label: "Data is collected but rarely used strategically", level: "acquire" },
-      { value: "the-d2", label: "Some data-informed decisions at department level", level: "deepen" },
-      { value: "the-d3", label: "Institution-wide data analytics driving all major decisions", level: "create" },
+    // ── Research ──
+    { id: "the-q4", dimension: "the-re-technology", question: "How well are digital research tools and collaboration platforms integrated into the research lifecycle?", options: [
+      { value: "the-q4-a", label: "Research collaboration platforms and data tools are limited or unavailable", level: "incidental" },
+      { value: "the-q4-b", label: "Research collaboration platforms are being adopted and expanded across some groups", level: "intentional" },
+      { value: "the-q4-c", label: "Research tools and collaboration platforms are fully integrated into the research lifecycle", level: "integrated" },
+      { value: "the-q4-d", label: "Research technology infrastructure enables cutting-edge, globally connected research", level: "optimised" },
     ]},
-    { id: "the-q5", dimension: "Utilisation (T&L)", question: "How widely are digital tools used across teaching, research, and operations?", options: [
-      { value: "the-e1", label: "Pockets of usage with no institutional coordination", level: "acquire" },
-      { value: "the-e2", label: "Growing adoption with some shared platforms", level: "deepen" },
-      { value: "the-e3", label: "Comprehensive digital-first approach institution-wide", level: "create" },
+    { id: "the-q5", dimension: "the-re-utilization", question: "How effectively do researchers use digital tools for collaboration and dissemination?", options: [
+      { value: "the-q5-a", label: "Digital tools are not used for research collaboration or dissemination", level: "incidental" },
+      { value: "the-q5-b", label: "Researchers are beginning to use digital networks for collaboration", level: "intentional" },
+      { value: "the-q5-c", label: "Digital networks are used effectively for research collaboration and dissemination", level: "integrated" },
+      { value: "the-q5-d", label: "Digital scholarship and open research practices are sector-leading", level: "optimised" },
+    ]},
+    // ── Professional Services ──
+    { id: "the-q6", dimension: "the-ps-strategy", question: "How strategically is digital transformation planned for professional services (IT, HR, finance, administration)?", options: [
+      { value: "the-q6-a", label: "No coordinated digital strategy exists for professional services; decisions are reactive", level: "incidental" },
+      { value: "the-q6-b", label: "An emerging strategy for digitising services is being developed with some alignment to goals", level: "intentional" },
+      { value: "the-q6-c", label: "Digital strategy for professional services is fully integrated with institutional KPIs and coordinated funding", level: "integrated" },
+      { value: "the-q6-d", label: "Professional services digital strategy is a core institutional priority with continuous improvement cycles", level: "optimised" },
+    ]},
+    { id: "the-q7", dimension: "the-ps-data", question: "How well is operational and administrative data integrated across professional services?", options: [
+      { value: "the-q7-a", label: "Operational data is fragmented across siloed systems with no integration", level: "incidental" },
+      { value: "the-q7-b", label: "Data systems are beginning to be consolidated across HR, finance, and student administration", level: "intentional" },
+      { value: "the-q7-c", label: "Operational data is effectively integrated across systems to support decision-making", level: "integrated" },
+      { value: "the-q7-d", label: "Operational data drives fully automated, predictive institutional management", level: "optimised" },
+    ]},
+    // ── Planning & Governance ──
+    { id: "the-q8", dimension: "the-pg-people", question: "How well does institutional leadership model and promote digital transformation?", options: [
+      { value: "the-q8-a", label: "Digital leadership is not cultivated or modelled by decision-makers", level: "incidental" },
+      { value: "the-q8-b", label: "Some leaders are beginning to model and promote digital behaviours", level: "intentional" },
+      { value: "the-q8-c", label: "Digital leadership is cultivated through self-assessment and actively modelled by governance leaders", level: "integrated" },
+      { value: "the-q8-d", label: "Digital leadership is a defining feature of governance with leaders serving as sector exemplars", level: "optimised" },
+    ]},
+    { id: "the-q9", dimension: "the-pg-technology", question: "How mature are your governance and decision-support technology systems?", options: [
+      { value: "the-q9-a", label: "Governance and decision-support systems are absent or rudimentary", level: "incidental" },
+      { value: "the-q9-b", label: "Governance dashboards and planning tools are being introduced", level: "intentional" },
+      { value: "the-q9-c", label: "Enterprise-level governance tools and dashboards support strategic decision-making", level: "integrated" },
+      { value: "the-q9-d", label: "Governance technology provides real-time, comprehensive institutional intelligence", level: "optimised" },
+    ]},
+    { id: "the-q10", dimension: "the-pg-utilization", question: "How effectively do communication and decision tools break down organisational silos in governance?", options: [
+      { value: "the-q10-a", label: "Communication tools do not break down organisational silos", level: "incidental" },
+      { value: "the-q10-b", label: "Communication tools are beginning to improve cross-department coordination", level: "intentional" },
+      { value: "the-q10-c", label: "Communication tools effectively break down silos and support cross-functional governance", level: "integrated" },
+      { value: "the-q10-d", label: "Governance processes are fully data-driven with sector-leading strategic technology utilisation", level: "optimised" },
     ]},
   ],
-  assessmentTitle: "Digital Maturity Pulse Survey (THE)",
-  assessmentDescription: "Assess your institution's digital maturity across 4 pillars and 5 cross-cutting dimensions",
+  assessmentTitle: "Digital Maturity Self-Assessment (THE DMI)",
+  assessmentDescription: "Assess your institution's digital maturity across 4 pillars and 5 cross-cutting dimensions (10 questions, ~12 min)",
   showInQuiz: true,
   showInDashboard: true,
   showInLanding: true,
   isBackgroundFramework: false,
   compatibility: [],
   sourceFidelity: "synthesized",
-  estimatedAssessmentMinutes: 160,
+  estimatedAssessmentMinutes: 12,
 };
 
 // ────────────────────────────────────────────────

@@ -348,11 +348,19 @@ function ResultsView({
       </div>
 
       <div className="mt-8">
-        <SourceAttribution attribution={{
+        <SourceAttribution attribution={framework === "teacher-competency" ? {
           source_framework: "UNESCO AI Competency Framework for Teachers",
           source_licence: "CC BY-SA 3.0 IGO",
           content_type: "derivative",
           attribution_text: "Based on the UNESCO AI Competency Framework for Teachers (2024). Scenarios created by ReasonLens.",
+        } : framework === "maturity-the" ? {
+          source_framework: "THE Digital Maturity Index",
+          content_type: "original",
+          attribution_text: "Scenarios created by ReasonLens based on the Times Higher Education Digital Maturity Index.",
+        } : {
+          source_framework: "Assessment Framework",
+          content_type: "original",
+          attribution_text: "Scenarios created by ReasonLens.",
         }} />
       </div>
     </div>
