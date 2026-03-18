@@ -3,12 +3,12 @@ import { Link, useParams, useNavigate } from "react-router-dom";
 import { ArrowLeft, CheckCircle2, Loader2, AlertTriangle, Shield } from "lucide-react";
 import Header from "@/components/Header";
 import ContextOnboarding from "@/components/assessment/ContextOnboarding";
+import type { AssessmentContext } from "@/components/assessment/ContextOnboarding";
 import SourceAttribution from "@/components/SourceAttribution";
 import { apiGet, apiPost, ApiError, isAuthenticated } from "@/lib/api";
 
 interface ScenarioResponse {
   id: string;
-  response_key: string;
   text: string;
 }
 
@@ -42,6 +42,8 @@ export default function ScenarioAssess() {
   const [answers, setAnswers] = useState<Record<string, string>>({});
   const [results, setResults] = useState<DimensionResult[]>([]);
   const [error, setError] = useState<string>("");
+  const [contextRow, setContextRow] = useState<AssessmentContext | null>(null);
+  const [estimatedMinutes, setEstimatedMinutes] = useState<number>(framework === "maturity-the" ? 40 : 15);
   const scenarioStartTime = useRef<number>(Date.now());
 
   useEffect(() => {
@@ -54,10 +56,17 @@ export default function ScenarioAssess() {
 
   async function checkContext() {
     try {
-      await apiGet("/user-assessment-context");
-      await startSession();
+      const context = await apiGet<AssessmentContext>("/user-assessment-context");
+      setContextRow(context);
+
+      if (hasRequiredContext(framework ?? "", context)) {
+        await startSession();
+      } else {
+        setPhase("onboarding");
+      }
     } catch (e: unknown) {
       if (e instanceof ApiError && e.status === 404) {
+        setContextRow(null);
         setPhase("onboarding");
       } else {
         setError(
@@ -74,13 +83,19 @@ export default function ScenarioAssess() {
       const data = await apiPost<{
         session_id: string;
         scenarios: Scenario[];
+        estimated_time_minutes?: number;
       }>("/scenario-sessions", { framework_id: framework });
       setSessionId(data.session_id);
       setScenarios(data.scenarios);
+      setEstimatedMinutes(data.estimated_time_minutes ?? estimatedMinutes);
       setCurrentIdx(0);
       scenarioStartTime.current = Date.now();
       setPhase("assessing");
     } catch (err: any) {
+      if (err instanceof ApiError && err.message.includes("context")) {
+        setPhase("onboarding");
+        return;
+      }
       setError(err.message || "Failed to start session");
     }
   }
@@ -162,7 +177,11 @@ export default function ScenarioAssess() {
         )}
 
         {phase === "onboarding" && (
-          <ContextOnboarding onComplete={startSession} />
+          <ContextOnboarding
+            frameworkId={framework!}
+            initialContext={contextRow}
+            onComplete={startSession}
+          />
         )}
 
         {phase === "assessing" && scenarios.length > 0 && (
@@ -170,6 +189,7 @@ export default function ScenarioAssess() {
             scenario={scenarios[currentIdx]}
             index={currentIdx}
             total={scenarios.length}
+            estimatedMinutes={estimatedMinutes}
             selectedResponseId={answers[scenarios[currentIdx].scenario_id]}
             onSelect={submitAnswer}
             onBack={currentIdx > 0 ? goBack : undefined}
@@ -198,6 +218,7 @@ function ScenarioCard({
   scenario,
   index,
   total,
+  estimatedMinutes,
   selectedResponseId,
   onSelect,
   onBack,
@@ -205,17 +226,24 @@ function ScenarioCard({
   scenario: Scenario;
   index: number;
   total: number;
+  estimatedMinutes: number;
   selectedResponseId?: string;
   onSelect: (responseId: string) => void;
   onBack?: () => void;
 }) {
+  const remainingMinutes = Math.max(
+    1,
+    Math.ceil(((total - index - 1) / Math.max(total, 1)) * estimatedMinutes)
+  );
+
   return (
     <div className="max-w-3xl mx-auto">
       {/* Progress */}
       <div className="flex items-center justify-between mb-6">
-        <span className="text-sm text-muted-foreground">
+        <div className="text-sm text-muted-foreground">
           Scenario {index + 1} of {total}
-        </span>
+          <div className="text-xs mt-1">About {remainingMinutes} min remaining</div>
+        </div>
         <span className="text-xs px-2 py-1 rounded-full bg-primary/10 text-primary font-medium">
           {scenario.dimension_name}
         </span>
@@ -282,6 +310,27 @@ function ScenarioCard({
       </div>
     </div>
   );
+}
+
+function hasRequiredContext(
+  frameworkId: string,
+  context: AssessmentContext | null
+): boolean {
+  if (!context) return false;
+
+  if (frameworkId !== "maturity-the") {
+    return true;
+  }
+
+  return [
+    context.institution_size,
+    context.institution_type,
+    context.region,
+    context.funding_model,
+    context.respondent_role,
+    context.respondent_institutional_visibility,
+    context.digital_infrastructure_baseline,
+  ].every(Boolean);
 }
 
 function ResultsView({

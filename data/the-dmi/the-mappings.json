@@ -1,0 +1,855 @@
+{
+  "framework_id": "maturity-the",
+  "framework_name": "THE Digital Maturity Index",
+  "mapping_description": "Cross-framework mappings between THE DMI (20 child dimensions) and JISC AI Maturity Model (5 themes) and QS AI Capability Framework (4 pillars with 14 indicators). Mappings are at dimension level with many-to-one relationships documented.",
+  "target_frameworks": [
+    {
+      "framework_id": "jisc-ai-maturity",
+      "framework_name": "JISC AI Maturity Model",
+      "version": "2024 (March update)",
+      "structure": "5 stages x 5 themes",
+      "themes": [
+        {
+          "id": "jisc-strategic",
+          "name": "Strategic Adoption of AI",
+          "description": "Institutional strategy and leadership for AI adoption"
+        },
+        {
+          "id": "jisc-students",
+          "name": "Students & Learners",
+          "description": "Student-facing AI capabilities, learning experience, and student support"
+        },
+        {
+          "id": "jisc-safe",
+          "name": "Safe & Responsible Use",
+          "description": "Ethics, governance, risk management, and responsible AI deployment"
+        },
+        {
+          "id": "jisc-staff",
+          "name": "Staff Knowledge & Skills",
+          "description": "Workforce capability, training, and culture for AI"
+        },
+        {
+          "id": "jisc-tech",
+          "name": "Technology & Infrastructure",
+          "description": "Technical infrastructure, systems, and data for AI deployment"
+        }
+      ],
+      "stages": [
+        "Approaching & Understanding",
+        "Experimenting & Exploring",
+        "Operational",
+        "Embedded",
+        "Optimised/Transformed"
+      ],
+      "level_alignment_notes": "THE uses 4 levels; JISC uses 5 stages. Approximate alignment: THE Incidental ~ JISC Approaching; THE Intentional ~ JISC Experimenting/Exploring; THE Integrated ~ JISC Operational/Embedded; THE Optimised ~ JISC Optimised/Transformed. The alignment is imprecise because THE assesses broad digital maturity while JISC is AI-specific."
+    },
+    {
+      "framework_id": "qs-ai-capability",
+      "framework_name": "QS AI Capability Framework",
+      "version": "2025 (v1, CC BY-SA 4.0)",
+      "structure": "4 pillars x 14 indicators x 31 sub-indicators",
+      "pillars": [
+        {
+          "id": "qs-governance",
+          "name": "Governance & Human Commitment",
+          "indicators": [
+            {
+              "id": "qs-gov-regulatory",
+              "name": "Regulatory & Ethical Standards"
+            },
+            {
+              "id": "qs-gov-governance",
+              "name": "Governance & Risk Management"
+            },
+            {
+              "id": "qs-gov-conduct",
+              "name": "Code of Conduct & Privacy"
+            },
+            {
+              "id": "qs-gov-leadership",
+              "name": "Leadership & Capability"
+            }
+          ]
+        },
+        {
+          "id": "qs-outreach",
+          "name": "Outreach & Operational Efficiency",
+          "indicators": [
+            {
+              "id": "qs-out-recruitment",
+              "name": "AI-Enhanced Recruitment"
+            },
+            {
+              "id": "qs-out-support",
+              "name": "Personalised Student Support"
+            },
+            {
+              "id": "qs-out-efficiency",
+              "name": "Faculty & Administrative Efficiency"
+            },
+            {
+              "id": "qs-out-partnerships",
+              "name": "External Engagement & Partnership"
+            }
+          ]
+        },
+        {
+          "id": "qs-teaching",
+          "name": "Teaching, Learning & Assessment",
+          "indicators": [
+            {
+              "id": "qs-teach-design",
+              "name": "Course Design & Curriculum"
+            },
+            {
+              "id": "qs-teach-learning",
+              "name": "Personalised Learning & Support"
+            },
+            {
+              "id": "qs-teach-assessment",
+              "name": "Assessment, Grading & Feedback"
+            }
+          ]
+        },
+        {
+          "id": "qs-research",
+          "name": "Research & Scholarship",
+          "indicators": [
+            {
+              "id": "qs-res-practice",
+              "name": "AI in Research Practice"
+            },
+            {
+              "id": "qs-res-scholarship",
+              "name": "Scholarship of AI in Practice"
+            },
+            {
+              "id": "qs-res-ai-research",
+              "name": "AI Research"
+            }
+          ]
+        }
+      ],
+      "level_alignment_notes": "QS uses quantitative scoring rather than named maturity levels. No direct level-to-level alignment is possible. QS scores can be interpreted as continuous maturity indicators, with the framework designed for benchmarking rather than categorical placement."
+    }
+  ],
+  "dimension_mappings": [
+    {
+      "the_dimension": {
+        "id": "the-tl-str",
+        "name": "Teaching & Learning: Strategy",
+        "pillar": "Teaching & Learning",
+        "dimension": "Strategy"
+      },
+      "jisc_mappings": [
+        {
+          "target_framework": "jisc-ai-maturity",
+          "target_id": "jisc-strategic",
+          "target_name": "Strategic Adoption of AI",
+          "alignment_strength": "strong",
+          "notes": "T&L strategy for digital maps directly to JISC Strategic Adoption. JISC is AI-specific while THE covers broader digital."
+        }
+      ],
+      "qs_mappings": [
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-gov-leadership",
+          "target_name": "Leadership & Capability",
+          "alignment_strength": "moderate",
+          "notes": "T&L strategy relates to leadership and capability in QS governance pillar, specifically strategic planning for AI in education."
+        },
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-teach-design",
+          "target_name": "Course Design & Curriculum",
+          "alignment_strength": "moderate",
+          "notes": "T&L strategy shapes curriculum design decisions about digital and AI integration."
+        }
+      ]
+    },
+    {
+      "the_dimension": {
+        "id": "the-tl-ppl",
+        "name": "Teaching & Learning: People & Culture",
+        "pillar": "Teaching & Learning",
+        "dimension": "People & Culture"
+      },
+      "jisc_mappings": [
+        {
+          "target_framework": "jisc-ai-maturity",
+          "target_id": "jisc-staff",
+          "target_name": "Staff Knowledge & Skills",
+          "alignment_strength": "strong",
+          "notes": "T&L People & Culture maps directly to JISC Staff Knowledge & Skills for the teaching workforce."
+        },
+        {
+          "target_framework": "jisc-ai-maturity",
+          "target_id": "jisc-students",
+          "target_name": "Students & Learners",
+          "alignment_strength": "moderate",
+          "notes": "Student digital capability development is an aspect of T&L People & Culture."
+        }
+      ],
+      "qs_mappings": [
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-gov-leadership",
+          "target_name": "Leadership & Capability",
+          "alignment_strength": "weak",
+          "notes": "Workforce capability is an element of institutional AI capability in QS, under leadership and capability development."
+        },
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-out-efficiency",
+          "target_name": "Faculty & Administrative Efficiency",
+          "alignment_strength": "moderate",
+          "notes": "Faculty capability development relates to QS faculty efficiency indicators."
+        }
+      ]
+    },
+    {
+      "the_dimension": {
+        "id": "the-tl-tec",
+        "name": "Teaching & Learning: Technology",
+        "pillar": "Teaching & Learning",
+        "dimension": "Technology"
+      },
+      "jisc_mappings": [
+        {
+          "target_framework": "jisc-ai-maturity",
+          "target_id": "jisc-tech",
+          "target_name": "Technology & Infrastructure",
+          "alignment_strength": "strong",
+          "notes": "T&L Technology maps directly to JISC Technology & Infrastructure, specifically educational technology systems."
+        }
+      ],
+      "qs_mappings": [
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-teach-design",
+          "target_name": "Course Design & Curriculum",
+          "alignment_strength": "moderate",
+          "notes": "T&L technology infrastructure enables the course design and curriculum delivery assessed by QS."
+        },
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-teach-learning",
+          "target_name": "Personalised Learning & Support",
+          "alignment_strength": "moderate",
+          "notes": "Personalised learning capabilities depend on T&L technology infrastructure."
+        },
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-teach-assessment",
+          "target_name": "Assessment, Grading & Feedback",
+          "alignment_strength": "moderate",
+          "notes": "Assessment technology infrastructure enables AI-enhanced assessment capabilities."
+        }
+      ]
+    },
+    {
+      "the_dimension": {
+        "id": "the-tl-dat",
+        "name": "Teaching & Learning: Data",
+        "pillar": "Teaching & Learning",
+        "dimension": "Data"
+      },
+      "jisc_mappings": [
+        {
+          "target_framework": "jisc-ai-maturity",
+          "target_id": "jisc-tech",
+          "target_name": "Technology & Infrastructure",
+          "alignment_strength": "moderate",
+          "notes": "Learning data management is partially captured in JISC Technology & Infrastructure. JISC does not have a separate data theme."
+        },
+        {
+          "target_framework": "jisc-ai-maturity",
+          "target_id": "jisc-safe",
+          "target_name": "Safe & Responsible Use",
+          "alignment_strength": "moderate",
+          "notes": "Learning analytics data governance relates to JISC Safe & Responsible Use, particularly student data ethics."
+        }
+      ],
+      "qs_mappings": [
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-gov-conduct",
+          "target_name": "Code of Conduct & Privacy",
+          "alignment_strength": "moderate",
+          "notes": "T&L data governance relates to QS Code of Conduct & Privacy, particularly learning data protection."
+        },
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-teach-learning",
+          "target_name": "Personalised Learning & Support",
+          "alignment_strength": "moderate",
+          "notes": "Learning analytics data enables personalised learning assessed by QS."
+        }
+      ]
+    },
+    {
+      "the_dimension": {
+        "id": "the-tl-uti",
+        "name": "Teaching & Learning: Utilisation",
+        "pillar": "Teaching & Learning",
+        "dimension": "Utilisation"
+      },
+      "jisc_mappings": [
+        {
+          "target_framework": "jisc-ai-maturity",
+          "target_id": "jisc-students",
+          "target_name": "Students & Learners",
+          "alignment_strength": "strong",
+          "notes": "T&L Utilisation by students and for student benefit maps directly to JISC Students & Learners theme."
+        },
+        {
+          "target_framework": "jisc-ai-maturity",
+          "target_id": "jisc-staff",
+          "target_name": "Staff Knowledge & Skills",
+          "alignment_strength": "moderate",
+          "notes": "T&L Utilisation by academic staff is partially captured in JISC Staff Knowledge & Skills."
+        }
+      ],
+      "qs_mappings": [
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-teach-learning",
+          "target_name": "Personalised Learning & Support",
+          "alignment_strength": "strong",
+          "notes": "Utilisation of digital tools for personalised learning directly relates to QS assessment of learning support."
+        },
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-teach-assessment",
+          "target_name": "Assessment, Grading & Feedback",
+          "alignment_strength": "strong",
+          "notes": "Utilisation of assessment tools directly relates to QS assessment and feedback indicators."
+        }
+      ]
+    },
+    {
+      "the_dimension": {
+        "id": "the-re-str",
+        "name": "Research: Strategy",
+        "pillar": "Research",
+        "dimension": "Strategy"
+      },
+      "jisc_mappings": [
+        {
+          "target_framework": "jisc-ai-maturity",
+          "target_id": "jisc-strategic",
+          "target_name": "Strategic Adoption of AI",
+          "alignment_strength": "moderate",
+          "notes": "Research strategy for digital maps to JISC Strategic Adoption but JISC does not have a research-specific strategic sub-theme."
+        }
+      ],
+      "qs_mappings": [
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-res-practice",
+          "target_name": "AI in Research Practice",
+          "alignment_strength": "moderate",
+          "notes": "Research digital strategy enables the AI in Research Practice assessed by QS."
+        },
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-gov-leadership",
+          "target_name": "Leadership & Capability",
+          "alignment_strength": "weak",
+          "notes": "Research strategy is a component of institutional leadership capability."
+        }
+      ]
+    },
+    {
+      "the_dimension": {
+        "id": "the-re-ppl",
+        "name": "Research: People & Culture",
+        "pillar": "Research",
+        "dimension": "People & Culture"
+      },
+      "jisc_mappings": [
+        {
+          "target_framework": "jisc-ai-maturity",
+          "target_id": "jisc-staff",
+          "target_name": "Staff Knowledge & Skills",
+          "alignment_strength": "strong",
+          "notes": "Research workforce digital capability maps directly to JISC Staff Knowledge & Skills."
+        }
+      ],
+      "qs_mappings": [
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-res-scholarship",
+          "target_name": "Scholarship of AI in Practice",
+          "alignment_strength": "moderate",
+          "notes": "Researcher digital capability enables scholarship of AI in practice."
+        },
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-res-ai-research",
+          "target_name": "AI Research",
+          "alignment_strength": "weak",
+          "notes": "Researcher capability in computational methods supports AI research capacity."
+        }
+      ]
+    },
+    {
+      "the_dimension": {
+        "id": "the-re-tec",
+        "name": "Research: Technology",
+        "pillar": "Research",
+        "dimension": "Technology"
+      },
+      "jisc_mappings": [
+        {
+          "target_framework": "jisc-ai-maturity",
+          "target_id": "jisc-tech",
+          "target_name": "Technology & Infrastructure",
+          "alignment_strength": "strong",
+          "notes": "Research computing infrastructure maps directly to JISC Technology & Infrastructure."
+        }
+      ],
+      "qs_mappings": [
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-res-practice",
+          "target_name": "AI in Research Practice",
+          "alignment_strength": "strong",
+          "notes": "Research technology infrastructure directly enables AI in Research Practice assessed by QS."
+        },
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-res-ai-research",
+          "target_name": "AI Research",
+          "alignment_strength": "strong",
+          "notes": "Research computing capability is essential for AI Research capacity."
+        }
+      ]
+    },
+    {
+      "the_dimension": {
+        "id": "the-re-dat",
+        "name": "Research: Data",
+        "pillar": "Research",
+        "dimension": "Data"
+      },
+      "jisc_mappings": [
+        {
+          "target_framework": "jisc-ai-maturity",
+          "target_id": "jisc-tech",
+          "target_name": "Technology & Infrastructure",
+          "alignment_strength": "moderate",
+          "notes": "Research data management is partially captured in JISC Technology & Infrastructure."
+        },
+        {
+          "target_framework": "jisc-ai-maturity",
+          "target_id": "jisc-safe",
+          "target_name": "Safe & Responsible Use",
+          "alignment_strength": "moderate",
+          "notes": "Research data governance and ethics relates to JISC Safe & Responsible Use."
+        }
+      ],
+      "qs_mappings": [
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-res-practice",
+          "target_name": "AI in Research Practice",
+          "alignment_strength": "strong",
+          "notes": "Research data management directly supports AI in Research Practice."
+        },
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-gov-conduct",
+          "target_name": "Code of Conduct & Privacy",
+          "alignment_strength": "moderate",
+          "notes": "Research data governance relates to QS ethical standards and privacy."
+        }
+      ]
+    },
+    {
+      "the_dimension": {
+        "id": "the-re-uti",
+        "name": "Research: Utilisation",
+        "pillar": "Research",
+        "dimension": "Utilisation"
+      },
+      "jisc_mappings": [
+        {
+          "target_framework": "jisc-ai-maturity",
+          "target_id": "jisc-staff",
+          "target_name": "Staff Knowledge & Skills",
+          "alignment_strength": "moderate",
+          "notes": "Research tool utilisation reflects researcher capability assessed in JISC Staff theme."
+        }
+      ],
+      "qs_mappings": [
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-res-practice",
+          "target_name": "AI in Research Practice",
+          "alignment_strength": "strong",
+          "notes": "Researcher utilisation of digital tools is the operational reality of AI in Research Practice."
+        },
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-res-scholarship",
+          "target_name": "Scholarship of AI in Practice",
+          "alignment_strength": "moderate",
+          "notes": "Active utilisation of digital research tools enables scholarship of AI in practice."
+        }
+      ]
+    },
+    {
+      "the_dimension": {
+        "id": "the-ps-str",
+        "name": "Professional Services: Strategy",
+        "pillar": "Professional Services",
+        "dimension": "Strategy"
+      },
+      "jisc_mappings": [
+        {
+          "target_framework": "jisc-ai-maturity",
+          "target_id": "jisc-strategic",
+          "target_name": "Strategic Adoption of AI",
+          "alignment_strength": "moderate",
+          "notes": "PS digital strategy is a component of institutional strategic AI adoption. JISC does not separate PS strategy from institutional strategy."
+        }
+      ],
+      "qs_mappings": [
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-out-efficiency",
+          "target_name": "Faculty & Administrative Efficiency",
+          "alignment_strength": "strong",
+          "notes": "PS digital strategy directly enables the administrative efficiency assessed by QS."
+        },
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-out-recruitment",
+          "target_name": "AI-Enhanced Recruitment",
+          "alignment_strength": "moderate",
+          "notes": "Digital PS strategy for admissions and recruitment relates to QS AI-Enhanced Recruitment."
+        }
+      ]
+    },
+    {
+      "the_dimension": {
+        "id": "the-ps-ppl",
+        "name": "Professional Services: People & Culture",
+        "pillar": "Professional Services",
+        "dimension": "People & Culture"
+      },
+      "jisc_mappings": [
+        {
+          "target_framework": "jisc-ai-maturity",
+          "target_id": "jisc-staff",
+          "target_name": "Staff Knowledge & Skills",
+          "alignment_strength": "strong",
+          "notes": "PS workforce digital capability maps to JISC Staff Knowledge & Skills."
+        }
+      ],
+      "qs_mappings": [
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-out-efficiency",
+          "target_name": "Faculty & Administrative Efficiency",
+          "alignment_strength": "moderate",
+          "notes": "PS staff digital capability enables the efficiency gains assessed by QS."
+        }
+      ]
+    },
+    {
+      "the_dimension": {
+        "id": "the-ps-tec",
+        "name": "Professional Services: Technology",
+        "pillar": "Professional Services",
+        "dimension": "Technology"
+      },
+      "jisc_mappings": [
+        {
+          "target_framework": "jisc-ai-maturity",
+          "target_id": "jisc-tech",
+          "target_name": "Technology & Infrastructure",
+          "alignment_strength": "strong",
+          "notes": "PS technology infrastructure (ERP, CRM, student records) maps directly to JISC Technology & Infrastructure."
+        }
+      ],
+      "qs_mappings": [
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-out-recruitment",
+          "target_name": "AI-Enhanced Recruitment",
+          "alignment_strength": "moderate",
+          "notes": "CRM and admissions technology enables AI-enhanced recruitment."
+        },
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-out-support",
+          "target_name": "Personalised Student Support",
+          "alignment_strength": "strong",
+          "notes": "Student-facing PS technology enables personalised student support."
+        },
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-out-efficiency",
+          "target_name": "Faculty & Administrative Efficiency",
+          "alignment_strength": "strong",
+          "notes": "Enterprise systems directly enable administrative efficiency."
+        }
+      ]
+    },
+    {
+      "the_dimension": {
+        "id": "the-ps-dat",
+        "name": "Professional Services: Data",
+        "pillar": "Professional Services",
+        "dimension": "Data"
+      },
+      "jisc_mappings": [
+        {
+          "target_framework": "jisc-ai-maturity",
+          "target_id": "jisc-tech",
+          "target_name": "Technology & Infrastructure",
+          "alignment_strength": "moderate",
+          "notes": "PS data management is partially captured in JISC Technology & Infrastructure."
+        },
+        {
+          "target_framework": "jisc-ai-maturity",
+          "target_id": "jisc-safe",
+          "target_name": "Safe & Responsible Use",
+          "alignment_strength": "moderate",
+          "notes": "PS data governance (student records, HR data) relates to JISC Safe & Responsible Use."
+        }
+      ],
+      "qs_mappings": [
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-gov-conduct",
+          "target_name": "Code of Conduct & Privacy",
+          "alignment_strength": "strong",
+          "notes": "PS data governance (student privacy, records management) directly relates to QS Code of Conduct & Privacy."
+        },
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-out-support",
+          "target_name": "Personalised Student Support",
+          "alignment_strength": "moderate",
+          "notes": "Student data enables personalised support assessed by QS."
+        }
+      ]
+    },
+    {
+      "the_dimension": {
+        "id": "the-ps-uti",
+        "name": "Professional Services: Utilisation",
+        "pillar": "Professional Services",
+        "dimension": "Utilisation"
+      },
+      "jisc_mappings": [
+        {
+          "target_framework": "jisc-ai-maturity",
+          "target_id": "jisc-staff",
+          "target_name": "Staff Knowledge & Skills",
+          "alignment_strength": "moderate",
+          "notes": "PS tool utilisation reflects staff capability in JISC Staff theme."
+        }
+      ],
+      "qs_mappings": [
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-out-support",
+          "target_name": "Personalised Student Support",
+          "alignment_strength": "strong",
+          "notes": "Utilisation of student-facing tools directly relates to personalised support."
+        },
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-out-efficiency",
+          "target_name": "Faculty & Administrative Efficiency",
+          "alignment_strength": "strong",
+          "notes": "Utilisation of administrative tools directly relates to efficiency."
+        },
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-out-recruitment",
+          "target_name": "AI-Enhanced Recruitment",
+          "alignment_strength": "moderate",
+          "notes": "Utilisation of CRM and recruitment tools relates to AI-enhanced recruitment."
+        }
+      ]
+    },
+    {
+      "the_dimension": {
+        "id": "the-pg-str",
+        "name": "Planning & Governance: Strategy",
+        "pillar": "Planning & Governance",
+        "dimension": "Strategy"
+      },
+      "jisc_mappings": [
+        {
+          "target_framework": "jisc-ai-maturity",
+          "target_id": "jisc-strategic",
+          "target_name": "Strategic Adoption of AI",
+          "alignment_strength": "strong",
+          "notes": "Institutional planning and governance strategy maps strongly to JISC Strategic Adoption. This is the closest alignment in the framework pair."
+        }
+      ],
+      "qs_mappings": [
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-gov-governance",
+          "target_name": "Governance & Risk Management",
+          "alignment_strength": "strong",
+          "notes": "Planning and governance strategy maps directly to QS Governance & Risk Management."
+        },
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-gov-regulatory",
+          "target_name": "Regulatory & Ethical Standards",
+          "alignment_strength": "strong",
+          "notes": "Governance strategy encompasses regulatory compliance assessed by QS."
+        },
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-gov-leadership",
+          "target_name": "Leadership & Capability",
+          "alignment_strength": "strong",
+          "notes": "Institutional strategic planning is a core element of leadership capability."
+        }
+      ]
+    },
+    {
+      "the_dimension": {
+        "id": "the-pg-ppl",
+        "name": "Planning & Governance: People & Culture",
+        "pillar": "Planning & Governance",
+        "dimension": "People & Culture"
+      },
+      "jisc_mappings": [
+        {
+          "target_framework": "jisc-ai-maturity",
+          "target_id": "jisc-staff",
+          "target_name": "Staff Knowledge & Skills",
+          "alignment_strength": "moderate",
+          "notes": "Governance workforce capability (data literacy for leaders, digital governance skills) is a subset of JISC Staff theme."
+        }
+      ],
+      "qs_mappings": [
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-gov-leadership",
+          "target_name": "Leadership & Capability",
+          "alignment_strength": "strong",
+          "notes": "Leadership digital capability directly relates to QS Leadership & Capability."
+        }
+      ]
+    },
+    {
+      "the_dimension": {
+        "id": "the-pg-tec",
+        "name": "Planning & Governance: Technology",
+        "pillar": "Planning & Governance",
+        "dimension": "Technology"
+      },
+      "jisc_mappings": [
+        {
+          "target_framework": "jisc-ai-maturity",
+          "target_id": "jisc-tech",
+          "target_name": "Technology & Infrastructure",
+          "alignment_strength": "strong",
+          "notes": "Governance technology (BI, planning tools, board portal) maps to JISC Technology & Infrastructure."
+        }
+      ],
+      "qs_mappings": [
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-gov-governance",
+          "target_name": "Governance & Risk Management",
+          "alignment_strength": "moderate",
+          "notes": "Governance technology supports risk management and governance processes."
+        }
+      ]
+    },
+    {
+      "the_dimension": {
+        "id": "the-pg-dat",
+        "name": "Planning & Governance: Data",
+        "pillar": "Planning & Governance",
+        "dimension": "Data"
+      },
+      "jisc_mappings": [
+        {
+          "target_framework": "jisc-ai-maturity",
+          "target_id": "jisc-tech",
+          "target_name": "Technology & Infrastructure",
+          "alignment_strength": "moderate",
+          "notes": "Institutional data governance is partially captured in JISC Technology & Infrastructure."
+        },
+        {
+          "target_framework": "jisc-ai-maturity",
+          "target_id": "jisc-safe",
+          "target_name": "Safe & Responsible Use",
+          "alignment_strength": "strong",
+          "notes": "Institutional data governance strongly relates to JISC Safe & Responsible Use, particularly data ethics and compliance."
+        }
+      ],
+      "qs_mappings": [
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-gov-conduct",
+          "target_name": "Code of Conduct & Privacy",
+          "alignment_strength": "strong",
+          "notes": "Institutional data governance maps directly to QS Code of Conduct & Privacy."
+        },
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-gov-governance",
+          "target_name": "Governance & Risk Management",
+          "alignment_strength": "strong",
+          "notes": "Data for governance and risk management is central to QS Governance & Risk Management."
+        }
+      ]
+    },
+    {
+      "the_dimension": {
+        "id": "the-pg-uti",
+        "name": "Planning & Governance: Utilisation",
+        "pillar": "Planning & Governance",
+        "dimension": "Utilisation"
+      },
+      "jisc_mappings": [
+        {
+          "target_framework": "jisc-ai-maturity",
+          "target_id": "jisc-strategic",
+          "target_name": "Strategic Adoption of AI",
+          "alignment_strength": "moderate",
+          "notes": "Utilisation of data and governance tools by leaders reflects strategic AI adoption maturity."
+        },
+        {
+          "target_framework": "jisc-ai-maturity",
+          "target_id": "jisc-staff",
+          "target_name": "Staff Knowledge & Skills",
+          "alignment_strength": "moderate",
+          "notes": "Leadership utilisation of digital tools reflects leader capability."
+        }
+      ],
+      "qs_mappings": [
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-gov-governance",
+          "target_name": "Governance & Risk Management",
+          "alignment_strength": "strong",
+          "notes": "Utilisation of governance tools directly supports governance effectiveness."
+        },
+        {
+          "target_framework": "qs-ai-capability",
+          "target_id": "qs-gov-leadership",
+          "target_name": "Leadership & Capability",
+          "alignment_strength": "moderate",
+          "notes": "Leadership use of digital tools reflects capability maturity."
+        }
+      ]
+    }
+  ]
+}

@@ -31,7 +31,7 @@ function FrameworkPicker() {
           <ArrowLeft className="h-4 w-4" />Back to Hub
         </Link>
         <h2 className="text-2xl sm:text-3xl font-bold text-foreground mb-2">Assess Your AI Readiness</h2>
-        <p className="text-muted-foreground mb-8">Choose a framework to assess yourself against. Each assessment takes 5-10 minutes.</p>
+        <p className="text-muted-foreground mb-8">Choose a framework to assess against. Quick self-assessments take 5-10 minutes; scenario assessments can be substantially longer.</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
           {assessable.map((fw) => (
             <div key={fw.id} className="p-5 rounded-xl border border-border bg-card">
@@ -50,7 +50,7 @@ function FrameworkPicker() {
                     to={`/assess/scenario/${fw.id}`}
                     className="block py-2 px-3 text-sm text-center rounded-lg bg-primary/10 text-primary font-medium hover:bg-primary/20 transition-all"
                   >
-                    Scenario Assessment · ~15 min
+                    Scenario Assessment · ~{fw.id === "maturity-the" ? 40 : 15} min
                   </Link>
                 )}
               </div>

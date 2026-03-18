@@ -7,6 +7,12 @@ import {
 import { query, queryOne, execute } from "../shared/db";
 import { requireAuth, AuthError } from "../shared/auth";
 import { corsHeaders, handleCors } from "../middleware/cors";
+import {
+  getTheScenarioContextScore,
+  hasCompleteTheContext,
+  listMissingTheContextFields,
+  normalizeTheBoundary,
+} from "../shared/maturity-the";
 
 // Fisher-Yates shuffle
 function shuffle<T>(arr: T[]): T[] {
@@ -16,6 +22,22 @@ function shuffle<T>(arr: T[]): T[] {
     [a[i], a[j]] = [a[j], a[i]];
   }
   return a;
+}
+
+interface AssessmentContextRow {
+  subject_area?: string | null;
+  institution_size?: string | null;
+  institution_type?: string | null;
+  institution_level?: string | null;
+  region?: string | null;
+  funding_model?: string | null;
+  respondent_role?: string | null;
+  respondent_institutional_visibility?: string | null;
+  digital_infrastructure_baseline?: string | null;
+  current_ai_tools?: string[] | null;
+  primary_frustration?: string | null;
+  years_of_experience?: string | null;
+  management_responsibility?: string | null;
 }
 
 async function handler(
@@ -89,10 +111,21 @@ async function handler(
       }
 
       // Fetch user context for snapshot
-      const userContext = await queryOne(
-        "SELECT subject_area, institution_type, institution_level, region, current_ai_tools, primary_frustration, years_of_experience, management_responsibility FROM user_assessment_context WHERE user_id = $1",
+      const userContext = await queryOne<AssessmentContextRow>(
+        "SELECT subject_area, institution_size, institution_type, institution_level, region, funding_model, respondent_role, respondent_institutional_visibility, digital_infrastructure_baseline, current_ai_tools, primary_frustration, years_of_experience, management_responsibility FROM user_assessment_context WHERE user_id = $1",
         [user.userId]
       );
+
+      if (body.framework_id === "maturity-the" && !hasCompleteTheContext(userContext ?? {})) {
+        return {
+          status: 400,
+          headers: { ...corsHeaders(req), "Content-Type": "application/json" },
+          body: JSON.stringify({
+            error: "Institutional assessment context is incomplete",
+            missing_fields: listMissingTheContextFields(userContext ?? {}),
+          }),
+        };
+      }
 
       // Fetch response options for each scenario (strip nuisance metadata)
       const scenarioIds = scenarios.map((s) => s.scenario_id);
@@ -116,19 +149,20 @@ async function handler(
         responsesByScenario.get(r.scenario_id)!.push(r);
       }
 
+      const selectedScenarios = body.framework_id === "maturity-the"
+        ? selectTheScenarios(scenarios, userContext ?? {})
+        : scenarios;
+
       // Build scenario list with shuffled responses
-      const shuffledScenarios = shuffle(scenarios).map((s) => ({
+      const shuffledScenarios = shuffle(selectedScenarios).map((s) => ({
         scenario_id: s.scenario_id,
         dimension_name: s.dimension_name,
         stem: s.stem,
         question: s.question,
-        responses: shuffle(responsesByScenario.get(s.scenario_id) ?? []).map(
-          (r) => ({
-            id: r.id,
-            response_key: r.response_key,
-            text: r.response_text,
-          })
-        ),
+        responses: shuffle(responsesByScenario.get(s.scenario_id) ?? []).map((r) => ({
+          id: r.id,
+          text: r.response_text,
+        })),
       }));
 
       // Create session
@@ -146,6 +180,8 @@ async function handler(
         body: JSON.stringify({
           session_id: session!.id,
           framework_id: body.framework_id,
+          estimated_time_minutes:
+            body.framework_id === "maturity-the" ? 40 : 15,
           total_scenarios: shuffledScenarios.length,
           scenarios: shuffledScenarios,
         }),
@@ -160,6 +196,39 @@ async function handler(
     context.error("scenario-sessions error:", err);
     return { status: 500, headers: { ...corsHeaders(req), "Content-Type": "application/json" }, body: JSON.stringify({ error: "Internal server error" }) };
   }
+}
+
+function selectTheScenarios<
+  T extends {
+    scenario_id: string;
+    dimension_id: string;
+    target_boundary: string;
+    context_tags: Record<string, unknown>;
+  },
+>(scenarios: T[], context: AssessmentContextRow): T[] {
+  const grouped = new Map<string, T[]>();
+
+  for (const scenario of scenarios) {
+    const key = `${scenario.dimension_id}|${normalizeTheBoundary(scenario.target_boundary)}`;
+    if (!grouped.has(key)) grouped.set(key, []);
+    grouped.get(key)!.push(scenario);
+  }
+
+  const selected: T[] = [];
+
+  for (const group of grouped.values()) {
+    const ranked = [...group].sort((a, b) => {
+      const scoreDiff =
+        getTheScenarioContextScore(b.context_tags, context) -
+        getTheScenarioContextScore(a.context_tags, context);
+      if (scoreDiff !== 0) return scoreDiff;
+      return a.scenario_id.localeCompare(b.scenario_id);
+    });
+
+    selected.push(...ranked.slice(0, Math.min(2, ranked.length)));
+  }
+
+  return selected;
 }
 
 app.http("scenario-sessions", {

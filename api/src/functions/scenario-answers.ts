@@ -38,8 +38,8 @@ async function handler(
     }
 
     // Validate session belongs to user and is in_progress
-    const session = await queryOne<{ id: string; status: string }>(
-      "SELECT id, status FROM scenario_sessions WHERE id = $1 AND user_id = $2",
+    const session = await queryOne<{ id: string; status: string; scenario_ids: string[] | null }>(
+      "SELECT id, status, scenario_ids FROM scenario_sessions WHERE id = $1 AND user_id = $2",
       [body.session_id, user.userId]
     );
 
@@ -56,6 +56,14 @@ async function handler(
         status: 409,
         headers: { ...corsHeaders(req), "Content-Type": "application/json" },
         body: JSON.stringify({ error: "Session is not in progress" }),
+      };
+    }
+
+    if (!session.scenario_ids?.includes(body.scenario_id)) {
+      return {
+        status: 400,
+        headers: { ...corsHeaders(req), "Content-Type": "application/json" },
+        body: JSON.stringify({ error: "scenario_id is not part of this session" }),
       };
     }
 
@@ -113,7 +121,6 @@ async function handler(
       status: 200,
       headers: { ...corsHeaders(req), "Content-Type": "application/json" },
       body: JSON.stringify({
-        mapped_level: response.maps_to_level_name,
         answered_count: parseInt(progress?.answered ?? "0", 10),
         total_count: parseInt(progress?.total ?? "0", 10),
       }),

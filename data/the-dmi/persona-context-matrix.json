@@ -1,0 +1,291 @@
+{
+  "framework_id": "maturity-the",
+  "framework_name": "THE Digital Maturity Index",
+  "matrix_description": "Evaluation of 7 contextual factors against the THE Digital Maturity Index, assessing impact on assessment validity and maturity presentation per pillar. Two factors (respondent_role and respondent_institutional_visibility) are critical for institutional assessment validity.",
+  "total_factors": 7,
+  "factors": [
+    {
+      "factor_id": "institution_size",
+      "factor_name": "Institution Size",
+      "factor_values": [
+        "small (<5,000 students)",
+        "medium (5,000-15,000 students)",
+        "large (15,000+ students)"
+      ],
+      "overall_impact": "high",
+      "rationale": "Size affects the complexity of coordination required for integration, the number of stakeholders involved in governance, and the resources available for digital investment. Larger institutions face greater coordination challenges but have more resources. Smaller institutions can be more agile but may lack specialist digital roles.",
+      "impact_by_pillar": {
+        "Teaching & Learning": {
+          "impact": "high",
+          "explanation": "Larger institutions have more faculties to coordinate, making the Intentional-Integrated boundary harder to cross. Smaller institutions may achieve integration more easily but have fewer resources for specialist digital education roles."
+        },
+        "Research": {
+          "impact": "medium",
+          "explanation": "Research digital maturity correlates more with research intensity than size. A small research-intensive institution may be more digitally mature in research than a large teaching-focused one."
+        },
+        "Professional Services": {
+          "impact": "high",
+          "explanation": "Larger institutions typically have more complex administrative systems requiring greater integration effort. Smaller institutions may operate with simpler, more integrated systems by default."
+        },
+        "Planning & Governance": {
+          "impact": "high",
+          "explanation": "Governance complexity scales with size. Larger institutions need more sophisticated data and decision systems. Smaller institutions may have simpler governance but less capacity for advanced analytics."
+        }
+      }
+    },
+    {
+      "factor_id": "institution_type",
+      "factor_name": "Institution Type",
+      "factor_values": [
+        "research-intensive",
+        "teaching-focused",
+        "polytechnic",
+        "specialist",
+        "multi-campus"
+      ],
+      "overall_impact": "high",
+      "rationale": "Institution type fundamentally affects which pillars are prioritised, what digital maturity looks like in practice, and where the institution is likely to be most and least mature. Research-intensive institutions typically lead in Research Technology and Data but may lag in Professional Services. Teaching-focused institutions may lead in T&L Technology and Utilisation.",
+      "impact_by_pillar": {
+        "Teaching & Learning": {
+          "impact": "high",
+          "explanation": "Teaching-focused institutions typically invest more heavily in T&L digital capability. Research-intensive institutions may deprioritise T&L digital investment relative to research infrastructure."
+        },
+        "Research": {
+          "impact": "high",
+          "explanation": "Research-intensive institutions are likely more mature across all Research dimensions. Teaching-focused institutions may have minimal research digital infrastructure."
+        },
+        "Professional Services": {
+          "impact": "medium",
+          "explanation": "Multi-campus institutions face unique challenges in PS integration. Specialist institutions may have simpler service requirements. Polytechnics may have more industry-aligned service models."
+        },
+        "Planning & Governance": {
+          "impact": "medium",
+          "explanation": "Governance structures vary by institution type but the fundamental challenge of data-informed planning applies across types. Multi-campus institutions face additional coordination complexity."
+        }
+      }
+    },
+    {
+      "factor_id": "region",
+      "factor_name": "Region",
+      "factor_values": [
+        "UK",
+        "EU",
+        "US",
+        "Asia-Pacific",
+        "Africa",
+        "LATAM",
+        "MENA"
+      ],
+      "overall_impact": "high",
+      "rationale": "Regional regulatory frameworks, funding models, technology infrastructure availability, and sector norms strongly shape what digital maturity looks like and how it is achieved. GDPR affects European institutions' data maturity differently from US institutions. UK institutions face specific OfS requirements. Infrastructure availability varies dramatically between regions.",
+      "impact_by_pillar": {
+        "Teaching & Learning": {
+          "impact": "high",
+          "explanation": "Regional differences in pedagogy norms, regulatory requirements for online provision, and QA frameworks significantly affect T&L digital maturity. UK and EU have specific quality frameworks; US has accreditation requirements; Asia-Pacific varies widely."
+        },
+        "Research": {
+          "impact": "medium",
+          "explanation": "Research is more internationally normalised than other pillars. Funder requirements (UKRI, NSF, ERC) drive some regional convergence. However, infrastructure availability varies significantly."
+        },
+        "Professional Services": {
+          "impact": "medium",
+          "explanation": "Regional regulatory requirements (student visa systems, financial regulations, employment law) shape PS digital requirements. US institutions face different compliance landscapes from UK or EU."
+        },
+        "Planning & Governance": {
+          "impact": "high",
+          "explanation": "Governance structures, regulatory reporting (HESA/OfS in UK, IPEDS in US), and accountability frameworks are deeply regional. Data governance requirements (GDPR, FERPA) differ fundamentally."
+        }
+      }
+    },
+    {
+      "factor_id": "funding_model",
+      "factor_name": "Funding Model",
+      "factor_values": [
+        "public",
+        "private",
+        "mixed"
+      ],
+      "overall_impact": "medium",
+      "rationale": "Funding model affects investment capacity, decision-making speed, and accountability structures. Publicly funded institutions may have more constrained budgets but clearer accountability. Private institutions may invest more rapidly but with different governance structures. Mixed-funding institutions navigate both sets of constraints.",
+      "impact_by_pillar": {
+        "Teaching & Learning": {
+          "impact": "medium",
+          "explanation": "Private institutions can invest more quickly in T&L technology. Public institutions may face procurement constraints but have access to sector-wide initiatives (e.g. Jisc services in UK)."
+        },
+        "Research": {
+          "impact": "low",
+          "explanation": "Research digital maturity is driven more by research intensity and funder requirements than by overall funding model."
+        },
+        "Professional Services": {
+          "impact": "high",
+          "explanation": "Public institutions often face procurement regulations that slow technology adoption. Private institutions may have more flexibility but less standardisation. This significantly affects the pace of PS digital transformation."
+        },
+        "Planning & Governance": {
+          "impact": "high",
+          "explanation": "Public accountability requirements create specific data and governance needs. Private institutions may have different but equally demanding board-level reporting requirements."
+        }
+      }
+    },
+    {
+      "factor_id": "respondent_role",
+      "factor_name": "Respondent Role",
+      "factor_values": [
+        "senior_leadership",
+        "faculty_dean",
+        "department_head",
+        "professional_services_director",
+        "IT_leadership",
+        "academic_staff"
+      ],
+      "overall_impact": "high",
+      "rationale": "The respondent's role determines what they can reliably observe and assess. Senior leaders have institution-wide visibility but may lack operational detail. Department heads have deep local knowledge but limited cross-institutional perspective. This factor directly affects assessment validity and must be controlled for in any reliable DMI implementation.",
+      "impact_by_pillar": {
+        "Teaching & Learning": {
+          "impact": "high",
+          "explanation": "Faculty deans can reliably assess their faculty but may overestimate institutional integration based on local experience. Academic staff can assess utilisation in their own practice but cannot assess strategy or cross-institutional coordination. Senior leadership can assess strategy and governance but may lack visibility of actual classroom practice."
+        },
+        "Research": {
+          "impact": "high",
+          "explanation": "Research maturity assessment varies dramatically by respondent. A principal investigator sees their own research data management; a PVC Research sees institutional research strategy. IT leadership sees research computing infrastructure but not research culture."
+        },
+        "Professional Services": {
+          "impact": "medium",
+          "explanation": "Professional services directors can assess their service area but may not see cross-service integration. IT leadership has technology visibility but may not understand service delivery context. Senior leadership sees strategic intent but not operational reality."
+        },
+        "Planning & Governance": {
+          "impact": "high",
+          "explanation": "Only senior leadership and planning professionals have reliable visibility of planning and governance maturity. Department heads and academic staff typically cannot assess institutional data governance or strategic planning capability."
+        }
+      },
+      "role_reliability_matrix": {
+        "senior_leadership": {
+          "reliable_pillars": [
+            "Planning & Governance",
+            "all pillars at Strategy dimension"
+          ],
+          "unreliable_pillars": [
+            "Utilisation detail across all pillars"
+          ],
+          "mitigation": "Supplement with operational respondents for Utilisation and Technology detail"
+        },
+        "faculty_dean": {
+          "reliable_pillars": [
+            "Teaching & Learning (own faculty)",
+            "Research (own faculty)"
+          ],
+          "unreliable_pillars": [
+            "Institution-wide maturity for any pillar",
+            "Professional Services",
+            "Planning & Governance"
+          ],
+          "mitigation": "Aggregate across deans for institutional picture; supplement with PS and planning respondents"
+        },
+        "department_head": {
+          "reliable_pillars": [
+            "Utilisation in own department"
+          ],
+          "unreliable_pillars": [
+            "All Strategy and cross-institutional dimensions",
+            "Planning & Governance"
+          ],
+          "mitigation": "Use for granular utilisation data only; do not generalise to institutional maturity"
+        },
+        "professional_services_director": {
+          "reliable_pillars": [
+            "Professional Services (own area)"
+          ],
+          "unreliable_pillars": [
+            "Teaching & Learning",
+            "Research",
+            "Planning & Governance (beyond own remit)"
+          ],
+          "mitigation": "Aggregate across directors for PS pillar; supplement with academic respondents"
+        },
+        "IT_leadership": {
+          "reliable_pillars": [
+            "Technology dimension across all pillars"
+          ],
+          "unreliable_pillars": [
+            "Strategy, People & Culture, Utilisation detail beyond IT"
+          ],
+          "mitigation": "Combine with domain respondents for non-technology dimensions"
+        },
+        "academic_staff": {
+          "reliable_pillars": [
+            "T&L Utilisation (own practice)",
+            "Research Utilisation (own practice)"
+          ],
+          "unreliable_pillars": [
+            "All institutional-level dimensions",
+            "Professional Services",
+            "Planning & Governance"
+          ],
+          "mitigation": "Use only for individual utilisation data; aggregate for departmental patterns"
+        }
+      }
+    },
+    {
+      "factor_id": "digital_infrastructure_baseline",
+      "factor_name": "Digital Infrastructure Baseline",
+      "factor_values": [
+        "limited",
+        "moderate",
+        "advanced"
+      ],
+      "overall_impact": "high",
+      "rationale": "The starting point of IT infrastructure significantly affects what maturity levels are achievable and how quickly institutions can progress. Institutions with limited infrastructure face a longer path to integration. Those with advanced infrastructure may have technology maturity ahead of strategy and people dimensions, creating an imbalanced profile.",
+      "impact_by_pillar": {
+        "Teaching & Learning": {
+          "impact": "high",
+          "explanation": "T&L digital maturity is constrained by classroom technology, campus connectivity, VLE capability, and assessment infrastructure. Institutions with limited infrastructure cannot achieve Integrated T&L maturity regardless of strategy or culture."
+        },
+        "Research": {
+          "impact": "high",
+          "explanation": "Research computing, data storage, and network capacity are fundamental enablers. Institutions without adequate HPC or research data storage cannot achieve Integrated Research maturity."
+        },
+        "Professional Services": {
+          "impact": "high",
+          "explanation": "PS digital maturity depends on enterprise systems quality. Institutions with legacy ERP, fragmented student records, or manual processes face significant barriers to integration."
+        },
+        "Planning & Governance": {
+          "impact": "medium",
+          "explanation": "Planning and governance can achieve some maturity with basic data tools, but advanced analytics and real-time monitoring require more sophisticated infrastructure."
+        }
+      }
+    },
+    {
+      "factor_id": "respondent_institutional_visibility",
+      "factor_name": "Respondent Institutional Visibility",
+      "factor_values": [
+        "institution_wide",
+        "faculty_level",
+        "department_level"
+      ],
+      "overall_impact": "high",
+      "rationale": "This is the single most critical factor for assessment validity in an institutional maturity framework. A respondent with department-level visibility cannot reliably assess institution-wide maturity. The Intentional-Integrated boundary is especially sensitive: it requires evidence of cross-institutional coordination that is invisible to respondents without institution-wide visibility. This factor should be used to weight or qualify responses.",
+      "impact_by_pillar": {
+        "Teaching & Learning": {
+          "impact": "high",
+          "explanation": "Department-level respondents may see excellent local T&L digital practice and infer institutional integration that does not exist. Only institution-wide respondents can verify that strategy, technology, and utilisation are coordinated across all faculties."
+        },
+        "Research": {
+          "impact": "high",
+          "explanation": "Research digital maturity varies dramatically between disciplines and departments. A computational science department may be at Optimised while a humanities department is at Incidental. Only institution-wide visibility reveals the true institutional picture."
+        },
+        "Professional Services": {
+          "impact": "medium",
+          "explanation": "PS directors typically have service-wide visibility within their function. Cross-service integration assessment requires broader institutional visibility, but individual services can be assessed at function level."
+        },
+        "Planning & Governance": {
+          "impact": "high",
+          "explanation": "Planning and Governance maturity is inherently an institution-wide property. Faculty-level or department-level respondents cannot reliably assess institutional data governance, strategic planning capability, or governance effectiveness."
+        }
+      },
+      "validity_thresholds": {
+        "institution_wide": "Can reliably assess all dimensions at all levels for any pillar within their domain knowledge",
+        "faculty_level": "Can reliably assess Incidental and Intentional levels. Assessment of Integrated and Optimised requires institution-wide corroboration. Can identify that their faculty has NOT achieved a level, but cannot confirm institutional achievement.",
+        "department_level": "Can reliably assess Utilisation and People & Culture at department level only. Cannot assess Strategy, Technology architecture, or Data governance at institutional level. Should not be used as sole respondent for any pillar."
+      }
+    }
+  ]
+}

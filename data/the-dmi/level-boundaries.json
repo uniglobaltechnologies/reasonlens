@@ -1,0 +1,2462 @@
+[
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-tl-str",
+    "dimension_name": "Teaching & Learning: Strategy",
+    "pillar": "Teaching & Learning",
+    "cross_cutting_dimension": "Strategy",
+    "lower_level": {
+      "id": "the-tl-str-incidental",
+      "name": "Incidental",
+      "order": 1
+    },
+    "upper_level": {
+      "id": "the-tl-str-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "key_discriminator": "The institution has moved from reactive, ad-hoc digital adoption in teaching and learning to having approved, purposeful digital objectives with identified owners and resources",
+    "discriminator_type": "reactive_vs_planned",
+    "common_false_positives": [
+      {
+        "behaviour": "A strategy document exists that mentions digital in teaching and learning",
+        "why_higher": "Having a written strategy feels like intentional planning",
+        "why_lower": "The document exists on paper but has no specific objectives, timelines, owners, or resources allocated to implementation",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "Senior leaders verbally express commitment to digital transformation in teaching and learning",
+        "why_higher": "Leadership buy-in feels like strategic intent",
+        "why_lower": "Verbal commitment without documented objectives and resource allocation is aspiration not strategy",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "An approved document with specific digital objectives for teaching and learning, named owners, and identified resources",
+      "strong": "Approved strategy with KPIs, governance mechanism, timeline, budget allocation, and evidence of initial implementation activity",
+      "examples": [
+        "Digital teaching and learning strategy approved by relevant committee with implementation plan",
+        "Board minutes showing resource allocation decision for digital teaching and learning initiatives"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-tl-str",
+    "dimension_name": "Teaching & Learning: Strategy",
+    "pillar": "Teaching & Learning",
+    "cross_cutting_dimension": "Strategy",
+    "lower_level": {
+      "id": "the-tl-str-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "upper_level": {
+      "id": "the-tl-str-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "key_discriminator": "The institution has moved from siloed, project-based digital initiatives in teaching and learning to coordinated, institution-wide implementation with shared governance and recurrent funding",
+    "discriminator_type": "planned_vs_coordinated",
+    "common_false_positives": [
+      {
+        "behaviour": "Digital initiatives in teaching and learning are happening in multiple departments",
+        "why_higher": "Activity in multiple locations feels like institution-wide coordination",
+        "why_lower": "Multiple independent initiatives without coordinating governance is parallel Intentional activity, not integration",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "A central team coordinates digital teaching and learning projects",
+        "why_higher": "Centralisation feels like coordination",
+        "why_lower": "A central team can operate in isolation from faculties. Integration requires bidirectional governance connecting centre and units",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence that digital teaching and learning initiatives are governed by a cross-institutional body with authority, and that unit-level plans explicitly reference institutional strategy",
+      "strong": "Cross-institutional governance body with decision authority, unit-level implementation plans aligned to institutional strategy, recurrent funding, and regular KPI reporting to senior leadership",
+      "examples": [
+        "Faculty operational plans with digital teaching and learning targets mapped to institutional strategy",
+        "Terms of reference for cross-institutional digital teaching and learning board with decision-making authority"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-tl-str",
+    "dimension_name": "Teaching & Learning: Strategy",
+    "pillar": "Teaching & Learning",
+    "cross_cutting_dimension": "Strategy",
+    "lower_level": {
+      "id": "the-tl-str-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "upper_level": {
+      "id": "the-tl-str-optimised",
+      "name": "Optimised",
+      "order": 4
+    },
+    "key_discriminator": "The institution has moved from functioning institution-wide coordination in teaching and learning to proactive innovation, evidence-based continuous improvement, and recognised sector leadership",
+    "discriminator_type": "coordinated_vs_optimising",
+    "common_false_positives": [
+      {
+        "behaviour": "The institution benchmarks its digital teaching and learning approach against peers",
+        "why_higher": "Benchmarking feels like a sector-leading practice",
+        "why_lower": "Reactive benchmarking (copying good practice from others) is characteristic of Integrated. Optimised institutions set benchmarks through innovation",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "The institution has won awards for digital teaching and learning initiatives",
+        "why_higher": "Awards feel like sector recognition",
+        "why_lower": "A single award for a specific project does not indicate continuous optimisation across all activities. Optimised requires systematic, sustained excellence",
+        "frequency": "occasional"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence of annual evidence-based strategy review cycle and at least one form of sector contribution (publication, advisory role, peer case study)",
+      "strong": "Annual review cycle with documented evidence-based revisions, formal horizon scanning function, multiple forms of sector contribution, and evidence of proactive innovation ahead of sector trends",
+      "examples": [
+        "Strategy revision paper citing institutional data and benchmarking informing specific changes",
+        "Published case study or sector advisory role in digital teaching and learning"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-tl-ppl",
+    "dimension_name": "Teaching & Learning: People & Culture",
+    "pillar": "Teaching & Learning",
+    "cross_cutting_dimension": "People & Culture",
+    "lower_level": {
+      "id": "the-tl-ppl-incidental",
+      "name": "Incidental",
+      "order": 1
+    },
+    "upper_level": {
+      "id": "the-tl-ppl-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "key_discriminator": "The institution has moved from self-taught, unevenly distributed digital skills among teaching and learning staff to purposeful institutional investment in digital workforce development with targeted programmes",
+    "discriminator_type": "reactive_vs_planned",
+    "common_false_positives": [
+      {
+        "behaviour": "Some staff in teaching and learning are highly digitally skilled",
+        "why_higher": "Visible digital expertise feels like institutional capability",
+        "why_lower": "Individual expertise acquired through personal initiative is the defining characteristic of Incidental. Intentional requires institutional programmes",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "Generic IT training is available to all staff",
+        "why_higher": "Available training feels like investment in workforce capability",
+        "why_lower": "Generic IT skills training is not the same as targeted development of domain-specific digital competencies for teaching and learning",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "A targeted digital skills development programme designed specifically for teaching and learning roles, with evidence of institutional funding and promotion",
+      "strong": "Targeted programme with curriculum mapped to domain needs, participation tracking, role profiles referencing digital competencies, and emerging community of practice",
+      "examples": [
+        "Digital capabilities programme for teaching and learning staff with scheduled sessions and uptake data",
+        "Revised role profiles for teaching and learning positions including digital competency requirements"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-tl-ppl",
+    "dimension_name": "Teaching & Learning: People & Culture",
+    "pillar": "Teaching & Learning",
+    "cross_cutting_dimension": "People & Culture",
+    "lower_level": {
+      "id": "the-tl-ppl-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "upper_level": {
+      "id": "the-tl-ppl-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "key_discriminator": "The institution has moved from targeted but voluntary digital skills programmes for teaching and learning staff to systematic capability development embedded in HR processes, career pathways, and institutional culture",
+    "discriminator_type": "planned_vs_coordinated",
+    "common_false_positives": [
+      {
+        "behaviour": "High attendance at digital training for teaching and learning staff",
+        "why_higher": "Strong training uptake feels like cultural embedding",
+        "why_lower": "Attendance without evidence of sustained practice change and integration into career development is still Intentional",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "A few departments have excellent digital culture in teaching and learning",
+        "why_higher": "Pockets of excellence feel like institutional integration",
+        "why_lower": "Integration requires consistent culture across all units, not concentrated excellence in leading departments",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence that digital competencies are embedded in recruitment, performance review, or promotion criteria for teaching and learning roles, and that innovation is recognised institutionally",
+      "strong": "Competency framework in HR processes, structured career pathways for digital roles, institutionally supported communities of practice, change management as recognised function, and cross-institutional sharing of practice as routine",
+      "examples": [
+        "PDR templates for teaching and learning roles with digital competency assessment",
+        "Innovation awards or workload allocation for digital practice development"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-tl-ppl",
+    "dimension_name": "Teaching & Learning: People & Culture",
+    "pillar": "Teaching & Learning",
+    "cross_cutting_dimension": "People & Culture",
+    "lower_level": {
+      "id": "the-tl-ppl-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "upper_level": {
+      "id": "the-tl-ppl-optimised",
+      "name": "Optimised",
+      "order": 4
+    },
+    "key_discriminator": "The institution has moved from systematically developed digital capabilities in teaching and learning to a self-sustaining innovation culture where staff autonomously drive development and the institution contributes to sector workforce practice",
+    "discriminator_type": "coordinated_vs_optimising",
+    "common_false_positives": [
+      {
+        "behaviour": "Comprehensive training catalogue for digital teaching and learning skills",
+        "why_higher": "Extensive training provision feels like Optimised development",
+        "why_lower": "Optimised culture is characterised by self-sustaining peer-driven development. Dependency on centrally curated training is Integrated, not Optimised",
+        "frequency": "common"
+      },
+      {
+        "behaviour": "Staff satisfaction with digital support is high",
+        "why_higher": "Satisfaction suggests a mature support environment",
+        "why_lower": "Satisfaction with support is about Technology provision. Optimised People and Culture means staff drive their own development and innovate independently",
+        "frequency": "occasional"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence that digital capability development is self-sustaining (peer-led initiatives operating without central dependency) and that the institution contributes to sector workforce development",
+      "strong": "Staff-led innovation as norm, institution recognised externally for digital teaching and learning culture, sector contributions through training or publications, recruitment advantage from digital reputation",
+      "examples": [
+        "Peer-led digital development programmes initiated by teaching and learning staff",
+        "External invitations for staff to lead sector workshops on digital teaching and learning practice"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-tl-tec",
+    "dimension_name": "Teaching & Learning: Technology",
+    "pillar": "Teaching & Learning",
+    "cross_cutting_dimension": "Technology",
+    "lower_level": {
+      "id": "the-tl-tec-incidental",
+      "name": "Incidental",
+      "order": 1
+    },
+    "upper_level": {
+      "id": "the-tl-tec-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "key_discriminator": "The institution has moved from fragmented, siloed technology infrastructure for teaching and learning to having a documented technology roadmap with purposeful investment priorities and emerging integration",
+    "discriminator_type": "reactive_vs_planned",
+    "common_false_positives": [
+      {
+        "behaviour": "Modern systems have been procured for teaching and learning",
+        "why_higher": "New technology feels like intentional investment",
+        "why_lower": "Procurement without a roadmap or integration plan can increase fragmentation rather than reduce it",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "IT provides responsive support for teaching and learning systems",
+        "why_higher": "Good support feels like purposeful technology management",
+        "why_lower": "Operational support (keeping systems running) is distinct from strategic technology planning. Support quality is necessary but not sufficient",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "A documented technology roadmap or investment plan for teaching and learning with identified integration priorities",
+      "strong": "Approved roadmap with timeline, budget, architectural standards for new procurement, key integrations implemented or underway, and institutional procurement process for domain technology",
+      "examples": [
+        "Technology roadmap for teaching and learning approved by relevant governance body",
+        "SSO or data integration between core teaching and learning systems"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-tl-tec",
+    "dimension_name": "Teaching & Learning: Technology",
+    "pillar": "Teaching & Learning",
+    "cross_cutting_dimension": "Technology",
+    "lower_level": {
+      "id": "the-tl-tec-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "upper_level": {
+      "id": "the-tl-tec-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "key_discriminator": "The institution has moved from partial technology modernisation with an emerging roadmap for teaching and learning to a coherent, governed enterprise architecture with integrated systems and systematic lifecycle management",
+    "discriminator_type": "planned_vs_coordinated",
+    "common_false_positives": [
+      {
+        "behaviour": "All units use the same system for a core teaching and learning function",
+        "why_higher": "Shared systems feel like integration",
+        "why_lower": "Mandated use of a single system (e.g. institution-wide VLE) can be an IT decision without architectural integration or governance. Integration requires that systems are connected and governed holistically",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "Cloud migration for teaching and learning systems is complete",
+        "why_higher": "Cloud feels modern and integrated",
+        "why_lower": "Cloud hosting can reproduce siloed architecture in a new environment. Integration requires architectural coherence, not just hosting model change",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence of enterprise architecture standards governing teaching and learning technology decisions, with core systems integrated through APIs or middleware",
+      "strong": "Documented enterprise architecture, integrated core systems, planned refresh cycles, governance body with domain representation, service level monitoring, and technology enabling cross-institutional workflows",
+      "examples": [
+        "Enterprise architecture document covering teaching and learning systems",
+        "API integrations between core teaching and learning platforms with data flowing reliably"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-tl-tec",
+    "dimension_name": "Teaching & Learning: Technology",
+    "pillar": "Teaching & Learning",
+    "cross_cutting_dimension": "Technology",
+    "lower_level": {
+      "id": "the-tl-tec-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "upper_level": {
+      "id": "the-tl-tec-optimised",
+      "name": "Optimised",
+      "order": 4
+    },
+    "key_discriminator": "The institution has moved from coherent, governed technology infrastructure for teaching and learning to a sector-leading, extensible architecture that enables rapid innovation and is recognised as exemplary",
+    "discriminator_type": "coordinated_vs_optimising",
+    "common_false_positives": [
+      {
+        "behaviour": "The institution is an early adopter of new technologies for teaching and learning",
+        "why_higher": "Early adoption feels like sector leadership",
+        "why_lower": "Early adoption without architectural integration, evidence-based evaluation, and continuous optimisation is technology enthusiasm not maturity",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "Technology availability is 99.9% for teaching and learning systems",
+        "why_higher": "High reliability feels like Optimised",
+        "why_lower": "Reliability is a characteristic of Integrated. Optimised additionally requires innovation capacity, extensible architecture, and sector contribution",
+        "frequency": "occasional"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence of extensible architecture enabling rapid integration of new capabilities and at least one form of sector recognition for technology practice in teaching and learning",
+      "strong": "API-first or microservices architecture, innovation sandbox environments, emerging technology assessment process, real-time monitoring, and sector recognition through publications, awards, or peer visits",
+      "examples": [
+        "Innovation sandbox for teaching and learning technology testing",
+        "Published case study on teaching and learning technology architecture"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-tl-dat",
+    "dimension_name": "Teaching & Learning: Data",
+    "pillar": "Teaching & Learning",
+    "cross_cutting_dimension": "Data",
+    "lower_level": {
+      "id": "the-tl-dat-incidental",
+      "name": "Incidental",
+      "order": 1
+    },
+    "upper_level": {
+      "id": "the-tl-dat-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "key_discriminator": "The institution has moved from fragmented, ad-hoc data collection for teaching and learning to purposeful identification and systematic collection of core datasets with emerging governance",
+    "discriminator_type": "reactive_vs_planned",
+    "common_false_positives": [
+      {
+        "behaviour": "Statutory data returns related to teaching and learning are produced on time",
+        "why_higher": "Meeting regulatory requirements feels like data management",
+        "why_lower": "Statutory returns are compliance obligations, not evidence of purposeful data management for domain improvement",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "Individual teams maintain detailed spreadsheets of teaching and learning data",
+        "why_higher": "Detailed local data feels like data awareness",
+        "why_lower": "Uncoordinated local data collection without institutional governance is the hallmark of Incidental data maturity",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence that core datasets for teaching and learning have been identified, collection is becoming systematic, and data governance documentation exists",
+      "strong": "Identified core datasets with defined collection processes, data governance policy drafted or approved, initial dashboards or reports, and data quality issues identified with remediation underway",
+      "examples": [
+        "Data dictionary for core teaching and learning datasets",
+        "Dashboard showing key teaching and learning metrics, even if partial"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-tl-dat",
+    "dimension_name": "Teaching & Learning: Data",
+    "pillar": "Teaching & Learning",
+    "cross_cutting_dimension": "Data",
+    "lower_level": {
+      "id": "the-tl-dat-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "upper_level": {
+      "id": "the-tl-dat-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "key_discriminator": "The institution has moved from purposeful but inconsistent data management for teaching and learning to comprehensive, governed, institution-wide data infrastructure with systematic quality management and data-informed decision-making as the norm",
+    "discriminator_type": "planned_vs_coordinated",
+    "common_false_positives": [
+      {
+        "behaviour": "Dashboards exist for teaching and learning metrics",
+        "why_higher": "Dashboards feel like data maturity",
+        "why_lower": "Dashboards can sit on poor-quality, partially governed data. Integrated data requires quality management and governance, not just visualisation",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "A data governance policy has been approved",
+        "why_higher": "An approved policy feels like governance",
+        "why_lower": "A policy without evidence of compliance monitoring, enforcement, and regular review is Intentional not Integrated",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence of operational data governance with compliance monitoring, institution-wide data infrastructure, systematic data quality management, and data-informed decision-making across units",
+      "strong": "Data governance framework with defined roles and active compliance, integrated data warehouse, regular data quality audits, self-service analytics for authorised users, and committee papers routinely including data analysis",
+      "examples": [
+        "Data governance committee minutes showing compliance monitoring for teaching and learning data",
+        "Institution-wide teaching and learning analytics platform with self-service access"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-tl-dat",
+    "dimension_name": "Teaching & Learning: Data",
+    "pillar": "Teaching & Learning",
+    "cross_cutting_dimension": "Data",
+    "lower_level": {
+      "id": "the-tl-dat-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "upper_level": {
+      "id": "the-tl-dat-optimised",
+      "name": "Optimised",
+      "order": 4
+    },
+    "key_discriminator": "The institution has moved from comprehensive, governed data management for teaching and learning to advanced analytics, predictive capabilities, and recognised sector leadership in data practice",
+    "discriminator_type": "coordinated_vs_optimising",
+    "common_false_positives": [
+      {
+        "behaviour": "Comprehensive reporting exists for all teaching and learning metrics",
+        "why_higher": "Complete reporting feels like data excellence",
+        "why_lower": "Comprehensive reporting is Integrated. Optimised requires predictive analytics, continuous improvement, and sector contribution beyond descriptive reporting",
+        "frequency": "common"
+      },
+      {
+        "behaviour": "AI or ML tools are used on teaching and learning data",
+        "why_higher": "Advanced technology feels like advanced maturity",
+        "why_lower": "AI/ML on ungoverned or poor-quality data does not produce Optimised outcomes. The full data quality and governance stack must be mature first",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence of advanced analytics or predictive modelling in production use for teaching and learning, and contribution to sector data practice",
+      "strong": "Predictive models with documented impact, real-time analytics, exemplary governance referenced by peers, sector contributions through standards or publications, high data literacy enabling self-service advanced analysis",
+      "examples": [
+        "Predictive model for teaching and learning with documented improvement in outcomes",
+        "Published data governance framework adopted by peer institutions"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-tl-uti",
+    "dimension_name": "Teaching & Learning: Utilisation",
+    "pillar": "Teaching & Learning",
+    "cross_cutting_dimension": "Utilisation",
+    "lower_level": {
+      "id": "the-tl-uti-incidental",
+      "name": "Incidental",
+      "order": 1
+    },
+    "upper_level": {
+      "id": "the-tl-uti-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "key_discriminator": "The institution has moved from widespread underuse of available digital tools for teaching and learning to purposeful promotion of adoption with training, support, and emerging expectations for tool usage",
+    "discriminator_type": "reactive_vs_planned",
+    "common_false_positives": [
+      {
+        "behaviour": "High licence counts exist for teaching and learning digital tools",
+        "why_higher": "Wide licensing feels like commitment to utilisation",
+        "why_lower": "Licence procurement is a Technology decision. Utilisation requires evidence of actual meaningful use of the licensed tools",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "Some power users achieve impressive results with teaching and learning tools",
+        "why_higher": "Power user success feels like good utilisation",
+        "why_lower": "Individual power users are the Incidental pattern. Intentional requires institutional programmes promoting adoption across the broader user base",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence of institutional programmes promoting digital tool adoption for teaching and learning with training provision and emerging usage expectations",
+      "strong": "Documented minimum standards for tool usage, training programme with uptake tracking, adoption data for core tools, and management engagement in promoting adoption",
+      "examples": [
+        "Minimum standards document for teaching and learning digital tool usage",
+        "Training programme schedule with attendance records for teaching and learning tools"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-tl-uti",
+    "dimension_name": "Teaching & Learning: Utilisation",
+    "pillar": "Teaching & Learning",
+    "cross_cutting_dimension": "Utilisation",
+    "lower_level": {
+      "id": "the-tl-uti-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "upper_level": {
+      "id": "the-tl-uti-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "key_discriminator": "The institution has moved from purposeful but uneven promotion of tool adoption for teaching and learning to consistent, institution-wide utilisation with monitored standards, impact measurement, and digital workflows replacing manual processes",
+    "discriminator_type": "planned_vs_coordinated",
+    "common_false_positives": [
+      {
+        "behaviour": "Most departments report good tool adoption for teaching and learning",
+        "why_higher": "Widespread self-reported adoption feels like integration",
+        "why_lower": "Self-reported adoption without institution-wide monitoring data and consistent standards may mask significant variation. Integration requires verified consistency",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "Digital workflows exist for some core teaching and learning processes",
+        "why_higher": "Some digitised processes feel like Integrated utilisation",
+        "why_lower": "Selective digitisation alongside persistent manual processes in other areas is Intentional. Integrated requires that digital workflows are the standard for core activities",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence of institution-wide adoption monitoring showing consistent utilisation across units, with impact on teaching and learning outcomes measured",
+      "strong": "Institution-wide usage dashboards showing consistent high adoption, impact measurement linking tool use to outcomes, user feedback informing optimisation, and digital workflows as standard for core activities",
+      "examples": [
+        "Usage dashboard showing >80% adoption of core teaching and learning tool features across all units",
+        "Impact analysis linking digital tool utilisation to teaching and learning outcome improvements"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-tl-uti",
+    "dimension_name": "Teaching & Learning: Utilisation",
+    "pillar": "Teaching & Learning",
+    "cross_cutting_dimension": "Utilisation",
+    "lower_level": {
+      "id": "the-tl-uti-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "upper_level": {
+      "id": "the-tl-uti-optimised",
+      "name": "Optimised",
+      "order": 4
+    },
+    "key_discriminator": "The institution has moved from consistent institution-wide utilisation for teaching and learning to user-driven innovation, continuous optimisation, and recognised sector leadership in how tools are deployed and leveraged",
+    "discriminator_type": "coordinated_vs_optimising",
+    "common_false_positives": [
+      {
+        "behaviour": "Universal adoption of core digital tools for teaching and learning",
+        "why_higher": "Complete adoption feels like Optimised utilisation",
+        "why_lower": "Universal adoption of standard features is Integrated. Optimised requires that users innovate new use cases and drive continuous improvement beyond standard deployment",
+        "frequency": "common"
+      },
+      {
+        "behaviour": "Regular tool upgrades are implemented for teaching and learning",
+        "why_higher": "Staying current feels like optimisation",
+        "why_lower": "Upgrading is technology maintenance (Technology dimension). Optimised Utilisation means users actively drive new ways of working, not just accept upgrades",
+        "frequency": "occasional"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence of user-driven innovation in tool use for teaching and learning, continuous optimisation based on usage analytics, and sector recognition",
+      "strong": "User-contributed innovations shared institution-wide, real-time analytics driving optimisation, quantified impact on teaching and learning outcomes, peer recognition through case studies or visits",
+      "examples": [
+        "Innovation showcase featuring user-created applications of teaching and learning tools",
+        "Vendor or sector body case study on the institution's teaching and learning tool utilisation"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-re-str",
+    "dimension_name": "Research: Strategy",
+    "pillar": "Research",
+    "cross_cutting_dimension": "Strategy",
+    "lower_level": {
+      "id": "the-re-str-incidental",
+      "name": "Incidental",
+      "order": 1
+    },
+    "upper_level": {
+      "id": "the-re-str-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "key_discriminator": "The institution has moved from reactive, ad-hoc digital adoption in research to having approved, purposeful digital objectives with identified owners and resources",
+    "discriminator_type": "reactive_vs_planned",
+    "common_false_positives": [
+      {
+        "behaviour": "A strategy document exists that mentions digital in research",
+        "why_higher": "Having a written strategy feels like intentional planning",
+        "why_lower": "The document exists on paper but has no specific objectives, timelines, owners, or resources allocated to implementation",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "Senior leaders verbally express commitment to digital transformation in research",
+        "why_higher": "Leadership buy-in feels like strategic intent",
+        "why_lower": "Verbal commitment without documented objectives and resource allocation is aspiration not strategy",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "An approved document with specific digital objectives for research, named owners, and identified resources",
+      "strong": "Approved strategy with KPIs, governance mechanism, timeline, budget allocation, and evidence of initial implementation activity",
+      "examples": [
+        "Digital research strategy approved by relevant committee with implementation plan",
+        "Board minutes showing resource allocation decision for digital research initiatives"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-re-str",
+    "dimension_name": "Research: Strategy",
+    "pillar": "Research",
+    "cross_cutting_dimension": "Strategy",
+    "lower_level": {
+      "id": "the-re-str-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "upper_level": {
+      "id": "the-re-str-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "key_discriminator": "The institution has moved from siloed, project-based digital initiatives in research to coordinated, institution-wide implementation with shared governance and recurrent funding",
+    "discriminator_type": "planned_vs_coordinated",
+    "common_false_positives": [
+      {
+        "behaviour": "Digital initiatives in research are happening in multiple departments",
+        "why_higher": "Activity in multiple locations feels like institution-wide coordination",
+        "why_lower": "Multiple independent initiatives without coordinating governance is parallel Intentional activity, not integration",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "A central team coordinates digital research projects",
+        "why_higher": "Centralisation feels like coordination",
+        "why_lower": "A central team can operate in isolation from faculties. Integration requires bidirectional governance connecting centre and units",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence that digital research initiatives are governed by a cross-institutional body with authority, and that unit-level plans explicitly reference institutional strategy",
+      "strong": "Cross-institutional governance body with decision authority, unit-level implementation plans aligned to institutional strategy, recurrent funding, and regular KPI reporting to senior leadership",
+      "examples": [
+        "Faculty operational plans with digital research targets mapped to institutional strategy",
+        "Terms of reference for cross-institutional digital research board with decision-making authority"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-re-str",
+    "dimension_name": "Research: Strategy",
+    "pillar": "Research",
+    "cross_cutting_dimension": "Strategy",
+    "lower_level": {
+      "id": "the-re-str-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "upper_level": {
+      "id": "the-re-str-optimised",
+      "name": "Optimised",
+      "order": 4
+    },
+    "key_discriminator": "The institution has moved from functioning institution-wide coordination in research to proactive innovation, evidence-based continuous improvement, and recognised sector leadership",
+    "discriminator_type": "coordinated_vs_optimising",
+    "common_false_positives": [
+      {
+        "behaviour": "The institution benchmarks its digital research approach against peers",
+        "why_higher": "Benchmarking feels like a sector-leading practice",
+        "why_lower": "Reactive benchmarking (copying good practice from others) is characteristic of Integrated. Optimised institutions set benchmarks through innovation",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "The institution has won awards for digital research initiatives",
+        "why_higher": "Awards feel like sector recognition",
+        "why_lower": "A single award for a specific project does not indicate continuous optimisation across all activities. Optimised requires systematic, sustained excellence",
+        "frequency": "occasional"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence of annual evidence-based strategy review cycle and at least one form of sector contribution (publication, advisory role, peer case study)",
+      "strong": "Annual review cycle with documented evidence-based revisions, formal horizon scanning function, multiple forms of sector contribution, and evidence of proactive innovation ahead of sector trends",
+      "examples": [
+        "Strategy revision paper citing institutional data and benchmarking informing specific changes",
+        "Published case study or sector advisory role in digital research"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-re-ppl",
+    "dimension_name": "Research: People & Culture",
+    "pillar": "Research",
+    "cross_cutting_dimension": "People & Culture",
+    "lower_level": {
+      "id": "the-re-ppl-incidental",
+      "name": "Incidental",
+      "order": 1
+    },
+    "upper_level": {
+      "id": "the-re-ppl-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "key_discriminator": "The institution has moved from self-taught, unevenly distributed digital skills among research staff to purposeful institutional investment in digital workforce development with targeted programmes",
+    "discriminator_type": "reactive_vs_planned",
+    "common_false_positives": [
+      {
+        "behaviour": "Some staff in research are highly digitally skilled",
+        "why_higher": "Visible digital expertise feels like institutional capability",
+        "why_lower": "Individual expertise acquired through personal initiative is the defining characteristic of Incidental. Intentional requires institutional programmes",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "Generic IT training is available to all staff",
+        "why_higher": "Available training feels like investment in workforce capability",
+        "why_lower": "Generic IT skills training is not the same as targeted development of domain-specific digital competencies for research",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "A targeted digital skills development programme designed specifically for research roles, with evidence of institutional funding and promotion",
+      "strong": "Targeted programme with curriculum mapped to domain needs, participation tracking, role profiles referencing digital competencies, and emerging community of practice",
+      "examples": [
+        "Digital capabilities programme for research staff with scheduled sessions and uptake data",
+        "Revised role profiles for research positions including digital competency requirements"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-re-ppl",
+    "dimension_name": "Research: People & Culture",
+    "pillar": "Research",
+    "cross_cutting_dimension": "People & Culture",
+    "lower_level": {
+      "id": "the-re-ppl-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "upper_level": {
+      "id": "the-re-ppl-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "key_discriminator": "The institution has moved from targeted but voluntary digital skills programmes for research staff to systematic capability development embedded in HR processes, career pathways, and institutional culture",
+    "discriminator_type": "planned_vs_coordinated",
+    "common_false_positives": [
+      {
+        "behaviour": "High attendance at digital training for research staff",
+        "why_higher": "Strong training uptake feels like cultural embedding",
+        "why_lower": "Attendance without evidence of sustained practice change and integration into career development is still Intentional",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "A few departments have excellent digital culture in research",
+        "why_higher": "Pockets of excellence feel like institutional integration",
+        "why_lower": "Integration requires consistent culture across all units, not concentrated excellence in leading departments",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence that digital competencies are embedded in recruitment, performance review, or promotion criteria for research roles, and that innovation is recognised institutionally",
+      "strong": "Competency framework in HR processes, structured career pathways for digital roles, institutionally supported communities of practice, change management as recognised function, and cross-institutional sharing of practice as routine",
+      "examples": [
+        "PDR templates for research roles with digital competency assessment",
+        "Innovation awards or workload allocation for digital practice development"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-re-ppl",
+    "dimension_name": "Research: People & Culture",
+    "pillar": "Research",
+    "cross_cutting_dimension": "People & Culture",
+    "lower_level": {
+      "id": "the-re-ppl-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "upper_level": {
+      "id": "the-re-ppl-optimised",
+      "name": "Optimised",
+      "order": 4
+    },
+    "key_discriminator": "The institution has moved from systematically developed digital capabilities in research to a self-sustaining innovation culture where staff autonomously drive development and the institution contributes to sector workforce practice",
+    "discriminator_type": "coordinated_vs_optimising",
+    "common_false_positives": [
+      {
+        "behaviour": "Comprehensive training catalogue for digital research skills",
+        "why_higher": "Extensive training provision feels like Optimised development",
+        "why_lower": "Optimised culture is characterised by self-sustaining peer-driven development. Dependency on centrally curated training is Integrated, not Optimised",
+        "frequency": "common"
+      },
+      {
+        "behaviour": "Staff satisfaction with digital support is high",
+        "why_higher": "Satisfaction suggests a mature support environment",
+        "why_lower": "Satisfaction with support is about Technology provision. Optimised People and Culture means staff drive their own development and innovate independently",
+        "frequency": "occasional"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence that digital capability development is self-sustaining (peer-led initiatives operating without central dependency) and that the institution contributes to sector workforce development",
+      "strong": "Staff-led innovation as norm, institution recognised externally for digital research culture, sector contributions through training or publications, recruitment advantage from digital reputation",
+      "examples": [
+        "Peer-led digital development programmes initiated by research staff",
+        "External invitations for staff to lead sector workshops on digital research practice"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-re-tec",
+    "dimension_name": "Research: Technology",
+    "pillar": "Research",
+    "cross_cutting_dimension": "Technology",
+    "lower_level": {
+      "id": "the-re-tec-incidental",
+      "name": "Incidental",
+      "order": 1
+    },
+    "upper_level": {
+      "id": "the-re-tec-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "key_discriminator": "The institution has moved from fragmented, siloed technology infrastructure for research to having a documented technology roadmap with purposeful investment priorities and emerging integration",
+    "discriminator_type": "reactive_vs_planned",
+    "common_false_positives": [
+      {
+        "behaviour": "Modern systems have been procured for research",
+        "why_higher": "New technology feels like intentional investment",
+        "why_lower": "Procurement without a roadmap or integration plan can increase fragmentation rather than reduce it",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "IT provides responsive support for research systems",
+        "why_higher": "Good support feels like purposeful technology management",
+        "why_lower": "Operational support (keeping systems running) is distinct from strategic technology planning. Support quality is necessary but not sufficient",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "A documented technology roadmap or investment plan for research with identified integration priorities",
+      "strong": "Approved roadmap with timeline, budget, architectural standards for new procurement, key integrations implemented or underway, and institutional procurement process for domain technology",
+      "examples": [
+        "Technology roadmap for research approved by relevant governance body",
+        "SSO or data integration between core research systems"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-re-tec",
+    "dimension_name": "Research: Technology",
+    "pillar": "Research",
+    "cross_cutting_dimension": "Technology",
+    "lower_level": {
+      "id": "the-re-tec-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "upper_level": {
+      "id": "the-re-tec-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "key_discriminator": "The institution has moved from partial technology modernisation with an emerging roadmap for research to a coherent, governed enterprise architecture with integrated systems and systematic lifecycle management",
+    "discriminator_type": "planned_vs_coordinated",
+    "common_false_positives": [
+      {
+        "behaviour": "All units use the same system for a core research function",
+        "why_higher": "Shared systems feel like integration",
+        "why_lower": "Mandated use of a single system (e.g. institution-wide VLE) can be an IT decision without architectural integration or governance. Integration requires that systems are connected and governed holistically",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "Cloud migration for research systems is complete",
+        "why_higher": "Cloud feels modern and integrated",
+        "why_lower": "Cloud hosting can reproduce siloed architecture in a new environment. Integration requires architectural coherence, not just hosting model change",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence of enterprise architecture standards governing research technology decisions, with core systems integrated through APIs or middleware",
+      "strong": "Documented enterprise architecture, integrated core systems, planned refresh cycles, governance body with domain representation, service level monitoring, and technology enabling cross-institutional workflows",
+      "examples": [
+        "Enterprise architecture document covering research systems",
+        "API integrations between core research platforms with data flowing reliably"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-re-tec",
+    "dimension_name": "Research: Technology",
+    "pillar": "Research",
+    "cross_cutting_dimension": "Technology",
+    "lower_level": {
+      "id": "the-re-tec-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "upper_level": {
+      "id": "the-re-tec-optimised",
+      "name": "Optimised",
+      "order": 4
+    },
+    "key_discriminator": "The institution has moved from coherent, governed technology infrastructure for research to a sector-leading, extensible architecture that enables rapid innovation and is recognised as exemplary",
+    "discriminator_type": "coordinated_vs_optimising",
+    "common_false_positives": [
+      {
+        "behaviour": "The institution is an early adopter of new technologies for research",
+        "why_higher": "Early adoption feels like sector leadership",
+        "why_lower": "Early adoption without architectural integration, evidence-based evaluation, and continuous optimisation is technology enthusiasm not maturity",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "Technology availability is 99.9% for research systems",
+        "why_higher": "High reliability feels like Optimised",
+        "why_lower": "Reliability is a characteristic of Integrated. Optimised additionally requires innovation capacity, extensible architecture, and sector contribution",
+        "frequency": "occasional"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence of extensible architecture enabling rapid integration of new capabilities and at least one form of sector recognition for technology practice in research",
+      "strong": "API-first or microservices architecture, innovation sandbox environments, emerging technology assessment process, real-time monitoring, and sector recognition through publications, awards, or peer visits",
+      "examples": [
+        "Innovation sandbox for research technology testing",
+        "Published case study on research technology architecture"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-re-dat",
+    "dimension_name": "Research: Data",
+    "pillar": "Research",
+    "cross_cutting_dimension": "Data",
+    "lower_level": {
+      "id": "the-re-dat-incidental",
+      "name": "Incidental",
+      "order": 1
+    },
+    "upper_level": {
+      "id": "the-re-dat-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "key_discriminator": "The institution has moved from fragmented, ad-hoc data collection for research to purposeful identification and systematic collection of core datasets with emerging governance",
+    "discriminator_type": "reactive_vs_planned",
+    "common_false_positives": [
+      {
+        "behaviour": "Statutory data returns related to research are produced on time",
+        "why_higher": "Meeting regulatory requirements feels like data management",
+        "why_lower": "Statutory returns are compliance obligations, not evidence of purposeful data management for domain improvement",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "Individual teams maintain detailed spreadsheets of research data",
+        "why_higher": "Detailed local data feels like data awareness",
+        "why_lower": "Uncoordinated local data collection without institutional governance is the hallmark of Incidental data maturity",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence that core datasets for research have been identified, collection is becoming systematic, and data governance documentation exists",
+      "strong": "Identified core datasets with defined collection processes, data governance policy drafted or approved, initial dashboards or reports, and data quality issues identified with remediation underway",
+      "examples": [
+        "Data dictionary for core research datasets",
+        "Dashboard showing key research metrics, even if partial"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-re-dat",
+    "dimension_name": "Research: Data",
+    "pillar": "Research",
+    "cross_cutting_dimension": "Data",
+    "lower_level": {
+      "id": "the-re-dat-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "upper_level": {
+      "id": "the-re-dat-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "key_discriminator": "The institution has moved from purposeful but inconsistent data management for research to comprehensive, governed, institution-wide data infrastructure with systematic quality management and data-informed decision-making as the norm",
+    "discriminator_type": "planned_vs_coordinated",
+    "common_false_positives": [
+      {
+        "behaviour": "Dashboards exist for research metrics",
+        "why_higher": "Dashboards feel like data maturity",
+        "why_lower": "Dashboards can sit on poor-quality, partially governed data. Integrated data requires quality management and governance, not just visualisation",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "A data governance policy has been approved",
+        "why_higher": "An approved policy feels like governance",
+        "why_lower": "A policy without evidence of compliance monitoring, enforcement, and regular review is Intentional not Integrated",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence of operational data governance with compliance monitoring, institution-wide data infrastructure, systematic data quality management, and data-informed decision-making across units",
+      "strong": "Data governance framework with defined roles and active compliance, integrated data warehouse, regular data quality audits, self-service analytics for authorised users, and committee papers routinely including data analysis",
+      "examples": [
+        "Data governance committee minutes showing compliance monitoring for research data",
+        "Institution-wide research analytics platform with self-service access"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-re-dat",
+    "dimension_name": "Research: Data",
+    "pillar": "Research",
+    "cross_cutting_dimension": "Data",
+    "lower_level": {
+      "id": "the-re-dat-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "upper_level": {
+      "id": "the-re-dat-optimised",
+      "name": "Optimised",
+      "order": 4
+    },
+    "key_discriminator": "The institution has moved from comprehensive, governed data management for research to advanced analytics, predictive capabilities, and recognised sector leadership in data practice",
+    "discriminator_type": "coordinated_vs_optimising",
+    "common_false_positives": [
+      {
+        "behaviour": "Comprehensive reporting exists for all research metrics",
+        "why_higher": "Complete reporting feels like data excellence",
+        "why_lower": "Comprehensive reporting is Integrated. Optimised requires predictive analytics, continuous improvement, and sector contribution beyond descriptive reporting",
+        "frequency": "common"
+      },
+      {
+        "behaviour": "AI or ML tools are used on research data",
+        "why_higher": "Advanced technology feels like advanced maturity",
+        "why_lower": "AI/ML on ungoverned or poor-quality data does not produce Optimised outcomes. The full data quality and governance stack must be mature first",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence of advanced analytics or predictive modelling in production use for research, and contribution to sector data practice",
+      "strong": "Predictive models with documented impact, real-time analytics, exemplary governance referenced by peers, sector contributions through standards or publications, high data literacy enabling self-service advanced analysis",
+      "examples": [
+        "Predictive model for research with documented improvement in outcomes",
+        "Published data governance framework adopted by peer institutions"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-re-uti",
+    "dimension_name": "Research: Utilisation",
+    "pillar": "Research",
+    "cross_cutting_dimension": "Utilisation",
+    "lower_level": {
+      "id": "the-re-uti-incidental",
+      "name": "Incidental",
+      "order": 1
+    },
+    "upper_level": {
+      "id": "the-re-uti-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "key_discriminator": "The institution has moved from widespread underuse of available digital tools for research to purposeful promotion of adoption with training, support, and emerging expectations for tool usage",
+    "discriminator_type": "reactive_vs_planned",
+    "common_false_positives": [
+      {
+        "behaviour": "High licence counts exist for research digital tools",
+        "why_higher": "Wide licensing feels like commitment to utilisation",
+        "why_lower": "Licence procurement is a Technology decision. Utilisation requires evidence of actual meaningful use of the licensed tools",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "Some power users achieve impressive results with research tools",
+        "why_higher": "Power user success feels like good utilisation",
+        "why_lower": "Individual power users are the Incidental pattern. Intentional requires institutional programmes promoting adoption across the broader user base",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence of institutional programmes promoting digital tool adoption for research with training provision and emerging usage expectations",
+      "strong": "Documented minimum standards for tool usage, training programme with uptake tracking, adoption data for core tools, and management engagement in promoting adoption",
+      "examples": [
+        "Minimum standards document for research digital tool usage",
+        "Training programme schedule with attendance records for research tools"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-re-uti",
+    "dimension_name": "Research: Utilisation",
+    "pillar": "Research",
+    "cross_cutting_dimension": "Utilisation",
+    "lower_level": {
+      "id": "the-re-uti-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "upper_level": {
+      "id": "the-re-uti-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "key_discriminator": "The institution has moved from purposeful but uneven promotion of tool adoption for research to consistent, institution-wide utilisation with monitored standards, impact measurement, and digital workflows replacing manual processes",
+    "discriminator_type": "planned_vs_coordinated",
+    "common_false_positives": [
+      {
+        "behaviour": "Most departments report good tool adoption for research",
+        "why_higher": "Widespread self-reported adoption feels like integration",
+        "why_lower": "Self-reported adoption without institution-wide monitoring data and consistent standards may mask significant variation. Integration requires verified consistency",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "Digital workflows exist for some core research processes",
+        "why_higher": "Some digitised processes feel like Integrated utilisation",
+        "why_lower": "Selective digitisation alongside persistent manual processes in other areas is Intentional. Integrated requires that digital workflows are the standard for core activities",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence of institution-wide adoption monitoring showing consistent utilisation across units, with impact on research outcomes measured",
+      "strong": "Institution-wide usage dashboards showing consistent high adoption, impact measurement linking tool use to outcomes, user feedback informing optimisation, and digital workflows as standard for core activities",
+      "examples": [
+        "Usage dashboard showing >80% adoption of core research tool features across all units",
+        "Impact analysis linking digital tool utilisation to research outcome improvements"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-re-uti",
+    "dimension_name": "Research: Utilisation",
+    "pillar": "Research",
+    "cross_cutting_dimension": "Utilisation",
+    "lower_level": {
+      "id": "the-re-uti-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "upper_level": {
+      "id": "the-re-uti-optimised",
+      "name": "Optimised",
+      "order": 4
+    },
+    "key_discriminator": "The institution has moved from consistent institution-wide utilisation for research to user-driven innovation, continuous optimisation, and recognised sector leadership in how tools are deployed and leveraged",
+    "discriminator_type": "coordinated_vs_optimising",
+    "common_false_positives": [
+      {
+        "behaviour": "Universal adoption of core digital tools for research",
+        "why_higher": "Complete adoption feels like Optimised utilisation",
+        "why_lower": "Universal adoption of standard features is Integrated. Optimised requires that users innovate new use cases and drive continuous improvement beyond standard deployment",
+        "frequency": "common"
+      },
+      {
+        "behaviour": "Regular tool upgrades are implemented for research",
+        "why_higher": "Staying current feels like optimisation",
+        "why_lower": "Upgrading is technology maintenance (Technology dimension). Optimised Utilisation means users actively drive new ways of working, not just accept upgrades",
+        "frequency": "occasional"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence of user-driven innovation in tool use for research, continuous optimisation based on usage analytics, and sector recognition",
+      "strong": "User-contributed innovations shared institution-wide, real-time analytics driving optimisation, quantified impact on research outcomes, peer recognition through case studies or visits",
+      "examples": [
+        "Innovation showcase featuring user-created applications of research tools",
+        "Vendor or sector body case study on the institution's research tool utilisation"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-ps-str",
+    "dimension_name": "Professional Services: Strategy",
+    "pillar": "Professional Services",
+    "cross_cutting_dimension": "Strategy",
+    "lower_level": {
+      "id": "the-ps-str-incidental",
+      "name": "Incidental",
+      "order": 1
+    },
+    "upper_level": {
+      "id": "the-ps-str-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "key_discriminator": "The institution has moved from reactive, ad-hoc digital adoption in professional services to having approved, purposeful digital objectives with identified owners and resources",
+    "discriminator_type": "reactive_vs_planned",
+    "common_false_positives": [
+      {
+        "behaviour": "A strategy document exists that mentions digital in professional services",
+        "why_higher": "Having a written strategy feels like intentional planning",
+        "why_lower": "The document exists on paper but has no specific objectives, timelines, owners, or resources allocated to implementation",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "Senior leaders verbally express commitment to digital transformation in professional services",
+        "why_higher": "Leadership buy-in feels like strategic intent",
+        "why_lower": "Verbal commitment without documented objectives and resource allocation is aspiration not strategy",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "An approved document with specific digital objectives for professional services, named owners, and identified resources",
+      "strong": "Approved strategy with KPIs, governance mechanism, timeline, budget allocation, and evidence of initial implementation activity",
+      "examples": [
+        "Digital professional services strategy approved by relevant committee with implementation plan",
+        "Board minutes showing resource allocation decision for digital professional services initiatives"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-ps-str",
+    "dimension_name": "Professional Services: Strategy",
+    "pillar": "Professional Services",
+    "cross_cutting_dimension": "Strategy",
+    "lower_level": {
+      "id": "the-ps-str-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "upper_level": {
+      "id": "the-ps-str-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "key_discriminator": "The institution has moved from siloed, project-based digital initiatives in professional services to coordinated, institution-wide implementation with shared governance and recurrent funding",
+    "discriminator_type": "planned_vs_coordinated",
+    "common_false_positives": [
+      {
+        "behaviour": "Digital initiatives in professional services are happening in multiple departments",
+        "why_higher": "Activity in multiple locations feels like institution-wide coordination",
+        "why_lower": "Multiple independent initiatives without coordinating governance is parallel Intentional activity, not integration",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "A central team coordinates digital professional services projects",
+        "why_higher": "Centralisation feels like coordination",
+        "why_lower": "A central team can operate in isolation from faculties. Integration requires bidirectional governance connecting centre and units",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence that digital professional services initiatives are governed by a cross-institutional body with authority, and that unit-level plans explicitly reference institutional strategy",
+      "strong": "Cross-institutional governance body with decision authority, unit-level implementation plans aligned to institutional strategy, recurrent funding, and regular KPI reporting to senior leadership",
+      "examples": [
+        "Faculty operational plans with digital professional services targets mapped to institutional strategy",
+        "Terms of reference for cross-institutional digital professional services board with decision-making authority"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-ps-str",
+    "dimension_name": "Professional Services: Strategy",
+    "pillar": "Professional Services",
+    "cross_cutting_dimension": "Strategy",
+    "lower_level": {
+      "id": "the-ps-str-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "upper_level": {
+      "id": "the-ps-str-optimised",
+      "name": "Optimised",
+      "order": 4
+    },
+    "key_discriminator": "The institution has moved from functioning institution-wide coordination in professional services to proactive innovation, evidence-based continuous improvement, and recognised sector leadership",
+    "discriminator_type": "coordinated_vs_optimising",
+    "common_false_positives": [
+      {
+        "behaviour": "The institution benchmarks its digital professional services approach against peers",
+        "why_higher": "Benchmarking feels like a sector-leading practice",
+        "why_lower": "Reactive benchmarking (copying good practice from others) is characteristic of Integrated. Optimised institutions set benchmarks through innovation",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "The institution has won awards for digital professional services initiatives",
+        "why_higher": "Awards feel like sector recognition",
+        "why_lower": "A single award for a specific project does not indicate continuous optimisation across all activities. Optimised requires systematic, sustained excellence",
+        "frequency": "occasional"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence of annual evidence-based strategy review cycle and at least one form of sector contribution (publication, advisory role, peer case study)",
+      "strong": "Annual review cycle with documented evidence-based revisions, formal horizon scanning function, multiple forms of sector contribution, and evidence of proactive innovation ahead of sector trends",
+      "examples": [
+        "Strategy revision paper citing institutional data and benchmarking informing specific changes",
+        "Published case study or sector advisory role in digital professional services"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-ps-ppl",
+    "dimension_name": "Professional Services: People & Culture",
+    "pillar": "Professional Services",
+    "cross_cutting_dimension": "People & Culture",
+    "lower_level": {
+      "id": "the-ps-ppl-incidental",
+      "name": "Incidental",
+      "order": 1
+    },
+    "upper_level": {
+      "id": "the-ps-ppl-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "key_discriminator": "The institution has moved from self-taught, unevenly distributed digital skills among professional services staff to purposeful institutional investment in digital workforce development with targeted programmes",
+    "discriminator_type": "reactive_vs_planned",
+    "common_false_positives": [
+      {
+        "behaviour": "Some staff in professional services are highly digitally skilled",
+        "why_higher": "Visible digital expertise feels like institutional capability",
+        "why_lower": "Individual expertise acquired through personal initiative is the defining characteristic of Incidental. Intentional requires institutional programmes",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "Generic IT training is available to all staff",
+        "why_higher": "Available training feels like investment in workforce capability",
+        "why_lower": "Generic IT skills training is not the same as targeted development of domain-specific digital competencies for professional services",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "A targeted digital skills development programme designed specifically for professional services roles, with evidence of institutional funding and promotion",
+      "strong": "Targeted programme with curriculum mapped to domain needs, participation tracking, role profiles referencing digital competencies, and emerging community of practice",
+      "examples": [
+        "Digital capabilities programme for professional services staff with scheduled sessions and uptake data",
+        "Revised role profiles for professional services positions including digital competency requirements"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-ps-ppl",
+    "dimension_name": "Professional Services: People & Culture",
+    "pillar": "Professional Services",
+    "cross_cutting_dimension": "People & Culture",
+    "lower_level": {
+      "id": "the-ps-ppl-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "upper_level": {
+      "id": "the-ps-ppl-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "key_discriminator": "The institution has moved from targeted but voluntary digital skills programmes for professional services staff to systematic capability development embedded in HR processes, career pathways, and institutional culture",
+    "discriminator_type": "planned_vs_coordinated",
+    "common_false_positives": [
+      {
+        "behaviour": "High attendance at digital training for professional services staff",
+        "why_higher": "Strong training uptake feels like cultural embedding",
+        "why_lower": "Attendance without evidence of sustained practice change and integration into career development is still Intentional",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "A few departments have excellent digital culture in professional services",
+        "why_higher": "Pockets of excellence feel like institutional integration",
+        "why_lower": "Integration requires consistent culture across all units, not concentrated excellence in leading departments",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence that digital competencies are embedded in recruitment, performance review, or promotion criteria for professional services roles, and that innovation is recognised institutionally",
+      "strong": "Competency framework in HR processes, structured career pathways for digital roles, institutionally supported communities of practice, change management as recognised function, and cross-institutional sharing of practice as routine",
+      "examples": [
+        "PDR templates for professional services roles with digital competency assessment",
+        "Innovation awards or workload allocation for digital practice development"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-ps-ppl",
+    "dimension_name": "Professional Services: People & Culture",
+    "pillar": "Professional Services",
+    "cross_cutting_dimension": "People & Culture",
+    "lower_level": {
+      "id": "the-ps-ppl-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "upper_level": {
+      "id": "the-ps-ppl-optimised",
+      "name": "Optimised",
+      "order": 4
+    },
+    "key_discriminator": "The institution has moved from systematically developed digital capabilities in professional services to a self-sustaining innovation culture where staff autonomously drive development and the institution contributes to sector workforce practice",
+    "discriminator_type": "coordinated_vs_optimising",
+    "common_false_positives": [
+      {
+        "behaviour": "Comprehensive training catalogue for digital professional services skills",
+        "why_higher": "Extensive training provision feels like Optimised development",
+        "why_lower": "Optimised culture is characterised by self-sustaining peer-driven development. Dependency on centrally curated training is Integrated, not Optimised",
+        "frequency": "common"
+      },
+      {
+        "behaviour": "Staff satisfaction with digital support is high",
+        "why_higher": "Satisfaction suggests a mature support environment",
+        "why_lower": "Satisfaction with support is about Technology provision. Optimised People and Culture means staff drive their own development and innovate independently",
+        "frequency": "occasional"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence that digital capability development is self-sustaining (peer-led initiatives operating without central dependency) and that the institution contributes to sector workforce development",
+      "strong": "Staff-led innovation as norm, institution recognised externally for digital professional services culture, sector contributions through training or publications, recruitment advantage from digital reputation",
+      "examples": [
+        "Peer-led digital development programmes initiated by professional services staff",
+        "External invitations for staff to lead sector workshops on digital professional services practice"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-ps-tec",
+    "dimension_name": "Professional Services: Technology",
+    "pillar": "Professional Services",
+    "cross_cutting_dimension": "Technology",
+    "lower_level": {
+      "id": "the-ps-tec-incidental",
+      "name": "Incidental",
+      "order": 1
+    },
+    "upper_level": {
+      "id": "the-ps-tec-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "key_discriminator": "The institution has moved from fragmented, siloed technology infrastructure for professional services to having a documented technology roadmap with purposeful investment priorities and emerging integration",
+    "discriminator_type": "reactive_vs_planned",
+    "common_false_positives": [
+      {
+        "behaviour": "Modern systems have been procured for professional services",
+        "why_higher": "New technology feels like intentional investment",
+        "why_lower": "Procurement without a roadmap or integration plan can increase fragmentation rather than reduce it",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "IT provides responsive support for professional services systems",
+        "why_higher": "Good support feels like purposeful technology management",
+        "why_lower": "Operational support (keeping systems running) is distinct from strategic technology planning. Support quality is necessary but not sufficient",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "A documented technology roadmap or investment plan for professional services with identified integration priorities",
+      "strong": "Approved roadmap with timeline, budget, architectural standards for new procurement, key integrations implemented or underway, and institutional procurement process for domain technology",
+      "examples": [
+        "Technology roadmap for professional services approved by relevant governance body",
+        "SSO or data integration between core professional services systems"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-ps-tec",
+    "dimension_name": "Professional Services: Technology",
+    "pillar": "Professional Services",
+    "cross_cutting_dimension": "Technology",
+    "lower_level": {
+      "id": "the-ps-tec-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "upper_level": {
+      "id": "the-ps-tec-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "key_discriminator": "The institution has moved from partial technology modernisation with an emerging roadmap for professional services to a coherent, governed enterprise architecture with integrated systems and systematic lifecycle management",
+    "discriminator_type": "planned_vs_coordinated",
+    "common_false_positives": [
+      {
+        "behaviour": "All units use the same system for a core professional services function",
+        "why_higher": "Shared systems feel like integration",
+        "why_lower": "Mandated use of a single system (e.g. institution-wide VLE) can be an IT decision without architectural integration or governance. Integration requires that systems are connected and governed holistically",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "Cloud migration for professional services systems is complete",
+        "why_higher": "Cloud feels modern and integrated",
+        "why_lower": "Cloud hosting can reproduce siloed architecture in a new environment. Integration requires architectural coherence, not just hosting model change",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence of enterprise architecture standards governing professional services technology decisions, with core systems integrated through APIs or middleware",
+      "strong": "Documented enterprise architecture, integrated core systems, planned refresh cycles, governance body with domain representation, service level monitoring, and technology enabling cross-institutional workflows",
+      "examples": [
+        "Enterprise architecture document covering professional services systems",
+        "API integrations between core professional services platforms with data flowing reliably"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-ps-tec",
+    "dimension_name": "Professional Services: Technology",
+    "pillar": "Professional Services",
+    "cross_cutting_dimension": "Technology",
+    "lower_level": {
+      "id": "the-ps-tec-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "upper_level": {
+      "id": "the-ps-tec-optimised",
+      "name": "Optimised",
+      "order": 4
+    },
+    "key_discriminator": "The institution has moved from coherent, governed technology infrastructure for professional services to a sector-leading, extensible architecture that enables rapid innovation and is recognised as exemplary",
+    "discriminator_type": "coordinated_vs_optimising",
+    "common_false_positives": [
+      {
+        "behaviour": "The institution is an early adopter of new technologies for professional services",
+        "why_higher": "Early adoption feels like sector leadership",
+        "why_lower": "Early adoption without architectural integration, evidence-based evaluation, and continuous optimisation is technology enthusiasm not maturity",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "Technology availability is 99.9% for professional services systems",
+        "why_higher": "High reliability feels like Optimised",
+        "why_lower": "Reliability is a characteristic of Integrated. Optimised additionally requires innovation capacity, extensible architecture, and sector contribution",
+        "frequency": "occasional"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence of extensible architecture enabling rapid integration of new capabilities and at least one form of sector recognition for technology practice in professional services",
+      "strong": "API-first or microservices architecture, innovation sandbox environments, emerging technology assessment process, real-time monitoring, and sector recognition through publications, awards, or peer visits",
+      "examples": [
+        "Innovation sandbox for professional services technology testing",
+        "Published case study on professional services technology architecture"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-ps-dat",
+    "dimension_name": "Professional Services: Data",
+    "pillar": "Professional Services",
+    "cross_cutting_dimension": "Data",
+    "lower_level": {
+      "id": "the-ps-dat-incidental",
+      "name": "Incidental",
+      "order": 1
+    },
+    "upper_level": {
+      "id": "the-ps-dat-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "key_discriminator": "The institution has moved from fragmented, ad-hoc data collection for professional services to purposeful identification and systematic collection of core datasets with emerging governance",
+    "discriminator_type": "reactive_vs_planned",
+    "common_false_positives": [
+      {
+        "behaviour": "Statutory data returns related to professional services are produced on time",
+        "why_higher": "Meeting regulatory requirements feels like data management",
+        "why_lower": "Statutory returns are compliance obligations, not evidence of purposeful data management for domain improvement",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "Individual teams maintain detailed spreadsheets of professional services data",
+        "why_higher": "Detailed local data feels like data awareness",
+        "why_lower": "Uncoordinated local data collection without institutional governance is the hallmark of Incidental data maturity",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence that core datasets for professional services have been identified, collection is becoming systematic, and data governance documentation exists",
+      "strong": "Identified core datasets with defined collection processes, data governance policy drafted or approved, initial dashboards or reports, and data quality issues identified with remediation underway",
+      "examples": [
+        "Data dictionary for core professional services datasets",
+        "Dashboard showing key professional services metrics, even if partial"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-ps-dat",
+    "dimension_name": "Professional Services: Data",
+    "pillar": "Professional Services",
+    "cross_cutting_dimension": "Data",
+    "lower_level": {
+      "id": "the-ps-dat-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "upper_level": {
+      "id": "the-ps-dat-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "key_discriminator": "The institution has moved from purposeful but inconsistent data management for professional services to comprehensive, governed, institution-wide data infrastructure with systematic quality management and data-informed decision-making as the norm",
+    "discriminator_type": "planned_vs_coordinated",
+    "common_false_positives": [
+      {
+        "behaviour": "Dashboards exist for professional services metrics",
+        "why_higher": "Dashboards feel like data maturity",
+        "why_lower": "Dashboards can sit on poor-quality, partially governed data. Integrated data requires quality management and governance, not just visualisation",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "A data governance policy has been approved",
+        "why_higher": "An approved policy feels like governance",
+        "why_lower": "A policy without evidence of compliance monitoring, enforcement, and regular review is Intentional not Integrated",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence of operational data governance with compliance monitoring, institution-wide data infrastructure, systematic data quality management, and data-informed decision-making across units",
+      "strong": "Data governance framework with defined roles and active compliance, integrated data warehouse, regular data quality audits, self-service analytics for authorised users, and committee papers routinely including data analysis",
+      "examples": [
+        "Data governance committee minutes showing compliance monitoring for professional services data",
+        "Institution-wide professional services analytics platform with self-service access"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-ps-dat",
+    "dimension_name": "Professional Services: Data",
+    "pillar": "Professional Services",
+    "cross_cutting_dimension": "Data",
+    "lower_level": {
+      "id": "the-ps-dat-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "upper_level": {
+      "id": "the-ps-dat-optimised",
+      "name": "Optimised",
+      "order": 4
+    },
+    "key_discriminator": "The institution has moved from comprehensive, governed data management for professional services to advanced analytics, predictive capabilities, and recognised sector leadership in data practice",
+    "discriminator_type": "coordinated_vs_optimising",
+    "common_false_positives": [
+      {
+        "behaviour": "Comprehensive reporting exists for all professional services metrics",
+        "why_higher": "Complete reporting feels like data excellence",
+        "why_lower": "Comprehensive reporting is Integrated. Optimised requires predictive analytics, continuous improvement, and sector contribution beyond descriptive reporting",
+        "frequency": "common"
+      },
+      {
+        "behaviour": "AI or ML tools are used on professional services data",
+        "why_higher": "Advanced technology feels like advanced maturity",
+        "why_lower": "AI/ML on ungoverned or poor-quality data does not produce Optimised outcomes. The full data quality and governance stack must be mature first",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence of advanced analytics or predictive modelling in production use for professional services, and contribution to sector data practice",
+      "strong": "Predictive models with documented impact, real-time analytics, exemplary governance referenced by peers, sector contributions through standards or publications, high data literacy enabling self-service advanced analysis",
+      "examples": [
+        "Predictive model for professional services with documented improvement in outcomes",
+        "Published data governance framework adopted by peer institutions"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-ps-uti",
+    "dimension_name": "Professional Services: Utilisation",
+    "pillar": "Professional Services",
+    "cross_cutting_dimension": "Utilisation",
+    "lower_level": {
+      "id": "the-ps-uti-incidental",
+      "name": "Incidental",
+      "order": 1
+    },
+    "upper_level": {
+      "id": "the-ps-uti-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "key_discriminator": "The institution has moved from widespread underuse of available digital tools for professional services to purposeful promotion of adoption with training, support, and emerging expectations for tool usage",
+    "discriminator_type": "reactive_vs_planned",
+    "common_false_positives": [
+      {
+        "behaviour": "High licence counts exist for professional services digital tools",
+        "why_higher": "Wide licensing feels like commitment to utilisation",
+        "why_lower": "Licence procurement is a Technology decision. Utilisation requires evidence of actual meaningful use of the licensed tools",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "Some power users achieve impressive results with professional services tools",
+        "why_higher": "Power user success feels like good utilisation",
+        "why_lower": "Individual power users are the Incidental pattern. Intentional requires institutional programmes promoting adoption across the broader user base",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence of institutional programmes promoting digital tool adoption for professional services with training provision and emerging usage expectations",
+      "strong": "Documented minimum standards for tool usage, training programme with uptake tracking, adoption data for core tools, and management engagement in promoting adoption",
+      "examples": [
+        "Minimum standards document for professional services digital tool usage",
+        "Training programme schedule with attendance records for professional services tools"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-ps-uti",
+    "dimension_name": "Professional Services: Utilisation",
+    "pillar": "Professional Services",
+    "cross_cutting_dimension": "Utilisation",
+    "lower_level": {
+      "id": "the-ps-uti-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "upper_level": {
+      "id": "the-ps-uti-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "key_discriminator": "The institution has moved from purposeful but uneven promotion of tool adoption for professional services to consistent, institution-wide utilisation with monitored standards, impact measurement, and digital workflows replacing manual processes",
+    "discriminator_type": "planned_vs_coordinated",
+    "common_false_positives": [
+      {
+        "behaviour": "Most departments report good tool adoption for professional services",
+        "why_higher": "Widespread self-reported adoption feels like integration",
+        "why_lower": "Self-reported adoption without institution-wide monitoring data and consistent standards may mask significant variation. Integration requires verified consistency",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "Digital workflows exist for some core professional services processes",
+        "why_higher": "Some digitised processes feel like Integrated utilisation",
+        "why_lower": "Selective digitisation alongside persistent manual processes in other areas is Intentional. Integrated requires that digital workflows are the standard for core activities",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence of institution-wide adoption monitoring showing consistent utilisation across units, with impact on professional services outcomes measured",
+      "strong": "Institution-wide usage dashboards showing consistent high adoption, impact measurement linking tool use to outcomes, user feedback informing optimisation, and digital workflows as standard for core activities",
+      "examples": [
+        "Usage dashboard showing >80% adoption of core professional services tool features across all units",
+        "Impact analysis linking digital tool utilisation to professional services outcome improvements"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-ps-uti",
+    "dimension_name": "Professional Services: Utilisation",
+    "pillar": "Professional Services",
+    "cross_cutting_dimension": "Utilisation",
+    "lower_level": {
+      "id": "the-ps-uti-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "upper_level": {
+      "id": "the-ps-uti-optimised",
+      "name": "Optimised",
+      "order": 4
+    },
+    "key_discriminator": "The institution has moved from consistent institution-wide utilisation for professional services to user-driven innovation, continuous optimisation, and recognised sector leadership in how tools are deployed and leveraged",
+    "discriminator_type": "coordinated_vs_optimising",
+    "common_false_positives": [
+      {
+        "behaviour": "Universal adoption of core digital tools for professional services",
+        "why_higher": "Complete adoption feels like Optimised utilisation",
+        "why_lower": "Universal adoption of standard features is Integrated. Optimised requires that users innovate new use cases and drive continuous improvement beyond standard deployment",
+        "frequency": "common"
+      },
+      {
+        "behaviour": "Regular tool upgrades are implemented for professional services",
+        "why_higher": "Staying current feels like optimisation",
+        "why_lower": "Upgrading is technology maintenance (Technology dimension). Optimised Utilisation means users actively drive new ways of working, not just accept upgrades",
+        "frequency": "occasional"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence of user-driven innovation in tool use for professional services, continuous optimisation based on usage analytics, and sector recognition",
+      "strong": "User-contributed innovations shared institution-wide, real-time analytics driving optimisation, quantified impact on professional services outcomes, peer recognition through case studies or visits",
+      "examples": [
+        "Innovation showcase featuring user-created applications of professional services tools",
+        "Vendor or sector body case study on the institution's professional services tool utilisation"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-pg-str",
+    "dimension_name": "Planning & Governance: Strategy",
+    "pillar": "Planning & Governance",
+    "cross_cutting_dimension": "Strategy",
+    "lower_level": {
+      "id": "the-pg-str-incidental",
+      "name": "Incidental",
+      "order": 1
+    },
+    "upper_level": {
+      "id": "the-pg-str-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "key_discriminator": "The institution has moved from reactive, ad-hoc digital adoption in planning and governance to having approved, purposeful digital objectives with identified owners and resources",
+    "discriminator_type": "reactive_vs_planned",
+    "common_false_positives": [
+      {
+        "behaviour": "A strategy document exists that mentions digital in planning and governance",
+        "why_higher": "Having a written strategy feels like intentional planning",
+        "why_lower": "The document exists on paper but has no specific objectives, timelines, owners, or resources allocated to implementation",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "Senior leaders verbally express commitment to digital transformation in planning and governance",
+        "why_higher": "Leadership buy-in feels like strategic intent",
+        "why_lower": "Verbal commitment without documented objectives and resource allocation is aspiration not strategy",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "An approved document with specific digital objectives for planning and governance, named owners, and identified resources",
+      "strong": "Approved strategy with KPIs, governance mechanism, timeline, budget allocation, and evidence of initial implementation activity",
+      "examples": [
+        "Digital planning and governance strategy approved by relevant committee with implementation plan",
+        "Board minutes showing resource allocation decision for digital planning and governance initiatives"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-pg-str",
+    "dimension_name": "Planning & Governance: Strategy",
+    "pillar": "Planning & Governance",
+    "cross_cutting_dimension": "Strategy",
+    "lower_level": {
+      "id": "the-pg-str-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "upper_level": {
+      "id": "the-pg-str-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "key_discriminator": "The institution has moved from siloed, project-based digital initiatives in planning and governance to coordinated, institution-wide implementation with shared governance and recurrent funding",
+    "discriminator_type": "planned_vs_coordinated",
+    "common_false_positives": [
+      {
+        "behaviour": "Digital initiatives in planning and governance are happening in multiple departments",
+        "why_higher": "Activity in multiple locations feels like institution-wide coordination",
+        "why_lower": "Multiple independent initiatives without coordinating governance is parallel Intentional activity, not integration",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "A central team coordinates digital planning and governance projects",
+        "why_higher": "Centralisation feels like coordination",
+        "why_lower": "A central team can operate in isolation from faculties. Integration requires bidirectional governance connecting centre and units",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence that digital planning and governance initiatives are governed by a cross-institutional body with authority, and that unit-level plans explicitly reference institutional strategy",
+      "strong": "Cross-institutional governance body with decision authority, unit-level implementation plans aligned to institutional strategy, recurrent funding, and regular KPI reporting to senior leadership",
+      "examples": [
+        "Faculty operational plans with digital planning and governance targets mapped to institutional strategy",
+        "Terms of reference for cross-institutional digital planning and governance board with decision-making authority"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-pg-str",
+    "dimension_name": "Planning & Governance: Strategy",
+    "pillar": "Planning & Governance",
+    "cross_cutting_dimension": "Strategy",
+    "lower_level": {
+      "id": "the-pg-str-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "upper_level": {
+      "id": "the-pg-str-optimised",
+      "name": "Optimised",
+      "order": 4
+    },
+    "key_discriminator": "The institution has moved from functioning institution-wide coordination in planning and governance to proactive innovation, evidence-based continuous improvement, and recognised sector leadership",
+    "discriminator_type": "coordinated_vs_optimising",
+    "common_false_positives": [
+      {
+        "behaviour": "The institution benchmarks its digital planning and governance approach against peers",
+        "why_higher": "Benchmarking feels like a sector-leading practice",
+        "why_lower": "Reactive benchmarking (copying good practice from others) is characteristic of Integrated. Optimised institutions set benchmarks through innovation",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "The institution has won awards for digital planning and governance initiatives",
+        "why_higher": "Awards feel like sector recognition",
+        "why_lower": "A single award for a specific project does not indicate continuous optimisation across all activities. Optimised requires systematic, sustained excellence",
+        "frequency": "occasional"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence of annual evidence-based strategy review cycle and at least one form of sector contribution (publication, advisory role, peer case study)",
+      "strong": "Annual review cycle with documented evidence-based revisions, formal horizon scanning function, multiple forms of sector contribution, and evidence of proactive innovation ahead of sector trends",
+      "examples": [
+        "Strategy revision paper citing institutional data and benchmarking informing specific changes",
+        "Published case study or sector advisory role in digital planning and governance"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-pg-ppl",
+    "dimension_name": "Planning & Governance: People & Culture",
+    "pillar": "Planning & Governance",
+    "cross_cutting_dimension": "People & Culture",
+    "lower_level": {
+      "id": "the-pg-ppl-incidental",
+      "name": "Incidental",
+      "order": 1
+    },
+    "upper_level": {
+      "id": "the-pg-ppl-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "key_discriminator": "The institution has moved from self-taught, unevenly distributed digital skills among planning and governance staff to purposeful institutional investment in digital workforce development with targeted programmes",
+    "discriminator_type": "reactive_vs_planned",
+    "common_false_positives": [
+      {
+        "behaviour": "Some staff in planning and governance are highly digitally skilled",
+        "why_higher": "Visible digital expertise feels like institutional capability",
+        "why_lower": "Individual expertise acquired through personal initiative is the defining characteristic of Incidental. Intentional requires institutional programmes",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "Generic IT training is available to all staff",
+        "why_higher": "Available training feels like investment in workforce capability",
+        "why_lower": "Generic IT skills training is not the same as targeted development of domain-specific digital competencies for planning and governance",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "A targeted digital skills development programme designed specifically for planning and governance roles, with evidence of institutional funding and promotion",
+      "strong": "Targeted programme with curriculum mapped to domain needs, participation tracking, role profiles referencing digital competencies, and emerging community of practice",
+      "examples": [
+        "Digital capabilities programme for planning and governance staff with scheduled sessions and uptake data",
+        "Revised role profiles for planning and governance positions including digital competency requirements"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-pg-ppl",
+    "dimension_name": "Planning & Governance: People & Culture",
+    "pillar": "Planning & Governance",
+    "cross_cutting_dimension": "People & Culture",
+    "lower_level": {
+      "id": "the-pg-ppl-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "upper_level": {
+      "id": "the-pg-ppl-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "key_discriminator": "The institution has moved from targeted but voluntary digital skills programmes for planning and governance staff to systematic capability development embedded in HR processes, career pathways, and institutional culture",
+    "discriminator_type": "planned_vs_coordinated",
+    "common_false_positives": [
+      {
+        "behaviour": "High attendance at digital training for planning and governance staff",
+        "why_higher": "Strong training uptake feels like cultural embedding",
+        "why_lower": "Attendance without evidence of sustained practice change and integration into career development is still Intentional",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "A few departments have excellent digital culture in planning and governance",
+        "why_higher": "Pockets of excellence feel like institutional integration",
+        "why_lower": "Integration requires consistent culture across all units, not concentrated excellence in leading departments",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence that digital competencies are embedded in recruitment, performance review, or promotion criteria for planning and governance roles, and that innovation is recognised institutionally",
+      "strong": "Competency framework in HR processes, structured career pathways for digital roles, institutionally supported communities of practice, change management as recognised function, and cross-institutional sharing of practice as routine",
+      "examples": [
+        "PDR templates for planning and governance roles with digital competency assessment",
+        "Innovation awards or workload allocation for digital practice development"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-pg-ppl",
+    "dimension_name": "Planning & Governance: People & Culture",
+    "pillar": "Planning & Governance",
+    "cross_cutting_dimension": "People & Culture",
+    "lower_level": {
+      "id": "the-pg-ppl-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "upper_level": {
+      "id": "the-pg-ppl-optimised",
+      "name": "Optimised",
+      "order": 4
+    },
+    "key_discriminator": "The institution has moved from systematically developed digital capabilities in planning and governance to a self-sustaining innovation culture where staff autonomously drive development and the institution contributes to sector workforce practice",
+    "discriminator_type": "coordinated_vs_optimising",
+    "common_false_positives": [
+      {
+        "behaviour": "Comprehensive training catalogue for digital planning and governance skills",
+        "why_higher": "Extensive training provision feels like Optimised development",
+        "why_lower": "Optimised culture is characterised by self-sustaining peer-driven development. Dependency on centrally curated training is Integrated, not Optimised",
+        "frequency": "common"
+      },
+      {
+        "behaviour": "Staff satisfaction with digital support is high",
+        "why_higher": "Satisfaction suggests a mature support environment",
+        "why_lower": "Satisfaction with support is about Technology provision. Optimised People and Culture means staff drive their own development and innovate independently",
+        "frequency": "occasional"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence that digital capability development is self-sustaining (peer-led initiatives operating without central dependency) and that the institution contributes to sector workforce development",
+      "strong": "Staff-led innovation as norm, institution recognised externally for digital planning and governance culture, sector contributions through training or publications, recruitment advantage from digital reputation",
+      "examples": [
+        "Peer-led digital development programmes initiated by planning and governance staff",
+        "External invitations for staff to lead sector workshops on digital planning and governance practice"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-pg-tec",
+    "dimension_name": "Planning & Governance: Technology",
+    "pillar": "Planning & Governance",
+    "cross_cutting_dimension": "Technology",
+    "lower_level": {
+      "id": "the-pg-tec-incidental",
+      "name": "Incidental",
+      "order": 1
+    },
+    "upper_level": {
+      "id": "the-pg-tec-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "key_discriminator": "The institution has moved from fragmented, siloed technology infrastructure for planning and governance to having a documented technology roadmap with purposeful investment priorities and emerging integration",
+    "discriminator_type": "reactive_vs_planned",
+    "common_false_positives": [
+      {
+        "behaviour": "Modern systems have been procured for planning and governance",
+        "why_higher": "New technology feels like intentional investment",
+        "why_lower": "Procurement without a roadmap or integration plan can increase fragmentation rather than reduce it",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "IT provides responsive support for planning and governance systems",
+        "why_higher": "Good support feels like purposeful technology management",
+        "why_lower": "Operational support (keeping systems running) is distinct from strategic technology planning. Support quality is necessary but not sufficient",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "A documented technology roadmap or investment plan for planning and governance with identified integration priorities",
+      "strong": "Approved roadmap with timeline, budget, architectural standards for new procurement, key integrations implemented or underway, and institutional procurement process for domain technology",
+      "examples": [
+        "Technology roadmap for planning and governance approved by relevant governance body",
+        "SSO or data integration between core planning and governance systems"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-pg-tec",
+    "dimension_name": "Planning & Governance: Technology",
+    "pillar": "Planning & Governance",
+    "cross_cutting_dimension": "Technology",
+    "lower_level": {
+      "id": "the-pg-tec-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "upper_level": {
+      "id": "the-pg-tec-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "key_discriminator": "The institution has moved from partial technology modernisation with an emerging roadmap for planning and governance to a coherent, governed enterprise architecture with integrated systems and systematic lifecycle management",
+    "discriminator_type": "planned_vs_coordinated",
+    "common_false_positives": [
+      {
+        "behaviour": "All units use the same system for a core planning and governance function",
+        "why_higher": "Shared systems feel like integration",
+        "why_lower": "Mandated use of a single system (e.g. institution-wide VLE) can be an IT decision without architectural integration or governance. Integration requires that systems are connected and governed holistically",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "Cloud migration for planning and governance systems is complete",
+        "why_higher": "Cloud feels modern and integrated",
+        "why_lower": "Cloud hosting can reproduce siloed architecture in a new environment. Integration requires architectural coherence, not just hosting model change",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence of enterprise architecture standards governing planning and governance technology decisions, with core systems integrated through APIs or middleware",
+      "strong": "Documented enterprise architecture, integrated core systems, planned refresh cycles, governance body with domain representation, service level monitoring, and technology enabling cross-institutional workflows",
+      "examples": [
+        "Enterprise architecture document covering planning and governance systems",
+        "API integrations between core planning and governance platforms with data flowing reliably"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-pg-tec",
+    "dimension_name": "Planning & Governance: Technology",
+    "pillar": "Planning & Governance",
+    "cross_cutting_dimension": "Technology",
+    "lower_level": {
+      "id": "the-pg-tec-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "upper_level": {
+      "id": "the-pg-tec-optimised",
+      "name": "Optimised",
+      "order": 4
+    },
+    "key_discriminator": "The institution has moved from coherent, governed technology infrastructure for planning and governance to a sector-leading, extensible architecture that enables rapid innovation and is recognised as exemplary",
+    "discriminator_type": "coordinated_vs_optimising",
+    "common_false_positives": [
+      {
+        "behaviour": "The institution is an early adopter of new technologies for planning and governance",
+        "why_higher": "Early adoption feels like sector leadership",
+        "why_lower": "Early adoption without architectural integration, evidence-based evaluation, and continuous optimisation is technology enthusiasm not maturity",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "Technology availability is 99.9% for planning and governance systems",
+        "why_higher": "High reliability feels like Optimised",
+        "why_lower": "Reliability is a characteristic of Integrated. Optimised additionally requires innovation capacity, extensible architecture, and sector contribution",
+        "frequency": "occasional"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence of extensible architecture enabling rapid integration of new capabilities and at least one form of sector recognition for technology practice in planning and governance",
+      "strong": "API-first or microservices architecture, innovation sandbox environments, emerging technology assessment process, real-time monitoring, and sector recognition through publications, awards, or peer visits",
+      "examples": [
+        "Innovation sandbox for planning and governance technology testing",
+        "Published case study on planning and governance technology architecture"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-pg-dat",
+    "dimension_name": "Planning & Governance: Data",
+    "pillar": "Planning & Governance",
+    "cross_cutting_dimension": "Data",
+    "lower_level": {
+      "id": "the-pg-dat-incidental",
+      "name": "Incidental",
+      "order": 1
+    },
+    "upper_level": {
+      "id": "the-pg-dat-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "key_discriminator": "The institution has moved from fragmented, ad-hoc data collection for planning and governance to purposeful identification and systematic collection of core datasets with emerging governance",
+    "discriminator_type": "reactive_vs_planned",
+    "common_false_positives": [
+      {
+        "behaviour": "Statutory data returns related to planning and governance are produced on time",
+        "why_higher": "Meeting regulatory requirements feels like data management",
+        "why_lower": "Statutory returns are compliance obligations, not evidence of purposeful data management for domain improvement",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "Individual teams maintain detailed spreadsheets of planning and governance data",
+        "why_higher": "Detailed local data feels like data awareness",
+        "why_lower": "Uncoordinated local data collection without institutional governance is the hallmark of Incidental data maturity",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence that core datasets for planning and governance have been identified, collection is becoming systematic, and data governance documentation exists",
+      "strong": "Identified core datasets with defined collection processes, data governance policy drafted or approved, initial dashboards or reports, and data quality issues identified with remediation underway",
+      "examples": [
+        "Data dictionary for core planning and governance datasets",
+        "Dashboard showing key planning and governance metrics, even if partial"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-pg-dat",
+    "dimension_name": "Planning & Governance: Data",
+    "pillar": "Planning & Governance",
+    "cross_cutting_dimension": "Data",
+    "lower_level": {
+      "id": "the-pg-dat-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "upper_level": {
+      "id": "the-pg-dat-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "key_discriminator": "The institution has moved from purposeful but inconsistent data management for planning and governance to comprehensive, governed, institution-wide data infrastructure with systematic quality management and data-informed decision-making as the norm",
+    "discriminator_type": "planned_vs_coordinated",
+    "common_false_positives": [
+      {
+        "behaviour": "Dashboards exist for planning and governance metrics",
+        "why_higher": "Dashboards feel like data maturity",
+        "why_lower": "Dashboards can sit on poor-quality, partially governed data. Integrated data requires quality management and governance, not just visualisation",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "A data governance policy has been approved",
+        "why_higher": "An approved policy feels like governance",
+        "why_lower": "A policy without evidence of compliance monitoring, enforcement, and regular review is Intentional not Integrated",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence of operational data governance with compliance monitoring, institution-wide data infrastructure, systematic data quality management, and data-informed decision-making across units",
+      "strong": "Data governance framework with defined roles and active compliance, integrated data warehouse, regular data quality audits, self-service analytics for authorised users, and committee papers routinely including data analysis",
+      "examples": [
+        "Data governance committee minutes showing compliance monitoring for planning and governance data",
+        "Institution-wide planning and governance analytics platform with self-service access"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-pg-dat",
+    "dimension_name": "Planning & Governance: Data",
+    "pillar": "Planning & Governance",
+    "cross_cutting_dimension": "Data",
+    "lower_level": {
+      "id": "the-pg-dat-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "upper_level": {
+      "id": "the-pg-dat-optimised",
+      "name": "Optimised",
+      "order": 4
+    },
+    "key_discriminator": "The institution has moved from comprehensive, governed data management for planning and governance to advanced analytics, predictive capabilities, and recognised sector leadership in data practice",
+    "discriminator_type": "coordinated_vs_optimising",
+    "common_false_positives": [
+      {
+        "behaviour": "Comprehensive reporting exists for all planning and governance metrics",
+        "why_higher": "Complete reporting feels like data excellence",
+        "why_lower": "Comprehensive reporting is Integrated. Optimised requires predictive analytics, continuous improvement, and sector contribution beyond descriptive reporting",
+        "frequency": "common"
+      },
+      {
+        "behaviour": "AI or ML tools are used on planning and governance data",
+        "why_higher": "Advanced technology feels like advanced maturity",
+        "why_lower": "AI/ML on ungoverned or poor-quality data does not produce Optimised outcomes. The full data quality and governance stack must be mature first",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence of advanced analytics or predictive modelling in production use for planning and governance, and contribution to sector data practice",
+      "strong": "Predictive models with documented impact, real-time analytics, exemplary governance referenced by peers, sector contributions through standards or publications, high data literacy enabling self-service advanced analysis",
+      "examples": [
+        "Predictive model for planning and governance with documented improvement in outcomes",
+        "Published data governance framework adopted by peer institutions"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-pg-uti",
+    "dimension_name": "Planning & Governance: Utilisation",
+    "pillar": "Planning & Governance",
+    "cross_cutting_dimension": "Utilisation",
+    "lower_level": {
+      "id": "the-pg-uti-incidental",
+      "name": "Incidental",
+      "order": 1
+    },
+    "upper_level": {
+      "id": "the-pg-uti-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "key_discriminator": "The institution has moved from widespread underuse of available digital tools for planning and governance to purposeful promotion of adoption with training, support, and emerging expectations for tool usage",
+    "discriminator_type": "reactive_vs_planned",
+    "common_false_positives": [
+      {
+        "behaviour": "High licence counts exist for planning and governance digital tools",
+        "why_higher": "Wide licensing feels like commitment to utilisation",
+        "why_lower": "Licence procurement is a Technology decision. Utilisation requires evidence of actual meaningful use of the licensed tools",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "Some power users achieve impressive results with planning and governance tools",
+        "why_higher": "Power user success feels like good utilisation",
+        "why_lower": "Individual power users are the Incidental pattern. Intentional requires institutional programmes promoting adoption across the broader user base",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence of institutional programmes promoting digital tool adoption for planning and governance with training provision and emerging usage expectations",
+      "strong": "Documented minimum standards for tool usage, training programme with uptake tracking, adoption data for core tools, and management engagement in promoting adoption",
+      "examples": [
+        "Minimum standards document for planning and governance digital tool usage",
+        "Training programme schedule with attendance records for planning and governance tools"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-pg-uti",
+    "dimension_name": "Planning & Governance: Utilisation",
+    "pillar": "Planning & Governance",
+    "cross_cutting_dimension": "Utilisation",
+    "lower_level": {
+      "id": "the-pg-uti-intentional",
+      "name": "Intentional",
+      "order": 2
+    },
+    "upper_level": {
+      "id": "the-pg-uti-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "key_discriminator": "The institution has moved from purposeful but uneven promotion of tool adoption for planning and governance to consistent, institution-wide utilisation with monitored standards, impact measurement, and digital workflows replacing manual processes",
+    "discriminator_type": "planned_vs_coordinated",
+    "common_false_positives": [
+      {
+        "behaviour": "Most departments report good tool adoption for planning and governance",
+        "why_higher": "Widespread self-reported adoption feels like integration",
+        "why_lower": "Self-reported adoption without institution-wide monitoring data and consistent standards may mask significant variation. Integration requires verified consistency",
+        "frequency": "very_common"
+      },
+      {
+        "behaviour": "Digital workflows exist for some core planning and governance processes",
+        "why_higher": "Some digitised processes feel like Integrated utilisation",
+        "why_lower": "Selective digitisation alongside persistent manual processes in other areas is Intentional. Integrated requires that digital workflows are the standard for core activities",
+        "frequency": "common"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence of institution-wide adoption monitoring showing consistent utilisation across units, with impact on planning and governance outcomes measured",
+      "strong": "Institution-wide usage dashboards showing consistent high adoption, impact measurement linking tool use to outcomes, user feedback informing optimisation, and digital workflows as standard for core activities",
+      "examples": [
+        "Usage dashboard showing >80% adoption of core planning and governance tool features across all units",
+        "Impact analysis linking digital tool utilisation to planning and governance outcome improvements"
+      ]
+    }
+  },
+  {
+    "framework_id": "maturity-the",
+    "dimension_id": "the-pg-uti",
+    "dimension_name": "Planning & Governance: Utilisation",
+    "pillar": "Planning & Governance",
+    "cross_cutting_dimension": "Utilisation",
+    "lower_level": {
+      "id": "the-pg-uti-integrated",
+      "name": "Integrated",
+      "order": 3
+    },
+    "upper_level": {
+      "id": "the-pg-uti-optimised",
+      "name": "Optimised",
+      "order": 4
+    },
+    "key_discriminator": "The institution has moved from consistent institution-wide utilisation for planning and governance to user-driven innovation, continuous optimisation, and recognised sector leadership in how tools are deployed and leveraged",
+    "discriminator_type": "coordinated_vs_optimising",
+    "common_false_positives": [
+      {
+        "behaviour": "Universal adoption of core digital tools for planning and governance",
+        "why_higher": "Complete adoption feels like Optimised utilisation",
+        "why_lower": "Universal adoption of standard features is Integrated. Optimised requires that users innovate new use cases and drive continuous improvement beyond standard deployment",
+        "frequency": "common"
+      },
+      {
+        "behaviour": "Regular tool upgrades are implemented for planning and governance",
+        "why_higher": "Staying current feels like optimisation",
+        "why_lower": "Upgrading is technology maintenance (Technology dimension). Optimised Utilisation means users actively drive new ways of working, not just accept upgrades",
+        "frequency": "occasional"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence of user-driven innovation in tool use for planning and governance, continuous optimisation based on usage analytics, and sector recognition",
+      "strong": "User-contributed innovations shared institution-wide, real-time analytics driving optimisation, quantified impact on planning and governance outcomes, peer recognition through case studies or visits",
+      "examples": [
+        "Innovation showcase featuring user-created applications of planning and governance tools",
+        "Vendor or sector body case study on the institution's planning and governance tool utilisation"
+      ]
+    }
+  }
+]

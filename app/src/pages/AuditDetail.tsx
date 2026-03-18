@@ -108,7 +108,7 @@ export default function AuditDetail() {
     );
   }
 
-  const { run, transcripts, posthoc, benchmarks, report } = data;
+  const { run, transcripts, posthoc, report } = data;
   const status = statusConfig[run.status] || statusConfig.queued;
   const StatusIcon = status.icon;
 

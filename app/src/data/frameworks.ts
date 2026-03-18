@@ -24,7 +24,7 @@ export type {
 } from "./framework-types";
 
 import type { Framework } from "./framework-types";
-import { ACQUIRE_DEEPEN_CREATE, STUDENT_LEVELS } from "./framework-types";
+import { ACQUIRE_DEEPEN_CREATE } from "./framework-types";
 import { ADDITIONAL_FRAMEWORKS } from "./frameworks-additional";
 
 // ────────────────────────────────────────────────

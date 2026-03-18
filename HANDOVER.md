@@ -1,5 +1,9 @@
 # ReasonLens — Agent Handover
 
+Latest specialist rollout handover:
+
+- [MASTER_HANDOVER_THE_DMI_ROLLOUT.md](/Users/catorolea/Documents/GitHub/reason-lens/MASTER_HANDOVER_THE_DMI_ROLLOUT.md) — THE Digital Maturity Index production rollout on March 18, 2026
+
 > Read this before touching anything. It covers what exists, what works, what doesn't, and what to do next.
 
 ---

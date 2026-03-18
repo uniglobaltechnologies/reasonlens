@@ -1,0 +1,2522 @@
+[
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-tl-str",
+    "dimension_name": "Teaching & Learning: Strategy",
+    "pillar": "Teaching & Learning",
+    "cross_cutting_dimension": "Strategy",
+    "level_id": "the-tl-str-incidental",
+    "level_name": "Incidental",
+    "level_order": 1,
+    "typical_respondent_roles": [
+      "PVC Education",
+      "Faculty Associate Dean (Education)",
+      "Head of Academic Development",
+      "Director of Digital Education"
+    ],
+    "practitioner_vocabulary": [
+      "We know we need a digital strategy but haven't got round to writing one",
+      "Different departments are doing their own thing with technology",
+      "It's on our radar but we have other priorities right now",
+      "Our strategy mentions digital briefly but it's not a main focus",
+      "We respond to issues as they come up rather than planning ahead"
+    ],
+    "self_assessment_anchor": "We are at an early stage. Digital activity in teaching and learning is sporadic and individual rather than institutional.",
+    "common_over_estimation_pattern": "Respondents at this level rarely self-assess as Incidental. They typically select Intentional because awareness of the need for digital feels like intentional planning.",
+    "distinguishing_self_assessment_questions": [
+      "Do we have documented digital objectives specifically for teaching and learning with named owners?",
+      "Is there institutional funding specifically allocated to digital in teaching and learning?",
+      "Does any governance body have explicit responsibility for digital in teaching and learning?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-tl-str",
+    "dimension_name": "Teaching & Learning: Strategy",
+    "pillar": "Teaching & Learning",
+    "cross_cutting_dimension": "Strategy",
+    "level_id": "the-tl-str-intentional",
+    "level_name": "Intentional",
+    "level_order": 2,
+    "typical_respondent_roles": [
+      "PVC Education",
+      "Faculty Associate Dean (Education)",
+      "Head of Academic Development",
+      "Director of Digital Education"
+    ],
+    "practitioner_vocabulary": [
+      "We've got a strategy in place and we're starting to implement it",
+      "We've set up a working group to oversee our digital plans",
+      "Some areas are further ahead than others in implementing the strategy",
+      "We've secured project funding for our priority digital initiatives",
+      "We're piloting some approaches before rolling them out more widely"
+    ],
+    "self_assessment_anchor": "We have started planning purposefully. We have objectives and some dedicated resources for digital in teaching and learning, but implementation is uneven.",
+    "common_over_estimation_pattern": "Respondents at this level commonly self-assess as Integrated because having a strategy and active projects feels like institution-wide coordination.",
+    "distinguishing_self_assessment_questions": [
+      "Is our digital strategy for teaching and learning being implemented consistently across all units, not just leading departments?",
+      "Is our funding recurrent or project-based?",
+      "Does our governance body have decision-making authority or is it advisory?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-tl-str",
+    "dimension_name": "Teaching & Learning: Strategy",
+    "pillar": "Teaching & Learning",
+    "cross_cutting_dimension": "Strategy",
+    "level_id": "the-tl-str-integrated",
+    "level_name": "Integrated",
+    "level_order": 3,
+    "typical_respondent_roles": [
+      "PVC Education",
+      "Faculty Associate Dean (Education)",
+      "Head of Academic Development",
+      "Director of Digital Education"
+    ],
+    "practitioner_vocabulary": [
+      "Our digital strategy is embedded in every faculty's operational plan",
+      "We have recurrent budget for digital and it's governed at senior level",
+      "All our faculties are implementing the strategy in locally adapted ways",
+      "We report on digital KPIs to our board on a regular cycle",
+      "Our central team and faculties work together through a joint governance structure"
+    ],
+    "self_assessment_anchor": "We are well-coordinated. Digital in teaching and learning is governed institution-wide with consistent implementation, recurrent funding, and accountability.",
+    "common_over_estimation_pattern": "Respondents at this level sometimes self-assess as Optimised because effective coordination feels like sector leadership.",
+    "distinguishing_self_assessment_questions": [
+      "Do we review and update our approach annually based on evidence and data?",
+      "Do other institutions look to us as a model for digital in teaching and learning?",
+      "Are we proactively innovating or primarily implementing established good practice?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-tl-str",
+    "dimension_name": "Teaching & Learning: Strategy",
+    "pillar": "Teaching & Learning",
+    "cross_cutting_dimension": "Strategy",
+    "level_id": "the-tl-str-optimised",
+    "level_name": "Optimised",
+    "level_order": 4,
+    "typical_respondent_roles": [
+      "PVC Education",
+      "Faculty Associate Dean (Education)",
+      "Head of Academic Development",
+      "Director of Digital Education"
+    ],
+    "practitioner_vocabulary": [
+      "We review and update our digital strategy annually based on evidence",
+      "Other institutions come to us to learn about our approach",
+      "We're usually ahead of the sector in identifying emerging trends",
+      "We publish our approach and contribute to sector-level policy",
+      "Digital investment is treated as core infrastructure, not discretionary spend"
+    ],
+    "self_assessment_anchor": "We are sector-leading. We continuously improve through evidence, innovate proactively, and contribute to sector practice in digital teaching and learning.",
+    "common_over_estimation_pattern": "Respondents at this level typically self-assess accurately, though they may underestimate their level relative to the sector.",
+    "distinguishing_self_assessment_questions": [
+      "Are we genuinely ahead of the sector or keeping pace with leading peers?",
+      "Is our sector contribution sustained and substantial or occasional?",
+      "Would external assessment confirm our self-assessment?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-tl-ppl",
+    "dimension_name": "Teaching & Learning: People & Culture",
+    "pillar": "Teaching & Learning",
+    "cross_cutting_dimension": "People & Culture",
+    "level_id": "the-tl-ppl-incidental",
+    "level_name": "Incidental",
+    "level_order": 1,
+    "typical_respondent_roles": [
+      "PVC Education",
+      "Faculty Associate Dean (Education)",
+      "Head of Academic Development",
+      "Director of Digital Education"
+    ],
+    "practitioner_vocabulary": [
+      "A few enthusiasts are doing great things but most staff aren't engaged",
+      "We don't really have a development programme for digital skills in this area",
+      "People pick things up themselves or learn from colleagues informally",
+      "Digital skills aren't really mentioned in our role descriptions",
+      "There's quite a lot of resistance to changing how things are done"
+    ],
+    "self_assessment_anchor": "We are at an early stage. Digital activity in teaching and learning is sporadic and individual rather than institutional.",
+    "common_over_estimation_pattern": "Respondents at this level rarely self-assess as Incidental. They typically select Intentional because awareness of the need for digital feels like intentional planning.",
+    "distinguishing_self_assessment_questions": [
+      "Do we have documented digital objectives specifically for teaching and learning with named owners?",
+      "Is there institutional funding specifically allocated to digital in teaching and learning?",
+      "Does any governance body have explicit responsibility for digital in teaching and learning?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-tl-ppl",
+    "dimension_name": "Teaching & Learning: People & Culture",
+    "pillar": "Teaching & Learning",
+    "cross_cutting_dimension": "People & Culture",
+    "level_id": "the-tl-ppl-intentional",
+    "level_name": "Intentional",
+    "level_order": 2,
+    "typical_respondent_roles": [
+      "PVC Education",
+      "Faculty Associate Dean (Education)",
+      "Head of Academic Development",
+      "Director of Digital Education"
+    ],
+    "practitioner_vocabulary": [
+      "We've set up training programmes and we're encouraging staff to engage",
+      "We're starting to include digital skills in our recruitment criteria",
+      "We've got a community of practice forming around digital practice",
+      "Some teams have really embraced it but others are slower to engage",
+      "We recognise we need more consistent engagement across the board"
+    ],
+    "self_assessment_anchor": "We have started planning purposefully. We have objectives and some dedicated resources for digital in teaching and learning, but implementation is uneven.",
+    "common_over_estimation_pattern": "Respondents at this level commonly self-assess as Integrated because having a strategy and active projects feels like institution-wide coordination.",
+    "distinguishing_self_assessment_questions": [
+      "Is our digital strategy for teaching and learning being implemented consistently across all units, not just leading departments?",
+      "Is our funding recurrent or project-based?",
+      "Does our governance body have decision-making authority or is it advisory?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-tl-ppl",
+    "dimension_name": "Teaching & Learning: People & Culture",
+    "pillar": "Teaching & Learning",
+    "cross_cutting_dimension": "People & Culture",
+    "level_id": "the-tl-ppl-integrated",
+    "level_name": "Integrated",
+    "level_order": 3,
+    "typical_respondent_roles": [
+      "PVC Education",
+      "Faculty Associate Dean (Education)",
+      "Head of Academic Development",
+      "Director of Digital Education"
+    ],
+    "practitioner_vocabulary": [
+      "Digital competencies are built into our PDR process and career pathways",
+      "We have structured development programmes at every career stage",
+      "Innovation is recognised through our promotion and reward criteria",
+      "Our communities of practice are well-established and institutionally supported",
+      "We invest in change management as a specific capability"
+    ],
+    "self_assessment_anchor": "We are well-coordinated. Digital in teaching and learning is governed institution-wide with consistent implementation, recurrent funding, and accountability.",
+    "common_over_estimation_pattern": "Respondents at this level sometimes self-assess as Optimised because effective coordination feels like sector leadership.",
+    "distinguishing_self_assessment_questions": [
+      "Do we review and update our approach annually based on evidence and data?",
+      "Do other institutions look to us as a model for digital in teaching and learning?",
+      "Are we proactively innovating or primarily implementing established good practice?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-tl-ppl",
+    "dimension_name": "Teaching & Learning: People & Culture",
+    "pillar": "Teaching & Learning",
+    "cross_cutting_dimension": "People & Culture",
+    "level_id": "the-tl-ppl-optimised",
+    "level_name": "Optimised",
+    "level_order": 4,
+    "typical_respondent_roles": [
+      "PVC Education",
+      "Faculty Associate Dean (Education)",
+      "Head of Academic Development",
+      "Director of Digital Education"
+    ],
+    "practitioner_vocabulary": [
+      "Our staff are genuinely self-driven in developing their digital practice",
+      "We're known in the sector for our digital culture and it helps with recruitment",
+      "Staff-led innovation is the norm, not the exception here",
+      "We contribute to sector workforce development through our frameworks and training",
+      "Development is peer-driven and doesn't depend on central provision"
+    ],
+    "self_assessment_anchor": "We are sector-leading. We continuously improve through evidence, innovate proactively, and contribute to sector practice in digital teaching and learning.",
+    "common_over_estimation_pattern": "Respondents at this level typically self-assess accurately, though they may underestimate their level relative to the sector.",
+    "distinguishing_self_assessment_questions": [
+      "Are we genuinely ahead of the sector or keeping pace with leading peers?",
+      "Is our sector contribution sustained and substantial or occasional?",
+      "Would external assessment confirm our self-assessment?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-tl-tec",
+    "dimension_name": "Teaching & Learning: Technology",
+    "pillar": "Teaching & Learning",
+    "cross_cutting_dimension": "Technology",
+    "level_id": "the-tl-tec-incidental",
+    "level_name": "Incidental",
+    "level_order": 1,
+    "typical_respondent_roles": [
+      "PVC Education",
+      "Faculty Associate Dean (Education)",
+      "Head of Academic Development",
+      "Director of Digital Education"
+    ],
+    "practitioner_vocabulary": [
+      "Our systems don't really talk to each other",
+      "We've got quite a lot of legacy technology that needs replacing",
+      "Different departments have ended up with different tools for similar things",
+      "People use their own tools because the official ones don't meet their needs",
+      "We don't really have a technology roadmap for this area"
+    ],
+    "self_assessment_anchor": "We are at an early stage. Digital activity in teaching and learning is sporadic and individual rather than institutional.",
+    "common_over_estimation_pattern": "Respondents at this level rarely self-assess as Incidental. They typically select Intentional because awareness of the need for digital feels like intentional planning.",
+    "distinguishing_self_assessment_questions": [
+      "Do we have documented digital objectives specifically for teaching and learning with named owners?",
+      "Is there institutional funding specifically allocated to digital in teaching and learning?",
+      "Does any governance body have explicit responsibility for digital in teaching and learning?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-tl-tec",
+    "dimension_name": "Teaching & Learning: Technology",
+    "pillar": "Teaching & Learning",
+    "cross_cutting_dimension": "Technology",
+    "level_id": "the-tl-tec-intentional",
+    "level_name": "Intentional",
+    "level_order": 2,
+    "typical_respondent_roles": [
+      "PVC Education",
+      "Faculty Associate Dean (Education)",
+      "Head of Academic Development",
+      "Director of Digital Education"
+    ],
+    "practitioner_vocabulary": [
+      "We've got a roadmap and we're working through the priority investments",
+      "We've started integrating our core systems with single sign-on and data feeds",
+      "Our procurement process now requires architectural review",
+      "We're migrating some systems to the cloud as part of our modernisation",
+      "Support is good but we know we need to do more on integration"
+    ],
+    "self_assessment_anchor": "We have started planning purposefully. We have objectives and some dedicated resources for digital in teaching and learning, but implementation is uneven.",
+    "common_over_estimation_pattern": "Respondents at this level commonly self-assess as Integrated because having a strategy and active projects feels like institution-wide coordination.",
+    "distinguishing_self_assessment_questions": [
+      "Is our digital strategy for teaching and learning being implemented consistently across all units, not just leading departments?",
+      "Is our funding recurrent or project-based?",
+      "Does our governance body have decision-making authority or is it advisory?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-tl-tec",
+    "dimension_name": "Teaching & Learning: Technology",
+    "pillar": "Teaching & Learning",
+    "cross_cutting_dimension": "Technology",
+    "level_id": "the-tl-tec-integrated",
+    "level_name": "Integrated",
+    "level_order": 3,
+    "typical_respondent_roles": [
+      "PVC Education",
+      "Faculty Associate Dean (Education)",
+      "Head of Academic Development",
+      "Director of Digital Education"
+    ],
+    "practitioner_vocabulary": [
+      "Our systems are well-integrated through APIs and follow enterprise architecture standards",
+      "Technology refresh is planned and funded on regular cycles",
+      "Our governance includes both IT and domain stakeholder representation",
+      "We monitor service levels and report them regularly",
+      "Technology enables the way we want to work rather than constraining it"
+    ],
+    "self_assessment_anchor": "We are well-coordinated. Digital in teaching and learning is governed institution-wide with consistent implementation, recurrent funding, and accountability.",
+    "common_over_estimation_pattern": "Respondents at this level sometimes self-assess as Optimised because effective coordination feels like sector leadership.",
+    "distinguishing_self_assessment_questions": [
+      "Do we review and update our approach annually based on evidence and data?",
+      "Do other institutions look to us as a model for digital in teaching and learning?",
+      "Are we proactively innovating or primarily implementing established good practice?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-tl-tec",
+    "dimension_name": "Teaching & Learning: Technology",
+    "pillar": "Teaching & Learning",
+    "cross_cutting_dimension": "Technology",
+    "level_id": "the-tl-tec-optimised",
+    "level_name": "Optimised",
+    "level_order": 4,
+    "typical_respondent_roles": [
+      "PVC Education",
+      "Faculty Associate Dean (Education)",
+      "Head of Academic Development",
+      "Director of Digital Education"
+    ],
+    "practitioner_vocabulary": [
+      "Our architecture is designed for extensibility and rapid innovation",
+      "We have sandbox environments for testing emerging technologies",
+      "Other institutions look at our technology architecture as a model",
+      "We assess and adopt new technologies proactively rather than reactively",
+      "Technology is treated as a strategic asset, not just operational infrastructure"
+    ],
+    "self_assessment_anchor": "We are sector-leading. We continuously improve through evidence, innovate proactively, and contribute to sector practice in digital teaching and learning.",
+    "common_over_estimation_pattern": "Respondents at this level typically self-assess accurately, though they may underestimate their level relative to the sector.",
+    "distinguishing_self_assessment_questions": [
+      "Are we genuinely ahead of the sector or keeping pace with leading peers?",
+      "Is our sector contribution sustained and substantial or occasional?",
+      "Would external assessment confirm our self-assessment?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-tl-dat",
+    "dimension_name": "Teaching & Learning: Data",
+    "pillar": "Teaching & Learning",
+    "cross_cutting_dimension": "Data",
+    "level_id": "the-tl-dat-incidental",
+    "level_name": "Incidental",
+    "level_order": 1,
+    "typical_respondent_roles": [
+      "PVC Education",
+      "Faculty Associate Dean (Education)",
+      "Head of Academic Development",
+      "Director of Digital Education"
+    ],
+    "practitioner_vocabulary": [
+      "Our data is all over the place in different spreadsheets and systems",
+      "We produce reports when asked but it's always a manual exercise",
+      "We don't really have data governance specifically for this area",
+      "Decisions tend to be based on experience and judgement rather than data",
+      "We meet our statutory reporting requirements but that's about it"
+    ],
+    "self_assessment_anchor": "We are at an early stage. Digital activity in teaching and learning is sporadic and individual rather than institutional.",
+    "common_over_estimation_pattern": "Respondents at this level rarely self-assess as Incidental. They typically select Intentional because awareness of the need for digital feels like intentional planning.",
+    "distinguishing_self_assessment_questions": [
+      "Do we have documented digital objectives specifically for teaching and learning with named owners?",
+      "Is there institutional funding specifically allocated to digital in teaching and learning?",
+      "Does any governance body have explicit responsibility for digital in teaching and learning?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-tl-dat",
+    "dimension_name": "Teaching & Learning: Data",
+    "pillar": "Teaching & Learning",
+    "cross_cutting_dimension": "Data",
+    "level_id": "the-tl-dat-intentional",
+    "level_name": "Intentional",
+    "level_order": 2,
+    "typical_respondent_roles": [
+      "PVC Education",
+      "Faculty Associate Dean (Education)",
+      "Head of Academic Development",
+      "Director of Digital Education"
+    ],
+    "practitioner_vocabulary": [
+      "We've identified our core datasets and we're getting more systematic",
+      "We have some dashboards up and running but not across the whole institution",
+      "We've drafted a data governance framework but compliance is still patchy",
+      "We know our data quality needs work and we're starting to address it",
+      "Some areas are really data-driven now but it's not consistent everywhere"
+    ],
+    "self_assessment_anchor": "We have started planning purposefully. We have objectives and some dedicated resources for digital in teaching and learning, but implementation is uneven.",
+    "common_over_estimation_pattern": "Respondents at this level commonly self-assess as Integrated because having a strategy and active projects feels like institution-wide coordination.",
+    "distinguishing_self_assessment_questions": [
+      "Is our digital strategy for teaching and learning being implemented consistently across all units, not just leading departments?",
+      "Is our funding recurrent or project-based?",
+      "Does our governance body have decision-making authority or is it advisory?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-tl-dat",
+    "dimension_name": "Teaching & Learning: Data",
+    "pillar": "Teaching & Learning",
+    "cross_cutting_dimension": "Data",
+    "level_id": "the-tl-dat-integrated",
+    "level_name": "Integrated",
+    "level_order": 3,
+    "typical_respondent_roles": [
+      "PVC Education",
+      "Faculty Associate Dean (Education)",
+      "Head of Academic Development",
+      "Director of Digital Education"
+    ],
+    "practitioner_vocabulary": [
+      "We have comprehensive, reliable data with clear ownership and quality standards",
+      "Self-service analytics are available to authorised staff across the institution",
+      "Data governance is operational with regular compliance monitoring",
+      "Data quality is actively managed with regular audits",
+      "Data-informed decision-making is the norm in all our committees"
+    ],
+    "self_assessment_anchor": "We are well-coordinated. Digital in teaching and learning is governed institution-wide with consistent implementation, recurrent funding, and accountability.",
+    "common_over_estimation_pattern": "Respondents at this level sometimes self-assess as Optimised because effective coordination feels like sector leadership.",
+    "distinguishing_self_assessment_questions": [
+      "Do we review and update our approach annually based on evidence and data?",
+      "Do other institutions look to us as a model for digital in teaching and learning?",
+      "Are we proactively innovating or primarily implementing established good practice?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-tl-dat",
+    "dimension_name": "Teaching & Learning: Data",
+    "pillar": "Teaching & Learning",
+    "cross_cutting_dimension": "Data",
+    "level_id": "the-tl-dat-optimised",
+    "level_name": "Optimised",
+    "level_order": 4,
+    "typical_respondent_roles": [
+      "PVC Education",
+      "Faculty Associate Dean (Education)",
+      "Head of Academic Development",
+      "Director of Digital Education"
+    ],
+    "practitioner_vocabulary": [
+      "We use predictive modelling and advanced analytics to inform decisions",
+      "We have near-real-time data available for operational decision-making",
+      "Our data governance approach is referenced by other institutions",
+      "We contribute to sector data standards and best practice",
+      "Our staff are highly data-literate and can do sophisticated analysis themselves"
+    ],
+    "self_assessment_anchor": "We are sector-leading. We continuously improve through evidence, innovate proactively, and contribute to sector practice in digital teaching and learning.",
+    "common_over_estimation_pattern": "Respondents at this level typically self-assess accurately, though they may underestimate their level relative to the sector.",
+    "distinguishing_self_assessment_questions": [
+      "Are we genuinely ahead of the sector or keeping pace with leading peers?",
+      "Is our sector contribution sustained and substantial or occasional?",
+      "Would external assessment confirm our self-assessment?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-tl-uti",
+    "dimension_name": "Teaching & Learning: Utilisation",
+    "pillar": "Teaching & Learning",
+    "cross_cutting_dimension": "Utilisation",
+    "level_id": "the-tl-uti-incidental",
+    "level_name": "Incidental",
+    "level_order": 1,
+    "typical_respondent_roles": [
+      "PVC Education",
+      "Faculty Associate Dean (Education)",
+      "Head of Academic Development",
+      "Director of Digital Education"
+    ],
+    "practitioner_vocabulary": [
+      "We've got the tools but most people aren't really using them properly",
+      "A lot of people still use manual processes even though digital alternatives exist",
+      "There aren't really any expectations about what tools people should be using",
+      "We don't track who's actually using what",
+      "Some people are doing amazing things with the tools but it's very individual"
+    ],
+    "self_assessment_anchor": "We are at an early stage. Digital activity in teaching and learning is sporadic and individual rather than institutional.",
+    "common_over_estimation_pattern": "Respondents at this level rarely self-assess as Incidental. They typically select Intentional because awareness of the need for digital feels like intentional planning.",
+    "distinguishing_self_assessment_questions": [
+      "Do we have documented digital objectives specifically for teaching and learning with named owners?",
+      "Is there institutional funding specifically allocated to digital in teaching and learning?",
+      "Does any governance body have explicit responsibility for digital in teaching and learning?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-tl-uti",
+    "dimension_name": "Teaching & Learning: Utilisation",
+    "pillar": "Teaching & Learning",
+    "cross_cutting_dimension": "Utilisation",
+    "level_id": "the-tl-uti-intentional",
+    "level_name": "Intentional",
+    "level_order": 2,
+    "typical_respondent_roles": [
+      "PVC Education",
+      "Faculty Associate Dean (Education)",
+      "Head of Academic Development",
+      "Director of Digital Education"
+    ],
+    "practitioner_vocabulary": [
+      "We're actively promoting adoption and running training to get people on board",
+      "We've set out some minimum expectations for tool usage",
+      "Uptake is growing but some areas are much further ahead than others",
+      "We're tracking adoption in some areas but not institution-wide yet",
+      "The advanced features of our tools are still underused"
+    ],
+    "self_assessment_anchor": "We have started planning purposefully. We have objectives and some dedicated resources for digital in teaching and learning, but implementation is uneven.",
+    "common_over_estimation_pattern": "Respondents at this level commonly self-assess as Integrated because having a strategy and active projects feels like institution-wide coordination.",
+    "distinguishing_self_assessment_questions": [
+      "Is our digital strategy for teaching and learning being implemented consistently across all units, not just leading departments?",
+      "Is our funding recurrent or project-based?",
+      "Does our governance body have decision-making authority or is it advisory?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-tl-uti",
+    "dimension_name": "Teaching & Learning: Utilisation",
+    "pillar": "Teaching & Learning",
+    "cross_cutting_dimension": "Utilisation",
+    "level_id": "the-tl-uti-integrated",
+    "level_name": "Integrated",
+    "level_order": 3,
+    "typical_respondent_roles": [
+      "PVC Education",
+      "Faculty Associate Dean (Education)",
+      "Head of Academic Development",
+      "Director of Digital Education"
+    ],
+    "practitioner_vocabulary": [
+      "Usage is consistent across the institution and we monitor it institution-wide",
+      "Digital workflows have replaced manual processes for all our core activities",
+      "We measure the impact of tool usage on outcomes",
+      "User feedback directly informs how we configure and support our tools",
+      "Most staff use advanced features routinely, not just the basics"
+    ],
+    "self_assessment_anchor": "We are well-coordinated. Digital in teaching and learning is governed institution-wide with consistent implementation, recurrent funding, and accountability.",
+    "common_over_estimation_pattern": "Respondents at this level sometimes self-assess as Optimised because effective coordination feels like sector leadership.",
+    "distinguishing_self_assessment_questions": [
+      "Do we review and update our approach annually based on evidence and data?",
+      "Do other institutions look to us as a model for digital in teaching and learning?",
+      "Are we proactively innovating or primarily implementing established good practice?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-tl-uti",
+    "dimension_name": "Teaching & Learning: Utilisation",
+    "pillar": "Teaching & Learning",
+    "cross_cutting_dimension": "Utilisation",
+    "level_id": "the-tl-uti-optimised",
+    "level_name": "Optimised",
+    "level_order": 4,
+    "typical_respondent_roles": [
+      "PVC Education",
+      "Faculty Associate Dean (Education)",
+      "Head of Academic Development",
+      "Director of Digital Education"
+    ],
+    "practitioner_vocabulary": [
+      "Our users innovate new ways of using tools that we hadn't anticipated",
+      "We use real-time usage data to continuously optimise our tool deployment",
+      "Vendors and other institutions study how we use their tools",
+      "Staff-driven innovation feeds directly into our technology and strategy decisions",
+      "We can quantify the impact of our digital utilisation on outcomes"
+    ],
+    "self_assessment_anchor": "We are sector-leading. We continuously improve through evidence, innovate proactively, and contribute to sector practice in digital teaching and learning.",
+    "common_over_estimation_pattern": "Respondents at this level typically self-assess accurately, though they may underestimate their level relative to the sector.",
+    "distinguishing_self_assessment_questions": [
+      "Are we genuinely ahead of the sector or keeping pace with leading peers?",
+      "Is our sector contribution sustained and substantial or occasional?",
+      "Would external assessment confirm our self-assessment?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-re-str",
+    "dimension_name": "Research: Strategy",
+    "pillar": "Research",
+    "cross_cutting_dimension": "Strategy",
+    "level_id": "the-re-str-incidental",
+    "level_name": "Incidental",
+    "level_order": 1,
+    "typical_respondent_roles": [
+      "PVC Research",
+      "Faculty Associate Dean (Research)",
+      "Director of Research Services",
+      "Head of Research Computing"
+    ],
+    "practitioner_vocabulary": [
+      "We know we need a digital strategy but haven't got round to writing one",
+      "Different departments are doing their own thing with technology",
+      "It's on our radar but we have other priorities right now",
+      "Our strategy mentions digital briefly but it's not a main focus",
+      "We respond to issues as they come up rather than planning ahead"
+    ],
+    "self_assessment_anchor": "We are at an early stage. Digital activity in research is sporadic and individual rather than institutional.",
+    "common_over_estimation_pattern": "Respondents at this level rarely self-assess as Incidental. They typically select Intentional because awareness of the need for digital feels like intentional planning.",
+    "distinguishing_self_assessment_questions": [
+      "Do we have documented digital objectives specifically for research with named owners?",
+      "Is there institutional funding specifically allocated to digital in research?",
+      "Does any governance body have explicit responsibility for digital in research?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-re-str",
+    "dimension_name": "Research: Strategy",
+    "pillar": "Research",
+    "cross_cutting_dimension": "Strategy",
+    "level_id": "the-re-str-intentional",
+    "level_name": "Intentional",
+    "level_order": 2,
+    "typical_respondent_roles": [
+      "PVC Research",
+      "Faculty Associate Dean (Research)",
+      "Director of Research Services",
+      "Head of Research Computing"
+    ],
+    "practitioner_vocabulary": [
+      "We've got a strategy in place and we're starting to implement it",
+      "We've set up a working group to oversee our digital plans",
+      "Some areas are further ahead than others in implementing the strategy",
+      "We've secured project funding for our priority digital initiatives",
+      "We're piloting some approaches before rolling them out more widely"
+    ],
+    "self_assessment_anchor": "We have started planning purposefully. We have objectives and some dedicated resources for digital in research, but implementation is uneven.",
+    "common_over_estimation_pattern": "Respondents at this level commonly self-assess as Integrated because having a strategy and active projects feels like institution-wide coordination.",
+    "distinguishing_self_assessment_questions": [
+      "Is our digital strategy for research being implemented consistently across all units, not just leading departments?",
+      "Is our funding recurrent or project-based?",
+      "Does our governance body have decision-making authority or is it advisory?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-re-str",
+    "dimension_name": "Research: Strategy",
+    "pillar": "Research",
+    "cross_cutting_dimension": "Strategy",
+    "level_id": "the-re-str-integrated",
+    "level_name": "Integrated",
+    "level_order": 3,
+    "typical_respondent_roles": [
+      "PVC Research",
+      "Faculty Associate Dean (Research)",
+      "Director of Research Services",
+      "Head of Research Computing"
+    ],
+    "practitioner_vocabulary": [
+      "Our digital strategy is embedded in every faculty's operational plan",
+      "We have recurrent budget for digital and it's governed at senior level",
+      "All our faculties are implementing the strategy in locally adapted ways",
+      "We report on digital KPIs to our board on a regular cycle",
+      "Our central team and faculties work together through a joint governance structure"
+    ],
+    "self_assessment_anchor": "We are well-coordinated. Digital in research is governed institution-wide with consistent implementation, recurrent funding, and accountability.",
+    "common_over_estimation_pattern": "Respondents at this level sometimes self-assess as Optimised because effective coordination feels like sector leadership.",
+    "distinguishing_self_assessment_questions": [
+      "Do we review and update our approach annually based on evidence and data?",
+      "Do other institutions look to us as a model for digital in research?",
+      "Are we proactively innovating or primarily implementing established good practice?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-re-str",
+    "dimension_name": "Research: Strategy",
+    "pillar": "Research",
+    "cross_cutting_dimension": "Strategy",
+    "level_id": "the-re-str-optimised",
+    "level_name": "Optimised",
+    "level_order": 4,
+    "typical_respondent_roles": [
+      "PVC Research",
+      "Faculty Associate Dean (Research)",
+      "Director of Research Services",
+      "Head of Research Computing"
+    ],
+    "practitioner_vocabulary": [
+      "We review and update our digital strategy annually based on evidence",
+      "Other institutions come to us to learn about our approach",
+      "We're usually ahead of the sector in identifying emerging trends",
+      "We publish our approach and contribute to sector-level policy",
+      "Digital investment is treated as core infrastructure, not discretionary spend"
+    ],
+    "self_assessment_anchor": "We are sector-leading. We continuously improve through evidence, innovate proactively, and contribute to sector practice in digital research.",
+    "common_over_estimation_pattern": "Respondents at this level typically self-assess accurately, though they may underestimate their level relative to the sector.",
+    "distinguishing_self_assessment_questions": [
+      "Are we genuinely ahead of the sector or keeping pace with leading peers?",
+      "Is our sector contribution sustained and substantial or occasional?",
+      "Would external assessment confirm our self-assessment?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-re-ppl",
+    "dimension_name": "Research: People & Culture",
+    "pillar": "Research",
+    "cross_cutting_dimension": "People & Culture",
+    "level_id": "the-re-ppl-incidental",
+    "level_name": "Incidental",
+    "level_order": 1,
+    "typical_respondent_roles": [
+      "PVC Research",
+      "Faculty Associate Dean (Research)",
+      "Director of Research Services",
+      "Head of Research Computing"
+    ],
+    "practitioner_vocabulary": [
+      "A few enthusiasts are doing great things but most staff aren't engaged",
+      "We don't really have a development programme for digital skills in this area",
+      "People pick things up themselves or learn from colleagues informally",
+      "Digital skills aren't really mentioned in our role descriptions",
+      "There's quite a lot of resistance to changing how things are done"
+    ],
+    "self_assessment_anchor": "We are at an early stage. Digital activity in research is sporadic and individual rather than institutional.",
+    "common_over_estimation_pattern": "Respondents at this level rarely self-assess as Incidental. They typically select Intentional because awareness of the need for digital feels like intentional planning.",
+    "distinguishing_self_assessment_questions": [
+      "Do we have documented digital objectives specifically for research with named owners?",
+      "Is there institutional funding specifically allocated to digital in research?",
+      "Does any governance body have explicit responsibility for digital in research?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-re-ppl",
+    "dimension_name": "Research: People & Culture",
+    "pillar": "Research",
+    "cross_cutting_dimension": "People & Culture",
+    "level_id": "the-re-ppl-intentional",
+    "level_name": "Intentional",
+    "level_order": 2,
+    "typical_respondent_roles": [
+      "PVC Research",
+      "Faculty Associate Dean (Research)",
+      "Director of Research Services",
+      "Head of Research Computing"
+    ],
+    "practitioner_vocabulary": [
+      "We've set up training programmes and we're encouraging staff to engage",
+      "We're starting to include digital skills in our recruitment criteria",
+      "We've got a community of practice forming around digital practice",
+      "Some teams have really embraced it but others are slower to engage",
+      "We recognise we need more consistent engagement across the board"
+    ],
+    "self_assessment_anchor": "We have started planning purposefully. We have objectives and some dedicated resources for digital in research, but implementation is uneven.",
+    "common_over_estimation_pattern": "Respondents at this level commonly self-assess as Integrated because having a strategy and active projects feels like institution-wide coordination.",
+    "distinguishing_self_assessment_questions": [
+      "Is our digital strategy for research being implemented consistently across all units, not just leading departments?",
+      "Is our funding recurrent or project-based?",
+      "Does our governance body have decision-making authority or is it advisory?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-re-ppl",
+    "dimension_name": "Research: People & Culture",
+    "pillar": "Research",
+    "cross_cutting_dimension": "People & Culture",
+    "level_id": "the-re-ppl-integrated",
+    "level_name": "Integrated",
+    "level_order": 3,
+    "typical_respondent_roles": [
+      "PVC Research",
+      "Faculty Associate Dean (Research)",
+      "Director of Research Services",
+      "Head of Research Computing"
+    ],
+    "practitioner_vocabulary": [
+      "Digital competencies are built into our PDR process and career pathways",
+      "We have structured development programmes at every career stage",
+      "Innovation is recognised through our promotion and reward criteria",
+      "Our communities of practice are well-established and institutionally supported",
+      "We invest in change management as a specific capability"
+    ],
+    "self_assessment_anchor": "We are well-coordinated. Digital in research is governed institution-wide with consistent implementation, recurrent funding, and accountability.",
+    "common_over_estimation_pattern": "Respondents at this level sometimes self-assess as Optimised because effective coordination feels like sector leadership.",
+    "distinguishing_self_assessment_questions": [
+      "Do we review and update our approach annually based on evidence and data?",
+      "Do other institutions look to us as a model for digital in research?",
+      "Are we proactively innovating or primarily implementing established good practice?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-re-ppl",
+    "dimension_name": "Research: People & Culture",
+    "pillar": "Research",
+    "cross_cutting_dimension": "People & Culture",
+    "level_id": "the-re-ppl-optimised",
+    "level_name": "Optimised",
+    "level_order": 4,
+    "typical_respondent_roles": [
+      "PVC Research",
+      "Faculty Associate Dean (Research)",
+      "Director of Research Services",
+      "Head of Research Computing"
+    ],
+    "practitioner_vocabulary": [
+      "Our staff are genuinely self-driven in developing their digital practice",
+      "We're known in the sector for our digital culture and it helps with recruitment",
+      "Staff-led innovation is the norm, not the exception here",
+      "We contribute to sector workforce development through our frameworks and training",
+      "Development is peer-driven and doesn't depend on central provision"
+    ],
+    "self_assessment_anchor": "We are sector-leading. We continuously improve through evidence, innovate proactively, and contribute to sector practice in digital research.",
+    "common_over_estimation_pattern": "Respondents at this level typically self-assess accurately, though they may underestimate their level relative to the sector.",
+    "distinguishing_self_assessment_questions": [
+      "Are we genuinely ahead of the sector or keeping pace with leading peers?",
+      "Is our sector contribution sustained and substantial or occasional?",
+      "Would external assessment confirm our self-assessment?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-re-tec",
+    "dimension_name": "Research: Technology",
+    "pillar": "Research",
+    "cross_cutting_dimension": "Technology",
+    "level_id": "the-re-tec-incidental",
+    "level_name": "Incidental",
+    "level_order": 1,
+    "typical_respondent_roles": [
+      "PVC Research",
+      "Faculty Associate Dean (Research)",
+      "Director of Research Services",
+      "Head of Research Computing"
+    ],
+    "practitioner_vocabulary": [
+      "Our systems don't really talk to each other",
+      "We've got quite a lot of legacy technology that needs replacing",
+      "Different departments have ended up with different tools for similar things",
+      "People use their own tools because the official ones don't meet their needs",
+      "We don't really have a technology roadmap for this area"
+    ],
+    "self_assessment_anchor": "We are at an early stage. Digital activity in research is sporadic and individual rather than institutional.",
+    "common_over_estimation_pattern": "Respondents at this level rarely self-assess as Incidental. They typically select Intentional because awareness of the need for digital feels like intentional planning.",
+    "distinguishing_self_assessment_questions": [
+      "Do we have documented digital objectives specifically for research with named owners?",
+      "Is there institutional funding specifically allocated to digital in research?",
+      "Does any governance body have explicit responsibility for digital in research?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-re-tec",
+    "dimension_name": "Research: Technology",
+    "pillar": "Research",
+    "cross_cutting_dimension": "Technology",
+    "level_id": "the-re-tec-intentional",
+    "level_name": "Intentional",
+    "level_order": 2,
+    "typical_respondent_roles": [
+      "PVC Research",
+      "Faculty Associate Dean (Research)",
+      "Director of Research Services",
+      "Head of Research Computing"
+    ],
+    "practitioner_vocabulary": [
+      "We've got a roadmap and we're working through the priority investments",
+      "We've started integrating our core systems with single sign-on and data feeds",
+      "Our procurement process now requires architectural review",
+      "We're migrating some systems to the cloud as part of our modernisation",
+      "Support is good but we know we need to do more on integration"
+    ],
+    "self_assessment_anchor": "We have started planning purposefully. We have objectives and some dedicated resources for digital in research, but implementation is uneven.",
+    "common_over_estimation_pattern": "Respondents at this level commonly self-assess as Integrated because having a strategy and active projects feels like institution-wide coordination.",
+    "distinguishing_self_assessment_questions": [
+      "Is our digital strategy for research being implemented consistently across all units, not just leading departments?",
+      "Is our funding recurrent or project-based?",
+      "Does our governance body have decision-making authority or is it advisory?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-re-tec",
+    "dimension_name": "Research: Technology",
+    "pillar": "Research",
+    "cross_cutting_dimension": "Technology",
+    "level_id": "the-re-tec-integrated",
+    "level_name": "Integrated",
+    "level_order": 3,
+    "typical_respondent_roles": [
+      "PVC Research",
+      "Faculty Associate Dean (Research)",
+      "Director of Research Services",
+      "Head of Research Computing"
+    ],
+    "practitioner_vocabulary": [
+      "Our systems are well-integrated through APIs and follow enterprise architecture standards",
+      "Technology refresh is planned and funded on regular cycles",
+      "Our governance includes both IT and domain stakeholder representation",
+      "We monitor service levels and report them regularly",
+      "Technology enables the way we want to work rather than constraining it"
+    ],
+    "self_assessment_anchor": "We are well-coordinated. Digital in research is governed institution-wide with consistent implementation, recurrent funding, and accountability.",
+    "common_over_estimation_pattern": "Respondents at this level sometimes self-assess as Optimised because effective coordination feels like sector leadership.",
+    "distinguishing_self_assessment_questions": [
+      "Do we review and update our approach annually based on evidence and data?",
+      "Do other institutions look to us as a model for digital in research?",
+      "Are we proactively innovating or primarily implementing established good practice?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-re-tec",
+    "dimension_name": "Research: Technology",
+    "pillar": "Research",
+    "cross_cutting_dimension": "Technology",
+    "level_id": "the-re-tec-optimised",
+    "level_name": "Optimised",
+    "level_order": 4,
+    "typical_respondent_roles": [
+      "PVC Research",
+      "Faculty Associate Dean (Research)",
+      "Director of Research Services",
+      "Head of Research Computing"
+    ],
+    "practitioner_vocabulary": [
+      "Our architecture is designed for extensibility and rapid innovation",
+      "We have sandbox environments for testing emerging technologies",
+      "Other institutions look at our technology architecture as a model",
+      "We assess and adopt new technologies proactively rather than reactively",
+      "Technology is treated as a strategic asset, not just operational infrastructure"
+    ],
+    "self_assessment_anchor": "We are sector-leading. We continuously improve through evidence, innovate proactively, and contribute to sector practice in digital research.",
+    "common_over_estimation_pattern": "Respondents at this level typically self-assess accurately, though they may underestimate their level relative to the sector.",
+    "distinguishing_self_assessment_questions": [
+      "Are we genuinely ahead of the sector or keeping pace with leading peers?",
+      "Is our sector contribution sustained and substantial or occasional?",
+      "Would external assessment confirm our self-assessment?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-re-dat",
+    "dimension_name": "Research: Data",
+    "pillar": "Research",
+    "cross_cutting_dimension": "Data",
+    "level_id": "the-re-dat-incidental",
+    "level_name": "Incidental",
+    "level_order": 1,
+    "typical_respondent_roles": [
+      "PVC Research",
+      "Faculty Associate Dean (Research)",
+      "Director of Research Services",
+      "Head of Research Computing"
+    ],
+    "practitioner_vocabulary": [
+      "Our data is all over the place in different spreadsheets and systems",
+      "We produce reports when asked but it's always a manual exercise",
+      "We don't really have data governance specifically for this area",
+      "Decisions tend to be based on experience and judgement rather than data",
+      "We meet our statutory reporting requirements but that's about it"
+    ],
+    "self_assessment_anchor": "We are at an early stage. Digital activity in research is sporadic and individual rather than institutional.",
+    "common_over_estimation_pattern": "Respondents at this level rarely self-assess as Incidental. They typically select Intentional because awareness of the need for digital feels like intentional planning.",
+    "distinguishing_self_assessment_questions": [
+      "Do we have documented digital objectives specifically for research with named owners?",
+      "Is there institutional funding specifically allocated to digital in research?",
+      "Does any governance body have explicit responsibility for digital in research?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-re-dat",
+    "dimension_name": "Research: Data",
+    "pillar": "Research",
+    "cross_cutting_dimension": "Data",
+    "level_id": "the-re-dat-intentional",
+    "level_name": "Intentional",
+    "level_order": 2,
+    "typical_respondent_roles": [
+      "PVC Research",
+      "Faculty Associate Dean (Research)",
+      "Director of Research Services",
+      "Head of Research Computing"
+    ],
+    "practitioner_vocabulary": [
+      "We've identified our core datasets and we're getting more systematic",
+      "We have some dashboards up and running but not across the whole institution",
+      "We've drafted a data governance framework but compliance is still patchy",
+      "We know our data quality needs work and we're starting to address it",
+      "Some areas are really data-driven now but it's not consistent everywhere"
+    ],
+    "self_assessment_anchor": "We have started planning purposefully. We have objectives and some dedicated resources for digital in research, but implementation is uneven.",
+    "common_over_estimation_pattern": "Respondents at this level commonly self-assess as Integrated because having a strategy and active projects feels like institution-wide coordination.",
+    "distinguishing_self_assessment_questions": [
+      "Is our digital strategy for research being implemented consistently across all units, not just leading departments?",
+      "Is our funding recurrent or project-based?",
+      "Does our governance body have decision-making authority or is it advisory?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-re-dat",
+    "dimension_name": "Research: Data",
+    "pillar": "Research",
+    "cross_cutting_dimension": "Data",
+    "level_id": "the-re-dat-integrated",
+    "level_name": "Integrated",
+    "level_order": 3,
+    "typical_respondent_roles": [
+      "PVC Research",
+      "Faculty Associate Dean (Research)",
+      "Director of Research Services",
+      "Head of Research Computing"
+    ],
+    "practitioner_vocabulary": [
+      "We have comprehensive, reliable data with clear ownership and quality standards",
+      "Self-service analytics are available to authorised staff across the institution",
+      "Data governance is operational with regular compliance monitoring",
+      "Data quality is actively managed with regular audits",
+      "Data-informed decision-making is the norm in all our committees"
+    ],
+    "self_assessment_anchor": "We are well-coordinated. Digital in research is governed institution-wide with consistent implementation, recurrent funding, and accountability.",
+    "common_over_estimation_pattern": "Respondents at this level sometimes self-assess as Optimised because effective coordination feels like sector leadership.",
+    "distinguishing_self_assessment_questions": [
+      "Do we review and update our approach annually based on evidence and data?",
+      "Do other institutions look to us as a model for digital in research?",
+      "Are we proactively innovating or primarily implementing established good practice?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-re-dat",
+    "dimension_name": "Research: Data",
+    "pillar": "Research",
+    "cross_cutting_dimension": "Data",
+    "level_id": "the-re-dat-optimised",
+    "level_name": "Optimised",
+    "level_order": 4,
+    "typical_respondent_roles": [
+      "PVC Research",
+      "Faculty Associate Dean (Research)",
+      "Director of Research Services",
+      "Head of Research Computing"
+    ],
+    "practitioner_vocabulary": [
+      "We use predictive modelling and advanced analytics to inform decisions",
+      "We have near-real-time data available for operational decision-making",
+      "Our data governance approach is referenced by other institutions",
+      "We contribute to sector data standards and best practice",
+      "Our staff are highly data-literate and can do sophisticated analysis themselves"
+    ],
+    "self_assessment_anchor": "We are sector-leading. We continuously improve through evidence, innovate proactively, and contribute to sector practice in digital research.",
+    "common_over_estimation_pattern": "Respondents at this level typically self-assess accurately, though they may underestimate their level relative to the sector.",
+    "distinguishing_self_assessment_questions": [
+      "Are we genuinely ahead of the sector or keeping pace with leading peers?",
+      "Is our sector contribution sustained and substantial or occasional?",
+      "Would external assessment confirm our self-assessment?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-re-uti",
+    "dimension_name": "Research: Utilisation",
+    "pillar": "Research",
+    "cross_cutting_dimension": "Utilisation",
+    "level_id": "the-re-uti-incidental",
+    "level_name": "Incidental",
+    "level_order": 1,
+    "typical_respondent_roles": [
+      "PVC Research",
+      "Faculty Associate Dean (Research)",
+      "Director of Research Services",
+      "Head of Research Computing"
+    ],
+    "practitioner_vocabulary": [
+      "We've got the tools but most people aren't really using them properly",
+      "A lot of people still use manual processes even though digital alternatives exist",
+      "There aren't really any expectations about what tools people should be using",
+      "We don't track who's actually using what",
+      "Some people are doing amazing things with the tools but it's very individual"
+    ],
+    "self_assessment_anchor": "We are at an early stage. Digital activity in research is sporadic and individual rather than institutional.",
+    "common_over_estimation_pattern": "Respondents at this level rarely self-assess as Incidental. They typically select Intentional because awareness of the need for digital feels like intentional planning.",
+    "distinguishing_self_assessment_questions": [
+      "Do we have documented digital objectives specifically for research with named owners?",
+      "Is there institutional funding specifically allocated to digital in research?",
+      "Does any governance body have explicit responsibility for digital in research?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-re-uti",
+    "dimension_name": "Research: Utilisation",
+    "pillar": "Research",
+    "cross_cutting_dimension": "Utilisation",
+    "level_id": "the-re-uti-intentional",
+    "level_name": "Intentional",
+    "level_order": 2,
+    "typical_respondent_roles": [
+      "PVC Research",
+      "Faculty Associate Dean (Research)",
+      "Director of Research Services",
+      "Head of Research Computing"
+    ],
+    "practitioner_vocabulary": [
+      "We're actively promoting adoption and running training to get people on board",
+      "We've set out some minimum expectations for tool usage",
+      "Uptake is growing but some areas are much further ahead than others",
+      "We're tracking adoption in some areas but not institution-wide yet",
+      "The advanced features of our tools are still underused"
+    ],
+    "self_assessment_anchor": "We have started planning purposefully. We have objectives and some dedicated resources for digital in research, but implementation is uneven.",
+    "common_over_estimation_pattern": "Respondents at this level commonly self-assess as Integrated because having a strategy and active projects feels like institution-wide coordination.",
+    "distinguishing_self_assessment_questions": [
+      "Is our digital strategy for research being implemented consistently across all units, not just leading departments?",
+      "Is our funding recurrent or project-based?",
+      "Does our governance body have decision-making authority or is it advisory?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-re-uti",
+    "dimension_name": "Research: Utilisation",
+    "pillar": "Research",
+    "cross_cutting_dimension": "Utilisation",
+    "level_id": "the-re-uti-integrated",
+    "level_name": "Integrated",
+    "level_order": 3,
+    "typical_respondent_roles": [
+      "PVC Research",
+      "Faculty Associate Dean (Research)",
+      "Director of Research Services",
+      "Head of Research Computing"
+    ],
+    "practitioner_vocabulary": [
+      "Usage is consistent across the institution and we monitor it institution-wide",
+      "Digital workflows have replaced manual processes for all our core activities",
+      "We measure the impact of tool usage on outcomes",
+      "User feedback directly informs how we configure and support our tools",
+      "Most staff use advanced features routinely, not just the basics"
+    ],
+    "self_assessment_anchor": "We are well-coordinated. Digital in research is governed institution-wide with consistent implementation, recurrent funding, and accountability.",
+    "common_over_estimation_pattern": "Respondents at this level sometimes self-assess as Optimised because effective coordination feels like sector leadership.",
+    "distinguishing_self_assessment_questions": [
+      "Do we review and update our approach annually based on evidence and data?",
+      "Do other institutions look to us as a model for digital in research?",
+      "Are we proactively innovating or primarily implementing established good practice?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-re-uti",
+    "dimension_name": "Research: Utilisation",
+    "pillar": "Research",
+    "cross_cutting_dimension": "Utilisation",
+    "level_id": "the-re-uti-optimised",
+    "level_name": "Optimised",
+    "level_order": 4,
+    "typical_respondent_roles": [
+      "PVC Research",
+      "Faculty Associate Dean (Research)",
+      "Director of Research Services",
+      "Head of Research Computing"
+    ],
+    "practitioner_vocabulary": [
+      "Our users innovate new ways of using tools that we hadn't anticipated",
+      "We use real-time usage data to continuously optimise our tool deployment",
+      "Vendors and other institutions study how we use their tools",
+      "Staff-driven innovation feeds directly into our technology and strategy decisions",
+      "We can quantify the impact of our digital utilisation on outcomes"
+    ],
+    "self_assessment_anchor": "We are sector-leading. We continuously improve through evidence, innovate proactively, and contribute to sector practice in digital research.",
+    "common_over_estimation_pattern": "Respondents at this level typically self-assess accurately, though they may underestimate their level relative to the sector.",
+    "distinguishing_self_assessment_questions": [
+      "Are we genuinely ahead of the sector or keeping pace with leading peers?",
+      "Is our sector contribution sustained and substantial or occasional?",
+      "Would external assessment confirm our self-assessment?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-ps-str",
+    "dimension_name": "Professional Services: Strategy",
+    "pillar": "Professional Services",
+    "cross_cutting_dimension": "Strategy",
+    "level_id": "the-ps-str-incidental",
+    "level_name": "Incidental",
+    "level_order": 1,
+    "typical_respondent_roles": [
+      "COO",
+      "Registrar",
+      "Director of Student Services",
+      "HR Director",
+      "Director of IT"
+    ],
+    "practitioner_vocabulary": [
+      "We know we need a digital strategy but haven't got round to writing one",
+      "Different departments are doing their own thing with technology",
+      "It's on our radar but we have other priorities right now",
+      "Our strategy mentions digital briefly but it's not a main focus",
+      "We respond to issues as they come up rather than planning ahead"
+    ],
+    "self_assessment_anchor": "We are at an early stage. Digital activity in professional services is sporadic and individual rather than institutional.",
+    "common_over_estimation_pattern": "Respondents at this level rarely self-assess as Incidental. They typically select Intentional because awareness of the need for digital feels like intentional planning.",
+    "distinguishing_self_assessment_questions": [
+      "Do we have documented digital objectives specifically for professional services with named owners?",
+      "Is there institutional funding specifically allocated to digital in professional services?",
+      "Does any governance body have explicit responsibility for digital in professional services?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-ps-str",
+    "dimension_name": "Professional Services: Strategy",
+    "pillar": "Professional Services",
+    "cross_cutting_dimension": "Strategy",
+    "level_id": "the-ps-str-intentional",
+    "level_name": "Intentional",
+    "level_order": 2,
+    "typical_respondent_roles": [
+      "COO",
+      "Registrar",
+      "Director of Student Services",
+      "HR Director",
+      "Director of IT"
+    ],
+    "practitioner_vocabulary": [
+      "We've got a strategy in place and we're starting to implement it",
+      "We've set up a working group to oversee our digital plans",
+      "Some areas are further ahead than others in implementing the strategy",
+      "We've secured project funding for our priority digital initiatives",
+      "We're piloting some approaches before rolling them out more widely"
+    ],
+    "self_assessment_anchor": "We have started planning purposefully. We have objectives and some dedicated resources for digital in professional services, but implementation is uneven.",
+    "common_over_estimation_pattern": "Respondents at this level commonly self-assess as Integrated because having a strategy and active projects feels like institution-wide coordination.",
+    "distinguishing_self_assessment_questions": [
+      "Is our digital strategy for professional services being implemented consistently across all units, not just leading departments?",
+      "Is our funding recurrent or project-based?",
+      "Does our governance body have decision-making authority or is it advisory?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-ps-str",
+    "dimension_name": "Professional Services: Strategy",
+    "pillar": "Professional Services",
+    "cross_cutting_dimension": "Strategy",
+    "level_id": "the-ps-str-integrated",
+    "level_name": "Integrated",
+    "level_order": 3,
+    "typical_respondent_roles": [
+      "COO",
+      "Registrar",
+      "Director of Student Services",
+      "HR Director",
+      "Director of IT"
+    ],
+    "practitioner_vocabulary": [
+      "Our digital strategy is embedded in every faculty's operational plan",
+      "We have recurrent budget for digital and it's governed at senior level",
+      "All our faculties are implementing the strategy in locally adapted ways",
+      "We report on digital KPIs to our board on a regular cycle",
+      "Our central team and faculties work together through a joint governance structure"
+    ],
+    "self_assessment_anchor": "We are well-coordinated. Digital in professional services is governed institution-wide with consistent implementation, recurrent funding, and accountability.",
+    "common_over_estimation_pattern": "Respondents at this level sometimes self-assess as Optimised because effective coordination feels like sector leadership.",
+    "distinguishing_self_assessment_questions": [
+      "Do we review and update our approach annually based on evidence and data?",
+      "Do other institutions look to us as a model for digital in professional services?",
+      "Are we proactively innovating or primarily implementing established good practice?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-ps-str",
+    "dimension_name": "Professional Services: Strategy",
+    "pillar": "Professional Services",
+    "cross_cutting_dimension": "Strategy",
+    "level_id": "the-ps-str-optimised",
+    "level_name": "Optimised",
+    "level_order": 4,
+    "typical_respondent_roles": [
+      "COO",
+      "Registrar",
+      "Director of Student Services",
+      "HR Director",
+      "Director of IT"
+    ],
+    "practitioner_vocabulary": [
+      "We review and update our digital strategy annually based on evidence",
+      "Other institutions come to us to learn about our approach",
+      "We're usually ahead of the sector in identifying emerging trends",
+      "We publish our approach and contribute to sector-level policy",
+      "Digital investment is treated as core infrastructure, not discretionary spend"
+    ],
+    "self_assessment_anchor": "We are sector-leading. We continuously improve through evidence, innovate proactively, and contribute to sector practice in digital professional services.",
+    "common_over_estimation_pattern": "Respondents at this level typically self-assess accurately, though they may underestimate their level relative to the sector.",
+    "distinguishing_self_assessment_questions": [
+      "Are we genuinely ahead of the sector or keeping pace with leading peers?",
+      "Is our sector contribution sustained and substantial or occasional?",
+      "Would external assessment confirm our self-assessment?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-ps-ppl",
+    "dimension_name": "Professional Services: People & Culture",
+    "pillar": "Professional Services",
+    "cross_cutting_dimension": "People & Culture",
+    "level_id": "the-ps-ppl-incidental",
+    "level_name": "Incidental",
+    "level_order": 1,
+    "typical_respondent_roles": [
+      "COO",
+      "Registrar",
+      "Director of Student Services",
+      "HR Director",
+      "Director of IT"
+    ],
+    "practitioner_vocabulary": [
+      "A few enthusiasts are doing great things but most staff aren't engaged",
+      "We don't really have a development programme for digital skills in this area",
+      "People pick things up themselves or learn from colleagues informally",
+      "Digital skills aren't really mentioned in our role descriptions",
+      "There's quite a lot of resistance to changing how things are done"
+    ],
+    "self_assessment_anchor": "We are at an early stage. Digital activity in professional services is sporadic and individual rather than institutional.",
+    "common_over_estimation_pattern": "Respondents at this level rarely self-assess as Incidental. They typically select Intentional because awareness of the need for digital feels like intentional planning.",
+    "distinguishing_self_assessment_questions": [
+      "Do we have documented digital objectives specifically for professional services with named owners?",
+      "Is there institutional funding specifically allocated to digital in professional services?",
+      "Does any governance body have explicit responsibility for digital in professional services?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-ps-ppl",
+    "dimension_name": "Professional Services: People & Culture",
+    "pillar": "Professional Services",
+    "cross_cutting_dimension": "People & Culture",
+    "level_id": "the-ps-ppl-intentional",
+    "level_name": "Intentional",
+    "level_order": 2,
+    "typical_respondent_roles": [
+      "COO",
+      "Registrar",
+      "Director of Student Services",
+      "HR Director",
+      "Director of IT"
+    ],
+    "practitioner_vocabulary": [
+      "We've set up training programmes and we're encouraging staff to engage",
+      "We're starting to include digital skills in our recruitment criteria",
+      "We've got a community of practice forming around digital practice",
+      "Some teams have really embraced it but others are slower to engage",
+      "We recognise we need more consistent engagement across the board"
+    ],
+    "self_assessment_anchor": "We have started planning purposefully. We have objectives and some dedicated resources for digital in professional services, but implementation is uneven.",
+    "common_over_estimation_pattern": "Respondents at this level commonly self-assess as Integrated because having a strategy and active projects feels like institution-wide coordination.",
+    "distinguishing_self_assessment_questions": [
+      "Is our digital strategy for professional services being implemented consistently across all units, not just leading departments?",
+      "Is our funding recurrent or project-based?",
+      "Does our governance body have decision-making authority or is it advisory?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-ps-ppl",
+    "dimension_name": "Professional Services: People & Culture",
+    "pillar": "Professional Services",
+    "cross_cutting_dimension": "People & Culture",
+    "level_id": "the-ps-ppl-integrated",
+    "level_name": "Integrated",
+    "level_order": 3,
+    "typical_respondent_roles": [
+      "COO",
+      "Registrar",
+      "Director of Student Services",
+      "HR Director",
+      "Director of IT"
+    ],
+    "practitioner_vocabulary": [
+      "Digital competencies are built into our PDR process and career pathways",
+      "We have structured development programmes at every career stage",
+      "Innovation is recognised through our promotion and reward criteria",
+      "Our communities of practice are well-established and institutionally supported",
+      "We invest in change management as a specific capability"
+    ],
+    "self_assessment_anchor": "We are well-coordinated. Digital in professional services is governed institution-wide with consistent implementation, recurrent funding, and accountability.",
+    "common_over_estimation_pattern": "Respondents at this level sometimes self-assess as Optimised because effective coordination feels like sector leadership.",
+    "distinguishing_self_assessment_questions": [
+      "Do we review and update our approach annually based on evidence and data?",
+      "Do other institutions look to us as a model for digital in professional services?",
+      "Are we proactively innovating or primarily implementing established good practice?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-ps-ppl",
+    "dimension_name": "Professional Services: People & Culture",
+    "pillar": "Professional Services",
+    "cross_cutting_dimension": "People & Culture",
+    "level_id": "the-ps-ppl-optimised",
+    "level_name": "Optimised",
+    "level_order": 4,
+    "typical_respondent_roles": [
+      "COO",
+      "Registrar",
+      "Director of Student Services",
+      "HR Director",
+      "Director of IT"
+    ],
+    "practitioner_vocabulary": [
+      "Our staff are genuinely self-driven in developing their digital practice",
+      "We're known in the sector for our digital culture and it helps with recruitment",
+      "Staff-led innovation is the norm, not the exception here",
+      "We contribute to sector workforce development through our frameworks and training",
+      "Development is peer-driven and doesn't depend on central provision"
+    ],
+    "self_assessment_anchor": "We are sector-leading. We continuously improve through evidence, innovate proactively, and contribute to sector practice in digital professional services.",
+    "common_over_estimation_pattern": "Respondents at this level typically self-assess accurately, though they may underestimate their level relative to the sector.",
+    "distinguishing_self_assessment_questions": [
+      "Are we genuinely ahead of the sector or keeping pace with leading peers?",
+      "Is our sector contribution sustained and substantial or occasional?",
+      "Would external assessment confirm our self-assessment?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-ps-tec",
+    "dimension_name": "Professional Services: Technology",
+    "pillar": "Professional Services",
+    "cross_cutting_dimension": "Technology",
+    "level_id": "the-ps-tec-incidental",
+    "level_name": "Incidental",
+    "level_order": 1,
+    "typical_respondent_roles": [
+      "COO",
+      "Registrar",
+      "Director of Student Services",
+      "HR Director",
+      "Director of IT"
+    ],
+    "practitioner_vocabulary": [
+      "Our systems don't really talk to each other",
+      "We've got quite a lot of legacy technology that needs replacing",
+      "Different departments have ended up with different tools for similar things",
+      "People use their own tools because the official ones don't meet their needs",
+      "We don't really have a technology roadmap for this area"
+    ],
+    "self_assessment_anchor": "We are at an early stage. Digital activity in professional services is sporadic and individual rather than institutional.",
+    "common_over_estimation_pattern": "Respondents at this level rarely self-assess as Incidental. They typically select Intentional because awareness of the need for digital feels like intentional planning.",
+    "distinguishing_self_assessment_questions": [
+      "Do we have documented digital objectives specifically for professional services with named owners?",
+      "Is there institutional funding specifically allocated to digital in professional services?",
+      "Does any governance body have explicit responsibility for digital in professional services?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-ps-tec",
+    "dimension_name": "Professional Services: Technology",
+    "pillar": "Professional Services",
+    "cross_cutting_dimension": "Technology",
+    "level_id": "the-ps-tec-intentional",
+    "level_name": "Intentional",
+    "level_order": 2,
+    "typical_respondent_roles": [
+      "COO",
+      "Registrar",
+      "Director of Student Services",
+      "HR Director",
+      "Director of IT"
+    ],
+    "practitioner_vocabulary": [
+      "We've got a roadmap and we're working through the priority investments",
+      "We've started integrating our core systems with single sign-on and data feeds",
+      "Our procurement process now requires architectural review",
+      "We're migrating some systems to the cloud as part of our modernisation",
+      "Support is good but we know we need to do more on integration"
+    ],
+    "self_assessment_anchor": "We have started planning purposefully. We have objectives and some dedicated resources for digital in professional services, but implementation is uneven.",
+    "common_over_estimation_pattern": "Respondents at this level commonly self-assess as Integrated because having a strategy and active projects feels like institution-wide coordination.",
+    "distinguishing_self_assessment_questions": [
+      "Is our digital strategy for professional services being implemented consistently across all units, not just leading departments?",
+      "Is our funding recurrent or project-based?",
+      "Does our governance body have decision-making authority or is it advisory?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-ps-tec",
+    "dimension_name": "Professional Services: Technology",
+    "pillar": "Professional Services",
+    "cross_cutting_dimension": "Technology",
+    "level_id": "the-ps-tec-integrated",
+    "level_name": "Integrated",
+    "level_order": 3,
+    "typical_respondent_roles": [
+      "COO",
+      "Registrar",
+      "Director of Student Services",
+      "HR Director",
+      "Director of IT"
+    ],
+    "practitioner_vocabulary": [
+      "Our systems are well-integrated through APIs and follow enterprise architecture standards",
+      "Technology refresh is planned and funded on regular cycles",
+      "Our governance includes both IT and domain stakeholder representation",
+      "We monitor service levels and report them regularly",
+      "Technology enables the way we want to work rather than constraining it"
+    ],
+    "self_assessment_anchor": "We are well-coordinated. Digital in professional services is governed institution-wide with consistent implementation, recurrent funding, and accountability.",
+    "common_over_estimation_pattern": "Respondents at this level sometimes self-assess as Optimised because effective coordination feels like sector leadership.",
+    "distinguishing_self_assessment_questions": [
+      "Do we review and update our approach annually based on evidence and data?",
+      "Do other institutions look to us as a model for digital in professional services?",
+      "Are we proactively innovating or primarily implementing established good practice?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-ps-tec",
+    "dimension_name": "Professional Services: Technology",
+    "pillar": "Professional Services",
+    "cross_cutting_dimension": "Technology",
+    "level_id": "the-ps-tec-optimised",
+    "level_name": "Optimised",
+    "level_order": 4,
+    "typical_respondent_roles": [
+      "COO",
+      "Registrar",
+      "Director of Student Services",
+      "HR Director",
+      "Director of IT"
+    ],
+    "practitioner_vocabulary": [
+      "Our architecture is designed for extensibility and rapid innovation",
+      "We have sandbox environments for testing emerging technologies",
+      "Other institutions look at our technology architecture as a model",
+      "We assess and adopt new technologies proactively rather than reactively",
+      "Technology is treated as a strategic asset, not just operational infrastructure"
+    ],
+    "self_assessment_anchor": "We are sector-leading. We continuously improve through evidence, innovate proactively, and contribute to sector practice in digital professional services.",
+    "common_over_estimation_pattern": "Respondents at this level typically self-assess accurately, though they may underestimate their level relative to the sector.",
+    "distinguishing_self_assessment_questions": [
+      "Are we genuinely ahead of the sector or keeping pace with leading peers?",
+      "Is our sector contribution sustained and substantial or occasional?",
+      "Would external assessment confirm our self-assessment?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-ps-dat",
+    "dimension_name": "Professional Services: Data",
+    "pillar": "Professional Services",
+    "cross_cutting_dimension": "Data",
+    "level_id": "the-ps-dat-incidental",
+    "level_name": "Incidental",
+    "level_order": 1,
+    "typical_respondent_roles": [
+      "COO",
+      "Registrar",
+      "Director of Student Services",
+      "HR Director",
+      "Director of IT"
+    ],
+    "practitioner_vocabulary": [
+      "Our data is all over the place in different spreadsheets and systems",
+      "We produce reports when asked but it's always a manual exercise",
+      "We don't really have data governance specifically for this area",
+      "Decisions tend to be based on experience and judgement rather than data",
+      "We meet our statutory reporting requirements but that's about it"
+    ],
+    "self_assessment_anchor": "We are at an early stage. Digital activity in professional services is sporadic and individual rather than institutional.",
+    "common_over_estimation_pattern": "Respondents at this level rarely self-assess as Incidental. They typically select Intentional because awareness of the need for digital feels like intentional planning.",
+    "distinguishing_self_assessment_questions": [
+      "Do we have documented digital objectives specifically for professional services with named owners?",
+      "Is there institutional funding specifically allocated to digital in professional services?",
+      "Does any governance body have explicit responsibility for digital in professional services?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-ps-dat",
+    "dimension_name": "Professional Services: Data",
+    "pillar": "Professional Services",
+    "cross_cutting_dimension": "Data",
+    "level_id": "the-ps-dat-intentional",
+    "level_name": "Intentional",
+    "level_order": 2,
+    "typical_respondent_roles": [
+      "COO",
+      "Registrar",
+      "Director of Student Services",
+      "HR Director",
+      "Director of IT"
+    ],
+    "practitioner_vocabulary": [
+      "We've identified our core datasets and we're getting more systematic",
+      "We have some dashboards up and running but not across the whole institution",
+      "We've drafted a data governance framework but compliance is still patchy",
+      "We know our data quality needs work and we're starting to address it",
+      "Some areas are really data-driven now but it's not consistent everywhere"
+    ],
+    "self_assessment_anchor": "We have started planning purposefully. We have objectives and some dedicated resources for digital in professional services, but implementation is uneven.",
+    "common_over_estimation_pattern": "Respondents at this level commonly self-assess as Integrated because having a strategy and active projects feels like institution-wide coordination.",
+    "distinguishing_self_assessment_questions": [
+      "Is our digital strategy for professional services being implemented consistently across all units, not just leading departments?",
+      "Is our funding recurrent or project-based?",
+      "Does our governance body have decision-making authority or is it advisory?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-ps-dat",
+    "dimension_name": "Professional Services: Data",
+    "pillar": "Professional Services",
+    "cross_cutting_dimension": "Data",
+    "level_id": "the-ps-dat-integrated",
+    "level_name": "Integrated",
+    "level_order": 3,
+    "typical_respondent_roles": [
+      "COO",
+      "Registrar",
+      "Director of Student Services",
+      "HR Director",
+      "Director of IT"
+    ],
+    "practitioner_vocabulary": [
+      "We have comprehensive, reliable data with clear ownership and quality standards",
+      "Self-service analytics are available to authorised staff across the institution",
+      "Data governance is operational with regular compliance monitoring",
+      "Data quality is actively managed with regular audits",
+      "Data-informed decision-making is the norm in all our committees"
+    ],
+    "self_assessment_anchor": "We are well-coordinated. Digital in professional services is governed institution-wide with consistent implementation, recurrent funding, and accountability.",
+    "common_over_estimation_pattern": "Respondents at this level sometimes self-assess as Optimised because effective coordination feels like sector leadership.",
+    "distinguishing_self_assessment_questions": [
+      "Do we review and update our approach annually based on evidence and data?",
+      "Do other institutions look to us as a model for digital in professional services?",
+      "Are we proactively innovating or primarily implementing established good practice?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-ps-dat",
+    "dimension_name": "Professional Services: Data",
+    "pillar": "Professional Services",
+    "cross_cutting_dimension": "Data",
+    "level_id": "the-ps-dat-optimised",
+    "level_name": "Optimised",
+    "level_order": 4,
+    "typical_respondent_roles": [
+      "COO",
+      "Registrar",
+      "Director of Student Services",
+      "HR Director",
+      "Director of IT"
+    ],
+    "practitioner_vocabulary": [
+      "We use predictive modelling and advanced analytics to inform decisions",
+      "We have near-real-time data available for operational decision-making",
+      "Our data governance approach is referenced by other institutions",
+      "We contribute to sector data standards and best practice",
+      "Our staff are highly data-literate and can do sophisticated analysis themselves"
+    ],
+    "self_assessment_anchor": "We are sector-leading. We continuously improve through evidence, innovate proactively, and contribute to sector practice in digital professional services.",
+    "common_over_estimation_pattern": "Respondents at this level typically self-assess accurately, though they may underestimate their level relative to the sector.",
+    "distinguishing_self_assessment_questions": [
+      "Are we genuinely ahead of the sector or keeping pace with leading peers?",
+      "Is our sector contribution sustained and substantial or occasional?",
+      "Would external assessment confirm our self-assessment?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-ps-uti",
+    "dimension_name": "Professional Services: Utilisation",
+    "pillar": "Professional Services",
+    "cross_cutting_dimension": "Utilisation",
+    "level_id": "the-ps-uti-incidental",
+    "level_name": "Incidental",
+    "level_order": 1,
+    "typical_respondent_roles": [
+      "COO",
+      "Registrar",
+      "Director of Student Services",
+      "HR Director",
+      "Director of IT"
+    ],
+    "practitioner_vocabulary": [
+      "We've got the tools but most people aren't really using them properly",
+      "A lot of people still use manual processes even though digital alternatives exist",
+      "There aren't really any expectations about what tools people should be using",
+      "We don't track who's actually using what",
+      "Some people are doing amazing things with the tools but it's very individual"
+    ],
+    "self_assessment_anchor": "We are at an early stage. Digital activity in professional services is sporadic and individual rather than institutional.",
+    "common_over_estimation_pattern": "Respondents at this level rarely self-assess as Incidental. They typically select Intentional because awareness of the need for digital feels like intentional planning.",
+    "distinguishing_self_assessment_questions": [
+      "Do we have documented digital objectives specifically for professional services with named owners?",
+      "Is there institutional funding specifically allocated to digital in professional services?",
+      "Does any governance body have explicit responsibility for digital in professional services?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-ps-uti",
+    "dimension_name": "Professional Services: Utilisation",
+    "pillar": "Professional Services",
+    "cross_cutting_dimension": "Utilisation",
+    "level_id": "the-ps-uti-intentional",
+    "level_name": "Intentional",
+    "level_order": 2,
+    "typical_respondent_roles": [
+      "COO",
+      "Registrar",
+      "Director of Student Services",
+      "HR Director",
+      "Director of IT"
+    ],
+    "practitioner_vocabulary": [
+      "We're actively promoting adoption and running training to get people on board",
+      "We've set out some minimum expectations for tool usage",
+      "Uptake is growing but some areas are much further ahead than others",
+      "We're tracking adoption in some areas but not institution-wide yet",
+      "The advanced features of our tools are still underused"
+    ],
+    "self_assessment_anchor": "We have started planning purposefully. We have objectives and some dedicated resources for digital in professional services, but implementation is uneven.",
+    "common_over_estimation_pattern": "Respondents at this level commonly self-assess as Integrated because having a strategy and active projects feels like institution-wide coordination.",
+    "distinguishing_self_assessment_questions": [
+      "Is our digital strategy for professional services being implemented consistently across all units, not just leading departments?",
+      "Is our funding recurrent or project-based?",
+      "Does our governance body have decision-making authority or is it advisory?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-ps-uti",
+    "dimension_name": "Professional Services: Utilisation",
+    "pillar": "Professional Services",
+    "cross_cutting_dimension": "Utilisation",
+    "level_id": "the-ps-uti-integrated",
+    "level_name": "Integrated",
+    "level_order": 3,
+    "typical_respondent_roles": [
+      "COO",
+      "Registrar",
+      "Director of Student Services",
+      "HR Director",
+      "Director of IT"
+    ],
+    "practitioner_vocabulary": [
+      "Usage is consistent across the institution and we monitor it institution-wide",
+      "Digital workflows have replaced manual processes for all our core activities",
+      "We measure the impact of tool usage on outcomes",
+      "User feedback directly informs how we configure and support our tools",
+      "Most staff use advanced features routinely, not just the basics"
+    ],
+    "self_assessment_anchor": "We are well-coordinated. Digital in professional services is governed institution-wide with consistent implementation, recurrent funding, and accountability.",
+    "common_over_estimation_pattern": "Respondents at this level sometimes self-assess as Optimised because effective coordination feels like sector leadership.",
+    "distinguishing_self_assessment_questions": [
+      "Do we review and update our approach annually based on evidence and data?",
+      "Do other institutions look to us as a model for digital in professional services?",
+      "Are we proactively innovating or primarily implementing established good practice?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-ps-uti",
+    "dimension_name": "Professional Services: Utilisation",
+    "pillar": "Professional Services",
+    "cross_cutting_dimension": "Utilisation",
+    "level_id": "the-ps-uti-optimised",
+    "level_name": "Optimised",
+    "level_order": 4,
+    "typical_respondent_roles": [
+      "COO",
+      "Registrar",
+      "Director of Student Services",
+      "HR Director",
+      "Director of IT"
+    ],
+    "practitioner_vocabulary": [
+      "Our users innovate new ways of using tools that we hadn't anticipated",
+      "We use real-time usage data to continuously optimise our tool deployment",
+      "Vendors and other institutions study how we use their tools",
+      "Staff-driven innovation feeds directly into our technology and strategy decisions",
+      "We can quantify the impact of our digital utilisation on outcomes"
+    ],
+    "self_assessment_anchor": "We are sector-leading. We continuously improve through evidence, innovate proactively, and contribute to sector practice in digital professional services.",
+    "common_over_estimation_pattern": "Respondents at this level typically self-assess accurately, though they may underestimate their level relative to the sector.",
+    "distinguishing_self_assessment_questions": [
+      "Are we genuinely ahead of the sector or keeping pace with leading peers?",
+      "Is our sector contribution sustained and substantial or occasional?",
+      "Would external assessment confirm our self-assessment?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-pg-str",
+    "dimension_name": "Planning & Governance: Strategy",
+    "pillar": "Planning & Governance",
+    "cross_cutting_dimension": "Strategy",
+    "level_id": "the-pg-str-incidental",
+    "level_name": "Incidental",
+    "level_order": 1,
+    "typical_respondent_roles": [
+      "Vice-Chancellor",
+      "University Secretary",
+      "Director of Planning",
+      "CIO",
+      "CFO"
+    ],
+    "practitioner_vocabulary": [
+      "We know we need a digital strategy but haven't got round to writing one",
+      "Different departments are doing their own thing with technology",
+      "It's on our radar but we have other priorities right now",
+      "Our strategy mentions digital briefly but it's not a main focus",
+      "We respond to issues as they come up rather than planning ahead"
+    ],
+    "self_assessment_anchor": "We are at an early stage. Digital activity in planning and governance is sporadic and individual rather than institutional.",
+    "common_over_estimation_pattern": "Respondents at this level rarely self-assess as Incidental. They typically select Intentional because awareness of the need for digital feels like intentional planning.",
+    "distinguishing_self_assessment_questions": [
+      "Do we have documented digital objectives specifically for planning and governance with named owners?",
+      "Is there institutional funding specifically allocated to digital in planning and governance?",
+      "Does any governance body have explicit responsibility for digital in planning and governance?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-pg-str",
+    "dimension_name": "Planning & Governance: Strategy",
+    "pillar": "Planning & Governance",
+    "cross_cutting_dimension": "Strategy",
+    "level_id": "the-pg-str-intentional",
+    "level_name": "Intentional",
+    "level_order": 2,
+    "typical_respondent_roles": [
+      "Vice-Chancellor",
+      "University Secretary",
+      "Director of Planning",
+      "CIO",
+      "CFO"
+    ],
+    "practitioner_vocabulary": [
+      "We've got a strategy in place and we're starting to implement it",
+      "We've set up a working group to oversee our digital plans",
+      "Some areas are further ahead than others in implementing the strategy",
+      "We've secured project funding for our priority digital initiatives",
+      "We're piloting some approaches before rolling them out more widely"
+    ],
+    "self_assessment_anchor": "We have started planning purposefully. We have objectives and some dedicated resources for digital in planning and governance, but implementation is uneven.",
+    "common_over_estimation_pattern": "Respondents at this level commonly self-assess as Integrated because having a strategy and active projects feels like institution-wide coordination.",
+    "distinguishing_self_assessment_questions": [
+      "Is our digital strategy for planning and governance being implemented consistently across all units, not just leading departments?",
+      "Is our funding recurrent or project-based?",
+      "Does our governance body have decision-making authority or is it advisory?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-pg-str",
+    "dimension_name": "Planning & Governance: Strategy",
+    "pillar": "Planning & Governance",
+    "cross_cutting_dimension": "Strategy",
+    "level_id": "the-pg-str-integrated",
+    "level_name": "Integrated",
+    "level_order": 3,
+    "typical_respondent_roles": [
+      "Vice-Chancellor",
+      "University Secretary",
+      "Director of Planning",
+      "CIO",
+      "CFO"
+    ],
+    "practitioner_vocabulary": [
+      "Our digital strategy is embedded in every faculty's operational plan",
+      "We have recurrent budget for digital and it's governed at senior level",
+      "All our faculties are implementing the strategy in locally adapted ways",
+      "We report on digital KPIs to our board on a regular cycle",
+      "Our central team and faculties work together through a joint governance structure"
+    ],
+    "self_assessment_anchor": "We are well-coordinated. Digital in planning and governance is governed institution-wide with consistent implementation, recurrent funding, and accountability.",
+    "common_over_estimation_pattern": "Respondents at this level sometimes self-assess as Optimised because effective coordination feels like sector leadership.",
+    "distinguishing_self_assessment_questions": [
+      "Do we review and update our approach annually based on evidence and data?",
+      "Do other institutions look to us as a model for digital in planning and governance?",
+      "Are we proactively innovating or primarily implementing established good practice?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-pg-str",
+    "dimension_name": "Planning & Governance: Strategy",
+    "pillar": "Planning & Governance",
+    "cross_cutting_dimension": "Strategy",
+    "level_id": "the-pg-str-optimised",
+    "level_name": "Optimised",
+    "level_order": 4,
+    "typical_respondent_roles": [
+      "Vice-Chancellor",
+      "University Secretary",
+      "Director of Planning",
+      "CIO",
+      "CFO"
+    ],
+    "practitioner_vocabulary": [
+      "We review and update our digital strategy annually based on evidence",
+      "Other institutions come to us to learn about our approach",
+      "We're usually ahead of the sector in identifying emerging trends",
+      "We publish our approach and contribute to sector-level policy",
+      "Digital investment is treated as core infrastructure, not discretionary spend"
+    ],
+    "self_assessment_anchor": "We are sector-leading. We continuously improve through evidence, innovate proactively, and contribute to sector practice in digital planning and governance.",
+    "common_over_estimation_pattern": "Respondents at this level typically self-assess accurately, though they may underestimate their level relative to the sector.",
+    "distinguishing_self_assessment_questions": [
+      "Are we genuinely ahead of the sector or keeping pace with leading peers?",
+      "Is our sector contribution sustained and substantial or occasional?",
+      "Would external assessment confirm our self-assessment?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-pg-ppl",
+    "dimension_name": "Planning & Governance: People & Culture",
+    "pillar": "Planning & Governance",
+    "cross_cutting_dimension": "People & Culture",
+    "level_id": "the-pg-ppl-incidental",
+    "level_name": "Incidental",
+    "level_order": 1,
+    "typical_respondent_roles": [
+      "Vice-Chancellor",
+      "University Secretary",
+      "Director of Planning",
+      "CIO",
+      "CFO"
+    ],
+    "practitioner_vocabulary": [
+      "A few enthusiasts are doing great things but most staff aren't engaged",
+      "We don't really have a development programme for digital skills in this area",
+      "People pick things up themselves or learn from colleagues informally",
+      "Digital skills aren't really mentioned in our role descriptions",
+      "There's quite a lot of resistance to changing how things are done"
+    ],
+    "self_assessment_anchor": "We are at an early stage. Digital activity in planning and governance is sporadic and individual rather than institutional.",
+    "common_over_estimation_pattern": "Respondents at this level rarely self-assess as Incidental. They typically select Intentional because awareness of the need for digital feels like intentional planning.",
+    "distinguishing_self_assessment_questions": [
+      "Do we have documented digital objectives specifically for planning and governance with named owners?",
+      "Is there institutional funding specifically allocated to digital in planning and governance?",
+      "Does any governance body have explicit responsibility for digital in planning and governance?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-pg-ppl",
+    "dimension_name": "Planning & Governance: People & Culture",
+    "pillar": "Planning & Governance",
+    "cross_cutting_dimension": "People & Culture",
+    "level_id": "the-pg-ppl-intentional",
+    "level_name": "Intentional",
+    "level_order": 2,
+    "typical_respondent_roles": [
+      "Vice-Chancellor",
+      "University Secretary",
+      "Director of Planning",
+      "CIO",
+      "CFO"
+    ],
+    "practitioner_vocabulary": [
+      "We've set up training programmes and we're encouraging staff to engage",
+      "We're starting to include digital skills in our recruitment criteria",
+      "We've got a community of practice forming around digital practice",
+      "Some teams have really embraced it but others are slower to engage",
+      "We recognise we need more consistent engagement across the board"
+    ],
+    "self_assessment_anchor": "We have started planning purposefully. We have objectives and some dedicated resources for digital in planning and governance, but implementation is uneven.",
+    "common_over_estimation_pattern": "Respondents at this level commonly self-assess as Integrated because having a strategy and active projects feels like institution-wide coordination.",
+    "distinguishing_self_assessment_questions": [
+      "Is our digital strategy for planning and governance being implemented consistently across all units, not just leading departments?",
+      "Is our funding recurrent or project-based?",
+      "Does our governance body have decision-making authority or is it advisory?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-pg-ppl",
+    "dimension_name": "Planning & Governance: People & Culture",
+    "pillar": "Planning & Governance",
+    "cross_cutting_dimension": "People & Culture",
+    "level_id": "the-pg-ppl-integrated",
+    "level_name": "Integrated",
+    "level_order": 3,
+    "typical_respondent_roles": [
+      "Vice-Chancellor",
+      "University Secretary",
+      "Director of Planning",
+      "CIO",
+      "CFO"
+    ],
+    "practitioner_vocabulary": [
+      "Digital competencies are built into our PDR process and career pathways",
+      "We have structured development programmes at every career stage",
+      "Innovation is recognised through our promotion and reward criteria",
+      "Our communities of practice are well-established and institutionally supported",
+      "We invest in change management as a specific capability"
+    ],
+    "self_assessment_anchor": "We are well-coordinated. Digital in planning and governance is governed institution-wide with consistent implementation, recurrent funding, and accountability.",
+    "common_over_estimation_pattern": "Respondents at this level sometimes self-assess as Optimised because effective coordination feels like sector leadership.",
+    "distinguishing_self_assessment_questions": [
+      "Do we review and update our approach annually based on evidence and data?",
+      "Do other institutions look to us as a model for digital in planning and governance?",
+      "Are we proactively innovating or primarily implementing established good practice?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-pg-ppl",
+    "dimension_name": "Planning & Governance: People & Culture",
+    "pillar": "Planning & Governance",
+    "cross_cutting_dimension": "People & Culture",
+    "level_id": "the-pg-ppl-optimised",
+    "level_name": "Optimised",
+    "level_order": 4,
+    "typical_respondent_roles": [
+      "Vice-Chancellor",
+      "University Secretary",
+      "Director of Planning",
+      "CIO",
+      "CFO"
+    ],
+    "practitioner_vocabulary": [
+      "Our staff are genuinely self-driven in developing their digital practice",
+      "We're known in the sector for our digital culture and it helps with recruitment",
+      "Staff-led innovation is the norm, not the exception here",
+      "We contribute to sector workforce development through our frameworks and training",
+      "Development is peer-driven and doesn't depend on central provision"
+    ],
+    "self_assessment_anchor": "We are sector-leading. We continuously improve through evidence, innovate proactively, and contribute to sector practice in digital planning and governance.",
+    "common_over_estimation_pattern": "Respondents at this level typically self-assess accurately, though they may underestimate their level relative to the sector.",
+    "distinguishing_self_assessment_questions": [
+      "Are we genuinely ahead of the sector or keeping pace with leading peers?",
+      "Is our sector contribution sustained and substantial or occasional?",
+      "Would external assessment confirm our self-assessment?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-pg-tec",
+    "dimension_name": "Planning & Governance: Technology",
+    "pillar": "Planning & Governance",
+    "cross_cutting_dimension": "Technology",
+    "level_id": "the-pg-tec-incidental",
+    "level_name": "Incidental",
+    "level_order": 1,
+    "typical_respondent_roles": [
+      "Vice-Chancellor",
+      "University Secretary",
+      "Director of Planning",
+      "CIO",
+      "CFO"
+    ],
+    "practitioner_vocabulary": [
+      "Our systems don't really talk to each other",
+      "We've got quite a lot of legacy technology that needs replacing",
+      "Different departments have ended up with different tools for similar things",
+      "People use their own tools because the official ones don't meet their needs",
+      "We don't really have a technology roadmap for this area"
+    ],
+    "self_assessment_anchor": "We are at an early stage. Digital activity in planning and governance is sporadic and individual rather than institutional.",
+    "common_over_estimation_pattern": "Respondents at this level rarely self-assess as Incidental. They typically select Intentional because awareness of the need for digital feels like intentional planning.",
+    "distinguishing_self_assessment_questions": [
+      "Do we have documented digital objectives specifically for planning and governance with named owners?",
+      "Is there institutional funding specifically allocated to digital in planning and governance?",
+      "Does any governance body have explicit responsibility for digital in planning and governance?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-pg-tec",
+    "dimension_name": "Planning & Governance: Technology",
+    "pillar": "Planning & Governance",
+    "cross_cutting_dimension": "Technology",
+    "level_id": "the-pg-tec-intentional",
+    "level_name": "Intentional",
+    "level_order": 2,
+    "typical_respondent_roles": [
+      "Vice-Chancellor",
+      "University Secretary",
+      "Director of Planning",
+      "CIO",
+      "CFO"
+    ],
+    "practitioner_vocabulary": [
+      "We've got a roadmap and we're working through the priority investments",
+      "We've started integrating our core systems with single sign-on and data feeds",
+      "Our procurement process now requires architectural review",
+      "We're migrating some systems to the cloud as part of our modernisation",
+      "Support is good but we know we need to do more on integration"
+    ],
+    "self_assessment_anchor": "We have started planning purposefully. We have objectives and some dedicated resources for digital in planning and governance, but implementation is uneven.",
+    "common_over_estimation_pattern": "Respondents at this level commonly self-assess as Integrated because having a strategy and active projects feels like institution-wide coordination.",
+    "distinguishing_self_assessment_questions": [
+      "Is our digital strategy for planning and governance being implemented consistently across all units, not just leading departments?",
+      "Is our funding recurrent or project-based?",
+      "Does our governance body have decision-making authority or is it advisory?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-pg-tec",
+    "dimension_name": "Planning & Governance: Technology",
+    "pillar": "Planning & Governance",
+    "cross_cutting_dimension": "Technology",
+    "level_id": "the-pg-tec-integrated",
+    "level_name": "Integrated",
+    "level_order": 3,
+    "typical_respondent_roles": [
+      "Vice-Chancellor",
+      "University Secretary",
+      "Director of Planning",
+      "CIO",
+      "CFO"
+    ],
+    "practitioner_vocabulary": [
+      "Our systems are well-integrated through APIs and follow enterprise architecture standards",
+      "Technology refresh is planned and funded on regular cycles",
+      "Our governance includes both IT and domain stakeholder representation",
+      "We monitor service levels and report them regularly",
+      "Technology enables the way we want to work rather than constraining it"
+    ],
+    "self_assessment_anchor": "We are well-coordinated. Digital in planning and governance is governed institution-wide with consistent implementation, recurrent funding, and accountability.",
+    "common_over_estimation_pattern": "Respondents at this level sometimes self-assess as Optimised because effective coordination feels like sector leadership.",
+    "distinguishing_self_assessment_questions": [
+      "Do we review and update our approach annually based on evidence and data?",
+      "Do other institutions look to us as a model for digital in planning and governance?",
+      "Are we proactively innovating or primarily implementing established good practice?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-pg-tec",
+    "dimension_name": "Planning & Governance: Technology",
+    "pillar": "Planning & Governance",
+    "cross_cutting_dimension": "Technology",
+    "level_id": "the-pg-tec-optimised",
+    "level_name": "Optimised",
+    "level_order": 4,
+    "typical_respondent_roles": [
+      "Vice-Chancellor",
+      "University Secretary",
+      "Director of Planning",
+      "CIO",
+      "CFO"
+    ],
+    "practitioner_vocabulary": [
+      "Our architecture is designed for extensibility and rapid innovation",
+      "We have sandbox environments for testing emerging technologies",
+      "Other institutions look at our technology architecture as a model",
+      "We assess and adopt new technologies proactively rather than reactively",
+      "Technology is treated as a strategic asset, not just operational infrastructure"
+    ],
+    "self_assessment_anchor": "We are sector-leading. We continuously improve through evidence, innovate proactively, and contribute to sector practice in digital planning and governance.",
+    "common_over_estimation_pattern": "Respondents at this level typically self-assess accurately, though they may underestimate their level relative to the sector.",
+    "distinguishing_self_assessment_questions": [
+      "Are we genuinely ahead of the sector or keeping pace with leading peers?",
+      "Is our sector contribution sustained and substantial or occasional?",
+      "Would external assessment confirm our self-assessment?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-pg-dat",
+    "dimension_name": "Planning & Governance: Data",
+    "pillar": "Planning & Governance",
+    "cross_cutting_dimension": "Data",
+    "level_id": "the-pg-dat-incidental",
+    "level_name": "Incidental",
+    "level_order": 1,
+    "typical_respondent_roles": [
+      "Vice-Chancellor",
+      "University Secretary",
+      "Director of Planning",
+      "CIO",
+      "CFO"
+    ],
+    "practitioner_vocabulary": [
+      "Our data is all over the place in different spreadsheets and systems",
+      "We produce reports when asked but it's always a manual exercise",
+      "We don't really have data governance specifically for this area",
+      "Decisions tend to be based on experience and judgement rather than data",
+      "We meet our statutory reporting requirements but that's about it"
+    ],
+    "self_assessment_anchor": "We are at an early stage. Digital activity in planning and governance is sporadic and individual rather than institutional.",
+    "common_over_estimation_pattern": "Respondents at this level rarely self-assess as Incidental. They typically select Intentional because awareness of the need for digital feels like intentional planning.",
+    "distinguishing_self_assessment_questions": [
+      "Do we have documented digital objectives specifically for planning and governance with named owners?",
+      "Is there institutional funding specifically allocated to digital in planning and governance?",
+      "Does any governance body have explicit responsibility for digital in planning and governance?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-pg-dat",
+    "dimension_name": "Planning & Governance: Data",
+    "pillar": "Planning & Governance",
+    "cross_cutting_dimension": "Data",
+    "level_id": "the-pg-dat-intentional",
+    "level_name": "Intentional",
+    "level_order": 2,
+    "typical_respondent_roles": [
+      "Vice-Chancellor",
+      "University Secretary",
+      "Director of Planning",
+      "CIO",
+      "CFO"
+    ],
+    "practitioner_vocabulary": [
+      "We've identified our core datasets and we're getting more systematic",
+      "We have some dashboards up and running but not across the whole institution",
+      "We've drafted a data governance framework but compliance is still patchy",
+      "We know our data quality needs work and we're starting to address it",
+      "Some areas are really data-driven now but it's not consistent everywhere"
+    ],
+    "self_assessment_anchor": "We have started planning purposefully. We have objectives and some dedicated resources for digital in planning and governance, but implementation is uneven.",
+    "common_over_estimation_pattern": "Respondents at this level commonly self-assess as Integrated because having a strategy and active projects feels like institution-wide coordination.",
+    "distinguishing_self_assessment_questions": [
+      "Is our digital strategy for planning and governance being implemented consistently across all units, not just leading departments?",
+      "Is our funding recurrent or project-based?",
+      "Does our governance body have decision-making authority or is it advisory?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-pg-dat",
+    "dimension_name": "Planning & Governance: Data",
+    "pillar": "Planning & Governance",
+    "cross_cutting_dimension": "Data",
+    "level_id": "the-pg-dat-integrated",
+    "level_name": "Integrated",
+    "level_order": 3,
+    "typical_respondent_roles": [
+      "Vice-Chancellor",
+      "University Secretary",
+      "Director of Planning",
+      "CIO",
+      "CFO"
+    ],
+    "practitioner_vocabulary": [
+      "We have comprehensive, reliable data with clear ownership and quality standards",
+      "Self-service analytics are available to authorised staff across the institution",
+      "Data governance is operational with regular compliance monitoring",
+      "Data quality is actively managed with regular audits",
+      "Data-informed decision-making is the norm in all our committees"
+    ],
+    "self_assessment_anchor": "We are well-coordinated. Digital in planning and governance is governed institution-wide with consistent implementation, recurrent funding, and accountability.",
+    "common_over_estimation_pattern": "Respondents at this level sometimes self-assess as Optimised because effective coordination feels like sector leadership.",
+    "distinguishing_self_assessment_questions": [
+      "Do we review and update our approach annually based on evidence and data?",
+      "Do other institutions look to us as a model for digital in planning and governance?",
+      "Are we proactively innovating or primarily implementing established good practice?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-pg-dat",
+    "dimension_name": "Planning & Governance: Data",
+    "pillar": "Planning & Governance",
+    "cross_cutting_dimension": "Data",
+    "level_id": "the-pg-dat-optimised",
+    "level_name": "Optimised",
+    "level_order": 4,
+    "typical_respondent_roles": [
+      "Vice-Chancellor",
+      "University Secretary",
+      "Director of Planning",
+      "CIO",
+      "CFO"
+    ],
+    "practitioner_vocabulary": [
+      "We use predictive modelling and advanced analytics to inform decisions",
+      "We have near-real-time data available for operational decision-making",
+      "Our data governance approach is referenced by other institutions",
+      "We contribute to sector data standards and best practice",
+      "Our staff are highly data-literate and can do sophisticated analysis themselves"
+    ],
+    "self_assessment_anchor": "We are sector-leading. We continuously improve through evidence, innovate proactively, and contribute to sector practice in digital planning and governance.",
+    "common_over_estimation_pattern": "Respondents at this level typically self-assess accurately, though they may underestimate their level relative to the sector.",
+    "distinguishing_self_assessment_questions": [
+      "Are we genuinely ahead of the sector or keeping pace with leading peers?",
+      "Is our sector contribution sustained and substantial or occasional?",
+      "Would external assessment confirm our self-assessment?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-pg-uti",
+    "dimension_name": "Planning & Governance: Utilisation",
+    "pillar": "Planning & Governance",
+    "cross_cutting_dimension": "Utilisation",
+    "level_id": "the-pg-uti-incidental",
+    "level_name": "Incidental",
+    "level_order": 1,
+    "typical_respondent_roles": [
+      "Vice-Chancellor",
+      "University Secretary",
+      "Director of Planning",
+      "CIO",
+      "CFO"
+    ],
+    "practitioner_vocabulary": [
+      "We've got the tools but most people aren't really using them properly",
+      "A lot of people still use manual processes even though digital alternatives exist",
+      "There aren't really any expectations about what tools people should be using",
+      "We don't track who's actually using what",
+      "Some people are doing amazing things with the tools but it's very individual"
+    ],
+    "self_assessment_anchor": "We are at an early stage. Digital activity in planning and governance is sporadic and individual rather than institutional.",
+    "common_over_estimation_pattern": "Respondents at this level rarely self-assess as Incidental. They typically select Intentional because awareness of the need for digital feels like intentional planning.",
+    "distinguishing_self_assessment_questions": [
+      "Do we have documented digital objectives specifically for planning and governance with named owners?",
+      "Is there institutional funding specifically allocated to digital in planning and governance?",
+      "Does any governance body have explicit responsibility for digital in planning and governance?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-pg-uti",
+    "dimension_name": "Planning & Governance: Utilisation",
+    "pillar": "Planning & Governance",
+    "cross_cutting_dimension": "Utilisation",
+    "level_id": "the-pg-uti-intentional",
+    "level_name": "Intentional",
+    "level_order": 2,
+    "typical_respondent_roles": [
+      "Vice-Chancellor",
+      "University Secretary",
+      "Director of Planning",
+      "CIO",
+      "CFO"
+    ],
+    "practitioner_vocabulary": [
+      "We're actively promoting adoption and running training to get people on board",
+      "We've set out some minimum expectations for tool usage",
+      "Uptake is growing but some areas are much further ahead than others",
+      "We're tracking adoption in some areas but not institution-wide yet",
+      "The advanced features of our tools are still underused"
+    ],
+    "self_assessment_anchor": "We have started planning purposefully. We have objectives and some dedicated resources for digital in planning and governance, but implementation is uneven.",
+    "common_over_estimation_pattern": "Respondents at this level commonly self-assess as Integrated because having a strategy and active projects feels like institution-wide coordination.",
+    "distinguishing_self_assessment_questions": [
+      "Is our digital strategy for planning and governance being implemented consistently across all units, not just leading departments?",
+      "Is our funding recurrent or project-based?",
+      "Does our governance body have decision-making authority or is it advisory?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-pg-uti",
+    "dimension_name": "Planning & Governance: Utilisation",
+    "pillar": "Planning & Governance",
+    "cross_cutting_dimension": "Utilisation",
+    "level_id": "the-pg-uti-integrated",
+    "level_name": "Integrated",
+    "level_order": 3,
+    "typical_respondent_roles": [
+      "Vice-Chancellor",
+      "University Secretary",
+      "Director of Planning",
+      "CIO",
+      "CFO"
+    ],
+    "practitioner_vocabulary": [
+      "Usage is consistent across the institution and we monitor it institution-wide",
+      "Digital workflows have replaced manual processes for all our core activities",
+      "We measure the impact of tool usage on outcomes",
+      "User feedback directly informs how we configure and support our tools",
+      "Most staff use advanced features routinely, not just the basics"
+    ],
+    "self_assessment_anchor": "We are well-coordinated. Digital in planning and governance is governed institution-wide with consistent implementation, recurrent funding, and accountability.",
+    "common_over_estimation_pattern": "Respondents at this level sometimes self-assess as Optimised because effective coordination feels like sector leadership.",
+    "distinguishing_self_assessment_questions": [
+      "Do we review and update our approach annually based on evidence and data?",
+      "Do other institutions look to us as a model for digital in planning and governance?",
+      "Are we proactively innovating or primarily implementing established good practice?"
+    ]
+  },
+  {
+    "framework_id": "maturity-the",
+    "framework_name": "THE Digital Maturity Index",
+    "dimension_id": "the-pg-uti",
+    "dimension_name": "Planning & Governance: Utilisation",
+    "pillar": "Planning & Governance",
+    "cross_cutting_dimension": "Utilisation",
+    "level_id": "the-pg-uti-optimised",
+    "level_name": "Optimised",
+    "level_order": 4,
+    "typical_respondent_roles": [
+      "Vice-Chancellor",
+      "University Secretary",
+      "Director of Planning",
+      "CIO",
+      "CFO"
+    ],
+    "practitioner_vocabulary": [
+      "Our users innovate new ways of using tools that we hadn't anticipated",
+      "We use real-time usage data to continuously optimise our tool deployment",
+      "Vendors and other institutions study how we use their tools",
+      "Staff-driven innovation feeds directly into our technology and strategy decisions",
+      "We can quantify the impact of our digital utilisation on outcomes"
+    ],
+    "self_assessment_anchor": "We are sector-leading. We continuously improve through evidence, innovate proactively, and contribute to sector practice in digital planning and governance.",
+    "common_over_estimation_pattern": "Respondents at this level typically self-assess accurately, though they may underestimate their level relative to the sector.",
+    "distinguishing_self_assessment_questions": [
+      "Are we genuinely ahead of the sector or keeping pace with leading peers?",
+      "Is our sector contribution sustained and substantial or occasional?",
+      "Would external assessment confirm our self-assessment?"
+    ]
+  }
+]

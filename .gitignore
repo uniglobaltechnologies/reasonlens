@@ -5,3 +5,7 @@ dist/
 local.settings.json
 .funcignore
 .github/skills/
+.DS_Store
+.mcp.json
+api-deploy.zip
+scripts/install-agent-skills.sh

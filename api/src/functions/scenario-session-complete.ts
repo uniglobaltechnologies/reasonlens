@@ -8,6 +8,7 @@ import { transaction } from "../shared/db";
 import { requireAuth, AuthError } from "../shared/auth";
 import { corsHeaders, handleCors } from "../middleware/cors";
 import { scoreSession, ScenarioAnswer, DimensionResult } from "../shared/scenario-scoring";
+import { getFrameworkNameById } from "../shared/framework-context";
 
 class BusinessError extends Error {
   constructor(public statusCode: number, message: string) {
@@ -62,6 +63,7 @@ async function handler(
            sa.mapped_level,
            sb.dimension_id,
            sb.dimension_name,
+           sb.target_boundary,
            sr.maps_to_level_order
          FROM scenario_answers sa
          JOIN scenario_bank sb ON sb.scenario_id = sa.scenario_id
@@ -90,10 +92,13 @@ async function handler(
         dimension_name: a.dimension_name,
         mapped_level: a.mapped_level,
         level_order: a.maps_to_level_order,
+        target_boundary: a.target_boundary,
       }));
 
-      const scored = scoreSession(scoringInput);
-      const frameworkName = session.framework_id;
+      const scored = scoreSession(scoringInput, {
+        frameworkId: session.framework_id,
+      });
+      const frameworkName = getFrameworkNameById(session.framework_id);
 
       // Write results to assessment_results
       for (const r of scored) {
@@ -105,19 +110,19 @@ async function handler(
             session.framework_id,
             frameworkName,
             `scenario-session-${body.session_id}`,
-            r.dimension_name,
+            r.dimension_id,
             r.assigned_level,
           ]
         );
       }
 
-      // Update framework progress with correct counts
+      // Progress is tracked at the child-dimension level, not per scenario item.
       await client.query(
         `INSERT INTO framework_progress (user_id, framework_id, framework_name, progress, completed_items, total_items, last_activity)
          VALUES ($1, $2, $3, 100, $4, $5, now())
          ON CONFLICT (user_id, framework_id) DO UPDATE SET
            progress = 100, completed_items = $4, total_items = $5, last_activity = now(), updated_at = now()`,
-        [user.userId, session.framework_id, frameworkName, answers.length, totalScenarios]
+        [user.userId, session.framework_id, frameworkName, scored.length, scored.length]
       );
 
       // Mark session as completed

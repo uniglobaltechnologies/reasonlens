@@ -116,7 +116,7 @@ export default function Copilot() {
         });
       },
       () => setIsLoading(false),
-      (err) => {
+      (_err: string) => {
         setMessages((prev) => {
           const updated = [...prev];
           updated[updated.length - 1] = {

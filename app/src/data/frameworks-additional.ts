@@ -4,7 +4,7 @@
 // ============================================================
 
 import type { Framework, FrameworkDimension, Level } from "./framework-types";
-import { BDC_LEVELS, DIGCOMP_LEVELS, JISC_AI_LEVELS, ACQUIRE_DEEPEN_CREATE, STUDENT_LEVELS } from "./framework-types";
+import { DIGCOMP_LEVELS, JISC_AI_LEVELS } from "./framework-types";
 
 // ── BDC source JSON imports ────────────────────
 import bdcIndividualSrc from "./bdc-individual.json";
@@ -51,8 +51,8 @@ function buildBdcDimensions(source: any, frameworkId: string): FrameworkDimensio
       levels: BDC_LEVEL_MERGE.map((merged) => {
         // Collect indicators from all source levels that merge into this level
         const indicators: { id: string; description: string }[] = [];
-        const curricularGoals: string[] = [];
-        const contextualActivities: string[] = [];
+        const curricularGoals: { id: string; description: string }[] = [];
+        const contextualActivities: { id: string; name: string; description: string }[] = [];
         for (const srcId of merged.sourceIds) {
           const block = blocks.find(
             (b: any) => b.aspect_id === aspect.id && b.level_id === srcId
@@ -60,12 +60,21 @@ function buildBdcDimensions(source: any, frameworkId: string): FrameworkDimensio
           if (block) {
             (block.curricular_goals ?? []).forEach((g: string, gi: number) => {
               indicators.push({ id: `${frameworkId}-${aspect.id}-${merged.id}-cg${srcId}-${gi}`, description: g });
-              curricularGoals.push(g);
+              curricularGoals.push({
+                id: `${frameworkId}-${aspect.id}-${merged.id}-cg${srcId}-${gi}`,
+                description: g,
+              });
             });
             (block.learning_objectives ?? []).forEach((lo: string, li: number) => {
               indicators.push({ id: `${frameworkId}-${aspect.id}-${merged.id}-lo${srcId}-${li}`, description: lo });
             });
-            (block.contextual_activities ?? []).forEach((a: string) => contextualActivities.push(a));
+            (block.contextual_activities ?? []).forEach((activity: string, ai: number) =>
+              contextualActivities.push({
+                id: `${frameworkId}-${aspect.id}-${merged.id}-ca${srcId}-${ai}`,
+                name: activity,
+                description: activity,
+              })
+            );
           }
         }
         if (indicators.length === 0) {
@@ -107,7 +116,6 @@ function buildBdcAssessmentQuestions(source: any, frameworkId: string) {
 function makeBdcFramework(source: any): Framework {
   const fw = source.framework;
   const aspects: any[] = source.aspects;
-  const levels: any[] = source.progression_levels;
   const blocks: any[] = source.competency_blocks;
 
   // Count real indicators
@@ -710,14 +718,12 @@ const DC_AREA_META: Record<string, { icon: string; color: string }> = {
 
 function buildDigcompDimensions(): FrameworkDimension[] {
   const src = digcompSource as any;
-  const areas = src.dimensions.filter((d: any) => d.parent_dimension_id === null);
   const competences = src.dimensions.filter((d: any) => d.parent_dimension_id !== null);
   const blocks = src.competency_blocks as any[];
   const dimensions: FrameworkDimension[] = [];
 
   // Build competence-level dimensions (21 competences, each with 4 levels)
   for (const comp of competences) {
-    const parentArea = areas.find((a: any) => a.id === comp.parent_dimension_id);
     const meta = DC_AREA_META[comp.parent_dimension_id] || { icon: "Circle", color: "text-gray-600" };
     const compBlocks = blocks.filter((b: any) => b.competence_id === comp.id);
 
@@ -734,7 +740,7 @@ function buildDigcompDimensions(): FrameworkDimension[] {
         const statements = block?.competence_statements || [];
         const los = block?.learning_outcomes || [];
         // Combine competence statements as primary indicators, learning outcomes as additional detail
-        const indicators = statements.map((cs: any, i: number) => ({
+        const indicators = statements.map((cs: any) => ({
           id: cs.id,
           description: cs.description,
           assessmentCriteria: cs.ai_label !== "none" ? `[${cs.ai_label}]` : undefined,
