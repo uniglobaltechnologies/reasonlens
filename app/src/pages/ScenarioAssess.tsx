@@ -1,10 +1,11 @@
 import { useState, useEffect, useRef } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
-import { ArrowLeft, CheckCircle2, Loader2, AlertTriangle, Shield } from "lucide-react";
+import { ArrowLeft, CheckCircle2, Loader2, AlertTriangle, Shield, Download } from "lucide-react";
 import Header from "@/components/Header";
 import ContextOnboarding from "@/components/assessment/ContextOnboarding";
 import type { AssessmentContext } from "@/components/assessment/ContextOnboarding";
 import SourceAttribution from "@/components/SourceAttribution";
+import MaturityHeatmap from "@/components/assessment/MaturityHeatmap";
 import { apiGet, apiPost, ApiError, isAuthenticated } from "@/lib/api";
 
 interface ScenarioResponse {
@@ -207,6 +208,9 @@ export default function ScenarioAssess() {
           <ResultsView
             results={results}
             frameworkId={framework!}
+            sessionId={sessionId}
+            context={contextRow}
+            scenarioCount={scenarios.length}
           />
         )}
       </div>
@@ -336,10 +340,45 @@ function hasRequiredContext(
 function ResultsView({
   results,
   frameworkId,
+  sessionId,
+  context,
+  scenarioCount,
 }: {
   results: DimensionResult[];
   frameworkId: string;
+  sessionId: string;
+  context: AssessmentContext | null;
+  scenarioCount: number;
 }) {
+  const [downloading, setDownloading] = useState(false);
+
+  const handleDownloadReport = async () => {
+    setDownloading(true);
+    try {
+      const { generateTheReport } = await import("@/lib/generate-the-report");
+      await generateTheReport({
+        results,
+        frameworkId,
+        sessionId,
+        completedAt: new Date(),
+        context: {
+          institution_size: context?.institution_size,
+          institution_type: context?.institution_type,
+          region: context?.region,
+          funding_model: context?.funding_model,
+          respondent_role: context?.respondent_role,
+          respondent_institutional_visibility: context?.respondent_institutional_visibility,
+          digital_infrastructure_baseline: context?.digital_infrastructure_baseline,
+        },
+        scenarioCount,
+      });
+    } catch (err) {
+      console.error("Failed to generate report:", err);
+    } finally {
+      setDownloading(false);
+    }
+  };
+
   const confidenceStyles = {
     high: { bg: "bg-emerald-50 dark:bg-emerald-950/30", text: "text-emerald-700 dark:text-emerald-400", label: "High confidence" },
     medium: { bg: "bg-amber-50 dark:bg-amber-950/30", text: "text-amber-700 dark:text-amber-400", label: "Medium confidence" },
@@ -357,6 +396,10 @@ function ResultsView({
           </p>
         </div>
       </div>
+
+      {frameworkId === "maturity-the" && (
+        <MaturityHeatmap results={results} />
+      )}
 
       <div className="space-y-4 mb-8">
         {results.map((r) => {
@@ -409,6 +452,26 @@ function ResultsView({
           My Progress
         </Link>
       </div>
+
+      {frameworkId === "maturity-the" && (
+        <button
+          onClick={handleDownloadReport}
+          disabled={downloading}
+          className="mt-4 w-full py-3 rounded-lg border border-border text-foreground font-medium hover:bg-accent transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
+        >
+          {downloading ? (
+            <>
+              <Loader2 className="h-4 w-4 animate-spin" />
+              Generating report...
+            </>
+          ) : (
+            <>
+              <Download className="h-4 w-4" />
+              Download Assessment Report (.docx)
+            </>
+          )}
+        </button>
+      )}
 
       <div className="mt-8">
         <SourceAttribution attribution={frameworkId === "teacher-competency" ? {
