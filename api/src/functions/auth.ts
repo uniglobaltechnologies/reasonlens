@@ -110,6 +110,13 @@ async function handler(
 
       if (!user) throw new Error("Failed to create user");
 
+      // Auto-assign default roles so new users can run audits
+      await execute(
+        `INSERT INTO user_roles (user_id, role) VALUES ($1, 'educator'), ($1, 'runner')
+         ON CONFLICT (user_id, role) DO NOTHING`,
+        [user.id]
+      );
+
       const token = signToken(user.id, user.email);
 
       return {
@@ -169,6 +176,13 @@ async function handler(
           body: JSON.stringify({ error: "Invalid email or password" }),
         };
       }
+
+      // Ensure default roles exist (backfill for pre-auto-assign accounts)
+      await execute(
+        `INSERT INTO user_roles (user_id, role) VALUES ($1, 'educator'), ($1, 'runner')
+         ON CONFLICT (user_id, role) DO NOTHING`,
+        [user.id]
+      );
 
       const token = signToken(user.id, user.email);
 
