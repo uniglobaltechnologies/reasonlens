@@ -42,6 +42,7 @@ export default function ContextOnboarding({ onComplete }: ContextOnboardingProps
   const [yearsOfExperience, setYearsOfExperience] = useState("");
   const [managementResponsibility, setManagementResponsibility] = useState("");
   const [saving, setSaving] = useState(false);
+  const [saveError, setSaveError] = useState("");
 
   const toggleTool = (tool: string) => {
     setCurrentAiTools((prev) =>
@@ -51,6 +52,7 @@ export default function ContextOnboarding({ onComplete }: ContextOnboardingProps
 
   const handleSubmit = async () => {
     setSaving(true);
+    setSaveError("");
     try {
       await apiPost("/user-assessment-context", {
         subject_area: subjectArea || null,
@@ -62,8 +64,9 @@ export default function ContextOnboarding({ onComplete }: ContextOnboardingProps
         management_responsibility: managementResponsibility || null,
       });
       onComplete();
-    } catch (err) {
+    } catch (err: any) {
       console.error("Failed to save context:", err);
+      setSaveError(err.message || "Failed to save your information. Please try again.");
     } finally {
       setSaving(false);
     }
@@ -188,6 +191,10 @@ export default function ContextOnboarding({ onComplete }: ContextOnboardingProps
           "Continue to assessment"
         )}
       </button>
+
+      {saveError && (
+        <p className="mt-3 text-sm text-destructive text-center">{saveError}</p>
+      )}
     </div>
   );
 }

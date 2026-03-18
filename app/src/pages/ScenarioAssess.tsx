@@ -1,11 +1,10 @@
 import { useState, useEffect, useRef } from "react";
 import { Link, useParams, useNavigate } from "react-router-dom";
-import { ArrowLeft, ArrowRight, CheckCircle2, Loader2, AlertTriangle, Shield } from "lucide-react";
+import { ArrowLeft, CheckCircle2, Loader2, AlertTriangle, Shield } from "lucide-react";
 import Header from "@/components/Header";
 import ContextOnboarding from "@/components/assessment/ContextOnboarding";
 import SourceAttribution from "@/components/SourceAttribution";
-import { apiGet, apiPost } from "@/lib/api";
-import { isAuthenticated } from "@/lib/api";
+import { apiGet, apiPost, ApiError, isAuthenticated } from "@/lib/api";
 
 interface ScenarioResponse {
   id: string;
@@ -57,8 +56,16 @@ export default function ScenarioAssess() {
     try {
       await apiGet("/user-assessment-context");
       await startSession();
-    } catch {
-      setPhase("onboarding");
+    } catch (e: unknown) {
+      if (e instanceof ApiError && e.status === 404) {
+        setPhase("onboarding");
+      } else {
+        setError(
+          e instanceof ApiError
+            ? e.message
+            : "Unable to connect to the server. Please try again later."
+        );
+      }
     }
   }
 
@@ -213,7 +220,14 @@ function ScenarioCard({
           {scenario.dimension_name}
         </span>
       </div>
-      <div className="w-full bg-muted rounded-full h-1.5 mb-8">
+      <div
+        className="w-full bg-muted rounded-full h-1.5 mb-8"
+        role="progressbar"
+        aria-valuenow={index + 1}
+        aria-valuemin={0}
+        aria-valuemax={total}
+        aria-label={`Scenario ${index + 1} of ${total}`}
+      >
         <div
           className="bg-primary h-1.5 rounded-full transition-all duration-300"
           style={{ width: `${((index + 1) / total) * 100}%` }}
@@ -348,12 +362,12 @@ function ResultsView({
       </div>
 
       <div className="mt-8">
-        <SourceAttribution attribution={framework === "teacher-competency" ? {
+        <SourceAttribution attribution={frameworkId === "teacher-competency" ? {
           source_framework: "UNESCO AI Competency Framework for Teachers",
           source_licence: "CC BY-SA 3.0 IGO",
           content_type: "derivative",
           attribution_text: "Based on the UNESCO AI Competency Framework for Teachers (2024). Scenarios created by ReasonLens.",
-        } : framework === "maturity-the" ? {
+        } : frameworkId === "maturity-the" ? {
           source_framework: "THE Digital Maturity Index",
           content_type: "original",
           attribution_text: "Scenarios created by ReasonLens based on the Times Higher Education Digital Maturity Index.",

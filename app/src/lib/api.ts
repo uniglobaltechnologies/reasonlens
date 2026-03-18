@@ -68,7 +68,15 @@ async function request<T = any>(
     throw new ApiError(message, res.status);
   }
 
-  return res.json();
+  const text = await res.text();
+  try {
+    return JSON.parse(text) as T;
+  } catch {
+    throw new ApiError(
+      text ? `Unexpected response: ${text.slice(0, 200)}` : "Empty response from server",
+      res.status
+    );
+  }
 }
 
 export async function apiGet<T = any>(path: string): Promise<T> {
