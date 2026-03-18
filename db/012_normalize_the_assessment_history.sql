@@ -2,6 +2,8 @@
 -- 012: Normalise historical THE assessment rows written before canonical ids
 -- =============================================================================
 
+BEGIN;
+
 UPDATE assessment_results
 SET framework_name = 'THE Digital Maturity Index'
 WHERE framework_id = 'maturity-the'
@@ -58,3 +60,5 @@ SET dimension = CASE dimension
   ELSE dimension
 END
 WHERE framework_id = 'maturity-the';
+
+COMMIT;

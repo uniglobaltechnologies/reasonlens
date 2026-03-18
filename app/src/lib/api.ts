@@ -34,7 +34,7 @@ export function isAuthenticated(): boolean {
 
 async function request<T = any>(
   path: string,
-  options: RequestInit = {}
+  options: RequestInit & { signal?: AbortSignal } = {}
 ): Promise<T> {
   const token = getToken();
   const headers: Record<string, string> = {
@@ -51,7 +51,8 @@ async function request<T = any>(
       ...options,
       headers,
     });
-  } catch {
+  } catch (err) {
+    if (err instanceof DOMException && err.name === "AbortError") throw err;
     throw new ApiError(
       "Failed to reach API (network/CORS). Check custom domain CORS and API URL.",
       0
@@ -79,21 +80,23 @@ async function request<T = any>(
   }
 }
 
-export async function apiGet<T = any>(path: string): Promise<T> {
-  return request<T>(path, { method: "GET" });
+export async function apiGet<T = any>(path: string, signal?: AbortSignal): Promise<T> {
+  return request<T>(path, { method: "GET", signal });
 }
 
-export async function apiPost<T = any>(path: string, body?: any): Promise<T> {
+export async function apiPost<T = any>(path: string, body?: any, signal?: AbortSignal): Promise<T> {
   return request<T>(path, {
     method: "POST",
     body: body ? JSON.stringify(body) : undefined,
+    signal,
   });
 }
 
-export async function apiDelete<T = any>(path: string, body?: any): Promise<T> {
+export async function apiDelete<T = any>(path: string, body?: any, signal?: AbortSignal): Promise<T> {
   return request<T>(path, {
     method: "DELETE",
     body: body ? JSON.stringify(body) : undefined,
+    signal,
   });
 }
 

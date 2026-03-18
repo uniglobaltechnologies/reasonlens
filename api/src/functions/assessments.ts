@@ -72,11 +72,20 @@ async function handler(
         };
       }
 
-      for (const r of body.results) {
+      // Batch insert all results in a single query
+      if (body.results.length > 0) {
+        const values: any[] = [];
+        const placeholders: string[] = [];
+        let idx = 1;
+        for (const r of body.results) {
+          placeholders.push(`($${idx}, $${idx + 1}, $${idx + 2}, $${idx + 3}, $${idx + 4}, $${idx + 5})`);
+          values.push(user.userId, r.framework_id, r.framework_name, r.question_id, r.dimension, r.selected_level);
+          idx += 6;
+        }
         await execute(
           `INSERT INTO assessment_results (user_id, framework_id, framework_name, question_id, dimension, selected_level)
-           VALUES ($1, $2, $3, $4, $5, $6)`,
-          [user.userId, r.framework_id, r.framework_name, r.question_id, r.dimension, r.selected_level]
+           VALUES ${placeholders.join(", ")}`,
+          values
         );
       }
 

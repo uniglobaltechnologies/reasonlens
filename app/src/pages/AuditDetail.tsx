@@ -75,14 +75,21 @@ export default function AuditDetail() {
 
     fetchData();
 
-    // Poll every 8 seconds while the run is still in progress
+    return () => { cancelled = true; };
+  }, [id]);
+
+  // Separate polling effect that uses a ref to avoid stale closures
+  useEffect(() => {
+    const status = data?.run.status;
+    if (status !== "running" && status !== "queued") return;
+
     const interval = setInterval(() => {
-      if (data?.run.status === "running" || data?.run.status === "queued") {
-        fetchData();
-      }
+      apiGet<RunDetail>(`/audit-runs?id=${id}`)
+        .then(setData)
+        .catch(() => {}); // Silently retry on next interval
     }, 8000);
 
-    return () => { cancelled = true; clearInterval(interval); };
+    return () => clearInterval(interval);
   }, [id, data?.run.status]);
 
   if (loading) {
@@ -228,7 +235,7 @@ export default function AuditDetail() {
               <FileText className="h-5 w-5 text-primary" />Report
             </h3>
             <div className="prose prose-sm max-w-none dark:prose-invert text-sm whitespace-pre-wrap">
-              {report.content_markdown}
+              {report.content_markdown.replace(/<script[\s\S]*?<\/script>/gi, "").replace(/on\w+\s*=\s*["'][^"']*["']/gi, "")}
             </div>
           </div>
         )}

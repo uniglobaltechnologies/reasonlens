@@ -31,9 +31,7 @@ async function runPosthocToxicity(
   transcripts: Array<{ content?: string | null }>,
   context: InvocationContext
 ) {
-  context.log(`POSTHOC TOXICITY: packs=${JSON.stringify(packs)}, transcripts=${transcripts.length}`);
   const requested = packs.filter(p => POSTHOC_PACKS.has(p.toLowerCase()));
-  context.log(`POSTHOC TOXICITY: requested=${JSON.stringify(requested)}`);
   if (!requested.length) return;
 
   const existing = await query<{ pack_id: string; status: string }>(
@@ -44,7 +42,6 @@ async function runPosthocToxicity(
     const match = existing.find(r => r.pack_id === p);
     return !match || match.status !== "completed";
   });
-  context.log(`POSTHOC TOXICITY: pending=${JSON.stringify(pending)}`);
   if (!pending.length) return;
 
   // Mark as running
@@ -57,7 +54,6 @@ async function runPosthocToxicity(
   }
 
   const assistantTexts = extractAssistantResponses(transcripts).slice(0, MAX_POSTHOC_TEXTS);
-  context.log(`POSTHOC TOXICITY: assistantTexts=${assistantTexts.length}`);
   if (!assistantTexts.length) {
     for (const packId of pending) {
       await execute(
@@ -150,7 +146,8 @@ async function runPosthocBenchmarks(run: any, context: InvocationContext) {
     if (!providerKeys[model.provider_slug]) return;
   }
 
-  const callbackUrl = `https://${process.env.WEBSITE_HOSTNAME || "reasonlens-api.azurewebsites.net"}/api/benchmark-callback`;
+  if (!process.env.WEBSITE_HOSTNAME) return; // Can't construct callback URL without hostname
+  const callbackUrl = `https://${process.env.WEBSITE_HOSTNAME}/api/benchmark-callback`;
 
   for (const benchType of requested) {
     const benchRun = await queryOne<{ id: string }>(
@@ -255,8 +252,12 @@ async function handler(
 
     await execute(`UPDATE audit_runs SET ${updateParts.join(", ")} WHERE id = $1`, updateParams);
 
-    // Process transcripts
+    // Process transcripts (batch upsert)
     if (body.transcripts?.length) {
+      const values: any[] = [];
+      const placeholders: string[] = [];
+      let idx = 1;
+
       for (let i = 0; i < body.transcripts.length; i++) {
         const t = body.transcripts[i];
         const path = t.scenario_id && t.epoch_number != null
@@ -270,35 +271,34 @@ async function handler(
           judgeScores = parseScores(t.content);
         }
 
-        // Upsert transcript
-        await execute(
-          `INSERT INTO audit_transcripts (run_id, path, content, judge_scores_json, flags, language, scenario_id, epoch_number)
-           VALUES ($1, $2, $3, $4, $5, $6, $7, $8)
-           ON CONFLICT (run_id, path) DO UPDATE SET
-             content = EXCLUDED.content,
-             judge_scores_json = EXCLUDED.judge_scores_json,
-             flags = EXCLUDED.flags,
-             language = EXCLUDED.language,
-             scenario_id = EXCLUDED.scenario_id,
-             epoch_number = EXCLUDED.epoch_number`,
-          [body.run_id, path, t.content || null, JSON.stringify(judgeScores), t.flags || [], t.language || "en", t.scenario_id || null, t.epoch_number ?? null]
-        );
+        placeholders.push(`($${idx}, $${idx + 1}, $${idx + 2}, $${idx + 3}, $${idx + 4}, $${idx + 5}, $${idx + 6}, $${idx + 7})`);
+        values.push(body.run_id, path, t.content || null, JSON.stringify(judgeScores), t.flags || [], t.language || "en", t.scenario_id || null, t.epoch_number ?? null);
+        idx += 8;
       }
+
+      await execute(
+        `INSERT INTO audit_transcripts (run_id, path, content, judge_scores_json, flags, language, scenario_id, epoch_number)
+         VALUES ${placeholders.join(", ")}
+         ON CONFLICT (run_id, path) DO UPDATE SET
+           content = EXCLUDED.content,
+           judge_scores_json = EXCLUDED.judge_scores_json,
+           flags = EXCLUDED.flags,
+           language = EXCLUDED.language,
+           scenario_id = EXCLUDED.scenario_id,
+           epoch_number = EXCLUDED.epoch_number`,
+        values
+      );
     }
 
     // Posthoc processing on completion
     if (incomingStatus === "completed") {
       const posthocPacks = Array.isArray(run.posthoc_packs) ? run.posthoc_packs : [];
-      context.log(`POSTHOC DEBUG: incomingStatus=${incomingStatus}, posthocPacks=${JSON.stringify(posthocPacks)}, transcriptCount=${body.transcripts?.length || 0}`);
       if (posthocPacks.length && body.transcripts?.length) {
         try {
           await runPosthocToxicity(body.run_id, posthocPacks, body.transcripts, context);
-          context.log("POSTHOC DEBUG: runPosthocToxicity completed successfully");
         } catch (posthocErr) {
-          context.error("POSTHOC DEBUG: runPosthocToxicity threw:", posthocErr);
+          context.error("Posthoc toxicity failed:", posthocErr);
         }
-      } else {
-        context.log(`POSTHOC DEBUG: skipped — packs=${posthocPacks.length}, transcripts=${body.transcripts?.length || 0}`);
       }
       await runPosthocBenchmarks(run, context);
     }

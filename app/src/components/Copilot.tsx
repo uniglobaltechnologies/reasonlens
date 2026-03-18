@@ -107,6 +107,7 @@ export default function Copilot() {
       },
       (chunk) => {
         setMessages((prev) => {
+          if (prev.length === 0) return prev;
           const updated = [...prev];
           updated[updated.length - 1] = {
             role: "assistant",
@@ -118,6 +119,7 @@ export default function Copilot() {
       () => setIsLoading(false),
       (_err: string) => {
         setMessages((prev) => {
+          if (prev.length === 0) return prev;
           const updated = [...prev];
           updated[updated.length - 1] = {
             role: "assistant",

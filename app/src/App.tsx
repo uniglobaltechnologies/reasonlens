@@ -1,5 +1,6 @@
 import { lazy, Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import ErrorBoundary from "./components/ErrorBoundary";
 import Copilot from "./components/Copilot";
 
 const Hub = lazy(() => import("./pages/Hub"));
@@ -22,6 +23,7 @@ const NotFound = lazy(() => import("./pages/NotFound"));
 function App() {
   return (
     <BrowserRouter>
+      <ErrorBoundary>
       <Suspense fallback={<div className="min-h-screen bg-background" />}>
         <Routes>
           <Route path="/" element={<Hub />} />
@@ -52,6 +54,7 @@ function App() {
         </Routes>
       </Suspense>
       <Copilot />
+      </ErrorBoundary>
     </BrowserRouter>
   );
 }

@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ArrowLeft, FileText, Loader2, Copy, Download, Check } from "lucide-react";
-import { Document, Packer, Paragraph, HeadingLevel, TextRun } from "docx";
 import Header from "@/components/Header";
 import { apiStream, isAuthenticated } from "@/lib/api";
 
@@ -63,10 +62,11 @@ export default function Policy() {
 
     setDownloadingDocx(true);
     try {
+      const { Document, Packer, Paragraph, HeadingLevel, TextRun } = await import("docx");
       const lines = content.split("\n");
 
-      const parseInlineRuns = (text: string): TextRun[] => {
-        const runs: TextRun[] = [];
+      const parseInlineRuns = (text: string) => {
+        const runs: InstanceType<typeof TextRun>[] = [];
         const regex = /\*\*(.+?)\*\*|\*(.+?)\*/g;
         let lastIndex = 0;
         let match;

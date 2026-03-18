@@ -159,7 +159,8 @@ async function handler(
     const petriUrl = process.env.PETRI_SERVICE_URL;
     if (!petriUrl) throw new Error("PETRI_SERVICE_URL not configured");
 
-    const callbackUrl = `https://${process.env.WEBSITE_HOSTNAME || "reasonlens-api.azurewebsites.net"}/api/petri-audit-callback`;
+    if (!process.env.WEBSITE_HOSTNAME) throw new Error("WEBSITE_HOSTNAME not configured");
+    const callbackUrl = `https://${process.env.WEBSITE_HOSTNAME}/api/petri-audit-callback`;
 
     const petriPayload = {
       run_id: run.id,

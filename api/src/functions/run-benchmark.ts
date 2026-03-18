@@ -85,7 +85,8 @@ async function handler(
     const benchmarkUrl = process.env.BENCHMARK_SERVICE_URL;
     if (!benchmarkUrl) throw new Error("BENCHMARK_SERVICE_URL not configured");
 
-    const callbackUrl = `https://${process.env.WEBSITE_HOSTNAME || "reasonlens-api.azurewebsites.net"}/api/benchmark-callback`;
+    if (!process.env.WEBSITE_HOSTNAME) throw new Error("WEBSITE_HOSTNAME not configured");
+    const callbackUrl = `https://${process.env.WEBSITE_HOSTNAME}/api/benchmark-callback`;
 
     const benchAbort = new AbortController();
     setTimeout(() => benchAbort.abort(), 30000);

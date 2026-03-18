@@ -248,7 +248,7 @@ export default function Portfolio() {
                         <span className="text-xs text-muted-foreground capitalize">{item.artifact_type}</span>
                         <span className="text-xs text-muted-foreground">·</span>
                         <span className="text-xs text-muted-foreground">{new Date(item.created_at).toLocaleDateString()}</span>
-                        {item.file_url && (
+                        {item.file_url && /^https?:\/\//i.test(item.file_url) && (
                           <>
                             <span className="text-xs text-muted-foreground">·</span>
                             <a href={item.file_url} target="_blank" rel="noopener noreferrer" className="text-xs text-primary hover:underline">View</a>

@@ -100,19 +100,20 @@ async function handler(
       });
       const frameworkName = getFrameworkNameById(session.framework_id);
 
-      // Write results to assessment_results
-      for (const r of scored) {
+      // Batch insert all results in a single query
+      if (scored.length > 0) {
+        const values: any[] = [];
+        const placeholders: string[] = [];
+        let idx = 1;
+        for (const r of scored) {
+          placeholders.push(`($${idx}, $${idx + 1}, $${idx + 2}, $${idx + 3}, $${idx + 4}, $${idx + 5}, 'scenario')`);
+          values.push(user.userId, session.framework_id, frameworkName, `scenario-session-${body.session_id}`, r.dimension_id, r.assigned_level);
+          idx += 6;
+        }
         await client.query(
           `INSERT INTO assessment_results (user_id, framework_id, framework_name, question_id, dimension, selected_level, assessment_method)
-           VALUES ($1, $2, $3, $4, $5, $6, 'scenario')`,
-          [
-            user.userId,
-            session.framework_id,
-            frameworkName,
-            `scenario-session-${body.session_id}`,
-            r.dimension_id,
-            r.assigned_level,
-          ]
+           VALUES ${placeholders.join(", ")}`,
+          values
         );
       }
 
