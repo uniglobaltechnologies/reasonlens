@@ -1,7 +1,8 @@
 import { lazy, Suspense } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import ErrorBoundary from "./components/ErrorBoundary";
 import Copilot from "./components/Copilot";
+import PasswordGate from "./components/PasswordGate";
 
 const Hub = lazy(() => import("./pages/Hub"));
 const Audit = lazy(() => import("./pages/Audit"));
@@ -24,9 +25,12 @@ function App() {
   return (
     <BrowserRouter>
       <ErrorBoundary>
+      <PasswordGate>
       <Suspense fallback={<div className="min-h-screen bg-background" />}>
         <Routes>
           <Route path="/" element={<Hub />} />
+          {/* THE DMI dedicated entry */}
+          <Route path="/the-dmi" element={<Navigate to="/assess/scenario/maturity-the" replace />} />
           {/* Audit */}
           <Route path="/audit" element={<Audit />} />
           <Route path="/audit/runs" element={<AuditRuns />} />
@@ -54,6 +58,7 @@ function App() {
         </Routes>
       </Suspense>
       <Copilot />
+      </PasswordGate>
       </ErrorBoundary>
     </BrowserRouter>
   );
