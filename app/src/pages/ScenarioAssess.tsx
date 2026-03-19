@@ -355,9 +355,11 @@ function ResultsView({
   scenarioCount: number;
 }) {
   const [downloading, setDownloading] = useState(false);
+  const [downloadError, setDownloadError] = useState("");
 
   const handleDownloadReport = async () => {
     setDownloading(true);
+    setDownloadError("");
     try {
       const { generateTheReport } = await import("@/lib/generate-the-report");
       await generateTheReport({
@@ -376,8 +378,9 @@ function ResultsView({
         },
         scenarioCount,
       });
-    } catch (err) {
+    } catch (err: any) {
       console.error("Failed to generate report:", err);
+      setDownloadError("Failed to generate report. Try refreshing the page.");
     } finally {
       setDownloading(false);
     }
@@ -466,23 +469,28 @@ function ResultsView({
       </div>
 
       {frameworkId === "maturity-the" && (
-        <button
-          onClick={handleDownloadReport}
-          disabled={downloading}
-          className="mt-4 w-full py-3 rounded-lg border border-border text-foreground font-medium hover:bg-accent transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
-        >
-          {downloading ? (
-            <>
-              <Loader2 className="h-4 w-4 animate-spin" />
-              Generating report...
-            </>
-          ) : (
-            <>
-              <Download className="h-4 w-4" />
-              Download Assessment Report (.docx)
-            </>
+        <>
+          <button
+            onClick={handleDownloadReport}
+            disabled={downloading}
+            className="mt-4 w-full py-3 rounded-lg border border-border text-foreground font-medium hover:bg-accent transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
+          >
+            {downloading ? (
+              <>
+                <Loader2 className="h-4 w-4 animate-spin" />
+                Generating report...
+              </>
+            ) : (
+              <>
+                <Download className="h-4 w-4" />
+                Download Assessment Report (.docx)
+              </>
+            )}
+          </button>
+          {downloadError && (
+            <p className="mt-2 text-sm text-destructive text-center">{downloadError}</p>
           )}
-        </button>
+        </>
       )}
 
       <div className="mt-8">
