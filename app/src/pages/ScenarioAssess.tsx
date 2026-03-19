@@ -6,6 +6,8 @@ import ContextOnboarding from "@/components/assessment/ContextOnboarding";
 import type { AssessmentContext } from "@/components/assessment/ContextOnboarding";
 import SourceAttribution from "@/components/SourceAttribution";
 import MaturityHeatmap from "@/components/assessment/MaturityHeatmap";
+import DimensionLevelChart from "@/components/assessment/DimensionLevelChart";
+import { getFrameworkById } from "@/data/frameworks";
 import { apiGet, apiPost, ApiError, isAuthenticated } from "@/lib/api";
 
 interface ScenarioResponse {
@@ -397,8 +399,16 @@ function ResultsView({
         </div>
       </div>
 
-      {frameworkId === "maturity-the" && (
+      {frameworkId === "maturity-the" ? (
         <MaturityHeatmap results={results} />
+      ) : (
+        (() => {
+          const fw = getFrameworkById(frameworkId);
+          const levels = fw?.keyDimensions?.[0]?.levels?.map((l) => ({ name: l.name, order: l.order })) ?? [];
+          return levels.length > 0 ? (
+            <DimensionLevelChart results={results} levels={levels} showConfidence={true} />
+          ) : null;
+        })()
       )}
 
       <div className="space-y-4 mb-8">
