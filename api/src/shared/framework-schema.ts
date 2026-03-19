@@ -23,8 +23,10 @@ export function getValidLevels(
 }
 
 /**
- * Returns all valid level IDs across all dimensions for a framework.
- * Useful for bulk validation.
+ * Returns all valid level identifiers across all dimensions for a framework.
+ * Includes both level IDs (e.g., "the-tl-strategy-incidental") and
+ * lowercase level names (e.g., "incidental") since the frontend self-assessment
+ * sends bare level names while scenario assessment uses full IDs.
  */
 export function getValidLevelsForFramework(
   frameworkId: string
@@ -35,7 +37,12 @@ export function getValidLevelsForFramework(
 
   const result = new Map<string, Set<string>>();
   for (const dim of fw.dimensions) {
-    result.set(dim.id, new Set(dim.levels.map((l) => l.id)));
+    const validSet = new Set<string>();
+    for (const l of dim.levels) {
+      validSet.add(l.id);                    // full ID: "the-tl-strategy-incidental"
+      validSet.add(l.name.toLowerCase());     // bare name: "incidental"
+    }
+    result.set(dim.id, validSet);
   }
   return result;
 }
