@@ -149,7 +149,7 @@ function shadingForLevel(order: number) {
 function headerCell(text: string, width?: number): TableCell {
   return new TableCell({
     children: [new Paragraph({
-      children: [new TextRun({ text, bold: true, size: 18, font: "Calibri" })],
+      children: [new TextRun({ text, bold: true, size: 18, font: "Calibri", color: "FFFFFF" })],
       spacing: { before: 40, after: 40 },
     })],
     shading: { type: ShadingType.SOLID, color: "2D3748" },
@@ -385,11 +385,32 @@ function buildPillarSection(pillarName: string, dims: DimensionResult[], framewo
   return children;
 }
 
+function heatmapCell(result: DimensionResult | undefined): TableCell {
+  if (!result) return dataCell("—");
+  const confDots = result.confidence === "high" ? "●●●" : result.confidence === "medium" ? "●●○" : "●○○";
+  return new TableCell({
+    children: [
+      new Paragraph({
+        children: [new TextRun({ text: result.assigned_level, size: 17, font: "Calibri", bold: true, color: "1A202C" })],
+        alignment: AlignmentType.CENTER,
+        spacing: { before: 30, after: 0 },
+      }),
+      new Paragraph({
+        children: [new TextRun({ text: confDots, size: 14, font: "Calibri", color: "718096" })],
+        alignment: AlignmentType.CENTER,
+        spacing: { before: 0, after: 30 },
+      }),
+    ],
+    shading: shadingForLevel(result.assigned_level_order),
+    borders: THIN_BORDER,
+  });
+}
+
 function buildHeatMap(data: TheReportData): Paragraph[] {
   const children: Paragraph[] = [
     new Paragraph({ text: "Maturity Heat Map", heading: HeadingLevel.HEADING_1, spacing: { after: 200 } }),
     new Paragraph({
-      children: [new TextRun({ text: "Rows = pillars, columns = cross-cutting dimensions. Each cell shows the assigned maturity level (1–4).", size: 20, font: "Calibri", color: "718096" })],
+      children: [new TextRun({ text: "Rows = pillars, columns = cross-cutting dimensions. Cell colour encodes maturity level; dots indicate confidence (●●● high, ●●○ medium, ●○○ low).", size: 20, font: "Calibri", color: "718096" })],
       spacing: { after: 200 },
     }),
   ];
@@ -402,11 +423,7 @@ function buildHeatMap(data: TheReportData): Paragraph[] {
   const dataRows = PILLARS.map((pillar) => {
     const cells = DIMENSIONS.map((dim) => {
       const result = data.results.find((r) => r.dimension_id === `${pillar.prefix}${dim}`);
-      if (!result) return dataCell("—");
-      return dataCell(
-        `${result.assigned_level_order} – ${result.assigned_level}`,
-        { shading: shadingForLevel(result.assigned_level_order) }
-      );
+      return heatmapCell(result);
     });
     return new TableRow({
       children: [dataCell(pillar.name, { bold: true, width: 25 }), ...cells],
@@ -417,6 +434,15 @@ function buildHeatMap(data: TheReportData): Paragraph[] {
     rows: [headerRow, ...dataRows],
     width: { size: 100, type: WidthType.PERCENTAGE },
     layout: TableLayoutType.FIXED,
+  }));
+
+  // Legend
+  children.push(new Paragraph({ spacing: { before: 200 } }));
+  children.push(new Paragraph({
+    children: [
+      new TextRun({ text: "Legend: ", size: 18, font: "Calibri", bold: true }),
+      new TextRun({ text: "Red = Incidental  |  Amber = Intentional  |  Green = Integrated  |  Blue = Optimised", size: 18, font: "Calibri", color: "718096" }),
+    ],
   }));
 
   children.push(new Paragraph({ children: [new PageBreak()] }));
