@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef } from "react";
-import { Link, useParams, useNavigate } from "react-router-dom";
+import { Link, useParams, useNavigate, useSearchParams } from "react-router-dom";
 import { ArrowLeft, CheckCircle2, Loader2, AlertTriangle, Shield, Download } from "lucide-react";
 import Header from "@/components/Header";
 import ContextOnboarding from "@/components/assessment/ContextOnboarding";
@@ -37,6 +37,8 @@ type Phase = "checking" | "onboarding" | "assessing" | "completing" | "results";
 
 export default function ScenarioAssess() {
   const { framework } = useParams<{ framework: string }>();
+  const [searchParams] = useSearchParams();
+  const pillarFilter = searchParams.get("pillar") || undefined;
   const navigate = useNavigate();
   const [phase, setPhase] = useState<Phase>("checking");
   const [sessionId, setSessionId] = useState<string>("");
@@ -87,7 +89,7 @@ export default function ScenarioAssess() {
         session_id: string;
         scenarios: Scenario[];
         estimated_time_minutes?: number;
-      }>("/scenario-sessions", { framework_id: framework });
+      }>("/scenario-sessions", { framework_id: framework, ...(pillarFilter ? { pillar_filter: pillarFilter } : {}) });
       setSessionId(data.session_id);
       setScenarios(data.scenarios);
       setEstimatedMinutes(data.estimated_time_minutes ?? estimatedMinutes);

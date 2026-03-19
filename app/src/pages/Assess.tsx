@@ -2,8 +2,12 @@ import { useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { ArrowLeft, ArrowRight, CheckCircle2, Loader2 } from "lucide-react";
 import Header from "@/components/Header";
+import GuidedTriage from "@/components/assessment/GuidedTriage";
 import { getFrameworkById, FRAMEWORKS } from "@/data/frameworks";
 import { apiPost } from "@/lib/api";
+
+// Frameworks that use guided triage instead of quick self-assessment
+const TRIAGE_FRAMEWORKS = new Set(["maturity-the"]);
 
 export default function Assess() {
   const { framework: frameworkId } = useParams<{ framework: string }>();
@@ -13,6 +17,21 @@ export default function Assess() {
 
   const fw = getFrameworkById(frameworkId);
   if (!fw) return <FrameworkPicker />;
+
+  // THE DMI uses guided triage instead of quick self-assessment
+  if (TRIAGE_FRAMEWORKS.has(fw.id)) {
+    return (
+      <div className="min-h-screen bg-background">
+        <Header />
+        <div className="container mx-auto px-4 sm:px-6 py-8">
+          <Link to="/assess" className="inline-flex items-center gap-2 text-sm text-muted-foreground hover:text-foreground transition-colors mb-8">
+            <ArrowLeft className="h-4 w-4" />Back to assessments
+          </Link>
+          <GuidedTriage />
+        </div>
+      </div>
+    );
+  }
 
   return <AssessmentFlow framework={fw} />;
 }
@@ -43,7 +62,9 @@ function FrameworkPicker() {
                   to={`/assess/${fw.id}`}
                   className="block py-2 px-3 text-sm text-center rounded-lg border border-border hover:border-primary/50 hover:bg-accent/50 transition-all"
                 >
-                  Quick Self-Assessment · ~{fw.estimatedAssessmentMinutes || 5} min
+                  {TRIAGE_FRAMEWORKS.has(fw.id)
+                    ? "Quick Start · ~5 min"
+                    : `Quick Self-Assessment · ~${fw.estimatedAssessmentMinutes || 5} min`}
                 </Link>
                 {SCENARIO_FRAMEWORKS.has(fw.id) && (
                   <Link

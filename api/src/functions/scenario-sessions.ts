@@ -79,7 +79,7 @@ async function handler(
     }
 
     if (req.method === "POST") {
-      const body = (await req.json()) as { framework_id: string };
+      const body = (await req.json()) as { framework_id: string; pillar_filter?: string };
       if (!body.framework_id) {
         return {
           status: 400,
@@ -149,9 +149,21 @@ async function handler(
         responsesByScenario.get(r.scenario_id)!.push(r);
       }
 
-      const selectedScenarios = body.framework_id === "maturity-the"
-        ? selectTheScenarios(scenarios, userContext ?? {})
+      // Apply pillar filter if provided (e.g., from triage recommendation)
+      const PILLAR_PREFIX: Record<string, string> = {
+        teaching_learning: "the-tl-",
+        research: "the-re-",
+        professional_services: "the-ps-",
+        planning_governance: "the-pg-",
+      };
+      const pillarPrefix = body.pillar_filter ? PILLAR_PREFIX[body.pillar_filter] : null;
+      const filteredScenarios = pillarPrefix
+        ? scenarios.filter((s) => s.dimension_id.startsWith(pillarPrefix))
         : scenarios;
+
+      const selectedScenarios = body.framework_id === "maturity-the"
+        ? selectTheScenarios(filteredScenarios, userContext ?? {})
+        : filteredScenarios;
 
       // Build scenario list with shuffled responses
       const shuffledScenarios = shuffle(selectedScenarios).map((s) => ({
@@ -181,7 +193,9 @@ async function handler(
           session_id: session!.id,
           framework_id: body.framework_id,
           estimated_time_minutes:
-            body.framework_id === "maturity-the" ? 40 : 15,
+            body.framework_id === "maturity-the"
+              ? (pillarPrefix ? Math.ceil(shuffledScenarios.length * 1) : 40)
+              : 15,
           total_scenarios: shuffledScenarios.length,
           scenarios: shuffledScenarios,
         }),
