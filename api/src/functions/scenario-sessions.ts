@@ -5,7 +5,7 @@ import {
   InvocationContext,
 } from "@azure/functions";
 import { query, queryOne, execute } from "../shared/db";
-import { requireAuth, AuthError } from "../shared/auth";
+import { requireAuth, guestAuth, AuthError } from "../shared/auth";
 import { corsHeaders, handleCors } from "../middleware/cors";
 import {
   getTheScenarioContextScore,
@@ -48,9 +48,8 @@ async function handler(
   if (cors) return cors;
 
   try {
-    const user = await requireAuth(req);
-
     if (req.method === "GET") {
+      const user = await requireAuth(req);
       const frameworkId = req.query.get("framework_id");
       const rows = frameworkId
         ? await query(
@@ -87,6 +86,11 @@ async function handler(
           body: JSON.stringify({ error: "framework_id required" }),
         };
       }
+
+      // DMI assessment allows guest (anonymous) access
+      const user = body.framework_id === "maturity-the"
+        ? guestAuth(req)
+        : await requireAuth(req);
 
       // Fetch active scenarios for this framework
       const scenarios = await query<{

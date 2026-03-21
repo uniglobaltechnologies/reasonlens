@@ -22,6 +22,7 @@ interface ContextOnboardingProps {
   frameworkId: string;
   initialContext?: AssessmentContext | null;
   onComplete: () => void;
+  guestMode?: boolean;
 }
 
 const SUBJECT_OPTIONS = [
@@ -145,6 +146,7 @@ export default function ContextOnboarding({
   frameworkId,
   initialContext,
   onComplete,
+  guestMode,
 }: ContextOnboardingProps) {
   const isInstitutional = frameworkId === "maturity-the";
 
@@ -219,7 +221,7 @@ export default function ContextOnboarding({
     setSaveError("");
 
     try {
-      await apiPost("/user-assessment-context", {
+      await apiPost(`/user-assessment-context${guestMode ? "?guest=true" : ""}`, {
         subject_area: isInstitutional ? null : subjectArea || null,
         institution_size: isInstitutional ? institutionSize || null : null,
         institution_type: institutionType || null,

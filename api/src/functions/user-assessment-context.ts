@@ -5,7 +5,7 @@ import {
   InvocationContext,
 } from "@azure/functions";
 import { query, queryOne, execute } from "../shared/db";
-import { requireAuth, AuthError } from "../shared/auth";
+import { requireAuth, guestAuth, AuthError } from "../shared/auth";
 import { corsHeaders, handleCors } from "../middleware/cors";
 
 async function handler(
@@ -16,7 +16,9 @@ async function handler(
   if (cors) return cors;
 
   try {
-    const user = await requireAuth(req);
+    // Allow guest access for DMI assessment (frontend sends ?guest=true)
+    const isGuest = req.query.get("guest") === "true";
+    const user = isGuest ? guestAuth(req) : await requireAuth(req);
 
     if (req.method === "GET") {
       const row = await queryOne(

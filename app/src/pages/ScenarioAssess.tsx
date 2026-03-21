@@ -51,8 +51,12 @@ export default function ScenarioAssess() {
   const [estimatedMinutes, setEstimatedMinutes] = useState<number>(framework === "maturity-the" ? 40 : 15);
   const scenarioStartTime = useRef<number>(Date.now());
 
+  // DMI assessment (maturity-the) allows anonymous/guest access
+  const isDmi = framework === "maturity-the";
+  const guestParam = isDmi ? "?guest=true" : "";
+
   useEffect(() => {
-    if (!isAuthenticated()) {
+    if (!isDmi && !isAuthenticated()) {
       navigate("/auth");
       return;
     }
@@ -61,7 +65,7 @@ export default function ScenarioAssess() {
 
   async function checkContext() {
     try {
-      const context = await apiGet<AssessmentContext>("/user-assessment-context");
+      const context = await apiGet<AssessmentContext>(`/user-assessment-context${guestParam}`);
       setContextRow(context);
 
       if (hasRequiredContext(framework ?? "", context)) {
@@ -186,6 +190,7 @@ export default function ScenarioAssess() {
             frameworkId={framework!}
             initialContext={contextRow}
             onComplete={startSession}
+            guestMode={isDmi}
           />
         )}
 

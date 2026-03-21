@@ -5,7 +5,8 @@ import {
   InvocationContext,
 } from "@azure/functions";
 import { transaction } from "../shared/db";
-import { requireAuth, AuthError } from "../shared/auth";
+import { requireAuth, guestAuth, AuthError } from "../shared/auth";
+import { queryOne } from "../shared/db";
 import { corsHeaders, handleCors } from "../middleware/cors";
 import { scoreSession, ScenarioAnswer, DimensionResult } from "../shared/scenario-scoring";
 import { getFrameworkNameById } from "../shared/framework-context";
@@ -25,8 +26,6 @@ async function handler(
   if (cors) return cors;
 
   try {
-    const user = await requireAuth(req);
-
     if (req.method !== "POST") {
       return { status: 405, headers: corsHeaders(req), body: "Method not allowed" };
     }
@@ -39,6 +38,15 @@ async function handler(
         body: JSON.stringify({ error: "session_id required" }),
       };
     }
+
+    // DMI sessions allow guest access
+    const sessionCheck = await queryOne<{ framework_id: string }>(
+      "SELECT framework_id FROM scenario_sessions WHERE id = $1",
+      [body.session_id]
+    );
+    const user = sessionCheck?.framework_id === "maturity-the"
+      ? guestAuth(req)
+      : await requireAuth(req);
 
     const { results, frameworkId, answeredCount, totalCount } = await transaction(async (client) => {
       // Lock session row to prevent concurrent completion

@@ -5,7 +5,7 @@ import {
   InvocationContext,
 } from "@azure/functions";
 import { query, queryOne, execute } from "../shared/db";
-import { requireAuth, AuthError } from "../shared/auth";
+import { requireAuth, guestAuth, AuthError } from "../shared/auth";
 import { corsHeaders, handleCors } from "../middleware/cors";
 
 async function handler(
@@ -16,8 +16,6 @@ async function handler(
   if (cors) return cors;
 
   try {
-    const user = await requireAuth(req);
-
     if (req.method !== "POST") {
       return { status: 405, headers: corsHeaders(req), body: "Method not allowed" };
     }
@@ -36,6 +34,15 @@ async function handler(
         body: JSON.stringify({ error: "session_id, scenario_id, and response_id required" }),
       };
     }
+
+    // Check if this session is a DMI guest session; if so allow guest auth
+    const sessionCheck = await queryOne<{ framework_id: string }>(
+      "SELECT framework_id FROM scenario_sessions WHERE id = $1",
+      [body.session_id]
+    );
+    const user = sessionCheck?.framework_id === "maturity-the"
+      ? guestAuth(req)
+      : await requireAuth(req);
 
     // Validate session belongs to user and is in_progress
     const session = await queryOne<{ id: string; status: string; scenario_ids: string[] | null }>(
