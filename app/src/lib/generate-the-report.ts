@@ -631,12 +631,16 @@ function markdownToDocxParagraphs(md: string): Paragraph[] {
       i++; continue;
     }
 
-    // Numbered lists
-    const numMatch = line.match(/^\d+\.\s/);
+    // Numbered lists — render as indented paragraphs with number prefix
+    const numMatch = line.match(/^(\d+)\.\s/);
     if (numMatch) {
+      const numText = numMatch[1] + ". ";
       paragraphs.push(new Paragraph({
-        children: parseInlineFormatting(line.replace(/^\d+\.\s/, "").trim()),
-        numbering: { reference: "default-numbering", level: 0 },
+        children: [
+          new TextRun({ text: numText, bold: true, size: 22, font: "Calibri" }),
+          ...parseInlineFormatting(line.replace(/^\d+\.\s/, "").trim()),
+        ],
+        indent: { left: 360 },
         spacing: { after: 60 },
       }));
       i++; continue;
