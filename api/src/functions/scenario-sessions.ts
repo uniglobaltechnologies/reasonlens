@@ -154,13 +154,18 @@ async function handler(
       }
 
       // Apply pillar filter if provided (e.g., from triage recommendation)
-      const PILLAR_PREFIX: Record<string, string> = {
-        teaching_learning: "the-tl-",
-        research: "the-re-",
-        professional_services: "the-ps-",
-        planning_governance: "the-pg-",
+      const PILLAR_PREFIX: Record<string, Record<string, string>> = {
+        "maturity-the": {
+          teaching_learning: "the-tl-", research: "the-re-",
+          professional_services: "the-ps-", planning_governance: "the-pg-",
+        },
+        "ai-capability": {
+          governance: "qs-gov-", outreach: "qs-out-",
+          teaching: "qs-tl-", research: "qs-res-",
+        },
       };
-      const pillarPrefix = body.pillar_filter ? PILLAR_PREFIX[body.pillar_filter] : null;
+      const fwPrefixes = PILLAR_PREFIX[body.framework_id] || {};
+      const pillarPrefix = body.pillar_filter ? fwPrefixes[body.pillar_filter] : null;
       const filteredScenarios = pillarPrefix
         ? scenarios.filter((s) => s.dimension_id.startsWith(pillarPrefix))
         : scenarios;
@@ -199,7 +204,9 @@ async function handler(
           estimated_time_minutes:
             body.framework_id === "maturity-the"
               ? (pillarPrefix ? Math.ceil(shuffledScenarios.length * 1) : 40)
-              : 15,
+              : body.framework_id === "ai-capability"
+                ? (pillarPrefix ? Math.ceil(shuffledScenarios.length * 0.4) : 20)
+                : 15,
           total_scenarios: shuffledScenarios.length,
           scenarios: shuffledScenarios,
         }),

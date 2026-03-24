@@ -47,12 +47,15 @@ async function handler(
         primary_frustration?: string;
         years_of_experience?: string;
         management_responsibility?: string;
+        ai_maturity_baseline?: string;
+        sector_focus?: string;
+        respondent_ai_familiarity?: string;
       };
 
       await execute(
         `INSERT INTO user_assessment_context
-           (user_id, subject_area, institution_size, institution_type, institution_level, region, funding_model, respondent_role, respondent_institutional_visibility, digital_infrastructure_baseline, current_ai_tools, primary_frustration, years_of_experience, management_responsibility)
-         VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14)
+           (user_id, subject_area, institution_size, institution_type, institution_level, region, funding_model, respondent_role, respondent_institutional_visibility, digital_infrastructure_baseline, current_ai_tools, primary_frustration, years_of_experience, management_responsibility, ai_maturity_baseline, sector_focus, respondent_ai_familiarity)
+         VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14, $15, $16, $17)
          ON CONFLICT (user_id) DO UPDATE SET
            subject_area = COALESCE($2, user_assessment_context.subject_area),
            institution_size = COALESCE($3, user_assessment_context.institution_size),
@@ -67,6 +70,9 @@ async function handler(
            primary_frustration = COALESCE($12, user_assessment_context.primary_frustration),
            years_of_experience = COALESCE($13, user_assessment_context.years_of_experience),
            management_responsibility = COALESCE($14, user_assessment_context.management_responsibility),
+           ai_maturity_baseline = COALESCE($15, user_assessment_context.ai_maturity_baseline),
+           sector_focus = COALESCE($16, user_assessment_context.sector_focus),
+           respondent_ai_familiarity = COALESCE($17, user_assessment_context.respondent_ai_familiarity),
            updated_at = now()`,
         [
           user.userId,
@@ -83,6 +89,9 @@ async function handler(
           body.primary_frustration ?? null,
           body.years_of_experience ?? null,
           body.management_responsibility ?? null,
+          body.ai_maturity_baseline ?? null,
+          body.sector_focus ?? null,
+          body.respondent_ai_familiarity ?? null,
         ]
       );
 

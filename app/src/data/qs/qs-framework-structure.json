@@ -1,0 +1,540 @@
+{
+  "framework_id": "ai-capability",
+  "framework_name": "QS AI Capability Framework",
+  "source": "QS (Quacquarelli Symonds)",
+  "licence": "CC BY-SA 4.0",
+  "type": "capability",
+  "scope": "institutional",
+  "year": "2024-2025",
+  "target_audience": ["leader", "admin", "institutional_planner", "CIO", "DVC", "AI_lead"],
+  "overview": "The QS AI Capability Framework is an institutional AI readiness assessment taxonomy comprising 4 pillars, 14 categories, and 33 sub-indicators. Published by Quacquarelli Symonds under CC BY-SA 4.0, it evaluates how effectively higher education institutions govern, deploy, and integrate artificial intelligence across governance, outreach, teaching and learning, and research. Unlike the THE Digital Maturity Index which measures general digital maturity, this framework is AI-specific from the ground up. The framework is formative and developmental, designed to help institutions build an AI roadmap rather than produce a ranking. Maturity level descriptors (Basic, Developing, Advanced) in this implementation are original ReasonLens content informed by the QS taxonomy structure, since QS does not publish named maturity bands in its open-source materials.",
+  "levels": [
+    {
+      "level_id": "basic",
+      "level_name": "Basic",
+      "order": 1,
+      "description": "Ad-hoc or absent. AI capability is uncoordinated, reactive, or non-existent. Individual experiments may exist but there is no institutional strategy, governance, or systematic approach."
+    },
+    {
+      "level_id": "developing",
+      "level_name": "Developing",
+      "order": 2,
+      "description": "Purposeful but not embedded. The institution has recognised the need for AI capability and is actively planning or piloting. Policies are emerging, initiatives are underway, but coverage is partial and coordination is incomplete."
+    },
+    {
+      "level_id": "advanced",
+      "level_name": "Advanced",
+      "order": 3,
+      "description": "Embedded and institution-wide. AI capability is strategically integrated, systematically governed, and continuously improved. Practices are mature, accountabilities are clear, and the institution benchmarks and iterates."
+    }
+  ],
+  "pillars": [
+    {
+      "pillar_id": "qs-governance",
+      "pillar_name": "Governance & Human Commitment",
+      "pillar_number": 1,
+      "description": "Covers institutional governance structures, regulatory compliance, ethical standards, risk management, data protection, leadership, and workforce capability development for AI. This pillar establishes the foundational conditions under which AI is permitted, managed, and sustained.",
+      "categories": [
+        {
+          "category_id": "qs-gov-regulatory",
+          "category_name": "Regulatory & Ethical Standards",
+          "category_number": "1.1",
+          "description": "Whether the institution monitors and adheres to regulatory and ethical standards for AI, has ethical guidelines in place, and considers AI's sustainability impact.",
+          "sub_indicators": [
+            {
+              "indicator_id": "qs-gov-reg-1",
+              "indicator_number": "1.1.1",
+              "indicator_name": "Monitoring Adherence",
+              "description": "The institution monitors adherence to regulatory and ethical standards for AI.",
+              "levels": {
+                "basic": "No systematic monitoring of AI regulatory compliance. Awareness of regulations like the EU AI Act or national AI strategies is limited to individuals. Compliance is reactive -- addressed only when problems arise.",
+                "developing": "The institution has identified relevant AI regulations and assigned monitoring responsibility. A compliance register or tracking mechanism is being developed. Periodic reviews occur but are not yet embedded in institutional governance cycles.",
+                "advanced": "Continuous, proactive monitoring of evolving AI regulation is embedded in governance processes. A named individual or committee has standing responsibility. Regulatory changes trigger systematic institutional review. Compliance evidence is documented and auditable."
+              }
+            },
+            {
+              "indicator_id": "qs-gov-reg-2",
+              "indicator_number": "1.1.2",
+              "indicator_name": "Ethical Guidelines",
+              "description": "The institution has ethical guidelines for AI use.",
+              "levels": {
+                "basic": "No institutional ethical guidelines for AI exist. Individual academics or departments may have informal norms. Staff and students have no shared reference point for ethical AI use.",
+                "developing": "Ethical guidelines have been drafted or approved but adoption is inconsistent. Guidelines exist as a document but are not yet embedded in procurement, teaching, or research processes. Awareness campaigns are underway.",
+                "advanced": "Comprehensive ethical guidelines for AI are approved, widely communicated, and actively enforced. They are integrated into procurement decisions, research ethics review, student-facing policies, and staff development. Regular review cycles update them as AI capabilities evolve."
+              }
+            },
+            {
+              "indicator_id": "qs-gov-reg-3",
+              "indicator_number": "1.1.3",
+              "indicator_name": "Sustainability Impact",
+              "description": "The institution considers AI's sustainability impact.",
+              "levels": {
+                "basic": "AI's environmental and social sustainability impact is not considered in institutional decision-making. Energy consumption, carbon footprint of AI compute, and broader societal effects are not assessed.",
+                "developing": "The institution has begun to consider sustainability in AI decisions. Some procurement processes include sustainability criteria. Awareness of computational environmental costs exists but systematic assessment is not yet standard.",
+                "advanced": "Sustainability impact assessment is a standard component of AI procurement, deployment, and research decisions. The institution tracks the environmental footprint of its AI infrastructure, selects efficient models where appropriate, and reports on AI sustainability as part of institutional ESG commitments."
+              }
+            }
+          ]
+        },
+        {
+          "category_id": "qs-gov-risk",
+          "category_name": "Governance & Risk Management",
+          "category_number": "1.2",
+          "description": "Whether the institution has governance structures for AI decision-making, conducts risk assessments, and follows ethical procurement practices for AI tools and services.",
+          "sub_indicators": [
+            {
+              "indicator_id": "qs-gov-risk-1",
+              "indicator_number": "1.2.1",
+              "indicator_name": "Governance Structure",
+              "description": "The institution has a governance structure for AI.",
+              "levels": {
+                "basic": "No dedicated AI governance structure exists. AI decisions are made ad-hoc by whoever is procuring or deploying a tool. There is no committee, board, or named role with AI governance responsibility.",
+                "developing": "An AI governance structure is being established. This may be a working group, a committee with terms of reference, or a designated senior leader. The structure exists but its authority, scope, and integration with existing governance are still being defined.",
+                "advanced": "A mature AI governance structure operates with clear authority, defined scope, and integration into the institutional governance hierarchy. It has named membership, regular meeting cadence, documented decision-making processes, and accountability to senior leadership. AI governance decisions are recorded and auditable."
+              }
+            },
+            {
+              "indicator_id": "qs-gov-risk-2",
+              "indicator_number": "1.2.2",
+              "indicator_name": "Risk Assessment",
+              "description": "The institution conducts risk assessments related to AI.",
+              "levels": {
+                "basic": "No AI-specific risk assessment processes exist. AI tools are deployed without systematic evaluation of risks to data, bias, accuracy, or institutional reputation. Risk is managed reactively after incidents.",
+                "developing": "AI risk assessment is conducted for some deployments, particularly high-profile or externally visible ones. A risk assessment template or framework is emerging. Not all AI deployments are covered and risk tolerance is not formally defined.",
+                "advanced": "AI risk assessment is mandatory for all institutional AI deployments. A tiered risk framework classifies AI use cases by risk level and applies proportionate scrutiny. Risk registers are maintained, mitigations are tracked, and risk appetite is formally defined by governance."
+              }
+            },
+            {
+              "indicator_id": "qs-gov-risk-3",
+              "indicator_number": "1.2.3",
+              "indicator_name": "Ethical Procurement",
+              "description": "The institution follows ethical procurement practices for AI.",
+              "levels": {
+                "basic": "AI tools are procured through standard IT procurement without AI-specific ethical criteria. Vendor AI ethics, data handling practices, and model transparency are not systematically evaluated.",
+                "developing": "AI-specific procurement criteria are being developed or have been introduced for some categories. Due diligence includes questions about data handling and bias, but coverage is inconsistent and criteria are not yet standardised across the institution.",
+                "advanced": "All AI procurement follows an established ethical procurement framework. Vendor assessments include transparency, bias testing, data sovereignty, environmental impact, and alignment with institutional values. Procurement criteria are standardised, regularly updated, and applied consistently."
+              }
+            }
+          ]
+        },
+        {
+          "category_id": "qs-gov-conduct",
+          "category_name": "Code of Conduct & Privacy",
+          "category_number": "1.3",
+          "description": "Whether the institution has a code of conduct governing AI use and adequate data protection measures for AI systems.",
+          "sub_indicators": [
+            {
+              "indicator_id": "qs-gov-con-1",
+              "indicator_number": "1.3.1",
+              "indicator_name": "Code of Conduct",
+              "description": "The institution has a code of conduct for AI use.",
+              "levels": {
+                "basic": "No AI-specific code of conduct exists. Expectations for staff and student AI use are unclear or unwritten. Acceptable use is determined informally at departmental or individual level.",
+                "developing": "An AI code of conduct has been drafted or approved. It covers key areas such as academic integrity, appropriate use in assessment, and staff responsibilities. Communication and enforcement mechanisms are still being developed.",
+                "advanced": "A comprehensive AI code of conduct is in force, widely communicated, and integrated into staff and student handbooks, contracts, and onboarding. It is regularly reviewed and updated. Breaches have clear consequences and reporting mechanisms."
+              }
+            },
+            {
+              "indicator_id": "qs-gov-con-2",
+              "indicator_number": "1.3.2",
+              "indicator_name": "Data Protection",
+              "description": "The institution has data protection measures related to AI.",
+              "levels": {
+                "basic": "AI data protection relies on general institutional data protection policies without AI-specific provisions. Data Protection Impact Assessments (DPIAs) are not routinely conducted for AI deployments. Staff may be using AI tools with student data without adequate safeguards.",
+                "developing": "AI-specific data protection measures are being implemented. DPIAs are required for high-risk AI deployments. Data processing agreements with AI vendors are being standardised. Not all AI use cases are yet covered.",
+                "advanced": "Comprehensive AI data protection measures are embedded. DPIAs are mandatory for all AI deployments involving personal data. Data minimisation principles are applied. AI-specific clauses are standard in vendor contracts. Staff receive AI data protection training. Compliance is audited."
+              }
+            }
+          ]
+        },
+        {
+          "category_id": "qs-gov-leadership",
+          "category_name": "Leadership & Capability",
+          "category_number": "1.4",
+          "description": "Whether the institution has leadership and strategic planning for AI and provides AI training and development for staff.",
+          "sub_indicators": [
+            {
+              "indicator_id": "qs-gov-lead-1",
+              "indicator_number": "1.4.1",
+              "indicator_name": "Leadership & Planning",
+              "description": "The institution has leadership and strategic planning for AI.",
+              "levels": {
+                "basic": "No designated AI leadership exists. AI is not mentioned in institutional strategy. No one has explicit responsibility for AI direction-setting. AI initiatives emerge bottom-up without strategic coordination.",
+                "developing": "AI leadership is emerging. A senior leader has been assigned AI responsibility or an AI strategy is in development. AI features in institutional plans but may not yet be a distinct strategic priority with dedicated resource.",
+                "advanced": "Clear AI leadership is in place with named senior accountability. An AI strategy is approved, funded, and integrated with the institutional strategic plan. Progress is reported to governing bodies. AI leadership has authority to convene across institutional boundaries."
+              }
+            },
+            {
+              "indicator_id": "qs-gov-lead-2",
+              "indicator_number": "1.4.2",
+              "indicator_name": "Training & Development",
+              "description": "The institution provides AI training and development for staff.",
+              "levels": {
+                "basic": "No institutional AI training programme exists for staff. Individual staff self-develop through personal initiative. There is no systematic assessment of AI skills needs.",
+                "developing": "AI training offerings exist and are available to staff. An AI skills needs assessment has been conducted or is underway. Training covers foundational AI literacy but may not yet address role-specific applications. Uptake is voluntary and uneven.",
+                "advanced": "A comprehensive AI capability development programme is in place. Training is role-differentiated (leaders, academics, professional services, researchers). Completion is tracked. AI skills are integrated into professional development frameworks, promotion criteria, and workforce planning."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pillar_id": "qs-outreach",
+      "pillar_name": "Outreach & Operational Efficiency",
+      "pillar_number": 2,
+      "description": "Covers how the institution uses AI to enhance recruitment, student support, administrative efficiency, and external engagement. This pillar assesses operational AI deployment across non-teaching functions.",
+      "categories": [
+        {
+          "category_id": "qs-out-recruitment",
+          "category_name": "AI Enhanced Recruitment",
+          "category_number": "2.1",
+          "description": "Whether the institution uses AI in application, admissions, and student recruitment processes.",
+          "sub_indicators": [
+            {
+              "indicator_id": "qs-out-rec-1",
+              "indicator_number": "2.1.1",
+              "indicator_name": "Application Processes",
+              "description": "AI is used in application and admissions processes.",
+              "levels": {
+                "basic": "Admissions processes are entirely manual or use legacy systems without AI components. No AI-assisted application screening, chatbot support for applicants, or predictive yield modelling is in use.",
+                "developing": "Some AI tools are being piloted in admissions. This may include chatbots for applicant enquiries, AI-assisted personal statement review, or predictive enrolment modelling. Pilots are limited in scope and not yet institution-wide.",
+                "advanced": "AI is systematically integrated into the admissions pipeline. Predictive modelling informs offer-making and yield management. AI-powered communication personalises applicant engagement. Bias audits are conducted on AI-assisted decisions. Human oversight is maintained for final decisions."
+              }
+            },
+            {
+              "indicator_id": "qs-out-rec-2",
+              "indicator_number": "2.1.2",
+              "indicator_name": "Recruitment & Conversion",
+              "description": "AI is used in student recruitment and conversion activities.",
+              "levels": {
+                "basic": "Student recruitment relies on traditional methods without AI enhancement. Marketing is not personalised through AI. Lead scoring and conversion prediction are not used.",
+                "developing": "AI tools are being used in some recruitment activities. This may include personalised email campaigns, AI-driven lead scoring, or chatbot-based engagement. Coverage is partial and ROI measurement is informal.",
+                "advanced": "AI is embedded across the recruitment and conversion funnel. Personalised engagement at scale, predictive lead scoring, optimised channel allocation, and conversion pathway analysis are standard. Effectiveness is measured and continuously improved."
+              }
+            }
+          ]
+        },
+        {
+          "category_id": "qs-out-support",
+          "category_name": "Personalised Student Support",
+          "category_number": "2.2",
+          "description": "Whether the institution uses AI to provide career services and real-time student support outside the classroom.",
+          "sub_indicators": [
+            {
+              "indicator_id": "qs-out-sup-1",
+              "indicator_number": "2.2.1",
+              "indicator_name": "Career Services",
+              "description": "AI is used in career services for students.",
+              "levels": {
+                "basic": "Career services operate without AI tools. Job matching, CV review, and career guidance are entirely human-delivered. No AI-powered career platforms are in use.",
+                "developing": "Some AI career tools are available to students. This may include AI CV review, job matching algorithms, or career chatbots. Tools are supplementary and not integrated into the core careers service delivery model.",
+                "advanced": "AI is embedded in career services delivery. Personalised career pathway recommendations, AI-powered skills gap analysis, employer matching, and labour market intelligence tools are standard. AI augments human advisors rather than replacing them. Outcomes are tracked."
+              }
+            },
+            {
+              "indicator_id": "qs-out-sup-2",
+              "indicator_number": "2.2.2",
+              "indicator_name": "Realtime Student Support",
+              "description": "AI provides real-time student support.",
+              "levels": {
+                "basic": "Student support is available only during office hours through human staff. No AI-powered support channels exist. Students who need help outside hours have no institutional resource.",
+                "developing": "AI-powered student support is being piloted. This may include chatbots for FAQs, AI triage for support queries, or automated appointment booking. Coverage is limited to specific services or student groups.",
+                "advanced": "AI provides 24/7 real-time student support across multiple channels. Intelligent triage routes queries appropriately. AI handles routine enquiries autonomously and escalates complex cases to humans. Support quality is monitored and improved through feedback loops."
+              }
+            }
+          ]
+        },
+        {
+          "category_id": "qs-out-efficiency",
+          "category_name": "Faculty & Administrative Efficiency",
+          "category_number": "2.3",
+          "description": "Whether the institution uses AI to improve faculty and administrative processes.",
+          "sub_indicators": [
+            {
+              "indicator_id": "qs-out-eff-1",
+              "indicator_number": "2.3.1",
+              "indicator_name": "AI in Administrative Processes",
+              "description": "AI is used to improve faculty and administrative processes.",
+              "levels": {
+                "basic": "Administrative processes are manual or use legacy systems without AI. Timetabling, room allocation, HR processes, financial reporting, and facilities management do not use AI tools.",
+                "developing": "AI is being piloted in some administrative functions. This may include AI-assisted timetabling, automated document processing, predictive maintenance, or AI-enhanced HR screening. Adoption is departmental rather than institutional.",
+                "advanced": "AI is systematically deployed across administrative functions. Process automation, intelligent document handling, predictive resource management, and AI-enhanced decision support are standard. Efficiency gains are measured. Staff are trained. Integration across systems is achieved."
+              }
+            }
+          ]
+        },
+        {
+          "category_id": "qs-out-engagement",
+          "category_name": "External Engagement & Partnership",
+          "category_number": "2.4",
+          "description": "Whether the institution uses AI to support community learning, external collaboration, and industry-linked projects.",
+          "sub_indicators": [
+            {
+              "indicator_id": "qs-out-eng-1",
+              "indicator_number": "2.4.1",
+              "indicator_name": "Community Learning",
+              "description": "AI supports community learning initiatives.",
+              "levels": {
+                "basic": "The institution's community and public engagement activities do not involve AI. No AI-enhanced CPD, public AI literacy programmes, or community-facing AI initiatives exist.",
+                "developing": "Some community learning initiatives incorporate AI. This may include AI literacy workshops, AI-enhanced CPD for local professionals, or community partnerships around AI. Activities are project-based rather than sustained.",
+                "advanced": "AI-enhanced community learning is a sustained institutional commitment. Public AI literacy programmes, industry CPD with AI components, and community AI partnerships are ongoing. The institution is recognised as a regional or national resource for AI education beyond its student body."
+              }
+            },
+            {
+              "indicator_id": "qs-out-eng-2",
+              "indicator_number": "2.4.2",
+              "indicator_name": "External Collaboration",
+              "description": "AI facilitates external collaboration.",
+              "levels": {
+                "basic": "External partnerships and collaborations do not involve AI as a subject or enabler. The institution does not participate in sector-level AI initiatives, consortia, or cross-institutional AI projects.",
+                "developing": "The institution participates in some AI-related external collaborations. This may include sector working groups, cross-institutional AI projects, or government consultations on AI policy. Engagement is opportunistic rather than strategic.",
+                "advanced": "AI-focused external collaboration is strategic and sustained. The institution is an active member of AI consortia, contributes to national or international AI policy, and maintains partnerships with other institutions, industry, and government on AI matters."
+              }
+            },
+            {
+              "indicator_id": "qs-out-eng-3",
+              "indicator_number": "2.4.3",
+              "indicator_name": "Industry Projects",
+              "description": "AI is used in industry-linked projects.",
+              "levels": {
+                "basic": "No industry-linked AI projects exist. Knowledge exchange and enterprise activity does not involve AI applications, consultancy, or collaborative R&D.",
+                "developing": "Some industry-linked AI projects are underway. These may include AI consultancy, collaborative AI research with industry partners, or AI-focused knowledge transfer partnerships. Activity is project-based and dependent on individual academic initiative.",
+                "advanced": "Industry-linked AI projects are a strategic institutional activity. Dedicated support structures exist for AI enterprise and knowledge exchange. The institution has a portfolio of AI partnerships across sectors. Revenue and impact from AI industry engagement are tracked."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pillar_id": "qs-teaching",
+      "pillar_name": "Teaching, Learning & Assessment",
+      "pillar_number": 3,
+      "description": "Covers how AI is integrated into curriculum design, pedagogy, personalised learning, student support, and assessment. This pillar assesses the core academic function of the institution through the lens of AI capability.",
+      "categories": [
+        {
+          "category_id": "qs-tl-curriculum",
+          "category_name": "Course Design & Curriculum",
+          "category_number": "3.1",
+          "description": "Whether the institution has an agreed approach to AI in teaching, embeds AI in curriculum design, promotes AI literacy, and offers dedicated AI courses.",
+          "sub_indicators": [
+            {
+              "indicator_id": "qs-tl-cur-1",
+              "indicator_number": "3.1.1",
+              "indicator_name": "Agreed Approach for AI",
+              "description": "The institution has an agreed approach for integrating AI into teaching.",
+              "levels": {
+                "basic": "No institutional approach to AI in teaching exists. Individual academics decide whether and how to use AI. Student experience varies drastically depending on the course and lecturer.",
+                "developing": "An institutional approach is being developed or has been published. Guidance exists on acceptable AI use in teaching. Faculty forums or working groups are discussing AI pedagogy. Not all departments have adopted the approach.",
+                "advanced": "A comprehensive, institution-wide approach to AI in teaching is in place. It covers AI use by staff in course design and delivery, AI use by students in learning, and expectations around transparency. The approach is regularly reviewed and updated."
+              }
+            },
+            {
+              "indicator_id": "qs-tl-cur-2",
+              "indicator_number": "3.1.2",
+              "indicator_name": "Curriculum Design",
+              "description": "AI is embedded in curriculum design processes.",
+              "levels": {
+                "basic": "Curriculum design does not consider AI integration. Learning outcomes do not reference AI skills. Programme approval and review processes do not ask about AI.",
+                "developing": "Some programmes are beginning to embed AI in curriculum design. AI-related learning outcomes are emerging. Programme review processes are being updated to include AI considerations. Coverage is uneven across disciplines.",
+                "advanced": "AI is systematically considered in curriculum design across disciplines. Programme approval requires consideration of AI integration. Learning outcomes include AI literacy and discipline-specific AI skills. Curriculum is reviewed regularly for AI currency."
+              }
+            },
+            {
+              "indicator_id": "qs-tl-cur-3",
+              "indicator_number": "3.1.3",
+              "indicator_name": "AI Literacy",
+              "description": "The institution promotes AI literacy among students and staff.",
+              "levels": {
+                "basic": "No institutional AI literacy initiative exists. AI literacy is left to individual interest. Most students and staff lack foundational understanding of how AI systems work, their limitations, and their societal implications.",
+                "developing": "AI literacy initiatives are underway. This may include workshops, online modules, or embedded AI literacy content in some programmes. A definition of institutional AI literacy has been developed. Uptake is growing but not universal.",
+                "advanced": "AI literacy is a defined institutional competency expected of all graduates and staff. It is embedded across curricula, supported by dedicated resources, and assessed. The institution has a clear, evidence-informed definition of AI literacy that goes beyond tool use to include critical evaluation and ethical reasoning."
+              }
+            },
+            {
+              "indicator_id": "qs-tl-cur-4",
+              "indicator_number": "3.1.4",
+              "indicator_name": "AI Courses",
+              "description": "The institution offers dedicated AI courses.",
+              "levels": {
+                "basic": "No dedicated AI courses are offered. AI may be mentioned in computing programmes but there are no standalone AI modules, programmes, or microcredentials.",
+                "developing": "Some dedicated AI courses are offered. These may include AI electives, AI microcredentials, or AI-focused modules within existing programmes. Offerings are concentrated in STEM faculties.",
+                "advanced": "A comprehensive portfolio of AI courses is available. This spans foundational AI for non-specialists, discipline-specific AI applications, and advanced AI programmes. AI courses are available across faculties, not just in computing. Employer demand and student interest inform the portfolio."
+              }
+            }
+          ]
+        },
+        {
+          "category_id": "qs-tl-personalised",
+          "category_name": "Personalised Learning & Support",
+          "category_number": "3.2",
+          "description": "Whether the institution uses AI to provide personalised learning experiences, support student retention, and deliver academic support.",
+          "sub_indicators": [
+            {
+              "indicator_id": "qs-tl-per-1",
+              "indicator_number": "3.2.1",
+              "indicator_name": "Personalised Learning",
+              "description": "AI is used to provide personalised learning experiences.",
+              "levels": {
+                "basic": "Learning experiences are uniform and not personalised through AI. No adaptive learning platforms, AI-generated personalised content, or AI-driven learning pathways are in use.",
+                "developing": "Some AI-powered personalised learning tools are being piloted. This may include adaptive learning platforms in specific courses, AI tutoring systems, or personalised content recommendation. Coverage is limited.",
+                "advanced": "AI-powered personalisation is widespread across the learning experience. Adaptive platforms, personalised learning pathways, intelligent content recommendation, and AI tutoring are available at scale. Effectiveness is measured through learning analytics."
+              }
+            },
+            {
+              "indicator_id": "qs-tl-per-2",
+              "indicator_number": "3.2.2",
+              "indicator_name": "Student Retention",
+              "description": "AI is used to support student retention.",
+              "levels": {
+                "basic": "Student retention efforts do not use AI. At-risk student identification relies on manual processes or simple threshold rules. Interventions are reactive rather than predictive.",
+                "developing": "AI-based early warning systems are being piloted or implemented. Predictive models identify at-risk students using engagement and performance data. Intervention workflows are being developed but are not yet systematically integrated with student support services.",
+                "advanced": "AI-driven retention systems are embedded in student support operations. Predictive models identify at-risk students early. Automated and human interventions are triggered by AI alerts. Model fairness is audited. Retention outcomes are tracked and the system is continuously improved."
+              }
+            },
+            {
+              "indicator_id": "qs-tl-per-3",
+              "indicator_number": "3.2.3",
+              "indicator_name": "Academic Support",
+              "description": "AI is used to provide academic support to students.",
+              "levels": {
+                "basic": "Academic support (study skills, writing support, maths support) is delivered entirely by human staff without AI tools. No AI writing assistants, study planners, or academic support chatbots are institutionally provided.",
+                "developing": "Some AI academic support tools are available to students. This may include AI writing feedback tools, AI-powered study assistants, or automated practice question generators. Tools are supplementary and not integrated into the support model.",
+                "advanced": "AI academic support is embedded in the student experience. AI tools provide immediate feedback, personalised practice, and scaffolded support. Human academic support staff are augmented by AI. Tools are integrated with the VLE. Effectiveness and equity of access are monitored."
+              }
+            }
+          ]
+        },
+        {
+          "category_id": "qs-tl-assessment",
+          "category_name": "Assessment, Grading & Feedback",
+          "category_number": "3.3",
+          "description": "Whether the institution uses AI for real-time feedback, adaptive assessment, and validates AI assessment tools for bias.",
+          "sub_indicators": [
+            {
+              "indicator_id": "qs-tl-ass-1",
+              "indicator_number": "3.3.1",
+              "indicator_name": "Realtime Feedback",
+              "description": "AI provides real-time feedback to students.",
+              "levels": {
+                "basic": "Students receive feedback only from human assessors after submission. Turnaround times are long. No AI-powered formative feedback is available.",
+                "developing": "Some AI-powered feedback tools are available. This may include automated formative feedback on drafts, AI-assisted peer review, or intelligent tutoring system feedback. Coverage is limited to specific modules or programmes.",
+                "advanced": "AI-powered real-time feedback is widely available and embedded in learning design. Students receive immediate, formative AI feedback on practice tasks, drafts, and exercises. AI feedback complements rather than replaces human assessment. Quality is monitored."
+              }
+            },
+            {
+              "indicator_id": "qs-tl-ass-2",
+              "indicator_number": "3.3.2",
+              "indicator_name": "Adaptive Assessment",
+              "description": "AI enables adaptive assessment approaches.",
+              "levels": {
+                "basic": "Assessment is uniform -- all students take the same assessments at the same time. No adaptive testing, AI-generated assessment variants, or AI-adjusted assessment difficulty is used.",
+                "developing": "Some adaptive assessment is being piloted. This may include computer-adaptive testing in specific modules, AI-generated question variants, or AI-assisted assessment design. Coverage is limited and the pedagogic rationale is being developed.",
+                "advanced": "Adaptive assessment is strategically deployed where pedagogically appropriate. AI adjusts assessment difficulty, generates diverse assessment tasks, and supports assessment designs that are more equitable and resistant to AI-assisted cheating. Assessment literacy among staff includes understanding of AI-enabled approaches."
+              }
+            },
+            {
+              "indicator_id": "qs-tl-ass-3",
+              "indicator_number": "3.3.3",
+              "indicator_name": "Bias Validation",
+              "description": "The institution validates AI assessment tools for bias.",
+              "levels": {
+                "basic": "AI assessment tools are not evaluated for bias. If AI tools are used in assessment, their fairness across student demographics is not tested. There is no awareness that AI assessment tools can embed or amplify bias.",
+                "developing": "The institution has recognised the need to validate AI assessment tools for bias. Some evaluation has been conducted. Procurement of AI assessment tools includes questions about bias testing. Systematic validation is not yet standard.",
+                "advanced": "Bias validation is a standard requirement for all AI tools used in assessment. The institution conducts or commissions independent bias audits. Results inform procurement and deployment decisions. Disparate impact across protected characteristics is monitored. Findings are transparent."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "pillar_id": "qs-research",
+      "pillar_name": "Research & Scholarship",
+      "pillar_number": 4,
+      "description": "Covers how the institution supports AI tools in research practice, engages in scholarship about AI, and conducts AI research. This pillar distinguishes between using AI as a research tool, studying AI as a subject, and advancing the AI field itself.",
+      "categories": [
+        {
+          "category_id": "qs-res-practice",
+          "category_name": "AI in Research Practice",
+          "category_number": "4.1",
+          "description": "Whether the institution provides AI tools for research and whether researchers actively use AI in their work.",
+          "sub_indicators": [
+            {
+              "indicator_id": "qs-res-pra-1",
+              "indicator_number": "4.1.1",
+              "indicator_name": "AI Tools for Research",
+              "description": "The institution provides AI tools for research activities.",
+              "levels": {
+                "basic": "The institution does not provide AI tools for research. Researchers who use AI rely on personal accounts, departmental budgets, or grant funding. There is no institutional provision of AI research infrastructure.",
+                "developing": "Some institutional AI research tools are available. This may include licensed AI platforms, access to GPU compute, or institutional accounts for AI services. Provision is partial and may not cover all disciplines or career stages.",
+                "advanced": "Comprehensive AI research infrastructure is institutionally provided. This includes compute resources, licensed AI platforms, data services, and specialist support. Provision is equitable across disciplines. Research data management accounts for AI-specific requirements."
+              }
+            },
+            {
+              "indicator_id": "qs-res-pra-2",
+              "indicator_number": "4.1.2",
+              "indicator_name": "AI in Research Practice",
+              "description": "Faculty and researchers actively use AI in their research practice.",
+              "levels": {
+                "basic": "AI is not used as a research tool except by AI specialists. Researchers in other disciplines do not use AI for literature review, data analysis, writing, or methodology. There is no institutional awareness of AI's potential across research disciplines.",
+                "developing": "Growing numbers of researchers are using AI in their research practice. Use cases include AI-assisted literature review, data analysis, coding assistance, and writing support. Adoption is uneven across disciplines. Good practice sharing is emerging.",
+                "advanced": "AI use in research is widespread across disciplines. Researchers routinely use AI for appropriate tasks. The institution supports responsible AI use in research through guidance, training, and ethics frameworks. Research methodology increasingly incorporates AI capabilities."
+              }
+            }
+          ]
+        },
+        {
+          "category_id": "qs-res-scholarship",
+          "category_name": "Scholarship of AI in Practice",
+          "category_number": "4.2",
+          "description": "Whether the institution engages in scholarly work about AI's role in education and professional practice.",
+          "sub_indicators": [
+            {
+              "indicator_id": "qs-res-sch-1",
+              "indicator_number": "4.2.1",
+              "indicator_name": "Scholarship of AI",
+              "description": "The institution engages in scholarly work about AI in practice and education.",
+              "levels": {
+                "basic": "No institutional engagement in scholarship about AI in education or practice. Faculty do not research how AI affects their disciplines, teaching, or professional practice. The institution consumes but does not produce knowledge about AI's educational implications.",
+                "developing": "Some faculty are engaged in scholarship about AI in practice. This may include publications on AI in education, disciplinary studies of AI impact, or pedagogic research on AI-enhanced teaching. Activity is individual rather than institutionally supported.",
+                "advanced": "The institution actively supports and incentivises scholarship about AI in practice. Research centres, funded projects, and publication output address AI's impact across disciplines. The institution contributes to the evidence base that informs AI policy and practice in the sector."
+              }
+            }
+          ]
+        },
+        {
+          "category_id": "qs-res-airesearch",
+          "category_name": "AI Research",
+          "category_number": "4.3",
+          "description": "Whether the institution conducts academic research in the AI field itself and researches AI's impact within disciplinary fields.",
+          "sub_indicators": [
+            {
+              "indicator_id": "qs-res-air-1",
+              "indicator_number": "4.3.1",
+              "indicator_name": "Research in AI Field",
+              "description": "The institution conducts academic research in the field of AI.",
+              "levels": {
+                "basic": "The institution does not conduct AI research. There are no AI research groups, AI-focused PhD students, or AI research publications. AI is not an institutional research strength.",
+                "developing": "Some AI research activity exists. This may include individual faculty publishing in AI, emerging AI research groups, or AI-focused PhD students. AI research is not yet a recognised institutional strength or strategic priority.",
+                "advanced": "AI research is a recognised institutional strength. Dedicated AI research centres or groups exist. The institution attracts AI research funding, publishes in leading AI venues, and trains AI researchers. AI research is visible in institutional strategy."
+              }
+            },
+            {
+              "indicator_id": "qs-res-air-2",
+              "indicator_number": "4.3.2",
+              "indicator_name": "AI Impact in Disciplines",
+              "description": "The institution conducts academic research on the impact of AI within disciplinary fields.",
+              "levels": {
+                "basic": "No research is conducted on AI's impact within disciplines. Faculties outside computing do not study how AI affects their fields. AI impact is not a research theme.",
+                "developing": "Some disciplinary research on AI impact is emerging. Individual faculty in fields like healthcare, law, creative arts, or social sciences are studying AI's impact on their disciplines. Activity is scattered and not coordinated.",
+                "advanced": "Interdisciplinary research on AI's impact within specific fields is a strategic institutional activity. Multiple disciplines engage with AI impact research. Cross-faculty collaborations exist. The institution is recognised for its contribution to understanding AI's disciplinary implications."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

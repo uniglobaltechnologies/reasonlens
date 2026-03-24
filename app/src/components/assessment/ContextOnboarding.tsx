@@ -142,13 +142,42 @@ const THE_VISIBILITY_OPTIONS = [
 
 const THE_INFRASTRUCTURE_OPTIONS = ["limited", "moderate", "advanced"];
 
+// ─── QS AI Capability options ───
+const QS_RESPONDENT_ROLE_OPTIONS = [
+  "senior_leadership",
+  "CIO",
+  "academic_leadership",
+  "research_leadership",
+  "professional_services",
+];
+
+const QS_AI_MATURITY_OPTIONS = [
+  "no_ai_use",
+  "experimental",
+  "operational",
+  "strategic",
+];
+
+const QS_SECTOR_FOCUS_OPTIONS = [
+  "STEM-heavy",
+  "balanced",
+  "humanities-heavy",
+];
+
+const QS_AI_FAMILIARITY_OPTIONS = [
+  "low",
+  "moderate",
+  "high",
+];
+
 export default function ContextOnboarding({
   frameworkId,
   initialContext,
   onComplete,
   guestMode,
 }: ContextOnboardingProps) {
-  const isInstitutional = frameworkId === "maturity-the";
+  const isInstitutional = frameworkId === "maturity-the" || frameworkId === "ai-capability";
+  const isQS = frameworkId === "ai-capability";
 
   const [subjectArea, setSubjectArea] = useState(initialContext?.subject_area ?? "");
   const [institutionSize, setInstitutionSize] = useState(
@@ -184,11 +213,32 @@ export default function ContextOnboarding({
   const [managementResponsibility, setManagementResponsibility] = useState(
     initialContext?.management_responsibility ?? ""
   );
+  // QS-specific fields
+  const [aiMaturityBaseline, setAiMaturityBaseline] = useState(
+    initialContext?.ai_maturity_baseline ?? ""
+  );
+  const [sectorFocus, setSectorFocus] = useState(
+    initialContext?.sector_focus ?? ""
+  );
+  const [aiFamiliarity, setAiFamiliarity] = useState(
+    initialContext?.respondent_ai_familiarity ?? ""
+  );
+
   const [saving, setSaving] = useState(false);
   const [saveError, setSaveError] = useState("");
 
   const missingInstitutionalFields = useMemo(() => {
     if (!isInstitutional) return [];
+
+    if (isQS) {
+      return [
+        !institutionType ? "institution type" : null,
+        !region ? "region" : null,
+        !respondentRole ? "respondent role" : null,
+        !aiMaturityBaseline ? "AI maturity baseline" : null,
+        !sectorFocus ? "sector focus" : null,
+      ].filter(Boolean) as string[];
+    }
 
     return [
       !institutionSize ? "institution size" : null,
@@ -200,14 +250,17 @@ export default function ContextOnboarding({
       !digitalInfrastructureBaseline ? "digital infrastructure baseline" : null,
     ].filter(Boolean) as string[];
   }, [
+    aiMaturityBaseline,
     digitalInfrastructureBaseline,
     fundingModel,
     institutionSize,
     institutionType,
     institutionalVisibility,
     isInstitutional,
+    isQS,
     region,
     respondentRole,
+    sectorFocus,
   ]);
 
   const toggleTool = (tool: string) => {
@@ -227,12 +280,12 @@ export default function ContextOnboarding({
         institution_type: institutionType || null,
         institution_level: isInstitutional ? null : institutionLevel || null,
         region: region || null,
-        funding_model: isInstitutional ? fundingModel || null : null,
+        funding_model: isInstitutional && !isQS ? fundingModel || null : null,
         respondent_role: isInstitutional ? respondentRole || null : null,
-        respondent_institutional_visibility: isInstitutional
+        respondent_institutional_visibility: isInstitutional && !isQS
           ? institutionalVisibility || null
           : null,
-        digital_infrastructure_baseline: isInstitutional
+        digital_infrastructure_baseline: isInstitutional && !isQS
           ? digitalInfrastructureBaseline || null
           : null,
         current_ai_tools: isInstitutional
@@ -245,6 +298,10 @@ export default function ContextOnboarding({
         management_responsibility: isInstitutional
           ? null
           : managementResponsibility || null,
+        // QS-specific fields
+        ai_maturity_baseline: isQS ? aiMaturityBaseline || null : null,
+        sector_focus: isQS ? sectorFocus || null : null,
+        respondent_ai_familiarity: isQS ? aiFamiliarity || null : null,
       });
       onComplete();
     } catch (err: any) {
@@ -261,118 +318,114 @@ export default function ContextOnboarding({
         {isInstitutional ? "Before we start: your institutional context" : "Before we start: a little about you"}
       </h3>
       <p className="text-sm text-muted-foreground mb-6">
-        {isInstitutional
-          ? "The THE scenario battery is institution-level. These fields let us validate that context and preserve a defensible session snapshot."
-          : "This helps us personalise your assessment scenarios. You can update these later."}
+        {isQS
+          ? "The QS AI Capability assessment is institution-level. These fields calibrate the AI-specific context for your scenarios."
+          : isInstitutional
+            ? "The THE scenario battery is institution-level. These fields let us validate that context and preserve a defensible session snapshot."
+            : "This helps us personalise your assessment scenarios. You can update these later."}
       </p>
 
       <div className="space-y-5">
         {isInstitutional ? (
           <>
-            <Field label="Institution size">
-              <select
-                value={institutionSize}
-                onChange={(e) => setInstitutionSize(e.target.value)}
-                className="w-full p-2 rounded-lg border border-border bg-background text-foreground"
-              >
-                <option value="">Select...</option>
-                {THE_INSTITUTION_SIZE_OPTIONS.map((option) => (
-                  <option key={option} value={option}>
-                    {option}
-                  </option>
-                ))}
-              </select>
-            </Field>
+            {/* Shared institutional fields: institution type + region */}
+            {!isQS && (
+              <Field label="Institution size">
+                <select value={institutionSize} onChange={(e) => setInstitutionSize(e.target.value)}
+                  className="w-full p-2 rounded-lg border border-border bg-background text-foreground">
+                  <option value="">Select...</option>
+                  {THE_INSTITUTION_SIZE_OPTIONS.map((o) => <option key={o} value={o}>{o}</option>)}
+                </select>
+              </Field>
+            )}
 
             <Field label="Institution type">
-              <select
-                value={institutionType}
-                onChange={(e) => setInstitutionType(e.target.value)}
-                className="w-full p-2 rounded-lg border border-border bg-background text-foreground"
-              >
+              <select value={institutionType} onChange={(e) => setInstitutionType(e.target.value)}
+                className="w-full p-2 rounded-lg border border-border bg-background text-foreground">
                 <option value="">Select...</option>
-                {THE_INSTITUTION_TYPE_OPTIONS.map((option) => (
-                  <option key={option} value={option}>
-                    {option}
-                  </option>
-                ))}
+                {THE_INSTITUTION_TYPE_OPTIONS.map((o) => <option key={o} value={o}>{o}</option>)}
               </select>
             </Field>
 
             <Field label="Region">
-              <select
-                value={region}
-                onChange={(e) => setRegion(e.target.value)}
-                className="w-full p-2 rounded-lg border border-border bg-background text-foreground"
-              >
+              <select value={region} onChange={(e) => setRegion(e.target.value)}
+                className="w-full p-2 rounded-lg border border-border bg-background text-foreground">
                 <option value="">Select...</option>
-                {THE_REGION_OPTIONS.map((option) => (
-                  <option key={option} value={option}>
-                    {option}
-                  </option>
-                ))}
+                {THE_REGION_OPTIONS.map((o) => <option key={o} value={o}>{o}</option>)}
               </select>
             </Field>
 
-            <Field label="Funding model">
-              <select
-                value={fundingModel}
-                onChange={(e) => setFundingModel(e.target.value)}
-                className="w-full p-2 rounded-lg border border-border bg-background text-foreground"
-              >
-                <option value="">Select...</option>
-                {THE_FUNDING_MODEL_OPTIONS.map((option) => (
-                  <option key={option} value={option}>
-                    {option}
-                  </option>
-                ))}
-              </select>
-            </Field>
+            {isQS ? (
+              <>
+                {/* QS-specific fields */}
+                <Field label="Your role">
+                  <select value={respondentRole} onChange={(e) => setRespondentRole(e.target.value)}
+                    className="w-full p-2 rounded-lg border border-border bg-background text-foreground">
+                    <option value="">Select...</option>
+                    {QS_RESPONDENT_ROLE_OPTIONS.map((o) => <option key={o} value={o}>{o.replace(/_/g, " ")}</option>)}
+                  </select>
+                </Field>
 
-            <Field label="Respondent role">
-              <select
-                value={respondentRole}
-                onChange={(e) => setRespondentRole(e.target.value)}
-                className="w-full p-2 rounded-lg border border-border bg-background text-foreground"
-              >
-                <option value="">Select...</option>
-                {THE_RESPONDENT_ROLE_OPTIONS.map((option) => (
-                  <option key={option} value={option}>
-                    {option}
-                  </option>
-                ))}
-              </select>
-            </Field>
+                <Field label="Current AI maturity">
+                  <select value={aiMaturityBaseline} onChange={(e) => setAiMaturityBaseline(e.target.value)}
+                    className="w-full p-2 rounded-lg border border-border bg-background text-foreground">
+                    <option value="">Select...</option>
+                    {QS_AI_MATURITY_OPTIONS.map((o) => <option key={o} value={o}>{o.replace(/_/g, " ")}</option>)}
+                  </select>
+                </Field>
 
-            <Field label="Institutional visibility">
-              <select
-                value={institutionalVisibility}
-                onChange={(e) => setInstitutionalVisibility(e.target.value)}
-                className="w-full p-2 rounded-lg border border-border bg-background text-foreground"
-              >
-                <option value="">Select...</option>
-                {THE_VISIBILITY_OPTIONS.map((option) => (
-                  <option key={option} value={option}>
-                    {option.replace(/_/g, " ")}
-                  </option>
-                ))}
-              </select>
-            </Field>
+                <Field label="Sector focus">
+                  <select value={sectorFocus} onChange={(e) => setSectorFocus(e.target.value)}
+                    className="w-full p-2 rounded-lg border border-border bg-background text-foreground">
+                    <option value="">Select...</option>
+                    {QS_SECTOR_FOCUS_OPTIONS.map((o) => <option key={o} value={o}>{o}</option>)}
+                  </select>
+                </Field>
 
-            <Field label="Digital infrastructure baseline">
-              <select
-                value={digitalInfrastructureBaseline}
-                onChange={(e) => setDigitalInfrastructureBaseline(e.target.value)}
-                className="w-full p-2 rounded-lg border border-border bg-background text-foreground"
-              >
-                <option value="">Select...</option>
-                {THE_INFRASTRUCTURE_OPTIONS.map((option) => (
-                  <option key={option} value={option}>
-                    {option}
-                  </option>
-                ))}
-              </select>
-            </Field>
+                <Field label="Your AI familiarity">
+                  <select value={aiFamiliarity} onChange={(e) => setAiFamiliarity(e.target.value)}
+                    className="w-full p-2 rounded-lg border border-border bg-background text-foreground">
+                    <option value="">Select...</option>
+                    {QS_AI_FAMILIARITY_OPTIONS.map((o) => <option key={o} value={o}>{o}</option>)}
+                  </select>
+                </Field>
+              </>
+            ) : (
+              <>
+                {/* THE-specific fields */}
+                <Field label="Funding model">
+                  <select value={fundingModel} onChange={(e) => setFundingModel(e.target.value)}
+                    className="w-full p-2 rounded-lg border border-border bg-background text-foreground">
+                    <option value="">Select...</option>
+                    {THE_FUNDING_MODEL_OPTIONS.map((o) => <option key={o} value={o}>{o}</option>)}
+                  </select>
+                </Field>
+
+                <Field label="Respondent role">
+                  <select value={respondentRole} onChange={(e) => setRespondentRole(e.target.value)}
+                    className="w-full p-2 rounded-lg border border-border bg-background text-foreground">
+                    <option value="">Select...</option>
+                    {THE_RESPONDENT_ROLE_OPTIONS.map((o) => <option key={o} value={o}>{o}</option>)}
+                  </select>
+                </Field>
+
+                <Field label="Institutional visibility">
+                  <select value={institutionalVisibility} onChange={(e) => setInstitutionalVisibility(e.target.value)}
+                    className="w-full p-2 rounded-lg border border-border bg-background text-foreground">
+                    <option value="">Select...</option>
+                    {THE_VISIBILITY_OPTIONS.map((o) => <option key={o} value={o}>{o.replace(/_/g, " ")}</option>)}
+                  </select>
+                </Field>
+
+                <Field label="Digital infrastructure baseline">
+                  <select value={digitalInfrastructureBaseline} onChange={(e) => setDigitalInfrastructureBaseline(e.target.value)}
+                    className="w-full p-2 rounded-lg border border-border bg-background text-foreground">
+                    <option value="">Select...</option>
+                    {THE_INFRASTRUCTURE_OPTIONS.map((o) => <option key={o} value={o}>{o}</option>)}
+                  </select>
+                </Field>
+              </>
+            )}
           </>
         ) : (
           <>

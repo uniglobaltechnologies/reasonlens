@@ -165,25 +165,220 @@ const frameworks: FrameworkContext[] = [
     overview: "4 pillars, 14 categories, 30+ sub-indicators for institutional AI readiness. Maps governance, outreach, teaching, and research capabilities.",
     crossReferences: ["maturity-the", "maturity-jisc"],
     dimensions: [
-      { id: "qs-governance", name: "Governance & Regulatory", description: "Standards, risk, privacy, leadership", order: 1, levels: [
-        { id: "qs-gov-basic", name: "Basic", description: "Ad-hoc governance", order: 1, indicators: [{ id: "qs-gov-b1", description: "Awareness of regulatory requirements" }] },
-        { id: "qs-gov-developing", name: "Developing", description: "Formal structures", order: 2, indicators: [{ id: "qs-gov-d1", description: "AI governance committee established" }] },
-        { id: "qs-gov-advanced", name: "Advanced", description: "Comprehensive governance", order: 3, indicators: [{ id: "qs-gov-a1", description: "Integrated governance with regular reviews" }] },
+      // ─── Pillar 1: Governance & Human Commitment (4 categories) ───
+      { id: "qs-gov-regulatory", name: "Regulatory & Ethical Standards", description: "Monitors and adheres to regulatory and ethical standards for AI, has ethical guidelines, considers sustainability impact", order: 1, levels: [
+        { id: "qs-gov-regulatory-basic", name: "Basic", description: "No systematic monitoring. Compliance is reactive. No institutional ethical guidelines.", order: 1, indicators: [
+          { id: "qs-gov-reg-1-basic", description: "No systematic monitoring of AI regulatory compliance" },
+          { id: "qs-gov-reg-2-basic", description: "No institutional ethical guidelines for AI exist" },
+          { id: "qs-gov-reg-3-basic", description: "AI sustainability impact is not considered" },
+        ]},
+        { id: "qs-gov-regulatory-developing", name: "Developing", description: "Relevant regulations identified. Compliance register emerging. Guidelines drafted.", order: 2, indicators: [
+          { id: "qs-gov-reg-1-developing", description: "Relevant AI regulations identified, monitoring responsibility assigned" },
+          { id: "qs-gov-reg-2-developing", description: "Ethical guidelines drafted but adoption inconsistent" },
+          { id: "qs-gov-reg-3-developing", description: "Sustainability considered in some procurement decisions" },
+        ]},
+        { id: "qs-gov-regulatory-advanced", name: "Advanced", description: "Continuous proactive monitoring. Comprehensive ethics enforced. Sustainability embedded.", order: 3, indicators: [
+          { id: "qs-gov-reg-1-advanced", description: "Proactive regulatory monitoring embedded in governance" },
+          { id: "qs-gov-reg-2-advanced", description: "Comprehensive ethical guidelines actively enforced" },
+          { id: "qs-gov-reg-3-advanced", description: "Sustainability impact assessment standard in AI decisions" },
+        ]},
       ]},
-      { id: "qs-outreach", name: "Outreach & Commitment", description: "Recruitment, support, partnerships", order: 2, levels: [
-        { id: "qs-out-basic", name: "Basic", description: "Limited AI engagement", order: 1, indicators: [{ id: "qs-out-b1", description: "Exploring AI for recruitment" }] },
-        { id: "qs-out-developing", name: "Developing", description: "Active pilots", order: 2, indicators: [{ id: "qs-out-d1", description: "AI chatbots in student services" }] },
-        { id: "qs-out-advanced", name: "Advanced", description: "Integrated AI engagement", order: 3, indicators: [{ id: "qs-out-a1", description: "Personalised AI across student lifecycle" }] },
+      { id: "qs-gov-risk", name: "Governance & Risk Management", description: "Governance structures for AI decision-making, risk assessments, ethical procurement", order: 2, levels: [
+        { id: "qs-gov-risk-basic", name: "Basic", description: "No dedicated AI governance. AI decisions ad-hoc. No risk assessment.", order: 1, indicators: [
+          { id: "qs-gov-risk-1-basic", description: "No dedicated AI governance structure exists" },
+          { id: "qs-gov-risk-2-basic", description: "No AI-specific risk assessment processes" },
+          { id: "qs-gov-risk-3-basic", description: "AI procured without ethical criteria" },
+        ]},
+        { id: "qs-gov-risk-developing", name: "Developing", description: "Governance structure emerging. Some risk assessment. Procurement criteria developing.", order: 2, indicators: [
+          { id: "qs-gov-risk-1-developing", description: "AI governance structure being established" },
+          { id: "qs-gov-risk-2-developing", description: "AI risk assessment for some deployments" },
+          { id: "qs-gov-risk-3-developing", description: "AI-specific procurement criteria being developed" },
+        ]},
+        { id: "qs-gov-risk-advanced", name: "Advanced", description: "Mature governance with clear authority. Mandatory risk assessment. Ethical procurement standard.", order: 3, indicators: [
+          { id: "qs-gov-risk-1-advanced", description: "Mature AI governance structure with clear authority" },
+          { id: "qs-gov-risk-2-advanced", description: "Mandatory AI risk assessment for all deployments" },
+          { id: "qs-gov-risk-3-advanced", description: "Ethical procurement framework for all AI" },
+        ]},
       ]},
-      { id: "qs-teaching", name: "Teaching & Learning", description: "Curriculum, personalisation, assessment", order: 3, levels: [
-        { id: "qs-tl-basic", name: "Basic", description: "Individual experiments", order: 1, indicators: [{ id: "qs-tl-b1", description: "Some faculty using AI tools" }] },
-        { id: "qs-tl-developing", name: "Developing", description: "Departmental integration", order: 2, indicators: [{ id: "qs-tl-d1", description: "AI-assisted learning in pilots" }] },
-        { id: "qs-tl-advanced", name: "Advanced", description: "Institution-wide pedagogy", order: 3, indicators: [{ id: "qs-tl-a1", description: "AI curriculum standards adopted" }] },
+      { id: "qs-gov-conduct", name: "Code of Conduct & Privacy", description: "Code of conduct governing AI use and data protection measures for AI systems", order: 3, levels: [
+        { id: "qs-gov-conduct-basic", name: "Basic", description: "No AI code of conduct. Data protection relies on general policies.", order: 1, indicators: [
+          { id: "qs-gov-con-1-basic", description: "No AI-specific code of conduct exists" },
+          { id: "qs-gov-con-2-basic", description: "AI data protection relies on general policies" },
+        ]},
+        { id: "qs-gov-conduct-developing", name: "Developing", description: "Code of conduct drafted. DPIAs for high-risk AI. Enforcement emerging.", order: 2, indicators: [
+          { id: "qs-gov-con-1-developing", description: "AI code of conduct drafted or approved" },
+          { id: "qs-gov-con-2-developing", description: "AI-specific data protection measures being implemented" },
+        ]},
+        { id: "qs-gov-conduct-advanced", name: "Advanced", description: "Comprehensive code enforced. DPIAs mandatory. Data minimisation applied.", order: 3, indicators: [
+          { id: "qs-gov-con-1-advanced", description: "Comprehensive AI code of conduct enforced and reviewed" },
+          { id: "qs-gov-con-2-advanced", description: "Comprehensive AI data protection measures embedded" },
+        ]},
       ]},
-      { id: "qs-research", name: "Research & Innovation", description: "AI tools, scholarship, field research", order: 4, levels: [
-        { id: "qs-res-basic", name: "Basic", description: "Individual adoption", order: 1, indicators: [{ id: "qs-res-b1", description: "Researchers use AI ad hoc" }] },
-        { id: "qs-res-developing", name: "Developing", description: "Institutional support", order: 2, indicators: [{ id: "qs-res-d1", description: "Institutional AI research licences" }] },
-        { id: "qs-res-advanced", name: "Advanced", description: "Strategic integration", order: 3, indicators: [{ id: "qs-res-a1", description: "AI integral to research strategy" }] },
+      { id: "qs-gov-leadership", name: "Leadership & Capability", description: "Leadership and strategic planning for AI, staff AI training and development", order: 4, levels: [
+        { id: "qs-gov-leadership-basic", name: "Basic", description: "No AI leadership. AI not in strategy. No training programme.", order: 1, indicators: [
+          { id: "qs-gov-lead-1-basic", description: "No designated AI leadership exists" },
+          { id: "qs-gov-lead-2-basic", description: "No institutional AI training programme" },
+        ]},
+        { id: "qs-gov-leadership-developing", name: "Developing", description: "AI leadership emerging. Strategy in development. Training available.", order: 2, indicators: [
+          { id: "qs-gov-lead-1-developing", description: "AI leadership emerging, strategy in development" },
+          { id: "qs-gov-lead-2-developing", description: "AI training offerings available to staff" },
+        ]},
+        { id: "qs-gov-leadership-advanced", name: "Advanced", description: "Clear AI leadership with senior accountability. Comprehensive training.", order: 3, indicators: [
+          { id: "qs-gov-lead-1-advanced", description: "Clear AI leadership with named senior accountability" },
+          { id: "qs-gov-lead-2-advanced", description: "Comprehensive role-differentiated AI capability programme" },
+        ]},
+      ]},
+      // ─── Pillar 2: Outreach & Operational Efficiency (4 categories) ───
+      { id: "qs-out-recruitment", name: "AI Enhanced Recruitment", description: "AI in application, admissions, and student recruitment processes", order: 5, levels: [
+        { id: "qs-out-recruitment-basic", name: "Basic", description: "Admissions entirely manual. No AI in recruitment.", order: 1, indicators: [
+          { id: "qs-out-rec-1-basic", description: "Admissions processes entirely manual, no AI" },
+          { id: "qs-out-rec-2-basic", description: "Student recruitment relies on traditional methods" },
+        ]},
+        { id: "qs-out-recruitment-developing", name: "Developing", description: "Some AI piloted in admissions. Limited recruitment AI.", order: 2, indicators: [
+          { id: "qs-out-rec-1-developing", description: "Some AI tools piloted in admissions" },
+          { id: "qs-out-rec-2-developing", description: "AI used in some recruitment activities" },
+        ]},
+        { id: "qs-out-recruitment-advanced", name: "Advanced", description: "AI integrated across admissions pipeline. Bias audits standard.", order: 3, indicators: [
+          { id: "qs-out-rec-1-advanced", description: "AI systematically integrated in admissions pipeline" },
+          { id: "qs-out-rec-2-advanced", description: "AI embedded across recruitment funnel" },
+        ]},
+      ]},
+      { id: "qs-out-support", name: "Personalised Student Support", description: "AI for career services and real-time student support outside the classroom", order: 6, levels: [
+        { id: "qs-out-support-basic", name: "Basic", description: "Career services without AI. Support only during office hours.", order: 1, indicators: [
+          { id: "qs-out-sup-1-basic", description: "Career services without AI tools" },
+          { id: "qs-out-sup-2-basic", description: "Student support only during office hours" },
+        ]},
+        { id: "qs-out-support-developing", name: "Developing", description: "Some AI career tools. AI support being piloted.", order: 2, indicators: [
+          { id: "qs-out-sup-1-developing", description: "Some AI career tools available" },
+          { id: "qs-out-sup-2-developing", description: "AI-powered student support being piloted" },
+        ]},
+        { id: "qs-out-support-advanced", name: "Advanced", description: "AI embedded in career services. 24/7 AI support across channels.", order: 3, indicators: [
+          { id: "qs-out-sup-1-advanced", description: "AI embedded in career services delivery" },
+          { id: "qs-out-sup-2-advanced", description: "AI provides 24/7 real-time student support" },
+        ]},
+      ]},
+      { id: "qs-out-efficiency", name: "Faculty & Administrative Efficiency", description: "AI to improve faculty and administrative processes", order: 7, levels: [
+        { id: "qs-out-efficiency-basic", name: "Basic", description: "Administrative processes manual. No AI in operations.", order: 1, indicators: [
+          { id: "qs-out-eff-1-basic", description: "Administrative processes manual without AI" },
+        ]},
+        { id: "qs-out-efficiency-developing", name: "Developing", description: "AI piloted in some admin functions.", order: 2, indicators: [
+          { id: "qs-out-eff-1-developing", description: "AI piloted in some administrative functions" },
+        ]},
+        { id: "qs-out-efficiency-advanced", name: "Advanced", description: "AI systematically deployed across admin. Efficiency gains measured.", order: 3, indicators: [
+          { id: "qs-out-eff-1-advanced", description: "AI systematically deployed across admin functions" },
+        ]},
+      ]},
+      { id: "qs-out-engagement", name: "External Engagement & Partnership", description: "AI for community learning, external collaboration, and industry-linked projects", order: 8, levels: [
+        { id: "qs-out-engagement-basic", name: "Basic", description: "No AI in community engagement. No external AI partnerships.", order: 1, indicators: [
+          { id: "qs-out-eng-1-basic", description: "Community engagement does not involve AI" },
+          { id: "qs-out-eng-2-basic", description: "External partnerships do not involve AI" },
+          { id: "qs-out-eng-3-basic", description: "No industry-linked AI projects" },
+        ]},
+        { id: "qs-out-engagement-developing", name: "Developing", description: "Some AI community initiatives. Participating in AI collaborations.", order: 2, indicators: [
+          { id: "qs-out-eng-1-developing", description: "Some community learning initiatives incorporate AI" },
+          { id: "qs-out-eng-2-developing", description: "Participates in some AI external collaborations" },
+          { id: "qs-out-eng-3-developing", description: "Some industry-linked AI projects underway" },
+        ]},
+        { id: "qs-out-engagement-advanced", name: "Advanced", description: "AI community learning sustained. Strategic AI partnerships. Portfolio of industry AI projects.", order: 3, indicators: [
+          { id: "qs-out-eng-1-advanced", description: "AI-enhanced community learning is sustained" },
+          { id: "qs-out-eng-2-advanced", description: "AI external collaboration is strategic and sustained" },
+          { id: "qs-out-eng-3-advanced", description: "Industry-linked AI is strategic institutional activity" },
+        ]},
+      ]},
+      // ─── Pillar 3: Teaching, Learning & Assessment (3 categories) ───
+      { id: "qs-tl-curriculum", name: "Course Design & Curriculum", description: "Institutional approach to AI in teaching, curriculum design, AI literacy, dedicated AI courses", order: 9, levels: [
+        { id: "qs-tl-curriculum-basic", name: "Basic", description: "No institutional approach. Curriculum ignores AI. No AI literacy initiative.", order: 1, indicators: [
+          { id: "qs-tl-cur-1-basic", description: "No institutional approach to AI in teaching" },
+          { id: "qs-tl-cur-2-basic", description: "Curriculum design does not consider AI" },
+          { id: "qs-tl-cur-3-basic", description: "No institutional AI literacy initiative" },
+          { id: "qs-tl-cur-4-basic", description: "No dedicated AI courses offered" },
+        ]},
+        { id: "qs-tl-curriculum-developing", name: "Developing", description: "Approach being developed. Some AI in curriculum. Literacy initiatives underway.", order: 2, indicators: [
+          { id: "qs-tl-cur-1-developing", description: "Institutional approach being developed" },
+          { id: "qs-tl-cur-2-developing", description: "Some programmes embedding AI in curriculum" },
+          { id: "qs-tl-cur-3-developing", description: "AI literacy initiatives underway" },
+          { id: "qs-tl-cur-4-developing", description: "Some dedicated AI courses offered" },
+        ]},
+        { id: "qs-tl-curriculum-advanced", name: "Advanced", description: "Comprehensive institution-wide approach. AI literacy a graduate competency.", order: 3, indicators: [
+          { id: "qs-tl-cur-1-advanced", description: "Comprehensive institution-wide AI in teaching approach" },
+          { id: "qs-tl-cur-2-advanced", description: "AI systematically considered in curriculum design" },
+          { id: "qs-tl-cur-3-advanced", description: "AI literacy is defined institutional competency" },
+          { id: "qs-tl-cur-4-advanced", description: "Comprehensive portfolio of AI courses" },
+        ]},
+      ]},
+      { id: "qs-tl-personalised", name: "Personalised Learning & Support", description: "AI for personalised learning experiences, student retention, and academic support", order: 10, levels: [
+        { id: "qs-tl-personalised-basic", name: "Basic", description: "No personalisation. Retention efforts manual. No AI academic support.", order: 1, indicators: [
+          { id: "qs-tl-per-1-basic", description: "Learning experiences not personalised through AI" },
+          { id: "qs-tl-per-2-basic", description: "Student retention efforts do not use AI" },
+          { id: "qs-tl-per-3-basic", description: "Academic support delivered without AI tools" },
+        ]},
+        { id: "qs-tl-personalised-developing", name: "Developing", description: "Some AI personalisation piloted. Early warning systems emerging.", order: 2, indicators: [
+          { id: "qs-tl-per-1-developing", description: "Some AI personalised learning tools piloted" },
+          { id: "qs-tl-per-2-developing", description: "AI-based early warning systems being piloted" },
+          { id: "qs-tl-per-3-developing", description: "Some AI academic support tools available" },
+        ]},
+        { id: "qs-tl-personalised-advanced", name: "Advanced", description: "AI personalisation widespread. Retention systems embedded. AI support standard.", order: 3, indicators: [
+          { id: "qs-tl-per-1-advanced", description: "AI-powered personalisation widespread" },
+          { id: "qs-tl-per-2-advanced", description: "AI-driven retention systems embedded" },
+          { id: "qs-tl-per-3-advanced", description: "AI academic support embedded in student experience" },
+        ]},
+      ]},
+      { id: "qs-tl-assessment", name: "Assessment, Grading & Feedback", description: "AI for real-time feedback, adaptive assessment, bias validation of AI tools", order: 11, levels: [
+        { id: "qs-tl-assessment-basic", name: "Basic", description: "No AI feedback. Uniform assessment. No bias validation.", order: 1, indicators: [
+          { id: "qs-tl-ass-1-basic", description: "No AI-powered formative feedback" },
+          { id: "qs-tl-ass-2-basic", description: "Assessment is uniform, no adaptive testing" },
+          { id: "qs-tl-ass-3-basic", description: "AI assessment tools not evaluated for bias" },
+        ]},
+        { id: "qs-tl-assessment-developing", name: "Developing", description: "Some AI feedback tools. Adaptive assessment piloted. Bias awareness growing.", order: 2, indicators: [
+          { id: "qs-tl-ass-1-developing", description: "Some AI-powered feedback tools available" },
+          { id: "qs-tl-ass-2-developing", description: "Some adaptive assessment being piloted" },
+          { id: "qs-tl-ass-3-developing", description: "Need to validate AI tools for bias recognised" },
+        ]},
+        { id: "qs-tl-assessment-advanced", name: "Advanced", description: "Real-time AI feedback widespread. Adaptive assessment strategic. Bias audits standard.", order: 3, indicators: [
+          { id: "qs-tl-ass-1-advanced", description: "AI real-time feedback widely available and embedded" },
+          { id: "qs-tl-ass-2-advanced", description: "Adaptive assessment strategically deployed" },
+          { id: "qs-tl-ass-3-advanced", description: "Bias validation standard for all AI assessment tools" },
+        ]},
+      ]},
+      // ─── Pillar 4: Research & Scholarship (3 categories) ───
+      { id: "qs-res-practice", name: "AI in Research Practice", description: "Institutional AI tools for research and researcher AI usage", order: 12, levels: [
+        { id: "qs-res-practice-basic", name: "Basic", description: "No institutional AI research tools. Only AI specialists use AI.", order: 1, indicators: [
+          { id: "qs-res-pra-1-basic", description: "Institution does not provide AI tools for research" },
+          { id: "qs-res-pra-2-basic", description: "AI not used as research tool except by specialists" },
+        ]},
+        { id: "qs-res-practice-developing", name: "Developing", description: "Some institutional AI tools available. Growing researcher adoption.", order: 2, indicators: [
+          { id: "qs-res-pra-1-developing", description: "Some institutional AI research tools available" },
+          { id: "qs-res-pra-2-developing", description: "Growing researcher AI use across disciplines" },
+        ]},
+        { id: "qs-res-practice-advanced", name: "Advanced", description: "Comprehensive AI research infrastructure. Widespread responsible AI use.", order: 3, indicators: [
+          { id: "qs-res-pra-1-advanced", description: "Comprehensive AI research infrastructure provided" },
+          { id: "qs-res-pra-2-advanced", description: "AI use in research widespread across disciplines" },
+        ]},
+      ]},
+      { id: "qs-res-scholarship", name: "Scholarship of AI in Practice", description: "Scholarly work about AI's role in education and professional practice", order: 13, levels: [
+        { id: "qs-res-scholarship-basic", name: "Basic", description: "No institutional engagement in AI scholarship.", order: 1, indicators: [
+          { id: "qs-res-sch-1-basic", description: "No institutional AI in education scholarship" },
+        ]},
+        { id: "qs-res-scholarship-developing", name: "Developing", description: "Some faculty engaged in AI practice scholarship.", order: 2, indicators: [
+          { id: "qs-res-sch-1-developing", description: "Some faculty engaged in AI practice scholarship" },
+        ]},
+        { id: "qs-res-scholarship-advanced", name: "Advanced", description: "AI practice scholarship strategically supported and incentivised.", order: 3, indicators: [
+          { id: "qs-res-sch-1-advanced", description: "AI practice scholarship strategically supported" },
+        ]},
+      ]},
+      { id: "qs-res-airesearch", name: "AI Research", description: "Academic research in the AI field and AI impact within disciplinary fields", order: 14, levels: [
+        { id: "qs-res-airesearch-basic", name: "Basic", description: "No AI research conducted. AI not an institutional strength.", order: 1, indicators: [
+          { id: "qs-res-air-1-basic", description: "Institution does not conduct AI research" },
+          { id: "qs-res-air-2-basic", description: "No disciplinary research on AI impact" },
+        ]},
+        { id: "qs-res-airesearch-developing", name: "Developing", description: "Some AI research activity. Emerging disciplinary AI impact studies.", order: 2, indicators: [
+          { id: "qs-res-air-1-developing", description: "Some AI research activity exists" },
+          { id: "qs-res-air-2-developing", description: "Emerging disciplinary AI impact research" },
+        ]},
+        { id: "qs-res-airesearch-advanced", name: "Advanced", description: "AI research a recognised institutional strength. Interdisciplinary AI impact strategic.", order: 3, indicators: [
+          { id: "qs-res-air-1-advanced", description: "AI research recognised institutional strength" },
+          { id: "qs-res-air-2-advanced", description: "Interdisciplinary AI impact research strategic" },
+        ]},
       ]},
     ],
   },

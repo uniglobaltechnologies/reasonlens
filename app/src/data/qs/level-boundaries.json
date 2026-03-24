@@ -1,0 +1,898 @@
+[
+  {
+    "id": "qs-gov-regulatory-bd",
+    "category_id": "qs-gov-regulatory",
+    "category_name": "Regulatory & Ethical Standards",
+    "pillar_id": "qs-governance",
+    "boundary": "basic_developing",
+    "lower_level": "basic",
+    "upper_level": "developing",
+    "discriminator_type": "ad_hoc_vs_planned",
+    "key_discriminator": "The transition from Basic to Developing in Regulatory & Ethical Standards is marked by the shift from uncoordinated or absent AI practice to purposeful, planned institutional action.",
+    "common_false_positives": [
+      {
+        "signal": "Individual staff experimenting with AI in regulatory & ethical standards activities.",
+        "why_false": "Individual experimentation without institutional coordination, governance, or strategy is the hallmark of Basic. Developing requires purposeful institutional action, not isolated individual initiative.",
+        "frequency": "very_high"
+      },
+      {
+        "signal": "A policy document exists for regulatory & ethical standards but has not been implemented.",
+        "why_false": "A document that exists on paper but is not communicated, enforced, or embedded in practice does not demonstrate Developing capability. Implementation evidence is required.",
+        "frequency": "high"
+      },
+      {
+        "signal": "Senior leaders have expressed interest or concern about AI in this area.",
+        "why_false": "Interest and concern are not the same as planned action. Developing requires concrete steps: assigned responsibility, documented plans, initiated pilots, or allocated resources.",
+        "frequency": "medium"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "At least one documented, institutionally sanctioned initiative in regulatory & ethical standards with named responsibility and a defined scope.",
+      "strong": "Multiple coordinated initiatives in regulatory & ethical standards with institutional backing, documented progress, and a pathway to broader adoption."
+    }
+  },
+  {
+    "id": "qs-gov-regulatory-da",
+    "category_id": "qs-gov-regulatory",
+    "category_name": "Regulatory & Ethical Standards",
+    "pillar_id": "qs-governance",
+    "boundary": "developing_advanced",
+    "lower_level": "developing",
+    "upper_level": "advanced",
+    "discriminator_type": "planned_vs_embedded",
+    "key_discriminator": "The transition from Developing to Advanced in Regulatory & Ethical Standards is marked by the shift from pilot or project-based AI initiatives to institution-wide embedded practice with continuous improvement.",
+    "common_false_positives": [
+      {
+        "signal": "AI is used across the institution in regulatory & ethical standards but adoption is uncoordinated.",
+        "why_false": "Widespread but uncoordinated use without quality assurance, governance integration, or systematic improvement is Developing. Advanced requires embedded, governed, institution-wide practice.",
+        "frequency": "high"
+      },
+      {
+        "signal": "A comprehensive AI strategy for regulatory & ethical standards has been published.",
+        "why_false": "Strategy without embedded practice and evidence of continuous improvement is Developing. Advanced requires the strategy to be implemented, measured, and iterated.",
+        "frequency": "high"
+      },
+      {
+        "signal": "The institution has invested significantly in AI tools for this area.",
+        "why_false": "Investment in tools without evidence of systematic adoption, effectiveness measurement, and continuous improvement does not demonstrate Advanced capability. Tools must be embedded in practice.",
+        "frequency": "medium"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence that regulatory & ethical standards AI practices are institution-wide (not just in pilots), governed, and subject to quality monitoring.",
+      "strong": "Documented evidence of continuous improvement cycles in regulatory & ethical standards: measured outcomes, identified improvements, implemented changes, and re-measured results."
+    }
+  },
+  {
+    "id": "qs-gov-risk-bd",
+    "category_id": "qs-gov-risk",
+    "category_name": "Governance & Risk Management",
+    "pillar_id": "qs-governance",
+    "boundary": "basic_developing",
+    "lower_level": "basic",
+    "upper_level": "developing",
+    "discriminator_type": "ad_hoc_vs_planned",
+    "key_discriminator": "The transition from Basic to Developing in Governance & Risk Management is marked by the shift from uncoordinated or absent AI practice to purposeful, planned institutional action.",
+    "common_false_positives": [
+      {
+        "signal": "Individual staff experimenting with AI in governance & risk management activities.",
+        "why_false": "Individual experimentation without institutional coordination, governance, or strategy is the hallmark of Basic. Developing requires purposeful institutional action, not isolated individual initiative.",
+        "frequency": "very_high"
+      },
+      {
+        "signal": "A policy document exists for governance & risk management but has not been implemented.",
+        "why_false": "A document that exists on paper but is not communicated, enforced, or embedded in practice does not demonstrate Developing capability. Implementation evidence is required.",
+        "frequency": "high"
+      },
+      {
+        "signal": "Senior leaders have expressed interest or concern about AI in this area.",
+        "why_false": "Interest and concern are not the same as planned action. Developing requires concrete steps: assigned responsibility, documented plans, initiated pilots, or allocated resources.",
+        "frequency": "medium"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "At least one documented, institutionally sanctioned initiative in governance & risk management with named responsibility and a defined scope.",
+      "strong": "Multiple coordinated initiatives in governance & risk management with institutional backing, documented progress, and a pathway to broader adoption."
+    }
+  },
+  {
+    "id": "qs-gov-risk-da",
+    "category_id": "qs-gov-risk",
+    "category_name": "Governance & Risk Management",
+    "pillar_id": "qs-governance",
+    "boundary": "developing_advanced",
+    "lower_level": "developing",
+    "upper_level": "advanced",
+    "discriminator_type": "planned_vs_embedded",
+    "key_discriminator": "The transition from Developing to Advanced in Governance & Risk Management is marked by the shift from pilot or project-based AI initiatives to institution-wide embedded practice with continuous improvement.",
+    "common_false_positives": [
+      {
+        "signal": "AI is used across the institution in governance & risk management but adoption is uncoordinated.",
+        "why_false": "Widespread but uncoordinated use without quality assurance, governance integration, or systematic improvement is Developing. Advanced requires embedded, governed, institution-wide practice.",
+        "frequency": "high"
+      },
+      {
+        "signal": "A comprehensive AI strategy for governance & risk management has been published.",
+        "why_false": "Strategy without embedded practice and evidence of continuous improvement is Developing. Advanced requires the strategy to be implemented, measured, and iterated.",
+        "frequency": "high"
+      },
+      {
+        "signal": "The institution has invested significantly in AI tools for this area.",
+        "why_false": "Investment in tools without evidence of systematic adoption, effectiveness measurement, and continuous improvement does not demonstrate Advanced capability. Tools must be embedded in practice.",
+        "frequency": "medium"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence that governance & risk management AI practices are institution-wide (not just in pilots), governed, and subject to quality monitoring.",
+      "strong": "Documented evidence of continuous improvement cycles in governance & risk management: measured outcomes, identified improvements, implemented changes, and re-measured results."
+    }
+  },
+  {
+    "id": "qs-gov-conduct-bd",
+    "category_id": "qs-gov-conduct",
+    "category_name": "Code of Conduct & Privacy",
+    "pillar_id": "qs-governance",
+    "boundary": "basic_developing",
+    "lower_level": "basic",
+    "upper_level": "developing",
+    "discriminator_type": "ad_hoc_vs_planned",
+    "key_discriminator": "The transition from Basic to Developing in Code of Conduct & Privacy is marked by the shift from uncoordinated or absent AI practice to purposeful, planned institutional action.",
+    "common_false_positives": [
+      {
+        "signal": "Individual staff experimenting with AI in code of conduct & privacy activities.",
+        "why_false": "Individual experimentation without institutional coordination, governance, or strategy is the hallmark of Basic. Developing requires purposeful institutional action, not isolated individual initiative.",
+        "frequency": "very_high"
+      },
+      {
+        "signal": "A policy document exists for code of conduct & privacy but has not been implemented.",
+        "why_false": "A document that exists on paper but is not communicated, enforced, or embedded in practice does not demonstrate Developing capability. Implementation evidence is required.",
+        "frequency": "high"
+      },
+      {
+        "signal": "Senior leaders have expressed interest or concern about AI in this area.",
+        "why_false": "Interest and concern are not the same as planned action. Developing requires concrete steps: assigned responsibility, documented plans, initiated pilots, or allocated resources.",
+        "frequency": "medium"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "At least one documented, institutionally sanctioned initiative in code of conduct & privacy with named responsibility and a defined scope.",
+      "strong": "Multiple coordinated initiatives in code of conduct & privacy with institutional backing, documented progress, and a pathway to broader adoption."
+    }
+  },
+  {
+    "id": "qs-gov-conduct-da",
+    "category_id": "qs-gov-conduct",
+    "category_name": "Code of Conduct & Privacy",
+    "pillar_id": "qs-governance",
+    "boundary": "developing_advanced",
+    "lower_level": "developing",
+    "upper_level": "advanced",
+    "discriminator_type": "planned_vs_embedded",
+    "key_discriminator": "The transition from Developing to Advanced in Code of Conduct & Privacy is marked by the shift from pilot or project-based AI initiatives to institution-wide embedded practice with continuous improvement.",
+    "common_false_positives": [
+      {
+        "signal": "AI is used across the institution in code of conduct & privacy but adoption is uncoordinated.",
+        "why_false": "Widespread but uncoordinated use without quality assurance, governance integration, or systematic improvement is Developing. Advanced requires embedded, governed, institution-wide practice.",
+        "frequency": "high"
+      },
+      {
+        "signal": "A comprehensive AI strategy for code of conduct & privacy has been published.",
+        "why_false": "Strategy without embedded practice and evidence of continuous improvement is Developing. Advanced requires the strategy to be implemented, measured, and iterated.",
+        "frequency": "high"
+      },
+      {
+        "signal": "The institution has invested significantly in AI tools for this area.",
+        "why_false": "Investment in tools without evidence of systematic adoption, effectiveness measurement, and continuous improvement does not demonstrate Advanced capability. Tools must be embedded in practice.",
+        "frequency": "medium"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence that code of conduct & privacy AI practices are institution-wide (not just in pilots), governed, and subject to quality monitoring.",
+      "strong": "Documented evidence of continuous improvement cycles in code of conduct & privacy: measured outcomes, identified improvements, implemented changes, and re-measured results."
+    }
+  },
+  {
+    "id": "qs-gov-leadership-bd",
+    "category_id": "qs-gov-leadership",
+    "category_name": "Leadership & Capability",
+    "pillar_id": "qs-governance",
+    "boundary": "basic_developing",
+    "lower_level": "basic",
+    "upper_level": "developing",
+    "discriminator_type": "ad_hoc_vs_planned",
+    "key_discriminator": "The transition from Basic to Developing in Leadership & Capability is marked by the shift from uncoordinated or absent AI practice to purposeful, planned institutional action.",
+    "common_false_positives": [
+      {
+        "signal": "Individual staff experimenting with AI in leadership & capability activities.",
+        "why_false": "Individual experimentation without institutional coordination, governance, or strategy is the hallmark of Basic. Developing requires purposeful institutional action, not isolated individual initiative.",
+        "frequency": "very_high"
+      },
+      {
+        "signal": "A policy document exists for leadership & capability but has not been implemented.",
+        "why_false": "A document that exists on paper but is not communicated, enforced, or embedded in practice does not demonstrate Developing capability. Implementation evidence is required.",
+        "frequency": "high"
+      },
+      {
+        "signal": "Senior leaders have expressed interest or concern about AI in this area.",
+        "why_false": "Interest and concern are not the same as planned action. Developing requires concrete steps: assigned responsibility, documented plans, initiated pilots, or allocated resources.",
+        "frequency": "medium"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "At least one documented, institutionally sanctioned initiative in leadership & capability with named responsibility and a defined scope.",
+      "strong": "Multiple coordinated initiatives in leadership & capability with institutional backing, documented progress, and a pathway to broader adoption."
+    }
+  },
+  {
+    "id": "qs-gov-leadership-da",
+    "category_id": "qs-gov-leadership",
+    "category_name": "Leadership & Capability",
+    "pillar_id": "qs-governance",
+    "boundary": "developing_advanced",
+    "lower_level": "developing",
+    "upper_level": "advanced",
+    "discriminator_type": "planned_vs_embedded",
+    "key_discriminator": "The transition from Developing to Advanced in Leadership & Capability is marked by the shift from pilot or project-based AI initiatives to institution-wide embedded practice with continuous improvement.",
+    "common_false_positives": [
+      {
+        "signal": "AI is used across the institution in leadership & capability but adoption is uncoordinated.",
+        "why_false": "Widespread but uncoordinated use without quality assurance, governance integration, or systematic improvement is Developing. Advanced requires embedded, governed, institution-wide practice.",
+        "frequency": "high"
+      },
+      {
+        "signal": "A comprehensive AI strategy for leadership & capability has been published.",
+        "why_false": "Strategy without embedded practice and evidence of continuous improvement is Developing. Advanced requires the strategy to be implemented, measured, and iterated.",
+        "frequency": "high"
+      },
+      {
+        "signal": "The institution has invested significantly in AI tools for this area.",
+        "why_false": "Investment in tools without evidence of systematic adoption, effectiveness measurement, and continuous improvement does not demonstrate Advanced capability. Tools must be embedded in practice.",
+        "frequency": "medium"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence that leadership & capability AI practices are institution-wide (not just in pilots), governed, and subject to quality monitoring.",
+      "strong": "Documented evidence of continuous improvement cycles in leadership & capability: measured outcomes, identified improvements, implemented changes, and re-measured results."
+    }
+  },
+  {
+    "id": "qs-out-recruitment-bd",
+    "category_id": "qs-out-recruitment",
+    "category_name": "AI Enhanced Recruitment",
+    "pillar_id": "qs-outreach",
+    "boundary": "basic_developing",
+    "lower_level": "basic",
+    "upper_level": "developing",
+    "discriminator_type": "ad_hoc_vs_planned",
+    "key_discriminator": "The transition from Basic to Developing in AI Enhanced Recruitment is marked by the shift from uncoordinated or absent AI practice to purposeful, planned institutional action.",
+    "common_false_positives": [
+      {
+        "signal": "Individual staff experimenting with AI in ai enhanced recruitment activities.",
+        "why_false": "Individual experimentation without institutional coordination, governance, or strategy is the hallmark of Basic. Developing requires purposeful institutional action, not isolated individual initiative.",
+        "frequency": "very_high"
+      },
+      {
+        "signal": "A policy document exists for ai enhanced recruitment but has not been implemented.",
+        "why_false": "A document that exists on paper but is not communicated, enforced, or embedded in practice does not demonstrate Developing capability. Implementation evidence is required.",
+        "frequency": "high"
+      },
+      {
+        "signal": "Senior leaders have expressed interest or concern about AI in this area.",
+        "why_false": "Interest and concern are not the same as planned action. Developing requires concrete steps: assigned responsibility, documented plans, initiated pilots, or allocated resources.",
+        "frequency": "medium"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "At least one documented, institutionally sanctioned initiative in ai enhanced recruitment with named responsibility and a defined scope.",
+      "strong": "Multiple coordinated initiatives in ai enhanced recruitment with institutional backing, documented progress, and a pathway to broader adoption."
+    }
+  },
+  {
+    "id": "qs-out-recruitment-da",
+    "category_id": "qs-out-recruitment",
+    "category_name": "AI Enhanced Recruitment",
+    "pillar_id": "qs-outreach",
+    "boundary": "developing_advanced",
+    "lower_level": "developing",
+    "upper_level": "advanced",
+    "discriminator_type": "planned_vs_embedded",
+    "key_discriminator": "The transition from Developing to Advanced in AI Enhanced Recruitment is marked by the shift from pilot or project-based AI initiatives to institution-wide embedded practice with continuous improvement.",
+    "common_false_positives": [
+      {
+        "signal": "AI is used across the institution in ai enhanced recruitment but adoption is uncoordinated.",
+        "why_false": "Widespread but uncoordinated use without quality assurance, governance integration, or systematic improvement is Developing. Advanced requires embedded, governed, institution-wide practice.",
+        "frequency": "high"
+      },
+      {
+        "signal": "A comprehensive AI strategy for ai enhanced recruitment has been published.",
+        "why_false": "Strategy without embedded practice and evidence of continuous improvement is Developing. Advanced requires the strategy to be implemented, measured, and iterated.",
+        "frequency": "high"
+      },
+      {
+        "signal": "The institution has invested significantly in AI tools for this area.",
+        "why_false": "Investment in tools without evidence of systematic adoption, effectiveness measurement, and continuous improvement does not demonstrate Advanced capability. Tools must be embedded in practice.",
+        "frequency": "medium"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence that ai enhanced recruitment AI practices are institution-wide (not just in pilots), governed, and subject to quality monitoring.",
+      "strong": "Documented evidence of continuous improvement cycles in ai enhanced recruitment: measured outcomes, identified improvements, implemented changes, and re-measured results."
+    }
+  },
+  {
+    "id": "qs-out-support-bd",
+    "category_id": "qs-out-support",
+    "category_name": "Personalised Student Support",
+    "pillar_id": "qs-outreach",
+    "boundary": "basic_developing",
+    "lower_level": "basic",
+    "upper_level": "developing",
+    "discriminator_type": "ad_hoc_vs_planned",
+    "key_discriminator": "The transition from Basic to Developing in Personalised Student Support is marked by the shift from uncoordinated or absent AI practice to purposeful, planned institutional action.",
+    "common_false_positives": [
+      {
+        "signal": "Individual staff experimenting with AI in personalised student support activities.",
+        "why_false": "Individual experimentation without institutional coordination, governance, or strategy is the hallmark of Basic. Developing requires purposeful institutional action, not isolated individual initiative.",
+        "frequency": "very_high"
+      },
+      {
+        "signal": "A policy document exists for personalised student support but has not been implemented.",
+        "why_false": "A document that exists on paper but is not communicated, enforced, or embedded in practice does not demonstrate Developing capability. Implementation evidence is required.",
+        "frequency": "high"
+      },
+      {
+        "signal": "Senior leaders have expressed interest or concern about AI in this area.",
+        "why_false": "Interest and concern are not the same as planned action. Developing requires concrete steps: assigned responsibility, documented plans, initiated pilots, or allocated resources.",
+        "frequency": "medium"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "At least one documented, institutionally sanctioned initiative in personalised student support with named responsibility and a defined scope.",
+      "strong": "Multiple coordinated initiatives in personalised student support with institutional backing, documented progress, and a pathway to broader adoption."
+    }
+  },
+  {
+    "id": "qs-out-support-da",
+    "category_id": "qs-out-support",
+    "category_name": "Personalised Student Support",
+    "pillar_id": "qs-outreach",
+    "boundary": "developing_advanced",
+    "lower_level": "developing",
+    "upper_level": "advanced",
+    "discriminator_type": "planned_vs_embedded",
+    "key_discriminator": "The transition from Developing to Advanced in Personalised Student Support is marked by the shift from pilot or project-based AI initiatives to institution-wide embedded practice with continuous improvement.",
+    "common_false_positives": [
+      {
+        "signal": "AI is used across the institution in personalised student support but adoption is uncoordinated.",
+        "why_false": "Widespread but uncoordinated use without quality assurance, governance integration, or systematic improvement is Developing. Advanced requires embedded, governed, institution-wide practice.",
+        "frequency": "high"
+      },
+      {
+        "signal": "A comprehensive AI strategy for personalised student support has been published.",
+        "why_false": "Strategy without embedded practice and evidence of continuous improvement is Developing. Advanced requires the strategy to be implemented, measured, and iterated.",
+        "frequency": "high"
+      },
+      {
+        "signal": "The institution has invested significantly in AI tools for this area.",
+        "why_false": "Investment in tools without evidence of systematic adoption, effectiveness measurement, and continuous improvement does not demonstrate Advanced capability. Tools must be embedded in practice.",
+        "frequency": "medium"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence that personalised student support AI practices are institution-wide (not just in pilots), governed, and subject to quality monitoring.",
+      "strong": "Documented evidence of continuous improvement cycles in personalised student support: measured outcomes, identified improvements, implemented changes, and re-measured results."
+    }
+  },
+  {
+    "id": "qs-out-efficiency-bd",
+    "category_id": "qs-out-efficiency",
+    "category_name": "Faculty & Administrative Efficiency",
+    "pillar_id": "qs-outreach",
+    "boundary": "basic_developing",
+    "lower_level": "basic",
+    "upper_level": "developing",
+    "discriminator_type": "ad_hoc_vs_planned",
+    "key_discriminator": "The transition from Basic to Developing in Faculty & Administrative Efficiency is marked by the shift from uncoordinated or absent AI practice to purposeful, planned institutional action.",
+    "common_false_positives": [
+      {
+        "signal": "Individual staff experimenting with AI in faculty & administrative efficiency activities.",
+        "why_false": "Individual experimentation without institutional coordination, governance, or strategy is the hallmark of Basic. Developing requires purposeful institutional action, not isolated individual initiative.",
+        "frequency": "very_high"
+      },
+      {
+        "signal": "A policy document exists for faculty & administrative efficiency but has not been implemented.",
+        "why_false": "A document that exists on paper but is not communicated, enforced, or embedded in practice does not demonstrate Developing capability. Implementation evidence is required.",
+        "frequency": "high"
+      },
+      {
+        "signal": "Senior leaders have expressed interest or concern about AI in this area.",
+        "why_false": "Interest and concern are not the same as planned action. Developing requires concrete steps: assigned responsibility, documented plans, initiated pilots, or allocated resources.",
+        "frequency": "medium"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "At least one documented, institutionally sanctioned initiative in faculty & administrative efficiency with named responsibility and a defined scope.",
+      "strong": "Multiple coordinated initiatives in faculty & administrative efficiency with institutional backing, documented progress, and a pathway to broader adoption."
+    }
+  },
+  {
+    "id": "qs-out-efficiency-da",
+    "category_id": "qs-out-efficiency",
+    "category_name": "Faculty & Administrative Efficiency",
+    "pillar_id": "qs-outreach",
+    "boundary": "developing_advanced",
+    "lower_level": "developing",
+    "upper_level": "advanced",
+    "discriminator_type": "planned_vs_embedded",
+    "key_discriminator": "The transition from Developing to Advanced in Faculty & Administrative Efficiency is marked by the shift from pilot or project-based AI initiatives to institution-wide embedded practice with continuous improvement.",
+    "common_false_positives": [
+      {
+        "signal": "AI is used across the institution in faculty & administrative efficiency but adoption is uncoordinated.",
+        "why_false": "Widespread but uncoordinated use without quality assurance, governance integration, or systematic improvement is Developing. Advanced requires embedded, governed, institution-wide practice.",
+        "frequency": "high"
+      },
+      {
+        "signal": "A comprehensive AI strategy for faculty & administrative efficiency has been published.",
+        "why_false": "Strategy without embedded practice and evidence of continuous improvement is Developing. Advanced requires the strategy to be implemented, measured, and iterated.",
+        "frequency": "high"
+      },
+      {
+        "signal": "The institution has invested significantly in AI tools for this area.",
+        "why_false": "Investment in tools without evidence of systematic adoption, effectiveness measurement, and continuous improvement does not demonstrate Advanced capability. Tools must be embedded in practice.",
+        "frequency": "medium"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence that faculty & administrative efficiency AI practices are institution-wide (not just in pilots), governed, and subject to quality monitoring.",
+      "strong": "Documented evidence of continuous improvement cycles in faculty & administrative efficiency: measured outcomes, identified improvements, implemented changes, and re-measured results."
+    }
+  },
+  {
+    "id": "qs-out-engagement-bd",
+    "category_id": "qs-out-engagement",
+    "category_name": "External Engagement & Partnership",
+    "pillar_id": "qs-outreach",
+    "boundary": "basic_developing",
+    "lower_level": "basic",
+    "upper_level": "developing",
+    "discriminator_type": "ad_hoc_vs_planned",
+    "key_discriminator": "The transition from Basic to Developing in External Engagement & Partnership is marked by the shift from uncoordinated or absent AI practice to purposeful, planned institutional action.",
+    "common_false_positives": [
+      {
+        "signal": "Individual staff experimenting with AI in external engagement & partnership activities.",
+        "why_false": "Individual experimentation without institutional coordination, governance, or strategy is the hallmark of Basic. Developing requires purposeful institutional action, not isolated individual initiative.",
+        "frequency": "very_high"
+      },
+      {
+        "signal": "A policy document exists for external engagement & partnership but has not been implemented.",
+        "why_false": "A document that exists on paper but is not communicated, enforced, or embedded in practice does not demonstrate Developing capability. Implementation evidence is required.",
+        "frequency": "high"
+      },
+      {
+        "signal": "Senior leaders have expressed interest or concern about AI in this area.",
+        "why_false": "Interest and concern are not the same as planned action. Developing requires concrete steps: assigned responsibility, documented plans, initiated pilots, or allocated resources.",
+        "frequency": "medium"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "At least one documented, institutionally sanctioned initiative in external engagement & partnership with named responsibility and a defined scope.",
+      "strong": "Multiple coordinated initiatives in external engagement & partnership with institutional backing, documented progress, and a pathway to broader adoption."
+    }
+  },
+  {
+    "id": "qs-out-engagement-da",
+    "category_id": "qs-out-engagement",
+    "category_name": "External Engagement & Partnership",
+    "pillar_id": "qs-outreach",
+    "boundary": "developing_advanced",
+    "lower_level": "developing",
+    "upper_level": "advanced",
+    "discriminator_type": "planned_vs_embedded",
+    "key_discriminator": "The transition from Developing to Advanced in External Engagement & Partnership is marked by the shift from pilot or project-based AI initiatives to institution-wide embedded practice with continuous improvement.",
+    "common_false_positives": [
+      {
+        "signal": "AI is used across the institution in external engagement & partnership but adoption is uncoordinated.",
+        "why_false": "Widespread but uncoordinated use without quality assurance, governance integration, or systematic improvement is Developing. Advanced requires embedded, governed, institution-wide practice.",
+        "frequency": "high"
+      },
+      {
+        "signal": "A comprehensive AI strategy for external engagement & partnership has been published.",
+        "why_false": "Strategy without embedded practice and evidence of continuous improvement is Developing. Advanced requires the strategy to be implemented, measured, and iterated.",
+        "frequency": "high"
+      },
+      {
+        "signal": "The institution has invested significantly in AI tools for this area.",
+        "why_false": "Investment in tools without evidence of systematic adoption, effectiveness measurement, and continuous improvement does not demonstrate Advanced capability. Tools must be embedded in practice.",
+        "frequency": "medium"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence that external engagement & partnership AI practices are institution-wide (not just in pilots), governed, and subject to quality monitoring.",
+      "strong": "Documented evidence of continuous improvement cycles in external engagement & partnership: measured outcomes, identified improvements, implemented changes, and re-measured results."
+    }
+  },
+  {
+    "id": "qs-tl-curriculum-bd",
+    "category_id": "qs-tl-curriculum",
+    "category_name": "Course Design & Curriculum",
+    "pillar_id": "qs-teaching",
+    "boundary": "basic_developing",
+    "lower_level": "basic",
+    "upper_level": "developing",
+    "discriminator_type": "ad_hoc_vs_planned",
+    "key_discriminator": "The transition from Basic to Developing in Course Design & Curriculum is marked by the shift from uncoordinated or absent AI practice to purposeful, planned institutional action.",
+    "common_false_positives": [
+      {
+        "signal": "Individual staff experimenting with AI in course design & curriculum activities.",
+        "why_false": "Individual experimentation without institutional coordination, governance, or strategy is the hallmark of Basic. Developing requires purposeful institutional action, not isolated individual initiative.",
+        "frequency": "very_high"
+      },
+      {
+        "signal": "A policy document exists for course design & curriculum but has not been implemented.",
+        "why_false": "A document that exists on paper but is not communicated, enforced, or embedded in practice does not demonstrate Developing capability. Implementation evidence is required.",
+        "frequency": "high"
+      },
+      {
+        "signal": "Senior leaders have expressed interest or concern about AI in this area.",
+        "why_false": "Interest and concern are not the same as planned action. Developing requires concrete steps: assigned responsibility, documented plans, initiated pilots, or allocated resources.",
+        "frequency": "medium"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "At least one documented, institutionally sanctioned initiative in course design & curriculum with named responsibility and a defined scope.",
+      "strong": "Multiple coordinated initiatives in course design & curriculum with institutional backing, documented progress, and a pathway to broader adoption."
+    }
+  },
+  {
+    "id": "qs-tl-curriculum-da",
+    "category_id": "qs-tl-curriculum",
+    "category_name": "Course Design & Curriculum",
+    "pillar_id": "qs-teaching",
+    "boundary": "developing_advanced",
+    "lower_level": "developing",
+    "upper_level": "advanced",
+    "discriminator_type": "planned_vs_embedded",
+    "key_discriminator": "The transition from Developing to Advanced in Course Design & Curriculum is marked by the shift from pilot or project-based AI initiatives to institution-wide embedded practice with continuous improvement.",
+    "common_false_positives": [
+      {
+        "signal": "AI is used across the institution in course design & curriculum but adoption is uncoordinated.",
+        "why_false": "Widespread but uncoordinated use without quality assurance, governance integration, or systematic improvement is Developing. Advanced requires embedded, governed, institution-wide practice.",
+        "frequency": "high"
+      },
+      {
+        "signal": "A comprehensive AI strategy for course design & curriculum has been published.",
+        "why_false": "Strategy without embedded practice and evidence of continuous improvement is Developing. Advanced requires the strategy to be implemented, measured, and iterated.",
+        "frequency": "high"
+      },
+      {
+        "signal": "The institution has invested significantly in AI tools for this area.",
+        "why_false": "Investment in tools without evidence of systematic adoption, effectiveness measurement, and continuous improvement does not demonstrate Advanced capability. Tools must be embedded in practice.",
+        "frequency": "medium"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence that course design & curriculum AI practices are institution-wide (not just in pilots), governed, and subject to quality monitoring.",
+      "strong": "Documented evidence of continuous improvement cycles in course design & curriculum: measured outcomes, identified improvements, implemented changes, and re-measured results."
+    }
+  },
+  {
+    "id": "qs-tl-personalised-bd",
+    "category_id": "qs-tl-personalised",
+    "category_name": "Personalised Learning & Support",
+    "pillar_id": "qs-teaching",
+    "boundary": "basic_developing",
+    "lower_level": "basic",
+    "upper_level": "developing",
+    "discriminator_type": "ad_hoc_vs_planned",
+    "key_discriminator": "The transition from Basic to Developing in Personalised Learning & Support is marked by the shift from uncoordinated or absent AI practice to purposeful, planned institutional action.",
+    "common_false_positives": [
+      {
+        "signal": "Individual staff experimenting with AI in personalised learning & support activities.",
+        "why_false": "Individual experimentation without institutional coordination, governance, or strategy is the hallmark of Basic. Developing requires purposeful institutional action, not isolated individual initiative.",
+        "frequency": "very_high"
+      },
+      {
+        "signal": "A policy document exists for personalised learning & support but has not been implemented.",
+        "why_false": "A document that exists on paper but is not communicated, enforced, or embedded in practice does not demonstrate Developing capability. Implementation evidence is required.",
+        "frequency": "high"
+      },
+      {
+        "signal": "Senior leaders have expressed interest or concern about AI in this area.",
+        "why_false": "Interest and concern are not the same as planned action. Developing requires concrete steps: assigned responsibility, documented plans, initiated pilots, or allocated resources.",
+        "frequency": "medium"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "At least one documented, institutionally sanctioned initiative in personalised learning & support with named responsibility and a defined scope.",
+      "strong": "Multiple coordinated initiatives in personalised learning & support with institutional backing, documented progress, and a pathway to broader adoption."
+    }
+  },
+  {
+    "id": "qs-tl-personalised-da",
+    "category_id": "qs-tl-personalised",
+    "category_name": "Personalised Learning & Support",
+    "pillar_id": "qs-teaching",
+    "boundary": "developing_advanced",
+    "lower_level": "developing",
+    "upper_level": "advanced",
+    "discriminator_type": "planned_vs_embedded",
+    "key_discriminator": "The transition from Developing to Advanced in Personalised Learning & Support is marked by the shift from pilot or project-based AI initiatives to institution-wide embedded practice with continuous improvement.",
+    "common_false_positives": [
+      {
+        "signal": "AI is used across the institution in personalised learning & support but adoption is uncoordinated.",
+        "why_false": "Widespread but uncoordinated use without quality assurance, governance integration, or systematic improvement is Developing. Advanced requires embedded, governed, institution-wide practice.",
+        "frequency": "high"
+      },
+      {
+        "signal": "A comprehensive AI strategy for personalised learning & support has been published.",
+        "why_false": "Strategy without embedded practice and evidence of continuous improvement is Developing. Advanced requires the strategy to be implemented, measured, and iterated.",
+        "frequency": "high"
+      },
+      {
+        "signal": "The institution has invested significantly in AI tools for this area.",
+        "why_false": "Investment in tools without evidence of systematic adoption, effectiveness measurement, and continuous improvement does not demonstrate Advanced capability. Tools must be embedded in practice.",
+        "frequency": "medium"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence that personalised learning & support AI practices are institution-wide (not just in pilots), governed, and subject to quality monitoring.",
+      "strong": "Documented evidence of continuous improvement cycles in personalised learning & support: measured outcomes, identified improvements, implemented changes, and re-measured results."
+    }
+  },
+  {
+    "id": "qs-tl-assessment-bd",
+    "category_id": "qs-tl-assessment",
+    "category_name": "Assessment, Grading & Feedback",
+    "pillar_id": "qs-teaching",
+    "boundary": "basic_developing",
+    "lower_level": "basic",
+    "upper_level": "developing",
+    "discriminator_type": "ad_hoc_vs_planned",
+    "key_discriminator": "The transition from Basic to Developing in Assessment, Grading & Feedback is marked by the shift from uncoordinated or absent AI practice to purposeful, planned institutional action.",
+    "common_false_positives": [
+      {
+        "signal": "Individual staff experimenting with AI in assessment, grading & feedback activities.",
+        "why_false": "Individual experimentation without institutional coordination, governance, or strategy is the hallmark of Basic. Developing requires purposeful institutional action, not isolated individual initiative.",
+        "frequency": "very_high"
+      },
+      {
+        "signal": "A policy document exists for assessment, grading & feedback but has not been implemented.",
+        "why_false": "A document that exists on paper but is not communicated, enforced, or embedded in practice does not demonstrate Developing capability. Implementation evidence is required.",
+        "frequency": "high"
+      },
+      {
+        "signal": "Senior leaders have expressed interest or concern about AI in this area.",
+        "why_false": "Interest and concern are not the same as planned action. Developing requires concrete steps: assigned responsibility, documented plans, initiated pilots, or allocated resources.",
+        "frequency": "medium"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "At least one documented, institutionally sanctioned initiative in assessment, grading & feedback with named responsibility and a defined scope.",
+      "strong": "Multiple coordinated initiatives in assessment, grading & feedback with institutional backing, documented progress, and a pathway to broader adoption."
+    }
+  },
+  {
+    "id": "qs-tl-assessment-da",
+    "category_id": "qs-tl-assessment",
+    "category_name": "Assessment, Grading & Feedback",
+    "pillar_id": "qs-teaching",
+    "boundary": "developing_advanced",
+    "lower_level": "developing",
+    "upper_level": "advanced",
+    "discriminator_type": "planned_vs_embedded",
+    "key_discriminator": "The transition from Developing to Advanced in Assessment, Grading & Feedback is marked by the shift from pilot or project-based AI initiatives to institution-wide embedded practice with continuous improvement.",
+    "common_false_positives": [
+      {
+        "signal": "AI is used across the institution in assessment, grading & feedback but adoption is uncoordinated.",
+        "why_false": "Widespread but uncoordinated use without quality assurance, governance integration, or systematic improvement is Developing. Advanced requires embedded, governed, institution-wide practice.",
+        "frequency": "high"
+      },
+      {
+        "signal": "A comprehensive AI strategy for assessment, grading & feedback has been published.",
+        "why_false": "Strategy without embedded practice and evidence of continuous improvement is Developing. Advanced requires the strategy to be implemented, measured, and iterated.",
+        "frequency": "high"
+      },
+      {
+        "signal": "The institution has invested significantly in AI tools for this area.",
+        "why_false": "Investment in tools without evidence of systematic adoption, effectiveness measurement, and continuous improvement does not demonstrate Advanced capability. Tools must be embedded in practice.",
+        "frequency": "medium"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence that assessment, grading & feedback AI practices are institution-wide (not just in pilots), governed, and subject to quality monitoring.",
+      "strong": "Documented evidence of continuous improvement cycles in assessment, grading & feedback: measured outcomes, identified improvements, implemented changes, and re-measured results."
+    }
+  },
+  {
+    "id": "qs-res-practice-bd",
+    "category_id": "qs-res-practice",
+    "category_name": "AI in Research Practice",
+    "pillar_id": "qs-research",
+    "boundary": "basic_developing",
+    "lower_level": "basic",
+    "upper_level": "developing",
+    "discriminator_type": "ad_hoc_vs_planned",
+    "key_discriminator": "The transition from Basic to Developing in AI in Research Practice is marked by the shift from uncoordinated or absent AI practice to purposeful, planned institutional action.",
+    "common_false_positives": [
+      {
+        "signal": "Individual staff experimenting with AI in ai in research practice activities.",
+        "why_false": "Individual experimentation without institutional coordination, governance, or strategy is the hallmark of Basic. Developing requires purposeful institutional action, not isolated individual initiative.",
+        "frequency": "very_high"
+      },
+      {
+        "signal": "A policy document exists for ai in research practice but has not been implemented.",
+        "why_false": "A document that exists on paper but is not communicated, enforced, or embedded in practice does not demonstrate Developing capability. Implementation evidence is required.",
+        "frequency": "high"
+      },
+      {
+        "signal": "Senior leaders have expressed interest or concern about AI in this area.",
+        "why_false": "Interest and concern are not the same as planned action. Developing requires concrete steps: assigned responsibility, documented plans, initiated pilots, or allocated resources.",
+        "frequency": "medium"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "At least one documented, institutionally sanctioned initiative in ai in research practice with named responsibility and a defined scope.",
+      "strong": "Multiple coordinated initiatives in ai in research practice with institutional backing, documented progress, and a pathway to broader adoption."
+    }
+  },
+  {
+    "id": "qs-res-practice-da",
+    "category_id": "qs-res-practice",
+    "category_name": "AI in Research Practice",
+    "pillar_id": "qs-research",
+    "boundary": "developing_advanced",
+    "lower_level": "developing",
+    "upper_level": "advanced",
+    "discriminator_type": "planned_vs_embedded",
+    "key_discriminator": "The transition from Developing to Advanced in AI in Research Practice is marked by the shift from pilot or project-based AI initiatives to institution-wide embedded practice with continuous improvement.",
+    "common_false_positives": [
+      {
+        "signal": "AI is used across the institution in ai in research practice but adoption is uncoordinated.",
+        "why_false": "Widespread but uncoordinated use without quality assurance, governance integration, or systematic improvement is Developing. Advanced requires embedded, governed, institution-wide practice.",
+        "frequency": "high"
+      },
+      {
+        "signal": "A comprehensive AI strategy for ai in research practice has been published.",
+        "why_false": "Strategy without embedded practice and evidence of continuous improvement is Developing. Advanced requires the strategy to be implemented, measured, and iterated.",
+        "frequency": "high"
+      },
+      {
+        "signal": "The institution has invested significantly in AI tools for this area.",
+        "why_false": "Investment in tools without evidence of systematic adoption, effectiveness measurement, and continuous improvement does not demonstrate Advanced capability. Tools must be embedded in practice.",
+        "frequency": "medium"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence that ai in research practice AI practices are institution-wide (not just in pilots), governed, and subject to quality monitoring.",
+      "strong": "Documented evidence of continuous improvement cycles in ai in research practice: measured outcomes, identified improvements, implemented changes, and re-measured results."
+    }
+  },
+  {
+    "id": "qs-res-scholarship-bd",
+    "category_id": "qs-res-scholarship",
+    "category_name": "Scholarship of AI in Practice",
+    "pillar_id": "qs-research",
+    "boundary": "basic_developing",
+    "lower_level": "basic",
+    "upper_level": "developing",
+    "discriminator_type": "ad_hoc_vs_planned",
+    "key_discriminator": "The transition from Basic to Developing in Scholarship of AI in Practice is marked by the shift from uncoordinated or absent AI practice to purposeful, planned institutional action.",
+    "common_false_positives": [
+      {
+        "signal": "Individual staff experimenting with AI in scholarship of ai in practice activities.",
+        "why_false": "Individual experimentation without institutional coordination, governance, or strategy is the hallmark of Basic. Developing requires purposeful institutional action, not isolated individual initiative.",
+        "frequency": "very_high"
+      },
+      {
+        "signal": "A policy document exists for scholarship of ai in practice but has not been implemented.",
+        "why_false": "A document that exists on paper but is not communicated, enforced, or embedded in practice does not demonstrate Developing capability. Implementation evidence is required.",
+        "frequency": "high"
+      },
+      {
+        "signal": "Senior leaders have expressed interest or concern about AI in this area.",
+        "why_false": "Interest and concern are not the same as planned action. Developing requires concrete steps: assigned responsibility, documented plans, initiated pilots, or allocated resources.",
+        "frequency": "medium"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "At least one documented, institutionally sanctioned initiative in scholarship of ai in practice with named responsibility and a defined scope.",
+      "strong": "Multiple coordinated initiatives in scholarship of ai in practice with institutional backing, documented progress, and a pathway to broader adoption."
+    }
+  },
+  {
+    "id": "qs-res-scholarship-da",
+    "category_id": "qs-res-scholarship",
+    "category_name": "Scholarship of AI in Practice",
+    "pillar_id": "qs-research",
+    "boundary": "developing_advanced",
+    "lower_level": "developing",
+    "upper_level": "advanced",
+    "discriminator_type": "planned_vs_embedded",
+    "key_discriminator": "The transition from Developing to Advanced in Scholarship of AI in Practice is marked by the shift from pilot or project-based AI initiatives to institution-wide embedded practice with continuous improvement.",
+    "common_false_positives": [
+      {
+        "signal": "AI is used across the institution in scholarship of ai in practice but adoption is uncoordinated.",
+        "why_false": "Widespread but uncoordinated use without quality assurance, governance integration, or systematic improvement is Developing. Advanced requires embedded, governed, institution-wide practice.",
+        "frequency": "high"
+      },
+      {
+        "signal": "A comprehensive AI strategy for scholarship of ai in practice has been published.",
+        "why_false": "Strategy without embedded practice and evidence of continuous improvement is Developing. Advanced requires the strategy to be implemented, measured, and iterated.",
+        "frequency": "high"
+      },
+      {
+        "signal": "The institution has invested significantly in AI tools for this area.",
+        "why_false": "Investment in tools without evidence of systematic adoption, effectiveness measurement, and continuous improvement does not demonstrate Advanced capability. Tools must be embedded in practice.",
+        "frequency": "medium"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence that scholarship of ai in practice AI practices are institution-wide (not just in pilots), governed, and subject to quality monitoring.",
+      "strong": "Documented evidence of continuous improvement cycles in scholarship of ai in practice: measured outcomes, identified improvements, implemented changes, and re-measured results."
+    }
+  },
+  {
+    "id": "qs-res-airesearch-bd",
+    "category_id": "qs-res-airesearch",
+    "category_name": "AI Research",
+    "pillar_id": "qs-research",
+    "boundary": "basic_developing",
+    "lower_level": "basic",
+    "upper_level": "developing",
+    "discriminator_type": "ad_hoc_vs_planned",
+    "key_discriminator": "The transition from Basic to Developing in AI Research is marked by the shift from uncoordinated or absent AI practice to purposeful, planned institutional action.",
+    "common_false_positives": [
+      {
+        "signal": "Individual staff experimenting with AI in ai research activities.",
+        "why_false": "Individual experimentation without institutional coordination, governance, or strategy is the hallmark of Basic. Developing requires purposeful institutional action, not isolated individual initiative.",
+        "frequency": "very_high"
+      },
+      {
+        "signal": "A policy document exists for ai research but has not been implemented.",
+        "why_false": "A document that exists on paper but is not communicated, enforced, or embedded in practice does not demonstrate Developing capability. Implementation evidence is required.",
+        "frequency": "high"
+      },
+      {
+        "signal": "Senior leaders have expressed interest or concern about AI in this area.",
+        "why_false": "Interest and concern are not the same as planned action. Developing requires concrete steps: assigned responsibility, documented plans, initiated pilots, or allocated resources.",
+        "frequency": "medium"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "At least one documented, institutionally sanctioned initiative in ai research with named responsibility and a defined scope.",
+      "strong": "Multiple coordinated initiatives in ai research with institutional backing, documented progress, and a pathway to broader adoption."
+    }
+  },
+  {
+    "id": "qs-res-airesearch-da",
+    "category_id": "qs-res-airesearch",
+    "category_name": "AI Research",
+    "pillar_id": "qs-research",
+    "boundary": "developing_advanced",
+    "lower_level": "developing",
+    "upper_level": "advanced",
+    "discriminator_type": "planned_vs_embedded",
+    "key_discriminator": "The transition from Developing to Advanced in AI Research is marked by the shift from pilot or project-based AI initiatives to institution-wide embedded practice with continuous improvement.",
+    "common_false_positives": [
+      {
+        "signal": "AI is used across the institution in ai research but adoption is uncoordinated.",
+        "why_false": "Widespread but uncoordinated use without quality assurance, governance integration, or systematic improvement is Developing. Advanced requires embedded, governed, institution-wide practice.",
+        "frequency": "high"
+      },
+      {
+        "signal": "A comprehensive AI strategy for ai research has been published.",
+        "why_false": "Strategy without embedded practice and evidence of continuous improvement is Developing. Advanced requires the strategy to be implemented, measured, and iterated.",
+        "frequency": "high"
+      },
+      {
+        "signal": "The institution has invested significantly in AI tools for this area.",
+        "why_false": "Investment in tools without evidence of systematic adoption, effectiveness measurement, and continuous improvement does not demonstrate Advanced capability. Tools must be embedded in practice.",
+        "frequency": "medium"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence that ai research AI practices are institution-wide (not just in pilots), governed, and subject to quality monitoring.",
+      "strong": "Documented evidence of continuous improvement cycles in ai research: measured outcomes, identified improvements, implemented changes, and re-measured results."
+    }
+  }
+]

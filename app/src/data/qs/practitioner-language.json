@@ -1,0 +1,1398 @@
+[
+  {
+    "id": "qs-gov-reg-1-lang",
+    "indicator_id": "qs-gov-reg-1",
+    "indicator_number": "1.1.1",
+    "indicator_name": "Monitoring Adherence",
+    "pillar_id": "qs-governance",
+    "category_id": "qs-gov-regulatory",
+    "plain_language_description": "Does your institution keep track of AI laws and ethical standards that apply to it, and make sure it is following them?",
+    "what_this_means_in_practice": "This is about whether someone at the institution is actively tracking AI regulations (EU AI Act, national AI strategies, sector requirements) and making sure the institution responds. At Advanced, this is a standing governance function. At Basic, nobody is doing it.",
+    "accurate_interpretations": [
+      "A Basic score means the institution has not yet established purposeful, coordinated capability in monitoring adherence. This does not mean the institution is failing; it means this specific AI capability has not yet been systematically developed.",
+      "A Developing score means the institution is actively working on monitoring adherence with identifiable plans, pilots, or initiatives, but these are not yet embedded institution-wide.",
+      "An Advanced score means monitoring adherence is an established, institution-wide, continuously improving capability."
+    ],
+    "common_misinterpretations": [
+      {
+        "misinterpretation": "A Basic score means the institution is bad at monitoring adherence.",
+        "correction": "Basic means this capability has not yet been systematically developed. Many institutions are Basic on most AI indicators. This is a starting point, not a judgement."
+      },
+      {
+        "misinterpretation": "An Advanced score means the institution is perfect at monitoring adherence.",
+        "correction": "Advanced means the capability is embedded and improving, not that it is perfect. Advanced institutions still have room for improvement and face ongoing challenges."
+      }
+    ],
+    "vocabulary": [
+      "AI governance",
+      "AI ethics",
+      "responsible AI",
+      "AI policy",
+      "AI risk",
+      "DPIA",
+      "ethical procurement",
+      "AI code of conduct",
+      "AI leadership",
+      "AI strategy",
+      "staff AI capability",
+      "AI compliance"
+    ],
+    "level_descriptions_plain": {
+      "basic": "Your institution has not yet established a systematic approach to monitoring adherence. This might mean it has not started, or that activity is happening in an uncoordinated way without institutional backing.",
+      "developing": "Your institution is actively working on monitoring adherence. Plans are in place, pilots are running, or policies are being developed. The work is real but not yet fully embedded or institution-wide.",
+      "advanced": "Your institution has established monitoring adherence as an embedded, institution-wide capability. Practices are systematic, governed, measured, and continuously improving."
+    }
+  },
+  {
+    "id": "qs-gov-reg-2-lang",
+    "indicator_id": "qs-gov-reg-2",
+    "indicator_number": "1.1.2",
+    "indicator_name": "Ethical Guidelines",
+    "pillar_id": "qs-governance",
+    "category_id": "qs-gov-regulatory",
+    "plain_language_description": "Does your institution have a written set of ethical principles for how AI should be used by staff and students?",
+    "what_this_means_in_practice": "This is about having written principles that guide AI decisions. Not just a policy that sits in a drawer, but guidelines that staff actually consult when making AI-related choices.",
+    "accurate_interpretations": [
+      "A Basic score means the institution has not yet established purposeful, coordinated capability in ethical guidelines. This does not mean the institution is failing; it means this specific AI capability has not yet been systematically developed.",
+      "A Developing score means the institution is actively working on ethical guidelines with identifiable plans, pilots, or initiatives, but these are not yet embedded institution-wide.",
+      "An Advanced score means ethical guidelines is an established, institution-wide, continuously improving capability."
+    ],
+    "common_misinterpretations": [
+      {
+        "misinterpretation": "A Basic score means the institution is bad at ethical guidelines.",
+        "correction": "Basic means this capability has not yet been systematically developed. Many institutions are Basic on most AI indicators. This is a starting point, not a judgement."
+      },
+      {
+        "misinterpretation": "An Advanced score means the institution is perfect at ethical guidelines.",
+        "correction": "Advanced means the capability is embedded and improving, not that it is perfect. Advanced institutions still have room for improvement and face ongoing challenges."
+      }
+    ],
+    "vocabulary": [
+      "AI governance",
+      "AI ethics",
+      "responsible AI",
+      "AI policy",
+      "AI risk",
+      "DPIA",
+      "ethical procurement",
+      "AI code of conduct",
+      "AI leadership",
+      "AI strategy",
+      "staff AI capability",
+      "AI compliance"
+    ],
+    "level_descriptions_plain": {
+      "basic": "Your institution has not yet established a systematic approach to ethical guidelines. This might mean it has not started, or that activity is happening in an uncoordinated way without institutional backing.",
+      "developing": "Your institution is actively working on ethical guidelines. Plans are in place, pilots are running, or policies are being developed. The work is real but not yet fully embedded or institution-wide.",
+      "advanced": "Your institution has established ethical guidelines as an embedded, institution-wide capability. Practices are systematic, governed, measured, and continuously improving."
+    }
+  },
+  {
+    "id": "qs-gov-reg-3-lang",
+    "indicator_id": "qs-gov-reg-3",
+    "indicator_number": "1.1.3",
+    "indicator_name": "Sustainability Impact",
+    "pillar_id": "qs-governance",
+    "category_id": "qs-gov-regulatory",
+    "plain_language_description": "Does your institution think about the environmental and social impact of the AI systems it uses?",
+    "what_this_means_in_practice": "This is about whether the institution considers the energy consumption, carbon footprint, and broader social impact of its AI use. It connects AI decisions to institutional sustainability commitments.",
+    "accurate_interpretations": [
+      "A Basic score means the institution has not yet established purposeful, coordinated capability in sustainability impact. This does not mean the institution is failing; it means this specific AI capability has not yet been systematically developed.",
+      "A Developing score means the institution is actively working on sustainability impact with identifiable plans, pilots, or initiatives, but these are not yet embedded institution-wide.",
+      "An Advanced score means sustainability impact is an established, institution-wide, continuously improving capability."
+    ],
+    "common_misinterpretations": [
+      {
+        "misinterpretation": "A Basic score means the institution is bad at sustainability impact.",
+        "correction": "Basic means this capability has not yet been systematically developed. Many institutions are Basic on most AI indicators. This is a starting point, not a judgement."
+      },
+      {
+        "misinterpretation": "An Advanced score means the institution is perfect at sustainability impact.",
+        "correction": "Advanced means the capability is embedded and improving, not that it is perfect. Advanced institutions still have room for improvement and face ongoing challenges."
+      }
+    ],
+    "vocabulary": [
+      "AI governance",
+      "AI ethics",
+      "responsible AI",
+      "AI policy",
+      "AI risk",
+      "DPIA",
+      "ethical procurement",
+      "AI code of conduct",
+      "AI leadership",
+      "AI strategy",
+      "staff AI capability",
+      "AI compliance"
+    ],
+    "level_descriptions_plain": {
+      "basic": "Your institution has not yet established a systematic approach to sustainability impact. This might mean it has not started, or that activity is happening in an uncoordinated way without institutional backing.",
+      "developing": "Your institution is actively working on sustainability impact. Plans are in place, pilots are running, or policies are being developed. The work is real but not yet fully embedded or institution-wide.",
+      "advanced": "Your institution has established sustainability impact as an embedded, institution-wide capability. Practices are systematic, governed, measured, and continuously improving."
+    }
+  },
+  {
+    "id": "qs-gov-risk-1-lang",
+    "indicator_id": "qs-gov-risk-1",
+    "indicator_number": "1.2.1",
+    "indicator_name": "Governance Structure",
+    "pillar_id": "qs-governance",
+    "category_id": "qs-gov-risk",
+    "plain_language_description": "Is there a committee, group, or senior person responsible for making decisions about AI at your institution?",
+    "what_this_means_in_practice": "This is about having a formal structure (committee, board, named role) that makes decisions about institutional AI, rather than AI decisions happening ad-hoc wherever someone decides to buy a tool.",
+    "accurate_interpretations": [
+      "A Basic score means the institution has not yet established purposeful, coordinated capability in governance structure. This does not mean the institution is failing; it means this specific AI capability has not yet been systematically developed.",
+      "A Developing score means the institution is actively working on governance structure with identifiable plans, pilots, or initiatives, but these are not yet embedded institution-wide.",
+      "An Advanced score means governance structure is an established, institution-wide, continuously improving capability."
+    ],
+    "common_misinterpretations": [
+      {
+        "misinterpretation": "A Basic score means the institution is bad at governance structure.",
+        "correction": "Basic means this capability has not yet been systematically developed. Many institutions are Basic on most AI indicators. This is a starting point, not a judgement."
+      },
+      {
+        "misinterpretation": "An Advanced score means the institution is perfect at governance structure.",
+        "correction": "Advanced means the capability is embedded and improving, not that it is perfect. Advanced institutions still have room for improvement and face ongoing challenges."
+      }
+    ],
+    "vocabulary": [
+      "AI governance",
+      "AI ethics",
+      "responsible AI",
+      "AI policy",
+      "AI risk",
+      "DPIA",
+      "ethical procurement",
+      "AI code of conduct",
+      "AI leadership",
+      "AI strategy",
+      "staff AI capability",
+      "AI compliance"
+    ],
+    "level_descriptions_plain": {
+      "basic": "Your institution has not yet established a systematic approach to governance structure. This might mean it has not started, or that activity is happening in an uncoordinated way without institutional backing.",
+      "developing": "Your institution is actively working on governance structure. Plans are in place, pilots are running, or policies are being developed. The work is real but not yet fully embedded or institution-wide.",
+      "advanced": "Your institution has established governance structure as an embedded, institution-wide capability. Practices are systematic, governed, measured, and continuously improving."
+    }
+  },
+  {
+    "id": "qs-gov-risk-2-lang",
+    "indicator_id": "qs-gov-risk-2",
+    "indicator_number": "1.2.2",
+    "indicator_name": "Risk Assessment",
+    "pillar_id": "qs-governance",
+    "category_id": "qs-gov-risk",
+    "plain_language_description": "Does your institution assess the risks before deploying AI tools, covering things like bias, data protection, and accuracy?",
+    "what_this_means_in_practice": "This is about systematically evaluating what could go wrong before deploying AI, rather than finding out after something has gone wrong. It covers bias, data risks, accuracy, and reputational risks.",
+    "accurate_interpretations": [
+      "A Basic score means the institution has not yet established purposeful, coordinated capability in risk assessment. This does not mean the institution is failing; it means this specific AI capability has not yet been systematically developed.",
+      "A Developing score means the institution is actively working on risk assessment with identifiable plans, pilots, or initiatives, but these are not yet embedded institution-wide.",
+      "An Advanced score means risk assessment is an established, institution-wide, continuously improving capability."
+    ],
+    "common_misinterpretations": [
+      {
+        "misinterpretation": "A Basic score means the institution is bad at risk assessment.",
+        "correction": "Basic means this capability has not yet been systematically developed. Many institutions are Basic on most AI indicators. This is a starting point, not a judgement."
+      },
+      {
+        "misinterpretation": "An Advanced score means the institution is perfect at risk assessment.",
+        "correction": "Advanced means the capability is embedded and improving, not that it is perfect. Advanced institutions still have room for improvement and face ongoing challenges."
+      }
+    ],
+    "vocabulary": [
+      "AI governance",
+      "AI ethics",
+      "responsible AI",
+      "AI policy",
+      "AI risk",
+      "DPIA",
+      "ethical procurement",
+      "AI code of conduct",
+      "AI leadership",
+      "AI strategy",
+      "staff AI capability",
+      "AI compliance"
+    ],
+    "level_descriptions_plain": {
+      "basic": "Your institution has not yet established a systematic approach to risk assessment. This might mean it has not started, or that activity is happening in an uncoordinated way without institutional backing.",
+      "developing": "Your institution is actively working on risk assessment. Plans are in place, pilots are running, or policies are being developed. The work is real but not yet fully embedded or institution-wide.",
+      "advanced": "Your institution has established risk assessment as an embedded, institution-wide capability. Practices are systematic, governed, measured, and continuously improving."
+    }
+  },
+  {
+    "id": "qs-gov-risk-3-lang",
+    "indicator_id": "qs-gov-risk-3",
+    "indicator_number": "1.2.3",
+    "indicator_name": "Ethical Procurement",
+    "pillar_id": "qs-governance",
+    "category_id": "qs-gov-risk",
+    "plain_language_description": "When buying AI tools, does your institution check the vendor's ethical practices, data handling, and transparency?",
+    "what_this_means_in_practice": "This is about applying ethical scrutiny to AI procurement specifically, including asking vendors about their AI ethics, bias testing, data practices, and transparency, not just price and features.",
+    "accurate_interpretations": [
+      "A Basic score means the institution has not yet established purposeful, coordinated capability in ethical procurement. This does not mean the institution is failing; it means this specific AI capability has not yet been systematically developed.",
+      "A Developing score means the institution is actively working on ethical procurement with identifiable plans, pilots, or initiatives, but these are not yet embedded institution-wide.",
+      "An Advanced score means ethical procurement is an established, institution-wide, continuously improving capability."
+    ],
+    "common_misinterpretations": [
+      {
+        "misinterpretation": "A Basic score means the institution is bad at ethical procurement.",
+        "correction": "Basic means this capability has not yet been systematically developed. Many institutions are Basic on most AI indicators. This is a starting point, not a judgement."
+      },
+      {
+        "misinterpretation": "An Advanced score means the institution is perfect at ethical procurement.",
+        "correction": "Advanced means the capability is embedded and improving, not that it is perfect. Advanced institutions still have room for improvement and face ongoing challenges."
+      }
+    ],
+    "vocabulary": [
+      "AI governance",
+      "AI ethics",
+      "responsible AI",
+      "AI policy",
+      "AI risk",
+      "DPIA",
+      "ethical procurement",
+      "AI code of conduct",
+      "AI leadership",
+      "AI strategy",
+      "staff AI capability",
+      "AI compliance"
+    ],
+    "level_descriptions_plain": {
+      "basic": "Your institution has not yet established a systematic approach to ethical procurement. This might mean it has not started, or that activity is happening in an uncoordinated way without institutional backing.",
+      "developing": "Your institution is actively working on ethical procurement. Plans are in place, pilots are running, or policies are being developed. The work is real but not yet fully embedded or institution-wide.",
+      "advanced": "Your institution has established ethical procurement as an embedded, institution-wide capability. Practices are systematic, governed, measured, and continuously improving."
+    }
+  },
+  {
+    "id": "qs-gov-con-1-lang",
+    "indicator_id": "qs-gov-con-1",
+    "indicator_number": "1.3.1",
+    "indicator_name": "Code of Conduct",
+    "pillar_id": "qs-governance",
+    "category_id": "qs-gov-conduct",
+    "plain_language_description": "Is there a clear, written set of rules about how staff and students should use AI?",
+    "what_this_means_in_practice": "This is about having clear, institution-wide rules for AI use that everyone knows about, covering what is and is not acceptable for staff and students.",
+    "accurate_interpretations": [
+      "A Basic score means the institution has not yet established purposeful, coordinated capability in code of conduct. This does not mean the institution is failing; it means this specific AI capability has not yet been systematically developed.",
+      "A Developing score means the institution is actively working on code of conduct with identifiable plans, pilots, or initiatives, but these are not yet embedded institution-wide.",
+      "An Advanced score means code of conduct is an established, institution-wide, continuously improving capability."
+    ],
+    "common_misinterpretations": [
+      {
+        "misinterpretation": "A Basic score means the institution is bad at code of conduct.",
+        "correction": "Basic means this capability has not yet been systematically developed. Many institutions are Basic on most AI indicators. This is a starting point, not a judgement."
+      },
+      {
+        "misinterpretation": "An Advanced score means the institution is perfect at code of conduct.",
+        "correction": "Advanced means the capability is embedded and improving, not that it is perfect. Advanced institutions still have room for improvement and face ongoing challenges."
+      }
+    ],
+    "vocabulary": [
+      "AI governance",
+      "AI ethics",
+      "responsible AI",
+      "AI policy",
+      "AI risk",
+      "DPIA",
+      "ethical procurement",
+      "AI code of conduct",
+      "AI leadership",
+      "AI strategy",
+      "staff AI capability",
+      "AI compliance"
+    ],
+    "level_descriptions_plain": {
+      "basic": "Your institution has not yet established a systematic approach to code of conduct. This might mean it has not started, or that activity is happening in an uncoordinated way without institutional backing.",
+      "developing": "Your institution is actively working on code of conduct. Plans are in place, pilots are running, or policies are being developed. The work is real but not yet fully embedded or institution-wide.",
+      "advanced": "Your institution has established code of conduct as an embedded, institution-wide capability. Practices are systematic, governed, measured, and continuously improving."
+    }
+  },
+  {
+    "id": "qs-gov-con-2-lang",
+    "indicator_id": "qs-gov-con-2",
+    "indicator_number": "1.3.2",
+    "indicator_name": "Data Protection",
+    "pillar_id": "qs-governance",
+    "category_id": "qs-gov-conduct",
+    "plain_language_description": "Does your institution have specific data protection measures for AI systems, beyond general data protection policies?",
+    "what_this_means_in_practice": "This is about AI-specific data protection, beyond general GDPR compliance. AI systems process data differently (training data, prompts, outputs) and need specific protections.",
+    "accurate_interpretations": [
+      "A Basic score means the institution has not yet established purposeful, coordinated capability in data protection. This does not mean the institution is failing; it means this specific AI capability has not yet been systematically developed.",
+      "A Developing score means the institution is actively working on data protection with identifiable plans, pilots, or initiatives, but these are not yet embedded institution-wide.",
+      "An Advanced score means data protection is an established, institution-wide, continuously improving capability."
+    ],
+    "common_misinterpretations": [
+      {
+        "misinterpretation": "A Basic score means the institution is bad at data protection.",
+        "correction": "Basic means this capability has not yet been systematically developed. Many institutions are Basic on most AI indicators. This is a starting point, not a judgement."
+      },
+      {
+        "misinterpretation": "An Advanced score means the institution is perfect at data protection.",
+        "correction": "Advanced means the capability is embedded and improving, not that it is perfect. Advanced institutions still have room for improvement and face ongoing challenges."
+      }
+    ],
+    "vocabulary": [
+      "AI governance",
+      "AI ethics",
+      "responsible AI",
+      "AI policy",
+      "AI risk",
+      "DPIA",
+      "ethical procurement",
+      "AI code of conduct",
+      "AI leadership",
+      "AI strategy",
+      "staff AI capability",
+      "AI compliance"
+    ],
+    "level_descriptions_plain": {
+      "basic": "Your institution has not yet established a systematic approach to data protection. This might mean it has not started, or that activity is happening in an uncoordinated way without institutional backing.",
+      "developing": "Your institution is actively working on data protection. Plans are in place, pilots are running, or policies are being developed. The work is real but not yet fully embedded or institution-wide.",
+      "advanced": "Your institution has established data protection as an embedded, institution-wide capability. Practices are systematic, governed, measured, and continuously improving."
+    }
+  },
+  {
+    "id": "qs-gov-lead-1-lang",
+    "indicator_id": "qs-gov-lead-1",
+    "indicator_number": "1.4.1",
+    "indicator_name": "Leadership & Planning",
+    "pillar_id": "qs-governance",
+    "category_id": "qs-gov-leadership",
+    "plain_language_description": "Is there a named senior leader responsible for AI, and does AI feature in the institutional strategy?",
+    "what_this_means_in_practice": "This is about whether AI has a named champion at the senior level and whether the institution has a direction for AI, not just scattered initiatives.",
+    "accurate_interpretations": [
+      "A Basic score means the institution has not yet established purposeful, coordinated capability in leadership & planning. This does not mean the institution is failing; it means this specific AI capability has not yet been systematically developed.",
+      "A Developing score means the institution is actively working on leadership & planning with identifiable plans, pilots, or initiatives, but these are not yet embedded institution-wide.",
+      "An Advanced score means leadership & planning is an established, institution-wide, continuously improving capability."
+    ],
+    "common_misinterpretations": [
+      {
+        "misinterpretation": "A Basic score means the institution is bad at leadership & planning.",
+        "correction": "Basic means this capability has not yet been systematically developed. Many institutions are Basic on most AI indicators. This is a starting point, not a judgement."
+      },
+      {
+        "misinterpretation": "An Advanced score means the institution is perfect at leadership & planning.",
+        "correction": "Advanced means the capability is embedded and improving, not that it is perfect. Advanced institutions still have room for improvement and face ongoing challenges."
+      }
+    ],
+    "vocabulary": [
+      "AI governance",
+      "AI ethics",
+      "responsible AI",
+      "AI policy",
+      "AI risk",
+      "DPIA",
+      "ethical procurement",
+      "AI code of conduct",
+      "AI leadership",
+      "AI strategy",
+      "staff AI capability",
+      "AI compliance"
+    ],
+    "level_descriptions_plain": {
+      "basic": "Your institution has not yet established a systematic approach to leadership & planning. This might mean it has not started, or that activity is happening in an uncoordinated way without institutional backing.",
+      "developing": "Your institution is actively working on leadership & planning. Plans are in place, pilots are running, or policies are being developed. The work is real but not yet fully embedded or institution-wide.",
+      "advanced": "Your institution has established leadership & planning as an embedded, institution-wide capability. Practices are systematic, governed, measured, and continuously improving."
+    }
+  },
+  {
+    "id": "qs-gov-lead-2-lang",
+    "indicator_id": "qs-gov-lead-2",
+    "indicator_number": "1.4.2",
+    "indicator_name": "Training & Development",
+    "pillar_id": "qs-governance",
+    "category_id": "qs-gov-leadership",
+    "plain_language_description": "Does your institution provide AI training for staff, tailored to different roles?",
+    "what_this_means_in_practice": "This is about whether the institution invests in building AI skills across the workforce, with training appropriate to different roles.",
+    "accurate_interpretations": [
+      "A Basic score means the institution has not yet established purposeful, coordinated capability in training & development. This does not mean the institution is failing; it means this specific AI capability has not yet been systematically developed.",
+      "A Developing score means the institution is actively working on training & development with identifiable plans, pilots, or initiatives, but these are not yet embedded institution-wide.",
+      "An Advanced score means training & development is an established, institution-wide, continuously improving capability."
+    ],
+    "common_misinterpretations": [
+      {
+        "misinterpretation": "A Basic score means the institution is bad at training & development.",
+        "correction": "Basic means this capability has not yet been systematically developed. Many institutions are Basic on most AI indicators. This is a starting point, not a judgement."
+      },
+      {
+        "misinterpretation": "An Advanced score means the institution is perfect at training & development.",
+        "correction": "Advanced means the capability is embedded and improving, not that it is perfect. Advanced institutions still have room for improvement and face ongoing challenges."
+      }
+    ],
+    "vocabulary": [
+      "AI governance",
+      "AI ethics",
+      "responsible AI",
+      "AI policy",
+      "AI risk",
+      "DPIA",
+      "ethical procurement",
+      "AI code of conduct",
+      "AI leadership",
+      "AI strategy",
+      "staff AI capability",
+      "AI compliance"
+    ],
+    "level_descriptions_plain": {
+      "basic": "Your institution has not yet established a systematic approach to training & development. This might mean it has not started, or that activity is happening in an uncoordinated way without institutional backing.",
+      "developing": "Your institution is actively working on training & development. Plans are in place, pilots are running, or policies are being developed. The work is real but not yet fully embedded or institution-wide.",
+      "advanced": "Your institution has established training & development as an embedded, institution-wide capability. Practices are systematic, governed, measured, and continuously improving."
+    }
+  },
+  {
+    "id": "qs-out-rec-1-lang",
+    "indicator_id": "qs-out-rec-1",
+    "indicator_number": "2.1.1",
+    "indicator_name": "Application Processes",
+    "pillar_id": "qs-outreach",
+    "category_id": "qs-out-recruitment",
+    "plain_language_description": "Does your institution use AI tools in admissions (such as chatbots, application screening, or enrolment prediction)?",
+    "what_this_means_in_practice": "This is about using AI in the admissions pipeline: chatbots for applicant queries, AI-assisted application review, predictive yield modelling, or personalised applicant communication.",
+    "accurate_interpretations": [
+      "A Basic score means the institution has not yet established purposeful, coordinated capability in application processes. This does not mean the institution is failing; it means this specific AI capability has not yet been systematically developed.",
+      "A Developing score means the institution is actively working on application processes with identifiable plans, pilots, or initiatives, but these are not yet embedded institution-wide.",
+      "An Advanced score means application processes is an established, institution-wide, continuously improving capability."
+    ],
+    "common_misinterpretations": [
+      {
+        "misinterpretation": "A Basic score means the institution is bad at application processes.",
+        "correction": "Basic means this capability has not yet been systematically developed. Many institutions are Basic on most AI indicators. This is a starting point, not a judgement."
+      },
+      {
+        "misinterpretation": "An Advanced score means the institution is perfect at application processes.",
+        "correction": "Advanced means the capability is embedded and improving, not that it is perfect. Advanced institutions still have room for improvement and face ongoing challenges."
+      }
+    ],
+    "vocabulary": [
+      "AI chatbot",
+      "predictive enrolment",
+      "yield modelling",
+      "lead scoring",
+      "conversion funnel",
+      "personalised marketing",
+      "AI career tools",
+      "administrative automation",
+      "knowledge exchange",
+      "AI partnerships"
+    ],
+    "level_descriptions_plain": {
+      "basic": "Your institution has not yet established a systematic approach to application processes. This might mean it has not started, or that activity is happening in an uncoordinated way without institutional backing.",
+      "developing": "Your institution is actively working on application processes. Plans are in place, pilots are running, or policies are being developed. The work is real but not yet fully embedded or institution-wide.",
+      "advanced": "Your institution has established application processes as an embedded, institution-wide capability. Practices are systematic, governed, measured, and continuously improving."
+    }
+  },
+  {
+    "id": "qs-out-rec-2-lang",
+    "indicator_id": "qs-out-rec-2",
+    "indicator_number": "2.1.2",
+    "indicator_name": "Recruitment & Conversion",
+    "pillar_id": "qs-outreach",
+    "category_id": "qs-out-recruitment",
+    "plain_language_description": "Does your institution use AI to personalise student recruitment and improve conversion rates?",
+    "what_this_means_in_practice": "This is about using AI to make student recruitment more effective: personalised marketing, lead scoring, conversion optimisation, and channel allocation.",
+    "accurate_interpretations": [
+      "A Basic score means the institution has not yet established purposeful, coordinated capability in recruitment & conversion. This does not mean the institution is failing; it means this specific AI capability has not yet been systematically developed.",
+      "A Developing score means the institution is actively working on recruitment & conversion with identifiable plans, pilots, or initiatives, but these are not yet embedded institution-wide.",
+      "An Advanced score means recruitment & conversion is an established, institution-wide, continuously improving capability."
+    ],
+    "common_misinterpretations": [
+      {
+        "misinterpretation": "A Basic score means the institution is bad at recruitment & conversion.",
+        "correction": "Basic means this capability has not yet been systematically developed. Many institutions are Basic on most AI indicators. This is a starting point, not a judgement."
+      },
+      {
+        "misinterpretation": "An Advanced score means the institution is perfect at recruitment & conversion.",
+        "correction": "Advanced means the capability is embedded and improving, not that it is perfect. Advanced institutions still have room for improvement and face ongoing challenges."
+      }
+    ],
+    "vocabulary": [
+      "AI chatbot",
+      "predictive enrolment",
+      "yield modelling",
+      "lead scoring",
+      "conversion funnel",
+      "personalised marketing",
+      "AI career tools",
+      "administrative automation",
+      "knowledge exchange",
+      "AI partnerships"
+    ],
+    "level_descriptions_plain": {
+      "basic": "Your institution has not yet established a systematic approach to recruitment & conversion. This might mean it has not started, or that activity is happening in an uncoordinated way without institutional backing.",
+      "developing": "Your institution is actively working on recruitment & conversion. Plans are in place, pilots are running, or policies are being developed. The work is real but not yet fully embedded or institution-wide.",
+      "advanced": "Your institution has established recruitment & conversion as an embedded, institution-wide capability. Practices are systematic, governed, measured, and continuously improving."
+    }
+  },
+  {
+    "id": "qs-out-sup-1-lang",
+    "indicator_id": "qs-out-sup-1",
+    "indicator_number": "2.2.1",
+    "indicator_name": "Career Services",
+    "pillar_id": "qs-outreach",
+    "category_id": "qs-out-support",
+    "plain_language_description": "Does your institution provide AI-powered career services tools to students?",
+    "what_this_means_in_practice": "This is about whether career services use AI tools to improve outcomes for students: job matching, CV review, skills gap analysis, labour market intelligence.",
+    "accurate_interpretations": [
+      "A Basic score means the institution has not yet established purposeful, coordinated capability in career services. This does not mean the institution is failing; it means this specific AI capability has not yet been systematically developed.",
+      "A Developing score means the institution is actively working on career services with identifiable plans, pilots, or initiatives, but these are not yet embedded institution-wide.",
+      "An Advanced score means career services is an established, institution-wide, continuously improving capability."
+    ],
+    "common_misinterpretations": [
+      {
+        "misinterpretation": "A Basic score means the institution is bad at career services.",
+        "correction": "Basic means this capability has not yet been systematically developed. Many institutions are Basic on most AI indicators. This is a starting point, not a judgement."
+      },
+      {
+        "misinterpretation": "An Advanced score means the institution is perfect at career services.",
+        "correction": "Advanced means the capability is embedded and improving, not that it is perfect. Advanced institutions still have room for improvement and face ongoing challenges."
+      }
+    ],
+    "vocabulary": [
+      "AI chatbot",
+      "predictive enrolment",
+      "yield modelling",
+      "lead scoring",
+      "conversion funnel",
+      "personalised marketing",
+      "AI career tools",
+      "administrative automation",
+      "knowledge exchange",
+      "AI partnerships"
+    ],
+    "level_descriptions_plain": {
+      "basic": "Your institution has not yet established a systematic approach to career services. This might mean it has not started, or that activity is happening in an uncoordinated way without institutional backing.",
+      "developing": "Your institution is actively working on career services. Plans are in place, pilots are running, or policies are being developed. The work is real but not yet fully embedded or institution-wide.",
+      "advanced": "Your institution has established career services as an embedded, institution-wide capability. Practices are systematic, governed, measured, and continuously improving."
+    }
+  },
+  {
+    "id": "qs-out-sup-2-lang",
+    "indicator_id": "qs-out-sup-2",
+    "indicator_number": "2.2.2",
+    "indicator_name": "Realtime Student Support",
+    "pillar_id": "qs-outreach",
+    "category_id": "qs-out-support",
+    "plain_language_description": "Can students get AI-powered support (such as chatbots or automated triage) outside office hours?",
+    "what_this_means_in_practice": "This is about whether students can get immediate, AI-powered help when they need it, particularly outside business hours.",
+    "accurate_interpretations": [
+      "A Basic score means the institution has not yet established purposeful, coordinated capability in realtime student support. This does not mean the institution is failing; it means this specific AI capability has not yet been systematically developed.",
+      "A Developing score means the institution is actively working on realtime student support with identifiable plans, pilots, or initiatives, but these are not yet embedded institution-wide.",
+      "An Advanced score means realtime student support is an established, institution-wide, continuously improving capability."
+    ],
+    "common_misinterpretations": [
+      {
+        "misinterpretation": "A Basic score means the institution is bad at realtime student support.",
+        "correction": "Basic means this capability has not yet been systematically developed. Many institutions are Basic on most AI indicators. This is a starting point, not a judgement."
+      },
+      {
+        "misinterpretation": "An Advanced score means the institution is perfect at realtime student support.",
+        "correction": "Advanced means the capability is embedded and improving, not that it is perfect. Advanced institutions still have room for improvement and face ongoing challenges."
+      }
+    ],
+    "vocabulary": [
+      "AI chatbot",
+      "predictive enrolment",
+      "yield modelling",
+      "lead scoring",
+      "conversion funnel",
+      "personalised marketing",
+      "AI career tools",
+      "administrative automation",
+      "knowledge exchange",
+      "AI partnerships"
+    ],
+    "level_descriptions_plain": {
+      "basic": "Your institution has not yet established a systematic approach to realtime student support. This might mean it has not started, or that activity is happening in an uncoordinated way without institutional backing.",
+      "developing": "Your institution is actively working on realtime student support. Plans are in place, pilots are running, or policies are being developed. The work is real but not yet fully embedded or institution-wide.",
+      "advanced": "Your institution has established realtime student support as an embedded, institution-wide capability. Practices are systematic, governed, measured, and continuously improving."
+    }
+  },
+  {
+    "id": "qs-out-eff-1-lang",
+    "indicator_id": "qs-out-eff-1",
+    "indicator_number": "2.3.1",
+    "indicator_name": "AI in Administrative Processes",
+    "pillar_id": "qs-outreach",
+    "category_id": "qs-out-efficiency",
+    "plain_language_description": "Does your institution use AI to improve administrative processes like timetabling, HR, or facilities management?",
+    "what_this_means_in_practice": "This is about using AI to make administrative functions more efficient: automating routine processes, improving scheduling, streamlining document handling.",
+    "accurate_interpretations": [
+      "A Basic score means the institution has not yet established purposeful, coordinated capability in ai in administrative processes. This does not mean the institution is failing; it means this specific AI capability has not yet been systematically developed.",
+      "A Developing score means the institution is actively working on ai in administrative processes with identifiable plans, pilots, or initiatives, but these are not yet embedded institution-wide.",
+      "An Advanced score means ai in administrative processes is an established, institution-wide, continuously improving capability."
+    ],
+    "common_misinterpretations": [
+      {
+        "misinterpretation": "A Basic score means the institution is bad at ai in administrative processes.",
+        "correction": "Basic means this capability has not yet been systematically developed. Many institutions are Basic on most AI indicators. This is a starting point, not a judgement."
+      },
+      {
+        "misinterpretation": "An Advanced score means the institution is perfect at ai in administrative processes.",
+        "correction": "Advanced means the capability is embedded and improving, not that it is perfect. Advanced institutions still have room for improvement and face ongoing challenges."
+      }
+    ],
+    "vocabulary": [
+      "AI chatbot",
+      "predictive enrolment",
+      "yield modelling",
+      "lead scoring",
+      "conversion funnel",
+      "personalised marketing",
+      "AI career tools",
+      "administrative automation",
+      "knowledge exchange",
+      "AI partnerships"
+    ],
+    "level_descriptions_plain": {
+      "basic": "Your institution has not yet established a systematic approach to ai in administrative processes. This might mean it has not started, or that activity is happening in an uncoordinated way without institutional backing.",
+      "developing": "Your institution is actively working on ai in administrative processes. Plans are in place, pilots are running, or policies are being developed. The work is real but not yet fully embedded or institution-wide.",
+      "advanced": "Your institution has established ai in administrative processes as an embedded, institution-wide capability. Practices are systematic, governed, measured, and continuously improving."
+    }
+  },
+  {
+    "id": "qs-out-eng-1-lang",
+    "indicator_id": "qs-out-eng-1",
+    "indicator_number": "2.4.1",
+    "indicator_name": "Community Learning",
+    "pillar_id": "qs-outreach",
+    "category_id": "qs-out-engagement",
+    "plain_language_description": "Does your institution run AI-related learning or training for the wider community, not just enrolled students?",
+    "what_this_means_in_practice": "This is about the institution's role in community AI education: running public workshops, offering AI CPD to local professionals, or building community AI capacity.",
+    "accurate_interpretations": [
+      "A Basic score means the institution has not yet established purposeful, coordinated capability in community learning. This does not mean the institution is failing; it means this specific AI capability has not yet been systematically developed.",
+      "A Developing score means the institution is actively working on community learning with identifiable plans, pilots, or initiatives, but these are not yet embedded institution-wide.",
+      "An Advanced score means community learning is an established, institution-wide, continuously improving capability."
+    ],
+    "common_misinterpretations": [
+      {
+        "misinterpretation": "A Basic score means the institution is bad at community learning.",
+        "correction": "Basic means this capability has not yet been systematically developed. Many institutions are Basic on most AI indicators. This is a starting point, not a judgement."
+      },
+      {
+        "misinterpretation": "An Advanced score means the institution is perfect at community learning.",
+        "correction": "Advanced means the capability is embedded and improving, not that it is perfect. Advanced institutions still have room for improvement and face ongoing challenges."
+      }
+    ],
+    "vocabulary": [
+      "AI chatbot",
+      "predictive enrolment",
+      "yield modelling",
+      "lead scoring",
+      "conversion funnel",
+      "personalised marketing",
+      "AI career tools",
+      "administrative automation",
+      "knowledge exchange",
+      "AI partnerships"
+    ],
+    "level_descriptions_plain": {
+      "basic": "Your institution has not yet established a systematic approach to community learning. This might mean it has not started, or that activity is happening in an uncoordinated way without institutional backing.",
+      "developing": "Your institution is actively working on community learning. Plans are in place, pilots are running, or policies are being developed. The work is real but not yet fully embedded or institution-wide.",
+      "advanced": "Your institution has established community learning as an embedded, institution-wide capability. Practices are systematic, governed, measured, and continuously improving."
+    }
+  },
+  {
+    "id": "qs-out-eng-2-lang",
+    "indicator_id": "qs-out-eng-2",
+    "indicator_number": "2.4.2",
+    "indicator_name": "External Collaboration",
+    "pillar_id": "qs-outreach",
+    "category_id": "qs-out-engagement",
+    "plain_language_description": "Does your institution participate in external AI collaborations, consortia, or policy discussions?",
+    "what_this_means_in_practice": "This is about whether the institution actively participates in the wider AI ecosystem through consortia, cross-institutional projects, and policy engagement.",
+    "accurate_interpretations": [
+      "A Basic score means the institution has not yet established purposeful, coordinated capability in external collaboration. This does not mean the institution is failing; it means this specific AI capability has not yet been systematically developed.",
+      "A Developing score means the institution is actively working on external collaboration with identifiable plans, pilots, or initiatives, but these are not yet embedded institution-wide.",
+      "An Advanced score means external collaboration is an established, institution-wide, continuously improving capability."
+    ],
+    "common_misinterpretations": [
+      {
+        "misinterpretation": "A Basic score means the institution is bad at external collaboration.",
+        "correction": "Basic means this capability has not yet been systematically developed. Many institutions are Basic on most AI indicators. This is a starting point, not a judgement."
+      },
+      {
+        "misinterpretation": "An Advanced score means the institution is perfect at external collaboration.",
+        "correction": "Advanced means the capability is embedded and improving, not that it is perfect. Advanced institutions still have room for improvement and face ongoing challenges."
+      }
+    ],
+    "vocabulary": [
+      "AI chatbot",
+      "predictive enrolment",
+      "yield modelling",
+      "lead scoring",
+      "conversion funnel",
+      "personalised marketing",
+      "AI career tools",
+      "administrative automation",
+      "knowledge exchange",
+      "AI partnerships"
+    ],
+    "level_descriptions_plain": {
+      "basic": "Your institution has not yet established a systematic approach to external collaboration. This might mean it has not started, or that activity is happening in an uncoordinated way without institutional backing.",
+      "developing": "Your institution is actively working on external collaboration. Plans are in place, pilots are running, or policies are being developed. The work is real but not yet fully embedded or institution-wide.",
+      "advanced": "Your institution has established external collaboration as an embedded, institution-wide capability. Practices are systematic, governed, measured, and continuously improving."
+    }
+  },
+  {
+    "id": "qs-out-eng-3-lang",
+    "indicator_id": "qs-out-eng-3",
+    "indicator_number": "2.4.3",
+    "indicator_name": "Industry Projects",
+    "pillar_id": "qs-outreach",
+    "category_id": "qs-out-engagement",
+    "plain_language_description": "Does your institution run AI projects with industry partners?",
+    "what_this_means_in_practice": "This is about AI-focused collaboration with industry: joint research, consultancy, knowledge transfer partnerships, and collaborative innovation.",
+    "accurate_interpretations": [
+      "A Basic score means the institution has not yet established purposeful, coordinated capability in industry projects. This does not mean the institution is failing; it means this specific AI capability has not yet been systematically developed.",
+      "A Developing score means the institution is actively working on industry projects with identifiable plans, pilots, or initiatives, but these are not yet embedded institution-wide.",
+      "An Advanced score means industry projects is an established, institution-wide, continuously improving capability."
+    ],
+    "common_misinterpretations": [
+      {
+        "misinterpretation": "A Basic score means the institution is bad at industry projects.",
+        "correction": "Basic means this capability has not yet been systematically developed. Many institutions are Basic on most AI indicators. This is a starting point, not a judgement."
+      },
+      {
+        "misinterpretation": "An Advanced score means the institution is perfect at industry projects.",
+        "correction": "Advanced means the capability is embedded and improving, not that it is perfect. Advanced institutions still have room for improvement and face ongoing challenges."
+      }
+    ],
+    "vocabulary": [
+      "AI chatbot",
+      "predictive enrolment",
+      "yield modelling",
+      "lead scoring",
+      "conversion funnel",
+      "personalised marketing",
+      "AI career tools",
+      "administrative automation",
+      "knowledge exchange",
+      "AI partnerships"
+    ],
+    "level_descriptions_plain": {
+      "basic": "Your institution has not yet established a systematic approach to industry projects. This might mean it has not started, or that activity is happening in an uncoordinated way without institutional backing.",
+      "developing": "Your institution is actively working on industry projects. Plans are in place, pilots are running, or policies are being developed. The work is real but not yet fully embedded or institution-wide.",
+      "advanced": "Your institution has established industry projects as an embedded, institution-wide capability. Practices are systematic, governed, measured, and continuously improving."
+    }
+  },
+  {
+    "id": "qs-tl-cur-1-lang",
+    "indicator_id": "qs-tl-cur-1",
+    "indicator_number": "3.1.1",
+    "indicator_name": "Agreed Approach for AI",
+    "pillar_id": "qs-teaching",
+    "category_id": "qs-tl-curriculum",
+    "plain_language_description": "Has your institution agreed a clear, shared approach to how AI should be used in teaching and learning?",
+    "what_this_means_in_practice": "This is about whether the institution has an agreed position on AI in teaching, rather than leaving every academic to make their own rules. It covers AI use by staff and students.",
+    "accurate_interpretations": [
+      "A Basic score means the institution has not yet established purposeful, coordinated capability in agreed approach for ai. This does not mean the institution is failing; it means this specific AI capability has not yet been systematically developed.",
+      "A Developing score means the institution is actively working on agreed approach for ai with identifiable plans, pilots, or initiatives, but these are not yet embedded institution-wide.",
+      "An Advanced score means agreed approach for ai is an established, institution-wide, continuously improving capability."
+    ],
+    "common_misinterpretations": [
+      {
+        "misinterpretation": "A Basic score means the institution is bad at agreed approach for ai.",
+        "correction": "Basic means this capability has not yet been systematically developed. Many institutions are Basic on most AI indicators. This is a starting point, not a judgement."
+      },
+      {
+        "misinterpretation": "An Advanced score means the institution is perfect at agreed approach for ai.",
+        "correction": "Advanced means the capability is embedded and improving, not that it is perfect. Advanced institutions still have room for improvement and face ongoing challenges."
+      }
+    ],
+    "vocabulary": [
+      "AI literacy",
+      "AI in curriculum",
+      "adaptive learning",
+      "AI assessment",
+      "academic integrity",
+      "AI-resilient assessment",
+      "personalised learning",
+      "learning analytics",
+      "AI tutoring",
+      "formative AI feedback"
+    ],
+    "level_descriptions_plain": {
+      "basic": "Your institution has not yet established a systematic approach to agreed approach for ai. This might mean it has not started, or that activity is happening in an uncoordinated way without institutional backing.",
+      "developing": "Your institution is actively working on agreed approach for ai. Plans are in place, pilots are running, or policies are being developed. The work is real but not yet fully embedded or institution-wide.",
+      "advanced": "Your institution has established agreed approach for ai as an embedded, institution-wide capability. Practices are systematic, governed, measured, and continuously improving."
+    }
+  },
+  {
+    "id": "qs-tl-cur-2-lang",
+    "indicator_id": "qs-tl-cur-2",
+    "indicator_number": "3.1.2",
+    "indicator_name": "Curriculum Design",
+    "pillar_id": "qs-teaching",
+    "category_id": "qs-tl-curriculum",
+    "plain_language_description": "Is AI considered when designing or reviewing curricula and programmes?",
+    "what_this_means_in_practice": "This is about whether AI is considered during curriculum design and programme review, so that graduates are prepared for an AI-influenced world.",
+    "accurate_interpretations": [
+      "A Basic score means the institution has not yet established purposeful, coordinated capability in curriculum design. This does not mean the institution is failing; it means this specific AI capability has not yet been systematically developed.",
+      "A Developing score means the institution is actively working on curriculum design with identifiable plans, pilots, or initiatives, but these are not yet embedded institution-wide.",
+      "An Advanced score means curriculum design is an established, institution-wide, continuously improving capability."
+    ],
+    "common_misinterpretations": [
+      {
+        "misinterpretation": "A Basic score means the institution is bad at curriculum design.",
+        "correction": "Basic means this capability has not yet been systematically developed. Many institutions are Basic on most AI indicators. This is a starting point, not a judgement."
+      },
+      {
+        "misinterpretation": "An Advanced score means the institution is perfect at curriculum design.",
+        "correction": "Advanced means the capability is embedded and improving, not that it is perfect. Advanced institutions still have room for improvement and face ongoing challenges."
+      }
+    ],
+    "vocabulary": [
+      "AI literacy",
+      "AI in curriculum",
+      "adaptive learning",
+      "AI assessment",
+      "academic integrity",
+      "AI-resilient assessment",
+      "personalised learning",
+      "learning analytics",
+      "AI tutoring",
+      "formative AI feedback"
+    ],
+    "level_descriptions_plain": {
+      "basic": "Your institution has not yet established a systematic approach to curriculum design. This might mean it has not started, or that activity is happening in an uncoordinated way without institutional backing.",
+      "developing": "Your institution is actively working on curriculum design. Plans are in place, pilots are running, or policies are being developed. The work is real but not yet fully embedded or institution-wide.",
+      "advanced": "Your institution has established curriculum design as an embedded, institution-wide capability. Practices are systematic, governed, measured, and continuously improving."
+    }
+  },
+  {
+    "id": "qs-tl-cur-3-lang",
+    "indicator_id": "qs-tl-cur-3",
+    "indicator_number": "3.1.3",
+    "indicator_name": "AI Literacy",
+    "pillar_id": "qs-teaching",
+    "category_id": "qs-tl-curriculum",
+    "plain_language_description": "Does your institution actively promote AI literacy as a competency for all students and staff?",
+    "what_this_means_in_practice": "This is about systematically building understanding of AI across the institution, so that all graduates and staff can critically evaluate and ethically engage with AI.",
+    "accurate_interpretations": [
+      "A Basic score means the institution has not yet established purposeful, coordinated capability in ai literacy. This does not mean the institution is failing; it means this specific AI capability has not yet been systematically developed.",
+      "A Developing score means the institution is actively working on ai literacy with identifiable plans, pilots, or initiatives, but these are not yet embedded institution-wide.",
+      "An Advanced score means ai literacy is an established, institution-wide, continuously improving capability."
+    ],
+    "common_misinterpretations": [
+      {
+        "misinterpretation": "A Basic score means the institution is bad at ai literacy.",
+        "correction": "Basic means this capability has not yet been systematically developed. Many institutions are Basic on most AI indicators. This is a starting point, not a judgement."
+      },
+      {
+        "misinterpretation": "An Advanced score means the institution is perfect at ai literacy.",
+        "correction": "Advanced means the capability is embedded and improving, not that it is perfect. Advanced institutions still have room for improvement and face ongoing challenges."
+      }
+    ],
+    "vocabulary": [
+      "AI literacy",
+      "AI in curriculum",
+      "adaptive learning",
+      "AI assessment",
+      "academic integrity",
+      "AI-resilient assessment",
+      "personalised learning",
+      "learning analytics",
+      "AI tutoring",
+      "formative AI feedback"
+    ],
+    "level_descriptions_plain": {
+      "basic": "Your institution has not yet established a systematic approach to ai literacy. This might mean it has not started, or that activity is happening in an uncoordinated way without institutional backing.",
+      "developing": "Your institution is actively working on ai literacy. Plans are in place, pilots are running, or policies are being developed. The work is real but not yet fully embedded or institution-wide.",
+      "advanced": "Your institution has established ai literacy as an embedded, institution-wide capability. Practices are systematic, governed, measured, and continuously improving."
+    }
+  },
+  {
+    "id": "qs-tl-cur-4-lang",
+    "indicator_id": "qs-tl-cur-4",
+    "indicator_number": "3.1.4",
+    "indicator_name": "AI Courses",
+    "pillar_id": "qs-teaching",
+    "category_id": "qs-tl-curriculum",
+    "plain_language_description": "Does your institution offer standalone courses or qualifications focused on AI?",
+    "what_this_means_in_practice": "This is about the institution's portfolio of AI-specific educational offerings, from short courses to full programmes.",
+    "accurate_interpretations": [
+      "A Basic score means the institution has not yet established purposeful, coordinated capability in ai courses. This does not mean the institution is failing; it means this specific AI capability has not yet been systematically developed.",
+      "A Developing score means the institution is actively working on ai courses with identifiable plans, pilots, or initiatives, but these are not yet embedded institution-wide.",
+      "An Advanced score means ai courses is an established, institution-wide, continuously improving capability."
+    ],
+    "common_misinterpretations": [
+      {
+        "misinterpretation": "A Basic score means the institution is bad at ai courses.",
+        "correction": "Basic means this capability has not yet been systematically developed. Many institutions are Basic on most AI indicators. This is a starting point, not a judgement."
+      },
+      {
+        "misinterpretation": "An Advanced score means the institution is perfect at ai courses.",
+        "correction": "Advanced means the capability is embedded and improving, not that it is perfect. Advanced institutions still have room for improvement and face ongoing challenges."
+      }
+    ],
+    "vocabulary": [
+      "AI literacy",
+      "AI in curriculum",
+      "adaptive learning",
+      "AI assessment",
+      "academic integrity",
+      "AI-resilient assessment",
+      "personalised learning",
+      "learning analytics",
+      "AI tutoring",
+      "formative AI feedback"
+    ],
+    "level_descriptions_plain": {
+      "basic": "Your institution has not yet established a systematic approach to ai courses. This might mean it has not started, or that activity is happening in an uncoordinated way without institutional backing.",
+      "developing": "Your institution is actively working on ai courses. Plans are in place, pilots are running, or policies are being developed. The work is real but not yet fully embedded or institution-wide.",
+      "advanced": "Your institution has established ai courses as an embedded, institution-wide capability. Practices are systematic, governed, measured, and continuously improving."
+    }
+  },
+  {
+    "id": "qs-tl-per-1-lang",
+    "indicator_id": "qs-tl-per-1",
+    "indicator_number": "3.2.1",
+    "indicator_name": "Personalised Learning",
+    "pillar_id": "qs-teaching",
+    "category_id": "qs-tl-personalised",
+    "plain_language_description": "Does your institution use AI to personalise learning (such as adaptive platforms, AI tutoring, or tailored content)?",
+    "what_this_means_in_practice": "This is about using AI to tailor learning to individual students: adaptive platforms that adjust difficulty, AI that recommends resources, or personalised learning pathways.",
+    "accurate_interpretations": [
+      "A Basic score means the institution has not yet established purposeful, coordinated capability in personalised learning. This does not mean the institution is failing; it means this specific AI capability has not yet been systematically developed.",
+      "A Developing score means the institution is actively working on personalised learning with identifiable plans, pilots, or initiatives, but these are not yet embedded institution-wide.",
+      "An Advanced score means personalised learning is an established, institution-wide, continuously improving capability."
+    ],
+    "common_misinterpretations": [
+      {
+        "misinterpretation": "A Basic score means the institution is bad at personalised learning.",
+        "correction": "Basic means this capability has not yet been systematically developed. Many institutions are Basic on most AI indicators. This is a starting point, not a judgement."
+      },
+      {
+        "misinterpretation": "An Advanced score means the institution is perfect at personalised learning.",
+        "correction": "Advanced means the capability is embedded and improving, not that it is perfect. Advanced institutions still have room for improvement and face ongoing challenges."
+      }
+    ],
+    "vocabulary": [
+      "AI literacy",
+      "AI in curriculum",
+      "adaptive learning",
+      "AI assessment",
+      "academic integrity",
+      "AI-resilient assessment",
+      "personalised learning",
+      "learning analytics",
+      "AI tutoring",
+      "formative AI feedback"
+    ],
+    "level_descriptions_plain": {
+      "basic": "Your institution has not yet established a systematic approach to personalised learning. This might mean it has not started, or that activity is happening in an uncoordinated way without institutional backing.",
+      "developing": "Your institution is actively working on personalised learning. Plans are in place, pilots are running, or policies are being developed. The work is real but not yet fully embedded or institution-wide.",
+      "advanced": "Your institution has established personalised learning as an embedded, institution-wide capability. Practices are systematic, governed, measured, and continuously improving."
+    }
+  },
+  {
+    "id": "qs-tl-per-2-lang",
+    "indicator_id": "qs-tl-per-2",
+    "indicator_number": "3.2.2",
+    "indicator_name": "Student Retention",
+    "pillar_id": "qs-teaching",
+    "category_id": "qs-tl-personalised",
+    "plain_language_description": "Does your institution use AI to identify students at risk of dropping out and intervene early?",
+    "what_this_means_in_practice": "This is about using data and AI to predict which students are at risk of leaving and intervening before they do.",
+    "accurate_interpretations": [
+      "A Basic score means the institution has not yet established purposeful, coordinated capability in student retention. This does not mean the institution is failing; it means this specific AI capability has not yet been systematically developed.",
+      "A Developing score means the institution is actively working on student retention with identifiable plans, pilots, or initiatives, but these are not yet embedded institution-wide.",
+      "An Advanced score means student retention is an established, institution-wide, continuously improving capability."
+    ],
+    "common_misinterpretations": [
+      {
+        "misinterpretation": "A Basic score means the institution is bad at student retention.",
+        "correction": "Basic means this capability has not yet been systematically developed. Many institutions are Basic on most AI indicators. This is a starting point, not a judgement."
+      },
+      {
+        "misinterpretation": "An Advanced score means the institution is perfect at student retention.",
+        "correction": "Advanced means the capability is embedded and improving, not that it is perfect. Advanced institutions still have room for improvement and face ongoing challenges."
+      }
+    ],
+    "vocabulary": [
+      "AI literacy",
+      "AI in curriculum",
+      "adaptive learning",
+      "AI assessment",
+      "academic integrity",
+      "AI-resilient assessment",
+      "personalised learning",
+      "learning analytics",
+      "AI tutoring",
+      "formative AI feedback"
+    ],
+    "level_descriptions_plain": {
+      "basic": "Your institution has not yet established a systematic approach to student retention. This might mean it has not started, or that activity is happening in an uncoordinated way without institutional backing.",
+      "developing": "Your institution is actively working on student retention. Plans are in place, pilots are running, or policies are being developed. The work is real but not yet fully embedded or institution-wide.",
+      "advanced": "Your institution has established student retention as an embedded, institution-wide capability. Practices are systematic, governed, measured, and continuously improving."
+    }
+  },
+  {
+    "id": "qs-tl-per-3-lang",
+    "indicator_id": "qs-tl-per-3",
+    "indicator_number": "3.2.3",
+    "indicator_name": "Academic Support",
+    "pillar_id": "qs-teaching",
+    "category_id": "qs-tl-personalised",
+    "plain_language_description": "Does your institution provide AI-powered academic support tools (writing assistants, study aids, practice generators)?",
+    "what_this_means_in_practice": "This is about AI tools that help students study: writing assistants, practice question generators, AI tutoring, study planning tools.",
+    "accurate_interpretations": [
+      "A Basic score means the institution has not yet established purposeful, coordinated capability in academic support. This does not mean the institution is failing; it means this specific AI capability has not yet been systematically developed.",
+      "A Developing score means the institution is actively working on academic support with identifiable plans, pilots, or initiatives, but these are not yet embedded institution-wide.",
+      "An Advanced score means academic support is an established, institution-wide, continuously improving capability."
+    ],
+    "common_misinterpretations": [
+      {
+        "misinterpretation": "A Basic score means the institution is bad at academic support.",
+        "correction": "Basic means this capability has not yet been systematically developed. Many institutions are Basic on most AI indicators. This is a starting point, not a judgement."
+      },
+      {
+        "misinterpretation": "An Advanced score means the institution is perfect at academic support.",
+        "correction": "Advanced means the capability is embedded and improving, not that it is perfect. Advanced institutions still have room for improvement and face ongoing challenges."
+      }
+    ],
+    "vocabulary": [
+      "AI literacy",
+      "AI in curriculum",
+      "adaptive learning",
+      "AI assessment",
+      "academic integrity",
+      "AI-resilient assessment",
+      "personalised learning",
+      "learning analytics",
+      "AI tutoring",
+      "formative AI feedback"
+    ],
+    "level_descriptions_plain": {
+      "basic": "Your institution has not yet established a systematic approach to academic support. This might mean it has not started, or that activity is happening in an uncoordinated way without institutional backing.",
+      "developing": "Your institution is actively working on academic support. Plans are in place, pilots are running, or policies are being developed. The work is real but not yet fully embedded or institution-wide.",
+      "advanced": "Your institution has established academic support as an embedded, institution-wide capability. Practices are systematic, governed, measured, and continuously improving."
+    }
+  },
+  {
+    "id": "qs-tl-ass-1-lang",
+    "indicator_id": "qs-tl-ass-1",
+    "indicator_number": "3.3.1",
+    "indicator_name": "Realtime Feedback",
+    "pillar_id": "qs-teaching",
+    "category_id": "qs-tl-assessment",
+    "plain_language_description": "Can students get AI-generated feedback on their work before or during assessments, not just after?",
+    "what_this_means_in_practice": "This is about whether students can get AI-generated feedback during the learning process, not just summative marks after submission.",
+    "accurate_interpretations": [
+      "A Basic score means the institution has not yet established purposeful, coordinated capability in realtime feedback. This does not mean the institution is failing; it means this specific AI capability has not yet been systematically developed.",
+      "A Developing score means the institution is actively working on realtime feedback with identifiable plans, pilots, or initiatives, but these are not yet embedded institution-wide.",
+      "An Advanced score means realtime feedback is an established, institution-wide, continuously improving capability."
+    ],
+    "common_misinterpretations": [
+      {
+        "misinterpretation": "A Basic score means the institution is bad at realtime feedback.",
+        "correction": "Basic means this capability has not yet been systematically developed. Many institutions are Basic on most AI indicators. This is a starting point, not a judgement."
+      },
+      {
+        "misinterpretation": "An Advanced score means the institution is perfect at realtime feedback.",
+        "correction": "Advanced means the capability is embedded and improving, not that it is perfect. Advanced institutions still have room for improvement and face ongoing challenges."
+      }
+    ],
+    "vocabulary": [
+      "AI literacy",
+      "AI in curriculum",
+      "adaptive learning",
+      "AI assessment",
+      "academic integrity",
+      "AI-resilient assessment",
+      "personalised learning",
+      "learning analytics",
+      "AI tutoring",
+      "formative AI feedback"
+    ],
+    "level_descriptions_plain": {
+      "basic": "Your institution has not yet established a systematic approach to realtime feedback. This might mean it has not started, or that activity is happening in an uncoordinated way without institutional backing.",
+      "developing": "Your institution is actively working on realtime feedback. Plans are in place, pilots are running, or policies are being developed. The work is real but not yet fully embedded or institution-wide.",
+      "advanced": "Your institution has established realtime feedback as an embedded, institution-wide capability. Practices are systematic, governed, measured, and continuously improving."
+    }
+  },
+  {
+    "id": "qs-tl-ass-2-lang",
+    "indicator_id": "qs-tl-ass-2",
+    "indicator_number": "3.3.2",
+    "indicator_name": "Adaptive Assessment",
+    "pillar_id": "qs-teaching",
+    "category_id": "qs-tl-assessment",
+    "plain_language_description": "Does your institution use AI to create adaptive assessments that adjust to individual student ability?",
+    "what_this_means_in_practice": "This is about assessment that responds to the student: adjusting difficulty, generating unique question sets, or providing different assessment pathways.",
+    "accurate_interpretations": [
+      "A Basic score means the institution has not yet established purposeful, coordinated capability in adaptive assessment. This does not mean the institution is failing; it means this specific AI capability has not yet been systematically developed.",
+      "A Developing score means the institution is actively working on adaptive assessment with identifiable plans, pilots, or initiatives, but these are not yet embedded institution-wide.",
+      "An Advanced score means adaptive assessment is an established, institution-wide, continuously improving capability."
+    ],
+    "common_misinterpretations": [
+      {
+        "misinterpretation": "A Basic score means the institution is bad at adaptive assessment.",
+        "correction": "Basic means this capability has not yet been systematically developed. Many institutions are Basic on most AI indicators. This is a starting point, not a judgement."
+      },
+      {
+        "misinterpretation": "An Advanced score means the institution is perfect at adaptive assessment.",
+        "correction": "Advanced means the capability is embedded and improving, not that it is perfect. Advanced institutions still have room for improvement and face ongoing challenges."
+      }
+    ],
+    "vocabulary": [
+      "AI literacy",
+      "AI in curriculum",
+      "adaptive learning",
+      "AI assessment",
+      "academic integrity",
+      "AI-resilient assessment",
+      "personalised learning",
+      "learning analytics",
+      "AI tutoring",
+      "formative AI feedback"
+    ],
+    "level_descriptions_plain": {
+      "basic": "Your institution has not yet established a systematic approach to adaptive assessment. This might mean it has not started, or that activity is happening in an uncoordinated way without institutional backing.",
+      "developing": "Your institution is actively working on adaptive assessment. Plans are in place, pilots are running, or policies are being developed. The work is real but not yet fully embedded or institution-wide.",
+      "advanced": "Your institution has established adaptive assessment as an embedded, institution-wide capability. Practices are systematic, governed, measured, and continuously improving."
+    }
+  },
+  {
+    "id": "qs-tl-ass-3-lang",
+    "indicator_id": "qs-tl-ass-3",
+    "indicator_number": "3.3.3",
+    "indicator_name": "Bias Validation",
+    "pillar_id": "qs-teaching",
+    "category_id": "qs-tl-assessment",
+    "plain_language_description": "Does your institution check AI assessment tools for bias and fairness across different student groups?",
+    "what_this_means_in_practice": "This is about checking whether AI tools used in assessment are fair across different student groups, not just assuming they are neutral.",
+    "accurate_interpretations": [
+      "A Basic score means the institution has not yet established purposeful, coordinated capability in bias validation. This does not mean the institution is failing; it means this specific AI capability has not yet been systematically developed.",
+      "A Developing score means the institution is actively working on bias validation with identifiable plans, pilots, or initiatives, but these are not yet embedded institution-wide.",
+      "An Advanced score means bias validation is an established, institution-wide, continuously improving capability."
+    ],
+    "common_misinterpretations": [
+      {
+        "misinterpretation": "A Basic score means the institution is bad at bias validation.",
+        "correction": "Basic means this capability has not yet been systematically developed. Many institutions are Basic on most AI indicators. This is a starting point, not a judgement."
+      },
+      {
+        "misinterpretation": "An Advanced score means the institution is perfect at bias validation.",
+        "correction": "Advanced means the capability is embedded and improving, not that it is perfect. Advanced institutions still have room for improvement and face ongoing challenges."
+      }
+    ],
+    "vocabulary": [
+      "AI literacy",
+      "AI in curriculum",
+      "adaptive learning",
+      "AI assessment",
+      "academic integrity",
+      "AI-resilient assessment",
+      "personalised learning",
+      "learning analytics",
+      "AI tutoring",
+      "formative AI feedback"
+    ],
+    "level_descriptions_plain": {
+      "basic": "Your institution has not yet established a systematic approach to bias validation. This might mean it has not started, or that activity is happening in an uncoordinated way without institutional backing.",
+      "developing": "Your institution is actively working on bias validation. Plans are in place, pilots are running, or policies are being developed. The work is real but not yet fully embedded or institution-wide.",
+      "advanced": "Your institution has established bias validation as an embedded, institution-wide capability. Practices are systematic, governed, measured, and continuously improving."
+    }
+  },
+  {
+    "id": "qs-res-pra-1-lang",
+    "indicator_id": "qs-res-pra-1",
+    "indicator_number": "4.1.1",
+    "indicator_name": "AI Tools for Research",
+    "pillar_id": "qs-research",
+    "category_id": "qs-res-practice",
+    "plain_language_description": "Does your institution provide AI tools and infrastructure (compute, platforms, data services) for researchers?",
+    "what_this_means_in_practice": "This is about whether the institution provides the tools researchers need: AI platforms, GPU compute, licensed services, and specialist support.",
+    "accurate_interpretations": [
+      "A Basic score means the institution has not yet established purposeful, coordinated capability in ai tools for research. This does not mean the institution is failing; it means this specific AI capability has not yet been systematically developed.",
+      "A Developing score means the institution is actively working on ai tools for research with identifiable plans, pilots, or initiatives, but these are not yet embedded institution-wide.",
+      "An Advanced score means ai tools for research is an established, institution-wide, continuously improving capability."
+    ],
+    "common_misinterpretations": [
+      {
+        "misinterpretation": "A Basic score means the institution is bad at ai tools for research.",
+        "correction": "Basic means this capability has not yet been systematically developed. Many institutions are Basic on most AI indicators. This is a starting point, not a judgement."
+      },
+      {
+        "misinterpretation": "An Advanced score means the institution is perfect at ai tools for research.",
+        "correction": "Advanced means the capability is embedded and improving, not that it is perfect. Advanced institutions still have room for improvement and face ongoing challenges."
+      }
+    ],
+    "vocabulary": [
+      "AI research infrastructure",
+      "GPU compute",
+      "AI in research practice",
+      "scholarship of AI",
+      "interdisciplinary AI research",
+      "AI ethics research",
+      "responsible AI research",
+      "AI impact research"
+    ],
+    "level_descriptions_plain": {
+      "basic": "Your institution has not yet established a systematic approach to ai tools for research. This might mean it has not started, or that activity is happening in an uncoordinated way without institutional backing.",
+      "developing": "Your institution is actively working on ai tools for research. Plans are in place, pilots are running, or policies are being developed. The work is real but not yet fully embedded or institution-wide.",
+      "advanced": "Your institution has established ai tools for research as an embedded, institution-wide capability. Practices are systematic, governed, measured, and continuously improving."
+    }
+  },
+  {
+    "id": "qs-res-pra-2-lang",
+    "indicator_id": "qs-res-pra-2",
+    "indicator_number": "4.1.2",
+    "indicator_name": "AI in Research Practice",
+    "pillar_id": "qs-research",
+    "category_id": "qs-res-practice",
+    "plain_language_description": "Do researchers across disciplines actually use AI in their research work?",
+    "what_this_means_in_practice": "This is about researchers actually using AI in their work, across disciplines, not just AI specialists.",
+    "accurate_interpretations": [
+      "A Basic score means the institution has not yet established purposeful, coordinated capability in ai in research practice. This does not mean the institution is failing; it means this specific AI capability has not yet been systematically developed.",
+      "A Developing score means the institution is actively working on ai in research practice with identifiable plans, pilots, or initiatives, but these are not yet embedded institution-wide.",
+      "An Advanced score means ai in research practice is an established, institution-wide, continuously improving capability."
+    ],
+    "common_misinterpretations": [
+      {
+        "misinterpretation": "A Basic score means the institution is bad at ai in research practice.",
+        "correction": "Basic means this capability has not yet been systematically developed. Many institutions are Basic on most AI indicators. This is a starting point, not a judgement."
+      },
+      {
+        "misinterpretation": "An Advanced score means the institution is perfect at ai in research practice.",
+        "correction": "Advanced means the capability is embedded and improving, not that it is perfect. Advanced institutions still have room for improvement and face ongoing challenges."
+      }
+    ],
+    "vocabulary": [
+      "AI research infrastructure",
+      "GPU compute",
+      "AI in research practice",
+      "scholarship of AI",
+      "interdisciplinary AI research",
+      "AI ethics research",
+      "responsible AI research",
+      "AI impact research"
+    ],
+    "level_descriptions_plain": {
+      "basic": "Your institution has not yet established a systematic approach to ai in research practice. This might mean it has not started, or that activity is happening in an uncoordinated way without institutional backing.",
+      "developing": "Your institution is actively working on ai in research practice. Plans are in place, pilots are running, or policies are being developed. The work is real but not yet fully embedded or institution-wide.",
+      "advanced": "Your institution has established ai in research practice as an embedded, institution-wide capability. Practices are systematic, governed, measured, and continuously improving."
+    }
+  },
+  {
+    "id": "qs-res-sch-1-lang",
+    "indicator_id": "qs-res-sch-1",
+    "indicator_number": "4.2.1",
+    "indicator_name": "Scholarship of AI",
+    "pillar_id": "qs-research",
+    "category_id": "qs-res-scholarship",
+    "plain_language_description": "Do your academics research and publish about AI's impact on education and professional practice?",
+    "what_this_means_in_practice": "This is about academic work that studies AI itself: how it affects teaching, professional practice, society, and specific disciplines.",
+    "accurate_interpretations": [
+      "A Basic score means the institution has not yet established purposeful, coordinated capability in scholarship of ai. This does not mean the institution is failing; it means this specific AI capability has not yet been systematically developed.",
+      "A Developing score means the institution is actively working on scholarship of ai with identifiable plans, pilots, or initiatives, but these are not yet embedded institution-wide.",
+      "An Advanced score means scholarship of ai is an established, institution-wide, continuously improving capability."
+    ],
+    "common_misinterpretations": [
+      {
+        "misinterpretation": "A Basic score means the institution is bad at scholarship of ai.",
+        "correction": "Basic means this capability has not yet been systematically developed. Many institutions are Basic on most AI indicators. This is a starting point, not a judgement."
+      },
+      {
+        "misinterpretation": "An Advanced score means the institution is perfect at scholarship of ai.",
+        "correction": "Advanced means the capability is embedded and improving, not that it is perfect. Advanced institutions still have room for improvement and face ongoing challenges."
+      }
+    ],
+    "vocabulary": [
+      "AI research infrastructure",
+      "GPU compute",
+      "AI in research practice",
+      "scholarship of AI",
+      "interdisciplinary AI research",
+      "AI ethics research",
+      "responsible AI research",
+      "AI impact research"
+    ],
+    "level_descriptions_plain": {
+      "basic": "Your institution has not yet established a systematic approach to scholarship of ai. This might mean it has not started, or that activity is happening in an uncoordinated way without institutional backing.",
+      "developing": "Your institution is actively working on scholarship of ai. Plans are in place, pilots are running, or policies are being developed. The work is real but not yet fully embedded or institution-wide.",
+      "advanced": "Your institution has established scholarship of ai as an embedded, institution-wide capability. Practices are systematic, governed, measured, and continuously improving."
+    }
+  },
+  {
+    "id": "qs-res-air-1-lang",
+    "indicator_id": "qs-res-air-1",
+    "indicator_number": "4.3.1",
+    "indicator_name": "Research in AI Field",
+    "pillar_id": "qs-research",
+    "category_id": "qs-res-airesearch",
+    "plain_language_description": "Does your institution conduct academic research in the field of AI itself?",
+    "what_this_means_in_practice": "This is about whether the institution has researchers working on advancing AI as a field: developing new algorithms, models, or applications.",
+    "accurate_interpretations": [
+      "A Basic score means the institution has not yet established purposeful, coordinated capability in research in ai field. This does not mean the institution is failing; it means this specific AI capability has not yet been systematically developed.",
+      "A Developing score means the institution is actively working on research in ai field with identifiable plans, pilots, or initiatives, but these are not yet embedded institution-wide.",
+      "An Advanced score means research in ai field is an established, institution-wide, continuously improving capability."
+    ],
+    "common_misinterpretations": [
+      {
+        "misinterpretation": "A Basic score means the institution is bad at research in ai field.",
+        "correction": "Basic means this capability has not yet been systematically developed. Many institutions are Basic on most AI indicators. This is a starting point, not a judgement."
+      },
+      {
+        "misinterpretation": "An Advanced score means the institution is perfect at research in ai field.",
+        "correction": "Advanced means the capability is embedded and improving, not that it is perfect. Advanced institutions still have room for improvement and face ongoing challenges."
+      }
+    ],
+    "vocabulary": [
+      "AI research infrastructure",
+      "GPU compute",
+      "AI in research practice",
+      "scholarship of AI",
+      "interdisciplinary AI research",
+      "AI ethics research",
+      "responsible AI research",
+      "AI impact research"
+    ],
+    "level_descriptions_plain": {
+      "basic": "Your institution has not yet established a systematic approach to research in ai field. This might mean it has not started, or that activity is happening in an uncoordinated way without institutional backing.",
+      "developing": "Your institution is actively working on research in ai field. Plans are in place, pilots are running, or policies are being developed. The work is real but not yet fully embedded or institution-wide.",
+      "advanced": "Your institution has established research in ai field as an embedded, institution-wide capability. Practices are systematic, governed, measured, and continuously improving."
+    }
+  },
+  {
+    "id": "qs-res-air-2-lang",
+    "indicator_id": "qs-res-air-2",
+    "indicator_number": "4.3.2",
+    "indicator_name": "AI Impact in Disciplines",
+    "pillar_id": "qs-research",
+    "category_id": "qs-res-airesearch",
+    "plain_language_description": "Does your institution research how AI is affecting specific subject areas and professions?",
+    "what_this_means_in_practice": "This is about interdisciplinary research on how AI is transforming specific fields: AI in healthcare, AI in law, AI in creative arts.",
+    "accurate_interpretations": [
+      "A Basic score means the institution has not yet established purposeful, coordinated capability in ai impact in disciplines. This does not mean the institution is failing; it means this specific AI capability has not yet been systematically developed.",
+      "A Developing score means the institution is actively working on ai impact in disciplines with identifiable plans, pilots, or initiatives, but these are not yet embedded institution-wide.",
+      "An Advanced score means ai impact in disciplines is an established, institution-wide, continuously improving capability."
+    ],
+    "common_misinterpretations": [
+      {
+        "misinterpretation": "A Basic score means the institution is bad at ai impact in disciplines.",
+        "correction": "Basic means this capability has not yet been systematically developed. Many institutions are Basic on most AI indicators. This is a starting point, not a judgement."
+      },
+      {
+        "misinterpretation": "An Advanced score means the institution is perfect at ai impact in disciplines.",
+        "correction": "Advanced means the capability is embedded and improving, not that it is perfect. Advanced institutions still have room for improvement and face ongoing challenges."
+      }
+    ],
+    "vocabulary": [
+      "AI research infrastructure",
+      "GPU compute",
+      "AI in research practice",
+      "scholarship of AI",
+      "interdisciplinary AI research",
+      "AI ethics research",
+      "responsible AI research",
+      "AI impact research"
+    ],
+    "level_descriptions_plain": {
+      "basic": "Your institution has not yet established a systematic approach to ai impact in disciplines. This might mean it has not started, or that activity is happening in an uncoordinated way without institutional backing.",
+      "developing": "Your institution is actively working on ai impact in disciplines. Plans are in place, pilots are running, or policies are being developed. The work is real but not yet fully embedded or institution-wide.",
+      "advanced": "Your institution has established ai impact in disciplines as an embedded, institution-wide capability. Practices are systematic, governed, measured, and continuously improving."
+    }
+  }
+]

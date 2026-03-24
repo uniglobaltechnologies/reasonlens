@@ -1,0 +1,213 @@
+[
+  {
+    "factor_id": "institution_type",
+    "factor_name": "Institution Type",
+    "options": [
+      "research-intensive",
+      "teaching-focused",
+      "polytechnic",
+      "specialist"
+    ],
+    "overall_impact": "HIGH",
+    "impact_by_pillar": {
+      "qs-governance": {
+        "impact": "MEDIUM",
+        "rationale": "All institution types need AI governance. Research-intensive institutions have more complex governance needs. Teaching-focused institutions may prioritise simpler, faster governance."
+      },
+      "qs-outreach": {
+        "impact": "HIGH",
+        "rationale": "Teaching-focused institutions and polytechnics depend more heavily on recruitment and student support. Research-intensive institutions may invest less in outreach AI."
+      },
+      "qs-teaching": {
+        "impact": "HIGH",
+        "rationale": "Teaching-focused institutions have the strongest mission alignment with this pillar. Research-intensive institutions may deprioritise teaching AI investment."
+      },
+      "qs-research": {
+        "impact": "VERY_HIGH",
+        "rationale": "Research-intensive institutions have fundamentally different expectations for AI research capability. Teaching-focused institutions may legitimately score lower here."
+      }
+    },
+    "calibration_notes": "When interpreting scores, acknowledge that institution type creates different baseline expectations. A teaching-focused institution scoring Basic on Research is less concerning than a research-intensive institution scoring Basic. Never suggest all institution types should aim for the same profile."
+  },
+  {
+    "factor_id": "region",
+    "factor_name": "Region",
+    "options": [
+      "UK",
+      "EU",
+      "US",
+      "Asia-Pacific",
+      "Middle-East",
+      "Africa",
+      "Latin-America"
+    ],
+    "overall_impact": "HIGH",
+    "impact_by_pillar": {
+      "qs-governance": {
+        "impact": "VERY_HIGH",
+        "rationale": "AI regulation varies dramatically by region. EU AI Act creates mandatory compliance; UK takes a pro-innovation approach; US has sectoral regulation. Governance requirements differ fundamentally."
+      },
+      "qs-outreach": {
+        "impact": "MEDIUM",
+        "rationale": "Recruitment markets and data protection regimes vary by region but the core AI outreach capabilities are similar."
+      },
+      "qs-teaching": {
+        "impact": "MEDIUM",
+        "rationale": "Quality assurance frameworks vary by region but AI teaching capabilities are broadly transferable."
+      },
+      "qs-research": {
+        "impact": "MEDIUM",
+        "rationale": "Research funding landscapes differ but AI research capability requirements are similar. Infrastructure availability may vary."
+      }
+    },
+    "calibration_notes": "Regional context is critical for the Governance pillar. An EU institution must meet EU AI Act requirements that a US institution does not face. Never compare governance scores across regions without acknowledging regulatory context. Region also affects infrastructure availability: institutions in lower-income regions may face infrastructure constraints that limit Advanced scores even with excellent strategy."
+  },
+  {
+    "factor_id": "ai_maturity_baseline",
+    "factor_name": "AI Maturity Baseline",
+    "options": [
+      "no_ai_use",
+      "experimental",
+      "operational",
+      "strategic"
+    ],
+    "overall_impact": "HIGH",
+    "impact_by_pillar": {
+      "qs-governance": {
+        "impact": "HIGH",
+        "rationale": "Institutions with operational AI but no governance are a common high-risk pattern. Governance maturity should match or exceed AI usage maturity."
+      },
+      "qs-outreach": {
+        "impact": "MEDIUM",
+        "rationale": "AI maturity baseline predicts readiness for outreach AI adoption but does not determine capability."
+      },
+      "qs-teaching": {
+        "impact": "MEDIUM",
+        "rationale": "Baseline affects how quickly teaching AI can be deployed but pedagogic readiness is an independent factor."
+      },
+      "qs-research": {
+        "impact": "HIGH",
+        "rationale": "Research AI capability builds on existing infrastructure and skills. No-AI-use institutions face a larger capability gap."
+      }
+    },
+    "calibration_notes": "The most important diagnostic pattern is governance-usage mismatch: institutions with operational AI use but Basic governance are at risk. Flag this pattern whenever detected."
+  },
+  {
+    "factor_id": "institution_size",
+    "factor_name": "Institution Size",
+    "options": [
+      "small",
+      "medium",
+      "large"
+    ],
+    "overall_impact": "MEDIUM",
+    "impact_by_pillar": {
+      "qs-governance": {
+        "impact": "MEDIUM",
+        "rationale": "Large institutions face coordination challenges. Small institutions may lack specialist capacity. Medium institutions often balance these well."
+      },
+      "qs-outreach": {
+        "impact": "MEDIUM",
+        "rationale": "Large institutions have volumes that justify AI investment. Small institutions may benefit from AI to compensate for limited staff."
+      },
+      "qs-teaching": {
+        "impact": "LOW",
+        "rationale": "Teaching AI capability is relatively size-independent. Pedagogic innovation can happen at any scale."
+      },
+      "qs-research": {
+        "impact": "MEDIUM",
+        "rationale": "Large institutions can invest in comprehensive AI research infrastructure. Small institutions must be selective."
+      }
+    },
+    "calibration_notes": "Size affects the speed and cost of implementation, not the target level. Never suggest that small institutions cannot achieve Advanced capability; they achieve it differently."
+  },
+  {
+    "factor_id": "sector_focus",
+    "factor_name": "Sector Focus",
+    "options": [
+      "STEM-heavy",
+      "balanced",
+      "humanities-heavy"
+    ],
+    "overall_impact": "MEDIUM",
+    "impact_by_pillar": {
+      "qs-governance": {
+        "impact": "LOW",
+        "rationale": "AI governance needs are similar regardless of sector focus. Humanities institutions may bring stronger ethical governance perspectives."
+      },
+      "qs-outreach": {
+        "impact": "LOW",
+        "rationale": "Outreach AI capabilities are largely sector-independent."
+      },
+      "qs-teaching": {
+        "impact": "HIGH",
+        "rationale": "AI in teaching looks fundamentally different across sectors. STEM may adopt tools faster; humanities face distinctive challenges around writing, critical analysis, and creativity."
+      },
+      "qs-research": {
+        "impact": "VERY_HIGH",
+        "rationale": "STEM institutions have natural advantages in AI research. Humanities institutions contribute differently (AI ethics, AI impact, critical AI studies). Both are valid but look different."
+      }
+    },
+    "calibration_notes": "STEM-heavy institutions will naturally score higher on Research AI and may adopt Teaching AI tools faster. Humanities-heavy institutions may score higher on AI ethics, critical perspectives, and AI scholarship. Neither pattern is inherently better. Avoid framing STEM patterns as the norm."
+  },
+  {
+    "factor_id": "respondent_role",
+    "factor_name": "Respondent Role",
+    "options": [
+      "senior_leadership",
+      "CIO",
+      "academic_leadership",
+      "research_leadership",
+      "professional_services"
+    ],
+    "overall_impact": "MEDIUM",
+    "impact_by_pillar": {
+      "qs-governance": {
+        "impact": "HIGH",
+        "rationale": "Only senior leadership and CIO have full visibility of institutional AI governance. Academic leaders see their faculty. Professional services leaders see operational governance."
+      },
+      "qs-outreach": {
+        "impact": "MEDIUM",
+        "rationale": "Professional services leaders have the best visibility of outreach AI. Academic leaders may have limited visibility of recruitment and support operations."
+      },
+      "qs-teaching": {
+        "impact": "HIGH",
+        "rationale": "Academic leaders have direct visibility of teaching practice. CIOs see infrastructure but not pedagogic reality. Senior leaders may see strategy but not classroom practice."
+      },
+      "qs-research": {
+        "impact": "HIGH",
+        "rationale": "Research leaders have the best visibility of research AI practice. CIOs see infrastructure. Other roles have limited visibility of research practice."
+      }
+    },
+    "calibration_notes": "Always note the respondent's role and flag where their visibility may be limited. A CIO assessing teaching practice, or an academic leader assessing governance, should be treated with lower confidence for those pillars. Ideal assessment combines multiple respondent perspectives."
+  },
+  {
+    "factor_id": "respondent_ai_familiarity",
+    "factor_name": "Respondent AI Familiarity",
+    "options": [
+      "low",
+      "moderate",
+      "high"
+    ],
+    "overall_impact": "MEDIUM",
+    "impact_by_pillar": {
+      "qs-governance": {
+        "impact": "LOW",
+        "rationale": "Governance capability can be assessed regardless of personal AI familiarity. The question is whether institutional structures exist."
+      },
+      "qs-outreach": {
+        "impact": "LOW",
+        "rationale": "Outreach AI capability is about institutional practice, not individual familiarity."
+      },
+      "qs-teaching": {
+        "impact": "MEDIUM",
+        "rationale": "Low-familiarity respondents may not recognise AI tools in use or understand what AI-enhanced teaching looks like. They may underestimate institutional capability."
+      },
+      "qs-research": {
+        "impact": "MEDIUM",
+        "rationale": "Low-familiarity respondents may not recognise AI in research practice. High-familiarity respondents may overestimate institutional capability based on their own advanced use."
+      }
+    },
+    "calibration_notes": "Low-familiarity respondents may underestimate capability (they do not recognise AI in use). High-familiarity respondents may overestimate institutional capability (they project their own practice). Moderate familiarity is the most reliable. Flag extreme familiarity levels as potential bias sources."
+  }
+]

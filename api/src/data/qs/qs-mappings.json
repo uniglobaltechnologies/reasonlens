@@ -1,0 +1,285 @@
+{
+  "framework_id": "ai-capability",
+  "framework_name": "QS AI Capability Framework",
+  "mapping_targets": [
+    {
+      "target_framework_id": "the-dmi",
+      "target_framework_name": "THE Digital Maturity Index",
+      "mapping_type": "AI-specific to general digital maturity",
+      "structural_comparison": "THE DMI uses a matrix of 4 pillars x 5 dimensions = 20 child dimensions with 4 maturity levels. QS uses 4 pillars > 14 categories > 33 sub-indicators with 3 capability levels. THE measures digital maturity broadly; QS measures AI capability specifically. An institution can score high on THE (good digital maturity) but low on QS (digital maturity has not been applied to AI specifically).",
+      "level_alignment": {
+        "qs_basic": "Closest to THE Incidental. Both describe ad-hoc, uncoordinated states.",
+        "qs_developing": "Spans THE Intentional and early Integrated. QS Developing covers the range from purposeful action through to partial implementation.",
+        "qs_advanced": "Closest to THE Integrated with elements of Optimised. QS does not have a separate Optimised level."
+      },
+      "mappings": [
+        {
+          "qs_element": "qs-governance",
+          "qs_element_name": "Governance & Human Commitment (Pillar 1)",
+          "the_element": "the-pg",
+          "the_element_name": "Planning & Governance (Pillar)",
+          "confidence": "moderate",
+          "direction": "bidirectional",
+          "what_transfers": "Institutional governance structures, strategic planning approaches, leadership accountability patterns.",
+          "what_does_not_transfer": "QS governance is AI-specific (AI risk, AI ethics, AI procurement). THE governance covers all digital transformation. An institution with strong digital governance may still lack AI-specific governance.",
+          "notes": "This is a partial overlap. THE PG-Strategy and PG-People map loosely to QS Leadership & Capability. THE PG-Data maps loosely to QS Code of Conduct & Privacy. THE has no equivalent to QS Regulatory & Ethical Standards at the AI-specific level."
+        },
+        {
+          "qs_element": "qs-gov-regulatory",
+          "qs_element_name": "Regulatory & Ethical Standards",
+          "the_element": "the-pg-str",
+          "the_element_name": "Planning & Governance: Strategy",
+          "confidence": "weak",
+          "direction": "unidirectional_qs_to_the",
+          "what_transfers": "A strong AI regulatory compliance function implies strategic governance capability.",
+          "what_does_not_transfer": "THE Strategy covers all digital strategy. QS Regulatory is AI-specific. Strong THE Strategy does not imply AI regulatory compliance.",
+          "notes": "QS Regulatory has no direct THE equivalent. It is an AI-specific concern that does not exist in general digital maturity."
+        },
+        {
+          "qs_element": "qs-gov-leadership",
+          "qs_element_name": "Leadership & Capability",
+          "the_element": "the-pg-ppl",
+          "the_element_name": "Planning & Governance: People & Culture",
+          "confidence": "moderate",
+          "direction": "bidirectional",
+          "what_transfers": "Leadership commitment, workforce development approaches, cultural change management.",
+          "what_does_not_transfer": "QS Leadership is AI-specific leadership and AI training. THE People covers all digital skills and culture. AI leadership is a subset.",
+          "notes": "QS Training & Development maps more closely to THE People & Culture than other QS governance categories."
+        },
+        {
+          "qs_element": "qs-teaching",
+          "qs_element_name": "Teaching, Learning & Assessment (Pillar 3)",
+          "the_element": "the-tl",
+          "the_element_name": "Teaching & Learning (Pillar)",
+          "confidence": "strong",
+          "direction": "bidirectional",
+          "what_transfers": "Teaching innovation approaches, learning analytics maturity, assessment design, student experience focus.",
+          "what_does_not_transfer": "QS is AI-specific teaching capability. THE covers all digital teaching. An institution with excellent digital teaching may not have AI-specific teaching capability.",
+          "notes": "This is the strongest pillar-level mapping. Both frameworks assess how technology is used in teaching, but at different specificity levels."
+        },
+        {
+          "qs_element": "qs-tl-curriculum",
+          "qs_element_name": "Course Design & Curriculum",
+          "the_element": "the-tl-str",
+          "the_element_name": "Teaching & Learning: Strategy",
+          "confidence": "moderate",
+          "direction": "bidirectional",
+          "what_transfers": "Strategic approach to technology in curriculum, programme review processes.",
+          "what_does_not_transfer": "QS Curriculum focuses on AI integration specifically. THE Strategy covers all digital teaching strategy.",
+          "notes": "QS AI Literacy (3.1.3) has no direct THE equivalent. It is an AI-specific competency."
+        },
+        {
+          "qs_element": "qs-tl-assessment",
+          "qs_element_name": "Assessment, Grading & Feedback",
+          "the_element": "the-tl-utl",
+          "the_element_name": "Teaching & Learning: Utilisation",
+          "confidence": "moderate",
+          "direction": "bidirectional",
+          "what_transfers": "Technology adoption in assessment, feedback mechanisms.",
+          "what_does_not_transfer": "QS Assessment addresses AI-specific concerns (bias validation, adaptive assessment, AI-resilient design) that THE Utilisation does not cover.",
+          "notes": "QS Bias Validation (3.3.3) is an AI-specific concern with no THE equivalent."
+        },
+        {
+          "qs_element": "qs-research",
+          "qs_element_name": "Research & Scholarship (Pillar 4)",
+          "the_element": "the-re",
+          "the_element_name": "Research (Pillar)",
+          "confidence": "moderate",
+          "direction": "bidirectional",
+          "what_transfers": "Research infrastructure approaches, data management maturity, research collaboration patterns.",
+          "what_does_not_transfer": "QS Research distinguishes between AI as a tool, AI as a subject of study, and AI as a research field. THE Research treats research technology holistically. QS Scholarship of AI (4.2) and AI Research (4.3) have no THE equivalent.",
+          "notes": "QS has more granular research categories. THE Research is broader but less AI-specific."
+        },
+        {
+          "qs_element": "qs-outreach",
+          "qs_element_name": "Outreach & Operational Efficiency (Pillar 2)",
+          "the_element": "the-ps",
+          "the_element_name": "Professional Services (Pillar)",
+          "confidence": "moderate",
+          "direction": "bidirectional",
+          "what_transfers": "Administrative efficiency, student support services, operational technology adoption.",
+          "what_does_not_transfer": "QS Outreach includes recruitment, external engagement, and industry partnerships. THE Professional Services covers IT, library, HR, finance, estates. The overlap is in operational efficiency and student services.",
+          "notes": "QS External Engagement (2.4) has limited THE equivalent. THE does not have an outreach or partnership dimension."
+        },
+        {
+          "qs_element": "non_mapping_1",
+          "qs_element_name": "Sustainability Impact (1.1.3)",
+          "the_element": "none",
+          "the_element_name": "No THE equivalent",
+          "confidence": "non_mapping",
+          "direction": "none",
+          "what_transfers": "Nothing. This is an AI-specific concern.",
+          "what_does_not_transfer": "AI sustainability impact is not covered in THE DMI.",
+          "notes": "AI environmental impact is a distinctive QS concern reflecting the framework's 2024 origins when AI compute costs became a sector issue."
+        },
+        {
+          "qs_element": "non_mapping_2",
+          "qs_element_name": "AI Literacy (3.1.3)",
+          "the_element": "none",
+          "the_element_name": "No THE equivalent",
+          "confidence": "non_mapping",
+          "direction": "none",
+          "what_transfers": "Nothing. AI literacy is a specific competency not covered by THE's digital skills dimension.",
+          "what_does_not_transfer": "THE People & Culture covers general digital skills but not AI literacy as a distinct competency.",
+          "notes": "AI literacy as a graduate attribute and institutional competency is a QS-specific concern."
+        }
+      ]
+    },
+    {
+      "target_framework_id": "jisc-ai-maturity",
+      "target_framework_name": "JISC AI Maturity Model",
+      "mapping_type": "AI-specific institutional to AI-specific institutional (closest structural peer)",
+      "structural_comparison": "JISC AI Maturity uses 5 progressive stages (Approaching, Experimenting, Operational, Embedded, Optimised) across themes (strategic adoption, students/learners, supporting staff, academic integrity, safe/responsible use). QS uses 4 pillars > 14 categories > 33 sub-indicators with 3 capability levels. JISC is journey-oriented (what institutions do at each stage). QS is capability-oriented (what institutions can do). Both are AI-specific institutional frameworks, making this the highest-value mapping pair.",
+      "level_alignment": {
+        "qs_basic": "Maps to JISC Stage 1 (Approaching and Understanding). Both describe early, uncoordinated states.",
+        "qs_developing": "Maps to JISC Stages 2-3 (Experimenting and Exploring / Operational). QS Developing spans a wider range than any single JISC stage.",
+        "qs_advanced": "Maps to JISC Stages 4-5 (Embedded / Optimised). QS Advanced combines what JISC splits into two stages."
+      },
+      "mappings": [
+        {
+          "qs_element": "qs-gov-regulatory",
+          "qs_element_name": "Regulatory & Ethical Standards",
+          "jisc_element": "safe_responsible_use",
+          "jisc_element_name": "Safe and Responsible Use",
+          "confidence": "strong",
+          "direction": "bidirectional",
+          "what_transfers": "Ethical AI use, regulatory compliance, responsible deployment.",
+          "what_does_not_transfer": "QS separates regulatory compliance from ethical guidelines from sustainability impact. JISC combines these under safe/responsible use.",
+          "notes": "QS is more granular in governance. JISC provides more detailed stage descriptions."
+        },
+        {
+          "qs_element": "qs-gov-risk",
+          "qs_element_name": "Governance & Risk Management",
+          "jisc_element": "strategic_adoption",
+          "jisc_element_name": "Strategic Adoption of AI",
+          "confidence": "moderate",
+          "direction": "bidirectional",
+          "what_transfers": "Governance structures, institutional decision-making, risk management.",
+          "what_does_not_transfer": "JISC Strategic Adoption is broader than QS Risk Management. QS Risk is more specific about AI risk assessment processes.",
+          "notes": "Many-to-many mapping. QS governance categories collectively map to JISC Strategic Adoption."
+        },
+        {
+          "qs_element": "qs-gov-leadership",
+          "qs_element_name": "Leadership & Capability",
+          "jisc_element": "supporting_staff",
+          "jisc_element_name": "Supporting Staff",
+          "confidence": "moderate",
+          "direction": "bidirectional",
+          "what_transfers": "Staff development, training, capability building.",
+          "what_does_not_transfer": "QS Leadership includes strategic planning and senior accountability. JISC Supporting Staff focuses on workforce development. These are related but different.",
+          "notes": "QS Leadership & Planning (1.4.1) maps to JISC Strategic Adoption. QS Training & Development (1.4.2) maps to JISC Supporting Staff."
+        },
+        {
+          "qs_element": "qs-tl-curriculum",
+          "qs_element_name": "Course Design & Curriculum",
+          "jisc_element": "students_learners",
+          "jisc_element_name": "Students and Learners",
+          "confidence": "moderate",
+          "direction": "bidirectional",
+          "what_transfers": "AI in curriculum, student AI literacy, learning experience.",
+          "what_does_not_transfer": "QS Curriculum focuses on institutional curriculum design. JISC Students/Learners focuses on learner experience and outcomes.",
+          "notes": "QS AI Literacy maps well to JISC's emphasis on student AI capability."
+        },
+        {
+          "qs_element": "qs-tl-assessment",
+          "qs_element_name": "Assessment, Grading & Feedback",
+          "jisc_element": "academic_integrity",
+          "jisc_element_name": "Maintaining Academic Integrity",
+          "confidence": "strong",
+          "direction": "bidirectional",
+          "what_transfers": "AI assessment approaches, integrity management, AI-resilient assessment design.",
+          "what_does_not_transfer": "QS Assessment is broader (includes feedback and adaptive assessment). JISC Academic Integrity is narrower but deeper on integrity specifically.",
+          "notes": "The closest category-level mapping in the two frameworks."
+        },
+        {
+          "qs_element": "qs-research",
+          "qs_element_name": "Research & Scholarship (Pillar 4)",
+          "jisc_element": "none",
+          "jisc_element_name": "No JISC equivalent",
+          "confidence": "non_mapping",
+          "direction": "none",
+          "what_transfers": "Nothing directly. JISC does not have a research pillar.",
+          "what_does_not_transfer": "QS Research & Scholarship (AI tools for research, AI scholarship, AI research) has no JISC equivalent. JISC focuses on teaching and institutional operations.",
+          "notes": "This is the most significant structural gap between the two frameworks. JISC's focus on teaching and operations means research AI capability is not assessed."
+        },
+        {
+          "qs_element": "qs-outreach",
+          "qs_element_name": "Outreach & Operational Efficiency (Pillar 2)",
+          "jisc_element": "strategic_adoption",
+          "jisc_element_name": "Strategic Adoption of AI (partial)",
+          "confidence": "weak",
+          "direction": "unidirectional_qs_to_jisc",
+          "what_transfers": "Some operational AI adoption practices.",
+          "what_does_not_transfer": "QS Outreach covers recruitment, career services, administrative efficiency, and external partnerships. JISC has no equivalent operational AI pillar.",
+          "notes": "This is a weak mapping. QS Outreach is distinctive and largely unmapped in JISC."
+        }
+      ]
+    },
+    {
+      "target_framework_id": "unesco-ai-education",
+      "target_framework_name": "UNESCO Guidance on AI and Education",
+      "mapping_type": "Institutional capability to policy guidance",
+      "structural_comparison": "UNESCO provides policy guidance for governments and institutions on AI in education. It is not a maturity or capability framework but a set of principles and recommendations. The mapping identifies where QS institutional capability aligns with UNESCO policy recommendations.",
+      "level_alignment": {
+        "note": "UNESCO does not use maturity levels. The mapping identifies alignment between QS capability areas and UNESCO policy themes."
+      },
+      "mappings": [
+        {
+          "qs_element": "qs-gov-regulatory",
+          "qs_element_name": "Regulatory & Ethical Standards",
+          "unesco_element": "ethics_transparency",
+          "unesco_element_name": "Ethics and Transparency in AI",
+          "confidence": "strong",
+          "direction": "unidirectional_unesco_to_qs",
+          "what_transfers": "UNESCO principles on ethical AI use inform what QS Regulatory capability should achieve.",
+          "what_does_not_transfer": "UNESCO provides principles. QS measures institutional capability to implement them. Knowing the principles does not constitute capability.",
+          "notes": "UNESCO's ethical AI principles provide the 'what' that QS's Regulatory category operationalises as the 'how'."
+        },
+        {
+          "qs_element": "qs-gov-conduct",
+          "qs_element_name": "Code of Conduct & Privacy",
+          "unesco_element": "data_protection",
+          "unesco_element_name": "Data Protection and Privacy",
+          "confidence": "strong",
+          "direction": "unidirectional_unesco_to_qs",
+          "what_transfers": "UNESCO data protection principles directly inform QS data protection capability requirements.",
+          "what_does_not_transfer": "UNESCO is guidance. QS is capability measurement.",
+          "notes": "Strong conceptual alignment."
+        },
+        {
+          "qs_element": "qs-tl-curriculum",
+          "qs_element_name": "Course Design & Curriculum",
+          "unesco_element": "ai_competencies",
+          "unesco_element_name": "AI Competencies for Students and Teachers",
+          "confidence": "strong",
+          "direction": "unidirectional_unesco_to_qs",
+          "what_transfers": "UNESCO's recommendations on AI literacy and competencies inform QS curriculum expectations.",
+          "what_does_not_transfer": "UNESCO defines what competencies are needed. QS measures whether the institution builds them.",
+          "notes": "UNESCO AI Competency Framework (2024) is the most specific related document."
+        },
+        {
+          "qs_element": "qs-tl-personalised",
+          "qs_element_name": "Personalised Learning & Support",
+          "unesco_element": "inclusive_equitable",
+          "unesco_element_name": "Inclusive and Equitable AI in Education",
+          "confidence": "moderate",
+          "direction": "unidirectional_unesco_to_qs",
+          "what_transfers": "UNESCO emphasis on equity in AI education informs how QS personalisation should be evaluated (not just personalised, but equitably personalised).",
+          "what_does_not_transfer": "UNESCO's equity focus is broader than educational personalisation.",
+          "notes": "QS Bias Validation (3.3.3) directly reflects UNESCO equity principles."
+        },
+        {
+          "qs_element": "qs-gov-reg-3",
+          "qs_element_name": "Sustainability Impact",
+          "unesco_element": "sustainable_development",
+          "unesco_element_name": "AI for Sustainable Development",
+          "confidence": "moderate",
+          "direction": "bidirectional",
+          "what_transfers": "UNESCO's emphasis on AI for sustainable development aligns with QS's sustainability impact indicator.",
+          "what_does_not_transfer": "UNESCO focuses on AI as a tool for SDGs. QS focuses on the environmental sustainability of AI itself.",
+          "notes": "Related but different angles on AI and sustainability."
+        }
+      ]
+    }
+  ]
+}
