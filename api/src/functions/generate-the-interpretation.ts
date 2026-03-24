@@ -10,23 +10,60 @@ import { corsHeaders, handleCors } from "../middleware/cors";
 import { scoreSession, ScenarioAnswer, DimensionResult } from "../shared/scenario-scoring";
 import { generateContent } from "../shared/ai";
 import {
-  buildExecutiveSummaryMethodology,
-  buildPillarAnalysisMethodology,
-  buildRecommendationsMethodology,
+  buildExecutiveSummaryMethodology as buildTheExecMethodology,
+  buildPillarAnalysisMethodology as buildThePillarMethodology,
+  buildRecommendationsMethodology as buildTheRecsMethodology,
 } from "../shared/the-interpretive-methodology";
+import {
+  buildQSExecutiveSummaryMethodology,
+  buildQSPillarAnalysisMethodology,
+  buildQSRecommendationsMethodology,
+} from "../shared/qs-interpretive-methodology";
 
-// ── Pillar mapping (dimension_id prefix → pillar name) ──────────────
+// ── Framework-aware pillar mapping ──────────────────────────────────
 
-const PILLAR_MAP: Record<string, string> = {
-  "the-tl": "Teaching & Learning",
-  "the-re": "Research",
-  "the-ps": "Professional Services",
-  "the-pg": "Planning & Governance",
+const PILLAR_MAPS: Record<string, Record<string, string>> = {
+  "maturity-the": {
+    "the-tl": "Teaching & Learning",
+    "the-re": "Research",
+    "the-ps": "Professional Services",
+    "the-pg": "Planning & Governance",
+  },
+  "ai-capability": {
+    "qs-gov": "Governance & Human Commitment",
+    "qs-out": "Outreach & Operational Efficiency",
+    "qs-tl": "Teaching, Learning & Assessment",
+    "qs-res": "Research & Scholarship",
+  },
 };
 
-function derivePillar(dimensionId: string): string {
+// Pillar order for DB storage (mapped to pillar_tl, pillar_re, pillar_ps, pillar_pg columns)
+const PILLAR_DB_ORDER: Record<string, string[]> = {
+  "maturity-the": ["Teaching & Learning", "Research", "Professional Services", "Planning & Governance"],
+  "ai-capability": ["Teaching, Learning & Assessment", "Research & Scholarship", "Outreach & Operational Efficiency", "Governance & Human Commitment"],
+};
+
+const SUPPORTED_FRAMEWORKS = ["maturity-the", "ai-capability"];
+
+function derivePillar(dimensionId: string, frameworkId: string): string {
+  const map = PILLAR_MAPS[frameworkId] || PILLAR_MAPS["maturity-the"];
   const prefix = dimensionId.split("-").slice(0, 2).join("-");
-  return PILLAR_MAP[prefix] ?? "Unknown";
+  return map[prefix] ?? "Unknown";
+}
+
+function getMethodologyBuilders(frameworkId: string) {
+  if (frameworkId === "ai-capability") {
+    return {
+      exec: buildQSExecutiveSummaryMethodology,
+      pillar: buildQSPillarAnalysisMethodology,
+      recs: buildQSRecommendationsMethodology,
+    };
+  }
+  return {
+    exec: buildTheExecMethodology,
+    pillar: buildThePillarMethodology,
+    recs: buildTheRecsMethodology,
+  };
 }
 
 // ── Data types ──────────────────────────────────────────────────────
@@ -39,6 +76,10 @@ interface InstitutionalContext {
   respondent_role?: string;
   respondent_institutional_visibility?: string;
   digital_infrastructure_baseline?: string;
+  // QS-specific
+  ai_maturity_baseline?: string;
+  sector_focus?: string;
+  respondent_ai_familiarity?: string;
 }
 
 interface ResponseDetail {
@@ -64,15 +105,20 @@ interface OpenEndedContext {
 
 // ── Formatting helpers ──────────────────────────────────────────────
 
-function formatContext(ctx: InstitutionalContext): string {
-  return `INSTITUTIONAL CONTEXT:
-- Institution type: ${ctx.institution_type || "Not specified"}
-- Institution size: ${ctx.institution_size || "Not specified"}
-- Region: ${ctx.region || "Not specified"}
-- Funding model: ${ctx.funding_model || "Not specified"}
-- Respondent role: ${ctx.respondent_role || "Not specified"}
-- Respondent visibility: ${ctx.respondent_institutional_visibility || "Not specified"}
-- Digital infrastructure baseline: ${ctx.digital_infrastructure_baseline || "Not specified"}`;
+function formatContext(ctx: InstitutionalContext, frameworkId: string = "maturity-the"): string {
+  let lines = `INSTITUTIONAL CONTEXT:\n- Institution type: ${ctx.institution_type || "Not specified"}\n- Region: ${ctx.region || "Not specified"}\n- Respondent role: ${ctx.respondent_role || "Not specified"}`;
+
+  if (frameworkId === "ai-capability") {
+    lines += `\n- AI maturity baseline: ${ctx.ai_maturity_baseline || "Not specified"}`;
+    lines += `\n- Sector focus: ${ctx.sector_focus || "Not specified"}`;
+    lines += `\n- Respondent AI familiarity: ${ctx.respondent_ai_familiarity || "Not specified"}`;
+  } else {
+    lines += `\n- Institution size: ${ctx.institution_size || "Not specified"}`;
+    lines += `\n- Funding model: ${ctx.funding_model || "Not specified"}`;
+    lines += `\n- Respondent visibility: ${ctx.respondent_institutional_visibility || "Not specified"}`;
+    lines += `\n- Digital infrastructure baseline: ${ctx.digital_infrastructure_baseline || "Not specified"}`;
+  }
+  return lines;
 }
 
 function formatDimensionTable(dimensions: Array<DimensionResult & { pillar: string }>): string {
@@ -234,7 +280,7 @@ Keep the entire section to 500-700 words. Every recommendation must be traceable
 
 // ── Scored data loader (reused by GET and POST) ─────────────────────
 
-async function loadScoredData(sessionId: string, userId: string) {
+async function loadScoredData(sessionId: string, userId: string, frameworkId: string = "maturity-the") {
   const rawAnswers = await query<{
     scenario_id: string; mapped_level: string; dimension_id: string;
     dimension_name: string; target_boundary: string; maps_to_level_order: number;
@@ -252,11 +298,12 @@ async function loadScoredData(sessionId: string, userId: string) {
     dimension_name: a.dimension_name, mapped_level: a.mapped_level,
     level_order: a.maps_to_level_order, target_boundary: a.target_boundary,
   }));
-  const scoredResults = scoreSession(scoringInput, { frameworkId: "maturity-the" });
+  const scoredResults = scoreSession(scoringInput, { frameworkId });
   const institutionalContext = await queryOne<InstitutionalContext>(
     `SELECT institution_type, institution_size, region, funding_model,
             respondent_role, respondent_institutional_visibility,
-            digital_infrastructure_baseline
+            digital_infrastructure_baseline, ai_maturity_baseline,
+            sector_focus, respondent_ai_familiarity
      FROM user_assessment_context WHERE user_id = $1`,
     [userId]
   ) ?? {};
@@ -302,8 +349,12 @@ async function handler(
       if (!report) {
         return { status: 404, headers: { ...corsHeaders(req), "Content-Type": "application/json" }, body: JSON.stringify({ error: "No report found" }) };
       }
+      // Determine framework from session
+      const sessionForFw = await queryOne<{ framework_id: string }>(
+        "SELECT framework_id FROM scenario_sessions WHERE id = $1", [sessionId]);
+      const fwId = sessionForFw?.framework_id || "maturity-the";
       // Also load scored results + context for docx generation
-      const { scoredResults, institutionalContext } = await loadScoredData(sessionId, user.userId);
+      const { scoredResults, institutionalContext } = await loadScoredData(sessionId, user.userId, fwId);
       return {
         status: 200,
         headers: { ...corsHeaders(req), "Content-Type": "application/json" },
@@ -349,7 +400,10 @@ async function handler(
         [body.session_id]
       );
       if (existing) {
-        const { scoredResults, institutionalContext } = await loadScoredData(body.session_id, user.userId);
+        const cachedSession = await queryOne<{ framework_id: string }>(
+          "SELECT framework_id FROM scenario_sessions WHERE id = $1", [body.session_id]);
+        const { scoredResults, institutionalContext } = await loadScoredData(
+          body.session_id, user.userId, cachedSession?.framework_id || "maturity-the");
         return {
           status: 200,
           headers: { ...corsHeaders(req), "Content-Type": "application/json" },
@@ -376,25 +430,27 @@ async function handler(
       }
     }
 
-    // Verify session
+    // Verify session (supports THE DMI and QS AI Capability)
     const session = await queryOne<{ user_id: string; framework_id: string; status: string }>(
       "SELECT user_id, framework_id, status FROM scenario_sessions WHERE id = $1",
       [body.session_id]
     );
-    if (!session || session.status !== "completed" || session.framework_id !== "maturity-the") {
-      return { status: 404, headers: { ...corsHeaders(req), "Content-Type": "application/json" }, body: JSON.stringify({ error: "Completed THE DMI session not found" }) };
+    if (!session || session.status !== "completed" || !SUPPORTED_FRAMEWORKS.includes(session.framework_id)) {
+      return { status: 404, headers: { ...corsHeaders(req), "Content-Type": "application/json" }, body: JSON.stringify({ error: "Completed assessment session not found" }) };
     }
+    const frameworkId = session.framework_id;
     if (session.user_id !== user.userId) {
       return { status: 403, headers: { ...corsHeaders(req), "Content-Type": "application/json" }, body: JSON.stringify({ error: "Session does not belong to you" }) };
     }
 
     // ── Load all data ───────────────────────────────────────────────
 
-    // 1. Institutional context
+    // 1. Institutional context (includes QS fields)
     const ctx = await queryOne<InstitutionalContext>(
       `SELECT institution_type, institution_size, region, funding_model,
               respondent_role, respondent_institutional_visibility,
-              digital_infrastructure_baseline
+              digital_infrastructure_baseline, ai_maturity_baseline,
+              sector_focus, respondent_ai_familiarity
        FROM user_assessment_context WHERE user_id = $1`,
       [user.userId]
     ) ?? {};
@@ -427,10 +483,10 @@ async function handler(
       target_boundary: a.target_boundary,
     }));
 
-    const scored = scoreSession(scoringInput, { frameworkId: "maturity-the" });
+    const scored = scoreSession(scoringInput, { frameworkId });
     const dimensionsWithPillar = scored.map(d => ({
       ...d,
-      pillar: derivePillar(d.dimension_id),
+      pillar: derivePillar(d.dimension_id, frameworkId),
     }));
 
     // 3. Per-scenario response detail with nuisance flags
@@ -459,7 +515,7 @@ async function handler(
 
     const responses: ResponseDetail[] = responseDetails.map(r => ({
       scenario_id: r.scenario_id,
-      pillar: derivePillar(r.dimension_id),
+      pillar: derivePillar(r.dimension_id, frameworkId),
       dimension: r.dimension_name,
       boundary: r.target_boundary,
       mapped_level: r.mapped_level,
@@ -472,9 +528,9 @@ async function handler(
     // 4. Triage comparison
     const triage = await queryOne<{ pillar_signals: Record<string, string> }>(
       `SELECT pillar_signals FROM triage_results
-       WHERE user_id = $1 AND framework_id = 'maturity-the'
+       WHERE user_id = $1 AND framework_id = $2
        ORDER BY created_at DESC LIMIT 1`,
-      [user.userId]
+      [user.userId, frameworkId]
     );
 
     // 5. Open-ended responses
@@ -487,7 +543,8 @@ async function handler(
 
     // ── Build data blocks ───────────────────────────────────────────
 
-    const contextBlock = formatContext(ctx);
+    const methodology = getMethodologyBuilders(frameworkId);
+    const contextBlock = formatContext(ctx, frameworkId);
     const dimTable = formatDimensionTable(dimensionsWithPillar);
     const nuisanceSummary = formatNuisanceSummary(responses);
     const triageBlock = formatTriageComparison(triage?.pillar_signals ?? null, dimensionsWithPillar);
@@ -499,7 +556,7 @@ async function handler(
 
     // Stage 1: Executive summary
     const execSystemPrompt = [
-      buildExecutiveSummaryMethodology(),
+      methodology.exec(),
       contextBlock,
       dimTable,
       nuisanceSummary,
@@ -512,14 +569,14 @@ async function handler(
       { timeoutMs: CALL_TIMEOUT }
     );
 
-    // Stage 2: Four pillar analyses in parallel
-    const pillarCodes = ["Teaching & Learning", "Research", "Professional Services", "Planning & Governance"] as const;
+    // Stage 2: Four pillar analyses in parallel (framework-aware pillar names)
+    const pillarNames = PILLAR_DB_ORDER[frameworkId] || PILLAR_DB_ORDER["maturity-the"];
 
     const [tl, re, ps, pg] = await Promise.all(
-      pillarCodes.map(pillar => {
+      pillarNames.map(pillar => {
         const pillarDims = dimensionsWithPillar.filter(d => d.pillar === pillar);
         const systemPrompt = [
-          buildPillarAnalysisMethodology(),
+          methodology.pillar(),
           contextBlock,
           `PILLAR BEING ANALYSED: ${pillar}\n\n` + formatDimensionTable(pillarDims),
           formatResponseDetail(responses, pillar),
@@ -535,7 +592,7 @@ async function handler(
 
     // Stage 3: Strategic recommendations
     const recsSystemPrompt = [
-      buildRecommendationsMethodology(),
+      methodology.recs(),
       contextBlock,
       dimTable,
       nuisanceSummary,
