@@ -252,7 +252,19 @@ async function handler(
       if (!sessionId) {
         return { status: 400, headers: { ...corsHeaders(req), "Content-Type": "application/json" }, body: JSON.stringify({ error: "session_id required" }) };
       }
-      const report = await queryOne(
+      const report = await queryOne<{
+        id: string;
+        executive_summary: string;
+        pillar_tl: string;
+        pillar_re: string;
+        pillar_ps: string;
+        pillar_pg: string;
+        recommendations: string;
+        generation_time_ms: number;
+        methodology_version: string;
+        model_used: string;
+        created_at: string;
+      }>(
         "SELECT * FROM interpretive_reports WHERE session_id = $1",
         [sessionId]
       );
@@ -262,7 +274,23 @@ async function handler(
       return {
         status: 200,
         headers: { ...corsHeaders(req), "Content-Type": "application/json" },
-        body: JSON.stringify(report),
+        body: JSON.stringify({
+          interpretation_id: report.id,
+          sections: {
+            executive_summary: report.executive_summary,
+            pillar_teaching_learning: report.pillar_tl,
+            pillar_research: report.pillar_re,
+            pillar_professional_services: report.pillar_ps,
+            pillar_planning_governance: report.pillar_pg,
+            recommendations: report.recommendations,
+          },
+          metadata: {
+            generated_at: report.created_at,
+            model_used: report.model_used,
+            methodology_version: report.methodology_version,
+            total_generation_time_ms: report.generation_time_ms,
+          },
+        }),
       };
     }
 
@@ -277,7 +305,11 @@ async function handler(
 
     // Check for existing report (cache hit unless regenerating)
     if (!body.regenerate) {
-      const existing = await queryOne(
+      const existing = await queryOne<{
+        id: string; executive_summary: string; pillar_tl: string; pillar_re: string;
+        pillar_ps: string; pillar_pg: string; recommendations: string;
+        generation_time_ms: number; methodology_version: string; model_used: string; created_at: string;
+      }>(
         "SELECT * FROM interpretive_reports WHERE session_id = $1",
         [body.session_id]
       );
@@ -285,7 +317,23 @@ async function handler(
         return {
           status: 200,
           headers: { ...corsHeaders(req), "Content-Type": "application/json" },
-          body: JSON.stringify(existing),
+          body: JSON.stringify({
+            interpretation_id: existing.id,
+            sections: {
+              executive_summary: existing.executive_summary,
+              pillar_teaching_learning: existing.pillar_tl,
+              pillar_research: existing.pillar_re,
+              pillar_professional_services: existing.pillar_ps,
+              pillar_planning_governance: existing.pillar_pg,
+              recommendations: existing.recommendations,
+            },
+            metadata: {
+              generated_at: existing.created_at,
+              model_used: existing.model_used,
+              methodology_version: existing.methodology_version,
+              total_generation_time_ms: existing.generation_time_ms,
+            },
+          }),
         };
       }
     }

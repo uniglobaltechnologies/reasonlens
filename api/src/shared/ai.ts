@@ -49,21 +49,15 @@ export async function generateContent(
     model: getDeployment(),
     messages: buildMessages(systemPrompt, messages),
   };
+  const call = getClient().chat.completions.create(params)
+    .then(r => r.choices[0]?.message?.content || "");
   if (options?.timeoutMs) {
-    const controller = new AbortController();
-    const timer = setTimeout(() => controller.abort(), options.timeoutMs);
-    try {
-      const result = await getClient().chat.completions.create({
-        ...params,
-        signal: controller.signal,
-      });
-      return result.choices[0]?.message?.content || "";
-    } finally {
-      clearTimeout(timer);
-    }
+    const timeout = new Promise<never>((_, reject) =>
+      setTimeout(() => reject(new Error("LLM call timed out")), options.timeoutMs)
+    );
+    return Promise.race([call, timeout]);
   }
-  const result = await getClient().chat.completions.create(params);
-  return result.choices[0]?.message?.content || "";
+  return call;
 }
 
 // Streaming generation — returns an async iterable of text chunks
