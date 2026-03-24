@@ -410,7 +410,46 @@ function ResultsView({
       </div>
 
       {frameworkId === "maturity-the" ? (
-        <MaturityHeatmap results={results} />
+        <>
+          <MaturityHeatmap results={results} />
+          <button
+            onClick={handleDownloadReport}
+            disabled={downloading}
+            className="mt-4 mb-8 w-full py-3 rounded-lg border border-border text-foreground font-medium hover:bg-accent transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
+          >
+            {downloading ? (
+              <>
+                <Loader2 className="h-4 w-4 animate-spin" />
+                Generating report...
+              </>
+            ) : (
+              <>
+                <Download className="h-4 w-4" />
+                Download Assessment Report (.docx)
+              </>
+            )}
+          </button>
+          {downloadError && (
+            <p className="-mt-6 mb-8 text-sm text-destructive text-center">{downloadError}</p>
+          )}
+          {isAuthenticated() ? (
+            <Link
+              to={`/the-dmi/interpretation/${sessionId}`}
+              className="mb-8 w-full py-3 rounded-lg bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors flex items-center justify-center gap-2"
+            >
+              <span className="text-base">✦</span>
+              Get Your AI-Powered Interpretive Report
+            </Link>
+          ) : (
+            <Link
+              to={`/auth?return=/the-dmi/interpretation/${sessionId}`}
+              className="mb-8 w-full py-3 rounded-lg bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors flex items-center justify-center gap-2"
+            >
+              <span className="text-base">✦</span>
+              Sign in to unlock your Interpretive Report
+            </Link>
+          )}
+        </>
       ) : (
         (() => {
           const fw = getFrameworkById(frameworkId);
@@ -473,30 +512,6 @@ function ResultsView({
         </Link>
       </div>
 
-      {frameworkId === "maturity-the" && (
-        <>
-          <button
-            onClick={handleDownloadReport}
-            disabled={downloading}
-            className="mt-4 w-full py-3 rounded-lg border border-border text-foreground font-medium hover:bg-accent transition-colors disabled:opacity-50 flex items-center justify-center gap-2"
-          >
-            {downloading ? (
-              <>
-                <Loader2 className="h-4 w-4 animate-spin" />
-                Generating report...
-              </>
-            ) : (
-              <>
-                <Download className="h-4 w-4" />
-                Download Assessment Report (.docx)
-              </>
-            )}
-          </button>
-          {downloadError && (
-            <p className="mt-2 text-sm text-destructive text-center">{downloadError}</p>
-          )}
-        </>
-      )}
 
       <div className="mt-8">
         <SourceAttribution attribution={frameworkId === "teacher-competency" ? {

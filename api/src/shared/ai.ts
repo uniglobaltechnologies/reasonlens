@@ -42,12 +42,27 @@ function buildMessages(
 // Non-streaming generation
 export async function generateContent(
   systemPrompt: string,
-  messages: Array<{ role: string; content: string }>
+  messages: Array<{ role: string; content: string }>,
+  options?: { timeoutMs?: number }
 ): Promise<string> {
-  const result = await getClient().chat.completions.create({
+  const params: any = {
     model: getDeployment(),
     messages: buildMessages(systemPrompt, messages),
-  });
+  };
+  if (options?.timeoutMs) {
+    const controller = new AbortController();
+    const timer = setTimeout(() => controller.abort(), options.timeoutMs);
+    try {
+      const result = await getClient().chat.completions.create({
+        ...params,
+        signal: controller.signal,
+      });
+      return result.choices[0]?.message?.content || "";
+    } finally {
+      clearTimeout(timer);
+    }
+  }
+  const result = await getClient().chat.completions.create(params);
   return result.choices[0]?.message?.content || "";
 }
 

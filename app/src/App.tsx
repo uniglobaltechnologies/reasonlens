@@ -19,6 +19,7 @@ const MyProgress = lazy(() => import("./pages/MyProgress"));
 const Portfolio = lazy(() => import("./pages/Portfolio"));
 const Badges = lazy(() => import("./pages/Badges"));
 const Auth = lazy(() => import("./pages/Auth"));
+const TheInterpretation = lazy(() => import("./pages/TheInterpretation"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
           <Route path="/" element={<Hub />} />
           {/* THE DMI dedicated entry */}
           <Route path="/the-dmi" element={<Navigate to="/assess/scenario/maturity-the" replace />} />
+          <Route path="/the-dmi/interpretation/:sessionId" element={<TheInterpretation />} />
           {/* Audit */}
           <Route path="/audit" element={<Audit />} />
           <Route path="/audit/runs" element={<AuditRuns />} />
