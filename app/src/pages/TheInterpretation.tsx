@@ -9,6 +9,7 @@ import {
   ChevronUp,
   RefreshCw,
   Sparkles,
+  Download,
 } from "lucide-react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
@@ -33,6 +34,23 @@ interface InterpretiveReport {
     methodology_version: string;
     total_generation_time_ms: number;
   };
+  scored_results?: DimensionResult[];
+  context?: Record<string, string | null>;
+}
+
+interface DimensionResult {
+  dimension_id: string;
+  dimension_name: string;
+  assigned_level: string;
+  assigned_level_order: number;
+  confidence: "high" | "medium" | "low";
+  answer_count: number;
+  answer_distribution: Record<string, number>;
+}
+
+interface SessionResults {
+  results: DimensionResult[];
+  framework_id: string;
 }
 
 interface OpenEndedAnswers {
@@ -101,6 +119,10 @@ export default function TheInterpretation() {
   });
   const [genStep, setGenStep] = useState(0);
   const [expandedPillar, setExpandedPillar] = useState<string | null>(null);
+  const [downloading, setDownloading] = useState(false);
+  const [downloadError, setDownloadError] = useState("");
+  const [scoredResults, setScoredResults] = useState<DimensionResult[]>([]);
+  const [userContext, setUserContext] = useState<Record<string, string | null>>({});
 
   useEffect(() => {
     if (!isAuthenticated()) {
@@ -111,6 +133,11 @@ export default function TheInterpretation() {
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   async function checkExistingReport() {
+    // Load user context for docx generation
+    try {
+      const ctx = await apiGet<Record<string, string | null>>("/user-assessment-context");
+      if (ctx && !("error" in ctx)) setUserContext(ctx);
+    } catch { /* no context */ }
     try {
       const existing = await apiGet<InterpretiveReport>(
         `/generate-the-interpretation?session_id=${sessionId}`
@@ -191,6 +218,48 @@ export default function TheInterpretation() {
         ? prev.constraints.filter(c => c !== value)
         : [...prev.constraints, value],
     }));
+  }
+
+  async function handleDownloadReport() {
+    if (!report) return;
+    setDownloading(true);
+    setDownloadError("");
+    try {
+      const { generateTheReport } = await import("@/lib/generate-the-report");
+      const results = report.scored_results ?? scoredResults;
+      const ctx = report.context ?? userContext;
+      await generateTheReport({
+        results,
+        frameworkId: "maturity-the",
+        sessionId: sessionId!,
+        completedAt: new Date(report.metadata.generated_at),
+        context: {
+          institution_size: ctx.institution_size,
+          institution_type: ctx.institution_type,
+          region: ctx.region,
+          funding_model: ctx.funding_model,
+          respondent_role: ctx.respondent_role,
+          respondent_institutional_visibility: ctx.respondent_institutional_visibility,
+          digital_infrastructure_baseline: ctx.digital_infrastructure_baseline,
+        },
+        scenarioCount: results.reduce((sum, r) => sum + r.answer_count, 0),
+        interpretiveReport: {
+          executive_summary: report.sections.executive_summary,
+          pillar_teaching_learning: report.sections.pillar_teaching_learning,
+          pillar_research: report.sections.pillar_research,
+          pillar_professional_services: report.sections.pillar_professional_services,
+          pillar_planning_governance: report.sections.pillar_planning_governance,
+          recommendations: report.sections.recommendations,
+          methodology_version: report.metadata.methodology_version,
+          generated_at: report.metadata.generated_at,
+        },
+      });
+    } catch (err: any) {
+      console.error("Failed to generate report:", err);
+      setDownloadError("Failed to generate report. Try refreshing the page.");
+    } finally {
+      setDownloading(false);
+    }
   }
 
   // ── Error state ────────────────────────────────────────────────────
@@ -492,17 +561,35 @@ export default function TheInterpretation() {
             </section>
 
             {/* Actions */}
-            <div className="flex flex-col sm:flex-row gap-3 mb-8">
+            <div className="flex flex-col sm:flex-row gap-3 mb-4">
               <button
-                onClick={() => {
-                  setPhase("questions");
-                }}
+                onClick={handleDownloadReport}
+                disabled={downloading}
+                className="flex items-center justify-center gap-2 flex-1 py-3 rounded-lg bg-primary text-primary-foreground font-medium hover:bg-primary/90 transition-colors disabled:opacity-50"
+              >
+                {downloading ? (
+                  <>
+                    <Loader2 className="h-4 w-4 animate-spin" />
+                    Generating .docx...
+                  </>
+                ) : (
+                  <>
+                    <Download className="h-4 w-4" />
+                    Download Full Report (.docx)
+                  </>
+                )}
+              </button>
+              <button
+                onClick={() => setPhase("questions")}
                 className="flex items-center justify-center gap-2 flex-1 py-3 rounded-lg border border-border text-foreground font-medium hover:bg-accent transition-colors"
               >
                 <RefreshCw className="h-4 w-4" />
                 Update context & regenerate
               </button>
             </div>
+            {downloadError && (
+              <p className="mb-8 text-sm text-destructive text-center">{downloadError}</p>
+            )}
 
             {/* Metadata */}
             <div className="text-xs text-muted-foreground border-t border-border pt-4">

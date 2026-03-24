@@ -232,6 +232,37 @@ Where confidence is low on key dimensions, what should the institution do to val
 
 Keep the entire section to 500-700 words. Every recommendation must be traceable to assessment evidence. No generic best practice.`;
 
+// ── Scored data loader (reused by GET and POST) ─────────────────────
+
+async function loadScoredData(sessionId: string, userId: string) {
+  const rawAnswers = await query<{
+    scenario_id: string; mapped_level: string; dimension_id: string;
+    dimension_name: string; target_boundary: string; maps_to_level_order: number;
+  }>(
+    `SELECT sa.scenario_id, sa.mapped_level, sb.dimension_id, sb.dimension_name,
+            sb.target_boundary, sr.maps_to_level_order
+     FROM scenario_answers sa
+     JOIN scenario_bank sb ON sb.scenario_id = sa.scenario_id
+     JOIN scenario_responses sr ON sr.id = sa.response_id
+     WHERE sa.session_id = $1`,
+    [sessionId]
+  );
+  const scoringInput: ScenarioAnswer[] = rawAnswers.map(a => ({
+    scenario_id: a.scenario_id, dimension_id: a.dimension_id,
+    dimension_name: a.dimension_name, mapped_level: a.mapped_level,
+    level_order: a.maps_to_level_order, target_boundary: a.target_boundary,
+  }));
+  const scoredResults = scoreSession(scoringInput, { frameworkId: "maturity-the" });
+  const institutionalContext = await queryOne<InstitutionalContext>(
+    `SELECT institution_type, institution_size, region, funding_model,
+            respondent_role, respondent_institutional_visibility,
+            digital_infrastructure_baseline
+     FROM user_assessment_context WHERE user_id = $1`,
+    [userId]
+  ) ?? {};
+  return { scoredResults, institutionalContext };
+}
+
 // ── Handler ─────────────────────────────────────────────────────────
 
 const CALL_TIMEOUT = 45_000; // 45s per LLM call
@@ -271,6 +302,8 @@ async function handler(
       if (!report) {
         return { status: 404, headers: { ...corsHeaders(req), "Content-Type": "application/json" }, body: JSON.stringify({ error: "No report found" }) };
       }
+      // Also load scored results + context for docx generation
+      const { scoredResults, institutionalContext } = await loadScoredData(sessionId, user.userId);
       return {
         status: 200,
         headers: { ...corsHeaders(req), "Content-Type": "application/json" },
@@ -290,6 +323,8 @@ async function handler(
             methodology_version: report.methodology_version,
             total_generation_time_ms: report.generation_time_ms,
           },
+          scored_results: scoredResults,
+          context: institutionalContext,
         }),
       };
     }
@@ -314,6 +349,7 @@ async function handler(
         [body.session_id]
       );
       if (existing) {
+        const { scoredResults, institutionalContext } = await loadScoredData(body.session_id, user.userId);
         return {
           status: 200,
           headers: { ...corsHeaders(req), "Content-Type": "application/json" },
@@ -333,6 +369,8 @@ async function handler(
               methodology_version: existing.methodology_version,
               total_generation_time_ms: existing.generation_time_ms,
             },
+            scored_results: scoredResults,
+            context: institutionalContext,
           }),
         };
       }
@@ -549,6 +587,8 @@ async function handler(
           methodology_version: "1.0",
           total_generation_time_ms: totalTime,
         },
+        scored_results: dimensionsWithPillar,
+        context: ctx,
       }),
     };
   } catch (err) {
