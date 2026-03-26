@@ -1,0 +1,139 @@
+{
+  "framework_id": "ailit",
+  "framework_name": "AI Literacy Framework (AILit)",
+  "research_basis": {
+    "generated_at": "2026-03-26",
+    "authoring_method": "Original synthesis using the user brief and the THE DMI implementation reference as the structural benchmark.",
+    "licence_handling": "CC BY-SA 4.0"
+  },
+  "factors": [
+    {
+      "factor": "role",
+      "options": [
+        "educator",
+        "student",
+        "researcher",
+        "professional_services"
+      ],
+      "overall_effect": "role changes which examples, evidence, and calibration rules are most appropriate without changing the core construct.",
+      "dimension_impacts": {
+        "ailit-fundamentals": {
+          "impact": "high",
+          "how_it_changes_observation": "AI Fundamentals shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "ailit-application": {
+          "impact": "high",
+          "how_it_changes_observation": "AI Application shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "ailit-ethics": {
+          "impact": "high",
+          "how_it_changes_observation": "AI Ethics & Society shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "ailit-futures": {
+          "impact": "high",
+          "how_it_changes_observation": "AI Futures shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        }
+      }
+    },
+    {
+      "factor": "subject_area",
+      "options": [
+        "STEM",
+        "humanities",
+        "social_sciences",
+        "health",
+        "arts"
+      ],
+      "overall_effect": "subject_area changes which examples, evidence, and calibration rules are most appropriate without changing the core construct.",
+      "dimension_impacts": {
+        "ailit-fundamentals": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI Fundamentals vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "ailit-application": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI Application vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "ailit-ethics": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI Ethics & Society vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "ailit-futures": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI Futures vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        }
+      }
+    },
+    {
+      "factor": "prior_ai_experience",
+      "options": [
+        "none",
+        "casual",
+        "regular",
+        "technical"
+      ],
+      "overall_effect": "prior_ai_experience changes which examples, evidence, and calibration rules are most appropriate without changing the core construct.",
+      "dimension_impacts": {
+        "ailit-fundamentals": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in AI Fundamentals, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "ailit-application": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in AI Application, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "ailit-ethics": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in AI Ethics & Society, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "ailit-futures": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in AI Futures, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        }
+      }
+    },
+    {
+      "factor": "institution_level",
+      "options": [
+        "secondary",
+        "FE",
+        "HE"
+      ],
+      "overall_effect": "institution_level changes which examples, evidence, and calibration rules are most appropriate without changing the core construct.",
+      "dimension_impacts": {
+        "ailit-fundamentals": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of AI Fundamentals differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "ailit-application": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of AI Application differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "ailit-ethics": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of AI Ethics & Society differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "ailit-futures": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of AI Futures differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        }
+      }
+    }
+  ]
+}

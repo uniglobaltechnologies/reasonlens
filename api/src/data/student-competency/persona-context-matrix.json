@@ -1,0 +1,288 @@
+{
+  "framework_id": "unesco-student-ai-competency",
+  "framework_name": "UNESCO AI Competency Framework for Students",
+  "framework_source": "UNESCO (2024). AI competency framework for students. UNESDOC pf0000391105. ISBN 978-92-3-100709-5.",
+  "reasonlens_implementation_note": "This file operationalises the UNESCO Student framework for the ReasonLens platform. Dimension names and level names are ReasonLens-specific adaptations of UNESCO terminology (Aspects mapped to Dimensions; Understand/Apply/Create mapped to Foundational/Intermediate/Advanced) to maintain consistency with the platform's multi-framework architecture.",
+  "dimensions": [
+    {
+      "id": "sc-use",
+      "name": "AI Use & Application",
+      "code": "USE",
+      "description": "The ability to select, operate, and critically evaluate AI tools and applications for learning, problem-solving, and daily life. Covers practical interaction with AI systems, prompt engineering, output evaluation, and integration of AI into academic workflows.",
+      "unesco_aspect": "AI techniques and applications"
+    },
+    {
+      "id": "sc-understanding",
+      "name": "AI Understanding",
+      "code": "UND",
+      "description": "Conceptual and technical knowledge of how AI systems work, including data, algorithms, machine learning paradigms, neural networks, and the relationship between AI capabilities and limitations. Covers both foundational literacy and deeper technical comprehension.",
+      "unesco_aspect": "Human-centred mindset"
+    },
+    {
+      "id": "sc-ethics",
+      "name": "AI Ethics & Values",
+      "code": "ETH",
+      "description": "The capacity to identify, reason about, and act on ethical issues raised by AI, including bias, fairness, privacy, transparency, environmental sustainability, and the societal impact of AI systems. Covers personal ethical practice and co-creation of ethical norms.",
+      "unesco_aspect": "Ethics of AI"
+    },
+    {
+      "id": "sc-design",
+      "name": "AI System Design",
+      "code": "DES",
+      "description": "The ability to scope AI problems, design AI system architectures, implement solutions, and evaluate outcomes through iterative feedback loops. Covers the full design cycle from problem definition through prototyping to evaluation and improvement.",
+      "unesco_aspect": "AI system design"
+    }
+  ],
+  "levels": [
+    {
+      "id_suffix": "foundational",
+      "name": "Foundational",
+      "order": 1,
+      "code": "F",
+      "description": "Students recognise AI in daily life, develop basic conceptual vocabulary, and form initial attitudes toward AI use. They can identify AI-powered tools, understand that AI involves data and algorithms, articulate basic ethical concerns, and describe what a simple AI system does.",
+      "unesco_level": "Understand"
+    },
+    {
+      "id_suffix": "intermediate",
+      "name": "Intermediate",
+      "order": 2,
+      "code": "I",
+      "description": "Students critically evaluate and purposefully apply AI tools across academic and personal contexts. They transfer knowledge to complex situations, assess AI outputs for quality and bias, practise responsible use aligned with regulations, and design basic AI-assisted solutions.",
+      "unesco_level": "Apply"
+    },
+    {
+      "id_suffix": "advanced",
+      "name": "Advanced",
+      "order": 3,
+      "code": "A",
+      "description": "Students create, customise, and evaluate AI solutions with attention to human-centred design, ethical robustness, and societal impact. They co-create ethical guidance, build functional AI prototypes, and critically assess when AI systems should or should not be deployed.",
+      "unesco_level": "Create"
+    }
+  ],
+  "object_count": 4,
+  "structure": "4 context factors with per-dimension impact analysis",
+  "data": [
+    {
+      "factor_id": "study_level",
+      "name": "Study Level",
+      "description": "The student's current level of study, which affects complexity of AI tasks, depth of technical understanding expected, and research independence.",
+      "options": [
+        "undergraduate",
+        "postgraduate",
+        "doctoral"
+      ],
+      "dimension_impacts": {
+        "sc-use": {
+          "impact": "HIGH",
+          "rationale": "Study level determines the complexity of academic tasks AI is applied to, the research independence expected, and the types of AI tools encountered.",
+          "level_effects": {
+            "undergraduate": "Focus on coursework-level AI use: essay assistance, study aids, presentation preparation. AI use policies are typically most explicit at this level.",
+            "postgraduate": "AI applied to more complex tasks: literature reviews, data analysis, dissertation work. Greater autonomy in AI tool selection.",
+            "doctoral": "AI integrated into novel research methodologies. Students may evaluate AI tools as research instruments and contribute to methodology development."
+          }
+        },
+        "sc-understanding": {
+          "impact": "HIGH",
+          "rationale": "Study level affects the depth of technical understanding expected and the ability to engage with AI research literature.",
+          "level_effects": {
+            "undergraduate": "Conceptual understanding sufficient. Technical depth through elective modules.",
+            "postgraduate": "Expected to understand AI methods relevant to their research area at sufficient depth to evaluate their use.",
+            "doctoral": "Expected to critically evaluate AI methodology in their field and potentially contribute to methodological innovation."
+          }
+        },
+        "sc-ethics": {
+          "impact": "MEDIUM",
+          "rationale": "Ethical reasoning is relevant at all study levels. Postgraduate/doctoral students connect AI ethics to established research ethics frameworks.",
+          "level_effects": {
+            "undergraduate": "Focus on personal responsible use, academic integrity, and data privacy.",
+            "postgraduate": "Ethics connected to research ethics frameworks and professional practice standards.",
+            "doctoral": "Ethics integrated into research design and potentially contributing to ethical norm development in their field."
+          }
+        },
+        "sc-design": {
+          "impact": "HIGH",
+          "rationale": "Study level determines the complexity and independence of AI design projects students undertake.",
+          "level_effects": {
+            "undergraduate": "Guided design exercises and group projects. Problem scoping and basic architecture design.",
+            "postgraduate": "Independent design projects with real-world complexity. May design AI components of research methodology.",
+            "doctoral": "Novel AI system design as part of research contribution. Full lifecycle management for research tools."
+          }
+        }
+      }
+    },
+    {
+      "factor_id": "discipline",
+      "name": "Discipline",
+      "description": "The student's field of study, which shapes the types of AI tools encountered, the nature of AI-assisted tasks, and domain-specific ethical considerations.",
+      "options": [
+        "STEM",
+        "humanities",
+        "social_sciences",
+        "health",
+        "arts",
+        "vocational"
+      ],
+      "dimension_impacts": {
+        "sc-use": {
+          "impact": "HIGH",
+          "rationale": "Discipline fundamentally shapes which AI tools are relevant, what tasks AI is applied to, and how outputs are evaluated.",
+          "level_effects": {
+            "STEM": "AI for data analysis, code generation, simulation, mathematical problem-solving. Outputs evaluated against quantitative criteria.",
+            "humanities": "AI for text analysis, translation, research synthesis, writing support. Outputs evaluated against interpretive and argumentative criteria.",
+            "social_sciences": "AI for qualitative and quantitative data analysis, survey design, literature synthesis. Mixed-methods evaluation.",
+            "health": "AI for evidence synthesis, clinical scenario analysis, diagnostic reasoning support. Strict evidence standards.",
+            "arts": "AI for creative generation, design iteration, artistic exploration. Evaluation includes aesthetic and conceptual criteria.",
+            "vocational": "AI for industry-specific tools, workplace automation understanding, practical problem-solving."
+          }
+        },
+        "sc-understanding": {
+          "impact": "MEDIUM",
+          "rationale": "Core AI concepts are universal but the depth and focus of understanding varies by discipline.",
+          "level_effects": {
+            "STEM": "May engage with mathematical foundations of ML. Stronger quantitative reasoning baseline.",
+            "humanities": "May focus on conceptual and critical understanding. Connections through digital humanities.",
+            "social_sciences": "Statistical understanding provides bridge to ML concepts. Critical analysis of AI as social phenomenon.",
+            "health": "Focus on understanding AI evaluation (sensitivity, specificity, clinical validity). Evidence-based reasoning.",
+            "arts": "Understanding through creative practice. May explore generative model capabilities experientially.",
+            "vocational": "Practical understanding of AI capabilities in industry contexts."
+          }
+        },
+        "sc-ethics": {
+          "impact": "MEDIUM",
+          "rationale": "Ethical issues are universal but discipline shapes which issues feel most salient and which frameworks are familiar.",
+          "level_effects": {
+            "STEM": "Focus on dual-use, environmental impact, algorithmic fairness. Technical approaches to bias may be over-emphasised.",
+            "humanities": "Strong existing frameworks for value-based reasoning. May focus on cultural representation and epistemic justice.",
+            "social_sciences": "Research ethics experience transfers well. Focus on power, inequality, and social impact.",
+            "health": "Clinical ethics experience transfers well. Focus on patient safety, consent, and diagnostic equity.",
+            "arts": "Focus on creative ownership, authenticity, and cultural appropriation. May engage with AI as medium.",
+            "vocational": "Focus on workplace surveillance, job displacement, and professional standards."
+          }
+        },
+        "sc-design": {
+          "impact": "HIGH",
+          "rationale": "Design problems are strongly discipline-specific. The types of AI systems students design differ fundamentally across fields.",
+          "level_effects": {
+            "STEM": "Technical system design: models, algorithms, data pipelines. Strong implementation skills.",
+            "humanities": "Conceptual design: analytical frameworks, text processing tools, digital archives. May focus on design rationale over implementation.",
+            "social_sciences": "Research tool design: survey analysis, qualitative coding, mixed-methods frameworks. Participatory design emphasis.",
+            "health": "Clinical support tool design: decision support, evidence synthesis, patient-facing tools. Regulatory compliance emphasis.",
+            "arts": "Creative tool design: generative systems, interactive installations, design assistants. Aesthetic and experiential criteria.",
+            "vocational": "Workplace tool design: process automation, training systems, quality assurance. Practical deployment emphasis."
+          }
+        }
+      }
+    },
+    {
+      "factor_id": "prior_ai_experience",
+      "name": "Prior AI Experience",
+      "description": "The student's previous exposure to AI tools, ranging from no experience to technical background including programming or ML coursework.",
+      "options": [
+        "none",
+        "casual_user",
+        "regular_user",
+        "technical"
+      ],
+      "dimension_impacts": {
+        "sc-use": {
+          "impact": "HIGH",
+          "rationale": "Prior experience directly determines starting point and progression speed for practical AI use competency.",
+          "level_effects": {
+            "none": "Needs scaffolded introduction to AI tools. May have anxiety or misconceptions about AI. Start with tool identification.",
+            "casual_user": "Has used AI tools informally. May lack systematic evaluation skills. Focus on moving from casual to purposeful use.",
+            "regular_user": "Comfortable with AI tools but may have entrenched habits. Focus on critical evaluation and workflow optimisation.",
+            "technical": "Strong tool skills but may lack ethical or critical evaluation components. Focus on principled use and peer mentoring."
+          }
+        },
+        "sc-understanding": {
+          "impact": "HIGH",
+          "rationale": "Technical background significantly affects starting point for conceptual understanding.",
+          "level_effects": {
+            "none": "Starts from basic concepts. Needs accessible explanations and concrete examples.",
+            "casual_user": "May have functional knowledge without conceptual understanding. Needs to connect use experience to concepts.",
+            "regular_user": "Understands AI behaviour empirically. Needs frameworks to explain and generalise observations.",
+            "technical": "May have deep but narrow technical understanding. Needs to broaden to critical and sociotechnical perspectives."
+          }
+        },
+        "sc-ethics": {
+          "impact": "MEDIUM",
+          "rationale": "Experience with AI provides concrete ethical encounters, but ethical reasoning requires separate development.",
+          "level_effects": {
+            "none": "May have strong ethical intuitions but lack concrete AI contexts to apply them.",
+            "casual_user": "Has encountered ethical issues informally (e.g. biased results, privacy concerns) but may not have frameworks to analyse them.",
+            "regular_user": "More practical ethical contexts to draw on. May have developed personal practices without explicit ethical reasoning.",
+            "technical": "May prioritise technical solutions to ethical problems. Needs to develop non-technical ethical reasoning and systemic thinking."
+          }
+        },
+        "sc-design": {
+          "impact": "HIGH",
+          "rationale": "Technical experience enables faster implementation but does not guarantee good design thinking.",
+          "level_effects": {
+            "none": "Needs reassurance that design does not require coding. Focus on problem scoping and conceptual design.",
+            "casual_user": "Can contribute to problem scoping and user perspective. Needs scaffolding for technical design decisions.",
+            "regular_user": "Good practical sense of AI capabilities. Can contribute meaningfully to architecture discussions.",
+            "technical": "Can implement designs quickly but may skip problem scoping. Needs to develop full design methodology."
+          }
+        }
+      }
+    },
+    {
+      "factor_id": "region",
+      "name": "Region",
+      "description": "Geographic and regulatory context affecting data protection norms, AI governance expectations, and cultural attitudes toward AI in education.",
+      "options": [
+        "EU",
+        "UK",
+        "US",
+        "Asia-Pacific",
+        "other"
+      ],
+      "dimension_impacts": {
+        "sc-use": {
+          "impact": "LOW",
+          "rationale": "Consumer AI tools are broadly similar globally. Minor variation in tool availability and institutional policies.",
+          "level_effects": {
+            "EU": "Institutional AI policies may be more restrictive due to GDPR and AI Act alignment.",
+            "UK": "Pro-innovation regulatory approach. University AI policies vary widely.",
+            "US": "Generally more permissive AI use environment. Institutional policies vary by state and institution.",
+            "Asia-Pacific": "Significant variation: some countries have advanced AI adoption, others more restrictive. Tool availability may differ.",
+            "other": "Wide variation. Some AI tools may be unavailable. Institutional AI policies may be emerging."
+          }
+        },
+        "sc-understanding": {
+          "impact": "LOW",
+          "rationale": "AI concepts are universal. Curriculum approaches may vary but core knowledge is the same.",
+          "level_effects": {
+            "EU": "Strong computational thinking emphasis in education systems.",
+            "UK": "Computer science in national curriculum but AI-specific content still emerging.",
+            "US": "Varies by state. CS education increasingly common but uneven.",
+            "Asia-Pacific": "Some education systems (e.g. Singapore, South Korea) have advanced AI literacy curricula.",
+            "other": "AI education infrastructure may be developing. Digital access may affect learning opportunities."
+          }
+        },
+        "sc-ethics": {
+          "impact": "MEDIUM",
+          "rationale": "Regulatory contexts shape ethical frameworks. Cultural values affect ethical priorities. UNESCO framework aims for universality but regional application differs.",
+          "level_effects": {
+            "EU": "Strong regulatory framework (GDPR, AI Act). Rights-based ethical approach. Students may be more familiar with data protection concepts.",
+            "UK": "Context-sensitive regulation. Balance between innovation and protection. Students may encounter more industry-friendly ethical framing.",
+            "US": "Sector-specific regulation. First Amendment considerations. Students may engage more with innovation-focused ethics.",
+            "Asia-Pacific": "Diverse ethical traditions (Confucian, Buddhist, etc.) enrich AI ethics discussion. Regulatory approaches vary from strict to minimal.",
+            "other": "Varied regulatory and cultural contexts. Digital colonialism and data sovereignty may be salient ethical concerns."
+          }
+        },
+        "sc-design": {
+          "impact": "LOW",
+          "rationale": "Design principles are universal. Regulatory requirements for AI system documentation may vary.",
+          "level_effects": {
+            "EU": "AI Act documentation requirements may shape design practices (risk assessment, transparency requirements).",
+            "UK": "Pragmatic approach to AI governance may allow more design flexibility.",
+            "US": "Generally fewer regulatory constraints on AI design for educational contexts.",
+            "Asia-Pacific": "Varies. Some countries have specific AI development guidelines.",
+            "other": "Regulatory context for AI design may be nascent."
+          }
+        }
+      }
+    }
+  ]
+}

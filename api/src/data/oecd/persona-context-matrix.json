@@ -1,0 +1,480 @@
+{
+  "schema_version": "1.0",
+  "framework_id": "oecd-ai-capability-indicators",
+  "file_id": "persona-context-matrix",
+  "purpose": "Defines how contextual factors modify task classification and evaluation outcomes in the ReasonLens Task Evaluator. Each factor can shift feasibility scores, alter recommendations, add mandatory safeguards, or flag regulatory constraints. Applied after initial OECD task type classification.",
+  "usage_note": "Context factors are not grounds for reclassifying task types. A welfare counselling session does not become RC because the stakes are low in a specific instance. They are grounds for adjusting feasibility scores, strengthening safeguards, and modifying recommendations within the assessed task type.",
+  "how_to_apply": "After classifying a task and generating a baseline feasibility score and recommendation, apply each available context factor in order. Compound modifiers are additive. Where modifiers produce a conflict (e.g. two factors pull in opposite directions), apply the more conservative outcome.",
+
+  "context_factors": [
+    {
+      "factor_id": "task_stakes",
+      "label": "Task Stakes",
+      "description": "The consequence type and reversibility of the task outcome. Determines how much human oversight is required regardless of task type.",
+      "values": [
+        {
+          "value": "administrative",
+          "description": "Back-office operational task. Outcome affects institutional processes rather than individual students directly. Errors are typically correctable.",
+          "modifiers": {
+            "feasibility_delta": 0,
+            "recommendation_shift": "none",
+            "safeguard_additions": [],
+            "notes": "No modification to baseline evaluation. Baseline applies."
+          },
+          "type_specific_notes": {
+            "RC": "Baseline high feasibility confirmed. Automation appropriate.",
+            "NRC": "Baseline medium feasibility confirmed. Augment recommended.",
+            "IP": "Even administrative IP tasks (staff appraisal) require human lead. No change.",
+            "MP": "No modification."
+          }
+        },
+        {
+          "value": "formative",
+          "description": "Task supports student learning without determining progression, grades, or formal outcomes. Errors are correctable through iteration.",
+          "modifiers": {
+            "feasibility_delta": "+0.5 for NRC tasks where AI output is reviewed by student or educator before use",
+            "recommendation_shift": "Enables augment for NRC tasks that would otherwise be borderline avoid",
+            "safeguard_additions": [
+              "AI outputs must be framed as provisional and open to student/educator challenge",
+              "Student must not be led to treat AI formative feedback as authoritative without critical engagement"
+            ],
+            "notes": "Formative context relaxes the constraint on NRC AI involvement because errors are recoverable and learning from error is part of the purpose."
+          },
+          "type_specific_notes": {
+            "RC": "No change. Already appropriate for automation in administrative contexts.",
+            "NRC": "AI augmentation more appropriate here than in summative contexts. Feasibility effectively +0.5.",
+            "IP": "Formative does not relax IP restriction. A pastoral meeting is IP regardless of whether its outcome is formally recorded.",
+            "MP": "Formative physical practice remains MP. No change."
+          }
+        },
+        {
+          "value": "summative",
+          "description": "Task outcome determines grades, progression, qualification, or other formal academic outcomes with lasting consequences for the student.",
+          "modifiers": {
+            "feasibility_delta": "-1 for any NRC task; -1 for RC tasks whose output directly determines the summative outcome",
+            "recommendation_shift": "Shifts borderline augment toward avoid for NRC; introduces mandatory human sign-off for RC",
+            "safeguard_additions": [
+              "Human expert must review and approve any AI contribution to a summative outcome",
+              "AI must not determine or materially influence summative grades without expert validation",
+              "Students must be informed if AI tools are used in any part of the assessment process in line with institutional policy",
+              "AI involvement in summative assessment must be disclosed in module documentation and approved through academic governance"
+            ],
+            "notes": "Summative stakes require the most cautious position. The human expert's professional accountability cannot be proxied by AI output."
+          },
+          "type_specific_notes": {
+            "RC": "Automated report generation is fine; direct grade determination from AI output is not. Human sign-off required at the consequential step.",
+            "NRC": "AI augmentation only, with mandatory expert review before any mark or grade is confirmed. Feasibility -1.",
+            "IP": "No AI in summative IP contexts (e.g. viva, oral examination, practical assessment involving relational judgment).",
+            "MP": "Physical competence assessment for qualification or registration must be assessed by a qualified human examiner."
+          }
+        },
+        {
+          "value": "strategic",
+          "description": "Task outcome shapes institutional direction, policy, resource allocation, or external-facing commitments with long-term and potentially irreversible consequences.",
+          "modifiers": {
+            "feasibility_delta": "-1 for NRC tasks",
+            "recommendation_shift": "Augment becomes the ceiling for NRC tasks; human expert must substantively own the output",
+            "safeguard_additions": [
+              "AI-generated strategic content must not be presented as the institutional position without substantive human review and leadership sign-off",
+              "Stakeholder consultation process must involve humans, not AI representations of stakeholder views",
+              "Strategic outputs must pass through institutional governance before adoption"
+            ],
+            "notes": "Strategic tasks require institutional legitimacy that comes from human authorship, consultation, and governance approval. AI can inform and draft but not own strategic outputs."
+          },
+          "type_specific_notes": {
+            "RC": "Strategic data analysis dashboards are RC and appropriate to automate. Strategic narrative and decision-making are NRC.",
+            "NRC": "Mandatory augment-only position. Feasibility -1. Human expert is the substantive author.",
+            "IP": "Strategic stakeholder engagement is IP. AI cannot substitute.",
+            "MP": "Uncommon in strategic contexts. No standard modification."
+          }
+        }
+      ]
+    },
+    {
+      "factor_id": "student_facing",
+      "label": "Student Facing",
+      "description": "Whether the AI output is delivered directly to students or solely used internally by staff. Student-facing outputs carry higher duty of care, affect student experience, and introduce potential for harm if inaccurate or inappropriate.",
+      "values": [
+        {
+          "value": "no",
+          "description": "Output is used by staff only. Students do not receive AI-generated content directly.",
+          "modifiers": {
+            "feasibility_delta": 0,
+            "recommendation_shift": "none",
+            "safeguard_additions": [],
+            "notes": "Baseline applies. Internal staff use carries standard safeguards."
+          }
+        },
+        {
+          "value": "yes",
+          "description": "AI output is delivered directly to students as part of their experience, feedback, or support.",
+          "modifiers": {
+            "feasibility_delta": "-0.5 for RC tasks; -1 for NRC tasks",
+            "recommendation_shift": "Student-facing NRC outputs that would otherwise be augment should be reviewed as borderline avoid if expert review cannot be guaranteed before delivery",
+            "safeguard_additions": [
+              "AI-generated student-facing content must be reviewed by a staff member before delivery for any NRC or consequential RC task",
+              "Students must be informed where AI generates content they receive",
+              "AI must not simulate a human staff member in student-facing communications",
+              "Escalation pathway to a human staff member must be available and clearly signposted for all student-facing AI interactions",
+              "Content about student wellbeing, academic difficulty, or personal circumstances must always involve human review before delivery",
+              "AI student-facing tools must comply with institutional communications policy"
+            ],
+            "notes": "Student-facing increases duty of care significantly. The institution is responsible for every interaction a student has with an AI system deployed in its name. Errors in student-facing AI output can cause anxiety, confusion, or trust damage that is not easily recoverable."
+          },
+          "type_specific_notes": {
+            "RC": "Student-facing RC tasks (FAQ bots, deadline reminders, format compliance notifications) are appropriate with review. Feasibility -0.5 to prompt safeguard review.",
+            "NRC": "Student-facing NRC outputs (personalised feedback, pathway recommendations) require mandatory human review before delivery. Feasibility -1. Treat as borderline avoid if review cannot be guaranteed.",
+            "IP": "Any student-facing interaction with emotional, developmental, or pastoral content is IP regardless of technical delivery mechanism.",
+            "MP": "Not typically applicable."
+          }
+        }
+      ]
+    },
+    {
+      "factor_id": "data_sensitivity",
+      "label": "Data Sensitivity",
+      "description": "The sensitivity classification of the personal or institutional data the AI task involves. Determines which AI deployment models are permissible and what data governance is required.",
+      "values": [
+        {
+          "value": "public",
+          "description": "Data is publicly available or contains no personal information. No data protection constraints apply.",
+          "modifiers": {
+            "feasibility_delta": 0,
+            "recommendation_shift": "none",
+            "deployment_constraints": "Cloud-based AI tools are permissible. Standard terms of service apply.",
+            "safeguard_additions": [],
+            "notes": "Baseline applies. No data sensitivity constraint."
+          }
+        },
+        {
+          "value": "internal",
+          "description": "Institutional data not publicly available but not containing personal data (e.g. aggregated statistics, anonymised reports, internal policy documents).",
+          "modifiers": {
+            "feasibility_delta": 0,
+            "recommendation_shift": "none",
+            "deployment_constraints": "Cloud-based AI tools permissible only if institutional data does not leave the institution's control boundary or if appropriate data processing agreements are in place.",
+            "safeguard_additions": [
+              "Verify that AI service provider DPA covers institutional data before deployment",
+              "Do not use free-tier AI tools that use submitted data for model training"
+            ],
+            "notes": "Modest constraint. Most cloud AI tools with enterprise agreements are appropriate."
+          }
+        },
+        {
+          "value": "personal",
+          "description": "Data identifies or could identify individual students or staff (names, student IDs, grades, contact details, attendance records).",
+          "modifiers": {
+            "feasibility_delta": "-0.5 for any task involving personal data through an external AI service without adequate data processing agreement",
+            "recommendation_shift": "Automation recommendations downgraded to augment if data processing agreement is absent or inadequate",
+            "deployment_constraints": "Requires Data Processing Agreement (DPA) with the AI service provider. UK GDPR / EU GDPR Article 28 compliance required for EU/UK institutions. US FERPA compliance required for US institutions. On-premise or private deployment strongly preferred.",
+            "safeguard_additions": [
+              "Data Processing Agreement must be in place with any third-party AI service provider before deployment",
+              "Data minimisation: provide only the data fields necessary for the specific task",
+              "Retention limits: AI system must not retain personal data beyond the transaction",
+              "Student privacy notice must disclose the use of personal data in AI systems",
+              "DPIA required for systematic large-scale processing of student personal data"
+            ],
+            "notes": "Personal data introduces significant compliance obligations. Feasibility is effectively reduced if the institution cannot meet these obligations for a specific tool."
+          }
+        },
+        {
+          "value": "sensitive",
+          "description": "Special category personal data (health, disability, mental health, ethnicity, religion, sexual orientation, criminal records) or data whose disclosure could cause significant harm.",
+          "modifiers": {
+            "feasibility_delta": "-1 for any task using sensitive data; recommend on-premise only deployment",
+            "recommendation_shift": "Automation is presumptively inappropriate for tasks involving sensitive personal data. Augment is the ceiling. Human review of every AI output involving sensitive data is mandatory.",
+            "deployment_constraints": "On-premise deployment strongly required. Cloud processing of special category data requires explicit legal basis (typically explicit consent or substantial public interest) and satisfies Article 9 UK/EU GDPR requirements. US HIPAA compliance required if health data involved.",
+            "safeguard_additions": [
+              "On-premise or institutional cloud with appropriate data governance required",
+              "Explicit legal basis for processing special category data must be documented before deployment",
+              "Data Protection Impact Assessment (DPIA) mandatory before any AI processing of special category data",
+              "Human review of every AI output that involves or is informed by sensitive personal data",
+              "Access controls: sensitive data must only be accessible to AI systems by staff with appropriate authorisation",
+              "Audit trail: all AI processing of sensitive personal data must be logged and auditable",
+              "Data subject rights: students must be able to know that their sensitive data is used in AI processing and challenge automated outcomes"
+            ],
+            "notes": "Sensitive data is the most restrictive category. Any automated decision-making materially affecting a student that involves their health, disability, mental health, or other sensitive data requires specific legal compliance and human oversight. This is not a matter of institutional preference but legal obligation in most jurisdictions."
+          }
+        }
+      ]
+    },
+    {
+      "factor_id": "region",
+      "label": "Region",
+      "description": "The regulatory and legal context of the institution's primary operating jurisdiction. Affects what AI deployment models are permissible and what safeguards are legally required.",
+      "values": [
+        {
+          "value": "UK",
+          "description": "United Kingdom. Post-Brexit UK GDPR applies. ICO guidance on AI and data protection. Equalities Act 2010. Sector-specific: OfS regulatory framework, QAA code of practice.",
+          "regulatory_context": {
+            "primary_frameworks": ["UK GDPR", "Data Protection Act 2018", "Equality Act 2010"],
+            "sector_frameworks": ["OfS Conditions of Registration", "QAA Quality Code", "Russell Group AI principles"],
+            "ai_specific_guidance": ["ICO AI and Data Protection Guidance", "Turing Institute responsible AI guidance"],
+            "automated_decision_making": "UK GDPR Article 22 equivalent rights apply. Students have right to human review of solely automated decisions with significant effects. This applies to at-risk identification, admissions filtering, and automated grade-related decisions.",
+            "key_constraints": [
+              "DPIA required for high-risk AI processing of personal data",
+              "Data Processing Agreements required for all third-party AI service providers",
+              "Special category data (disability, health, ethnicity) has heightened protection",
+              "Students must be informed of automated processing in privacy notice"
+            ]
+          }
+        },
+        {
+          "value": "EU",
+          "description": "European Union member states. EU GDPR applies. EU AI Act now in force with sector-specific implications for higher education. Stricter than UK regime in several respects.",
+          "regulatory_context": {
+            "primary_frameworks": ["EU GDPR (Regulation 2016/679)", "EU AI Act (Regulation 2024/1689)"],
+            "sector_frameworks": ["National HE regulatory frameworks vary by member state"],
+            "ai_specific_guidance": ["EU AI Act Article 9-17 obligations for high-risk AI", "EDPB guidance on automated decision-making"],
+            "automated_decision_making": "EU GDPR Article 22 applies with no derogation for educational institutions. EU AI Act classifies certain education AI as high-risk (Article 6 and Annex III): AI systems that determine access to education, evaluate and classify students, or monitor students during examinations. These require conformity assessment, human oversight, transparency, and registration.",
+            "key_constraints": [
+              "EU AI Act high-risk classification applies to AI systems assessing students, determining educational outcomes, or monitoring in educational settings",
+              "High-risk AI requires risk management system, data governance, transparency measures, human oversight design, and accuracy standards",
+              "Prohibited practices under AI Act include: subliminal manipulation, social scoring, real-time biometric surveillance in public spaces",
+              "DPIA mandatory for high-risk AI processing",
+              "Fundamental rights impact assessment may be required for public institutions"
+            ],
+            "task_evaluator_note": "In EU context, Task Evaluator must flag when the evaluated task falls within the EU AI Act high-risk category and advise that deployment requires conformity assessment before implementation."
+          }
+        },
+        {
+          "value": "US",
+          "description": "United States. Fragmented regulatory landscape. FERPA governs student educational records. No comprehensive federal AI act as of 2025. State-level AI laws vary. Federal agency guidance from DOE and OCR.",
+          "regulatory_context": {
+            "primary_frameworks": ["FERPA (Family Educational Rights and Privacy Act)", "ADA (Americans with Disabilities Act)", "HIPAA if health data involved"],
+            "sector_frameworks": ["Accreditation standards (regional accreditors)", "DOE AI guidance"],
+            "ai_specific_guidance": ["DOE AI report for education (2023)", "OCR guidance on AI and civil rights (2023)", "Executive Order 14110 AI governance framework"],
+            "automated_decision_making": "No equivalent to EU GDPR Article 22. However, civil rights laws (Title VI, Title IX, ADA) apply to AI systems that discriminate. FERPA governs educational records access and disclosure including to AI service providers.",
+            "key_constraints": [
+              "FERPA: AI service providers accessing educational records must sign FERPA-compliant agreements as School Officials with legitimate educational interest",
+              "ADA: AI systems must not create barriers for students with disabilities; accessibility compliance required",
+              "Civil rights: AI systems must be audited for disparate impact on protected groups",
+              "State privacy laws may be more stringent (CA CPRA, CO Privacy Act, etc.)",
+              "No federal DPIA requirement, but risk assessment as best practice"
+            ]
+          }
+        },
+        {
+          "value": "Asia-Pacific",
+          "description": "Diverse regulatory landscape. Includes Australia, Singapore, Japan, South Korea, New Zealand, and other jurisdictions with varying AI governance maturity.",
+          "regulatory_context": {
+            "primary_frameworks": ["Australia: Privacy Act 1988 (amended 2024), Online Privacy Act in development", "Singapore: PDPA 2012, Model AI Governance Framework", "Japan: Act on Protection of Personal Information", "New Zealand: Privacy Act 2020"],
+            "ai_specific_guidance": ["Singapore IMDA Model AI Governance Framework", "Australia DISR National AI Framework", "APEC AI Governance Framework"],
+            "automated_decision_making": "Varies significantly by jurisdiction. Singapore and Australia moving toward EU-influenced AI governance. Japan more permissive. New Zealand Privacy Act includes automated decision provisions.",
+            "key_constraints": [
+              "Check jurisdiction-specific data localisation requirements (some require personal data to stay in-country)",
+              "Australia: Privacy Act amendments expand rights and introduce new obligations for high-risk AI",
+              "Singapore: Voluntary but influential Model AI Governance Framework provides best practice reference",
+              "Regional variation is high: apply jurisdiction-specific advice for the specific operating country"
+            ]
+          }
+        },
+        {
+          "value": "Middle-East",
+          "description": "Rapidly evolving AI governance landscape. UAE, Saudi Arabia, and Qatar have active AI strategies. Data protection laws vary. Some jurisdictions require data localisation.",
+          "regulatory_context": {
+            "primary_frameworks": ["UAE: Federal Decree-Law No. 45/2021 on Personal Data Protection", "Saudi Arabia: PDPL 2021", "Qatar: Law No. 13 of 2016"],
+            "ai_specific_guidance": ["UAE National AI Strategy 2031", "Saudi Vision 2030 digital transformation"],
+            "automated_decision_making": "Developing frameworks. UAE and Saudi Arabia moving toward comprehensive AI regulation aligned broadly with EU approach.",
+            "key_constraints": [
+              "Data localisation requirements in several GCC jurisdictions: personal data may need to be processed in-country",
+              "Government oversight of AI in critical sectors including education is expanding",
+              "Cloud provider selection must account for data residency requirements",
+              "Institutional compliance with local data protection authority guidance required"
+            ]
+          }
+        },
+        {
+          "value": "Africa",
+          "description": "Diverse jurisdictions. AU AI Strategy and African Union Digital Transformation Strategy provide regional framework. Data protection laws increasingly in place (South Africa POPIA, Kenya DPA, Nigeria NDPR).",
+          "regulatory_context": {
+            "primary_frameworks": ["South Africa: POPIA 2013", "Kenya: Data Protection Act 2019", "Nigeria: NDPR 2019", "Ghana: Data Protection Act 2012"],
+            "ai_specific_guidance": ["African Union AI Policy Framework (developing)", "Smart Africa Initiative"],
+            "automated_decision_making": "Emerging frameworks. POPIA in South Africa includes automated decision provisions similar to EU GDPR.",
+            "key_constraints": [
+              "Data protection law maturity varies significantly by jurisdiction",
+              "Cross-border data transfer restrictions apply in several jurisdictions",
+              "Institutional capacity for AI governance may require additional support",
+              "Equity and access considerations are particularly significant in deployment decisions"
+            ]
+          }
+        },
+        {
+          "value": "Latin-America",
+          "description": "Brazil LGPD as leading framework. Argentina, Chile, Colombia, Mexico have data protection laws. Regional AI governance developing.",
+          "regulatory_context": {
+            "primary_frameworks": ["Brazil: LGPD (Lei Geral de Proteção de Dados) 2020", "Argentina: Personal Data Protection Law", "Colombia: Law 1581 of 2012", "Mexico: LFPDPPP"],
+            "ai_specific_guidance": ["Brazil AI Bill (PL 2338/2023 developing)", "UNESCO Recommendation on the Ethics of AI ratified by regional members"],
+            "automated_decision_making": "Brazil LGPD Article 20 provides right to review of automated decisions. Brazil AI Bill if enacted will introduce risk-based AI regulation.",
+            "key_constraints": [
+              "Brazil LGPD automated decision-making provisions apply to student-affecting AI systems",
+              "Data localisation: some jurisdictions prefer or require local processing",
+              "UNESCO AI Ethics Recommendation provides soft law guidance adopted by most regional governments"
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "factor_id": "institution_ai_maturity",
+      "label": "Institution AI Maturity",
+      "description": "The institution's assessed AI capability and governance maturity, derived from THE DMI, QS AI Capability Framework, or JISC AI Maturity assessment if available. Determines whether the institution can safely implement the recommendation.",
+      "maturity_source_mapping": {
+        "THE_DMI": "Use Technology and Utilisation dimension scores as primary proxies. Strategy score affects governance safeguard capacity. People and Culture score affects human oversight reliability.",
+        "QS_AI_Capability": "Use Technology Infrastructure and Governance dimensions as primary proxies.",
+        "JISC_AI_Maturity": "Use Infrastructure and Organisational Readiness dimensions as primary proxies.",
+        "self_reported": "If no formal assessment is available, use self-reported estimate from user with low confidence flag."
+      },
+      "values": [
+        {
+          "value": "incidental",
+          "label": "Incidental / Low",
+          "description": "Ad hoc, uncoordinated AI activity. No AI strategy. Limited technical infrastructure. Staff unfamiliar with AI tools. No data governance framework. Equivalent to THE DMI Incidental level.",
+          "modifiers": {
+            "feasibility_delta": "-1 across all task types",
+            "recommendation_shift": "Automate recommendations downgraded to augment. Augment recommendations require additional human oversight specification. Avoid recommendations are reinforced.",
+            "safeguard_additions": [
+              "Any AI deployment at this maturity level requires basic staff training before implementation",
+              "Governance framework (acceptable use policy) must be in place before deploying any AI in student-facing contexts",
+              "Start with lowest-risk RC back-office tasks only to build capability and confidence",
+              "No automated student-facing AI deployment at Incidental maturity level without explicit institutional approval"
+            ],
+            "implementation_guidance": "At Incidental maturity, the institution lacks the governance and human oversight capacity to safely operate AI systems with meaningful consequences. Prioritise building governance foundations (policy, training, accountability structures) before expanding AI deployment. Recommended starting point: automating back-office RC tasks with low data sensitivity and internal use only."
+          }
+        },
+        {
+          "value": "intentional",
+          "label": "Intentional / Developing",
+          "description": "Purposeful but uncoordinated AI activity. Strategy emerging. Some pilots underway. Training started but patchy. Data governance partial. Equivalent to THE DMI Intentional level.",
+          "modifiers": {
+            "feasibility_delta": "-0.5 for NRC tasks; 0 for RC tasks with established governance",
+            "recommendation_shift": "Augment appropriate for NRC with additional clarity about oversight responsibilities. Student-facing AI requires piloting with monitoring before broader rollout.",
+            "safeguard_additions": [
+              "Pilot any new AI deployment with monitoring and evaluation before scaling",
+              "Ensure clear accountability assignment for every AI system deployed",
+              "Staff training on AI oversight must be in place before deployment",
+              "Student-facing AI requires defined escalation path to human staff"
+            ],
+            "implementation_guidance": "Intentional maturity institutions can expand beyond back-office RC tasks into NRC augmentation with appropriate oversight. Focus on building repeatable governance processes for AI deployment decisions. Each deployment should generate institutional learning that feeds into the emerging AI strategy."
+          }
+        },
+        {
+          "value": "integrated",
+          "label": "Integrated / Established",
+          "description": "Strategic, coordinated, institution-wide AI activity. Clear governance. Trained staff. Data governance mature. AI strategy aligned with institutional mission. Equivalent to THE DMI Integrated level.",
+          "modifiers": {
+            "feasibility_delta": "0 baseline applies",
+            "recommendation_shift": "Baseline recommendations apply. Human oversight remains mandatory for NRC, IP, and sensitive data contexts.",
+            "safeguard_additions": [
+              "Maintain ongoing monitoring and audit of deployed AI systems",
+              "Horizon scanning for regulatory changes affecting current deployments",
+              "Continuous staff capability development as AI tools evolve"
+            ],
+            "implementation_guidance": "Integrated maturity institutions can implement the full range of appropriate AI deployments with established governance. Focus shifts to optimisation, quality improvement, and staying current with regulatory developments. Periodic review of AI portfolio against updated framework is recommended."
+          }
+        },
+        {
+          "value": "optimised",
+          "label": "Optimised / Leading",
+          "description": "Sector-leading AI capability. Continuous improvement embedded. Benchmarked internationally. Innovation culture established. Equivalent to THE DMI Optimised level.",
+          "modifiers": {
+            "feasibility_delta": "+0.5 for RC tasks where institutional track record demonstrates reliable safe deployment",
+            "recommendation_shift": "May expand automation to some augment-classified RC tasks where institutional evidence of safe deployment exists. Core IP and high-stakes NRC safeguards remain unchanged.",
+            "safeguard_additions": [
+              "Contribute to sector knowledge and standards development",
+              "Systematic evaluation of AI impact on equity, quality, and student outcomes",
+              "Proactive engagement with regulatory developments"
+            ],
+            "implementation_guidance": "Optimised maturity institutions operate at the frontier and contribute to sector learning. Even at this level, IP tasks and high-stakes NRC tasks retain their classification and safeguard requirements. The maturity modifier expands the range of RC tasks that can be safely automated, not the range of task types that should be automated."
+          }
+        }
+      ]
+    }
+  ],
+
+  "compound_modifier_rules": {
+    "description": "How to apply multiple context factors together when they produce conflicting or reinforcing signals.",
+    "rules": [
+      {
+        "rule_id": "compound-001",
+        "label": "Conservative floor",
+        "description": "When context factors produce conflicting feasibility adjustments, apply the more conservative (lower) outcome. Safety overrides efficiency considerations.",
+        "example": "A task with summative stakes (-1) and low institution maturity (-1) produces a floor of feasibility - 2 from baseline, not -1 from either factor alone."
+      },
+      {
+        "rule_id": "compound-002",
+        "label": "Safeguard accumulation",
+        "description": "Safeguard requirements from all applicable context factors accumulate. They do not cancel each other out. A high-sensitivity summative student-facing task requires all safeguards from each applicable factor.",
+        "example": "Summative + student-facing + sensitive data + EU region = safeguards from all four factors apply simultaneously."
+      },
+      {
+        "rule_id": "compound-003",
+        "label": "IP floor immovability",
+        "description": "No combination of favourable context factors can move an IP task to augment or automate. IP tasks remain avoid regardless of how favourable other contextual factors are.",
+        "example": "A welfare counselling session with public data, formative stakes, and Optimised institution maturity is still IP and still avoid."
+      },
+      {
+        "rule_id": "compound-004",
+        "label": "Regulatory constraint primacy",
+        "description": "Regional regulatory constraints override maturity-based feasibility increases. If a regulatory constraint prohibits automated decision-making for a task, Optimised institution maturity does not permit automation.",
+        "example": "EU AI Act high-risk classification for a student evaluation task cannot be overridden by high institution maturity. Conformity assessment is required regardless."
+      },
+      {
+        "rule_id": "compound-005",
+        "label": "Student-facing asymmetry",
+        "description": "Student-facing status applies a larger negative modifier than back-office status applies a positive modifier. The asymmetry reflects the asymmetric consequences of getting it wrong when students are directly affected.",
+        "example": "Internal back-office NRC task: feasibility 3. Student-facing version of same task: feasibility 2. The student-facing context requires the same task to be managed more conservatively."
+      }
+    ]
+  },
+
+  "task_evaluator_output_template": {
+    "description": "The standard output structure the Task Evaluator should produce for any user query, after applying OECD classification and context factor modifiers.",
+    "fields": [
+      {
+        "field": "task_submitted",
+        "description": "The user's task description as submitted"
+      },
+      {
+        "field": "oecd_classification",
+        "description": "Assigned OECD task type (RC / NRC / IP / MP) with one-sentence rationale"
+      },
+      {
+        "field": "context_factors_applied",
+        "description": "List of context factors detected or provided, with their modifier values"
+      },
+      {
+        "field": "baseline_feasibility",
+        "description": "Feasibility score before context modifiers (1-5)"
+      },
+      {
+        "field": "adjusted_feasibility",
+        "description": "Feasibility score after applying all context modifiers (1-5)"
+      },
+      {
+        "field": "recommendation",
+        "description": "automate / augment / avoid with brief explanation"
+      },
+      {
+        "field": "reasoning",
+        "description": "2-3 sentences explaining the recommendation in plain language"
+      },
+      {
+        "field": "safeguards",
+        "description": "Ordered list of required safeguards specific to this task and context"
+      },
+      {
+        "field": "regulatory_flags",
+        "description": "Any regulatory constraints that apply in the identified region, with brief description"
+      },
+      {
+        "field": "implementation_guidance",
+        "description": "Practical first steps for implementing the recommendation"
+      },
+      {
+        "field": "edge_case_flag",
+        "description": "If the task matches an edge case in the classification rubric, flag it and explain the resolution"
+      }
+    ]
+  }
+}

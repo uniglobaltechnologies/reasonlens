@@ -1,0 +1,458 @@
+{
+  "_meta": {
+    "file": "indicator-operationalisation.json",
+    "framework_id": "iste-leaders",
+    "framework_name": "ISTE Standards for Education Leaders v4.02",
+    "total_indicators": 23,
+    "licensing_constraint": "ISTE Standards indicator text \u00a9 2024 4.02, ISTE (International Society for Technology in Education), iste.org. All rights reserved. ISTE permits free use for non-commercial educational purposes only. Commercial use requires separate ISTE licensing agreement. Observable behaviour descriptors are original ReasonLens content.",
+    "generated_for": "ReasonLens",
+    "note": "Standard 3.1 renamed 'Digital Citizenship Advocate' in v4.02."
+  },
+  "indicators": [
+    {
+      "indicator_id": "iste-l-dca-3a",
+      "standard_id": "iste-l-dca",
+      "standard": "Digital Citizenship Advocate",
+      "indicator_letter": "a",
+      "indicator_source_text": "Leaders ensure all students learn from educators who are skilled in using technology to create authentic and engaging learning experiences.",
+      "met_criteria": [
+        "Has a clear picture of educator technology competency across the school",
+        "Invests in sustained, differentiated development to build technology-for-learning skills",
+        "Evaluates educator practice in this area as part of professional review",
+        "Ensures technology competency development is tied to student learning impact, not just tool proficiency"
+      ],
+      "not_yet_met_criteria": [
+        "Technology CPD is offered but not monitored for impact on classroom practice",
+        "Does not review educator technology competency systematically",
+        "Technology skills development is treated as optional professional development"
+      ],
+      "partial_indicators": [
+        "Ensures all educators have access to technology CPD but does not monitor uptake, quality of practice, or impact on student learning experiences"
+      ]
+    },
+    {
+      "indicator_id": "iste-l-dca-3b",
+      "standard_id": "iste-l-dca",
+      "standard": "Digital Citizenship Advocate",
+      "indicator_letter": "b",
+      "indicator_source_text": "Leaders ensure access to technology, connectivity, inclusive digital content and learning environments that meet the needs of all students.",
+      "met_criteria": [
+        "Has a complete picture of access inequities affecting students in their institution",
+        "Takes active steps to close identified access gaps \u2014 not just document them",
+        "Ensures digital content and environments are inclusive, not just accessible",
+        "Access equity is a leadership priority, not an infrastructure footnote"
+      ],
+      "not_yet_met_criteria": [
+        "Assumes students have equivalent access to technology and connectivity",
+        "Does not systematically audit or address access inequities"
+      ],
+      "partial_indicators": [
+        "Provides device loan schemes and print alternatives for students without home access but does not audit whether digital content and environments are genuinely inclusive for students with diverse learning needs"
+      ]
+    },
+    {
+      "indicator_id": "iste-l-dca-3c",
+      "standard_id": "iste-l-dca",
+      "standard": "Digital Citizenship Advocate",
+      "indicator_letter": "c",
+      "indicator_source_text": "Leaders model the use of technology in inclusive, healthy ways to solve problems and strengthen community.",
+      "met_criteria": [
+        "Is visibly and deliberately using technology to solve institutional problems and communicate with community",
+        "Demonstrates healthy technology practices in their own leadership behaviour (e.g., email boundaries, meeting culture)",
+        "Uses technology to strengthen \u2014 not replace \u2014 human community connections",
+        "Models the inclusive use of technology in how they communicate and engage"
+      ],
+      "not_yet_met_criteria": [
+        "Technology use in their own leadership is unreflective and not modelled deliberately",
+        "Does not consider what their technology behaviour communicates to staff and students"
+      ],
+      "partial_indicators": [
+        "Uses technology effectively in communications and problem-solving but does not model it deliberately as a leadership practice or discuss their own technology use as an example for others"
+      ]
+    },
+    {
+      "indicator_id": "iste-l-dca-3d",
+      "standard_id": "iste-l-dca",
+      "standard": "Digital Citizenship Advocate",
+      "indicator_letter": "d",
+      "indicator_source_text": "Leaders model the safe, ethical, and legal use of technology and the critical examination of digital content.",
+      "met_criteria": [
+        "Publicly models critical engagement with digital content (e.g., evaluates a source, questions a claim)",
+        "Follows and discusses data ethics, copyright, and safety norms in their own practice",
+        "Raises ethical dimensions of institutional technology decisions in leadership conversations",
+        "Does not just state policies \u2014 models the practices they encode"
+      ],
+      "not_yet_met_criteria": [
+        "Delegates digital citizenship policy to pastoral or IT staff without personal modelling",
+        "Technology ethics are stated in policy but not embodied in leadership practice"
+      ],
+      "partial_indicators": [
+        "Ensures policy compliance with digital safety and legal requirements but does not model critical engagement with digital content or discuss the ethical dimensions of institutional technology decisions as a leader"
+      ]
+    },
+    {
+      "indicator_id": "iste-l-vp-3a",
+      "standard_id": "iste-l-vp",
+      "standard": "Visionary Planner",
+      "indicator_letter": "a",
+      "indicator_source_text": "Leaders include a wide range of perspectives from the community to develop and sustain a vision for using technology to advance student learning and success.",
+      "met_criteria": [
+        "Engages a diverse stakeholder group including students, families, and community partners \u2014 not just staff",
+        "Uses structured processes to surface genuine community perspectives on technology and learning",
+        "The resulting vision reflects the community's aspirations, not just leadership priorities",
+        "Revisits the vision process periodically to include emerging perspectives"
+      ],
+      "not_yet_met_criteria": [
+        "Technology vision is developed by senior leaders without meaningful community engagement",
+        "Consultation is performative rather than generative"
+      ],
+      "partial_indicators": [
+        "Consults staff through surveys or focus groups but does not engage students, families, or community partners in the vision development process"
+      ]
+    },
+    {
+      "indicator_id": "iste-l-vp-3b",
+      "standard_id": "iste-l-vp",
+      "standard": "Visionary Planner",
+      "indicator_letter": "b",
+      "indicator_source_text": "Leaders build on the shared vision by collaboratively creating a strategic plan that articulates how technology will be used to enhance learning.",
+      "met_criteria": [
+        "Strategic planning is a collaborative process \u2014 not a leadership task with staff sign-off",
+        "The plan explicitly maps technology investments to learning outcomes",
+        "Articulates how technology will change what and how students learn, not just what equipment they will have",
+        "The plan is owned and understood by those responsible for implementing it"
+      ],
+      "not_yet_met_criteria": [
+        "The strategic plan is produced by leadership with limited collaborative input",
+        "Technology strategy is framed around infrastructure and tools, not learning outcomes"
+      ],
+      "partial_indicators": [
+        "Involves staff in strategic planning through department head consultation but does not build a collaboratively owned plan or explicitly connect technology investments to student learning outcomes"
+      ]
+    },
+    {
+      "indicator_id": "iste-l-vp-3c",
+      "standard_id": "iste-l-vp",
+      "standard": "Visionary Planner",
+      "indicator_letter": "c",
+      "indicator_source_text": "Leaders evaluate progress on the strategic plan, make course corrections, measure impact and scale effective approaches for using technology to transform learning.",
+      "met_criteria": [
+        "Has a structured evaluation process with defined metrics for assessing strategic plan progress",
+        "Makes documented course corrections based on evaluation findings",
+        "Distinguishes between scaling what works and persisting with what doesn't",
+        "Evaluation measures impact on learning, not just implementation activity"
+      ],
+      "not_yet_met_criteria": [
+        "Progress on the technology strategy is reported in terms of activities completed rather than outcomes achieved",
+        "Course corrections are not made systematically \u2014 the plan is followed even when evidence suggests it should change"
+      ],
+      "partial_indicators": [
+        "Reports progress against implementation milestones to governors and staff but does not measure impact on learning outcomes or systematically identify what should be scaled or changed"
+      ]
+    },
+    {
+      "indicator_id": "iste-l-vp-3d",
+      "standard_id": "iste-l-vp",
+      "standard": "Visionary Planner",
+      "indicator_letter": "d",
+      "indicator_source_text": "Leaders communicate effectively with stakeholders to gather input on the plan, celebrate successes and engage in a continuous improvement cycle.",
+      "met_criteria": [
+        "Communication about the technology strategy is two-way \u2014 genuinely gathering input, not just reporting",
+        "Celebrates successes in ways that are meaningful to the community",
+        "Uses communication to maintain stakeholder engagement across the implementation cycle, not just at launch",
+        "Communication is part of a continuous improvement cycle, not a one-way channel"
+      ],
+      "not_yet_met_criteria": [
+        "Stakeholder communication about the technology strategy is primarily broadcast \u2014 updates and announcements, not dialogue",
+        "Input-gathering is limited to the strategy launch phase"
+      ],
+      "partial_indicators": [
+        "Communicates regularly about technology strategy progress and celebrates milestones publicly, but does not maintain channels for genuine ongoing input or connect communication explicitly to a continuous improvement cycle"
+      ]
+    },
+    {
+      "indicator_id": "iste-l-vp-3e",
+      "standard_id": "iste-l-vp",
+      "standard": "Visionary Planner",
+      "indicator_letter": "e",
+      "indicator_source_text": "Leaders share lessons learned, best practices, challenges and the impact of learning with technology with other education leaders who want to learn from this work.",
+      "met_criteria": [
+        "Actively participates in inter-institutional networks where learning from technology strategy is shared",
+        "Shares challenges and failures as well as successes \u2014 not just best practice",
+        "Contributes to sector-wide knowledge about technology transformation in education",
+        "Positions their institution as a learning community within a broader system, not just a competitor"
+      ],
+      "not_yet_met_criteria": [
+        "Knowledge about technology strategy stays within the institution",
+        "Does not participate in external networks or contribute to sector learning"
+      ],
+      "partial_indicators": [
+        "Presents at a conference or network event about the school's technology work but does not maintain ongoing external engagement or share challenges and partial successes alongside achievements"
+      ]
+    },
+    {
+      "indicator_id": "iste-l-el-3a",
+      "standard_id": "iste-l-el",
+      "standard": "Empowering Leader",
+      "indicator_letter": "a",
+      "indicator_source_text": "Leaders empower educators to exercise professional agency, build teacher leadership skills and pursue personalized professional learning.",
+      "met_criteria": [
+        "Creates structures where educators have genuine agency over their professional learning direction",
+        "Identifies and develops teacher leadership in technology, not just classroom practice",
+        "Personalized professional learning is resourced and supported, not just permitted",
+        "Educator agency is visible in how CPD is structured and evaluated"
+      ],
+      "not_yet_met_criteria": [
+        "Professional learning is centrally mandated with limited educator choice",
+        "Teacher leadership opportunities are informal and not systematically developed",
+        "Educators comply with professional learning requirements rather than pursuing them with ownership"
+      ],
+      "partial_indicators": [
+        "Offers a menu of CPD options and a professional learning fund but does not develop teacher leadership or support educators in designing genuinely personalized learning inquiries"
+      ]
+    },
+    {
+      "indicator_id": "iste-l-el-3b",
+      "standard_id": "iste-l-el",
+      "standard": "Empowering Leader",
+      "indicator_letter": "b",
+      "indicator_source_text": "Leaders build the confidence and competency of educators to put the ISTE Standards for Students and ISTE Standards for Educators into practice.",
+      "met_criteria": [
+        "Professional development is explicitly framed around the ISTE Standards for Educators",
+        "Educators can identify which ISTE Standards they are developing and why",
+        "Confidence-building is addressed as a distinct dimension alongside competency",
+        "Progress in ISTE-aligned practice is recognisable and valued"
+      ],
+      "not_yet_met_criteria": [
+        "Professional development is not connected to the ISTE Standards framework",
+        "Educator competency development is measured in tool adoption, not pedagogical capability"
+      ],
+      "partial_indicators": [
+        "Provides professional development linked to technology tools and digital pedagogy, but the development is not explicitly framed around the ISTE Standards and educators do not develop the ability to self-assess against those standards"
+      ]
+    },
+    {
+      "indicator_id": "iste-l-el-3c",
+      "standard_id": "iste-l-el",
+      "standard": "Empowering Leader",
+      "indicator_letter": "c",
+      "indicator_source_text": "Leaders inspire a culture of innovation, creative problem-solving, and collaboration that allows the time to explore and develop teaching practices using digital tools.",
+      "met_criteria": [
+        "Creates protected time for educators to experiment with technology in pedagogy",
+        "Celebrates and learns from experiments that did not produce the intended result",
+        "Innovation is a cultural value, not just a stated aspiration",
+        "Collaborative innovation is facilitated \u2014 educators develop practice together, not just individually"
+      ],
+      "not_yet_met_criteria": [
+        "Educators are expected to innovate without time, resource, or structural support",
+        "Risk-taking with technology is implicitly discouraged by accountability pressures",
+        "Innovation is celebrated only when it produces demonstrable results"
+      ],
+      "partial_indicators": [
+        "Celebrates innovative practice and encourages experimentation in communications, but does not create the protected time, structural support, or failure-positive culture needed for genuine pedagogical risk-taking with digital tools"
+      ]
+    },
+    {
+      "indicator_id": "iste-l-el-3d",
+      "standard_id": "iste-l-el",
+      "standard": "Empowering Leader",
+      "indicator_letter": "d",
+      "indicator_source_text": "Leaders support educators in using technology to advance learning that meets the diverse learning, cultural and social-emotional needs of individual students.",
+      "met_criteria": [
+        "Has a clear understanding of the diverse needs present in their school population",
+        "Connects this understanding to technology investment and CPD decisions",
+        "Coaches educators on how technology can specifically serve diverse learner needs",
+        "Monitors whether technology use in classrooms is serving all students equitably"
+      ],
+      "not_yet_met_criteria": [
+        "Technology strategy does not account for the diverse learning, cultural, and social-emotional needs of students",
+        "Diversity is addressed in pastoral and inclusion policies but not in technology leadership decisions"
+      ],
+      "partial_indicators": [
+        "Ensures educators receive training on differentiation and inclusive practice but does not specifically connect this to technology decisions or monitor whether digital learning is serving diverse students equitably"
+      ]
+    },
+    {
+      "indicator_id": "iste-l-el-3e",
+      "standard_id": "iste-l-el",
+      "standard": "Empowering Leader",
+      "indicator_letter": "e",
+      "indicator_source_text": "Leaders develop learning assessments that provide a personalized, actionable view of student progress in real time.",
+      "met_criteria": [
+        "Has invested in assessment infrastructure that provides personalised, real-time data",
+        "Educators use this data to adjust learning in near-real-time, not just at reporting intervals",
+        "Students have access to their own learning progress data in a form they can act on",
+        "Assessment systems support learning rather than just measuring it"
+      ],
+      "not_yet_met_criteria": [
+        "Assessment data is available only at reporting intervals",
+        "Data systems are designed for accountability rather than for learning improvement",
+        "Students do not have access to or agency over their learning progress data"
+      ],
+      "partial_indicators": [
+        "Has invested in a data dashboard that provides near-real-time class progress data for teachers but students do not have access to personalised views of their own progress and teachers primarily use data for reporting rather than real-time instructional adjustment"
+      ]
+    },
+    {
+      "indicator_id": "iste-l-sd-3a",
+      "standard_id": "iste-l-sd",
+      "standard": "Systems Designer",
+      "indicator_letter": "a",
+      "indicator_source_text": "Leaders guide teams to establish equitable technology policies that support effective learning.",
+      "met_criteria": [
+        "Technology policies are developed through a team process \u2014 not by leadership alone",
+        "Equity is an explicit criterion in policy development, not a downstream consideration",
+        "Policies are evaluated against student learning outcomes, not just compliance",
+        "Policy review is built into a regular governance cycle"
+      ],
+      "not_yet_met_criteria": [
+        "Technology policies are written by leadership or IT without equitable team process",
+        "Policies address safety and compliance but not equity or learning effectiveness"
+      ],
+      "partial_indicators": [
+        "Involves a steering group in policy development and ensures policies comply with legal equity requirements, but does not evaluate policies against learning outcomes or ensure equity beyond access provision"
+      ]
+    },
+    {
+      "indicator_id": "iste-l-sd-3b",
+      "standard_id": "iste-l-sd",
+      "standard": "Systems Designer",
+      "indicator_letter": "b",
+      "indicator_source_text": "Leaders ensure that resources and infrastructure for supporting effective use of technology for learning are sufficient and scalable to meet future demand.",
+      "met_criteria": [
+        "Infrastructure planning is connected to specific learning activity requirements, not just general capacity",
+        "Models future demand based on the learning programme, not just historical usage",
+        "Has a costed and phased replacement and upgrade plan",
+        "Scalability is an explicit design criterion, not just a hope"
+      ],
+      "not_yet_met_criteria": [
+        "Infrastructure investment is reactive \u2014 problems are addressed as they emerge",
+        "Infrastructure planning is disconnected from the learning programme and its technology requirements"
+      ],
+      "partial_indicators": [
+        "Has a device replacement cycle and adequate wifi capacity for current use but has not modelled future demand based on the learning programme or established scalability criteria for procurement decisions"
+      ]
+    },
+    {
+      "indicator_id": "iste-l-sd-3c",
+      "standard_id": "iste-l-sd",
+      "standard": "Systems Designer",
+      "indicator_letter": "c",
+      "indicator_source_text": "Leaders protect privacy and security by ensuring staff understand and implement effective data management policies.",
+      "met_criteria": [
+        "All staff understand their data management responsibilities, not just IT and admin",
+        "Data protection is embedded in onboarding, professional development, and tool procurement",
+        "Incident response processes are known and practised by the relevant staff",
+        "Privacy protection is a cultural value, not just a policy compliance requirement"
+      ],
+      "not_yet_met_criteria": [
+        "Data protection is delegated to IT and admin without general staff awareness or responsibility",
+        "Staff are told what the rules are but not equipped to apply them in varied contexts"
+      ],
+      "partial_indicators": [
+        "Ensures all staff complete data protection training and sign acceptable use policies, but this is compliance-focused training rather than building the practical understanding and habit of effective data management in daily professional practice"
+      ]
+    },
+    {
+      "indicator_id": "iste-l-sd-3d",
+      "standard_id": "iste-l-sd",
+      "standard": "Systems Designer",
+      "indicator_letter": "d",
+      "indicator_source_text": "Leaders establish partnerships to advance strategic plans, achieve learning priorities and develop opportunities for students to gain real-world experience.",
+      "met_criteria": [
+        "Partnerships are strategically chosen based on alignment with learning priorities",
+        "Student real-world experience is an explicit objective of at least one partnership",
+        "Partnerships are resourced and managed to deliver their intended learning benefits",
+        "Partnership value is reviewed against strategic plan goals, not just activity measures"
+      ],
+      "not_yet_met_criteria": [
+        "Partnerships are formed opportunistically rather than strategically",
+        "Student experience benefits from partnerships are incidental rather than designed"
+      ],
+      "partial_indicators": [
+        "Has established cost-sharing partnerships for technology procurement but does not leverage partnerships to advance learning priorities or create structured real-world experience opportunities for students"
+      ]
+    },
+    {
+      "indicator_id": "iste-l-cl-3a",
+      "standard_id": "iste-l-cl",
+      "standard": "Connected Learner",
+      "indicator_letter": "a",
+      "indicator_source_text": "Leaders set goals to remain current on emerging technologies for learning, innovations in pedagogy and advancements in the learning sciences.",
+      "met_criteria": [
+        "Has explicit personal learning goals related to technology and pedagogy",
+        "Reviews and updates these goals periodically",
+        "Current knowledge of emerging technologies and learning science informs strategic decisions",
+        "Can articulate recent shifts in their thinking about technology and learning"
+      ],
+      "not_yet_met_criteria": [
+        "Stays current through passive consumption (news feed, forwarded articles) without personal learning goals",
+        "Emerging technology awareness does not connect to strategic or pedagogical decisions"
+      ],
+      "partial_indicators": [
+        "Subscribes to edtech newsletters and reads regularly but has not set structured personal learning goals or used emerging knowledge to revise their strategic or pedagogical thinking"
+      ]
+    },
+    {
+      "indicator_id": "iste-l-cl-3b",
+      "standard_id": "iste-l-cl",
+      "standard": "Connected Learner",
+      "indicator_letter": "b",
+      "indicator_source_text": "Leaders participate regularly in online professional learning networks to collaboratively learn with and mentor other professionals.",
+      "met_criteria": [
+        "Is an active (contributing) member of at least one professional network focused on education leadership and technology",
+        "Mentors other professionals as well as learning from them",
+        "Network participation is regular \u2014 not just annual conference attendance",
+        "Network learning connects to institutional decisions and practice"
+      ],
+      "not_yet_met_criteria": [
+        "Professional networking is limited to in-person events or passive online presence",
+        "Does not mentor peers or contribute to collective learning in their field"
+      ],
+      "partial_indicators": [
+        "Attends professional networks and conferences regularly and maintains LinkedIn connections but does not actively contribute, mentor others, or bring network learning systematically back into institutional decision-making"
+      ]
+    },
+    {
+      "indicator_id": "iste-l-cl-3c",
+      "standard_id": "iste-l-cl",
+      "standard": "Connected Learner",
+      "indicator_letter": "c",
+      "indicator_source_text": "Leaders use technology to regularly engage in reflective practices that support personal and professional growth.",
+      "met_criteria": [
+        "Has a structured reflective practice that uses technology (e.g., leadership journal, reflective recording, annotated reading)",
+        "Reflection is regular, not just at crisis points",
+        "Technological reflection supports genuine growth \u2014 it changes thinking or practice",
+        "Models reflective practice to staff as a professional norm"
+      ],
+      "not_yet_met_criteria": [
+        "Does not have a structured reflective practice",
+        "Reflection happens in response to problems rather than as a regular developmental habit"
+      ],
+      "partial_indicators": [
+        "Keeps a leadership journal and reflects on significant decisions but does not use technology to structure or enhance reflection, and reflection is not modelled to staff as a professional norm"
+      ]
+    },
+    {
+      "indicator_id": "iste-l-cl-3d",
+      "standard_id": "iste-l-cl",
+      "standard": "Connected Learner",
+      "indicator_letter": "d",
+      "indicator_source_text": "Leaders develop the skills needed to lead and navigate change, advance systems and promote a mindset of continuous improvement for how technology can improve learning.",
+      "met_criteria": [
+        "Has a developed repertoire of change leadership strategies, not just willingness to change",
+        "Understands system interdependencies and how technology change ripples across the organisation",
+        "Actively promotes a continuous improvement mindset \u2014 including willingness to revise the strategy",
+        "Develops change leadership capacity in others, not just exercises it themselves"
+      ],
+      "not_yet_met_criteria": [
+        "Approaches change primarily as an implementation challenge \u2014 plans, communicates, monitors",
+        "Does not account for system interdependencies or develop change leadership capacity in others",
+        "Continuous improvement is a stated value but not a practised process"
+      ],
+      "partial_indicators": [
+        "Manages technology change effectively in terms of planning and stakeholder communication but does not develop the adaptive, system-navigation, or capacity-building dimensions of change leadership that this standard requires"
+      ]
+    }
+  ]
+}

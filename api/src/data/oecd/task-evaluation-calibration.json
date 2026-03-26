@@ -1,0 +1,429 @@
+{
+  "schema_version": "1.0",
+  "framework_id": "oecd-ai-capability-indicators",
+  "file_id": "task-evaluation-calibration",
+  "purpose": "30 pre-evaluated reference tasks serving as few-shot examples for the Task Evaluator LLM. These calibrate the model's feasibility scoring and recommendation logic across all four OECD task types. Include the full set as system-level context in every Task Evaluator prompt.",
+  "usage_note": "These are calibration anchors, not a user-facing list. The LLM uses them to anchor its feasibility judgments before evaluating a new user-submitted task. The 30 tasks are deliberately diverse in type, stakes, student-facing status, and data sensitivity to maximise calibration coverage.",
+  "feasibility_scale": {
+    "1": "Not feasible. AI cannot perform this task meaningfully. Human must execute end-to-end.",
+    "2": "Low feasibility. AI can assist with minimal sub-components only. Human leads throughout.",
+    "3": "Medium feasibility. AI and human each contribute substantially. Neither alone is adequate.",
+    "4": "High feasibility. AI can perform the majority of the task with human oversight at key checkpoints.",
+    "5": "Full feasibility. AI can automate end-to-end with minimal human oversight. Human reviews exceptions only."
+  },
+  "recommendation_definitions": {
+    "automate": "AI can handle end-to-end with human review of exceptions. Appropriate for high-volume RC tasks with low stakes and low data sensitivity.",
+    "augment": "AI assists a human expert who remains the primary agent and retains accountability. Appropriate for NRC tasks, student-facing tasks, and tasks with meaningful stakes.",
+    "avoid": "AI should not be applied to this task in its current form. Risk of harm, integrity concern, or relational damage outweighs potential efficiency gain."
+  },
+  "reference_tasks": [
+    {
+      "id": "cal-001",
+      "task_description": "Generating weekly attendance and engagement reports from LMS data and distributing to personal tutors",
+      "oecd_type": "RC",
+      "feasibility_score": 5,
+      "recommendation": "automate",
+      "reasoning": "Fully structured inputs from LMS. Defined report template. Deterministic output. Distribution via institutional email system. No judgment involved in any step. High automation value given weekly frequency.",
+      "safeguards": [
+        "Human reviews reports flagging significant anomalies before escalation",
+        "Data access controls ensure only authorised staff receive attendance data",
+        "Audit trail maintained for data access and distribution"
+      ],
+      "implementation_guidance": "Integrate LMS API with report generation tool. Schedule weekly automated run. Route output to secure staff portal rather than direct email to prevent data leakage. Personal tutors receive a summary flag rather than full student data where possible."
+    },
+    {
+      "id": "cal-002",
+      "task_description": "Transcribing and captioning recorded lectures for accessibility compliance",
+      "oecd_type": "RC",
+      "feasibility_score": 5,
+      "recommendation": "automate",
+      "reasoning": "Current AI speech-to-text operates at near-human accuracy for standard academic speech. Captioning is a format conversion task with objective quality metrics. High volume makes automation highly efficient.",
+      "safeguards": [
+        "Automated quality check for word error rate above a defined threshold triggers human review",
+        "Sensitive or confidential content in recordings (e.g. disclosed student information) should be excluded from automated transcription systems using cloud processing"
+      ],
+      "implementation_guidance": "Deploy on-premise transcription for sensitive recordings. Use cloud-based transcription for standard lecture content. Build human review queue for flagged low-confidence segments. Do not use transcripts as legal records without review."
+    },
+    {
+      "id": "cal-003",
+      "task_description": "Extracting key action items and decisions from meeting transcripts into a structured summary",
+      "oecd_type": "RC",
+      "feasibility_score": 4,
+      "recommendation": "automate",
+      "reasoning": "Well within current LLM capability for structured information extraction. Output quality is verifiable by attendees. High automation value for administrative staff handling multiple committee meetings weekly.",
+      "safeguards": [
+        "Human attendee reviews and approves summary before distribution",
+        "System should not process transcripts of confidential HR, legal, or disciplinary meetings",
+        "Retention policy for meeting transcripts must be established before deployment"
+      ],
+      "implementation_guidance": "Deploy for standard committee and project meetings. Exclude sensitive meeting categories by policy. Build approval workflow before distribution. Train staff on reviewing AI summaries critically rather than treating them as authoritative records."
+    },
+    {
+      "id": "cal-004",
+      "task_description": "Checking submitted student assignments for file format and submission completeness against defined requirements",
+      "oecd_type": "RC",
+      "feasibility_score": 5,
+      "recommendation": "automate",
+      "reasoning": "Fully rule-based compliance check. Defined pass/fail criteria. High volume across submission periods. No judgment required.",
+      "safeguards": [
+        "Clear student-facing messaging when submission is flagged as incomplete, with appeal route",
+        "No penalty applied automatically without human confirmation of the flag"
+      ],
+      "implementation_guidance": "Integrate with submission portal. Send automated acknowledgement with checklist result to student. Route failures to human administrator before any penalty communication."
+    },
+    {
+      "id": "cal-005",
+      "task_description": "Populating an annual academic performance review template with metrics drawn from HR and assessment systems",
+      "oecd_type": "RC",
+      "feasibility_score": 4,
+      "recommendation": "automate",
+      "reasoning": "Data transfer from source systems to defined templates is automatable. Template structure is fixed. Quality is verifiable against source data.",
+      "safeguards": [
+        "Staff member reviews pre-populated template before submission",
+        "Data accuracy check against source systems before population",
+        "Sensitive HR data should not be routed through third-party AI services"
+      ],
+      "implementation_guidance": "Use on-premise data pipelines rather than external AI for this task given personal data involved. Populate only objective metrics. Narrative evaluation sections must be completed by the human reviewer."
+    },
+    {
+      "id": "cal-006",
+      "task_description": "Running similarity detection on assignment submissions and generating originality reports",
+      "oecd_type": "RC",
+      "feasibility_score": 5,
+      "recommendation": "automate",
+      "reasoning": "Automated comparison against defined corpora with objective similarity scoring. This is the defined function of established tools. No professional judgment in report generation.",
+      "safeguards": [
+        "Reports are evidence for investigation, not determinations of misconduct",
+        "Any penalty or academic integrity proceeding must follow human review and NRC judgment",
+        "Students should be informed their work is submitted to detection tools in accordance with data protection obligations"
+      ],
+      "implementation_guidance": "Integrate with submission workflow. Provide originality report to academic automatically. Train academics on interpreting similarity scores contextually. Never communicate similarity scores directly to students without academic interpretation."
+    },
+    {
+      "id": "cal-007",
+      "task_description": "Generating draft standard offer letters for undergraduate applicants meeting defined entry criteria",
+      "oecd_type": "RC",
+      "feasibility_score": 4,
+      "recommendation": "automate",
+      "reasoning": "Template-based document generation triggered by defined eligibility criteria. Structured input from admissions system. High volume during admissions cycle makes automation high-value.",
+      "safeguards": [
+        "Human review of batches before sending, particularly for conditional offers with non-standard conditions",
+        "Exceptions and edge cases flagged for human handling",
+        "Final send requires human sign-off for any application outside standard criteria"
+      ],
+      "implementation_guidance": "Automate standard offers; route non-standard to human admissions staff. Maintain human sign-off for any offer with unusual conditions or where the system has low confidence. Compliance with UCAS and data protection requirements must be verified."
+    },
+    {
+      "id": "cal-008",
+      "task_description": "Tagging and categorising library acquisition requests by subject area against institutional taxonomy",
+      "oecd_type": "RC",
+      "feasibility_score": 4,
+      "recommendation": "automate",
+      "reasoning": "Classification against a defined taxonomy. High volume in a library context. Good pattern recognition performance for standard subject areas.",
+      "safeguards": [
+        "Human librarian reviews interdisciplinary or novel subject area classifications",
+        "Periodic audit of classification accuracy by subject librarians"
+      ],
+      "implementation_guidance": "Deploy with high-confidence automated routing and low-confidence human review queue. Tune taxonomy-specific classification using institutional subject headings rather than generic categories."
+    },
+    {
+      "id": "cal-009",
+      "task_description": "Designing a new interdisciplinary postgraduate module with novel learning outcomes aligned to an emerging field",
+      "oecd_type": "NRC",
+      "feasibility_score": 3,
+      "recommendation": "augment",
+      "reasoning": "AI can generate draft learning outcomes, suggest content structure, and check alignment with QAA benchmarks. However, disciplinary judgment about what the field requires, pedagogical choices about how to sequence learning, and institutional context about existing provision require expert authorship.",
+      "safeguards": [
+        "Subject expert must substantively author and own the module specification",
+        "AI drafts used as scaffolding only, not as final content",
+        "Module design must go through standard institutional approval process regardless of AI involvement"
+      ],
+      "implementation_guidance": "Use AI to generate a first-draft scaffold from learning outcome templates and benchmark statements. Expert academic then substantially revises and contextualises. Do not submit AI-generated text as the substantive intellectual contribution to institutional approval committees."
+    },
+    {
+      "id": "cal-010",
+      "task_description": "Evaluating a student's 3,000-word critical analysis essay for a summative grade",
+      "oecd_type": "NRC",
+      "feasibility_score": 2,
+      "recommendation": "augment",
+      "reasoning": "Expert evaluation of argument quality, disciplinary understanding, and critical thinking requires academic judgment that current AI cannot reliably replicate at summative level. AI can flag surface features. The determination of the grade and the feedback that supports student development require human accountability.",
+      "safeguards": [
+        "AI must not determine or materially influence summative grades",
+        "Any AI-generated feedback must be reviewed and validated by the academic before delivery",
+        "Students must be informed if AI tools are used in any part of the assessment process",
+        "Second marking and moderation should proceed as normal regardless of AI assistance"
+      ],
+      "implementation_guidance": "Use AI for first-pass identification of structural issues, citation problems, and obvious gaps to inform the marker's reading. Academic retains full authority over grade and feedback. AI assistance should reduce administrative load, not substitute academic judgment."
+    },
+    {
+      "id": "cal-011",
+      "task_description": "Conducting an accreditation self-evaluation review for a professional programme",
+      "oecd_type": "NRC",
+      "feasibility_score": 2,
+      "recommendation": "augment",
+      "reasoning": "Accreditation requires genuine self-assessment against external standards, with professional accountability and consequential institutional implications. AI can assist with evidence compilation and document drafting, but the evaluative claims and institutional narrative require expert ownership.",
+      "safeguards": [
+        "All substantive evaluative claims must be authored and approved by accountable staff",
+        "Evidence compilation by AI must be verified against source documents",
+        "Submission to accrediting body must be approved through institutional governance"
+      ],
+      "implementation_guidance": "Use AI for evidence mapping (which documents address which standards), gap identification, and first-draft narrative sections. Require substantive human review of every section before inclusion. Final submission requires sign-off from programme director and institutional quality office."
+    },
+    {
+      "id": "cal-012",
+      "task_description": "Analysing patterns in student learning analytics data to identify structural curriculum weaknesses",
+      "oecd_type": "NRC",
+      "feasibility_score": 3,
+      "recommendation": "augment",
+      "reasoning": "AI can identify statistical patterns in engagement, assessment, and progression data effectively. Interpreting what those patterns mean in the context of the specific curriculum, cohort, and pedagogical approach requires expert judgment. Recommendations for curriculum change require academic ownership.",
+      "safeguards": [
+        "Pattern findings treated as hypotheses requiring expert interpretation, not conclusions",
+        "Student-level data used only in aggregate for this analytical purpose",
+        "Curriculum change decisions made through standard academic governance processes"
+      ],
+      "implementation_guidance": "Build AI-assisted analytics dashboards showing patterns and anomalies. Module leaders and programme directors interpret findings in context. Recommendations go through normal curriculum review governance. Do not allow AI to generate student-facing communications based on individual analytics data without human review."
+    },
+    {
+      "id": "cal-013",
+      "task_description": "Writing a research impact case study for a national research assessment exercise",
+      "oecd_type": "NRC",
+      "feasibility_score": 2,
+      "recommendation": "augment",
+      "reasoning": "Research impact case studies require authentic evidence-based argument about real-world impact with institutional reputation and funding implications. AI can assist with structure and drafting, but the evidential claims, narrative coherence, and strategic framing require expert academic ownership.",
+      "safeguards": [
+        "All factual claims about impact must be verifiable and approved by the named researcher",
+        "Submission process requires sign-off from research office and academic",
+        "AI involvement in drafting should be disclosed to the research office according to institutional policy"
+      ],
+      "implementation_guidance": "Use AI for first draft from structured evidence inputs provided by the researcher. Researcher then substantially revises, verifies all claims, and takes ownership. Research office reviews for compliance with submission requirements."
+    },
+    {
+      "id": "cal-014",
+      "task_description": "Developing institutional guidelines for the ethical use of generative AI in research",
+      "oecd_type": "NRC",
+      "feasibility_score": 3,
+      "recommendation": "augment",
+      "reasoning": "AI can synthesise existing sector guidance, draft frameworks, and identify coverage gaps effectively. However, the institutional values, stakeholder consultation, and governance process that give guidelines legitimacy and buy-in are beyond AI capability.",
+      "safeguards": [
+        "Guidelines must be developed through participatory process including researchers, ethics committee, and governance bodies",
+        "AI-drafted text clearly labelled as draft for consultation rather than institutional position",
+        "Final guidelines require approval through institutional governance"
+      ],
+      "implementation_guidance": "Use AI to synthesise sector comparators and produce a structured draft. Convene working group to review, consult, and revise. Submit through ethics committee and academic board. Do not present AI-generated guidelines as the outcome of institutional consultation."
+    },
+    {
+      "id": "cal-015",
+      "task_description": "Interpreting a complex student disability disclosure to determine appropriate academic adjustments",
+      "oecd_type": "NRC",
+      "feasibility_score": 2,
+      "recommendation": "augment",
+      "reasoning": "Determining appropriate adjustments requires professional expertise in disability support, knowledge of the student's individual context, and judgment about what is reasonable and feasible in the specific academic setting. High stakes for the student.",
+      "safeguards": [
+        "Decisions about adjustments must be made by a qualified disability advisor, not by AI",
+        "AI can assist with checking whether disclosed needs map to standard adjustment categories",
+        "Personal disability data must not be processed through external AI services without explicit consent"
+      ],
+      "implementation_guidance": "AI may assist the advisor by checking disclosed needs against standard adjustment frameworks and flagging relevant precedents. The advisor retains full decision-making authority. All personal data processed on-premise or with appropriate data processing agreements."
+    },
+    {
+      "id": "cal-016",
+      "task_description": "Providing one-to-one mental health counselling to a student experiencing anxiety and academic difficulties",
+      "oecd_type": "IP",
+      "feasibility_score": 1,
+      "recommendation": "avoid",
+      "reasoning": "Therapeutic relationship is constitutive of the intervention. The counsellor's empathy, professional accountability, and genuine human presence are not quality enhancements but requirements. AI simulation of counselling is ethically unacceptable and potentially harmful. Duty of care cannot be discharged through an AI system.",
+      "safeguards": [
+        "AI must not be used to simulate, approximate, or substitute for counselling sessions",
+        "AI chatbots for signposting mental health services are permissible but must never simulate therapeutic engagement",
+        "Any AI-assisted screening for wellbeing must escalate to human professionals"
+      ],
+      "implementation_guidance": "Do not implement. AI can assist with administrative tasks around counselling services (appointment booking, resource signposting). The service itself requires qualified human counsellors. Waiting list management should be treated as an access issue, not an AI automation opportunity."
+    },
+    {
+      "id": "cal-017",
+      "task_description": "Conducting a regular personal academic tutoring meeting with a first-year undergraduate student",
+      "oecd_type": "IP",
+      "feasibility_score": 1,
+      "recommendation": "avoid",
+      "reasoning": "Academic belonging, motivation, and transition success in the first year are strongly relational outcomes. The tutor's genuine interest, accountability, and presence are essential. AI substitution would undermine the developmental purpose and student trust.",
+      "safeguards": [
+        "AI must not substitute for the tutoring relationship",
+        "AI-generated student profiles may inform tutor preparation but must not replace the tutor's own engagement with the student",
+        "Students must not be directed to an AI system when they have a need that requires human pastoral response"
+      ],
+      "implementation_guidance": "Use AI to prepare the tutor with a student profile summary before the meeting (RC/NRC task). The meeting is always human-led. Do not allow AI to conduct or record pastoral conversations without explicit informed consent."
+    },
+    {
+      "id": "cal-018",
+      "task_description": "Managing a doctoral student's research supervision including intellectual direction and pastoral support",
+      "oecd_type": "IP",
+      "feasibility_score": 1,
+      "recommendation": "avoid",
+      "reasoning": "Doctoral supervision combines intellectual formation, professional identity development, and pastoral support. The supervisor's personal investment, expert judgment, and accountability are inseparable from the relationship. This is among the most unambiguously IP tasks in higher education.",
+      "safeguards": [
+        "AI must not simulate supervisory conversations or provide direction in the supervisor's name",
+        "AI tools may assist with literature synthesis and methodology checking (NRC augmentation) but not supervisory relationship"
+      ],
+      "implementation_guidance": "AI can support the research itself (literature review tools, analysis assistance) but not the supervision relationship. Use AI for administrative aspects of supervision management (milestone tracking, meeting scheduling) only."
+    },
+    {
+      "id": "cal-019",
+      "task_description": "Facilitating a seminar on research ethics requiring genuine moral deliberation among students",
+      "oecd_type": "IP",
+      "feasibility_score": 1,
+      "recommendation": "avoid",
+      "reasoning": "The pedagogical value of ethics seminar facilitation depends on the educator's genuine moral engagement and the authenticity of deliberation. AI facilitation would convert a developmental experience into a simulation.",
+      "safeguards": [
+        "AI may provide preparatory materials and discussion scenarios (NRC support)",
+        "AI must not moderate or evaluate student contributions in real-time seminar discussion"
+      ],
+      "implementation_guidance": "Use AI to generate discussion scenarios, background materials, and structured debate frameworks for the educator. The facilitation itself is always human. Post-seminar reflection tools may use AI for structured prompts."
+    },
+    {
+      "id": "cal-020",
+      "task_description": "Conducting a staff disciplinary hearing as the responsible panel member",
+      "oecd_type": "IP",
+      "feasibility_score": 1,
+      "recommendation": "avoid",
+      "reasoning": "Legal, ethical, and procedural requirements for disciplinary processes require human decision-makers with personal accountability. Employment law in virtually all jurisdictions requires human judgment in disciplinary proceedings. The employee's rights and dignity require genuine human engagement.",
+      "safeguards": [
+        "AI must not participate in, simulate, or advise on live disciplinary proceedings",
+        "AI may assist with pre-hearing documentation review (RC/NRC) conducted by HR professionals",
+        "All findings and decisions must be made by accountable human panel members"
+      ],
+      "implementation_guidance": "Strictly human-led. AI tools may support HR in preparing documentation bundles or checking procedural compliance before the hearing, but the hearing process itself and all determinations are exclusively human."
+    },
+    {
+      "id": "cal-021",
+      "task_description": "International student cultural integration support including facilitation of peer connection",
+      "oecd_type": "IP",
+      "feasibility_score": 1,
+      "recommendation": "avoid",
+      "reasoning": "Belonging, cultural transition, and peer connection are relational outcomes that cannot be produced by AI interaction. The institutional investment in genuine human welcome is what gives international students confidence to engage and persist.",
+      "safeguards": [
+        "AI chatbots may provide logistical information (RC) but must not simulate human connection or peer relationships",
+        "Integration programme design should prioritise human peer mentoring and community"
+      ],
+      "implementation_guidance": "Use AI for information provision and FAQ handling in pre-arrival communications. Build peer mentoring and human-facilitated orientation as the core of integration support. Do not use AI interaction as a substitute for the human community that students need."
+    },
+    {
+      "id": "cal-022",
+      "task_description": "Chemistry laboratory titration practical requiring correct technique and instrument handling",
+      "oecd_type": "MP",
+      "feasibility_score": 1,
+      "recommendation": "avoid",
+      "reasoning": "Physical technique development in analytical chemistry requires hands-on practice. The embodied skill of correct pipetting, burette reading, and endpoint detection cannot be adequately developed through simulation for students who will subsequently work in real laboratories.",
+      "safeguards": [
+        "AI must not be used to certify physical practical competence without supervised physical practice",
+        "Virtual simulation may be used for pre-lab preparation but not as a substitute for assessed practical work"
+      ],
+      "implementation_guidance": "Use virtual simulations for pre-lab preparation and concept reinforcement. Assessed practical competence requires physical execution under supervision. AI can assist with pre-lab preparation materials and post-lab data analysis."
+    },
+    {
+      "id": "cal-023",
+      "task_description": "Geographic coastal fieldwork survey including sediment sampling and environmental observation",
+      "oecd_type": "MP",
+      "feasibility_score": 2,
+      "recommendation": "augment",
+      "reasoning": "Physical presence in the field environment, embodied observation of environmental conditions, and manual sample collection are core to the learning experience. Some data collection and recording tasks can be AI-assisted (GPS logging, automated sensor data). The observational and interpretive fieldwork remains MP.",
+      "safeguards": [
+        "AI data collection tools must be validated for the environmental conditions",
+        "Physical safety protocols and student supervision are required regardless of AI assistance"
+      ],
+      "implementation_guidance": "Use AI for route planning, sensor data logging, and post-field data processing. The field experience itself remains human-led. AI-generated preliminary data analysis can enrich the subsequent NRC analytical task."
+    },
+    {
+      "id": "cal-024",
+      "task_description": "Nursing venepuncture skills training on clinical simulation mannequins",
+      "oecd_type": "MP",
+      "feasibility_score": 3,
+      "recommendation": "augment",
+      "reasoning": "High-fidelity simulation provides meaningful physical practice and real-time AI feedback on technique is increasingly viable. Simulation cannot fully substitute for supervised clinical practice on actual patients required for professional registration, but AI-assisted simulation substantially reduces training burden.",
+      "safeguards": [
+        "AI simulation competence must not substitute for supervised clinical practice hours required for NMC registration",
+        "Feedback from AI simulation must be validated against clinical educator standards",
+        "Student competence assessment must be conducted by a qualified clinical educator"
+      ],
+      "implementation_guidance": "Deploy AI-assisted simulation as preparation for supervised clinical placement, not as a replacement. Integrate with competency tracking system. AI feedback on technique should be reviewed by clinical educator before student progression decisions."
+    },
+    {
+      "id": "cal-025",
+      "task_description": "Engineering team prototype construction and materials testing for a design project",
+      "oecd_type": "MP",
+      "feasibility_score": 2,
+      "recommendation": "augment",
+      "reasoning": "Physical construction and empirical materials testing develop embodied engineering judgment that digital simulation cannot fully replicate. AI and digital twin simulation can reduce the number of physical iterations needed but the physical construction and testing experience is educationally essential.",
+      "safeguards": [
+        "Safety protocols for physical workshop and testing activities must be maintained",
+        "AI-generated design optimisations must be critically evaluated by the student team before construction"
+      ],
+      "implementation_guidance": "Use AI for initial design analysis, simulation of stress and performance, and material selection guidance. Physical construction and empirical testing are retained as core educational activities. AI accelerates design iteration cycles without removing the physical learning."
+    },
+    {
+      "id": "cal-026",
+      "task_description": "Fine arts printmaking studio practice developing physical technique with etching",
+      "oecd_type": "MP",
+      "feasibility_score": 1,
+      "recommendation": "avoid",
+      "reasoning": "Printmaking technique involves embodied understanding of materials, chemical processes, and physical press operation that is the craft practice itself. AI image generation is a categorically different activity. Physical studio practice is what the student is learning.",
+      "safeguards": [
+        "AI image generation tools must not be presented as equivalent to or substitutable for physical studio practice in fine arts programmes",
+        "Where AI tools are introduced in fine arts, they should be framed as additional media, not replacements"
+      ],
+      "implementation_guidance": "Physical studio practice remains the core educational activity. AI tools may be introduced as a distinct additional medium for exploration, clearly differentiated from the physical craft skills the programme develops. Assessment of physical craft skills must involve physical work."
+    },
+    {
+      "id": "cal-027",
+      "task_description": "Automated analysis of student microscopy images to identify specimen features for post-lab reporting",
+      "oecd_type": "MP",
+      "feasibility_score": 4,
+      "recommendation": "augment",
+      "reasoning": "AI image analysis of microscopy images performs well and can assist students in identifying specimen features. The physical preparation and microscopy technique remain MP; the analytical interpretation of the image is NRC; and AI analysis of the resulting digital image can genuinely augment the post-lab stage.",
+      "safeguards": [
+        "AI image analysis is a learning support tool, not a substitute for the student's own interpretation",
+        "Assessment of the student's ability to interpret microscopy images must evaluate their own reasoning"
+      ],
+      "implementation_guidance": "Deploy as a checking tool after the student has made their own interpretation. AI identifies additional features or flags potential misidentifications. Student reflects on discrepancies. Do not deploy AI interpretation before the student has completed their own analysis."
+    },
+    {
+      "id": "cal-028",
+      "task_description": "Archaeological excavation requiring contextual in-situ interpretation of stratigraphy",
+      "oecd_type": "MP",
+      "feasibility_score": 2,
+      "recommendation": "augment",
+      "reasoning": "Physical excavation, real-time stratigraphic interpretation, and hands-on finds recovery are irreducibly physical activities requiring presence and embodied judgment. AI can assist with photogrammetric documentation, finds classification, and remote sensing interpretation but cannot substitute for the physical excavation process.",
+      "safeguards": [
+        "AI photogrammetric documentation must be validated by supervising archaeologist",
+        "Physical excavation decisions (where and how to dig) must be made by qualified practitioners"
+      ],
+      "implementation_guidance": "Use AI for photogrammetric site recording, finds database entry, and pattern analysis of spatial distribution data. These are RC/NRC tasks within the broader MP activity. The excavation itself and real-time stratigraphic decisions remain human-led."
+    },
+    {
+      "id": "cal-029",
+      "task_description": "AI-assisted real-time feedback on student instrumental technique during practice using motion and audio analysis",
+      "oecd_type": "MP",
+      "feasibility_score": 3,
+      "recommendation": "augment",
+      "reasoning": "Real-time audio pitch and timing analysis and some motion analysis of technique are within current AI capability and can genuinely improve unsupervised practice quality. The physical skill development itself requires the student to practise; AI feedback accelerates improvement without replacing the practice.",
+      "safeguards": [
+        "AI feedback systems should be validated by music educators before deployment",
+        "Students should understand the limitations of AI feedback (technical aspects only, not musicality or interpretation)",
+        "AI feedback must not replace supervised lesson time with a human teacher"
+      ],
+      "implementation_guidance": "Deploy as a practice support tool between supervised lessons. Scope feedback to technical aspects (intonation, rhythm, dynamics) where AI reliability is high. Frame as supplementary to, not replacing, teacher feedback. Collect data on student improvement to evaluate tool effectiveness."
+    },
+    {
+      "id": "cal-030",
+      "task_description": "Physical education golf coaching developing full swing technique over a series of sessions",
+      "oecd_type": "MP",
+      "feasibility_score": 2,
+      "recommendation": "augment",
+      "reasoning": "Developing a complex physical technique requires embodied feedback, relationship between coach and student, physical demonstration, and real-time correction. AI motion analysis can supplement the coach's eye, particularly for aspects that are difficult to observe in real time, but cannot substitute for the coaching relationship and physical presence.",
+      "safeguards": [
+        "AI motion analysis must be interpreted by a qualified coach, not delivered directly to students as prescriptive instructions",
+        "Students should not rely solely on AI analysis for technique development"
+      ],
+      "implementation_guidance": "Use AI motion analysis as a coaching tool: AI captures data the coach uses to inform their coaching, not as a direct feedback channel to the student. Coach interprets AI insights in context of the student's specific situation. The coaching session remains human-led."
+    }
+  ]
+}

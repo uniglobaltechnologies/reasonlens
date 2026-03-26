@@ -1,0 +1,120 @@
+{
+  "bundle_root": "jisc-bdc-json",
+  "profiles": {
+    "bdc-individual": {
+      "indicator_operationalisation": {
+        "path": "jisc-bdc-json/bdc-individual/indicator-operationalisation.json",
+        "entries": 18
+      },
+      "level_boundaries": {
+        "path": "jisc-bdc-json/bdc-individual/level-boundaries.json",
+        "entries": 12
+      },
+      "practitioner_language": {
+        "path": "jisc-bdc-json/bdc-individual/practitioner-language.json",
+        "entries": 18
+      }
+    },
+    "bdc-teacher-he": {
+      "indicator_operationalisation": {
+        "path": "jisc-bdc-json/bdc-teacher-he/indicator-operationalisation.json",
+        "entries": 18
+      },
+      "level_boundaries": {
+        "path": "jisc-bdc-json/bdc-teacher-he/level-boundaries.json",
+        "entries": 12
+      },
+      "practitioner_language": {
+        "path": "jisc-bdc-json/bdc-teacher-he/practitioner-language.json",
+        "entries": 18
+      }
+    },
+    "bdc-researcher": {
+      "indicator_operationalisation": {
+        "path": "jisc-bdc-json/bdc-researcher/indicator-operationalisation.json",
+        "entries": 18
+      },
+      "level_boundaries": {
+        "path": "jisc-bdc-json/bdc-researcher/level-boundaries.json",
+        "entries": 12
+      },
+      "practitioner_language": {
+        "path": "jisc-bdc-json/bdc-researcher/practitioner-language.json",
+        "entries": 18
+      }
+    },
+    "bdc-professional-services": {
+      "indicator_operationalisation": {
+        "path": "jisc-bdc-json/bdc-professional-services/indicator-operationalisation.json",
+        "entries": 18
+      },
+      "level_boundaries": {
+        "path": "jisc-bdc-json/bdc-professional-services/level-boundaries.json",
+        "entries": 12
+      },
+      "practitioner_language": {
+        "path": "jisc-bdc-json/bdc-professional-services/practitioner-language.json",
+        "entries": 18
+      }
+    },
+    "bdc-learning-technology": {
+      "indicator_operationalisation": {
+        "path": "jisc-bdc-json/bdc-learning-technology/indicator-operationalisation.json",
+        "entries": 18
+      },
+      "level_boundaries": {
+        "path": "jisc-bdc-json/bdc-learning-technology/level-boundaries.json",
+        "entries": 12
+      },
+      "practitioner_language": {
+        "path": "jisc-bdc-json/bdc-learning-technology/practitioner-language.json",
+        "entries": 18
+      }
+    },
+    "bdc-digital-leader": {
+      "indicator_operationalisation": {
+        "path": "jisc-bdc-json/bdc-digital-leader/indicator-operationalisation.json",
+        "entries": 18
+      },
+      "level_boundaries": {
+        "path": "jisc-bdc-json/bdc-digital-leader/level-boundaries.json",
+        "entries": 12
+      },
+      "practitioner_language": {
+        "path": "jisc-bdc-json/bdc-digital-leader/practitioner-language.json",
+        "entries": 18
+      }
+    },
+    "bdc-educational-developer": {
+      "indicator_operationalisation": {
+        "path": "jisc-bdc-json/bdc-educational-developer/indicator-operationalisation.json",
+        "entries": 18
+      },
+      "level_boundaries": {
+        "path": "jisc-bdc-json/bdc-educational-developer/level-boundaries.json",
+        "entries": 12
+      },
+      "practitioner_language": {
+        "path": "jisc-bdc-json/bdc-educational-developer/practitioner-language.json",
+        "entries": 18
+      }
+    }
+  },
+  "shared": {
+    "scenarios": {
+      "path": "jisc-bdc-json/scenarios.json",
+      "objects": 96
+    },
+    "persona_context_matrix": {
+      "path": "jisc-bdc-json/persona-context-matrix.json",
+      "factors": 5
+    },
+    "cross_framework_mappings": {
+      "path": "jisc-bdc-json/cross-framework/bdc-mappings.json",
+      "profiles": 7
+    },
+    "index": {
+      "path": "jisc-bdc-json/index.json"
+    }
+  }
+}

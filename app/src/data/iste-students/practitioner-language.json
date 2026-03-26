@@ -1,0 +1,67 @@
+{
+  "_meta": {
+    "file": "practitioner-language.json",
+    "framework_id": "iste-students",
+    "framework_name": "ISTE Standards for Students v4.02",
+    "purpose": "Human-readable labels and descriptions for UI rendering. Used in assessment reports, dashboard displays, and persona-facing explanations. Do not use framework indicator source text directly in user-facing UI \u2014 use these labels.",
+    "generated_for": "ReasonLens"
+  },
+  "standards": [
+    {
+      "standard_id": "iste-s-emp",
+      "standard_name": "Empowered Learner",
+      "short_label": "Take charge of your learning",
+      "report_summary_met": "You use technology intentionally to pursue your own learning goals, seek feedback, and reflect on what is working \u2014 and you understand how your tools work well enough to choose the right one for the job.",
+      "report_summary_not_met": "There is an opportunity to be more purposeful about how you use technology for your own learning \u2014 setting goals connected to your strengths and needs, seeking out feedback, and exploring tools with curiosity rather than habit.",
+      "coaching_prompt": "What is one specific learning goal you have set for yourself this term, and what technology are you using to track your progress toward it?"
+    },
+    {
+      "standard_id": "iste-s-dc",
+      "standard_name": "Digital Citizen",
+      "short_label": "Be a responsible digital community member",
+      "report_summary_met": "You manage your digital identity thoughtfully, interact online with empathy and care for others, make intentional choices about your time online, and actively protect your personal data and privacy.",
+      "report_summary_not_met": "There is an opportunity to become more intentional about your digital footprint, the way you treat others online, and how you manage the data you share \u2014 building habits that will serve you for the long term.",
+      "coaching_prompt": "What active steps have you taken in the last month to protect your personal data or manage your digital identity intentionally?"
+    },
+    {
+      "standard_id": "iste-s-kc",
+      "standard_name": "Knowledge Constructor",
+      "short_label": "Build knowledge, not just collections",
+      "report_summary_met": "You find, evaluate, and curate information critically \u2014 examining where it comes from, who produced it, and why. Your research results in new understanding, not just a list of sources.",
+      "report_summary_not_met": "There is an opportunity to move from gathering information to constructing knowledge \u2014 developing stronger habits for evaluating sources critically and making connections that lead to genuine insight.",
+      "coaching_prompt": "When you last did research, what did you do to check whether a source might be biased or misleading?"
+    },
+    {
+      "standard_id": "iste-s-id",
+      "standard_name": "Innovative Designer",
+      "short_label": "Design your way through problems",
+      "report_summary_met": "You approach open-ended problems with a deliberate process: generating ideas, testing them, learning from what does not work, and refining your solution. You are comfortable with uncertainty and see constraints as part of the design challenge.",
+      "report_summary_not_met": "There is an opportunity to develop a more intentional design process \u2014 generating multiple ideas before committing to one, testing your solutions, and building tolerance for the ambiguity that comes with open-ended problems.",
+      "coaching_prompt": "Think about a recent project. Did you test your solution with real users or against clear criteria \u2014 and what did you change as a result?"
+    },
+    {
+      "standard_id": "iste-s-ct",
+      "standard_name": "Computational Thinker",
+      "short_label": "Think in systems and solutions",
+      "report_summary_met": "You break complex problems into their component parts, build models to understand systems, and develop algorithmic approaches to finding solutions \u2014 understanding how automation works and where it can help.",
+      "report_summary_not_met": "There is an opportunity to develop computational thinking skills: learning to decompose problems, build abstract models, and approach solutions in ways that leverage the power of digital tools more systematically.",
+      "coaching_prompt": "Can you describe a recent problem you solved step by step, and explain the logic you used to sequence those steps?"
+    },
+    {
+      "standard_id": "iste-s-cc",
+      "standard_name": "Creative Communicator",
+      "short_label": "Communicate creatively for your audience",
+      "report_summary_met": "You choose platforms and formats that fit your purpose and audience, create original or meaningfully remixed work, use digital media to communicate complex ideas visually, and tailor both your message and your medium for different people.",
+      "report_summary_not_met": "There is an opportunity to broaden how you communicate \u2014 moving beyond familiar formats to choose the platform and medium that actually serves each audience, and developing your ability to create original work that expresses your own thinking.",
+      "coaching_prompt": "Think about your last three pieces of communication. Did you choose the platform based on your audience \u2014 or because it was familiar?"
+    },
+    {
+      "standard_id": "iste-s-gc",
+      "standard_name": "Global Collaborator",
+      "short_label": "Learn with and from the world",
+      "report_summary_met": "You use digital tools to connect with people from different backgrounds, examine issues through genuinely diverse perspectives, contribute constructively in team settings, and explore local and global problems in partnership with others.",
+      "report_summary_not_met": "There is an opportunity to extend who you learn with and from \u2014 using technology not just to find diverse perspectives but to connect and collaborate directly with people whose experiences differ from yours.",
+      "coaching_prompt": "When did you last use technology to collaborate with someone outside your immediate circle \u2014 and how did it change your thinking?"
+    }
+  ]
+}

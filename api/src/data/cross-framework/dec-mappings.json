@@ -1,0 +1,261 @@
+{
+  "framework_id": "dec-ai-literacy",
+  "framework_name": "DEC AI Literacy Framework",
+  "file_type": "cross-framework-mappings",
+  "research_basis": {
+    "generated_at": "2026-03-26",
+    "authoring_method": "Original synthesis using the user brief and the THE DMI implementation reference as the structural benchmark.",
+    "licence_handling": "All rights reserved; reproduction without amendment permitted. This implementation uses original scenario and practitioner-language content informed by the framework structure."
+  },
+  "object_count": 16,
+  "mappings": [
+    {
+      "source_framework": "dec-ai-literacy",
+      "source_dimension_id": "dec-understanding",
+      "target_framework": "AILit",
+      "target_construct": "AI Fundamentals",
+      "confidence": "strong",
+      "direction": "bidirectional",
+      "what_transfers": [
+        "conceptual understanding of AI and data",
+        "limitations, performance, and data quality reasoning"
+      ],
+      "what_does_not_transfer": [
+        "AILit's futures emphasis",
+        "DEC's explicit higher-education framing"
+      ],
+      "rationale": "The two constructs are the closest structural match across the frameworks."
+    },
+    {
+      "source_framework": "dec-ai-literacy",
+      "source_dimension_id": "dec-using",
+      "target_framework": "AILit",
+      "target_construct": "AI Application",
+      "confidence": "strong",
+      "direction": "bidirectional",
+      "what_transfers": [
+        "tool selection, prompting, review, and workflow integration"
+      ],
+      "what_does_not_transfer": [
+        "AILit's stronger single-dimension blend of application and some creation behaviours"
+      ],
+      "rationale": "Both address practical use of AI in real tasks."
+    },
+    {
+      "source_framework": "dec-ai-literacy",
+      "source_dimension_id": "dec-creating",
+      "target_framework": "AILit",
+      "target_construct": "AI Application / AI Futures",
+      "confidence": "moderate",
+      "direction": "unidirectional",
+      "what_transfers": [
+        "co-creating outputs with AI and retaining human direction"
+      ],
+      "what_does_not_transfer": [
+        "AILit does not isolate creation as a dedicated strand"
+      ],
+      "rationale": "DEC surfaces creation explicitly, whereas AILit distributes it across application and future-facing agency."
+    },
+    {
+      "source_framework": "dec-ai-literacy",
+      "source_dimension_id": "dec-ethics",
+      "target_framework": "AILit",
+      "target_construct": "AI Ethics & Society",
+      "confidence": "strong",
+      "direction": "bidirectional",
+      "what_transfers": [
+        "ethical judgement, societal implications, and responsible use"
+      ],
+      "what_does_not_transfer": [
+        "some DEC higher-education institutional use cases and disclosure conventions"
+      ],
+      "rationale": "The ethical core aligns closely."
+    },
+    {
+      "source_framework": "dec-ai-literacy",
+      "source_dimension_id": "dec-discipline",
+      "target_framework": "AILit",
+      "target_construct": "AI Application / AI Futures",
+      "confidence": "moderate",
+      "direction": "unidirectional",
+      "what_transfers": [
+        "situating AI judgement within authentic field-specific contexts"
+      ],
+      "what_does_not_transfer": [
+        "AILit has no dedicated discipline-context dimension"
+      ],
+      "rationale": "AILit allows contextualisation, but DEC makes disciplinary translation an explicit capability."
+    },
+    {
+      "source_framework": "dec-ai-literacy",
+      "source_dimension_id": "dec-understanding",
+      "target_framework": "DigComp 3.0",
+      "target_construct": "Information and data literacy; transversal AI competence",
+      "confidence": "moderate",
+      "direction": "unidirectional",
+      "what_transfers": [
+        "critical understanding of data and digital systems"
+      ],
+      "what_does_not_transfer": [
+        "DEC's AI-specific conceptual emphasis"
+      ],
+      "rationale": "DigComp provides adjacent digital concepts, but DEC is more explicitly AI-focused."
+    },
+    {
+      "source_framework": "dec-ai-literacy",
+      "source_dimension_id": "dec-using",
+      "target_framework": "DigComp 3.0",
+      "target_construct": "Problem solving; digital content creation",
+      "confidence": "moderate",
+      "direction": "bidirectional",
+      "what_transfers": [
+        "using digital tools purposefully and evaluating results"
+      ],
+      "what_does_not_transfer": [
+        "AI-specific prompting, output checking, and model limitations"
+      ],
+      "rationale": "This is a strong practical overlap with AI-specific augmentation on the DEC side."
+    },
+    {
+      "source_framework": "dec-ai-literacy",
+      "source_dimension_id": "dec-creating",
+      "target_framework": "DigComp 3.0",
+      "target_construct": "Digital content creation; problem solving",
+      "confidence": "moderate",
+      "direction": "bidirectional",
+      "what_transfers": [
+        "creating outputs and iterating digitally"
+      ],
+      "what_does_not_transfer": [
+        "DEC's explicit human-AI co-creation construct"
+      ],
+      "rationale": "DigComp helps with adjacent digital creation patterns, but DEC is more specific about AI collaboration."
+    },
+    {
+      "source_framework": "dec-ai-literacy",
+      "source_dimension_id": "dec-ethics",
+      "target_framework": "DigComp 3.0",
+      "target_construct": "Safety; responsible participation",
+      "confidence": "moderate",
+      "direction": "bidirectional",
+      "what_transfers": [
+        "critical, safe, and responsible use of digital systems"
+      ],
+      "what_does_not_transfer": [
+        "DEC's AI-specific ethical and societal concerns"
+      ],
+      "rationale": "Ethical digital citizenship transfers partially, but DEC adds AI-specific harms and accountability."
+    },
+    {
+      "source_framework": "dec-ai-literacy",
+      "source_dimension_id": "dec-discipline",
+      "target_framework": "DigComp 3.0",
+      "target_construct": "Contextual application across competence areas",
+      "confidence": "weak",
+      "direction": "unidirectional",
+      "what_transfers": [
+        "the idea that competence must be contextualised to purpose and field"
+      ],
+      "what_does_not_transfer": [
+        "DigComp has no dedicated discipline-context domain"
+      ],
+      "rationale": "The overlap is mostly implementation-oriented rather than structural."
+    },
+    {
+      "source_framework": "dec-ai-literacy",
+      "source_dimension_id": "dec-understanding",
+      "target_framework": "UNESCO CFT",
+      "target_construct": "AI foundations and applications / AI techniques and applications",
+      "confidence": "strong",
+      "direction": "bidirectional",
+      "what_transfers": [
+        "AI concepts, data, limitations, and informed understanding"
+      ],
+      "what_does_not_transfer": [
+        "UNESCO's separate teacher and student pathways"
+      ],
+      "rationale": "Conceptually these are close matches."
+    },
+    {
+      "source_framework": "dec-ai-literacy",
+      "source_dimension_id": "dec-using",
+      "target_framework": "UNESCO CFT",
+      "target_construct": "AI pedagogy / AI for professional learning / AI techniques and applications",
+      "confidence": "strong",
+      "direction": "bidirectional",
+      "what_transfers": [
+        "effective and critical AI use in authentic educational tasks"
+      ],
+      "what_does_not_transfer": [
+        "teacher-role expectations and learner-age considerations in UNESCO"
+      ],
+      "rationale": "The practical-use overlap is high, especially for educators and students."
+    },
+    {
+      "source_framework": "dec-ai-literacy",
+      "source_dimension_id": "dec-creating",
+      "target_framework": "UNESCO CFT",
+      "target_construct": "Creating with AI / AI system design",
+      "confidence": "moderate",
+      "direction": "bidirectional",
+      "what_transfers": [
+        "co-creation, design, and iterative improvement with AI"
+      ],
+      "what_does_not_transfer": [
+        "DEC's more general higher-education creation framing"
+      ],
+      "rationale": "UNESCO distributes related ideas across teacher and student design-oriented dimensions."
+    },
+    {
+      "source_framework": "dec-ai-literacy",
+      "source_dimension_id": "dec-ethics",
+      "target_framework": "UNESCO CFT",
+      "target_construct": "Ethics of AI / human-centred mindset",
+      "confidence": "strong",
+      "direction": "bidirectional",
+      "what_transfers": [
+        "human-centred, responsible, and equitable AI use"
+      ],
+      "what_does_not_transfer": [
+        "UNESCO's rights-focused policy framing"
+      ],
+      "rationale": "These dimensions share a strong normative core."
+    },
+    {
+      "source_framework": "dec-ai-literacy",
+      "source_dimension_id": "dec-discipline",
+      "target_framework": "UNESCO CFT",
+      "target_construct": "AI pedagogy / subject integration of AI competencies",
+      "confidence": "moderate",
+      "direction": "unidirectional",
+      "what_transfers": [
+        "situated use of AI within disciplines and curricula"
+      ],
+      "what_does_not_transfer": [
+        "UNESCO does not isolate discipline context as a single standalone competency"
+      ],
+      "rationale": "UNESCO supports curriculum integration, but DEC is more explicit about disciplinary translation."
+    },
+    {
+      "source_framework": "dec-ai-literacy",
+      "source_dimension_id": "dec-ai-literacy",
+      "target_framework": "DigComp 3.0 proficiency",
+      "target_construct": "Basic -> Intermediate -> Advanced -> Highly advanced",
+      "confidence": "moderate",
+      "direction": "unidirectional",
+      "what_transfers": [
+        "four-step progression from awareness to mastery"
+      ],
+      "what_does_not_transfer": [
+        "DigComp proficiency is broader than AI literacy and organised differently"
+      ],
+      "rationale": "The progression logic is comparable even though competence granularity differs.",
+      "source_level_alignment": {
+        "Awareness": "Basic",
+        "Exploration": "Intermediate",
+        "Practice": "Advanced",
+        "Mastery": "Highly advanced"
+      }
+    }
+  ]
+}

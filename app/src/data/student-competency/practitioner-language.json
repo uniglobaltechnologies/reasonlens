@@ -1,0 +1,373 @@
+{
+  "framework_id": "unesco-student-ai-competency",
+  "framework_name": "UNESCO AI Competency Framework for Students",
+  "framework_source": "UNESCO (2024). AI competency framework for students. UNESDOC pf0000391105. ISBN 978-92-3-100709-5.",
+  "reasonlens_implementation_note": "This file operationalises the UNESCO Student framework for the ReasonLens platform. Dimension names and level names are ReasonLens-specific adaptations of UNESCO terminology (Aspects mapped to Dimensions; Understand/Apply/Create mapped to Foundational/Intermediate/Advanced) to maintain consistency with the platform's multi-framework architecture.",
+  "dimensions": [
+    {
+      "id": "sc-use",
+      "name": "AI Use & Application",
+      "code": "USE",
+      "description": "The ability to select, operate, and critically evaluate AI tools and applications for learning, problem-solving, and daily life. Covers practical interaction with AI systems, prompt engineering, output evaluation, and integration of AI into academic workflows.",
+      "unesco_aspect": "AI techniques and applications"
+    },
+    {
+      "id": "sc-understanding",
+      "name": "AI Understanding",
+      "code": "UND",
+      "description": "Conceptual and technical knowledge of how AI systems work, including data, algorithms, machine learning paradigms, neural networks, and the relationship between AI capabilities and limitations. Covers both foundational literacy and deeper technical comprehension.",
+      "unesco_aspect": "Human-centred mindset"
+    },
+    {
+      "id": "sc-ethics",
+      "name": "AI Ethics & Values",
+      "code": "ETH",
+      "description": "The capacity to identify, reason about, and act on ethical issues raised by AI, including bias, fairness, privacy, transparency, environmental sustainability, and the societal impact of AI systems. Covers personal ethical practice and co-creation of ethical norms.",
+      "unesco_aspect": "Ethics of AI"
+    },
+    {
+      "id": "sc-design",
+      "name": "AI System Design",
+      "code": "DES",
+      "description": "The ability to scope AI problems, design AI system architectures, implement solutions, and evaluate outcomes through iterative feedback loops. Covers the full design cycle from problem definition through prototyping to evaluation and improvement.",
+      "unesco_aspect": "AI system design"
+    }
+  ],
+  "levels": [
+    {
+      "id_suffix": "foundational",
+      "name": "Foundational",
+      "order": 1,
+      "code": "F",
+      "description": "Students recognise AI in daily life, develop basic conceptual vocabulary, and form initial attitudes toward AI use. They can identify AI-powered tools, understand that AI involves data and algorithms, articulate basic ethical concerns, and describe what a simple AI system does.",
+      "unesco_level": "Understand"
+    },
+    {
+      "id_suffix": "intermediate",
+      "name": "Intermediate",
+      "order": 2,
+      "code": "I",
+      "description": "Students critically evaluate and purposefully apply AI tools across academic and personal contexts. They transfer knowledge to complex situations, assess AI outputs for quality and bias, practise responsible use aligned with regulations, and design basic AI-assisted solutions.",
+      "unesco_level": "Apply"
+    },
+    {
+      "id_suffix": "advanced",
+      "name": "Advanced",
+      "order": 3,
+      "code": "A",
+      "description": "Students create, customise, and evaluate AI solutions with attention to human-centred design, ethical robustness, and societal impact. They co-create ethical guidance, build functional AI prototypes, and critically assess when AI systems should or should not be deployed.",
+      "unesco_level": "Create"
+    }
+  ],
+  "object_count": 12,
+  "structure": "4 dimensions x 3 levels",
+  "data": [
+    {
+      "id": "sc-use-foundational",
+      "dimension_id": "sc-use",
+      "level": "foundational",
+      "title": "AI Use & Application: Foundational",
+      "plain_language_description": "I can spot AI tools in my daily life and use them for simple tasks like summarising or brainstorming, and I know I need to check what they produce.",
+      "accurate_interpretations": [
+        "The student uses AI tools with basic awareness and can identify them in everyday contexts.",
+        "At this level, students recognise AI in their environment and begin experimenting with it for straightforward tasks."
+      ],
+      "common_misinterpretations": [
+        "The student is an expert AI user.",
+        "The student can design AI workflows.",
+        "The student does not use AI at all."
+      ],
+      "vocabulary": [
+        "AI tool",
+        "prompt",
+        "output",
+        "check",
+        "generative AI",
+        "autocomplete",
+        "recommendation"
+      ]
+    },
+    {
+      "id": "sc-use-intermediate",
+      "dimension_id": "sc-use",
+      "level": "intermediate",
+      "title": "AI Use & Application: Intermediate",
+      "plain_language_description": "I choose the right AI tool for each task, write good prompts, check outputs for accuracy and bias, and integrate AI into my study workflow with proper documentation.",
+      "accurate_interpretations": [
+        "The student purposefully selects and evaluates AI tools within academic workflows.",
+        "At this level, students demonstrate critical judgement in how they use AI, going beyond casual use to strategic integration."
+      ],
+      "common_misinterpretations": [
+        "The student merely uses AI casually.",
+        "The student can build AI systems.",
+        "The student follows AI policy only because they have to."
+      ],
+      "vocabulary": [
+        "prompt engineering",
+        "tool selection",
+        "output evaluation",
+        "bias checking",
+        "AI-assisted workflow",
+        "citation of AI use",
+        "iteration"
+      ]
+    },
+    {
+      "id": "sc-use-advanced",
+      "dimension_id": "sc-use",
+      "level": "advanced",
+      "title": "AI Use & Application: Advanced",
+      "plain_language_description": "I customise AI tools, design multi-step AI workflows with human checkpoints, evaluate whether AI methods are valid for research, mentor peers, and know when NOT to use AI.",
+      "accurate_interpretations": [
+        "The student creates, customises, and critically evaluates AI-assisted methodologies and mentors others.",
+        "At this level, students exercise sophisticated judgement about AI deployment, including principled restraint."
+      ],
+      "common_misinterpretations": [
+        "The student simply uses many AI tools.",
+        "The student only helps peers by sharing their own habits.",
+        "The student rejects AI use entirely."
+      ],
+      "vocabulary": [
+        "customisation",
+        "multi-agent workflow",
+        "methodology evaluation",
+        "peer mentoring",
+        "principled restraint",
+        "AI-assisted research",
+        "validity"
+      ]
+    },
+    {
+      "id": "sc-understanding-foundational",
+      "dimension_id": "sc-understanding",
+      "level": "foundational",
+      "title": "AI Understanding: Foundational",
+      "plain_language_description": "I can explain that AI learns from data, that it makes predictions rather than 'knowing' things, and that the data it learns from affects how well it works.",
+      "accurate_interpretations": [
+        "The student has basic conceptual understanding of what AI is and how it differs from traditional software.",
+        "At this level, students build mental models that connect AI capabilities to data and algorithms."
+      ],
+      "common_misinterpretations": [
+        "The student can explain neural networks in detail.",
+        "The student can code ML models.",
+        "The student thinks AI is magic."
+      ],
+      "vocabulary": [
+        "data",
+        "algorithm",
+        "prediction",
+        "training",
+        "narrow AI",
+        "pattern",
+        "input-output"
+      ]
+    },
+    {
+      "id": "sc-understanding-intermediate",
+      "dimension_id": "sc-understanding",
+      "level": "intermediate",
+      "title": "AI Understanding: Intermediate",
+      "plain_language_description": "I can explain different types of machine learning, how neural networks train, and why AI can produce plausible but wrong outputs. I can analyse real AI applications and identify their likely limitations.",
+      "accurate_interpretations": [
+        "The student understands specific AI mechanisms and can analyse real applications.",
+        "At this level, students move from general concepts to specific technical understanding that enables critical evaluation."
+      ],
+      "common_misinterpretations": [
+        "The student merely knows AI vocabulary.",
+        "The student can design AI architectures.",
+        "The student only understands one AI system."
+      ],
+      "vocabulary": [
+        "supervised learning",
+        "unsupervised learning",
+        "reinforcement learning",
+        "neural network",
+        "hallucination",
+        "training data",
+        "failure mode",
+        "correlation vs causation"
+      ]
+    },
+    {
+      "id": "sc-understanding-advanced",
+      "dimension_id": "sc-understanding",
+      "level": "advanced",
+      "title": "AI Understanding: Advanced",
+      "plain_language_description": "I can evaluate AI research claims, assess trade-offs between model complexity and interpretability, and connect technical AI capabilities to their broader societal implications.",
+      "accurate_interpretations": [
+        "The student critically evaluates AI at a technical and sociotechnical level.",
+        "At this level, students bridge deep technical knowledge with critical analysis of AI's role in society."
+      ],
+      "common_misinterpretations": [
+        "The student can only implement models.",
+        "The student only critiques AI philosophically without technical grounding.",
+        "The student has memorised architecture details without evaluative judgement."
+      ],
+      "vocabulary": [
+        "transformer architecture",
+        "attention mechanism",
+        "interpretability",
+        "trade-off analysis",
+        "sociotechnical",
+        "methodology critique",
+        "evaluation metrics",
+        "emergent behaviour"
+      ]
+    },
+    {
+      "id": "sc-ethics-foundational",
+      "dimension_id": "sc-ethics",
+      "level": "foundational",
+      "title": "AI Ethics & Values: Foundational",
+      "plain_language_description": "I can name several ethical concerns about AI (bias, privacy, jobs, environment, misinformation) and explain why they matter. I have started forming my own views on these issues.",
+      "accurate_interpretations": [
+        "The student identifies key ethical issues raised by AI and can articulate why they are important.",
+        "At this level, students develop ethical awareness and begin to form personal positions on AI ethics questions."
+      ],
+      "common_misinterpretations": [
+        "The student applies ethical frameworks.",
+        "The student creates ethical guidelines.",
+        "The student has no awareness of AI ethics at all."
+      ],
+      "vocabulary": [
+        "bias",
+        "privacy",
+        "fairness",
+        "consent",
+        "transparency",
+        "discrimination",
+        "environmental impact",
+        "misinformation"
+      ]
+    },
+    {
+      "id": "sc-ethics-intermediate",
+      "dimension_id": "sc-ethics",
+      "level": "intermediate",
+      "title": "AI Ethics & Values: Intermediate",
+      "plain_language_description": "I apply ethical frameworks to evaluate AI applications, practise responsible AI use in my own work (privacy, citing AI, checking for bias), and engage with different cultural perspectives on AI ethics.",
+      "accurate_interpretations": [
+        "The student applies ethical principles to their own AI practice and evaluates AI systems through ethical lenses.",
+        "At this level, students move from awareness to consistent ethical practice grounded in recognised frameworks."
+      ],
+      "common_misinterpretations": [
+        "The student only talks about ethics but does not practise it.",
+        "The student follows rules without understanding the principles behind them.",
+        "The student creates governance frameworks."
+      ],
+      "vocabulary": [
+        "ethical framework",
+        "responsible use",
+        "informed consent",
+        "proportionality",
+        "institutional policy",
+        "bias evaluation",
+        "data protection",
+        "cultural context"
+      ]
+    },
+    {
+      "id": "sc-ethics-advanced",
+      "dimension_id": "sc-ethics",
+      "level": "advanced",
+      "title": "AI Ethics & Values: Advanced",
+      "plain_language_description": "I embed ethics into AI design from the start, co-create ethical guidelines for my learning community, critically evaluate AI governance frameworks, and advocate for responsible AI.",
+      "accurate_interpretations": [
+        "The student contributes to ethical norm-creation and embeds ethics by design in AI development.",
+        "At this level, students move beyond personal practice to systemic ethical contribution and governance engagement."
+      ],
+      "common_misinterpretations": [
+        "The student has excellent personal ethics but does not influence others.",
+        "The student critiques governance without proposing alternatives.",
+        "The student adds ethics review only at the end of projects."
+      ],
+      "vocabulary": [
+        "ethics by design",
+        "co-creation",
+        "governance critique",
+        "advocacy",
+        "stakeholder engagement",
+        "lifecycle ethics",
+        "shutdown decision",
+        "regulatory deliberation"
+      ]
+    },
+    {
+      "id": "sc-design-foundational",
+      "dimension_id": "sc-design",
+      "level": "foundational",
+      "title": "AI System Design: Foundational",
+      "plain_language_description": "I can look at a problem and decide whether AI is the right solution, define what the system should and should not do, and identify what data and components would be needed.",
+      "accurate_interpretations": [
+        "The student scopes AI problems and assesses whether AI is appropriate for a given situation.",
+        "At this level, students develop the analytical skills to frame problems before jumping to solutions."
+      ],
+      "common_misinterpretations": [
+        "The student designs AI architectures.",
+        "The student builds AI prototypes.",
+        "The student cannot think about AI design at all."
+      ],
+      "vocabulary": [
+        "problem scoping",
+        "appropriateness",
+        "stakeholder",
+        "data requirement",
+        "constraint",
+        "boundary",
+        "go/no-go"
+      ]
+    },
+    {
+      "id": "sc-design-intermediate",
+      "dimension_id": "sc-design",
+      "level": "intermediate",
+      "title": "AI System Design: Intermediate",
+      "plain_language_description": "I can design an AI system architecture -- choosing the data pipeline, model type, and interface -- with clear reasons for each choice. I can create prototypes and plan data collection.",
+      "accurate_interpretations": [
+        "The student designs AI system architectures with justified choices at each layer.",
+        "At this level, students translate problem scopes into concrete design decisions and prototypes."
+      ],
+      "common_misinterpretations": [
+        "The student only lists requirements.",
+        "The student follows tutorials without understanding design rationale.",
+        "The student manages AI system lifecycles."
+      ],
+      "vocabulary": [
+        "architecture",
+        "data pipeline",
+        "model selection",
+        "interface design",
+        "prototype",
+        "wireframe",
+        "project management",
+        "human oversight"
+      ]
+    },
+    {
+      "id": "sc-design-advanced",
+      "dimension_id": "sc-design",
+      "level": "advanced",
+      "title": "AI System Design: Advanced",
+      "plain_language_description": "I evaluate deployed AI systems against technical and ethical criteria, iterate based on stakeholder feedback, plan for the full system lifecycle, and decide when systems should be shut down.",
+      "accurate_interpretations": [
+        "The student manages AI system lifecycles including evaluation, iteration, and decommissioning decisions.",
+        "At this level, students think beyond building to sustaining, improving, and responsibly retiring AI systems."
+      ],
+      "common_misinterpretations": [
+        "The student only optimises technical metrics.",
+        "The student plans deployment without monitoring or sunset strategies.",
+        "The student treats deployment as project completion."
+      ],
+      "vocabulary": [
+        "lifecycle management",
+        "iteration cycle",
+        "stakeholder feedback",
+        "monitoring",
+        "retraining",
+        "decommissioning",
+        "multi-dimensional evaluation",
+        "shutdown criteria"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,488 @@
+{
+  "_meta": {
+    "file": "scenarios.json",
+    "framework_id": "iste-leaders",
+    "framework_name": "ISTE Standards for Education Leaders v4.02",
+    "assessment_paradigm": "met/not-met. A=not_met, B=partially_met (attractive nuisance, scores as not_met), C=met.",
+    "total_scenarios": 10,
+    "scenarios_per_standard": 2,
+    "context_factors": [
+      "leadership_level",
+      "institution_type",
+      "institution_size"
+    ],
+    "licensing_constraint": "ISTE Standards framework references \u00a9 2024 4.02, ISTE (iste.org). All rights reserved. Scenario stems and response options are original ReasonLens content. ISTE permits free use for non-commercial educational purposes only. Commercial use requires separate ISTE licensing.",
+    "generated_for": "ReasonLens",
+    "note": "Standard 3.1 uses v4.02 name: Digital Citizenship Advocate."
+  },
+  "scenarios": [
+    {
+      "id": "ISTE-L-DCA-01",
+      "framework_id": "iste-leaders",
+      "standard_id": "iste-l-dca",
+      "standard_name": "Digital Citizenship Advocate",
+      "target_standard": "Digital Citizenship Advocate",
+      "primary_indicators": [
+        "iste-l-dca-3a",
+        "iste-l-dca-3b"
+      ],
+      "scenario_stem": "You receive a report showing that student attainment in technology-integrated subjects is significantly lower for students from lower-income households. What do you do?",
+      "context_tags": {
+        "leadership_level": [
+          "principal",
+          "head_teacher",
+          "deputy"
+        ],
+        "institution_type": [
+          "any"
+        ],
+        "institution_size": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I refer the report to the pastoral team and ask them to identify and support the specific students who are struggling.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I present the findings at a senior leadership meeting, acknowledge that device and connectivity access is likely a factor, and propose that we expand the school's device loan scheme.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Raises the issue at the right level and proposes a concrete response \u2014 looks like active leadership. But expanding device loans addresses the most visible access gap while leaving the deeper equity issues untouched: whether the digital content and environments used in those subjects are genuinely inclusive for students with diverse learning needs, whether teachers are equipped to serve those students effectively with technology, and whether the attainment gap is partly a teaching quality issue rather than purely an access one. The standard requires leaders to ensure equitable access and inclusive environments \u2014 which is a multi-layer leadership responsibility, not a device logistics problem."
+        },
+        {
+          "id": "C",
+          "text": "I commission a diagnostic that goes beyond device access: which specific technology-integrated tasks are creating the gap, whether teachers are differentiating those tasks for diverse learners, whether the digital tools used are accessible in the full sense (cognitive, linguistic, sensory), and whether the students who are underperforming have identified additional needs that are not being met digitally. I then build a response plan that addresses each layer \u2014 professional development, tool procurement criteria, curriculum design, and infrastructure \u2014 with measurable equity targets.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-L-DCA-02",
+      "framework_id": "iste-leaders",
+      "standard_id": "iste-l-dca",
+      "standard_name": "Digital Citizenship Advocate",
+      "target_standard": "Digital Citizenship Advocate",
+      "primary_indicators": [
+        "iste-l-dca-3c",
+        "iste-l-dca-3d"
+      ],
+      "scenario_stem": "You are aware that your school has a strong digital citizenship policy on paper, but staff and students do not really engage with it. How do you change this?",
+      "context_tags": {
+        "leadership_level": [
+          "any"
+        ],
+        "institution_type": [
+          "any"
+        ],
+        "institution_size": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I commission a review of the policy to make sure it is up to date and ask form tutors to cover it with students at the start of the year.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I organise a Digital Citizenship Week, involve students in creating campaign materials, and ask teachers to deliver age-appropriate digital citizenship content in their subject areas.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Creates a visible, student-involved initiative \u2014 looks like cultural change. But a themed week embeds digital citizenship as an annual event rather than a daily professional value. The standard requires leaders to model digital citizenship personally \u2014 demonstrating safe, ethical, and critical use of technology in their own leadership practice \u2014 and to embody what the policy encodes rather than communicating it to others through campaigns. A Digital Citizenship Week directed at students does not change what adults model."
+        },
+        {
+          "id": "C",
+          "text": "I make digital citizenship a leadership practice, not a policy. I start by reflecting on my own technology use publicly with staff \u2014 discussing how I make decisions about what I share, how I evaluate information I act on, and where I have got it wrong. I embed digital ethics into every meeting where a technology decision is made: What data does this tool collect? Who benefits from this partnership? Is this content credible? Over time the standard for how the school's leadership engages with technology becomes the model for how everyone in the school does.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-L-VP-01",
+      "framework_id": "iste-leaders",
+      "standard_id": "iste-l-vp",
+      "standard_name": "Visionary Planner",
+      "target_standard": "Visionary Planner",
+      "primary_indicators": [
+        "iste-l-vp-3a",
+        "iste-l-vp-3b"
+      ],
+      "scenario_stem": "Your school's current technology strategy is due for renewal. You have been asked to lead the process. How do you approach it?",
+      "context_tags": {
+        "leadership_level": [
+          "principal",
+          "head_teacher",
+          "deputy",
+          "director"
+        ],
+        "institution_type": [
+          "any"
+        ],
+        "institution_size": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I review what technology investment is needed based on current infrastructure gaps, consult department heads, and produce a three-year plan focused on device refresh, software licences, and connectivity improvements.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I run a staff consultation \u2014 using surveys and focus groups across departments \u2014 to understand how technology is being used, what is working, and what educators need. I use this to write a strategic plan that maps technology investment to teaching and learning priorities.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Consults staff and links technology to learning \u2014 looks like a strong planning process. But consulting staff is not the same as engaging the full community. The standard requires leaders to include students, families, and community partners in building a shared vision \u2014 because the vision should reflect the aspirations of the whole school community, not just educator preferences. A staff-only consultation produces an educator-led plan, not a community-owned vision."
+        },
+        {
+          "id": "C",
+          "text": "I design a vision-building process that brings together students, families, local employers, staff, and governors in a structured set of conversations: What kind of learners do we want to send into the world? How should technology serve that? What do students and families experience right now that falls short of that? The strategy that emerges is built on those answers \u2014 with explicit links between each technology investment and the specific learning outcomes the community articulated. The community owns the direction; leadership's job is to resource and implement it.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-L-VP-02",
+      "framework_id": "iste-leaders",
+      "standard_id": "iste-l-vp",
+      "standard_name": "Visionary Planner",
+      "target_standard": "Visionary Planner",
+      "primary_indicators": [
+        "iste-l-vp-3c",
+        "iste-l-vp-3d"
+      ],
+      "scenario_stem": "Two years into your five-year technology strategy, interim data shows that student digital literacy outcomes have not improved despite significant investment. What do you do?",
+      "context_tags": {
+        "leadership_level": [
+          "any"
+        ],
+        "institution_type": [
+          "any"
+        ],
+        "institution_size": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I remind staff that culture change takes time and reassure governors that the outcomes will improve as the investments bed in over the remaining three years.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I commission a mid-strategy review, present the findings honestly to governors, and adjust some of the implementation timelines to give the initiatives more time to show results.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Commissions a review and shares it honestly \u2014 looks like transparent, evidence-informed leadership. But adjusting timelines assumes the strategy is broadly right and just needs more time. The standard requires leaders to make course corrections based on evidence \u2014 which means genuinely examining whether the strategy is the right one, whether investment is going to the right places, and whether what is not working should be changed, not just extended. Adjusting timelines without examining strategic assumptions is compliance, not adaptive leadership."
+        },
+        {
+          "id": "C",
+          "text": "I convene a cross-stakeholder review group \u2014 including teachers, students, and an external critical friend \u2014 to examine not just whether activities happened but whether they are producing the intended changes in how students learn. We distinguish between activities that are underperforming because they need more time and those that are fundamentally misaligned with our vision. I communicate the findings and any strategic pivots to governors and the full school community with the reasoning \u2014 modelling that changing the plan in response to evidence is a strength, not a failure.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-L-EL-01",
+      "framework_id": "iste-leaders",
+      "standard_id": "iste-l-el",
+      "standard_name": "Empowering Leader",
+      "target_standard": "Empowering Leader",
+      "primary_indicators": [
+        "iste-l-el-3a",
+        "iste-l-el-3c"
+      ],
+      "scenario_stem": "You want to build a genuine culture of pedagogical innovation with technology across your school. What does your leadership approach look like?",
+      "context_tags": {
+        "leadership_level": [
+          "principal",
+          "head_teacher",
+          "deputy"
+        ],
+        "institution_type": [
+          "any"
+        ],
+        "institution_size": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I identify the school's most innovative teachers and give them opportunities to lead CPD, hoping their enthusiasm will spread.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I create an innovation fund teachers can apply for, establish a protected hour each fortnight for professional learning, and run a termly showcase where teachers share technology-enhanced lessons that worked well.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Creates resource, time, and recognition structures \u2014 looks like systemic culture-building. But these structures support innovation as an extra-curricular activity rather than as the school's normal way of working. The showcase celebrates success \u2014 not the failed experiments that are equally valuable in a genuine innovation culture. The standard requires leaders to cultivate a culture where creative risk-taking is normal and where time and structure actively protect the space to fail productively \u2014 not just reward those whose innovations worked."
+        },
+        {
+          "id": "C",
+          "text": "I make a concrete commitment: staff who try a technology-enhanced approach that does not work as expected will not be penalised \u2014 instead, documented learning from that attempt will count positively in professional review. I make this explicit in policy and model it personally by sharing a recent decision I made about a technology initiative that is not working and what I am doing differently. Protected time is genuinely protected \u2014 it never moves for operational pressures. Innovation is everyone's job, not the innovators' hobby.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-L-EL-02",
+      "framework_id": "iste-leaders",
+      "standard_id": "iste-l-el",
+      "standard_name": "Empowering Leader",
+      "target_standard": "Empowering Leader",
+      "primary_indicators": [
+        "iste-l-el-3b",
+        "iste-l-el-3d"
+      ],
+      "scenario_stem": "You are reviewing your school's technology professional development offer and notice it is largely tool-focused \u2014 training staff to use specific platforms. How do you change this?",
+      "context_tags": {
+        "leadership_level": [
+          "any"
+        ],
+        "institution_type": [
+          "any"
+        ],
+        "institution_size": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I add more tools to the CPD programme to make it more comprehensive \u2014 covering the full range of platforms the school uses ensures all staff are confident.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I commission a redesign of the CPD to shift from platform training to digital pedagogy \u2014 focusing on how to use technology to improve learning outcomes rather than just how to operate tools.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Reframes CPD around pedagogy rather than tools \u2014 a genuinely important shift. But 'digital pedagogy' as a CPD topic is still generic professional development, not explicitly grounded in the ISTE Standards for Educators. The standard requires leaders to build educators' confidence and competency in putting the ISTE Standards into practice specifically \u2014 which means staff know which standards they are developing, can self-assess against them, and receive CPD that builds toward them systematically, not just toward 'better digital teaching' in the abstract."
+        },
+        {
+          "id": "C",
+          "text": "I restructure the CPD offer around the ISTE Standards for Educators explicitly: each CPD strand is mapped to a specific standard, teachers know which standard they are developing through each activity, and professional review conversations include self-assessment against the standards. I introduce peer observation protocols where observers use the ISTE Standards as the framework \u2014 shifting the question from 'was that a good lesson' to 'what evidence did you see of the Facilitator or Designer standard in action'. Over time the standards become the school's shared professional language.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-L-SD-01",
+      "framework_id": "iste-leaders",
+      "standard_id": "iste-l-sd",
+      "standard_name": "Systems Designer",
+      "target_standard": "Systems Designer",
+      "primary_indicators": [
+        "iste-l-sd-3c"
+      ],
+      "scenario_stem": "A data breach at a nearby school involving student data collected by a third-party app has been in the news. What do you do in your own institution?",
+      "context_tags": {
+        "leadership_level": [
+          "any"
+        ],
+        "institution_type": [
+          "any"
+        ],
+        "institution_size": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I ask IT to audit the apps currently in use and make sure they are all on the approved list and comply with data protection policy.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I send a whole-staff communication reminding everyone of the data protection policy, provide a quick guidance note on what to check before using a new app, and ask heads of department to confirm they have shared this with their teams.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Communicates promptly and reminds staff of policy \u2014 looks like responsive leadership. But reminders of policy reinforce awareness, not the practical habits and decision-making capacity that protect data in daily teaching practice. The standard requires leaders to ensure staff understand and implement effective data management \u2014 which means embedded capability and established practice, not a policy reminder triggered by a news event."
+        },
+        {
+          "id": "C",
+          "text": "I treat the external breach as an opportunity to review our own systems, not just our compliance posture. I commission a practical audit \u2014 not of policy documentation but of actual staff behaviour: how do teachers currently make decisions about tools, what questions do they ask before using something new with students, and what would they do if they suspected a data issue? I redesign our onboarding and ongoing CPD to build data stewardship as a daily professional habit \u2014 including a simple decision protocol every teacher uses when considering a new digital tool \u2014 and I introduce a termly data governance review at senior leadership level.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-L-SD-02",
+      "framework_id": "iste-leaders",
+      "standard_id": "iste-l-sd",
+      "standard_name": "Systems Designer",
+      "target_standard": "Systems Designer",
+      "primary_indicators": [
+        "iste-l-sd-3a",
+        "iste-l-sd-3d"
+      ],
+      "scenario_stem": "Your school is about to make a significant investment in a new learning platform. How do you lead the decision-making process?",
+      "context_tags": {
+        "leadership_level": [
+          "any"
+        ],
+        "institution_type": [
+          "any"
+        ],
+        "institution_size": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I ask IT and a couple of experienced teachers to evaluate the main options and bring a recommendation to senior leadership for approval.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I establish a cross-school working group including teachers from different departments, a student representative, and IT \u2014 they conduct a structured evaluation using an agreed criteria framework and bring a recommendation with supporting evidence.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Brings a broad group together around structured criteria \u2014 looks like equitable, evidence-based governance. But a working group producing a recommendation is still a procurement process, not a systems design process. The standard requires leaders to guide teams to establish equitable technology policies and ensure that infrastructure investments are connected to strategic learning priorities and student real-world experience \u2014 which means the decision process explicitly asks: how does this platform advance our vision, how does it serve all learners equitably, and what partnership opportunities does it create?"
+        },
+        {
+          "id": "C",
+          "text": "I frame the decision as a strategic policy question, not a procurement exercise. The evaluation group works to criteria derived directly from our learning vision: equity (does the platform serve every learner, including those with additional needs, equally?), pedagogical alignment (does it support the learning approaches in our strategy, not just any learning?), partnership potential (can we use this to connect students with real-world contexts?), and governance (what data does it collect and how do we ensure we govern it well?). The final policy \u2014 including how the platform will be implemented, monitored, and reviewed \u2014 is presented to governors as a governance decision, not a purchasing approval.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-L-CL-01",
+      "framework_id": "iste-leaders",
+      "standard_id": "iste-l-cl",
+      "standard_name": "Connected Learner",
+      "target_standard": "Connected Learner",
+      "primary_indicators": [
+        "iste-l-cl-3a",
+        "iste-l-cl-3c"
+      ],
+      "scenario_stem": "You want to ensure you stay genuinely current on developments in educational technology and learning science \u2014 not just aware of headlines. What does your personal learning approach look like?",
+      "context_tags": {
+        "leadership_level": [
+          "any"
+        ],
+        "institution_type": [
+          "any"
+        ],
+        "institution_size": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I follow several education technology accounts on social media and read the articles that come up in my feed when time allows.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I block time each week to read education research and edtech news, keep a reading list of sources I follow consistently, and share interesting findings with senior colleagues.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Commits time and curates sources \u2014 looks like a disciplined learning habit. But consuming and sharing content is not the same as structured professional growth. The standard requires leaders to set personal learning goals, use technology for reflective practice that changes their thinking and behaviour, and model this to staff. Reading and sharing without structured reflection, goal review, or visible behaviour change is information processing, not the continuous professional learning the Connected Learner standard describes."
+        },
+        {
+          "id": "C",
+          "text": "I maintain a digital leadership journal where I document emerging developments, record how they connect to our school's current challenges, and track whether my thinking on a topic has changed over time. At the start of each term I set two or three specific learning goals \u2014 for example, to develop a substantive understanding of AI-generated assessment feedback by the end of term \u2014 and review them at the end. I share excerpts from my journal with staff deliberately, modelling that learning continuously is a leadership expectation, not a luxury.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-L-CL-02",
+      "framework_id": "iste-leaders",
+      "standard_id": "iste-l-cl",
+      "standard_name": "Connected Learner",
+      "target_standard": "Connected Learner",
+      "primary_indicators": [
+        "iste-l-cl-3b",
+        "iste-l-cl-3d"
+      ],
+      "scenario_stem": "Your school is embarking on a significant whole-school change to how technology is used in learning. As the leader, how do you personally contribute to \u2014 and learn from \u2014 the wider education leadership community through this process?",
+      "context_tags": {
+        "leadership_level": [
+          "principal",
+          "head_teacher",
+          "director"
+        ],
+        "institution_type": [
+          "any"
+        ],
+        "institution_size": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I focus on delivering the change well internally \u2014 once we have results to share, I will present at a conference or write it up for a leadership publication.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I join a headteachers' network focused on technology and school improvement, attend the termly meetings, and draw on members' experiences to inform our approach.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Joins and attends a relevant professional network \u2014 looks like engaged connected learning. But attending meetings and listening is passive membership. The standard requires leaders to participate actively \u2014 contributing to collective learning, mentoring others, and sharing challenges as well as successes in real time, not just when the story has a satisfying ending. Waiting for results before engaging the wider community is knowledge hoarding, not connected leadership."
+        },
+        {
+          "id": "C",
+          "text": "I engage the wider community from the start: I share early decisions and their rationale in the network before we have results, explicitly inviting challenge and learning from others' experiences. I find a peer leader facing similar challenges and set up a mutual accountability and learning relationship where we critique each other's approaches monthly. When things do not go as planned I share that too \u2014 modelling that the change leadership process, including its difficulties, is a contribution to the sector's collective knowledge. By the end of the change cycle we have both learned from and contributed to the field.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    }
+  ]
+}

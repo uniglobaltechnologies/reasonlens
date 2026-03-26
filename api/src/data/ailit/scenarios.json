@@ -1,0 +1,1109 @@
+{
+  "framework_id": "ailit",
+  "framework_name": "AI Literacy Framework (AILit)",
+  "file_type": "scenarios",
+  "research_basis": {
+    "generated_at": "2026-03-26",
+    "authoring_method": "Original synthesis using the user brief and the THE DMI implementation reference as the structural benchmark.",
+    "licence_handling": "CC BY-SA 4.0"
+  },
+  "object_count": 24,
+  "objects": [
+    {
+      "scenario_id": "AILIT-FUND-NI-01",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-fundamentals",
+      "dimension_name": "AI Fundamentals",
+      "boundary_code": "NI",
+      "from_level_id": "ailit-fundamentals-novice",
+      "to_level_id": "ailit-fundamentals-intermediate",
+      "stem": "You are working through an introductory workshop comparing a chatbot, search engine, and rules-based tool. Which response best reflects stronger AI Fundamentals?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Choose the first explanation or action that sounds plausible and rely on surface cues, revisiting it only if something obvious fails.",
+          "maps_to_level_id": "ailit-fundamentals-novice",
+          "nuisance": true,
+          "nuisance_reason": "Feels pragmatic, but it does not show a repeatable decision structure."
+        },
+        {
+          "option_id": "B",
+          "text": "Use a simple routine, compare the result against explicit criteria, and record at least one limitation or follow-up check.",
+          "maps_to_level_id": "ailit-fundamentals-intermediate"
+        },
+        {
+          "option_id": "C",
+          "text": "Adapt the approach to the specific context, compare alternatives, and explain the trade-offs so the method could transfer to others.",
+          "maps_to_level_id": "ailit-fundamentals-advanced"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "educator"
+        ],
+        "subject_area": [
+          "humanities"
+        ],
+        "prior_ai_experience": [
+          "regular"
+        ],
+        "institution_level": [
+          "secondary"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the NI boundary in AI Fundamentals by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "AILIT-FUND-NI-02",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-fundamentals",
+      "dimension_name": "AI Fundamentals",
+      "boundary_code": "NI",
+      "from_level_id": "ailit-fundamentals-novice",
+      "to_level_id": "ailit-fundamentals-intermediate",
+      "stem": "You are dealing with a classroom discussion about why two AI systems answer the same prompt differently. You have enough context to act, but not enough to rely on guesswork. Which response best indicates the higher side of this boundary in AI Fundamentals?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Choose the first explanation or action that sounds plausible and rely on surface cues, revisiting it only if something obvious fails.",
+          "maps_to_level_id": "ailit-fundamentals-novice",
+          "nuisance": true,
+          "nuisance_reason": "Feels pragmatic, but it does not show a repeatable decision structure."
+        },
+        {
+          "option_id": "B",
+          "text": "Use a simple routine, compare the result against explicit criteria, and record at least one limitation or follow-up check.",
+          "maps_to_level_id": "ailit-fundamentals-intermediate"
+        },
+        {
+          "option_id": "C",
+          "text": "Adapt the approach to the specific context, compare alternatives, and explain the trade-offs so the method could transfer to others.",
+          "maps_to_level_id": "ailit-fundamentals-advanced"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "student"
+        ],
+        "subject_area": [
+          "social_sciences"
+        ],
+        "prior_ai_experience": [
+          "technical"
+        ],
+        "institution_level": [
+          "FE"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the NI boundary in AI Fundamentals by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "AILIT-FUND-IA-01",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-fundamentals",
+      "dimension_name": "AI Fundamentals",
+      "boundary_code": "IA",
+      "from_level_id": "ailit-fundamentals-intermediate",
+      "to_level_id": "ailit-fundamentals-advanced",
+      "stem": "You are working through a departmental conversation about choosing between different AI products. Which response best reflects stronger AI Fundamentals?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep using the normal routine because it usually works, even though this case has different stakes, evidence, or audience needs.",
+          "maps_to_level_id": "ailit-fundamentals-intermediate",
+          "nuisance": true,
+          "nuisance_reason": "Shows tidy routine use, but not the adaptation needed at this boundary."
+        },
+        {
+          "option_id": "B",
+          "text": "Adjust the workflow, criteria, or level of human oversight to fit the context, and explain the trade-offs behind the changes.",
+          "maps_to_level_id": "ailit-fundamentals-advanced"
+        },
+        {
+          "option_id": "C",
+          "text": "Turn the adapted approach into shared guidance or a model workflow that others can reuse and refine.",
+          "maps_to_level_id": "ailit-fundamentals-expert"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "researcher"
+        ],
+        "subject_area": [
+          "health"
+        ],
+        "prior_ai_experience": [
+          "none"
+        ],
+        "institution_level": [
+          "HE"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the IA boundary in AI Fundamentals by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "AILIT-FUND-IA-02",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-fundamentals",
+      "dimension_name": "AI Fundamentals",
+      "boundary_code": "IA",
+      "from_level_id": "ailit-fundamentals-intermediate",
+      "to_level_id": "ailit-fundamentals-advanced",
+      "stem": "You are dealing with a lesson design task that requires explaining model, data, and output to learners. A familiar routine exists, but the situation is no longer routine. Which response best indicates the higher side of this boundary in AI Fundamentals?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep using the normal routine because it usually works, even though this case has different stakes, evidence, or audience needs.",
+          "maps_to_level_id": "ailit-fundamentals-intermediate",
+          "nuisance": true,
+          "nuisance_reason": "Shows tidy routine use, but not the adaptation needed at this boundary."
+        },
+        {
+          "option_id": "B",
+          "text": "Adjust the workflow, criteria, or level of human oversight to fit the context, and explain the trade-offs behind the changes.",
+          "maps_to_level_id": "ailit-fundamentals-advanced"
+        },
+        {
+          "option_id": "C",
+          "text": "Turn the adapted approach into shared guidance or a model workflow that others can reuse and refine.",
+          "maps_to_level_id": "ailit-fundamentals-expert"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "professional_services"
+        ],
+        "subject_area": [
+          "arts"
+        ],
+        "prior_ai_experience": [
+          "casual"
+        ],
+        "institution_level": [
+          "secondary"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the IA boundary in AI Fundamentals by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "AILIT-FUND-AE-01",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-fundamentals",
+      "dimension_name": "AI Fundamentals",
+      "boundary_code": "AE",
+      "from_level_id": "ailit-fundamentals-advanced",
+      "to_level_id": "ailit-fundamentals-expert",
+      "stem": "You are working through a briefing note about an AI vendor's performance claims. Which response best reflects stronger AI Fundamentals?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep improving your own practice, but leave wider guidance or coordination to others.",
+          "maps_to_level_id": "ailit-fundamentals-advanced",
+          "nuisance": true,
+          "nuisance_reason": "Represents strong personal capability without wider shaping influence."
+        },
+        {
+          "option_id": "B",
+          "text": "Create or revise shared guidance, exemplars, or decision rules and use evidence to improve them over time.",
+          "maps_to_level_id": "ailit-fundamentals-expert"
+        },
+        {
+          "option_id": "C",
+          "text": "Experiment with more tools and outputs on your own to stay ahead, without yet changing shared practice.",
+          "maps_to_level_id": "ailit-fundamentals-intermediate",
+          "nuisance": true,
+          "nuisance_reason": "Looks energetic, but it expands activity rather than shaping reliable collective practice."
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "educator"
+        ],
+        "subject_area": [
+          "STEM"
+        ],
+        "prior_ai_experience": [
+          "regular"
+        ],
+        "institution_level": [
+          "FE"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the AE boundary in AI Fundamentals by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "AILIT-FUND-AE-02",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-fundamentals",
+      "dimension_name": "AI Fundamentals",
+      "boundary_code": "AE",
+      "from_level_id": "ailit-fundamentals-advanced",
+      "to_level_id": "ailit-fundamentals-expert",
+      "stem": "You are dealing with a reflection on why an AI system succeeds in one task but fails in another. Your own method is already strong, but the wider environment now matters. Which response best indicates the higher side of this boundary in AI Fundamentals?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep improving your own practice, but leave wider guidance or coordination to others.",
+          "maps_to_level_id": "ailit-fundamentals-advanced",
+          "nuisance": true,
+          "nuisance_reason": "Represents strong personal capability without wider shaping influence."
+        },
+        {
+          "option_id": "B",
+          "text": "Create or revise shared guidance, exemplars, or decision rules and use evidence to improve them over time.",
+          "maps_to_level_id": "ailit-fundamentals-expert"
+        },
+        {
+          "option_id": "C",
+          "text": "Experiment with more tools and outputs on your own to stay ahead, without yet changing shared practice.",
+          "maps_to_level_id": "ailit-fundamentals-intermediate",
+          "nuisance": true,
+          "nuisance_reason": "Looks energetic, but it expands activity rather than shaping reliable collective practice."
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "student"
+        ],
+        "subject_area": [
+          "humanities"
+        ],
+        "prior_ai_experience": [
+          "technical"
+        ],
+        "institution_level": [
+          "HE"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the AE boundary in AI Fundamentals by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "AILIT-APPL-NI-01",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-application",
+      "dimension_name": "AI Application",
+      "boundary_code": "NI",
+      "from_level_id": "ailit-application-novice",
+      "to_level_id": "ailit-application-intermediate",
+      "stem": "You are working through drafting a lesson, report, or study outline with AI support. Which response best reflects stronger AI Application?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Choose the first explanation or action that sounds plausible and rely on surface cues, revisiting it only if something obvious fails.",
+          "maps_to_level_id": "ailit-application-novice",
+          "nuisance": true,
+          "nuisance_reason": "Feels pragmatic, but it does not show a repeatable decision structure."
+        },
+        {
+          "option_id": "B",
+          "text": "Use a simple routine, compare the result against explicit criteria, and record at least one limitation or follow-up check.",
+          "maps_to_level_id": "ailit-application-intermediate"
+        },
+        {
+          "option_id": "C",
+          "text": "Adapt the approach to the specific context, compare alternatives, and explain the trade-offs so the method could transfer to others.",
+          "maps_to_level_id": "ailit-application-advanced"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "researcher"
+        ],
+        "subject_area": [
+          "humanities"
+        ],
+        "prior_ai_experience": [
+          "none"
+        ],
+        "institution_level": [
+          "FE"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the NI boundary in AI Application by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "AILIT-APPL-NI-02",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-application",
+      "dimension_name": "AI Application",
+      "boundary_code": "NI",
+      "from_level_id": "ailit-application-novice",
+      "to_level_id": "ailit-application-intermediate",
+      "stem": "You are dealing with using an AI assistant to plan research, revision, or administrative work. You have enough context to act, but not enough to rely on guesswork. Which response best indicates the higher side of this boundary in AI Application?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Choose the first explanation or action that sounds plausible and rely on surface cues, revisiting it only if something obvious fails.",
+          "maps_to_level_id": "ailit-application-novice",
+          "nuisance": true,
+          "nuisance_reason": "Feels pragmatic, but it does not show a repeatable decision structure."
+        },
+        {
+          "option_id": "B",
+          "text": "Use a simple routine, compare the result against explicit criteria, and record at least one limitation or follow-up check.",
+          "maps_to_level_id": "ailit-application-intermediate"
+        },
+        {
+          "option_id": "C",
+          "text": "Adapt the approach to the specific context, compare alternatives, and explain the trade-offs so the method could transfer to others.",
+          "maps_to_level_id": "ailit-application-advanced"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "professional_services"
+        ],
+        "subject_area": [
+          "social_sciences"
+        ],
+        "prior_ai_experience": [
+          "casual"
+        ],
+        "institution_level": [
+          "HE"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the NI boundary in AI Application by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "AILIT-APPL-IA-01",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-application",
+      "dimension_name": "AI Application",
+      "boundary_code": "IA",
+      "from_level_id": "ailit-application-intermediate",
+      "to_level_id": "ailit-application-advanced",
+      "stem": "You are working through improving a workflow where AI outputs are inconsistent across similar tasks. Which response best reflects stronger AI Application?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep using the normal routine because it usually works, even though this case has different stakes, evidence, or audience needs.",
+          "maps_to_level_id": "ailit-application-intermediate",
+          "nuisance": true,
+          "nuisance_reason": "Shows tidy routine use, but not the adaptation needed at this boundary."
+        },
+        {
+          "option_id": "B",
+          "text": "Adjust the workflow, criteria, or level of human oversight to fit the context, and explain the trade-offs behind the changes.",
+          "maps_to_level_id": "ailit-application-advanced"
+        },
+        {
+          "option_id": "C",
+          "text": "Turn the adapted approach into shared guidance or a model workflow that others can reuse and refine.",
+          "maps_to_level_id": "ailit-application-expert"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "educator"
+        ],
+        "subject_area": [
+          "health"
+        ],
+        "prior_ai_experience": [
+          "regular"
+        ],
+        "institution_level": [
+          "secondary"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the IA boundary in AI Application by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "AILIT-APPL-IA-02",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-application",
+      "dimension_name": "AI Application",
+      "boundary_code": "IA",
+      "from_level_id": "ailit-application-intermediate",
+      "to_level_id": "ailit-application-advanced",
+      "stem": "You are dealing with choosing when to use AI and when manual work is more appropriate. A familiar routine exists, but the situation is no longer routine. Which response best indicates the higher side of this boundary in AI Application?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep using the normal routine because it usually works, even though this case has different stakes, evidence, or audience needs.",
+          "maps_to_level_id": "ailit-application-intermediate",
+          "nuisance": true,
+          "nuisance_reason": "Shows tidy routine use, but not the adaptation needed at this boundary."
+        },
+        {
+          "option_id": "B",
+          "text": "Adjust the workflow, criteria, or level of human oversight to fit the context, and explain the trade-offs behind the changes.",
+          "maps_to_level_id": "ailit-application-advanced"
+        },
+        {
+          "option_id": "C",
+          "text": "Turn the adapted approach into shared guidance or a model workflow that others can reuse and refine.",
+          "maps_to_level_id": "ailit-application-expert"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "student"
+        ],
+        "subject_area": [
+          "arts"
+        ],
+        "prior_ai_experience": [
+          "technical"
+        ],
+        "institution_level": [
+          "FE"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the IA boundary in AI Application by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "AILIT-APPL-AE-01",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-application",
+      "dimension_name": "AI Application",
+      "boundary_code": "AE",
+      "from_level_id": "ailit-application-advanced",
+      "to_level_id": "ailit-application-expert",
+      "stem": "You are working through building a repeatable prompt-and-review routine for a real task. Which response best reflects stronger AI Application?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep improving your own practice, but leave wider guidance or coordination to others.",
+          "maps_to_level_id": "ailit-application-advanced",
+          "nuisance": true,
+          "nuisance_reason": "Represents strong personal capability without wider shaping influence."
+        },
+        {
+          "option_id": "B",
+          "text": "Create or revise shared guidance, exemplars, or decision rules and use evidence to improve them over time.",
+          "maps_to_level_id": "ailit-application-expert"
+        },
+        {
+          "option_id": "C",
+          "text": "Experiment with more tools and outputs on your own to stay ahead, without yet changing shared practice.",
+          "maps_to_level_id": "ailit-application-intermediate",
+          "nuisance": true,
+          "nuisance_reason": "Looks energetic, but it expands activity rather than shaping reliable collective practice."
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "researcher"
+        ],
+        "subject_area": [
+          "STEM"
+        ],
+        "prior_ai_experience": [
+          "none"
+        ],
+        "institution_level": [
+          "HE"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the AE boundary in AI Application by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "AILIT-APPL-AE-02",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-application",
+      "dimension_name": "AI Application",
+      "boundary_code": "AE",
+      "from_level_id": "ailit-application-advanced",
+      "to_level_id": "ailit-application-expert",
+      "stem": "You are dealing with supporting colleagues or peers who want to use AI more effectively. Your own method is already strong, but the wider environment now matters. Which response best indicates the higher side of this boundary in AI Application?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep improving your own practice, but leave wider guidance or coordination to others.",
+          "maps_to_level_id": "ailit-application-advanced",
+          "nuisance": true,
+          "nuisance_reason": "Represents strong personal capability without wider shaping influence."
+        },
+        {
+          "option_id": "B",
+          "text": "Create or revise shared guidance, exemplars, or decision rules and use evidence to improve them over time.",
+          "maps_to_level_id": "ailit-application-expert"
+        },
+        {
+          "option_id": "C",
+          "text": "Experiment with more tools and outputs on your own to stay ahead, without yet changing shared practice.",
+          "maps_to_level_id": "ailit-application-intermediate",
+          "nuisance": true,
+          "nuisance_reason": "Looks energetic, but it expands activity rather than shaping reliable collective practice."
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "professional_services"
+        ],
+        "subject_area": [
+          "humanities"
+        ],
+        "prior_ai_experience": [
+          "casual"
+        ],
+        "institution_level": [
+          "secondary"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the AE boundary in AI Application by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "AILIT-ETH-NI-01",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-ethics",
+      "dimension_name": "AI Ethics & Society",
+      "boundary_code": "NI",
+      "from_level_id": "ailit-ethics-novice",
+      "to_level_id": "ailit-ethics-intermediate",
+      "stem": "You are working through deciding whether a public AI tool is appropriate for sensitive educational data. Which response best reflects stronger AI Ethics & Society?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Choose the first explanation or action that sounds plausible and rely on surface cues, revisiting it only if something obvious fails.",
+          "maps_to_level_id": "ailit-ethics-novice",
+          "nuisance": true,
+          "nuisance_reason": "Feels pragmatic, but it does not show a repeatable decision structure."
+        },
+        {
+          "option_id": "B",
+          "text": "Use a simple routine, compare the result against explicit criteria, and record at least one limitation or follow-up check.",
+          "maps_to_level_id": "ailit-ethics-intermediate"
+        },
+        {
+          "option_id": "C",
+          "text": "Adapt the approach to the specific context, compare alternatives, and explain the trade-offs so the method could transfer to others.",
+          "maps_to_level_id": "ailit-ethics-advanced"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "educator"
+        ],
+        "subject_area": [
+          "humanities"
+        ],
+        "prior_ai_experience": [
+          "regular"
+        ],
+        "institution_level": [
+          "HE"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the NI boundary in AI Ethics & Society by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "AILIT-ETH-NI-02",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-ethics",
+      "dimension_name": "AI Ethics & Society",
+      "boundary_code": "NI",
+      "from_level_id": "ailit-ethics-novice",
+      "to_level_id": "ailit-ethics-intermediate",
+      "stem": "You are dealing with responding to concerns about bias, privacy, or transparency in an AI-supported process. You have enough context to act, but not enough to rely on guesswork. Which response best indicates the higher side of this boundary in AI Ethics & Society?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Choose the first explanation or action that sounds plausible and rely on surface cues, revisiting it only if something obvious fails.",
+          "maps_to_level_id": "ailit-ethics-novice",
+          "nuisance": true,
+          "nuisance_reason": "Feels pragmatic, but it does not show a repeatable decision structure."
+        },
+        {
+          "option_id": "B",
+          "text": "Use a simple routine, compare the result against explicit criteria, and record at least one limitation or follow-up check.",
+          "maps_to_level_id": "ailit-ethics-intermediate"
+        },
+        {
+          "option_id": "C",
+          "text": "Adapt the approach to the specific context, compare alternatives, and explain the trade-offs so the method could transfer to others.",
+          "maps_to_level_id": "ailit-ethics-advanced"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "student"
+        ],
+        "subject_area": [
+          "social_sciences"
+        ],
+        "prior_ai_experience": [
+          "technical"
+        ],
+        "institution_level": [
+          "secondary"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the NI boundary in AI Ethics & Society by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "AILIT-ETH-IA-01",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-ethics",
+      "dimension_name": "AI Ethics & Society",
+      "boundary_code": "IA",
+      "from_level_id": "ailit-ethics-intermediate",
+      "to_level_id": "ailit-ethics-advanced",
+      "stem": "You are working through reviewing an institutional draft policy for acceptable AI use. Which response best reflects stronger AI Ethics & Society?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep using the normal routine because it usually works, even though this case has different stakes, evidence, or audience needs.",
+          "maps_to_level_id": "ailit-ethics-intermediate",
+          "nuisance": true,
+          "nuisance_reason": "Shows tidy routine use, but not the adaptation needed at this boundary."
+        },
+        {
+          "option_id": "B",
+          "text": "Adjust the workflow, criteria, or level of human oversight to fit the context, and explain the trade-offs behind the changes.",
+          "maps_to_level_id": "ailit-ethics-advanced"
+        },
+        {
+          "option_id": "C",
+          "text": "Turn the adapted approach into shared guidance or a model workflow that others can reuse and refine.",
+          "maps_to_level_id": "ailit-ethics-expert"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "researcher"
+        ],
+        "subject_area": [
+          "health"
+        ],
+        "prior_ai_experience": [
+          "none"
+        ],
+        "institution_level": [
+          "FE"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the IA boundary in AI Ethics & Society by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "AILIT-ETH-IA-02",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-ethics",
+      "dimension_name": "AI Ethics & Society",
+      "boundary_code": "IA",
+      "from_level_id": "ailit-ethics-intermediate",
+      "to_level_id": "ailit-ethics-advanced",
+      "stem": "You are dealing with designing guidance for learners or colleagues about disclosure and accountability. A familiar routine exists, but the situation is no longer routine. Which response best indicates the higher side of this boundary in AI Ethics & Society?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep using the normal routine because it usually works, even though this case has different stakes, evidence, or audience needs.",
+          "maps_to_level_id": "ailit-ethics-intermediate",
+          "nuisance": true,
+          "nuisance_reason": "Shows tidy routine use, but not the adaptation needed at this boundary."
+        },
+        {
+          "option_id": "B",
+          "text": "Adjust the workflow, criteria, or level of human oversight to fit the context, and explain the trade-offs behind the changes.",
+          "maps_to_level_id": "ailit-ethics-advanced"
+        },
+        {
+          "option_id": "C",
+          "text": "Turn the adapted approach into shared guidance or a model workflow that others can reuse and refine.",
+          "maps_to_level_id": "ailit-ethics-expert"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "professional_services"
+        ],
+        "subject_area": [
+          "arts"
+        ],
+        "prior_ai_experience": [
+          "casual"
+        ],
+        "institution_level": [
+          "HE"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the IA boundary in AI Ethics & Society by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "AILIT-ETH-AE-01",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-ethics",
+      "dimension_name": "AI Ethics & Society",
+      "boundary_code": "AE",
+      "from_level_id": "ailit-ethics-advanced",
+      "to_level_id": "ailit-ethics-expert",
+      "stem": "You are working through balancing efficiency benefits against fairness and human oversight. Which response best reflects stronger AI Ethics & Society?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep improving your own practice, but leave wider guidance or coordination to others.",
+          "maps_to_level_id": "ailit-ethics-advanced",
+          "nuisance": true,
+          "nuisance_reason": "Represents strong personal capability without wider shaping influence."
+        },
+        {
+          "option_id": "B",
+          "text": "Create or revise shared guidance, exemplars, or decision rules and use evidence to improve them over time.",
+          "maps_to_level_id": "ailit-ethics-expert"
+        },
+        {
+          "option_id": "C",
+          "text": "Experiment with more tools and outputs on your own to stay ahead, without yet changing shared practice.",
+          "maps_to_level_id": "ailit-ethics-intermediate",
+          "nuisance": true,
+          "nuisance_reason": "Looks energetic, but it expands activity rather than shaping reliable collective practice."
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "educator"
+        ],
+        "subject_area": [
+          "STEM"
+        ],
+        "prior_ai_experience": [
+          "regular"
+        ],
+        "institution_level": [
+          "secondary"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the AE boundary in AI Ethics & Society by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "AILIT-ETH-AE-02",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-ethics",
+      "dimension_name": "AI Ethics & Society",
+      "boundary_code": "AE",
+      "from_level_id": "ailit-ethics-advanced",
+      "to_level_id": "ailit-ethics-expert",
+      "stem": "You are dealing with addressing a complaint about an AI-informed decision or feedback process. Your own method is already strong, but the wider environment now matters. Which response best indicates the higher side of this boundary in AI Ethics & Society?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep improving your own practice, but leave wider guidance or coordination to others.",
+          "maps_to_level_id": "ailit-ethics-advanced",
+          "nuisance": true,
+          "nuisance_reason": "Represents strong personal capability without wider shaping influence."
+        },
+        {
+          "option_id": "B",
+          "text": "Create or revise shared guidance, exemplars, or decision rules and use evidence to improve them over time.",
+          "maps_to_level_id": "ailit-ethics-expert"
+        },
+        {
+          "option_id": "C",
+          "text": "Experiment with more tools and outputs on your own to stay ahead, without yet changing shared practice.",
+          "maps_to_level_id": "ailit-ethics-intermediate",
+          "nuisance": true,
+          "nuisance_reason": "Looks energetic, but it expands activity rather than shaping reliable collective practice."
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "student"
+        ],
+        "subject_area": [
+          "humanities"
+        ],
+        "prior_ai_experience": [
+          "technical"
+        ],
+        "institution_level": [
+          "FE"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the AE boundary in AI Ethics & Society by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "AILIT-FUT-NI-01",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-futures",
+      "dimension_name": "AI Futures",
+      "boundary_code": "NI",
+      "from_level_id": "ailit-futures-novice",
+      "to_level_id": "ailit-futures-intermediate",
+      "stem": "You are working through a school or university planning discussion about AI over the next three years. Which response best reflects stronger AI Futures?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Choose the first explanation or action that sounds plausible and rely on surface cues, revisiting it only if something obvious fails.",
+          "maps_to_level_id": "ailit-futures-novice",
+          "nuisance": true,
+          "nuisance_reason": "Feels pragmatic, but it does not show a repeatable decision structure."
+        },
+        {
+          "option_id": "B",
+          "text": "Use a simple routine, compare the result against explicit criteria, and record at least one limitation or follow-up check.",
+          "maps_to_level_id": "ailit-futures-intermediate"
+        },
+        {
+          "option_id": "C",
+          "text": "Adapt the approach to the specific context, compare alternatives, and explain the trade-offs so the method could transfer to others.",
+          "maps_to_level_id": "ailit-futures-advanced"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "researcher"
+        ],
+        "subject_area": [
+          "humanities"
+        ],
+        "prior_ai_experience": [
+          "none"
+        ],
+        "institution_level": [
+          "secondary"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the NI boundary in AI Futures by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "AILIT-FUT-NI-02",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-futures",
+      "dimension_name": "AI Futures",
+      "boundary_code": "NI",
+      "from_level_id": "ailit-futures-novice",
+      "to_level_id": "ailit-futures-intermediate",
+      "stem": "You are dealing with a careers conversation about which human and AI-related skills will matter most. You have enough context to act, but not enough to rely on guesswork. Which response best indicates the higher side of this boundary in AI Futures?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Choose the first explanation or action that sounds plausible and rely on surface cues, revisiting it only if something obvious fails.",
+          "maps_to_level_id": "ailit-futures-novice",
+          "nuisance": true,
+          "nuisance_reason": "Feels pragmatic, but it does not show a repeatable decision structure."
+        },
+        {
+          "option_id": "B",
+          "text": "Use a simple routine, compare the result against explicit criteria, and record at least one limitation or follow-up check.",
+          "maps_to_level_id": "ailit-futures-intermediate"
+        },
+        {
+          "option_id": "C",
+          "text": "Adapt the approach to the specific context, compare alternatives, and explain the trade-offs so the method could transfer to others.",
+          "maps_to_level_id": "ailit-futures-advanced"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "professional_services"
+        ],
+        "subject_area": [
+          "social_sciences"
+        ],
+        "prior_ai_experience": [
+          "casual"
+        ],
+        "institution_level": [
+          "FE"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the NI boundary in AI Futures by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "AILIT-FUT-IA-01",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-futures",
+      "dimension_name": "AI Futures",
+      "boundary_code": "IA",
+      "from_level_id": "ailit-futures-intermediate",
+      "to_level_id": "ailit-futures-advanced",
+      "stem": "You are working through a workshop on how policy, labour, or assessment may change as AI improves. Which response best reflects stronger AI Futures?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep using the normal routine because it usually works, even though this case has different stakes, evidence, or audience needs.",
+          "maps_to_level_id": "ailit-futures-intermediate",
+          "nuisance": true,
+          "nuisance_reason": "Shows tidy routine use, but not the adaptation needed at this boundary."
+        },
+        {
+          "option_id": "B",
+          "text": "Adjust the workflow, criteria, or level of human oversight to fit the context, and explain the trade-offs behind the changes.",
+          "maps_to_level_id": "ailit-futures-advanced"
+        },
+        {
+          "option_id": "C",
+          "text": "Turn the adapted approach into shared guidance or a model workflow that others can reuse and refine.",
+          "maps_to_level_id": "ailit-futures-expert"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "educator"
+        ],
+        "subject_area": [
+          "health"
+        ],
+        "prior_ai_experience": [
+          "regular"
+        ],
+        "institution_level": [
+          "HE"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the IA boundary in AI Futures by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "AILIT-FUT-IA-02",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-futures",
+      "dimension_name": "AI Futures",
+      "boundary_code": "IA",
+      "from_level_id": "ailit-futures-intermediate",
+      "to_level_id": "ailit-futures-advanced",
+      "stem": "You are dealing with a strategic review of which AI capabilities to build locally and which to procure. A familiar routine exists, but the situation is no longer routine. Which response best indicates the higher side of this boundary in AI Futures?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep using the normal routine because it usually works, even though this case has different stakes, evidence, or audience needs.",
+          "maps_to_level_id": "ailit-futures-intermediate",
+          "nuisance": true,
+          "nuisance_reason": "Shows tidy routine use, but not the adaptation needed at this boundary."
+        },
+        {
+          "option_id": "B",
+          "text": "Adjust the workflow, criteria, or level of human oversight to fit the context, and explain the trade-offs behind the changes.",
+          "maps_to_level_id": "ailit-futures-advanced"
+        },
+        {
+          "option_id": "C",
+          "text": "Turn the adapted approach into shared guidance or a model workflow that others can reuse and refine.",
+          "maps_to_level_id": "ailit-futures-expert"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "student"
+        ],
+        "subject_area": [
+          "arts"
+        ],
+        "prior_ai_experience": [
+          "technical"
+        ],
+        "institution_level": [
+          "secondary"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the IA boundary in AI Futures by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "AILIT-FUT-AE-01",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-futures",
+      "dimension_name": "AI Futures",
+      "boundary_code": "AE",
+      "from_level_id": "ailit-futures-advanced",
+      "to_level_id": "ailit-futures-expert",
+      "stem": "You are working through a foresight exercise about desirable and undesirable future AI uses. Which response best reflects stronger AI Futures?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep improving your own practice, but leave wider guidance or coordination to others.",
+          "maps_to_level_id": "ailit-futures-advanced",
+          "nuisance": true,
+          "nuisance_reason": "Represents strong personal capability without wider shaping influence."
+        },
+        {
+          "option_id": "B",
+          "text": "Create or revise shared guidance, exemplars, or decision rules and use evidence to improve them over time.",
+          "maps_to_level_id": "ailit-futures-expert"
+        },
+        {
+          "option_id": "C",
+          "text": "Experiment with more tools and outputs on your own to stay ahead, without yet changing shared practice.",
+          "maps_to_level_id": "ailit-futures-intermediate",
+          "nuisance": true,
+          "nuisance_reason": "Looks energetic, but it expands activity rather than shaping reliable collective practice."
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "researcher"
+        ],
+        "subject_area": [
+          "STEM"
+        ],
+        "prior_ai_experience": [
+          "none"
+        ],
+        "institution_level": [
+          "FE"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the AE boundary in AI Futures by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "AILIT-FUT-AE-02",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-futures",
+      "dimension_name": "AI Futures",
+      "boundary_code": "AE",
+      "from_level_id": "ailit-futures-advanced",
+      "to_level_id": "ailit-futures-expert",
+      "stem": "You are dealing with a cross-functional discussion about how to prepare for rapid AI change responsibly. Your own method is already strong, but the wider environment now matters. Which response best indicates the higher side of this boundary in AI Futures?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep improving your own practice, but leave wider guidance or coordination to others.",
+          "maps_to_level_id": "ailit-futures-advanced",
+          "nuisance": true,
+          "nuisance_reason": "Represents strong personal capability without wider shaping influence."
+        },
+        {
+          "option_id": "B",
+          "text": "Create or revise shared guidance, exemplars, or decision rules and use evidence to improve them over time.",
+          "maps_to_level_id": "ailit-futures-expert"
+        },
+        {
+          "option_id": "C",
+          "text": "Experiment with more tools and outputs on your own to stay ahead, without yet changing shared practice.",
+          "maps_to_level_id": "ailit-futures-intermediate",
+          "nuisance": true,
+          "nuisance_reason": "Looks energetic, but it expands activity rather than shaping reliable collective practice."
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "professional_services"
+        ],
+        "subject_area": [
+          "humanities"
+        ],
+        "prior_ai_experience": [
+          "casual"
+        ],
+        "institution_level": [
+          "HE"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the AE boundary in AI Futures by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    }
+  ]
+}

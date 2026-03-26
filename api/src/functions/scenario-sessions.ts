@@ -163,6 +163,11 @@ async function handler(
           governance: "qs-gov-", outreach: "qs-out-",
           teaching: "qs-tl-", research: "qs-res-",
         },
+        // DigComp: 5 competence areas (Area 1–5 map to dc-1, dc-2, etc.)
+        "digcomp": {
+          information_data: "dc-1-", communication: "dc-2-",
+          content_creation: "dc-3-", safety: "dc-4-", problem_solving: "dc-5-",
+        },
       };
       const fwPrefixes = PILLAR_PREFIX[body.framework_id] || {};
       const pillarPrefix = body.pillar_filter ? fwPrefixes[body.pillar_filter] : null;
@@ -201,12 +206,14 @@ async function handler(
         body: JSON.stringify({
           session_id: session!.id,
           framework_id: body.framework_id,
-          estimated_time_minutes:
-            body.framework_id === "maturity-the"
-              ? (pillarPrefix ? Math.ceil(shuffledScenarios.length * 1) : 40)
-              : body.framework_id === "ai-capability"
-                ? (pillarPrefix ? Math.ceil(shuffledScenarios.length * 0.4) : 20)
-                : 15,
+          estimated_time_minutes: (() => {
+            const n = shuffledScenarios.length;
+            if (body.framework_id === "maturity-the") return pillarPrefix ? Math.ceil(n * 1) : 40;
+            if (body.framework_id === "ai-capability") return pillarPrefix ? Math.ceil(n * 0.4) : 20;
+            if (body.framework_id === "digcomp") return pillarPrefix ? Math.ceil(n * 0.5) : Math.ceil(n * 0.5); // ~63 mins full, ~13 per area
+            // Small frameworks: ~2 min per scenario
+            return Math.max(5, Math.ceil(n * 2));
+          })(),
           total_scenarios: shuffledScenarios.length,
           scenarios: shuffledScenarios,
         }),

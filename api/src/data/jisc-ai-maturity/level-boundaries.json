@@ -1,0 +1,333 @@
+{
+  "framework_id": "jisc-ai-maturity",
+  "framework_name": "Jisc AI Maturity Model",
+  "file_type": "level-boundaries",
+  "research_basis": {
+    "generated_at": "2026-03-26",
+    "authoring_method": "Original synthesis using the user brief and the THE DMI implementation reference as the structural benchmark.",
+    "licence_handling": "Original implementation content informed by Jisc AI maturity structure. Scenarios and practitioner language are independently written to avoid reproducing Jisc wording."
+  },
+  "object_count": 10,
+  "objects": [
+    {
+      "boundary_id": "jisc-ai-strategy-ed",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-strategy",
+      "dimension_name": "AI Strategy & Leadership",
+      "boundary_code": "ED",
+      "from_level_id": "jisc-ai-strategy-emerging",
+      "to_level_id": "jisc-ai-strategy-developing",
+      "from_level_name": "Emerging",
+      "to_level_name": "Developing",
+      "key_discriminator": "In AI Strategy & Leadership, The key shift is from scattered AI experimentation to coordinated development with support, governance, and scalable workflows.",
+      "discriminator_type": "experimentation_vs_operationalisation",
+      "common_false_positives": [
+        {
+          "pattern": "Lots of pilots",
+          "why_not_sufficient": "Pilot activity can hide the absence of shared priorities, support, or controls."
+        },
+        {
+          "pattern": "Tool procurement",
+          "why_not_sufficient": "Buying tools is not the same as building operational capability around them."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "The institution has named ownership, repeatable processes, and support for real use cases.",
+        "Governance or risk checks are applied before or during rollout, not only after issues occur."
+      ],
+      "strong_threshold_evidence": [
+        "Multiple functions use AI through managed workflows rather than informal workarounds.",
+        "Capability building and support move in step with adoption."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "jisc-ai-strategy-dm",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-strategy",
+      "dimension_name": "AI Strategy & Leadership",
+      "boundary_code": "DM",
+      "from_level_id": "jisc-ai-strategy-developing",
+      "to_level_id": "jisc-ai-strategy-mature",
+      "from_level_name": "Developing",
+      "to_level_name": "Mature",
+      "key_discriminator": "In AI Strategy & Leadership, The key shift is from coordinated development to embedded maturity where AI is monitored, governed, and improved as part of normal institutional operations.",
+      "discriminator_type": "operationalisation_vs_embedding",
+      "common_false_positives": [
+        {
+          "pattern": "Routine use",
+          "why_not_sufficient": "Frequent use can still be fragile if governance, data, or monitoring remain immature."
+        },
+        {
+          "pattern": "Enthusiastic leadership",
+          "why_not_sufficient": "Visible sponsorship is helpful but does not prove embedded operating discipline."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "AI-related decisions are integrated into mainstream strategy, operations, and review cycles.",
+        "There is evidence of monitoring, lifecycle management, and accountability."
+      ],
+      "strong_threshold_evidence": [
+        "The institution adapts AI practice through continuous learning, not one-off implementation phases.",
+        "Responsible use is evident in procurement, deployment, support, and evaluation."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "jisc-ai-people-ed",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-people",
+      "dimension_name": "People & Skills",
+      "boundary_code": "ED",
+      "from_level_id": "jisc-ai-people-emerging",
+      "to_level_id": "jisc-ai-people-developing",
+      "from_level_name": "Emerging",
+      "to_level_name": "Developing",
+      "key_discriminator": "In People & Skills, The key shift is from scattered AI experimentation to coordinated development with support, governance, and scalable workflows.",
+      "discriminator_type": "experimentation_vs_operationalisation",
+      "common_false_positives": [
+        {
+          "pattern": "Lots of pilots",
+          "why_not_sufficient": "Pilot activity can hide the absence of shared priorities, support, or controls."
+        },
+        {
+          "pattern": "Tool procurement",
+          "why_not_sufficient": "Buying tools is not the same as building operational capability around them."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "The institution has named ownership, repeatable processes, and support for real use cases.",
+        "Governance or risk checks are applied before or during rollout, not only after issues occur."
+      ],
+      "strong_threshold_evidence": [
+        "Multiple functions use AI through managed workflows rather than informal workarounds.",
+        "Capability building and support move in step with adoption."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "jisc-ai-people-dm",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-people",
+      "dimension_name": "People & Skills",
+      "boundary_code": "DM",
+      "from_level_id": "jisc-ai-people-developing",
+      "to_level_id": "jisc-ai-people-mature",
+      "from_level_name": "Developing",
+      "to_level_name": "Mature",
+      "key_discriminator": "In People & Skills, The key shift is from coordinated development to embedded maturity where AI is monitored, governed, and improved as part of normal institutional operations.",
+      "discriminator_type": "operationalisation_vs_embedding",
+      "common_false_positives": [
+        {
+          "pattern": "Routine use",
+          "why_not_sufficient": "Frequent use can still be fragile if governance, data, or monitoring remain immature."
+        },
+        {
+          "pattern": "Enthusiastic leadership",
+          "why_not_sufficient": "Visible sponsorship is helpful but does not prove embedded operating discipline."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "AI-related decisions are integrated into mainstream strategy, operations, and review cycles.",
+        "There is evidence of monitoring, lifecycle management, and accountability."
+      ],
+      "strong_threshold_evidence": [
+        "The institution adapts AI practice through continuous learning, not one-off implementation phases.",
+        "Responsible use is evident in procurement, deployment, support, and evaluation."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "jisc-ai-tech-ed",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-tech",
+      "dimension_name": "Technology & Infrastructure",
+      "boundary_code": "ED",
+      "from_level_id": "jisc-ai-tech-emerging",
+      "to_level_id": "jisc-ai-tech-developing",
+      "from_level_name": "Emerging",
+      "to_level_name": "Developing",
+      "key_discriminator": "In Technology & Infrastructure, The key shift is from scattered AI experimentation to coordinated development with support, governance, and scalable workflows.",
+      "discriminator_type": "experimentation_vs_operationalisation",
+      "common_false_positives": [
+        {
+          "pattern": "Lots of pilots",
+          "why_not_sufficient": "Pilot activity can hide the absence of shared priorities, support, or controls."
+        },
+        {
+          "pattern": "Tool procurement",
+          "why_not_sufficient": "Buying tools is not the same as building operational capability around them."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "The institution has named ownership, repeatable processes, and support for real use cases.",
+        "Governance or risk checks are applied before or during rollout, not only after issues occur."
+      ],
+      "strong_threshold_evidence": [
+        "Multiple functions use AI through managed workflows rather than informal workarounds.",
+        "Capability building and support move in step with adoption."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "jisc-ai-tech-dm",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-tech",
+      "dimension_name": "Technology & Infrastructure",
+      "boundary_code": "DM",
+      "from_level_id": "jisc-ai-tech-developing",
+      "to_level_id": "jisc-ai-tech-mature",
+      "from_level_name": "Developing",
+      "to_level_name": "Mature",
+      "key_discriminator": "In Technology & Infrastructure, The key shift is from coordinated development to embedded maturity where AI is monitored, governed, and improved as part of normal institutional operations.",
+      "discriminator_type": "operationalisation_vs_embedding",
+      "common_false_positives": [
+        {
+          "pattern": "Routine use",
+          "why_not_sufficient": "Frequent use can still be fragile if governance, data, or monitoring remain immature."
+        },
+        {
+          "pattern": "Enthusiastic leadership",
+          "why_not_sufficient": "Visible sponsorship is helpful but does not prove embedded operating discipline."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "AI-related decisions are integrated into mainstream strategy, operations, and review cycles.",
+        "There is evidence of monitoring, lifecycle management, and accountability."
+      ],
+      "strong_threshold_evidence": [
+        "The institution adapts AI practice through continuous learning, not one-off implementation phases.",
+        "Responsible use is evident in procurement, deployment, support, and evaluation."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "jisc-ai-data-ed",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-data",
+      "dimension_name": "Data Readiness",
+      "boundary_code": "ED",
+      "from_level_id": "jisc-ai-data-emerging",
+      "to_level_id": "jisc-ai-data-developing",
+      "from_level_name": "Emerging",
+      "to_level_name": "Developing",
+      "key_discriminator": "In Data Readiness, The key shift is from scattered AI experimentation to coordinated development with support, governance, and scalable workflows.",
+      "discriminator_type": "experimentation_vs_operationalisation",
+      "common_false_positives": [
+        {
+          "pattern": "Lots of pilots",
+          "why_not_sufficient": "Pilot activity can hide the absence of shared priorities, support, or controls."
+        },
+        {
+          "pattern": "Tool procurement",
+          "why_not_sufficient": "Buying tools is not the same as building operational capability around them."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "The institution has named ownership, repeatable processes, and support for real use cases.",
+        "Governance or risk checks are applied before or during rollout, not only after issues occur."
+      ],
+      "strong_threshold_evidence": [
+        "Multiple functions use AI through managed workflows rather than informal workarounds.",
+        "Capability building and support move in step with adoption."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "jisc-ai-data-dm",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-data",
+      "dimension_name": "Data Readiness",
+      "boundary_code": "DM",
+      "from_level_id": "jisc-ai-data-developing",
+      "to_level_id": "jisc-ai-data-mature",
+      "from_level_name": "Developing",
+      "to_level_name": "Mature",
+      "key_discriminator": "In Data Readiness, The key shift is from coordinated development to embedded maturity where AI is monitored, governed, and improved as part of normal institutional operations.",
+      "discriminator_type": "operationalisation_vs_embedding",
+      "common_false_positives": [
+        {
+          "pattern": "Routine use",
+          "why_not_sufficient": "Frequent use can still be fragile if governance, data, or monitoring remain immature."
+        },
+        {
+          "pattern": "Enthusiastic leadership",
+          "why_not_sufficient": "Visible sponsorship is helpful but does not prove embedded operating discipline."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "AI-related decisions are integrated into mainstream strategy, operations, and review cycles.",
+        "There is evidence of monitoring, lifecycle management, and accountability."
+      ],
+      "strong_threshold_evidence": [
+        "The institution adapts AI practice through continuous learning, not one-off implementation phases.",
+        "Responsible use is evident in procurement, deployment, support, and evaluation."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "jisc-ai-ethics-ed",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-ethics",
+      "dimension_name": "Ethics & Responsible AI",
+      "boundary_code": "ED",
+      "from_level_id": "jisc-ai-ethics-emerging",
+      "to_level_id": "jisc-ai-ethics-developing",
+      "from_level_name": "Emerging",
+      "to_level_name": "Developing",
+      "key_discriminator": "In Ethics & Responsible AI, The key shift is from scattered AI experimentation to coordinated development with support, governance, and scalable workflows.",
+      "discriminator_type": "experimentation_vs_operationalisation",
+      "common_false_positives": [
+        {
+          "pattern": "Lots of pilots",
+          "why_not_sufficient": "Pilot activity can hide the absence of shared priorities, support, or controls."
+        },
+        {
+          "pattern": "Tool procurement",
+          "why_not_sufficient": "Buying tools is not the same as building operational capability around them."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "The institution has named ownership, repeatable processes, and support for real use cases.",
+        "Governance or risk checks are applied before or during rollout, not only after issues occur."
+      ],
+      "strong_threshold_evidence": [
+        "Multiple functions use AI through managed workflows rather than informal workarounds.",
+        "Capability building and support move in step with adoption."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "jisc-ai-ethics-dm",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-ethics",
+      "dimension_name": "Ethics & Responsible AI",
+      "boundary_code": "DM",
+      "from_level_id": "jisc-ai-ethics-developing",
+      "to_level_id": "jisc-ai-ethics-mature",
+      "from_level_name": "Developing",
+      "to_level_name": "Mature",
+      "key_discriminator": "In Ethics & Responsible AI, The key shift is from coordinated development to embedded maturity where AI is monitored, governed, and improved as part of normal institutional operations.",
+      "discriminator_type": "operationalisation_vs_embedding",
+      "common_false_positives": [
+        {
+          "pattern": "Routine use",
+          "why_not_sufficient": "Frequent use can still be fragile if governance, data, or monitoring remain immature."
+        },
+        {
+          "pattern": "Enthusiastic leadership",
+          "why_not_sufficient": "Visible sponsorship is helpful but does not prove embedded operating discipline."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "AI-related decisions are integrated into mainstream strategy, operations, and review cycles.",
+        "There is evidence of monitoring, lifecycle management, and accountability."
+      ],
+      "strong_threshold_evidence": [
+        "The institution adapts AI practice through continuous learning, not one-off implementation phases.",
+        "Responsible use is evident in procurement, deployment, support, and evaluation."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    }
+  ]
+}

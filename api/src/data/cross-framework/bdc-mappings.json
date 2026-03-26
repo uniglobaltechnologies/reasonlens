@@ -1,0 +1,910 @@
+{
+  "framework_id": "jisc-bdc-role-profiles",
+  "authoring_note": "Mappings are interpretive and selective. They are intended to support triangulation with adjacent frameworks, not to claim one-to-one equivalence or shared licensing.",
+  "mapping_principles": {
+    "confidence_scale": [
+      "strong",
+      "moderate",
+      "weak",
+      "contextual_only",
+      "non_mapping"
+    ],
+    "direction_scale": [
+      "bidirectional",
+      "unidirectional",
+      "contextual_reference"
+    ],
+    "rules": [
+      "Do not force one-to-one equivalence where the target framework operates at a different unit of analysis, purpose or level structure.",
+      "Preserve genuine gaps as non-mappings or contextual references.",
+      "Treat role-profile mappings as interpretive aids rather than formal accreditation claims.",
+      "Where a target framework is broader or non-digital, map the digital lens only to the relevant parts."
+    ]
+  },
+  "profile_mappings": [
+    {
+      "profile_id": "bdc-individual",
+      "profile_name": "Jisc Building Digital Capability Individual Framework",
+      "target_frameworks": [
+        {
+          "framework_name": "DigComp 3.0",
+          "overall_confidence": "strong",
+          "direction": "bidirectional",
+          "rationale": "DigComp 3.0 is the closest public peer because it covers digital competence across work, learning and participation with clearly defined competence areas and progression logic.",
+          "element_mappings": [
+            {
+              "element_code": "PROF",
+              "target_areas": [
+                "Area 5: Problem solving",
+                "Area 4: Safety",
+                "selected competences in Area 2"
+              ],
+              "confidence": "moderate",
+              "what_transfers": [
+                "Routine problem solving in digital environments",
+                "Choosing and configuring digital means to complete tasks",
+                "Awareness that effective digital use depends on more than access"
+              ],
+              "what_does_not_transfer": [
+                "Jisc's explicit productivity and workflow lens is more operational than DigComp's area structure",
+                "DigComp distributes functional tool use across several areas rather than isolating it as a standalone productivity element"
+              ]
+            },
+            {
+              "element_code": "CREAT",
+              "target_areas": [
+                "Area 3: Digital content creation",
+                "Competence 5.3: Creatively using digital technologies"
+              ],
+              "confidence": "strong",
+              "what_transfers": [
+                "Creation and adaptation of digital content",
+                "Problem solving through digital design",
+                "Creative and purposeful use of digital tools"
+              ],
+              "what_does_not_transfer": [
+                "Jisc gives stronger weight to local workflow redesign and innovation in role context",
+                "DigComp includes programming and intellectual-property detail that is not central in all Jisc scenarios"
+              ]
+            },
+            {
+              "element_code": "LEARN",
+              "target_areas": [
+                "Competence 5.4: Identifying digital competence gaps"
+              ],
+              "confidence": "moderate",
+              "what_transfers": [
+                "Self-awareness about digital development needs",
+                "Deliberate growth in digital capability",
+                "Learning how to keep up with digital change"
+              ],
+              "what_does_not_transfer": [
+                "Jisc treats learning and development as a full element rather than as one competence within problem solving",
+                "Jisc places more emphasis on peer and organisational learning cultures"
+              ]
+            },
+            {
+              "element_code": "LIT",
+              "target_areas": [
+                "Area 1: Information search, evaluation and management"
+              ],
+              "confidence": "strong",
+              "what_transfers": [
+                "Searching, evaluating and managing information",
+                "Judging source quality and relevance",
+                "Critical interpretation of digital information and data"
+              ],
+              "what_does_not_transfer": [
+                "Jisc combines information, data and media literacies under one element in a way that remains slightly broader in practice",
+                "DigComp's formal area names do not always foreground media literacy in the same way Jisc users may expect"
+              ]
+            },
+            {
+              "element_code": "COMM",
+              "target_areas": [
+                "Area 2: Communication and collaboration"
+              ],
+              "confidence": "strong",
+              "what_transfers": [
+                "Digital communication",
+                "Collaboration and participation in digital spaces",
+                "Awareness of digital interaction norms"
+              ],
+              "what_does_not_transfer": [
+                "Jisc more explicitly foregrounds participation in communities and collaborative work patterns in education settings",
+                "DigComp separates some identity-related competencies that Jisc partly connects here and partly in Digital Identity and Wellbeing"
+              ]
+            },
+            {
+              "element_code": "ID",
+              "target_areas": [
+                "Area 4: Safety",
+                "Competence 2.6: Managing digital identity"
+              ],
+              "confidence": "strong",
+              "what_transfers": [
+                "Managing digital identity",
+                "Digital safety and wellbeing",
+                "Balancing participation with risk and sustainability"
+              ],
+              "what_does_not_transfer": [
+                "DigComp gives more explicit treatment to cybersecurity, rights and sustainability themes",
+                "Jisc places stronger emphasis on relational wellbeing, boundaries and role-appropriate presence"
+              ]
+            }
+          ],
+          "genuine_gaps": [
+            "DigComp 3.0 is more granular about AI, sustainability and rights.",
+            "The Jisc individual lens is more explicit about ongoing digital learning and about productivity as day-to-day workflow practice."
+          ]
+        }
+      ]
+    },
+    {
+      "profile_id": "bdc-teacher-he",
+      "profile_name": "Jisc Building Digital Capability Teacher Higher Education Profile",
+      "target_frameworks": [
+        {
+          "framework_name": "UNESCO ICT Competency Framework for Teachers",
+          "overall_confidence": "strong",
+          "direction": "unidirectional",
+          "rationale": "This is the closest public teacher-focused peer with three levels and competencies spanning teaching and learning, administration, professional development and policy alignment.",
+          "element_mappings": [
+            {
+              "element_code": "PROF",
+              "target_areas": [
+                "Teaching and learning",
+                "School or institutional administration"
+              ],
+              "confidence": "moderate",
+              "what_transfers": [
+                "Reliable use of platforms and digital teaching workflows",
+                "Using digital tools to support core teaching administration",
+                "Operational capability in digitally mediated teaching practice"
+              ],
+              "what_does_not_transfer": [
+                "The Jisc profile is explicitly higher-education and practice-close",
+                "UNESCO CFT is framed for system capacity building rather than for a role-profile self-assessment bank"
+              ]
+            },
+            {
+              "element_code": "CREAT",
+              "target_areas": [
+                "Teaching and learning",
+                "Curriculum and assessment-related digital practice"
+              ],
+              "confidence": "strong",
+              "what_transfers": [
+                "Design of digital learning activities and resources",
+                "Use of technology to support pedagogy",
+                "Purposeful innovation in teaching practice"
+              ],
+              "what_does_not_transfer": [
+                "Jisc's creation element blends pedagogic design with local digital problem solving in a more granular role lens"
+              ]
+            },
+            {
+              "element_code": "LEARN",
+              "target_areas": [
+                "Continuing professional development",
+                "Capacity development"
+              ],
+              "confidence": "strong",
+              "what_transfers": [
+                "Planned professional learning about digital teaching",
+                "Development of educators' capability over time",
+                "Using development activity to change classroom or course practice"
+              ],
+              "what_does_not_transfer": [
+                "UNESCO CFT is broader and more policy-facing than a teacher-facing feedback profile"
+              ]
+            },
+            {
+              "element_code": "LIT",
+              "target_areas": [
+                "Teaching and learning evidence use",
+                "Assessment-related digital information"
+              ],
+              "confidence": "moderate",
+              "what_transfers": [
+                "Interpreting digital evidence for teaching decisions",
+                "Judging sources and data in pedagogic contexts",
+                "Using evidence to refine teaching practice"
+              ],
+              "what_does_not_transfer": [
+                "UNESCO CFT does not isolate information, data and media literacy as a standalone teacher element in the same way"
+              ]
+            },
+            {
+              "element_code": "COMM",
+              "target_areas": [
+                "Teaching and learning interaction",
+                "Professional collaboration"
+              ],
+              "confidence": "moderate",
+              "what_transfers": [
+                "Communication with learners in digital environments",
+                "Collaborative digital learning activities",
+                "Professional exchange and peer support"
+              ],
+              "what_does_not_transfer": [
+                "Jisc's participation emphasis extends to fine-grained channel norms and community facilitation that are less explicit in UNESCO CFT"
+              ]
+            },
+            {
+              "element_code": "ID",
+              "target_areas": [
+                "Ethical and appropriate technology use as a cross-cutting concern"
+              ],
+              "confidence": "weak",
+              "what_transfers": [
+                "Responsible and appropriate digital conduct",
+                "Awareness of teacher presence, safety and trust"
+              ],
+              "what_does_not_transfer": [
+                "UNESCO CFT does not present digital identity and wellbeing as a discrete element",
+                "Jisc's explicit wellbeing and boundary-setting focus is more developed at the individual role level"
+              ]
+            }
+          ],
+          "genuine_gaps": [
+            "UNESCO CFT is designed for policy, curriculum and capacity building across systems, not only for HE teacher self-assessment.",
+            "Level structures are both three-tiered, but the tiers are not directly interchangeable."
+          ]
+        },
+        {
+          "framework_name": "PSF 2023",
+          "overall_confidence": "contextual_only",
+          "direction": "contextual_reference",
+          "rationale": "The published Jisc HE teacher profile is officially mapped to PSF 2023, so PSF is an important adjacent reference for interpretation and local adoption.",
+          "element_mappings": [],
+          "genuine_gaps": [
+            "PSF 2023 is a professional standards framework, not a digital capability role profile.",
+            "This deliverable does not claim fellowship or descriptor equivalence."
+          ]
+        }
+      ]
+    },
+    {
+      "profile_id": "bdc-researcher",
+      "profile_name": "Jisc Building Digital Capability Researcher Profile",
+      "target_frameworks": [
+        {
+          "framework_name": "Vitae Researcher Development Framework",
+          "overall_confidence": "strong",
+          "direction": "contextual_reference",
+          "rationale": "The researcher profile is explicitly cross-referenced with the Vitae RDF, making it the most relevant peer framework for research role interpretation.",
+          "element_mappings": [
+            {
+              "element_code": "PROF",
+              "target_areas": [
+                "Research methods",
+                "Project management"
+              ],
+              "confidence": "strong",
+              "what_transfers": [
+                "Using digital tools and methods to progress research reliably",
+                "Managing research workflow and project organisation",
+                "Operational fluency in research environments"
+              ],
+              "what_does_not_transfer": [
+                "RDF is not a digital-only framework and does not isolate productivity in the same way"
+              ]
+            },
+            {
+              "element_code": "CREAT",
+              "target_areas": [
+                "Research methods",
+                "Innovation in knowledge and practice"
+              ],
+              "confidence": "moderate",
+              "what_transfers": [
+                "Designing digital methods and outputs",
+                "Problem solving in the research process",
+                "Creating reusable research artefacts"
+              ],
+              "what_does_not_transfer": [
+                "RDF spreads creative digital practice across wider research competencies rather than treating it as a standalone digital element"
+              ]
+            },
+            {
+              "element_code": "LEARN",
+              "target_areas": [
+                "Professional development",
+                "Coaching and mentoring"
+              ],
+              "confidence": "moderate",
+              "what_transfers": [
+                "Developing new methods and skills",
+                "Reflecting on practice and growth",
+                "Supporting others' research development"
+              ],
+              "what_does_not_transfer": [
+                "Jisc's learning element is more explicit about digitally mediated self-development and peer learning"
+              ]
+            },
+            {
+              "element_code": "LIT",
+              "target_areas": [
+                "Information and data literacy",
+                "Research methods"
+              ],
+              "confidence": "strong",
+              "what_transfers": [
+                "Critical use of literature, data and evidence",
+                "Provenance and quality judgment",
+                "Interpretation and synthesis for research claims"
+              ],
+              "what_does_not_transfer": [
+                "Jisc also includes media literacy implications that RDF may not foreground explicitly"
+              ]
+            },
+            {
+              "element_code": "COMM",
+              "target_areas": [
+                "Research communities",
+                "Engagement and influence"
+              ],
+              "confidence": "strong",
+              "what_transfers": [
+                "Collaboration in research teams and communities",
+                "Co-authorship and knowledge sharing",
+                "Digital participation in scholarly networks"
+              ],
+              "what_does_not_transfer": [
+                "RDF communication descriptors are not limited to digital settings, while Jisc is explicitly digitally framed"
+              ]
+            },
+            {
+              "element_code": "ID",
+              "target_areas": [
+                "Professional conduct",
+                "Leadership and reputation",
+                "Career development"
+              ],
+              "confidence": "moderate",
+              "what_transfers": [
+                "Managing openness, recognition and trusted identity",
+                "Balancing visibility with responsible conduct",
+                "Wellbeing and sustainability in research participation"
+              ],
+              "what_does_not_transfer": [
+                "RDF does not package identity and wellbeing as a single digital element",
+                "Persistent identifiers and online presence are more central in the Jisc digital lens"
+              ]
+            }
+          ],
+          "genuine_gaps": [
+            "RDF is broader than digital capability and spans the whole researcher role.",
+            "No direct level equivalence should be assumed between the two frameworks."
+          ]
+        }
+      ]
+    },
+    {
+      "profile_id": "bdc-professional-services",
+      "profile_name": "Jisc Building Digital Capability Professional Services Profile",
+      "target_frameworks": [
+        {
+          "framework_name": "AUA CPD Framework",
+          "overall_confidence": "moderate",
+          "direction": "contextual_reference",
+          "rationale": "The professional services profile explicitly takes account of AUA values and the AUA CPD Framework, making AUA the most relevant adjacent professional reference.",
+          "element_mappings": [
+            {
+              "element_code": "PROF",
+              "target_areas": [
+                "Self",
+                "Operational effectiveness"
+              ],
+              "confidence": "moderate",
+              "what_transfers": [
+                "Reliable use of systems and workflows in service practice",
+                "Personal effectiveness in digitally mediated operations"
+              ],
+              "what_does_not_transfer": [
+                "AUA is a behaviour-oriented CPD model, not a digital capability element structure"
+              ]
+            },
+            {
+              "element_code": "CREAT",
+              "target_areas": [
+                "Organisation",
+                "Service improvement"
+              ],
+              "confidence": "moderate",
+              "what_transfers": [
+                "Designing better digital service processes",
+                "Using digital means for improvement and innovation"
+              ],
+              "what_does_not_transfer": [
+                "AUA does not isolate digital creation as a named professional services strand"
+              ]
+            },
+            {
+              "element_code": "LEARN",
+              "target_areas": [
+                "Self",
+                "Others"
+              ],
+              "confidence": "strong",
+              "what_transfers": [
+                "Ongoing professional development",
+                "Learning through practice and supporting colleagues' development"
+              ],
+              "what_does_not_transfer": [
+                "AUA is broader than digital capability and includes many non-digital CPD dimensions"
+              ]
+            },
+            {
+              "element_code": "LIT",
+              "target_areas": [
+                "Organisation",
+                "Evidence-informed professional judgment"
+              ],
+              "confidence": "moderate",
+              "what_transfers": [
+                "Using data and information to inform service decisions",
+                "Judging policy and operational evidence"
+              ],
+              "what_does_not_transfer": [
+                "Jisc's explicit media literacy framing has no close AUA equivalent"
+              ]
+            },
+            {
+              "element_code": "COMM",
+              "target_areas": [
+                "Others",
+                "Organisation"
+              ],
+              "confidence": "strong",
+              "what_transfers": [
+                "Working effectively with colleagues and stakeholders",
+                "Communication and collaboration across services"
+              ],
+              "what_does_not_transfer": [
+                "Jisc's digital channel and participation lens is more specific than AUA's behavioural framing"
+              ]
+            },
+            {
+              "element_code": "ID",
+              "target_areas": [
+                "Self",
+                "Professional values and conduct"
+              ],
+              "confidence": "moderate",
+              "what_transfers": [
+                "Trusted professional behaviour",
+                "Boundaries, confidentiality and sustainable working relationships"
+              ],
+              "what_does_not_transfer": [
+                "AUA does not foreground digital identity and wellbeing as a standalone category"
+              ]
+            }
+          ],
+          "genuine_gaps": [
+            "AUA progression is framed around self, others and organisation rather than around digital capability elements.",
+            "No direct level match should be inferred."
+          ]
+        }
+      ]
+    },
+    {
+      "profile_id": "bdc-learning-technology",
+      "profile_name": "Jisc Building Digital Capability Learning Technology Profile",
+      "target_frameworks": [
+        {
+          "framework_name": "CMALT",
+          "overall_confidence": "moderate",
+          "direction": "contextual_reference",
+          "rationale": "The learning technology profile was developed with ALT and is loosely mapped to CMALT, so CMALT is the closest professional recognition reference.",
+          "element_mappings": [
+            {
+              "element_code": "PROF",
+              "target_areas": [
+                "Operational use of learning technology",
+                "Reflective professional practice"
+              ],
+              "confidence": "moderate",
+              "what_transfers": [
+                "Using platforms and tools reliably in practice",
+                "Judging technical choices in relation to learning needs"
+              ],
+              "what_does_not_transfer": [
+                "CMALT is an accreditation scheme evidenced through portfolio, not an element-by-level capability grid"
+              ]
+            },
+            {
+              "element_code": "CREAT",
+              "target_areas": [
+                "Design and implementation of learning technology practice"
+              ],
+              "confidence": "strong",
+              "what_transfers": [
+                "Purposeful digital design",
+                "Problem solving and innovation in learning technology contexts",
+                "Reusable implementation patterns"
+              ],
+              "what_does_not_transfer": [
+                "Jisc's boundary logic is more assessment-ready than CMALT's reflective-accreditation format"
+              ]
+            },
+            {
+              "element_code": "LEARN",
+              "target_areas": [
+                "Commitment to staying up to date",
+                "Reflective development"
+              ],
+              "confidence": "strong",
+              "what_transfers": [
+                "Ongoing professional learning",
+                "Reflective adaptation to change",
+                "Supporting others through knowledge exchange"
+              ],
+              "what_does_not_transfer": [
+                "CMALT is not organised as a three-level progression model"
+              ]
+            },
+            {
+              "element_code": "LIT",
+              "target_areas": [
+                "Evaluation and evidence in learning technology practice"
+              ],
+              "confidence": "moderate",
+              "what_transfers": [
+                "Use of data and evidence for technology decisions",
+                "Critical evaluation of sector and vendor information"
+              ],
+              "what_does_not_transfer": [
+                "Information, data and media literacies are more explicit in Jisc than in CMALT's overarching headings"
+              ]
+            },
+            {
+              "element_code": "COMM",
+              "target_areas": [
+                "Communication and dissemination of effective practice"
+              ],
+              "confidence": "moderate",
+              "what_transfers": [
+                "Consultation and collaboration with stakeholders",
+                "Dissemination and community contribution"
+              ],
+              "what_does_not_transfer": [
+                "CMALT is less explicit about channel choice and participation design"
+              ]
+            },
+            {
+              "element_code": "ID",
+              "target_areas": [
+                "Professional recognition and reflective identity"
+              ],
+              "confidence": "moderate",
+              "what_transfers": [
+                "Professional digital identity",
+                "Sustainable and ethical practitioner presence"
+              ],
+              "what_does_not_transfer": [
+                "CMALT does not isolate wellbeing and boundary-setting as a standalone element"
+              ]
+            }
+          ],
+          "genuine_gaps": [
+            "CMALT assesses reflective professional evidence rather than positioning people on a three-level role-profile grid."
+          ]
+        },
+        {
+          "framework_name": "FELT",
+          "overall_confidence": "moderate",
+          "direction": "contextual_reference",
+          "rationale": "FELT adds an ethical lens around professionalism, values, care and community that is especially relevant to learning technology practice.",
+          "element_mappings": [
+            {
+              "element_code": "PROF",
+              "target_areas": [
+                "Professionalism"
+              ],
+              "confidence": "moderate",
+              "what_transfers": [
+                "Reliable, responsible operational practice"
+              ],
+              "what_does_not_transfer": [
+                "FELT is ethical-principles based rather than operationally granular"
+              ]
+            },
+            {
+              "element_code": "CREAT",
+              "target_areas": [
+                "Professionalism",
+                "Values"
+              ],
+              "confidence": "moderate",
+              "what_transfers": [
+                "Design choices grounded in learning need and values"
+              ],
+              "what_does_not_transfer": [
+                "FELT does not offer a direct creation/progression ladder"
+              ]
+            },
+            {
+              "element_code": "LEARN",
+              "target_areas": [
+                "Awareness",
+                "Professionalism"
+              ],
+              "confidence": "moderate",
+              "what_transfers": [
+                "Critical awareness and ongoing professional learning"
+              ],
+              "what_does_not_transfer": [
+                "FELT is not a development-stage framework"
+              ]
+            },
+            {
+              "element_code": "LIT",
+              "target_areas": [
+                "Awareness",
+                "Values"
+              ],
+              "confidence": "moderate",
+              "what_transfers": [
+                "Critical interpretation of evidence and claims"
+              ],
+              "what_does_not_transfer": [
+                "FELT does not separate data literacy in the same way"
+              ]
+            },
+            {
+              "element_code": "COMM",
+              "target_areas": [
+                "Care and Community"
+              ],
+              "confidence": "strong",
+              "what_transfers": [
+                "Inclusive participation, respectful collaboration and community-building"
+              ],
+              "what_does_not_transfer": [
+                "Jisc goes further on operational communication choices"
+              ]
+            },
+            {
+              "element_code": "ID",
+              "target_areas": [
+                "Values",
+                "Care and Community"
+              ],
+              "confidence": "strong",
+              "what_transfers": [
+                "Ethical presence, care, trust and sustainable practice"
+              ],
+              "what_does_not_transfer": [
+                "FELT is principle-led rather than levelled as identity management progression"
+              ]
+            }
+          ],
+          "genuine_gaps": [
+            "FELT is an ethical framing device, not a directly equivalent capability framework."
+          ]
+        }
+      ]
+    },
+    {
+      "profile_id": "bdc-digital-leader",
+      "profile_name": "Jisc Building Digital Capability Digital Leader Profile",
+      "target_frameworks": [
+        {
+          "framework_name": "Jisc organisational digital capability resources",
+          "overall_confidence": "contextual_only",
+          "direction": "contextual_reference",
+          "rationale": "The closest reference point is organisational digital capability material, especially around culture, governance and leadership, but the unit of analysis is organisational rather than individual.",
+          "element_mappings": [
+            {
+              "element_code": "PROF",
+              "target_areas": [
+                "Leadership workflow and governance capability"
+              ],
+              "confidence": "contextual_only",
+              "what_transfers": [
+                "Using digital processes to support coordinated leadership work"
+              ],
+              "what_does_not_transfer": [
+                "No direct one-to-one element or level match exists"
+              ]
+            },
+            {
+              "element_code": "CREAT",
+              "target_areas": [
+                "Innovation and change design"
+              ],
+              "confidence": "contextual_only",
+              "what_transfers": [
+                "Designing roadmaps, experiments and change structures"
+              ],
+              "what_does_not_transfer": [
+                "Organisational models assess system maturity, not an individual leader's capability"
+              ]
+            },
+            {
+              "element_code": "LEARN",
+              "target_areas": [
+                "Leadership and culture development"
+              ],
+              "confidence": "contextual_only",
+              "what_transfers": [
+                "Creating conditions for collective digital learning"
+              ],
+              "what_does_not_transfer": [
+                "The target resources do not define a personal learning progression in matching terms"
+              ]
+            },
+            {
+              "element_code": "LIT",
+              "target_areas": [
+                "Evidence-informed governance and strategy"
+              ],
+              "confidence": "contextual_only",
+              "what_transfers": [
+                "Interpreting evidence, risk and benchmark information responsibly"
+              ],
+              "what_does_not_transfer": [
+                "Organisational and personal evidence practices are not equivalent"
+              ]
+            },
+            {
+              "element_code": "COMM",
+              "target_areas": [
+                "Culture, governance and stakeholder engagement"
+              ],
+              "confidence": "contextual_only",
+              "what_transfers": [
+                "Building shared direction and participation around change"
+              ],
+              "what_does_not_transfer": [
+                "The organisational framework is not a communication-skills rubric"
+              ]
+            },
+            {
+              "element_code": "ID",
+              "target_areas": [
+                "Digital culture, trust and wellbeing"
+              ],
+              "confidence": "contextual_only",
+              "what_transfers": [
+                "Leadership signalling around healthy digital norms"
+              ],
+              "what_does_not_transfer": [
+                "Organisational culture statements are not equivalent to individual identity-and-wellbeing stages"
+              ]
+            }
+          ],
+          "genuine_gaps": [
+            "The closest adjacent references operate at organisational level, so strict equivalence would be misleading."
+          ]
+        },
+        {
+          "framework_name": "DfE digital leadership and governance standards",
+          "overall_confidence": "contextual_only",
+          "direction": "contextual_reference",
+          "rationale": "These standards are useful as a sector-adjacent leadership reference, especially in college contexts, but they are institutional standards rather than a person-level capability profile.",
+          "element_mappings": [],
+          "genuine_gaps": [
+            "The standards target organisational leadership and governance arrangements, not a six-element individual capability model."
+          ]
+        }
+      ]
+    },
+    {
+      "profile_id": "bdc-educational-developer",
+      "profile_name": "Jisc Building Digital Capability Educational Developer Profile",
+      "target_frameworks": [
+        {
+          "framework_name": "SEDA Fellowship Scheme",
+          "overall_confidence": "moderate",
+          "direction": "contextual_reference",
+          "rationale": "SEDA fellowship is the closest public professional-development reference for educational developers, especially around change, values, reflection and specialist outcomes.",
+          "element_mappings": [
+            {
+              "element_code": "PROF",
+              "target_areas": [
+                "Academic development practice",
+                "Facilitation and process credibility"
+              ],
+              "confidence": "weak",
+              "what_transfers": [
+                "Reliable facilitation and process management in digital enhancement work"
+              ],
+              "what_does_not_transfer": [
+                "SEDA is values and portfolio based rather than a digital productivity framework"
+              ]
+            },
+            {
+              "element_code": "CREAT",
+              "target_areas": [
+                "Specialist outcomes for design and change"
+              ],
+              "confidence": "strong",
+              "what_transfers": [
+                "Designing enhancement interventions and resources",
+                "Creating reusable approaches to curriculum or staff development"
+              ],
+              "what_does_not_transfer": [
+                "SEDA does not isolate digital creation as a separate strand"
+              ]
+            },
+            {
+              "element_code": "LEARN",
+              "target_areas": [
+                "Core development outcomes",
+                "Reflective development"
+              ],
+              "confidence": "strong",
+              "what_transfers": [
+                "Reflective professional learning",
+                "Building learning opportunities for educators and teams",
+                "Supporting change through structured development"
+              ],
+              "what_does_not_transfer": [
+                "SEDA's level and fellowship routes are not equivalent to Developing, Capable and Proficient"
+              ]
+            },
+            {
+              "element_code": "LIT",
+              "target_areas": [
+                "Scholarly and evidence-informed practice"
+              ],
+              "confidence": "moderate",
+              "what_transfers": [
+                "Using pedagogic evidence and evaluation well",
+                "Interpreting data and scholarship for enhancement decisions"
+              ],
+              "what_does_not_transfer": [
+                "Jisc's media and data literacy emphasis is more explicit"
+              ]
+            },
+            {
+              "element_code": "COMM",
+              "target_areas": [
+                "Learning communities",
+                "Collaborative change work"
+              ],
+              "confidence": "strong",
+              "what_transfers": [
+                "Facilitation, partnership and community-building",
+                "Inclusive collaboration across roles"
+              ],
+              "what_does_not_transfer": [
+                "SEDA is not specifically about digital channel choice or participation platforms"
+              ]
+            },
+            {
+              "element_code": "ID",
+              "target_areas": [
+                "Values-led and ethical practice"
+              ],
+              "confidence": "moderate",
+              "what_transfers": [
+                "Trusted facilitative presence",
+                "Values, care and boundaries in development relationships"
+              ],
+              "what_does_not_transfer": [
+                "Digital identity and wellbeing are not packaged as a distinct SEDA category"
+              ]
+            }
+          ],
+          "genuine_gaps": [
+            "SEDA fellowship supports professional recognition through values, outcomes and reflective evidence, not through a six-element digital capability progression."
+          ]
+        },
+        {
+          "framework_name": "Teacher HE profile and PSF 2023",
+          "overall_confidence": "contextual_only",
+          "direction": "contextual_reference",
+          "rationale": "Educational developers often work alongside teacher-development agendas, so teacher-profile and PSF references can be useful adjacencies without implying equivalence.",
+          "element_mappings": [],
+          "genuine_gaps": [
+            "Educational development work is facilitative and system-shaping, not simply a version of the teacher role."
+          ]
+        }
+      ]
+    }
+  ]
+}

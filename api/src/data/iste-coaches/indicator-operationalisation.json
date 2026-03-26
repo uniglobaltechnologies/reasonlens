@@ -1,0 +1,549 @@
+{
+  "_meta": {
+    "file": "indicator-operationalisation.json",
+    "framework_id": "iste-coaches",
+    "framework_name": "ISTE Standards for Coaches v4.02",
+    "total_indicators": 26,
+    "licensing_constraint": "ISTE Standards indicator text \u00a9 2024 4.02, ISTE (International Society for Technology in Education), iste.org. All rights reserved. ISTE permits free use for non-commercial educational purposes only. Commercial use requires separate ISTE licensing agreement. Observable behaviour descriptors are original ReasonLens content.",
+    "generated_for": "ReasonLens"
+  },
+  "indicators": [
+    {
+      "indicator_id": "iste-c-cha-4a",
+      "standard_id": "iste-c-cha",
+      "standard": "Change Agent",
+      "indicator_letter": "a",
+      "indicator_source_text": "Create a shared vision and culture for using technology to learn and accelerate transformation through the coaching process.",
+      "met_criteria": [
+        "Facilitates co-creation of a technology vision rather than presenting one",
+        "Builds a coaching culture where the vision is owned by educators, not prescribed",
+        "Uses the coaching process to align individual goals to the shared vision",
+        "Reviews and evolves the vision with stakeholders over time"
+      ],
+      "not_yet_met_criteria": [
+        "Communicates the institutional technology vision but does not facilitate shared ownership",
+        "Coaching is about compliance with adopted tools, not about building a learning culture"
+      ],
+      "partial_indicators": [
+        "Facilitates a vision workshop but does not maintain coaching practices that keep the vision alive in daily work",
+        "Builds individual buy-in from coached educators but does not connect this to a collective, sustained culture"
+      ]
+    },
+    {
+      "indicator_id": "iste-c-cha-4b",
+      "standard_id": "iste-c-cha",
+      "standard": "Change Agent",
+      "indicator_letter": "b",
+      "indicator_source_text": "Facilitate equitable use of digital learning tools and content that meet the needs of each learner.",
+      "met_criteria": [
+        "Proactively identifies which students are not equitably served by current digital tool choices",
+        "Coaches educators to redesign for equity, not just access",
+        "Evaluates tools against equity criteria (accessibility, bias, language support)",
+        "Advocates for procurement and deployment decisions that serve all learners"
+      ],
+      "not_yet_met_criteria": [
+        "Works with the tools that are available without questioning their equity implications",
+        "Equity in tool use is seen as an IT or admin responsibility, not a coaching one"
+      ],
+      "partial_indicators": [
+        "Recommends accessible tools when a specific student need is flagged but does not proactively audit equity across the tool ecosystem",
+        "Ensures physical device access but does not examine whether tools serve diverse learner needs equitably"
+      ]
+    },
+    {
+      "indicator_id": "iste-c-cha-4c",
+      "standard_id": "iste-c-cha",
+      "standard": "Change Agent",
+      "indicator_letter": "c",
+      "indicator_source_text": "Cultivate a supportive coaching culture that encourages educators and leaders to achieve a shared vision and individual goals.",
+      "met_criteria": [
+        "Creates psychological safety for educators to try, fail, and learn with technology",
+        "Celebrates growth, not just success",
+        "Connects individual coaching goals to the collective vision",
+        "Coaches leaders as well as classroom practitioners"
+      ],
+      "not_yet_met_criteria": [
+        "Coaching culture is evaluative rather than supportive",
+        "Educators feel monitored rather than supported",
+        "Individual coaching goals are disconnected from any shared direction"
+      ],
+      "partial_indicators": [
+        "Is personally supportive in one-to-one coaching conversations but has not built a culture of collective support and risk-taking across the institution",
+        "Connects individual goals to each other informally but does not facilitate a shared vision that educators own collectively"
+      ]
+    },
+    {
+      "indicator_id": "iste-c-cha-4d",
+      "standard_id": "iste-c-cha",
+      "standard": "Change Agent",
+      "indicator_letter": "d",
+      "indicator_source_text": "Recognize educators across the organization who use technology effectively to enable high-impact teaching and learning.",
+      "met_criteria": [
+        "Establishes or contributes to formal mechanisms for recognising effective technology use",
+        "Recognition is tied to learning impact, not just tool adoption",
+        "Ensures recognition reaches beyond the self-selecting innovative educators to the broader staff",
+        "Uses recognition to model what high-impact technology use looks like"
+      ],
+      "not_yet_met_criteria": [
+        "Effective practice is not formally recognised \u2014 only failures or violations are highlighted",
+        "Recognition is informal and inconsistent",
+        "Does not use recognition as a professional learning or culture-building tool"
+      ],
+      "partial_indicators": [
+        "Verbally acknowledges good practice in coaching conversations but does not create visible, organisation-wide recognition",
+        "Highlights good practice in CPD sessions but this is not sustained or systematised"
+      ]
+    },
+    {
+      "indicator_id": "iste-c-cha-4e",
+      "standard_id": "iste-c-cha",
+      "standard": "Change Agent",
+      "indicator_letter": "e",
+      "indicator_source_text": "Connect leaders, educators, instructional support, technical support, domain experts and solution providers to maximize the potential of technology for learning.",
+      "met_criteria": [
+        "Acts as a connector across the system \u2014 not just between educators",
+        "Brings technical and pedagogical stakeholders together around shared learning goals",
+        "Establishes or facilitates communities that include multiple stakeholder types",
+        "Uses their position to facilitate partnerships that individual educators could not access alone"
+      ],
+      "not_yet_met_criteria": [
+        "Coaching is entirely within the educator layer \u2014 does not engage technical, leadership, or external stakeholders",
+        "Does not use their role as a connector across the broader ecosystem"
+      ],
+      "partial_indicators": [
+        "Connects educators with each other through peer learning structures but does not bridge to technical support, leaders, or external solution providers",
+        "Attends cross-stakeholder meetings but does not facilitate connections that advance learning goals"
+      ]
+    },
+    {
+      "indicator_id": "iste-c-cnl-4a",
+      "standard_id": "iste-c-cnl",
+      "standard": "Connected Learner",
+      "indicator_letter": "a",
+      "indicator_source_text": "Pursue professional learning that deepens expertise in the ISTE Standards in order to serve as a model for educators and leaders.",
+      "met_criteria": [
+        "Has a clear and current understanding of all relevant ISTE Standards",
+        "Can articulate how the ISTE Standards connect to instructional practice",
+        "Pursues learning that deepens this expertise beyond surface familiarity",
+        "Models ISTE Standards-aligned practice in their own work"
+      ],
+      "not_yet_met_criteria": [
+        "Uses the ISTE Standards as a reference document but has not deepened expertise in applying them",
+        "Cannot serve as a model for others in ISTE Standards-aligned practice"
+      ],
+      "partial_indicators": [
+        "Is familiar with the ISTE Standards and references them in coaching but has not pursued deep expertise or used them systematically to frame their own practice as a model"
+      ]
+    },
+    {
+      "indicator_id": "iste-c-cnl-4b",
+      "standard_id": "iste-c-cnl",
+      "standard": "Connected Learner",
+      "indicator_letter": "b",
+      "indicator_source_text": "Actively participate in professional learning networks to enhance coaching practice and keep current with emerging technology and innovations in pedagogy and the learning sciences.",
+      "met_criteria": [
+        "Is an active (contributing) member of at least one professional learning network",
+        "Uses network participation to discover and evaluate emerging technologies",
+        "Connects network learning to changes in their coaching practice",
+        "Shares their own learning and practice with their network"
+      ],
+      "not_yet_met_criteria": [
+        "Professional learning is institution-based only",
+        "Does not participate in external networks or communities of practice"
+      ],
+      "partial_indicators": [
+        "Is a member of professional networks but primarily consumes rather than actively participates",
+        "Attends conferences but does not maintain ongoing network engagement between events"
+      ]
+    },
+    {
+      "indicator_id": "iste-c-cnl-4c",
+      "standard_id": "iste-c-cnl",
+      "standard": "Connected Learner",
+      "indicator_letter": "c",
+      "indicator_source_text": "Establish shared goals with educators, reflect on successes and continually improve coaching and teaching practice.",
+      "met_criteria": [
+        "Uses structured goal-setting with each educator at the start of a coaching cycle",
+        "Holds mid-cycle and end-of-cycle reflections with coached educators",
+        "Uses these reflections to adjust their own coaching practice \u2014 not just the teacher's",
+        "Documents what they are changing and why in their coaching approach"
+      ],
+      "not_yet_met_criteria": [
+        "Coaching is delivered without explicit shared goal-setting",
+        "Does not formally reflect on coaching outcomes or change practice based on them"
+      ],
+      "partial_indicators": [
+        "Sets goals with educators at the start of a coaching relationship but does not return to them systematically or use reflection to improve coaching practice itself"
+      ]
+    },
+    {
+      "indicator_id": "iste-c-clb-4a",
+      "standard_id": "iste-c-clb",
+      "standard": "Collaborator",
+      "indicator_letter": "a",
+      "indicator_source_text": "Establish trusting and respectful coaching relationships that encourage educators to explore new instructional strategies.",
+      "met_criteria": [
+        "Invests explicit time in relationship-building before introducing coaching challenges",
+        "Creates conditions where educators feel safe to experiment and fail",
+        "Trust is evident in the educator's willingness to take instructional risks",
+        "Respects educator autonomy while maintaining coaching challenge and stretch"
+      ],
+      "not_yet_met_criteria": [
+        "Moves to instructional challenge without building relational trust",
+        "Educators in coaching relationships play it safe rather than experimenting",
+        "The coaching relationship is professional but not psychologically safe"
+      ],
+      "partial_indicators": [
+        "Is personally warm and respectful but has not created the depth of trust needed for educators to take genuine instructional risks with technology"
+      ]
+    },
+    {
+      "indicator_id": "iste-c-clb-4b",
+      "standard_id": "iste-c-clb",
+      "standard": "Collaborator",
+      "indicator_letter": "b",
+      "indicator_source_text": "Partner with educators to identify digital learning content that is culturally relevant, developmentally appropriate and considers student interests and aspirations.",
+      "met_criteria": [
+        "Helps educators evaluate digital content against cultural relevance criteria for their specific students",
+        "Considers developmental appropriateness as a content selection criterion, not just curriculum alignment",
+        "Includes student interests and aspirations in the content selection conversation",
+        "Challenges choices of digital content that are culturally narrow or misaligned with student context"
+      ],
+      "not_yet_met_criteria": [
+        "Content recommendations are made without reference to the specific cultural, developmental, or aspirational context of the students",
+        "Defaults to popular or award-winning tools without contextualising for student population"
+      ],
+      "partial_indicators": [
+        "Recommends content that is developmentally appropriate and curriculum-aligned but does not specifically examine cultural relevance or connection to student interests and aspirations"
+      ]
+    },
+    {
+      "indicator_id": "iste-c-clb-4c",
+      "standard_id": "iste-c-clb",
+      "standard": "Collaborator",
+      "indicator_letter": "c",
+      "indicator_source_text": "Partner with educators to evaluate the efficacy of digital learning content and tools to inform procurement decisions and adoption.",
+      "met_criteria": [
+        "Helps educators design and conduct evidence-based evaluations of tools in use",
+        "Contributes evaluation findings to procurement decision processes",
+        "Evaluation criteria include student learning impact, not just teacher satisfaction",
+        "Participates in procurement conversations with evidence-grounded recommendations"
+      ],
+      "not_yet_met_criteria": [
+        "Tool adoption is based on demonstrations, reviews, or peer recommendations without classroom evaluation",
+        "Does not connect coaching observations to procurement conversations"
+      ],
+      "partial_indicators": [
+        "Collects teacher feedback on tools and shares it informally but does not structure evaluations rigorously or connect findings to formal procurement processes"
+      ]
+    },
+    {
+      "indicator_id": "iste-c-clb-4d",
+      "standard_id": "iste-c-clb",
+      "standard": "Collaborator",
+      "indicator_letter": "d",
+      "indicator_source_text": "Personalize support for educators by planning and modeling the effective use of technology to improve student learning.",
+      "met_criteria": [
+        "Coaching plans are tailored to each educator's context, students, and goals \u2014 not a standard programme",
+        "Models the effective use of technology in ways visible to the educator being coached",
+        "Personalises which technologies are modelled based on what serves each educator's specific students",
+        "Follows up modelling with structured reflection and planning for independent practice"
+      ],
+      "not_yet_met_criteria": [
+        "Coaching follows a standard pathway regardless of educator context",
+        "Does not model \u2014 only advises",
+        "Technology recommendations are generic rather than contextualised to educator and student needs"
+      ],
+      "partial_indicators": [
+        "Provides personalised advice but does not model practices \u2014 coaching is verbal rather than demonstrative",
+        "Models effective technology use but does not tailor the model to the specific educator's context and students"
+      ]
+    },
+    {
+      "indicator_id": "iste-c-ldn-4a",
+      "standard_id": "iste-c-ldn",
+      "standard": "Learning Designer",
+      "indicator_letter": "a",
+      "indicator_source_text": "Collaborate with educators to develop authentic, active learning experiences that foster student agency, deepen content mastery and allow students to demonstrate their competency.",
+      "met_criteria": [
+        "Co-designs (not just reviews) learning experiences with educators",
+        "The co-designed experience has an authentic purpose beyond the classroom",
+        "Student agency is a design criterion \u2014 students make genuine choices within the experience",
+        "Competency demonstration is embedded in the activity, not added as a separate assessment"
+      ],
+      "not_yet_met_criteria": [
+        "Shares lesson resources rather than co-designing with educators",
+        "The collaborative design process does not include authenticity or student agency as explicit goals"
+      ],
+      "partial_indicators": [
+        "Co-designs engaging and pedagogically sound experiences but authenticity is framed as 'real-world context' in the brief rather than genuine connection to an external purpose or audience"
+      ]
+    },
+    {
+      "indicator_id": "iste-c-ldn-4b",
+      "standard_id": "iste-c-ldn",
+      "standard": "Learning Designer",
+      "indicator_letter": "b",
+      "indicator_source_text": "Help educators use digital tools to create effective assessments that provide timely feedback and support personalized learning.",
+      "met_criteria": [
+        "Works with educators to design assessments that leverage digital tools for speed and specificity of feedback",
+        "Helps educators use assessment data from digital tools to personalise subsequent learning",
+        "Feedback cycles are designed into the assessment, not added afterward",
+        "Assessment design includes consideration of how data will be used to adjust teaching"
+      ],
+      "not_yet_met_criteria": [
+        "Assessment support is limited to marking and moderation \u2014 does not address feedback design or personalisation",
+        "Does not help educators leverage digital tools specifically for assessment quality or speed"
+      ],
+      "partial_indicators": [
+        "Helps educators use digital rubrics for clearer feedback but does not address how assessment data should be used to personalise learning or how feedback timeliness can be built into the design"
+      ]
+    },
+    {
+      "indicator_id": "iste-c-ldn-4c",
+      "standard_id": "iste-c-ldn",
+      "standard": "Learning Designer",
+      "indicator_letter": "c",
+      "indicator_source_text": "Collaborate with educators to design accessible and active digital learning environments that accommodate learner variability.",
+      "met_criteria": [
+        "Reviews digital learning environments against accessibility standards (not just legal minimums)",
+        "Helps educators make active design choices to accommodate diverse learners",
+        "Accessibility is a design criterion from the start, not a retrofit",
+        "The resulting environment works for the range of learners in the specific context"
+      ],
+      "not_yet_met_criteria": [
+        "Accessibility is treated as a compliance issue rather than a design value",
+        "Digital environments are designed for the assumed average learner \u2014 variability is not accounted for"
+      ],
+      "partial_indicators": [
+        "Helps educators create content with alt text and captions but does not examine the broader learning environment design for variability accommodation or ensure the environment is active rather than just accessible"
+      ]
+    },
+    {
+      "indicator_id": "iste-c-ldn-4d",
+      "standard_id": "iste-c-ldn",
+      "standard": "Learning Designer",
+      "indicator_letter": "d",
+      "indicator_source_text": "Model the use of instructional design principles with educators to create effective digital learning environments.",
+      "met_criteria": [
+        "Makes instructional design principles explicit when co-designing with educators",
+        "Uses terms like cognitive load, retrieval, spacing, and dual coding in context",
+        "The principles are visible in the design decisions, not just mentioned",
+        "Educators can apply the principles independently after coaching"
+      ],
+      "not_yet_met_criteria": [
+        "Co-designs intuitively without making the underlying instructional logic explicit",
+        "Educators walk away with a better lesson but without understanding why it works"
+      ],
+      "partial_indicators": [
+        "References instructional design principles in conversation but does not demonstrate them in the co-design process in ways that build educator capacity to apply them independently"
+      ]
+    },
+    {
+      "indicator_id": "iste-c-plf-4a",
+      "standard_id": "iste-c-plf",
+      "standard": "Professional Learning Facilitator",
+      "indicator_letter": "a",
+      "indicator_source_text": "Design professional learning based on needs assessments and frameworks for working with adults to support their cultural, social-emotional and learning needs.",
+      "met_criteria": [
+        "Conducts a multi-method needs assessment before designing professional learning",
+        "Applies a recognised framework for adult learning (e.g., andragogy, job-embedded PD models)",
+        "Accounts for cultural and social-emotional dimensions of professional learning, not just technical content",
+        "The resulting design is demonstrably shaped by the needs assessment findings"
+      ],
+      "not_yet_met_criteria": [
+        "Professional learning is designed based on assumed rather than assessed needs",
+        "Does not apply adult learning frameworks \u2014 designs for teachers as if they were students",
+        "Cultural and social-emotional needs are not considered in professional learning design"
+      ],
+      "partial_indicators": [
+        "Sends a needs survey but designs the session based on prior plans rather than the survey data",
+        "Designs interactive sessions but does not apply explicit adult learning frameworks or account for cultural and social-emotional dimensions"
+      ]
+    },
+    {
+      "indicator_id": "iste-c-plf-4b",
+      "standard_id": "iste-c-plf",
+      "standard": "Professional Learning Facilitator",
+      "indicator_letter": "b",
+      "indicator_source_text": "Build the capacity of educators, leaders and instructional teams to put the ISTE Standards into practice by facilitating active learning and providing meaningful feedback.",
+      "met_criteria": [
+        "Designs professional learning experiences where participants actively practise ISTE-aligned teaching moves",
+        "Gives specific, actionable feedback on practice during professional learning",
+        "Includes leaders and instructional teams, not just classroom teachers",
+        "Builds capacity for independent practice \u2014 the goal is transfer, not dependency on the coach"
+      ],
+      "not_yet_met_criteria": [
+        "Professional learning involves information transfer rather than practice and feedback",
+        "ISTE Standards are presented as content, not practised as skills",
+        "Capacity-building is not the stated or measured goal of the professional learning"
+      ],
+      "partial_indicators": [
+        "Facilitates active learning activities during CPD but does not provide systematic feedback on participant practice or explicitly frame the session around building capacity to put the ISTE Standards into practice"
+      ]
+    },
+    {
+      "indicator_id": "iste-c-plf-4c",
+      "standard_id": "iste-c-plf",
+      "standard": "Professional Learning Facilitator",
+      "indicator_letter": "c",
+      "indicator_source_text": "Evaluate impact of professional learning and continually make improvements in order to meet schoolwide vision for using technology for high-impact teaching and learning.",
+      "met_criteria": [
+        "Has a structured impact evaluation approach that goes beyond end-of-session surveys",
+        "Measures impact at the level of practice change and student learning, not just participant satisfaction",
+        "Feeds evaluation findings back into professional learning design",
+        "Connects professional learning impact to the school's technology vision and goals"
+      ],
+      "not_yet_met_criteria": [
+        "Professional learning impact is evaluated through immediate satisfaction only",
+        "Evaluation is not used to improve future professional learning design",
+        "There is no connection between professional learning evaluation and institutional technology goals"
+      ],
+      "partial_indicators": [
+        "Collects follow-up feedback weeks after CPD and adjusts future sessions based on it, but does not measure impact at the level of classroom practice change or student learning outcomes"
+      ]
+    },
+    {
+      "indicator_id": "iste-c-ddm-4a",
+      "standard_id": "iste-c-ddm",
+      "standard": "Data-Driven Decision Maker",
+      "indicator_letter": "a",
+      "indicator_source_text": "Model best practices for educators and leaders for securely collecting, protecting and analyzing student data.",
+      "met_criteria": [
+        "Demonstrates and discusses data security practices explicitly \u2014 not just follows them",
+        "Knows what data platforms collect and how it is stored and shared",
+        "Makes data governance practices visible as a coaching topic",
+        "Helps educators understand their data responsibilities, not just their data access"
+      ],
+      "not_yet_met_criteria": [
+        "Data security is delegated to IT \u2014 not a coaching responsibility",
+        "Does not model or discuss data governance with educators",
+        "Focused on data analytics without addressing the governance dimension"
+      ],
+      "partial_indicators": [
+        "Follows data security procedures themselves but does not model or discuss these practices with educators during coaching \u2014 treats it as an IT issue rather than a shared professional responsibility"
+      ]
+    },
+    {
+      "indicator_id": "iste-c-ddm-4b",
+      "standard_id": "iste-c-ddm",
+      "standard": "Data-Driven Decision Maker",
+      "indicator_letter": "b",
+      "indicator_source_text": "Support educators to interpret qualitative and quantitative data to inform their decisions and support individual student learning.",
+      "met_criteria": [
+        "Helps educators move from 'what does the data say' to 'what should I do about it'",
+        "Supports triangulation of multiple data sources rather than reliance on a single metric",
+        "Helps educators recognise when data is misleading or when context changes its interpretation",
+        "Data interpretation leads to specific, adjusted instructional decisions"
+      ],
+      "not_yet_met_criteria": [
+        "Shares data dashboards with educators but does not support interpretation",
+        "Data review sessions end with observations rather than decisions",
+        "Does not help educators identify limitations or potential biases in data"
+      ],
+      "partial_indicators": [
+        "Supports educators in reading their data and identifying trends but does not help them evaluate data limitations, triangulate sources, or translate findings into concrete instructional adjustments"
+      ]
+    },
+    {
+      "indicator_id": "iste-c-ddm-4c",
+      "standard_id": "iste-c-ddm",
+      "standard": "Data-Driven Decision Maker",
+      "indicator_letter": "c",
+      "indicator_source_text": "Partner with educators to empower students to use learning data to set their own goals and measure their progress.",
+      "met_criteria": [
+        "Helps educators design student-facing data experiences (not just teacher-facing dashboards)",
+        "Students can access and understand their own learning data",
+        "Students use data to set specific, meaningful goals \u2014 not just acknowledge scores",
+        "The student data experience is pedagogically designed, not just a data dump"
+      ],
+      "not_yet_met_criteria": [
+        "Data is used to inform teacher decisions only \u2014 students have no role in interpreting or using their own data",
+        "Data conversations with students are about informing them of results, not empowering them to direct their learning"
+      ],
+      "partial_indicators": [
+        "Helps educators share progress data with students through reports or portals but students receive data passively \u2014 they are not guided to interpret it, set goals with it, or use it to direct their own learning strategies"
+      ]
+    },
+    {
+      "indicator_id": "iste-c-dca-4a",
+      "standard_id": "iste-c-dca",
+      "standard": "Digital Citizen Advocate",
+      "indicator_letter": "a",
+      "indicator_source_text": "Work with educators to create pathways for students to use technology to address community challenges and gain real-world experience.",
+      "met_criteria": [
+        "Helps educators design community-connected technology projects with real external impact",
+        "The community connection is genuine \u2014 students interact with real stakeholders, not a simulated audience",
+        "Supports educators in managing the complexity of external partnerships",
+        "Evaluates whether student technology use in these projects builds genuine citizenship skills"
+      ],
+      "not_yet_met_criteria": [
+        "Community connection in learning is metaphorical or simulated, not actual",
+        "Does not help educators navigate the complexity of authentic community partnerships"
+      ],
+      "partial_indicators": [
+        "Helps educators design projects where students research a community issue and present findings, but the connection stops at research and presentation \u2014 students do not interact with or create something for the actual community"
+      ]
+    },
+    {
+      "indicator_id": "iste-c-dca-4b",
+      "standard_id": "iste-c-dca",
+      "standard": "Digital Citizen Advocate",
+      "indicator_letter": "b",
+      "indicator_source_text": "Collaborate with educators, leaders and students to foster inclusive online spaces and healthy balance in their use of technology.",
+      "met_criteria": [
+        "Works across all three groups \u2014 educators, leaders, and students \u2014 not just one",
+        "Addresses both inclusivity and healthy balance as distinct goals",
+        "Helps audit and improve online spaces for inclusivity, not just post guidance",
+        "Supports the development of school-wide norms for healthy technology balance"
+      ],
+      "not_yet_met_criteria": [
+        "Digital citizenship is addressed at the student level only \u2014 educators and leaders are not included",
+        "Responds to incidents rather than proactively fostering inclusive spaces and healthy practices"
+      ],
+      "partial_indicators": [
+        "Works with educators to deliver digital citizenship content to students but does not engage leaders or audit platform settings to address structural factors affecting inclusivity or balance"
+      ]
+    },
+    {
+      "indicator_id": "iste-c-dca-4c",
+      "standard_id": "iste-c-dca",
+      "standard": "Digital Citizen Advocate",
+      "indicator_letter": "c",
+      "indicator_source_text": "Support educators and students to critically examine the sources and accuracy of online content and evaluate underlying assumptions, biases, and perspectives.",
+      "met_criteria": [
+        "Helps educators design learning that develops genuine critical information literacy, not just surface source checking",
+        "Students are supported to identify assumptions and biases, not just inaccuracies",
+        "Critical examination is embedded in subject learning, not added as a media literacy lesson",
+        "Coaches educators to model critical evaluation themselves"
+      ],
+      "not_yet_met_criteria": [
+        "Source evaluation is treated as fact-checking only \u2014 deeper critical examination is not developed",
+        "Digital literacy is a compliance lesson, not a practised reasoning skill"
+      ],
+      "partial_indicators": [
+        "Supports educators in teaching students to identify unreliable sources using credibility checklists, but does not develop the deeper critical examination of assumptions, perspectives, and biases underpinning content"
+      ]
+    },
+    {
+      "indicator_id": "iste-c-dca-4d",
+      "standard_id": "iste-c-dca",
+      "standard": "Digital Citizen Advocate",
+      "indicator_letter": "d",
+      "indicator_source_text": "Empower educators, leaders and students to make informed decisions to protect their personal data and curate the digital profile they intend to reflect.",
+      "met_criteria": [
+        "Helps all groups understand what personal data is collected by the tools they use",
+        "Supports active decision-making about digital profile curation \u2014 not just harm avoidance",
+        "Engages leaders in understanding their institutional digital footprint, not just student safety",
+        "Coaching includes practical privacy management skills, not just awareness"
+      ],
+      "not_yet_met_criteria": [
+        "Data privacy is treated as a youth safety topic rather than a universal professional and personal competency",
+        "Leaders and educators are not included in data literacy and digital profile work"
+      ],
+      "partial_indicators": [
+        "Delivers student-facing digital privacy sessions and teaches basic safety practices but does not extend this to educators and leaders, and does not develop practical profile curation skills beyond harm avoidance"
+      ]
+    }
+  ]
+}

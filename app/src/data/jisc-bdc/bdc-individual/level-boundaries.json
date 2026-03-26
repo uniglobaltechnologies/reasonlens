@@ -1,0 +1,584 @@
+{
+  "framework_id": "jisc-bdc-role-profiles",
+  "profile_id": "bdc-individual",
+  "profile_name": "Jisc Building Digital Capability Individual Framework",
+  "authoring_note": "Original boundary operationalisation informed by framework structure. Boundary wording is newly written for this deliverable.",
+  "boundaries": [
+    {
+      "boundary_id": "bdc-individual-prof-dc",
+      "profile_id": "bdc-individual",
+      "profile_name": "Jisc Building Digital Capability Individual Framework",
+      "role_code": "IND",
+      "element_code": "PROF",
+      "element_name": "Digital Proficiency and Productivity",
+      "boundary_code": "DC",
+      "boundary_label": "Developing to Capable",
+      "from_level": "Developing",
+      "to_level": "Capable",
+      "discriminator_type": "assisted_to_independent",
+      "key_discriminator": "The shift is from getting routine work done with support to running dependable digital workflows independently.",
+      "critical_shift": {
+        "from": "Keeps essential digital tasks moving but still relies on prompts, familiar routines or local help when work becomes less predictable.",
+        "to": "Uses core tools independently, chooses sensible workflows and solves common issues without much interruption."
+      },
+      "role_context_focus": "routine personal and shared tasks",
+      "common_false_positives": [
+        {
+          "pattern": "Repeated success with one familiar routine",
+          "why_not_enough": "This may show habit rather than independent control when the task changes."
+        },
+        {
+          "pattern": "Owning several devices or apps",
+          "why_not_enough": "Access and quantity do not show coherent workflow management."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "One repeatable setup in calendar and task tools that works across routine tasks without requiring rescue from other people.",
+          "Consistent organisation in shared file spaces so that the current version, deadline or next step can be found quickly."
+        ],
+        "strong": [
+          "Independent handling of a common problem in core productivity apps with a clear explanation of the chosen fix.",
+          "A short example showing that the workflow in shared file spaces remains reliable when the context changes slightly."
+        ],
+        "threshold_hint": "consistent use of shared tools without relying on rescue from others"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about routine personal and shared tasks, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "familiarity_trap",
+          "tool_accumulation"
+        ],
+        "role_specific_note": "In Individual contexts, evidence of capable practice should be visible through consistent use of shared tools without relying on rescue from others."
+      }
+    },
+    {
+      "boundary_id": "bdc-individual-prof-cp",
+      "profile_id": "bdc-individual",
+      "profile_name": "Jisc Building Digital Capability Individual Framework",
+      "role_code": "IND",
+      "element_code": "PROF",
+      "element_name": "Digital Proficiency and Productivity",
+      "boundary_code": "CP",
+      "boundary_label": "Capable to Proficient",
+      "from_level": "Capable",
+      "to_level": "Proficient",
+      "discriminator_type": "independent_to_optimising",
+      "key_discriminator": "The shift is from competent personal use to improving, standardising or strategically refining digital workflows.",
+      "critical_shift": {
+        "from": "Uses core tools independently, chooses sensible workflows and solves common issues without much interruption.",
+        "to": "Optimises workflows, judges tool choices critically and improves practice for other people as well as for themselves."
+      },
+      "role_context_focus": "workflow improvement for self and small groups",
+      "common_false_positives": [
+        {
+          "pattern": "A very efficient personal setup",
+          "why_not_enough": "A private workaround may still be fragile, exclusionary or impossible for others to follow."
+        },
+        {
+          "pattern": "Introducing a feature-rich new tool",
+          "why_not_enough": "More functionality is not the same as optimising the overall workflow."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "A practical improvement to shared file spaces that other people can follow with less friction.",
+          "A clear rationale for choosing or refining calendar and task tools based on fit, support and risk."
+        ],
+        "strong": [
+          "Before-and-after evidence that a shared workflow in core productivity apps became simpler, more reliable or more inclusive.",
+          "A lightweight standard, guidance note or review habit that helped sustain the improvement."
+        ],
+        "threshold_hint": "clear evidence that a process became more reliable or easier for others"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about workflow improvement for self and small groups, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "efficiency_without_sharing",
+          "novelty_over_workflow"
+        ],
+        "role_specific_note": "In Individual contexts, evidence of proficient practice should be visible through clear evidence that a process became more reliable or easier for others."
+      }
+    },
+    {
+      "boundary_id": "bdc-individual-creat-dc",
+      "profile_id": "bdc-individual",
+      "profile_name": "Jisc Building Digital Capability Individual Framework",
+      "role_code": "IND",
+      "element_code": "CREAT",
+      "element_name": "Digital Creation, Problem-Solving and Innovation",
+      "boundary_code": "DC",
+      "boundary_label": "Developing to Capable",
+      "from_level": "Developing",
+      "to_level": "Capable",
+      "discriminator_type": "copying_to_purposeful_design",
+      "key_discriminator": "The shift is from editing or copying existing patterns to making deliberate design choices for a clear need.",
+      "critical_shift": {
+        "from": "Adapts existing materials or familiar methods to meet immediate needs, but design choices are still mostly guided by examples rather than by clear intent.",
+        "to": "Creates purposeful outputs or workflow changes that fit the user need, the task and the context."
+      },
+      "role_context_focus": "adapting resources or fixing local tasks",
+      "common_false_positives": [
+        {
+          "pattern": "Cosmetic editing of an existing asset",
+          "why_not_enough": "Surface change can leave the underlying design problem untouched."
+        },
+        {
+          "pattern": "Tool experimentation without a clear user need",
+          "why_not_enough": "Novelty alone does not demonstrate purposeful creation."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "An adapted or new digital resources with visible design choices linked to user need.",
+          "Evidence that workflow fixes improved the task beyond surface polish."
+        ],
+        "strong": [
+          "Feedback or testing notes showing refinement of templates or prototypes after use.",
+          "A short explanation of why the chosen design was more suitable than a copied default."
+        ],
+        "threshold_hint": "a design choice tied to user need, not just copying"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about adapting resources or fixing local tasks, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "cosmetic_change",
+          "tool_first_experiment"
+        ],
+        "role_specific_note": "In Individual contexts, evidence of capable practice should be visible through a design choice tied to user need, not just copying."
+      }
+    },
+    {
+      "boundary_id": "bdc-individual-creat-cp",
+      "profile_id": "bdc-individual",
+      "profile_name": "Jisc Building Digital Capability Individual Framework",
+      "role_code": "IND",
+      "element_code": "CREAT",
+      "element_name": "Digital Creation, Problem-Solving and Innovation",
+      "boundary_code": "CP",
+      "boundary_label": "Capable to Proficient",
+      "from_level": "Capable",
+      "to_level": "Proficient",
+      "discriminator_type": "purposeful_design_to_scalable_innovation",
+      "key_discriminator": "The shift is from producing effective one-off solutions to designing reusable or evaluative innovations.",
+      "critical_shift": {
+        "from": "Creates purposeful outputs or workflow changes that fit the user need, the task and the context.",
+        "to": "Designs reusable, evaluative and innovative solutions that improve practice beyond the immediate task."
+      },
+      "role_context_focus": "reusable resources or tested improvements",
+      "common_false_positives": [
+        {
+          "pattern": "A polished one-off output",
+          "why_not_enough": "Quality in a single case does not prove reusability or evaluative improvement."
+        },
+        {
+          "pattern": "Copying a fashionable format from elsewhere",
+          "why_not_enough": "Borrowed forms still need local testing and evidence of value."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "A reusable or documented pattern created from digital resources.",
+          "Evidence that workflow fixes was evaluated rather than simply launched."
+        ],
+        "strong": [
+          "Adaptation, reuse or uptake of templates or prototypes by other people or contexts.",
+          "A decision record showing whether to scale, iterate or stop based on evidence."
+        ],
+        "threshold_hint": "evaluation or reuse beyond the first case"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about reusable resources or tested improvements, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "one_off_polish",
+          "borrowed_format"
+        ],
+        "role_specific_note": "In Individual contexts, evidence of proficient practice should be visible through evaluation or reuse beyond the first case."
+      }
+    },
+    {
+      "boundary_id": "bdc-individual-learn-dc",
+      "profile_id": "bdc-individual",
+      "profile_name": "Jisc Building Digital Capability Individual Framework",
+      "role_code": "IND",
+      "element_code": "LEARN",
+      "element_name": "Digital Learning and Development",
+      "boundary_code": "DC",
+      "boundary_label": "Developing to Capable",
+      "from_level": "Developing",
+      "to_level": "Capable",
+      "discriminator_type": "reactive_to_planned_learning",
+      "key_discriminator": "The shift is from reactive just-enough learning to planned application of learning in practice.",
+      "critical_shift": {
+        "from": "Learns reactively when a new need appears and often stops once the immediate task is complete.",
+        "to": "Plans and applies digital development in a way that strengthens real practice over time."
+      },
+      "role_context_focus": "turning just-in-time learning into applied practice",
+      "common_false_positives": [
+        {
+          "pattern": "Completing training content",
+          "why_not_enough": "Attendance or completion does not prove transfer into practice."
+        },
+        {
+          "pattern": "Solving an immediate issue once",
+          "why_not_enough": "Just-enough learning can remain reactive if no longer-term application follows."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "Evidence that input from short courses and guides led to a real change in practice.",
+          "A reflection from practice experiments showing what was learned, applied and adjusted."
+        ],
+        "strong": [
+          "Repeated or sustained use of a new approach first explored through practice experiments.",
+          "Contribution to peer learning exchanges that shows active engagement rather than attendance only."
+        ],
+        "threshold_hint": "evidence that learning was tried and reviewed"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about turning just-in-time learning into applied practice, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "attendance_equals_learning",
+          "just_in_time_only"
+        ],
+        "role_specific_note": "In Individual contexts, evidence of capable practice should be visible through evidence that learning was tried and reviewed."
+      }
+    },
+    {
+      "boundary_id": "bdc-individual-learn-cp",
+      "profile_id": "bdc-individual",
+      "profile_name": "Jisc Building Digital Capability Individual Framework",
+      "role_code": "IND",
+      "element_code": "LEARN",
+      "element_name": "Digital Learning and Development",
+      "boundary_code": "CP",
+      "boundary_label": "Capable to Proficient",
+      "from_level": "Capable",
+      "to_level": "Proficient",
+      "discriminator_type": "self_development_to_enabling_others",
+      "key_discriminator": "The shift is from managing one's own development to enabling and sustaining development in other people or groups.",
+      "critical_shift": {
+        "from": "Plans and applies digital development in a way that strengthens real practice over time.",
+        "to": "Creates conditions for shared digital learning, reflection and confidence building in others as well as in self."
+      },
+      "role_context_focus": "supporting others' development",
+      "common_false_positives": [
+        {
+          "pattern": "Giving informal tips to colleagues",
+          "why_not_enough": "Helpful advice is not yet the same as enabling structured development."
+        },
+        {
+          "pattern": "Running a single showcase session",
+          "why_not_enough": "Awareness activity without follow-up rarely changes practice sustainably."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "A structured peer or group activity using short courses and guides or peer learning exchanges with a clear purpose.",
+          "Follow-up evidence that other people applied something from the learning process."
+        ],
+        "strong": [
+          "A sequenced development offer, not just a one-off event, using short courses and guides or practice experiments.",
+          "Adaptation of the learning support based on feedback, participation or observed needs."
+        ],
+        "threshold_hint": "a structured activity with follow-up or adaptation"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about supporting others' development, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "tips_without_structure",
+          "awareness_as_action"
+        ],
+        "role_specific_note": "In Individual contexts, evidence of proficient practice should be visible through a structured activity with follow-up or adaptation."
+      }
+    },
+    {
+      "boundary_id": "bdc-individual-lit-dc",
+      "profile_id": "bdc-individual",
+      "profile_name": "Jisc Building Digital Capability Individual Framework",
+      "role_code": "IND",
+      "element_code": "LIT",
+      "element_name": "Information, Data and Media Literacies",
+      "boundary_code": "DC",
+      "boundary_label": "Developing to Capable",
+      "from_level": "Developing",
+      "to_level": "Capable",
+      "discriminator_type": "finding_to_evaluating",
+      "key_discriminator": "The shift is from finding plausible information to evaluating and interpreting evidence deliberately.",
+      "critical_shift": {
+        "from": "Finds usable sources or data for immediate tasks, but evaluation of quality, limitations and relevance is still inconsistent.",
+        "to": "Judges source quality, data definitions and relevance deliberately, then uses evidence with care."
+      },
+      "role_context_focus": "checking source quality and interpreting data",
+      "common_false_positives": [
+        {
+          "pattern": "Using sources that look authoritative",
+          "why_not_enough": "Presentation and confidence can mask weak or irrelevant evidence."
+        },
+        {
+          "pattern": "Producing attractive charts",
+          "why_not_enough": "Visual polish does not prove correct interpretation."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "A source or data trail from searches and source collections showing deliberate comparison rather than first-hit selection.",
+          "An interpretation of spreadsheets or dashboards that checks definitions, timeframe or missing information."
+        ],
+        "strong": [
+          "A decision note using briefs or summaries that explains why some evidence was weighted more heavily.",
+          "A short explanation of limits or uncertainty in the evidence used."
+        ],
+        "threshold_hint": "an evidence trail showing deliberate comparison"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about checking source quality and interpreting data, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "looks_authoritative",
+          "chart_equals_insight"
+        ],
+        "role_specific_note": "In Individual contexts, evidence of capable practice should be visible through an evidence trail showing deliberate comparison."
+      }
+    },
+    {
+      "boundary_id": "bdc-individual-lit-cp",
+      "profile_id": "bdc-individual",
+      "profile_name": "Jisc Building Digital Capability Individual Framework",
+      "role_code": "IND",
+      "element_code": "LIT",
+      "element_name": "Information, Data and Media Literacies",
+      "boundary_code": "CP",
+      "boundary_label": "Capable to Proficient",
+      "from_level": "Capable",
+      "to_level": "Proficient",
+      "discriminator_type": "evaluating_to_synthesising",
+      "key_discriminator": "The shift is from sound individual judgment to synthesis, interpretation and guidance that informs others.",
+      "critical_shift": {
+        "from": "Judges source quality, data definitions and relevance deliberately, then uses evidence with care.",
+        "to": "Synthesises information and data from multiple sources, explains uncertainty and helps others reason well with evidence."
+      },
+      "role_context_focus": "synthesis and guidance for others",
+      "common_false_positives": [
+        {
+          "pattern": "Discarding obviously biased sources",
+          "why_not_enough": "Critical literacy also requires weighing partial evidence, not only rejecting it."
+        },
+        {
+          "pattern": "Summarising one strong dataset clearly",
+          "why_not_enough": "A single-source summary is not the same as synthesis across evidence forms."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "A synthesis that combines more than one kind of evidence from searches and source collections or briefs or summaries.",
+          "An explanation of confidence, caveats or trade-offs for other people."
+        ],
+        "strong": [
+          "A briefing or summary in which contradictory evidence is handled transparently.",
+          "Evidence that others used the analysis from spreadsheets or dashboards or briefs or summaries to make a sounder decision."
+        ],
+        "threshold_hint": "a balanced explanation of confidence and uncertainty"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about synthesis and guidance for others, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "rejection_without_weighing",
+          "single_source_summary"
+        ],
+        "role_specific_note": "In Individual contexts, evidence of proficient practice should be visible through a balanced explanation of confidence and uncertainty."
+      }
+    },
+    {
+      "boundary_id": "bdc-individual-comm-dc",
+      "profile_id": "bdc-individual",
+      "profile_name": "Jisc Building Digital Capability Individual Framework",
+      "role_code": "IND",
+      "element_code": "COMM",
+      "element_name": "Digital Communication, Collaboration and Participation",
+      "boundary_code": "DC",
+      "boundary_label": "Developing to Capable",
+      "from_level": "Developing",
+      "to_level": "Capable",
+      "discriminator_type": "participation_to_coordination",
+      "key_discriminator": "The shift is from habitual participation to intentional coordination and channel choice.",
+      "critical_shift": {
+        "from": "Uses common channels to stay in touch, but collaboration norms and channel choices are still mostly habitual.",
+        "to": "Chooses channels and collaboration methods intentionally to support the task, the audience and inclusive participation."
+      },
+      "role_context_focus": "clear channel choice and collaborative norms",
+      "common_false_positives": [
+        {
+          "pattern": "Being active on many channels",
+          "why_not_enough": "Activity can increase noise rather than improve coordination."
+        },
+        {
+          "pattern": "Replying quickly to messages",
+          "why_not_enough": "Speed alone does not show fit, clarity or inclusive participation."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "A clear channel or participation plan for email or messaging channels.",
+          "Examples from shared workspaces showing that updates, current versions and decisions are easier to follow."
+        ],
+        "strong": [
+          "A working agreement or norm that improves participation in communities or project spaces.",
+          "Evidence that the chosen communication pattern reduced confusion or duplication."
+        ],
+        "threshold_hint": "records or routines that improve coordination"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about clear channel choice and collaborative norms, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "more_channels_more_better",
+          "speed_over_fit"
+        ],
+        "role_specific_note": "In Individual contexts, evidence of capable practice should be visible through records or routines that improve coordination."
+      }
+    },
+    {
+      "boundary_id": "bdc-individual-comm-cp",
+      "profile_id": "bdc-individual",
+      "profile_name": "Jisc Building Digital Capability Individual Framework",
+      "role_code": "IND",
+      "element_code": "COMM",
+      "element_name": "Digital Communication, Collaboration and Participation",
+      "boundary_code": "CP",
+      "boundary_label": "Capable to Proficient",
+      "from_level": "Capable",
+      "to_level": "Proficient",
+      "discriminator_type": "coordination_to_facilitation",
+      "key_discriminator": "The shift is from communicating well oneself to facilitating collaboration and participation for groups.",
+      "critical_shift": {
+        "from": "Chooses channels and collaboration methods intentionally to support the task, the audience and inclusive participation.",
+        "to": "Facilitates productive collaboration or community participation and shapes better digital communication norms."
+      },
+      "role_context_focus": "facilitating communities or projects",
+      "common_false_positives": [
+        {
+          "pattern": "Being the most visible contributor",
+          "why_not_enough": "Facilitation depends on enabling others, not on occupying the most space."
+        },
+        {
+          "pattern": "Launching a new community channel",
+          "why_not_enough": "A platform does not create a healthy collaboration culture by itself."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "A facilitated structure for shared workspaces or communities or project spaces, not just active contribution by one person.",
+          "Evidence that participation, decision quality or inclusion improved."
+        ],
+        "strong": [
+          "Handled tension, exclusion or overload constructively within email or messaging channels or communities or project spaces.",
+          "A repeatable collaboration pattern that other groups can adopt."
+        ],
+        "threshold_hint": "evidence of inclusive participation and decision clarity"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about facilitating communities or projects, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "visibility_equals_facilitation",
+          "platform_equals_community"
+        ],
+        "role_specific_note": "In Individual contexts, evidence of proficient practice should be visible through evidence of inclusive participation and decision clarity."
+      }
+    },
+    {
+      "boundary_id": "bdc-individual-id-dc",
+      "profile_id": "bdc-individual",
+      "profile_name": "Jisc Building Digital Capability Individual Framework",
+      "role_code": "IND",
+      "element_code": "ID",
+      "element_name": "Digital Identity and Wellbeing",
+      "boundary_code": "DC",
+      "boundary_label": "Developing to Capable",
+      "from_level": "Developing",
+      "to_level": "Capable",
+      "discriminator_type": "reactive_to_deliberate_management",
+      "key_discriminator": "The shift is from reactive self-protection to deliberate management of digital presence and habits.",
+      "critical_shift": {
+        "from": "Responds to digital identity or wellbeing issues after they arise, with actions that are often platform-specific or temporary.",
+        "to": "Manages presence, privacy, boundaries and digital habits deliberately across contexts."
+      },
+      "role_context_focus": "planned management of presence and boundaries",
+      "common_false_positives": [
+        {
+          "pattern": "Changing one privacy setting after a problem",
+          "why_not_enough": "Reactive, platform-specific fixes do not show deliberate identity management."
+        },
+        {
+          "pattern": "Muting notifications temporarily",
+          "why_not_enough": "Short bursts of control can fade if habits and expectations remain unchanged."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "A deliberate review of profiles and privacy settings across more than one platform or context.",
+          "Sustained habits in notification patterns that support healthier attention, availability or boundaries."
+        ],
+        "strong": [
+          "A coherent explanation of how community norms choices align with role, values and risk.",
+          "Evidence that the same issue no longer recurs because the underlying habit changed."
+        ],
+        "threshold_hint": "sustained habits rather than one-off fixes"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about planned management of presence and boundaries, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "single_platform_fix",
+          "temporary_boundary"
+        ],
+        "role_specific_note": "In Individual contexts, evidence of capable practice should be visible through sustained habits rather than one-off fixes."
+      }
+    },
+    {
+      "boundary_id": "bdc-individual-id-cp",
+      "profile_id": "bdc-individual",
+      "profile_name": "Jisc Building Digital Capability Individual Framework",
+      "role_code": "IND",
+      "element_code": "ID",
+      "element_name": "Digital Identity and Wellbeing",
+      "boundary_code": "CP",
+      "boundary_label": "Capable to Proficient",
+      "from_level": "Capable",
+      "to_level": "Proficient",
+      "discriminator_type": "deliberate_management_to_culture_shaping",
+      "key_discriminator": "The shift is from managing one's own identity and wellbeing to influencing norms, care and trust for others.",
+      "critical_shift": {
+        "from": "Manages presence, privacy, boundaries and digital habits deliberately across contexts.",
+        "to": "Models and shapes healthy, trustworthy and context-aware digital norms for wider groups or communities."
+      },
+      "role_context_focus": "role modelling and norm-shaping",
+      "common_false_positives": [
+        {
+          "pattern": "Keeping one's own boundaries tidy",
+          "why_not_enough": "Personal practice does not by itself show culture-shaping influence."
+        },
+        {
+          "pattern": "Posting regularly with a polished profile",
+          "why_not_enough": "Visibility can increase risk or strain if not balanced with care and trust."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "A contribution to shared norms or guidance related to community norms.",
+          "Evidence that personal practice in profiles and privacy settings or notification patterns is being used as a model for others."
+        ],
+        "strong": [
+          "A group-level change in digital conduct, boundaries or care influenced by the person's guidance.",
+          "A reflective account showing how visibility, trust and wellbeing were balanced for a wider community."
+        ],
+        "threshold_hint": "guidance or influence on wider digital conduct"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about role modelling and norm-shaping, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "personal_habits_only",
+          "visibility_as_success"
+        ],
+        "role_specific_note": "In Individual contexts, evidence of proficient practice should be visible through guidance or influence on wider digital conduct."
+      }
+    }
+  ]
+}

@@ -1,0 +1,1078 @@
+{
+  "framework_id": "jisc-ai-maturity",
+  "framework_name": "Jisc AI Maturity Model",
+  "file_type": "indicator-operationalisation",
+  "research_basis": {
+    "generated_at": "2026-03-26",
+    "authoring_method": "Original synthesis using the user brief and the THE DMI implementation reference as the structural benchmark.",
+    "licence_handling": "Original implementation content informed by Jisc AI maturity structure. Scenarios and practitioner language are independently written to avoid reproducing Jisc wording."
+  },
+  "object_count": 15,
+  "objects": [
+    {
+      "object_id": "jisc-ai-strategy-emerging",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-strategy",
+      "dimension_name": "AI Strategy & Leadership",
+      "level_id": "jisc-ai-strategy-emerging",
+      "level_name": "Emerging",
+      "level_order": 1,
+      "focus_statement": "At the Emerging level, the institution recognises and experiments whether AI is reactive, coordinated, or strategically embedded through visible structures, routines, and decisions rather than isolated examples.",
+      "observable_behaviours": [
+        "There is visible progress in ai strategy & leadership, but it remains uneven across units and often depends on local champions.",
+        "Institutional ownership exists in principle, yet routines, incentives, or evidence are not consistent enough to travel well.",
+        "Leaders can point to examples, though the system would still be vulnerable if key people or projects disappeared."
+      ],
+      "evidence_examples": [
+        "strategy papers",
+        "governance terms of reference",
+        "investment decisions"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "treating a single principles statement as a full strategy",
+          "frequency": "common"
+        },
+        {
+          "statement": "assuming enthusiasm from one executive means institution-wide leadership",
+          "frequency": "common"
+        },
+        {
+          "statement": "Overstates competence because the task felt familiar.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "institution_type": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of AI Strategy & Leadership differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "institution_size": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex AI Strategy & Leadership becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "region": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex AI Strategy & Leadership becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "respondent_role": {
+          "impact": "high",
+          "how_it_changes_observation": "AI Strategy & Leadership shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "digital_transformation_stage": {
+          "impact": "high",
+          "how_it_changes_observation": "The current transformation stage changes whether AI Strategy & Leadership is best evidenced through pilots, operational processes, or embedded governance.",
+          "calibration_rule": "Judge progression against coherent next steps, not against a fully mature end-state by default."
+        },
+        "ai_deployment_stage": {
+          "impact": "high",
+          "how_it_changes_observation": "The current transformation stage changes whether AI Strategy & Leadership is best evidenced through pilots, operational processes, or embedded governance.",
+          "calibration_rule": "Judge progression against coherent next steps, not against a fully mature end-state by default."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Strategy shapes what counts as responsible, useful, and sustainable AI adoption.",
+        "visibility_constraint": "Best judged by respondents with cross-unit visibility; partial-view respondents should rely on named evidence rather than impressions."
+      },
+      "respondent_visibility": "Best judged by respondents with cross-unit visibility; partial-view respondents should rely on named evidence rather than impressions."
+    },
+    {
+      "object_id": "jisc-ai-strategy-developing",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-strategy",
+      "dimension_name": "AI Strategy & Leadership",
+      "level_id": "jisc-ai-strategy-developing",
+      "level_name": "Developing",
+      "level_order": 2,
+      "focus_statement": "At the Developing level, the institution organises and scales whether AI is reactive, coordinated, or strategically embedded through visible structures, routines, and decisions rather than isolated examples.",
+      "observable_behaviours": [
+        "AI Strategy & Leadership is coordinated through clearer governance, repeatable processes, and stronger cross-team alignment.",
+        "Evidence from multiple parts of the institution influences priorities, investment, and improvement choices.",
+        "Practice is becoming less person-dependent, with more consistent support and clearer expectations."
+      ],
+      "evidence_examples": [
+        "governance terms of reference",
+        "investment decisions",
+        "roadmaps"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "treating a single principles statement as a full strategy",
+          "frequency": "common"
+        },
+        {
+          "statement": "assuming enthusiasm from one executive means institution-wide leadership",
+          "frequency": "common"
+        },
+        {
+          "statement": "Assumes a tidy routine will work unchanged in every context.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "institution_type": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of AI Strategy & Leadership differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "institution_size": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex AI Strategy & Leadership becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "region": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex AI Strategy & Leadership becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "respondent_role": {
+          "impact": "high",
+          "how_it_changes_observation": "AI Strategy & Leadership shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "digital_transformation_stage": {
+          "impact": "high",
+          "how_it_changes_observation": "The current transformation stage changes whether AI Strategy & Leadership is best evidenced through pilots, operational processes, or embedded governance.",
+          "calibration_rule": "Judge progression against coherent next steps, not against a fully mature end-state by default."
+        },
+        "ai_deployment_stage": {
+          "impact": "high",
+          "how_it_changes_observation": "The current transformation stage changes whether AI Strategy & Leadership is best evidenced through pilots, operational processes, or embedded governance.",
+          "calibration_rule": "Judge progression against coherent next steps, not against a fully mature end-state by default."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Strategy shapes what counts as responsible, useful, and sustainable AI adoption.",
+        "visibility_constraint": "Best judged by respondents with cross-unit visibility; partial-view respondents should rely on named evidence rather than impressions."
+      },
+      "respondent_visibility": "Best judged by respondents with cross-unit visibility; partial-view respondents should rely on named evidence rather than impressions."
+    },
+    {
+      "object_id": "jisc-ai-strategy-mature",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-strategy",
+      "dimension_name": "AI Strategy & Leadership",
+      "level_id": "jisc-ai-strategy-mature",
+      "level_name": "Mature",
+      "level_order": 3,
+      "focus_statement": "At the Mature level, the institution embeds and improves whether AI is reactive, coordinated, or strategically embedded through visible structures, routines, and decisions rather than isolated examples.",
+      "observable_behaviours": [
+        "AI Strategy & Leadership is integrated into mainstream institutional planning, delivery, and review rather than treated as a special initiative.",
+        "Feedback loops, evidence, and accountability mechanisms support continuous improvement and adaptation.",
+        "External learning, partnership, or benchmarking informs how the institution strengthens ai strategy & leadership over time."
+      ],
+      "evidence_examples": [
+        "investment decisions",
+        "roadmaps",
+        "committee papers"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "treating a single principles statement as a full strategy",
+          "frequency": "common"
+        },
+        {
+          "statement": "assuming enthusiasm from one executive means institution-wide leadership",
+          "frequency": "common"
+        },
+        {
+          "statement": "Mistakes strong personal practice for system-level readiness.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "institution_type": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of AI Strategy & Leadership differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "institution_size": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex AI Strategy & Leadership becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "region": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex AI Strategy & Leadership becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "respondent_role": {
+          "impact": "high",
+          "how_it_changes_observation": "AI Strategy & Leadership shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "digital_transformation_stage": {
+          "impact": "high",
+          "how_it_changes_observation": "The current transformation stage changes whether AI Strategy & Leadership is best evidenced through pilots, operational processes, or embedded governance.",
+          "calibration_rule": "Judge progression against coherent next steps, not against a fully mature end-state by default."
+        },
+        "ai_deployment_stage": {
+          "impact": "high",
+          "how_it_changes_observation": "The current transformation stage changes whether AI Strategy & Leadership is best evidenced through pilots, operational processes, or embedded governance.",
+          "calibration_rule": "Judge progression against coherent next steps, not against a fully mature end-state by default."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Strategy shapes what counts as responsible, useful, and sustainable AI adoption.",
+        "visibility_constraint": "Best judged by respondents with cross-unit visibility; partial-view respondents should rely on named evidence rather than impressions."
+      },
+      "respondent_visibility": "Best judged by respondents with cross-unit visibility; partial-view respondents should rely on named evidence rather than impressions."
+    },
+    {
+      "object_id": "jisc-ai-people-emerging",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-people",
+      "dimension_name": "People & Skills",
+      "level_id": "jisc-ai-people-emerging",
+      "level_name": "Emerging",
+      "level_order": 1,
+      "focus_statement": "At the Emerging level, the institution recognises and experiments whether people can adopt AI responsibly at the pace strategy requires through visible structures, routines, and decisions rather than isolated examples.",
+      "observable_behaviours": [
+        "There is visible progress in people & skills, but it remains uneven across units and often depends on local champions.",
+        "Institutional ownership exists in principle, yet routines, incentives, or evidence are not consistent enough to travel well.",
+        "Leaders can point to examples, though the system would still be vulnerable if key people or projects disappeared."
+      ],
+      "evidence_examples": [
+        "training plans",
+        "role profiles",
+        "capability surveys"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "assuming tool access automatically builds skill",
+          "frequency": "common"
+        },
+        {
+          "statement": "focusing only on advanced specialists and ignoring broad literacy",
+          "frequency": "common"
+        },
+        {
+          "statement": "Overstates competence because the task felt familiar.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "institution_type": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of People & Skills differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "institution_size": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex People & Skills becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "region": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex People & Skills becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "respondent_role": {
+          "impact": "high",
+          "how_it_changes_observation": "People & Skills shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "digital_transformation_stage": {
+          "impact": "high",
+          "how_it_changes_observation": "The current transformation stage changes whether People & Skills is best evidenced through pilots, operational processes, or embedded governance.",
+          "calibration_rule": "Judge progression against coherent next steps, not against a fully mature end-state by default."
+        },
+        "ai_deployment_stage": {
+          "impact": "high",
+          "how_it_changes_observation": "The current transformation stage changes whether People & Skills is best evidenced through pilots, operational processes, or embedded governance.",
+          "calibration_rule": "Judge progression against coherent next steps, not against a fully mature end-state by default."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "People and skills enable adoption, oversight, and long-term resilience.",
+        "visibility_constraint": "Best judged by respondents with cross-unit visibility; partial-view respondents should rely on named evidence rather than impressions."
+      },
+      "respondent_visibility": "Best judged by respondents with cross-unit visibility; partial-view respondents should rely on named evidence rather than impressions."
+    },
+    {
+      "object_id": "jisc-ai-people-developing",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-people",
+      "dimension_name": "People & Skills",
+      "level_id": "jisc-ai-people-developing",
+      "level_name": "Developing",
+      "level_order": 2,
+      "focus_statement": "At the Developing level, the institution organises and scales whether people can adopt AI responsibly at the pace strategy requires through visible structures, routines, and decisions rather than isolated examples.",
+      "observable_behaviours": [
+        "People & Skills is coordinated through clearer governance, repeatable processes, and stronger cross-team alignment.",
+        "Evidence from multiple parts of the institution influences priorities, investment, and improvement choices.",
+        "Practice is becoming less person-dependent, with more consistent support and clearer expectations."
+      ],
+      "evidence_examples": [
+        "role profiles",
+        "capability surveys",
+        "support models"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "assuming tool access automatically builds skill",
+          "frequency": "common"
+        },
+        {
+          "statement": "focusing only on advanced specialists and ignoring broad literacy",
+          "frequency": "common"
+        },
+        {
+          "statement": "Assumes a tidy routine will work unchanged in every context.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "institution_type": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of People & Skills differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "institution_size": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex People & Skills becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "region": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex People & Skills becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "respondent_role": {
+          "impact": "high",
+          "how_it_changes_observation": "People & Skills shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "digital_transformation_stage": {
+          "impact": "high",
+          "how_it_changes_observation": "The current transformation stage changes whether People & Skills is best evidenced through pilots, operational processes, or embedded governance.",
+          "calibration_rule": "Judge progression against coherent next steps, not against a fully mature end-state by default."
+        },
+        "ai_deployment_stage": {
+          "impact": "high",
+          "how_it_changes_observation": "The current transformation stage changes whether People & Skills is best evidenced through pilots, operational processes, or embedded governance.",
+          "calibration_rule": "Judge progression against coherent next steps, not against a fully mature end-state by default."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "People and skills enable adoption, oversight, and long-term resilience.",
+        "visibility_constraint": "Best judged by respondents with cross-unit visibility; partial-view respondents should rely on named evidence rather than impressions."
+      },
+      "respondent_visibility": "Best judged by respondents with cross-unit visibility; partial-view respondents should rely on named evidence rather than impressions."
+    },
+    {
+      "object_id": "jisc-ai-people-mature",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-people",
+      "dimension_name": "People & Skills",
+      "level_id": "jisc-ai-people-mature",
+      "level_name": "Mature",
+      "level_order": 3,
+      "focus_statement": "At the Mature level, the institution embeds and improves whether people can adopt AI responsibly at the pace strategy requires through visible structures, routines, and decisions rather than isolated examples.",
+      "observable_behaviours": [
+        "People & Skills is integrated into mainstream institutional planning, delivery, and review rather than treated as a special initiative.",
+        "Feedback loops, evidence, and accountability mechanisms support continuous improvement and adaptation.",
+        "External learning, partnership, or benchmarking informs how the institution strengthens people & skills over time."
+      ],
+      "evidence_examples": [
+        "capability surveys",
+        "support models",
+        "committee papers"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "assuming tool access automatically builds skill",
+          "frequency": "common"
+        },
+        {
+          "statement": "focusing only on advanced specialists and ignoring broad literacy",
+          "frequency": "common"
+        },
+        {
+          "statement": "Mistakes strong personal practice for system-level readiness.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "institution_type": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of People & Skills differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "institution_size": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex People & Skills becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "region": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex People & Skills becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "respondent_role": {
+          "impact": "high",
+          "how_it_changes_observation": "People & Skills shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "digital_transformation_stage": {
+          "impact": "high",
+          "how_it_changes_observation": "The current transformation stage changes whether People & Skills is best evidenced through pilots, operational processes, or embedded governance.",
+          "calibration_rule": "Judge progression against coherent next steps, not against a fully mature end-state by default."
+        },
+        "ai_deployment_stage": {
+          "impact": "high",
+          "how_it_changes_observation": "The current transformation stage changes whether People & Skills is best evidenced through pilots, operational processes, or embedded governance.",
+          "calibration_rule": "Judge progression against coherent next steps, not against a fully mature end-state by default."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "People and skills enable adoption, oversight, and long-term resilience.",
+        "visibility_constraint": "Best judged by respondents with cross-unit visibility; partial-view respondents should rely on named evidence rather than impressions."
+      },
+      "respondent_visibility": "Best judged by respondents with cross-unit visibility; partial-view respondents should rely on named evidence rather than impressions."
+    },
+    {
+      "object_id": "jisc-ai-tech-emerging",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-tech",
+      "dimension_name": "Technology & Infrastructure",
+      "level_id": "jisc-ai-tech-emerging",
+      "level_name": "Emerging",
+      "level_order": 1,
+      "focus_statement": "At the Emerging level, the institution recognises and experiments whether the institution has a dependable technical base for AI use through visible structures, routines, and decisions rather than isolated examples.",
+      "observable_behaviours": [
+        "There is visible progress in technology & infrastructure, but it remains uneven across units and often depends on local champions.",
+        "Institutional ownership exists in principle, yet routines, incentives, or evidence are not consistent enough to travel well.",
+        "Leaders can point to examples, though the system would still be vulnerable if key people or projects disappeared."
+      ],
+      "evidence_examples": [
+        "architecture diagrams",
+        "approved tool lists",
+        "integration plans"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "assuming a licence purchase equals operational readiness",
+          "frequency": "common"
+        },
+        {
+          "statement": "treating AI infrastructure as separate from wider digital infrastructure",
+          "frequency": "common"
+        },
+        {
+          "statement": "Overstates competence because the task felt familiar.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "institution_type": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of Technology & Infrastructure differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "institution_size": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex Technology & Infrastructure becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "region": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex Technology & Infrastructure becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "respondent_role": {
+          "impact": "high",
+          "how_it_changes_observation": "Technology & Infrastructure shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "digital_transformation_stage": {
+          "impact": "high",
+          "how_it_changes_observation": "The current transformation stage changes whether Technology & Infrastructure is best evidenced through pilots, operational processes, or embedded governance.",
+          "calibration_rule": "Judge progression against coherent next steps, not against a fully mature end-state by default."
+        },
+        "ai_deployment_stage": {
+          "impact": "high",
+          "how_it_changes_observation": "The current transformation stage changes whether Technology & Infrastructure is best evidenced through pilots, operational processes, or embedded governance.",
+          "calibration_rule": "Judge progression against coherent next steps, not against a fully mature end-state by default."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Technology and infrastructure turn aspiration into scalable practice.",
+        "visibility_constraint": "Best judged by respondents with cross-unit visibility; partial-view respondents should rely on named evidence rather than impressions."
+      },
+      "respondent_visibility": "Best judged by respondents with cross-unit visibility; partial-view respondents should rely on named evidence rather than impressions."
+    },
+    {
+      "object_id": "jisc-ai-tech-developing",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-tech",
+      "dimension_name": "Technology & Infrastructure",
+      "level_id": "jisc-ai-tech-developing",
+      "level_name": "Developing",
+      "level_order": 2,
+      "focus_statement": "At the Developing level, the institution organises and scales whether the institution has a dependable technical base for AI use through visible structures, routines, and decisions rather than isolated examples.",
+      "observable_behaviours": [
+        "Technology & Infrastructure is coordinated through clearer governance, repeatable processes, and stronger cross-team alignment.",
+        "Evidence from multiple parts of the institution influences priorities, investment, and improvement choices.",
+        "Practice is becoming less person-dependent, with more consistent support and clearer expectations."
+      ],
+      "evidence_examples": [
+        "approved tool lists",
+        "integration plans",
+        "support and monitoring processes"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "assuming a licence purchase equals operational readiness",
+          "frequency": "common"
+        },
+        {
+          "statement": "treating AI infrastructure as separate from wider digital infrastructure",
+          "frequency": "common"
+        },
+        {
+          "statement": "Assumes a tidy routine will work unchanged in every context.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "institution_type": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of Technology & Infrastructure differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "institution_size": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex Technology & Infrastructure becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "region": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex Technology & Infrastructure becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "respondent_role": {
+          "impact": "high",
+          "how_it_changes_observation": "Technology & Infrastructure shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "digital_transformation_stage": {
+          "impact": "high",
+          "how_it_changes_observation": "The current transformation stage changes whether Technology & Infrastructure is best evidenced through pilots, operational processes, or embedded governance.",
+          "calibration_rule": "Judge progression against coherent next steps, not against a fully mature end-state by default."
+        },
+        "ai_deployment_stage": {
+          "impact": "high",
+          "how_it_changes_observation": "The current transformation stage changes whether Technology & Infrastructure is best evidenced through pilots, operational processes, or embedded governance.",
+          "calibration_rule": "Judge progression against coherent next steps, not against a fully mature end-state by default."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Technology and infrastructure turn aspiration into scalable practice.",
+        "visibility_constraint": "Best judged by respondents with cross-unit visibility; partial-view respondents should rely on named evidence rather than impressions."
+      },
+      "respondent_visibility": "Best judged by respondents with cross-unit visibility; partial-view respondents should rely on named evidence rather than impressions."
+    },
+    {
+      "object_id": "jisc-ai-tech-mature",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-tech",
+      "dimension_name": "Technology & Infrastructure",
+      "level_id": "jisc-ai-tech-mature",
+      "level_name": "Mature",
+      "level_order": 3,
+      "focus_statement": "At the Mature level, the institution embeds and improves whether the institution has a dependable technical base for AI use through visible structures, routines, and decisions rather than isolated examples.",
+      "observable_behaviours": [
+        "Technology & Infrastructure is integrated into mainstream institutional planning, delivery, and review rather than treated as a special initiative.",
+        "Feedback loops, evidence, and accountability mechanisms support continuous improvement and adaptation.",
+        "External learning, partnership, or benchmarking informs how the institution strengthens technology & infrastructure over time."
+      ],
+      "evidence_examples": [
+        "integration plans",
+        "support and monitoring processes",
+        "committee papers"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "assuming a licence purchase equals operational readiness",
+          "frequency": "common"
+        },
+        {
+          "statement": "treating AI infrastructure as separate from wider digital infrastructure",
+          "frequency": "common"
+        },
+        {
+          "statement": "Mistakes strong personal practice for system-level readiness.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "institution_type": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of Technology & Infrastructure differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "institution_size": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex Technology & Infrastructure becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "region": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex Technology & Infrastructure becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "respondent_role": {
+          "impact": "high",
+          "how_it_changes_observation": "Technology & Infrastructure shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "digital_transformation_stage": {
+          "impact": "high",
+          "how_it_changes_observation": "The current transformation stage changes whether Technology & Infrastructure is best evidenced through pilots, operational processes, or embedded governance.",
+          "calibration_rule": "Judge progression against coherent next steps, not against a fully mature end-state by default."
+        },
+        "ai_deployment_stage": {
+          "impact": "high",
+          "how_it_changes_observation": "The current transformation stage changes whether Technology & Infrastructure is best evidenced through pilots, operational processes, or embedded governance.",
+          "calibration_rule": "Judge progression against coherent next steps, not against a fully mature end-state by default."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Technology and infrastructure turn aspiration into scalable practice.",
+        "visibility_constraint": "Best judged by respondents with cross-unit visibility; partial-view respondents should rely on named evidence rather than impressions."
+      },
+      "respondent_visibility": "Best judged by respondents with cross-unit visibility; partial-view respondents should rely on named evidence rather than impressions."
+    },
+    {
+      "object_id": "jisc-ai-data-emerging",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-data",
+      "dimension_name": "Data Readiness",
+      "level_id": "jisc-ai-data-emerging",
+      "level_name": "Emerging",
+      "level_order": 1,
+      "focus_statement": "At the Emerging level, the institution recognises and experiments whether data foundations can sustain AI safely and usefully through visible structures, routines, and decisions rather than isolated examples.",
+      "observable_behaviours": [
+        "There is visible progress in data readiness, but it remains uneven across units and often depends on local champions.",
+        "Institutional ownership exists in principle, yet routines, incentives, or evidence are not consistent enough to travel well.",
+        "Leaders can point to examples, though the system would still be vulnerable if key people or projects disappeared."
+      ],
+      "evidence_examples": [
+        "data governance documents",
+        "quality reports",
+        "access controls"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "assuming AI can compensate for poor data quality",
+          "frequency": "common"
+        },
+        {
+          "statement": "equating data volume with readiness",
+          "frequency": "common"
+        },
+        {
+          "statement": "Overstates competence because the task felt familiar.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "institution_type": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of Data Readiness differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "institution_size": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex Data Readiness becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "region": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex Data Readiness becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "respondent_role": {
+          "impact": "high",
+          "how_it_changes_observation": "Data Readiness shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "digital_transformation_stage": {
+          "impact": "high",
+          "how_it_changes_observation": "The current transformation stage changes whether Data Readiness is best evidenced through pilots, operational processes, or embedded governance.",
+          "calibration_rule": "Judge progression against coherent next steps, not against a fully mature end-state by default."
+        },
+        "ai_deployment_stage": {
+          "impact": "high",
+          "how_it_changes_observation": "The current transformation stage changes whether Data Readiness is best evidenced through pilots, operational processes, or embedded governance.",
+          "calibration_rule": "Judge progression against coherent next steps, not against a fully mature end-state by default."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Data readiness is a hard dependency for sustainable AI deployment.",
+        "visibility_constraint": "Best judged by respondents with cross-unit visibility; partial-view respondents should rely on named evidence rather than impressions."
+      },
+      "respondent_visibility": "Best judged by respondents with cross-unit visibility; partial-view respondents should rely on named evidence rather than impressions."
+    },
+    {
+      "object_id": "jisc-ai-data-developing",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-data",
+      "dimension_name": "Data Readiness",
+      "level_id": "jisc-ai-data-developing",
+      "level_name": "Developing",
+      "level_order": 2,
+      "focus_statement": "At the Developing level, the institution organises and scales whether data foundations can sustain AI safely and usefully through visible structures, routines, and decisions rather than isolated examples.",
+      "observable_behaviours": [
+        "Data Readiness is coordinated through clearer governance, repeatable processes, and stronger cross-team alignment.",
+        "Evidence from multiple parts of the institution influences priorities, investment, and improvement choices.",
+        "Practice is becoming less person-dependent, with more consistent support and clearer expectations."
+      ],
+      "evidence_examples": [
+        "quality reports",
+        "access controls",
+        "data lineage notes"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "assuming AI can compensate for poor data quality",
+          "frequency": "common"
+        },
+        {
+          "statement": "equating data volume with readiness",
+          "frequency": "common"
+        },
+        {
+          "statement": "Assumes a tidy routine will work unchanged in every context.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "institution_type": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of Data Readiness differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "institution_size": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex Data Readiness becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "region": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex Data Readiness becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "respondent_role": {
+          "impact": "high",
+          "how_it_changes_observation": "Data Readiness shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "digital_transformation_stage": {
+          "impact": "high",
+          "how_it_changes_observation": "The current transformation stage changes whether Data Readiness is best evidenced through pilots, operational processes, or embedded governance.",
+          "calibration_rule": "Judge progression against coherent next steps, not against a fully mature end-state by default."
+        },
+        "ai_deployment_stage": {
+          "impact": "high",
+          "how_it_changes_observation": "The current transformation stage changes whether Data Readiness is best evidenced through pilots, operational processes, or embedded governance.",
+          "calibration_rule": "Judge progression against coherent next steps, not against a fully mature end-state by default."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Data readiness is a hard dependency for sustainable AI deployment.",
+        "visibility_constraint": "Best judged by respondents with cross-unit visibility; partial-view respondents should rely on named evidence rather than impressions."
+      },
+      "respondent_visibility": "Best judged by respondents with cross-unit visibility; partial-view respondents should rely on named evidence rather than impressions."
+    },
+    {
+      "object_id": "jisc-ai-data-mature",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-data",
+      "dimension_name": "Data Readiness",
+      "level_id": "jisc-ai-data-mature",
+      "level_name": "Mature",
+      "level_order": 3,
+      "focus_statement": "At the Mature level, the institution embeds and improves whether data foundations can sustain AI safely and usefully through visible structures, routines, and decisions rather than isolated examples.",
+      "observable_behaviours": [
+        "Data Readiness is integrated into mainstream institutional planning, delivery, and review rather than treated as a special initiative.",
+        "Feedback loops, evidence, and accountability mechanisms support continuous improvement and adaptation.",
+        "External learning, partnership, or benchmarking informs how the institution strengthens data readiness over time."
+      ],
+      "evidence_examples": [
+        "access controls",
+        "data lineage notes",
+        "committee papers"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "assuming AI can compensate for poor data quality",
+          "frequency": "common"
+        },
+        {
+          "statement": "equating data volume with readiness",
+          "frequency": "common"
+        },
+        {
+          "statement": "Mistakes strong personal practice for system-level readiness.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "institution_type": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of Data Readiness differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "institution_size": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex Data Readiness becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "region": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex Data Readiness becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "respondent_role": {
+          "impact": "high",
+          "how_it_changes_observation": "Data Readiness shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "digital_transformation_stage": {
+          "impact": "high",
+          "how_it_changes_observation": "The current transformation stage changes whether Data Readiness is best evidenced through pilots, operational processes, or embedded governance.",
+          "calibration_rule": "Judge progression against coherent next steps, not against a fully mature end-state by default."
+        },
+        "ai_deployment_stage": {
+          "impact": "high",
+          "how_it_changes_observation": "The current transformation stage changes whether Data Readiness is best evidenced through pilots, operational processes, or embedded governance.",
+          "calibration_rule": "Judge progression against coherent next steps, not against a fully mature end-state by default."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Data readiness is a hard dependency for sustainable AI deployment.",
+        "visibility_constraint": "Best judged by respondents with cross-unit visibility; partial-view respondents should rely on named evidence rather than impressions."
+      },
+      "respondent_visibility": "Best judged by respondents with cross-unit visibility; partial-view respondents should rely on named evidence rather than impressions."
+    },
+    {
+      "object_id": "jisc-ai-ethics-emerging",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-ethics",
+      "dimension_name": "Ethics & Responsible AI",
+      "level_id": "jisc-ai-ethics-emerging",
+      "level_name": "Emerging",
+      "level_order": 1,
+      "focus_statement": "At the Emerging level, the institution recognises and experiments whether AI adoption is trusted, governable, and aligned with institutional values through visible structures, routines, and decisions rather than isolated examples.",
+      "observable_behaviours": [
+        "There is visible progress in ethics & responsible ai, but it remains uneven across units and often depends on local champions.",
+        "Institutional ownership exists in principle, yet routines, incentives, or evidence are not consistent enough to travel well.",
+        "Leaders can point to examples, though the system would still be vulnerable if key people or projects disappeared."
+      ],
+      "evidence_examples": [
+        "principles statements",
+        "risk assessments",
+        "incident review processes"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "treating ethics as a communications exercise",
+          "frequency": "common"
+        },
+        {
+          "statement": "assuming a human in the loop automatically removes risk",
+          "frequency": "common"
+        },
+        {
+          "statement": "Overstates competence because the task felt familiar.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "institution_type": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of Ethics & Responsible AI differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "institution_size": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex Ethics & Responsible AI becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "region": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex Ethics & Responsible AI becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "respondent_role": {
+          "impact": "high",
+          "how_it_changes_observation": "Ethics & Responsible AI shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "digital_transformation_stage": {
+          "impact": "high",
+          "how_it_changes_observation": "The current transformation stage changes whether Ethics & Responsible AI is best evidenced through pilots, operational processes, or embedded governance.",
+          "calibration_rule": "Judge progression against coherent next steps, not against a fully mature end-state by default."
+        },
+        "ai_deployment_stage": {
+          "impact": "high",
+          "how_it_changes_observation": "The current transformation stage changes whether Ethics & Responsible AI is best evidenced through pilots, operational processes, or embedded governance.",
+          "calibration_rule": "Judge progression against coherent next steps, not against a fully mature end-state by default."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Responsible AI connects strategy, data, technology, and people into a trusted operating model.",
+        "visibility_constraint": "Best judged by respondents with cross-unit visibility; partial-view respondents should rely on named evidence rather than impressions."
+      },
+      "respondent_visibility": "Best judged by respondents with cross-unit visibility; partial-view respondents should rely on named evidence rather than impressions."
+    },
+    {
+      "object_id": "jisc-ai-ethics-developing",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-ethics",
+      "dimension_name": "Ethics & Responsible AI",
+      "level_id": "jisc-ai-ethics-developing",
+      "level_name": "Developing",
+      "level_order": 2,
+      "focus_statement": "At the Developing level, the institution organises and scales whether AI adoption is trusted, governable, and aligned with institutional values through visible structures, routines, and decisions rather than isolated examples.",
+      "observable_behaviours": [
+        "Ethics & Responsible AI is coordinated through clearer governance, repeatable processes, and stronger cross-team alignment.",
+        "Evidence from multiple parts of the institution influences priorities, investment, and improvement choices.",
+        "Practice is becoming less person-dependent, with more consistent support and clearer expectations."
+      ],
+      "evidence_examples": [
+        "risk assessments",
+        "incident review processes",
+        "governance approvals"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "treating ethics as a communications exercise",
+          "frequency": "common"
+        },
+        {
+          "statement": "assuming a human in the loop automatically removes risk",
+          "frequency": "common"
+        },
+        {
+          "statement": "Assumes a tidy routine will work unchanged in every context.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "institution_type": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of Ethics & Responsible AI differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "institution_size": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex Ethics & Responsible AI becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "region": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex Ethics & Responsible AI becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "respondent_role": {
+          "impact": "high",
+          "how_it_changes_observation": "Ethics & Responsible AI shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "digital_transformation_stage": {
+          "impact": "high",
+          "how_it_changes_observation": "The current transformation stage changes whether Ethics & Responsible AI is best evidenced through pilots, operational processes, or embedded governance.",
+          "calibration_rule": "Judge progression against coherent next steps, not against a fully mature end-state by default."
+        },
+        "ai_deployment_stage": {
+          "impact": "high",
+          "how_it_changes_observation": "The current transformation stage changes whether Ethics & Responsible AI is best evidenced through pilots, operational processes, or embedded governance.",
+          "calibration_rule": "Judge progression against coherent next steps, not against a fully mature end-state by default."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Responsible AI connects strategy, data, technology, and people into a trusted operating model.",
+        "visibility_constraint": "Best judged by respondents with cross-unit visibility; partial-view respondents should rely on named evidence rather than impressions."
+      },
+      "respondent_visibility": "Best judged by respondents with cross-unit visibility; partial-view respondents should rely on named evidence rather than impressions."
+    },
+    {
+      "object_id": "jisc-ai-ethics-mature",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-ethics",
+      "dimension_name": "Ethics & Responsible AI",
+      "level_id": "jisc-ai-ethics-mature",
+      "level_name": "Mature",
+      "level_order": 3,
+      "focus_statement": "At the Mature level, the institution embeds and improves whether AI adoption is trusted, governable, and aligned with institutional values through visible structures, routines, and decisions rather than isolated examples.",
+      "observable_behaviours": [
+        "Ethics & Responsible AI is integrated into mainstream institutional planning, delivery, and review rather than treated as a special initiative.",
+        "Feedback loops, evidence, and accountability mechanisms support continuous improvement and adaptation.",
+        "External learning, partnership, or benchmarking informs how the institution strengthens ethics & responsible ai over time."
+      ],
+      "evidence_examples": [
+        "incident review processes",
+        "governance approvals",
+        "committee papers"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "treating ethics as a communications exercise",
+          "frequency": "common"
+        },
+        {
+          "statement": "assuming a human in the loop automatically removes risk",
+          "frequency": "common"
+        },
+        {
+          "statement": "Mistakes strong personal practice for system-level readiness.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "institution_type": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of Ethics & Responsible AI differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "institution_size": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex Ethics & Responsible AI becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "region": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex Ethics & Responsible AI becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "respondent_role": {
+          "impact": "high",
+          "how_it_changes_observation": "Ethics & Responsible AI shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "digital_transformation_stage": {
+          "impact": "high",
+          "how_it_changes_observation": "The current transformation stage changes whether Ethics & Responsible AI is best evidenced through pilots, operational processes, or embedded governance.",
+          "calibration_rule": "Judge progression against coherent next steps, not against a fully mature end-state by default."
+        },
+        "ai_deployment_stage": {
+          "impact": "high",
+          "how_it_changes_observation": "The current transformation stage changes whether Ethics & Responsible AI is best evidenced through pilots, operational processes, or embedded governance.",
+          "calibration_rule": "Judge progression against coherent next steps, not against a fully mature end-state by default."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Responsible AI connects strategy, data, technology, and people into a trusted operating model.",
+        "visibility_constraint": "Best judged by respondents with cross-unit visibility; partial-view respondents should rely on named evidence rather than impressions."
+      },
+      "respondent_visibility": "Best judged by respondents with cross-unit visibility; partial-view respondents should rely on named evidence rather than impressions."
+    }
+  ]
+}

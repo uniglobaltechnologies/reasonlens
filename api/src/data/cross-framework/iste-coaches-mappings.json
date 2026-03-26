@@ -1,0 +1,144 @@
+{
+  "framework_id": "iste-coaches",
+  "framework_name": "ISTE Standards for Coaches",
+  "license_note": "ISTE Standards \u00a9 2024 4.02, ISTE (International Society for Technology in Education), iste.org. All rights reserved. Educational use only. Commercial use requires separate ISTE licensing agreement.",
+  "assessment_paradigm": "met_not_met",
+  "cross_framework_pairs": [
+    {
+      "target_framework_id": "bdc-learning-technology",
+      "target_framework_name": "Jisc Building Digital Capability: Learning Technologist",
+      "alignment_type": "overlapping",
+      "alignment_rationale": "ISTE Coaches and Jisc BDC Learning Technologist are the two most directly comparable frameworks for technology-focused educational support roles. ISTE Coaches describes what proficient coaching practice looks like (met/not-met); BDC Learning Technologist describes how that capability develops (Developing, Capable, Proficient). Together they offer a standards-based benchmark and a developmental pathway.",
+      "standard_mappings": [
+        {
+          "source_standard_id": "iste-c-change",
+          "source_standard_name": "Change Agent",
+          "target_dimension_id": "bdc-lt-change-leadership",
+          "target_dimension_name": "Change and Innovation",
+          "alignment_strength": "strong",
+          "alignment_note": "ISTE Change Agent (supporting organisational change through technology) maps directly to BDC Learning Technologist Change and Innovation at the Proficient level. Both describe the capacity to lead, not just respond to, technological change in educational settings."
+        },
+        {
+          "source_standard_id": "iste-c-connected",
+          "source_standard_name": "Connected Learner",
+          "target_dimension_id": "bdc-lt-professional-engagement",
+          "target_dimension_name": "Professional Engagement",
+          "alignment_strength": "strong",
+          "alignment_note": "ISTE Connected Learner (improving practice through professional networks and research) maps to BDC Professional Engagement at Capable/Proficient levels. Both require active participation in professional communities and evidence-informed practice."
+        },
+        {
+          "source_standard_id": "iste-c-collaborator",
+          "source_standard_name": "Collaborator",
+          "target_dimension_id": "bdc-lt-collaboration",
+          "target_dimension_name": "Collaboration and Communication",
+          "alignment_strength": "strong",
+          "alignment_note": "Direct alignment. ISTE Collaborator (working with educators as co-designers) maps to BDC Collaboration and Communication at the Capable level, where the practitioner works as a genuine collaborative partner rather than a support service."
+        },
+        {
+          "source_standard_id": "iste-c-learning-designer",
+          "source_standard_name": "Learning Designer",
+          "target_dimension_id": "bdc-lt-learning-design",
+          "target_dimension_name": "Learning Design and Curation",
+          "alignment_strength": "strong",
+          "alignment_note": "ISTE Learning Designer and BDC Learning Design and Curation are near-equivalent. Both require the practitioner to design purposeful technology-enhanced learning experiences for diverse learners. An ISTE Learning Designer standard met typically reflects BDC Capable or Proficient on this element."
+        },
+        {
+          "source_standard_id": "iste-c-plf",
+          "source_standard_name": "Professional Learning Facilitator",
+          "target_dimension_id": "bdc-lt-facilitation",
+          "target_dimension_name": "Facilitation and Coaching",
+          "alignment_strength": "strong",
+          "alignment_note": "ISTE Professional Learning Facilitator maps directly to BDC Facilitation and Coaching. Both require creating conditions for educator growth through technology-focused professional development. This is the core distinguishing capability of both frameworks."
+        },
+        {
+          "source_standard_id": "iste-c-data",
+          "source_standard_name": "Data-Driven Decision Maker",
+          "target_dimension_id": "bdc-lt-data-literacy",
+          "target_dimension_name": "Data and Analytics",
+          "alignment_strength": "strong",
+          "alignment_note": "ISTE Data-Driven Decision Maker and BDC Data and Analytics address identical capability: using data to evaluate technology integration and inform coaching practice. Strong alignment at both the framing and indicator level."
+        },
+        {
+          "source_standard_id": "iste-c-dc-advocate",
+          "source_standard_name": "Digital Citizen Advocate",
+          "target_dimension_id": "bdc-lt-digital-wellbeing",
+          "target_dimension_name": "Digital Wellbeing and Identity",
+          "alignment_strength": "moderate",
+          "alignment_note": "ISTE Digital Citizen Advocate (promoting ethical, safe technology use) partially maps to BDC Digital Wellbeing and Identity. The advocacy dimension of ISTE is broader than BDC's wellbeing focus; the ethics and safety dimensions align more closely than the identity dimensions."
+        }
+      ],
+      "interpretive_template": "You have met {iste_met_count} of 7 ISTE Coaching Standards. Your Jisc BDC Learning Technologist result is {bdc_level}. {gap_note} Coaches who meet the ISTE Learning Designer and Professional Learning Facilitator standards but remain at BDC Developing typically have strong practice skills but limited engagement with the institutional and professional ecosystem that BDC Capable requires.",
+      "gap_patterns": [
+        {
+          "pattern_id": "practice-strong-ecosystem-weak",
+          "label": "Strong Practitioner, Weak Ecosystem Engagement",
+          "condition": "iste_c_learning_designer_met == true AND iste_c_plf_met == true AND bdc_level == 'Developing'",
+          "interpretation": "Meeting ISTE Learning Designer and Professional Learning Facilitator standards while at BDC Developing suggests a capable practitioner who has not yet built the professional network, institutional visibility, and evidence-informed practice habits that BDC measures. Structured engagement with professional communities (ALT, Jisc communities) is the recommended development path."
+        },
+        {
+          "pattern_id": "data-gap",
+          "label": "Data-Blind Coach",
+          "condition": "iste_c_data_met == false",
+          "interpretation": "Unmet Data-Driven Decision Maker standard is a significant gap for a coaching role. Coaches without data literacy can support practice change but cannot demonstrate its impact or sustain it systematically. Targeted development in learning analytics and evidence-informed practice is recommended."
+        }
+      ]
+    },
+    {
+      "target_framework_id": "bdc-educational-developer",
+      "target_framework_name": "Jisc Building Digital Capability: Educational Developer",
+      "alignment_type": "complementary",
+      "alignment_rationale": "ISTE Coaches and BDC Educational Developer describe related but distinct professional roles. Where Learning Technologist focuses on technology deployment and support, Educational Developer focuses on curriculum and pedagogic development. Many technology coaches operate across both profiles. The cross-framework view surfaces where a coach's practice aligns more with instructional/curriculum development than with technology support.",
+      "standard_mappings": [
+        {
+          "source_standard_id": "iste-c-change",
+          "source_standard_name": "Change Agent",
+          "target_dimension_id": "bdc-ed-organisational-change",
+          "target_dimension_name": "Organisational Change and Strategy",
+          "alignment_strength": "strong",
+          "alignment_note": "ISTE Change Agent maps most strongly to BDC Educational Developer Organisational Change and Strategy at the Proficient level. Coaches who lead systemic technology integration change are operating in educational developer territory, not just learning technology support."
+        },
+        {
+          "source_standard_id": "iste-c-learning-designer",
+          "source_standard_name": "Learning Designer",
+          "target_dimension_id": "bdc-ed-curriculum-design",
+          "target_dimension_name": "Curriculum and Learning Design",
+          "alignment_strength": "strong",
+          "alignment_note": "ISTE Learning Designer maps directly to BDC Curriculum and Learning Design. Coaches who design learning experiences, not just support technology use, are engaging in educational development work that BDC ED explicitly measures."
+        },
+        {
+          "source_standard_id": "iste-c-plf",
+          "source_standard_name": "Professional Learning Facilitator",
+          "target_dimension_id": "bdc-ed-academic-development",
+          "target_dimension_name": "Academic/Professional Development Facilitation",
+          "alignment_strength": "strong",
+          "alignment_note": "ISTE Professional Learning Facilitator and BDC Academic Development Facilitation are functionally equivalent. Both require designing and delivering professional development that changes practice, not just delivers content."
+        },
+        {
+          "source_standard_id": "iste-c-collaborator",
+          "source_standard_name": "Collaborator",
+          "target_dimension_id": "bdc-ed-scholarly-practice",
+          "target_dimension_name": "Scholarly and Evidence-Based Practice",
+          "alignment_strength": "moderate",
+          "alignment_note": "ISTE Collaborator (working as a co-designer with educators) aligns to BDC Scholarly Practice at the level where practitioners engage in reflective and enquiry-based collaboration. The scholarly/research dimension is more prominent in BDC ED than in ISTE."
+        },
+        {
+          "source_standard_id": "iste-c-data",
+          "source_standard_name": "Data-Driven Decision Maker",
+          "target_dimension_id": "bdc-ed-evaluation",
+          "target_dimension_name": "Evaluation and Impact",
+          "alignment_strength": "strong",
+          "alignment_note": "ISTE Data-Driven Decision Maker maps directly to BDC ED Evaluation and Impact. Both require practitioners to assess the effectiveness of their work and use evidence to improve it. This is a core educational developer capability."
+        }
+      ],
+      "interpretive_template": "Your ISTE Coaches result ({iste_met_count}/7 met) and BDC Educational Developer result ({bdc_ed_level}) together indicate {profile_description}. Coaches with strong ISTE results and lower BDC ED typically operate as skilled practitioners but have not developed the scholarly, curriculum-design, and impact-evaluation capabilities that educational development requires.",
+      "gap_patterns": [
+        {
+          "pattern_id": "coach-not-developer",
+          "label": "Coach Without Developer Capability",
+          "condition": "iste_met_count >= 5 AND bdc_ed_level == 'Developing'",
+          "interpretation": "Strong ISTE coaching performance alongside BDC Educational Developer at Developing suggests the practitioner is effective in their direct coaching role but has not yet developed the curriculum, scholarly, and institutional change capabilities that the educational developer profile requires. If the role is expanding in this direction, structured CPD in curriculum design and evidence-based practice is needed."
+        }
+      ]
+    }
+  ]
+}

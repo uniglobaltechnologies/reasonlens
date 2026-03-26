@@ -1,0 +1,539 @@
+{
+  "_meta": {
+    "file": "indicator-operationalisation.json",
+    "framework_id": "iste-educators",
+    "framework_name": "ISTE Standards for Educators v4.02",
+    "total_indicators": 24,
+    "licensing_constraint": "ISTE Standards indicator text \u00a9 2024 4.02, ISTE (International Society for Technology in Education), iste.org. All rights reserved. ISTE permits free use for non-commercial educational purposes only. Commercial use requires separate ISTE licensing agreement. Observable behaviour descriptors are original ReasonLens content.",
+    "generated_for": "ReasonLens"
+  },
+  "indicators": [
+    {
+      "indicator_id": "iste-e-lnr-2a",
+      "standard_id": "iste-e-lnr",
+      "standard": "Learner",
+      "indicator_letter": "a",
+      "indicator_source_text": "Educators set professional learning goals to apply teaching practices made possible by technology, explore promising innovations, and reflect on their effectiveness.",
+      "met_criteria": [
+        "Sets a specific, technology-focused professional learning goal at the start of a term or year",
+        "Identifies innovations to explore that are grounded in learning science evidence",
+        "Reviews and documents progress against the goal",
+        "Adjusts practice based on reflection on what is and is not working"
+      ],
+      "not_yet_met_criteria": [
+        "Attends training without setting personal goals",
+        "Does not connect professional learning to specific teaching practices",
+        "Has no process for reflecting on whether new approaches are working"
+      ],
+      "partial_indicators": [
+        "Sets goals but frames them around tool acquisition (e.g., 'learn Canva') rather than pedagogical impact",
+        "Reflects informally but does not document or act on reflections systematically"
+      ]
+    },
+    {
+      "indicator_id": "iste-e-lnr-2b",
+      "standard_id": "iste-e-lnr",
+      "standard": "Learner",
+      "indicator_letter": "b",
+      "indicator_source_text": "Educators pursue professional interests by creating and actively participating in local and global learning networks.",
+      "met_criteria": [
+        "Is an active member of at least one professional learning network (contributes, not just reads)",
+        "Uses the network to share practice, ask questions, and learn from others",
+        "Has a professional learning community that spans beyond their immediate school",
+        "Connects network learning to their classroom practice"
+      ],
+      "not_yet_met_criteria": [
+        "Professional learning is limited to school-mandated CPD",
+        "Does not participate in any external professional networks",
+        "Is not connected with educators from other institutions"
+      ],
+      "partial_indicators": [
+        "Follows education accounts on social media but does not actively participate or contribute",
+        "Attends external events but does not maintain ongoing network connections"
+      ]
+    },
+    {
+      "indicator_id": "iste-e-lnr-2c",
+      "standard_id": "iste-e-lnr",
+      "standard": "Learner",
+      "indicator_letter": "c",
+      "indicator_source_text": "Educators stay current with research that supports improved student learning outcomes, including findings from the learning sciences.",
+      "met_criteria": [
+        "Can reference specific learning science findings that inform their technology integration decisions",
+        "Reads or engages with research on a regular basis",
+        "Evaluates claims about technology tools against what learning science says",
+        "Grounds adoption decisions in evidence, not novelty or peer pressure"
+      ],
+      "not_yet_met_criteria": [
+        "Makes tool adoption decisions based solely on recommendations or marketing",
+        "Cannot reference learning science in explaining their pedagogical choices",
+        "Does not distinguish research-informed practice from popular edtech opinion"
+      ],
+      "partial_indicators": [
+        "Reads education technology articles but does not access or evaluate primary research",
+        "Can name learning science concepts but does not apply them when evaluating specific technology interventions"
+      ]
+    },
+    {
+      "indicator_id": "iste-e-ldr-2a",
+      "standard_id": "iste-e-ldr",
+      "standard": "Leader",
+      "indicator_letter": "a",
+      "indicator_source_text": "Educators shape, advance and accelerate a shared vision for empowered learning with technology by engaging with education stakeholders.",
+      "met_criteria": [
+        "Actively participates in shaping \u2014 not just implementing \u2014 the school's technology vision",
+        "Engages students, parents, and colleagues in articulating what technology-empowered learning should look like",
+        "Takes initiative to advance the vision beyond their own classroom",
+        "Acts as a bridge between strategy and practice for other educators"
+      ],
+      "not_yet_met_criteria": [
+        "Implements institutional technology policy without contributing to its direction",
+        "Does not engage stakeholders in conversations about technology vision",
+        "Technology use is limited to personal classroom practice without broader influence"
+      ],
+      "partial_indicators": [
+        "Supports the institutional technology direction positively but does not actively shape or advance it",
+        "Shares good practice but does not facilitate stakeholder engagement in vision development"
+      ]
+    },
+    {
+      "indicator_id": "iste-e-ldr-2b",
+      "standard_id": "iste-e-ldr",
+      "standard": "Leader",
+      "indicator_letter": "b",
+      "indicator_source_text": "Educators advocate for equitable access to technology, high-quality digital content, and learning opportunities to meet the diverse needs of all students.",
+      "met_criteria": [
+        "Identifies specific equity gaps in technology access affecting their students",
+        "Raises access issues with appropriate decision-makers",
+        "Proposes practical solutions, not just awareness of the problem",
+        "Considers equity in their own instructional design decisions"
+      ],
+      "not_yet_met_criteria": [
+        "Does not notice or act on technology access inequities affecting their students",
+        "Assumes all students have equivalent access to digital tools",
+        "Does not raise equity concerns with school leadership"
+      ],
+      "partial_indicators": [
+        "Provides workarounds for students who lack access but does not advocate for systemic change",
+        "Raises access concerns informally but does not document or escalate them"
+      ]
+    },
+    {
+      "indicator_id": "iste-e-ldr-2c",
+      "standard_id": "iste-e-ldr",
+      "standard": "Leader",
+      "indicator_letter": "c",
+      "indicator_source_text": "Educators model for colleagues the identification, exploration, evaluation, curation and adoption of new digital resources and tools for learning.",
+      "met_criteria": [
+        "Explicitly and publicly demonstrates how they evaluate and select digital tools",
+        "Shares the reasoning process, not just the end recommendation",
+        "Creates opportunities for colleagues to observe or discuss their evaluation practice",
+        "Goes beyond sharing tools to sharing the thinking behind curation"
+      ],
+      "not_yet_met_criteria": [
+        "Shares useful tools informally but does not make the evaluation process visible to colleagues",
+        "Does not model critical evaluation \u2014 recommendations are based on 'I liked it' rather than demonstrated criteria"
+      ],
+      "partial_indicators": [
+        "Shares a curated list of tools with colleagues but does not explain the criteria used to select or reject them",
+        "Demonstrates tools in use but does not model the pre-adoption evaluation process"
+      ]
+    },
+    {
+      "indicator_id": "iste-e-cit-2a",
+      "standard_id": "iste-e-cit",
+      "standard": "Citizen",
+      "indicator_letter": "a",
+      "indicator_source_text": "Educators create experiences for learners to make positive, socially responsible contributions and build inclusive communities online.",
+      "met_criteria": [
+        "Designs learning activities where students produce positive digital contributions for real or simulated external communities",
+        "Builds norms and structures for inclusive online interaction within their learning environment",
+        "Moves students from consumers to contributors in digital spaces",
+        "Reviews and improves the inclusivity of online learning spaces they manage"
+      ],
+      "not_yet_met_criteria": [
+        "Online activities are consumption-focused rather than contribution-focused",
+        "Does not design explicitly for inclusive online interaction",
+        "Digital spaces in their classroom reflect default rather than designed norms"
+      ],
+      "partial_indicators": [
+        "Asks students to reflect on their online interactions but does not design experiences for active positive contribution",
+        "Sets conduct rules for online spaces but does not cultivate community norms"
+      ]
+    },
+    {
+      "indicator_id": "iste-e-cit-2b",
+      "standard_id": "iste-e-cit",
+      "standard": "Citizen",
+      "indicator_letter": "b",
+      "indicator_source_text": "Educators foster digital literacy by encouraging curiosity, reflection, and the critical evaluation of digital resources.",
+      "met_criteria": [
+        "Creates activities that require students to evaluate digital sources, not just use them",
+        "Models and scaffolds critical source evaluation as a skill",
+        "Designs questions that prompt reflection on how and why information is produced and circulated",
+        "Treats digital literacy as a core skill embedded in subject learning"
+      ],
+      "not_yet_met_criteria": [
+        "Provides students with pre-evaluated sources rather than developing their ability to evaluate independently",
+        "Does not scaffold or teach source evaluation skills",
+        "Treats digital literacy as separate from subject learning"
+      ],
+      "partial_indicators": [
+        "Reminds students to check sources but does not teach or model how to do so",
+        "Includes media literacy content in lessons but as a standalone topic rather than embedded critical practice"
+      ]
+    },
+    {
+      "indicator_id": "iste-e-cit-2c",
+      "standard_id": "iste-e-cit",
+      "standard": "Citizen",
+      "indicator_letter": "c",
+      "indicator_source_text": "Educators mentor students in safe, legal, and ethical practices with digital tools and content.",
+      "met_criteria": [
+        "Goes beyond rules to help students develop their own ethical reasoning around digital use",
+        "Addresses real dilemmas and grey areas, not just obvious violations",
+        "Creates a classroom culture where students can raise digital ethics questions without fear",
+        "Mentors, rather than polices, student digital behaviour"
+      ],
+      "not_yet_met_criteria": [
+        "Enforces school rules around digital use without developing student reasoning",
+        "Treats digital ethics as a rules and consequences topic only",
+        "Students learn what is not allowed but not why or how to navigate grey areas"
+      ],
+      "partial_indicators": [
+        "Discusses digital ethics with students and references policy but does not develop their independent reasoning capacity",
+        "Uses real examples in discussion but positions students as observers rather than ethical reasoners"
+      ]
+    },
+    {
+      "indicator_id": "iste-e-cit-2d",
+      "standard_id": "iste-e-cit",
+      "standard": "Citizen",
+      "indicator_letter": "d",
+      "indicator_source_text": "Educators model and promote management of personal data, digital identity, and protection of student data.",
+      "met_criteria": [
+        "Demonstrates personal data management practices to students (not just tells)",
+        "Has reviewed and configured the privacy and data settings of tools used in their classroom",
+        "Is aware of and follows data protection obligations regarding student data",
+        "Talks with students about how their data is collected and used by digital tools"
+      ],
+      "not_yet_met_criteria": [
+        "Uses digital tools without reviewing their data collection and sharing practices",
+        "Does not model personal data management",
+        "Is unaware of the data implications of tools used with students"
+      ],
+      "partial_indicators": [
+        "Seeks parental consent for tools but does not discuss or model data management practices with students",
+        "Knows data protection rules but treats them as administrative obligations rather than values to model"
+      ]
+    },
+    {
+      "indicator_id": "iste-e-col-2a",
+      "standard_id": "iste-e-col",
+      "standard": "Collaborator",
+      "indicator_letter": "a",
+      "indicator_source_text": "Educators dedicate planning time to collaborate with colleagues to create authentic learning experiences that leverage technology.",
+      "met_criteria": [
+        "Regularly dedicates planning time to collaborative design \u2014 not just coordination \u2014 with colleagues",
+        "Co-designs learning experiences that would not be possible through individual planning",
+        "Leverages technology as a feature of the co-designed experience, not just a tool added afterward",
+        "Reviews and iterates on co-designed experiences with colleagues"
+      ],
+      "not_yet_met_criteria": [
+        "Plans independently and collaborates only to coordinate logistics",
+        "Collaborative meetings are for sharing resources, not designing together",
+        "Technology is added to individual plans rather than designed collaboratively"
+      ],
+      "partial_indicators": [
+        "Plans with colleagues but divides tasks rather than genuinely co-designing experiences",
+        "Attends collaborative planning meetings and contributes ideas but does not drive toward authentic, technology-integrated designs"
+      ]
+    },
+    {
+      "indicator_id": "iste-e-col-2b",
+      "standard_id": "iste-e-col",
+      "standard": "Collaborator",
+      "indicator_letter": "b",
+      "indicator_source_text": "Educators collaborate and co-learn with students to discover and use new digital resources, and diagnose and troubleshoot technology issues.",
+      "met_criteria": [
+        "Treats technology exploration with students as a genuine co-learning activity",
+        "Acknowledges when students know more about a tool and learns from them",
+        "Uses troubleshooting moments as teaching opportunities rather than problems to solve privately",
+        "Models that not knowing how a tool works is normal and learnable"
+      ],
+      "not_yet_met_criteria": [
+        "Maintains the role of expert in technology use at all times",
+        "Resolves technology issues privately to avoid appearing uncertain",
+        "Does not learn from or with students about digital tools"
+      ],
+      "partial_indicators": [
+        "Asks students for help with technology occasionally but frames it as student assistance rather than genuine co-learning",
+        "Shares discoveries about tools with students but in a teacher-to-student, not peer-learner, dynamic"
+      ]
+    },
+    {
+      "indicator_id": "iste-e-col-2c",
+      "standard_id": "iste-e-col",
+      "standard": "Collaborator",
+      "indicator_letter": "c",
+      "indicator_source_text": "Educators use collaborative tools to expand students' authentic, real-world learning experiences by engaging virtually with experts, teams and students, locally and globally.",
+      "met_criteria": [
+        "Has connected students with at least one external expert, peer group, or community using collaborative technology",
+        "The virtual connection serves an authentic learning purpose \u2014 not just exposure",
+        "Prepares students to engage meaningfully with external collaborators",
+        "Reflects on how the external connection changed or deepened student learning"
+      ],
+      "not_yet_met_criteria": [
+        "Learning is contained within the classroom and immediate peer group",
+        "Does not use collaborative technology to extend student access to external experts or communities",
+        "Virtual connections, when they occur, are performative rather than purposeful"
+      ],
+      "partial_indicators": [
+        "Has students watch a virtual guest talk but does not structure genuine collaborative engagement",
+        "Uses video conferencing for administrative communication rather than to create learning connections"
+      ]
+    },
+    {
+      "indicator_id": "iste-e-col-2d",
+      "standard_id": "iste-e-col",
+      "standard": "Collaborator",
+      "indicator_letter": "d",
+      "indicator_source_text": "Educators use technology to convene and empower a broad community including families, school leaders, and mentors to help students achieve their learning goals.",
+      "met_criteria": [
+        "Uses technology to communicate learning goals with families in ways that enable genuine support",
+        "Connects students with mentors or community members through technology",
+        "Involves school leaders in student learning through digital updates and shared visibility",
+        "Creates two-way digital communication channels, not just broadcast"
+      ],
+      "not_yet_met_criteria": [
+        "Family communication is one-way (newsletters, grade reports) with no engagement mechanism",
+        "Does not use technology to connect students with community resources beyond the classroom",
+        "School leaders have no technology-mediated visibility of student learning goals or progress"
+      ],
+      "partial_indicators": [
+        "Communicates regularly with families about student progress using digital tools but does not create mechanisms for families to actively support learning goals",
+        "Uses a class page or VLE but does not connect these to mentors, community members, or school leaders in ways that support individual student goals"
+      ]
+    },
+    {
+      "indicator_id": "iste-e-des-2a",
+      "standard_id": "iste-e-des",
+      "standard": "Designer",
+      "indicator_letter": "a",
+      "indicator_source_text": "Educators use technology to create, adapt and personalize learning experiences that foster independent learning and accommodate learner differences and needs.",
+      "met_criteria": [
+        "Uses technology to deliver differentiated pathways, not just differentiated content",
+        "Collects learner data to inform personalisation decisions",
+        "Designs activities where students make genuine choices about their learning",
+        "Accommodates diverse learning needs through digital tool selection and activity design"
+      ],
+      "not_yet_met_criteria": [
+        "Designs the same experience for all students with occasional informal adaptations",
+        "Does not use technology for personalisation \u2014 applies differentiation through non-digital means only",
+        "Independent learning in their classroom means unstructured time rather than designed autonomy"
+      ],
+      "partial_indicators": [
+        "Offers a choice between two pre-designed versions of a task but does not use technology to personalise based on individual learner data",
+        "Creates tiered activities but delivers them uniformly rather than through adaptive or student-directed pathways"
+      ]
+    },
+    {
+      "indicator_id": "iste-e-des-2b",
+      "standard_id": "iste-e-des",
+      "standard": "Designer",
+      "indicator_letter": "b",
+      "indicator_source_text": "Educators design authentic learning activities that incorporate technology to advance student outcomes and develop opportunities for students to apply their knowledge.",
+      "met_criteria": [
+        "Designs activities with a real-world application or audience beyond the classroom",
+        "Technology serves the authentic purpose of the activity rather than being added on",
+        "Students apply \u2014 not just demonstrate \u2014 their knowledge in the activity",
+        "The authenticity of the activity is evident in the brief, not just the framing"
+      ],
+      "not_yet_met_criteria": [
+        "Learning activities are academic exercises with no real-world application dimension",
+        "Technology is used to deliver content or collect submissions, not to enable authentic tasks",
+        "Students accumulate knowledge without being asked to apply it in realistic contexts"
+      ],
+      "partial_indicators": [
+        "Describes an activity as authentic but the real-world connection is metaphorical rather than actual",
+        "Includes technology in an authentic task but it serves an administrative function rather than enabling the authentic dimension"
+      ]
+    },
+    {
+      "indicator_id": "iste-e-des-2c",
+      "standard_id": "iste-e-des",
+      "standard": "Designer",
+      "indicator_letter": "c",
+      "indicator_source_text": "Educators apply evidence-based instructional design principles to create innovative and equitable digital learning environments that support learning.",
+      "met_criteria": [
+        "Can identify the instructional design principles underpinning their digital learning environment choices",
+        "Makes design decisions based on cognitive load, retrieval, spacing, or other evidence-based principles",
+        "Ensures the digital learning environment is accessible and equitable",
+        "Reviews and revises the digital environment based on evidence about its effectiveness"
+      ],
+      "not_yet_met_criteria": [
+        "Designs digital learning environments based on what looks appealing or is easy to set up",
+        "Cannot explain the pedagogical logic behind their digital environment choices",
+        "Accessibility and equity are afterthoughts in design, not design criteria"
+      ],
+      "partial_indicators": [
+        "Applies some instructional design principles intuitively but cannot articulate them or use them systematically",
+        "Creates an accessible-by-default environment (captions, alt text) but does not apply evidence-based principles to the learning design itself"
+      ]
+    },
+    {
+      "indicator_id": "iste-e-fac-2a",
+      "standard_id": "iste-e-fac",
+      "standard": "Facilitator",
+      "indicator_letter": "a",
+      "indicator_source_text": "Educators foster a culture where students take ownership of their learning goals and outcomes in both independent and group settings.",
+      "met_criteria": [
+        "Students in their class regularly set their own learning goals (not just targets assigned by the teacher)",
+        "The digital learning environment is designed to support student self-regulation",
+        "Students can articulate what they are working toward and why",
+        "Ownership of learning is cultural \u2014 it applies across contexts, not just in designated 'choice' activities"
+      ],
+      "not_yet_met_criteria": [
+        "The educator sets all learning goals and students pursue them as directed",
+        "Students do not have a mechanism for setting or adjusting their own learning direction",
+        "The digital environment is structured entirely around teacher-directed activities"
+      ],
+      "partial_indicators": [
+        "Students choose from a menu of goals but do not construct their own",
+        "Ownership is framed in end-of-unit reflections rather than embedded in the ongoing learning process"
+      ]
+    },
+    {
+      "indicator_id": "iste-e-fac-2b",
+      "standard_id": "iste-e-fac",
+      "standard": "Facilitator",
+      "indicator_letter": "b",
+      "indicator_source_text": "Educators manage the use of technology and student learning strategies in digital platforms, virtual environments, hands-on makerspaces or in the field.",
+      "met_criteria": [
+        "Manages digital learning environments proactively to support learning, not just to administer access",
+        "Uses platform features and data to identify where learning is stalling or where intervention is needed",
+        "Sets up and manages physical or virtual makerspaces as structured learning environments",
+        "Adjusts the digital environment in response to how students are actually using it"
+      ],
+      "not_yet_met_criteria": [
+        "Digital platforms are used for submission and grade recording only",
+        "Does not manage the learning environment \u2014 students navigate it unguided",
+        "Does not use platform data to inform facilitation decisions"
+      ],
+      "partial_indicators": [
+        "Monitors student activity in digital environments but intervenes reactively rather than using data to proactively structure the learning experience",
+        "Manages access and logistics in digital environments but not the pedagogical design within them"
+      ]
+    },
+    {
+      "indicator_id": "iste-e-fac-2c",
+      "standard_id": "iste-e-fac",
+      "standard": "Facilitator",
+      "indicator_letter": "c",
+      "indicator_source_text": "Educators create learning opportunities that challenge students to use a design process and computational thinking to innovate and solve problems.",
+      "met_criteria": [
+        "Designs activities where students must decompose a problem, build a model, or develop an algorithmic solution",
+        "Computational thinking is embedded in subject learning, not taught as a standalone topic",
+        "Students use a design process \u2014 not just produce a designed output \u2014 in their learning",
+        "The connection between computational thinking and the subject context is made explicit"
+      ],
+      "not_yet_met_criteria": [
+        "Computational thinking is absent from learning design",
+        "Problem-solving in the classroom does not involve decomposition, abstraction, or algorithmic approaches",
+        "Design process is nominal \u2014 students produce a product without following a design methodology"
+      ],
+      "partial_indicators": [
+        "Labels an activity as 'computational thinking' but students are executing steps rather than developing reasoning",
+        "Incorporates a design process element in an isolated project but not as a regular learning approach"
+      ]
+    },
+    {
+      "indicator_id": "iste-e-fac-2d",
+      "standard_id": "iste-e-fac",
+      "standard": "Facilitator",
+      "indicator_letter": "d",
+      "indicator_source_text": "Educators model and nurture creativity and creative expression to communicate ideas, knowledge or connections.",
+      "met_criteria": [
+        "Creates regular opportunities for students to communicate learning through creative digital expression",
+        "Models creative risk-taking in how they present and communicate ideas",
+        "Treats creative expression as a legitimate form of knowledge demonstration",
+        "Nurtures creativity by valuing process and experimentation, not just polished outputs"
+      ],
+      "not_yet_met_criteria": [
+        "Creative outputs are optional extras, not core learning demonstrations",
+        "The educator presents information in a single format and does not model creative communication",
+        "Student creativity is constrained to highly specified templates"
+      ],
+      "partial_indicators": [
+        "Allows creative outputs but does not model creativity themselves or provide pedagogical scaffolding for the creative process",
+        "Values creative final products without nurturing the creative process or risk-taking"
+      ]
+    },
+    {
+      "indicator_id": "iste-e-ana-2a",
+      "standard_id": "iste-e-ana",
+      "standard": "Analyst",
+      "indicator_letter": "a",
+      "indicator_source_text": "Educators provide alternative ways for students to demonstrate competency and reflect on their learning using technology.",
+      "met_criteria": [
+        "Routinely offers multiple technology-mediated modes for students to demonstrate what they know",
+        "The alternative modes are genuinely equivalent \u2014 not easier versions",
+        "Students choose based on how they can best show their learning, not just preference",
+        "Reflects on whether alternative modes give a more accurate picture of student competency than traditional assessment"
+      ],
+      "not_yet_met_criteria": [
+        "Assessment is predominantly written and uniform",
+        "Alternatives are offered only as accommodations for students with diagnosed needs",
+        "Does not use technology to diversify modes of demonstration"
+      ],
+      "partial_indicators": [
+        "Offers a choice between written and oral assessment but both are administered in traditional formats rather than using technology to expand what can be demonstrated",
+        "Provides alternative formats but frames them as easier options rather than equivalent demonstrations"
+      ]
+    },
+    {
+      "indicator_id": "iste-e-ana-2b",
+      "standard_id": "iste-e-ana",
+      "standard": "Analyst",
+      "indicator_letter": "b",
+      "indicator_source_text": "Educators use technology to design and implement a variety of formative and summative assessments that accommodate learner needs, provide timely feedback to students and inform instruction.",
+      "met_criteria": [
+        "Uses technology to administer both formative checks and summative assessments",
+        "Feedback is returned through technology within a timeframe that allows students to act on it",
+        "Assessment design accommodates diverse learner needs",
+        "Summative assessment data is used to inform subsequent instruction, not just to grade"
+      ],
+      "not_yet_met_criteria": [
+        "Technology is used for grade recording but not to enhance assessment design or feedback delivery",
+        "Formative assessment is informal and feedback is delayed or generic",
+        "Assessment does not accommodate learner needs"
+      ],
+      "partial_indicators": [
+        "Uses a digital rubric to structure feedback but does not use technology to vary assessment formats or ensure timely return",
+        "Provides faster feedback using digital tools but the assessment design remains uniform and does not accommodate learner variability"
+      ]
+    },
+    {
+      "indicator_id": "iste-e-ana-2c",
+      "standard_id": "iste-e-ana",
+      "standard": "Analyst",
+      "indicator_letter": "c",
+      "indicator_source_text": "Educators use assessment data to guide progress, personalize learning, and communicate feedback to education stakeholders in support of students reaching their learning goals.",
+      "met_criteria": [
+        "Analyses assessment data at the class and individual level to identify patterns and gaps",
+        "Adjusts instructional plans based on data findings, not just overall impression",
+        "Uses data tools to share personalised progress updates with students and families",
+        "Assessment data feeds into a cycle of personalisation rather than just into a gradebook"
+      ],
+      "not_yet_met_criteria": [
+        "Assessment data is used for reporting only",
+        "Instruction does not change in response to assessment findings",
+        "Feedback to stakeholders is generic and not personalised to individual student learning goals"
+      ],
+      "partial_indicators": [
+        "Reviews class-level assessment data and re-teaches topics that many students struggled with, but does not personalise at the individual level or use digital tools to communicate personalised data to students or families",
+        "Uses data to inform grouping decisions but does not personalise learning pathways or communicate data-informed progress to stakeholders"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,397 @@
+{
+  "framework_id": "ailit",
+  "framework_name": "AI Literacy Framework (AILit)",
+  "file_type": "practitioner-language",
+  "research_basis": {
+    "generated_at": "2026-03-26",
+    "authoring_method": "Original synthesis using the user brief and the THE DMI implementation reference as the structural benchmark.",
+    "licence_handling": "CC BY-SA 4.0"
+  },
+  "object_count": 16,
+  "objects": [
+    {
+      "object_id": "ailit-fundamentals-novice",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-fundamentals",
+      "dimension_name": "AI Fundamentals",
+      "level_id": "ailit-fundamentals-novice",
+      "level_name": "Novice",
+      "plain_language_rewrite": "Novice means the person can notice relevant AI features and use basic guidance.",
+      "what_good_looks_like": [
+        "The person can show real examples of ai fundamentals in their own work.",
+        "The reasoning behind choices is visible, not just the final output.",
+        "The approach is repeatable enough to transfer beyond a single lucky attempt."
+      ],
+      "accurate_self_assessment_prompt": "What would you show someone to prove your current level in ai fundamentals without relying on self-confidence alone?",
+      "common_overclaim": "Taking one successful use case as proof of broad competence.",
+      "common_underclaim": "Discounting sound judgement because the person does not use advanced jargon.",
+      "vocabulary_cues": [
+        "criteria",
+        "fit",
+        "check",
+        "adapt",
+        "explain"
+      ]
+    },
+    {
+      "object_id": "ailit-fundamentals-intermediate",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-fundamentals",
+      "dimension_name": "AI Fundamentals",
+      "level_id": "ailit-fundamentals-intermediate",
+      "level_name": "Intermediate",
+      "plain_language_rewrite": "Intermediate means the person can use structured checks and explain routine decisions.",
+      "what_good_looks_like": [
+        "The person can show real examples of ai fundamentals in their own work.",
+        "The reasoning behind choices is visible, not just the final output.",
+        "The approach is repeatable enough to transfer beyond a single lucky attempt."
+      ],
+      "accurate_self_assessment_prompt": "What would you show someone to prove your current level in ai fundamentals without relying on self-confidence alone?",
+      "common_overclaim": "Taking one successful use case as proof of broad competence.",
+      "common_underclaim": "Discounting sound judgement because the person does not use advanced jargon.",
+      "vocabulary_cues": [
+        "criteria",
+        "fit",
+        "check",
+        "adapt",
+        "explain"
+      ]
+    },
+    {
+      "object_id": "ailit-fundamentals-advanced",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-fundamentals",
+      "dimension_name": "AI Fundamentals",
+      "level_id": "ailit-fundamentals-advanced",
+      "level_name": "Advanced",
+      "plain_language_rewrite": "Advanced means the person can adapt practice to context and critique trade-offs.",
+      "what_good_looks_like": [
+        "The person can show real examples of ai fundamentals in their own work.",
+        "The reasoning behind choices is visible, not just the final output.",
+        "The approach is repeatable enough to transfer beyond a single lucky attempt."
+      ],
+      "accurate_self_assessment_prompt": "What would you show someone to prove your current level in ai fundamentals without relying on self-confidence alone?",
+      "common_overclaim": "Taking one successful use case as proof of broad competence.",
+      "common_underclaim": "Discounting sound judgement because the person does not use advanced jargon.",
+      "vocabulary_cues": [
+        "criteria",
+        "fit",
+        "check",
+        "adapt",
+        "explain"
+      ]
+    },
+    {
+      "object_id": "ailit-fundamentals-expert",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-fundamentals",
+      "dimension_name": "AI Fundamentals",
+      "level_id": "ailit-fundamentals-expert",
+      "level_name": "Expert",
+      "plain_language_rewrite": "Expert means the person can influence others, shape practice, and steer improvement.",
+      "what_good_looks_like": [
+        "The person can show real examples of ai fundamentals in their own work.",
+        "The reasoning behind choices is visible, not just the final output.",
+        "The approach is repeatable enough to transfer beyond a single lucky attempt."
+      ],
+      "accurate_self_assessment_prompt": "What would you show someone to prove your current level in ai fundamentals without relying on self-confidence alone?",
+      "common_overclaim": "Taking one successful use case as proof of broad competence.",
+      "common_underclaim": "Discounting sound judgement because the person does not use advanced jargon.",
+      "vocabulary_cues": [
+        "mentor",
+        "shape",
+        "design",
+        "standards",
+        "anticipate"
+      ]
+    },
+    {
+      "object_id": "ailit-application-novice",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-application",
+      "dimension_name": "AI Application",
+      "level_id": "ailit-application-novice",
+      "level_name": "Novice",
+      "plain_language_rewrite": "Novice means the person can notice relevant AI features and use basic guidance.",
+      "what_good_looks_like": [
+        "The person can show real examples of ai application in their own work.",
+        "The reasoning behind choices is visible, not just the final output.",
+        "The approach is repeatable enough to transfer beyond a single lucky attempt."
+      ],
+      "accurate_self_assessment_prompt": "What would you show someone to prove your current level in ai application without relying on self-confidence alone?",
+      "common_overclaim": "Taking one successful use case as proof of broad competence.",
+      "common_underclaim": "Discounting sound judgement because the person does not use advanced jargon.",
+      "vocabulary_cues": [
+        "criteria",
+        "fit",
+        "check",
+        "adapt",
+        "explain"
+      ]
+    },
+    {
+      "object_id": "ailit-application-intermediate",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-application",
+      "dimension_name": "AI Application",
+      "level_id": "ailit-application-intermediate",
+      "level_name": "Intermediate",
+      "plain_language_rewrite": "Intermediate means the person can use structured checks and explain routine decisions.",
+      "what_good_looks_like": [
+        "The person can show real examples of ai application in their own work.",
+        "The reasoning behind choices is visible, not just the final output.",
+        "The approach is repeatable enough to transfer beyond a single lucky attempt."
+      ],
+      "accurate_self_assessment_prompt": "What would you show someone to prove your current level in ai application without relying on self-confidence alone?",
+      "common_overclaim": "Taking one successful use case as proof of broad competence.",
+      "common_underclaim": "Discounting sound judgement because the person does not use advanced jargon.",
+      "vocabulary_cues": [
+        "criteria",
+        "fit",
+        "check",
+        "adapt",
+        "explain"
+      ]
+    },
+    {
+      "object_id": "ailit-application-advanced",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-application",
+      "dimension_name": "AI Application",
+      "level_id": "ailit-application-advanced",
+      "level_name": "Advanced",
+      "plain_language_rewrite": "Advanced means the person can adapt practice to context and critique trade-offs.",
+      "what_good_looks_like": [
+        "The person can show real examples of ai application in their own work.",
+        "The reasoning behind choices is visible, not just the final output.",
+        "The approach is repeatable enough to transfer beyond a single lucky attempt."
+      ],
+      "accurate_self_assessment_prompt": "What would you show someone to prove your current level in ai application without relying on self-confidence alone?",
+      "common_overclaim": "Taking one successful use case as proof of broad competence.",
+      "common_underclaim": "Discounting sound judgement because the person does not use advanced jargon.",
+      "vocabulary_cues": [
+        "criteria",
+        "fit",
+        "check",
+        "adapt",
+        "explain"
+      ]
+    },
+    {
+      "object_id": "ailit-application-expert",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-application",
+      "dimension_name": "AI Application",
+      "level_id": "ailit-application-expert",
+      "level_name": "Expert",
+      "plain_language_rewrite": "Expert means the person can influence others, shape practice, and steer improvement.",
+      "what_good_looks_like": [
+        "The person can show real examples of ai application in their own work.",
+        "The reasoning behind choices is visible, not just the final output.",
+        "The approach is repeatable enough to transfer beyond a single lucky attempt."
+      ],
+      "accurate_self_assessment_prompt": "What would you show someone to prove your current level in ai application without relying on self-confidence alone?",
+      "common_overclaim": "Taking one successful use case as proof of broad competence.",
+      "common_underclaim": "Discounting sound judgement because the person does not use advanced jargon.",
+      "vocabulary_cues": [
+        "mentor",
+        "shape",
+        "design",
+        "standards",
+        "anticipate"
+      ]
+    },
+    {
+      "object_id": "ailit-ethics-novice",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-ethics",
+      "dimension_name": "AI Ethics & Society",
+      "level_id": "ailit-ethics-novice",
+      "level_name": "Novice",
+      "plain_language_rewrite": "Novice means the person can notice relevant AI features and use basic guidance.",
+      "what_good_looks_like": [
+        "The person can show real examples of ai ethics & society in their own work.",
+        "The reasoning behind choices is visible, not just the final output.",
+        "The approach is repeatable enough to transfer beyond a single lucky attempt."
+      ],
+      "accurate_self_assessment_prompt": "What would you show someone to prove your current level in ai ethics & society without relying on self-confidence alone?",
+      "common_overclaim": "Taking one successful use case as proof of broad competence.",
+      "common_underclaim": "Discounting sound judgement because the person does not use advanced jargon.",
+      "vocabulary_cues": [
+        "criteria",
+        "fit",
+        "check",
+        "adapt",
+        "explain"
+      ]
+    },
+    {
+      "object_id": "ailit-ethics-intermediate",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-ethics",
+      "dimension_name": "AI Ethics & Society",
+      "level_id": "ailit-ethics-intermediate",
+      "level_name": "Intermediate",
+      "plain_language_rewrite": "Intermediate means the person can use structured checks and explain routine decisions.",
+      "what_good_looks_like": [
+        "The person can show real examples of ai ethics & society in their own work.",
+        "The reasoning behind choices is visible, not just the final output.",
+        "The approach is repeatable enough to transfer beyond a single lucky attempt."
+      ],
+      "accurate_self_assessment_prompt": "What would you show someone to prove your current level in ai ethics & society without relying on self-confidence alone?",
+      "common_overclaim": "Taking one successful use case as proof of broad competence.",
+      "common_underclaim": "Discounting sound judgement because the person does not use advanced jargon.",
+      "vocabulary_cues": [
+        "criteria",
+        "fit",
+        "check",
+        "adapt",
+        "explain"
+      ]
+    },
+    {
+      "object_id": "ailit-ethics-advanced",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-ethics",
+      "dimension_name": "AI Ethics & Society",
+      "level_id": "ailit-ethics-advanced",
+      "level_name": "Advanced",
+      "plain_language_rewrite": "Advanced means the person can adapt practice to context and critique trade-offs.",
+      "what_good_looks_like": [
+        "The person can show real examples of ai ethics & society in their own work.",
+        "The reasoning behind choices is visible, not just the final output.",
+        "The approach is repeatable enough to transfer beyond a single lucky attempt."
+      ],
+      "accurate_self_assessment_prompt": "What would you show someone to prove your current level in ai ethics & society without relying on self-confidence alone?",
+      "common_overclaim": "Taking one successful use case as proof of broad competence.",
+      "common_underclaim": "Discounting sound judgement because the person does not use advanced jargon.",
+      "vocabulary_cues": [
+        "criteria",
+        "fit",
+        "check",
+        "adapt",
+        "explain"
+      ]
+    },
+    {
+      "object_id": "ailit-ethics-expert",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-ethics",
+      "dimension_name": "AI Ethics & Society",
+      "level_id": "ailit-ethics-expert",
+      "level_name": "Expert",
+      "plain_language_rewrite": "Expert means the person can influence others, shape practice, and steer improvement.",
+      "what_good_looks_like": [
+        "The person can show real examples of ai ethics & society in their own work.",
+        "The reasoning behind choices is visible, not just the final output.",
+        "The approach is repeatable enough to transfer beyond a single lucky attempt."
+      ],
+      "accurate_self_assessment_prompt": "What would you show someone to prove your current level in ai ethics & society without relying on self-confidence alone?",
+      "common_overclaim": "Taking one successful use case as proof of broad competence.",
+      "common_underclaim": "Discounting sound judgement because the person does not use advanced jargon.",
+      "vocabulary_cues": [
+        "mentor",
+        "shape",
+        "design",
+        "standards",
+        "anticipate"
+      ]
+    },
+    {
+      "object_id": "ailit-futures-novice",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-futures",
+      "dimension_name": "AI Futures",
+      "level_id": "ailit-futures-novice",
+      "level_name": "Novice",
+      "plain_language_rewrite": "Novice means the person can notice relevant AI features and use basic guidance.",
+      "what_good_looks_like": [
+        "The person can show real examples of ai futures in their own work.",
+        "The reasoning behind choices is visible, not just the final output.",
+        "The approach is repeatable enough to transfer beyond a single lucky attempt."
+      ],
+      "accurate_self_assessment_prompt": "What would you show someone to prove your current level in ai futures without relying on self-confidence alone?",
+      "common_overclaim": "Taking one successful use case as proof of broad competence.",
+      "common_underclaim": "Discounting sound judgement because the person does not use advanced jargon.",
+      "vocabulary_cues": [
+        "criteria",
+        "fit",
+        "check",
+        "adapt",
+        "explain"
+      ]
+    },
+    {
+      "object_id": "ailit-futures-intermediate",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-futures",
+      "dimension_name": "AI Futures",
+      "level_id": "ailit-futures-intermediate",
+      "level_name": "Intermediate",
+      "plain_language_rewrite": "Intermediate means the person can use structured checks and explain routine decisions.",
+      "what_good_looks_like": [
+        "The person can show real examples of ai futures in their own work.",
+        "The reasoning behind choices is visible, not just the final output.",
+        "The approach is repeatable enough to transfer beyond a single lucky attempt."
+      ],
+      "accurate_self_assessment_prompt": "What would you show someone to prove your current level in ai futures without relying on self-confidence alone?",
+      "common_overclaim": "Taking one successful use case as proof of broad competence.",
+      "common_underclaim": "Discounting sound judgement because the person does not use advanced jargon.",
+      "vocabulary_cues": [
+        "criteria",
+        "fit",
+        "check",
+        "adapt",
+        "explain"
+      ]
+    },
+    {
+      "object_id": "ailit-futures-advanced",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-futures",
+      "dimension_name": "AI Futures",
+      "level_id": "ailit-futures-advanced",
+      "level_name": "Advanced",
+      "plain_language_rewrite": "Advanced means the person can adapt practice to context and critique trade-offs.",
+      "what_good_looks_like": [
+        "The person can show real examples of ai futures in their own work.",
+        "The reasoning behind choices is visible, not just the final output.",
+        "The approach is repeatable enough to transfer beyond a single lucky attempt."
+      ],
+      "accurate_self_assessment_prompt": "What would you show someone to prove your current level in ai futures without relying on self-confidence alone?",
+      "common_overclaim": "Taking one successful use case as proof of broad competence.",
+      "common_underclaim": "Discounting sound judgement because the person does not use advanced jargon.",
+      "vocabulary_cues": [
+        "criteria",
+        "fit",
+        "check",
+        "adapt",
+        "explain"
+      ]
+    },
+    {
+      "object_id": "ailit-futures-expert",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-futures",
+      "dimension_name": "AI Futures",
+      "level_id": "ailit-futures-expert",
+      "level_name": "Expert",
+      "plain_language_rewrite": "Expert means the person can influence others, shape practice, and steer improvement.",
+      "what_good_looks_like": [
+        "The person can show real examples of ai futures in their own work.",
+        "The reasoning behind choices is visible, not just the final output.",
+        "The approach is repeatable enough to transfer beyond a single lucky attempt."
+      ],
+      "accurate_self_assessment_prompt": "What would you show someone to prove your current level in ai futures without relying on self-confidence alone?",
+      "common_overclaim": "Taking one successful use case as proof of broad competence.",
+      "common_underclaim": "Discounting sound judgement because the person does not use advanced jargon.",
+      "vocabulary_cues": [
+        "mentor",
+        "shape",
+        "design",
+        "standards",
+        "anticipate"
+      ]
+    }
+  ]
+}

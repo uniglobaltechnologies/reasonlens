@@ -1,0 +1,50 @@
+{
+  "_meta": {
+    "file": "persona-context-matrix.json",
+    "framework_id": "iste-coaches",
+    "framework_name": "ISTE Standards for Coaches v4.02",
+    "purpose": "Maps assessment context factors to persona-specific prompt variations, scenario filtering, and report tone. Used by the ReasonLens assessment engine to tailor the experience to each respondent's context.",
+    "generated_for": "ReasonLens"
+  },
+  "context_factors": {},
+  "persona_mappings": [
+    {
+      "persona_id": "iste-coaches-school",
+      "label": "School-Based Instructional Coach",
+      "match_criteria": {
+        "coaching_scope": [
+          "school-wide",
+          "department",
+          "individual"
+        ],
+        "institution_type": [
+          "primary",
+          "secondary",
+          "post-16"
+        ]
+      },
+      "scenario_tone": "Scenarios are set in school contexts with realistic staff dynamics \u2014 including resistant teachers, time pressure, and accountability environments.",
+      "report_tone": "Professional, practical, and coaching-aware. Use language coaches themselves use. Frame gaps as practice opportunities, not deficiencies.",
+      "context_hints": {
+        "coaching_scope": "School-wide coaches face culture and leadership challenges. Department coaches can use subject-specific contexts. Individual coaching brings relational nuance.",
+        "tech_expertise": "Higher tech expertise coaches may anchor too strongly in tool knowledge \u2014 nuisance responses can exploit this."
+      }
+    },
+    {
+      "persona_id": "iste-coaches-HE",
+      "label": "Higher Education Learning Technologist / Academic Developer",
+      "match_criteria": {
+        "institution_type": [
+          "university",
+          "HE",
+          "higher_education"
+        ]
+      },
+      "scenario_tone": "Scenarios use HE CPD, curriculum design, and learning technology contexts. Reference academic autonomy, department-level adoption, and student digital capability.",
+      "report_tone": "Collegiate and research-literate. Acknowledge the hybrid nature of coaching in HE contexts. Avoid secondary school framing.",
+      "context_hints": {
+        "coaching_scope": "HE coaches often operate project-by-project rather than in sustained coaching relationships \u2014 scenarios should reflect this."
+      }
+    }
+  ]
+}

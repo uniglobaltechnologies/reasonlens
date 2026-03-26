@@ -1,0 +1,934 @@
+[
+  {
+    "id": "pl-dc-1-1",
+    "competency_name": "Browsing, searching and filtering data, information and digital content",
+    "area": "Information and data literacy",
+    "plain_language_summary": "Finding reliable information online by knowing where to look, how to search effectively, and how to filter out noise and low-quality sources.",
+    "why_it_matters_in_he": "Academic work depends on locating authoritative evidence quickly. Poor search strategy wastes time and produces weaker arguments. AI-generated summaries have made it even harder to distinguish primary evidence from derivative content.",
+    "levels": {
+      "basic": {
+        "plain_description": "Uses standard search engines and follows given links. Knows that not all sources are equal but relies mainly on what appears first.",
+        "common_misread": "Assumes someone who can Google is already competent at this level.",
+        "example_in_he": "A first-year student searches Google Scholar for an essay topic and uses the first three results."
+      },
+      "intermediate": {
+        "plain_description": "Uses advanced search operators, discipline-specific databases, and filters by date or peer-review status. Can explain why one source is preferable to another.",
+        "common_misread": "Assumes database access equals search skill.",
+        "example_in_he": "A lecturer refines a literature search using Boolean operators in Scopus and filters by open access."
+      },
+      "advanced": {
+        "plain_description": "Designs systematic search strategies, documents search decisions, and critiques the limitations of any search approach. Evaluates AI-assisted search tools critically.",
+        "common_misread": "Confuses breadth of searching with depth of evaluation.",
+        "example_in_he": "A researcher constructs a reproducible search protocol for a systematic review, including search terms, databases, and exclusion criteria."
+      },
+      "highly_advanced": {
+        "plain_description": "Develops or evaluates new approaches to information discovery. Advises others on search methodology and contributes to institutional knowledge practices.",
+        "common_misread": "Conflates technical expertise with the ability to teach or lead others.",
+        "example_in_he": "An information specialist designs faculty-wide search skills training and evaluates AI tools for literature discovery."
+      }
+    },
+    "he_role_notes": {
+      "educator": "Needs to model good search practice and design assessments that reward source quality over source volume.",
+      "student": "Often overestimates their own competence here. Training in database searching has measurable impact on assessment quality.",
+      "professional_services": "Library and research support staff operate at advanced or highly advanced level; administrative staff often at basic.",
+      "researcher": "Systematic review methodology requires advanced level as a baseline."
+    },
+    "vocabulary_watch": [
+      "search engine vs database",
+      "grey literature",
+      "systematic vs narrative review",
+      "search string",
+      "citation chaining"
+    ],
+    "ai_framing": "AI search tools (Perplexity, Copilot, Elicit) change the workflow but not the need to evaluate sources critically. A basic user may trust AI summaries uncritically; an advanced user interrogates provenance."
+  },
+  {
+    "id": "pl-dc-1-2",
+    "competency_name": "Evaluating data, information and digital content",
+    "area": "Information and data literacy",
+    "plain_language_summary": "Judging whether information is trustworthy, accurate, current, and appropriate for a given purpose.",
+    "why_it_matters_in_he": "Academic integrity and research quality depend on rigorous source evaluation. The proliferation of AI-generated content has raised the stakes considerably.",
+    "levels": {
+      "basic": {
+        "plain_description": "Applies simple checklists (author, date, publisher) to evaluate sources. Recognises obviously unreliable content.",
+        "common_misread": "Assumes anyone who has heard of CRAAP or SIFT is operating at this level.",
+        "example_in_he": "A student checks whether a website has an author and a publication date before citing it."
+      },
+      "intermediate": {
+        "plain_description": "Triangulates across multiple sources, distinguishes primary from secondary evidence, and identifies bias or conflicts of interest.",
+        "common_misread": "Assumes volume of sources cited indicates quality of evaluation.",
+        "example_in_he": "A postgraduate student compares two conflicting meta-analyses and identifies methodological reasons for the discrepancy."
+      },
+      "advanced": {
+        "plain_description": "Systematically evaluates evidence quality using domain-specific standards. Critically appraises AI-generated content and statistical claims.",
+        "common_misread": "Confuses disciplinary expertise with transferable evaluation skill.",
+        "example_in_he": "A lecturer uses critical appraisal tools to assess RCT quality and teaches students to do the same."
+      },
+      "highly_advanced": {
+        "plain_description": "Develops evaluation frameworks or tools for institutional or disciplinary use. Leads training in critical evaluation for staff and students.",
+        "common_misread": "Assumes senior academics automatically operate here.",
+        "example_in_he": "A digital literacy lead develops an AI content verification protocol adopted across a faculty."
+      }
+    },
+    "he_role_notes": {
+      "educator": "Evaluation competence should be made explicit in module design rather than assumed.",
+      "student": "Lateral reading and fact-checking habits are teachable and have strong assessment impact.",
+      "professional_services": "Communications and marketing staff especially need intermediate-level evaluation skills for external content.",
+      "researcher": "Advanced evaluation is a professional baseline; highly advanced may involve contributing to methodology literature."
+    },
+    "vocabulary_watch": [
+      "primary vs secondary source",
+      "peer review",
+      "preprint",
+      "lateral reading",
+      "confirmation bias",
+      "provenance"
+    ],
+    "ai_framing": "AI can generate convincing but inaccurate content. Evaluating AI output requires the same rigour as evaluating any other source, plus awareness of hallucination and training data bias."
+  },
+  {
+    "id": "pl-dc-1-3",
+    "competency_name": "Managing data, information and digital content",
+    "area": "Information and data literacy",
+    "plain_language_summary": "Organising, storing, protecting, and sharing digital files and data in ways that support retrieval, collaboration, and long-term use.",
+    "why_it_matters_in_he": "Research reproducibility, GDPR compliance, and collaborative working all depend on sound data management. Poor practice leads to lost work, security incidents, and failed audits.",
+    "levels": {
+      "basic": {
+        "plain_description": "Saves files in named folders and uses basic cloud storage. Understands why backing up matters.",
+        "common_misread": "Assumes anyone using OneDrive or Google Drive is managing data well.",
+        "example_in_he": "A student saves lecture notes in a folder structure by module and syncs to cloud storage."
+      },
+      "intermediate": {
+        "plain_description": "Uses consistent naming conventions, version control, and access permissions. Understands basic data retention rules.",
+        "common_misread": "Confuses storage capacity with data management maturity.",
+        "example_in_he": "A professional services administrator applies a file naming protocol across a shared team drive and sets appropriate sharing permissions."
+      },
+      "advanced": {
+        "plain_description": "Implements a data management plan, applies FAIR principles, and manages research data across its full lifecycle including archiving and disposal.",
+        "common_misread": "Assumes DMP completion equals genuine data management competence.",
+        "example_in_he": "A researcher deposits data in an institutional repository with appropriate metadata and licencing for open access compliance."
+      },
+      "highly_advanced": {
+        "plain_description": "Designs data management infrastructure or policy at institutional or disciplinary level. Advises on standards and leads community practice.",
+        "common_misread": "Conflates technical systems knowledge with governance expertise.",
+        "example_in_he": "A research data manager develops an institution-wide data management policy aligned to funder requirements and GDPR."
+      }
+    },
+    "he_role_notes": {
+      "educator": "Needs to model good practice and brief students on requirements at the start of research projects.",
+      "student": "Often unaware of institutional expectations; direct instruction at onboarding is effective.",
+      "professional_services": "Research support and administrative staff often need intermediate level as a job requirement.",
+      "researcher": "Advanced level is expected for funded research; highly advanced for those designing data infrastructure."
+    },
+    "vocabulary_watch": [
+      "FAIR principles",
+      "data management plan",
+      "retention schedule",
+      "metadata",
+      "repository",
+      "versioning"
+    ],
+    "ai_framing": "AI tools that process or store data (e.g. prompting with personal or research data) raise new data management questions around consent, retention, and ownership."
+  },
+  {
+    "id": "pl-dc-2-1",
+    "competency_name": "Interacting through digital technologies",
+    "area": "Communication and collaboration",
+    "plain_language_summary": "Using digital tools to communicate with others appropriately, choosing the right channel for the right purpose and audience.",
+    "why_it_matters_in_he": "Students, staff, and researchers work across multiple platforms (email, Teams, VLEs, social media). Choosing the wrong channel or tone has real professional consequences.",
+    "levels": {
+      "basic": {
+        "plain_description": "Uses email and common messaging tools. Aware that different tools have different purposes.",
+        "common_misread": "Assumes digital natives are automatically competent communicators online.",
+        "example_in_he": "A student emails their tutor to request an extension using an appropriate subject line and professional tone."
+      },
+      "intermediate": {
+        "plain_description": "Adapts communication style and channel to context and audience. Uses collaborative platforms (Teams, Slack, VLE discussion boards) effectively.",
+        "common_misread": "Conflates frequency of use with quality of communication.",
+        "example_in_he": "A lecturer coordinates a group project using a structured Teams channel with clear conventions for different types of communication."
+      },
+      "advanced": {
+        "plain_description": "Manages complex multi-stakeholder communications across multiple platforms. Designs communication frameworks for teams or cohorts.",
+        "common_misread": "Assumes project management experience equals communication design skill.",
+        "example_in_he": "A programme director designs a communication plan for a new curriculum, specifying channels, audiences, and frequency."
+      },
+      "highly_advanced": {
+        "plain_description": "Develops institutional standards or tools for digital communication. Leads communities of practice around digital engagement.",
+        "common_misread": "Conflates seniority with communication design expertise.",
+        "example_in_he": "A digital communications lead develops institutional guidelines for staff use of professional social media."
+      }
+    },
+    "he_role_notes": {
+      "educator": "Models professional digital communication and sets expectations explicitly for student interactions.",
+      "student": "May need explicit guidance on professional tone in academic contexts; peer norms often differ from institutional expectations.",
+      "professional_services": "Often the primary interface between institution and external stakeholders; intermediate level is a baseline.",
+      "researcher": "Increasingly expected to communicate research through public-facing digital channels."
+    },
+    "vocabulary_watch": [
+      "asynchronous vs synchronous",
+      "netiquette",
+      "channel appropriateness",
+      "digital footprint",
+      "audience awareness"
+    ],
+    "ai_framing": "AI writing tools can assist with drafting communications but may homogenise tone or miss contextual nuance. Critical review of AI-drafted messages is part of intermediate-level competence."
+  },
+  {
+    "id": "pl-dc-2-2",
+    "competency_name": "Sharing through digital technologies",
+    "area": "Communication and collaboration",
+    "plain_language_summary": "Sharing files, data, and knowledge with others through digital means while respecting copyright, privacy, and access rights.",
+    "why_it_matters_in_he": "Open access, research dissemination, and collaborative working all require confident, ethical sharing practices. Sharing personal or restricted data carelessly causes real harm.",
+    "levels": {
+      "basic": {
+        "plain_description": "Can share files and links. Understands that some content cannot be freely shared.",
+        "common_misread": "Assumes willingness to share equals competence in sharing appropriately.",
+        "example_in_he": "A student shares a group project document via a VLE submission link rather than a personal email attachment."
+      },
+      "intermediate": {
+        "plain_description": "Applies appropriate licences and access settings. Understands Creative Commons and basic copyright. Shares responsibly in professional contexts.",
+        "common_misread": "Confuses open access with absence of attribution requirements.",
+        "example_in_he": "A lecturer shares lecture recordings with their cohort using time-limited access links and removes them after the module ends."
+      },
+      "advanced": {
+        "plain_description": "Designs sharing workflows for teams or projects. Applies open licencing strategically and advises others on intellectual property.",
+        "common_misread": "Assumes knowledge of licencing types equals ability to apply them correctly in context.",
+        "example_in_he": "A researcher publishes a dataset under a CC BY licence and documents provenance and access conditions for reuse."
+      },
+      "highly_advanced": {
+        "plain_description": "Develops institutional sharing policy or open access infrastructure. Leads practice across departments or disciplines.",
+        "common_misread": "Conflates policy authorship with operational competence.",
+        "example_in_he": "A scholarly communications librarian develops a university-wide open access policy and supports compliance across faculties."
+      }
+    },
+    "he_role_notes": {
+      "educator": "Needs to model appropriate sharing of learning materials and discuss intellectual property with students.",
+      "student": "Often unclear about what they can legally share; explicit guidance at module level is effective.",
+      "professional_services": "Communications and IT staff often manage sharing infrastructure.",
+      "researcher": "Open access mandates from funders make advanced sharing competence increasingly non-optional."
+    },
+    "vocabulary_watch": [
+      "Creative Commons",
+      "open access",
+      "embargo",
+      "data sharing agreement",
+      "GDPR",
+      "licencing"
+    ],
+    "ai_framing": "Sharing prompts or outputs from AI tools raises questions about ownership and attribution that are not yet fully resolved in HE policy."
+  },
+  {
+    "id": "pl-dc-2-3",
+    "competency_name": "Engaging in citizenship through digital technologies",
+    "area": "Communication and collaboration",
+    "plain_language_summary": "Participating in digital public life responsibly, contributing to online communities, and understanding how digital engagement shapes civic outcomes.",
+    "why_it_matters_in_he": "Universities are civic institutions. Staff and students represent them online. Digital civic engagement also connects to research impact, public engagement, and student employability.",
+    "levels": {
+      "basic": {
+        "plain_description": "Participates in online communities. Aware that online behaviour has real consequences.",
+        "common_misread": "Assumes social media usage equals civic digital competence.",
+        "example_in_he": "A student participates in a module discussion board and understands the code of conduct that applies."
+      },
+      "intermediate": {
+        "plain_description": "Engages constructively in digital civic spaces. Understands how algorithms shape what content is visible and why this matters.",
+        "common_misread": "Confuses online activism with civic competence.",
+        "example_in_he": "A lecturer contributes to a professional network discussion with evidence-based arguments and cites sources."
+      },
+      "advanced": {
+        "plain_description": "Uses digital platforms strategically for public engagement or advocacy. Critically analyses the role of digital technologies in democratic processes.",
+        "common_misread": "Assumes public engagement experience equals advanced competence.",
+        "example_in_he": "A researcher uses social media to disseminate findings to non-specialist audiences and engages with responses critically."
+      },
+      "highly_advanced": {
+        "plain_description": "Leads digital civic initiatives or contributes to policy on digital participation. Develops frameworks for responsible digital engagement in institutional or public contexts.",
+        "common_misread": "Conflates institutional seniority with civic digital leadership.",
+        "example_in_he": "A digital strategy lead develops guidance on university social media engagement during public debates, balancing academic freedom and institutional reputation."
+      }
+    },
+    "he_role_notes": {
+      "educator": "Academic freedom intersects with civic digital engagement; clear institutional guidance helps staff navigate this.",
+      "student": "Student union and representation activities often provide civic digital engagement contexts.",
+      "professional_services": "External communications roles carry highest exposure; clear escalation protocols matter.",
+      "researcher": "Public engagement outputs increasingly assessed in REF impact cases."
+    },
+    "vocabulary_watch": [
+      "digital citizenship",
+      "filter bubble",
+      "algorithmic curation",
+      "public engagement",
+      "academic freedom",
+      "moderation"
+    ],
+    "ai_framing": "AI-generated content in civic spaces (deepfakes, synthetic media, AI personas) is an emerging threat to informed participation that HE professionals should understand and be able to explain."
+  },
+  {
+    "id": "pl-dc-2-4",
+    "competency_name": "Collaborating through digital technologies",
+    "area": "Communication and collaboration",
+    "plain_language_summary": "Working effectively with others using digital tools, from co-authoring documents to managing shared projects across teams and time zones.",
+    "why_it_matters_in_he": "Research, curriculum development, and professional services all involve collaborative digital work. Ineffective digital collaboration wastes time and produces weaker outputs.",
+    "levels": {
+      "basic": {
+        "plain_description": "Can share and edit documents with others. Uses basic collaboration features in common tools.",
+        "common_misread": "Assumes simultaneous document access equals effective collaboration.",
+        "example_in_he": "A student contributes to a shared Google Doc for a group presentation."
+      },
+      "intermediate": {
+        "plain_description": "Uses collaborative platforms (Teams, SharePoint, Miro) effectively. Establishes shared conventions and contributes to productive group workflows.",
+        "common_misread": "Confuses tool access with collaboration competence.",
+        "example_in_he": "A project team uses a shared task board, agreed naming conventions, and asynchronous review comments to co-author a report."
+      },
+      "advanced": {
+        "plain_description": "Designs and manages collaborative digital workflows for complex projects. Supports others in using collaborative tools effectively.",
+        "common_misread": "Assumes project management certification implies digital collaboration expertise.",
+        "example_in_he": "A research PI sets up a collaborative workspace for a multi-institution project with defined roles, version control, and documentation standards."
+      },
+      "highly_advanced": {
+        "plain_description": "Develops institutional frameworks or tools for digital collaboration. Leads cross-organisational collaboration initiatives.",
+        "common_misread": "Conflates platform administration with strategic collaboration leadership.",
+        "example_in_he": "A digital workplace lead designs a university-wide collaboration framework that integrates Microsoft 365, VLE, and research platforms."
+      }
+    },
+    "he_role_notes": {
+      "educator": "Group assessment design should account for varied student collaboration competence rather than assuming it.",
+      "student": "Asynchronous collaboration skills are underdeveloped in many students; they benefit from explicit scaffolding.",
+      "professional_services": "Cross-department projects require intermediate-level collaboration competence as a baseline.",
+      "researcher": "International and interdisciplinary research increasingly depends on advanced collaboration tool competence."
+    },
+    "vocabulary_watch": [
+      "asynchronous collaboration",
+      "version history",
+      "co-authoring",
+      "access permissions",
+      "workflow",
+      "digital workspace"
+    ],
+    "ai_framing": "AI co-pilots embedded in collaboration tools (Copilot in Teams/Word) change workflows. Understanding what AI is doing to shared documents -- summarising, drafting, suggesting -- is part of advanced collaboration competence."
+  },
+  {
+    "id": "pl-dc-2-5",
+    "competency_name": "Netiquette",
+    "area": "Communication and collaboration",
+    "plain_language_summary": "Understanding and applying appropriate behavioural norms in online environments, including being respectful, professional, and aware of the impact of digital communication.",
+    "why_it_matters_in_he": "Online incivility in HE damages learning environments, erodes trust, and can have disciplinary consequences. As more teaching and professional interaction moves online, netiquette matters more.",
+    "levels": {
+      "basic": {
+        "plain_description": "Behaves respectfully online and understands basic rules of digital etiquette.",
+        "common_misread": "Assumes rule-following equals genuine understanding of impact.",
+        "example_in_he": "A student reads and complies with the VLE discussion board guidelines."
+      },
+      "intermediate": {
+        "plain_description": "Adapts tone and register across different digital contexts. Recognises and responds constructively to poor netiquette by others.",
+        "common_misread": "Confuses politeness with genuine netiquette competence.",
+        "example_in_he": "A tutor models constructive online feedback in a discussion thread and redirects an off-topic or heated exchange."
+      },
+      "advanced": {
+        "plain_description": "Designs online learning or professional environments with netiquette expectations built in. Supports others in developing their practice.",
+        "common_misread": "Assumes good personal practice transfers automatically to designing environments for others.",
+        "example_in_he": "A module lead co-designs community agreements with students at the start of an online module and addresses breaches constructively."
+      },
+      "highly_advanced": {
+        "plain_description": "Develops institutional netiquette policy or training. Leads culture change around digital communication norms.",
+        "common_misread": "Conflates policy drafting with genuine cultural influence.",
+        "example_in_he": "An EDI lead develops training on inclusive online communication for all staff and embeds it in induction."
+      }
+    },
+    "he_role_notes": {
+      "educator": "Explicit norm-setting at module start reduces later problems; reactive moderation alone is insufficient.",
+      "student": "Students often carry consumer-internet norms into academic spaces; explicit induction content helps.",
+      "professional_services": "External-facing roles require clear guidance on professional digital communication standards.",
+      "researcher": "Online academic debate (social media, blogs, pre-print commenting) requires both competence and institutional guidance."
+    },
+    "vocabulary_watch": [
+      "code of conduct",
+      "digital tone",
+      "microaggression",
+      "moderation",
+      "inclusive communication",
+      "professional register"
+    ],
+    "ai_framing": "AI-generated communications can lack appropriate context or sensitivity. Users who deploy AI-drafted messages without critical review may inadvertently violate netiquette norms."
+  },
+  {
+    "id": "pl-dc-2-6",
+    "competency_name": "Managing digital identity",
+    "area": "Communication and collaboration",
+    "plain_language_summary": "Consciously shaping and managing your online presence and reputation across different digital platforms and professional contexts.",
+    "why_it_matters_in_he": "Staff, students, and researchers all have digital footprints that affect professional opportunities. Unmanaged digital identities create risk; well-managed ones create advantage.",
+    "levels": {
+      "basic": {
+        "plain_description": "Aware of having a digital presence and that others can search for it.",
+        "common_misread": "Assumes having a LinkedIn profile equals managing digital identity.",
+        "example_in_he": "A student sets their social media accounts to private before applying for graduate roles."
+      },
+      "intermediate": {
+        "plain_description": "Actively curates professional digital presence. Manages privacy settings strategically and is consistent across platforms.",
+        "common_misread": "Confuses a polished profile with a managed identity strategy.",
+        "example_in_he": "A postgraduate student maintains an academic profile (ORCID, institutional page) that accurately represents their work."
+      },
+      "advanced": {
+        "plain_description": "Builds and maintains a coherent professional digital identity strategy. Advises others on managing their online presence in professional contexts.",
+        "common_misread": "Assumes high follower counts or engagement metrics indicate advanced identity management.",
+        "example_in_he": "A lecturer develops a public-facing academic profile including a research blog, social media, and institutional page, with a consistent narrative across platforms."
+      },
+      "highly_advanced": {
+        "plain_description": "Develops institutional frameworks or guidance for digital identity management. Leads training for staff and students.",
+        "common_misread": "Conflates personal competence with the ability to design programmes for others.",
+        "example_in_he": "A careers service lead develops a digital identity curriculum embedded in all undergraduate programmes."
+      }
+    },
+    "he_role_notes": {
+      "educator": "Academic identity online (ORCID, ResearchGate, institutional page) affects research visibility and citation.",
+      "student": "Digital identity management is a graduate employability skill that benefits from early, explicit development.",
+      "professional_services": "External-facing roles require especially careful management of the boundary between personal and professional identity.",
+      "researcher": "Open research and public engagement expectations are increasing the professional importance of a managed online research identity."
+    },
+    "vocabulary_watch": [
+      "ORCID",
+      "digital footprint",
+      "personal brand",
+      "privacy settings",
+      "professional presence",
+      "researcher visibility"
+    ],
+    "ai_framing": "AI-generated content attributed to a person (e.g. AI-assisted blog posts, auto-generated bios) raises questions of authenticity and attribution in professional digital identity contexts."
+  },
+  {
+    "id": "pl-dc-3-1",
+    "competency_name": "Developing digital content",
+    "area": "Digital content creation",
+    "plain_language_summary": "Creating digital materials -- documents, presentations, images, video, audio -- that are fit for purpose, accessible, and well-designed.",
+    "why_it_matters_in_he": "Teaching materials, research outputs, and professional communications all involve creating digital content. Poor content creation competence produces materials that are hard to use, inaccessible, or unconvincing.",
+    "levels": {
+      "basic": {
+        "plain_description": "Creates basic documents and presentations using common tools. Content is functional but may lack structure or accessibility.",
+        "common_misread": "Assumes anyone who can open Word or PowerPoint operates at this level.",
+        "example_in_he": "A student submits an essay in Word with headings and a reference list."
+      },
+      "intermediate": {
+        "plain_description": "Creates structured, accessible, and purposeful digital content across multiple formats. Uses templates and style guides appropriately.",
+        "common_misread": "Confuses aesthetic polish with accessibility or purpose-fitness.",
+        "example_in_he": "A lecturer creates a structured VLE page with accessible headings, alt-text on images, and clear navigation."
+      },
+      "advanced": {
+        "plain_description": "Designs content for diverse audiences and platforms. Applies accessibility standards, branding guidelines, and instructional design principles.",
+        "common_misread": "Assumes content creation tool expertise equals design competence.",
+        "example_in_he": "An educational developer designs an online module using WCAG accessibility guidelines, inclusive design principles, and multimedia learning theory."
+      },
+      "highly_advanced": {
+        "plain_description": "Leads institutional content creation standards or develops training for others. Innovates in content formats or production approaches.",
+        "common_misread": "Conflates creative output with the ability to establish institutional standards.",
+        "example_in_he": "A digital learning lead develops an institution-wide content creation policy, including accessibility standards, branding, and quality assurance processes."
+      }
+    },
+    "he_role_notes": {
+      "educator": "Teaching content quality has direct impact on student experience and learning outcomes. Accessibility is a legal obligation.",
+      "student": "Multimodal content creation is an employability skill increasingly expected across disciplines.",
+      "professional_services": "Communications staff operate at advanced level; general administrative staff at basic/intermediate.",
+      "researcher": "Open research and public engagement outputs require content creation competence beyond traditional academic writing."
+    },
+    "vocabulary_watch": [
+      "accessibility",
+      "WCAG",
+      "alt text",
+      "multimodal",
+      "template",
+      "style guide",
+      "instructional design"
+    ],
+    "ai_framing": "Generative AI significantly changes content creation workflows. Using AI tools effectively -- prompting, reviewing, editing -- is now part of intermediate-level content creation competence."
+  },
+  {
+    "id": "pl-dc-3-2",
+    "competency_name": "Integrating and re-elaborating digital content",
+    "area": "Digital content creation",
+    "plain_language_summary": "Combining, adapting, and transforming existing digital content to create something new, while respecting intellectual property rights.",
+    "why_it_matters_in_he": "Research synthesis, curriculum design, and many professional tasks involve remixing and repurposing content. Doing this without understanding IPR creates legal and reputational risk.",
+    "levels": {
+      "basic": {
+        "plain_description": "Can combine content from different sources. Aware that repurposing others' work requires permission or attribution.",
+        "common_misread": "Assumes copy-paste with attribution equals legitimate content integration.",
+        "example_in_he": "A student incorporates a Creative Commons image into a presentation and provides attribution."
+      },
+      "intermediate": {
+        "plain_description": "Adapts and transforms content from multiple sources into coherent outputs. Applies relevant licences and fair dealing provisions correctly.",
+        "common_misread": "Confuses transformative use with any modification of original content.",
+        "example_in_he": "A lecturer adapts OER materials from multiple sources into a cohesive learning resource and documents the licences applied."
+      },
+      "advanced": {
+        "plain_description": "Designs workflows for content integration at scale. Advises on intellectual property in complex cases including AI-generated content.",
+        "common_misread": "Assumes legal knowledge is required for advanced competence in this area.",
+        "example_in_he": "A curriculum designer builds a process for sourcing, adapting, and licencing OER content across a programme redesign."
+      },
+      "highly_advanced": {
+        "plain_description": "Develops institutional policy on content repurposing and IP. Contributes to sector-level guidance on emerging issues including AI-generated content.",
+        "common_misread": "Conflates legal expertise with digital content integration competence.",
+        "example_in_he": "A scholarly communications expert contributes to sector guidance on the intellectual property status of AI-generated academic outputs."
+      }
+    },
+    "he_role_notes": {
+      "educator": "OER adoption and remixing is central to sustainable curriculum design; competence here reduces time and cost.",
+      "student": "Understanding transformative use and plagiarism boundaries is increasingly important as AI tools change writing practices.",
+      "professional_services": "Marketing and communications staff regularly repurpose content and need intermediate-level IP understanding.",
+      "researcher": "Data and content derived from AI tools sit in an evolving IP landscape that requires active navigation."
+    },
+    "vocabulary_watch": [
+      "OER",
+      "remix",
+      "fair dealing",
+      "derivative work",
+      "transformative use",
+      "Creative Commons",
+      "IP"
+    ],
+    "ai_framing": "AI-generated content has uncertain IP status in most jurisdictions. Understanding the provenance of AI output -- including training data -- is part of advanced competence in this area."
+  },
+  {
+    "id": "pl-dc-3-3",
+    "competency_name": "Copyright and licences",
+    "area": "Digital content creation",
+    "plain_language_summary": "Understanding how copyright and licencing work in digital contexts, including when and how you can use, share, and adapt others' work.",
+    "why_it_matters_in_he": "Copyright infringement creates legal and reputational risk for individuals and institutions. Open licencing supports research impact and educational reach.",
+    "levels": {
+      "basic": {
+        "plain_description": "Knows that copyright exists and that not all digital content is free to use.",
+        "common_misread": "Assumes finding something online means it is free to use.",
+        "example_in_he": "A student uses only images labelled for reuse in a presentation."
+      },
+      "intermediate": {
+        "plain_description": "Applies Creative Commons licences and understands fair dealing exceptions. Correctly attributes content from different licence types.",
+        "common_misread": "Confuses attribution with permission.",
+        "example_in_he": "A lecturer checks the licence on journal articles before uploading to a VLE and uses the library's digital resource system for restricted content."
+      },
+      "advanced": {
+        "plain_description": "Advises on copyright in complex cases. Designs licencing strategies for institutional or research outputs. Understands the implications of AI training data.",
+        "common_misread": "Assumes legal training is needed for advanced competence.",
+        "example_in_he": "A research lead selects appropriate open licences for a project's outputs and advises team members on third-party rights clearance."
+      },
+      "highly_advanced": {
+        "plain_description": "Develops institutional IP or copyright policy. Contributes to sector or policy-level discussions on copyright in digital and AI contexts.",
+        "common_misread": "Conflates policy authorship with strategic IP competence.",
+        "example_in_he": "A legal and compliance officer develops institutional guidance on copyright in AI-assisted research and teaching."
+      }
+    },
+    "he_role_notes": {
+      "educator": "Copyright compliance in learning materials is both a legal obligation and a professional responsibility.",
+      "student": "Confusion about copyright is common; targeted, contextual guidance at point of need is more effective than standalone training.",
+      "professional_services": "Procurement, communications, and IT staff each face distinct copyright questions.",
+      "researcher": "Open access mandates require active engagement with licencing choices."
+    },
+    "vocabulary_watch": [
+      "copyright",
+      "Creative Commons",
+      "public domain",
+      "fair dealing",
+      "open access",
+      "moral rights",
+      "licence"
+    ],
+    "ai_framing": "AI systems trained on copyrighted content, and the outputs they produce, sit in contested legal territory. HE professionals need awareness of this even if they cannot resolve the legal questions themselves."
+  },
+  {
+    "id": "pl-dc-3-4",
+    "competency_name": "Programming",
+    "area": "Digital content creation",
+    "plain_language_summary": "Writing, understanding, and adapting code and computational logic to automate tasks, analyse data, or build digital tools.",
+    "why_it_matters_in_he": "Data-driven research, learning analytics, and digital innovation increasingly require coding skills. Even non-programmers benefit from understanding what code does and how to work with those who write it.",
+    "levels": {
+      "basic": {
+        "plain_description": "Has a conceptual understanding of what programming is and can run or adapt simple scripts with guidance.",
+        "common_misread": "Assumes anyone who has run a Python notebook is a programmer.",
+        "example_in_he": "A social science student runs a provided R script to generate summary statistics from survey data."
+      },
+      "intermediate": {
+        "plain_description": "Writes functional code in at least one language to solve defined problems. Can read and adapt others' code and uses version control.",
+        "common_misread": "Confuses completing online courses with working programming competence.",
+        "example_in_he": "A researcher writes Python scripts to clean and merge datasets and stores code in a Git repository."
+      },
+      "advanced": {
+        "plain_description": "Writes well-structured, documented, reusable code. Designs software solutions for research or professional tasks. Reviews and improves others' code.",
+        "common_misread": "Assumes experience in one language equals advanced competence broadly.",
+        "example_in_he": "A data scientist develops a reusable analysis pipeline with tests and documentation, shared as an open-source library."
+      },
+      "highly_advanced": {
+        "plain_description": "Leads software development initiatives or computational research programmes. Contributes to standards or tools used by the broader community.",
+        "common_misread": "Conflates technical expertise with the ability to lead or teach others.",
+        "example_in_he": "A research software engineer leads an RSE team, designs architecture for a university-wide data platform, and contributes to national HPC software projects."
+      }
+    },
+    "he_role_notes": {
+      "educator": "Computational thinking is increasingly a graduate attribute across disciplines; educators need sufficient understanding to support students even without full programming competence.",
+      "student": "Basic data literacy and scripting skills are increasingly expected in research-active disciplines.",
+      "professional_services": "Data, analytics, and systems roles require intermediate-to-advanced programming competence.",
+      "researcher": "Research reproducibility and open science norms are raising the expected baseline for coding in research."
+    },
+    "vocabulary_watch": [
+      "algorithm",
+      "script",
+      "version control",
+      "open source",
+      "API",
+      "computational thinking",
+      "debugging"
+    ],
+    "ai_framing": "AI coding assistants (Copilot, Cursor, Claude) fundamentally change how code is written. Using them effectively -- understanding output, debugging, maintaining code quality -- is now part of intermediate programming competence."
+  },
+  {
+    "id": "pl-dc-4-1",
+    "competency_name": "Protecting devices",
+    "area": "Safety",
+    "plain_language_summary": "Keeping your digital devices secure through good hygiene practices like updates, passwords, and antivirus protection.",
+    "why_it_matters_in_he": "Device compromise is a major route for data breaches, ransomware, and credential theft. Individual device hygiene is a critical layer of institutional security.",
+    "levels": {
+      "basic": {
+        "plain_description": "Keeps devices updated, uses a password, and avoids obviously risky behaviour.",
+        "common_misread": "Assumes owning a university-managed device means personal security competence.",
+        "example_in_he": "A student enables automatic updates and uses a strong unique password on their personal laptop."
+      },
+      "intermediate": {
+        "plain_description": "Uses MFA, understands VPN, encrypts sensitive data, and manages device risk across personal and work devices.",
+        "common_misread": "Confuses following IT policy with actively managing device security.",
+        "example_in_he": "A staff member uses MFA on all work accounts, connects via VPN when working remotely, and encrypts a USB drive containing student data."
+      },
+      "advanced": {
+        "plain_description": "Advises others on device security. Identifies and responds to security incidents. Understands device threat models in specific HE contexts.",
+        "common_misread": "Assumes IT support experience equals security competence.",
+        "example_in_he": "An IT administrator conducts a device security audit, identifies non-compliant endpoints, and implements a remediation plan."
+      },
+      "highly_advanced": {
+        "plain_description": "Designs institutional device security policy and infrastructure. Leads security incident response.",
+        "common_misread": "Conflates technical depth with strategic security leadership.",
+        "example_in_he": "A CISO develops an endpoint security strategy aligned to Cyber Essentials Plus and GDPR requirements."
+      }
+    },
+    "he_role_notes": {
+      "educator": "Often work across personal and institutional devices; clear policy and support for this context matters.",
+      "student": "Personal device security is often low; targeted guidance at enrolment and for research students handling sensitive data is effective.",
+      "professional_services": "Data-handling roles require at minimum intermediate device security competence.",
+      "researcher": "Fieldwork and international travel create specific device security risks that require targeted guidance."
+    },
+    "vocabulary_watch": [
+      "MFA",
+      "encryption",
+      "VPN",
+      "endpoint",
+      "patch",
+      "Cyber Essentials",
+      "threat model"
+    ],
+    "ai_framing": "AI assistant apps may request device permissions or access to files. Understanding what access is being granted and to whom is part of intermediate device security competence."
+  },
+  {
+    "id": "pl-dc-4-2",
+    "competency_name": "Protecting personal data and privacy",
+    "area": "Safety",
+    "plain_language_summary": "Understanding how personal data is collected, used, and shared online, and taking steps to protect your own and others' privacy.",
+    "why_it_matters_in_he": "GDPR creates legal obligations for anyone handling personal data. Students and staff also have personal privacy interests that digital systems can undermine if not managed carefully.",
+    "levels": {
+      "basic": {
+        "plain_description": "Understands that personal data is collected online and takes basic steps to protect their own privacy.",
+        "common_misread": "Assumes clicking 'reject all cookies' equals privacy competence.",
+        "example_in_he": "A student reviews the privacy settings on their university online accounts during induction."
+      },
+      "intermediate": {
+        "plain_description": "Understands GDPR rights and obligations at a working level. Manages privacy settings purposefully and handles others' personal data responsibly.",
+        "common_misread": "Confuses completing a GDPR awareness module with operational data privacy competence.",
+        "example_in_he": "A professional services administrator processes student data using the correct lawful basis, applies data minimisation, and correctly handles a subject access request."
+      },
+      "advanced": {
+        "plain_description": "Applies privacy by design principles, conducts DPIAs, and advises on data privacy in project or research contexts.",
+        "common_misread": "Assumes legal knowledge is the primary component of advanced privacy competence.",
+        "example_in_he": "A researcher completes a DPIA for a project involving sensitive personal data, identifies risks, and implements mitigations before data collection begins."
+      },
+      "highly_advanced": {
+        "plain_description": "Develops institutional data protection policy and practice. Leads GDPR compliance programmes and responds to regulatory challenges.",
+        "common_misread": "Conflates DPO role with highly advanced individual competence.",
+        "example_in_he": "A Data Protection Officer develops and implements an institution-wide data protection framework, manages ICO engagement, and leads staff training."
+      }
+    },
+    "he_role_notes": {
+      "educator": "Research and teaching involving personal data require at minimum intermediate competence and awareness of when to seek specialist advice.",
+      "student": "GDPR awareness relevant at basic level; research students handling personal data need intermediate guidance.",
+      "professional_services": "HR, finance, and student services roles require intermediate competence as a job baseline.",
+      "researcher": "Research ethics and data protection intersect; advanced competence required for studies involving personal data."
+    },
+    "vocabulary_watch": [
+      "GDPR",
+      "lawful basis",
+      "data minimisation",
+      "DPIA",
+      "subject access request",
+      "privacy by design",
+      "data controller"
+    ],
+    "ai_framing": "Prompting AI tools with personal data raises GDPR questions about data processing, lawful basis, and third-party data transfers. This is now a practical privacy issue for all HE staff."
+  },
+  {
+    "id": "pl-dc-4-3",
+    "competency_name": "Protecting health and well-being",
+    "area": "Safety",
+    "plain_language_summary": "Being aware of and managing the physical, mental, and social risks that come with digital technology use, while also recognising the benefits.",
+    "why_it_matters_in_he": "Digital intensity in HE work and study creates real wellbeing risks including screen fatigue, always-on culture, and social media effects on self-image, especially for students.",
+    "levels": {
+      "basic": {
+        "plain_description": "Aware of basic digital health risks and takes some steps to manage them.",
+        "common_misread": "Assumes awareness equals behaviour change.",
+        "example_in_he": "A student sets a study timer and takes regular screen breaks during revision."
+      },
+      "intermediate": {
+        "plain_description": "Actively manages digital wellbeing for themselves and is aware of the impact of digital environments on others.",
+        "common_misread": "Confuses productivity tools with wellbeing management.",
+        "example_in_he": "A lecturer sets a clear email response window policy, disables out-of-hours notifications, and models healthy digital boundaries with their team."
+      },
+      "advanced": {
+        "plain_description": "Designs digital work or learning environments with wellbeing considerations built in. Supports others in managing digital health.",
+        "common_misread": "Assumes personal wellbeing practice transfers to designing environments for others.",
+        "example_in_he": "A module leader redesigns an online module to reduce cognitive load, add explicit rest points, and include guidance on managing digital overwhelm."
+      },
+      "highly_advanced": {
+        "plain_description": "Develops institutional digital wellbeing policy or strategy. Leads research or practice in digital health in educational or workplace contexts.",
+        "common_misread": "Conflates HR welfare expertise with digital wellbeing strategy.",
+        "example_in_he": "A wellbeing director develops an institution-wide digital wellbeing framework covering students and staff, grounded in current evidence."
+      }
+    },
+    "he_role_notes": {
+      "educator": "Always-on digital culture in HE is a structural issue; individual strategies alone are insufficient without policy support.",
+      "student": "Social media and always-online study cultures create specific wellbeing risks; student-facing resources need to address these directly.",
+      "professional_services": "Remote and hybrid working has amplified digital wellbeing issues; line managers play a key role.",
+      "researcher": "Research culture pressures interact with digital intensity in ways that require explicit acknowledgement."
+    },
+    "vocabulary_watch": [
+      "cognitive load",
+      "digital detox",
+      "always-on culture",
+      "screen fatigue",
+      "notification management",
+      "digital boundaries"
+    ],
+    "ai_framing": "AI tools can increase or decrease cognitive load depending on how they are used. Understanding this is part of intermediate-level digital wellbeing competence."
+  },
+  {
+    "id": "pl-dc-4-4",
+    "competency_name": "Protecting the environment",
+    "area": "Safety",
+    "plain_language_summary": "Understanding the environmental impact of digital technology use and making informed choices to reduce unnecessary consumption.",
+    "why_it_matters_in_he": "HE institutions have sustainability commitments. Digital infrastructure has significant carbon footprint. Staff and students can influence this through informed choices.",
+    "levels": {
+      "basic": {
+        "plain_description": "Aware that digital technology has environmental impact.",
+        "common_misread": "Assumes environmental awareness equals behaviour change.",
+        "example_in_he": "A student learns that streaming video and large email attachments have a carbon footprint during a digital induction."
+      },
+      "intermediate": {
+        "plain_description": "Makes informed choices to reduce digital environmental impact. Can explain the main sources of digital carbon footprint.",
+        "common_misread": "Confuses digital with intangible -- assumes online equals carbon-free.",
+        "example_in_he": "A staff member compresses videos before uploading to the VLE, avoids printing unnecessarily, and uses energy-efficient settings on their devices."
+      },
+      "advanced": {
+        "plain_description": "Evaluates digital systems or projects for environmental impact. Advocates for sustainable digital practice in institutional decision-making.",
+        "common_misread": "Assumes IT knowledge is the primary driver of advanced competence here.",
+        "example_in_he": "A digital project manager includes environmental impact criteria in the evaluation of new digital tools and advocates for carbon-aware procurement."
+      },
+      "highly_advanced": {
+        "plain_description": "Develops institutional digital sustainability strategy. Leads research or practice on green computing in HE.",
+        "common_misread": "Conflates general sustainability leadership with digital sustainability expertise.",
+        "example_in_he": "A sustainability director develops a digital carbon reduction roadmap covering infrastructure, user behaviour, and procurement."
+      }
+    },
+    "he_role_notes": {
+      "educator": "Embedding digital sustainability in teaching is increasingly expected as part of education for sustainable development.",
+      "student": "Sustainability in digital practice is an employability-relevant attribute in many sectors.",
+      "professional_services": "Procurement and estates roles have the highest leverage on institutional digital environmental impact.",
+      "researcher": "Computationally intensive research (AI, simulation, genomics) has significant and often underacknowledged environmental costs."
+    },
+    "vocabulary_watch": [
+      "carbon footprint",
+      "green computing",
+      "data centre energy",
+      "sustainable procurement",
+      "lifecycle analysis",
+      "digital sustainability"
+    ],
+    "ai_framing": "Training and running large AI models is extremely energy-intensive. Understanding this cost is part of advanced digital sustainability competence, and relevant to responsible AI use decisions in HE."
+  },
+  {
+    "id": "pl-dc-5-1",
+    "competency_name": "Solving technical problems",
+    "area": "Problem solving",
+    "plain_language_summary": "Diagnosing and fixing technical issues with digital devices, software, and connectivity through systematic troubleshooting.",
+    "why_it_matters_in_he": "Technical problems disrupt teaching, research, and professional work. A degree of autonomous problem-solving reduces dependency on IT support and keeps work moving.",
+    "levels": {
+      "basic": {
+        "plain_description": "Can apply simple fixes (restart, check connection, search for error message) before escalating.",
+        "common_misread": "Assumes heavy IT support users lack basic competence.",
+        "example_in_he": "A student troubleshoots a VLE login issue by clearing their browser cache and checking their password before contacting IT."
+      },
+      "intermediate": {
+        "plain_description": "Diagnoses and resolves moderately complex technical issues independently. Knows when and how to escalate effectively.",
+        "common_misread": "Confuses enthusiasm for tinkering with systematic troubleshooting competence.",
+        "example_in_he": "A lecturer resolves an audio sync issue in a recorded lecture by identifying the codec problem and re-exporting with correct settings."
+      },
+      "advanced": {
+        "plain_description": "Solves complex technical problems across systems. Designs diagnostic processes and supports others in troubleshooting.",
+        "common_misread": "Assumes IT background is required for advanced competence.",
+        "example_in_he": "A digital learning technologist diagnoses and resolves cross-browser compatibility issues in a custom VLE tool, documenting the solution for colleagues."
+      },
+      "highly_advanced": {
+        "plain_description": "Leads technical problem-solving at institutional or sector level. Develops diagnostic frameworks or contributes to known-error databases.",
+        "common_misread": "Conflates technical depth with organisational problem-solving leadership.",
+        "example_in_he": "An IT architecture lead develops a systematic approach to diagnosing performance issues across the university's digital infrastructure."
+      }
+    },
+    "he_role_notes": {
+      "educator": "Sufficient technical problem-solving competence to continue teaching through minor technical failure is a practical expectation in digital teaching environments.",
+      "student": "Students often have high technical confidence but low systematic troubleshooting skill; direct instruction is effective.",
+      "professional_services": "Frontline service roles benefit from intermediate troubleshooting to reduce IT support dependency.",
+      "researcher": "Research computing issues (environment dependencies, package conflicts, HPC job failures) require intermediate-to-advanced troubleshooting."
+    },
+    "vocabulary_watch": [
+      "troubleshooting",
+      "debug",
+      "escalation",
+      "workaround",
+      "root cause",
+      "error log",
+      "compatibility"
+    ],
+    "ai_framing": "AI assistants (Copilot, Claude, ChatGPT) are increasingly used for technical troubleshooting. Evaluating AI-suggested fixes critically before applying them is part of intermediate-level competence."
+  },
+  {
+    "id": "pl-dc-5-2",
+    "competency_name": "Identifying needs and technological responses",
+    "area": "Problem solving",
+    "plain_language_summary": "Recognising when a digital tool or approach could solve a problem, and selecting or evaluating the right technology for the right purpose.",
+    "why_it_matters_in_he": "HE is awash with EdTech and digital tools. The ability to match need to tool -- or recognise when no tool is needed -- is essential for avoiding waste and delivering value.",
+    "levels": {
+      "basic": {
+        "plain_description": "Identifies familiar digital tools for common tasks.",
+        "common_misread": "Assumes knowing a wide range of tools equals competence in identifying the right one.",
+        "example_in_he": "A student identifies that a shared Google Doc is better than email chains for group writing."
+      },
+      "intermediate": {
+        "plain_description": "Evaluates digital tools against defined criteria. Understands that the best tool depends on context, not just features.",
+        "common_misread": "Confuses tool enthusiasm with needs analysis competence.",
+        "example_in_he": "A module team evaluates three VLE quiz tools against pedagogic, accessibility, and data requirements before selecting one."
+      },
+      "advanced": {
+        "plain_description": "Designs technology selection processes for institutional or project use. Balances technical, pedagogic, ethical, and commercial considerations.",
+        "common_misread": "Assumes technical evaluation is the primary component of tool selection.",
+        "example_in_he": "A digital strategy manager leads a structured evaluation of AI writing tools for student use, including ethical risk assessment and academic integrity implications."
+      },
+      "highly_advanced": {
+        "plain_description": "Develops institutional frameworks for technology evaluation and procurement. Influences sector-level thinking on EdTech selection.",
+        "common_misread": "Conflates procurement experience with strategic technology needs assessment.",
+        "example_in_he": "A CIO develops a technology governance framework that embeds ethical evaluation, value assessment, and post-implementation review into all digital acquisitions."
+      }
+    },
+    "he_role_notes": {
+      "educator": "Pedagogic need should drive tool selection, not the reverse; this is a common area of weakness in EdTech adoption.",
+      "student": "Tool selection for study and research projects is an increasingly important academic competence.",
+      "professional_services": "Procurement and project roles require systematic tool evaluation skills.",
+      "researcher": "Research tool selection has implications for reproducibility, data sovereignty, and ethical compliance."
+    },
+    "vocabulary_watch": [
+      "use case",
+      "evaluation criteria",
+      "fit for purpose",
+      "EdTech",
+      "procurement",
+      "total cost of ownership",
+      "vendor lock-in"
+    ],
+    "ai_framing": "The current proliferation of AI tools makes needs-based evaluation especially critical. Feature richness in AI tools can mask poor fit for specific HE contexts."
+  },
+  {
+    "id": "pl-dc-5-3",
+    "competency_name": "Creatively using digital technologies",
+    "area": "Problem solving",
+    "plain_language_summary": "Using digital tools in novel, innovative, or imaginative ways to address challenges, create new knowledge, or enhance practice.",
+    "why_it_matters_in_he": "Innovation in teaching, research, and professional services increasingly depends on creative application of digital technologies. This goes beyond using tools as designed.",
+    "levels": {
+      "basic": {
+        "plain_description": "Uses digital tools in new ways beyond their primary purpose when prompted.",
+        "common_misread": "Assumes frequent tool use leads naturally to creative application.",
+        "example_in_he": "A student uses a presentation tool to create a revision timeline after seeing a peer do so."
+      },
+      "intermediate": {
+        "plain_description": "Independently experiments with digital tools to find creative solutions. Adapts tools to new contexts.",
+        "common_misread": "Confuses creative use with technical novelty.",
+        "example_in_he": "A lecturer uses a collaborative whiteboard tool to facilitate a live peer feedback session in a way the tool was not originally designed for."
+      },
+      "advanced": {
+        "plain_description": "Develops innovative digital approaches to teaching, research, or professional challenges. Shares and disseminates creative practice.",
+        "common_misread": "Assumes innovation requires large budgets or specialist technical skills.",
+        "example_in_he": "An educational developer designs a novel AI-augmented feedback workflow that significantly reduces marking time while improving feedback quality, and shares it across the institution."
+      },
+      "highly_advanced": {
+        "plain_description": "Leads digital innovation initiatives. Builds capacity for creative digital practice across teams or institutions.",
+        "common_misread": "Conflates innovation leadership with individual creative competence.",
+        "example_in_he": "A Head of Digital Innovation leads an experimentation programme that systematically surfaces, tests, and scales creative digital practices across the university."
+      }
+    },
+    "he_role_notes": {
+      "educator": "Pedagogic creativity with digital tools distinguishes transformative from merely efficient teaching.",
+      "student": "Creative digital problem-solving is a valued graduate attribute across many sectors.",
+      "professional_services": "Process innovation through creative digital tool use can significantly improve efficiency.",
+      "researcher": "Methodological innovation in research increasingly involves creative use of digital and computational tools."
+    },
+    "vocabulary_watch": [
+      "innovation",
+      "experimentation",
+      "design thinking",
+      "prototyping",
+      "hack",
+      "repurposing",
+      "use case extension"
+    ],
+    "ai_framing": "Generative AI opens up new creative possibilities but also introduces risks of surface-level novelty without depth. Creative use of AI in HE requires both imagination and critical evaluation."
+  },
+  {
+    "id": "pl-dc-5-4",
+    "competency_name": "Identifying digital competence gaps",
+    "area": "Problem solving",
+    "plain_language_summary": "Recognising what you do not yet know or cannot yet do digitally, and taking active steps to address those gaps through learning or collaboration.",
+    "why_it_matters_in_he": "The digital landscape changes rapidly. The ability to self-assess and learn is more durable than any specific technical skill. In HE, it also supports effective CPD planning and team capability development.",
+    "levels": {
+      "basic": {
+        "plain_description": "Recognises when they lack a digital skill and is willing to seek help.",
+        "common_misread": "Assumes willingness to learn equals active gap identification.",
+        "example_in_he": "A student recognises they do not know how to use referencing software and completes a library workshop."
+      },
+      "intermediate": {
+        "plain_description": "Accurately self-assesses digital competence, identifies specific gaps, and selects appropriate learning resources or peer support.",
+        "common_misread": "Confuses completing CPD activities with accurate self-assessment.",
+        "example_in_he": "A member of staff uses a digital skills self-assessment tool, identifies gaps in data management, and builds a personal development plan."
+      },
+      "advanced": {
+        "plain_description": "Supports others in identifying and addressing digital competence gaps. Designs assessment tools or learning pathways for teams or cohorts.",
+        "common_misread": "Assumes L&D experience equals digital competence gap analysis expertise.",
+        "example_in_he": "A digital learning lead designs a team-level digital skills audit and uses the results to commission targeted training across a professional services department."
+      },
+      "highly_advanced": {
+        "plain_description": "Develops institutional frameworks for digital competence assessment and development. Contributes to national or sector-level thinking on digital skills needs.",
+        "common_misread": "Conflates framework authorship with operational skills development competence.",
+        "example_in_he": "A Head of Digital Innovation leads the design of an institution-wide digital capability framework, assessment tool, and development programme aligned to strategic priorities."
+      }
+    },
+    "he_role_notes": {
+      "educator": "Self-assessment of digital competence is a prerequisite for effective CPD; institutional frameworks can support but cannot replace individual agency.",
+      "student": "Students who can accurately self-assess their digital skills are better prepared for graduate employment.",
+      "professional_services": "Performance review processes that include digital competence discussion require at least intermediate self-assessment capability.",
+      "researcher": "Rapidly evolving research tools mean ongoing gap identification is a professional expectation."
+    },
+    "vocabulary_watch": [
+      "self-assessment",
+      "competence gap",
+      "CPD",
+      "learning pathway",
+      "metacognition",
+      "capability framework",
+      "skills audit"
+    ],
+    "ai_framing": "AI tools can support competence gap identification (e.g. AI-assisted coaching or diagnostic tools) but cannot replace accurate self-knowledge. Overreliance on AI for self-assessment is itself a gap."
+  }
+]

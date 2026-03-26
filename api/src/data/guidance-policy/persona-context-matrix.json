@@ -1,0 +1,329 @@
+{
+  "framework_id": "unesco-guidance-ai-education",
+  "framework_name": "UNESCO Guidance for AI in Education & Research",
+  "framework_source": "UNESCO (2023). Guidance for generative AI in education and research. UNESDOC pf0000386693. ISBN 978-92-3-100612-8.",
+  "reasonlens_implementation_note": "This file operationalises the UNESCO Guidance document for the ReasonLens platform as an institutional policy maturity assessment. The original UNESCO document is structured as regulatory guidance with policy measures and stakeholder frameworks, not as a maturity model. ReasonLens imposes a 4-dimension x 3-level maturity structure to enable comparable assessment alongside other institutional frameworks (THE DMI, QS AI Capability, JISC AI Maturity). The four dimensions synthesise UNESCO's eight policy action areas and four-stakeholder regulatory framework into assessable institutional governance dimensions. The three levels (Emerging/Developing/Established) are a ReasonLens construct informed by the JISC AI Maturity Model's stage-based approach.",
+  "dimensions": [
+    {
+      "id": "gp-human-centered",
+      "name": "Human-Centred AI",
+      "code": "HC",
+      "description": "The extent to which the institution ensures that AI deployment protects human agency, supports human decision-making, and centres educational relationships on human needs, values, and rights. Covers governance of AI-human interaction, protection of learner and staff autonomy, and human oversight mechanisms."
+    },
+    {
+      "id": "gp-safe-equitable",
+      "name": "Safe & Equitable",
+      "code": "SE",
+      "description": "The extent to which the institution implements mechanisms to ensure AI systems are safe, secure, inclusive, and equitable. Covers risk assessment, bias auditing, accessibility, digital divide mitigation, and protection of vulnerable populations including age-appropriate use."
+    },
+    {
+      "id": "gp-ethics",
+      "name": "Ethics & Accountability",
+      "code": "EA",
+      "description": "The extent to which the institution establishes ethical governance structures, accountability mechanisms, and regulatory compliance for AI use. Covers ethics committees, data protection, transparency requirements, AI use policies, academic integrity frameworks, and accountability chains."
+    },
+    {
+      "id": "gp-evidence",
+      "name": "Evidence-Based",
+      "code": "EB",
+      "description": "The extent to which the institution builds and uses evidence to inform AI adoption decisions, evaluates AI effectiveness through rigorous methods, and contributes to the broader knowledge base. Covers pilot evaluation, impact assessment, research partnerships, and evidence-informed policy development."
+    }
+  ],
+  "levels": [
+    {
+      "id_suffix": "emerging",
+      "name": "Emerging",
+      "order": 1,
+      "code": "E",
+      "description": "The institution recognises AI as relevant to education and research and has begun initial responses, but lacks coordinated policy, systematic governance, or evidence-based deployment. AI use is happening informally, and institutional responses are reactive or ad hoc."
+    },
+    {
+      "id_suffix": "developing",
+      "name": "Developing",
+      "order": 2,
+      "code": "D",
+      "description": "The institution has established initial policies, governance structures, and evaluation mechanisms for AI in education and research. Formal initiatives are underway but not yet comprehensive, institution-wide, or fully embedded in standard practice."
+    },
+    {
+      "id_suffix": "established",
+      "name": "Established",
+      "order": 3,
+      "code": "S",
+      "description": "The institution has comprehensive, embedded, and actively maintained AI governance, with evidence-driven policy, systematic safety and equity mechanisms, and continuous improvement processes. AI governance is integrated into institutional strategy and decision-making structures."
+    }
+  ],
+  "object_count": 5,
+  "structure": "5 context factors with per-dimension impact analysis",
+  "data": [
+    {
+      "factor_id": "institution_type",
+      "name": "Institution Type",
+      "description": "The type of educational institution, which affects governance complexity, research intensity, and regulatory obligations.",
+      "options": [
+        "school",
+        "college",
+        "university",
+        "research_institute"
+      ],
+      "dimension_impacts": {
+        "gp-human-centered": {
+          "impact": "MEDIUM",
+          "rationale": "Governance complexity varies by institution type. Universities face the widest range of AI-mediated decisions. Schools have additional child protection requirements. Research institutes focus on research governance.",
+          "level_effects": {
+            "school": "Focus on student-facing AI with child protection emphasis.",
+            "college": "Practical focus on student services and teaching AI.",
+            "university": "Broadest range: teaching, research, services, admissions.",
+            "research_institute": "Focus on research governance and data management."
+          }
+        },
+        "gp-safe-equitable": {
+          "impact": "MEDIUM",
+          "rationale": "All institution types must ensure safety and equity, but the types of risks and populations differ.",
+          "level_effects": {
+            "school": "Age-appropriateness and child safety paramount. Digital divide acute in some contexts.",
+            "college": "Diverse student populations with varying digital access. Vocational AI applications.",
+            "university": "Widest range of AI safety concerns. Large diverse populations.",
+            "research_institute": "Research data safety and ethical research AI use primary concerns."
+          }
+        },
+        "gp-ethics": {
+          "impact": "MEDIUM",
+          "rationale": "Ethics governance complexity scales with institutional breadth. Research institutes may have existing research ethics infrastructure.",
+          "level_effects": {
+            "school": "Governance may be simpler but must be robust due to vulnerable populations.",
+            "college": "Moderate governance complexity. May lack dedicated policy staff.",
+            "university": "Most complex governance requirements across all functions.",
+            "research_institute": "Research ethics infrastructure provides foundation. May lack teaching-related governance."
+          }
+        },
+        "gp-evidence": {
+          "impact": "MEDIUM",
+          "rationale": "Research capacity varies significantly by institution type.",
+          "level_effects": {
+            "school": "May lack internal research capacity. Relies on external evaluation support.",
+            "college": "Some evaluation capacity but may need partnerships.",
+            "university": "Strong research capacity that can be leveraged for AI evaluation.",
+            "research_institute": "Strongest evaluation capacity but may focus on research tools only."
+          }
+        }
+      }
+    },
+    {
+      "factor_id": "region",
+      "name": "Region",
+      "description": "Geographic and regulatory context, which fundamentally shapes data protection requirements, AI governance frameworks, and institutional autonomy.",
+      "options": [
+        "EU",
+        "UK",
+        "US",
+        "Asia-Pacific",
+        "Africa",
+        "other"
+      ],
+      "dimension_impacts": {
+        "gp-human-centered": {
+          "impact": "VERY HIGH",
+          "rationale": "Regulatory requirements for human oversight of AI differ fundamentally by region. EU AI Act mandates specific human oversight for high-risk AI in education. UK has softer, principles-based guidance. US has fragmented state-level requirements.",
+          "level_effects": {
+            "EU": "AI Act creates legal obligations for human oversight, risk classification, and transparency. Developing governance must include AI Act compliance.",
+            "UK": "ICO guidance on automated decision-making applies. Pro-innovation approach leaves more institutional discretion.",
+            "US": "Varied state requirements. FERPA governs educational records. No comprehensive federal AI regulation.",
+            "Asia-Pacific": "Wide variation. Some countries (Singapore, Australia) have AI governance frameworks. Others have minimal regulation.",
+            "Africa": "Regulatory frameworks often nascent. AU AI Strategy provides continental direction. Institutional autonomy in governance design.",
+            "other": "Highly variable. International institutions may need to navigate multiple regulatory contexts."
+          }
+        },
+        "gp-safe-equitable": {
+          "impact": "VERY HIGH",
+          "rationale": "Equity obligations, data protection requirements, and safety standards vary fundamentally by region. The digital divide manifests differently across regions.",
+          "level_effects": {
+            "EU": "GDPR and AI Act create specific safety and equity obligations. Strong data protection framework.",
+            "UK": "Equality Act 2010 public sector equality duty. ICO enforcement.",
+            "US": "Title VI, FERPA, ADA. State-level variation. Active litigation landscape.",
+            "Asia-Pacific": "Variable. Digital divide acute in some countries. Some have strong data protection (Australia, South Korea).",
+            "Africa": "Digital access disparities may be acute. AU Convention on Cyber Security. Varied national frameworks.",
+            "other": "Context-specific. May face digital colonialism concerns with AI tools from other regions."
+          }
+        },
+        "gp-ethics": {
+          "impact": "VERY HIGH",
+          "rationale": "Legal frameworks for data protection, AI governance, and ethical oversight differ fundamentally. Cultural norms around institutional autonomy, transparency, and accountability also vary.",
+          "level_effects": {
+            "EU": "GDPR automated decision-making provisions (Article 22). AI Act ethics requirements. Strong regulatory framework.",
+            "UK": "UK GDPR and Data Protection Act 2018. ICO codes of practice. Softer regulatory approach.",
+            "US": "First Amendment considerations. Sector-specific ethics. Institutional autonomy in governance design.",
+            "Asia-Pacific": "Diverse ethical traditions enrich governance. Regulatory variation from comprehensive (Singapore) to minimal.",
+            "Africa": "Growing AI ethics discourse. AU Agenda 2063. Many countries developing first AI policies.",
+            "other": "Context-specific. International institutions may need multi-jurisdictional compliance."
+          }
+        },
+        "gp-evidence": {
+          "impact": "MEDIUM",
+          "rationale": "Evidence infrastructure and research ecosystems vary by region but evidence principles are universal.",
+          "level_effects": {
+            "EU": "Horizon Europe provides evaluation support. Strong research infrastructure.",
+            "UK": "JISC evaluation support. Strong HE research culture.",
+            "US": "NSF, IES evaluation frameworks. Large evidence base.",
+            "Asia-Pacific": "Variable research infrastructure. Growing AI in education evidence base.",
+            "Africa": "Evaluation capacity building needed in many contexts. Growing regional research networks.",
+            "other": "Context-specific evidence infrastructure."
+          }
+        }
+      }
+    },
+    {
+      "factor_id": "institution_size",
+      "name": "Institution Size",
+      "description": "The institution's scale, affecting governance capacity, resource availability, and complexity of AI deployment.",
+      "options": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "dimension_impacts": {
+        "gp-human-centered": {
+          "impact": "MEDIUM",
+          "rationale": "Size affects governance complexity and capacity.",
+          "level_effects": {
+            "small": "Fewer AI deployments but also fewer governance resources. May achieve governance through simpler structures.",
+            "medium": "Balance of complexity and capacity. Formal governance needed but not overly complex.",
+            "large": "Most complex coordination challenges. Formal, multi-layered governance required."
+          }
+        },
+        "gp-safe-equitable": {
+          "impact": "MEDIUM",
+          "rationale": "Larger institutions have more diverse populations and more AI tools, increasing safety and equity complexity.",
+          "level_effects": {
+            "small": "Smaller, possibly more homogeneous population. Fewer tools to govern.",
+            "medium": "Growing diversity and AI portfolio requiring proportionate governance.",
+            "large": "Most diverse populations and broadest AI deployment. Most complex safety and equity requirements."
+          }
+        },
+        "gp-ethics": {
+          "impact": "MEDIUM",
+          "rationale": "Ethics governance must be proportionate to institutional scale.",
+          "level_effects": {
+            "small": "May achieve effective governance with simpler structures. Key challenge is capacity.",
+            "medium": "Needs formal structures but can manage with moderate governance investment.",
+            "large": "Requires comprehensive, multi-layered governance. Key challenge is coordination."
+          }
+        },
+        "gp-evidence": {
+          "impact": "MEDIUM",
+          "rationale": "Larger institutions have more internal research capacity and more evaluation material.",
+          "level_effects": {
+            "small": "May need external partnerships for evaluation. Focused evaluation of key tools.",
+            "medium": "Growing internal capacity. Can sustain modest evaluation programme.",
+            "large": "Strong internal capacity. Can sustain comprehensive evaluation programme."
+          }
+        }
+      }
+    },
+    {
+      "factor_id": "respondent_role",
+      "name": "Respondent Role",
+      "description": "The respondent's institutional position, which determines their visibility into different aspects of AI governance.",
+      "options": [
+        "senior_leadership",
+        "policy_officer",
+        "academic_leadership",
+        "IT_leadership"
+      ],
+      "dimension_impacts": {
+        "gp-human-centered": {
+          "impact": "HIGH",
+          "rationale": "Visibility into human-centred governance depends strongly on role. Senior leadership sees strategic commitment, academic leadership sees teaching impact, IT leadership sees tool deployment.",
+          "level_effects": {
+            "senior_leadership": "Strategic view. May overestimate governance if not aware of departmental AI adoption.",
+            "policy_officer": "Best view of policy and governance structures. May not see on-the-ground implementation.",
+            "academic_leadership": "Sees impact on teaching and learning. Understands how AI affects educational relationships.",
+            "IT_leadership": "Sees tool deployment and technical governance. May not see educational impact."
+          }
+        },
+        "gp-safe-equitable": {
+          "impact": "HIGH",
+          "rationale": "Different roles see different aspects of safety and equity.",
+          "level_effects": {
+            "senior_leadership": "Strategic view of institutional risk. May not see specific tool-level issues.",
+            "policy_officer": "Knows about regulatory compliance and risk frameworks.",
+            "academic_leadership": "Sees equity impacts on students in teaching contexts.",
+            "IT_leadership": "Knows about technical safety, procurement, and vendor relationships."
+          }
+        },
+        "gp-ethics": {
+          "impact": "HIGH",
+          "rationale": "Ethics governance visibility varies strongly by role.",
+          "level_effects": {
+            "senior_leadership": "Knows about strategic ethical commitments. May not know implementation detail.",
+            "policy_officer": "Best knowledge of policy content, governance structures, and compliance status.",
+            "academic_leadership": "Sees how policies affect academic practice. Knows about academic integrity approaches.",
+            "IT_leadership": "Knows about data protection compliance and technical accountability."
+          }
+        },
+        "gp-evidence": {
+          "impact": "HIGH",
+          "rationale": "Evidence gathering and use is visible from different angles depending on role.",
+          "level_effects": {
+            "senior_leadership": "Sees whether evidence informs strategic decisions. May not know evaluation methodology quality.",
+            "policy_officer": "May not be involved in evidence gathering. Knows whether evidence feeds into policy.",
+            "academic_leadership": "Understands evaluation quality. Sees whether evidence informs teaching-related AI decisions.",
+            "IT_leadership": "Knows about data infrastructure for evaluation. May focus on technical metrics."
+          }
+        }
+      }
+    },
+    {
+      "factor_id": "existing_ai_deployment",
+      "name": "Existing AI Deployment",
+      "description": "The current extent of AI deployment across the institution, which shapes the urgency and nature of governance needs.",
+      "options": [
+        "none",
+        "limited",
+        "moderate",
+        "extensive"
+      ],
+      "dimension_impacts": {
+        "gp-human-centered": {
+          "impact": "HIGH",
+          "rationale": "More deployment means more AI-mediated decisions requiring governance. None means pre-emerging. Extensive without governance means urgent gap.",
+          "level_effects": {
+            "none": "Pre-emerging. Opportunity to develop governance before deployment.",
+            "limited": "Some governance needed but complexity is manageable.",
+            "moderate": "Active governance needed across multiple tools and contexts.",
+            "extensive": "Comprehensive governance essential. Complexity of oversight increases significantly."
+          }
+        },
+        "gp-safe-equitable": {
+          "impact": "HIGH",
+          "rationale": "More deployment means more safety and equity risks to manage.",
+          "level_effects": {
+            "none": "No current risks but should develop frameworks before deployment.",
+            "limited": "Some tools need assessment. Risk of deploying without governance.",
+            "moderate": "Active risk assessment needed. Growing portfolio of tools to govern.",
+            "extensive": "Comprehensive monitoring needed. Most complex safety and equity landscape."
+          }
+        },
+        "gp-ethics": {
+          "impact": "HIGH",
+          "rationale": "Ethics governance urgency scales with deployment extent.",
+          "level_effects": {
+            "none": "Opportunity for proactive governance. No urgent ethical issues but also no practical experience.",
+            "limited": "Emerging need for governance. Limited practical experience to draw on.",
+            "moderate": "Active governance needed. Enough deployment to test governance mechanisms.",
+            "extensive": "Comprehensive governance essential. Governance must be tested against real decisions."
+          }
+        },
+        "gp-evidence": {
+          "impact": "HIGH",
+          "rationale": "More deployment provides more material for evaluation. No deployment means no evidence to gather.",
+          "level_effects": {
+            "none": "No evaluation material. Build evidence requirements into deployment planning.",
+            "limited": "Some evaluation possible. Focus on high-priority or high-risk tools.",
+            "moderate": "Growing evidence base possible. Prioritisation frameworks needed.",
+            "extensive": "Rich evaluation portfolio possible. Systematic evidence strategy justified."
+          }
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "bundle_root": "jisc-bdc-json",
+  "files": [
+    {
+      "profile_id": "bdc-individual",
+      "type": "indicator-operationalisation",
+      "path": "jisc-bdc-json/bdc-individual/indicator-operationalisation.json"
+    },
+    {
+      "profile_id": "bdc-individual",
+      "type": "level-boundaries",
+      "path": "jisc-bdc-json/bdc-individual/level-boundaries.json"
+    },
+    {
+      "profile_id": "bdc-individual",
+      "type": "practitioner-language",
+      "path": "jisc-bdc-json/bdc-individual/practitioner-language.json"
+    },
+    {
+      "profile_id": "bdc-teacher-he",
+      "type": "indicator-operationalisation",
+      "path": "jisc-bdc-json/bdc-teacher-he/indicator-operationalisation.json"
+    },
+    {
+      "profile_id": "bdc-teacher-he",
+      "type": "level-boundaries",
+      "path": "jisc-bdc-json/bdc-teacher-he/level-boundaries.json"
+    },
+    {
+      "profile_id": "bdc-teacher-he",
+      "type": "practitioner-language",
+      "path": "jisc-bdc-json/bdc-teacher-he/practitioner-language.json"
+    },
+    {
+      "profile_id": "bdc-researcher",
+      "type": "indicator-operationalisation",
+      "path": "jisc-bdc-json/bdc-researcher/indicator-operationalisation.json"
+    },
+    {
+      "profile_id": "bdc-researcher",
+      "type": "level-boundaries",
+      "path": "jisc-bdc-json/bdc-researcher/level-boundaries.json"
+    },
+    {
+      "profile_id": "bdc-researcher",
+      "type": "practitioner-language",
+      "path": "jisc-bdc-json/bdc-researcher/practitioner-language.json"
+    },
+    {
+      "profile_id": "bdc-professional-services",
+      "type": "indicator-operationalisation",
+      "path": "jisc-bdc-json/bdc-professional-services/indicator-operationalisation.json"
+    },
+    {
+      "profile_id": "bdc-professional-services",
+      "type": "level-boundaries",
+      "path": "jisc-bdc-json/bdc-professional-services/level-boundaries.json"
+    },
+    {
+      "profile_id": "bdc-professional-services",
+      "type": "practitioner-language",
+      "path": "jisc-bdc-json/bdc-professional-services/practitioner-language.json"
+    },
+    {
+      "profile_id": "bdc-learning-technology",
+      "type": "indicator-operationalisation",
+      "path": "jisc-bdc-json/bdc-learning-technology/indicator-operationalisation.json"
+    },
+    {
+      "profile_id": "bdc-learning-technology",
+      "type": "level-boundaries",
+      "path": "jisc-bdc-json/bdc-learning-technology/level-boundaries.json"
+    },
+    {
+      "profile_id": "bdc-learning-technology",
+      "type": "practitioner-language",
+      "path": "jisc-bdc-json/bdc-learning-technology/practitioner-language.json"
+    },
+    {
+      "profile_id": "bdc-digital-leader",
+      "type": "indicator-operationalisation",
+      "path": "jisc-bdc-json/bdc-digital-leader/indicator-operationalisation.json"
+    },
+    {
+      "profile_id": "bdc-digital-leader",
+      "type": "level-boundaries",
+      "path": "jisc-bdc-json/bdc-digital-leader/level-boundaries.json"
+    },
+    {
+      "profile_id": "bdc-digital-leader",
+      "type": "practitioner-language",
+      "path": "jisc-bdc-json/bdc-digital-leader/practitioner-language.json"
+    },
+    {
+      "profile_id": "bdc-educational-developer",
+      "type": "indicator-operationalisation",
+      "path": "jisc-bdc-json/bdc-educational-developer/indicator-operationalisation.json"
+    },
+    {
+      "profile_id": "bdc-educational-developer",
+      "type": "level-boundaries",
+      "path": "jisc-bdc-json/bdc-educational-developer/level-boundaries.json"
+    },
+    {
+      "profile_id": "bdc-educational-developer",
+      "type": "practitioner-language",
+      "path": "jisc-bdc-json/bdc-educational-developer/practitioner-language.json"
+    },
+    {
+      "profile_id": "shared",
+      "type": "scenarios",
+      "path": "jisc-bdc-json/scenarios.json"
+    },
+    {
+      "profile_id": "shared",
+      "type": "persona-context-matrix",
+      "path": "jisc-bdc-json/persona-context-matrix.json"
+    },
+    {
+      "profile_id": "shared",
+      "type": "bdc-mappings",
+      "path": "jisc-bdc-json/cross-framework/bdc-mappings.json"
+    },
+    {
+      "profile_id": "shared",
+      "type": "manifest",
+      "path": "jisc-bdc-json/manifest.json"
+    }
+  ]
+}

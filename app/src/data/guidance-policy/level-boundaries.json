@@ -1,0 +1,259 @@
+{
+  "framework_id": "unesco-guidance-ai-education",
+  "framework_name": "UNESCO Guidance for AI in Education & Research",
+  "framework_source": "UNESCO (2023). Guidance for generative AI in education and research. UNESDOC pf0000386693. ISBN 978-92-3-100612-8.",
+  "reasonlens_implementation_note": "This file operationalises the UNESCO Guidance document for the ReasonLens platform as an institutional policy maturity assessment. The original UNESCO document is structured as regulatory guidance with policy measures and stakeholder frameworks, not as a maturity model. ReasonLens imposes a 4-dimension x 3-level maturity structure to enable comparable assessment alongside other institutional frameworks (THE DMI, QS AI Capability, JISC AI Maturity). The four dimensions synthesise UNESCO's eight policy action areas and four-stakeholder regulatory framework into assessable institutional governance dimensions. The three levels (Emerging/Developing/Established) are a ReasonLens construct informed by the JISC AI Maturity Model's stage-based approach.",
+  "dimensions": [
+    {
+      "id": "gp-human-centered",
+      "name": "Human-Centred AI",
+      "code": "HC",
+      "description": "The extent to which the institution ensures that AI deployment protects human agency, supports human decision-making, and centres educational relationships on human needs, values, and rights. Covers governance of AI-human interaction, protection of learner and staff autonomy, and human oversight mechanisms."
+    },
+    {
+      "id": "gp-safe-equitable",
+      "name": "Safe & Equitable",
+      "code": "SE",
+      "description": "The extent to which the institution implements mechanisms to ensure AI systems are safe, secure, inclusive, and equitable. Covers risk assessment, bias auditing, accessibility, digital divide mitigation, and protection of vulnerable populations including age-appropriate use."
+    },
+    {
+      "id": "gp-ethics",
+      "name": "Ethics & Accountability",
+      "code": "EA",
+      "description": "The extent to which the institution establishes ethical governance structures, accountability mechanisms, and regulatory compliance for AI use. Covers ethics committees, data protection, transparency requirements, AI use policies, academic integrity frameworks, and accountability chains."
+    },
+    {
+      "id": "gp-evidence",
+      "name": "Evidence-Based",
+      "code": "EB",
+      "description": "The extent to which the institution builds and uses evidence to inform AI adoption decisions, evaluates AI effectiveness through rigorous methods, and contributes to the broader knowledge base. Covers pilot evaluation, impact assessment, research partnerships, and evidence-informed policy development."
+    }
+  ],
+  "levels": [
+    {
+      "id_suffix": "emerging",
+      "name": "Emerging",
+      "order": 1,
+      "code": "E",
+      "description": "The institution recognises AI as relevant to education and research and has begun initial responses, but lacks coordinated policy, systematic governance, or evidence-based deployment. AI use is happening informally, and institutional responses are reactive or ad hoc."
+    },
+    {
+      "id_suffix": "developing",
+      "name": "Developing",
+      "order": 2,
+      "code": "D",
+      "description": "The institution has established initial policies, governance structures, and evaluation mechanisms for AI in education and research. Formal initiatives are underway but not yet comprehensive, institution-wide, or fully embedded in standard practice."
+    },
+    {
+      "id_suffix": "established",
+      "name": "Established",
+      "order": 3,
+      "code": "S",
+      "description": "The institution has comprehensive, embedded, and actively maintained AI governance, with evidence-driven policy, systematic safety and equity mechanisms, and continuous improvement processes. AI governance is integrated into institutional strategy and decision-making structures."
+    }
+  ],
+  "object_count": 8,
+  "structure": "4 dimensions x 2 boundaries (ED, DE)",
+  "data": [
+    {
+      "id": "gp-human-centered-ed",
+      "dimension_id": "gp-human-centered",
+      "boundary": "ED",
+      "lower_level": "emerging",
+      "upper_level": "developing",
+      "discriminator": "The institution moves from uncoordinated AI adoption with no formal consideration of human agency to having adopted formal principles and risk classification for human-AI interaction, with at least initial implementation of transparency and override mechanisms.",
+      "discriminator_type": "informal_vs_formal_governance",
+      "false_positives": [
+        {
+          "pattern": "Published principles without implementation",
+          "explanation": "An institution that has published human-centred AI principles but has not classified AI use by risk, implemented transparency mechanisms, or provided staff training on override procedures is still Emerging. Policy without implementation is aspiration, not governance.",
+          "distinguishing_evidence": "Ask for evidence of principles being applied to a specific AI deployment. Emerging institutions cannot point to a concrete example."
+        },
+        {
+          "pattern": "IT-led tool review mistaken for human-centred governance",
+          "explanation": "IT teams reviewing tools for technical security, data compliance, and functionality is standard procurement practice, not human-centred AI governance. The assessment of impact on human agency, learner autonomy, and educational relationships is a different question.",
+          "distinguishing_evidence": "Examine what the review covers. If it addresses technical and data protection requirements but not educational impact, human oversight, or learner agency, it is not human-centred governance."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": "The institution has adopted formal human-AI interaction principles AND classified at least high-risk AI uses AND implemented at least one transparency or override mechanism.",
+        "strong": "All Developing-level behaviours are evident: principles adopted, risk classification in use, staff trained on overrides, students informed about AI involvement, and at least one human-AI interaction review completed."
+      }
+    },
+    {
+      "id": "gp-human-centered-de",
+      "dimension_id": "gp-human-centered",
+      "boundary": "DE",
+      "lower_level": "developing",
+      "upper_level": "established",
+      "discriminator": "The institution moves from having formal principles and initial mechanisms to demonstrating embedded, audited, and continuously improving human-centred AI governance with longitudinal impact monitoring and sector contribution.",
+      "discriminator_type": "formal_governance_vs_embedded_culture",
+      "false_positives": [
+        {
+          "pattern": "Comprehensive documentation without evidence of impact",
+          "explanation": "An institution with extensive policy documentation, training materials, and governance structures but no evidence that these mechanisms have actually changed AI deployment decisions is still Developing. Established governance must demonstrate impact.",
+          "distinguishing_evidence": "Ask for a specific example where governance mechanisms modified or reversed an AI deployment decision."
+        },
+        {
+          "pattern": "Sector engagement without institutional embedding",
+          "explanation": "An institution that contributes to sector discussions on human-centred AI but whose own governance is not fully embedded internally is demonstrating external engagement, not established practice.",
+          "distinguishing_evidence": "Examine whether sector contribution is backed by mature internal practice or is aspirational."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": "Human oversight audits are conducted regularly AND risk classification is reviewed annually AND there is evidence that governance mechanisms have influenced at least one AI deployment decision.",
+        "strong": "All Established-level behaviours are evident: embedded oversight, annual review, cultural embedding, sector contribution, and longitudinal impact monitoring."
+      }
+    },
+    {
+      "id": "gp-safe-equitable-ed",
+      "dimension_id": "gp-safe-equitable",
+      "boundary": "ED",
+      "lower_level": "emerging",
+      "upper_level": "developing",
+      "discriminator": "The institution moves from ad hoc AI deployment without formal safety or equity assessment to having established risk assessment frameworks, conducted at least one bias audit, and specified AI accessibility and age-appropriateness requirements.",
+      "discriminator_type": "unassessed_vs_systematically_assessed",
+      "false_positives": [
+        {
+          "pattern": "Relying on vendor safety certifications as institutional safety governance",
+          "explanation": "Accepting vendor claims about safety and bias testing is not institutional risk assessment. Developing institutions must conduct their own assessment in their specific context.",
+          "distinguishing_evidence": "Ask whether the institution has evaluated any AI tool's performance with their own student population. Emerging institutions rely entirely on vendor claims."
+        },
+        {
+          "pattern": "Digital divide awareness without action",
+          "explanation": "Acknowledging digital access disparities in strategy documents without factoring them into AI deployment decisions is awareness, not governance.",
+          "distinguishing_evidence": "Ask how a recent AI deployment decision accounted for digital access disparities. Emerging institutions cannot cite a specific example."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": "A formal risk assessment framework exists AND at least one bias audit has been completed AND AI accessibility requirements are specified in procurement.",
+        "strong": "All Developing-level behaviours are evident: risk assessment applied, bias audit completed with actions taken, accessibility specified, digital divide documented, and age-appropriateness policies in place."
+      }
+    },
+    {
+      "id": "gp-safe-equitable-de",
+      "dimension_id": "gp-safe-equitable",
+      "boundary": "DE",
+      "lower_level": "developing",
+      "upper_level": "established",
+      "discriminator": "The institution moves from initial risk assessment and bias auditing to continuous monitoring, annual equity impact assessment, incident response protocols, and sector contribution.",
+      "discriminator_type": "initial_assessment_vs_continuous_monitoring",
+      "false_positives": [
+        {
+          "pattern": "Automated monitoring without equity disaggregation",
+          "explanation": "Technical monitoring of AI system performance (uptime, latency, error rates) is not equity monitoring. Established institutions disaggregate impact data by protected characteristics and socioeconomic indicators.",
+          "distinguishing_evidence": "Ask whether monitoring data is disaggregated by student demographics. Developing institutions may monitor performance but not equity."
+        },
+        {
+          "pattern": "Incident response plan that has never been tested",
+          "explanation": "A documented incident response protocol that has never been tested (even through simulation) provides less assurance than a simpler protocol that has been activated and validated.",
+          "distinguishing_evidence": "Ask for evidence that the protocol has been tested. Developing institutions may have a plan but no evidence of activation or simulation."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": "Continuous monitoring is in place AND annual equity impact assessments are conducted AND an incident response protocol exists and has been tested.",
+        "strong": "All Established-level behaviours: continuous monitoring with equity disaggregation, annual assessments, tested incident response, supplier due diligence, and sector contribution."
+      }
+    },
+    {
+      "id": "gp-ethics-ed",
+      "dimension_id": "gp-ethics",
+      "boundary": "ED",
+      "lower_level": "emerging",
+      "upper_level": "developing",
+      "discriminator": "The institution moves from having no formal AI ethics governance to having adopted a formal policy, established a governance body, implemented AI-specific data protection assessments, and documented an accountability chain.",
+      "discriminator_type": "no_governance_vs_formal_governance",
+      "false_positives": [
+        {
+          "pattern": "Academic integrity focus mistaken for AI ethics governance",
+          "explanation": "An institution that has updated academic integrity policies to address AI but has not developed broader AI ethics governance (covering data protection, accountability, fairness, transparency) is addressing one dimension of AI ethics, not establishing governance.",
+          "distinguishing_evidence": "Ask whether there is an AI ethics policy beyond academic integrity. Emerging institutions may have updated integrity policies but lack broader governance."
+        },
+        {
+          "pattern": "Working group without authority",
+          "explanation": "An AI working group that advises but has no decision-making power, no budget, and no ability to halt AI deployments is advisory, not governance. It may be a step toward Developing but is not sufficient.",
+          "distinguishing_evidence": "Ask whether the governance body can make binding decisions about AI deployment. Emerging institutions have advisory groups; Developing institutions have governance with authority."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": "A formal AI ethics policy exists AND a governance body with terms of reference is established AND AI-specific DPIAs are conducted AND an accountability chain is documented.",
+        "strong": "All Developing-level behaviours: policy adopted, governance body operational, DPIAs conducted, nuanced academic integrity guidance, and accountability chain documented and communicated."
+      }
+    },
+    {
+      "id": "gp-ethics-de",
+      "dimension_id": "gp-ethics",
+      "boundary": "DE",
+      "lower_level": "developing",
+      "upper_level": "established",
+      "discriminator": "The institution moves from having formal governance structures to demonstrating that governance is embedded in strategic decision-making, actively reviewed, comprehensively trained, and proven to influence AI deployment decisions.",
+      "discriminator_type": "formal_structures_vs_embedded_impact",
+      "false_positives": [
+        {
+          "pattern": "Comprehensive training without behavioural change",
+          "explanation": "An institution with high training completion rates but no evidence that staff behaviour or institutional decisions have changed as a result is measuring participation, not impact.",
+          "distinguishing_evidence": "Ask for evidence of training impact: have AI deployment decisions changed? Have staff practices changed? Have concern-raising mechanisms been used?"
+        },
+        {
+          "pattern": "Annual policy review without substantive changes",
+          "explanation": "Reviewing a policy annually and confirming 'no changes needed' year after year may indicate box-ticking rather than genuine adaptation to a rapidly changing AI landscape.",
+          "distinguishing_evidence": "Examine whether policy reviews have resulted in any changes. If AI capabilities and regulations have evolved but the policy has not, the review process may be superficial."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": "Ethics governance is referenced in strategic planning AND policies are reviewed annually with evidence of updates AND governance mechanisms have demonstrably influenced at least one AI decision.",
+        "strong": "All Established-level behaviours: strategic integration, annual review with changes, comprehensive training, sector contribution, concern-raising mechanisms used, and evidence of governance impact on decisions."
+      }
+    },
+    {
+      "id": "gp-evidence-ed",
+      "dimension_id": "gp-evidence",
+      "boundary": "ED",
+      "lower_level": "emerging",
+      "upper_level": "developing",
+      "discriminator": "The institution moves from making AI decisions without systematic evidence to having formal evaluation frameworks, completed at least one rigorous evaluation, and used findings to inform a deployment decision.",
+      "discriminator_type": "anecdotal_vs_systematic_evidence",
+      "false_positives": [
+        {
+          "pattern": "Usage analytics presented as evaluation evidence",
+          "explanation": "Dashboard showing login counts, session duration, and feature usage measures adoption, not impact. Developing institutions evaluate outcomes (learning, efficiency, equity), not just usage.",
+          "distinguishing_evidence": "Ask what outcomes were measured in the evaluation. If only usage metrics, the institution is still Emerging for evidence practice."
+        },
+        {
+          "pattern": "Vendor-provided evaluation accepted as institutional evidence",
+          "explanation": "Vendor-conducted evaluations serve vendor interests and may not assess outcomes relevant to the institution. Developing institutions conduct or commission independent evaluation.",
+          "distinguishing_evidence": "Ask who conducted the evaluation and whether the institution specified the evaluation questions and methods."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": "An evaluation framework exists AND at least one AI tool has been independently evaluated AND findings have informed a deployment decision.",
+        "strong": "All Developing-level behaviours: frameworks in use, rigorous evaluation completed, evidence-informed decisions documented, external evidence engaged with, and data infrastructure supports evaluation."
+      }
+    },
+    {
+      "id": "gp-evidence-de",
+      "dimension_id": "gp-evidence",
+      "boundary": "DE",
+      "lower_level": "developing",
+      "upper_level": "established",
+      "discriminator": "The institution moves from initial evaluation practice to systematic evidence strategy with longitudinal evaluation, external contribution, evidence-to-decision trails, and context-specific methodologies.",
+      "discriminator_type": "initial_evaluation_vs_evidence_culture",
+      "false_positives": [
+        {
+          "pattern": "Published research without institutional impact",
+          "explanation": "Academic publications about AI in education that do not feed back into institutional AI decisions demonstrate research capability, not evidence-based institutional practice.",
+          "distinguishing_evidence": "Ask whether published findings have influenced institutional AI strategy or specific deployment decisions."
+        },
+        {
+          "pattern": "Longitudinal data collection without longitudinal analysis",
+          "explanation": "Collecting usage data over multiple years is not longitudinal evaluation. Established evidence practice requires analysing outcome trends, unintended consequences, and differential impacts over time.",
+          "distinguishing_evidence": "Ask what has been learned from multi-year data. If the answer is only trend lines of usage, the institution has data, not evidence."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": "A systematic evidence strategy exists AND longitudinal evaluation is underway AND evidence feeds into strategic planning AND the institution contributes to external evidence base.",
+        "strong": "All Established-level behaviours: evidence strategy operational, longitudinal evaluation producing insights, external contributions published, evidence-to-decision trails documented, and context-specific methodologies developed."
+      }
+    }
+  ]
+}

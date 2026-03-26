@@ -1,0 +1,253 @@
+{
+  "framework_id": "jisc-ai-maturity",
+  "framework_name": "Jisc AI Maturity Model",
+  "file_type": "cross-framework-mappings",
+  "research_basis": {
+    "generated_at": "2026-03-26",
+    "authoring_method": "Original synthesis using the user brief and the THE DMI implementation reference as the structural benchmark.",
+    "licence_handling": "Original implementation content informed by Jisc AI maturity structure. Scenarios and practitioner language are independently written to avoid reproducing Jisc wording."
+  },
+  "object_count": 16,
+  "mappings": [
+    {
+      "source_framework": "jisc-ai-maturity",
+      "source_dimension_id": "jisc-ai-strategy",
+      "target_framework": "QS AI Capability",
+      "target_construct": "Governance & Human Commitment: Governance & Risk Management; Leadership & Capability",
+      "confidence": "strong",
+      "direction": "bidirectional",
+      "what_transfers": [
+        "institutional AI leadership, governance, and strategic direction"
+      ],
+      "what_does_not_transfer": [
+        "QS's broader external branding and capability positioning elements"
+      ],
+      "rationale": "This is the closest peer mapping for institutional AI strategy and leadership."
+    },
+    {
+      "source_framework": "jisc-ai-maturity",
+      "source_dimension_id": "jisc-ai-people",
+      "target_framework": "QS AI Capability",
+      "target_construct": "Governance & Human Commitment: Leadership & Capability; faculty and administrative capability enablers",
+      "confidence": "strong",
+      "direction": "bidirectional",
+      "what_transfers": [
+        "AI skills, capacity building, and organisational readiness"
+      ],
+      "what_does_not_transfer": [
+        "Jisc's explicit tertiary-sector role-based literacy language"
+      ],
+      "rationale": "Both frameworks treat capability building as central to sustainable AI maturity."
+    },
+    {
+      "source_framework": "jisc-ai-maturity",
+      "source_dimension_id": "jisc-ai-tech",
+      "target_framework": "QS AI Capability",
+      "target_construct": "Outreach & Operational Efficiency; Teaching, Learning & Assessment; Research & Scholarship enablers",
+      "confidence": "moderate",
+      "direction": "bidirectional",
+      "what_transfers": [
+        "technical capability, infrastructure, workflow support, and operationalisation"
+      ],
+      "what_does_not_transfer": [
+        "QS distributes infrastructure implications across pillars rather than holding one standalone technical dimension"
+      ],
+      "rationale": "The overlap is strong but structurally distributed in QS."
+    },
+    {
+      "source_framework": "jisc-ai-maturity",
+      "source_dimension_id": "jisc-ai-data",
+      "target_framework": "QS AI Capability",
+      "target_construct": "Governance & Human Commitment: Code of Conduct & Privacy Protection; Governance & Risk Management",
+      "confidence": "moderate",
+      "direction": "unidirectional",
+      "what_transfers": [
+        "data governance, readiness, and protection for AI use"
+      ],
+      "what_does_not_transfer": [
+        "QS does not foreground data readiness as a separate top-level dimension"
+      ],
+      "rationale": "Jisc is more explicit about data foundations as a dependency."
+    },
+    {
+      "source_framework": "jisc-ai-maturity",
+      "source_dimension_id": "jisc-ai-ethics",
+      "target_framework": "QS AI Capability",
+      "target_construct": "Governance & Human Commitment: Regulatory & Ethical Standards; Code of Conduct & Privacy Protection",
+      "confidence": "strong",
+      "direction": "bidirectional",
+      "what_transfers": [
+        "responsible AI, ethics, privacy, oversight, and accountability"
+      ],
+      "what_does_not_transfer": [
+        "some broader sector-positioning and assessment-process elements in QS"
+      ],
+      "rationale": "This is a close conceptual match."
+    },
+    {
+      "source_framework": "jisc-ai-maturity",
+      "source_dimension_id": "jisc-ai-strategy",
+      "target_framework": "THE DMI",
+      "target_construct": "Strategy across all pillars; Planning & Governance child dimensions",
+      "confidence": "strong",
+      "direction": "bidirectional",
+      "what_transfers": [
+        "strategic direction, governance ownership, and alignment to mission"
+      ],
+      "what_does_not_transfer": [
+        "THE DMI is digital-wide rather than AI-specific"
+      ],
+      "rationale": "AI strategy is a domain-specific extension of the broader strategy construct in THE DMI."
+    },
+    {
+      "source_framework": "jisc-ai-maturity",
+      "source_dimension_id": "jisc-ai-people",
+      "target_framework": "THE DMI",
+      "target_construct": "People & Culture across all pillars",
+      "confidence": "strong",
+      "direction": "bidirectional",
+      "what_transfers": [
+        "skills, confidence, adoption readiness, and cultural support"
+      ],
+      "what_does_not_transfer": [
+        "AI-specific literacy and specialised capability content"
+      ],
+      "rationale": "The people-and-culture logic transfers strongly."
+    },
+    {
+      "source_framework": "jisc-ai-maturity",
+      "source_dimension_id": "jisc-ai-tech",
+      "target_framework": "THE DMI",
+      "target_construct": "Technology across all pillars",
+      "confidence": "strong",
+      "direction": "bidirectional",
+      "what_transfers": [
+        "infrastructure, integration, resilience, and service readiness"
+      ],
+      "what_does_not_transfer": [
+        "AI-specific lifecycle and model monitoring concerns"
+      ],
+      "rationale": "Technology maturity maps directly, with AI-specific details added on the Jisc side."
+    },
+    {
+      "source_framework": "jisc-ai-maturity",
+      "source_dimension_id": "jisc-ai-data",
+      "target_framework": "THE DMI",
+      "target_construct": "Data across all pillars",
+      "confidence": "strong",
+      "direction": "bidirectional",
+      "what_transfers": [
+        "data governance, availability, and evidence capability"
+      ],
+      "what_does_not_transfer": [
+        "AI-specific dataset readiness and model-use constraints"
+      ],
+      "rationale": "This is one of the clearest cross-framework matches."
+    },
+    {
+      "source_framework": "jisc-ai-maturity",
+      "source_dimension_id": "jisc-ai-ethics",
+      "target_framework": "THE DMI",
+      "target_construct": "Strategy + Data + Utilisation dependency pattern; Planning & Governance",
+      "confidence": "moderate",
+      "direction": "unidirectional",
+      "what_transfers": [
+        "responsible governance and trusted deployment"
+      ],
+      "what_does_not_transfer": [
+        "THE DMI has no dedicated ethics dimension"
+      ],
+      "rationale": "THE captures responsible use indirectly, while Jisc AI maturity makes it explicit."
+    },
+    {
+      "source_framework": "jisc-ai-maturity",
+      "source_dimension_id": "jisc-ai-strategy",
+      "target_framework": "JISC Digital Maturity",
+      "target_construct": "Organisational Digital Culture / Knowledge Management & Use / Knowledge Exchange & Partnerships",
+      "confidence": "moderate",
+      "direction": "bidirectional",
+      "what_transfers": [
+        "strategic alignment and leadership for transformation"
+      ],
+      "what_does_not_transfer": [
+        "AI-specific governance and risk management detail"
+      ],
+      "rationale": "AI strategy builds on wider digital maturity but adds domain-specific governance."
+    },
+    {
+      "source_framework": "jisc-ai-maturity",
+      "source_dimension_id": "jisc-ai-people",
+      "target_framework": "JISC Digital Maturity",
+      "target_construct": "Knowledge Development / Organisational Digital Culture",
+      "confidence": "strong",
+      "direction": "bidirectional",
+      "what_transfers": [
+        "capability growth, confidence, and cultural adoption"
+      ],
+      "what_does_not_transfer": [
+        "AI-specific literacy, prompt use, and specialist support"
+      ],
+      "rationale": "This is the strongest sibling bridge."
+    },
+    {
+      "source_framework": "jisc-ai-maturity",
+      "source_dimension_id": "jisc-ai-tech",
+      "target_framework": "JISC Digital Maturity",
+      "target_construct": "Knowledge Creation & Innovation / Knowledge Management & Use",
+      "confidence": "moderate",
+      "direction": "bidirectional",
+      "what_transfers": [
+        "operational capability and systems enablement"
+      ],
+      "what_does_not_transfer": [
+        "AI model lifecycle and managed-service details"
+      ],
+      "rationale": "Digital maturity provides the broader substrate; AI maturity narrows the focus."
+    },
+    {
+      "source_framework": "jisc-ai-maturity",
+      "source_dimension_id": "jisc-ai-data",
+      "target_framework": "UNESCO Guidance",
+      "target_construct": "Guidance for generative AI in education and research: data privacy, regulation, and human-centred governance",
+      "confidence": "strong",
+      "direction": "unidirectional",
+      "what_transfers": [
+        "data protection, validation, governance, and readiness concerns"
+      ],
+      "what_does_not_transfer": [
+        "Jisc's institution-level operational detail and stage model"
+      ],
+      "rationale": "UNESCO guidance strongly reinforces data privacy and governance expectations for AI in education."
+    },
+    {
+      "source_framework": "jisc-ai-maturity",
+      "source_dimension_id": "jisc-ai-ethics",
+      "target_framework": "UNESCO Guidance",
+      "target_construct": "Guidance for generative AI in education and research: ethical validation, human-centred regulation, equity, and meaningful use",
+      "confidence": "strong",
+      "direction": "bidirectional",
+      "what_transfers": [
+        "human-centred, ethical, safe, equitable, and accountable AI use"
+      ],
+      "what_does_not_transfer": [
+        "Jisc's specific maturity staging and UK-tertiary operational focus"
+      ],
+      "rationale": "This is a strong normative mapping, with Jisc supplying maturity staging."
+    },
+    {
+      "source_framework": "jisc-ai-maturity",
+      "source_dimension_id": "jisc-ai-strategy",
+      "target_framework": "UNESCO Guidance",
+      "target_construct": "AI and education: guidance for policy-makers; human-centred policy response",
+      "confidence": "moderate",
+      "direction": "unidirectional",
+      "what_transfers": [
+        "strategic planning, policy response, and institutional readiness"
+      ],
+      "what_does_not_transfer": [
+        "Jisc's operational tertiary-education maturity model structure"
+      ],
+      "rationale": "UNESCO informs the policy lens, while Jisc supplies a staged maturity implementation frame."
+    }
+  ]
+}

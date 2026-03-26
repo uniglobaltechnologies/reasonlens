@@ -1,0 +1,96 @@
+{
+  "_meta": {
+    "file": "standard-thresholds.json",
+    "framework_id": "iste-leaders",
+    "framework_name": "ISTE Standards for Education Leaders v4.02",
+    "replaces": "level-boundaries.json",
+    "assessment_paradigm": "met/not-met (binary). partially_met is treated as not_met for scoring.",
+    "licensing_constraint": "ISTE Standards text \u00a9 2024 4.02, ISTE (International Society for Technology in Education), iste.org. All rights reserved. ISTE permits free use for non-commercial educational purposes only. Commercial use requires separate ISTE licensing agreement. See iste.org/permissions-licensing. If ReasonLens operates commercial tiers, ISTE frameworks must be excluded from those tiers unless ISTE licensing is obtained.",
+    "generated_for": "ReasonLens",
+    "note": "Standard 3.1 was renamed 'Digital Citizenship Advocate' in v4.02 (previously 'Equity and Citizenship Advocate' in the 2018 original). Prompt text in this file uses the current v4.02 name."
+  },
+  "thresholds": [
+    {
+      "standard_id": "iste-l-dca",
+      "standard_name": "Digital Citizenship Advocate",
+      "standard_number": "3.1",
+      "standard_source_text": "Leaders ensure all students engage in the active use of technology for learning and build their digital citizenship skills.",
+      "indicators": [
+        "iste-l-dca-3a",
+        "iste-l-dca-3b",
+        "iste-l-dca-3c",
+        "iste-l-dca-3d"
+      ],
+      "met_threshold_description": "The leader ensures all students have access to skilled, technology-confident educators; ensures equitable access to technology, connectivity, and inclusive digital content; models healthy and purposeful technology use to the community; and models safe, ethical, and critical use of digital content.",
+      "not_yet_met_description": "The leader manages access policies reactively; treats equity as an operational rather than ethical issue; does not model personal technology practices; and delegates digital citizenship to policy documents rather than embodying it.",
+      "partial_met_description": "The leader escalates access equity issues and communicates the acceptable use policy, but does not act with urgency on equity gaps, model personal digital practices, or embed digital citizenship in the school's culture rather than its rulebook.",
+      "scoring_note": "Binary: met or not_met."
+    },
+    {
+      "standard_id": "iste-l-vp",
+      "standard_name": "Visionary Planner",
+      "standard_number": "3.2",
+      "standard_source_text": "Leaders engage others in establishing a vision, strategic plan and ongoing evaluation cycle for transforming learning with technology.",
+      "indicators": [
+        "iste-l-vp-3a",
+        "iste-l-vp-3b",
+        "iste-l-vp-3c",
+        "iste-l-vp-3d",
+        "iste-l-vp-3e"
+      ],
+      "met_threshold_description": "The leader engages a wide community (including students, families, and external partners) to develop a shared vision; builds a collaborative strategic plan that explicitly links technology to learning outcomes; evaluates progress against the plan continuously; communicates transparently with stakeholders; and shares lessons with peers in other institutions.",
+      "not_yet_met_description": "The leader develops strategy with a narrow group, frames technology investment primarily around infrastructure, does not evaluate progress against learning outcomes, and shares results only when required.",
+      "partial_met_description": "The leader consults staff and produces a documented strategic plan with some stakeholder input, but the plan does not explicitly map technology to learning outcomes, lacks a continuous evaluation cycle, and does not create channels for sharing learning externally.",
+      "scoring_note": "Binary: met or not_met."
+    },
+    {
+      "standard_id": "iste-l-el",
+      "standard_name": "Empowering Leader",
+      "standard_number": "3.3",
+      "standard_source_text": "Leaders create a culture where teachers and learners are empowered to use technology in innovative ways to enrich teaching and learning.",
+      "indicators": [
+        "iste-l-el-3a",
+        "iste-l-el-3b",
+        "iste-l-el-3c",
+        "iste-l-el-3d",
+        "iste-l-el-3e"
+      ],
+      "met_threshold_description": "The leader builds educator professional agency and leadership; develops staff competency in the ISTE Standards; creates a culture that values innovation and creative risk-taking with technology; supports inclusive digital learning for diverse student needs; and develops personalisable, real-time learning assessments.",
+      "not_yet_met_description": "The leader provides CPD options but does not build genuine teacher agency; measures digital skills adoption rather than building ISTE-standards competency; tolerates rather than actively fosters innovation; and uses assessment data primarily for accountability rather than personalisation.",
+      "partial_met_description": "The leader offers professional development choice and peer-sharing structures, but does not create conditions for genuine instructional risk-taking with technology or build capacity explicitly grounded in the ISTE Standards.",
+      "scoring_note": "Binary: met or not_met."
+    },
+    {
+      "standard_id": "iste-l-sd",
+      "standard_name": "Systems Designer",
+      "standard_number": "3.4",
+      "standard_source_text": "Leaders build teams and systems to implement, sustain and continually improve the use of technology to support learning.",
+      "indicators": [
+        "iste-l-sd-3a",
+        "iste-l-sd-3b",
+        "iste-l-sd-3c",
+        "iste-l-sd-3d"
+      ],
+      "met_threshold_description": "The leader establishes equitable technology policies; ensures infrastructure is sufficient and scalable for future demand; protects privacy and security through active data management policy and staff capability; and builds partnerships that advance strategic plans and real-world student experience.",
+      "not_yet_met_description": "The leader approves technology purchases without systemic policy; infrastructure planning is reactive; data protection is treated as an IT function rather than a leadership responsibility; and partnerships are not strategically connected to learning priorities.",
+      "partial_met_description": "The leader reviews tool privacy policies, seeks consent where required, and has explored cost-sharing partnerships, but has not established governance systems, policy frameworks, or staff capability development for active data stewardship.",
+      "scoring_note": "Binary: met or not_met."
+    },
+    {
+      "standard_id": "iste-l-cl",
+      "standard_name": "Connected Learner",
+      "standard_number": "3.5",
+      "standard_source_text": "Leaders model and promote continuous professional learning for themselves and others.",
+      "indicators": [
+        "iste-l-cl-3a",
+        "iste-l-cl-3b",
+        "iste-l-cl-3c",
+        "iste-l-cl-3d"
+      ],
+      "met_threshold_description": "The leader sets goals to remain current on emerging technologies and learning science; participates regularly in professional learning networks; uses technology for personal reflective practice; and develops skills to lead complex change, advance systems, and sustain a continuous improvement mindset.",
+      "not_yet_met_description": "The leader consumes edtech news passively; does not participate in professional networks; does not model reflective practice around technology; and treats technology strategy as a static plan rather than a continuously evolving system.",
+      "partial_met_description": "The leader subscribes to newsletters and attends conferences, but does not engage in active professional networks, does not use technology for structured personal reflection, and does not build the change leadership capabilities the Connected Learner standard requires.",
+      "scoring_note": "Binary: met or not_met."
+    }
+  ]
+}

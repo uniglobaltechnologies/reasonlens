@@ -1,0 +1,1333 @@
+{
+  "framework_id": "dec-ai-literacy",
+  "framework_name": "DEC AI Literacy Framework",
+  "file_type": "indicator-operationalisation",
+  "research_basis": {
+    "generated_at": "2026-03-26",
+    "authoring_method": "Original synthesis using the user brief and the THE DMI implementation reference as the structural benchmark.",
+    "licence_handling": "All rights reserved; reproduction without amendment permitted. This implementation uses original scenario and practitioner-language content informed by the framework structure."
+  },
+  "object_count": 20,
+  "objects": [
+    {
+      "object_id": "dec-understanding-awareness",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-understanding",
+      "dimension_name": "Understanding AI and Data",
+      "level_id": "dec-understanding-awareness",
+      "level_name": "Awareness",
+      "level_order": 1,
+      "focus_statement": "At the Awareness level, the learner recognises and notices AI-related decisions in grounded understanding of AI systems and data behaviour and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Recognises when Understanding AI and Data matters in familiar tasks and can name basic issues or concepts.",
+        "Uses provided examples, prompts, or checklists to make an initial decision in understanding ai and data.",
+        "Can give a simple explanation of choices in understanding ai and data, but usually needs support to go beyond the obvious case."
+      ],
+      "evidence_examples": [
+        "concept explanations",
+        "comparison tables",
+        "annotated examples"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "assuming more data always means better performance",
+          "frequency": "common"
+        },
+        {
+          "statement": "confusing generated text with factual understanding",
+          "frequency": "common"
+        },
+        {
+          "statement": "Overstates competence because the task felt familiar.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "Understanding AI and Data shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for Understanding AI and Data vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in Understanding AI and Data, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of Understanding AI and Data differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "discipline_context": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for Understanding AI and Data vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Understanding provides the conceptual base for using, creating, and governing AI well.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    },
+    {
+      "object_id": "dec-understanding-exploration",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-understanding",
+      "dimension_name": "Understanding AI and Data",
+      "level_id": "dec-understanding-exploration",
+      "level_name": "Exploration",
+      "level_order": 2,
+      "focus_statement": "At the Exploration level, the learner tries and compares AI-related decisions in grounded understanding of AI systems and data behaviour and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Explains routine decisions in understanding ai and data using a clear structure rather than intuition alone.",
+        "Compares options or outputs against explicit criteria and revises work when those criteria are not met.",
+        "Documents limitations, uncertainties, or follow-up checks in a way another person could understand and repeat."
+      ],
+      "evidence_examples": [
+        "comparison tables",
+        "annotated examples",
+        "tool evaluation notes"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "assuming more data always means better performance",
+          "frequency": "common"
+        },
+        {
+          "statement": "confusing generated text with factual understanding",
+          "frequency": "common"
+        },
+        {
+          "statement": "Assumes a tidy routine will work unchanged in every context.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "Understanding AI and Data shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for Understanding AI and Data vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in Understanding AI and Data, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of Understanding AI and Data differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "discipline_context": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for Understanding AI and Data vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Understanding provides the conceptual base for using, creating, and governing AI well.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    },
+    {
+      "object_id": "dec-understanding-practice",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-understanding",
+      "dimension_name": "Understanding AI and Data",
+      "level_id": "dec-understanding-practice",
+      "level_name": "Practice",
+      "level_order": 3,
+      "focus_statement": "At the Practice level, the learner integrates and refines AI-related decisions in grounded understanding of AI systems and data behaviour and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Adapts understanding ai and data practice to context, stakes, and audience rather than using the same routine everywhere.",
+        "Identifies likely failure modes, trade-offs, or unintended effects and adjusts the approach before problems escalate.",
+        "Transfers sound practice across tasks and can coach peers through the reasoning behind a decision."
+      ],
+      "evidence_examples": [
+        "annotated examples",
+        "tool evaluation notes",
+        "annotated reflections"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "assuming more data always means better performance",
+          "frequency": "common"
+        },
+        {
+          "statement": "confusing generated text with factual understanding",
+          "frequency": "common"
+        },
+        {
+          "statement": "Mistakes strong personal practice for system-level readiness.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "Understanding AI and Data shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for Understanding AI and Data vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in Understanding AI and Data, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of Understanding AI and Data differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "discipline_context": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for Understanding AI and Data vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Understanding provides the conceptual base for using, creating, and governing AI well.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    },
+    {
+      "object_id": "dec-understanding-mastery",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-understanding",
+      "dimension_name": "Understanding AI and Data",
+      "level_id": "dec-understanding-mastery",
+      "level_name": "Mastery",
+      "level_order": 4,
+      "focus_statement": "At the Mastery level, the learner designs and mentors AI-related decisions in grounded understanding of AI systems and data behaviour and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Shapes shared expectations, exemplars, or guidance for understanding ai and data beyond their own immediate tasks.",
+        "Evaluates proposals, resources, or systems using evidence and can redesign practice when the environment changes.",
+        "Anticipates emerging needs in understanding ai and data and helps others build capacity rather than solving issues case by case."
+      ],
+      "evidence_examples": [
+        "annotated examples",
+        "tool evaluation notes",
+        "annotated reflections"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "assuming more data always means better performance",
+          "frequency": "common"
+        },
+        {
+          "statement": "confusing generated text with factual understanding",
+          "frequency": "common"
+        },
+        {
+          "statement": "Confuses influence with formal authority or sustainable change.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "Understanding AI and Data shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for Understanding AI and Data vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in Understanding AI and Data, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of Understanding AI and Data differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "discipline_context": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for Understanding AI and Data vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Understanding provides the conceptual base for using, creating, and governing AI well.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    },
+    {
+      "object_id": "dec-using-awareness",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-using",
+      "dimension_name": "Using AI Tools",
+      "level_id": "dec-using-awareness",
+      "level_name": "Awareness",
+      "level_order": 1,
+      "focus_statement": "At the Awareness level, the learner recognises and notices AI-related decisions in confident and critical use of AI in authentic work and study and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Recognises when Using AI Tools matters in familiar tasks and can name basic issues or concepts.",
+        "Uses provided examples, prompts, or checklists to make an initial decision in using ai tools.",
+        "Can give a simple explanation of choices in using ai tools, but usually needs support to go beyond the obvious case."
+      ],
+      "evidence_examples": [
+        "workflow examples",
+        "prompt libraries",
+        "review notes"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "using AI outputs without verifying them",
+          "frequency": "common"
+        },
+        {
+          "statement": "treating any productivity gain as success",
+          "frequency": "common"
+        },
+        {
+          "statement": "Overstates competence because the task felt familiar.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "Using AI Tools shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for Using AI Tools vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in Using AI Tools, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of Using AI Tools differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "discipline_context": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for Using AI Tools vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Effective use depends on understanding tool behaviour and applying ethical constraints.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    },
+    {
+      "object_id": "dec-using-exploration",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-using",
+      "dimension_name": "Using AI Tools",
+      "level_id": "dec-using-exploration",
+      "level_name": "Exploration",
+      "level_order": 2,
+      "focus_statement": "At the Exploration level, the learner tries and compares AI-related decisions in confident and critical use of AI in authentic work and study and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Explains routine decisions in using ai tools using a clear structure rather than intuition alone.",
+        "Compares options or outputs against explicit criteria and revises work when those criteria are not met.",
+        "Documents limitations, uncertainties, or follow-up checks in a way another person could understand and repeat."
+      ],
+      "evidence_examples": [
+        "prompt libraries",
+        "review notes",
+        "task redesign artefacts"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "using AI outputs without verifying them",
+          "frequency": "common"
+        },
+        {
+          "statement": "treating any productivity gain as success",
+          "frequency": "common"
+        },
+        {
+          "statement": "Assumes a tidy routine will work unchanged in every context.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "Using AI Tools shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for Using AI Tools vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in Using AI Tools, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of Using AI Tools differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "discipline_context": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for Using AI Tools vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Effective use depends on understanding tool behaviour and applying ethical constraints.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    },
+    {
+      "object_id": "dec-using-practice",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-using",
+      "dimension_name": "Using AI Tools",
+      "level_id": "dec-using-practice",
+      "level_name": "Practice",
+      "level_order": 3,
+      "focus_statement": "At the Practice level, the learner integrates and refines AI-related decisions in confident and critical use of AI in authentic work and study and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Adapts using ai tools practice to context, stakes, and audience rather than using the same routine everywhere.",
+        "Identifies likely failure modes, trade-offs, or unintended effects and adjusts the approach before problems escalate.",
+        "Transfers sound practice across tasks and can coach peers through the reasoning behind a decision."
+      ],
+      "evidence_examples": [
+        "review notes",
+        "task redesign artefacts",
+        "annotated reflections"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "using AI outputs without verifying them",
+          "frequency": "common"
+        },
+        {
+          "statement": "treating any productivity gain as success",
+          "frequency": "common"
+        },
+        {
+          "statement": "Mistakes strong personal practice for system-level readiness.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "Using AI Tools shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for Using AI Tools vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in Using AI Tools, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of Using AI Tools differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "discipline_context": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for Using AI Tools vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Effective use depends on understanding tool behaviour and applying ethical constraints.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    },
+    {
+      "object_id": "dec-using-mastery",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-using",
+      "dimension_name": "Using AI Tools",
+      "level_id": "dec-using-mastery",
+      "level_name": "Mastery",
+      "level_order": 4,
+      "focus_statement": "At the Mastery level, the learner designs and mentors AI-related decisions in confident and critical use of AI in authentic work and study and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Shapes shared expectations, exemplars, or guidance for using ai tools beyond their own immediate tasks.",
+        "Evaluates proposals, resources, or systems using evidence and can redesign practice when the environment changes.",
+        "Anticipates emerging needs in using ai tools and helps others build capacity rather than solving issues case by case."
+      ],
+      "evidence_examples": [
+        "review notes",
+        "task redesign artefacts",
+        "annotated reflections"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "using AI outputs without verifying them",
+          "frequency": "common"
+        },
+        {
+          "statement": "treating any productivity gain as success",
+          "frequency": "common"
+        },
+        {
+          "statement": "Confuses influence with formal authority or sustainable change.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "Using AI Tools shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for Using AI Tools vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in Using AI Tools, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of Using AI Tools differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "discipline_context": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for Using AI Tools vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Effective use depends on understanding tool behaviour and applying ethical constraints.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    },
+    {
+      "object_id": "dec-creating-awareness",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-creating",
+      "dimension_name": "Creating with AI",
+      "level_id": "dec-creating-awareness",
+      "level_name": "Awareness",
+      "level_order": 1,
+      "focus_statement": "At the Awareness level, the learner recognises and notices AI-related decisions in co-creating with AI while retaining human direction and quality control and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Recognises when Creating with AI matters in familiar tasks and can name basic issues or concepts.",
+        "Uses provided examples, prompts, or checklists to make an initial decision in creating with ai.",
+        "Can give a simple explanation of choices in creating with ai, but usually needs support to go beyond the obvious case."
+      ],
+      "evidence_examples": [
+        "draft histories",
+        "prototype iterations",
+        "creative briefs"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "treating generation as the same thing as creation",
+          "frequency": "common"
+        },
+        {
+          "statement": "assuming originality disappears whenever AI is involved",
+          "frequency": "common"
+        },
+        {
+          "statement": "Overstates competence because the task felt familiar.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "Creating with AI shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for Creating with AI vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in Creating with AI, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of Creating with AI differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "discipline_context": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for Creating with AI vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Creation becomes higher quality when tool use, domain knowledge, and ethical judgement are all present.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    },
+    {
+      "object_id": "dec-creating-exploration",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-creating",
+      "dimension_name": "Creating with AI",
+      "level_id": "dec-creating-exploration",
+      "level_name": "Exploration",
+      "level_order": 2,
+      "focus_statement": "At the Exploration level, the learner tries and compares AI-related decisions in co-creating with AI while retaining human direction and quality control and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Explains routine decisions in creating with ai using a clear structure rather than intuition alone.",
+        "Compares options or outputs against explicit criteria and revises work when those criteria are not met.",
+        "Documents limitations, uncertainties, or follow-up checks in a way another person could understand and repeat."
+      ],
+      "evidence_examples": [
+        "prototype iterations",
+        "creative briefs",
+        "annotated outputs"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "treating generation as the same thing as creation",
+          "frequency": "common"
+        },
+        {
+          "statement": "assuming originality disappears whenever AI is involved",
+          "frequency": "common"
+        },
+        {
+          "statement": "Assumes a tidy routine will work unchanged in every context.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "Creating with AI shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for Creating with AI vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in Creating with AI, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of Creating with AI differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "discipline_context": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for Creating with AI vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Creation becomes higher quality when tool use, domain knowledge, and ethical judgement are all present.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    },
+    {
+      "object_id": "dec-creating-practice",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-creating",
+      "dimension_name": "Creating with AI",
+      "level_id": "dec-creating-practice",
+      "level_name": "Practice",
+      "level_order": 3,
+      "focus_statement": "At the Practice level, the learner integrates and refines AI-related decisions in co-creating with AI while retaining human direction and quality control and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Adapts creating with ai practice to context, stakes, and audience rather than using the same routine everywhere.",
+        "Identifies likely failure modes, trade-offs, or unintended effects and adjusts the approach before problems escalate.",
+        "Transfers sound practice across tasks and can coach peers through the reasoning behind a decision."
+      ],
+      "evidence_examples": [
+        "creative briefs",
+        "annotated outputs",
+        "annotated reflections"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "treating generation as the same thing as creation",
+          "frequency": "common"
+        },
+        {
+          "statement": "assuming originality disappears whenever AI is involved",
+          "frequency": "common"
+        },
+        {
+          "statement": "Mistakes strong personal practice for system-level readiness.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "Creating with AI shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for Creating with AI vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in Creating with AI, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of Creating with AI differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "discipline_context": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for Creating with AI vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Creation becomes higher quality when tool use, domain knowledge, and ethical judgement are all present.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    },
+    {
+      "object_id": "dec-creating-mastery",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-creating",
+      "dimension_name": "Creating with AI",
+      "level_id": "dec-creating-mastery",
+      "level_name": "Mastery",
+      "level_order": 4,
+      "focus_statement": "At the Mastery level, the learner designs and mentors AI-related decisions in co-creating with AI while retaining human direction and quality control and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Shapes shared expectations, exemplars, or guidance for creating with ai beyond their own immediate tasks.",
+        "Evaluates proposals, resources, or systems using evidence and can redesign practice when the environment changes.",
+        "Anticipates emerging needs in creating with ai and helps others build capacity rather than solving issues case by case."
+      ],
+      "evidence_examples": [
+        "creative briefs",
+        "annotated outputs",
+        "annotated reflections"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "treating generation as the same thing as creation",
+          "frequency": "common"
+        },
+        {
+          "statement": "assuming originality disappears whenever AI is involved",
+          "frequency": "common"
+        },
+        {
+          "statement": "Confuses influence with formal authority or sustainable change.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "Creating with AI shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for Creating with AI vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in Creating with AI, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of Creating with AI differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "discipline_context": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for Creating with AI vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Creation becomes higher quality when tool use, domain knowledge, and ethical judgement are all present.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    },
+    {
+      "object_id": "dec-ethics-awareness",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-ethics",
+      "dimension_name": "AI Ethics and Society",
+      "level_id": "dec-ethics-awareness",
+      "level_name": "Awareness",
+      "level_order": 1,
+      "focus_statement": "At the Awareness level, the learner recognises and notices AI-related decisions in responsible judgement about AI impacts on people, systems, and trust and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Recognises when AI Ethics and Society matters in familiar tasks and can name basic issues or concepts.",
+        "Uses provided examples, prompts, or checklists to make an initial decision in ai ethics and society.",
+        "Can give a simple explanation of choices in ai ethics and society, but usually needs support to go beyond the obvious case."
+      ],
+      "evidence_examples": [
+        "case analyses",
+        "policy comments",
+        "disclosure statements"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "reducing ethics to a single rule or policy",
+          "frequency": "common"
+        },
+        {
+          "statement": "thinking responsibility ends once a human has clicked approve",
+          "frequency": "common"
+        },
+        {
+          "statement": "Overstates competence because the task felt familiar.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "AI Ethics and Society shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI Ethics and Society vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in AI Ethics and Society, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of AI Ethics and Society differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "discipline_context": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI Ethics and Society vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Ethics and society considerations shape whether AI practices are trustworthy and sustainable.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    },
+    {
+      "object_id": "dec-ethics-exploration",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-ethics",
+      "dimension_name": "AI Ethics and Society",
+      "level_id": "dec-ethics-exploration",
+      "level_name": "Exploration",
+      "level_order": 2,
+      "focus_statement": "At the Exploration level, the learner tries and compares AI-related decisions in responsible judgement about AI impacts on people, systems, and trust and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Explains routine decisions in ai ethics and society using a clear structure rather than intuition alone.",
+        "Compares options or outputs against explicit criteria and revises work when those criteria are not met.",
+        "Documents limitations, uncertainties, or follow-up checks in a way another person could understand and repeat."
+      ],
+      "evidence_examples": [
+        "policy comments",
+        "disclosure statements",
+        "risk logs"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "reducing ethics to a single rule or policy",
+          "frequency": "common"
+        },
+        {
+          "statement": "thinking responsibility ends once a human has clicked approve",
+          "frequency": "common"
+        },
+        {
+          "statement": "Assumes a tidy routine will work unchanged in every context.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "AI Ethics and Society shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI Ethics and Society vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in AI Ethics and Society, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of AI Ethics and Society differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "discipline_context": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI Ethics and Society vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Ethics and society considerations shape whether AI practices are trustworthy and sustainable.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    },
+    {
+      "object_id": "dec-ethics-practice",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-ethics",
+      "dimension_name": "AI Ethics and Society",
+      "level_id": "dec-ethics-practice",
+      "level_name": "Practice",
+      "level_order": 3,
+      "focus_statement": "At the Practice level, the learner integrates and refines AI-related decisions in responsible judgement about AI impacts on people, systems, and trust and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Adapts ai ethics and society practice to context, stakes, and audience rather than using the same routine everywhere.",
+        "Identifies likely failure modes, trade-offs, or unintended effects and adjusts the approach before problems escalate.",
+        "Transfers sound practice across tasks and can coach peers through the reasoning behind a decision."
+      ],
+      "evidence_examples": [
+        "disclosure statements",
+        "risk logs",
+        "annotated reflections"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "reducing ethics to a single rule or policy",
+          "frequency": "common"
+        },
+        {
+          "statement": "thinking responsibility ends once a human has clicked approve",
+          "frequency": "common"
+        },
+        {
+          "statement": "Mistakes strong personal practice for system-level readiness.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "AI Ethics and Society shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI Ethics and Society vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in AI Ethics and Society, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of AI Ethics and Society differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "discipline_context": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI Ethics and Society vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Ethics and society considerations shape whether AI practices are trustworthy and sustainable.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    },
+    {
+      "object_id": "dec-ethics-mastery",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-ethics",
+      "dimension_name": "AI Ethics and Society",
+      "level_id": "dec-ethics-mastery",
+      "level_name": "Mastery",
+      "level_order": 4,
+      "focus_statement": "At the Mastery level, the learner designs and mentors AI-related decisions in responsible judgement about AI impacts on people, systems, and trust and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Shapes shared expectations, exemplars, or guidance for ai ethics and society beyond their own immediate tasks.",
+        "Evaluates proposals, resources, or systems using evidence and can redesign practice when the environment changes.",
+        "Anticipates emerging needs in ai ethics and society and helps others build capacity rather than solving issues case by case."
+      ],
+      "evidence_examples": [
+        "disclosure statements",
+        "risk logs",
+        "annotated reflections"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "reducing ethics to a single rule or policy",
+          "frequency": "common"
+        },
+        {
+          "statement": "thinking responsibility ends once a human has clicked approve",
+          "frequency": "common"
+        },
+        {
+          "statement": "Confuses influence with formal authority or sustainable change.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "AI Ethics and Society shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI Ethics and Society vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in AI Ethics and Society, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of AI Ethics and Society differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "discipline_context": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI Ethics and Society vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Ethics and society considerations shape whether AI practices are trustworthy and sustainable.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    },
+    {
+      "object_id": "dec-discipline-awareness",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-discipline",
+      "dimension_name": "AI in Discipline Contexts",
+      "level_id": "dec-discipline-awareness",
+      "level_name": "Awareness",
+      "level_order": 1,
+      "focus_statement": "At the Awareness level, the learner recognises and notices AI-related decisions in translating general AI literacy into discipline-aware judgement and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Recognises when AI in Discipline Contexts matters in familiar tasks and can name basic issues or concepts.",
+        "Uses provided examples, prompts, or checklists to make an initial decision in ai in discipline contexts.",
+        "Can give a simple explanation of choices in ai in discipline contexts, but usually needs support to go beyond the obvious case."
+      ],
+      "evidence_examples": [
+        "discipline-specific exemplars",
+        "rubrics",
+        "workflow annotations"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "assuming one AI practice transfers unchanged across fields",
+          "frequency": "common"
+        },
+        {
+          "statement": "treating discipline context as an optional add-on",
+          "frequency": "common"
+        },
+        {
+          "statement": "Overstates competence because the task felt familiar.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "AI in Discipline Contexts shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI in Discipline Contexts vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in AI in Discipline Contexts, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of AI in Discipline Contexts differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "discipline_context": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI in Discipline Contexts vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Discipline context turns general literacy into situated competence.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    },
+    {
+      "object_id": "dec-discipline-exploration",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-discipline",
+      "dimension_name": "AI in Discipline Contexts",
+      "level_id": "dec-discipline-exploration",
+      "level_name": "Exploration",
+      "level_order": 2,
+      "focus_statement": "At the Exploration level, the learner tries and compares AI-related decisions in translating general AI literacy into discipline-aware judgement and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Explains routine decisions in ai in discipline contexts using a clear structure rather than intuition alone.",
+        "Compares options or outputs against explicit criteria and revises work when those criteria are not met.",
+        "Documents limitations, uncertainties, or follow-up checks in a way another person could understand and repeat."
+      ],
+      "evidence_examples": [
+        "rubrics",
+        "workflow annotations",
+        "field guidance notes"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "assuming one AI practice transfers unchanged across fields",
+          "frequency": "common"
+        },
+        {
+          "statement": "treating discipline context as an optional add-on",
+          "frequency": "common"
+        },
+        {
+          "statement": "Assumes a tidy routine will work unchanged in every context.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "AI in Discipline Contexts shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI in Discipline Contexts vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in AI in Discipline Contexts, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of AI in Discipline Contexts differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "discipline_context": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI in Discipline Contexts vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Discipline context turns general literacy into situated competence.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    },
+    {
+      "object_id": "dec-discipline-practice",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-discipline",
+      "dimension_name": "AI in Discipline Contexts",
+      "level_id": "dec-discipline-practice",
+      "level_name": "Practice",
+      "level_order": 3,
+      "focus_statement": "At the Practice level, the learner integrates and refines AI-related decisions in translating general AI literacy into discipline-aware judgement and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Adapts ai in discipline contexts practice to context, stakes, and audience rather than using the same routine everywhere.",
+        "Identifies likely failure modes, trade-offs, or unintended effects and adjusts the approach before problems escalate.",
+        "Transfers sound practice across tasks and can coach peers through the reasoning behind a decision."
+      ],
+      "evidence_examples": [
+        "workflow annotations",
+        "field guidance notes",
+        "annotated reflections"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "assuming one AI practice transfers unchanged across fields",
+          "frequency": "common"
+        },
+        {
+          "statement": "treating discipline context as an optional add-on",
+          "frequency": "common"
+        },
+        {
+          "statement": "Mistakes strong personal practice for system-level readiness.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "AI in Discipline Contexts shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI in Discipline Contexts vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in AI in Discipline Contexts, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of AI in Discipline Contexts differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "discipline_context": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI in Discipline Contexts vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Discipline context turns general literacy into situated competence.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    },
+    {
+      "object_id": "dec-discipline-mastery",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-discipline",
+      "dimension_name": "AI in Discipline Contexts",
+      "level_id": "dec-discipline-mastery",
+      "level_name": "Mastery",
+      "level_order": 4,
+      "focus_statement": "At the Mastery level, the learner designs and mentors AI-related decisions in translating general AI literacy into discipline-aware judgement and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Shapes shared expectations, exemplars, or guidance for ai in discipline contexts beyond their own immediate tasks.",
+        "Evaluates proposals, resources, or systems using evidence and can redesign practice when the environment changes.",
+        "Anticipates emerging needs in ai in discipline contexts and helps others build capacity rather than solving issues case by case."
+      ],
+      "evidence_examples": [
+        "workflow annotations",
+        "field guidance notes",
+        "annotated reflections"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "assuming one AI practice transfers unchanged across fields",
+          "frequency": "common"
+        },
+        {
+          "statement": "treating discipline context as an optional add-on",
+          "frequency": "common"
+        },
+        {
+          "statement": "Confuses influence with formal authority or sustainable change.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "AI in Discipline Contexts shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI in Discipline Contexts vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in AI in Discipline Contexts, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of AI in Discipline Contexts differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "discipline_context": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI in Discipline Contexts vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Discipline context turns general literacy into situated competence.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    }
+  ]
+}

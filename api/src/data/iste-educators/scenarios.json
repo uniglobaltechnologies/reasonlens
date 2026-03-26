@@ -1,0 +1,716 @@
+{
+  "_meta": {
+    "file": "scenarios.json",
+    "framework_id": "iste-educators",
+    "framework_name": "ISTE Standards for Educators v4.02",
+    "assessment_paradigm": "met/not-met. A=not_met, B=partially_met (attractive nuisance, scores as not_met), C=met.",
+    "total_scenarios": 14,
+    "scenarios_per_standard": 2,
+    "context_factors": [
+      "subject_area",
+      "institution_level",
+      "years_teaching",
+      "tech_confidence"
+    ],
+    "licensing_constraint": "ISTE Standards framework references \u00a9 2024 4.02, ISTE (iste.org). All rights reserved. Scenario stems and response options are original ReasonLens content. ISTE permits free use for non-commercial educational purposes only. Commercial use requires separate ISTE licensing. See iste.org/permissions-licensing.",
+    "generated_for": "ReasonLens"
+  },
+  "scenarios": [
+    {
+      "id": "ISTE-E-LNR-01",
+      "framework_id": "iste-educators",
+      "standard_id": "iste-e-lnr",
+      "standard_name": "Learner",
+      "target_standard": "Learner",
+      "primary_indicators": [
+        "iste-e-lnr-2a",
+        "iste-e-lnr-2c"
+      ],
+      "scenario_stem": "You want to improve how you use digital tools to support student learning this academic year. How do you approach your professional development?",
+      "context_tags": {
+        "subject_area": [
+          "any"
+        ],
+        "institution_level": [
+          "any"
+        ],
+        "years_teaching": [
+          "any"
+        ],
+        "tech_confidence": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I attend the CPD sessions the school timetables and try out any tools they demonstrate in my classroom.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I set myself a goal to learn two new ed-tech tools this term, find YouTube tutorials for each, try them with a class, and note whether students seem more engaged.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Sets a goal and tries new tools \u2014 looks purposeful. But the goal is framed around tool acquisition ('learn two tools') rather than a specific pedagogical outcome, engagement is a weak proxy for learning, and the process is disconnected from learning science evidence or professional learning networks. The standard requires goals tied to improved student learning outcomes grounded in research evidence, not personal curiosity about tools."
+        },
+        {
+          "id": "C",
+          "text": "I identify a specific gap in my practice \u2014 students struggle with extended writing \u2014 research what learning science says about retrieval and feedback in writing development, set a term goal to integrate low-stakes digital retrieval practice before each essay draft, track its effect on draft quality, and share what I find in a subject-specialist online network I participate in actively.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-E-LNR-02",
+      "framework_id": "iste-educators",
+      "standard_id": "iste-e-lnr",
+      "standard_name": "Learner",
+      "target_standard": "Learner",
+      "primary_indicators": [
+        "iste-e-lnr-2b",
+        "iste-e-lnr-2c"
+      ],
+      "scenario_stem": "A colleague recommends a popular AI-powered marking assistant that several departments are adopting. You are considering whether to use it. What is your process?",
+      "context_tags": {
+        "subject_area": [
+          "any"
+        ],
+        "institution_level": [
+          "secondary",
+          "post-16",
+          "HE"
+        ],
+        "years_teaching": [
+          "any"
+        ],
+        "tech_confidence": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "If other departments are using it and my colleague recommends it, I try it \u2014 widespread adoption is usually a good signal.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I look at the tool's website for case studies, try a free trial, and decide based on whether I find it useful in practice.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Uses a trial and looks for evidence \u2014 sounds like due diligence. But case studies on a vendor's website are marketing material, and 'I find it useful' reflects personal convenience rather than impact on student learning. There is no engagement with research on AI feedback tools, no professional learning community input, and no evaluation criteria. The standard requires grounding adoption in research and learning science, not vendor testimonials."
+        },
+        {
+          "id": "C",
+          "text": "I search for independent research on AI feedback tools and their effect on student writing quality, raise the tool in my professional learning network to hear from colleagues who have evaluated similar tools, and define specific criteria \u2014 accuracy, bias, effect on student revision behaviour \u2014 to test in a structured pilot before deciding. I document my reasoning for colleagues to build on.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-E-LDR-01",
+      "framework_id": "iste-educators",
+      "standard_id": "iste-e-ldr",
+      "standard_name": "Leader",
+      "target_standard": "Leader",
+      "primary_indicators": [
+        "iste-e-ldr-2b"
+      ],
+      "scenario_stem": "You notice that several students in your class consistently struggle to access homework set through the school's digital platform because of poor home connectivity. What do you do?",
+      "context_tags": {
+        "subject_area": [
+          "any"
+        ],
+        "institution_level": [
+          "secondary",
+          "post-16"
+        ],
+        "years_teaching": [
+          "any"
+        ],
+        "tech_confidence": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I provide printed versions of homework for the affected students so they are not disadvantaged.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I provide printed alternatives and mention the connectivity issue to my line manager in a one-to-one meeting, suggesting the school might want to look into it.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Raises the equity issue \u2014 looks like advocacy. But raising it informally in a one-to-one without a documented proposal, data, or follow-up is not advocacy \u2014 it is a mention. The standard requires educators to actively advocate for equitable access, which means identifying the gap specifically, proposing solutions, and ensuring the issue reaches decision-makers with sufficient evidence to act."
+        },
+        {
+          "id": "C",
+          "text": "I document which students are affected and how their learning is being impacted, research the school's device-loan and connectivity schemes, draft a short briefing for the pastoral and IT leads with specific students anonymised and a costed proposal for a connectivity pilot, and follow up until the issue is on a meeting agenda \u2014 treating this as a leadership responsibility, not an inconvenience to work around.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-E-LDR-02",
+      "framework_id": "iste-educators",
+      "standard_id": "iste-e-ldr",
+      "standard_name": "Leader",
+      "target_standard": "Leader",
+      "primary_indicators": [
+        "iste-e-ldr-2c"
+      ],
+      "scenario_stem": "You have developed a strong personal process for evaluating and selecting new digital tools before using them with students. A colleague asks how you choose what to use. What do you do?",
+      "context_tags": {
+        "subject_area": [
+          "any"
+        ],
+        "institution_level": [
+          "any"
+        ],
+        "years_teaching": [
+          "mid",
+          "experienced"
+        ],
+        "tech_confidence": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I share my favourite tools with the colleague and explain what I like about each one.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I write up a list of the tools I currently use with a short note on what each is good for, and share it in the department's shared folder.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Shares good resources \u2014 looks collaborative. But sharing a curated list of outputs conceals the process that produced them. Colleagues receive the what without the how, meaning they cannot evaluate tools themselves. The standard requires modelling the identification, exploration, evaluation, and curation process \u2014 making the reasoning visible, not just the results."
+        },
+        {
+          "id": "C",
+          "text": "I invite the colleague to sit with me while I evaluate a tool we are both considering \u2014 walking through my criteria (pedagogical fit, data privacy, accessibility, evidence base), showing where I look for research, and explaining why I reject some tools that initially look promising. I then propose we create a shared department evaluation template so the process becomes a collective capability, not just mine.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-E-CIT-01",
+      "framework_id": "iste-educators",
+      "standard_id": "iste-e-cit",
+      "standard_name": "Citizen",
+      "target_standard": "Citizen",
+      "primary_indicators": [
+        "iste-e-cit-2b"
+      ],
+      "scenario_stem": "Your students are doing independent research online and you notice they are relying heavily on the top search results without any apparent evaluation. How do you respond?",
+      "context_tags": {
+        "subject_area": [
+          "any"
+        ],
+        "institution_level": [
+          "secondary",
+          "post-16",
+          "HE"
+        ],
+        "years_teaching": [
+          "any"
+        ],
+        "tech_confidence": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I remind the class at the start of the next lesson to use reliable sources and to check that websites look credible before trusting them.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I run a 20-minute lesson on source evaluation where I show students the SIFT or CRAAP framework and give them a worksheet to practise on three websites.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Teaches an evaluation framework \u2014 looks like explicit digital literacy instruction. But a one-off lesson that teaches a checklist does not build the habit of critical evaluation in ongoing research. The standard requires educators to foster digital literacy as an embedded, practised skill \u2014 one they also model \u2014 rather than delivering it as standalone content that is unlikely to transfer without continued scaffolding and authentic application."
+        },
+        {
+          "id": "C",
+          "text": "I redesign the research task so source evaluation is built into it \u2014 students must annotate each source with a bias and evidence-quality assessment before they can use it. I model my own evaluation process on a live example at the start, showing my reasoning aloud, then embed a peer review stage where students challenge each other's source choices. Over time this becomes standard practice in my classroom, not a one-off lesson.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-E-CIT-02",
+      "framework_id": "iste-educators",
+      "standard_id": "iste-e-cit",
+      "standard_name": "Citizen",
+      "target_standard": "Citizen",
+      "primary_indicators": [
+        "iste-e-cit-2d"
+      ],
+      "scenario_stem": "You are about to start using a new AI-powered quiz platform with your class. What do you do before deploying it?",
+      "context_tags": {
+        "subject_area": [
+          "any"
+        ],
+        "institution_level": [
+          "any"
+        ],
+        "years_teaching": [
+          "any"
+        ],
+        "tech_confidence": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I check it works on school devices and that students can log in \u2014 if the tech works, I start using it.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I check whether the school has parental consent in place for this type of platform and confirm with IT that it is on the approved list before using it.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Follows the institutional compliance process \u2014 looks responsible. But checking consent and approval is administrative compliance, not active data stewardship. The standard requires educators to understand what data the platform collects, how it is stored and used, and to be able to explain this to students \u2014 modelling personal data management, not just verifying that a box has been ticked upstream."
+        },
+        {
+          "id": "C",
+          "text": "I review the platform's privacy policy specifically for what data is collected about students, how it is retained, and whether it is shared with third parties. I configure the platform's privacy settings to the most restrictive appropriate option, brief students on what data they are sharing and why, and note in my lesson plan what I would tell a parent who asked about this tool \u2014 treating data transparency as part of my professional practice, not a back-office concern.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-E-COL-01",
+      "framework_id": "iste-educators",
+      "standard_id": "iste-e-col",
+      "standard_name": "Collaborator",
+      "target_standard": "Collaborator",
+      "primary_indicators": [
+        "iste-e-col-2c"
+      ],
+      "scenario_stem": "You are teaching a unit on global supply chains and want students to have genuine contact with perspectives from outside your country. How do you use technology to achieve this?",
+      "context_tags": {
+        "subject_area": [
+          "humanities",
+          "social_sciences",
+          "geography",
+          "economics"
+        ],
+        "institution_level": [
+          "secondary",
+          "post-16",
+          "HE"
+        ],
+        "years_teaching": [
+          "any"
+        ],
+        "tech_confidence": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I find documentary videos and news reports from different countries on YouTube and show them to the class as part of the unit.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I arrange for a guest speaker from a relevant industry to join the class via video call to answer students' questions about their work in global supply chains.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Uses collaborative technology for authentic external contact \u2014 looks exactly right. But a guest talk is a one-directional information exchange: the expert speaks, students listen and ask questions. The standard requires using collaborative technologies to allow students to work with others to examine issues from multiple viewpoints \u2014 which means structured collaborative activity, not an enrichment Q&A."
+        },
+        {
+          "id": "C",
+          "text": "I partner with a teacher in a manufacturing economy through an edu-network, set up a joint inquiry where both classes investigate the same supply chain from opposite ends \u2014 producer and consumer \u2014 and use a shared collaborative workspace for students to co-develop an analysis and challenge each other's assumptions in real time. I design structured collaborative tasks, not just a cultural exchange.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-E-COL-02",
+      "framework_id": "iste-educators",
+      "standard_id": "iste-e-col",
+      "standard_name": "Collaborator",
+      "target_standard": "Collaborator",
+      "primary_indicators": [
+        "iste-e-col-2b"
+      ],
+      "scenario_stem": "The school has just introduced a new learning management system that you are not yet comfortable using. A student starts showing others how to use features you have not explored. What do you do?",
+      "context_tags": {
+        "subject_area": [
+          "any"
+        ],
+        "institution_level": [
+          "any"
+        ],
+        "years_teaching": [
+          "any"
+        ],
+        "tech_confidence": [
+          "low",
+          "medium"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I thank the student and ask them to help classmates who are also confused, then find time after school to work through the system myself so I am confident before using it in a lesson.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I thank the student publicly in front of the class, acknowledge that they clearly know the system well, and ask them to demonstrate the feature to everyone.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Acknowledges student expertise generously \u2014 looks like collegial and empowering behaviour. But the teacher remains the authority who steps back and asks the student to perform, rather than genuinely co-learning alongside them. There is no modelling of the teacher as a learner and no co-learning dynamic. The standard requires educators to co-learn with students as a genuine pedagogical act \u2014 modelling that not knowing is normal and that learning together is valuable."
+        },
+        {
+          "id": "C",
+          "text": "I say to the class: 'I am still getting to know this system too \u2014 let us figure this out together.' I ask the student to walk me through the feature as I try it myself, ask them questions that prompt deeper explanation, and reflect aloud on what I am learning. I frame this explicitly as a co-learning moment \u2014 modelling that curiosity and not knowing are professional strengths, not gaps to hide.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-E-DES-01",
+      "framework_id": "iste-educators",
+      "standard_id": "iste-e-des",
+      "standard_name": "Designer",
+      "target_standard": "Designer",
+      "primary_indicators": [
+        "iste-e-des-2a"
+      ],
+      "scenario_stem": "You are designing a unit of work for a mixed-ability class where students have different learning needs, paces, and interests. How do you use technology?",
+      "context_tags": {
+        "subject_area": [
+          "any"
+        ],
+        "institution_level": [
+          "secondary",
+          "post-16"
+        ],
+        "years_teaching": [
+          "any"
+        ],
+        "tech_confidence": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I design clear, well-structured lessons and provide extension tasks for students who finish early \u2014 technology is mostly for displaying slides and submitting work.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I create three versions of each task \u2014 foundation, core, and extension \u2014 and use the LMS to assign the appropriate version to each student based on my professional judgement.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Differentiates using the LMS \u2014 looks like technology-enabled personalisation. But tiered tasks assigned by teacher judgement are differentiation, not personalisation. Students are sorted into fixed versions rather than following genuinely adaptive pathways based on their own data and preferences. The standard requires using technology to personalise learning \u2014 which includes student agency, learner data, and adaptive pathways \u2014 not just tiering tasks and assigning them top-down."
+        },
+        {
+          "id": "C",
+          "text": "I use the LMS's analytics to identify each student's pace and current gaps from formative assessment data, design a pathway-based unit where students' activity choices and progress data route them to different challenges rather than a single prescribed task, and include student choice points \u2014 where learners pick the context that interests them most \u2014 so technology is doing the personalisation work, not just transmitting differentiated content.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-E-DES-02",
+      "framework_id": "iste-educators",
+      "standard_id": "iste-e-des",
+      "standard_name": "Designer",
+      "target_standard": "Designer",
+      "primary_indicators": [
+        "iste-e-des-2c"
+      ],
+      "scenario_stem": "You are building an online unit for your class on the school VLE. What principles guide your design decisions?",
+      "context_tags": {
+        "subject_area": [
+          "any"
+        ],
+        "institution_level": [
+          "any"
+        ],
+        "years_teaching": [
+          "any"
+        ],
+        "tech_confidence": [
+          "medium",
+          "high"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I upload the resources, set up the assignments, and make sure the navigation is easy to follow \u2014 a clean, logical layout is the main thing students need.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I make sure the unit includes a mix of video, text, and activities \u2014 I know students learn differently so I try to cover different styles and keep the amount of text on screen manageable.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Applies variety and manages cognitive load informally \u2014 sounds like evidence-based design. But 'learning styles' is not supported by current cognitive science, and informal intuitions about cognitive load are not the same as applying evidence-based instructional design principles. The standard requires educators to apply specific, named evidence-based principles \u2014 such as worked examples, retrieval practice spacing, or multimedia learning theory \u2014 and to be able to explain why design decisions were made."
+        },
+        {
+          "id": "C",
+          "text": "I apply specific instructional design principles explicitly: I use spaced retrieval prompts between sections based on forgetting curve research, apply Mayer's multimedia principles to minimise extraneous cognitive load in combined text-image content, and design the unit's progression based on worked example-to-practice fading. I document my design rationale so colleagues can learn from and critique it, and I collect completion and quiz data to evaluate whether the design is working.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-E-FAC-01",
+      "framework_id": "iste-educators",
+      "standard_id": "iste-e-fac",
+      "standard_name": "Facilitator",
+      "target_standard": "Facilitator",
+      "primary_indicators": [
+        "iste-e-fac-2a"
+      ],
+      "scenario_stem": "You want students to take genuine ownership of their learning goals during a project unit. How do you structure this using technology?",
+      "context_tags": {
+        "subject_area": [
+          "any"
+        ],
+        "institution_level": [
+          "secondary",
+          "post-16",
+          "HE"
+        ],
+        "years_teaching": [
+          "any"
+        ],
+        "tech_confidence": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I assign the project topic and learning objectives, post them on the VLE, and check in with students weekly to see how they are getting on.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I give students a choice of three project topics and ask them to set their own success criteria at the start, which they record in a shared document I can review.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Offers topic choice and asks for student-defined success criteria \u2014 looks like ownership. But choosing from a pre-set list and writing success criteria for teacher review is still fundamentally teacher-directed. Ownership means students construct their own goals based on genuine self-knowledge, not select from options and record them in a monitored document. The standard requires a culture where students own their goals, not a structure where the teacher owns the goal-setting process with student input."
+        },
+        {
+          "id": "C",
+          "text": "I begin the unit with a self-assessment activity where students identify their own knowledge gaps and interests, then use a digital learning journal to set goals in their own words \u2014 including what success looks like for them. Throughout the project, students update their journal and flag when they need to adjust their goals. My role shifts to coaching: I respond to their stated needs rather than directing the timeline. The LMS shows me their self-reported progress, not a teacher-assigned grade.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-E-FAC-02",
+      "framework_id": "iste-educators",
+      "standard_id": "iste-e-fac",
+      "standard_name": "Facilitator",
+      "target_standard": "Facilitator",
+      "primary_indicators": [
+        "iste-e-fac-2c"
+      ],
+      "scenario_stem": "You are teaching a unit on urban planning and want to embed computational thinking. The topic is traditionally taught through case studies and written analysis. What do you do?",
+      "context_tags": {
+        "subject_area": [
+          "geography",
+          "social_sciences",
+          "humanities",
+          "design"
+        ],
+        "institution_level": [
+          "secondary",
+          "post-16"
+        ],
+        "years_teaching": [
+          "any"
+        ],
+        "tech_confidence": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I keep the case study approach \u2014 urban planning is fundamentally about human factors, not computation, so I do not see a natural fit for computational thinking in this unit.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I add a data task to the unit where students use GIS software to visualise land use patterns \u2014 they interact with spatial data and produce maps as part of their analysis.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Uses a sophisticated digital tool with real data \u2014 looks like technology-enabled learning. But using GIS to visualise existing data is data literacy, not computational thinking. Computational thinking requires students to decompose the planning problem, build a model of how variables interact, develop an algorithmic approach to testing scenarios, and abstract away irrelevant detail. The task as described is analytical but not computational in the ISTE sense."
+        },
+        {
+          "id": "C",
+          "text": "I reframe the core task as a system design problem: students must decompose what 'good urban planning' means into measurable variables, build a model that predicts how changes in one variable (e.g., green space ratio) affect others (e.g., air quality, housing density), use a spreadsheet simulation or simple agent-based model to test their scenarios, and present their reasoning about what the model reveals and what it cannot capture. Computational thinking is the analytical method, not a supplement.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-E-ANA-01",
+      "framework_id": "iste-educators",
+      "standard_id": "iste-e-ana",
+      "standard_name": "Analyst",
+      "target_standard": "Analyst",
+      "primary_indicators": [
+        "iste-e-ana-2b"
+      ],
+      "scenario_stem": "You have just finished a unit and your summative assessment data shows that one third of the class scored below the expected threshold. What is your response?",
+      "context_tags": {
+        "subject_area": [
+          "any"
+        ],
+        "institution_level": [
+          "any"
+        ],
+        "years_teaching": [
+          "any"
+        ],
+        "tech_confidence": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I record the grades, note that this topic needs more time next year, and offer a re-sit opportunity for students who want to improve their score.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I review the assessment and identify the specific questions that had the highest failure rate, then reteach those topics in the next lesson using a different explanation approach.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Uses assessment data to inform instruction \u2014 looks like data-driven teaching. But re-teaching difficult questions treats the symptom (wrong answers) rather than diagnosing the cause (gaps in specific prerequisite understanding). There is no personalisation: the whole class receives the same re-teaching regardless of which students got which questions wrong. The standard requires using assessment data to personalise learning at the individual level, not just to identify class-level patterns for re-teaching."
+        },
+        {
+          "id": "C",
+          "text": "I use the assessment platform to disaggregate results by question and by student, identifying both the concepts with widespread gaps and the individual students whose overall pattern suggests a deeper foundational gap. I design personalised next-steps: targeted practice pathways for students who missed specific questions, a deeper diagnosis task for students whose pattern is harder to read, and an extension path for students who mastered the content. I communicate personalised progress summaries to each student \u2014 and to their families where relevant.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-E-ANA-02",
+      "framework_id": "iste-educators",
+      "standard_id": "iste-e-ana",
+      "standard_name": "Analyst",
+      "target_standard": "Analyst",
+      "primary_indicators": [
+        "iste-e-ana-2a"
+      ],
+      "scenario_stem": "A student who struggles with written assessments consistently demonstrates strong understanding in class discussions and practical activities. What do you do?",
+      "context_tags": {
+        "subject_area": [
+          "any"
+        ],
+        "institution_level": [
+          "secondary",
+          "post-16",
+          "HE"
+        ],
+        "years_teaching": [
+          "any"
+        ],
+        "tech_confidence": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I note the discrepancy in their engagement but the assessments are standardised \u2014 I cannot change the format, so I encourage the student to work harder on their written skills.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I refer the student to the SENCO to explore whether there is a learning need that could qualify them for assessment accommodations such as extra time.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Recognises the discrepancy and acts on it through an official channel \u2014 looks like appropriate referral. But it treats the problem as the student's rather than the assessment design's, and awaits a diagnosis before adjusting. The standard requires educators to provide alternative ways for students to demonstrate competency using technology \u2014 proactively designing for demonstration variety, not waiting for a SEND diagnosis to justify any departure from written format."
+        },
+        {
+          "id": "C",
+          "text": "I design a portfolio assessment that offers multiple technology-mediated ways to demonstrate the same competency: a short-form written analysis, a narrated video explainer, or a structured oral commentary recorded via the LMS. These are designed as equivalent demonstrations \u2014 not differentiated difficulty \u2014 and I invite the student to choose the mode that best shows their understanding. I review whether the portfolio model gives me a more accurate picture of their competency than written tests alone.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1000 @@
+{
+  "framework_id": "unesco-student-ai-competency",
+  "framework_name": "UNESCO AI Competency Framework for Students",
+  "framework_source": "UNESCO (2024). AI competency framework for students. UNESDOC pf0000391105. ISBN 978-92-3-100709-5.",
+  "reasonlens_implementation_note": "This file operationalises the UNESCO Student framework for the ReasonLens platform. Dimension names and level names are ReasonLens-specific adaptations of UNESCO terminology (Aspects mapped to Dimensions; Understand/Apply/Create mapped to Foundational/Intermediate/Advanced) to maintain consistency with the platform's multi-framework architecture.",
+  "dimensions": [
+    {
+      "id": "sc-use",
+      "name": "AI Use & Application",
+      "code": "USE",
+      "description": "The ability to select, operate, and critically evaluate AI tools and applications for learning, problem-solving, and daily life. Covers practical interaction with AI systems, prompt engineering, output evaluation, and integration of AI into academic workflows.",
+      "unesco_aspect": "AI techniques and applications"
+    },
+    {
+      "id": "sc-understanding",
+      "name": "AI Understanding",
+      "code": "UND",
+      "description": "Conceptual and technical knowledge of how AI systems work, including data, algorithms, machine learning paradigms, neural networks, and the relationship between AI capabilities and limitations. Covers both foundational literacy and deeper technical comprehension.",
+      "unesco_aspect": "Human-centred mindset"
+    },
+    {
+      "id": "sc-ethics",
+      "name": "AI Ethics & Values",
+      "code": "ETH",
+      "description": "The capacity to identify, reason about, and act on ethical issues raised by AI, including bias, fairness, privacy, transparency, environmental sustainability, and the societal impact of AI systems. Covers personal ethical practice and co-creation of ethical norms.",
+      "unesco_aspect": "Ethics of AI"
+    },
+    {
+      "id": "sc-design",
+      "name": "AI System Design",
+      "code": "DES",
+      "description": "The ability to scope AI problems, design AI system architectures, implement solutions, and evaluate outcomes through iterative feedback loops. Covers the full design cycle from problem definition through prototyping to evaluation and improvement.",
+      "unesco_aspect": "AI system design"
+    }
+  ],
+  "levels": [
+    {
+      "id_suffix": "foundational",
+      "name": "Foundational",
+      "order": 1,
+      "code": "F",
+      "description": "Students recognise AI in daily life, develop basic conceptual vocabulary, and form initial attitudes toward AI use. They can identify AI-powered tools, understand that AI involves data and algorithms, articulate basic ethical concerns, and describe what a simple AI system does.",
+      "unesco_level": "Understand"
+    },
+    {
+      "id_suffix": "intermediate",
+      "name": "Intermediate",
+      "order": 2,
+      "code": "I",
+      "description": "Students critically evaluate and purposefully apply AI tools across academic and personal contexts. They transfer knowledge to complex situations, assess AI outputs for quality and bias, practise responsible use aligned with regulations, and design basic AI-assisted solutions.",
+      "unesco_level": "Apply"
+    },
+    {
+      "id_suffix": "advanced",
+      "name": "Advanced",
+      "order": 3,
+      "code": "A",
+      "description": "Students create, customise, and evaluate AI solutions with attention to human-centred design, ethical robustness, and societal impact. They co-create ethical guidance, build functional AI prototypes, and critically assess when AI systems should or should not be deployed.",
+      "unesco_level": "Create"
+    }
+  ],
+  "object_count": 12,
+  "structure": "4 dimensions x 3 levels",
+  "data": [
+    {
+      "id": "sc-use-foundational",
+      "dimension_id": "sc-use",
+      "level": "foundational",
+      "level_order": 1,
+      "observable_behaviours": [
+        "Student can identify which tools in their daily workflow are AI-powered (e.g. autocomplete, recommendation engines, grammar checkers) versus rule-based software.",
+        "Student uses a generative AI tool (e.g. ChatGPT, Gemini) for a simple task such as summarising a reading or brainstorming essay topics, following basic prompting patterns.",
+        "Student recognises that AI-generated outputs require human review and does not treat them as authoritative without checking.",
+        "Student can describe in plain language what an AI tool did (e.g. 'it predicted the next word') even if they cannot explain the underlying mechanism."
+      ],
+      "context_dependencies": {
+        "study_level": {
+          "impact": "HIGH",
+          "note": "Undergraduate students may encounter AI through consumer tools; postgraduate/doctoral students through research-specific platforms. The types of AI tools differ but the foundational recognition skill is consistent."
+        },
+        "discipline": {
+          "impact": "HIGH",
+          "note": "STEM students may encounter AI through coding environments and data tools; humanities students through writing assistants and search; health students through clinical decision support examples. Scenarios should reflect discipline-specific tool landscapes."
+        },
+        "prior_ai_experience": {
+          "impact": "HIGH",
+          "note": "Students with no prior experience need more scaffolding to identify AI in existing tools. Technical users may already exceed this level but lack ethical or critical evaluation skills."
+        },
+        "region": {
+          "impact": "LOW",
+          "note": "Consumer AI tools are broadly similar across regions at this level. Minor variation in tool availability (e.g. some tools restricted in certain countries)."
+        }
+      },
+      "evidence_types": [
+        {
+          "type": "tool_identification_task",
+          "description": "Student correctly categorises a list of 10 software tools as AI-powered or not, with brief justification."
+        },
+        {
+          "type": "guided_interaction_log",
+          "description": "Documented record of student using a generative AI tool for a specified task, showing prompts used and reflection on output quality."
+        },
+        {
+          "type": "self_reflection",
+          "description": "Written or verbal reflection identifying at least 3 AI tools encountered in the past week and describing what each one does."
+        }
+      ],
+      "common_misconceptions": [
+        {
+          "misconception": "Any sophisticated software is AI",
+          "frequency": "high",
+          "explanation": "Students often label all complex software (e.g. spreadsheet formulas, search engines pre-ML era) as AI. The distinction between rule-based automation and learned behaviour is not yet clear."
+        },
+        {
+          "misconception": "AI outputs are always correct because computers are precise",
+          "frequency": "high",
+          "explanation": "Trust in computational accuracy transfers inappropriately to probabilistic AI outputs. Students may not understand that AI can generate plausible but incorrect content."
+        },
+        {
+          "misconception": "Using AI tools is cheating by definition",
+          "frequency": "medium",
+          "explanation": "Some students avoid AI entirely due to institutional messaging around academic integrity, without distinguishing between legitimate and illegitimate uses."
+        }
+      ],
+      "cross_dimension_dependencies": [
+        {
+          "depends_on": "sc-understanding-foundational",
+          "relationship": "enabling",
+          "note": "Basic conceptual knowledge of what AI is enables more purposeful tool selection and use."
+        },
+        {
+          "depends_on": "sc-ethics-foundational",
+          "relationship": "enabling",
+          "note": "Awareness of ethical issues enables responsible initial use and appropriate scepticism toward outputs."
+        }
+      ],
+      "prerequisites": [
+        "Basic digital literacy (file management, web browsing, using software applications)",
+        "Access to at least one AI-powered tool"
+      ],
+      "respondent_note": "Students themselves are the primary respondents. Educators can observe tool use in classroom settings but may not see independent AI use outside formal learning."
+    },
+    {
+      "id": "sc-use-intermediate",
+      "dimension_id": "sc-use",
+      "level": "intermediate",
+      "level_order": 2,
+      "observable_behaviours": [
+        "Student selects appropriate AI tools for specific academic tasks based on the tool's strengths, limitations, and the task requirements, rather than defaulting to a single tool.",
+        "Student crafts structured prompts that include context, constraints, and desired output format, and iterates on prompts when initial outputs are unsatisfactory.",
+        "Student critically evaluates AI-generated content for accuracy, bias, completeness, and relevance before incorporating it into academic work, citing AI use where required.",
+        "Student integrates AI tools into a multi-step academic workflow (e.g. literature review, data analysis, draft generation, revision) with clear human oversight at each stage.",
+        "Student can explain to peers why a particular AI tool is or is not suitable for a given task."
+      ],
+      "context_dependencies": {
+        "study_level": {
+          "impact": "HIGH",
+          "note": "Postgraduate students apply AI to more complex research tasks (systematic reviews, qualitative coding). Doctoral students evaluate AI outputs against deep domain expertise. Undergraduates apply AI to coursework and study tasks."
+        },
+        "discipline": {
+          "impact": "HIGH",
+          "note": "Discipline shapes which AI tools are relevant: STEM students may use AI for data analysis and code generation; humanities students for text analysis and translation; health students for evidence synthesis. Prompt engineering strategies differ by domain."
+        },
+        "prior_ai_experience": {
+          "impact": "HIGH",
+          "note": "Regular users develop prompt engineering skills faster. Students with technical backgrounds may focus on API-level integration rather than GUI-based tool use."
+        },
+        "region": {
+          "impact": "MEDIUM",
+          "note": "Institutional policies on AI use in assessment vary significantly by region and institution, affecting how students integrate AI into academic workflows."
+        }
+      },
+      "evidence_types": [
+        {
+          "type": "comparative_tool_evaluation",
+          "description": "Student produces a written comparison of 2-3 AI tools for a specific academic task, identifying strengths, limitations, and appropriate use cases."
+        },
+        {
+          "type": "prompt_engineering_portfolio",
+          "description": "Collection of prompts showing iteration and refinement for a complex task, with annotations explaining design choices."
+        },
+        {
+          "type": "ai_assisted_submission",
+          "description": "Academic work that transparently integrates AI assistance with clear documentation of which parts were AI-assisted and how outputs were validated."
+        }
+      ],
+      "common_misconceptions": [
+        {
+          "misconception": "More detailed prompts always produce better outputs",
+          "frequency": "medium",
+          "explanation": "Students may over-specify prompts, constraining the model's ability to produce useful responses. Effective prompting requires balancing specificity with appropriate flexibility."
+        },
+        {
+          "misconception": "If the AI output looks well-written, it must be accurate",
+          "frequency": "high",
+          "explanation": "Fluency bias: students equate polished prose with factual correctness. Generative AI can produce eloquent hallucinations."
+        },
+        {
+          "misconception": "Citing AI use is sufficient quality assurance",
+          "frequency": "medium",
+          "explanation": "Students may believe that disclosing AI use satisfies their academic obligations without also verifying the substantive accuracy of AI-generated content."
+        }
+      ],
+      "cross_dimension_dependencies": [
+        {
+          "depends_on": "sc-use-foundational",
+          "relationship": "prerequisite",
+          "note": "Cannot select and evaluate tools purposefully without basic recognition of AI capabilities."
+        },
+        {
+          "depends_on": "sc-understanding-intermediate",
+          "relationship": "enabling",
+          "note": "Deeper understanding of how AI models work enables better prompt engineering and more accurate output evaluation."
+        },
+        {
+          "depends_on": "sc-ethics-intermediate",
+          "relationship": "enabling",
+          "note": "Responsible use practices (data privacy, academic integrity) shape how AI is integrated into workflows."
+        }
+      ],
+      "prerequisites": [
+        "Foundational AI Use competency",
+        "Familiarity with academic conventions in their discipline (citation, evidence standards)",
+        "Access to multiple AI tools"
+      ],
+      "respondent_note": "Students are primary respondents. Educators can assess through AI-assisted coursework submissions and reflective portfolios. Peer assessment is valuable for prompt engineering skills."
+    },
+    {
+      "id": "sc-use-advanced",
+      "dimension_id": "sc-use",
+      "level": "advanced",
+      "level_order": 3,
+      "observable_behaviours": [
+        "Student customises AI tool configurations (e.g. system prompts, temperature settings, fine-tuning parameters) to optimise outputs for specific complex tasks.",
+        "Student designs and executes multi-agent or chained AI workflows where the output of one AI process feeds into another, with human checkpoints.",
+        "Student evaluates the reliability and validity of AI-assisted research methods, including assessing whether AI use introduces systematic bias into findings.",
+        "Student mentors peers on effective and responsible AI use, adapting guidance to different skill levels and disciplinary contexts.",
+        "Student makes and justifies principled decisions about when NOT to use AI, based on task requirements, ethical considerations, or quality concerns."
+      ],
+      "context_dependencies": {
+        "study_level": {
+          "impact": "HIGH",
+          "note": "Doctoral students apply advanced AI use to novel research problems. Postgraduate students may design AI-assisted methodologies. Undergraduates reaching this level typically do so through elective technical modules or independent projects."
+        },
+        "discipline": {
+          "impact": "HIGH",
+          "note": "Advanced AI use in STEM may involve custom model training or API integration; in humanities, it may involve designing AI-assisted analytical frameworks; in health, it may involve evaluating AI diagnostic tools against clinical evidence."
+        },
+        "prior_ai_experience": {
+          "impact": "HIGH",
+          "note": "Technical users reach this level more quickly for tool configuration but may still lack the critical evaluation and ethical reasoning components."
+        },
+        "region": {
+          "impact": "MEDIUM",
+          "note": "Regulatory environments affect what advanced AI use looks like: EU students must navigate AI Act compliance; US students may have more latitude; Asia-Pacific contexts vary significantly."
+        }
+      },
+      "evidence_types": [
+        {
+          "type": "ai_workflow_design",
+          "description": "Documented design of a multi-step AI-assisted workflow for a complex academic or research task, including rationale for tool selection, human oversight points, and quality assurance mechanisms."
+        },
+        {
+          "type": "critical_methodology_review",
+          "description": "Written analysis evaluating whether and how AI use in a specific research project affects the validity, reliability, and ethical standing of findings."
+        },
+        {
+          "type": "peer_mentoring_record",
+          "description": "Evidence of effective peer guidance on AI use, such as workshop facilitation, resource creation, or documented mentoring interactions."
+        }
+      ],
+      "common_misconceptions": [
+        {
+          "misconception": "Advanced AI use means using AI for everything",
+          "frequency": "medium",
+          "explanation": "Sophistication includes knowing when AI is inappropriate. Students at this level should demonstrate principled restraint, not maximalist adoption."
+        },
+        {
+          "misconception": "Custom configurations guarantee better results",
+          "frequency": "medium",
+          "explanation": "Fine-tuning and parameter adjustment can introduce new problems (overfitting, mode collapse). Advanced users must evaluate whether customisation actually improves outcomes."
+        },
+        {
+          "misconception": "AI-assisted research is inherently less rigorous than traditional methods",
+          "frequency": "low",
+          "explanation": "Some students internalise blanket scepticism rather than developing nuanced evaluation of when AI methods are and are not appropriate for specific research questions."
+        }
+      ],
+      "cross_dimension_dependencies": [
+        {
+          "depends_on": "sc-use-intermediate",
+          "relationship": "prerequisite",
+          "note": "Advanced use builds on established competency in tool selection, prompt engineering, and output evaluation."
+        },
+        {
+          "depends_on": "sc-understanding-advanced",
+          "relationship": "enabling",
+          "note": "Technical understanding of model architectures enables meaningful customisation and valid methodology assessment."
+        },
+        {
+          "depends_on": "sc-ethics-advanced",
+          "relationship": "enabling",
+          "note": "Ethics-by-design thinking shapes how advanced AI workflows are constructed and evaluated."
+        },
+        {
+          "depends_on": "sc-design-intermediate",
+          "relationship": "enabling",
+          "note": "Design thinking skills support the construction of multi-step AI workflows."
+        }
+      ],
+      "prerequisites": [
+        "Intermediate AI Use competency",
+        "Strong domain expertise in their discipline",
+        "Research methods literacy (for methodology evaluation)"
+      ],
+      "respondent_note": "Students are primary respondents for self-assessment. Supervisors and research mentors can assess advanced use in research contexts. External portfolio review provides the most robust evidence."
+    },
+    {
+      "id": "sc-understanding-foundational",
+      "dimension_id": "sc-understanding",
+      "level": "foundational",
+      "level_order": 1,
+      "observable_behaviours": [
+        "Student explains in their own words that AI systems learn from data rather than being explicitly programmed with rules for every situation.",
+        "Student distinguishes between narrow AI (designed for specific tasks) and the concept of general AI, recognising that current systems are narrow.",
+        "Student describes the basic input-process-output cycle of an AI system (data goes in, a model processes it, a prediction or generation comes out).",
+        "Student identifies that the quality and representativeness of training data affects AI system performance and fairness."
+      ],
+      "context_dependencies": {
+        "study_level": {
+          "impact": "HIGH",
+          "note": "Undergraduates need accessible analogies and concrete examples. Postgraduate/doctoral students may already have partial technical understanding but benefit from structured conceptual frameworks."
+        },
+        "discipline": {
+          "impact": "MEDIUM",
+          "note": "STEM students may grasp algorithmic concepts faster; humanities and arts students may connect more readily through cultural and creative AI examples. Explanatory approaches should be discipline-sensitive."
+        },
+        "prior_ai_experience": {
+          "impact": "HIGH",
+          "note": "Students with no experience start from scratch. Casual users may have functional knowledge without conceptual understanding ('I use it but I do not know how it works')."
+        },
+        "region": {
+          "impact": "LOW",
+          "note": "Core AI concepts are universal. Minor cultural variation in examples and analogies used."
+        }
+      },
+      "evidence_types": [
+        {
+          "type": "concept_explanation",
+          "description": "Student produces a written or visual explanation (e.g. diagram, short video) of how a specific AI system works, aimed at a non-technical audience."
+        },
+        {
+          "type": "misconception_identification",
+          "description": "Student identifies and corrects common misconceptions about AI (e.g. 'AI thinks like humans', 'AI is always objective') with reasoned explanations."
+        }
+      ],
+      "common_misconceptions": [
+        {
+          "misconception": "AI understands language and images the way humans do",
+          "frequency": "high",
+          "explanation": "Anthropomorphism of AI capabilities. Students project human cognition onto statistical pattern matching, leading to misplaced trust or fear."
+        },
+        {
+          "misconception": "AI is objective because it is mathematical",
+          "frequency": "high",
+          "explanation": "The assumption that quantitative processes are inherently neutral obscures how bias enters through training data, design choices, and evaluation metrics."
+        },
+        {
+          "misconception": "AI will soon be conscious or sentient",
+          "frequency": "medium",
+          "explanation": "Media narratives about AGI and sentient AI create expectations disconnected from the current state of technology."
+        }
+      ],
+      "cross_dimension_dependencies": [
+        {
+          "depends_on": null,
+          "relationship": "foundation",
+          "note": "This is a foundational building block. No hard prerequisites within the framework, though basic digital literacy is assumed."
+        }
+      ],
+      "prerequisites": [
+        "Basic numeracy and logical reasoning",
+        "Familiarity with the concept of software and data"
+      ],
+      "respondent_note": "Students are primary respondents. Concept checks can be embedded in classroom activities, quizzes, or reflective journals."
+    },
+    {
+      "id": "sc-understanding-intermediate",
+      "dimension_id": "sc-understanding",
+      "level": "intermediate",
+      "level_order": 2,
+      "observable_behaviours": [
+        "Student explains the difference between supervised, unsupervised, and reinforcement learning with examples relevant to their discipline.",
+        "Student describes how neural networks process information through layers and how training adjusts model parameters to reduce error.",
+        "Student explains why generative AI models can produce plausible but incorrect outputs (hallucination), connecting this to how language models predict tokens.",
+        "Student analyses a real-world AI application and identifies what type of data it was likely trained on, what its probable failure modes are, and what its limitations might be.",
+        "Student distinguishes between correlation and causation in AI-driven predictions and explains why this distinction matters for decision-making."
+      ],
+      "context_dependencies": {
+        "study_level": {
+          "impact": "HIGH",
+          "note": "Doctoral students may need to understand AI methods relevant to their research methodology. Undergraduates typically reach this level through dedicated AI literacy modules."
+        },
+        "discipline": {
+          "impact": "MEDIUM",
+          "note": "The depth of technical understanding varies: STEM students may engage with mathematical foundations; social science students with statistical interpretation; humanities students with conceptual and critical analysis."
+        },
+        "prior_ai_experience": {
+          "impact": "HIGH",
+          "note": "Technical users may already understand mechanisms but lack critical analytical skills. Non-technical students need more structured scaffolding to build mental models."
+        },
+        "region": {
+          "impact": "LOW",
+          "note": "Technical AI concepts are universal. Regional variation in curriculum approaches to teaching these concepts."
+        }
+      },
+      "evidence_types": [
+        {
+          "type": "technical_analysis",
+          "description": "Student analyses a published AI application, identifying the likely ML paradigm, data requirements, and potential failure modes."
+        },
+        {
+          "type": "comparative_explanation",
+          "description": "Student explains the same AI concept at two levels of complexity: for a peer and for a non-technical family member, demonstrating depth of understanding."
+        }
+      ],
+      "common_misconceptions": [
+        {
+          "misconception": "More data always means better AI",
+          "frequency": "high",
+          "explanation": "Students may not understand that data quality, representativeness, and labelling accuracy matter more than volume. Biased or noisy data at scale amplifies problems."
+        },
+        {
+          "misconception": "Deep learning is superior to all other approaches",
+          "frequency": "medium",
+          "explanation": "Media emphasis on deep learning creates the impression it is universally best, obscuring cases where simpler models are more appropriate, interpretable, or efficient."
+        },
+        {
+          "misconception": "AI models understand the meaning of their outputs",
+          "frequency": "medium",
+          "explanation": "Even at intermediate level, students may still attribute semantic understanding to statistical processes, especially for language models that produce coherent text."
+        }
+      ],
+      "cross_dimension_dependencies": [
+        {
+          "depends_on": "sc-understanding-foundational",
+          "relationship": "prerequisite",
+          "note": "Foundational concepts (data, algorithms, narrow vs general AI) are prerequisites for deeper technical understanding."
+        },
+        {
+          "depends_on": "sc-use-intermediate",
+          "relationship": "reinforcing",
+          "note": "Hands-on experience with AI tools grounds conceptual understanding in practical observation."
+        }
+      ],
+      "prerequisites": [
+        "Foundational AI Understanding competency",
+        "Comfort with abstract reasoning and basic statistical concepts"
+      ],
+      "respondent_note": "Students are primary respondents. Assessment through technical analysis tasks, concept mapping, and explanation exercises."
+    },
+    {
+      "id": "sc-understanding-advanced",
+      "dimension_id": "sc-understanding",
+      "level": "advanced",
+      "level_order": 3,
+      "observable_behaviours": [
+        "Student explains transformer architectures, attention mechanisms, or other current model architectures at a level sufficient to inform design decisions.",
+        "Student evaluates the trade-offs between model complexity, interpretability, computational cost, and environmental impact for a given application.",
+        "Student critically assesses published AI research or product claims, identifying methodological strengths and weaknesses, including evaluation metric choices.",
+        "Student articulates the relationship between AI capabilities and broader sociotechnical systems, including labour markets, knowledge production, and power structures.",
+        "Student connects technical understanding to human-centred design principles, explaining how architectural choices affect user experience, fairness, and accountability."
+      ],
+      "context_dependencies": {
+        "study_level": {
+          "impact": "HIGH",
+          "note": "Doctoral students may reach this level through research methodology requirements. Undergraduates typically only through specialist AI/CS programmes or dedicated electives."
+        },
+        "discipline": {
+          "impact": "HIGH",
+          "note": "The form of advanced understanding varies: CS students engage with architecture details; social scientists with sociotechnical analysis; philosophers with epistemological implications. All are valid expressions of advanced understanding."
+        },
+        "prior_ai_experience": {
+          "impact": "HIGH",
+          "note": "Technical background significantly accelerates reaching this level. Non-technical students may achieve it through critical-analytical rather than implementation-focused pathways."
+        },
+        "region": {
+          "impact": "LOW",
+          "note": "Advanced technical and critical understanding is universal, though regional research traditions may emphasise different aspects (e.g. EU emphasis on trustworthy AI, US emphasis on capability advancement)."
+        }
+      },
+      "evidence_types": [
+        {
+          "type": "research_critique",
+          "description": "Student produces a structured critique of a published AI paper or product, evaluating methodology, claims, limitations, and societal implications."
+        },
+        {
+          "type": "architecture_justification",
+          "description": "Student justifies architectural choices for a proposed AI application, weighing technical, ethical, and practical trade-offs."
+        }
+      ],
+      "common_misconceptions": [
+        {
+          "misconception": "Understanding the architecture means understanding the behaviour",
+          "frequency": "medium",
+          "explanation": "Even with deep technical knowledge, emergent behaviours of large models are not fully predictable from architecture alone. Advanced understanding includes recognising the limits of technical explanation."
+        },
+        {
+          "misconception": "Scaling up will solve current AI limitations",
+          "frequency": "medium",
+          "explanation": "The scaling hypothesis is contested. Advanced students should engage with arguments about fundamental limitations of current paradigms, not just extrapolate from scaling trends."
+        }
+      ],
+      "cross_dimension_dependencies": [
+        {
+          "depends_on": "sc-understanding-intermediate",
+          "relationship": "prerequisite",
+          "note": "Deep understanding builds on intermediate conceptual foundations."
+        },
+        {
+          "depends_on": "sc-ethics-advanced",
+          "relationship": "reinforcing",
+          "note": "Ethics-by-design thinking requires deep technical understanding; deep technical understanding gains meaning through ethical framing."
+        },
+        {
+          "depends_on": "sc-design-advanced",
+          "relationship": "reinforcing",
+          "note": "Advanced understanding and advanced design are mutually reinforcing: understanding informs design, design practice deepens understanding."
+        }
+      ],
+      "prerequisites": [
+        "Intermediate AI Understanding competency",
+        "Research literacy appropriate to study level",
+        "Willingness to engage with technical material beyond immediate discipline"
+      ],
+      "respondent_note": "Students are primary respondents. Supervisors and module leaders can assess through research critiques, design justifications, and viva-style questioning."
+    },
+    {
+      "id": "sc-ethics-foundational",
+      "dimension_id": "sc-ethics",
+      "level": "foundational",
+      "level_order": 1,
+      "observable_behaviours": [
+        "Student identifies at least three ethical concerns raised by AI (e.g. bias, privacy, job displacement, environmental cost, misinformation) and explains why each matters.",
+        "Student recognises that AI systems can produce discriminatory outcomes even without intentional bias, connecting this to training data and design choices.",
+        "Student articulates basic data privacy principles (e.g. informed consent, data minimisation, right to deletion) in the context of using AI tools.",
+        "Student expresses a personal position on an AI ethics dilemma with reasons, even if the position is tentative or evolving."
+      ],
+      "context_dependencies": {
+        "study_level": {
+          "impact": "MEDIUM",
+          "note": "Ethical awareness is relevant at all levels. Postgraduate/doctoral students may connect ethics to research ethics frameworks they already know."
+        },
+        "discipline": {
+          "impact": "MEDIUM",
+          "note": "Discipline shapes which ethical issues feel most salient: health students focus on clinical AI bias; humanities students on cultural representation; STEM students on dual-use and environmental impact."
+        },
+        "prior_ai_experience": {
+          "impact": "MEDIUM",
+          "note": "Students with more AI experience may have encountered ethical issues practically (e.g. biased outputs) but may not have frameworks to analyse them. Students with no experience may have strong ethical intuitions but lack concrete examples."
+        },
+        "region": {
+          "impact": "MEDIUM",
+          "note": "Regional regulatory contexts (EU AI Act, UK pro-innovation approach, US sectoral regulation) shape which ethical issues are emphasised and how they are framed."
+        }
+      },
+      "evidence_types": [
+        {
+          "type": "ethical_issue_identification",
+          "description": "Student identifies ethical concerns in a presented AI scenario and explains the stakeholders affected and the values at stake."
+        },
+        {
+          "type": "position_statement",
+          "description": "Student writes a short position statement on an AI ethics question, presenting reasons for their view and acknowledging at least one counterargument."
+        }
+      ],
+      "common_misconceptions": [
+        {
+          "misconception": "AI ethics is only about preventing robots from harming humans",
+          "frequency": "medium",
+          "explanation": "Science fiction framing narrows ethical thinking to physical safety, missing bias, privacy, epistemic, environmental, and labour concerns."
+        },
+        {
+          "misconception": "If AI is legal, it is ethical",
+          "frequency": "high",
+          "explanation": "Students may conflate legal compliance with ethical practice, not recognising that law often lags behind technological capability."
+        },
+        {
+          "misconception": "Individual users cannot affect AI ethics because the technology is controlled by large companies",
+          "frequency": "medium",
+          "explanation": "Learned helplessness around technology governance. Students underestimate the impact of user behaviour, feedback, and collective action."
+        }
+      ],
+      "cross_dimension_dependencies": [
+        {
+          "depends_on": "sc-understanding-foundational",
+          "relationship": "enabling",
+          "note": "Basic understanding of how AI works enables more grounded ethical reasoning (e.g. understanding bias requires understanding training data)."
+        }
+      ],
+      "prerequisites": [
+        "Basic awareness that technology has social consequences",
+        "Willingness to engage with value-laden questions"
+      ],
+      "respondent_note": "Students are primary respondents. Ethical awareness can be assessed through scenario-based discussion, reflective writing, and peer dialogue."
+    },
+    {
+      "id": "sc-ethics-intermediate",
+      "dimension_id": "sc-ethics",
+      "level": "intermediate",
+      "level_order": 2,
+      "observable_behaviours": [
+        "Student applies an ethical framework (e.g. UNESCO's six principles: do no harm, proportionality, non-discrimination, sustainability, human determination, transparency) to evaluate a real AI application.",
+        "Student practises responsible AI use in their academic work: protecting data privacy, ensuring informed consent for data use, citing AI assistance, and complying with institutional AI use policies.",
+        "Student evaluates AI-generated content for bias, stereotyping, and cultural insensitivity, and can articulate how these issues arise from training data and design choices.",
+        "Student assesses the proportionality of AI use for specific tasks, considering whether the benefits justify the privacy, environmental, and accuracy costs.",
+        "Student engages constructively in peer discussion about AI ethics, considering multiple perspectives and cultural contexts."
+      ],
+      "context_dependencies": {
+        "study_level": {
+          "impact": "MEDIUM",
+          "note": "Postgraduate/doctoral students connect AI ethics to research ethics committees and methodological rigour. Undergraduates focus on academic integrity and responsible personal use."
+        },
+        "discipline": {
+          "impact": "MEDIUM",
+          "note": "Ethical frameworks may be more familiar to humanities and social science students. STEM students may need more scaffolding for value-based reasoning but bring technical precision to bias analysis."
+        },
+        "prior_ai_experience": {
+          "impact": "MEDIUM",
+          "note": "Regular users have more practical contexts for applying ethical reasoning. Students with technical backgrounds may focus on technical debiasing at the expense of broader ethical analysis."
+        },
+        "region": {
+          "impact": "HIGH",
+          "note": "Regulatory contexts differ fundamentally: EU students must understand AI Act risk categories; UK students the pro-innovation regulatory approach; US students sector-specific regulations. Cultural values around privacy, autonomy, and collective responsibility also vary."
+        }
+      },
+      "evidence_types": [
+        {
+          "type": "ethical_framework_application",
+          "description": "Student applies a named ethical framework to evaluate a real AI application, identifying specific ethical tensions and proposing mitigations."
+        },
+        {
+          "type": "responsible_use_portfolio",
+          "description": "Portfolio demonstrating consistent responsible AI practices across multiple academic tasks, including documentation of ethical decision-making."
+        }
+      ],
+      "common_misconceptions": [
+        {
+          "misconception": "Technical fixes (e.g. debiasing algorithms) are sufficient to resolve AI ethics issues",
+          "frequency": "medium",
+          "explanation": "Technical approaches to fairness are necessary but not sufficient. Structural, social, and political dimensions of AI ethics require non-technical interventions."
+        },
+        {
+          "misconception": "Following institutional policy equals ethical practice",
+          "frequency": "high",
+          "explanation": "Policies set minimum standards, not ethical ceilings. Students should develop ethical judgement that goes beyond compliance."
+        },
+        {
+          "misconception": "AI ethics is a Western concern imposed on other cultures",
+          "frequency": "low",
+          "explanation": "While specific ethical frameworks reflect cultural contexts, core concerns about fairness, transparency, and human dignity are cross-cultural. The UNESCO framework was developed through global consultation."
+        }
+      ],
+      "cross_dimension_dependencies": [
+        {
+          "depends_on": "sc-ethics-foundational",
+          "relationship": "prerequisite",
+          "note": "Cannot apply ethical frameworks without foundational awareness of ethical issues."
+        },
+        {
+          "depends_on": "sc-understanding-intermediate",
+          "relationship": "enabling",
+          "note": "Deeper technical understanding enables more precise ethical analysis (e.g. understanding how bias enters through specific training choices)."
+        },
+        {
+          "depends_on": "sc-use-intermediate",
+          "relationship": "enabling",
+          "note": "Active AI use provides the practical contexts in which ethical reasoning is applied."
+        }
+      ],
+      "prerequisites": [
+        "Foundational AI Ethics competency",
+        "Familiarity with at least one ethical framework",
+        "Awareness of institutional AI policies"
+      ],
+      "respondent_note": "Students are primary respondents. Assessment through ethical case analyses, reflective portfolios, and observed peer discussions."
+    },
+    {
+      "id": "sc-ethics-advanced",
+      "dimension_id": "sc-ethics",
+      "level": "advanced",
+      "level_order": 3,
+      "observable_behaviours": [
+        "Student adopts an ethics-by-design approach when creating or evaluating AI systems, embedding ethical considerations from problem scoping through deployment and monitoring.",
+        "Student co-creates ethical guidelines for AI use within their learning community (e.g. departmental AI use protocols, study group norms, peer review standards).",
+        "Student critically evaluates AI governance frameworks and regulations, identifying strengths, gaps, and unintended consequences.",
+        "Student advocates for responsible AI practices in academic and professional contexts, drawing on evidence and ethical reasoning to persuade diverse audiences.",
+        "Student deliberates on when AI systems should be restricted, suspended, or shut down, weighing competing values and stakeholder interests."
+      ],
+      "context_dependencies": {
+        "study_level": {
+          "impact": "HIGH",
+          "note": "Doctoral students engage with ethics at the frontier of research practice. Undergraduates reaching this level typically do so through dedicated ethics modules or civic engagement."
+        },
+        "discipline": {
+          "impact": "MEDIUM",
+          "note": "All disciplines contribute perspectives: philosophy provides analytical tools; law provides regulatory analysis; STEM provides technical feasibility assessment; social sciences provide stakeholder analysis."
+        },
+        "prior_ai_experience": {
+          "impact": "MEDIUM",
+          "note": "Technical experience enriches ethics-by-design practice. Non-technical students bring valuable perspectives on user experience, cultural sensitivity, and social impact."
+        },
+        "region": {
+          "impact": "HIGH",
+          "note": "Advanced ethical reasoning requires engaging with specific regulatory contexts and their global implications. Students should understand how different governance approaches reflect different value systems."
+        }
+      },
+      "evidence_types": [
+        {
+          "type": "ethics_by_design_project",
+          "description": "Student demonstrates ethics-by-design approach in an AI project, with documented ethical reasoning at each design stage."
+        },
+        {
+          "type": "guideline_co_creation",
+          "description": "Student contributes to or leads the creation of AI use guidelines for their learning community, with evidence of consultation, iteration, and adoption."
+        },
+        {
+          "type": "governance_critique",
+          "description": "Student produces a critical analysis of an AI governance framework, identifying assumptions, gaps, and recommendations for improvement."
+        }
+      ],
+      "common_misconceptions": [
+        {
+          "misconception": "Ethics by design means adding an ethics review at the end",
+          "frequency": "medium",
+          "explanation": "Retrospective ethics review is necessary but is not ethics by design. The latter requires ethical reasoning to be embedded throughout the design process, shaping decisions from the outset."
+        },
+        {
+          "misconception": "There is a single correct ethical position on AI issues",
+          "frequency": "low",
+          "explanation": "Advanced ethical reasoning acknowledges legitimate disagreement, cultural variation, and the need for deliberation rather than dogmatic positions."
+        }
+      ],
+      "cross_dimension_dependencies": [
+        {
+          "depends_on": "sc-ethics-intermediate",
+          "relationship": "prerequisite",
+          "note": "Applied ethical reasoning is prerequisite for ethics by design and governance critique."
+        },
+        {
+          "depends_on": "sc-design-advanced",
+          "relationship": "reinforcing",
+          "note": "Ethics by design and system design are deeply intertwined at the advanced level."
+        },
+        {
+          "depends_on": "sc-understanding-advanced",
+          "relationship": "enabling",
+          "note": "Deep technical understanding enables precise ethical analysis of design choices."
+        }
+      ],
+      "prerequisites": [
+        "Intermediate AI Ethics competency",
+        "Experience applying ethical frameworks in practice",
+        "Communication and deliberation skills"
+      ],
+      "respondent_note": "Students are primary respondents. Assessment through ethics-by-design project documentation, governance critiques, and evidence of community leadership."
+    },
+    {
+      "id": "sc-design-foundational",
+      "dimension_id": "sc-design",
+      "level": "foundational",
+      "level_order": 1,
+      "observable_behaviours": [
+        "Student examines a presented problem and articulates whether AI is an appropriate solution, considering ethical, practical, and logical factors.",
+        "Student defines the boundaries of a problem that could be addressed with AI: what the system should do, what it should not do, and who would be affected.",
+        "Student identifies the basic components needed for an AI solution (data source, processing method, output format, user interface) even without being able to implement them.",
+        "Student assesses whether sufficient and appropriate data exists to train a model for a specified task."
+      ],
+      "context_dependencies": {
+        "study_level": {
+          "impact": "HIGH",
+          "note": "Undergraduates engage through guided design exercises. Postgraduate/doctoral students may scope AI applications for their research domains."
+        },
+        "discipline": {
+          "impact": "HIGH",
+          "note": "Design problems are strongly discipline-specific: a health student scoping a diagnostic support tool faces different constraints than an arts student designing a creative AI application."
+        },
+        "prior_ai_experience": {
+          "impact": "HIGH",
+          "note": "Students with technical backgrounds may jump to implementation before adequately scoping the problem. Students with no technical background may need reassurance that problem scoping does not require coding skills."
+        },
+        "region": {
+          "impact": "LOW",
+          "note": "Problem scoping skills are universal. Regional variation in available datasets and regulatory constraints for specific applications."
+        }
+      },
+      "evidence_types": [
+        {
+          "type": "problem_scoping_exercise",
+          "description": "Student produces a structured problem scope for a proposed AI application, including problem definition, stakeholder analysis, data assessment, and go/no-go recommendation."
+        },
+        {
+          "type": "appropriateness_assessment",
+          "description": "Student evaluates 3-4 presented scenarios and determines whether AI is an appropriate solution for each, with reasoned justification."
+        }
+      ],
+      "common_misconceptions": [
+        {
+          "misconception": "AI can solve any problem if you have enough data",
+          "frequency": "high",
+          "explanation": "Not all problems are amenable to AI solutions. Some require human judgement, some have insufficient data, some would be unethical to automate."
+        },
+        {
+          "misconception": "Problem scoping is a preliminary step that can be done quickly",
+          "frequency": "medium",
+          "explanation": "Poor problem scoping is the most common cause of failed AI projects. Students may underestimate the time and rigour required."
+        },
+        {
+          "misconception": "You need to be a programmer to participate in AI system design",
+          "frequency": "high",
+          "explanation": "Problem scoping, stakeholder analysis, and requirements definition are design activities that do not require coding skills. Technical implementation is only one part of the design process."
+        }
+      ],
+      "cross_dimension_dependencies": [
+        {
+          "depends_on": "sc-understanding-foundational",
+          "relationship": "prerequisite",
+          "note": "Must understand what AI can and cannot do before scoping problems for AI solutions."
+        },
+        {
+          "depends_on": "sc-ethics-foundational",
+          "relationship": "enabling",
+          "note": "Ethical awareness is essential for assessing whether AI should be used in a given context."
+        }
+      ],
+      "prerequisites": [
+        "Foundational AI Understanding",
+        "Basic analytical and critical thinking skills"
+      ],
+      "respondent_note": "Students are primary respondents. Problem scoping exercises can be assessed by educators or through peer review."
+    },
+    {
+      "id": "sc-design-intermediate",
+      "dimension_id": "sc-design",
+      "level": "intermediate",
+      "level_order": 2,
+      "observable_behaviours": [
+        "Student designs an AI system architecture covering data pipeline, model selection, training approach, and interface design, with justification for each choice.",
+        "Student selects appropriate tools and platforms for implementing an AI solution based on requirements, constraints, and available resources.",
+        "Student plans a data collection and preparation strategy for a specific AI application, addressing quality, representativeness, consent, and storage.",
+        "Student creates wireframes or prototypes for AI-powered applications, showing user interaction flows and human oversight mechanisms.",
+        "Student demonstrates basic project management competencies for AI development: scoping tasks, estimating timelines, identifying risks."
+      ],
+      "context_dependencies": {
+        "study_level": {
+          "impact": "HIGH",
+          "note": "Doctoral students may design AI components of research methodology. Undergraduates typically reach this level through project-based modules with scaffolded design exercises."
+        },
+        "discipline": {
+          "impact": "HIGH",
+          "note": "Architecture design is deeply discipline-specific. STEM students may focus on model architecture; social science students on data pipeline design for qualitative analysis; arts students on creative AI interface design."
+        },
+        "prior_ai_experience": {
+          "impact": "HIGH",
+          "note": "Technical users can implement designs more quickly but may neglect user experience and ethical design considerations. Non-technical students may focus on conceptual design with implementation handled by collaborators."
+        },
+        "region": {
+          "impact": "LOW",
+          "note": "Design principles are universal. Tool and platform availability may vary by region."
+        }
+      },
+      "evidence_types": [
+        {
+          "type": "architecture_design_document",
+          "description": "Student produces a design document for an AI application covering data pipeline, model selection, interface design, and human oversight mechanisms."
+        },
+        {
+          "type": "prototype_with_rationale",
+          "description": "Student creates a working prototype or detailed wireframe with written rationale for design choices, including ethical and practical trade-offs."
+        }
+      ],
+      "common_misconceptions": [
+        {
+          "misconception": "The most complex architecture is the best one",
+          "frequency": "medium",
+          "explanation": "Simpler architectures that meet requirements are generally preferable. Students may over-engineer solutions to demonstrate technical sophistication."
+        },
+        {
+          "misconception": "Design is complete once the model works",
+          "frequency": "high",
+          "explanation": "AI system design includes interface design, user testing, monitoring plans, and maintenance strategies. A working model is a milestone, not a finish line."
+        }
+      ],
+      "cross_dimension_dependencies": [
+        {
+          "depends_on": "sc-design-foundational",
+          "relationship": "prerequisite",
+          "note": "Problem scoping must precede architecture design."
+        },
+        {
+          "depends_on": "sc-understanding-intermediate",
+          "relationship": "enabling",
+          "note": "Technical understanding of ML paradigms enables informed architecture choices."
+        },
+        {
+          "depends_on": "sc-use-intermediate",
+          "relationship": "enabling",
+          "note": "Experience using AI tools informs practical design decisions."
+        }
+      ],
+      "prerequisites": [
+        "Foundational AI System Design competency",
+        "Some hands-on experience with AI tools or platforms",
+        "Basic data literacy"
+      ],
+      "respondent_note": "Students are primary respondents. Assessment through design documents, prototypes, and design review presentations."
+    },
+    {
+      "id": "sc-design-advanced",
+      "dimension_id": "sc-design",
+      "level": "advanced",
+      "level_order": 3,
+      "observable_behaviours": [
+        "Student evaluates the appropriateness and methodological robustness of AI models, assessing performance metrics, fairness criteria, and impact on users and society.",
+        "Student designs and executes iteration cycles: improving datasets, reconfiguring algorithms, and enhancing architectures based on evaluation findings.",
+        "Student plans for the full lifecycle of an AI system including deployment, monitoring, maintenance, retraining triggers, and decommissioning criteria.",
+        "Student simulates decision-making about when an AI system should be modified, restricted, or shut down based on performance, ethical, or contextual evidence.",
+        "Student integrates feedback from diverse stakeholders (end users, domain experts, affected communities) into design iteration."
+      ],
+      "context_dependencies": {
+        "study_level": {
+          "impact": "HIGH",
+          "note": "Doctoral students may design AI systems as part of their research contribution. Undergraduates typically reach this level only through specialist programmes or significant independent projects."
+        },
+        "discipline": {
+          "impact": "HIGH",
+          "note": "Advanced design takes discipline-specific forms: STEM students may focus on model optimisation; health students on clinical validation; social science students on participatory design with affected communities."
+        },
+        "prior_ai_experience": {
+          "impact": "HIGH",
+          "note": "Technical skills significantly accelerate implementation. However, advanced design also requires soft skills (stakeholder engagement, ethical deliberation) that technical background alone does not provide."
+        },
+        "region": {
+          "impact": "MEDIUM",
+          "note": "Regulatory requirements for AI system lifecycle management vary by region (EU AI Act mandates specific monitoring and documentation requirements)."
+        }
+      },
+      "evidence_types": [
+        {
+          "type": "full_lifecycle_project",
+          "description": "Student designs, implements, evaluates, and iterates on an AI system across its full lifecycle, with documentation of design decisions, evaluation results, and iteration rationale."
+        },
+        {
+          "type": "shutdown_decision_simulation",
+          "description": "Student participates in a simulated decision about restricting or shutting down an AI system, weighing technical, ethical, and stakeholder evidence."
+        }
+      ],
+      "common_misconceptions": [
+        {
+          "misconception": "A deployed AI system is a finished product",
+          "frequency": "medium",
+          "explanation": "AI systems require ongoing monitoring, retraining, and potentially decommissioning. Students should understand deployment as a phase, not an endpoint."
+        },
+        {
+          "misconception": "User feedback alone is sufficient for iteration",
+          "frequency": "medium",
+          "explanation": "Users who interact with an AI system are not the only stakeholders. Affected communities who do not directly use the system may experience its impacts and must be consulted."
+        }
+      ],
+      "cross_dimension_dependencies": [
+        {
+          "depends_on": "sc-design-intermediate",
+          "relationship": "prerequisite",
+          "note": "Architecture design skills are prerequisite for lifecycle design and iteration."
+        },
+        {
+          "depends_on": "sc-understanding-advanced",
+          "relationship": "reinforcing",
+          "note": "Deep technical understanding enables meaningful evaluation and iteration."
+        },
+        {
+          "depends_on": "sc-ethics-advanced",
+          "relationship": "reinforcing",
+          "note": "Ethics by design is integral to advanced system design, especially lifecycle and shutdown decisions."
+        },
+        {
+          "depends_on": "sc-use-advanced",
+          "relationship": "reinforcing",
+          "note": "Advanced use experience informs practical design decisions and evaluation criteria."
+        }
+      ],
+      "prerequisites": [
+        "Intermediate AI System Design competency",
+        "Evaluation and research methods skills",
+        "Stakeholder engagement experience"
+      ],
+      "respondent_note": "Students are primary respondents. Assessment through lifecycle project portfolios, design review panels, and shutdown decision simulations."
+    }
+  ]
+}

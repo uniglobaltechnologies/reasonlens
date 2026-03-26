@@ -1,0 +1,379 @@
+{
+  "framework_id": "unesco-student-ai-competency",
+  "framework_name": "UNESCO AI Competency Framework for Students",
+  "framework_source": "UNESCO (2024). AI competency framework for students. UNESDOC pf0000391105. ISBN 978-92-3-100709-5.",
+  "reasonlens_implementation_note": "This file operationalises the UNESCO Student framework for the ReasonLens platform. Dimension names and level names are ReasonLens-specific adaptations of UNESCO terminology (Aspects mapped to Dimensions; Understand/Apply/Create mapped to Foundational/Intermediate/Advanced) to maintain consistency with the platform's multi-framework architecture.",
+  "dimensions": [
+    {
+      "id": "sc-use",
+      "name": "AI Use & Application",
+      "code": "USE",
+      "description": "The ability to select, operate, and critically evaluate AI tools and applications for learning, problem-solving, and daily life. Covers practical interaction with AI systems, prompt engineering, output evaluation, and integration of AI into academic workflows.",
+      "unesco_aspect": "AI techniques and applications"
+    },
+    {
+      "id": "sc-understanding",
+      "name": "AI Understanding",
+      "code": "UND",
+      "description": "Conceptual and technical knowledge of how AI systems work, including data, algorithms, machine learning paradigms, neural networks, and the relationship between AI capabilities and limitations. Covers both foundational literacy and deeper technical comprehension.",
+      "unesco_aspect": "Human-centred mindset"
+    },
+    {
+      "id": "sc-ethics",
+      "name": "AI Ethics & Values",
+      "code": "ETH",
+      "description": "The capacity to identify, reason about, and act on ethical issues raised by AI, including bias, fairness, privacy, transparency, environmental sustainability, and the societal impact of AI systems. Covers personal ethical practice and co-creation of ethical norms.",
+      "unesco_aspect": "Ethics of AI"
+    },
+    {
+      "id": "sc-design",
+      "name": "AI System Design",
+      "code": "DES",
+      "description": "The ability to scope AI problems, design AI system architectures, implement solutions, and evaluate outcomes through iterative feedback loops. Covers the full design cycle from problem definition through prototyping to evaluation and improvement.",
+      "unesco_aspect": "AI system design"
+    }
+  ],
+  "levels": [
+    {
+      "id_suffix": "foundational",
+      "name": "Foundational",
+      "order": 1,
+      "code": "F",
+      "description": "Students recognise AI in daily life, develop basic conceptual vocabulary, and form initial attitudes toward AI use. They can identify AI-powered tools, understand that AI involves data and algorithms, articulate basic ethical concerns, and describe what a simple AI system does.",
+      "unesco_level": "Understand"
+    },
+    {
+      "id_suffix": "intermediate",
+      "name": "Intermediate",
+      "order": 2,
+      "code": "I",
+      "description": "Students critically evaluate and purposefully apply AI tools across academic and personal contexts. They transfer knowledge to complex situations, assess AI outputs for quality and bias, practise responsible use aligned with regulations, and design basic AI-assisted solutions.",
+      "unesco_level": "Apply"
+    },
+    {
+      "id_suffix": "advanced",
+      "name": "Advanced",
+      "order": 3,
+      "code": "A",
+      "description": "Students create, customise, and evaluate AI solutions with attention to human-centred design, ethical robustness, and societal impact. They co-create ethical guidance, build functional AI prototypes, and critically assess when AI systems should or should not be deployed.",
+      "unesco_level": "Create"
+    }
+  ],
+  "object_count": "~22 mappings + 2 non-mappings",
+  "target_frameworks": [
+    "UNESCO CFT",
+    "ISTE Standards for Students",
+    "DigComp 2.2",
+    "UNESCO Guidance for AI in Education & Research"
+  ],
+  "data": [
+    {
+      "source_id": "sc-use-foundational",
+      "target_framework": "UNESCO CFT (AI Competency Framework for Teachers)",
+      "target_id": "cft-ai-skills-acquire",
+      "mapping_type": "teacher_student_pair",
+      "confidence": "strong",
+      "direction": "bidirectional",
+      "rationale": "The student's foundational AI use (identifying and using tools) pairs with the teacher's 'Acquire' level in AI Skills, where the teacher learns to use AI tools to support pedagogy.",
+      "what_transfers": "Shared progression levels (Understand/Apply/Create mapped to Foundational/Intermediate/Advanced). Shared ethical principles (UNESCO's six embedded principles). Complementary competency descriptions where student learning outcomes correspond to teacher facilitation outcomes.",
+      "what_does_not_transfer": "Teacher framework has 6 aspects vs student's 4 dimensions. Teacher-specific aspects (AI Pedagogy, AI for Professional Learning) have no direct student equivalent. Institutional and professional practice context of teaching does not map to student learning context."
+    },
+    {
+      "source_id": "sc-use-intermediate",
+      "target_framework": "UNESCO CFT (AI Competency Framework for Teachers)",
+      "target_id": "cft-ai-pedagogy-apply",
+      "mapping_type": "teacher_student_pair",
+      "confidence": "strong",
+      "direction": "bidirectional",
+      "rationale": "The student's intermediate purposeful AI use for learning pairs with the teacher's pedagogical AI integration at the Apply level.",
+      "what_transfers": "Shared progression levels (Understand/Apply/Create mapped to Foundational/Intermediate/Advanced). Shared ethical principles (UNESCO's six embedded principles). Complementary competency descriptions where student learning outcomes correspond to teacher facilitation outcomes.",
+      "what_does_not_transfer": "Teacher framework has 6 aspects vs student's 4 dimensions. Teacher-specific aspects (AI Pedagogy, AI for Professional Learning) have no direct student equivalent. Institutional and professional practice context of teaching does not map to student learning context."
+    },
+    {
+      "source_id": "sc-use-advanced",
+      "target_framework": "UNESCO CFT (AI Competency Framework for Teachers)",
+      "target_id": "cft-ai-pedagogy-create",
+      "mapping_type": "teacher_student_pair",
+      "confidence": "moderate",
+      "direction": "bidirectional",
+      "rationale": "The student's advanced customised AI use pairs with the teacher's ability to design AI-integrated learning experiences at the Create level.",
+      "what_transfers": "Shared progression levels (Understand/Apply/Create mapped to Foundational/Intermediate/Advanced). Shared ethical principles (UNESCO's six embedded principles). Complementary competency descriptions where student learning outcomes correspond to teacher facilitation outcomes.",
+      "what_does_not_transfer": "Teacher framework has 6 aspects vs student's 4 dimensions. Teacher-specific aspects (AI Pedagogy, AI for Professional Learning) have no direct student equivalent. Institutional and professional practice context of teaching does not map to student learning context."
+    },
+    {
+      "source_id": "sc-understanding-foundational",
+      "target_framework": "UNESCO CFT (AI Competency Framework for Teachers)",
+      "target_id": "cft-ai-knowledge-acquire",
+      "mapping_type": "teacher_student_pair",
+      "confidence": "strong",
+      "direction": "bidirectional",
+      "rationale": "The student's foundational AI understanding pairs with the teacher's foundational AI knowledge.",
+      "what_transfers": "Shared progression levels (Understand/Apply/Create mapped to Foundational/Intermediate/Advanced). Shared ethical principles (UNESCO's six embedded principles). Complementary competency descriptions where student learning outcomes correspond to teacher facilitation outcomes.",
+      "what_does_not_transfer": "Teacher framework has 6 aspects vs student's 4 dimensions. Teacher-specific aspects (AI Pedagogy, AI for Professional Learning) have no direct student equivalent. Institutional and professional practice context of teaching does not map to student learning context."
+    },
+    {
+      "source_id": "sc-understanding-intermediate",
+      "target_framework": "UNESCO CFT (AI Competency Framework for Teachers)",
+      "target_id": "cft-ai-knowledge-apply",
+      "mapping_type": "teacher_student_pair",
+      "confidence": "strong",
+      "direction": "bidirectional",
+      "rationale": "The student's intermediate mechanistic understanding pairs with the teacher's applied knowledge of AI methods.",
+      "what_transfers": "Shared progression levels (Understand/Apply/Create mapped to Foundational/Intermediate/Advanced). Shared ethical principles (UNESCO's six embedded principles). Complementary competency descriptions where student learning outcomes correspond to teacher facilitation outcomes.",
+      "what_does_not_transfer": "Teacher framework has 6 aspects vs student's 4 dimensions. Teacher-specific aspects (AI Pedagogy, AI for Professional Learning) have no direct student equivalent. Institutional and professional practice context of teaching does not map to student learning context."
+    },
+    {
+      "source_id": "sc-ethics-foundational",
+      "target_framework": "UNESCO CFT (AI Competency Framework for Teachers)",
+      "target_id": "cft-ethics-acquire",
+      "mapping_type": "teacher_student_pair",
+      "confidence": "strong",
+      "direction": "bidirectional",
+      "rationale": "The student's foundational ethical awareness pairs with the teacher's foundational ethics understanding.",
+      "what_transfers": "Shared progression levels (Understand/Apply/Create mapped to Foundational/Intermediate/Advanced). Shared ethical principles (UNESCO's six embedded principles). Complementary competency descriptions where student learning outcomes correspond to teacher facilitation outcomes.",
+      "what_does_not_transfer": "Teacher framework has 6 aspects vs student's 4 dimensions. Teacher-specific aspects (AI Pedagogy, AI for Professional Learning) have no direct student equivalent. Institutional and professional practice context of teaching does not map to student learning context."
+    },
+    {
+      "source_id": "sc-ethics-intermediate",
+      "target_framework": "UNESCO CFT (AI Competency Framework for Teachers)",
+      "target_id": "cft-ethics-apply",
+      "mapping_type": "teacher_student_pair",
+      "confidence": "strong",
+      "direction": "bidirectional",
+      "rationale": "The student's applied ethical practice pairs with the teacher's responsible AI use in professional contexts.",
+      "what_transfers": "Shared progression levels (Understand/Apply/Create mapped to Foundational/Intermediate/Advanced). Shared ethical principles (UNESCO's six embedded principles). Complementary competency descriptions where student learning outcomes correspond to teacher facilitation outcomes.",
+      "what_does_not_transfer": "Teacher framework has 6 aspects vs student's 4 dimensions. Teacher-specific aspects (AI Pedagogy, AI for Professional Learning) have no direct student equivalent. Institutional and professional practice context of teaching does not map to student learning context."
+    },
+    {
+      "source_id": "sc-ethics-advanced",
+      "target_framework": "UNESCO CFT (AI Competency Framework for Teachers)",
+      "target_id": "cft-ethics-create",
+      "mapping_type": "teacher_student_pair",
+      "confidence": "strong",
+      "direction": "bidirectional",
+      "rationale": "The student's ethics-by-design and governance critique pairs with the teacher's capacity to develop ethical AI use policies.",
+      "what_transfers": "Shared progression levels (Understand/Apply/Create mapped to Foundational/Intermediate/Advanced). Shared ethical principles (UNESCO's six embedded principles). Complementary competency descriptions where student learning outcomes correspond to teacher facilitation outcomes.",
+      "what_does_not_transfer": "Teacher framework has 6 aspects vs student's 4 dimensions. Teacher-specific aspects (AI Pedagogy, AI for Professional Learning) have no direct student equivalent. Institutional and professional practice context of teaching does not map to student learning context."
+    },
+    {
+      "source_id": "sc-design-foundational",
+      "target_framework": "UNESCO CFT (AI Competency Framework for Teachers)",
+      "target_id": "cft-ai-knowledge-apply",
+      "mapping_type": "teacher_student_pair",
+      "confidence": "moderate",
+      "direction": "unidirectional",
+      "rationale": "The student's problem scoping pairs with the teacher's applied knowledge of when AI is appropriate for educational contexts.",
+      "what_transfers": "Shared progression levels (Understand/Apply/Create mapped to Foundational/Intermediate/Advanced). Shared ethical principles (UNESCO's six embedded principles). Complementary competency descriptions where student learning outcomes correspond to teacher facilitation outcomes.",
+      "what_does_not_transfer": "Teacher framework has 6 aspects vs student's 4 dimensions. Teacher-specific aspects (AI Pedagogy, AI for Professional Learning) have no direct student equivalent. Institutional and professional practice context of teaching does not map to student learning context."
+    },
+    {
+      "source_id": "sc-design-advanced",
+      "target_framework": "UNESCO CFT (AI Competency Framework for Teachers)",
+      "target_id": "cft-ai-pedagogy-create",
+      "mapping_type": "teacher_student_pair",
+      "confidence": "moderate",
+      "direction": "bidirectional",
+      "rationale": "The student's lifecycle management pairs with the teacher's ability to design sustainable AI-integrated curricula.",
+      "what_transfers": "Shared progression levels (Understand/Apply/Create mapped to Foundational/Intermediate/Advanced). Shared ethical principles (UNESCO's six embedded principles). Complementary competency descriptions where student learning outcomes correspond to teacher facilitation outcomes.",
+      "what_does_not_transfer": "Teacher framework has 6 aspects vs student's 4 dimensions. Teacher-specific aspects (AI Pedagogy, AI for Professional Learning) have no direct student equivalent. Institutional and professional practice context of teaching does not map to student learning context."
+    },
+    {
+      "source_id": "sc-use",
+      "target_framework": "ISTE Standards for Students (v4.02, 2024)",
+      "target_id": "iste-empowered-learner",
+      "mapping_type": "competency_alignment",
+      "confidence": "moderate",
+      "direction": "unidirectional",
+      "rationale": "AI Use maps to Empowered Learner: students leverage technology for learning goals, personalise learning experiences, and demonstrate agency.",
+      "what_transfers": "Shared emphasis on critical thinking, ethical practice, and design skills. Both frameworks target student competency development. ISTE's 2024 update embeds AI-relevant indicators within existing roles.",
+      "what_does_not_transfer": "ISTE uses role-based organisation (7 roles) without explicit proficiency levels. UNESCO uses dimension-level matrix with 3 progression levels. ISTE is broader (all digital technology); UNESCO is AI-specific. ISTE standards are less prescriptive about specific AI knowledge."
+    },
+    {
+      "source_id": "sc-use",
+      "target_framework": "ISTE Standards for Students (v4.02, 2024)",
+      "target_id": "iste-knowledge-constructor",
+      "mapping_type": "competency_alignment",
+      "confidence": "moderate",
+      "direction": "unidirectional",
+      "rationale": "AI Use maps to Knowledge Constructor: students use digital tools to build knowledge, evaluating accuracy and usefulness of resources.",
+      "what_transfers": "Shared emphasis on critical thinking, ethical practice, and design skills. Both frameworks target student competency development. ISTE's 2024 update embeds AI-relevant indicators within existing roles.",
+      "what_does_not_transfer": "ISTE uses role-based organisation (7 roles) without explicit proficiency levels. UNESCO uses dimension-level matrix with 3 progression levels. ISTE is broader (all digital technology); UNESCO is AI-specific. ISTE standards are less prescriptive about specific AI knowledge."
+    },
+    {
+      "source_id": "sc-understanding",
+      "target_framework": "ISTE Standards for Students (v4.02, 2024)",
+      "target_id": "iste-computational-thinker",
+      "mapping_type": "competency_alignment",
+      "confidence": "strong",
+      "direction": "unidirectional",
+      "rationale": "AI Understanding maps to Computational Thinker: students understand algorithmic processes, formulate problem definitions, and use data.",
+      "what_transfers": "Shared emphasis on critical thinking, ethical practice, and design skills. Both frameworks target student competency development. ISTE's 2024 update embeds AI-relevant indicators within existing roles.",
+      "what_does_not_transfer": "ISTE uses role-based organisation (7 roles) without explicit proficiency levels. UNESCO uses dimension-level matrix with 3 progression levels. ISTE is broader (all digital technology); UNESCO is AI-specific. ISTE standards are less prescriptive about specific AI knowledge."
+    },
+    {
+      "source_id": "sc-ethics",
+      "target_framework": "ISTE Standards for Students (v4.02, 2024)",
+      "target_id": "iste-digital-citizen",
+      "mapping_type": "competency_alignment",
+      "confidence": "strong",
+      "direction": "unidirectional",
+      "rationale": "AI Ethics maps to Digital Citizen: students act responsibly, manage digital identities, and demonstrate ethical online behaviour.",
+      "what_transfers": "Shared emphasis on critical thinking, ethical practice, and design skills. Both frameworks target student competency development. ISTE's 2024 update embeds AI-relevant indicators within existing roles.",
+      "what_does_not_transfer": "ISTE uses role-based organisation (7 roles) without explicit proficiency levels. UNESCO uses dimension-level matrix with 3 progression levels. ISTE is broader (all digital technology); UNESCO is AI-specific. ISTE standards are less prescriptive about specific AI knowledge."
+    },
+    {
+      "source_id": "sc-design",
+      "target_framework": "ISTE Standards for Students (v4.02, 2024)",
+      "target_id": "iste-innovative-designer",
+      "mapping_type": "competency_alignment",
+      "confidence": "moderate",
+      "direction": "unidirectional",
+      "rationale": "AI System Design maps to Innovative Designer: students use design processes to solve problems, generate ideas, and test solutions.",
+      "what_transfers": "Shared emphasis on critical thinking, ethical practice, and design skills. Both frameworks target student competency development. ISTE's 2024 update embeds AI-relevant indicators within existing roles.",
+      "what_does_not_transfer": "ISTE uses role-based organisation (7 roles) without explicit proficiency levels. UNESCO uses dimension-level matrix with 3 progression levels. ISTE is broader (all digital technology); UNESCO is AI-specific. ISTE standards are less prescriptive about specific AI knowledge."
+    },
+    {
+      "source_id": "sc-design",
+      "target_framework": "ISTE Standards for Students (v4.02, 2024)",
+      "target_id": "iste-computational-thinker",
+      "mapping_type": "competency_alignment",
+      "confidence": "moderate",
+      "direction": "unidirectional",
+      "rationale": "AI System Design also maps to Computational Thinker: problem decomposition, algorithm design, and testing.",
+      "what_transfers": "Shared emphasis on critical thinking, ethical practice, and design skills. Both frameworks target student competency development. ISTE's 2024 update embeds AI-relevant indicators within existing roles.",
+      "what_does_not_transfer": "ISTE uses role-based organisation (7 roles) without explicit proficiency levels. UNESCO uses dimension-level matrix with 3 progression levels. ISTE is broader (all digital technology); UNESCO is AI-specific. ISTE standards are less prescriptive about specific AI knowledge."
+    },
+    {
+      "source_id": "sc-use",
+      "target_framework": "DigComp 2.2 (EU/JRC, 2022)",
+      "target_id": "dc-3-4-programming",
+      "mapping_type": "competency_alignment",
+      "confidence": "moderate",
+      "direction": "unidirectional",
+      "rationale": "AI Use at Intermediate/Advanced maps to DigComp 3.4 Programming: interacting with AI systems, understanding automation.",
+      "what_transfers": "DigComp 2.2 includes approximately 73 AI-tagged knowledge, skill, and attitude examples across its 5 competence areas. These provide concrete AI-relevant indicators within a broader digital competence framework.",
+      "what_does_not_transfer": "DigComp is a general digital competence framework, not AI-specific. Its 8 proficiency levels (Foundation 1-2, Intermediate 3-4, Advanced 5-6, Highly Specialised 7-8) do not map neatly to UNESCO's 3 levels. DigComp lacks a dedicated AI progression structure."
+    },
+    {
+      "source_id": "sc-use",
+      "target_framework": "DigComp 2.2 (EU/JRC, 2022)",
+      "target_id": "dc-2-1-interacting",
+      "mapping_type": "competency_alignment",
+      "confidence": "weak",
+      "direction": "unidirectional",
+      "rationale": "AI Use at Foundational maps to DigComp 2.1 Interacting through digital technologies.",
+      "what_transfers": "DigComp 2.2 includes approximately 73 AI-tagged knowledge, skill, and attitude examples across its 5 competence areas. These provide concrete AI-relevant indicators within a broader digital competence framework.",
+      "what_does_not_transfer": "DigComp is a general digital competence framework, not AI-specific. Its 8 proficiency levels (Foundation 1-2, Intermediate 3-4, Advanced 5-6, Highly Specialised 7-8) do not map neatly to UNESCO's 3 levels. DigComp lacks a dedicated AI progression structure."
+    },
+    {
+      "source_id": "sc-understanding",
+      "target_framework": "DigComp 2.2 (EU/JRC, 2022)",
+      "target_id": "dc-1-3-managing-data",
+      "mapping_type": "competency_alignment",
+      "confidence": "weak",
+      "direction": "unidirectional",
+      "rationale": "AI Understanding maps partially to DigComp 1.3 Managing data: understanding data as input to AI systems.",
+      "what_transfers": "DigComp 2.2 includes approximately 73 AI-tagged knowledge, skill, and attitude examples across its 5 competence areas. These provide concrete AI-relevant indicators within a broader digital competence framework.",
+      "what_does_not_transfer": "DigComp is a general digital competence framework, not AI-specific. Its 8 proficiency levels (Foundation 1-2, Intermediate 3-4, Advanced 5-6, Highly Specialised 7-8) do not map neatly to UNESCO's 3 levels. DigComp lacks a dedicated AI progression structure."
+    },
+    {
+      "source_id": "sc-ethics",
+      "target_framework": "DigComp 2.2 (EU/JRC, 2022)",
+      "target_id": "dc-4-2-protecting-personal-data",
+      "mapping_type": "competency_alignment",
+      "confidence": "moderate",
+      "direction": "unidirectional",
+      "rationale": "AI Ethics maps to DigComp 4.2 Protecting personal data and privacy, and 2.6 Managing digital identity.",
+      "what_transfers": "DigComp 2.2 includes approximately 73 AI-tagged knowledge, skill, and attitude examples across its 5 competence areas. These provide concrete AI-relevant indicators within a broader digital competence framework.",
+      "what_does_not_transfer": "DigComp is a general digital competence framework, not AI-specific. Its 8 proficiency levels (Foundation 1-2, Intermediate 3-4, Advanced 5-6, Highly Specialised 7-8) do not map neatly to UNESCO's 3 levels. DigComp lacks a dedicated AI progression structure."
+    },
+    {
+      "source_id": "sc-design",
+      "target_framework": "DigComp 2.2 (EU/JRC, 2022)",
+      "target_id": "dc-3-4-programming",
+      "mapping_type": "competency_alignment",
+      "confidence": "moderate",
+      "direction": "unidirectional",
+      "rationale": "AI System Design maps to DigComp 3.4 Programming: planning, developing, and testing solutions.",
+      "what_transfers": "DigComp 2.2 includes approximately 73 AI-tagged knowledge, skill, and attitude examples across its 5 competence areas. These provide concrete AI-relevant indicators within a broader digital competence framework.",
+      "what_does_not_transfer": "DigComp is a general digital competence framework, not AI-specific. Its 8 proficiency levels (Foundation 1-2, Intermediate 3-4, Advanced 5-6, Highly Specialised 7-8) do not map neatly to UNESCO's 3 levels. DigComp lacks a dedicated AI progression structure."
+    },
+    {
+      "source_id": "sc-ethics",
+      "target_framework": "DigComp 2.2 (EU/JRC, 2022)",
+      "target_id": "dc-2-3-engaging-citizenship",
+      "mapping_type": "competency_alignment",
+      "confidence": "moderate",
+      "direction": "unidirectional",
+      "rationale": "AI Ethics at Advanced maps to DigComp 2.3 Engaging in citizenship through digital technologies.",
+      "what_transfers": "DigComp 2.2 includes approximately 73 AI-tagged knowledge, skill, and attitude examples across its 5 competence areas. These provide concrete AI-relevant indicators within a broader digital competence framework.",
+      "what_does_not_transfer": "DigComp is a general digital competence framework, not AI-specific. Its 8 proficiency levels (Foundation 1-2, Intermediate 3-4, Advanced 5-6, Highly Specialised 7-8) do not map neatly to UNESCO's 3 levels. DigComp lacks a dedicated AI progression structure."
+    },
+    {
+      "source_id": "sc-use",
+      "target_framework": "UNESCO Guidance for AI in Education & Research (ReasonLens: gp-*)",
+      "target_id": "gp-evidence",
+      "mapping_type": "individual_institutional_link",
+      "confidence": "moderate",
+      "direction": "unidirectional",
+      "rationale": "Student AI use competency supports the institutional goal of building evidence-based AI deployment through skilled users who can evaluate AI effectiveness.",
+      "what_transfers": "Individual student competencies support and are supported by institutional policy frameworks. The UNESCO Guidance's policy measures (especially developing AI competencies and building teacher/researcher capacity) directly reference the competency development that the Student framework operationalises.",
+      "what_does_not_transfer": "The Student framework assesses individual competency; the Guidance framework assesses institutional policy maturity. Different unit of analysis, different evidence types, different respondent profiles."
+    },
+    {
+      "source_id": "sc-ethics",
+      "target_framework": "UNESCO Guidance for AI in Education & Research (ReasonLens: gp-*)",
+      "target_id": "gp-ethics",
+      "mapping_type": "individual_institutional_link",
+      "confidence": "strong",
+      "direction": "bidirectional",
+      "rationale": "Student AI ethics competency is a prerequisite for institutional ethics and accountability: institutions cannot implement ethical AI use without ethically competent users.",
+      "what_transfers": "Individual student competencies support and are supported by institutional policy frameworks. The UNESCO Guidance's policy measures (especially developing AI competencies and building teacher/researcher capacity) directly reference the competency development that the Student framework operationalises.",
+      "what_does_not_transfer": "The Student framework assesses individual competency; the Guidance framework assesses institutional policy maturity. Different unit of analysis, different evidence types, different respondent profiles."
+    },
+    {
+      "source_id": "sc-understanding",
+      "target_framework": "UNESCO Guidance for AI in Education & Research (ReasonLens: gp-*)",
+      "target_id": "gp-human-centered",
+      "mapping_type": "individual_institutional_link",
+      "confidence": "moderate",
+      "direction": "unidirectional",
+      "rationale": "Student AI understanding supports the institutional goal of human-centred AI by developing users who can exercise informed agency.",
+      "what_transfers": "Individual student competencies support and are supported by institutional policy frameworks. The UNESCO Guidance's policy measures (especially developing AI competencies and building teacher/researcher capacity) directly reference the competency development that the Student framework operationalises.",
+      "what_does_not_transfer": "The Student framework assesses individual competency; the Guidance framework assesses institutional policy maturity. Different unit of analysis, different evidence types, different respondent profiles."
+    },
+    {
+      "source_id": "sc-design",
+      "target_framework": "UNESCO Guidance for AI in Education & Research (ReasonLens: gp-*)",
+      "target_id": "gp-safe-equitable",
+      "mapping_type": "individual_institutional_link",
+      "confidence": "moderate",
+      "direction": "unidirectional",
+      "rationale": "Student design competency supports safe and equitable AI deployment by developing designers who embed safety and equity by design.",
+      "what_transfers": "Individual student competencies support and are supported by institutional policy frameworks. The UNESCO Guidance's policy measures (especially developing AI competencies and building teacher/researcher capacity) directly reference the competency development that the Student framework operationalises.",
+      "what_does_not_transfer": "The Student framework assesses individual competency; the Guidance framework assesses institutional policy maturity. Different unit of analysis, different evidence types, different respondent profiles."
+    },
+    {
+      "source_id": "sc-design-advanced",
+      "target_framework": "ISTE Standards for Students (v4.02, 2024)",
+      "target_id": null,
+      "mapping_type": "non_mapping",
+      "confidence": "non_mapping",
+      "direction": null,
+      "rationale": "UNESCO's Advanced AI System Design (lifecycle management, shutdown decisions, multi-stakeholder evaluation) has no ISTE equivalent. ISTE's Innovative Designer and Computational Thinker roles do not extend to system lifecycle governance.",
+      "what_transfers": null,
+      "what_does_not_transfer": "ISTE does not address AI system lifecycle management, decommissioning decisions, or the advanced ethical-technical integration that characterises UNESCO's Create level in AI System Design."
+    },
+    {
+      "source_id": "sc-understanding-advanced",
+      "target_framework": "DigComp 2.2 (EU/JRC, 2022)",
+      "target_id": null,
+      "mapping_type": "non_mapping",
+      "confidence": "non_mapping",
+      "direction": null,
+      "rationale": "UNESCO's Advanced AI Understanding (architecture evaluation, research critique, sociotechnical analysis) exceeds DigComp's scope. DigComp's Highly Specialised levels focus on innovation and leadership in digital competence broadly, not AI-specific technical and critical depth.",
+      "what_transfers": null,
+      "what_does_not_transfer": "DigComp does not provide a pathway for developing the deep AI-specific technical and critical understanding that UNESCO's Create level requires."
+    }
+  ]
+}

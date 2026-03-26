@@ -1,0 +1,397 @@
+{
+  "framework_id": "ailit",
+  "framework_name": "AI Literacy Framework (AILit)",
+  "file_type": "level-boundaries",
+  "research_basis": {
+    "generated_at": "2026-03-26",
+    "authoring_method": "Original synthesis using the user brief and the THE DMI implementation reference as the structural benchmark.",
+    "licence_handling": "CC BY-SA 4.0"
+  },
+  "object_count": 12,
+  "objects": [
+    {
+      "boundary_id": "ailit-fundamentals-ni",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-fundamentals",
+      "dimension_name": "AI Fundamentals",
+      "boundary_code": "NI",
+      "from_level_id": "ailit-fundamentals-novice",
+      "to_level_id": "ailit-fundamentals-intermediate",
+      "from_level_name": "Novice",
+      "to_level_name": "Intermediate",
+      "key_discriminator": "In AI Fundamentals, The key shift is from noticing or naming issues to using a repeatable structure for routine decisions.",
+      "discriminator_type": "recognition_vs_structured_use",
+      "common_false_positives": [
+        {
+          "pattern": "Confident terminology",
+          "why_not_sufficient": "The person can use the right words but cannot apply them to a real example without guidance."
+        },
+        {
+          "pattern": "Successful one-off",
+          "why_not_sufficient": "A single good result may reflect luck, a template, or heavy support rather than dependable practice."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "Uses a simple routine independently in at least one authentic task.",
+        "Can explain why a choice was made, not just what was done."
+      ],
+      "strong_threshold_evidence": [
+        "Applies the same structure across more than one task or context.",
+        "Identifies at least one limitation or follow-up check without prompting."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "ailit-fundamentals-ia",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-fundamentals",
+      "dimension_name": "AI Fundamentals",
+      "boundary_code": "IA",
+      "from_level_id": "ailit-fundamentals-intermediate",
+      "to_level_id": "ailit-fundamentals-advanced",
+      "from_level_name": "Intermediate",
+      "to_level_name": "Advanced",
+      "key_discriminator": "In AI Fundamentals, The key shift is from applying a tidy routine to adapting that routine when context, stakes, or evidence change.",
+      "discriminator_type": "routine_vs_adaptive_judgement",
+      "common_false_positives": [
+        {
+          "pattern": "Checklist dependence",
+          "why_not_sufficient": "The person follows a process well in familiar cases but cannot adjust it when conditions change."
+        },
+        {
+          "pattern": "Tool fluency",
+          "why_not_sufficient": "Fast use of a tool can mask weak judgement about suitability, risk, or audience."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "Adjusts criteria, workflow, or oversight in response to a changed context.",
+        "Can explain a trade-off rather than presenting one option as universally correct."
+      ],
+      "strong_threshold_evidence": [
+        "Shows adaptive judgement across multiple contexts with different stakes.",
+        "Supports peers by explaining not just the decision but the conditions behind it."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "ailit-fundamentals-ae",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-fundamentals",
+      "dimension_name": "AI Fundamentals",
+      "boundary_code": "AE",
+      "from_level_id": "ailit-fundamentals-advanced",
+      "to_level_id": "ailit-fundamentals-expert",
+      "from_level_name": "Advanced",
+      "to_level_name": "Expert",
+      "key_discriminator": "In AI Fundamentals, The key shift is from strong personal practice to shaping shared norms, resources, or system-level decisions.",
+      "discriminator_type": "adaptive_practice_vs_system_shaping",
+      "common_false_positives": [
+        {
+          "pattern": "Heroic individual practice",
+          "why_not_sufficient": "An individual may be excellent personally without yet influencing wider capability or design."
+        },
+        {
+          "pattern": "Status by reputation",
+          "why_not_sufficient": "People may be treated as experts because they are enthusiastic or visible, not because they shape robust practice."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "Creates or revises guidance, exemplars, or shared processes used by others.",
+        "Evaluates or redesigns practice using evidence beyond a single case."
+      ],
+      "strong_threshold_evidence": [
+        "Builds capacity in others through mentoring, curriculum, policy, or workflow design.",
+        "Anticipates emerging issues and adapts shared practice before failure occurs."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "ailit-application-ni",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-application",
+      "dimension_name": "AI Application",
+      "boundary_code": "NI",
+      "from_level_id": "ailit-application-novice",
+      "to_level_id": "ailit-application-intermediate",
+      "from_level_name": "Novice",
+      "to_level_name": "Intermediate",
+      "key_discriminator": "In AI Application, The key shift is from noticing or naming issues to using a repeatable structure for routine decisions.",
+      "discriminator_type": "recognition_vs_structured_use",
+      "common_false_positives": [
+        {
+          "pattern": "Confident terminology",
+          "why_not_sufficient": "The person can use the right words but cannot apply them to a real example without guidance."
+        },
+        {
+          "pattern": "Successful one-off",
+          "why_not_sufficient": "A single good result may reflect luck, a template, or heavy support rather than dependable practice."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "Uses a simple routine independently in at least one authentic task.",
+        "Can explain why a choice was made, not just what was done."
+      ],
+      "strong_threshold_evidence": [
+        "Applies the same structure across more than one task or context.",
+        "Identifies at least one limitation or follow-up check without prompting."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "ailit-application-ia",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-application",
+      "dimension_name": "AI Application",
+      "boundary_code": "IA",
+      "from_level_id": "ailit-application-intermediate",
+      "to_level_id": "ailit-application-advanced",
+      "from_level_name": "Intermediate",
+      "to_level_name": "Advanced",
+      "key_discriminator": "In AI Application, The key shift is from applying a tidy routine to adapting that routine when context, stakes, or evidence change.",
+      "discriminator_type": "routine_vs_adaptive_judgement",
+      "common_false_positives": [
+        {
+          "pattern": "Checklist dependence",
+          "why_not_sufficient": "The person follows a process well in familiar cases but cannot adjust it when conditions change."
+        },
+        {
+          "pattern": "Tool fluency",
+          "why_not_sufficient": "Fast use of a tool can mask weak judgement about suitability, risk, or audience."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "Adjusts criteria, workflow, or oversight in response to a changed context.",
+        "Can explain a trade-off rather than presenting one option as universally correct."
+      ],
+      "strong_threshold_evidence": [
+        "Shows adaptive judgement across multiple contexts with different stakes.",
+        "Supports peers by explaining not just the decision but the conditions behind it."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "ailit-application-ae",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-application",
+      "dimension_name": "AI Application",
+      "boundary_code": "AE",
+      "from_level_id": "ailit-application-advanced",
+      "to_level_id": "ailit-application-expert",
+      "from_level_name": "Advanced",
+      "to_level_name": "Expert",
+      "key_discriminator": "In AI Application, The key shift is from strong personal practice to shaping shared norms, resources, or system-level decisions.",
+      "discriminator_type": "adaptive_practice_vs_system_shaping",
+      "common_false_positives": [
+        {
+          "pattern": "Heroic individual practice",
+          "why_not_sufficient": "An individual may be excellent personally without yet influencing wider capability or design."
+        },
+        {
+          "pattern": "Status by reputation",
+          "why_not_sufficient": "People may be treated as experts because they are enthusiastic or visible, not because they shape robust practice."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "Creates or revises guidance, exemplars, or shared processes used by others.",
+        "Evaluates or redesigns practice using evidence beyond a single case."
+      ],
+      "strong_threshold_evidence": [
+        "Builds capacity in others through mentoring, curriculum, policy, or workflow design.",
+        "Anticipates emerging issues and adapts shared practice before failure occurs."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "ailit-ethics-ni",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-ethics",
+      "dimension_name": "AI Ethics & Society",
+      "boundary_code": "NI",
+      "from_level_id": "ailit-ethics-novice",
+      "to_level_id": "ailit-ethics-intermediate",
+      "from_level_name": "Novice",
+      "to_level_name": "Intermediate",
+      "key_discriminator": "In AI Ethics & Society, The key shift is from noticing or naming issues to using a repeatable structure for routine decisions.",
+      "discriminator_type": "recognition_vs_structured_use",
+      "common_false_positives": [
+        {
+          "pattern": "Confident terminology",
+          "why_not_sufficient": "The person can use the right words but cannot apply them to a real example without guidance."
+        },
+        {
+          "pattern": "Successful one-off",
+          "why_not_sufficient": "A single good result may reflect luck, a template, or heavy support rather than dependable practice."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "Uses a simple routine independently in at least one authentic task.",
+        "Can explain why a choice was made, not just what was done."
+      ],
+      "strong_threshold_evidence": [
+        "Applies the same structure across more than one task or context.",
+        "Identifies at least one limitation or follow-up check without prompting."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "ailit-ethics-ia",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-ethics",
+      "dimension_name": "AI Ethics & Society",
+      "boundary_code": "IA",
+      "from_level_id": "ailit-ethics-intermediate",
+      "to_level_id": "ailit-ethics-advanced",
+      "from_level_name": "Intermediate",
+      "to_level_name": "Advanced",
+      "key_discriminator": "In AI Ethics & Society, The key shift is from applying a tidy routine to adapting that routine when context, stakes, or evidence change.",
+      "discriminator_type": "routine_vs_adaptive_judgement",
+      "common_false_positives": [
+        {
+          "pattern": "Checklist dependence",
+          "why_not_sufficient": "The person follows a process well in familiar cases but cannot adjust it when conditions change."
+        },
+        {
+          "pattern": "Tool fluency",
+          "why_not_sufficient": "Fast use of a tool can mask weak judgement about suitability, risk, or audience."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "Adjusts criteria, workflow, or oversight in response to a changed context.",
+        "Can explain a trade-off rather than presenting one option as universally correct."
+      ],
+      "strong_threshold_evidence": [
+        "Shows adaptive judgement across multiple contexts with different stakes.",
+        "Supports peers by explaining not just the decision but the conditions behind it."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "ailit-ethics-ae",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-ethics",
+      "dimension_name": "AI Ethics & Society",
+      "boundary_code": "AE",
+      "from_level_id": "ailit-ethics-advanced",
+      "to_level_id": "ailit-ethics-expert",
+      "from_level_name": "Advanced",
+      "to_level_name": "Expert",
+      "key_discriminator": "In AI Ethics & Society, The key shift is from strong personal practice to shaping shared norms, resources, or system-level decisions.",
+      "discriminator_type": "adaptive_practice_vs_system_shaping",
+      "common_false_positives": [
+        {
+          "pattern": "Heroic individual practice",
+          "why_not_sufficient": "An individual may be excellent personally without yet influencing wider capability or design."
+        },
+        {
+          "pattern": "Status by reputation",
+          "why_not_sufficient": "People may be treated as experts because they are enthusiastic or visible, not because they shape robust practice."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "Creates or revises guidance, exemplars, or shared processes used by others.",
+        "Evaluates or redesigns practice using evidence beyond a single case."
+      ],
+      "strong_threshold_evidence": [
+        "Builds capacity in others through mentoring, curriculum, policy, or workflow design.",
+        "Anticipates emerging issues and adapts shared practice before failure occurs."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "ailit-futures-ni",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-futures",
+      "dimension_name": "AI Futures",
+      "boundary_code": "NI",
+      "from_level_id": "ailit-futures-novice",
+      "to_level_id": "ailit-futures-intermediate",
+      "from_level_name": "Novice",
+      "to_level_name": "Intermediate",
+      "key_discriminator": "In AI Futures, The key shift is from noticing or naming issues to using a repeatable structure for routine decisions.",
+      "discriminator_type": "recognition_vs_structured_use",
+      "common_false_positives": [
+        {
+          "pattern": "Confident terminology",
+          "why_not_sufficient": "The person can use the right words but cannot apply them to a real example without guidance."
+        },
+        {
+          "pattern": "Successful one-off",
+          "why_not_sufficient": "A single good result may reflect luck, a template, or heavy support rather than dependable practice."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "Uses a simple routine independently in at least one authentic task.",
+        "Can explain why a choice was made, not just what was done."
+      ],
+      "strong_threshold_evidence": [
+        "Applies the same structure across more than one task or context.",
+        "Identifies at least one limitation or follow-up check without prompting."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "ailit-futures-ia",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-futures",
+      "dimension_name": "AI Futures",
+      "boundary_code": "IA",
+      "from_level_id": "ailit-futures-intermediate",
+      "to_level_id": "ailit-futures-advanced",
+      "from_level_name": "Intermediate",
+      "to_level_name": "Advanced",
+      "key_discriminator": "In AI Futures, The key shift is from applying a tidy routine to adapting that routine when context, stakes, or evidence change.",
+      "discriminator_type": "routine_vs_adaptive_judgement",
+      "common_false_positives": [
+        {
+          "pattern": "Checklist dependence",
+          "why_not_sufficient": "The person follows a process well in familiar cases but cannot adjust it when conditions change."
+        },
+        {
+          "pattern": "Tool fluency",
+          "why_not_sufficient": "Fast use of a tool can mask weak judgement about suitability, risk, or audience."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "Adjusts criteria, workflow, or oversight in response to a changed context.",
+        "Can explain a trade-off rather than presenting one option as universally correct."
+      ],
+      "strong_threshold_evidence": [
+        "Shows adaptive judgement across multiple contexts with different stakes.",
+        "Supports peers by explaining not just the decision but the conditions behind it."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "ailit-futures-ae",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-futures",
+      "dimension_name": "AI Futures",
+      "boundary_code": "AE",
+      "from_level_id": "ailit-futures-advanced",
+      "to_level_id": "ailit-futures-expert",
+      "from_level_name": "Advanced",
+      "to_level_name": "Expert",
+      "key_discriminator": "In AI Futures, The key shift is from strong personal practice to shaping shared norms, resources, or system-level decisions.",
+      "discriminator_type": "adaptive_practice_vs_system_shaping",
+      "common_false_positives": [
+        {
+          "pattern": "Heroic individual practice",
+          "why_not_sufficient": "An individual may be excellent personally without yet influencing wider capability or design."
+        },
+        {
+          "pattern": "Status by reputation",
+          "why_not_sufficient": "People may be treated as experts because they are enthusiastic or visible, not because they shape robust practice."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "Creates or revises guidance, exemplars, or shared processes used by others.",
+        "Evaluates or redesigns practice using evidence beyond a single case."
+      ],
+      "strong_threshold_evidence": [
+        "Builds capacity in others through mentoring, curriculum, policy, or workflow design.",
+        "Anticipates emerging issues and adapts shared practice before failure occurs."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    }
+  ]
+}

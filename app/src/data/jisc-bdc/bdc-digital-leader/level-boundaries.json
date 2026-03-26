@@ -1,0 +1,584 @@
+{
+  "framework_id": "jisc-bdc-role-profiles",
+  "profile_id": "bdc-digital-leader",
+  "profile_name": "Jisc Building Digital Capability Digital Leader Profile",
+  "authoring_note": "Original boundary operationalisation informed by framework structure. Boundary wording is newly written for this deliverable.",
+  "boundaries": [
+    {
+      "boundary_id": "bdc-digital-leader-prof-dc",
+      "profile_id": "bdc-digital-leader",
+      "profile_name": "Jisc Building Digital Capability Digital Leader Profile",
+      "role_code": "LEAD",
+      "element_code": "PROF",
+      "element_name": "Digital Proficiency and Productivity",
+      "boundary_code": "DC",
+      "boundary_label": "Developing to Capable",
+      "from_level": "Developing",
+      "to_level": "Capable",
+      "discriminator_type": "assisted_to_independent",
+      "key_discriminator": "The shift is from getting routine work done with support to running dependable digital workflows independently.",
+      "critical_shift": {
+        "from": "Keeps essential digital tasks moving but still relies on prompts, familiar routines or local help when work becomes less predictable.",
+        "to": "Uses core tools independently, chooses sensible workflows and solves common issues without much interruption."
+      },
+      "role_context_focus": "reliable use of strategic tools, dashboards and governance workflows",
+      "common_false_positives": [
+        {
+          "pattern": "Repeated success with one familiar routine",
+          "why_not_enough": "This may show habit rather than independent control when the task changes."
+        },
+        {
+          "pattern": "Owning several devices or apps",
+          "why_not_enough": "Access and quantity do not show coherent workflow management."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "One repeatable setup in strategic dashboards that works across routine tasks without requiring rescue from other people.",
+          "Consistent organisation in portfolio and planning tools so that the current version, deadline or next step can be found quickly."
+        ],
+        "strong": [
+          "Independent handling of a common problem in digital governance workflows with a clear explanation of the chosen fix.",
+          "A short example showing that the workflow in portfolio and planning tools remains reliable when the context changes slightly."
+        ],
+        "threshold_hint": "leadership work is coordinated rather than improvised"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about reliable use of strategic tools, dashboards and governance workflows, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "familiarity_trap",
+          "tool_accumulation"
+        ],
+        "role_specific_note": "In Digital Leader contexts, evidence of capable practice should be visible through leadership work is coordinated rather than improvised."
+      }
+    },
+    {
+      "boundary_id": "bdc-digital-leader-prof-cp",
+      "profile_id": "bdc-digital-leader",
+      "profile_name": "Jisc Building Digital Capability Digital Leader Profile",
+      "role_code": "LEAD",
+      "element_code": "PROF",
+      "element_name": "Digital Proficiency and Productivity",
+      "boundary_code": "CP",
+      "boundary_label": "Capable to Proficient",
+      "from_level": "Capable",
+      "to_level": "Proficient",
+      "discriminator_type": "independent_to_optimising",
+      "key_discriminator": "The shift is from competent personal use to improving, standardising or strategically refining digital workflows.",
+      "critical_shift": {
+        "from": "Uses core tools independently, chooses sensible workflows and solves common issues without much interruption.",
+        "to": "Optimises workflows, judges tool choices critically and improves practice for other people as well as for themselves."
+      },
+      "role_context_focus": "optimising digital decision processes at organisational level",
+      "common_false_positives": [
+        {
+          "pattern": "A very efficient personal setup",
+          "why_not_enough": "A private workaround may still be fragile, exclusionary or impossible for others to follow."
+        },
+        {
+          "pattern": "Introducing a feature-rich new tool",
+          "why_not_enough": "More functionality is not the same as optimising the overall workflow."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "A practical improvement to portfolio and planning tools that other people can follow with less friction.",
+          "A clear rationale for choosing or refining strategic dashboards based on fit, support and risk."
+        ],
+        "strong": [
+          "Before-and-after evidence that a shared workflow in digital governance workflows became simpler, more reliable or more inclusive.",
+          "A lightweight standard, guidance note or review habit that helped sustain the improvement."
+        ],
+        "threshold_hint": "shared governance becomes clearer and more effective"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about optimising digital decision processes at organisational level, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "efficiency_without_sharing",
+          "novelty_over_workflow"
+        ],
+        "role_specific_note": "In Digital Leader contexts, evidence of proficient practice should be visible through shared governance becomes clearer and more effective."
+      }
+    },
+    {
+      "boundary_id": "bdc-digital-leader-creat-dc",
+      "profile_id": "bdc-digital-leader",
+      "profile_name": "Jisc Building Digital Capability Digital Leader Profile",
+      "role_code": "LEAD",
+      "element_code": "CREAT",
+      "element_name": "Digital Creation, Problem-Solving and Innovation",
+      "boundary_code": "DC",
+      "boundary_label": "Developing to Capable",
+      "from_level": "Developing",
+      "to_level": "Capable",
+      "discriminator_type": "copying_to_purposeful_design",
+      "key_discriminator": "The shift is from editing or copying existing patterns to making deliberate design choices for a clear need.",
+      "critical_shift": {
+        "from": "Adapts existing materials or familiar methods to meet immediate needs, but design choices are still mostly guided by examples rather than by clear intent.",
+        "to": "Creates purposeful outputs or workflow changes that fit the user need, the task and the context."
+      },
+      "role_context_focus": "purposeful design of roadmaps, experiments and change mechanisms",
+      "common_false_positives": [
+        {
+          "pattern": "Cosmetic editing of an existing asset",
+          "why_not_enough": "Surface change can leave the underlying design problem untouched."
+        },
+        {
+          "pattern": "Tool experimentation without a clear user need",
+          "why_not_enough": "Novelty alone does not demonstrate purposeful creation."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "An adapted or new roadmaps and service blueprints with visible design choices linked to user need.",
+          "Evidence that change experiments improved the task beyond surface polish."
+        ],
+        "strong": [
+          "Feedback or testing notes showing refinement of innovation portfolios after use.",
+          "A short explanation of why the chosen design was more suitable than a copied default."
+        ],
+        "threshold_hint": "innovation choices are linked to strategic need"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about purposeful design of roadmaps, experiments and change mechanisms, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "cosmetic_change",
+          "tool_first_experiment"
+        ],
+        "role_specific_note": "In Digital Leader contexts, evidence of capable practice should be visible through innovation choices are linked to strategic need."
+      }
+    },
+    {
+      "boundary_id": "bdc-digital-leader-creat-cp",
+      "profile_id": "bdc-digital-leader",
+      "profile_name": "Jisc Building Digital Capability Digital Leader Profile",
+      "role_code": "LEAD",
+      "element_code": "CREAT",
+      "element_name": "Digital Creation, Problem-Solving and Innovation",
+      "boundary_code": "CP",
+      "boundary_label": "Capable to Proficient",
+      "from_level": "Capable",
+      "to_level": "Proficient",
+      "discriminator_type": "purposeful_design_to_scalable_innovation",
+      "key_discriminator": "The shift is from producing effective one-off solutions to designing reusable or evaluative innovations.",
+      "critical_shift": {
+        "from": "Creates purposeful outputs or workflow changes that fit the user need, the task and the context.",
+        "to": "Designs reusable, evaluative and innovative solutions that improve practice beyond the immediate task."
+      },
+      "role_context_focus": "reusable and evaluative innovation structures",
+      "common_false_positives": [
+        {
+          "pattern": "A polished one-off output",
+          "why_not_enough": "Quality in a single case does not prove reusability or evaluative improvement."
+        },
+        {
+          "pattern": "Copying a fashionable format from elsewhere",
+          "why_not_enough": "Borrowed forms still need local testing and evidence of value."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "A reusable or documented pattern created from roadmaps and service blueprints.",
+          "Evidence that change experiments was evaluated rather than simply launched."
+        ],
+        "strong": [
+          "Adaptation, reuse or uptake of innovation portfolios by other people or contexts.",
+          "A decision record showing whether to scale, iterate or stop based on evidence."
+        ],
+        "threshold_hint": "change efforts are reviewed, adapted and scaled responsibly"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about reusable and evaluative innovation structures, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "one_off_polish",
+          "borrowed_format"
+        ],
+        "role_specific_note": "In Digital Leader contexts, evidence of proficient practice should be visible through change efforts are reviewed, adapted and scaled responsibly."
+      }
+    },
+    {
+      "boundary_id": "bdc-digital-leader-learn-dc",
+      "profile_id": "bdc-digital-leader",
+      "profile_name": "Jisc Building Digital Capability Digital Leader Profile",
+      "role_code": "LEAD",
+      "element_code": "LEARN",
+      "element_name": "Digital Learning and Development",
+      "boundary_code": "DC",
+      "boundary_label": "Developing to Capable",
+      "from_level": "Developing",
+      "to_level": "Capable",
+      "discriminator_type": "reactive_to_planned_learning",
+      "key_discriminator": "The shift is from reactive just-enough learning to planned application of learning in practice.",
+      "critical_shift": {
+        "from": "Learns reactively when a new need appears and often stops once the immediate task is complete.",
+        "to": "Plans and applies digital development in a way that strengthens real practice over time."
+      },
+      "role_context_focus": "using learning and reflection to strengthen digital leadership practice",
+      "common_false_positives": [
+        {
+          "pattern": "Completing training content",
+          "why_not_enough": "Attendance or completion does not prove transfer into practice."
+        },
+        {
+          "pattern": "Solving an immediate issue once",
+          "why_not_enough": "Just-enough learning can remain reactive if no longer-term application follows."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "Evidence that input from leadership learning inputs led to a real change in practice.",
+          "A reflection from structured reflection on change showing what was learned, applied and adjusted."
+        ],
+        "strong": [
+          "Repeated or sustained use of a new approach first explored through structured reflection on change.",
+          "Contribution to peer leadership exchanges that shows active engagement rather than attendance only."
+        ],
+        "threshold_hint": "new insight informs real decisions and behaviours"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about using learning and reflection to strengthen digital leadership practice, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "attendance_equals_learning",
+          "just_in_time_only"
+        ],
+        "role_specific_note": "In Digital Leader contexts, evidence of capable practice should be visible through new insight informs real decisions and behaviours."
+      }
+    },
+    {
+      "boundary_id": "bdc-digital-leader-learn-cp",
+      "profile_id": "bdc-digital-leader",
+      "profile_name": "Jisc Building Digital Capability Digital Leader Profile",
+      "role_code": "LEAD",
+      "element_code": "LEARN",
+      "element_name": "Digital Learning and Development",
+      "boundary_code": "CP",
+      "boundary_label": "Capable to Proficient",
+      "from_level": "Capable",
+      "to_level": "Proficient",
+      "discriminator_type": "self_development_to_enabling_others",
+      "key_discriminator": "The shift is from managing one's own development to enabling and sustaining development in other people or groups.",
+      "critical_shift": {
+        "from": "Plans and applies digital development in a way that strengthens real practice over time.",
+        "to": "Creates conditions for shared digital learning, reflection and confidence building in others as well as in self."
+      },
+      "role_context_focus": "creating conditions for collective digital learning",
+      "common_false_positives": [
+        {
+          "pattern": "Giving informal tips to colleagues",
+          "why_not_enough": "Helpful advice is not yet the same as enabling structured development."
+        },
+        {
+          "pattern": "Running a single showcase session",
+          "why_not_enough": "Awareness activity without follow-up rarely changes practice sustainably."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "A structured peer or group activity using leadership learning inputs or peer leadership exchanges with a clear purpose.",
+          "Follow-up evidence that other people applied something from the learning process."
+        ],
+        "strong": [
+          "A sequenced development offer, not just a one-off event, using leadership learning inputs or structured reflection on change.",
+          "Adaptation of the learning support based on feedback, participation or observed needs."
+        ],
+        "threshold_hint": "leaders, managers or teams learn more effectively because of the structure provided"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about creating conditions for collective digital learning, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "tips_without_structure",
+          "awareness_as_action"
+        ],
+        "role_specific_note": "In Digital Leader contexts, evidence of proficient practice should be visible through leaders, managers or teams learn more effectively because of the structure provided."
+      }
+    },
+    {
+      "boundary_id": "bdc-digital-leader-lit-dc",
+      "profile_id": "bdc-digital-leader",
+      "profile_name": "Jisc Building Digital Capability Digital Leader Profile",
+      "role_code": "LEAD",
+      "element_code": "LIT",
+      "element_name": "Information, Data and Media Literacies",
+      "boundary_code": "DC",
+      "boundary_label": "Developing to Capable",
+      "from_level": "Developing",
+      "to_level": "Capable",
+      "discriminator_type": "finding_to_evaluating",
+      "key_discriminator": "The shift is from finding plausible information to evaluating and interpreting evidence deliberately.",
+      "critical_shift": {
+        "from": "Finds usable sources or data for immediate tasks, but evaluation of quality, limitations and relevance is still inconsistent.",
+        "to": "Judges source quality, data definitions and relevance deliberately, then uses evidence with care."
+      },
+      "role_context_focus": "critical use of internal and external evidence for digital strategy",
+      "common_false_positives": [
+        {
+          "pattern": "Using sources that look authoritative",
+          "why_not_enough": "Presentation and confidence can mask weak or irrelevant evidence."
+        },
+        {
+          "pattern": "Producing attractive charts",
+          "why_not_enough": "Visual polish does not prove correct interpretation."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "A source or data trail from benchmarking and internal evidence showing deliberate comparison rather than first-hit selection.",
+          "An interpretation of risk and performance data that checks definitions, timeframe or missing information."
+        ],
+        "strong": [
+          "A decision note using market or policy intelligence that explains why some evidence was weighted more heavily.",
+          "A short explanation of limits or uncertainty in the evidence used."
+        ],
+        "threshold_hint": "interpretation goes beyond headlines or benchmark chasing"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about critical use of internal and external evidence for digital strategy, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "looks_authoritative",
+          "chart_equals_insight"
+        ],
+        "role_specific_note": "In Digital Leader contexts, evidence of capable practice should be visible through interpretation goes beyond headlines or benchmark chasing."
+      }
+    },
+    {
+      "boundary_id": "bdc-digital-leader-lit-cp",
+      "profile_id": "bdc-digital-leader",
+      "profile_name": "Jisc Building Digital Capability Digital Leader Profile",
+      "role_code": "LEAD",
+      "element_code": "LIT",
+      "element_name": "Information, Data and Media Literacies",
+      "boundary_code": "CP",
+      "boundary_label": "Capable to Proficient",
+      "from_level": "Capable",
+      "to_level": "Proficient",
+      "discriminator_type": "evaluating_to_synthesising",
+      "key_discriminator": "The shift is from sound individual judgment to synthesis, interpretation and guidance that informs others.",
+      "critical_shift": {
+        "from": "Judges source quality, data definitions and relevance deliberately, then uses evidence with care.",
+        "to": "Synthesises information and data from multiple sources, explains uncertainty and helps others reason well with evidence."
+      },
+      "role_context_focus": "synthesis of evidence for strategic judgment",
+      "common_false_positives": [
+        {
+          "pattern": "Discarding obviously biased sources",
+          "why_not_enough": "Critical literacy also requires weighing partial evidence, not only rejecting it."
+        },
+        {
+          "pattern": "Summarising one strong dataset clearly",
+          "why_not_enough": "A single-source summary is not the same as synthesis across evidence forms."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "A synthesis that combines more than one kind of evidence from benchmarking and internal evidence or market or policy intelligence.",
+          "An explanation of confidence, caveats or trade-offs for other people."
+        ],
+        "strong": [
+          "A briefing or summary in which contradictory evidence is handled transparently.",
+          "Evidence that others used the analysis from risk and performance data or market or policy intelligence to make a sounder decision."
+        ],
+        "threshold_hint": "trade-offs, confidence and open risks are made explicit"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about synthesis of evidence for strategic judgment, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "rejection_without_weighing",
+          "single_source_summary"
+        ],
+        "role_specific_note": "In Digital Leader contexts, evidence of proficient practice should be visible through trade-offs, confidence and open risks are made explicit."
+      }
+    },
+    {
+      "boundary_id": "bdc-digital-leader-comm-dc",
+      "profile_id": "bdc-digital-leader",
+      "profile_name": "Jisc Building Digital Capability Digital Leader Profile",
+      "role_code": "LEAD",
+      "element_code": "COMM",
+      "element_name": "Digital Communication, Collaboration and Participation",
+      "boundary_code": "DC",
+      "boundary_label": "Developing to Capable",
+      "from_level": "Developing",
+      "to_level": "Capable",
+      "discriminator_type": "participation_to_coordination",
+      "key_discriminator": "The shift is from habitual participation to intentional coordination and channel choice.",
+      "critical_shift": {
+        "from": "Uses common channels to stay in touch, but collaboration norms and channel choices are still mostly habitual.",
+        "to": "Chooses channels and collaboration methods intentionally to support the task, the audience and inclusive participation."
+      },
+      "role_context_focus": "purposeful communication for direction-setting and coalition building",
+      "common_false_positives": [
+        {
+          "pattern": "Being active on many channels",
+          "why_not_enough": "Activity can increase noise rather than improve coordination."
+        },
+        {
+          "pattern": "Replying quickly to messages",
+          "why_not_enough": "Speed alone does not show fit, clarity or inclusive participation."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "A clear channel or participation plan for cross-institution communication channels.",
+          "Examples from governance forums showing that updates, current versions and decisions are easier to follow."
+        ],
+        "strong": [
+          "A working agreement or norm that improves participation in external digital networks.",
+          "Evidence that the chosen communication pattern reduced confusion or duplication."
+        ],
+        "threshold_hint": "messages, forums and follow-up support alignment"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about purposeful communication for direction-setting and coalition building, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "more_channels_more_better",
+          "speed_over_fit"
+        ],
+        "role_specific_note": "In Digital Leader contexts, evidence of capable practice should be visible through messages, forums and follow-up support alignment."
+      }
+    },
+    {
+      "boundary_id": "bdc-digital-leader-comm-cp",
+      "profile_id": "bdc-digital-leader",
+      "profile_name": "Jisc Building Digital Capability Digital Leader Profile",
+      "role_code": "LEAD",
+      "element_code": "COMM",
+      "element_name": "Digital Communication, Collaboration and Participation",
+      "boundary_code": "CP",
+      "boundary_label": "Capable to Proficient",
+      "from_level": "Capable",
+      "to_level": "Proficient",
+      "discriminator_type": "coordination_to_facilitation",
+      "key_discriminator": "The shift is from communicating well oneself to facilitating collaboration and participation for groups.",
+      "critical_shift": {
+        "from": "Chooses channels and collaboration methods intentionally to support the task, the audience and inclusive participation.",
+        "to": "Facilitates productive collaboration or community participation and shapes better digital communication norms."
+      },
+      "role_context_focus": "facilitating cross-institution participation in digital change",
+      "common_false_positives": [
+        {
+          "pattern": "Being the most visible contributor",
+          "why_not_enough": "Facilitation depends on enabling others, not on occupying the most space."
+        },
+        {
+          "pattern": "Launching a new community channel",
+          "why_not_enough": "A platform does not create a healthy collaboration culture by itself."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "A facilitated structure for governance forums or external digital networks, not just active contribution by one person.",
+          "Evidence that participation, decision quality or inclusion improved."
+        ],
+        "strong": [
+          "Handled tension, exclusion or overload constructively within cross-institution communication channels or external digital networks.",
+          "A repeatable collaboration pattern that other groups can adopt."
+        ],
+        "threshold_hint": "communication norms increase trust, ownership and engagement"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about facilitating cross-institution participation in digital change, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "visibility_equals_facilitation",
+          "platform_equals_community"
+        ],
+        "role_specific_note": "In Digital Leader contexts, evidence of proficient practice should be visible through communication norms increase trust, ownership and engagement."
+      }
+    },
+    {
+      "boundary_id": "bdc-digital-leader-id-dc",
+      "profile_id": "bdc-digital-leader",
+      "profile_name": "Jisc Building Digital Capability Digital Leader Profile",
+      "role_code": "LEAD",
+      "element_code": "ID",
+      "element_name": "Digital Identity and Wellbeing",
+      "boundary_code": "DC",
+      "boundary_label": "Developing to Capable",
+      "from_level": "Developing",
+      "to_level": "Capable",
+      "discriminator_type": "reactive_to_deliberate_management",
+      "key_discriminator": "The shift is from reactive self-protection to deliberate management of digital presence and habits.",
+      "critical_shift": {
+        "from": "Responds to digital identity or wellbeing issues after they arise, with actions that are often platform-specific or temporary.",
+        "to": "Manages presence, privacy, boundaries and digital habits deliberately across contexts."
+      },
+      "role_context_focus": "deliberate leadership presence and availability",
+      "common_false_positives": [
+        {
+          "pattern": "Changing one privacy setting after a problem",
+          "why_not_enough": "Reactive, platform-specific fixes do not show deliberate identity management."
+        },
+        {
+          "pattern": "Muting notifications temporarily",
+          "why_not_enough": "Short bursts of control can fade if habits and expectations remain unchanged."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "A deliberate review of visible leadership presence across more than one platform or context.",
+          "Sustained habits in norms around availability and trust that support healthier attention, availability or boundaries."
+        ],
+        "strong": [
+          "A coherent explanation of how institutional messages about healthy digital culture choices align with role, values and risk.",
+          "Evidence that the same issue no longer recurs because the underlying habit changed."
+        ],
+        "threshold_hint": "people understand role boundaries, tone and expectations"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about deliberate leadership presence and availability, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "single_platform_fix",
+          "temporary_boundary"
+        ],
+        "role_specific_note": "In Digital Leader contexts, evidence of capable practice should be visible through people understand role boundaries, tone and expectations."
+      }
+    },
+    {
+      "boundary_id": "bdc-digital-leader-id-cp",
+      "profile_id": "bdc-digital-leader",
+      "profile_name": "Jisc Building Digital Capability Digital Leader Profile",
+      "role_code": "LEAD",
+      "element_code": "ID",
+      "element_name": "Digital Identity and Wellbeing",
+      "boundary_code": "CP",
+      "boundary_label": "Capable to Proficient",
+      "from_level": "Capable",
+      "to_level": "Proficient",
+      "discriminator_type": "deliberate_management_to_culture_shaping",
+      "key_discriminator": "The shift is from managing one's own identity and wellbeing to influencing norms, care and trust for others.",
+      "critical_shift": {
+        "from": "Manages presence, privacy, boundaries and digital habits deliberately across contexts.",
+        "to": "Models and shapes healthy, trustworthy and context-aware digital norms for wider groups or communities."
+      },
+      "role_context_focus": "shaping healthy institutional digital culture",
+      "common_false_positives": [
+        {
+          "pattern": "Keeping one's own boundaries tidy",
+          "why_not_enough": "Personal practice does not by itself show culture-shaping influence."
+        },
+        {
+          "pattern": "Posting regularly with a polished profile",
+          "why_not_enough": "Visibility can increase risk or strain if not balanced with care and trust."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "A contribution to shared norms or guidance related to institutional messages about healthy digital culture.",
+          "Evidence that personal practice in visible leadership presence or norms around availability and trust is being used as a model for others."
+        ],
+        "strong": [
+          "A group-level change in digital conduct, boundaries or care influenced by the person's guidance.",
+          "A reflective account showing how visibility, trust and wellbeing were balanced for a wider community."
+        ],
+        "threshold_hint": "leadership conduct influences trust, care and sustainable norms"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about shaping healthy institutional digital culture, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "personal_habits_only",
+          "visibility_as_success"
+        ],
+        "role_specific_note": "In Digital Leader contexts, evidence of proficient practice should be visible through leadership conduct influences trust, care and sustainable norms."
+      }
+    }
+  ]
+}

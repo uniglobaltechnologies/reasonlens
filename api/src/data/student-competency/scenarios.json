@@ -1,0 +1,817 @@
+{
+  "framework_id": "unesco-student-ai-competency",
+  "framework_name": "UNESCO AI Competency Framework for Students",
+  "framework_source": "UNESCO (2024). AI competency framework for students. UNESDOC pf0000391105. ISBN 978-92-3-100709-5.",
+  "reasonlens_implementation_note": "This file operationalises the UNESCO Student framework for the ReasonLens platform. Dimension names and level names are ReasonLens-specific adaptations of UNESCO terminology (Aspects mapped to Dimensions; Understand/Apply/Create mapped to Foundational/Intermediate/Advanced) to maintain consistency with the platform's multi-framework architecture.",
+  "dimensions": [
+    {
+      "id": "sc-use",
+      "name": "AI Use & Application",
+      "code": "USE",
+      "description": "The ability to select, operate, and critically evaluate AI tools and applications for learning, problem-solving, and daily life. Covers practical interaction with AI systems, prompt engineering, output evaluation, and integration of AI into academic workflows.",
+      "unesco_aspect": "AI techniques and applications"
+    },
+    {
+      "id": "sc-understanding",
+      "name": "AI Understanding",
+      "code": "UND",
+      "description": "Conceptual and technical knowledge of how AI systems work, including data, algorithms, machine learning paradigms, neural networks, and the relationship between AI capabilities and limitations. Covers both foundational literacy and deeper technical comprehension.",
+      "unesco_aspect": "Human-centred mindset"
+    },
+    {
+      "id": "sc-ethics",
+      "name": "AI Ethics & Values",
+      "code": "ETH",
+      "description": "The capacity to identify, reason about, and act on ethical issues raised by AI, including bias, fairness, privacy, transparency, environmental sustainability, and the societal impact of AI systems. Covers personal ethical practice and co-creation of ethical norms.",
+      "unesco_aspect": "Ethics of AI"
+    },
+    {
+      "id": "sc-design",
+      "name": "AI System Design",
+      "code": "DES",
+      "description": "The ability to scope AI problems, design AI system architectures, implement solutions, and evaluate outcomes through iterative feedback loops. Covers the full design cycle from problem definition through prototyping to evaluation and improvement.",
+      "unesco_aspect": "AI system design"
+    }
+  ],
+  "levels": [
+    {
+      "id_suffix": "foundational",
+      "name": "Foundational",
+      "order": 1,
+      "code": "F",
+      "description": "Students recognise AI in daily life, develop basic conceptual vocabulary, and form initial attitudes toward AI use. They can identify AI-powered tools, understand that AI involves data and algorithms, articulate basic ethical concerns, and describe what a simple AI system does.",
+      "unesco_level": "Understand"
+    },
+    {
+      "id_suffix": "intermediate",
+      "name": "Intermediate",
+      "order": 2,
+      "code": "I",
+      "description": "Students critically evaluate and purposefully apply AI tools across academic and personal contexts. They transfer knowledge to complex situations, assess AI outputs for quality and bias, practise responsible use aligned with regulations, and design basic AI-assisted solutions.",
+      "unesco_level": "Apply"
+    },
+    {
+      "id_suffix": "advanced",
+      "name": "Advanced",
+      "order": 3,
+      "code": "A",
+      "description": "Students create, customise, and evaluate AI solutions with attention to human-centred design, ethical robustness, and societal impact. They co-create ethical guidance, build functional AI prototypes, and critically assess when AI systems should or should not be deployed.",
+      "unesco_level": "Create"
+    }
+  ],
+  "object_count": 16,
+  "structure": "4 dimensions x 2 boundaries x 2 scenarios",
+  "data": [
+    {
+      "id": "SCFT-USE-FI-01",
+      "dimension_id": "sc-use",
+      "boundary": "FI",
+      "stem": "You are working on a coursework essay about climate change. A classmate suggests using ChatGPT to help draft the introduction. You have used ChatGPT once before to ask a general question but have never used it for academic work.",
+      "response_options": [
+        {
+          "id": "SCFT-USE-FI-01-A",
+          "text": "You ask ChatGPT to write the introduction for you. The output reads well, so you paste it directly into your essay with minor wording changes. Your classmate does the same.",
+          "level": "foundational",
+          "is_nuisance": true,
+          "nuisance_type": "uncritical_adoption",
+          "nuisance_explanation": "Sounds productive and efficient, but treats AI output as authoritative without evaluation. The student is using the tool but not yet applying critical judgement."
+        },
+        {
+          "id": "SCFT-USE-FI-01-B",
+          "text": "You use ChatGPT to brainstorm three possible angles for the introduction. You read each suggestion, check the factual claims against your lecture notes, choose the most relevant angle, and write the introduction yourself using that as a starting point. You note in your submission that you used AI for brainstorming.",
+          "level": "intermediate",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "SCFT-USE-FI-01-C",
+          "text": "You decide not to use ChatGPT because you heard it is not allowed. You write the introduction from scratch, even though you are struggling with the structure.",
+          "level": "foundational",
+          "is_nuisance": true,
+          "nuisance_type": "blanket_avoidance",
+          "nuisance_explanation": "Sounds cautious and principled, but the avoidance is based on rumour rather than understanding of institutional policy or ethical reasoning. The student has not engaged with the question of appropriate AI use."
+        }
+      ],
+      "context_tags": {
+        "study_level": [
+          "undergraduate"
+        ],
+        "discipline": [
+          "universal"
+        ],
+        "prior_ai_experience": [
+          "none",
+          "casual_user"
+        ],
+        "region": [
+          "universal"
+        ]
+      },
+      "discrimination_notes": "Discriminates between students who can identify and use AI tools (Foundational) and those who purposefully integrate AI into academic workflows with critical evaluation (Intermediate). The nuisances test whether students have moved beyond either uncritical adoption or blanket avoidance."
+    },
+    {
+      "id": "SCFT-USE-FI-02",
+      "dimension_id": "sc-use",
+      "boundary": "FI",
+      "stem": "Your lecturer has assigned a group presentation on renewable energy technologies. One group member suggests using an AI image generator to create diagrams, and another wants to use AI to summarise research papers. You need to decide how the group should use these tools.",
+      "response_options": [
+        {
+          "id": "SCFT-USE-FI-02-A",
+          "text": "You agree to use both tools. The AI-generated diagrams look professional and the summaries save time. The group submits the presentation without checking whether the diagrams are technically accurate or whether the summaries missed important nuances.",
+          "level": "foundational",
+          "is_nuisance": true,
+          "nuisance_type": "efficiency_over_quality",
+          "nuisance_explanation": "Appears efficient and collaborative. However, the group has not evaluated AI outputs against domain knowledge, risking inaccurate diagrams and incomplete summaries."
+        },
+        {
+          "id": "SCFT-USE-FI-02-B",
+          "text": "You suggest the group assign each AI-generated output to a team member with relevant knowledge to review. The diagrams are checked against textbook illustrations and corrected where needed. The summaries are compared with original papers and key omissions are added. The presentation credits AI tool use.",
+          "level": "intermediate",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "SCFT-USE-FI-02-C",
+          "text": "You tell the group that AI tools are unreliable and the group should create everything manually. The group spends significantly more time but produces all content from scratch.",
+          "level": "foundational",
+          "is_nuisance": true,
+          "nuisance_type": "blanket_rejection",
+          "nuisance_explanation": "Sounds cautious and quality-focused. But the rejection is based on a generalised distrust rather than a task-specific assessment of when AI is and is not appropriate."
+        }
+      ],
+      "context_tags": {
+        "study_level": [
+          "undergraduate"
+        ],
+        "discipline": [
+          "STEM",
+          "social_sciences"
+        ],
+        "prior_ai_experience": [
+          "casual_user",
+          "regular_user"
+        ],
+        "region": [
+          "universal"
+        ]
+      },
+      "discrimination_notes": "Tests whether students evaluate AI outputs against domain knowledge (Intermediate) versus accepting or rejecting them wholesale (Foundational). The group context adds complexity of navigating collective AI use decisions."
+    },
+    {
+      "id": "SCFT-USE-IA-01",
+      "dimension_id": "sc-use",
+      "boundary": "IA",
+      "stem": "You are conducting a literature review for your dissertation. You have been using an AI tool to summarise papers and extract key themes. The tool works well for most papers but you notice it occasionally misattributes findings between papers and sometimes misses nuanced arguments in qualitative studies.",
+      "response_options": [
+        {
+          "id": "SCFT-USE-IA-01-A",
+          "text": "You continue using the tool but add a manual verification step: for each summarised paper, you check the three most important claims against the original. You document the error rate and types of errors in your methodology section.",
+          "level": "intermediate",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "SCFT-USE-IA-01-B",
+          "text": "You redesign your literature review workflow: using AI for initial screening and quantitative papers (where it performs well), switching to manual review for qualitative papers, and creating a custom prompt template that asks the AI to flag its own uncertainty. You write a methodological reflection evaluating whether AI-assisted review introduces systematic bias into your findings.",
+          "level": "advanced",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "SCFT-USE-IA-01-C",
+          "text": "You decide the tool is too unreliable for academic work and switch entirely to manual literature review. You mention to your supervisor that AI tools are not ready for serious research.",
+          "level": "intermediate",
+          "is_nuisance": true,
+          "nuisance_type": "principled_retreat",
+          "nuisance_explanation": "Sounds like quality-focused caution. But it is a blanket judgement based on specific failures rather than a nuanced assessment of where AI helps and where it does not. The student does not investigate whether AI can be adapted to work better for their specific needs."
+        }
+      ],
+      "context_tags": {
+        "study_level": [
+          "postgraduate",
+          "doctoral"
+        ],
+        "discipline": [
+          "universal"
+        ],
+        "prior_ai_experience": [
+          "regular_user",
+          "technical"
+        ],
+        "region": [
+          "universal"
+        ]
+      },
+      "discrimination_notes": "Discriminates between students who add verification to existing AI workflows (Intermediate) and those who redesign workflows based on tool capabilities, evaluate methodological impact, and make principled tool-selection decisions (Advanced)."
+    },
+    {
+      "id": "SCFT-USE-IA-02",
+      "dimension_id": "sc-use",
+      "boundary": "IA",
+      "stem": "A first-year student in your tutorial group asks for help. They are overwhelmed by the number of AI tools available and do not know where to start. They are studying history and have never used AI tools for academic purposes.",
+      "response_options": [
+        {
+          "id": "SCFT-USE-IA-02-A",
+          "text": "You show them your own AI workflow: the tools you use, the prompts you have developed, and how you check outputs. You share your prompt templates and suggest they start using the same tools you do.",
+          "level": "intermediate",
+          "is_nuisance": true,
+          "nuisance_type": "one_size_mentoring",
+          "nuisance_explanation": "Sounds generous and helpful. But sharing a personal workflow without adapting to the student's discipline, skill level, and needs is reproducing habits rather than mentoring. A history student needs different tools and approaches than the mentor's own discipline."
+        },
+        {
+          "id": "SCFT-USE-IA-02-B",
+          "text": "You start by asking what tasks they find most challenging and what they have tried so far. Based on their answers, you suggest one simple AI tool relevant to their history coursework, demonstrate how to evaluate the output critically by cross-referencing against primary sources, and arrange to check in with them next week to see how it went.",
+          "level": "advanced",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "SCFT-USE-IA-02-C",
+          "text": "You suggest they attend the university's digital skills workshop on AI tools. You mention that it is important to start slowly and not rely on AI too much.",
+          "level": "intermediate",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ],
+      "context_tags": {
+        "study_level": [
+          "undergraduate",
+          "postgraduate"
+        ],
+        "discipline": [
+          "humanities"
+        ],
+        "prior_ai_experience": [
+          "none"
+        ],
+        "region": [
+          "universal"
+        ]
+      },
+      "discrimination_notes": "Tests mentoring capability: whether the student adapts guidance to the learner's context (Advanced) or shares their own approach without adaptation (Intermediate). The nuisance targets the common pattern of 'here is what works for me' mentoring."
+    },
+    {
+      "id": "SCFT-UND-FI-01",
+      "dimension_id": "sc-understanding",
+      "boundary": "FI",
+      "stem": "In a seminar discussion, a classmate says: 'AI is basically just very advanced programming. Developers write rules for every possible situation, and the AI follows them. That is why it is so accurate.' You have been studying how AI works and you disagree.",
+      "response_options": [
+        {
+          "id": "SCFT-UND-FI-01-A",
+          "text": "You say that AI is different from rule-based programming because it learns patterns from data rather than following pre-written rules. You use the example of a spam filter: rather than someone writing rules for every type of spam, the system learns to recognise spam by seeing thousands of examples of spam and non-spam emails.",
+          "level": "intermediate",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "SCFT-UND-FI-01-B",
+          "text": "You say that your classmate is wrong because AI uses neural networks, which are modelled on the human brain. That is what makes AI intelligent: it thinks like we do, just faster.",
+          "level": "foundational",
+          "is_nuisance": true,
+          "nuisance_type": "anthropomorphic_correction",
+          "nuisance_explanation": "Sounds technically informed (mentions neural networks) but introduces a new misconception (AI thinks like humans). The student has vocabulary without accurate understanding."
+        },
+        {
+          "id": "SCFT-UND-FI-01-C",
+          "text": "You are not sure exactly how AI works, but you know it involves data and learning. You say that AI is not just rules, it learns from data somehow, though you cannot explain the details.",
+          "level": "foundational",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ],
+      "context_tags": {
+        "study_level": [
+          "undergraduate"
+        ],
+        "discipline": [
+          "universal"
+        ],
+        "prior_ai_experience": [
+          "casual_user",
+          "regular_user"
+        ],
+        "region": [
+          "universal"
+        ]
+      },
+      "discrimination_notes": "Discriminates between students who can describe AI in general terms (Foundational) and those who can explain a specific mechanism with a concrete example (Intermediate). The nuisance tests whether technical vocabulary masks conceptual misunderstanding."
+    },
+    {
+      "id": "SCFT-UND-FI-02",
+      "dimension_id": "sc-understanding",
+      "boundary": "FI",
+      "stem": "You are using an AI-powered translation tool for a language assignment. The tool translates a complex literary passage but produces an oddly literal translation that misses the metaphorical meaning. A classmate says: 'The AI obviously does not understand language. It is just matching words from a dictionary.'",
+      "response_options": [
+        {
+          "id": "SCFT-UND-FI-02-A",
+          "text": "You explain that the AI does not use a dictionary but instead learned translation from millions of paired texts. It captures statistical patterns in how words and phrases correspond between languages. It often handles common patterns well but struggles with metaphor because metaphorical usage appears less frequently in training data and requires contextual understanding that the model approximates but does not truly possess.",
+          "level": "intermediate",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "SCFT-UND-FI-02-B",
+          "text": "You agree with your classmate. The AI clearly cannot understand language properly if it misses metaphors. This proves that AI is not very intelligent.",
+          "level": "foundational",
+          "is_nuisance": true,
+          "nuisance_type": "all_or_nothing_judgement",
+          "nuisance_explanation": "Sounds like a reasonable critical observation. But it is an all-or-nothing judgement that does not engage with how the AI actually works or why it fails specifically on metaphor while succeeding on literal text."
+        },
+        {
+          "id": "SCFT-UND-FI-02-C",
+          "text": "You say that the AI is not perfect at translation but it is getting better with newer models. It probably just needs more training data.",
+          "level": "foundational",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ],
+      "context_tags": {
+        "study_level": [
+          "undergraduate",
+          "postgraduate"
+        ],
+        "discipline": [
+          "humanities",
+          "arts"
+        ],
+        "prior_ai_experience": [
+          "casual_user"
+        ],
+        "region": [
+          "universal"
+        ]
+      },
+      "discrimination_notes": "Discriminates between general statements about AI capability (Foundational) and mechanistic explanations of why AI succeeds and fails in specific contexts (Intermediate). Uses a humanities-relevant example to test understanding across disciplines."
+    },
+    {
+      "id": "SCFT-UND-IA-01",
+      "dimension_id": "sc-understanding",
+      "boundary": "IA",
+      "stem": "You are reading a news article that claims a new AI model has 'achieved human-level performance on medical diagnosis tasks.' The article cites a published study showing the model matches dermatologists on a skin lesion classification benchmark. Your friend is impressed and says AI will soon replace doctors.",
+      "response_options": [
+        {
+          "id": "SCFT-UND-IA-01-A",
+          "text": "You explain that benchmark performance on a curated dataset does not necessarily transfer to real clinical settings, where images may be lower quality, patient populations differ, and clinical context matters. You note that the evaluation metric matters: high accuracy overall could mask poor performance on rare conditions. You add that diagnosis involves more than image classification, and regulatory/liability questions remain.",
+          "level": "advanced",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "SCFT-UND-IA-01-B",
+          "text": "You tell your friend that the model was trained on specific types of skin lesion images, so it can only classify what it has seen. It would probably not work well on rare conditions or on images taken with different equipment. You suggest that AI might assist doctors rather than replace them.",
+          "level": "intermediate",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "SCFT-UND-IA-01-C",
+          "text": "You say the study was probably funded by a tech company, so we should be sceptical. AI companies always overstate their results. You do not think AI can really do medical diagnosis.",
+          "level": "intermediate",
+          "is_nuisance": true,
+          "nuisance_type": "cynicism_as_critique",
+          "nuisance_explanation": "Sounds critically minded. But scepticism based on funding source alone, without engaging with the methodology, is ad hominem rather than critical evaluation. The student cannot specify what would constitute valid evidence."
+        }
+      ],
+      "context_tags": {
+        "study_level": [
+          "postgraduate",
+          "doctoral"
+        ],
+        "discipline": [
+          "health",
+          "STEM"
+        ],
+        "prior_ai_experience": [
+          "regular_user",
+          "technical"
+        ],
+        "region": [
+          "universal"
+        ]
+      },
+      "discrimination_notes": "Discriminates between students who can identify training data limitations (Intermediate) and those who evaluate research claims against methodological criteria, identify dataset-to-deployment gaps, and connect technical evaluation to systemic implications (Advanced)."
+    },
+    {
+      "id": "SCFT-UND-IA-02",
+      "dimension_id": "sc-understanding",
+      "boundary": "IA",
+      "stem": "Your university is considering adopting an AI-powered assessment tool that provides automated feedback on student essays. The marketing materials claim it uses 'advanced NLP and deep learning.' You are asked to provide a student perspective on whether the tool should be adopted.",
+      "response_options": [
+        {
+          "id": "SCFT-UND-IA-02-A",
+          "text": "You say the tool sounds technically advanced and would save lecturers time on marking. You suggest a trial period to see if students find the feedback helpful.",
+          "level": "intermediate",
+          "is_nuisance": true,
+          "nuisance_type": "marketing_acceptance",
+          "nuisance_explanation": "Sounds practical and open-minded. But the student accepts marketing claims at face value and proposes testing based on user satisfaction rather than evaluating what the tool can and cannot actually do technically."
+        },
+        {
+          "id": "SCFT-UND-IA-02-B",
+          "text": "You ask what specific NLP techniques the tool uses, what it was trained on, and how its feedback quality was evaluated. You point out that automated essay feedback tools often perform well on surface-level features (grammar, structure) but struggle with disciplinary argumentation, originality, and nuanced reasoning. You recommend the university request an independent evaluation and consider whether the tool's feedback aligns with the learning outcomes it is meant to assess.",
+          "level": "advanced",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "SCFT-UND-IA-02-C",
+          "text": "You are sceptical because the tool replaces human judgement in assessment. You argue that students deserve feedback from human lecturers who understand their individual learning journeys, and that automated feedback devalues the educational relationship.",
+          "level": "intermediate",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ],
+      "context_tags": {
+        "study_level": [
+          "undergraduate",
+          "postgraduate"
+        ],
+        "discipline": [
+          "universal"
+        ],
+        "prior_ai_experience": [
+          "regular_user"
+        ],
+        "region": [
+          "universal"
+        ]
+      },
+      "discrimination_notes": "Discriminates between value-based scepticism (Intermediate) and technically grounded evaluation that specifies what questions to ask about AI capabilities and limitations (Advanced). The nuisance tests whether marketing language bypasses critical evaluation."
+    },
+    {
+      "id": "SCFT-ETH-FI-01",
+      "dimension_id": "sc-ethics",
+      "boundary": "FI",
+      "stem": "You discover that an AI study assistant app you have been using sends your conversation history -- including personal reflections about struggling with coursework -- to a server in another country for model improvement. The app's terms of service mention this in paragraph 47 of a lengthy document you did not read when signing up.",
+      "response_options": [
+        {
+          "id": "SCFT-ETH-FI-01-A",
+          "text": "You stop using the app and delete your account. You feel that your privacy was violated but are not sure what to do beyond that. You warn your friends not to use the app.",
+          "level": "foundational",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "SCFT-ETH-FI-01-B",
+          "text": "You review the app's data practices against your university's data protection guidance and GDPR principles (informed consent, data minimisation, purpose limitation). You identify specific violations: the consent was not informed because the practice was buried in terms of service, and personal reflections exceed what is necessary for the app to function. You report the issue to the university IT helpdesk and suggest the app be reviewed before other students adopt it.",
+          "level": "intermediate",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "SCFT-ETH-FI-01-C",
+          "text": "You are not too worried because everyone's data is collected anyway. You continue using the app because it helps your studies, and you figure that one more app collecting data does not make much difference.",
+          "level": "foundational",
+          "is_nuisance": true,
+          "nuisance_type": "privacy_fatalism",
+          "nuisance_explanation": "Sounds pragmatic and realistic about the data economy. But privacy fatalism prevents the student from exercising their rights or engaging critically with data practices."
+        }
+      ],
+      "context_tags": {
+        "study_level": [
+          "undergraduate"
+        ],
+        "discipline": [
+          "universal"
+        ],
+        "prior_ai_experience": [
+          "casual_user",
+          "regular_user"
+        ],
+        "region": [
+          "EU",
+          "UK"
+        ]
+      },
+      "discrimination_notes": "Discriminates between students who recognise ethical issues and react emotionally or pragmatically (Foundational) and those who apply data protection frameworks to evaluate specific violations and take structured action (Intermediate)."
+    },
+    {
+      "id": "SCFT-ETH-FI-02",
+      "dimension_id": "sc-ethics",
+      "boundary": "FI",
+      "stem": "You are using a generative AI tool to help write a personal statement for a competitive scholarship application. The AI produces an impressive draft that makes your accomplishments sound more significant than they are. It has not fabricated anything, but the framing and emphasis create a misleading impression.",
+      "response_options": [
+        {
+          "id": "SCFT-ETH-FI-02-A",
+          "text": "You use the AI draft as-is. After all, the facts are accurate, and everyone presents themselves favourably in applications. The AI is just better at phrasing things than you are.",
+          "level": "foundational",
+          "is_nuisance": true,
+          "nuisance_type": "technically_true_deflection",
+          "nuisance_explanation": "Sounds reasonable: the facts are not fabricated. But 'technically true but misleading' is an ethical concern, especially in competitive contexts where other applicants may not have AI assistance."
+        },
+        {
+          "id": "SCFT-ETH-FI-02-B",
+          "text": "You recognise that there is an ethical issue with the misleading framing but you are not sure how to balance it. You revise the most exaggerated sections but keep some of the AI's phrasing because you want to be competitive.",
+          "level": "foundational",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "SCFT-ETH-FI-02-C",
+          "text": "You use the AI draft as a structural guide but rewrite the content to accurately represent your accomplishments. You add a brief note about your actual level of involvement in each activity. You reflect on whether using AI for personal statements is consistent with what the scholarship committee is trying to assess: your own ability to communicate and reflect.",
+          "level": "intermediate",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ],
+      "context_tags": {
+        "study_level": [
+          "undergraduate",
+          "postgraduate"
+        ],
+        "discipline": [
+          "universal"
+        ],
+        "prior_ai_experience": [
+          "casual_user",
+          "regular_user"
+        ],
+        "region": [
+          "universal"
+        ]
+      },
+      "discrimination_notes": "Discriminates between students who recognise ethical tension without resolving it (Foundational) and those who analyse the specific ethical principle at stake (misrepresentation, fairness) and adjust their practice accordingly (Intermediate)."
+    },
+    {
+      "id": "SCFT-ETH-IA-01",
+      "dimension_id": "sc-ethics",
+      "boundary": "IA",
+      "stem": "Your department has no formal guidelines on AI use in coursework. Different lecturers have different expectations, and students are confused. Some students are using AI extensively without disclosure, while others avoid it entirely. The student representative committee has asked you to lead a working group to draft AI use guidelines.",
+      "response_options": [
+        {
+          "id": "SCFT-ETH-IA-01-A",
+          "text": "You draft guidelines based on your own ethical reasoning and share them with the committee. The guidelines are clear and well-argued. You submit them to the department for approval.",
+          "level": "intermediate",
+          "is_nuisance": true,
+          "nuisance_type": "unilateral_ethics",
+          "nuisance_explanation": "Sounds proactive and well-intentioned. But guidelines drafted by one person without consultation lack the legitimacy and buy-in that comes from co-creation. The student is applying their own ethics rather than facilitating a community process."
+        },
+        {
+          "id": "SCFT-ETH-IA-01-B",
+          "text": "You design a consultation process: surveying student experiences and concerns, interviewing lecturers about their expectations, reviewing guidelines from other departments, and holding a workshop to draft principles together. The final guidelines are endorsed by both the student committee and the department, with a planned review date.",
+          "level": "advanced",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "SCFT-ETH-IA-01-C",
+          "text": "You collect existing AI policies from other universities and create a compilation for students and lecturers to reference. You suggest each lecturer clarify their own expectations at the start of each module.",
+          "level": "intermediate",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ],
+      "context_tags": {
+        "study_level": [
+          "undergraduate",
+          "postgraduate"
+        ],
+        "discipline": [
+          "universal"
+        ],
+        "prior_ai_experience": [
+          "regular_user"
+        ],
+        "region": [
+          "universal"
+        ]
+      },
+      "discrimination_notes": "Discriminates between students who apply ethical reasoning in their own practice (Intermediate) and those who facilitate community norm co-creation through structured consultation (Advanced). The nuisance tests whether ethical leadership is unilateral or participatory."
+    },
+    {
+      "id": "SCFT-ETH-IA-02",
+      "dimension_id": "sc-ethics",
+      "boundary": "IA",
+      "stem": "You are part of a student team building an AI tool for a hackathon that analyses social media posts to detect early signs of mental health distress among university students. The tool could potentially help support services intervene earlier. Your team has access to a dataset of anonymised student social media posts.",
+      "response_options": [
+        {
+          "id": "SCFT-ETH-IA-02-A",
+          "text": "You raise concerns about privacy, consent, and the risk of false positives. After discussion, the team adds a privacy notice and builds in a human review step. You document the ethical considerations in the project report.",
+          "level": "intermediate",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "SCFT-ETH-IA-02-B",
+          "text": "You lead the team through a structured ethics-by-design review. You question whether the tool should exist at all: who gave consent for this monitoring? What happens when the system gets it wrong? Could it disproportionately flag certain demographics? You map the full stakeholder landscape (students, support services, university administration, external providers) and their potentially conflicting interests. The team revises the project scope based on this analysis and builds explicit safeguards, including criteria for when the tool should be deactivated.",
+          "level": "advanced",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "SCFT-ETH-IA-02-C",
+          "text": "You are excited about the project's potential to help students and focus on making the detection algorithm as accurate as possible. Ethics is important, so you add a disclaimer noting that the tool is experimental and should not be the sole basis for intervention.",
+          "level": "intermediate",
+          "is_nuisance": true,
+          "nuisance_type": "disclaimer_as_ethics",
+          "nuisance_explanation": "Sounds responsible: a disclaimer is included. But a disclaimer does not constitute ethical design. The student has not engaged with the fundamental ethical questions about consent, power, and potential harm."
+        }
+      ],
+      "context_tags": {
+        "study_level": [
+          "undergraduate",
+          "postgraduate"
+        ],
+        "discipline": [
+          "STEM",
+          "health",
+          "social_sciences"
+        ],
+        "prior_ai_experience": [
+          "regular_user",
+          "technical"
+        ],
+        "region": [
+          "universal"
+        ]
+      },
+      "discrimination_notes": "Discriminates between students who add ethical safeguards to a project (Intermediate) and those who conduct ethics-by-design from problem scoping through lifecycle, questioning whether the project should exist in its current form (Advanced)."
+    },
+    {
+      "id": "SCFT-DES-FI-01",
+      "dimension_id": "sc-design",
+      "boundary": "FI",
+      "stem": "Your university careers service wants an AI tool that matches students to job opportunities based on their skills, interests, and course modules. You are part of a student advisory panel asked to provide input on the design. The project lead asks: 'What would this system need to work?'",
+      "response_options": [
+        {
+          "id": "SCFT-DES-FI-01-A",
+          "text": "You suggest the system would need data about student skills and job requirements, some kind of matching algorithm, and a way to show results to students. You also raise that it should be fair and not disadvantage students from certain backgrounds. But you are not sure how to translate these ideas into specific design requirements.",
+          "level": "foundational",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "SCFT-DES-FI-01-B",
+          "text": "You outline specific design requirements: the data pipeline (student profiles from the student record system, job data from employer feeds, skills taxonomy from a standard like ESCO), the matching approach (content-based filtering for skills match, collaborative filtering for similar student pathways), a transparent interface that shows students why each job was recommended, and a feedback loop so students can improve their matches. You flag that the training data must be checked for historical bias in which students get which jobs.",
+          "level": "intermediate",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "SCFT-DES-FI-01-C",
+          "text": "You suggest the university should buy an off-the-shelf AI recruitment matching tool rather than building one. You have seen similar tools advertised and they seem to work well. The careers service should focus on evaluating existing products rather than designing from scratch.",
+          "level": "foundational",
+          "is_nuisance": true,
+          "nuisance_type": "outsource_design",
+          "nuisance_explanation": "Sounds pragmatic and cost-effective. But delegating design to an external product means abdicating the design thinking process entirely. The student has not engaged with what the system needs or how it should work."
+        }
+      ],
+      "context_tags": {
+        "study_level": [
+          "undergraduate",
+          "postgraduate"
+        ],
+        "discipline": [
+          "universal"
+        ],
+        "prior_ai_experience": [
+          "casual_user",
+          "regular_user"
+        ],
+        "region": [
+          "universal"
+        ]
+      },
+      "discrimination_notes": "Discriminates between students who identify high-level components needed (Foundational) and those who specify concrete design decisions with rationale across data, model, and interface layers (Intermediate)."
+    },
+    {
+      "id": "SCFT-DES-FI-02",
+      "dimension_id": "sc-design",
+      "boundary": "FI",
+      "stem": "A lecturer asks the class to propose an AI solution for helping students with dyslexia access course materials more easily. Several students immediately suggest using AI to read documents aloud. You think the problem needs more exploration before jumping to solutions.",
+      "response_options": [
+        {
+          "id": "SCFT-DES-FI-02-A",
+          "text": "You suggest the class should first understand what specific barriers students with dyslexia face, since it is not just about reading aloud. You propose interviewing students with dyslexia, consulting the disability support service, and mapping the different types of course materials and access challenges before deciding what an AI tool should do. You also suggest considering whether AI is the right approach for all the identified barriers.",
+          "level": "intermediate",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "SCFT-DES-FI-02-B",
+          "text": "You agree that reading aloud is a good idea and suggest adding more features: text simplification, visual highlighting of key concepts, and a summary generator. The more features the tool has, the more helpful it will be.",
+          "level": "foundational",
+          "is_nuisance": true,
+          "nuisance_type": "feature_accumulation",
+          "nuisance_explanation": "Sounds proactive and inclusive. But adding features without understanding user needs is feature accumulation, not design. The student has skipped problem scoping entirely."
+        },
+        {
+          "id": "SCFT-DES-FI-02-C",
+          "text": "You think the reading aloud idea is reasonable. You suggest the class look at existing text-to-speech tools and evaluate whether they are good enough, rather than building something from scratch. If existing tools have gaps, those gaps could guide what to build.",
+          "level": "foundational",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ],
+      "context_tags": {
+        "study_level": [
+          "undergraduate"
+        ],
+        "discipline": [
+          "universal"
+        ],
+        "prior_ai_experience": [
+          "casual_user"
+        ],
+        "region": [
+          "universal"
+        ]
+      },
+      "discrimination_notes": "Discriminates between students who suggest solutions or evaluate existing tools (Foundational scoping) and those who insist on structured problem exploration before solution design (Intermediate design methodology)."
+    },
+    {
+      "id": "SCFT-DES-IA-01",
+      "dimension_id": "sc-design",
+      "boundary": "IA",
+      "stem": "You built a prototype AI tool for your final-year project that helps international students match their qualifications to UK postgraduate programmes. The prototype works well in testing with your sample dataset. Your supervisor suggests you think about what would need to happen for this to be deployed in the university's student recruitment office.",
+      "response_options": [
+        {
+          "id": "SCFT-DES-IA-01-A",
+          "text": "You create a deployment plan: hosting the model on university infrastructure, integrating with the existing admissions database, and training recruitment staff to use it. You estimate a two-month timeline and budget for server costs.",
+          "level": "intermediate",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "SCFT-DES-IA-01-B",
+          "text": "You develop a lifecycle plan covering: validation testing with a larger and more diverse dataset of qualification profiles, bias auditing (does the system disadvantage students from certain countries or education systems?), a monitoring dashboard tracking recommendation accuracy and fairness metrics over time, a retraining schedule triggered by changes in programme requirements or qualification frameworks, and explicit criteria for when the tool should be suspended (e.g. if accuracy drops below a threshold or if systematic bias is detected). You also design a feedback mechanism for recruitment staff and applicants.",
+          "level": "advanced",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "SCFT-DES-IA-01-C",
+          "text": "You suggest running a pilot with the recruitment office for one semester and collecting feedback from staff and students. If the feedback is positive, you recommend full deployment. If not, the project can be shelved.",
+          "level": "intermediate",
+          "is_nuisance": true,
+          "nuisance_type": "pilot_as_lifecycle",
+          "nuisance_explanation": "Sounds sensible and cautious. But a pilot based on user satisfaction alone does not address bias auditing, monitoring, retraining, or decommissioning criteria. The student is testing adoption, not managing a lifecycle."
+        }
+      ],
+      "context_tags": {
+        "study_level": [
+          "undergraduate",
+          "postgraduate"
+        ],
+        "discipline": [
+          "STEM",
+          "social_sciences"
+        ],
+        "prior_ai_experience": [
+          "regular_user",
+          "technical"
+        ],
+        "region": [
+          "UK"
+        ]
+      },
+      "discrimination_notes": "Discriminates between students who plan for deployment (Intermediate) and those who plan for the full system lifecycle including monitoring, retraining, bias auditing, and decommissioning criteria (Advanced)."
+    },
+    {
+      "id": "SCFT-DES-IA-02",
+      "dimension_id": "sc-design",
+      "boundary": "IA",
+      "stem": "You designed an AI-powered study planner that allocates revision time across subjects based on upcoming assessment deadlines and predicted performance. After three months of use by 200 students in a pilot, the data shows the tool improved average grades by 8%, but students from disadvantaged backgrounds showed no improvement, and several students reported increased anxiety because the tool constantly highlighted their weakest subjects.",
+      "response_options": [
+        {
+          "id": "SCFT-DES-IA-02-A",
+          "text": "You report the positive overall results and note the limitations. You suggest further research to understand why disadvantaged students did not benefit. For the anxiety issue, you add an option to hide the weakness highlighting.",
+          "level": "intermediate",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "SCFT-DES-IA-02-B",
+          "text": "You conduct a systematic evaluation. For the equity gap: you investigate whether the tool's performance predictions are less accurate for disadvantaged students (perhaps due to training data that under-represents their study patterns) and whether the recommended strategies assume access to resources they may not have. For the anxiety: you consult with student wellbeing services, redesign the interface to lead with strengths rather than weaknesses, and add user controls for notification frequency. You establish criteria for when the tool should be paused for specific populations if disparities persist after iteration.",
+          "level": "advanced",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "SCFT-DES-IA-02-C",
+          "text": "You consider the 8% improvement a success. The equity gap is concerning but might be due to factors outside the tool's control. You recommend continuing the pilot with minor adjustments and collecting more data.",
+          "level": "intermediate",
+          "is_nuisance": true,
+          "nuisance_type": "aggregate_success_blindspot",
+          "nuisance_explanation": "Sounds data-driven and measured. But using aggregate success to justify continuing despite documented equity gaps and wellbeing concerns is a common pattern in technology deployment that avoids hard design decisions."
+        }
+      ],
+      "context_tags": {
+        "study_level": [
+          "postgraduate",
+          "doctoral"
+        ],
+        "discipline": [
+          "STEM",
+          "social_sciences"
+        ],
+        "prior_ai_experience": [
+          "technical"
+        ],
+        "region": [
+          "universal"
+        ]
+      },
+      "discrimination_notes": "Discriminates between students who note limitations and suggest minor fixes (Intermediate) and those who conduct systematic multi-stakeholder evaluation, investigate root causes of differential impact, and establish criteria for pausing or redesigning systems (Advanced)."
+    }
+  ]
+}

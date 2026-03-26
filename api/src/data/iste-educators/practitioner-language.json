@@ -1,0 +1,67 @@
+{
+  "_meta": {
+    "file": "practitioner-language.json",
+    "framework_id": "iste-educators",
+    "framework_name": "ISTE Standards for Educators v4.02",
+    "purpose": "Human-readable labels and descriptions for UI rendering. Used in assessment reports, dashboard displays, and persona-facing explanations. Do not use framework indicator source text directly in user-facing UI \u2014 use these labels.",
+    "generated_for": "ReasonLens"
+  },
+  "standards": [
+    {
+      "standard_id": "iste-e-lnr",
+      "standard_name": "Learner",
+      "short_label": "Lead your own professional growth",
+      "report_summary_met": "You set purposeful professional learning goals, connect with peers beyond your institution, and ground your technology adoption decisions in research evidence \u2014 continuously developing your practice with intentionality.",
+      "report_summary_not_met": "There is an opportunity to become more intentional about your own professional learning with technology \u2014 setting specific goals, connecting to external networks, and asking harder questions about the evidence behind the tools you use.",
+      "coaching_prompt": "What specific professional learning goal have you set this term, and how is it connected to what you know from learning science?"
+    },
+    {
+      "standard_id": "iste-e-ldr",
+      "standard_name": "Leader",
+      "short_label": "Shape the vision beyond your classroom",
+      "report_summary_met": "You actively contribute to your school's technology vision, advocate for equitable access, and model for colleagues how to identify, evaluate, and curate digital resources \u2014 not just using technology well, but helping others do the same.",
+      "report_summary_not_met": "There is an opportunity to extend your technology expertise beyond your own classroom \u2014 contributing to a shared vision, naming equity issues when you see them, and making your evaluation process visible to colleagues who could learn from it.",
+      "coaching_prompt": "What is one equity issue around technology access you have noticed in your school \u2014 and what have you done about it?"
+    },
+    {
+      "standard_id": "iste-e-cit",
+      "standard_name": "Citizen",
+      "short_label": "Inspire responsible digital citizenship",
+      "report_summary_met": "You create experiences that develop students' digital citizenship skills from the inside out, mentor them in ethical reasoning rather than rule-following, and model how to manage digital identity and data responsibly in your own practice.",
+      "report_summary_not_met": "There is an opportunity to move beyond policy compliance in your digital citizenship work \u2014 designing learning experiences that develop students' own ethical reasoning and modelling the data and identity management practices you want them to develop.",
+      "coaching_prompt": "In a recent lesson, did students engage with a digital ethics dilemma that had no obvious right answer \u2014 and how did you scaffold their reasoning?"
+    },
+    {
+      "standard_id": "iste-e-col",
+      "standard_name": "Collaborator",
+      "short_label": "Collaborate, co-learn, connect",
+      "report_summary_met": "You dedicate time to collaborative planning with colleagues, co-learn new technologies alongside your students, use collaborative platforms to connect learners with external experts and global communities, and engage families and mentors as active partners in learning.",
+      "report_summary_not_met": "There is an opportunity to extend collaboration \u2014 moving from resource-sharing with colleagues to genuine co-design, exploring technology alongside students rather than ahead of them, and using digital platforms to connect your learners with the world beyond school.",
+      "coaching_prompt": "When did you last co-learn a new digital tool with your students \u2014 and what did you model by doing so?"
+    },
+    {
+      "standard_id": "iste-e-des",
+      "standard_name": "Designer",
+      "short_label": "Design learning that fits every learner",
+      "report_summary_met": "You use technology to personalise learning for individual students, design authentic activities with real-world application, and apply evidence-based instructional design principles to create digital learning environments that are equitable and effective.",
+      "report_summary_not_met": "There is an opportunity to deepen your learning design practice \u2014 moving from differentiation to genuine personalisation using technology, and grounding your digital environment design in specific instructional design principles rather than intuition.",
+      "coaching_prompt": "What specific instructional design principle underpins the structure of your most recent online unit \u2014 and how would you know if it is working?"
+    },
+    {
+      "standard_id": "iste-e-fac",
+      "standard_name": "Facilitator",
+      "short_label": "Facilitate, do not just instruct",
+      "report_summary_met": "You create conditions where students own their learning goals, manage digital environments as active pedagogical spaces, embed computational thinking and design processes in your subject teaching, and model creative expression as a legitimate way of demonstrating knowledge.",
+      "report_summary_not_met": "There is an opportunity to shift from directing digital learning to facilitating it \u2014 creating structures where students drive their own goals, embedding computational thinking in your subject, and using technology as a canvas for genuine creative expression.",
+      "coaching_prompt": "In your current unit, do students set their own learning goals \u2014 or do they pursue the goals you have set for them?"
+    },
+    {
+      "standard_id": "iste-e-ana",
+      "standard_name": "Analyst",
+      "short_label": "Use evidence to personalise learning",
+      "report_summary_met": "You offer multiple technology-mediated ways for students to demonstrate competency, design varied digital assessments with timely and actionable feedback, and use assessment data to personalise learning pathways and communicate progress to students and families.",
+      "report_summary_not_met": "There is an opportunity to use assessment data more actively \u2014 moving from recording grades to personalising learning, designing assessments that give every student a way to show what they know, and ensuring feedback reaches students quickly enough to change their next step.",
+      "coaching_prompt": "How do you use assessment data at the individual student level \u2014 and can you give a specific example of a change you made to a student's learning pathway based on what the data showed?"
+    }
+  ]
+}

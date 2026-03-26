@@ -1,0 +1,219 @@
+{
+  "framework_id": "ailit",
+  "framework_name": "AI Literacy Framework (AILit)",
+  "file_type": "cross-framework-mappings",
+  "research_basis": {
+    "generated_at": "2026-03-26",
+    "authoring_method": "Original synthesis using the user brief and the THE DMI implementation reference as the structural benchmark.",
+    "licence_handling": "CC BY-SA 4.0"
+  },
+  "object_count": 13,
+  "mappings": [
+    {
+      "source_framework": "ailit",
+      "source_dimension_id": "ailit-fundamentals",
+      "target_framework": "UNESCO CFT",
+      "target_construct": "AI foundations and applications (teachers) / AI techniques and applications (students)",
+      "confidence": "strong",
+      "direction": "bidirectional",
+      "what_transfers": [
+        "core conceptual understanding of AI systems",
+        "connections between data, model behaviour, and limitations"
+      ],
+      "what_does_not_transfer": [
+        "UNESCO's human-centred mindset dimension",
+        "teacher-specific pedagogy or professional learning constructs"
+      ],
+      "rationale": "Both frameworks treat conceptual understanding of AI as a core prerequisite for responsible use."
+    },
+    {
+      "source_framework": "ailit",
+      "source_dimension_id": "ailit-application",
+      "target_framework": "UNESCO CFT",
+      "target_construct": "AI pedagogy and AI for professional learning (teachers) / AI techniques and applications (students)",
+      "confidence": "strong",
+      "direction": "bidirectional",
+      "what_transfers": [
+        "effective use of AI tools in authentic tasks",
+        "human oversight and evaluation of outputs"
+      ],
+      "what_does_not_transfer": [
+        "teacher-facing professional role expectations that go beyond generic individual application"
+      ],
+      "rationale": "AILit application focuses on task-level use; UNESCO extends that into pedagogy and teacher development."
+    },
+    {
+      "source_framework": "ailit",
+      "source_dimension_id": "ailit-ethics",
+      "target_framework": "UNESCO CFT",
+      "target_construct": "Ethics of AI / human-centred mindset",
+      "confidence": "strong",
+      "direction": "bidirectional",
+      "what_transfers": [
+        "fairness, privacy, accountability, inclusion, and human agency"
+      ],
+      "what_does_not_transfer": [
+        "some explicit rights language and system-governance detail in UNESCO"
+      ],
+      "rationale": "The ethical core overlaps strongly, though UNESCO frames it more explicitly around rights and human agency."
+    },
+    {
+      "source_framework": "ailit",
+      "source_dimension_id": "ailit-futures",
+      "target_framework": "UNESCO CFT",
+      "target_construct": "Human-centred mindset / AI system design / AI for professional learning",
+      "confidence": "moderate",
+      "direction": "unidirectional",
+      "what_transfers": [
+        "future-oriented judgement, agency, and shaping technology trajectories"
+      ],
+      "what_does_not_transfer": [
+        "AILit's explicit foresight emphasis has no one-to-one UNESCO teacher or student dimension"
+      ],
+      "rationale": "AILit futures is broader and more anticipatory than the closest UNESCO constructs."
+    },
+    {
+      "source_framework": "ailit",
+      "source_dimension_id": "ailit-fundamentals",
+      "target_framework": "DigComp 3.0",
+      "target_construct": "Information and data literacy; transversal AI competence",
+      "confidence": "moderate",
+      "direction": "unidirectional",
+      "what_transfers": [
+        "understanding how AI uses data and why outputs vary"
+      ],
+      "what_does_not_transfer": [
+        "DigComp remains broader than AI literacy and does not isolate AI fundamentals as a standalone domain"
+      ],
+      "rationale": "DigComp 3.0 integrates AI transversally, making this a thematic rather than structural match."
+    },
+    {
+      "source_framework": "ailit",
+      "source_dimension_id": "ailit-application",
+      "target_framework": "DigComp 3.0",
+      "target_construct": "Problem solving; digital content creation; safety",
+      "confidence": "moderate",
+      "direction": "bidirectional",
+      "what_transfers": [
+        "selecting tools, evaluating outputs, and using digital systems fit for purpose"
+      ],
+      "what_does_not_transfer": [
+        "DigComp's wider non-AI digital practices",
+        "AILit's AI-specific prompting and oversight emphasis"
+      ],
+      "rationale": "Application overlaps with DigComp's action-oriented competences, especially where AI sits inside broader digital work."
+    },
+    {
+      "source_framework": "ailit",
+      "source_dimension_id": "ailit-ethics",
+      "target_framework": "DigComp 3.0",
+      "target_construct": "Safety; engaging with technologies responsibly",
+      "confidence": "moderate",
+      "direction": "bidirectional",
+      "what_transfers": [
+        "privacy, wellbeing, responsible participation, and critical judgement"
+      ],
+      "what_does_not_transfer": [
+        "some AI-specific governance issues and systemic bias analysis"
+      ],
+      "rationale": "DigComp covers responsible digital behaviour broadly, while AILit adds AI-specific ethical nuance."
+    },
+    {
+      "source_framework": "ailit",
+      "source_dimension_id": "ailit-futures",
+      "target_framework": "DigComp 3.0",
+      "target_construct": "Problem solving; identifying digital competence needs",
+      "confidence": "weak",
+      "direction": "unidirectional",
+      "what_transfers": [
+        "adapting to technological change and planning future capability needs"
+      ],
+      "what_does_not_transfer": [
+        "AILit's explicit futures and societal trajectory construct"
+      ],
+      "rationale": "DigComp supports adaptability but not a dedicated AI futures domain."
+    },
+    {
+      "source_framework": "ailit",
+      "source_dimension_id": "ailit-fundamentals",
+      "target_framework": "DEC AI Literacy",
+      "target_construct": "Understanding AI and Data",
+      "confidence": "strong",
+      "direction": "bidirectional",
+      "what_transfers": [
+        "core AI concepts, data, and limitations"
+      ],
+      "what_does_not_transfer": [
+        "DEC's field-specific framing around higher education use cases"
+      ],
+      "rationale": "These are the closest structural peers across the two frameworks."
+    },
+    {
+      "source_framework": "ailit",
+      "source_dimension_id": "ailit-application",
+      "target_framework": "DEC AI Literacy",
+      "target_construct": "Using AI Tools / Creating with AI",
+      "confidence": "strong",
+      "direction": "bidirectional",
+      "what_transfers": [
+        "effective task-level use of AI tools",
+        "evaluation of AI-assisted output"
+      ],
+      "what_does_not_transfer": [
+        "DEC separates tool use from creation more explicitly"
+      ],
+      "rationale": "AILit application spans both everyday use and productive workflow design, which DEC splits across two dimensions."
+    },
+    {
+      "source_framework": "ailit",
+      "source_dimension_id": "ailit-ethics",
+      "target_framework": "DEC AI Literacy",
+      "target_construct": "AI Ethics and Society",
+      "confidence": "strong",
+      "direction": "bidirectional",
+      "what_transfers": [
+        "ethical judgement, accountability, fairness, and transparency"
+      ],
+      "what_does_not_transfer": [
+        "DEC's explicit higher-education institutional context"
+      ],
+      "rationale": "The overlap is strong in content, with contextual differences more than conceptual differences."
+    },
+    {
+      "source_framework": "ailit",
+      "source_dimension_id": "ailit-futures",
+      "target_framework": "DEC AI Literacy",
+      "target_construct": "AI in Discipline Contexts / AI Ethics and Society",
+      "confidence": "moderate",
+      "direction": "unidirectional",
+      "what_transfers": [
+        "thinking about future implications of AI adoption in real fields and institutions"
+      ],
+      "what_does_not_transfer": [
+        "AILit's explicit foresight and trajectory-shaping emphasis"
+      ],
+      "rationale": "DEC has situated and societal components, but not a dedicated futures dimension."
+    },
+    {
+      "source_framework": "ailit",
+      "source_dimension_id": "ailit",
+      "target_framework": "DigComp 3.0 proficiency",
+      "target_construct": "Basic -> Intermediate -> Advanced -> Highly advanced",
+      "confidence": "moderate",
+      "direction": "unidirectional",
+      "what_transfers": [
+        "a four-step progression from guided use to leadership-like performance"
+      ],
+      "what_does_not_transfer": [
+        "DigComp proficiency is broader than AI literacy and assumes a different competence granularity"
+      ],
+      "rationale": "The progression logic is similar even though the constructs differ.",
+      "source_level_alignment": {
+        "Novice": "Basic",
+        "Intermediate": "Intermediate",
+        "Advanced": "Advanced",
+        "Expert": "Highly advanced"
+      }
+    }
+  ]
+}

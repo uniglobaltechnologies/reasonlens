@@ -1,0 +1,620 @@
+{
+  "framework_id": "jisc-bdc-role-profiles",
+  "profile_id": "bdc-researcher",
+  "profile_name": "Jisc Building Digital Capability Researcher Profile",
+  "authoring_note": "This file rewrites progression in practitioner-friendly language using original wording. It is intended for feedback and coaching, not for reproducing source-framework text.",
+  "entries": [
+    {
+      "entry_id": "bdc-researcher-prof-developing",
+      "profile_id": "bdc-researcher",
+      "profile_name": "Jisc Building Digital Capability Researcher Profile",
+      "role_code": "RES",
+      "element_code": "PROF",
+      "element_name": "Digital Proficiency and Productivity",
+      "level": "Developing",
+      "level_order": 1,
+      "plain_language_label": "Getting the basics done",
+      "friendly_description": "Getting the basics done. In this role, the person can keep important digital activity moving, but progress still depends too much on familiar routines, examples or nearby help.",
+      "strengths_message": "This is a workable starting point for researcher practice because core activity can continue, especially when examples and support are available.",
+      "development_message": "The next step is to make choices more deliberate and repeatable so that capability does not depend on a single familiar routine.",
+      "watchouts": [
+        "Owning or accessing many apps means the basics are secure.",
+        "Getting through the task once shows the process is reliable."
+      ],
+      "coaching_questions": [
+        "Which recurring tasks still break down when the context changes?",
+        "What one shared routine would make your digital work easier to recover and follow?"
+      ],
+      "preferred_terms": [
+        "reliable routine",
+        "clear workflow",
+        "fit for purpose",
+        "independent use"
+      ],
+      "avoid_terms": [
+        "bad with tech",
+        "power user as default",
+        "digital native"
+      ],
+      "feedback_snippet": "You can already keep important digital activity moving in this area. Focus next on creating one dependable routine that works even when conditions change."
+    },
+    {
+      "entry_id": "bdc-researcher-prof-capable",
+      "profile_id": "bdc-researcher",
+      "profile_name": "Jisc Building Digital Capability Researcher Profile",
+      "role_code": "RES",
+      "element_code": "PROF",
+      "element_name": "Digital Proficiency and Productivity",
+      "level": "Capable",
+      "level_order": 2,
+      "plain_language_label": "Running dependable digital workflows",
+      "friendly_description": "Running dependable digital workflows. In this role, digital choices are usually intentional and dependable, with enough independence to handle common variation and minor problems.",
+      "strengths_message": "This level shows dependable day-to-day practice and sound judgment in familiar and moderately complex situations.",
+      "development_message": "The next step is to move beyond strong personal practice and start shaping reusable, evaluative or group-level improvement.",
+      "watchouts": [
+        "Being quick personally is the same as having a good workflow.",
+        "A preferred tool is automatically the right choice everywhere."
+      ],
+      "coaching_questions": [
+        "Where do your current workflows create hidden friction for other people?",
+        "How do you decide when a new tool is actually worth adopting?"
+      ],
+      "preferred_terms": [
+        "reliable routine",
+        "clear workflow",
+        "fit for purpose",
+        "independent use"
+      ],
+      "avoid_terms": [
+        "bad with tech",
+        "power user as default",
+        "digital native"
+      ],
+      "feedback_snippet": "You are using digital practice with intent and reasonable independence in this area. The strongest next move is to make that practice easier for other people to benefit from."
+    },
+    {
+      "entry_id": "bdc-researcher-prof-proficient",
+      "profile_id": "bdc-researcher",
+      "profile_name": "Jisc Building Digital Capability Researcher Profile",
+      "role_code": "RES",
+      "element_code": "PROF",
+      "element_name": "Digital Proficiency and Productivity",
+      "level": "Proficient",
+      "level_order": 3,
+      "plain_language_label": "Improving digital workflows for wider benefit",
+      "friendly_description": "Improving digital workflows for wider benefit. In this role, digital capability extends beyond strong personal practice into reusable improvement, guidance or influence for wider groups.",
+      "strengths_message": "This level shows influence as well as skill: practice is not only strong personally but also improves outcomes for others or for the wider context.",
+      "development_message": "The next step is to sustain influence without over-complexity, keeping practice evidence-led, inclusive and adaptable.",
+      "watchouts": [
+        "Proficiency means always adopting the newest or most advanced platform.",
+        "If a process works for experts it should work for everyone."
+      ],
+      "coaching_questions": [
+        "What evidence shows that your workflow improvement really helped others?",
+        "Which parts of the process should be simplified rather than expanded?"
+      ],
+      "preferred_terms": [
+        "reliable routine",
+        "clear workflow",
+        "fit for purpose",
+        "independent use"
+      ],
+      "avoid_terms": [
+        "bad with tech",
+        "power user as default",
+        "digital native"
+      ],
+      "feedback_snippet": "You show mature digital practice here, including judgment and influence. Keep checking that innovation remains proportionate, well-evidenced and inclusive."
+    },
+    {
+      "entry_id": "bdc-researcher-creat-developing",
+      "profile_id": "bdc-researcher",
+      "profile_name": "Jisc Building Digital Capability Researcher Profile",
+      "role_code": "RES",
+      "element_code": "CREAT",
+      "element_name": "Digital Creation, Problem-Solving and Innovation",
+      "level": "Developing",
+      "level_order": 1,
+      "plain_language_label": "Adapting and trying out ideas",
+      "friendly_description": "Adapting and trying out ideas. In this role, the person can keep important digital activity moving, but progress still depends too much on familiar routines, examples or nearby help.",
+      "strengths_message": "This is a workable starting point for researcher practice because core activity can continue, especially when examples and support are available.",
+      "development_message": "The next step is to make choices more deliberate and repeatable so that capability does not depend on a single familiar routine.",
+      "watchouts": [
+        "Changing the look of something counts as innovation.",
+        "Trying a new tool is enough evidence of creative capability."
+      ],
+      "coaching_questions": [
+        "What user need is the design trying to solve?",
+        "Which choice in the design is deliberate rather than inherited from a template?"
+      ],
+      "preferred_terms": [
+        "purposeful design",
+        "user need",
+        "iterative improvement",
+        "reusable pattern"
+      ],
+      "avoid_terms": [
+        "shiny tool",
+        "innovation theatre",
+        "bells and whistles"
+      ],
+      "feedback_snippet": "You can already keep important digital activity moving in this area. Focus next on creating one dependable routine that works even when conditions change."
+    },
+    {
+      "entry_id": "bdc-researcher-creat-capable",
+      "profile_id": "bdc-researcher",
+      "profile_name": "Jisc Building Digital Capability Researcher Profile",
+      "role_code": "RES",
+      "element_code": "CREAT",
+      "element_name": "Digital Creation, Problem-Solving and Innovation",
+      "level": "Capable",
+      "level_order": 2,
+      "plain_language_label": "Designing digital solutions with purpose",
+      "friendly_description": "Designing digital solutions with purpose. In this role, digital choices are usually intentional and dependable, with enough independence to handle common variation and minor problems.",
+      "strengths_message": "This level shows dependable day-to-day practice and sound judgment in familiar and moderately complex situations.",
+      "development_message": "The next step is to move beyond strong personal practice and start shaping reusable, evaluative or group-level improvement.",
+      "watchouts": [
+        "A useful one-off output is automatically reusable.",
+        "More interactivity always means better design."
+      ],
+      "coaching_questions": [
+        "How are you checking that the solution genuinely improved the task?",
+        "What would someone else need in order to reuse or adapt this?"
+      ],
+      "preferred_terms": [
+        "purposeful design",
+        "user need",
+        "iterative improvement",
+        "reusable pattern"
+      ],
+      "avoid_terms": [
+        "shiny tool",
+        "innovation theatre",
+        "bells and whistles"
+      ],
+      "feedback_snippet": "You are using digital practice with intent and reasonable independence in this area. The strongest next move is to make that practice easier for other people to benefit from."
+    },
+    {
+      "entry_id": "bdc-researcher-creat-proficient",
+      "profile_id": "bdc-researcher",
+      "profile_name": "Jisc Building Digital Capability Researcher Profile",
+      "role_code": "RES",
+      "element_code": "CREAT",
+      "element_name": "Digital Creation, Problem-Solving and Innovation",
+      "level": "Proficient",
+      "level_order": 3,
+      "plain_language_label": "Building reusable and evidence-led innovation",
+      "friendly_description": "Building reusable and evidence-led innovation. In this role, digital capability extends beyond strong personal practice into reusable improvement, guidance or influence for wider groups.",
+      "strengths_message": "This level shows influence as well as skill: practice is not only strong personally but also improves outcomes for others or for the wider context.",
+      "development_message": "The next step is to sustain influence without over-complexity, keeping practice evidence-led, inclusive and adaptable.",
+      "watchouts": [
+        "Innovation means large-scale disruption every time.",
+        "Once a digital solution works, evaluation can stop."
+      ],
+      "coaching_questions": [
+        "What makes this innovation proportionate and not just novel?",
+        "How will you know whether to scale, adapt or retire the solution?"
+      ],
+      "preferred_terms": [
+        "purposeful design",
+        "user need",
+        "iterative improvement",
+        "reusable pattern"
+      ],
+      "avoid_terms": [
+        "shiny tool",
+        "innovation theatre",
+        "bells and whistles"
+      ],
+      "feedback_snippet": "You show mature digital practice here, including judgment and influence. Keep checking that innovation remains proportionate, well-evidenced and inclusive."
+    },
+    {
+      "entry_id": "bdc-researcher-learn-developing",
+      "profile_id": "bdc-researcher",
+      "profile_name": "Jisc Building Digital Capability Researcher Profile",
+      "role_code": "RES",
+      "element_code": "LEARN",
+      "element_name": "Digital Learning and Development",
+      "level": "Developing",
+      "level_order": 1,
+      "plain_language_label": "Learning when the need appears",
+      "friendly_description": "Learning when the need appears. In this role, the person can keep important digital activity moving, but progress still depends too much on familiar routines, examples or nearby help.",
+      "strengths_message": "This is a workable starting point for researcher practice because core activity can continue, especially when examples and support are available.",
+      "development_message": "The next step is to make choices more deliberate and repeatable so that capability does not depend on a single familiar routine.",
+      "watchouts": [
+        "Watching training content is the same as improving practice.",
+        "Only formal courses count as digital development."
+      ],
+      "coaching_questions": [
+        "What have you already applied from recent learning?",
+        "How will you tell whether the learning changed your practice?"
+      ],
+      "preferred_terms": [
+        "applied learning",
+        "reflection",
+        "transfer",
+        "confidence building"
+      ],
+      "avoid_terms": [
+        "just attend",
+        "training dump",
+        "one and done"
+      ],
+      "feedback_snippet": "You can already keep important digital activity moving in this area. Focus next on creating one dependable routine that works even when conditions change."
+    },
+    {
+      "entry_id": "bdc-researcher-learn-capable",
+      "profile_id": "bdc-researcher",
+      "profile_name": "Jisc Building Digital Capability Researcher Profile",
+      "role_code": "RES",
+      "element_code": "LEARN",
+      "element_name": "Digital Learning and Development",
+      "level": "Capable",
+      "level_order": 2,
+      "plain_language_label": "Using learning to improve practice",
+      "friendly_description": "Using learning to improve practice. In this role, digital choices are usually intentional and dependable, with enough independence to handle common variation and minor problems.",
+      "strengths_message": "This level shows dependable day-to-day practice and sound judgment in familiar and moderately complex situations.",
+      "development_message": "The next step is to move beyond strong personal practice and start shaping reusable, evaluative or group-level improvement.",
+      "watchouts": [
+        "Confidence grows just by repeating the same task.",
+        "Personal development is enough even in collaborative settings."
+      ],
+      "coaching_questions": [
+        "Which development activity is giving you the strongest transfer into practice?",
+        "How could your learning process become easier to sustain?"
+      ],
+      "preferred_terms": [
+        "applied learning",
+        "reflection",
+        "transfer",
+        "confidence building"
+      ],
+      "avoid_terms": [
+        "just attend",
+        "training dump",
+        "one and done"
+      ],
+      "feedback_snippet": "You are using digital practice with intent and reasonable independence in this area. The strongest next move is to make that practice easier for other people to benefit from."
+    },
+    {
+      "entry_id": "bdc-researcher-learn-proficient",
+      "profile_id": "bdc-researcher",
+      "profile_name": "Jisc Building Digital Capability Researcher Profile",
+      "role_code": "RES",
+      "element_code": "LEARN",
+      "element_name": "Digital Learning and Development",
+      "level": "Proficient",
+      "level_order": 3,
+      "plain_language_label": "Helping others learn and grow digitally",
+      "friendly_description": "Helping others learn and grow digitally. In this role, digital capability extends beyond strong personal practice into reusable improvement, guidance or influence for wider groups.",
+      "strengths_message": "This level shows influence as well as skill: practice is not only strong personally but also improves outcomes for others or for the wider context.",
+      "development_message": "The next step is to sustain influence without over-complexity, keeping practice evidence-led, inclusive and adaptable.",
+      "watchouts": [
+        "Helping others learn means simply sharing favourite tips.",
+        "Attendance proves that development has happened."
+      ],
+      "coaching_questions": [
+        "How are you designing learning so that other people can apply it safely?",
+        "What follow-up evidence shows that the development stuck?"
+      ],
+      "preferred_terms": [
+        "applied learning",
+        "reflection",
+        "transfer",
+        "confidence building"
+      ],
+      "avoid_terms": [
+        "just attend",
+        "training dump",
+        "one and done"
+      ],
+      "feedback_snippet": "You show mature digital practice here, including judgment and influence. Keep checking that innovation remains proportionate, well-evidenced and inclusive."
+    },
+    {
+      "entry_id": "bdc-researcher-lit-developing",
+      "profile_id": "bdc-researcher",
+      "profile_name": "Jisc Building Digital Capability Researcher Profile",
+      "role_code": "RES",
+      "element_code": "LIT",
+      "element_name": "Information, Data and Media Literacies",
+      "level": "Developing",
+      "level_order": 1,
+      "plain_language_label": "Finding usable information and data",
+      "friendly_description": "Finding usable information and data. In this role, the person can keep important digital activity moving, but progress still depends too much on familiar routines, examples or nearby help.",
+      "strengths_message": "This is a workable starting point for researcher practice because core activity can continue, especially when examples and support are available.",
+      "development_message": "The next step is to make choices more deliberate and repeatable so that capability does not depend on a single familiar routine.",
+      "watchouts": [
+        "A source is reliable if it appears high in search results or looks professional.",
+        "Numbers speak for themselves."
+      ],
+      "coaching_questions": [
+        "Why did you trust these sources or figures?",
+        "What might be missing from the evidence you are using?"
+      ],
+      "preferred_terms": [
+        "evidence trail",
+        "relevance",
+        "interpretation",
+        "confidence level"
+      ],
+      "avoid_terms": [
+        "the data speaks for itself",
+        "Google it",
+        "objective because numeric"
+      ],
+      "feedback_snippet": "You can already keep important digital activity moving in this area. Focus next on creating one dependable routine that works even when conditions change."
+    },
+    {
+      "entry_id": "bdc-researcher-lit-capable",
+      "profile_id": "bdc-researcher",
+      "profile_name": "Jisc Building Digital Capability Researcher Profile",
+      "role_code": "RES",
+      "element_code": "LIT",
+      "element_name": "Information, Data and Media Literacies",
+      "level": "Capable",
+      "level_order": 2,
+      "plain_language_label": "Judging evidence carefully",
+      "friendly_description": "Judging evidence carefully. In this role, digital choices are usually intentional and dependable, with enough independence to handle common variation and minor problems.",
+      "strengths_message": "This level shows dependable day-to-day practice and sound judgment in familiar and moderately complex situations.",
+      "development_message": "The next step is to move beyond strong personal practice and start shaping reusable, evaluative or group-level improvement.",
+      "watchouts": [
+        "Rejecting biased sources is the same as critical literacy.",
+        "A neat dashboard is automatically decision-ready."
+      ],
+      "coaching_questions": [
+        "How are you comparing stronger and weaker evidence here?",
+        "Where do the data definitions or methods limit the conclusion?"
+      ],
+      "preferred_terms": [
+        "evidence trail",
+        "relevance",
+        "interpretation",
+        "confidence level"
+      ],
+      "avoid_terms": [
+        "the data speaks for itself",
+        "Google it",
+        "objective because numeric"
+      ],
+      "feedback_snippet": "You are using digital practice with intent and reasonable independence in this area. The strongest next move is to make that practice easier for other people to benefit from."
+    },
+    {
+      "entry_id": "bdc-researcher-lit-proficient",
+      "profile_id": "bdc-researcher",
+      "profile_name": "Jisc Building Digital Capability Researcher Profile",
+      "role_code": "RES",
+      "element_code": "LIT",
+      "element_name": "Information, Data and Media Literacies",
+      "level": "Proficient",
+      "level_order": 3,
+      "plain_language_label": "Synthesising evidence and making uncertainty visible",
+      "friendly_description": "Synthesising evidence and making uncertainty visible. In this role, digital capability extends beyond strong personal practice into reusable improvement, guidance or influence for wider groups.",
+      "strengths_message": "This level shows influence as well as skill: practice is not only strong personally but also improves outcomes for others or for the wider context.",
+      "development_message": "The next step is to sustain influence without over-complexity, keeping practice evidence-led, inclusive and adaptable.",
+      "watchouts": [
+        "Synthesis means averaging different pieces of evidence together.",
+        "Evidence work is objective if the analyst stays neutral."
+      ],
+      "coaching_questions": [
+        "How are you communicating uncertainty to support sound decisions?",
+        "What does each evidence source add that the others cannot?"
+      ],
+      "preferred_terms": [
+        "evidence trail",
+        "relevance",
+        "interpretation",
+        "confidence level"
+      ],
+      "avoid_terms": [
+        "the data speaks for itself",
+        "Google it",
+        "objective because numeric"
+      ],
+      "feedback_snippet": "You show mature digital practice here, including judgment and influence. Keep checking that innovation remains proportionate, well-evidenced and inclusive."
+    },
+    {
+      "entry_id": "bdc-researcher-comm-developing",
+      "profile_id": "bdc-researcher",
+      "profile_name": "Jisc Building Digital Capability Researcher Profile",
+      "role_code": "RES",
+      "element_code": "COMM",
+      "element_name": "Digital Communication, Collaboration and Participation",
+      "level": "Developing",
+      "level_order": 1,
+      "plain_language_label": "Joining in digitally",
+      "friendly_description": "Joining in digitally. In this role, the person can keep important digital activity moving, but progress still depends too much on familiar routines, examples or nearby help.",
+      "strengths_message": "This is a workable starting point for researcher practice because core activity can continue, especially when examples and support are available.",
+      "development_message": "The next step is to make choices more deliberate and repeatable so that capability does not depend on a single familiar routine.",
+      "watchouts": [
+        "Using many channels improves communication.",
+        "Fast responses are the main sign of good digital collaboration."
+      ],
+      "coaching_questions": [
+        "Which channels are helping, and which are creating noise?",
+        "How do people know where decisions and current versions sit?"
+      ],
+      "preferred_terms": [
+        "channel fit",
+        "participation",
+        "working agreement",
+        "facilitation"
+      ],
+      "avoid_terms": [
+        "always online",
+        "broadcast only",
+        "reply-all by default"
+      ],
+      "feedback_snippet": "You can already keep important digital activity moving in this area. Focus next on creating one dependable routine that works even when conditions change."
+    },
+    {
+      "entry_id": "bdc-researcher-comm-capable",
+      "profile_id": "bdc-researcher",
+      "profile_name": "Jisc Building Digital Capability Researcher Profile",
+      "role_code": "RES",
+      "element_code": "COMM",
+      "element_name": "Digital Communication, Collaboration and Participation",
+      "level": "Capable",
+      "level_order": 2,
+      "plain_language_label": "Communicating and collaborating with intent",
+      "friendly_description": "Communicating and collaborating with intent. In this role, digital choices are usually intentional and dependable, with enough independence to handle common variation and minor problems.",
+      "strengths_message": "This level shows dependable day-to-day practice and sound judgment in familiar and moderately complex situations.",
+      "development_message": "The next step is to move beyond strong personal practice and start shaping reusable, evaluative or group-level improvement.",
+      "watchouts": [
+        "A lively chat space guarantees collaboration.",
+        "Formal tone always makes communication more professional."
+      ],
+      "coaching_questions": [
+        "How have you made participation easier for different needs and preferences?",
+        "Where might the current communication pattern exclude or overwhelm others?"
+      ],
+      "preferred_terms": [
+        "channel fit",
+        "participation",
+        "working agreement",
+        "facilitation"
+      ],
+      "avoid_terms": [
+        "always online",
+        "broadcast only",
+        "reply-all by default"
+      ],
+      "feedback_snippet": "You are using digital practice with intent and reasonable independence in this area. The strongest next move is to make that practice easier for other people to benefit from."
+    },
+    {
+      "entry_id": "bdc-researcher-comm-proficient",
+      "profile_id": "bdc-researcher",
+      "profile_name": "Jisc Building Digital Capability Researcher Profile",
+      "role_code": "RES",
+      "element_code": "COMM",
+      "element_name": "Digital Communication, Collaboration and Participation",
+      "level": "Proficient",
+      "level_order": 3,
+      "plain_language_label": "Facilitating digital collaboration and participation",
+      "friendly_description": "Facilitating digital collaboration and participation. In this role, digital capability extends beyond strong personal practice into reusable improvement, guidance or influence for wider groups.",
+      "strengths_message": "This level shows influence as well as skill: practice is not only strong personally but also improves outcomes for others or for the wider context.",
+      "development_message": "The next step is to sustain influence without over-complexity, keeping practice evidence-led, inclusive and adaptable.",
+      "watchouts": [
+        "Facilitation means posting most often.",
+        "If conflict is visible, collaboration has failed."
+      ],
+      "coaching_questions": [
+        "How are you facilitating contribution rather than dominating the space?",
+        "What evidence shows that the collaboration norms are improving outcomes?"
+      ],
+      "preferred_terms": [
+        "channel fit",
+        "participation",
+        "working agreement",
+        "facilitation"
+      ],
+      "avoid_terms": [
+        "always online",
+        "broadcast only",
+        "reply-all by default"
+      ],
+      "feedback_snippet": "You show mature digital practice here, including judgment and influence. Keep checking that innovation remains proportionate, well-evidenced and inclusive."
+    },
+    {
+      "entry_id": "bdc-researcher-id-developing",
+      "profile_id": "bdc-researcher",
+      "profile_name": "Jisc Building Digital Capability Researcher Profile",
+      "role_code": "RES",
+      "element_code": "ID",
+      "element_name": "Digital Identity and Wellbeing",
+      "level": "Developing",
+      "level_order": 1,
+      "plain_language_label": "Responding to digital issues as they arise",
+      "friendly_description": "Responding to digital issues as they arise. In this role, the person can keep important digital activity moving, but progress still depends too much on familiar routines, examples or nearby help.",
+      "strengths_message": "This is a workable starting point for researcher practice because core activity can continue, especially when examples and support are available.",
+      "development_message": "The next step is to make choices more deliberate and repeatable so that capability does not depend on a single familiar routine.",
+      "watchouts": [
+        "Changing one privacy setting solves digital identity risk.",
+        "Overload is just a personal time-management issue."
+      ],
+      "coaching_questions": [
+        "What issues keep triggering reactive fixes in your digital life?",
+        "Which boundary would most improve sustainability or trust right now?"
+      ],
+      "preferred_terms": [
+        "boundaries",
+        "trusted presence",
+        "sustainable practice",
+        "care"
+      ],
+      "avoid_terms": [
+        "be visible everywhere",
+        "switch off completely",
+        "one setting fixes it"
+      ],
+      "feedback_snippet": "You can already keep important digital activity moving in this area. Focus next on creating one dependable routine that works even when conditions change."
+    },
+    {
+      "entry_id": "bdc-researcher-id-capable",
+      "profile_id": "bdc-researcher",
+      "profile_name": "Jisc Building Digital Capability Researcher Profile",
+      "role_code": "RES",
+      "element_code": "ID",
+      "element_name": "Digital Identity and Wellbeing",
+      "level": "Capable",
+      "level_order": 2,
+      "plain_language_label": "Managing presence, boundaries and wellbeing deliberately",
+      "friendly_description": "Managing presence, boundaries and wellbeing deliberately. In this role, digital choices are usually intentional and dependable, with enough independence to handle common variation and minor problems.",
+      "strengths_message": "This level shows dependable day-to-day practice and sound judgment in familiar and moderately complex situations.",
+      "development_message": "The next step is to move beyond strong personal practice and start shaping reusable, evaluative or group-level improvement.",
+      "watchouts": [
+        "Good privacy settings are enough to manage digital identity.",
+        "Wellbeing is separate from digital practice."
+      ],
+      "coaching_questions": [
+        "How well does your digital presence match your role, values and risk profile?",
+        "Which habits protect your attention and wellbeing across platforms?"
+      ],
+      "preferred_terms": [
+        "boundaries",
+        "trusted presence",
+        "sustainable practice",
+        "care"
+      ],
+      "avoid_terms": [
+        "be visible everywhere",
+        "switch off completely",
+        "one setting fixes it"
+      ],
+      "feedback_snippet": "You are using digital practice with intent and reasonable independence in this area. The strongest next move is to make that practice easier for other people to benefit from."
+    },
+    {
+      "entry_id": "bdc-researcher-id-proficient",
+      "profile_id": "bdc-researcher",
+      "profile_name": "Jisc Building Digital Capability Researcher Profile",
+      "role_code": "RES",
+      "element_code": "ID",
+      "element_name": "Digital Identity and Wellbeing",
+      "level": "Proficient",
+      "level_order": 3,
+      "plain_language_label": "Shaping healthy and trustworthy digital norms",
+      "friendly_description": "Shaping healthy and trustworthy digital norms. In this role, digital capability extends beyond strong personal practice into reusable improvement, guidance or influence for wider groups.",
+      "strengths_message": "This level shows influence as well as skill: practice is not only strong personally but also improves outcomes for others or for the wider context.",
+      "development_message": "The next step is to sustain influence without over-complexity, keeping practice evidence-led, inclusive and adaptable.",
+      "watchouts": [
+        "Role modelling means telling others to follow the rules.",
+        "The safest digital presence is minimal visibility everywhere."
+      ],
+      "coaching_questions": [
+        "How are you helping others think about trust, care and visibility?",
+        "Which shared norm would most improve healthy digital participation here?"
+      ],
+      "preferred_terms": [
+        "boundaries",
+        "trusted presence",
+        "sustainable practice",
+        "care"
+      ],
+      "avoid_terms": [
+        "be visible everywhere",
+        "switch off completely",
+        "one setting fixes it"
+      ],
+      "feedback_snippet": "You show mature digital practice here, including judgment and influence. Keep checking that innovation remains proportionate, well-evidenced and inclusive."
+    }
+  ]
+}

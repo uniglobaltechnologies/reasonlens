@@ -1,0 +1,67 @@
+{
+  "_meta": {
+    "file": "practitioner-language.json",
+    "framework_id": "iste-coaches",
+    "framework_name": "ISTE Standards for Coaches v4.02",
+    "purpose": "Human-readable labels and descriptions for UI rendering. Used in assessment reports, dashboard displays, and persona-facing explanations. Do not use framework indicator source text directly in user-facing UI \u2014 use these labels.",
+    "generated_for": "ReasonLens"
+  },
+  "standards": [
+    {
+      "standard_id": "iste-c-cha",
+      "standard_name": "Change Agent",
+      "short_label": "Build a culture, not just a programme",
+      "report_summary_met": "You cultivate a shared vision and culture for technology-enhanced learning, promote equitable access, build coaching cultures where educators own the direction together, recognise effective practice systematically, and connect stakeholders across the system to amplify technology's potential.",
+      "report_summary_not_met": "There is an opportunity to move from delivering coaching programmes to building a culture \u2014 developing shared vision, addressing equity proactively, and becoming a connector across the system rather than a resource for individual educators.",
+      "coaching_prompt": "How do educators in your school talk about the shared vision for technology and learning \u2014 and how did that vision come to be theirs?"
+    },
+    {
+      "standard_id": "iste-c-cnl",
+      "standard_name": "Connected Learner",
+      "short_label": "Stay current, stay connected",
+      "report_summary_met": "You actively pursue professional learning that deepens your ISTE Standards expertise, participate meaningfully in professional learning networks, and use structured goal-setting and reflection with educators to continuously improve your own coaching practice.",
+      "report_summary_not_met": "There is an opportunity to deepen your engagement with professional learning networks and the ISTE Standards \u2014 moving from familiarity to expertise, and using your coaching reviews as genuine sources of improvement for your own practice, not just the teacher's.",
+      "coaching_prompt": "What have you changed about your coaching approach in the last six months \u2014 and what evidence led you to make that change?"
+    },
+    {
+      "standard_id": "iste-c-clb",
+      "standard_name": "Collaborator",
+      "short_label": "Build relationships that enable risk",
+      "report_summary_met": "You build trusting coaching relationships that give educators the safety to experiment, partner to identify culturally relevant digital content, evaluate tool efficacy rigorously, and personalise coaching support to each educator's specific context and students.",
+      "report_summary_not_met": "There is an opportunity to invest more deeply in the relational dimension of coaching \u2014 building the kind of trust that enables educators to take genuine instructional risks with technology, and moving from recommending tools to evaluating them together.",
+      "coaching_prompt": "With one of the educators you coach \u2014 what evidence do you have that the relationship is deep enough for them to try something that might fail?"
+    },
+    {
+      "standard_id": "iste-c-ldn",
+      "standard_name": "Learning Designer",
+      "short_label": "Co-design for every learner",
+      "report_summary_met": "You collaborate on the design of authentic active learning experiences, help educators build digital assessments that give timely feedback, design accessible digital environments for all learners, and make the instructional design principles behind your decisions explicit and transferable.",
+      "report_summary_not_met": "There is an opportunity to move further into co-design \u2014 shifting from reviewing and suggesting to building alongside educators, making instructional design principles visible in practice, and ensuring accessibility is a design criterion from the start, not a retrofit.",
+      "coaching_prompt": "In a recent co-design session, which instructional design principle did you name explicitly \u2014 and did the teacher leave able to apply it independently?"
+    },
+    {
+      "standard_id": "iste-c-plf",
+      "standard_name": "Professional Learning Facilitator",
+      "short_label": "Design learning that changes practice",
+      "report_summary_met": "You design professional learning from robust needs assessment and adult learning frameworks, build capacity to put the ISTE Standards into practice, and evaluate impact at the level of classroom practice change and student learning \u2014 using findings to improve your programme.",
+      "report_summary_not_met": "There is an opportunity to ground your professional learning design more firmly in evidence \u2014 moving from assumed needs to multi-method assessment, and measuring whether CPD actually changes practice and student outcomes, not just whether participants found it useful.",
+      "coaching_prompt": "What evidence do you have that the last CPD programme you designed changed teacher practice \u2014 not just teacher confidence?"
+    },
+    {
+      "standard_id": "iste-c-ddm",
+      "standard_name": "Data-Driven Decision Maker",
+      "short_label": "Model data stewardship and smart use",
+      "report_summary_met": "You model secure data collection and analysis practices, support educators to interpret data critically and triangulate sources, and help students use their own learning data to set goals and direct their development.",
+      "report_summary_not_met": "There is an opportunity to extend your data practice \u2014 making data governance a visible coaching topic, developing educators' critical interpretation skills beyond pattern identification, and extending data agency to students, not just teachers.",
+      "coaching_prompt": "In a data coaching session, did you help the teacher identify where the data might be misleading \u2014 as well as where it is useful?"
+    },
+    {
+      "standard_id": "iste-c-dca",
+      "standard_name": "Digital Citizen Advocate",
+      "short_label": "Advocate for digital citizenship across the community",
+      "report_summary_met": "You help educators create genuine community-connected technology projects, foster inclusive online spaces and healthy technology balance, develop critical examination skills beyond surface source-checking, and build practical data privacy and profile curation capacity across educators, leaders, and students.",
+      "report_summary_not_met": "There is an opportunity to extend your digital citizenship work beyond lesson content \u2014 designing real community connections for students, developing critical information literacy that addresses bias and assumptions, and engaging leaders and educators as well as students in data privacy practices.",
+      "coaching_prompt": "What is one digital citizenship capability you have helped an educator develop this term \u2014 and how do you know students are using it beyond the lesson where it was taught?"
+    }
+  ]
+}

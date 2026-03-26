@@ -1,0 +1,198 @@
+{
+  "framework_id": "dec-ai-literacy",
+  "framework_name": "DEC AI Literacy Framework",
+  "research_basis": {
+    "generated_at": "2026-03-26",
+    "authoring_method": "Original synthesis using the user brief and the THE DMI implementation reference as the structural benchmark.",
+    "licence_handling": "All rights reserved; reproduction without amendment permitted. This implementation uses original scenario and practitioner-language content informed by the framework structure."
+  },
+  "factors": [
+    {
+      "factor": "role",
+      "options": [
+        "educator",
+        "student",
+        "researcher",
+        "professional_services"
+      ],
+      "overall_effect": "role changes which examples, evidence, and calibration rules are most appropriate without changing the core construct.",
+      "dimension_impacts": {
+        "dec-understanding": {
+          "impact": "high",
+          "how_it_changes_observation": "Understanding AI and Data shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "dec-using": {
+          "impact": "high",
+          "how_it_changes_observation": "Using AI Tools shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "dec-creating": {
+          "impact": "high",
+          "how_it_changes_observation": "Creating with AI shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "dec-ethics": {
+          "impact": "high",
+          "how_it_changes_observation": "AI Ethics and Society shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "dec-discipline": {
+          "impact": "high",
+          "how_it_changes_observation": "AI in Discipline Contexts shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        }
+      }
+    },
+    {
+      "factor": "subject_area",
+      "options": [
+        "STEM",
+        "humanities",
+        "social_sciences",
+        "health",
+        "arts"
+      ],
+      "overall_effect": "subject_area changes which examples, evidence, and calibration rules are most appropriate without changing the core construct.",
+      "dimension_impacts": {
+        "dec-understanding": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for Understanding AI and Data vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "dec-using": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for Using AI Tools vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "dec-creating": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for Creating with AI vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "dec-ethics": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI Ethics and Society vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "dec-discipline": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI in Discipline Contexts vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        }
+      }
+    },
+    {
+      "factor": "prior_ai_experience",
+      "options": [
+        "none",
+        "casual",
+        "regular",
+        "technical"
+      ],
+      "overall_effect": "prior_ai_experience changes which examples, evidence, and calibration rules are most appropriate without changing the core construct.",
+      "dimension_impacts": {
+        "dec-understanding": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in Understanding AI and Data, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "dec-using": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in Using AI Tools, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "dec-creating": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in Creating with AI, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "dec-ethics": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in AI Ethics and Society, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "dec-discipline": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in AI in Discipline Contexts, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        }
+      }
+    },
+    {
+      "factor": "institution_level",
+      "options": [
+        "secondary",
+        "FE",
+        "HE"
+      ],
+      "overall_effect": "institution_level changes which examples, evidence, and calibration rules are most appropriate without changing the core construct.",
+      "dimension_impacts": {
+        "dec-understanding": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of Understanding AI and Data differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "dec-using": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of Using AI Tools differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "dec-creating": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of Creating with AI differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "dec-ethics": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of AI Ethics and Society differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "dec-discipline": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of AI in Discipline Contexts differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        }
+      }
+    },
+    {
+      "factor": "discipline_context",
+      "options": [
+        "STEM",
+        "humanities",
+        "social_sciences",
+        "health",
+        "arts",
+        "interdisciplinary"
+      ],
+      "overall_effect": "discipline_context changes which examples, evidence, and calibration rules are most appropriate without changing the core construct.",
+      "dimension_impacts": {
+        "dec-understanding": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for Understanding AI and Data vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "dec-using": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for Using AI Tools vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "dec-creating": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for Creating with AI vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "dec-ethics": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI Ethics and Society vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "dec-discipline": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI in Discipline Contexts vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        }
+      }
+    }
+  ]
+}

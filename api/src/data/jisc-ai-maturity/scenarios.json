@@ -1,0 +1,1053 @@
+{
+  "framework_id": "jisc-ai-maturity",
+  "framework_name": "Jisc AI Maturity Model",
+  "file_type": "scenarios",
+  "research_basis": {
+    "generated_at": "2026-03-26",
+    "authoring_method": "Original synthesis using the user brief and the THE DMI implementation reference as the structural benchmark.",
+    "licence_handling": "Original implementation content informed by Jisc AI maturity structure. Scenarios and practitioner language are independently written to avoid reproducing Jisc wording."
+  },
+  "object_count": 20,
+  "objects": [
+    {
+      "scenario_id": "JISCAI-STRAT-ED-01",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-strategy",
+      "dimension_name": "AI Strategy & Leadership",
+      "boundary_code": "ED",
+      "from_level_id": "jisc-ai-strategy-emerging",
+      "to_level_id": "jisc-ai-strategy-developing",
+      "stem": "Your institution is dealing with the following situation: leaders responding to widespread AI use without a shared institutional direction. Which next step best reflects stronger AI Strategy & Leadership?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Allow promising AI activity to keep growing locally and wait for successful pilots to prove which practices deserve attention.",
+          "maps_to_level_id": "jisc-ai-strategy-emerging",
+          "nuisance": true,
+          "nuisance_reason": "Pilot growth alone does not create coordinated development."
+        },
+        {
+          "option_id": "B",
+          "text": "Put in place shared ownership, support, governance, and repeatable workflows so use can scale responsibly.",
+          "maps_to_level_id": "jisc-ai-strategy-developing"
+        },
+        {
+          "option_id": "C",
+          "text": "Embed decisions into mainstream institutional planning, monitoring, and lifecycle management across the organisation.",
+          "maps_to_level_id": "jisc-ai-strategy-mature"
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "university"
+        ],
+        "institution_size": [
+          "medium"
+        ],
+        "region": [
+          "Middle East"
+        ],
+        "respondent_role": [
+          "IT_or_digital_lead"
+        ],
+        "digital_transformation_stage": [
+          "mid"
+        ],
+        "ai_deployment_stage": [
+          "experimental"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the ED boundary in AI Strategy & Leadership by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "JISCAI-STRAT-ED-02",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-strategy",
+      "dimension_name": "AI Strategy & Leadership",
+      "boundary_code": "ED",
+      "from_level_id": "jisc-ai-strategy-emerging",
+      "to_level_id": "jisc-ai-strategy-developing",
+      "stem": "Your institution is dealing with the following situation: a strategy refresh that must integrate AI rather than bolt it on. Different teams are handling the issue in uneven ways. Which next move best indicates the higher side of this boundary in AI Strategy & Leadership?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Allow promising AI activity to keep growing locally and wait for successful pilots to prove which practices deserve attention.",
+          "maps_to_level_id": "jisc-ai-strategy-emerging",
+          "nuisance": true,
+          "nuisance_reason": "Pilot growth alone does not create coordinated development."
+        },
+        {
+          "option_id": "B",
+          "text": "Put in place shared ownership, support, governance, and repeatable workflows so use can scale responsibly.",
+          "maps_to_level_id": "jisc-ai-strategy-developing"
+        },
+        {
+          "option_id": "C",
+          "text": "Embed decisions into mainstream institutional planning, monitoring, and lifecycle management across the organisation.",
+          "maps_to_level_id": "jisc-ai-strategy-mature"
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "FE_college"
+        ],
+        "institution_size": [
+          "large"
+        ],
+        "region": [
+          "Africa"
+        ],
+        "respondent_role": [
+          "research_lead"
+        ],
+        "digital_transformation_stage": [
+          "advanced"
+        ],
+        "ai_deployment_stage": [
+          "operational"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the ED boundary in AI Strategy & Leadership by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "JISCAI-STRAT-DM-01",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-strategy",
+      "dimension_name": "AI Strategy & Leadership",
+      "boundary_code": "DM",
+      "from_level_id": "jisc-ai-strategy-developing",
+      "to_level_id": "jisc-ai-strategy-mature",
+      "stem": "Your institution is dealing with the following situation: budget and governance choices for scaling promising AI work. Which next step best reflects stronger AI Strategy & Leadership?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep the area as a well-supported programme with dedicated workflows, but separate it from routine institutional planning and review.",
+          "maps_to_level_id": "jisc-ai-strategy-developing",
+          "nuisance": true,
+          "nuisance_reason": "Operational capability is present, but the practice is not yet embedded into the operating model."
+        },
+        {
+          "option_id": "B",
+          "text": "Treat the area as part of normal institutional governance and operations, with monitoring, accountability, and continuous improvement.",
+          "maps_to_level_id": "jisc-ai-strategy-mature"
+        },
+        {
+          "option_id": "C",
+          "text": "Expand the number of use cases rapidly and trust local teams to manage risks as they arise.",
+          "maps_to_level_id": "jisc-ai-strategy-emerging",
+          "nuisance": true,
+          "nuisance_reason": "Scale without embedded governance is not mature adoption."
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "research_institute"
+        ],
+        "institution_size": [
+          "small"
+        ],
+        "region": [
+          "Asia-Pacific"
+        ],
+        "respondent_role": [
+          "senior_leadership"
+        ],
+        "digital_transformation_stage": [
+          "early"
+        ],
+        "ai_deployment_stage": [
+          "strategic"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the DM boundary in AI Strategy & Leadership by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "JISCAI-STRAT-DM-02",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-strategy",
+      "dimension_name": "AI Strategy & Leadership",
+      "boundary_code": "DM",
+      "from_level_id": "jisc-ai-strategy-developing",
+      "to_level_id": "jisc-ai-strategy-mature",
+      "stem": "Your institution is dealing with the following situation: cross-functional steering of AI risk, opportunity, and accountability. There is already visible activity, but leaders want to know whether it is truly embedded. Which next move best indicates the higher side of this boundary in AI Strategy & Leadership?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep the area as a well-supported programme with dedicated workflows, but separate it from routine institutional planning and review.",
+          "maps_to_level_id": "jisc-ai-strategy-developing",
+          "nuisance": true,
+          "nuisance_reason": "Operational capability is present, but the practice is not yet embedded into the operating model."
+        },
+        {
+          "option_id": "B",
+          "text": "Treat the area as part of normal institutional governance and operations, with monitoring, accountability, and continuous improvement.",
+          "maps_to_level_id": "jisc-ai-strategy-mature"
+        },
+        {
+          "option_id": "C",
+          "text": "Expand the number of use cases rapidly and trust local teams to manage risks as they arise.",
+          "maps_to_level_id": "jisc-ai-strategy-emerging",
+          "nuisance": true,
+          "nuisance_reason": "Scale without embedded governance is not mature adoption."
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "university"
+        ],
+        "institution_size": [
+          "medium"
+        ],
+        "region": [
+          "North America"
+        ],
+        "respondent_role": [
+          "faculty_lead"
+        ],
+        "digital_transformation_stage": [
+          "mid"
+        ],
+        "ai_deployment_stage": [
+          "none"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the DM boundary in AI Strategy & Leadership by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "JISCAI-PEOP-ED-01",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-people",
+      "dimension_name": "People & Skills",
+      "boundary_code": "ED",
+      "from_level_id": "jisc-ai-people-emerging",
+      "to_level_id": "jisc-ai-people-developing",
+      "stem": "Your institution is dealing with the following situation: staff asking for practical AI guidance while confidence varies widely. Which next step best reflects stronger People & Skills?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Allow promising AI activity to keep growing locally and wait for successful pilots to prove which practices deserve attention.",
+          "maps_to_level_id": "jisc-ai-people-emerging",
+          "nuisance": true,
+          "nuisance_reason": "Pilot growth alone does not create coordinated development."
+        },
+        {
+          "option_id": "B",
+          "text": "Put in place shared ownership, support, governance, and repeatable workflows so use can scale responsibly.",
+          "maps_to_level_id": "jisc-ai-people-developing"
+        },
+        {
+          "option_id": "C",
+          "text": "Embed decisions into mainstream institutional planning, monitoring, and lifecycle management across the organisation.",
+          "maps_to_level_id": "jisc-ai-people-mature"
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "FE_college"
+        ],
+        "institution_size": [
+          "large"
+        ],
+        "region": [
+          "Asia-Pacific"
+        ],
+        "respondent_role": [
+          "IT_or_digital_lead"
+        ],
+        "digital_transformation_stage": [
+          "advanced"
+        ],
+        "ai_deployment_stage": [
+          "strategic"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the ED boundary in People & Skills by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "JISCAI-PEOP-ED-02",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-people",
+      "dimension_name": "People & Skills",
+      "boundary_code": "ED",
+      "from_level_id": "jisc-ai-people-emerging",
+      "to_level_id": "jisc-ai-people-developing",
+      "stem": "Your institution is dealing with the following situation: specialist teams overloaded because general AI literacy is low. Different teams are handling the issue in uneven ways. Which next move best indicates the higher side of this boundary in People & Skills?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Allow promising AI activity to keep growing locally and wait for successful pilots to prove which practices deserve attention.",
+          "maps_to_level_id": "jisc-ai-people-emerging",
+          "nuisance": true,
+          "nuisance_reason": "Pilot growth alone does not create coordinated development."
+        },
+        {
+          "option_id": "B",
+          "text": "Put in place shared ownership, support, governance, and repeatable workflows so use can scale responsibly.",
+          "maps_to_level_id": "jisc-ai-people-developing"
+        },
+        {
+          "option_id": "C",
+          "text": "Embed decisions into mainstream institutional planning, monitoring, and lifecycle management across the organisation.",
+          "maps_to_level_id": "jisc-ai-people-mature"
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "research_institute"
+        ],
+        "institution_size": [
+          "small"
+        ],
+        "region": [
+          "North America"
+        ],
+        "respondent_role": [
+          "research_lead"
+        ],
+        "digital_transformation_stage": [
+          "early"
+        ],
+        "ai_deployment_stage": [
+          "none"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the ED boundary in People & Skills by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "JISCAI-PEOP-DM-01",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-people",
+      "dimension_name": "People & Skills",
+      "boundary_code": "DM",
+      "from_level_id": "jisc-ai-people-developing",
+      "to_level_id": "jisc-ai-people-mature",
+      "stem": "Your institution is dealing with the following situation: communities of practice sharing AI methods and pitfalls. Which next step best reflects stronger People & Skills?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep the area as a well-supported programme with dedicated workflows, but separate it from routine institutional planning and review.",
+          "maps_to_level_id": "jisc-ai-people-developing",
+          "nuisance": true,
+          "nuisance_reason": "Operational capability is present, but the practice is not yet embedded into the operating model."
+        },
+        {
+          "option_id": "B",
+          "text": "Treat the area as part of normal institutional governance and operations, with monitoring, accountability, and continuous improvement.",
+          "maps_to_level_id": "jisc-ai-people-mature"
+        },
+        {
+          "option_id": "C",
+          "text": "Expand the number of use cases rapidly and trust local teams to manage risks as they arise.",
+          "maps_to_level_id": "jisc-ai-people-emerging",
+          "nuisance": true,
+          "nuisance_reason": "Scale without embedded governance is not mature adoption."
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "university"
+        ],
+        "institution_size": [
+          "medium"
+        ],
+        "region": [
+          "Latin America"
+        ],
+        "respondent_role": [
+          "senior_leadership"
+        ],
+        "digital_transformation_stage": [
+          "mid"
+        ],
+        "ai_deployment_stage": [
+          "experimental"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the DM boundary in People & Skills by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "JISCAI-PEOP-DM-02",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-people",
+      "dimension_name": "People & Skills",
+      "boundary_code": "DM",
+      "from_level_id": "jisc-ai-people-developing",
+      "to_level_id": "jisc-ai-people-mature",
+      "stem": "Your institution is dealing with the following situation: role-based capability planning for educators, services, and leaders. There is already visible activity, but leaders want to know whether it is truly embedded. Which next move best indicates the higher side of this boundary in People & Skills?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep the area as a well-supported programme with dedicated workflows, but separate it from routine institutional planning and review.",
+          "maps_to_level_id": "jisc-ai-people-developing",
+          "nuisance": true,
+          "nuisance_reason": "Operational capability is present, but the practice is not yet embedded into the operating model."
+        },
+        {
+          "option_id": "B",
+          "text": "Treat the area as part of normal institutional governance and operations, with monitoring, accountability, and continuous improvement.",
+          "maps_to_level_id": "jisc-ai-people-mature"
+        },
+        {
+          "option_id": "C",
+          "text": "Expand the number of use cases rapidly and trust local teams to manage risks as they arise.",
+          "maps_to_level_id": "jisc-ai-people-emerging",
+          "nuisance": true,
+          "nuisance_reason": "Scale without embedded governance is not mature adoption."
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "FE_college"
+        ],
+        "institution_size": [
+          "large"
+        ],
+        "region": [
+          "other"
+        ],
+        "respondent_role": [
+          "faculty_lead"
+        ],
+        "digital_transformation_stage": [
+          "advanced"
+        ],
+        "ai_deployment_stage": [
+          "operational"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the DM boundary in People & Skills by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "JISCAI-TECH-ED-01",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-tech",
+      "dimension_name": "Technology & Infrastructure",
+      "boundary_code": "ED",
+      "from_level_id": "jisc-ai-tech-emerging",
+      "to_level_id": "jisc-ai-tech-developing",
+      "stem": "Your institution is dealing with the following situation: staff experimenting with disconnected public tools outside managed environments. Which next step best reflects stronger Technology & Infrastructure?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Allow promising AI activity to keep growing locally and wait for successful pilots to prove which practices deserve attention.",
+          "maps_to_level_id": "jisc-ai-tech-emerging",
+          "nuisance": true,
+          "nuisance_reason": "Pilot growth alone does not create coordinated development."
+        },
+        {
+          "option_id": "B",
+          "text": "Put in place shared ownership, support, governance, and repeatable workflows so use can scale responsibly.",
+          "maps_to_level_id": "jisc-ai-tech-developing"
+        },
+        {
+          "option_id": "C",
+          "text": "Embed decisions into mainstream institutional planning, monitoring, and lifecycle management across the organisation.",
+          "maps_to_level_id": "jisc-ai-tech-mature"
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "research_institute"
+        ],
+        "institution_size": [
+          "small"
+        ],
+        "region": [
+          "Latin America"
+        ],
+        "respondent_role": [
+          "IT_or_digital_lead"
+        ],
+        "digital_transformation_stage": [
+          "early"
+        ],
+        "ai_deployment_stage": [
+          "experimental"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the ED boundary in Technology & Infrastructure by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "JISCAI-TECH-ED-02",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-tech",
+      "dimension_name": "Technology & Infrastructure",
+      "boundary_code": "ED",
+      "from_level_id": "jisc-ai-tech-emerging",
+      "to_level_id": "jisc-ai-tech-developing",
+      "stem": "Your institution is dealing with the following situation: procurement decisions about approved AI services and integrations. Different teams are handling the issue in uneven ways. Which next move best indicates the higher side of this boundary in Technology & Infrastructure?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Allow promising AI activity to keep growing locally and wait for successful pilots to prove which practices deserve attention.",
+          "maps_to_level_id": "jisc-ai-tech-emerging",
+          "nuisance": true,
+          "nuisance_reason": "Pilot growth alone does not create coordinated development."
+        },
+        {
+          "option_id": "B",
+          "text": "Put in place shared ownership, support, governance, and repeatable workflows so use can scale responsibly.",
+          "maps_to_level_id": "jisc-ai-tech-developing"
+        },
+        {
+          "option_id": "C",
+          "text": "Embed decisions into mainstream institutional planning, monitoring, and lifecycle management across the organisation.",
+          "maps_to_level_id": "jisc-ai-tech-mature"
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "university"
+        ],
+        "institution_size": [
+          "medium"
+        ],
+        "region": [
+          "other"
+        ],
+        "respondent_role": [
+          "research_lead"
+        ],
+        "digital_transformation_stage": [
+          "mid"
+        ],
+        "ai_deployment_stage": [
+          "operational"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the ED boundary in Technology & Infrastructure by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "JISCAI-TECH-DM-01",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-tech",
+      "dimension_name": "Technology & Infrastructure",
+      "boundary_code": "DM",
+      "from_level_id": "jisc-ai-tech-developing",
+      "to_level_id": "jisc-ai-tech-mature",
+      "stem": "Your institution is dealing with the following situation: supporting AI workflows across teaching, administration, and research. Which next step best reflects stronger Technology & Infrastructure?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep the area as a well-supported programme with dedicated workflows, but separate it from routine institutional planning and review.",
+          "maps_to_level_id": "jisc-ai-tech-developing",
+          "nuisance": true,
+          "nuisance_reason": "Operational capability is present, but the practice is not yet embedded into the operating model."
+        },
+        {
+          "option_id": "B",
+          "text": "Treat the area as part of normal institutional governance and operations, with monitoring, accountability, and continuous improvement.",
+          "maps_to_level_id": "jisc-ai-tech-mature"
+        },
+        {
+          "option_id": "C",
+          "text": "Expand the number of use cases rapidly and trust local teams to manage risks as they arise.",
+          "maps_to_level_id": "jisc-ai-tech-emerging",
+          "nuisance": true,
+          "nuisance_reason": "Scale without embedded governance is not mature adoption."
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "FE_college"
+        ],
+        "institution_size": [
+          "large"
+        ],
+        "region": [
+          "UK"
+        ],
+        "respondent_role": [
+          "senior_leadership"
+        ],
+        "digital_transformation_stage": [
+          "advanced"
+        ],
+        "ai_deployment_stage": [
+          "strategic"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the DM boundary in Technology & Infrastructure by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "JISCAI-TECH-DM-02",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-tech",
+      "dimension_name": "Technology & Infrastructure",
+      "boundary_code": "DM",
+      "from_level_id": "jisc-ai-tech-developing",
+      "to_level_id": "jisc-ai-tech-mature",
+      "stem": "Your institution is dealing with the following situation: monitoring model performance, security, and service reliability. There is already visible activity, but leaders want to know whether it is truly embedded. Which next move best indicates the higher side of this boundary in Technology & Infrastructure?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep the area as a well-supported programme with dedicated workflows, but separate it from routine institutional planning and review.",
+          "maps_to_level_id": "jisc-ai-tech-developing",
+          "nuisance": true,
+          "nuisance_reason": "Operational capability is present, but the practice is not yet embedded into the operating model."
+        },
+        {
+          "option_id": "B",
+          "text": "Treat the area as part of normal institutional governance and operations, with monitoring, accountability, and continuous improvement.",
+          "maps_to_level_id": "jisc-ai-tech-mature"
+        },
+        {
+          "option_id": "C",
+          "text": "Expand the number of use cases rapidly and trust local teams to manage risks as they arise.",
+          "maps_to_level_id": "jisc-ai-tech-emerging",
+          "nuisance": true,
+          "nuisance_reason": "Scale without embedded governance is not mature adoption."
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "research_institute"
+        ],
+        "institution_size": [
+          "small"
+        ],
+        "region": [
+          "Europe"
+        ],
+        "respondent_role": [
+          "faculty_lead"
+        ],
+        "digital_transformation_stage": [
+          "early"
+        ],
+        "ai_deployment_stage": [
+          "none"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the DM boundary in Technology & Infrastructure by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "JISCAI-DATA-ED-01",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-data",
+      "dimension_name": "Data Readiness",
+      "boundary_code": "ED",
+      "from_level_id": "jisc-ai-data-emerging",
+      "to_level_id": "jisc-ai-data-developing",
+      "stem": "Your institution is dealing with the following situation: teams wanting AI insights from fragmented or poorly governed data. Which next step best reflects stronger Data Readiness?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Allow promising AI activity to keep growing locally and wait for successful pilots to prove which practices deserve attention.",
+          "maps_to_level_id": "jisc-ai-data-emerging",
+          "nuisance": true,
+          "nuisance_reason": "Pilot growth alone does not create coordinated development."
+        },
+        {
+          "option_id": "B",
+          "text": "Put in place shared ownership, support, governance, and repeatable workflows so use can scale responsibly.",
+          "maps_to_level_id": "jisc-ai-data-developing"
+        },
+        {
+          "option_id": "C",
+          "text": "Embed decisions into mainstream institutional planning, monitoring, and lifecycle management across the organisation.",
+          "maps_to_level_id": "jisc-ai-data-mature"
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "university"
+        ],
+        "institution_size": [
+          "medium"
+        ],
+        "region": [
+          "UK"
+        ],
+        "respondent_role": [
+          "IT_or_digital_lead"
+        ],
+        "digital_transformation_stage": [
+          "mid"
+        ],
+        "ai_deployment_stage": [
+          "strategic"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the ED boundary in Data Readiness by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "JISCAI-DATA-ED-02",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-data",
+      "dimension_name": "Data Readiness",
+      "boundary_code": "ED",
+      "from_level_id": "jisc-ai-data-emerging",
+      "to_level_id": "jisc-ai-data-developing",
+      "stem": "Your institution is dealing with the following situation: questions about whether institutional data can support automation or analytics. Different teams are handling the issue in uneven ways. Which next move best indicates the higher side of this boundary in Data Readiness?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Allow promising AI activity to keep growing locally and wait for successful pilots to prove which practices deserve attention.",
+          "maps_to_level_id": "jisc-ai-data-emerging",
+          "nuisance": true,
+          "nuisance_reason": "Pilot growth alone does not create coordinated development."
+        },
+        {
+          "option_id": "B",
+          "text": "Put in place shared ownership, support, governance, and repeatable workflows so use can scale responsibly.",
+          "maps_to_level_id": "jisc-ai-data-developing"
+        },
+        {
+          "option_id": "C",
+          "text": "Embed decisions into mainstream institutional planning, monitoring, and lifecycle management across the organisation.",
+          "maps_to_level_id": "jisc-ai-data-mature"
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "FE_college"
+        ],
+        "institution_size": [
+          "large"
+        ],
+        "region": [
+          "Europe"
+        ],
+        "respondent_role": [
+          "research_lead"
+        ],
+        "digital_transformation_stage": [
+          "advanced"
+        ],
+        "ai_deployment_stage": [
+          "none"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the ED boundary in Data Readiness by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "JISCAI-DATA-DM-01",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-data",
+      "dimension_name": "Data Readiness",
+      "boundary_code": "DM",
+      "from_level_id": "jisc-ai-data-developing",
+      "to_level_id": "jisc-ai-data-mature",
+      "stem": "Your institution is dealing with the following situation: projects that need data ownership, quality controls, and lineage. Which next step best reflects stronger Data Readiness?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep the area as a well-supported programme with dedicated workflows, but separate it from routine institutional planning and review.",
+          "maps_to_level_id": "jisc-ai-data-developing",
+          "nuisance": true,
+          "nuisance_reason": "Operational capability is present, but the practice is not yet embedded into the operating model."
+        },
+        {
+          "option_id": "B",
+          "text": "Treat the area as part of normal institutional governance and operations, with monitoring, accountability, and continuous improvement.",
+          "maps_to_level_id": "jisc-ai-data-mature"
+        },
+        {
+          "option_id": "C",
+          "text": "Expand the number of use cases rapidly and trust local teams to manage risks as they arise.",
+          "maps_to_level_id": "jisc-ai-data-emerging",
+          "nuisance": true,
+          "nuisance_reason": "Scale without embedded governance is not mature adoption."
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "research_institute"
+        ],
+        "institution_size": [
+          "small"
+        ],
+        "region": [
+          "Middle East"
+        ],
+        "respondent_role": [
+          "senior_leadership"
+        ],
+        "digital_transformation_stage": [
+          "early"
+        ],
+        "ai_deployment_stage": [
+          "experimental"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the DM boundary in Data Readiness by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "JISCAI-DATA-DM-02",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-data",
+      "dimension_name": "Data Readiness",
+      "boundary_code": "DM",
+      "from_level_id": "jisc-ai-data-developing",
+      "to_level_id": "jisc-ai-data-mature",
+      "stem": "Your institution is dealing with the following situation: decisions about when not to use AI because data foundations are too weak. There is already visible activity, but leaders want to know whether it is truly embedded. Which next move best indicates the higher side of this boundary in Data Readiness?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep the area as a well-supported programme with dedicated workflows, but separate it from routine institutional planning and review.",
+          "maps_to_level_id": "jisc-ai-data-developing",
+          "nuisance": true,
+          "nuisance_reason": "Operational capability is present, but the practice is not yet embedded into the operating model."
+        },
+        {
+          "option_id": "B",
+          "text": "Treat the area as part of normal institutional governance and operations, with monitoring, accountability, and continuous improvement.",
+          "maps_to_level_id": "jisc-ai-data-mature"
+        },
+        {
+          "option_id": "C",
+          "text": "Expand the number of use cases rapidly and trust local teams to manage risks as they arise.",
+          "maps_to_level_id": "jisc-ai-data-emerging",
+          "nuisance": true,
+          "nuisance_reason": "Scale without embedded governance is not mature adoption."
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "university"
+        ],
+        "institution_size": [
+          "medium"
+        ],
+        "region": [
+          "Africa"
+        ],
+        "respondent_role": [
+          "faculty_lead"
+        ],
+        "digital_transformation_stage": [
+          "mid"
+        ],
+        "ai_deployment_stage": [
+          "operational"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the DM boundary in Data Readiness by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "JISCAI-ETH-ED-01",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-ethics",
+      "dimension_name": "Ethics & Responsible AI",
+      "boundary_code": "ED",
+      "from_level_id": "jisc-ai-ethics-emerging",
+      "to_level_id": "jisc-ai-ethics-developing",
+      "stem": "Your institution is dealing with the following situation: developing AI principles that must translate into operational decisions. Which next step best reflects stronger Ethics & Responsible AI?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Allow promising AI activity to keep growing locally and wait for successful pilots to prove which practices deserve attention.",
+          "maps_to_level_id": "jisc-ai-ethics-emerging",
+          "nuisance": true,
+          "nuisance_reason": "Pilot growth alone does not create coordinated development."
+        },
+        {
+          "option_id": "B",
+          "text": "Put in place shared ownership, support, governance, and repeatable workflows so use can scale responsibly.",
+          "maps_to_level_id": "jisc-ai-ethics-developing"
+        },
+        {
+          "option_id": "C",
+          "text": "Embed decisions into mainstream institutional planning, monitoring, and lifecycle management across the organisation.",
+          "maps_to_level_id": "jisc-ai-ethics-mature"
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "FE_college"
+        ],
+        "institution_size": [
+          "large"
+        ],
+        "region": [
+          "Middle East"
+        ],
+        "respondent_role": [
+          "IT_or_digital_lead"
+        ],
+        "digital_transformation_stage": [
+          "advanced"
+        ],
+        "ai_deployment_stage": [
+          "experimental"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the ED boundary in Ethics & Responsible AI by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "JISCAI-ETH-ED-02",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-ethics",
+      "dimension_name": "Ethics & Responsible AI",
+      "boundary_code": "ED",
+      "from_level_id": "jisc-ai-ethics-emerging",
+      "to_level_id": "jisc-ai-ethics-developing",
+      "stem": "Your institution is dealing with the following situation: responding to an incident or concern involving AI harm or opacity. Different teams are handling the issue in uneven ways. Which next move best indicates the higher side of this boundary in Ethics & Responsible AI?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Allow promising AI activity to keep growing locally and wait for successful pilots to prove which practices deserve attention.",
+          "maps_to_level_id": "jisc-ai-ethics-emerging",
+          "nuisance": true,
+          "nuisance_reason": "Pilot growth alone does not create coordinated development."
+        },
+        {
+          "option_id": "B",
+          "text": "Put in place shared ownership, support, governance, and repeatable workflows so use can scale responsibly.",
+          "maps_to_level_id": "jisc-ai-ethics-developing"
+        },
+        {
+          "option_id": "C",
+          "text": "Embed decisions into mainstream institutional planning, monitoring, and lifecycle management across the organisation.",
+          "maps_to_level_id": "jisc-ai-ethics-mature"
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "research_institute"
+        ],
+        "institution_size": [
+          "small"
+        ],
+        "region": [
+          "Africa"
+        ],
+        "respondent_role": [
+          "research_lead"
+        ],
+        "digital_transformation_stage": [
+          "early"
+        ],
+        "ai_deployment_stage": [
+          "operational"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the ED boundary in Ethics & Responsible AI by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "JISCAI-ETH-DM-01",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-ethics",
+      "dimension_name": "Ethics & Responsible AI",
+      "boundary_code": "DM",
+      "from_level_id": "jisc-ai-ethics-developing",
+      "to_level_id": "jisc-ai-ethics-mature",
+      "stem": "Your institution is dealing with the following situation: embedding risk assessment into procurement, design, and review. Which next step best reflects stronger Ethics & Responsible AI?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep the area as a well-supported programme with dedicated workflows, but separate it from routine institutional planning and review.",
+          "maps_to_level_id": "jisc-ai-ethics-developing",
+          "nuisance": true,
+          "nuisance_reason": "Operational capability is present, but the practice is not yet embedded into the operating model."
+        },
+        {
+          "option_id": "B",
+          "text": "Treat the area as part of normal institutional governance and operations, with monitoring, accountability, and continuous improvement.",
+          "maps_to_level_id": "jisc-ai-ethics-mature"
+        },
+        {
+          "option_id": "C",
+          "text": "Expand the number of use cases rapidly and trust local teams to manage risks as they arise.",
+          "maps_to_level_id": "jisc-ai-ethics-emerging",
+          "nuisance": true,
+          "nuisance_reason": "Scale without embedded governance is not mature adoption."
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "university"
+        ],
+        "institution_size": [
+          "medium"
+        ],
+        "region": [
+          "Asia-Pacific"
+        ],
+        "respondent_role": [
+          "senior_leadership"
+        ],
+        "digital_transformation_stage": [
+          "mid"
+        ],
+        "ai_deployment_stage": [
+          "strategic"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the DM boundary in Ethics & Responsible AI by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "JISCAI-ETH-DM-02",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-ethics",
+      "dimension_name": "Ethics & Responsible AI",
+      "boundary_code": "DM",
+      "from_level_id": "jisc-ai-ethics-developing",
+      "to_level_id": "jisc-ai-ethics-mature",
+      "stem": "Your institution is dealing with the following situation: balancing innovation pressure with safe and responsible adoption. There is already visible activity, but leaders want to know whether it is truly embedded. Which next move best indicates the higher side of this boundary in Ethics & Responsible AI?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep the area as a well-supported programme with dedicated workflows, but separate it from routine institutional planning and review.",
+          "maps_to_level_id": "jisc-ai-ethics-developing",
+          "nuisance": true,
+          "nuisance_reason": "Operational capability is present, but the practice is not yet embedded into the operating model."
+        },
+        {
+          "option_id": "B",
+          "text": "Treat the area as part of normal institutional governance and operations, with monitoring, accountability, and continuous improvement.",
+          "maps_to_level_id": "jisc-ai-ethics-mature"
+        },
+        {
+          "option_id": "C",
+          "text": "Expand the number of use cases rapidly and trust local teams to manage risks as they arise.",
+          "maps_to_level_id": "jisc-ai-ethics-emerging",
+          "nuisance": true,
+          "nuisance_reason": "Scale without embedded governance is not mature adoption."
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "FE_college"
+        ],
+        "institution_size": [
+          "large"
+        ],
+        "region": [
+          "North America"
+        ],
+        "respondent_role": [
+          "faculty_lead"
+        ],
+        "digital_transformation_stage": [
+          "advanced"
+        ],
+        "ai_deployment_stage": [
+          "none"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the DM boundary in Ethics & Responsible AI by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    }
+  ]
+}

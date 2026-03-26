@@ -1,0 +1,125 @@
+{
+  "_meta": {
+    "file": "standard-thresholds.json",
+    "framework_id": "iste-students",
+    "framework_name": "ISTE Standards for Students v4.02",
+    "replaces": "level-boundaries.json",
+    "assessment_paradigm": "met/not-met (binary). partially_met is treated as not_met for scoring. Raw partial responses preserved for interpretive reporting.",
+    "licensing_constraint": "ISTE Standards text \u00a9 2024 4.02, ISTE (International Society for Technology in Education), iste.org. All rights reserved. ISTE permits free use for non-commercial educational purposes only. Commercial use requires separate ISTE licensing agreement. See iste.org/permissions-licensing. If ReasonLens operates commercial tiers, ISTE frameworks must be excluded from those tiers unless ISTE licensing is obtained.",
+    "generated_for": "ReasonLens"
+  },
+  "thresholds": [
+    {
+      "standard_id": "iste-s-emp",
+      "standard_name": "Empowered Learner",
+      "standard_number": "1.1",
+      "standard_source_text": "Students leverage technology to take an active role in choosing, achieving and demonstrating competency in their learning goals, informed by the learning sciences.",
+      "indicators": [
+        "iste-s-emp-1a",
+        "iste-s-emp-1b",
+        "iste-s-emp-1c",
+        "iste-s-emp-1d"
+      ],
+      "met_threshold_description": "The student actively connects personal learning strengths, needs, and interests to their goals; uses technology intentionally to pursue and track progress toward those goals; seeks and acts on feedback; builds learning networks; and demonstrates awareness of how technology works\u2014including the ability to evaluate and adopt new tools.",
+      "not_yet_met_description": "The student uses technology reactively or habitually rather than as a deliberate learning tool; does not connect technology use to personal learning goals; engages with feedback passively or not at all; and has limited understanding of how or why different tools serve different learning purposes.",
+      "partial_met_description": "The student uses technology and monitors some outcomes (e.g., tracks grades, uses spell-check) but does not connect these to intentional, self-directed learning goals or demonstrate reflective engagement with feedback.",
+      "scoring_note": "Binary: met or not_met. A partially_met response scores as not_met. Partial achievement is preserved in raw_response for interpretive report use."
+    },
+    {
+      "standard_id": "iste-s-dc",
+      "standard_name": "Digital Citizen",
+      "standard_number": "1.2",
+      "standard_source_text": "Students recognize the responsibilities and opportunities for positively contributing to their digital communities.",
+      "indicators": [
+        "iste-s-dc-1a",
+        "iste-s-dc-1b",
+        "iste-s-dc-1c",
+        "iste-s-dc-1d"
+      ],
+      "met_threshold_description": "The student manages their digital identity with awareness of lasting impact; interacts online with empathy and inclusivity; makes intentional choices about time and activity online; and actively protects their privacy, security, and personal data.",
+      "not_yet_met_description": "The student participates online without meaningful reflection on identity, impact, or privacy; may engage in or ignore non-inclusive interactions; and does not manage personal data or security intentionally.",
+      "partial_met_description": "The student shows surface-level digital safety awareness (e.g., uses a pseudonym, avoids obvious oversharing) but does not demonstrate systematic privacy management, empathetic online practice, or intentional digital identity cultivation.",
+      "scoring_note": "Binary: met or not_met. A partially_met response scores as not_met."
+    },
+    {
+      "standard_id": "iste-s-kc",
+      "standard_name": "Knowledge Constructor",
+      "standard_number": "1.3",
+      "standard_source_text": "Students critically curate a variety of resources using digital tools to construct knowledge, produce creative artifacts and make meaningful learning experiences for themselves and others.",
+      "indicators": [
+        "iste-s-kc-1a",
+        "iste-s-kc-1b",
+        "iste-s-kc-1c",
+        "iste-s-kc-1d"
+      ],
+      "met_threshold_description": "The student uses effective research strategies; critically evaluates sources for accuracy, bias, origin, validity, and relevance; curates information with annotations or connections that demonstrate constructed meaning; and applies learning to authentic real-world problems.",
+      "not_yet_met_description": "The student collects information without critical evaluation; accepts sources at face value; organises resources without demonstrating constructed meaning; and does not situate their learning in real-world contexts.",
+      "partial_met_description": "The student checks basic credibility markers (recency, known domain) and organises sources into labelled categories, but does not evaluate bias, funding, or perspective, and does not demonstrate that curated content has been used to construct new understanding.",
+      "scoring_note": "Binary: met or not_met. A partially_met response scores as not_met."
+    },
+    {
+      "standard_id": "iste-s-id",
+      "standard_name": "Innovative Designer",
+      "standard_number": "1.4",
+      "standard_source_text": "Students use a variety of technologies within a design process to identify and solve problems by creating new, useful or imaginative solutions.",
+      "indicators": [
+        "iste-s-id-1a",
+        "iste-s-id-1b",
+        "iste-s-id-1c",
+        "iste-s-id-1d"
+      ],
+      "met_threshold_description": "The student follows a deliberate, iterative design process; uses digital tools to plan and manage the process including constraints and risks; develops and refines prototypes through testing; and demonstrates tolerance for ambiguity and persistence with open-ended problems.",
+      "not_yet_met_description": "The student generates ideas and produces outputs without a deliberate design process; does not iterate based on testing; selects solutions based on convenience rather than criteria; and struggles with uncertainty or revision.",
+      "partial_met_description": "The student produces a designed solution and uses some planning tools, but does not demonstrate iterative prototyping or engage meaningfully with design constraints, setbacks, or the open-ended nature of the problem.",
+      "scoring_note": "Binary: met or not_met. A partially_met response scores as not_met."
+    },
+    {
+      "standard_id": "iste-s-ct",
+      "standard_name": "Computational Thinker",
+      "standard_number": "1.5",
+      "standard_source_text": "Students develop and employ strategies for understanding and solving problems in ways that leverage the power of technological methods to develop and test solutions.",
+      "indicators": [
+        "iste-s-ct-1a",
+        "iste-s-ct-1b",
+        "iste-s-ct-1c",
+        "iste-s-ct-1d"
+      ],
+      "met_threshold_description": "The student formulates problems suited to computational methods; collects and analyses data using digital tools; decomposes problems and builds abstract models; and develops and understands automated or algorithmic solutions.",
+      "not_yet_met_description": "The student approaches problems intuitively without decomposition or abstraction; uses data tools without analytical intent; and does not apply algorithmic or automated thinking to problem-solving.",
+      "partial_met_description": "The student uses digital tools to organise or visualise data and can break a task into steps, but does not formulate the problem computationally, build an abstract model, or understand the logic underpinning any automated solution used.",
+      "scoring_note": "Binary: met or not_met. A partially_met response scores as not_met."
+    },
+    {
+      "standard_id": "iste-s-cc",
+      "standard_name": "Creative Communicator",
+      "standard_number": "1.6",
+      "standard_source_text": "Students communicate clearly and express themselves creatively for a variety of purposes using the platforms, tools, styles, formats and digital media appropriate to their goals.",
+      "indicators": [
+        "iste-s-cc-1a",
+        "iste-s-cc-1b",
+        "iste-s-cc-1c",
+        "iste-s-cc-1d"
+      ],
+      "met_threshold_description": "The student chooses platforms and tools appropriate to purpose and audience; creates original or responsibly remixed work; uses digital media to communicate complex ideas visually; and customises content, format, and medium for each intended audience.",
+      "not_yet_met_description": "The student uses familiar tools regardless of fitness for purpose; reproduces or lightly modifies others' work without clear transformative intent; and does not tailor communication to different audiences or contexts.",
+      "partial_met_description": "The student adapts content language or tone for one audience but uses the same medium or platform regardless of context, and their creative work relies heavily on existing structures or templates without demonstrating original design intent.",
+      "scoring_note": "Binary: met or not_met. A partially_met response scores as not_met."
+    },
+    {
+      "standard_id": "iste-s-gc",
+      "standard_name": "Global Collaborator",
+      "standard_number": "1.7",
+      "standard_source_text": "Students use digital tools to broaden their perspectives and enrich their learning by collaborating with others and working effectively in teams locally and globally.",
+      "indicators": [
+        "iste-s-gc-1a",
+        "iste-s-gc-1b",
+        "iste-s-gc-1c",
+        "iste-s-gc-1d"
+      ],
+      "met_threshold_description": "The student uses digital tools to connect with diverse peers and experts; examines issues from multiple viewpoints through collaborative technology; contributes constructively across team roles toward shared goals; and explores local and global issues in partnership with others.",
+      "not_yet_met_description": "The student collaborates only within familiar local groups; does not use technology to actively seek diverse perspectives; takes a passive or singular role in team tasks; and does not connect their learning to global contexts.",
+      "partial_met_description": "The student seeks out sources representing different perspectives and contributes a defined task to a team, but does not use collaborative technology to interact with those diverse perspectives or help shape team dynamics and roles for collective effectiveness.",
+      "scoring_note": "Binary: met or not_met. A partially_met response scores as not_met."
+    }
+  ]
+}

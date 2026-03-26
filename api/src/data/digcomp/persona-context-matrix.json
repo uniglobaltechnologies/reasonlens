@@ -1,0 +1,330 @@
+{
+  "framework": "DigComp 3.0",
+  "version": "1.0",
+  "description": "Context dependency matrix mapping persona factors to competency area impacts. Used to calibrate scenario selection and assessment interpretation for different HE roles and contexts.",
+  "factors": [
+    {
+      "factor": "role",
+      "factor_label": "HE Role",
+      "options": [
+        "educator",
+        "student",
+        "professional_services",
+        "researcher"
+      ],
+      "area_impacts": {
+        "area_1": {
+          "area_label": "Information and Data Literacy",
+          "impact_level": "high",
+          "rationale": "Information needs and search contexts differ substantially across roles: educators navigate pedagogical and discipline resources; students are oriented to coursework and assignments; professional services staff engage with policy, administrative, and operational data; researchers require specialist database, preprint, and dataset access.",
+          "differential_notes": {
+            "educator": "Emphasis on evaluating sources for teaching credibility, copyright compliance, and age-appropriateness; familiarity with library systems and OER repositories expected at intermediate and above.",
+            "student": "Scaffolded information literacy development; basic to intermediate levels emphasise guided search and source evaluation; advanced levels involve independent systematic search for dissertations or research projects.",
+            "professional_services": "Information needs are procedural and compliance-oriented; data management competence is foregrounded in contexts such as HR, finance, and student records.",
+            "researcher": "Highest information literacy expectations; systematic review protocols, data citation, preprint navigation, and FAIR data principles are advanced to highly advanced markers."
+          }
+        },
+        "area_2": {
+          "area_label": "Communication and Collaboration",
+          "impact_level": "high",
+          "rationale": "Communication contexts, audiences, and norms vary fundamentally by role. Educators engage students, peers, and institutions; students engage peers and tutors; professional services staff manage institutional and external stakeholder communications; researchers engage disciplinary communities and public audiences.",
+          "differential_notes": {
+            "educator": "Netiquette in learning environments, accessible communication design, and VLE community moderation are role-specific intermediate and advanced markers.",
+            "student": "Peer collaboration in group projects and academic integrity in digital communication are primary development areas at basic to intermediate levels.",
+            "professional_services": "Formal institutional communications, records management, and cross-team digital collaboration tools are foregrounded.",
+            "researcher": "Open science communication, preprint sharing, data citation norms, and public engagement via digital channels are advanced to highly advanced research-specific competences."
+          }
+        },
+        "area_3": {
+          "area_label": "Digital Content Creation",
+          "impact_level": "moderate",
+          "rationale": "Content creation demands vary by role but the core competences apply across contexts. The type of content and purpose differ: educators create learning materials; students produce assessed work; professional services staff create administrative and communications content; researchers produce data visualisations, publications, and datasets.",
+          "differential_notes": {
+            "educator": "Accessibility-compliant learning material design and OER licensing are role-specific markers at intermediate and above.",
+            "student": "Academic integrity in content creation, including AI-assisted writing and proper attribution, is a primary development area.",
+            "professional_services": "Template adherence, brand compliance, and accessible document production are foregrounded.",
+            "researcher": "Data visualisation, reproducible code, and open licensing of research outputs are research-specific advanced markers."
+          }
+        },
+        "area_4": {
+          "area_label": "Safety",
+          "impact_level": "moderate",
+          "rationale": "Safety risk profiles differ by role. Researchers handle sensitive research data; professional services staff manage personal data subject to GDPR; educators hold responsibilities for student wellbeing in digital spaces; students face risks around personal data, online harassment, and academic integrity.",
+          "differential_notes": {
+            "educator": "Safeguarding responsibilities in online environments and appropriate use of student data in digital tools are role-specific safety markers.",
+            "student": "Personal data management, recognising phishing and misinformation, and managing digital identity are foregrounded.",
+            "professional_services": "GDPR compliance, records management security, and institutional data classification are primary safety competences.",
+            "researcher": "Research data protection, ethics in data collection, and secure sharing with collaborators are research-specific safety markers at advanced levels."
+          }
+        },
+        "area_5": {
+          "area_label": "Problem Solving",
+          "impact_level": "moderate",
+          "rationale": "Problem-solving contexts differ by complexity and scope. Researchers and professional services at senior levels are most likely to encounter the advanced and highly advanced markers of system-level diagnosis and methodology creation.",
+          "differential_notes": {
+            "educator": "Pedagogical innovation with digital tools and adapting to new institutional systems are primary problem-solving contexts.",
+            "student": "Technical troubleshooting for study tools and identifying digital skill gaps for academic progress are primary contexts.",
+            "professional_services": "Process automation, systems integration, and workflow optimisation are professional services problem-solving contexts.",
+            "researcher": "Pipeline debugging, tool selection for novel analyses, and identifying competence gaps for research upskilling are research-specific problem-solving markers."
+          }
+        }
+      }
+    },
+    {
+      "factor": "subject_area",
+      "factor_label": "Discipline or Functional Area",
+      "options": [
+        "stem",
+        "arts_humanities",
+        "social_sciences",
+        "professional_programmes",
+        "digital_learning",
+        "research_support",
+        "administrative"
+      ],
+      "area_impacts": {
+        "area_1": {
+          "area_label": "Information and Data Literacy",
+          "impact_level": "high",
+          "rationale": "Disciplinary information ecosystems differ significantly. STEM fields privilege datasets, preprints, and code repositories; arts and humanities involve digital archives and primary source navigation; social sciences blend quantitative datasets and policy sources; professional programmes involve practitioner databases and grey literature.",
+          "differential_notes": {
+            "stem": "Dataset provenance, reproducibility, and preprint platform literacy are foregrounded at advanced levels.",
+            "arts_humanities": "Digital archive navigation, metadata standards for cultural objects, and evaluating digitisation quality are discipline-specific markers.",
+            "social_sciences": "Mixed-methods data management, secondary data reuse, and policy document evaluation are characteristic.",
+            "professional_programmes": "Grey literature, accreditation standards documentation, and clinical or legal database use are primary contexts.",
+            "digital_learning": "Learning analytics interpretation and VLE data management are domain-specific.",
+            "research_support": "Research information management systems (CRIS), open access repositories, and funder data requirements are central.",
+            "administrative": "Institutional data systems, records management standards, and reporting data quality are primary."
+          }
+        },
+        "area_2": {
+          "area_label": "Communication and Collaboration",
+          "impact_level": "moderate",
+          "rationale": "Collaboration tool preferences and communication norms are discipline-shaped. STEM fields use code-sharing and lab management platforms; arts programmes involve portfolio and critique platforms; professional programmes have field-specific communication tools.",
+          "differential_notes": {
+            "stem": "Code review platforms, shared computing environments, and reproducible research communication are domain-specific markers.",
+            "arts_humanities": "Portfolio platforms, digital exhibition tools, and public digital humanities communication are characteristic.",
+            "professional_programmes": "Secure clinical or legal communication tools and professional social media are foregrounded.",
+            "administrative": "Institutional communication systems and committee documentation tools are primary."
+          }
+        },
+        "area_3": {
+          "area_label": "Digital Content Creation",
+          "impact_level": "high",
+          "rationale": "Content type and creation norms are strongly discipline-shaped. STEM fields produce code, data visualisations, and technical documents; arts produce multimodal creative works; social sciences produce reports and data narratives; professional programmes produce field-specific artefacts.",
+          "differential_notes": {
+            "stem": "Code documentation, reproducible notebooks, and technical report standards are characteristic.",
+            "arts_humanities": "Multimodal creative production, digital storytelling, and accessible exhibition design are primary.",
+            "social_sciences": "Accessible data visualisation and policy-facing infographic production are characteristic.",
+            "digital_learning": "Accessible learning material design and interactive content development are primary."
+          }
+        },
+        "area_4": {
+          "area_label": "Safety",
+          "impact_level": "moderate",
+          "rationale": "Data sensitivity and risk profiles are discipline-contingent. Clinical data in health programmes, personal testimonies in social science research, and commercial IP in STEM applied research all carry distinct safety and ethics requirements.",
+          "differential_notes": {
+            "professional_programmes": "Clinical or legal data confidentiality and professional body digital conduct standards are primary.",
+            "stem": "Intellectual property protection and research data security are characteristic.",
+            "social_sciences": "Anonymisation of human participant data and ethics board compliance are foregrounded."
+          }
+        },
+        "area_5": {
+          "area_label": "Problem Solving",
+          "impact_level": "low",
+          "rationale": "Core problem-solving competences are broadly applicable across disciplines; the tool context varies but the capability structure is consistent.",
+          "differential_notes": {
+            "stem": "Computational problem-solving and pipeline debugging are characteristic contexts.",
+            "arts_humanities": "Tool selection for digital creative production and troubleshooting collaborative platforms are characteristic.",
+            "administrative": "Systems access, workflow automation, and process tool troubleshooting are primary."
+          }
+        }
+      },
+      "scenario_selection_guidance": "Where subject area is known, prefer scenarios whose stem includes a discipline-congruent context (e.g. dataset work for STEM, archive access for arts/humanities). Do not exclude cross-disciplinary scenarios; use subject area to weight relative salience."
+    },
+    {
+      "factor": "institution_level",
+      "factor_label": "Type of HE Institution",
+      "options": [
+        "research_intensive",
+        "teaching_focused",
+        "further_education",
+        "specialist_institution",
+        "transnational_partner"
+      ],
+      "area_impacts": {
+        "area_1": {
+          "area_label": "Information and Data Literacy",
+          "impact_level": "moderate",
+          "rationale": "Research-intensive institutions have higher expectations for advanced information and data literacy, particularly around research databases, data management plans, and open research. Teaching-focused institutions emphasise pedagogically-relevant information literacy for learning design.",
+          "differential_notes": {
+            "research_intensive": "FAIR data principles, systematic review protocols, and research information systems competence are expected at advanced levels for academic staff.",
+            "teaching_focused": "OER curation, accessible learning resource discovery, and learning analytics literacy are foregrounded.",
+            "further_education": "Alignment to vocational resource databases and industry-sector information sources is characteristic.",
+            "specialist_institution": "Domain-specific information ecosystems (e.g. conservatoire archives, law databases) are primary.",
+            "transnational_partner": "Multi-jurisdiction information access, translation tools, and cross-cultural source evaluation are characteristic."
+          }
+        },
+        "area_2": {
+          "area_label": "Communication and Collaboration",
+          "impact_level": "low",
+          "rationale": "Institution type has limited direct impact on core communication competences; tool availability may vary but the capability structure is consistent.",
+          "differential_notes": {
+            "transnational_partner": "Cross-cultural digital communication and multi-language platform use are characteristic.",
+            "research_intensive": "Open science communication and international research collaboration tools are foregrounded at advanced levels."
+          }
+        },
+        "area_3": {
+          "area_label": "Digital Content Creation",
+          "impact_level": "low",
+          "rationale": "Core content creation competences apply across institution types; specialist institutions may have domain-specific tool expectations.",
+          "differential_notes": {
+            "specialist_institution": "Domain-specific creation tools (e.g. music notation software, architectural modelling) are characteristic.",
+            "further_education": "Industry-standard vocational tools are foregrounded."
+          }
+        },
+        "area_4": {
+          "area_label": "Safety",
+          "impact_level": "moderate",
+          "rationale": "Institutional data protection regimes, information security standards, and safeguarding responsibilities vary by institution type and jurisdiction.",
+          "differential_notes": {
+            "research_intensive": "Research ethics, data sharing agreements, and funder data security requirements are primary.",
+            "transnational_partner": "Multi-jurisdiction data protection (e.g. GDPR plus local law) and cross-border data transfer restrictions are characteristic.",
+            "further_education": "Younger learner safeguarding responsibilities in digital spaces are foregrounded."
+          }
+        },
+        "area_5": {
+          "area_label": "Problem Solving",
+          "impact_level": "low",
+          "rationale": "Problem-solving competences are broadly consistent across institution types; resource availability for advanced tool experimentation may differ.",
+          "differential_notes": {
+            "research_intensive": "Advanced computational and research infrastructure problem-solving is characteristic.",
+            "further_education": "Industry tool troubleshooting and workplace-relevant digital problem-solving are foregrounded."
+          }
+        }
+      },
+      "scenario_selection_guidance": "Institution type is a secondary contextual filter. Use it to refine scenario selection where stems reference institution-specific contexts (e.g. CRIS systems for research-intensive, VLE-centric scenarios for teaching-focused). Default to institution-neutral scenarios where no filter is specified."
+    },
+    {
+      "factor": "region",
+      "factor_label": "Geographic and Regulatory Context",
+      "options": [
+        "uk",
+        "eu",
+        "north_america",
+        "asia_pacific",
+        "global_south",
+        "middle_east"
+      ],
+      "area_impacts": {
+        "area_1": {
+          "area_label": "Information and Data Literacy",
+          "impact_level": "low",
+          "rationale": "Core information literacy competences are broadly transferable; access to specific databases and open access regimes varies by region and institutional subscription.",
+          "differential_notes": {
+            "global_south": "Access constraints, open access importance, and alternative scholarly communication channels (e.g. SciHub awareness, ResearchGate) are characteristic.",
+            "uk": "UKRI open access mandates and UK Data Archive familiarity are characteristic advanced markers for researchers."
+          }
+        },
+        "area_2": {
+          "area_label": "Communication and Collaboration",
+          "impact_level": "low",
+          "rationale": "Platform availability varies by region (e.g. restricted platforms in some jurisdictions); core competences are consistent.",
+          "differential_notes": {
+            "asia_pacific": "Platform restrictions and alternative tool familiarity (e.g. WeChat for academic collaboration) are characteristic.",
+            "middle_east": "Platform access variability and cultural communication norms in digital spaces are relevant."
+          }
+        },
+        "area_3": {
+          "area_label": "Digital Content Creation",
+          "impact_level": "low",
+          "rationale": "Content creation competences are largely jurisdiction-neutral; copyright and licensing regimes vary.",
+          "differential_notes": {
+            "eu": "GDPR-compliant content practices and the Copyright in the Digital Single Market Directive implications for AI-generated content are characteristic.",
+            "uk": "Post-Brexit UK copyright exceptions and AI training data provisions are relevant for advanced content creation."
+          }
+        },
+        "area_4": {
+          "area_label": "Safety",
+          "impact_level": "high",
+          "rationale": "Data protection law, privacy rights, and cybersecurity standards are jurisdiction-specific. GDPR governs UK/EU contexts; other regions have distinct regulatory regimes.",
+          "differential_notes": {
+            "uk": "UK GDPR, the Data Protection Act 2018, and ICO guidance are primary regulatory frameworks.",
+            "eu": "EU GDPR and the AI Act (from 2025 onwards) are primary frameworks; the AI Act introduces specific obligations for high-risk AI use in education.",
+            "north_america": "FERPA (US), PIPEDA (Canada), and state-level privacy laws (e.g. CCPA) are characteristic.",
+            "asia_pacific": "PDPA frameworks (Thailand, Singapore, etc.) and Australia's Privacy Act amendments are characteristic.",
+            "global_south": "Emerging data protection frameworks and variable enforcement are characteristic; GDPR-alignment increasingly expected for international research partnerships."
+          }
+        },
+        "area_5": {
+          "area_label": "Problem Solving",
+          "impact_level": "low",
+          "rationale": "Problem-solving competences are broadly jurisdiction-neutral.",
+          "differential_notes": {
+            "eu": "AI Act compliance problem-solving (e.g. identifying prohibited or high-risk AI use cases) may be a characteristic advanced context from 2025."
+          }
+        }
+      },
+      "scenario_selection_guidance": "Region is most relevant for Safety (Area 4) scenarios involving data protection and for Content Creation (Area 3) scenarios involving copyright. Scenario stems referencing specific legal frameworks (GDPR, FERPA) should be filtered by region. For jurisdiction-neutral assessment, prefer scenarios without explicit legal references."
+    },
+    {
+      "factor": "digital_confidence",
+      "factor_label": "Self-Reported Digital Confidence",
+      "options": [
+        "low",
+        "moderate",
+        "high"
+      ],
+      "area_impacts": {
+        "area_1": {
+          "area_label": "Information and Data Literacy",
+          "impact_level": "moderate",
+          "rationale": "Digital confidence correlates with willingness to attempt advanced search strategies and engage with unfamiliar databases. Low-confidence individuals may underestimate their actual competence level when self-assessing.",
+          "differential_notes": {
+            "low": "Tendency to underreport competence; scenario design should use concrete behavioural stems rather than abstract capability descriptions to elicit accurate self-assessment.",
+            "moderate": "Generally reliable self-assessment anchor; use as baseline for competence inference.",
+            "high": "Risk of overconfidence, particularly in evaluating AI-generated information. High confidence may mask gaps in critical evaluation."
+          }
+        },
+        "area_2": {
+          "area_label": "Communication and Collaboration",
+          "impact_level": "low",
+          "rationale": "Communication tool familiarity varies but digital confidence has limited systematic impact on communication competence assessment.",
+          "differential_notes": {
+            "low": "May avoid proactive digital communication, leading to underperformance on collaboration indicators rather than lack of underlying competence.",
+            "high": "May over-rely on digital communication channels, with potential gaps in netiquette and audience-appropriate register selection."
+          }
+        },
+        "area_3": {
+          "area_label": "Digital Content Creation",
+          "impact_level": "moderate",
+          "rationale": "High digital confidence correlates with willingness to experiment with new creation tools; low confidence may suppress creative digital risk-taking in assessment scenarios.",
+          "differential_notes": {
+            "low": "Behavioural stems should specify available tools to reduce confidence-related interpretation variance.",
+            "high": "May attempt advanced techniques without attention to accessibility or licensing compliance, creating safety and IP gaps despite high technical confidence."
+          }
+        },
+        "area_4": {
+          "area_label": "Safety",
+          "impact_level": "high",
+          "rationale": "Digital confidence is inversely correlated with some safety risks. Highly confident users are more likely to adopt new tools without evaluating privacy implications or to dismiss security warnings. Low-confidence users may avoid beneficial tools but are less likely to engage in risky behaviours.",
+          "differential_notes": {
+            "low": "Primary risk is avoidance: failing to adopt secure tools due to anxiety rather than making actively unsafe choices.",
+            "moderate": "Generally reliable safety risk profile; use as baseline.",
+            "high": "Risk of 'confidence gap': adopting AI tools rapidly without evaluating data processing terms or assuming institutional approval of personal tool choices."
+          }
+        },
+        "area_5": {
+          "area_label": "Problem Solving",
+          "impact_level": "moderate",
+          "rationale": "High digital confidence correlates with willingness to attempt self-directed problem-solving. Low confidence may lead to immediate help-seeking without attempting diagnosis, which can suppress performance on intermediate and above indicators.",
+          "differential_notes": {
+            "low": "Scenario stems should specify that help resources are available to avoid conflating low confidence with low competence.",
+            "high": "Risk of bypassing structured diagnosis in favour of trial-and-error, which can mask systematic problem-solving capability gaps at advanced levels."
+          }
+        }
+      },
+      "scenario_selection_guidance": "Digital confidence is most relevant as a calibration flag rather than a filtering criterion. For low-confidence respondents, prefer concrete behavioural scenario stems over abstract competence descriptions. For high-confidence respondents, include at least one scenario per area that specifically tests critical evaluation or safety awareness, where overconfidence is a known risk. Do not use digital confidence to pre-sort respondents into capability tiers before assessment."
+    }
+  ]
+}

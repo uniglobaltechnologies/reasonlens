@@ -1,0 +1,201 @@
+{
+  "framework_id": "iste-educators",
+  "framework_name": "ISTE Standards for Educators",
+  "license_note": "ISTE Standards \u00a9 2024 4.02, ISTE (International Society for Technology in Education), iste.org. All rights reserved. Educational use only. Commercial use requires separate ISTE licensing agreement.",
+  "assessment_paradigm": "met_not_met",
+  "cross_framework_pairs": [
+    {
+      "target_framework_id": "teacher-competency",
+      "target_framework_name": "UNESCO ICT Competency Framework for Teachers (CFT)",
+      "alignment_type": "complementary",
+      "alignment_rationale": "ISTE Standards for Educators and UNESCO CFT are the two most widely adopted frameworks for educator technology competency. They share substantial conceptual territory but differ structurally: UNESCO CFT uses a progression model (Acquire, Deepen, Create) while ISTE uses met/not-met standards. They are best read as mutually reinforcing -- UNESCO CFT describes how competency develops; ISTE describes what proficient practice looks like.",
+      "standard_mappings": [
+        {
+          "source_standard_id": "iste-e-learner",
+          "source_standard_name": "Learner",
+          "target_dimension_id": "cft-professional-development",
+          "target_dimension_name": "Professional Development",
+          "alignment_strength": "strong",
+          "alignment_note": "ISTE Learner (educators pursuing ongoing growth and lifelong learning) maps directly to UNESCO CFT Professional Development across all three levels. An educator meeting the ISTE Learner standard is typically operating at UNESCO CFT Deepen or Create level in professional development practices."
+        },
+        {
+          "source_standard_id": "iste-e-leader",
+          "source_standard_name": "Leader",
+          "target_dimension_id": "cft-school-organisation",
+          "target_dimension_name": "School Organisation and Administration",
+          "alignment_strength": "moderate",
+          "alignment_note": "ISTE Leader focuses on educators advocating and modelling technology use. UNESCO CFT School Organisation is more administrative/institutional. The overlap is in advocacy and vision-setting. Educators who meet the ISTE Leader standard often reflect UNESCO CFT Create level on school organisation, as that level emphasises transforming institutional practices."
+        },
+        {
+          "source_standard_id": "iste-e-citizen",
+          "source_standard_name": "Citizen",
+          "target_dimension_id": "cft-policy",
+          "target_dimension_name": "Policy",
+          "alignment_strength": "moderate",
+          "alignment_note": "ISTE Citizen (inspiring students to contribute positively to digital society) has partial alignment to UNESCO CFT Policy at the Create level, where educators themselves create or advocate for ICT policies. More direct alignment at the classroom level is with UNESCO CFT Pedagogy (applying digital citizenship in learning design)."
+        },
+        {
+          "source_standard_id": "iste-e-collaborator",
+          "source_standard_name": "Collaborator",
+          "target_dimension_id": "cft-professional-development",
+          "target_dimension_name": "Professional Development",
+          "alignment_strength": "moderate",
+          "alignment_note": "ISTE Collaborator (co-learning with students and colleagues) has secondary alignment to UNESCO CFT Professional Development at the Deepen/Create levels. The collaborative learning orientation in ISTE reflects UNESCO CFT's model of educators as networked professionals."
+        },
+        {
+          "source_standard_id": "iste-e-designer",
+          "source_standard_name": "Designer",
+          "target_dimension_id": "cft-pedagogy",
+          "target_dimension_name": "Pedagogy",
+          "alignment_strength": "strong",
+          "alignment_note": "ISTE Designer is the strongest single-standard predictor of UNESCO CFT Pedagogy level. Both address intentional, learner-centred design of technology-integrated learning experiences. An educator meeting ISTE Designer typically reflects UNESCO CFT Pedagogy at the Deepen level at minimum."
+        },
+        {
+          "source_standard_id": "iste-e-facilitator",
+          "source_standard_name": "Facilitator",
+          "target_dimension_id": "cft-pedagogy",
+          "target_dimension_name": "Pedagogy",
+          "alignment_strength": "strong",
+          "alignment_note": "ISTE Facilitator (fostering student agency and supporting learning) aligns to UNESCO CFT Pedagogy at the Deepen and Create levels. Both emphasise moving beyond teacher-directed instruction toward student-led inquiry with technology."
+        },
+        {
+          "source_standard_id": "iste-e-analyst",
+          "source_standard_name": "Analyst",
+          "target_dimension_id": "cft-assessment",
+          "target_dimension_name": "Assessment and Evaluation",
+          "alignment_strength": "strong",
+          "alignment_note": "ISTE Analyst (using data to inform practice) maps directly to UNESCO CFT Assessment and Evaluation. Both address evidence-based teaching practice. ISTE frames this as ongoing analysis; UNESCO CFT operationalises it across three competency levels."
+        }
+      ],
+      "interpretive_template": "You have met {iste_met_count} of 7 ISTE Educator Standards. Your UNESCO CFT result is {cft_level}. {gap_note} Educators who meet ISTE Designer and Facilitator but show gaps in UNESCO CFT Pedagogy typically have the practical skills in place but benefit from structured reflection on the theoretical underpinnings of their practice.",
+      "gap_patterns": [
+        {
+          "pattern_id": "iste-met-cft-acquire",
+          "label": "Standards-Compliant, Developing Depth",
+          "condition": "iste_met_count >= 5 AND cft_level == 'Acquire'",
+          "interpretation": "Meeting most ISTE Educator standards while at UNESCO CFT Acquire level suggests the educator is demonstrating the required practices but may not yet have deep conceptual grounding. This is common for early-career educators who have received good initial training. Moving from Acquire to Deepen typically requires structured professional enquiry and coaching."
+        },
+        {
+          "pattern_id": "designer-facilitator-gap",
+          "label": "Collaborative Without Design",
+          "condition": "iste_e_designer_met == false AND iste_e_facilitator_met == false",
+          "interpretation": "Unmet Designer and Facilitator standards together are the strongest predictor of low-impact technology integration. If these two standards are not yet met, addressing them should take priority over other professional development."
+        }
+      ]
+    },
+    {
+      "target_framework_id": "digcomp",
+      "target_framework_name": "DigComp 3.0",
+      "alignment_type": "complementary",
+      "alignment_rationale": "DigComp 3.0 measures the educator's own digital competency; ISTE Educator Standards measure their professional practice with technology. An educator can have high DigComp (personal competency) but not yet meet ISTE standards (applying that competency in teaching), or vice versa. The cross-framework view surfaces this distinction.",
+      "standard_mappings": [
+        {
+          "source_standard_id": "iste-e-learner",
+          "source_standard_name": "Learner",
+          "target_dimension_id": "dc-5",
+          "target_dimension_name": "Problem-Solving",
+          "alignment_strength": "moderate",
+          "alignment_note": "ISTE Learner maps to DigComp 5.4 (Identifying digital competence gaps) -- the capacity to self-assess and seek development. Secondary alignment to DigComp 5.3 (Creatively using digital technologies for problem-solving)."
+        },
+        {
+          "source_standard_id": "iste-e-citizen",
+          "source_standard_name": "Citizen",
+          "target_dimension_id": "dc-4",
+          "target_dimension_name": "Safety",
+          "alignment_strength": "strong",
+          "alignment_note": "ISTE Citizen maps to DigComp Area 4 (Safety) and Area 2.6 (Managing digital identity/netiquette). Educators who model and teach digital citizenship are expected to demonstrate DigComp Safety competencies at Intermediate level or above."
+        },
+        {
+          "source_standard_id": "iste-e-designer",
+          "source_standard_name": "Designer",
+          "target_dimension_id": "dc-3",
+          "target_dimension_name": "Digital Content Creation",
+          "alignment_strength": "strong",
+          "alignment_note": "ISTE Designer requires educators to design authentic learning experiences using digital tools. DigComp Area 3 (Digital Content Creation) is a prerequisite competency: educators cannot credibly design technology-integrated learning without the underlying content creation skills."
+        },
+        {
+          "source_standard_id": "iste-e-analyst",
+          "source_standard_name": "Analyst",
+          "target_dimension_id": "dc-1",
+          "target_dimension_name": "Information and Data Literacy",
+          "alignment_strength": "strong",
+          "alignment_note": "ISTE Analyst requires educators to interpret and use data to inform practice. DigComp Area 1 (Information and Data Literacy) is the underlying competency -- specifically 1.3 (Managing data, information and digital content). High DigComp Area 1 performance is expected in educators who meet the ISTE Analyst standard."
+        },
+        {
+          "source_standard_id": "iste-e-collaborator",
+          "source_standard_name": "Collaborator",
+          "target_dimension_id": "dc-2",
+          "target_dimension_name": "Communication and Collaboration",
+          "alignment_strength": "strong",
+          "alignment_note": "Direct alignment. ISTE Collaborator maps to DigComp Area 2 (Communication and Collaboration), particularly 2.4 (Collaborating through digital technologies) and 2.5 (Netiquette)."
+        }
+      ],
+      "interpretive_template": "Your ISTE Educators result ({iste_met_count}/7 met) and DigComp 3.0 result ({digcomp_level}) together indicate {profile_description}. High DigComp with unmet ISTE standards suggests strong personal digital competency that has not yet been translated into teaching practice. Unmet ISTE standards with lower DigComp suggest developing the underlying competency should precede expecting changes in practice.",
+      "gap_patterns": [
+        {
+          "pattern_id": "competent-not-translating",
+          "label": "Competent but Not Translating",
+          "condition": "digcomp_level IN ('Advanced', 'Highly Advanced') AND iste_met_count <= 4",
+          "interpretation": "High personal digital competency alongside unmet ISTE standards is a coaching opportunity, not a training need. This educator has the skills; they need support translating them into intentional pedagogical practice. Peer observation, reflective practice, and mentoring are more effective interventions than further skills training."
+        }
+      ]
+    },
+    {
+      "target_framework_id": "bdc-teacher-he",
+      "target_framework_name": "Jisc Building Digital Capability: Teacher/Trainer in HE/FE",
+      "alignment_type": "overlapping",
+      "alignment_rationale": "Jisc BDC Teacher HE and ISTE Educator Standards both describe educator digital capability for teaching, but differ in scope and level. BDC Teacher HE is specific to the UK HE/FE context and uses a three-level progression (Developing, Capable, Proficient). ISTE is internationally applicable and uses met/not-met. Together they give a UK-contextualised and globally-benchmarked view of educator readiness.",
+      "standard_mappings": [
+        {
+          "source_standard_id": "iste-e-designer",
+          "source_standard_name": "Designer",
+          "target_dimension_id": "bdc-th-learning-design",
+          "target_dimension_name": "Learning Design",
+          "alignment_strength": "strong",
+          "alignment_note": "ISTE Designer and BDC Learning Design are near-equivalent. Both require educators to design purposeful, technology-enhanced learning experiences. An educator meeting the ISTE Designer standard typically reflects BDC Learning Design at Capable level."
+        },
+        {
+          "source_standard_id": "iste-e-analyst",
+          "source_standard_name": "Analyst",
+          "target_dimension_id": "bdc-th-data-literacy",
+          "target_dimension_name": "Data and Analytics Literacy",
+          "alignment_strength": "strong",
+          "alignment_note": "ISTE Analyst and BDC Data and Analytics Literacy address the same core capability: using learning data to understand and improve practice. The ISTE standard is met/not-met; BDC describes the developmental pathway to proficiency."
+        },
+        {
+          "source_standard_id": "iste-e-facilitator",
+          "source_standard_name": "Facilitator",
+          "target_dimension_id": "bdc-th-teaching-practice",
+          "target_dimension_name": "Teaching Practice",
+          "alignment_strength": "strong",
+          "alignment_note": "ISTE Facilitator maps directly to BDC Teaching Practice. Both address how educators create conditions for active learning and student agency in technology-rich environments."
+        },
+        {
+          "source_standard_id": "iste-e-learner",
+          "source_standard_name": "Learner",
+          "target_dimension_id": "bdc-th-professional-engagement",
+          "target_dimension_name": "Professional Engagement",
+          "alignment_strength": "moderate",
+          "alignment_note": "ISTE Learner maps to BDC Professional Engagement at the Proficient level -- where educators actively contribute to and shape professional community practice, not just participate in it."
+        },
+        {
+          "source_standard_id": "iste-e-citizen",
+          "source_standard_name": "Citizen",
+          "target_dimension_id": "bdc-th-digital-identity",
+          "target_dimension_name": "Digital Identity and Wellbeing",
+          "alignment_strength": "moderate",
+          "alignment_note": "Partial alignment. ISTE Citizen covers digital citizenship advocacy in teaching; BDC Digital Identity and Wellbeing covers the educator's own digital presence and professional identity. The citizenship modelling aspect of ISTE aligns to the wellbeing advocacy aspect of BDC."
+        }
+      ],
+      "interpretive_template": "Your ISTE Educators result ({iste_met_count}/7 met) and your Jisc BDC Teacher HE result ({bdc_level}) together suggest {profile_description}. In the UK HE context, educators meeting ISTE Designer and Facilitator standards who have not yet reached BDC Proficient typically benefit from institution-specific support around data use and professional learning communities.",
+      "gap_patterns": [
+        {
+          "pattern_id": "iste-met-bdc-developing",
+          "label": "Meeting International Standard, Developing UK Context",
+          "condition": "iste_met_count >= 5 AND bdc_level == 'Developing'",
+          "interpretation": "Meeting ISTE standards while at BDC Developing level may reflect a teaching practitioner who is strong in classroom practice but less embedded in the UK HE professional development ecosystem (CPD, TEL communities, institutional data systems). UK-contextualised professional development is the priority."
+        }
+      ]
+    }
+  ]
+}

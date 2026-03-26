@@ -1,0 +1,160 @@
+{
+  "framework_id": "iste-students",
+  "framework_name": "ISTE Standards for Students",
+  "license_note": "ISTE Standards \u00a9 2024 4.02, ISTE (International Society for Technology in Education), iste.org. All rights reserved. Educational use only. Commercial use requires separate ISTE licensing agreement.",
+  "assessment_paradigm": "met_not_met",
+  "cross_framework_pairs": [
+    {
+      "target_framework_id": "student-competency",
+      "target_framework_name": "UNESCO Student AI Competency",
+      "alignment_type": "complementary",
+      "alignment_rationale": "ISTE Standards for Students defines technology empowerment and digital citizenship at a broad level; UNESCO Student AI Competency focuses specifically on AI literacy and use. Together they give a full picture of digital-AI readiness: ISTE covers the foundational orientations and behaviours; UNESCO covers AI-specific understanding and application.",
+      "standard_mappings": [
+        {
+          "source_standard_id": "iste-s-emp",
+          "source_standard_name": "Empowered Learner",
+          "target_dimension_id": "sac-metacognition",
+          "target_dimension_name": "Metacognition and Self-Regulated Learning",
+          "alignment_strength": "strong",
+          "alignment_note": "Both standards address learner agency, self-direction, and the ability to set and monitor personal learning goals. ISTE Empowered Learner maps directly to UNESCO metacognitive AI use: a student who demonstrates the ISTE standard is positioned to engage with AI tools as self-regulated learners rather than passive users."
+        },
+        {
+          "source_standard_id": "iste-s-dc",
+          "source_standard_name": "Digital Citizen",
+          "target_dimension_id": "sac-ethics",
+          "target_dimension_name": "Ethics and Responsible Use",
+          "alignment_strength": "strong",
+          "alignment_note": "ISTE Digital Citizen and UNESCO Ethics and Responsible Use are near-equivalent in scope. Both address safe, ethical, and legal use of technology and data. Where they differ: ISTE focuses on broader digital citizenship behaviours; UNESCO focuses specifically on AI-generated content, bias recognition, and algorithmic accountability."
+        },
+        {
+          "source_standard_id": "iste-s-kc",
+          "source_standard_name": "Knowledge Constructor",
+          "target_dimension_id": "sac-critical-evaluation",
+          "target_dimension_name": "Critical Evaluation of AI Outputs",
+          "alignment_strength": "moderate",
+          "alignment_note": "ISTE Knowledge Constructor requires students to critically evaluate information from multiple sources; UNESCO Critical Evaluation focuses specifically on evaluating AI-generated content for accuracy, bias, and limitations. Meeting the ISTE standard is a necessary but not sufficient condition for meeting the UNESCO dimension -- AI-specific critical literacy requires additional scaffolding."
+        },
+        {
+          "source_standard_id": "iste-s-id",
+          "source_standard_name": "Innovative Designer",
+          "target_dimension_id": "sac-creation",
+          "target_dimension_name": "AI-Assisted Creation and Problem-Solving",
+          "alignment_strength": "moderate",
+          "alignment_note": "ISTE Innovative Designer emphasises design thinking and iterative problem-solving; UNESCO AI-Assisted Creation focuses on using AI tools as creative partners. The overlap is substantial at the process level (iterative, experimental) but ISTE is tool-agnostic while UNESCO is AI-specific."
+        },
+        {
+          "source_standard_id": "iste-s-ct",
+          "source_standard_name": "Computational Thinker",
+          "target_dimension_id": "sac-understanding",
+          "target_dimension_name": "Understanding AI Systems",
+          "alignment_strength": "strong",
+          "alignment_note": "ISTE Computational Thinker is the strongest predictor of UNESCO AI system understanding. Students who demonstrate algorithmic thinking, data analysis, and automation understanding at the ISTE level are typically well-positioned to develop conceptual models of how AI systems work."
+        },
+        {
+          "source_standard_id": "iste-s-cc",
+          "source_standard_name": "Creative Communicator",
+          "target_dimension_id": "sac-creation",
+          "target_dimension_name": "AI-Assisted Creation and Problem-Solving",
+          "alignment_strength": "moderate",
+          "alignment_note": "Both address creation and communication, but ISTE Creative Communicator is broader (any digital tool) while UNESCO AI-Assisted Creation is specific to generative AI. Students meeting the ISTE standard often have the creative orientation needed for UNESCO, but require explicit AI-tool exposure."
+        },
+        {
+          "source_standard_id": "iste-s-gc",
+          "source_standard_name": "Global Collaborator",
+          "target_dimension_id": "sac-collaboration",
+          "target_dimension_name": "Collaborative and Social AI Use",
+          "alignment_strength": "weak",
+          "alignment_note": "Limited direct overlap. ISTE Global Collaborator focuses on cross-cultural digital collaboration; UNESCO Collaborative AI Use focuses on working with AI systems in shared contexts. The interpersonal collaboration skills transfer, but the AI-specific dimension is distinct."
+        }
+      ],
+      "interpretive_template": "You have met {iste_met_count} of 7 ISTE Standards for Students. Your UNESCO Student AI Competency result is {sac_level}. {gap_note} Students who meet the ISTE Empowered Learner and Computational Thinker standards but show gaps at UNESCO level typically need structured AI-specific exposure rather than general digital skills development.",
+      "gap_patterns": [
+        {
+          "pattern_id": "digital-not-ai",
+          "label": "Digitally Capable, AI Novice",
+          "condition": "iste_met_count >= 5 AND sac_level == 'Foundational'",
+          "interpretation": "Strong ISTE performance alongside low UNESCO AI Competency suggests general digital skills are in place but AI-specific literacy is underdeveloped. This is common in students who use technology confidently but have had limited structured AI education."
+        },
+        {
+          "pattern_id": "ai-without-citizenship",
+          "label": "AI Literate, Citizenship Gaps",
+          "condition": "iste_dc_met == false AND sac_level IN ('Intermediate', 'Advanced')",
+          "interpretation": "High UNESCO AI Competency alongside unmet ISTE Digital Citizen standard may indicate a student who has developed AI technical literacy informally but without attention to ethics, safety, and responsible use. Targeted digital citizenship development is recommended."
+        }
+      ]
+    },
+    {
+      "target_framework_id": "digcomp",
+      "target_framework_name": "DigComp 3.0",
+      "alignment_type": "overlapping",
+      "alignment_rationale": "DigComp 3.0 and ISTE Standards for Students address broadly similar competency territory from different angles. DigComp is organised by competency area (information literacy, communication, content creation, safety, problem-solving); ISTE is organised by learner role (empowered learner, digital citizen, etc.). Most ISTE standards map to multiple DigComp areas.",
+      "standard_mappings": [
+        {
+          "source_standard_id": "iste-s-emp",
+          "source_standard_name": "Empowered Learner",
+          "target_dimension_id": "dc-5",
+          "target_dimension_name": "Problem-Solving",
+          "alignment_strength": "moderate",
+          "alignment_note": "ISTE Empowered Learner maps most closely to DigComp Problem-Solving (area 5), specifically competencies around identifying digital needs and creatively using technology for personal development. Secondary alignment to DigComp 1.3 (managing digital content)."
+        },
+        {
+          "source_standard_id": "iste-s-dc",
+          "source_standard_name": "Digital Citizen",
+          "target_dimension_id": "dc-4",
+          "target_dimension_name": "Safety",
+          "alignment_strength": "strong",
+          "alignment_note": "ISTE Digital Citizen maps strongly to DigComp Area 4 (Safety): protecting devices, personal data, digital wellbeing, and environmental impact. Secondary alignment to DigComp 2.6 (netiquette) and 2.4 (collaborating through digital technologies)."
+        },
+        {
+          "source_standard_id": "iste-s-kc",
+          "source_standard_name": "Knowledge Constructor",
+          "target_dimension_id": "dc-1",
+          "target_dimension_name": "Information and Data Literacy",
+          "alignment_strength": "strong",
+          "alignment_note": "ISTE Knowledge Constructor maps directly to DigComp Area 1 (Information and Data Literacy): browsing, searching, filtering, evaluating, and managing data and information."
+        },
+        {
+          "source_standard_id": "iste-s-id",
+          "source_standard_name": "Innovative Designer",
+          "target_dimension_id": "dc-3",
+          "target_dimension_name": "Digital Content Creation",
+          "alignment_strength": "moderate",
+          "alignment_note": "ISTE Innovative Designer maps to DigComp Area 3 (Digital Content Creation) and Area 5 (Problem-Solving). The design thinking emphasis in ISTE is stronger than in DigComp; DigComp's content creation area is broader than design per se."
+        },
+        {
+          "source_standard_id": "iste-s-ct",
+          "source_standard_name": "Computational Thinker",
+          "target_dimension_id": "dc-5",
+          "target_dimension_name": "Problem-Solving",
+          "alignment_strength": "strong",
+          "alignment_note": "ISTE Computational Thinker maps most directly to DigComp 5.4 (Identifying digital competence gaps) and 5.3 (Creatively using digital technologies). The computational/algorithmic dimension of ISTE CT has no direct DigComp counterpart but is closest to 5.2 (Integrating and re-elaborating digital content)."
+        },
+        {
+          "source_standard_id": "iste-s-cc",
+          "source_standard_name": "Creative Communicator",
+          "target_dimension_id": "dc-3",
+          "target_dimension_name": "Digital Content Creation",
+          "alignment_strength": "strong",
+          "alignment_note": "ISTE Creative Communicator maps directly to DigComp Area 3: developing digital content, integrating and re-elaborating, copyright and licences, programming. Strong alignment at the production and remixing level."
+        },
+        {
+          "source_standard_id": "iste-s-gc",
+          "source_standard_name": "Global Collaborator",
+          "target_dimension_id": "dc-2",
+          "target_dimension_name": "Communication and Collaboration",
+          "alignment_strength": "strong",
+          "alignment_note": "ISTE Global Collaborator maps directly to DigComp Area 2: interacting, sharing, engaging citizenship, collaborating, and managing digital identity. The cross-cultural emphasis in ISTE is not explicitly covered in DigComp but the collaboration competencies are equivalent."
+        }
+      ],
+      "interpretive_template": "Your ISTE Students result ({iste_met_count}/7 standards met) and your DigComp 3.0 result ({digcomp_level}) together indicate {profile_description}. ISTE results above DigComp level suggest strong dispositional orientation without the underlying competency breadth. DigComp above ISTE suggests competency without the learner-agency dimension.",
+      "gap_patterns": [
+        {
+          "pattern_id": "iste-high-digcomp-low",
+          "label": "Oriented but Underskilled",
+          "condition": "iste_met_count >= 5 AND digcomp_level IN ('Basic', 'Intermediate')",
+          "interpretation": "Meeting most ISTE standards while sitting at Basic or Intermediate DigComp suggests the learner has strong orientations and dispositions but has not yet developed the underlying competency breadth that DigComp measures. Structured competency development across DigComp areas 1, 3, and 5 is likely to be most valuable."
+        }
+      ]
+    }
+  ]
+}

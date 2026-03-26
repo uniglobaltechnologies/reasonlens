@@ -1,0 +1,373 @@
+{
+  "framework_id": "jisc-ai-maturity",
+  "framework_name": "Jisc AI Maturity Model",
+  "file_type": "practitioner-language",
+  "research_basis": {
+    "generated_at": "2026-03-26",
+    "authoring_method": "Original synthesis using the user brief and the THE DMI implementation reference as the structural benchmark.",
+    "licence_handling": "Original implementation content informed by Jisc AI maturity structure. Scenarios and practitioner language are independently written to avoid reproducing Jisc wording."
+  },
+  "object_count": 15,
+  "objects": [
+    {
+      "object_id": "jisc-ai-strategy-emerging",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-strategy",
+      "dimension_name": "AI Strategy & Leadership",
+      "level_id": "jisc-ai-strategy-emerging",
+      "level_name": "Emerging",
+      "plain_language_rewrite": "Emerging means has growing interest and pockets of activity, but limited coordination.",
+      "what_good_looks_like": [
+        "People can point to concrete evidence of ai strategy & leadership, not just aspirations.",
+        "The approach is understandable to others and not reliant on one exceptional case.",
+        "Decisions and behaviours are reasonably consistent with the stated level."
+      ],
+      "accurate_self_assessment_prompt": "What evidence would a sceptical colleague ask to see before agreeing that ai strategy & leadership is genuinely emerging?",
+      "common_overclaim": "Pointing to a few good examples and describing them as if they represent the whole picture.",
+      "common_underclaim": "Ignoring steady progress because the institution has not yet reached a fully exemplary state.",
+      "vocabulary_cues": [
+        "evidence",
+        "consistency",
+        "governance",
+        "adoption",
+        "improvement"
+      ]
+    },
+    {
+      "object_id": "jisc-ai-strategy-developing",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-strategy",
+      "dimension_name": "AI Strategy & Leadership",
+      "level_id": "jisc-ai-strategy-developing",
+      "level_name": "Developing",
+      "plain_language_rewrite": "Developing means is building coordinated workflows, support, and governance.",
+      "what_good_looks_like": [
+        "People can point to concrete evidence of ai strategy & leadership, not just aspirations.",
+        "The approach is understandable to others and not reliant on one exceptional case.",
+        "Decisions and behaviours are reasonably consistent with the stated level."
+      ],
+      "accurate_self_assessment_prompt": "What evidence would a sceptical colleague ask to see before agreeing that ai strategy & leadership is genuinely developing?",
+      "common_overclaim": "Pointing to a few good examples and describing them as if they represent the whole picture.",
+      "common_underclaim": "Ignoring steady progress because the institution has not yet reached a fully exemplary state.",
+      "vocabulary_cues": [
+        "evidence",
+        "consistency",
+        "governance",
+        "adoption",
+        "improvement"
+      ]
+    },
+    {
+      "object_id": "jisc-ai-strategy-mature",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-strategy",
+      "dimension_name": "AI Strategy & Leadership",
+      "level_id": "jisc-ai-strategy-mature",
+      "level_name": "Mature",
+      "plain_language_rewrite": "Mature means has integrated AI into strategy and operations with monitoring and accountability.",
+      "what_good_looks_like": [
+        "People can point to concrete evidence of ai strategy & leadership, not just aspirations.",
+        "The approach is understandable to others and not reliant on one exceptional case.",
+        "Decisions and behaviours are reasonably consistent with the stated level."
+      ],
+      "accurate_self_assessment_prompt": "What evidence would a sceptical colleague ask to see before agreeing that ai strategy & leadership is genuinely mature?",
+      "common_overclaim": "Pointing to a few good examples and describing them as if they represent the whole picture.",
+      "common_underclaim": "Ignoring steady progress because the institution has not yet reached a fully exemplary state.",
+      "vocabulary_cues": [
+        "evidence",
+        "consistency",
+        "governance",
+        "adoption",
+        "improvement"
+      ]
+    },
+    {
+      "object_id": "jisc-ai-people-emerging",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-people",
+      "dimension_name": "People & Skills",
+      "level_id": "jisc-ai-people-emerging",
+      "level_name": "Emerging",
+      "plain_language_rewrite": "Emerging means has growing interest and pockets of activity, but limited coordination.",
+      "what_good_looks_like": [
+        "People can point to concrete evidence of people & skills, not just aspirations.",
+        "The approach is understandable to others and not reliant on one exceptional case.",
+        "Decisions and behaviours are reasonably consistent with the stated level."
+      ],
+      "accurate_self_assessment_prompt": "What evidence would a sceptical colleague ask to see before agreeing that people & skills is genuinely emerging?",
+      "common_overclaim": "Pointing to a few good examples and describing them as if they represent the whole picture.",
+      "common_underclaim": "Ignoring steady progress because the institution has not yet reached a fully exemplary state.",
+      "vocabulary_cues": [
+        "evidence",
+        "consistency",
+        "governance",
+        "adoption",
+        "improvement"
+      ]
+    },
+    {
+      "object_id": "jisc-ai-people-developing",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-people",
+      "dimension_name": "People & Skills",
+      "level_id": "jisc-ai-people-developing",
+      "level_name": "Developing",
+      "plain_language_rewrite": "Developing means is building coordinated workflows, support, and governance.",
+      "what_good_looks_like": [
+        "People can point to concrete evidence of people & skills, not just aspirations.",
+        "The approach is understandable to others and not reliant on one exceptional case.",
+        "Decisions and behaviours are reasonably consistent with the stated level."
+      ],
+      "accurate_self_assessment_prompt": "What evidence would a sceptical colleague ask to see before agreeing that people & skills is genuinely developing?",
+      "common_overclaim": "Pointing to a few good examples and describing them as if they represent the whole picture.",
+      "common_underclaim": "Ignoring steady progress because the institution has not yet reached a fully exemplary state.",
+      "vocabulary_cues": [
+        "evidence",
+        "consistency",
+        "governance",
+        "adoption",
+        "improvement"
+      ]
+    },
+    {
+      "object_id": "jisc-ai-people-mature",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-people",
+      "dimension_name": "People & Skills",
+      "level_id": "jisc-ai-people-mature",
+      "level_name": "Mature",
+      "plain_language_rewrite": "Mature means has integrated AI into strategy and operations with monitoring and accountability.",
+      "what_good_looks_like": [
+        "People can point to concrete evidence of people & skills, not just aspirations.",
+        "The approach is understandable to others and not reliant on one exceptional case.",
+        "Decisions and behaviours are reasonably consistent with the stated level."
+      ],
+      "accurate_self_assessment_prompt": "What evidence would a sceptical colleague ask to see before agreeing that people & skills is genuinely mature?",
+      "common_overclaim": "Pointing to a few good examples and describing them as if they represent the whole picture.",
+      "common_underclaim": "Ignoring steady progress because the institution has not yet reached a fully exemplary state.",
+      "vocabulary_cues": [
+        "evidence",
+        "consistency",
+        "governance",
+        "adoption",
+        "improvement"
+      ]
+    },
+    {
+      "object_id": "jisc-ai-tech-emerging",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-tech",
+      "dimension_name": "Technology & Infrastructure",
+      "level_id": "jisc-ai-tech-emerging",
+      "level_name": "Emerging",
+      "plain_language_rewrite": "Emerging means has growing interest and pockets of activity, but limited coordination.",
+      "what_good_looks_like": [
+        "People can point to concrete evidence of technology & infrastructure, not just aspirations.",
+        "The approach is understandable to others and not reliant on one exceptional case.",
+        "Decisions and behaviours are reasonably consistent with the stated level."
+      ],
+      "accurate_self_assessment_prompt": "What evidence would a sceptical colleague ask to see before agreeing that technology & infrastructure is genuinely emerging?",
+      "common_overclaim": "Pointing to a few good examples and describing them as if they represent the whole picture.",
+      "common_underclaim": "Ignoring steady progress because the institution has not yet reached a fully exemplary state.",
+      "vocabulary_cues": [
+        "evidence",
+        "consistency",
+        "governance",
+        "adoption",
+        "improvement"
+      ]
+    },
+    {
+      "object_id": "jisc-ai-tech-developing",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-tech",
+      "dimension_name": "Technology & Infrastructure",
+      "level_id": "jisc-ai-tech-developing",
+      "level_name": "Developing",
+      "plain_language_rewrite": "Developing means is building coordinated workflows, support, and governance.",
+      "what_good_looks_like": [
+        "People can point to concrete evidence of technology & infrastructure, not just aspirations.",
+        "The approach is understandable to others and not reliant on one exceptional case.",
+        "Decisions and behaviours are reasonably consistent with the stated level."
+      ],
+      "accurate_self_assessment_prompt": "What evidence would a sceptical colleague ask to see before agreeing that technology & infrastructure is genuinely developing?",
+      "common_overclaim": "Pointing to a few good examples and describing them as if they represent the whole picture.",
+      "common_underclaim": "Ignoring steady progress because the institution has not yet reached a fully exemplary state.",
+      "vocabulary_cues": [
+        "evidence",
+        "consistency",
+        "governance",
+        "adoption",
+        "improvement"
+      ]
+    },
+    {
+      "object_id": "jisc-ai-tech-mature",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-tech",
+      "dimension_name": "Technology & Infrastructure",
+      "level_id": "jisc-ai-tech-mature",
+      "level_name": "Mature",
+      "plain_language_rewrite": "Mature means has integrated AI into strategy and operations with monitoring and accountability.",
+      "what_good_looks_like": [
+        "People can point to concrete evidence of technology & infrastructure, not just aspirations.",
+        "The approach is understandable to others and not reliant on one exceptional case.",
+        "Decisions and behaviours are reasonably consistent with the stated level."
+      ],
+      "accurate_self_assessment_prompt": "What evidence would a sceptical colleague ask to see before agreeing that technology & infrastructure is genuinely mature?",
+      "common_overclaim": "Pointing to a few good examples and describing them as if they represent the whole picture.",
+      "common_underclaim": "Ignoring steady progress because the institution has not yet reached a fully exemplary state.",
+      "vocabulary_cues": [
+        "evidence",
+        "consistency",
+        "governance",
+        "adoption",
+        "improvement"
+      ]
+    },
+    {
+      "object_id": "jisc-ai-data-emerging",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-data",
+      "dimension_name": "Data Readiness",
+      "level_id": "jisc-ai-data-emerging",
+      "level_name": "Emerging",
+      "plain_language_rewrite": "Emerging means has growing interest and pockets of activity, but limited coordination.",
+      "what_good_looks_like": [
+        "People can point to concrete evidence of data readiness, not just aspirations.",
+        "The approach is understandable to others and not reliant on one exceptional case.",
+        "Decisions and behaviours are reasonably consistent with the stated level."
+      ],
+      "accurate_self_assessment_prompt": "What evidence would a sceptical colleague ask to see before agreeing that data readiness is genuinely emerging?",
+      "common_overclaim": "Pointing to a few good examples and describing them as if they represent the whole picture.",
+      "common_underclaim": "Ignoring steady progress because the institution has not yet reached a fully exemplary state.",
+      "vocabulary_cues": [
+        "evidence",
+        "consistency",
+        "governance",
+        "adoption",
+        "improvement"
+      ]
+    },
+    {
+      "object_id": "jisc-ai-data-developing",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-data",
+      "dimension_name": "Data Readiness",
+      "level_id": "jisc-ai-data-developing",
+      "level_name": "Developing",
+      "plain_language_rewrite": "Developing means is building coordinated workflows, support, and governance.",
+      "what_good_looks_like": [
+        "People can point to concrete evidence of data readiness, not just aspirations.",
+        "The approach is understandable to others and not reliant on one exceptional case.",
+        "Decisions and behaviours are reasonably consistent with the stated level."
+      ],
+      "accurate_self_assessment_prompt": "What evidence would a sceptical colleague ask to see before agreeing that data readiness is genuinely developing?",
+      "common_overclaim": "Pointing to a few good examples and describing them as if they represent the whole picture.",
+      "common_underclaim": "Ignoring steady progress because the institution has not yet reached a fully exemplary state.",
+      "vocabulary_cues": [
+        "evidence",
+        "consistency",
+        "governance",
+        "adoption",
+        "improvement"
+      ]
+    },
+    {
+      "object_id": "jisc-ai-data-mature",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-data",
+      "dimension_name": "Data Readiness",
+      "level_id": "jisc-ai-data-mature",
+      "level_name": "Mature",
+      "plain_language_rewrite": "Mature means has integrated AI into strategy and operations with monitoring and accountability.",
+      "what_good_looks_like": [
+        "People can point to concrete evidence of data readiness, not just aspirations.",
+        "The approach is understandable to others and not reliant on one exceptional case.",
+        "Decisions and behaviours are reasonably consistent with the stated level."
+      ],
+      "accurate_self_assessment_prompt": "What evidence would a sceptical colleague ask to see before agreeing that data readiness is genuinely mature?",
+      "common_overclaim": "Pointing to a few good examples and describing them as if they represent the whole picture.",
+      "common_underclaim": "Ignoring steady progress because the institution has not yet reached a fully exemplary state.",
+      "vocabulary_cues": [
+        "evidence",
+        "consistency",
+        "governance",
+        "adoption",
+        "improvement"
+      ]
+    },
+    {
+      "object_id": "jisc-ai-ethics-emerging",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-ethics",
+      "dimension_name": "Ethics & Responsible AI",
+      "level_id": "jisc-ai-ethics-emerging",
+      "level_name": "Emerging",
+      "plain_language_rewrite": "Emerging means has growing interest and pockets of activity, but limited coordination.",
+      "what_good_looks_like": [
+        "People can point to concrete evidence of ethics & responsible ai, not just aspirations.",
+        "The approach is understandable to others and not reliant on one exceptional case.",
+        "Decisions and behaviours are reasonably consistent with the stated level."
+      ],
+      "accurate_self_assessment_prompt": "What evidence would a sceptical colleague ask to see before agreeing that ethics & responsible ai is genuinely emerging?",
+      "common_overclaim": "Pointing to a few good examples and describing them as if they represent the whole picture.",
+      "common_underclaim": "Ignoring steady progress because the institution has not yet reached a fully exemplary state.",
+      "vocabulary_cues": [
+        "evidence",
+        "consistency",
+        "governance",
+        "adoption",
+        "improvement"
+      ]
+    },
+    {
+      "object_id": "jisc-ai-ethics-developing",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-ethics",
+      "dimension_name": "Ethics & Responsible AI",
+      "level_id": "jisc-ai-ethics-developing",
+      "level_name": "Developing",
+      "plain_language_rewrite": "Developing means is building coordinated workflows, support, and governance.",
+      "what_good_looks_like": [
+        "People can point to concrete evidence of ethics & responsible ai, not just aspirations.",
+        "The approach is understandable to others and not reliant on one exceptional case.",
+        "Decisions and behaviours are reasonably consistent with the stated level."
+      ],
+      "accurate_self_assessment_prompt": "What evidence would a sceptical colleague ask to see before agreeing that ethics & responsible ai is genuinely developing?",
+      "common_overclaim": "Pointing to a few good examples and describing them as if they represent the whole picture.",
+      "common_underclaim": "Ignoring steady progress because the institution has not yet reached a fully exemplary state.",
+      "vocabulary_cues": [
+        "evidence",
+        "consistency",
+        "governance",
+        "adoption",
+        "improvement"
+      ]
+    },
+    {
+      "object_id": "jisc-ai-ethics-mature",
+      "framework_id": "jisc-ai-maturity",
+      "dimension_id": "jisc-ai-ethics",
+      "dimension_name": "Ethics & Responsible AI",
+      "level_id": "jisc-ai-ethics-mature",
+      "level_name": "Mature",
+      "plain_language_rewrite": "Mature means has integrated AI into strategy and operations with monitoring and accountability.",
+      "what_good_looks_like": [
+        "People can point to concrete evidence of ethics & responsible ai, not just aspirations.",
+        "The approach is understandable to others and not reliant on one exceptional case.",
+        "Decisions and behaviours are reasonably consistent with the stated level."
+      ],
+      "accurate_self_assessment_prompt": "What evidence would a sceptical colleague ask to see before agreeing that ethics & responsible ai is genuinely mature?",
+      "common_overclaim": "Pointing to a few good examples and describing them as if they represent the whole picture.",
+      "common_underclaim": "Ignoring steady progress because the institution has not yet reached a fully exemplary state.",
+      "vocabulary_cues": [
+        "evidence",
+        "consistency",
+        "governance",
+        "adoption",
+        "improvement"
+      ]
+    }
+  ]
+}

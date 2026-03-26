@@ -1,0 +1,989 @@
+{
+  "framework_id": "ailit",
+  "framework_name": "AI Literacy Framework (AILit)",
+  "file_type": "indicator-operationalisation",
+  "research_basis": {
+    "generated_at": "2026-03-26",
+    "authoring_method": "Original synthesis using the user brief and the THE DMI implementation reference as the structural benchmark.",
+    "licence_handling": "CC BY-SA 4.0"
+  },
+  "object_count": 16,
+  "objects": [
+    {
+      "object_id": "ailit-fundamentals-novice",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-fundamentals",
+      "dimension_name": "AI Fundamentals",
+      "level_id": "ailit-fundamentals-novice",
+      "level_name": "Novice",
+      "level_order": 1,
+      "focus_statement": "At the Novice level, the learner recognises and follows AI-related decisions in understanding how AI works at a usable conceptual level and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Recognises when AI Fundamentals matters in familiar tasks and can name basic issues or concepts.",
+        "Uses provided examples, prompts, or checklists to make an initial decision in ai fundamentals.",
+        "Can give a simple explanation of choices in ai fundamentals, but usually needs support to go beyond the obvious case."
+      ],
+      "evidence_examples": [
+        "annotated concept maps",
+        "short explainers",
+        "tool comparison notes"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "thinking AI 'understands' in the same way people do",
+          "frequency": "common"
+        },
+        {
+          "statement": "treating all AI tools as if they use the same data and methods",
+          "frequency": "common"
+        },
+        {
+          "statement": "Overstates competence because the task felt familiar.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "AI Fundamentals shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI Fundamentals vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in AI Fundamentals, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of AI Fundamentals differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Strong foundations make application, ethics, and futures reasoning more reliable.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    },
+    {
+      "object_id": "ailit-fundamentals-intermediate",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-fundamentals",
+      "dimension_name": "AI Fundamentals",
+      "level_id": "ailit-fundamentals-intermediate",
+      "level_name": "Intermediate",
+      "level_order": 2,
+      "focus_statement": "At the Intermediate level, the learner explains and applies AI-related decisions in understanding how AI works at a usable conceptual level and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Explains routine decisions in ai fundamentals using a clear structure rather than intuition alone.",
+        "Compares options or outputs against explicit criteria and revises work when those criteria are not met.",
+        "Documents limitations, uncertainties, or follow-up checks in a way another person could understand and repeat."
+      ],
+      "evidence_examples": [
+        "short explainers",
+        "tool comparison notes",
+        "teaching or study plans"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "thinking AI 'understands' in the same way people do",
+          "frequency": "common"
+        },
+        {
+          "statement": "treating all AI tools as if they use the same data and methods",
+          "frequency": "common"
+        },
+        {
+          "statement": "Assumes a tidy routine will work unchanged in every context.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "AI Fundamentals shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI Fundamentals vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in AI Fundamentals, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of AI Fundamentals differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Strong foundations make application, ethics, and futures reasoning more reliable.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    },
+    {
+      "object_id": "ailit-fundamentals-advanced",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-fundamentals",
+      "dimension_name": "AI Fundamentals",
+      "level_id": "ailit-fundamentals-advanced",
+      "level_name": "Advanced",
+      "level_order": 3,
+      "focus_statement": "At the Advanced level, the learner analyses and adapts AI-related decisions in understanding how AI works at a usable conceptual level and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Adapts ai fundamentals practice to context, stakes, and audience rather than using the same routine everywhere.",
+        "Identifies likely failure modes, trade-offs, or unintended effects and adjusts the approach before problems escalate.",
+        "Transfers sound practice across tasks and can coach peers through the reasoning behind a decision."
+      ],
+      "evidence_examples": [
+        "tool comparison notes",
+        "teaching or study plans",
+        "annotated reflections"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "thinking AI 'understands' in the same way people do",
+          "frequency": "common"
+        },
+        {
+          "statement": "treating all AI tools as if they use the same data and methods",
+          "frequency": "common"
+        },
+        {
+          "statement": "Mistakes strong personal practice for system-level readiness.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "AI Fundamentals shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI Fundamentals vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in AI Fundamentals, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of AI Fundamentals differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Strong foundations make application, ethics, and futures reasoning more reliable.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    },
+    {
+      "object_id": "ailit-fundamentals-expert",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-fundamentals",
+      "dimension_name": "AI Fundamentals",
+      "level_id": "ailit-fundamentals-expert",
+      "level_name": "Expert",
+      "level_order": 4,
+      "focus_statement": "At the Expert level, the learner leads and shapes AI-related decisions in understanding how AI works at a usable conceptual level and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Shapes shared expectations, exemplars, or guidance for ai fundamentals beyond their own immediate tasks.",
+        "Evaluates proposals, resources, or systems using evidence and can redesign practice when the environment changes.",
+        "Anticipates emerging needs in ai fundamentals and helps others build capacity rather than solving issues case by case."
+      ],
+      "evidence_examples": [
+        "tool comparison notes",
+        "teaching or study plans",
+        "annotated reflections"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "thinking AI 'understands' in the same way people do",
+          "frequency": "common"
+        },
+        {
+          "statement": "treating all AI tools as if they use the same data and methods",
+          "frequency": "common"
+        },
+        {
+          "statement": "Confuses influence with formal authority or sustainable change.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "AI Fundamentals shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI Fundamentals vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in AI Fundamentals, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of AI Fundamentals differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Strong foundations make application, ethics, and futures reasoning more reliable.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    },
+    {
+      "object_id": "ailit-application-novice",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-application",
+      "dimension_name": "AI Application",
+      "level_id": "ailit-application-novice",
+      "level_name": "Novice",
+      "level_order": 1,
+      "focus_statement": "At the Novice level, the learner recognises and follows AI-related decisions in turning AI tools into dependable workflows rather than one-off shortcuts and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Recognises when AI Application matters in familiar tasks and can name basic issues or concepts.",
+        "Uses provided examples, prompts, or checklists to make an initial decision in ai application.",
+        "Can give a simple explanation of choices in ai application, but usually needs support to go beyond the obvious case."
+      ],
+      "evidence_examples": [
+        "prompt logs",
+        "annotated outputs",
+        "workflow checklists"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "confusing speed with quality",
+          "frequency": "common"
+        },
+        {
+          "statement": "believing that a good prompt removes the need for human review",
+          "frequency": "common"
+        },
+        {
+          "statement": "Overstates competence because the task felt familiar.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "AI Application shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI Application vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in AI Application, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of AI Application differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Application depends on enough conceptual knowledge to choose tools and enough ethical judgement to set limits.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    },
+    {
+      "object_id": "ailit-application-intermediate",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-application",
+      "dimension_name": "AI Application",
+      "level_id": "ailit-application-intermediate",
+      "level_name": "Intermediate",
+      "level_order": 2,
+      "focus_statement": "At the Intermediate level, the learner explains and applies AI-related decisions in turning AI tools into dependable workflows rather than one-off shortcuts and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Explains routine decisions in ai application using a clear structure rather than intuition alone.",
+        "Compares options or outputs against explicit criteria and revises work when those criteria are not met.",
+        "Documents limitations, uncertainties, or follow-up checks in a way another person could understand and repeat."
+      ],
+      "evidence_examples": [
+        "annotated outputs",
+        "workflow checklists",
+        "before-and-after task samples"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "confusing speed with quality",
+          "frequency": "common"
+        },
+        {
+          "statement": "believing that a good prompt removes the need for human review",
+          "frequency": "common"
+        },
+        {
+          "statement": "Assumes a tidy routine will work unchanged in every context.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "AI Application shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI Application vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in AI Application, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of AI Application differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Application depends on enough conceptual knowledge to choose tools and enough ethical judgement to set limits.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    },
+    {
+      "object_id": "ailit-application-advanced",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-application",
+      "dimension_name": "AI Application",
+      "level_id": "ailit-application-advanced",
+      "level_name": "Advanced",
+      "level_order": 3,
+      "focus_statement": "At the Advanced level, the learner analyses and adapts AI-related decisions in turning AI tools into dependable workflows rather than one-off shortcuts and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Adapts ai application practice to context, stakes, and audience rather than using the same routine everywhere.",
+        "Identifies likely failure modes, trade-offs, or unintended effects and adjusts the approach before problems escalate.",
+        "Transfers sound practice across tasks and can coach peers through the reasoning behind a decision."
+      ],
+      "evidence_examples": [
+        "workflow checklists",
+        "before-and-after task samples",
+        "annotated reflections"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "confusing speed with quality",
+          "frequency": "common"
+        },
+        {
+          "statement": "believing that a good prompt removes the need for human review",
+          "frequency": "common"
+        },
+        {
+          "statement": "Mistakes strong personal practice for system-level readiness.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "AI Application shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI Application vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in AI Application, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of AI Application differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Application depends on enough conceptual knowledge to choose tools and enough ethical judgement to set limits.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    },
+    {
+      "object_id": "ailit-application-expert",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-application",
+      "dimension_name": "AI Application",
+      "level_id": "ailit-application-expert",
+      "level_name": "Expert",
+      "level_order": 4,
+      "focus_statement": "At the Expert level, the learner leads and shapes AI-related decisions in turning AI tools into dependable workflows rather than one-off shortcuts and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Shapes shared expectations, exemplars, or guidance for ai application beyond their own immediate tasks.",
+        "Evaluates proposals, resources, or systems using evidence and can redesign practice when the environment changes.",
+        "Anticipates emerging needs in ai application and helps others build capacity rather than solving issues case by case."
+      ],
+      "evidence_examples": [
+        "workflow checklists",
+        "before-and-after task samples",
+        "annotated reflections"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "confusing speed with quality",
+          "frequency": "common"
+        },
+        {
+          "statement": "believing that a good prompt removes the need for human review",
+          "frequency": "common"
+        },
+        {
+          "statement": "Confuses influence with formal authority or sustainable change.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "AI Application shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI Application vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in AI Application, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of AI Application differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Application depends on enough conceptual knowledge to choose tools and enough ethical judgement to set limits.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    },
+    {
+      "object_id": "ailit-ethics-novice",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-ethics",
+      "dimension_name": "AI Ethics & Society",
+      "level_id": "ailit-ethics-novice",
+      "level_name": "Novice",
+      "level_order": 1,
+      "focus_statement": "At the Novice level, the learner recognises and follows AI-related decisions in making responsible choices about how AI affects people and institutions and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Recognises when AI Ethics & Society matters in familiar tasks and can name basic issues or concepts.",
+        "Uses provided examples, prompts, or checklists to make an initial decision in ai ethics & society.",
+        "Can give a simple explanation of choices in ai ethics & society, but usually needs support to go beyond the obvious case."
+      ],
+      "evidence_examples": [
+        "risk assessments",
+        "policy annotations",
+        "case analyses"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "reducing ethics to plagiarism alone",
+          "frequency": "common"
+        },
+        {
+          "statement": "assuming disclosure solves all responsible use issues",
+          "frequency": "common"
+        },
+        {
+          "statement": "Overstates competence because the task felt familiar.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "AI Ethics & Society shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI Ethics & Society vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in AI Ethics & Society, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of AI Ethics & Society differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Ethical literacy becomes stronger when fundamental and application knowledge are linked to human consequences.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    },
+    {
+      "object_id": "ailit-ethics-intermediate",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-ethics",
+      "dimension_name": "AI Ethics & Society",
+      "level_id": "ailit-ethics-intermediate",
+      "level_name": "Intermediate",
+      "level_order": 2,
+      "focus_statement": "At the Intermediate level, the learner explains and applies AI-related decisions in making responsible choices about how AI affects people and institutions and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Explains routine decisions in ai ethics & society using a clear structure rather than intuition alone.",
+        "Compares options or outputs against explicit criteria and revises work when those criteria are not met.",
+        "Documents limitations, uncertainties, or follow-up checks in a way another person could understand and repeat."
+      ],
+      "evidence_examples": [
+        "policy annotations",
+        "case analyses",
+        "reflection logs"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "reducing ethics to plagiarism alone",
+          "frequency": "common"
+        },
+        {
+          "statement": "assuming disclosure solves all responsible use issues",
+          "frequency": "common"
+        },
+        {
+          "statement": "Assumes a tidy routine will work unchanged in every context.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "AI Ethics & Society shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI Ethics & Society vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in AI Ethics & Society, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of AI Ethics & Society differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Ethical literacy becomes stronger when fundamental and application knowledge are linked to human consequences.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    },
+    {
+      "object_id": "ailit-ethics-advanced",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-ethics",
+      "dimension_name": "AI Ethics & Society",
+      "level_id": "ailit-ethics-advanced",
+      "level_name": "Advanced",
+      "level_order": 3,
+      "focus_statement": "At the Advanced level, the learner analyses and adapts AI-related decisions in making responsible choices about how AI affects people and institutions and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Adapts ai ethics & society practice to context, stakes, and audience rather than using the same routine everywhere.",
+        "Identifies likely failure modes, trade-offs, or unintended effects and adjusts the approach before problems escalate.",
+        "Transfers sound practice across tasks and can coach peers through the reasoning behind a decision."
+      ],
+      "evidence_examples": [
+        "case analyses",
+        "reflection logs",
+        "annotated reflections"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "reducing ethics to plagiarism alone",
+          "frequency": "common"
+        },
+        {
+          "statement": "assuming disclosure solves all responsible use issues",
+          "frequency": "common"
+        },
+        {
+          "statement": "Mistakes strong personal practice for system-level readiness.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "AI Ethics & Society shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI Ethics & Society vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in AI Ethics & Society, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of AI Ethics & Society differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Ethical literacy becomes stronger when fundamental and application knowledge are linked to human consequences.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    },
+    {
+      "object_id": "ailit-ethics-expert",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-ethics",
+      "dimension_name": "AI Ethics & Society",
+      "level_id": "ailit-ethics-expert",
+      "level_name": "Expert",
+      "level_order": 4,
+      "focus_statement": "At the Expert level, the learner leads and shapes AI-related decisions in making responsible choices about how AI affects people and institutions and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Shapes shared expectations, exemplars, or guidance for ai ethics & society beyond their own immediate tasks.",
+        "Evaluates proposals, resources, or systems using evidence and can redesign practice when the environment changes.",
+        "Anticipates emerging needs in ai ethics & society and helps others build capacity rather than solving issues case by case."
+      ],
+      "evidence_examples": [
+        "case analyses",
+        "reflection logs",
+        "annotated reflections"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "reducing ethics to plagiarism alone",
+          "frequency": "common"
+        },
+        {
+          "statement": "assuming disclosure solves all responsible use issues",
+          "frequency": "common"
+        },
+        {
+          "statement": "Confuses influence with formal authority or sustainable change.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "AI Ethics & Society shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI Ethics & Society vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in AI Ethics & Society, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of AI Ethics & Society differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Ethical literacy becomes stronger when fundamental and application knowledge are linked to human consequences.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    },
+    {
+      "object_id": "ailit-futures-novice",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-futures",
+      "dimension_name": "AI Futures",
+      "level_id": "ailit-futures-novice",
+      "level_name": "Novice",
+      "level_order": 1,
+      "focus_statement": "At the Novice level, the learner recognises and follows AI-related decisions in thinking ahead about trajectories, trade-offs, and choices rather than reacting late and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Recognises when AI Futures matters in familiar tasks and can name basic issues or concepts.",
+        "Uses provided examples, prompts, or checklists to make an initial decision in ai futures.",
+        "Can give a simple explanation of choices in ai futures, but usually needs support to go beyond the obvious case."
+      ],
+      "evidence_examples": [
+        "scenario plans",
+        "roadmaps",
+        "future-facing curriculum notes"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "treating AI futures as fully predictable",
+          "frequency": "common"
+        },
+        {
+          "statement": "assuming technological change alone determines outcomes",
+          "frequency": "common"
+        },
+        {
+          "statement": "Overstates competence because the task felt familiar.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "AI Futures shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI Futures vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in AI Futures, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of AI Futures differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Future thinking depends on accurate foundations and responsible application, but also feeds back into present choices.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    },
+    {
+      "object_id": "ailit-futures-intermediate",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-futures",
+      "dimension_name": "AI Futures",
+      "level_id": "ailit-futures-intermediate",
+      "level_name": "Intermediate",
+      "level_order": 2,
+      "focus_statement": "At the Intermediate level, the learner explains and applies AI-related decisions in thinking ahead about trajectories, trade-offs, and choices rather than reacting late and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Explains routine decisions in ai futures using a clear structure rather than intuition alone.",
+        "Compares options or outputs against explicit criteria and revises work when those criteria are not met.",
+        "Documents limitations, uncertainties, or follow-up checks in a way another person could understand and repeat."
+      ],
+      "evidence_examples": [
+        "roadmaps",
+        "future-facing curriculum notes",
+        "risk-opportunity registers"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "treating AI futures as fully predictable",
+          "frequency": "common"
+        },
+        {
+          "statement": "assuming technological change alone determines outcomes",
+          "frequency": "common"
+        },
+        {
+          "statement": "Assumes a tidy routine will work unchanged in every context.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "AI Futures shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI Futures vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in AI Futures, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of AI Futures differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Future thinking depends on accurate foundations and responsible application, but also feeds back into present choices.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    },
+    {
+      "object_id": "ailit-futures-advanced",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-futures",
+      "dimension_name": "AI Futures",
+      "level_id": "ailit-futures-advanced",
+      "level_name": "Advanced",
+      "level_order": 3,
+      "focus_statement": "At the Advanced level, the learner analyses and adapts AI-related decisions in thinking ahead about trajectories, trade-offs, and choices rather than reacting late and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Adapts ai futures practice to context, stakes, and audience rather than using the same routine everywhere.",
+        "Identifies likely failure modes, trade-offs, or unintended effects and adjusts the approach before problems escalate.",
+        "Transfers sound practice across tasks and can coach peers through the reasoning behind a decision."
+      ],
+      "evidence_examples": [
+        "future-facing curriculum notes",
+        "risk-opportunity registers",
+        "annotated reflections"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "treating AI futures as fully predictable",
+          "frequency": "common"
+        },
+        {
+          "statement": "assuming technological change alone determines outcomes",
+          "frequency": "common"
+        },
+        {
+          "statement": "Mistakes strong personal practice for system-level readiness.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "AI Futures shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI Futures vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in AI Futures, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of AI Futures differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Future thinking depends on accurate foundations and responsible application, but also feeds back into present choices.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    },
+    {
+      "object_id": "ailit-futures-expert",
+      "framework_id": "ailit",
+      "dimension_id": "ailit-futures",
+      "dimension_name": "AI Futures",
+      "level_id": "ailit-futures-expert",
+      "level_name": "Expert",
+      "level_order": 4,
+      "focus_statement": "At the Expert level, the learner leads and shapes AI-related decisions in thinking ahead about trajectories, trade-offs, and choices rather than reacting late and can demonstrate this in authentic tasks.",
+      "observable_behaviours": [
+        "Shapes shared expectations, exemplars, or guidance for ai futures beyond their own immediate tasks.",
+        "Evaluates proposals, resources, or systems using evidence and can redesign practice when the environment changes.",
+        "Anticipates emerging needs in ai futures and helps others build capacity rather than solving issues case by case."
+      ],
+      "evidence_examples": [
+        "future-facing curriculum notes",
+        "risk-opportunity registers",
+        "annotated reflections"
+      ],
+      "common_misconceptions": [
+        {
+          "statement": "treating AI futures as fully predictable",
+          "frequency": "common"
+        },
+        {
+          "statement": "assuming technological change alone determines outcomes",
+          "frequency": "common"
+        },
+        {
+          "statement": "Confuses influence with formal authority or sustainable change.",
+          "frequency": "occasional"
+        }
+      ],
+      "context_dependencies": {
+        "role": {
+          "impact": "high",
+          "how_it_changes_observation": "AI Futures shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "subject_area": {
+          "impact": "high",
+          "how_it_changes_observation": "The language, examples, and stakes for AI Futures vary by discipline, especially where methods, evidence norms, or safety expectations differ.",
+          "calibration_rule": "Adapt examples and cases to the field while preserving the same level logic."
+        },
+        "prior_ai_experience": {
+          "impact": "medium",
+          "how_it_changes_observation": "Prior familiarity can change confidence and speed in AI Futures, but confidence alone should not be treated as competence.",
+          "calibration_rule": "Look for decision quality and transfer, not just fluency or enthusiasm."
+        },
+        "institution_level": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of AI Futures differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        }
+      },
+      "dependencies": {
+        "dependency_note": "Future thinking depends on accurate foundations and responsible application, but also feeds back into present choices.",
+        "visibility_constraint": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+      },
+      "respondent_visibility": "Usually observable through authentic artefacts, decisions, and reflections by the individual and a close supervisor, teacher, or mentor."
+    }
+  ]
+}

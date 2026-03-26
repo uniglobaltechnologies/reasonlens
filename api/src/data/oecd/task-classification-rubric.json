@@ -1,0 +1,848 @@
+{
+  "schema_version": "1.0",
+  "framework_id": "oecd-ai-capability-indicators",
+  "file_id": "task-classification-rubric",
+  "purpose": "Internal classification logic for the ReasonLens Task Evaluator. When a user submits a task description, the evaluator applies this rubric to assign an OECD task type, then uses task-evaluation-calibration.json for feasibility scoring. This is not a user-facing assessment instrument.",
+  "usage_note": "Users do not assess themselves against OECD. This rubric is the first-stage classification layer inside the Task Evaluator. The LLM reads this rubric as a system-level instruction, classifies the incoming task, then evaluates feasibility using the calibration file as few-shot examples.",
+
+  "task_types": [
+    {
+      "id": "routine_cognitive",
+      "code": "RC",
+      "label": "Routine Cognitive",
+      "baseline_ai_readiness": "high",
+      "ai_readiness_range": [3, 5],
+      "definition": "Tasks involving the manipulation, retrieval, transformation, or presentation of information according to defined rules, templates, or procedures. The task can be decomposed into steps that do not require judgment about meaning, context, or ambiguous situations. A competent person could write an algorithm that produces acceptable output.",
+      "core_characteristics": [
+        "Rule-bound: the task can be described as an algorithm or decision tree with defined inputs and outputs",
+        "Low contextual judgment: correct output is determinable from inputs alone without reference to unstated professional values",
+        "Repetitive structure: the same process applies across all instances with only data varying",
+        "Verifiable output: correctness can be checked against ground truth, templates, or objective criteria",
+        "Data-driven: operates on structured or semi-structured inputs that are available to the system"
+      ],
+      "primary_discriminators": [
+        "Can the task be fully described without reference to human judgment or professional values?",
+        "Would two different competent people produce near-identical outputs given the same inputs?",
+        "Is the task currently supported by templates, SOPs, or formal procedures that define the correct output?",
+        "Is the output evaluated against objective criteria rather than expert professional judgment?"
+      ],
+      "typical_domain_examples": [
+        "Data entry and database population",
+        "Report generation from structured data sources",
+        "Timetabling, scheduling, and room allocation",
+        "Format conversion and document transcription",
+        "Standard correspondence generated from templates",
+        "Compliance checking against defined rule sets",
+        "Statistical summary and aggregation tasks",
+        "File organisation and naming convention enforcement"
+      ]
+    },
+    {
+      "id": "non_routine_cognitive",
+      "code": "NRC",
+      "label": "Non-Routine Cognitive",
+      "baseline_ai_readiness": "medium",
+      "ai_readiness_range": [2, 4],
+      "definition": "Tasks requiring analysis, synthesis, evaluation, or creation in contexts where correct outputs cannot be algorithmically determined. Require the application of domain expertise, contextual judgment, and professional values. Output quality is evaluated by expert assessment rather than objective criteria.",
+      "core_characteristics": [
+        "Judgment-dependent: requires professional discretion and contextual reasoning that no procedure can fully specify",
+        "Non-decomposable: cannot be reduced to a fixed decision procedure without losing essential quality",
+        "Context-sensitive: appropriate response varies with unstated situational factors that require interpretation",
+        "Expert-evaluated: quality is assessed by peers with relevant disciplinary or professional expertise",
+        "Novelty-handling: must respond appropriately to situations not fully covered by existing rules or precedent"
+      ],
+      "primary_discriminators": [
+        "Does the task require weighing competing considerations where no single objectively correct answer exists?",
+        "Would a reasonable expert exercise professional judgment differently across different instances of the same task?",
+        "Does quality depend on disciplinary expertise, institutional knowledge, or professional values rather than procedure familiarity?",
+        "Is the task fundamentally about meaning, interpretation, or evaluation rather than information processing?"
+      ],
+      "typical_domain_examples": [
+        "Curriculum design and assessment strategy development",
+        "Institutional policy analysis and development",
+        "Strategic planning at department or faculty level",
+        "Research design, synthesis, and critical appraisal",
+        "Complex student case analysis requiring professional judgment",
+        "Quality review and accreditation evaluation",
+        "Grant proposal writing and research narrative development",
+        "Academic peer review of publications and proposals"
+      ]
+    },
+    {
+      "id": "interpersonal",
+      "code": "IP",
+      "label": "Interpersonal",
+      "baseline_ai_readiness": "low",
+      "ai_readiness_range": [1, 2],
+      "definition": "Tasks whose value derives primarily from human-to-human interaction, relationship, empathy, trust, or social presence. The task outcome is inseparable from the relational quality of the interaction itself. AI cannot replicate the ethical accountability, developmental authenticity, or normative dimensions of genuine human connection.",
+      "core_characteristics": [
+        "Relational primacy: the relationship IS the intervention, not merely the delivery mechanism for cognitive content",
+        "Emotional authenticity: the response must be genuinely felt and personally accountable, not simulated",
+        "Ethical accountability: the practitioner is personally responsible for the interaction and its consequences",
+        "Trust-dependent: effectiveness depends on established or developing trust between persons",
+        "Developmental: shapes identity, professional formation, belonging, or values in ways that require genuine presence"
+      ],
+      "primary_discriminators": [
+        "Would the outcome be materially diminished if delivered by a non-human agent, not merely on quality grounds but on principled grounds?",
+        "Does the task involve the practitioner's personal ethical accountability for the wellbeing or development of another person?",
+        "Is therapeutic, developmental, or relational trust a precondition for effectiveness rather than a quality enhancement?",
+        "Does the task shape identity, sense of belonging, or professional values in ways that require genuine human presence?"
+      ],
+      "typical_domain_examples": [
+        "Student mental health and welfare counselling",
+        "Academic personal tutoring with pastoral responsibility",
+        "Mentoring for career or professional identity development",
+        "Seminar and discussion facilitation requiring authentic moral engagement",
+        "Doctoral research supervision and intellectual formation",
+        "Conflict resolution, mediation, and academic integrity conversations",
+        "Community engagement and external partnership building",
+        "Staff performance appraisal and professional development conversations"
+      ]
+    },
+    {
+      "id": "manual_physical",
+      "code": "MP",
+      "label": "Manual/Physical",
+      "baseline_ai_readiness": "variable",
+      "ai_readiness_range": [1, 5],
+      "definition": "Tasks requiring physical presence, dexterity, embodied skill, or direct manipulation of the material world. AI readiness varies enormously: from near-zero for tasks where physical skill development is the objective, to high where simulation, remote operation, or sensor-based data collection can adequately substitute.",
+      "core_characteristics": [
+        "Embodied execution: task requires physical action in or on the real world, not merely cognitive output",
+        "Material substrate: operates on physical objects, biological specimens, environments, or bodies",
+        "Sensorimotor integration: requires coordination of perception and physical action in real time",
+        "Presence-dependent: some aspect of value cannot be produced remotely, virtually, or by proxy",
+        "Skill development: the physical execution is often itself the primary learning or competence objective"
+      ],
+      "primary_discriminators": [
+        "Does the task require manipulation of physical objects, environments, or living organisms?",
+        "Is the skill development objective physical (dexterity, technique, embodied knowledge) rather than conceptual?",
+        "Can the physical component be adequately substituted by simulation or remote operation without compromising the learning or work objective?",
+        "Does safety certification, professional registration, or occupational competence require demonstrated physical performance?"
+      ],
+      "ai_readiness_spectrum": {
+        "high": "Task can be fully simulated or remotely operated without loss of learning objective; or physical execution is purely data collection substitutable by sensors",
+        "medium": "Simulation meaningfully supplements but cannot fully replace physical practice; AI assists specific components",
+        "low": "Physical skill IS the learning objective; embodied understanding cannot be acquired through simulation; professional competence requires demonstrated physical performance"
+      }
+    }
+  ],
+
+  "boundary_definitions": {
+    "rc_to_nrc": {
+      "boundary_id": "RC-NRC",
+      "discriminator": "procedure_versus_judgment",
+      "one_sentence": "A task is NRC rather than RC when correct output can no longer be determined from inputs by applying a fixed procedure without exercising professional judgment.",
+      "rc_side_indicators": [
+        "Task can be completed by following explicit, fully specified steps",
+        "Output quality is verifiable against objective criteria or templates",
+        "Two competent people produce near-identical outputs given the same inputs",
+        "No professional expertise is required beyond familiarity with the procedure",
+        "Task is already supported by automation tools with acceptable quality"
+      ],
+      "nrc_side_indicators": [
+        "Task requires weighing competing considerations with no objectively correct resolution",
+        "Appropriate response varies with unstated contextual factors that require interpretation",
+        "Output quality requires expert peer assessment rather than objective verification",
+        "Professional values, disciplinary knowledge, or ethical reasoning are required",
+        "Task involves synthesis, evaluation, or judgment about meaning rather than information processing"
+      ],
+      "resolution_principle": "When uncertain, ask: could a competent person write an algorithm that produces acceptable output without exercising professional judgment? If yes, RC. If no, NRC. Note that skill is insufficient; the question is whether judgment is required.",
+      "common_misclassifications": [
+        {
+          "task": "Generating a thematic summary of student feedback",
+          "misclassified_as": "RC",
+          "correct": "NRC",
+          "reason": "Aggregating quantitative ratings is RC. Identifying themes, interpreting significance, and generating actionable insights from qualitative text requires interpretive judgment and is NRC."
+        },
+        {
+          "task": "Running a plagiarism detection report",
+          "misclassified_as": "NRC",
+          "correct": "RC",
+          "reason": "Running the tool and producing a similarity score is RC. Interpreting the report, investigating context, and making an academic integrity judgment is NRC. The task classification depends on which component is being evaluated."
+        },
+        {
+          "task": "Translating a course description into another language",
+          "misclassified_as": "RC",
+          "correct": "NRC for specialised academic content",
+          "reason": "General translation is RC. Academic translation requiring disciplinary knowledge, terminological precision, and cultural adaptation is NRC. Context determines classification."
+        }
+      ]
+    },
+    "nrc_to_ip": {
+      "boundary_id": "NRC-IP",
+      "discriminator": "cognitive_output_versus_relational_value",
+      "one_sentence": "A task shifts from NRC to IP when the relational dimension is not incidental to quality but constitutive of the task's value.",
+      "nrc_side_indicators": [
+        "Task value resides in the knowledge, analysis, or document produced",
+        "The same output has equivalent value regardless of who produced it",
+        "Human involvement is instrumentally valuable (for quality) but not intrinsically required",
+        "Task could in principle be delegated to a highly capable AI without principled ethical objection"
+      ],
+      "ip_side_indicators": [
+        "Task value depends on the human relationship itself being present and real",
+        "Substituting AI would be objectionable on ethical or developmental grounds, not merely on quality grounds",
+        "Therapeutic, formative, or developmental effect requires genuine human presence and accountability",
+        "The practitioner's personal moral accountability is part of what makes the service legitimate"
+      ],
+      "resolution_principle": "The test is substitutability on principled grounds, not quality grounds. If a student would object to AI counselling not because AI advice is inferior but because they need a human being to be present and accountable, the task is IP. If a student would accept AI career information because quality is what matters, the task is NRC.",
+      "common_misclassifications": [
+        {
+          "task": "AI chatbot responding to student welfare enquiries",
+          "misclassified_as": "IP",
+          "correct": "RC for information provision; IP for genuine welfare support",
+          "reason": "Providing factual information about available services is RC. Welfare support itself is IP. The chatbot can do RC information tasks; it cannot substitute for the IP welfare relationship."
+        },
+        {
+          "task": "Personalised learning recommendations",
+          "misclassified_as": "IP",
+          "correct": "NRC primarily; approaches IP when developmental coaching is central",
+          "reason": "Analysing a student's profile and generating personalised recommendations is NRC. Coaching a student through the choices and their implications in a trust relationship is IP. Distinguish the analytical task from the relational task."
+        }
+      ]
+    },
+    "nrc_mp_overlap": {
+      "boundary_id": "NRC-MP",
+      "discriminator": "cognitive_objective_versus_physical_objective",
+      "one_sentence": "When intellectual work is embedded in physical practice, classify by the primary objective of the task.",
+      "resolution_principle": "If the physical activity is the vehicle for intellectual learning (e.g. collecting field samples to analyse), classify by the dominant learning or work objective. If physical skill development is the objective (learning correct pipetting technique), classify as MP regardless of the cognitive understanding involved.",
+      "common_misclassifications": [
+        {
+          "task": "Laboratory report writing based on practical results",
+          "misclassified_as": "MP",
+          "correct": "NRC",
+          "reason": "The physical practical is MP; the intellectual synthesis and writing is NRC. If the task in question is writing the report, it is NRC."
+        },
+        {
+          "task": "Clinical observation and note-taking during patient encounter",
+          "misclassified_as": "IP",
+          "correct": "MP with NRC and IP components",
+          "reason": "The physical examination and observation is MP. The clinical reasoning is NRC. The therapeutic relationship is IP. Multi-component tasks should be decomposed."
+        }
+      ]
+    }
+  },
+
+  "classification_algorithm": {
+    "description": "Step-by-step decision logic for the Task Evaluator LLM. Apply these steps in order to the task description provided by the user.",
+    "preprocessing": "Before classifying, decompose compound tasks into their primary components. Identify which component is the substantive cognitive or physical objective. Classify by that component. Note any secondary components of different types.",
+    "steps": [
+      {
+        "step": 1,
+        "question": "Does the task require physical presence, bodily dexterity, or direct manipulation of the physical world as its primary mode of execution?",
+        "yes_path": "Candidate: Manual/Physical. Proceed to Step 4.",
+        "no_path": "Proceed to Step 2."
+      },
+      {
+        "step": 2,
+        "question": "Does the task value derive primarily from human relationship, empathy, emotional authenticity, or personal ethical accountability rather than from the cognitive content produced?",
+        "yes_path": "Type: Interpersonal. Confirm: would substituting AI be objectionable on principled grounds, not merely quality grounds?",
+        "no_path": "Proceed to Step 3."
+      },
+      {
+        "step": 3,
+        "question": "Can the task be completed by applying a defined procedure to available inputs without exercising professional judgment about meaning, significance, or competing values?",
+        "yes_path": "Type: Routine Cognitive.",
+        "no_path": "Type: Non-Routine Cognitive."
+      },
+      {
+        "step": 4,
+        "question": "(MP candidate only) Can the physical component be adequately substituted by simulation or remote operation without compromising the task's learning or work objective?",
+        "yes_path": "Reclassify: if the simulation task is algorithmic, it is RC; if it requires judgment, it is NRC.",
+        "no_path": "Type: Manual/Physical."
+      }
+    ],
+    "tie_breaking_rules": [
+      "If a task has both RC and NRC components, classify by the component that constitutes the majority of the cognitive work and determines output quality.",
+      "If a task is IP in delivery but NRC in intellectual content (e.g. a tutoring session), classify as IP because the relational context is what defines the task.",
+      "If the task varies by implementation and an AI-assisted version shifts the classification, classify the task as the user would execute it and note the AI-assisted variant.",
+      "AI-assisted versions of NRC tasks remain NRC; the human expert review and ownership work is still the substantive cognitive contribution even if AI drafted the first version.",
+      "Student-facing does not automatically mean Interpersonal. The test is whether relational quality is constitutive of task value."
+    ]
+  },
+
+  "classified_tasks": [
+    {
+      "id": "oecd-rc-001",
+      "task": "Entering student enrolment data from application forms into the student information system",
+      "type": "RC",
+      "rationale": "Defined data entry procedure. No judgment required. Output verifiable against source documents. Correctness is binary per field.",
+      "ai_readiness": "high",
+      "notes": null
+    },
+    {
+      "id": "oecd-rc-002",
+      "task": "Generating weekly attendance reports from LMS data",
+      "type": "RC",
+      "rationale": "Report structure is templated. Data is structured. Output is deterministic given inputs. No interpretive work required.",
+      "ai_readiness": "high",
+      "notes": null
+    },
+    {
+      "id": "oecd-rc-003",
+      "task": "Scheduling lecture rooms against timetable constraints using a booking system",
+      "type": "RC",
+      "rationale": "Constraint satisfaction against defined rules. Fully automatable given inputs. Conflicts are resolved by priority rules, not judgment.",
+      "ai_readiness": "high",
+      "notes": "Strategic decisions about which conflicting constraint to override introduce a light NRC component at the margin."
+    },
+    {
+      "id": "oecd-rc-004",
+      "task": "Transcribing lecture audio recordings to text",
+      "type": "RC",
+      "rationale": "Format conversion task. Output quality is objectively measurable by word error rate. No judgment required.",
+      "ai_readiness": "high",
+      "notes": null
+    },
+    {
+      "id": "oecd-rc-005",
+      "task": "Reformatting a reference list from APA to Harvard citation style",
+      "type": "RC",
+      "rationale": "Rule-based format transformation with fully defined style guide rules. Entirely deterministic.",
+      "ai_readiness": "high",
+      "notes": null
+    },
+    {
+      "id": "oecd-rc-006",
+      "task": "Running plagiarism similarity reports using Turnitin or equivalent tool",
+      "type": "RC",
+      "rationale": "Automated similarity matching against defined corpora. Produces a percentage score and flagged passages. No judgment in report generation itself.",
+      "ai_readiness": "high",
+      "notes": "Interpreting similarity results and making academic integrity judgments from the report is NRC."
+    },
+    {
+      "id": "oecd-rc-007",
+      "task": "Processing scholarship application forms for administrative completeness",
+      "type": "RC",
+      "rationale": "Checklist-based completeness verification against defined eligibility criteria. Binary pass/fail per criterion.",
+      "ai_readiness": "high",
+      "notes": "Merit-based assessment of complete applications is NRC."
+    },
+    {
+      "id": "oecd-rc-008",
+      "task": "Aggregating module grades into a statistical distribution summary table",
+      "type": "RC",
+      "rationale": "Numerical aggregation with defined formulas. Output is objectively verifiable. No interpretive judgment.",
+      "ai_readiness": "high",
+      "notes": null
+    },
+    {
+      "id": "oecd-rc-009",
+      "task": "Generating draft meeting minutes from a structured meeting transcript and agenda",
+      "type": "RC",
+      "rationale": "Template-based synthesis from structured inputs. AI can produce acceptable output from transcript plus agenda without professional judgment.",
+      "ai_readiness": "high",
+      "notes": "Sensitive discussions or strategic decisions require human review before circulation."
+    },
+    {
+      "id": "oecd-rc-010",
+      "task": "Auto-tagging library resources with subject classification codes from a defined taxonomy",
+      "type": "RC",
+      "rationale": "Classification against a pre-defined taxonomy. High pattern recognition component. Objective correctness criterion exists.",
+      "ai_readiness": "high",
+      "notes": "Novel interdisciplinary resources at taxonomy boundaries may require human review."
+    },
+    {
+      "id": "oecd-rc-011",
+      "task": "Sending automated deadline reminder emails to students based on submission calendar rules",
+      "type": "RC",
+      "rationale": "Trigger-based communication using templates and calendar rules. Fully automatable with standard tools.",
+      "ai_readiness": "high",
+      "notes": null
+    },
+    {
+      "id": "oecd-rc-012",
+      "task": "Converting PDF course materials to accessible HTML format following WCAG guidelines",
+      "type": "RC",
+      "rationale": "Format conversion against defined accessibility rules. Objective compliance criteria exist.",
+      "ai_readiness": "high",
+      "notes": "Complex diagrams or highly technical notation may require human review for semantic accuracy."
+    },
+    {
+      "id": "oecd-rc-013",
+      "task": "Extracting quantitative response data from structured student surveys into a spreadsheet",
+      "type": "RC",
+      "rationale": "Data extraction from structured inputs. No interpretive judgment in the extraction step.",
+      "ai_readiness": "high",
+      "notes": "Thematic analysis of open-ended survey text is NRC."
+    },
+    {
+      "id": "oecd-rc-014",
+      "task": "Checking submitted assignment files for correct naming conventions and file format compliance",
+      "type": "RC",
+      "rationale": "Rule-based compliance check against defined submission requirements. Fully deterministic.",
+      "ai_readiness": "high",
+      "notes": null
+    },
+    {
+      "id": "oecd-rc-015",
+      "task": "Generating a standardised progress report from gradebook data for a student record",
+      "type": "RC",
+      "rationale": "Template-based report generation from structured gradebook inputs. Output follows a defined format.",
+      "ai_readiness": "high",
+      "notes": "Personalised narrative commentary on a student's progress and development trajectory is NRC."
+    },
+    {
+      "id": "oecd-rc-016",
+      "task": "Populating annual review documentation templates with pre-existing performance metric data",
+      "type": "RC",
+      "rationale": "Data transfer from source systems to defined templates. No interpretation or judgment in the population step.",
+      "ai_readiness": "high",
+      "notes": "The evaluative narrative sections of the annual review are NRC."
+    },
+    {
+      "id": "oecd-rc-017",
+      "task": "Generating course reading list links and availability checks against the library catalogue",
+      "type": "RC",
+      "rationale": "Database lookup and availability verification against defined criteria. Fully automatable.",
+      "ai_readiness": "high",
+      "notes": null
+    },
+    {
+      "id": "oecd-nrc-001",
+      "task": "Designing a new undergraduate curriculum module including learning outcomes, content, and assessment",
+      "type": "NRC",
+      "rationale": "Requires pedagogical expertise, disciplinary judgment, alignment with programme outcomes, and contextual awareness of the student cohort and external requirements. No fixed procedure determines correct output.",
+      "ai_readiness": "medium",
+      "notes": "AI can assist with drafting, alignment checking, and gap analysis but cannot substitute for expert design judgment."
+    },
+    {
+      "id": "oecd-nrc-002",
+      "task": "Writing an institutional AI acceptable use policy",
+      "type": "NRC",
+      "rationale": "Requires synthesis of regulatory knowledge, institutional values, stakeholder perspectives, and governance context. Output is evaluated by professional judgment against multiple competing considerations.",
+      "ai_readiness": "medium",
+      "notes": null
+    },
+    {
+      "id": "oecd-nrc-003",
+      "task": "Conducting a systematic literature review including thematic synthesis",
+      "type": "NRC",
+      "rationale": "Search and deduplication are RC components. The synthesis, critical appraisal, and contribution to knowledge are NRC. The task is classified by its dominant intellectual objective.",
+      "ai_readiness": "medium",
+      "notes": "AI-assisted literature review using AI for search and deduplication but human for screening and synthesis remains NRC. The classification is unchanged by AI tool use."
+    },
+    {
+      "id": "oecd-nrc-004",
+      "task": "Evaluating a student's argumentative essay for quality of reasoning and disciplinary understanding",
+      "type": "NRC",
+      "rationale": "Requires application of disciplinary standards, interpretive judgment, and expert evaluation of argumentation. No objective formula determines grade quality.",
+      "ai_readiness": "medium",
+      "notes": "AI-assisted marking tools can flag surface features but cannot replace expert judgment for complex argumentation."
+    },
+    {
+      "id": "oecd-nrc-005",
+      "task": "Developing a research grant proposal narrative including impact and significance arguments",
+      "type": "NRC",
+      "rationale": "Creative, strategic, and expert cognitive work. Quality is assessed by expert peer review. No procedure produces an adequate proposal.",
+      "ai_readiness": "medium",
+      "notes": null
+    },
+    {
+      "id": "oecd-nrc-006",
+      "task": "Analysing equity gaps in admissions data to identify systemic barriers and recommend interventions",
+      "type": "NRC",
+      "rationale": "Data extraction is RC. Interpreting patterns, identifying causal factors, and generating contextually appropriate recommendations requires expert analytical judgment.",
+      "ai_readiness": "medium",
+      "notes": "High institutional stakes; findings should be reviewed by senior leadership before action."
+    },
+    {
+      "id": "oecd-nrc-007",
+      "task": "Designing a fair and valid assessment strategy for a newly designed course",
+      "type": "NRC",
+      "rationale": "Requires integration of pedagogical theory, disciplinary norms, equity considerations, and institutional context. Quality is determined by expert judgment.",
+      "ai_readiness": "medium",
+      "notes": null
+    },
+    {
+      "id": "oecd-nrc-008",
+      "task": "Evaluating competing vendor proposals for a new learning management system",
+      "type": "NRC",
+      "rationale": "Complex multi-criteria decision requiring strategic judgment, technical knowledge, stakeholder context, and institutional values. No objectively correct answer.",
+      "ai_readiness": "medium",
+      "notes": "AI can assist with structured comparison matrices but cannot make the strategic judgment."
+    },
+    {
+      "id": "oecd-nrc-009",
+      "task": "Identifying students at risk of disengagement from complex patterns in learning analytics data",
+      "type": "NRC",
+      "rationale": "Pattern identification in structured data has RC components. Interpreting context, ruling out confounders, and recommending appropriate interventions require expert judgment.",
+      "ai_readiness": "medium",
+      "notes": "High stakes for students. Human confirmation is required before any intervention. Model outputs must not trigger automated student-facing actions."
+    },
+    {
+      "id": "oecd-nrc-010",
+      "task": "Writing a strategic development plan for an academic faculty over a five-year horizon",
+      "type": "NRC",
+      "rationale": "Strategic synthesis requiring institutional knowledge, stakeholder understanding, and leadership judgment. Cannot be produced algorithmically.",
+      "ai_readiness": "medium",
+      "notes": null
+    },
+    {
+      "id": "oecd-nrc-011",
+      "task": "Conducting an academic peer review of a journal article submission",
+      "type": "NRC",
+      "rationale": "Requires deep disciplinary expertise, independent critical judgment, and evaluation against community standards. Fundamental to scholarly quality assurance.",
+      "ai_readiness": "medium",
+      "notes": "AI assistance in checking methodology or literature coverage is augmentation. AI-generated peer review raises serious integrity concerns and should be flagged."
+    },
+    {
+      "id": "oecd-nrc-012",
+      "task": "Interpreting themes from qualitative student feedback to improve course delivery",
+      "type": "NRC",
+      "rationale": "Thematic synthesis from qualitative data requires interpretive judgment. The same feedback can legitimately support different conclusions depending on analytical lens and contextual knowledge.",
+      "ai_readiness": "medium",
+      "notes": null
+    },
+    {
+      "id": "oecd-nrc-013",
+      "task": "Reviewing a research ethics application for a complex human subjects study",
+      "type": "NRC",
+      "rationale": "Requires expert ethical reasoning, contextual judgment, and application of principles to novel situations. High-stakes professional responsibility with direct accountability.",
+      "ai_readiness": "low_medium",
+      "notes": "Ethical and legal accountability pushes this toward augmentation only. AI should not make or materially influence ethics determinations."
+    },
+    {
+      "id": "oecd-nrc-014",
+      "task": "Creating personalised academic pathway recommendations for a student at a decision point",
+      "type": "NRC",
+      "rationale": "Requires integration of student goals, academic history, available options, contextual factors, and professional judgment about what is likely to serve the student well.",
+      "ai_readiness": "medium",
+      "notes": "Approaches the IP boundary if the recommendation emerges from an ongoing pastoral or mentoring relationship."
+    },
+    {
+      "id": "oecd-nrc-015",
+      "task": "Examining a PhD thesis for scholarly contribution, methodological rigour, and originality",
+      "type": "NRC",
+      "rationale": "Requires deep disciplinary expertise and expert judgment about scholarly contribution to the field. Examiner has personal professional accountability.",
+      "ai_readiness": "low_medium",
+      "notes": "AI can assist with technical checks (formatting, citation completeness). The scholarly assessment and viva are NRC with examiner accountability."
+    },
+    {
+      "id": "oecd-ip-001",
+      "task": "Conducting a one-to-one student welfare counselling session",
+      "type": "IP",
+      "rationale": "Therapeutic relationship is the intervention. Empathy, trust, and human presence are constitutive requirements, not quality enhancements. AI substitution is ethically unacceptable regardless of capability.",
+      "ai_readiness": "low",
+      "notes": null
+    },
+    {
+      "id": "oecd-ip-002",
+      "task": "Personal academic tutoring meeting with a student experiencing academic difficulty",
+      "type": "IP",
+      "rationale": "Academic support in this context is relational. Motivation, sense of belonging, and trust are central to effectiveness. Developmental function requires genuine human engagement.",
+      "ai_readiness": "low",
+      "notes": "AI can prepare background materials and flag issues before the meeting (RC/NRC), but the meeting itself is IP."
+    },
+    {
+      "id": "oecd-ip-003",
+      "task": "Career mentoring for a doctoral student navigating an academic career transition",
+      "type": "IP",
+      "rationale": "Professional identity formation and career navigation at a high-stakes moment depend on authentic relationship, lived experience of the mentor, and personal investment. Cannot be meaningfully simulated.",
+      "ai_readiness": "low",
+      "notes": null
+    },
+    {
+      "id": "oecd-ip-004",
+      "task": "Facilitating a seminar discussion on a contested ethical or political topic",
+      "type": "IP",
+      "rationale": "Pedagogical value depends on authentic human deliberation and the educator modelling intellectual virtues as a moral agent in the discussion. AI facilitation would hollow out the developmental purpose.",
+      "ai_readiness": "low",
+      "notes": "AI can provide preparatory readings and discussion questions (NRC/RC support) but cannot facilitate genuine moral deliberation."
+    },
+    {
+      "id": "oecd-ip-005",
+      "task": "Regular doctoral research supervision meeting including direction and intellectual formation",
+      "type": "IP",
+      "rationale": "Research supervision shapes intellectual development, professional identity, and academic independence. Relational trust and the supervisor's personal accountability are constitutive.",
+      "ai_readiness": "low",
+      "notes": null
+    },
+    {
+      "id": "oecd-ip-006",
+      "task": "Mediating a conflict between two students or between a student and staff member",
+      "type": "IP",
+      "rationale": "Conflict resolution requires human empathy, real-time reading of emotional states, and personal ethical accountability. AI mediation lacks legitimacy and risks escalation.",
+      "ai_readiness": "low",
+      "notes": null
+    },
+    {
+      "id": "oecd-ip-007",
+      "task": "Community outreach meeting to discuss university widening access with local school",
+      "type": "IP",
+      "rationale": "Trust-building between institutions and communities depends on authentic human representation. AI cannot establish or maintain institutional trust with external communities.",
+      "ai_readiness": "low",
+      "notes": null
+    },
+    {
+      "id": "oecd-ip-008",
+      "task": "Academic integrity investigation interview with a student",
+      "type": "IP",
+      "rationale": "Procedural fairness, personal accountability, and the ethical seriousness of the interaction require human conduct. Legal and regulatory frameworks in most jurisdictions require human decision-makers for consequential findings.",
+      "ai_readiness": "low",
+      "notes": "AI may assist with evidence compilation and similarity detection (RC), but the investigative conversation and determination are IP."
+    },
+    {
+      "id": "oecd-ip-009",
+      "task": "International student orientation and cultural integration support programme",
+      "type": "IP",
+      "rationale": "Belonging and cultural transition require genuine human welcome and community. AI can provide information but cannot provide the relational support that reduces isolation and builds academic confidence.",
+      "ai_readiness": "low",
+      "notes": "Information provision sub-tasks within orientation (what forms to complete, campus locations) are RC."
+    },
+    {
+      "id": "oecd-ip-010",
+      "task": "Staff performance appraisal and professional development conversation",
+      "type": "IP",
+      "rationale": "Professional accountability, development conversation, and management relationship require human presence and genuine engagement. Legal and HR frameworks in most jurisdictions require human managers for consequential employment decisions.",
+      "ai_readiness": "low",
+      "notes": "Documentation support and data preparation before the conversation are RC/NRC."
+    },
+    {
+      "id": "oecd-mp-001",
+      "task": "Undergraduate chemistry titration practical requiring correct technique and measurement",
+      "type": "MP",
+      "rationale": "Develops fine motor skill, safe laboratory technique, and embodied understanding of analytical chemistry. Physical execution is the learning objective. Cannot be adequately substituted for skill certification.",
+      "ai_readiness": "low",
+      "notes": "Virtual titration simulations exist but are insufficient for developing physical competence for subsequent laboratory work."
+    },
+    {
+      "id": "oecd-mp-002",
+      "task": "Geographic fieldwork data collection in a coastal or rural survey environment",
+      "type": "MP",
+      "rationale": "Requires physical presence in environment, embodied observation, and direct interaction with the landscape. Core to geography and earth sciences education.",
+      "ai_readiness": "variable",
+      "notes": "GPS and sensor-based data collection can be AI-assisted. Observation, contextual interpretation, and sketching remain MP."
+    },
+    {
+      "id": "oecd-mp-003",
+      "task": "Nursing clinical skills simulation including venepuncture or wound care technique",
+      "type": "MP",
+      "rationale": "Clinical skill development requires physical practice. Competence is demonstrated through physical performance before supervised patient contact.",
+      "ai_readiness": "medium",
+      "notes": "High-fidelity simulation mannequins and haptic systems provide meaningful physical practice but do not fully substitute for supervised patient practice required for registration."
+    },
+    {
+      "id": "oecd-mp-004",
+      "task": "Engineering prototype construction and empirical physical testing",
+      "type": "MP",
+      "rationale": "Physical construction and material testing develop embodied engineering judgment and understanding of material behaviour under real conditions. Cannot be fully simulated.",
+      "ai_readiness": "low_medium",
+      "notes": "Digital twin simulations reduce but do not eliminate the need for physical prototyping for innovation tasks."
+    },
+    {
+      "id": "oecd-mp-005",
+      "task": "Fine arts oil painting studio practice developing material technique",
+      "type": "MP",
+      "rationale": "Physical engagement with material is the artistic practice. Embodied skill and material understanding developed through physical painting cannot be substituted by AI image generation.",
+      "ai_readiness": "low",
+      "notes": "AI image generation tools are categorically different activities from developing physical artistic craft."
+    },
+    {
+      "id": "oecd-mp-006",
+      "task": "Archaeological excavation and in-situ site recording",
+      "type": "MP",
+      "rationale": "Requires physical presence, manual excavation technique, and direct observation of material culture in context. Irreversible physical process where technique determines data quality.",
+      "ai_readiness": "variable",
+      "notes": "AI assists with photogrammetric documentation, finds analysis, and pattern detection. Physical excavation and real-time stratigraphic interpretation remain MP."
+    },
+    {
+      "id": "oecd-mp-007",
+      "task": "Physical education coaching of a biomechanically complex sports technique",
+      "type": "MP",
+      "rationale": "Effective coaching of physical technique requires physical demonstration, hands-on correction, and embodied feedback in real time. Both coach and student performance are physical.",
+      "ai_readiness": "low",
+      "notes": "Motion capture and AI gait analysis can assist with feedback. The coaching interaction itself is also IP as well as MP."
+    },
+    {
+      "id": "oecd-mp-008",
+      "task": "Microscopy and biological specimen preparation in a teaching laboratory",
+      "type": "MP",
+      "rationale": "Manual preparation and manipulation skills are both the technique and the learning objective. Physical execution determines the quality of what can subsequently be observed.",
+      "ai_readiness": "low_medium",
+      "notes": "Virtual microscopy supports some conceptual learning objectives but does not develop manual preparation skill."
+    },
+    {
+      "id": "oecd-mp-009",
+      "task": "Instrument performance practice and ensemble rehearsal for a music degree",
+      "type": "MP",
+      "rationale": "Instrument technique is an embodied skill developed through physical practice. Performance requires physical execution that AI cannot develop on behalf of the student.",
+      "ai_readiness": "low",
+      "notes": "AI accompaniment tools and real-time pitch analysis can augment practice without substituting physical skill development."
+    },
+    {
+      "id": "oecd-mp-010",
+      "task": "Calibration and maintenance of specialist research laboratory equipment",
+      "type": "MP",
+      "rationale": "Physical assembly, calibration, and on-site maintenance require manual skill and presence. Cannot be performed remotely without significant quality compromise.",
+      "ai_readiness": "variable",
+      "notes": "AI-based predictive diagnostics and remote monitoring reduce the frequency of intervention but do not eliminate the need for physical maintenance."
+    }
+  ],
+
+  "edge_cases": [
+    {
+      "id": "edge-001",
+      "task": "AI-assisted systematic literature review",
+      "surface_classification": "RC",
+      "surface_reasoning": "Literature searching and deduplication are database operations following defined rules.",
+      "correct_classification": "NRC",
+      "correct_reasoning": "The task as a scholarly activity is defined by its intellectual objective: synthesising evidence, critically appraising methodology, and constructing a scholarly argument. AI tools handle the RC sub-components. The task classification reflects the cognitive work that defines its purpose, quality, and scholarly value.",
+      "resolution_rule": "Classify by the task's defining intellectual objective, not by its most automatable sub-component."
+    },
+    {
+      "id": "edge-002",
+      "task": "Automated essay scoring applied to summative assessments",
+      "surface_classification": "RC",
+      "surface_reasoning": "A trained model applies defined scoring rules and produces a numerical output.",
+      "correct_classification": "Context-dependent: RC for surface features, NRC for substantive evaluation",
+      "correct_reasoning": "Scoring grammar, spelling, and structural compliance is RC. Evaluating argument quality, disciplinary understanding, and critical thinking for a grade that determines academic progression is NRC and requires human expert review. Stakes and purpose determine classification.",
+      "resolution_rule": "Classify by what the score represents and how it will be used. Formative surface feedback is RC. Summative complex evaluation is NRC."
+    },
+    {
+      "id": "edge-003",
+      "task": "AI chatbot answering student administrative queries (deadlines, room locations, form locations)",
+      "surface_classification": "IP",
+      "surface_reasoning": "Student-facing interaction with the institution.",
+      "correct_classification": "RC",
+      "correct_reasoning": "If the chatbot answers questions from a defined knowledge base using retrieval, the underlying task is RC information provision. The student-facing delivery format does not make the task Interpersonal. IP classification applies only when the relational quality of the interaction is constitutive of its value.",
+      "resolution_rule": "Student-facing does not mean Interpersonal. Ask: is the relational dimension constitutive of value, or merely incidental to delivery?"
+    },
+    {
+      "id": "edge-004",
+      "task": "AI proctoring of online examinations using behavioural monitoring",
+      "surface_classification": "RC",
+      "surface_reasoning": "Automated rule-based monitoring and flagging.",
+      "correct_classification": "RC for monitoring; NRC for case review; IP for student-facing consequences",
+      "correct_reasoning": "Automated surveillance and flagging is RC. Reviewing flagged cases and interpreting context requires NRC judgment. Any student-facing conversation about flagged behaviour or academic misconduct findings is IP. Multi-component tasks should be classified at component level; consequential decisions must not be automated.",
+      "resolution_rule": "Decompose multi-component tasks. The Task Evaluator should classify each substantive component separately if they span types."
+    },
+    {
+      "id": "edge-005",
+      "task": "Virtual laboratory simulation used in place of a physical practical",
+      "surface_classification": "MP",
+      "surface_reasoning": "Named as a laboratory task.",
+      "correct_classification": "Context-dependent on substitution adequacy and learning objective",
+      "correct_reasoning": "If the simulation substitutes for physical skill development that is itself the learning objective (e.g. technique for subsequent real laboratory work), the relevant task remains MP even though the delivery is virtual. If the simulation is used to build conceptual understanding without a physical skill objective, it is RC or NRC depending on the degree of guidance.",
+      "resolution_rule": "Ask whether the learning objective is the physical skill or the conceptual understanding. Physical skill objective means MP regardless of delivery method."
+    },
+    {
+      "id": "edge-006",
+      "task": "AI-generated personalised feedback on formative assignments",
+      "surface_classification": "RC",
+      "surface_reasoning": "Automated generation from a defined rubric with no human writing.",
+      "correct_classification": "RC for surface feature feedback; NRC for substantive developmental feedback",
+      "correct_reasoning": "Feedback on grammar, formatting, and citation compliance is RC. Feedback on argumentation quality, disciplinary understanding, and intellectual development is NRC even if text is AI-generated, because the evaluative standard being applied requires expert calibration and the student's development depends on its accuracy.",
+      "resolution_rule": "Classify by the evaluative standard being applied and the developmental stakes, not by who or what generates the text."
+    },
+    {
+      "id": "edge-007",
+      "task": "AI-drafted institutional strategic plan presented for approval",
+      "surface_classification": "RC",
+      "surface_reasoning": "AI produced the text following a defined planning template.",
+      "correct_classification": "NRC with mandatory human ownership",
+      "correct_reasoning": "A strategic plan that will govern institutional direction for multiple years is NRC regardless of who drafted it. The expert review, contextualisation, stakeholder engagement, and ownership required before approval constitute the substantive human cognitive contribution. Accepting an AI draft without genuine human intellectual ownership misclassifies the responsibility involved.",
+      "resolution_rule": "When AI produces a first draft of an NRC task, the task remains NRC. The expert review, validation, and ownership work is the substantive human contribution."
+    },
+    {
+      "id": "edge-008",
+      "task": "Personalised student progress emails with narrative commentary",
+      "surface_classification": "IP",
+      "surface_reasoning": "Student-facing communication about their development.",
+      "correct_classification": "RC if templated from data; NRC if substantive contextualised narrative",
+      "correct_reasoning": "If emails are generated from grade data using a template, the task is RC. If each email requires contextualised narrative about an individual student's situation requiring judgment about what to say and how, it is NRC. If the email is part of an ongoing pastoral relationship and substitutes for a personal conversation, it approaches IP.",
+      "resolution_rule": "Content complexity, individual contextualisation, and relational stakes determine classification. Not all student-facing communication is IP."
+    },
+    {
+      "id": "edge-009",
+      "task": "AI-generated academic reference letter based on student performance data",
+      "surface_classification": "RC",
+      "surface_reasoning": "Generates text from structured performance inputs.",
+      "correct_classification": "NRC with significant integrity concerns",
+      "correct_reasoning": "A reference letter makes professional assertions about a student's character, potential, and suitability. The assessor's personal professional judgment and accountability are intrinsic. AI generation without substantive human authorship misrepresents the nature of the document to its recipient and raises integrity concerns that are not merely quality concerns.",
+      "resolution_rule": "When personal professional accountability is intrinsic to the document's purpose, the task is NRC at minimum and the human must be the substantive author."
+    },
+    {
+      "id": "edge-010",
+      "task": "AI identification of at-risk students triggering automated outreach messages",
+      "surface_classification": "RC",
+      "surface_reasoning": "Rule-based identification and automated messaging.",
+      "correct_classification": "RC for data pattern detection; NRC for case interpretation; IP for student outreach",
+      "correct_reasoning": "Automated pattern detection in engagement data is RC. Determining whether a student is genuinely at risk and what kind of support is appropriate is NRC. Any direct outreach communication that affects the student's sense of being monitored and supported is student-facing and emotionally consequential, pushing toward IP. Fully automated at-risk pipelines that bypass NRC and IP stages are a safeguarding concern.",
+      "resolution_rule": "Never automate the full at-risk pipeline. NRC case review and human-initiated IP contact are required before student-facing intervention."
+    }
+  ],
+
+  "ai_readiness_factors_by_type": {
+    "routine_cognitive": {
+      "factors_increasing_readiness": [
+        "High volume of instances (automation ROI is clear)",
+        "Inputs are highly structured or can be reliably structured",
+        "Output format is defined and consistent",
+        "Error consequences are low or easily recoverable",
+        "Back-office function with no direct student impact",
+        "Established training data or tool capability exists for this task class",
+        "Data sensitivity is low (public or internal administrative)"
+      ],
+      "factors_decreasing_readiness": [
+        "Inputs are unstructured or context-dependent",
+        "Output feeds directly into official records or high-stakes decisions",
+        "High data sensitivity requiring restricted access and audit trails",
+        "Regulatory constraints on automated processing of this data type",
+        "Insufficient training data for the specific institutional domain",
+        "High frequency of edge cases that require human judgment"
+      ]
+    },
+    "non_routine_cognitive": {
+      "factors_increasing_readiness": [
+        "Task is primarily generative (first draft, structuring) with mandatory human expert review",
+        "Low stakes: formative, internal use, reversible decisions",
+        "Human expert remains substantively in the loop throughout the workflow",
+        "Task has well-defined evaluation criteria even if expert judgment is needed to apply them",
+        "Well-represented disciplinary knowledge base in current AI training data",
+        "Iteration and revision are built into the workflow so errors are catchable"
+      ],
+      "factors_decreasing_readiness": [
+        "External accountability: accreditation, legal, regulatory, reputational consequences",
+        "Novel context with limited precedent or analogue in training data",
+        "Personal professional accountability is intrinsic to the document or decision",
+        "Ethical or values-laden judgment is a central not peripheral component",
+        "Output will be relied on without substantive expert review",
+        "Student-facing in formative or developmental contexts where error causes harm"
+      ]
+    },
+    "interpersonal": {
+      "what_ai_can_do": [
+        "Pre-interaction logistics: scheduling, reminders, information provision",
+        "Post-interaction: note summarisation, action item extraction, referral documentation",
+        "Background information preparation: student profile summaries, relevant history",
+        "Never: substitute for or simulate the relational interaction itself"
+      ],
+      "factors_decreasing_readiness_further": [
+        "Higher emotional vulnerability of the student or staff member",
+        "Involves a protected characteristic or sensitive personal circumstance",
+        "Developmental or formative stage where trust is being established",
+        "Legal or professional accountability is explicitly attached to the interaction",
+        "Any context where simulation of human presence would be perceived as deceptive"
+      ]
+    },
+    "manual_physical": {
+      "high_readiness_conditions": [
+        "Physical task can be fully simulated without compromise to the learning objective",
+        "Physical component is primarily data collection substitutable by sensors or remote instruments",
+        "Remote operation via robotics or teleoperation is feasible and adequate",
+        "Physical execution is not the learning objective; conceptual understanding is"
+      ],
+      "variable_readiness_conditions": [
+        "Simulation meaningfully supplements but cannot fully replace physical practice",
+        "Some sub-components of the physical task are data collection; others require manual skill",
+        "Professional registration requires both simulated and real physical practice"
+      ],
+      "low_readiness_conditions": [
+        "Physical skill development is the primary learning objective",
+        "Embodied understanding of material properties, texture, or resistance cannot be simulated with current technology",
+        "Professional or safety certification requires demonstrated physical performance in real conditions",
+        "Material unpredictability and real-world variation are themselves part of the learning"
+      ]
+    }
+  }
+}

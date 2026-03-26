@@ -1,0 +1,1473 @@
+{
+  "framework_id": "dec-ai-literacy",
+  "framework_name": "DEC AI Literacy Framework",
+  "file_type": "scenarios",
+  "research_basis": {
+    "generated_at": "2026-03-26",
+    "authoring_method": "Original synthesis using the user brief and the THE DMI implementation reference as the structural benchmark.",
+    "licence_handling": "All rights reserved; reproduction without amendment permitted. This implementation uses original scenario and practitioner-language content informed by the framework structure."
+  },
+  "object_count": 30,
+  "objects": [
+    {
+      "scenario_id": "DEC-UND-AE-01",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-understanding",
+      "dimension_name": "Understanding AI and Data",
+      "boundary_code": "AE",
+      "from_level_id": "dec-understanding-awareness",
+      "to_level_id": "dec-understanding-exploration",
+      "stem": "You are working through an orientation session on how AI systems are trained and why data quality matters. Which response best reflects stronger Understanding AI and Data?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Read about the issue and wait until someone provides a recommended approach before trying anything yourself.",
+          "maps_to_level_id": "dec-understanding-awareness",
+          "nuisance": true,
+          "nuisance_reason": "Interest is present, but there is no deliberate exploration."
+        },
+        {
+          "option_id": "B",
+          "text": "Run a purposeful trial using explicit criteria and compare what happened across at least two options or settings.",
+          "maps_to_level_id": "dec-understanding-exploration"
+        },
+        {
+          "option_id": "C",
+          "text": "Build a repeatable workflow immediately and encourage others to adopt it across regular work.",
+          "maps_to_level_id": "dec-understanding-practice"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "educator"
+        ],
+        "subject_area": [
+          "humanities"
+        ],
+        "prior_ai_experience": [
+          "regular"
+        ],
+        "institution_level": [
+          "secondary"
+        ],
+        "discipline_context": [
+          "arts"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the AE boundary in Understanding AI and Data by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "DEC-UND-AE-02",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-understanding",
+      "dimension_name": "Understanding AI and Data",
+      "boundary_code": "AE",
+      "from_level_id": "dec-understanding-awareness",
+      "to_level_id": "dec-understanding-exploration",
+      "stem": "You are dealing with a class activity comparing outputs from AI tools trained on different sources. You have enough context to act, but not enough to rely on guesswork. Which response best indicates the higher side of this boundary in Understanding AI and Data?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Read about the issue and wait until someone provides a recommended approach before trying anything yourself.",
+          "maps_to_level_id": "dec-understanding-awareness",
+          "nuisance": true,
+          "nuisance_reason": "Interest is present, but there is no deliberate exploration."
+        },
+        {
+          "option_id": "B",
+          "text": "Run a purposeful trial using explicit criteria and compare what happened across at least two options or settings.",
+          "maps_to_level_id": "dec-understanding-exploration"
+        },
+        {
+          "option_id": "C",
+          "text": "Build a repeatable workflow immediately and encourage others to adopt it across regular work.",
+          "maps_to_level_id": "dec-understanding-practice"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "student"
+        ],
+        "subject_area": [
+          "social_sciences"
+        ],
+        "prior_ai_experience": [
+          "technical"
+        ],
+        "institution_level": [
+          "FE"
+        ],
+        "discipline_context": [
+          "interdisciplinary"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the AE boundary in Understanding AI and Data by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "DEC-UND-EP-01",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-understanding",
+      "dimension_name": "Understanding AI and Data",
+      "boundary_code": "EP",
+      "from_level_id": "dec-understanding-exploration",
+      "to_level_id": "dec-understanding-practice",
+      "stem": "You are working through a team review of a vendor claim about accuracy and reliability. Which response best reflects stronger Understanding AI and Data?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep trying different AI approaches when time allows, but decide informally each time what counts as good enough.",
+          "maps_to_level_id": "dec-understanding-exploration",
+          "nuisance": true,
+          "nuisance_reason": "Shows genuine experimentation, but not repeatable practice."
+        },
+        {
+          "option_id": "B",
+          "text": "Use a documented workflow with checks and constraints that can be repeated in real work or study.",
+          "maps_to_level_id": "dec-understanding-practice"
+        },
+        {
+          "option_id": "C",
+          "text": "Convert the workflow into exemplars or standards that others in the field can adopt and refine.",
+          "maps_to_level_id": "dec-understanding-mastery"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "researcher"
+        ],
+        "subject_area": [
+          "health"
+        ],
+        "prior_ai_experience": [
+          "none"
+        ],
+        "institution_level": [
+          "HE"
+        ],
+        "discipline_context": [
+          "STEM"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the EP boundary in Understanding AI and Data by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "DEC-UND-EP-02",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-understanding",
+      "dimension_name": "Understanding AI and Data",
+      "boundary_code": "EP",
+      "from_level_id": "dec-understanding-exploration",
+      "to_level_id": "dec-understanding-practice",
+      "stem": "You are dealing with a discussion about what counts as training data, input data, and feedback. A familiar routine exists, but the situation is no longer routine. Which response best indicates the higher side of this boundary in Understanding AI and Data?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep trying different AI approaches when time allows, but decide informally each time what counts as good enough.",
+          "maps_to_level_id": "dec-understanding-exploration",
+          "nuisance": true,
+          "nuisance_reason": "Shows genuine experimentation, but not repeatable practice."
+        },
+        {
+          "option_id": "B",
+          "text": "Use a documented workflow with checks and constraints that can be repeated in real work or study.",
+          "maps_to_level_id": "dec-understanding-practice"
+        },
+        {
+          "option_id": "C",
+          "text": "Convert the workflow into exemplars or standards that others in the field can adopt and refine.",
+          "maps_to_level_id": "dec-understanding-mastery"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "professional_services"
+        ],
+        "subject_area": [
+          "arts"
+        ],
+        "prior_ai_experience": [
+          "casual"
+        ],
+        "institution_level": [
+          "secondary"
+        ],
+        "discipline_context": [
+          "humanities"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the EP boundary in Understanding AI and Data by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "DEC-UND-PM-01",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-understanding",
+      "dimension_name": "Understanding AI and Data",
+      "boundary_code": "PM",
+      "from_level_id": "dec-understanding-practice",
+      "to_level_id": "dec-understanding-mastery",
+      "stem": "You are working through a troubleshooting exercise when an AI tool performs unevenly across tasks. Which response best reflects stronger Understanding AI and Data?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Continue using a strong personal method and share occasional tips, but avoid formalising expectations for others.",
+          "maps_to_level_id": "dec-understanding-practice",
+          "nuisance": true,
+          "nuisance_reason": "Represents solid practice without field-shaping influence."
+        },
+        {
+          "option_id": "B",
+          "text": "Create exemplars, design choices, or guidance that others can use to improve quality in this area.",
+          "maps_to_level_id": "dec-understanding-mastery"
+        },
+        {
+          "option_id": "C",
+          "text": "Try more ambitious features yourself and assume others will pick up good practice by watching.",
+          "maps_to_level_id": "dec-understanding-exploration",
+          "nuisance": true,
+          "nuisance_reason": "Ambition is visible, but the move to mastery requires explicit models and mentorship."
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "educator"
+        ],
+        "subject_area": [
+          "STEM"
+        ],
+        "prior_ai_experience": [
+          "regular"
+        ],
+        "institution_level": [
+          "FE"
+        ],
+        "discipline_context": [
+          "social_sciences"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the PM boundary in Understanding AI and Data by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "DEC-UND-PM-02",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-understanding",
+      "dimension_name": "Understanding AI and Data",
+      "boundary_code": "PM",
+      "from_level_id": "dec-understanding-practice",
+      "to_level_id": "dec-understanding-mastery",
+      "stem": "You are dealing with a briefing for new staff or students on key AI concepts and limitations. Your own method is already strong, but the wider environment now matters. Which response best indicates the higher side of this boundary in Understanding AI and Data?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Continue using a strong personal method and share occasional tips, but avoid formalising expectations for others.",
+          "maps_to_level_id": "dec-understanding-practice",
+          "nuisance": true,
+          "nuisance_reason": "Represents solid practice without field-shaping influence."
+        },
+        {
+          "option_id": "B",
+          "text": "Create exemplars, design choices, or guidance that others can use to improve quality in this area.",
+          "maps_to_level_id": "dec-understanding-mastery"
+        },
+        {
+          "option_id": "C",
+          "text": "Try more ambitious features yourself and assume others will pick up good practice by watching.",
+          "maps_to_level_id": "dec-understanding-exploration",
+          "nuisance": true,
+          "nuisance_reason": "Ambition is visible, but the move to mastery requires explicit models and mentorship."
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "student"
+        ],
+        "subject_area": [
+          "humanities"
+        ],
+        "prior_ai_experience": [
+          "technical"
+        ],
+        "institution_level": [
+          "HE"
+        ],
+        "discipline_context": [
+          "health"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the PM boundary in Understanding AI and Data by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "DEC-USE-AE-01",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-using",
+      "dimension_name": "Using AI Tools",
+      "boundary_code": "AE",
+      "from_level_id": "dec-using-awareness",
+      "to_level_id": "dec-using-exploration",
+      "stem": "You are working through using AI to plan study, teaching, or administrative work. Which response best reflects stronger Using AI Tools?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Read about the issue and wait until someone provides a recommended approach before trying anything yourself.",
+          "maps_to_level_id": "dec-using-awareness",
+          "nuisance": true,
+          "nuisance_reason": "Interest is present, but there is no deliberate exploration."
+        },
+        {
+          "option_id": "B",
+          "text": "Run a purposeful trial using explicit criteria and compare what happened across at least two options or settings.",
+          "maps_to_level_id": "dec-using-exploration"
+        },
+        {
+          "option_id": "C",
+          "text": "Build a repeatable workflow immediately and encourage others to adopt it across regular work.",
+          "maps_to_level_id": "dec-using-practice"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "researcher"
+        ],
+        "subject_area": [
+          "humanities"
+        ],
+        "prior_ai_experience": [
+          "none"
+        ],
+        "institution_level": [
+          "FE"
+        ],
+        "discipline_context": [
+          "social_sciences"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the AE boundary in Using AI Tools by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "DEC-USE-AE-02",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-using",
+      "dimension_name": "Using AI Tools",
+      "boundary_code": "AE",
+      "from_level_id": "dec-using-awareness",
+      "to_level_id": "dec-using-exploration",
+      "stem": "You are dealing with improving prompt design for a task with quality and accuracy requirements. You have enough context to act, but not enough to rely on guesswork. Which response best indicates the higher side of this boundary in Using AI Tools?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Read about the issue and wait until someone provides a recommended approach before trying anything yourself.",
+          "maps_to_level_id": "dec-using-awareness",
+          "nuisance": true,
+          "nuisance_reason": "Interest is present, but there is no deliberate exploration."
+        },
+        {
+          "option_id": "B",
+          "text": "Run a purposeful trial using explicit criteria and compare what happened across at least two options or settings.",
+          "maps_to_level_id": "dec-using-exploration"
+        },
+        {
+          "option_id": "C",
+          "text": "Build a repeatable workflow immediately and encourage others to adopt it across regular work.",
+          "maps_to_level_id": "dec-using-practice"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "professional_services"
+        ],
+        "subject_area": [
+          "social_sciences"
+        ],
+        "prior_ai_experience": [
+          "casual"
+        ],
+        "institution_level": [
+          "HE"
+        ],
+        "discipline_context": [
+          "health"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the AE boundary in Using AI Tools by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "DEC-USE-EP-01",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-using",
+      "dimension_name": "Using AI Tools",
+      "boundary_code": "EP",
+      "from_level_id": "dec-using-exploration",
+      "to_level_id": "dec-using-practice",
+      "stem": "You are working through checking an AI-generated draft before sharing or submitting it. Which response best reflects stronger Using AI Tools?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep trying different AI approaches when time allows, but decide informally each time what counts as good enough.",
+          "maps_to_level_id": "dec-using-exploration",
+          "nuisance": true,
+          "nuisance_reason": "Shows genuine experimentation, but not repeatable practice."
+        },
+        {
+          "option_id": "B",
+          "text": "Use a documented workflow with checks and constraints that can be repeated in real work or study.",
+          "maps_to_level_id": "dec-using-practice"
+        },
+        {
+          "option_id": "C",
+          "text": "Convert the workflow into exemplars or standards that others in the field can adopt and refine.",
+          "maps_to_level_id": "dec-using-mastery"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "educator"
+        ],
+        "subject_area": [
+          "health"
+        ],
+        "prior_ai_experience": [
+          "regular"
+        ],
+        "institution_level": [
+          "secondary"
+        ],
+        "discipline_context": [
+          "arts"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the EP boundary in Using AI Tools by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "DEC-USE-EP-02",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-using",
+      "dimension_name": "Using AI Tools",
+      "boundary_code": "EP",
+      "from_level_id": "dec-using-exploration",
+      "to_level_id": "dec-using-practice",
+      "stem": "You are dealing with building a workflow that combines AI assistance with human review. A familiar routine exists, but the situation is no longer routine. Which response best indicates the higher side of this boundary in Using AI Tools?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep trying different AI approaches when time allows, but decide informally each time what counts as good enough.",
+          "maps_to_level_id": "dec-using-exploration",
+          "nuisance": true,
+          "nuisance_reason": "Shows genuine experimentation, but not repeatable practice."
+        },
+        {
+          "option_id": "B",
+          "text": "Use a documented workflow with checks and constraints that can be repeated in real work or study.",
+          "maps_to_level_id": "dec-using-practice"
+        },
+        {
+          "option_id": "C",
+          "text": "Convert the workflow into exemplars or standards that others in the field can adopt and refine.",
+          "maps_to_level_id": "dec-using-mastery"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "student"
+        ],
+        "subject_area": [
+          "arts"
+        ],
+        "prior_ai_experience": [
+          "technical"
+        ],
+        "institution_level": [
+          "FE"
+        ],
+        "discipline_context": [
+          "interdisciplinary"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the EP boundary in Using AI Tools by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "DEC-USE-PM-01",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-using",
+      "dimension_name": "Using AI Tools",
+      "boundary_code": "PM",
+      "from_level_id": "dec-using-practice",
+      "to_level_id": "dec-using-mastery",
+      "stem": "You are working through deciding whether a task should use AI at all. Which response best reflects stronger Using AI Tools?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Continue using a strong personal method and share occasional tips, but avoid formalising expectations for others.",
+          "maps_to_level_id": "dec-using-practice",
+          "nuisance": true,
+          "nuisance_reason": "Represents solid practice without field-shaping influence."
+        },
+        {
+          "option_id": "B",
+          "text": "Create exemplars, design choices, or guidance that others can use to improve quality in this area.",
+          "maps_to_level_id": "dec-using-mastery"
+        },
+        {
+          "option_id": "C",
+          "text": "Try more ambitious features yourself and assume others will pick up good practice by watching.",
+          "maps_to_level_id": "dec-using-exploration",
+          "nuisance": true,
+          "nuisance_reason": "Ambition is visible, but the move to mastery requires explicit models and mentorship."
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "researcher"
+        ],
+        "subject_area": [
+          "STEM"
+        ],
+        "prior_ai_experience": [
+          "none"
+        ],
+        "institution_level": [
+          "HE"
+        ],
+        "discipline_context": [
+          "STEM"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the PM boundary in Using AI Tools by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "DEC-USE-PM-02",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-using",
+      "dimension_name": "Using AI Tools",
+      "boundary_code": "PM",
+      "from_level_id": "dec-using-practice",
+      "to_level_id": "dec-using-mastery",
+      "stem": "You are dealing with helping others adopt AI tools without over-reliance. Your own method is already strong, but the wider environment now matters. Which response best indicates the higher side of this boundary in Using AI Tools?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Continue using a strong personal method and share occasional tips, but avoid formalising expectations for others.",
+          "maps_to_level_id": "dec-using-practice",
+          "nuisance": true,
+          "nuisance_reason": "Represents solid practice without field-shaping influence."
+        },
+        {
+          "option_id": "B",
+          "text": "Create exemplars, design choices, or guidance that others can use to improve quality in this area.",
+          "maps_to_level_id": "dec-using-mastery"
+        },
+        {
+          "option_id": "C",
+          "text": "Try more ambitious features yourself and assume others will pick up good practice by watching.",
+          "maps_to_level_id": "dec-using-exploration",
+          "nuisance": true,
+          "nuisance_reason": "Ambition is visible, but the move to mastery requires explicit models and mentorship."
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "professional_services"
+        ],
+        "subject_area": [
+          "humanities"
+        ],
+        "prior_ai_experience": [
+          "casual"
+        ],
+        "institution_level": [
+          "secondary"
+        ],
+        "discipline_context": [
+          "humanities"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the PM boundary in Using AI Tools by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "DEC-CREA-AE-01",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-creating",
+      "dimension_name": "Creating with AI",
+      "boundary_code": "AE",
+      "from_level_id": "dec-creating-awareness",
+      "to_level_id": "dec-creating-exploration",
+      "stem": "You are working through developing an original project with AI-assisted brainstorming and drafting. Which response best reflects stronger Creating with AI?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Read about the issue and wait until someone provides a recommended approach before trying anything yourself.",
+          "maps_to_level_id": "dec-creating-awareness",
+          "nuisance": true,
+          "nuisance_reason": "Interest is present, but there is no deliberate exploration."
+        },
+        {
+          "option_id": "B",
+          "text": "Run a purposeful trial using explicit criteria and compare what happened across at least two options or settings.",
+          "maps_to_level_id": "dec-creating-exploration"
+        },
+        {
+          "option_id": "C",
+          "text": "Build a repeatable workflow immediately and encourage others to adopt it across regular work.",
+          "maps_to_level_id": "dec-creating-practice"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "educator"
+        ],
+        "subject_area": [
+          "humanities"
+        ],
+        "prior_ai_experience": [
+          "regular"
+        ],
+        "institution_level": [
+          "HE"
+        ],
+        "discipline_context": [
+          "STEM"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the AE boundary in Creating with AI by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "DEC-CREA-AE-02",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-creating",
+      "dimension_name": "Creating with AI",
+      "boundary_code": "AE",
+      "from_level_id": "dec-creating-awareness",
+      "to_level_id": "dec-creating-exploration",
+      "stem": "You are dealing with turning rough ideas into a prototype or presentation with AI support. You have enough context to act, but not enough to rely on guesswork. Which response best indicates the higher side of this boundary in Creating with AI?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Read about the issue and wait until someone provides a recommended approach before trying anything yourself.",
+          "maps_to_level_id": "dec-creating-awareness",
+          "nuisance": true,
+          "nuisance_reason": "Interest is present, but there is no deliberate exploration."
+        },
+        {
+          "option_id": "B",
+          "text": "Run a purposeful trial using explicit criteria and compare what happened across at least two options or settings.",
+          "maps_to_level_id": "dec-creating-exploration"
+        },
+        {
+          "option_id": "C",
+          "text": "Build a repeatable workflow immediately and encourage others to adopt it across regular work.",
+          "maps_to_level_id": "dec-creating-practice"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "student"
+        ],
+        "subject_area": [
+          "social_sciences"
+        ],
+        "prior_ai_experience": [
+          "technical"
+        ],
+        "institution_level": [
+          "secondary"
+        ],
+        "discipline_context": [
+          "humanities"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the AE boundary in Creating with AI by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "DEC-CREA-EP-01",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-creating",
+      "dimension_name": "Creating with AI",
+      "boundary_code": "EP",
+      "from_level_id": "dec-creating-exploration",
+      "to_level_id": "dec-creating-practice",
+      "stem": "You are working through combining human expertise and AI generation to produce a higher-quality output. Which response best reflects stronger Creating with AI?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep trying different AI approaches when time allows, but decide informally each time what counts as good enough.",
+          "maps_to_level_id": "dec-creating-exploration",
+          "nuisance": true,
+          "nuisance_reason": "Shows genuine experimentation, but not repeatable practice."
+        },
+        {
+          "option_id": "B",
+          "text": "Use a documented workflow with checks and constraints that can be repeated in real work or study.",
+          "maps_to_level_id": "dec-creating-practice"
+        },
+        {
+          "option_id": "C",
+          "text": "Convert the workflow into exemplars or standards that others in the field can adopt and refine.",
+          "maps_to_level_id": "dec-creating-mastery"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "researcher"
+        ],
+        "subject_area": [
+          "health"
+        ],
+        "prior_ai_experience": [
+          "none"
+        ],
+        "institution_level": [
+          "FE"
+        ],
+        "discipline_context": [
+          "social_sciences"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the EP boundary in Creating with AI by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "DEC-CREA-EP-02",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-creating",
+      "dimension_name": "Creating with AI",
+      "boundary_code": "EP",
+      "from_level_id": "dec-creating-exploration",
+      "to_level_id": "dec-creating-practice",
+      "stem": "You are dealing with editing AI-generated material into a distinctive, audience-appropriate product. A familiar routine exists, but the situation is no longer routine. Which response best indicates the higher side of this boundary in Creating with AI?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep trying different AI approaches when time allows, but decide informally each time what counts as good enough.",
+          "maps_to_level_id": "dec-creating-exploration",
+          "nuisance": true,
+          "nuisance_reason": "Shows genuine experimentation, but not repeatable practice."
+        },
+        {
+          "option_id": "B",
+          "text": "Use a documented workflow with checks and constraints that can be repeated in real work or study.",
+          "maps_to_level_id": "dec-creating-practice"
+        },
+        {
+          "option_id": "C",
+          "text": "Convert the workflow into exemplars or standards that others in the field can adopt and refine.",
+          "maps_to_level_id": "dec-creating-mastery"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "professional_services"
+        ],
+        "subject_area": [
+          "arts"
+        ],
+        "prior_ai_experience": [
+          "casual"
+        ],
+        "institution_level": [
+          "HE"
+        ],
+        "discipline_context": [
+          "health"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the EP boundary in Creating with AI by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "DEC-CREA-PM-01",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-creating",
+      "dimension_name": "Creating with AI",
+      "boundary_code": "PM",
+      "from_level_id": "dec-creating-practice",
+      "to_level_id": "dec-creating-mastery",
+      "stem": "You are working through testing multiple AI-supported creative approaches to a problem. Which response best reflects stronger Creating with AI?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Continue using a strong personal method and share occasional tips, but avoid formalising expectations for others.",
+          "maps_to_level_id": "dec-creating-practice",
+          "nuisance": true,
+          "nuisance_reason": "Represents solid practice without field-shaping influence."
+        },
+        {
+          "option_id": "B",
+          "text": "Create exemplars, design choices, or guidance that others can use to improve quality in this area.",
+          "maps_to_level_id": "dec-creating-mastery"
+        },
+        {
+          "option_id": "C",
+          "text": "Try more ambitious features yourself and assume others will pick up good practice by watching.",
+          "maps_to_level_id": "dec-creating-exploration",
+          "nuisance": true,
+          "nuisance_reason": "Ambition is visible, but the move to mastery requires explicit models and mentorship."
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "educator"
+        ],
+        "subject_area": [
+          "STEM"
+        ],
+        "prior_ai_experience": [
+          "regular"
+        ],
+        "institution_level": [
+          "secondary"
+        ],
+        "discipline_context": [
+          "arts"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the PM boundary in Creating with AI by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "DEC-CREA-PM-02",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-creating",
+      "dimension_name": "Creating with AI",
+      "boundary_code": "PM",
+      "from_level_id": "dec-creating-practice",
+      "to_level_id": "dec-creating-mastery",
+      "stem": "You are dealing with deciding how much of a final product should be delegated to AI. Your own method is already strong, but the wider environment now matters. Which response best indicates the higher side of this boundary in Creating with AI?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Continue using a strong personal method and share occasional tips, but avoid formalising expectations for others.",
+          "maps_to_level_id": "dec-creating-practice",
+          "nuisance": true,
+          "nuisance_reason": "Represents solid practice without field-shaping influence."
+        },
+        {
+          "option_id": "B",
+          "text": "Create exemplars, design choices, or guidance that others can use to improve quality in this area.",
+          "maps_to_level_id": "dec-creating-mastery"
+        },
+        {
+          "option_id": "C",
+          "text": "Try more ambitious features yourself and assume others will pick up good practice by watching.",
+          "maps_to_level_id": "dec-creating-exploration",
+          "nuisance": true,
+          "nuisance_reason": "Ambition is visible, but the move to mastery requires explicit models and mentorship."
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "student"
+        ],
+        "subject_area": [
+          "humanities"
+        ],
+        "prior_ai_experience": [
+          "technical"
+        ],
+        "institution_level": [
+          "FE"
+        ],
+        "discipline_context": [
+          "interdisciplinary"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the PM boundary in Creating with AI by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "DEC-ETH-AE-01",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-ethics",
+      "dimension_name": "AI Ethics and Society",
+      "boundary_code": "AE",
+      "from_level_id": "dec-ethics-awareness",
+      "to_level_id": "dec-ethics-exploration",
+      "stem": "You are working through reviewing an AI use case that affects fairness, privacy, or inclusion. Which response best reflects stronger AI Ethics and Society?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Read about the issue and wait until someone provides a recommended approach before trying anything yourself.",
+          "maps_to_level_id": "dec-ethics-awareness",
+          "nuisance": true,
+          "nuisance_reason": "Interest is present, but there is no deliberate exploration."
+        },
+        {
+          "option_id": "B",
+          "text": "Run a purposeful trial using explicit criteria and compare what happened across at least two options or settings.",
+          "maps_to_level_id": "dec-ethics-exploration"
+        },
+        {
+          "option_id": "C",
+          "text": "Build a repeatable workflow immediately and encourage others to adopt it across regular work.",
+          "maps_to_level_id": "dec-ethics-practice"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "researcher"
+        ],
+        "subject_area": [
+          "humanities"
+        ],
+        "prior_ai_experience": [
+          "none"
+        ],
+        "institution_level": [
+          "secondary"
+        ],
+        "discipline_context": [
+          "arts"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the AE boundary in AI Ethics and Society by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "DEC-ETH-AE-02",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-ethics",
+      "dimension_name": "AI Ethics and Society",
+      "boundary_code": "AE",
+      "from_level_id": "dec-ethics-awareness",
+      "to_level_id": "dec-ethics-exploration",
+      "stem": "You are dealing with discussing when AI assistance should be disclosed. You have enough context to act, but not enough to rely on guesswork. Which response best indicates the higher side of this boundary in AI Ethics and Society?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Read about the issue and wait until someone provides a recommended approach before trying anything yourself.",
+          "maps_to_level_id": "dec-ethics-awareness",
+          "nuisance": true,
+          "nuisance_reason": "Interest is present, but there is no deliberate exploration."
+        },
+        {
+          "option_id": "B",
+          "text": "Run a purposeful trial using explicit criteria and compare what happened across at least two options or settings.",
+          "maps_to_level_id": "dec-ethics-exploration"
+        },
+        {
+          "option_id": "C",
+          "text": "Build a repeatable workflow immediately and encourage others to adopt it across regular work.",
+          "maps_to_level_id": "dec-ethics-practice"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "professional_services"
+        ],
+        "subject_area": [
+          "social_sciences"
+        ],
+        "prior_ai_experience": [
+          "casual"
+        ],
+        "institution_level": [
+          "FE"
+        ],
+        "discipline_context": [
+          "interdisciplinary"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the AE boundary in AI Ethics and Society by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "DEC-ETH-EP-01",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-ethics",
+      "dimension_name": "AI Ethics and Society",
+      "boundary_code": "EP",
+      "from_level_id": "dec-ethics-exploration",
+      "to_level_id": "dec-ethics-practice",
+      "stem": "You are working through responding to harmful or misleading AI outputs in a high-stakes context. Which response best reflects stronger AI Ethics and Society?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep trying different AI approaches when time allows, but decide informally each time what counts as good enough.",
+          "maps_to_level_id": "dec-ethics-exploration",
+          "nuisance": true,
+          "nuisance_reason": "Shows genuine experimentation, but not repeatable practice."
+        },
+        {
+          "option_id": "B",
+          "text": "Use a documented workflow with checks and constraints that can be repeated in real work or study.",
+          "maps_to_level_id": "dec-ethics-practice"
+        },
+        {
+          "option_id": "C",
+          "text": "Convert the workflow into exemplars or standards that others in the field can adopt and refine.",
+          "maps_to_level_id": "dec-ethics-mastery"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "educator"
+        ],
+        "subject_area": [
+          "health"
+        ],
+        "prior_ai_experience": [
+          "regular"
+        ],
+        "institution_level": [
+          "HE"
+        ],
+        "discipline_context": [
+          "STEM"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the EP boundary in AI Ethics and Society by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "DEC-ETH-EP-02",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-ethics",
+      "dimension_name": "AI Ethics and Society",
+      "boundary_code": "EP",
+      "from_level_id": "dec-ethics-exploration",
+      "to_level_id": "dec-ethics-practice",
+      "stem": "You are dealing with balancing innovation with accountability and governance requirements. A familiar routine exists, but the situation is no longer routine. Which response best indicates the higher side of this boundary in AI Ethics and Society?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep trying different AI approaches when time allows, but decide informally each time what counts as good enough.",
+          "maps_to_level_id": "dec-ethics-exploration",
+          "nuisance": true,
+          "nuisance_reason": "Shows genuine experimentation, but not repeatable practice."
+        },
+        {
+          "option_id": "B",
+          "text": "Use a documented workflow with checks and constraints that can be repeated in real work or study.",
+          "maps_to_level_id": "dec-ethics-practice"
+        },
+        {
+          "option_id": "C",
+          "text": "Convert the workflow into exemplars or standards that others in the field can adopt and refine.",
+          "maps_to_level_id": "dec-ethics-mastery"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "student"
+        ],
+        "subject_area": [
+          "arts"
+        ],
+        "prior_ai_experience": [
+          "technical"
+        ],
+        "institution_level": [
+          "secondary"
+        ],
+        "discipline_context": [
+          "humanities"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the EP boundary in AI Ethics and Society by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "DEC-ETH-PM-01",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-ethics",
+      "dimension_name": "AI Ethics and Society",
+      "boundary_code": "PM",
+      "from_level_id": "dec-ethics-practice",
+      "to_level_id": "dec-ethics-mastery",
+      "stem": "You are working through considering how AI changes power, access, and participation. Which response best reflects stronger AI Ethics and Society?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Continue using a strong personal method and share occasional tips, but avoid formalising expectations for others.",
+          "maps_to_level_id": "dec-ethics-practice",
+          "nuisance": true,
+          "nuisance_reason": "Represents solid practice without field-shaping influence."
+        },
+        {
+          "option_id": "B",
+          "text": "Create exemplars, design choices, or guidance that others can use to improve quality in this area.",
+          "maps_to_level_id": "dec-ethics-mastery"
+        },
+        {
+          "option_id": "C",
+          "text": "Try more ambitious features yourself and assume others will pick up good practice by watching.",
+          "maps_to_level_id": "dec-ethics-exploration",
+          "nuisance": true,
+          "nuisance_reason": "Ambition is visible, but the move to mastery requires explicit models and mentorship."
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "researcher"
+        ],
+        "subject_area": [
+          "STEM"
+        ],
+        "prior_ai_experience": [
+          "none"
+        ],
+        "institution_level": [
+          "FE"
+        ],
+        "discipline_context": [
+          "social_sciences"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the PM boundary in AI Ethics and Society by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "DEC-ETH-PM-02",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-ethics",
+      "dimension_name": "AI Ethics and Society",
+      "boundary_code": "PM",
+      "from_level_id": "dec-ethics-practice",
+      "to_level_id": "dec-ethics-mastery",
+      "stem": "You are dealing with writing or revising guidance for responsible AI adoption. Your own method is already strong, but the wider environment now matters. Which response best indicates the higher side of this boundary in AI Ethics and Society?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Continue using a strong personal method and share occasional tips, but avoid formalising expectations for others.",
+          "maps_to_level_id": "dec-ethics-practice",
+          "nuisance": true,
+          "nuisance_reason": "Represents solid practice without field-shaping influence."
+        },
+        {
+          "option_id": "B",
+          "text": "Create exemplars, design choices, or guidance that others can use to improve quality in this area.",
+          "maps_to_level_id": "dec-ethics-mastery"
+        },
+        {
+          "option_id": "C",
+          "text": "Try more ambitious features yourself and assume others will pick up good practice by watching.",
+          "maps_to_level_id": "dec-ethics-exploration",
+          "nuisance": true,
+          "nuisance_reason": "Ambition is visible, but the move to mastery requires explicit models and mentorship."
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "professional_services"
+        ],
+        "subject_area": [
+          "humanities"
+        ],
+        "prior_ai_experience": [
+          "casual"
+        ],
+        "institution_level": [
+          "HE"
+        ],
+        "discipline_context": [
+          "health"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the PM boundary in AI Ethics and Society by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "DEC-DISC-AE-01",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-discipline",
+      "dimension_name": "AI in Discipline Contexts",
+      "boundary_code": "AE",
+      "from_level_id": "dec-discipline-awareness",
+      "to_level_id": "dec-discipline-exploration",
+      "stem": "You are working through a discipline team deciding where AI adds value and where it distorts practice. Which response best reflects stronger AI in Discipline Contexts?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Read about the issue and wait until someone provides a recommended approach before trying anything yourself.",
+          "maps_to_level_id": "dec-discipline-awareness",
+          "nuisance": true,
+          "nuisance_reason": "Interest is present, but there is no deliberate exploration."
+        },
+        {
+          "option_id": "B",
+          "text": "Run a purposeful trial using explicit criteria and compare what happened across at least two options or settings.",
+          "maps_to_level_id": "dec-discipline-exploration"
+        },
+        {
+          "option_id": "C",
+          "text": "Build a repeatable workflow immediately and encourage others to adopt it across regular work.",
+          "maps_to_level_id": "dec-discipline-practice"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "educator"
+        ],
+        "subject_area": [
+          "humanities"
+        ],
+        "prior_ai_experience": [
+          "regular"
+        ],
+        "institution_level": [
+          "FE"
+        ],
+        "discipline_context": [
+          "arts"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the AE boundary in AI in Discipline Contexts by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "DEC-DISC-AE-02",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-discipline",
+      "dimension_name": "AI in Discipline Contexts",
+      "boundary_code": "AE",
+      "from_level_id": "dec-discipline-awareness",
+      "to_level_id": "dec-discipline-exploration",
+      "stem": "You are dealing with applying AI within a field with strong evidence, safety, or creative norms. You have enough context to act, but not enough to rely on guesswork. Which response best indicates the higher side of this boundary in AI in Discipline Contexts?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Read about the issue and wait until someone provides a recommended approach before trying anything yourself.",
+          "maps_to_level_id": "dec-discipline-awareness",
+          "nuisance": true,
+          "nuisance_reason": "Interest is present, but there is no deliberate exploration."
+        },
+        {
+          "option_id": "B",
+          "text": "Run a purposeful trial using explicit criteria and compare what happened across at least two options or settings.",
+          "maps_to_level_id": "dec-discipline-exploration"
+        },
+        {
+          "option_id": "C",
+          "text": "Build a repeatable workflow immediately and encourage others to adopt it across regular work.",
+          "maps_to_level_id": "dec-discipline-practice"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "student"
+        ],
+        "subject_area": [
+          "social_sciences"
+        ],
+        "prior_ai_experience": [
+          "technical"
+        ],
+        "institution_level": [
+          "HE"
+        ],
+        "discipline_context": [
+          "interdisciplinary"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the AE boundary in AI in Discipline Contexts by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "DEC-DISC-EP-01",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-discipline",
+      "dimension_name": "AI in Discipline Contexts",
+      "boundary_code": "EP",
+      "from_level_id": "dec-discipline-exploration",
+      "to_level_id": "dec-discipline-practice",
+      "stem": "You are working through reviewing how AI changes acceptable methods in a specific subject area. Which response best reflects stronger AI in Discipline Contexts?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep trying different AI approaches when time allows, but decide informally each time what counts as good enough.",
+          "maps_to_level_id": "dec-discipline-exploration",
+          "nuisance": true,
+          "nuisance_reason": "Shows genuine experimentation, but not repeatable practice."
+        },
+        {
+          "option_id": "B",
+          "text": "Use a documented workflow with checks and constraints that can be repeated in real work or study.",
+          "maps_to_level_id": "dec-discipline-practice"
+        },
+        {
+          "option_id": "C",
+          "text": "Convert the workflow into exemplars or standards that others in the field can adopt and refine.",
+          "maps_to_level_id": "dec-discipline-mastery"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "researcher"
+        ],
+        "subject_area": [
+          "health"
+        ],
+        "prior_ai_experience": [
+          "none"
+        ],
+        "institution_level": [
+          "secondary"
+        ],
+        "discipline_context": [
+          "STEM"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the EP boundary in AI in Discipline Contexts by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "DEC-DISC-EP-02",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-discipline",
+      "dimension_name": "AI in Discipline Contexts",
+      "boundary_code": "EP",
+      "from_level_id": "dec-discipline-exploration",
+      "to_level_id": "dec-discipline-practice",
+      "stem": "You are dealing with explaining AI use expectations to newcomers in a discipline. A familiar routine exists, but the situation is no longer routine. Which response best indicates the higher side of this boundary in AI in Discipline Contexts?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Keep trying different AI approaches when time allows, but decide informally each time what counts as good enough.",
+          "maps_to_level_id": "dec-discipline-exploration",
+          "nuisance": true,
+          "nuisance_reason": "Shows genuine experimentation, but not repeatable practice."
+        },
+        {
+          "option_id": "B",
+          "text": "Use a documented workflow with checks and constraints that can be repeated in real work or study.",
+          "maps_to_level_id": "dec-discipline-practice"
+        },
+        {
+          "option_id": "C",
+          "text": "Convert the workflow into exemplars or standards that others in the field can adopt and refine.",
+          "maps_to_level_id": "dec-discipline-mastery"
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "professional_services"
+        ],
+        "subject_area": [
+          "arts"
+        ],
+        "prior_ai_experience": [
+          "casual"
+        ],
+        "institution_level": [
+          "FE"
+        ],
+        "discipline_context": [
+          "humanities"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the EP boundary in AI in Discipline Contexts by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "DEC-DISC-PM-01",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-discipline",
+      "dimension_name": "AI in Discipline Contexts",
+      "boundary_code": "PM",
+      "from_level_id": "dec-discipline-practice",
+      "to_level_id": "dec-discipline-mastery",
+      "stem": "You are working through choosing field-appropriate evaluation criteria for AI-supported work. Which response best reflects stronger AI in Discipline Contexts?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Continue using a strong personal method and share occasional tips, but avoid formalising expectations for others.",
+          "maps_to_level_id": "dec-discipline-practice",
+          "nuisance": true,
+          "nuisance_reason": "Represents solid practice without field-shaping influence."
+        },
+        {
+          "option_id": "B",
+          "text": "Create exemplars, design choices, or guidance that others can use to improve quality in this area.",
+          "maps_to_level_id": "dec-discipline-mastery"
+        },
+        {
+          "option_id": "C",
+          "text": "Try more ambitious features yourself and assume others will pick up good practice by watching.",
+          "maps_to_level_id": "dec-discipline-exploration",
+          "nuisance": true,
+          "nuisance_reason": "Ambition is visible, but the move to mastery requires explicit models and mentorship."
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "educator"
+        ],
+        "subject_area": [
+          "STEM"
+        ],
+        "prior_ai_experience": [
+          "regular"
+        ],
+        "institution_level": [
+          "HE"
+        ],
+        "discipline_context": [
+          "social_sciences"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the PM boundary in AI in Discipline Contexts by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    },
+    {
+      "scenario_id": "DEC-DISC-PM-02",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-discipline",
+      "dimension_name": "AI in Discipline Contexts",
+      "boundary_code": "PM",
+      "from_level_id": "dec-discipline-practice",
+      "to_level_id": "dec-discipline-mastery",
+      "stem": "You are dealing with considering how disciplinary expertise should constrain AI adoption. Your own method is already strong, but the wider environment now matters. Which response best indicates the higher side of this boundary in AI in Discipline Contexts?",
+      "response_options": [
+        {
+          "option_id": "A",
+          "text": "Continue using a strong personal method and share occasional tips, but avoid formalising expectations for others.",
+          "maps_to_level_id": "dec-discipline-practice",
+          "nuisance": true,
+          "nuisance_reason": "Represents solid practice without field-shaping influence."
+        },
+        {
+          "option_id": "B",
+          "text": "Create exemplars, design choices, or guidance that others can use to improve quality in this area.",
+          "maps_to_level_id": "dec-discipline-mastery"
+        },
+        {
+          "option_id": "C",
+          "text": "Try more ambitious features yourself and assume others will pick up good practice by watching.",
+          "maps_to_level_id": "dec-discipline-exploration",
+          "nuisance": true,
+          "nuisance_reason": "Ambition is visible, but the move to mastery requires explicit models and mentorship."
+        }
+      ],
+      "context_tags": {
+        "role": [
+          "student"
+        ],
+        "subject_area": [
+          "humanities"
+        ],
+        "prior_ai_experience": [
+          "technical"
+        ],
+        "institution_level": [
+          "secondary"
+        ],
+        "discipline_context": [
+          "health"
+        ]
+      },
+      "discrimination_notes": "This scenario isolates the PM boundary in AI in Discipline Contexts by contrasting a lower-side response, the threshold response, and a higher-side or overshoot response.",
+      "authoring_note": "Original scenario content written for this implementation."
+    }
+  ]
+}

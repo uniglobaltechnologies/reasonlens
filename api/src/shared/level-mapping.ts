@@ -68,15 +68,25 @@ const LEVEL_PATTERNS: Array<{ score: number; patterns: string[] }> = [
  *
  * Returns 2 (Developing) as default for unrecognised values.
  */
+// ISTE binary levels — exact match only to avoid substring collisions (e.g. "implemented" contains "met")
+const EXACT_LEVEL_MAP: Record<string, number> = {
+  "met": 5,
+  "not met": 1,
+  "not_met": 1,
+};
+
 export function levelToScore(level: string): number {
   if (!level) return 2;
   const normalised = level.toLowerCase().trim();
 
-  // Try pure numeric first
+  // Exact match first (ISTE binary, etc.)
+  if (normalised in EXACT_LEVEL_MAP) return EXACT_LEVEL_MAP[normalised];
+
+  // Try pure numeric
   const num = parseInt(normalised, 10);
   if (num >= 1 && num <= 5) return num;
 
-  // Match against known patterns (longest match first via includes)
+  // Match against known patterns
   for (const { score, patterns } of LEVEL_PATTERNS) {
     for (const pattern of patterns) {
       if (normalised === pattern || normalised.includes(pattern)) {

@@ -1,0 +1,988 @@
+{
+  "framework_id": "jisc-bdc-role-profiles",
+  "profile_id": "bdc-individual",
+  "profile_name": "Jisc Building Digital Capability Individual Framework",
+  "authoring_note": "Original content informed by the public framework structure and role-profile intent. No Jisc descriptor text is reproduced or closely paraphrased.",
+  "source_strategy": {
+    "framework_structure_informed_by": [
+      "Jisc BDC six-element structure and role-profile architecture"
+    ],
+    "role_lens": "Generic profile for any learner or member of staff.",
+    "primary_mapping_reference": "DigComp 3.0",
+    "secondary_mapping_references": []
+  },
+  "entries": [
+    {
+      "indicator_id": "bdc-individual-prof-developing",
+      "profile_id": "bdc-individual",
+      "profile_name": "Jisc Building Digital Capability Individual Framework",
+      "role_code": "IND",
+      "element_code": "PROF",
+      "element_name": "Digital Proficiency and Productivity",
+      "level": "Developing",
+      "level_order": 1,
+      "capability_statement": "Keeps essential digital tasks moving but still relies on prompts, familiar routines or local help when work becomes less predictable.",
+      "observable_practices": [
+        "Uses calendar and task tools for routine everyday work or study when a known example or clear instructions are available.",
+        "Keeps shared file spaces moving with some structure, but consistency drops when the task becomes unfamiliar or time-pressured.",
+        "Can recover from minor issues in core productivity apps through search, help or local support, although interruptions still slow progress."
+      ],
+      "evidence_examples": [
+        "Examples showing routine use of calendar and task tools for predictable tasks.",
+        "A simple file, checklist or message trail in shared file spaces that shows work can be completed, albeit with some friction.",
+        "A support request, self-note or reflection describing how an issue in core productivity apps was resolved."
+      ],
+      "common_misconceptions": [
+        {
+          "claim": "Owning or accessing many apps means the basics are secure.",
+          "why_inaccurate": "Breadth of access can hide fragile workflow habits and version confusion.",
+          "frequency": "common"
+        },
+        {
+          "claim": "Getting through the task once shows the process is reliable.",
+          "why_inaccurate": "One-off success does not show independent, repeatable practice.",
+          "frequency": "moderate"
+        }
+      ],
+      "context_dependencies": {
+        "role": "Role determines which specialised profile, examples and scenario substitutions are most appropriate.",
+        "subject_area": "Subject area changes the examples, data sources and communication conventions more than the underlying capability expectation.",
+        "institution_type": "Institution type affects priorities, support models and examples, but the underlying progression remains comparable.",
+        "institution_level": "Institution level mainly affects the teaching, service, learner and regulatory context in which the capability is demonstrated.",
+        "digital_confidence": "Low digital confidence can suppress performance signals at this level, so evidence should focus on what the person can do with reasonable support rather than on style or speed."
+      },
+      "prerequisites": [
+        "Access to the core digital environment used in the local context.",
+        "Enough orientation or support to attempt routine tasks safely."
+      ],
+      "cross_element_dependencies": [
+        "Progress is easier when Digital Communication, Collaboration and Participation is at least emerging alongside this element.",
+        "Progress is easier when Information, Data and Media Literacies is at least emerging alongside this element.",
+        "Progress is easier when Digital Identity and Wellbeing is at least emerging alongside this element."
+      ],
+      "respondent_visibility": "Best judged by the individual plus close collaborators who see everyday workflow habits and reliability.",
+      "progression_signals": [
+        "Moves from scattered personal workarounds to a repeatable setup.",
+        "Handles common issues with less interruption."
+      ]
+    },
+    {
+      "indicator_id": "bdc-individual-prof-capable",
+      "profile_id": "bdc-individual",
+      "profile_name": "Jisc Building Digital Capability Individual Framework",
+      "role_code": "IND",
+      "element_code": "PROF",
+      "element_name": "Digital Proficiency and Productivity",
+      "level": "Capable",
+      "level_order": 2,
+      "capability_statement": "Uses core tools independently, chooses sensible workflows and solves common issues without much interruption.",
+      "observable_practices": [
+        "Uses calendar and task tools independently and chooses sensible settings or features for the job rather than relying on default habits.",
+        "Organises shared file spaces so that current materials, deadlines and permissions are easier for other people to follow.",
+        "Troubleshoots common problems in core productivity apps and makes practical choices that reduce avoidable friction."
+      ],
+      "evidence_examples": [
+        "A clean, consistently used setup in calendar and task tools that other people can navigate without extra explanation.",
+        "A short process note, template or annotated example from shared file spaces showing independent workflow choices.",
+        "A troubleshooting example from core productivity apps where the person diagnosed and fixed a common problem."
+      ],
+      "common_misconceptions": [
+        {
+          "claim": "Being quick personally is the same as having a good workflow.",
+          "why_inaccurate": "A strong personal workaround may still be opaque or awkward for others.",
+          "frequency": "common"
+        },
+        {
+          "claim": "A preferred tool is automatically the right choice everywhere.",
+          "why_inaccurate": "Fit depends on context, interoperability, support and inclusion.",
+          "frequency": "moderate"
+        }
+      ],
+      "context_dependencies": {
+        "role": "Role determines which specialised profile, examples and scenario substitutions are most appropriate.",
+        "subject_area": "Subject area changes the examples, data sources and communication conventions more than the underlying capability expectation.",
+        "institution_type": "Institution type affects priorities, support models and examples, but the underlying progression remains comparable.",
+        "institution_level": "Institution level mainly affects the teaching, service, learner and regulatory context in which the capability is demonstrated.",
+        "digital_confidence": "Digital confidence should not be confused with capability; look for reliable practice and judgment, not just fluent self-presentation."
+      },
+      "prerequisites": [
+        "Stable developing-level practice in routine tasks.",
+        "Opportunities to apply digital choices independently in real work or study."
+      ],
+      "cross_element_dependencies": [
+        "Progress is easier when Digital Communication, Collaboration and Participation is at least emerging alongside this element.",
+        "Progress is easier when Information, Data and Media Literacies is at least emerging alongside this element.",
+        "Progress is easier when Digital Identity and Wellbeing is at least emerging alongside this element."
+      ],
+      "respondent_visibility": "Best judged by the individual plus close collaborators who see everyday workflow habits and reliability.",
+      "progression_signals": [
+        "Begins simplifying workflows for others as well as for self.",
+        "Judges tools by fit, not just familiarity."
+      ]
+    },
+    {
+      "indicator_id": "bdc-individual-prof-proficient",
+      "profile_id": "bdc-individual",
+      "profile_name": "Jisc Building Digital Capability Individual Framework",
+      "role_code": "IND",
+      "element_code": "PROF",
+      "element_name": "Digital Proficiency and Productivity",
+      "level": "Proficient",
+      "level_order": 3,
+      "capability_statement": "Optimises workflows, judges tool choices critically and improves practice for other people as well as for themselves.",
+      "observable_practices": [
+        "Improves calendar and task tools so that reliability, accessibility or efficiency increase for a wider group, not just for personal use.",
+        "Reviews shared file spaces critically, removing duplication and simplifying the workflow where needed.",
+        "Makes well-judged decisions about core productivity apps with attention to interoperability, support burden, inclusion and risk."
+      ],
+      "evidence_examples": [
+        "A redesigned or simplified approach to calendar and task tools adopted by others or endorsed locally.",
+        "Before-and-after evidence from shared file spaces showing improved reliability, accessibility or efficiency.",
+        "A comparison or rationale for choices in core productivity apps that weighs fit, risk, support and interoperability."
+      ],
+      "common_misconceptions": [
+        {
+          "claim": "Proficiency means always adopting the newest or most advanced platform.",
+          "why_inaccurate": "Judgment and simplification often matter more than feature depth.",
+          "frequency": "common"
+        },
+        {
+          "claim": "If a process works for experts it should work for everyone.",
+          "why_inaccurate": "Sustainable improvement must account for different users, needs and support conditions.",
+          "frequency": "moderate"
+        }
+      ],
+      "context_dependencies": {
+        "role": "Role determines which specialised profile, examples and scenario substitutions are most appropriate.",
+        "subject_area": "Subject area changes the examples, data sources and communication conventions more than the underlying capability expectation.",
+        "institution_type": "Institution type affects priorities, support models and examples, but the underlying progression remains comparable.",
+        "institution_level": "Institution level mainly affects the teaching, service, learner and regulatory context in which the capability is demonstrated.",
+        "digital_confidence": "Higher confidence is helpful only when matched by evidence of sound judgment, inclusion and sustainable practice."
+      },
+      "prerequisites": [
+        "Reliable capable-level practice over time.",
+        "Enough scope to review, improve or influence practice beyond immediate personal use."
+      ],
+      "cross_element_dependencies": [
+        "Progress is easier when Digital Communication, Collaboration and Participation is at least emerging alongside this element.",
+        "Progress is easier when Information, Data and Media Literacies is at least emerging alongside this element.",
+        "Progress is easier when Digital Identity and Wellbeing is at least emerging alongside this element."
+      ],
+      "respondent_visibility": "Best judged by the individual plus close collaborators who see everyday workflow habits and reliability.",
+      "progression_signals": [
+        "Can justify workflow choices in relation to access, risk and support.",
+        "Improvement efforts produce visible reductions in friction."
+      ]
+    },
+    {
+      "indicator_id": "bdc-individual-creat-developing",
+      "profile_id": "bdc-individual",
+      "profile_name": "Jisc Building Digital Capability Individual Framework",
+      "role_code": "IND",
+      "element_code": "CREAT",
+      "element_name": "Digital Creation, Problem-Solving and Innovation",
+      "level": "Developing",
+      "level_order": 1,
+      "capability_statement": "Adapts existing materials or familiar methods to meet immediate needs, but design choices are still mostly guided by examples rather than by clear intent.",
+      "observable_practices": [
+        "Adapts existing digital resources for immediate use, but most choices still follow familiar patterns rather than an explicit design rationale.",
+        "Uses workflow fixes to solve a local problem once the route is reasonably clear.",
+        "Experiments with templates or prototypes in a limited way, though evaluation is still mainly about whether something worked at all."
+      ],
+      "evidence_examples": [
+        "An adapted version of digital resources based on an existing model.",
+        "A local workaround using workflow fixes that addresses an immediate need.",
+        "A brief note on what was changed in templates or prototypes, even if evaluation is still limited."
+      ],
+      "common_misconceptions": [
+        {
+          "claim": "Changing the look of something counts as innovation.",
+          "why_inaccurate": "Surface polish does not by itself improve fitness for purpose.",
+          "frequency": "common"
+        },
+        {
+          "claim": "Trying a new tool is enough evidence of creative capability.",
+          "why_inaccurate": "Capability lies in the problem solved and the design decisions made.",
+          "frequency": "moderate"
+        }
+      ],
+      "context_dependencies": {
+        "role": "Role determines which specialised profile, examples and scenario substitutions are most appropriate.",
+        "subject_area": "Subject area changes the examples, data sources and communication conventions more than the underlying capability expectation.",
+        "institution_type": "Institution type affects priorities, support models and examples, but the underlying progression remains comparable.",
+        "institution_level": "Institution level mainly affects the teaching, service, learner and regulatory context in which the capability is demonstrated.",
+        "digital_confidence": "Low digital confidence can suppress performance signals at this level, so evidence should focus on what the person can do with reasonable support rather than on style or speed."
+      },
+      "prerequisites": [
+        "Access to the core digital environment used in the local context.",
+        "Enough orientation or support to attempt routine tasks safely."
+      ],
+      "cross_element_dependencies": [
+        "Progress is easier when Digital Proficiency and Productivity is at least emerging alongside this element.",
+        "Progress is easier when Information, Data and Media Literacies is at least emerging alongside this element.",
+        "Progress is easier when Digital Identity and Wellbeing is at least emerging alongside this element."
+      ],
+      "respondent_visibility": "Visible through outputs, prototypes, user feedback and people who experience the changed process or resource.",
+      "progression_signals": [
+        "Shifts from copying to designing with intent.",
+        "Starts checking whether outputs actually solve the problem."
+      ]
+    },
+    {
+      "indicator_id": "bdc-individual-creat-capable",
+      "profile_id": "bdc-individual",
+      "profile_name": "Jisc Building Digital Capability Individual Framework",
+      "role_code": "IND",
+      "element_code": "CREAT",
+      "element_name": "Digital Creation, Problem-Solving and Innovation",
+      "level": "Capable",
+      "level_order": 2,
+      "capability_statement": "Creates purposeful outputs or workflow changes that fit the user need, the task and the context.",
+      "observable_practices": [
+        "Designs digital resources around the need, the users and the context rather than around the tool alone.",
+        "Uses workflow fixes to remove repeated effort or improve clarity, consistency or accessibility.",
+        "Tests and refines templates or prototypes enough to show that the change is genuinely useful."
+      ],
+      "evidence_examples": [
+        "A purposeful design in digital resources with visible choices about structure, format or accessibility.",
+        "Evidence that workflow fixes reduced repeated effort or improved the user experience.",
+        "Feedback or review notes showing that templates or prototypes was refined after real use."
+      ],
+      "common_misconceptions": [
+        {
+          "claim": "A useful one-off output is automatically reusable.",
+          "why_inaccurate": "Reusability usually needs documentation, testing and adaptation for others.",
+          "frequency": "common"
+        },
+        {
+          "claim": "More interactivity always means better design.",
+          "why_inaccurate": "Good design serves the need; extra features can add friction.",
+          "frequency": "moderate"
+        }
+      ],
+      "context_dependencies": {
+        "role": "Role determines which specialised profile, examples and scenario substitutions are most appropriate.",
+        "subject_area": "Subject area changes the examples, data sources and communication conventions more than the underlying capability expectation.",
+        "institution_type": "Institution type affects priorities, support models and examples, but the underlying progression remains comparable.",
+        "institution_level": "Institution level mainly affects the teaching, service, learner and regulatory context in which the capability is demonstrated.",
+        "digital_confidence": "Digital confidence should not be confused with capability; look for reliable practice and judgment, not just fluent self-presentation."
+      },
+      "prerequisites": [
+        "Stable developing-level practice in routine tasks.",
+        "Opportunities to apply digital choices independently in real work or study."
+      ],
+      "cross_element_dependencies": [
+        "Progress is easier when Digital Proficiency and Productivity is at least emerging alongside this element.",
+        "Progress is easier when Information, Data and Media Literacies is at least emerging alongside this element.",
+        "Progress is easier when Digital Identity and Wellbeing is at least emerging alongside this element."
+      ],
+      "respondent_visibility": "Visible through outputs, prototypes, user feedback and people who experience the changed process or resource.",
+      "progression_signals": [
+        "Builds solutions that can be reused or adapted.",
+        "Uses feedback and evidence to refine solutions."
+      ]
+    },
+    {
+      "indicator_id": "bdc-individual-creat-proficient",
+      "profile_id": "bdc-individual",
+      "profile_name": "Jisc Building Digital Capability Individual Framework",
+      "role_code": "IND",
+      "element_code": "CREAT",
+      "element_name": "Digital Creation, Problem-Solving and Innovation",
+      "level": "Proficient",
+      "level_order": 3,
+      "capability_statement": "Designs reusable, evaluative and innovative solutions that improve practice beyond the immediate task.",
+      "observable_practices": [
+        "Creates digital resources that other people can reuse, adapt or scale with minimal extra explanation.",
+        "Treats workflow fixes as part of an improvement cycle, with feedback and evidence informing later iterations.",
+        "Uses templates or prototypes to support original, well-scoped innovation rather than novelty for its own sake."
+      ],
+      "evidence_examples": [
+        "A reusable package, toolkit or documented pattern built from digital resources.",
+        "Evidence from workflow fixes showing evaluation, iteration and decisions about scale or adaptation.",
+        "A short account of how templates or prototypes changed practice beyond the immediate task."
+      ],
+      "common_misconceptions": [
+        {
+          "claim": "Innovation means large-scale disruption every time.",
+          "why_inaccurate": "Many proficient innovations are focused, evidence-led and appropriately scoped.",
+          "frequency": "common"
+        },
+        {
+          "claim": "Once a digital solution works, evaluation can stop.",
+          "why_inaccurate": "Proficient practice keeps learning from use, context change and feedback.",
+          "frequency": "moderate"
+        }
+      ],
+      "context_dependencies": {
+        "role": "Role determines which specialised profile, examples and scenario substitutions are most appropriate.",
+        "subject_area": "Subject area changes the examples, data sources and communication conventions more than the underlying capability expectation.",
+        "institution_type": "Institution type affects priorities, support models and examples, but the underlying progression remains comparable.",
+        "institution_level": "Institution level mainly affects the teaching, service, learner and regulatory context in which the capability is demonstrated.",
+        "digital_confidence": "Higher confidence is helpful only when matched by evidence of sound judgment, inclusion and sustainable practice."
+      },
+      "prerequisites": [
+        "Reliable capable-level practice over time.",
+        "Enough scope to review, improve or influence practice beyond immediate personal use."
+      ],
+      "cross_element_dependencies": [
+        "Progress is easier when Digital Proficiency and Productivity is at least emerging alongside this element.",
+        "Progress is easier when Information, Data and Media Literacies is at least emerging alongside this element.",
+        "Progress is easier when Digital Identity and Wellbeing is at least emerging alongside this element."
+      ],
+      "respondent_visibility": "Visible through outputs, prototypes, user feedback and people who experience the changed process or resource.",
+      "progression_signals": [
+        "Innovation choices are proportionate and justified.",
+        "New approaches improve practice beyond the original task."
+      ]
+    },
+    {
+      "indicator_id": "bdc-individual-learn-developing",
+      "profile_id": "bdc-individual",
+      "profile_name": "Jisc Building Digital Capability Individual Framework",
+      "role_code": "IND",
+      "element_code": "LEARN",
+      "element_name": "Digital Learning and Development",
+      "level": "Developing",
+      "level_order": 1,
+      "capability_statement": "Learns reactively when a new need appears and often stops once the immediate task is complete.",
+      "observable_practices": [
+        "Uses short courses and guides when a new need arises, but development activity is still mostly reactive and short-term.",
+        "Tries out ideas from practice experiments in isolated moments without always checking what changed in practice.",
+        "Joins peer learning exchanges when prompted or when confidence is low, though follow-through may be limited once the pressure passes."
+      ],
+      "evidence_examples": [
+        "Completion of short courses and guides linked to an immediate need.",
+        "A brief example of trying something from practice experiments once or twice in practice.",
+        "Participation records or notes from peer learning exchanges with limited follow-through."
+      ],
+      "common_misconceptions": [
+        {
+          "claim": "Watching training content is the same as improving practice.",
+          "why_inaccurate": "Development is visible only when learning is applied and reflected on.",
+          "frequency": "common"
+        },
+        {
+          "claim": "Only formal courses count as digital development.",
+          "why_inaccurate": "Practice, peer exchange and experimentation also matter.",
+          "frequency": "moderate"
+        }
+      ],
+      "context_dependencies": {
+        "role": "Role determines which specialised profile, examples and scenario substitutions are most appropriate.",
+        "subject_area": "Subject area changes the examples, data sources and communication conventions more than the underlying capability expectation.",
+        "institution_type": "Institution type affects priorities, support models and examples, but the underlying progression remains comparable.",
+        "institution_level": "Institution level mainly affects the teaching, service, learner and regulatory context in which the capability is demonstrated.",
+        "digital_confidence": "Low digital confidence can suppress performance signals at this level, so evidence should focus on what the person can do with reasonable support rather than on style or speed."
+      },
+      "prerequisites": [
+        "Access to the core digital environment used in the local context.",
+        "Enough orientation or support to attempt routine tasks safely."
+      ],
+      "cross_element_dependencies": [
+        "Progress is easier when Digital Proficiency and Productivity is at least emerging alongside this element.",
+        "Progress is easier when Digital Communication, Collaboration and Participation is at least emerging alongside this element.",
+        "Progress is easier when Digital Identity and Wellbeing is at least emerging alongside this element."
+      ],
+      "respondent_visibility": "Partly visible in practice, but stronger judgments also need reflection or evidence of how learning was applied over time.",
+      "progression_signals": [
+        "Links learning activity to a planned change in practice.",
+        "Uses reflection to consolidate confidence."
+      ]
+    },
+    {
+      "indicator_id": "bdc-individual-learn-capable",
+      "profile_id": "bdc-individual",
+      "profile_name": "Jisc Building Digital Capability Individual Framework",
+      "role_code": "IND",
+      "element_code": "LEARN",
+      "element_name": "Digital Learning and Development",
+      "level": "Capable",
+      "level_order": 2,
+      "capability_statement": "Plans and applies digital development in a way that strengthens real practice over time.",
+      "observable_practices": [
+        "Chooses short courses and guides with a clear purpose and links learning activity to a real improvement in practice.",
+        "Uses practice experiments to build confidence through application, reflection and adjustment.",
+        "Contributes to peer learning exchanges in a way that both supports personal growth and helps keep knowledge current."
+      ],
+      "evidence_examples": [
+        "A development plan or reflection that links short courses and guides to a concrete change in practice.",
+        "Evidence from practice experiments showing experimentation, review and adjustment over time.",
+        "Contributions to peer learning exchanges that show reciprocal learning rather than passive attendance."
+      ],
+      "common_misconceptions": [
+        {
+          "claim": "Confidence grows just by repeating the same task.",
+          "why_inaccurate": "Confidence deepens when practice is challenged, reflected on and adapted.",
+          "frequency": "common"
+        },
+        {
+          "claim": "Personal development is enough even in collaborative settings.",
+          "why_inaccurate": "Some digital change depends on shared language, routines and support.",
+          "frequency": "moderate"
+        }
+      ],
+      "context_dependencies": {
+        "role": "Role determines which specialised profile, examples and scenario substitutions are most appropriate.",
+        "subject_area": "Subject area changes the examples, data sources and communication conventions more than the underlying capability expectation.",
+        "institution_type": "Institution type affects priorities, support models and examples, but the underlying progression remains comparable.",
+        "institution_level": "Institution level mainly affects the teaching, service, learner and regulatory context in which the capability is demonstrated.",
+        "digital_confidence": "Digital confidence should not be confused with capability; look for reliable practice and judgment, not just fluent self-presentation."
+      },
+      "prerequisites": [
+        "Stable developing-level practice in routine tasks.",
+        "Opportunities to apply digital choices independently in real work or study."
+      ],
+      "cross_element_dependencies": [
+        "Progress is easier when Digital Proficiency and Productivity is at least emerging alongside this element.",
+        "Progress is easier when Digital Communication, Collaboration and Participation is at least emerging alongside this element.",
+        "Progress is easier when Digital Identity and Wellbeing is at least emerging alongside this element."
+      ],
+      "respondent_visibility": "Partly visible in practice, but stronger judgments also need reflection or evidence of how learning was applied over time.",
+      "progression_signals": [
+        "Supports peers or small groups with structure rather than ad hoc advice.",
+        "Tracks what changed after development activity."
+      ]
+    },
+    {
+      "indicator_id": "bdc-individual-learn-proficient",
+      "profile_id": "bdc-individual",
+      "profile_name": "Jisc Building Digital Capability Individual Framework",
+      "role_code": "IND",
+      "element_code": "LEARN",
+      "element_name": "Digital Learning and Development",
+      "level": "Proficient",
+      "level_order": 3,
+      "capability_statement": "Creates conditions for shared digital learning, reflection and confidence building in others as well as in self.",
+      "observable_practices": [
+        "Curates or shapes short courses and guides so that development becomes easier and more coherent for others.",
+        "Uses practice experiments to make practice visible, reflective and evidence-informed at group level.",
+        "Builds peer learning exchanges that support confidence, transfer and sustained change rather than one-off exposure."
+      ],
+      "evidence_examples": [
+        "Designed or curated short courses and guides that other people can use effectively.",
+        "Facilitated use of practice experiments with evidence that confidence or practice shifted across a group.",
+        "A sustained contribution to peer learning exchanges that strengthens ongoing development culture."
+      ],
+      "common_misconceptions": [
+        {
+          "claim": "Helping others learn means simply sharing favourite tips.",
+          "why_inaccurate": "Enabling growth requires structure, empathy, follow-up and adaptation.",
+          "frequency": "common"
+        },
+        {
+          "claim": "Attendance proves that development has happened.",
+          "why_inaccurate": "Proficient development looks for transfer into real practice.",
+          "frequency": "moderate"
+        }
+      ],
+      "context_dependencies": {
+        "role": "Role determines which specialised profile, examples and scenario substitutions are most appropriate.",
+        "subject_area": "Subject area changes the examples, data sources and communication conventions more than the underlying capability expectation.",
+        "institution_type": "Institution type affects priorities, support models and examples, but the underlying progression remains comparable.",
+        "institution_level": "Institution level mainly affects the teaching, service, learner and regulatory context in which the capability is demonstrated.",
+        "digital_confidence": "Higher confidence is helpful only when matched by evidence of sound judgment, inclusion and sustainable practice."
+      },
+      "prerequisites": [
+        "Reliable capable-level practice over time.",
+        "Enough scope to review, improve or influence practice beyond immediate personal use."
+      ],
+      "cross_element_dependencies": [
+        "Progress is easier when Digital Proficiency and Productivity is at least emerging alongside this element.",
+        "Progress is easier when Digital Communication, Collaboration and Participation is at least emerging alongside this element.",
+        "Progress is easier when Digital Identity and Wellbeing is at least emerging alongside this element."
+      ],
+      "respondent_visibility": "Partly visible in practice, but stronger judgments also need reflection or evidence of how learning was applied over time.",
+      "progression_signals": [
+        "Builds sustained learning conditions for others.",
+        "Balances experimentation with reflection and follow-up."
+      ]
+    },
+    {
+      "indicator_id": "bdc-individual-lit-developing",
+      "profile_id": "bdc-individual",
+      "profile_name": "Jisc Building Digital Capability Individual Framework",
+      "role_code": "IND",
+      "element_code": "LIT",
+      "element_name": "Information, Data and Media Literacies",
+      "level": "Developing",
+      "level_order": 1,
+      "capability_statement": "Finds usable sources or data for immediate tasks, but evaluation of quality, limitations and relevance is still inconsistent.",
+      "observable_practices": [
+        "Uses searches and source collections to locate material for immediate tasks, but source quality checks are still inconsistent.",
+        "Reads spreadsheets or dashboards with some care, though assumptions, gaps or definitions can still be missed.",
+        "Draws on briefs or summaries to support decisions, but confidence is sometimes based more on convenience than on evidence strength."
+      ],
+      "evidence_examples": [
+        "A saved set of searches and source collections used to complete an immediate task.",
+        "A worked example using spreadsheets or dashboards with some attention to meaning, though not all assumptions are checked.",
+        "A note or draft using briefs or summaries that shows a plausible but still limited evidence base."
+      ],
+      "common_misconceptions": [
+        {
+          "claim": "A source is reliable if it appears high in search results or looks professional.",
+          "why_inaccurate": "Presentation and ranking do not guarantee trustworthiness or fit.",
+          "frequency": "common"
+        },
+        {
+          "claim": "Numbers speak for themselves.",
+          "why_inaccurate": "Data always depends on definitions, omissions, context and interpretation.",
+          "frequency": "moderate"
+        }
+      ],
+      "context_dependencies": {
+        "role": "Role determines which specialised profile, examples and scenario substitutions are most appropriate.",
+        "subject_area": "Subject area changes the examples, data sources and communication conventions more than the underlying capability expectation.",
+        "institution_type": "Institution type affects priorities, support models and examples, but the underlying progression remains comparable.",
+        "institution_level": "Institution level mainly affects the teaching, service, learner and regulatory context in which the capability is demonstrated.",
+        "digital_confidence": "Low digital confidence can suppress performance signals at this level, so evidence should focus on what the person can do with reasonable support rather than on style or speed."
+      },
+      "prerequisites": [
+        "Access to the core digital environment used in the local context.",
+        "Enough orientation or support to attempt routine tasks safely."
+      ],
+      "cross_element_dependencies": [
+        "Progress is easier when Digital Proficiency and Productivity is at least emerging alongside this element.",
+        "Progress is easier when Digital Creation, Problem-Solving and Innovation is at least emerging alongside this element.",
+        "Progress is easier when Digital Communication, Collaboration and Participation is at least emerging alongside this element."
+      ],
+      "respondent_visibility": "Visible through source trails, interpretations, analyses and decisions made with evidence.",
+      "progression_signals": [
+        "Explains why one source or dataset is stronger than another.",
+        "Checks assumptions behind figures before using them."
+      ]
+    },
+    {
+      "indicator_id": "bdc-individual-lit-capable",
+      "profile_id": "bdc-individual",
+      "profile_name": "Jisc Building Digital Capability Individual Framework",
+      "role_code": "IND",
+      "element_code": "LIT",
+      "element_name": "Information, Data and Media Literacies",
+      "level": "Capable",
+      "level_order": 2,
+      "capability_statement": "Judges source quality, data definitions and relevance deliberately, then uses evidence with care.",
+      "observable_practices": [
+        "Uses searches and source collections deliberately to compare relevance, credibility and fit for purpose.",
+        "Interprets spreadsheets or dashboards with attention to definitions, missing information, timeframe and context.",
+        "Uses briefs or summaries to make reasoned judgments and can explain the limits of the evidence."
+      ],
+      "evidence_examples": [
+        "An evidence trail from searches and source collections showing source comparison and selection criteria.",
+        "An annotated interpretation of spreadsheets or dashboards that explains caveats, definitions or missing data.",
+        "A decision note using briefs or summaries that distinguishes stronger from weaker evidence."
+      ],
+      "common_misconceptions": [
+        {
+          "claim": "Rejecting biased sources is the same as critical literacy.",
+          "why_inaccurate": "Critical literacy often requires weighing imperfect evidence, not just discarding it.",
+          "frequency": "common"
+        },
+        {
+          "claim": "A neat dashboard is automatically decision-ready.",
+          "why_inaccurate": "Visual clarity can conceal weak measures, missing data or poor alignment with the question.",
+          "frequency": "moderate"
+        }
+      ],
+      "context_dependencies": {
+        "role": "Role determines which specialised profile, examples and scenario substitutions are most appropriate.",
+        "subject_area": "Subject area changes the examples, data sources and communication conventions more than the underlying capability expectation.",
+        "institution_type": "Institution type affects priorities, support models and examples, but the underlying progression remains comparable.",
+        "institution_level": "Institution level mainly affects the teaching, service, learner and regulatory context in which the capability is demonstrated.",
+        "digital_confidence": "Digital confidence should not be confused with capability; look for reliable practice and judgment, not just fluent self-presentation."
+      },
+      "prerequisites": [
+        "Stable developing-level practice in routine tasks.",
+        "Opportunities to apply digital choices independently in real work or study."
+      ],
+      "cross_element_dependencies": [
+        "Progress is easier when Digital Proficiency and Productivity is at least emerging alongside this element.",
+        "Progress is easier when Digital Creation, Problem-Solving and Innovation is at least emerging alongside this element.",
+        "Progress is easier when Digital Communication, Collaboration and Participation is at least emerging alongside this element."
+      ],
+      "respondent_visibility": "Visible through source trails, interpretations, analyses and decisions made with evidence.",
+      "progression_signals": [
+        "Synthesises more than one form of evidence.",
+        "Communicates uncertainty instead of hiding it."
+      ]
+    },
+    {
+      "indicator_id": "bdc-individual-lit-proficient",
+      "profile_id": "bdc-individual",
+      "profile_name": "Jisc Building Digital Capability Individual Framework",
+      "role_code": "IND",
+      "element_code": "LIT",
+      "element_name": "Information, Data and Media Literacies",
+      "level": "Proficient",
+      "level_order": 3,
+      "capability_statement": "Synthesises information and data from multiple sources, explains uncertainty and helps others reason well with evidence.",
+      "observable_practices": [
+        "Combines searches and source collections to build a more complete picture than any single source could offer.",
+        "Interrogates spreadsheets or dashboards critically and explains uncertainty, bias or methodological limits to other people.",
+        "Turns briefs or summaries into decision-ready insight while making confidence levels and open questions visible."
+      ],
+      "evidence_examples": [
+        "A synthesis built from searches and source collections that reconciles or contrasts several forms of evidence.",
+        "A briefing on spreadsheets or dashboards that makes uncertainty, bias or method limitations visible to others.",
+        "A decision-ready summary from briefs or summaries with confidence statements and clear open questions."
+      ],
+      "common_misconceptions": [
+        {
+          "claim": "Synthesis means averaging different pieces of evidence together.",
+          "why_inaccurate": "Proficient synthesis explains convergence, contradiction and uncertainty.",
+          "frequency": "common"
+        },
+        {
+          "claim": "Evidence work is objective if the analyst stays neutral.",
+          "why_inaccurate": "Judgments still need transparency about methods, assumptions and limits.",
+          "frequency": "moderate"
+        }
+      ],
+      "context_dependencies": {
+        "role": "Role determines which specialised profile, examples and scenario substitutions are most appropriate.",
+        "subject_area": "Subject area changes the examples, data sources and communication conventions more than the underlying capability expectation.",
+        "institution_type": "Institution type affects priorities, support models and examples, but the underlying progression remains comparable.",
+        "institution_level": "Institution level mainly affects the teaching, service, learner and regulatory context in which the capability is demonstrated.",
+        "digital_confidence": "Higher confidence is helpful only when matched by evidence of sound judgment, inclusion and sustainable practice."
+      },
+      "prerequisites": [
+        "Reliable capable-level practice over time.",
+        "Enough scope to review, improve or influence practice beyond immediate personal use."
+      ],
+      "cross_element_dependencies": [
+        "Progress is easier when Digital Proficiency and Productivity is at least emerging alongside this element.",
+        "Progress is easier when Digital Creation, Problem-Solving and Innovation is at least emerging alongside this element.",
+        "Progress is easier when Digital Communication, Collaboration and Participation is at least emerging alongside this element."
+      ],
+      "respondent_visibility": "Visible through source trails, interpretations, analyses and decisions made with evidence.",
+      "progression_signals": [
+        "Others rely on the person's evidence judgment.",
+        "Complex evidence is turned into clear, decision-ready insight."
+      ]
+    },
+    {
+      "indicator_id": "bdc-individual-comm-developing",
+      "profile_id": "bdc-individual",
+      "profile_name": "Jisc Building Digital Capability Individual Framework",
+      "role_code": "IND",
+      "element_code": "COMM",
+      "element_name": "Digital Communication, Collaboration and Participation",
+      "level": "Developing",
+      "level_order": 1,
+      "capability_statement": "Uses common channels to stay in touch, but collaboration norms and channel choices are still mostly habitual.",
+      "observable_practices": [
+        "Uses email or messaging channels regularly, but channel choices and participation habits are still mostly based on familiarity.",
+        "Contributes in shared workspaces when expectations are clear, though collaboration can become messy when several channels compete.",
+        "Joins communities or project spaces as a participant, but does not yet consistently shape how others can engage."
+      ],
+      "evidence_examples": [
+        "Routine use of email or messaging channels to keep people informed.",
+        "Examples from shared workspaces showing participation, though updates or decisions may be hard to track.",
+        "Visible engagement in communities or project spaces as a contributor rather than a facilitator."
+      ],
+      "common_misconceptions": [
+        {
+          "claim": "Using many channels improves communication.",
+          "why_inaccurate": "More channels can create duplication, confusion and exclusion.",
+          "frequency": "common"
+        },
+        {
+          "claim": "Fast responses are the main sign of good digital collaboration.",
+          "why_inaccurate": "Purpose, clarity and inclusivity often matter more than speed alone.",
+          "frequency": "moderate"
+        }
+      ],
+      "context_dependencies": {
+        "role": "Role determines which specialised profile, examples and scenario substitutions are most appropriate.",
+        "subject_area": "Subject area changes the examples, data sources and communication conventions more than the underlying capability expectation.",
+        "institution_type": "Institution type affects priorities, support models and examples, but the underlying progression remains comparable.",
+        "institution_level": "Institution level mainly affects the teaching, service, learner and regulatory context in which the capability is demonstrated.",
+        "digital_confidence": "Low digital confidence can suppress performance signals at this level, so evidence should focus on what the person can do with reasonable support rather than on style or speed."
+      },
+      "prerequisites": [
+        "Access to the core digital environment used in the local context.",
+        "Enough orientation or support to attempt routine tasks safely."
+      ],
+      "cross_element_dependencies": [
+        "Progress is easier when Digital Proficiency and Productivity is at least emerging alongside this element.",
+        "Progress is easier when Digital Learning and Development is at least emerging alongside this element.",
+        "Progress is easier when Digital Identity and Wellbeing is at least emerging alongside this element."
+      ],
+      "respondent_visibility": "Visible to collaborators, learners, service users or community members who experience the communication pattern.",
+      "progression_signals": [
+        "Chooses channels deliberately rather than by habit.",
+        "Creates clearer records of decisions and next steps."
+      ]
+    },
+    {
+      "indicator_id": "bdc-individual-comm-capable",
+      "profile_id": "bdc-individual",
+      "profile_name": "Jisc Building Digital Capability Individual Framework",
+      "role_code": "IND",
+      "element_code": "COMM",
+      "element_name": "Digital Communication, Collaboration and Participation",
+      "level": "Capable",
+      "level_order": 2,
+      "capability_statement": "Chooses channels and collaboration methods intentionally to support the task, the audience and inclusive participation.",
+      "observable_practices": [
+        "Chooses email or messaging channels to match audience, task and timing rather than using the same pattern for everything.",
+        "Organises shared workspaces so that updates, decisions and contributions are easier to follow.",
+        "Uses communities or project spaces in ways that support respectful, inclusive and purposeful participation."
+      ],
+      "evidence_examples": [
+        "A clear channel plan or working agreement for email or messaging channels.",
+        "Examples from shared workspaces showing concise updates, accessible records and purposeful coordination.",
+        "Evidence that communities or project spaces enabled useful participation from more than one kind of contributor."
+      ],
+      "common_misconceptions": [
+        {
+          "claim": "A lively chat space guarantees collaboration.",
+          "why_inaccurate": "High activity may still produce weak decisions, poor records or uneven participation.",
+          "frequency": "common"
+        },
+        {
+          "claim": "Formal tone always makes communication more professional.",
+          "why_inaccurate": "Professional communication also needs openness, accessibility and fit for purpose.",
+          "frequency": "moderate"
+        }
+      ],
+      "context_dependencies": {
+        "role": "Role determines which specialised profile, examples and scenario substitutions are most appropriate.",
+        "subject_area": "Subject area changes the examples, data sources and communication conventions more than the underlying capability expectation.",
+        "institution_type": "Institution type affects priorities, support models and examples, but the underlying progression remains comparable.",
+        "institution_level": "Institution level mainly affects the teaching, service, learner and regulatory context in which the capability is demonstrated.",
+        "digital_confidence": "Digital confidence should not be confused with capability; look for reliable practice and judgment, not just fluent self-presentation."
+      },
+      "prerequisites": [
+        "Stable developing-level practice in routine tasks.",
+        "Opportunities to apply digital choices independently in real work or study."
+      ],
+      "cross_element_dependencies": [
+        "Progress is easier when Digital Proficiency and Productivity is at least emerging alongside this element.",
+        "Progress is easier when Digital Learning and Development is at least emerging alongside this element.",
+        "Progress is easier when Digital Identity and Wellbeing is at least emerging alongside this element."
+      ],
+      "respondent_visibility": "Visible to collaborators, learners, service users or community members who experience the communication pattern.",
+      "progression_signals": [
+        "Facilitates collaboration rather than only contributing to it.",
+        "Participation becomes more balanced and inclusive."
+      ]
+    },
+    {
+      "indicator_id": "bdc-individual-comm-proficient",
+      "profile_id": "bdc-individual",
+      "profile_name": "Jisc Building Digital Capability Individual Framework",
+      "role_code": "IND",
+      "element_code": "COMM",
+      "element_name": "Digital Communication, Collaboration and Participation",
+      "level": "Proficient",
+      "level_order": 3,
+      "capability_statement": "Facilitates productive collaboration or community participation and shapes better digital communication norms.",
+      "observable_practices": [
+        "Designs or facilitates email or messaging channels so that collaboration is clearer, more balanced and more resilient.",
+        "Uses shared workspaces to support collective decision-making, accountability and participation across different needs.",
+        "Shapes communities or project spaces by modelling good norms, managing tension early and helping others contribute well."
+      ],
+      "evidence_examples": [
+        "A facilitated structure for email or messaging channels that improved collaboration quality or inclusion.",
+        "Records from shared workspaces showing balanced participation, decision clarity and follow-through.",
+        "Examples from communities or project spaces where norms were shaped deliberately and conflict or exclusion was handled well."
+      ],
+      "common_misconceptions": [
+        {
+          "claim": "Facilitation means posting most often.",
+          "why_inaccurate": "Good facilitators create space for others and guide participation deliberately.",
+          "frequency": "common"
+        },
+        {
+          "claim": "If conflict is visible, collaboration has failed.",
+          "why_inaccurate": "Handled well, tension can improve clarity and decision quality.",
+          "frequency": "moderate"
+        }
+      ],
+      "context_dependencies": {
+        "role": "Role determines which specialised profile, examples and scenario substitutions are most appropriate.",
+        "subject_area": "Subject area changes the examples, data sources and communication conventions more than the underlying capability expectation.",
+        "institution_type": "Institution type affects priorities, support models and examples, but the underlying progression remains comparable.",
+        "institution_level": "Institution level mainly affects the teaching, service, learner and regulatory context in which the capability is demonstrated.",
+        "digital_confidence": "Higher confidence is helpful only when matched by evidence of sound judgment, inclusion and sustainable practice."
+      },
+      "prerequisites": [
+        "Reliable capable-level practice over time.",
+        "Enough scope to review, improve or influence practice beyond immediate personal use."
+      ],
+      "cross_element_dependencies": [
+        "Progress is easier when Digital Proficiency and Productivity is at least emerging alongside this element.",
+        "Progress is easier when Digital Learning and Development is at least emerging alongside this element.",
+        "Progress is easier when Digital Identity and Wellbeing is at least emerging alongside this element."
+      ],
+      "respondent_visibility": "Visible to collaborators, learners, service users or community members who experience the communication pattern.",
+      "progression_signals": [
+        "Shapes healthier communication norms in communities.",
+        "Manages tension and participation with confidence and care."
+      ]
+    },
+    {
+      "indicator_id": "bdc-individual-id-developing",
+      "profile_id": "bdc-individual",
+      "profile_name": "Jisc Building Digital Capability Individual Framework",
+      "role_code": "IND",
+      "element_code": "ID",
+      "element_name": "Digital Identity and Wellbeing",
+      "level": "Developing",
+      "level_order": 1,
+      "capability_statement": "Responds to digital identity or wellbeing issues after they arise, with actions that are often platform-specific or temporary.",
+      "observable_practices": [
+        "Adjusts profiles and privacy settings after an issue appears, though the response is often temporary or limited to one platform.",
+        "Manages notification patterns inconsistently, leading to cycles of overload, distraction or blurred boundaries.",
+        "Responds to community norms when prompted, but does not yet maintain a deliberate long-term approach."
+      ],
+      "evidence_examples": [
+        "A reactive change to profiles and privacy settings after a concern or incident.",
+        "Short-term use of notification patterns to reduce overload or distraction.",
+        "A note or reflection about community norms that identifies a risk but has not yet become a stable practice."
+      ],
+      "common_misconceptions": [
+        {
+          "claim": "Changing one privacy setting solves digital identity risk.",
+          "why_inaccurate": "Presence, boundaries and context usually span several platforms and practices.",
+          "frequency": "common"
+        },
+        {
+          "claim": "Overload is just a personal time-management issue.",
+          "why_inaccurate": "Digital environments and expectations also shape attention and wellbeing.",
+          "frequency": "moderate"
+        }
+      ],
+      "context_dependencies": {
+        "role": "Role determines which specialised profile, examples and scenario substitutions are most appropriate.",
+        "subject_area": "Subject area changes the examples, data sources and communication conventions more than the underlying capability expectation.",
+        "institution_type": "Institution type affects priorities, support models and examples, but the underlying progression remains comparable.",
+        "institution_level": "Institution level mainly affects the teaching, service, learner and regulatory context in which the capability is demonstrated.",
+        "digital_confidence": "Low digital confidence can suppress performance signals at this level, so evidence should focus on what the person can do with reasonable support rather than on style or speed."
+      },
+      "prerequisites": [
+        "Access to the core digital environment used in the local context.",
+        "Enough orientation or support to attempt routine tasks safely."
+      ],
+      "cross_element_dependencies": [
+        "Progress is easier when Digital Communication, Collaboration and Participation is at least emerging alongside this element.",
+        "Progress is easier when Digital Proficiency and Productivity is at least emerging alongside this element.",
+        "Progress is easier when Digital Learning and Development is at least emerging alongside this element."
+      ],
+      "respondent_visibility": "Only partly visible externally; the most reliable judgment combines observable traces with self-reflection about boundaries, risk and wellbeing.",
+      "progression_signals": [
+        "Moves from one-off fixes to deliberate boundary-setting.",
+        "Aligns digital presence more clearly with role and values."
+      ]
+    },
+    {
+      "indicator_id": "bdc-individual-id-capable",
+      "profile_id": "bdc-individual",
+      "profile_name": "Jisc Building Digital Capability Individual Framework",
+      "role_code": "IND",
+      "element_code": "ID",
+      "element_name": "Digital Identity and Wellbeing",
+      "level": "Capable",
+      "level_order": 2,
+      "capability_statement": "Manages presence, privacy, boundaries and digital habits deliberately across contexts.",
+      "observable_practices": [
+        "Reviews profiles and privacy settings deliberately so that public traces, privacy and role expectations are better aligned.",
+        "Uses notification patterns to support sustainable work patterns, healthier boundaries and appropriate availability.",
+        "Treats community norms as an ongoing part of trustworthy participation rather than a one-off compliance task."
+      ],
+      "evidence_examples": [
+        "A deliberate review of profiles and privacy settings with role-appropriate choices about visibility, privacy or tone.",
+        "A sustained routine in notification patterns that supports healthier availability and attention.",
+        "Evidence that community norms is being managed as an ongoing practice rather than as a one-off fix."
+      ],
+      "common_misconceptions": [
+        {
+          "claim": "Good privacy settings are enough to manage digital identity.",
+          "why_inaccurate": "Tone, boundaries, visibility, reputation and role expectations matter too.",
+          "frequency": "common"
+        },
+        {
+          "claim": "Wellbeing is separate from digital practice.",
+          "why_inaccurate": "Availability, platform habits and communication norms affect wellbeing directly.",
+          "frequency": "moderate"
+        }
+      ],
+      "context_dependencies": {
+        "role": "Role determines which specialised profile, examples and scenario substitutions are most appropriate.",
+        "subject_area": "Subject area changes the examples, data sources and communication conventions more than the underlying capability expectation.",
+        "institution_type": "Institution type affects priorities, support models and examples, but the underlying progression remains comparable.",
+        "institution_level": "Institution level mainly affects the teaching, service, learner and regulatory context in which the capability is demonstrated.",
+        "digital_confidence": "Digital confidence should not be confused with capability; look for reliable practice and judgment, not just fluent self-presentation."
+      },
+      "prerequisites": [
+        "Stable developing-level practice in routine tasks.",
+        "Opportunities to apply digital choices independently in real work or study."
+      ],
+      "cross_element_dependencies": [
+        "Progress is easier when Digital Communication, Collaboration and Participation is at least emerging alongside this element.",
+        "Progress is easier when Digital Proficiency and Productivity is at least emerging alongside this element.",
+        "Progress is easier when Digital Learning and Development is at least emerging alongside this element."
+      ],
+      "respondent_visibility": "Only partly visible externally; the most reliable judgment combines observable traces with self-reflection about boundaries, risk and wellbeing.",
+      "progression_signals": [
+        "Helps others think about trust, care and risk.",
+        "Wellbeing habits become consistent across platforms and contexts."
+      ]
+    },
+    {
+      "indicator_id": "bdc-individual-id-proficient",
+      "profile_id": "bdc-individual",
+      "profile_name": "Jisc Building Digital Capability Individual Framework",
+      "role_code": "IND",
+      "element_code": "ID",
+      "element_name": "Digital Identity and Wellbeing",
+      "level": "Proficient",
+      "level_order": 3,
+      "capability_statement": "Models and shapes healthy, trustworthy and context-aware digital norms for wider groups or communities.",
+      "observable_practices": [
+        "Uses profiles and privacy settings to model clear, context-aware digital presence for other people.",
+        "Shapes notification patterns in ways that support care, inclusion and sustainable participation beyond personal habits alone.",
+        "Contributes to community norms by helping groups think well about trust, boundaries, risk and wellbeing."
+      ],
+      "evidence_examples": [
+        "Shared guidance or modelling related to profiles and privacy settings that other people use or reference.",
+        "Group norms or a support approach using notification patterns to improve sustainable participation.",
+        "A reflective or advisory piece about community norms that helps others balance trust, care and risk."
+      ],
+      "common_misconceptions": [
+        {
+          "claim": "Role modelling means telling others to follow the rules.",
+          "why_inaccurate": "Proficient practice shapes culture through care, explanation and context-sensitive guidance.",
+          "frequency": "common"
+        },
+        {
+          "claim": "The safest digital presence is minimal visibility everywhere.",
+          "why_inaccurate": "Healthy identity management balances opportunity, trust and risk rather than disappearing.",
+          "frequency": "moderate"
+        }
+      ],
+      "context_dependencies": {
+        "role": "Role determines which specialised profile, examples and scenario substitutions are most appropriate.",
+        "subject_area": "Subject area changes the examples, data sources and communication conventions more than the underlying capability expectation.",
+        "institution_type": "Institution type affects priorities, support models and examples, but the underlying progression remains comparable.",
+        "institution_level": "Institution level mainly affects the teaching, service, learner and regulatory context in which the capability is demonstrated.",
+        "digital_confidence": "Higher confidence is helpful only when matched by evidence of sound judgment, inclusion and sustainable practice."
+      },
+      "prerequisites": [
+        "Reliable capable-level practice over time.",
+        "Enough scope to review, improve or influence practice beyond immediate personal use."
+      ],
+      "cross_element_dependencies": [
+        "Progress is easier when Digital Communication, Collaboration and Participation is at least emerging alongside this element.",
+        "Progress is easier when Digital Proficiency and Productivity is at least emerging alongside this element.",
+        "Progress is easier when Digital Learning and Development is at least emerging alongside this element."
+      ],
+      "respondent_visibility": "Only partly visible externally; the most reliable judgment combines observable traces with self-reflection about boundaries, risk and wellbeing.",
+      "progression_signals": [
+        "Contributes to shared norms, not just personal settings.",
+        "Balances visibility, authenticity and sustainable practice."
+      ]
+    }
+  ]
+}

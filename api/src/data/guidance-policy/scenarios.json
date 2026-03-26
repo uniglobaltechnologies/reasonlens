@@ -1,0 +1,901 @@
+{
+  "framework_id": "unesco-guidance-ai-education",
+  "framework_name": "UNESCO Guidance for AI in Education & Research",
+  "framework_source": "UNESCO (2023). Guidance for generative AI in education and research. UNESDOC pf0000386693. ISBN 978-92-3-100612-8.",
+  "reasonlens_implementation_note": "This file operationalises the UNESCO Guidance document for the ReasonLens platform as an institutional policy maturity assessment. The original UNESCO document is structured as regulatory guidance with policy measures and stakeholder frameworks, not as a maturity model. ReasonLens imposes a 4-dimension x 3-level maturity structure to enable comparable assessment alongside other institutional frameworks (THE DMI, QS AI Capability, JISC AI Maturity). The four dimensions synthesise UNESCO's eight policy action areas and four-stakeholder regulatory framework into assessable institutional governance dimensions. The three levels (Emerging/Developing/Established) are a ReasonLens construct informed by the JISC AI Maturity Model's stage-based approach.",
+  "dimensions": [
+    {
+      "id": "gp-human-centered",
+      "name": "Human-Centred AI",
+      "code": "HC",
+      "description": "The extent to which the institution ensures that AI deployment protects human agency, supports human decision-making, and centres educational relationships on human needs, values, and rights. Covers governance of AI-human interaction, protection of learner and staff autonomy, and human oversight mechanisms."
+    },
+    {
+      "id": "gp-safe-equitable",
+      "name": "Safe & Equitable",
+      "code": "SE",
+      "description": "The extent to which the institution implements mechanisms to ensure AI systems are safe, secure, inclusive, and equitable. Covers risk assessment, bias auditing, accessibility, digital divide mitigation, and protection of vulnerable populations including age-appropriate use."
+    },
+    {
+      "id": "gp-ethics",
+      "name": "Ethics & Accountability",
+      "code": "EA",
+      "description": "The extent to which the institution establishes ethical governance structures, accountability mechanisms, and regulatory compliance for AI use. Covers ethics committees, data protection, transparency requirements, AI use policies, academic integrity frameworks, and accountability chains."
+    },
+    {
+      "id": "gp-evidence",
+      "name": "Evidence-Based",
+      "code": "EB",
+      "description": "The extent to which the institution builds and uses evidence to inform AI adoption decisions, evaluates AI effectiveness through rigorous methods, and contributes to the broader knowledge base. Covers pilot evaluation, impact assessment, research partnerships, and evidence-informed policy development."
+    }
+  ],
+  "levels": [
+    {
+      "id_suffix": "emerging",
+      "name": "Emerging",
+      "order": 1,
+      "code": "E",
+      "description": "The institution recognises AI as relevant to education and research and has begun initial responses, but lacks coordinated policy, systematic governance, or evidence-based deployment. AI use is happening informally, and institutional responses are reactive or ad hoc."
+    },
+    {
+      "id_suffix": "developing",
+      "name": "Developing",
+      "order": 2,
+      "code": "D",
+      "description": "The institution has established initial policies, governance structures, and evaluation mechanisms for AI in education and research. Formal initiatives are underway but not yet comprehensive, institution-wide, or fully embedded in standard practice."
+    },
+    {
+      "id_suffix": "established",
+      "name": "Established",
+      "order": 3,
+      "code": "S",
+      "description": "The institution has comprehensive, embedded, and actively maintained AI governance, with evidence-driven policy, systematic safety and equity mechanisms, and continuous improvement processes. AI governance is integrated into institutional strategy and decision-making structures."
+    }
+  ],
+  "object_count": 16,
+  "structure": "4 dimensions x 2 boundaries x 2 scenarios",
+  "data": [
+    {
+      "id": "GPOL-HC-ED-01",
+      "dimension_id": "gp-human-centered",
+      "boundary": "ED",
+      "stem": "Your university has deployed an AI-powered early warning system that flags students at risk of dropping out based on VLE engagement, assessment scores, and library usage. The system sends automated alerts to personal tutors. Several tutors report that the alerts often do not match their own knowledge of students' situations, and some students have complained about receiving unsolicited wellbeing check-ins triggered by the system.",
+      "response_options": [
+        {
+          "id": "GPOL-HC-ED-01-A",
+          "text": "The university acknowledges the system is imperfect but argues it catches cases tutors miss. The IT team is asked to improve the algorithm's accuracy. Students are not informed about the system's role in triggering wellbeing contacts.",
+          "level": "emerging",
+          "is_nuisance": true,
+          "nuisance_type": "technical_fix_for_governance_gap",
+          "nuisance_explanation": "Sounds responsive: improving accuracy addresses the symptom. But it does not address the human oversight gap (tutors cannot override alerts effectively), the transparency gap (students are not informed), or the question of whether automated wellbeing contacts are appropriate."
+        },
+        {
+          "id": "GPOL-HC-ED-01-B",
+          "text": "The university classifies the early warning system as high-risk AI and conducts a human-AI interaction review. The review establishes: tutors must review all alerts before action is taken; students are informed that an AI system may flag them and can opt out of automated alerts; tutor training includes guidance on when to rely on their own judgement over system alerts. A 6-month review is scheduled.",
+          "level": "developing",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "GPOL-HC-ED-01-C",
+          "text": "The university pauses the system pending investigation. A working group of tutors, students, and IT staff is formed to redesign the system's governance. They recommend the system be repositioned as a tutor support tool rather than an automated alert system, with tutors actively choosing whether to act on signals rather than responding to automated prompts.",
+          "level": "developing",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "university"
+        ],
+        "region": [
+          "universal"
+        ],
+        "institution_size": [
+          "medium",
+          "large"
+        ],
+        "respondent_role": [
+          "senior_leadership",
+          "academic_leadership",
+          "IT_leadership"
+        ],
+        "existing_ai_deployment": [
+          "moderate",
+          "extensive"
+        ]
+      },
+      "discrimination_notes": "Discriminates between institutions that treat human oversight problems as technical accuracy problems (Emerging) and those that establish formal human-AI interaction governance with risk classification, transparency, and override mechanisms (Developing)."
+    },
+    {
+      "id": "GPOL-HC-ED-02",
+      "dimension_id": "gp-human-centered",
+      "boundary": "ED",
+      "stem": "A faculty dean proposes using an AI tool to provide automated first-pass marking of undergraduate essays, with human markers then reviewing and adjusting scores. The dean argues this will reduce marking turnaround from three weeks to one. The tool has been demonstrated by the vendor and performed well on sample essays from a similar institution.",
+      "response_options": [
+        {
+          "id": "GPOL-HC-ED-02-A",
+          "text": "The university approves a pilot in the dean's faculty. The pilot is evaluated on speed of turnaround and whether students are satisfied with feedback quality. No formal assessment of how the AI affects markers' own judgement or students' trust in assessment is conducted.",
+          "level": "emerging",
+          "is_nuisance": true,
+          "nuisance_type": "efficiency_framing",
+          "nuisance_explanation": "Sounds evidence-based: there is a pilot with evaluation. But the evaluation only measures efficiency and satisfaction, not human agency impacts. No formal consideration of whether AI-first marking changes the nature of human judgement or student trust."
+        },
+        {
+          "id": "GPOL-HC-ED-02-B",
+          "text": "The university requires the proposal to go through a human-AI interaction assessment before the pilot. The assessment classifies automated marking as high-risk (consequential decisions about students), specifies that human markers must be able to disregard AI scores entirely, requires students to be informed that AI is involved in marking, and includes evaluation of whether AI-first marking leads to anchoring bias in human markers.",
+          "level": "developing",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "GPOL-HC-ED-02-C",
+          "text": "The university declines the proposal because AI should not be involved in assessment. The Pro-Vice-Chancellor for Education issues a moratorium on AI in any assessment-related process until sector consensus emerges.",
+          "level": "emerging",
+          "is_nuisance": true,
+          "nuisance_type": "moratorium_as_governance",
+          "nuisance_explanation": "Sounds cautious and protective of assessment integrity. But a blanket moratorium is a reactive measure that avoids developing the governance capability to assess AI uses on their merits. It also prevents beneficial uses."
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "university",
+          "college"
+        ],
+        "region": [
+          "universal"
+        ],
+        "institution_size": [
+          "universal"
+        ],
+        "respondent_role": [
+          "senior_leadership",
+          "academic_leadership"
+        ],
+        "existing_ai_deployment": [
+          "limited",
+          "moderate"
+        ]
+      },
+      "discrimination_notes": "Discriminates between institutions that evaluate AI in assessment only on efficiency (Emerging) and those that apply formal human-AI interaction governance including risk classification, anchoring bias assessment, and transparency (Developing)."
+    },
+    {
+      "id": "GPOL-HC-DE-01",
+      "dimension_id": "gp-human-centered",
+      "boundary": "DE",
+      "stem": "Your university has had formal human-centred AI governance for two years. Annual audit of the early warning system shows: override mechanisms exist and work technically; however, tutors report that time pressure means they rarely investigate before acting on alerts; student awareness of AI involvement has increased but few students request human review; and there is no data on whether the system has changed the nature of tutor-student relationships.",
+      "response_options": [
+        {
+          "id": "GPOL-HC-DE-01-A",
+          "text": "The audit is reported to the governance committee. The committee notes that override mechanisms are functional and student awareness has increased. They recommend continuing current practice with minor improvements to tutor training.",
+          "level": "developing",
+          "is_nuisance": true,
+          "nuisance_type": "functional_as_effective",
+          "nuisance_explanation": "Mechanisms exist and technically work, but the audit reveals they are not functioning as intended (tutors do not use overrides meaningfully, relationship impacts are unknown). Reporting compliance without addressing effectiveness is Developing, not Established."
+        },
+        {
+          "id": "GPOL-HC-DE-01-B",
+          "text": "The governance committee treats the audit findings as evidence that formal mechanisms are necessary but not sufficient. They commission longitudinal research on how AI alerts affect tutor-student relationships, redesign tutor workflows to ensure time for meaningful override decisions, and benchmark human-centred governance against sector practice. The committee reports to Senate on the gap between mechanism existence and mechanism effectiveness.",
+          "level": "established",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "GPOL-HC-DE-01-C",
+          "text": "The Pro-Vice-Chancellor decides the system should be replaced with a newer AI tool from a different vendor whose marketing materials emphasise 'human-centred AI by design.' The new tool is procured without repeating the governance review because the vendor claims human-centredness is built in.",
+          "level": "developing",
+          "is_nuisance": true,
+          "nuisance_type": "vendor_trust",
+          "nuisance_explanation": "Replacing one tool with another based on vendor claims does not address the governance gap identified in the audit. Human-centred governance is an institutional responsibility, not a product feature."
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "university"
+        ],
+        "region": [
+          "universal"
+        ],
+        "institution_size": [
+          "medium",
+          "large"
+        ],
+        "respondent_role": [
+          "senior_leadership",
+          "academic_leadership"
+        ],
+        "existing_ai_deployment": [
+          "moderate",
+          "extensive"
+        ]
+      },
+      "discrimination_notes": "Discriminates between institutions that report governance mechanism existence (Developing) and those that assess mechanism effectiveness, commission longitudinal research, and close the gap between formal compliance and cultural embedding (Established)."
+    },
+    {
+      "id": "GPOL-HC-DE-02",
+      "dimension_id": "gp-human-centered",
+      "boundary": "DE",
+      "stem": "Your institution is part of a national consortium developing sector-wide standards for human oversight of AI in education. Your institution has good internal governance but the consortium is struggling to agree on standards because institutions have very different AI maturity levels and governance approaches.",
+      "response_options": [
+        {
+          "id": "GPOL-HC-DE-02-A",
+          "text": "Your institution shares its own governance framework as a proposed standard. You advocate for the approach your institution has taken and suggest other institutions adopt similar structures, acknowledging they may need to adapt to their contexts.",
+          "level": "developing",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "GPOL-HC-DE-02-B",
+          "text": "Your institution contributes its governance experience, including what has worked, what has not, and what remains unresolved (like the gap between mechanism existence and effectiveness). You help develop tiered standards that institutions at different maturity levels can adopt, with a clear progression pathway. You also volunteer to share de-identified audit data to support evidence-based standard development.",
+          "level": "established",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "GPOL-HC-DE-02-C",
+          "text": "Your institution participates in consortium meetings but focuses on ensuring the standards do not impose requirements beyond what your institution already does. The institutional priority is demonstrating compliance with whatever standards are agreed.",
+          "level": "developing",
+          "is_nuisance": true,
+          "nuisance_type": "compliance_orientation",
+          "nuisance_explanation": "Participation is present but the orientation is defensive (ensuring standards match current practice) rather than contributory (advancing sector governance). Established institutions contribute to raising the sector standard, not just meeting it."
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "university"
+        ],
+        "region": [
+          "UK",
+          "EU"
+        ],
+        "institution_size": [
+          "medium",
+          "large"
+        ],
+        "respondent_role": [
+          "senior_leadership",
+          "policy_officer"
+        ],
+        "existing_ai_deployment": [
+          "moderate",
+          "extensive"
+        ]
+      },
+      "discrimination_notes": "Discriminates between institutions that participate in sector initiatives to demonstrate compliance (Developing) and those that contribute substantively to sector standards development with honest evidence sharing and constructive leadership (Established)."
+    },
+    {
+      "id": "GPOL-SE-ED-01",
+      "dimension_id": "gp-safe-equitable",
+      "boundary": "ED",
+      "stem": "Your institution has adopted a generative AI writing assistant integrated into the institutional VLE. Several lecturers report that the tool provides noticeably less helpful feedback on essays written in non-standard English, and students from widening participation backgrounds report the tool 'corrects' their cultural references. No bias testing was conducted before deployment.",
+      "response_options": [
+        {
+          "id": "GPOL-SE-ED-01-A",
+          "text": "The IT director contacts the vendor about the bias reports and asks them to fix the problem. In the meantime, lecturers are advised to remind students that AI feedback should be treated as suggestions, not corrections. No formal institutional action is taken.",
+          "level": "emerging",
+          "is_nuisance": true,
+          "nuisance_type": "vendor_delegation",
+          "nuisance_explanation": "Sounds responsible: contacting the vendor and advising caution. But delegating bias remediation entirely to the vendor, with no institutional risk assessment or equity impact review, leaves the institution without governance over a tool that is actively affecting student equity."
+        },
+        {
+          "id": "GPOL-SE-ED-01-B",
+          "text": "The institution conducts a formal risk assessment of the writing assistant, including bias testing with a diverse sample of student essays. Findings show systematic underperformance for non-standard English and cultural references outside Western academic norms. The institution requires the vendor to address specific biases, adds bias-related requirements to future AI procurement standards, and establishes a reporting mechanism for students to flag biased AI behaviour.",
+          "level": "developing",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "GPOL-SE-ED-01-C",
+          "text": "The institution removes the tool immediately to protect students from harm. A statement is issued explaining that AI tools will not be used until they can be guaranteed to be bias-free.",
+          "level": "emerging",
+          "is_nuisance": true,
+          "nuisance_type": "perfection_standard",
+          "nuisance_explanation": "Sounds protective and principled. But demanding bias-free AI before deployment sets an impossible standard (no technology is bias-free) and avoids developing the governance capability to assess and manage bias proportionately."
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "university",
+          "college"
+        ],
+        "region": [
+          "universal"
+        ],
+        "institution_size": [
+          "universal"
+        ],
+        "respondent_role": [
+          "IT_leadership",
+          "policy_officer",
+          "academic_leadership"
+        ],
+        "existing_ai_deployment": [
+          "limited",
+          "moderate"
+        ]
+      },
+      "discrimination_notes": "Discriminates between institutions that delegate safety and equity to vendors or apply impossible standards (Emerging) and those that conduct institutional risk assessment and establish systematic governance mechanisms (Developing)."
+    },
+    {
+      "id": "GPOL-SE-ED-02",
+      "dimension_id": "gp-safe-equitable",
+      "boundary": "ED",
+      "stem": "Your college is planning to introduce AI-powered tutoring for mathematics. A staff member raises concerns that students without reliable internet access at home will be disadvantaged since the tool requires constant connectivity. The college serves a diverse population with significant socioeconomic variation.",
+      "response_options": [
+        {
+          "id": "GPOL-SE-ED-02-A",
+          "text": "The college proceeds with the tool, noting that library computers and campus Wi-Fi provide access for students without home internet. The concern is recorded in the meeting minutes but no formal equity assessment is conducted.",
+          "level": "emerging",
+          "is_nuisance": true,
+          "nuisance_type": "campus_access_assumption",
+          "nuisance_explanation": "Sounds practical: campus access exists. But it does not address the equity impact of requiring students to be on campus for AI-dependent learning when peers can access it from home. The informal response avoids formal equity assessment."
+        },
+        {
+          "id": "GPOL-SE-ED-02-B",
+          "text": "The college conducts a digital access assessment of its student population, identifying the proportion and demographics of students without reliable home internet. The AI tool deployment plan is modified to include: offline functionality requirements in the procurement specification, campus access points with extended hours, an equity impact review 6 months post-deployment, and clear communication to students about alternative support for those who cannot access the tool reliably.",
+          "level": "developing",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "GPOL-SE-ED-02-C",
+          "text": "The college decides not to use AI tutoring tools until all students have equal internet access, as equity must come first. The decision is communicated as an ethical stance.",
+          "level": "emerging",
+          "is_nuisance": true,
+          "nuisance_type": "equity_absolutism",
+          "nuisance_explanation": "Sounds principled and equity-focused. But conditioning AI adoption on perfect equality creates indefinite delay and deprives all students of potential benefits. Developing institutions address equity through mitigation and monitoring, not postponement."
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "college",
+          "school"
+        ],
+        "region": [
+          "universal"
+        ],
+        "institution_size": [
+          "small",
+          "medium"
+        ],
+        "respondent_role": [
+          "senior_leadership",
+          "IT_leadership"
+        ],
+        "existing_ai_deployment": [
+          "none",
+          "limited"
+        ]
+      },
+      "discrimination_notes": "Discriminates between institutions that acknowledge equity concerns informally or apply absolutist standards (Emerging) and those that conduct formal equity assessment and implement proportionate mitigations (Developing)."
+    },
+    {
+      "id": "GPOL-SE-DE-01",
+      "dimension_id": "gp-safe-equitable",
+      "boundary": "DE",
+      "stem": "Your university has conducted annual bias audits on its AI-powered admissions screening tool for two years. The audits show the tool performs equivalently across gender and ethnicity for domestic applicants. However, you have not yet disaggregated performance by socioeconomic background, disability status, or international applicant country of origin. A new data sharing agreement would allow you to link admissions data with socioeconomic indicators.",
+      "response_options": [
+        {
+          "id": "GPOL-SE-DE-01-A",
+          "text": "The university reports that bias audits show equitable performance and that the tool meets the institution's equity requirements. The additional disaggregation is added to a future work plan but not prioritised because existing audits show no concerns.",
+          "level": "developing",
+          "is_nuisance": true,
+          "nuisance_type": "visible_equity_only",
+          "nuisance_explanation": "Sounds evidence-based: audits show no problems. But equity along dimensions not yet measured is unknown, not confirmed. Reporting equity based on incomplete disaggregation provides false assurance."
+        },
+        {
+          "id": "GPOL-SE-DE-01-B",
+          "text": "The university prioritises expanding disaggregation. The governance committee approves the data sharing agreement (with privacy safeguards), commissions expanded equity analysis across all protected and relevant characteristics, and commits to publishing de-identified findings to contribute to sector knowledge about admissions AI equity. A protocol is established for how findings will be acted upon if disparities are discovered.",
+          "level": "established",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "GPOL-SE-DE-01-C",
+          "text": "The university decides that the existing audits are sufficient and that further disaggregation would be disproportionately complex and resource-intensive. The institution focuses its equity efforts on other areas where impact is more visible.",
+          "level": "developing",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "university"
+        ],
+        "region": [
+          "UK",
+          "EU",
+          "US"
+        ],
+        "institution_size": [
+          "medium",
+          "large"
+        ],
+        "respondent_role": [
+          "senior_leadership",
+          "policy_officer"
+        ],
+        "existing_ai_deployment": [
+          "moderate",
+          "extensive"
+        ]
+      },
+      "discrimination_notes": "Discriminates between institutions that report equity based on available (possibly incomplete) disaggregation (Developing) and those that proactively expand disaggregation, publish findings, and establish protocols for acting on discoveries (Established)."
+    },
+    {
+      "id": "GPOL-SE-DE-02",
+      "dimension_id": "gp-safe-equitable",
+      "boundary": "DE",
+      "stem": "An AI-powered plagiarism detection tool has flagged a disproportionate number of essays from international students as potentially AI-generated. Your institution's investigation found that the tool's detection model was trained primarily on native-English writing samples and that non-native English writing patterns trigger false positives. This is the institution's first AI safety incident.",
+      "response_options": [
+        {
+          "id": "GPOL-SE-DE-02-A",
+          "text": "The institution suspends AI plagiarism detection for international students pending vendor remediation. Academic integrity cases based on the tool's false positives are reviewed and affected students are contacted. The findings are reported internally.",
+          "level": "developing",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "GPOL-SE-DE-02-B",
+          "text": "The institution activates its AI safety incident response protocol. The protocol specifies: immediate suspension of the tool for all students; communication to all students flagged by the tool explaining the issue and offering support; review and remediation of all academic integrity cases that relied on the tool; root cause analysis investigating why pre-deployment bias testing did not catch this; update of procurement standards to require testing against diverse writing populations; and publication of a de-identified case study for sector learning. The incident is reported to the AI governance committee and to the institution's board, with recommendations for preventing recurrence.",
+          "level": "established",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "GPOL-SE-DE-02-C",
+          "text": "The institution recalibrates the tool's threshold for international student essays and continues using it. The vendor is asked to include more diverse training data in the next model update. The institution considers the issue resolved.",
+          "level": "developing",
+          "is_nuisance": true,
+          "nuisance_type": "quick_fix",
+          "nuisance_explanation": "Sounds practical and proportionate: recalibrating and improving. But it does not address the affected students, does not investigate why pre-deployment testing missed the bias, does not activate systematic incident response, and does not contribute to sector learning."
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "university",
+          "college"
+        ],
+        "region": [
+          "UK",
+          "EU",
+          "US",
+          "Asia-Pacific"
+        ],
+        "institution_size": [
+          "universal"
+        ],
+        "respondent_role": [
+          "senior_leadership",
+          "policy_officer",
+          "academic_leadership"
+        ],
+        "existing_ai_deployment": [
+          "moderate",
+          "extensive"
+        ]
+      },
+      "discrimination_notes": "Discriminates between institutions that address incidents through targeted remediation (Developing) and those that activate comprehensive incident response, conduct root cause analysis, remediate affected individuals, and contribute to sector learning (Established)."
+    },
+    {
+      "id": "GPOL-EA-ED-01",
+      "dimension_id": "gp-ethics",
+      "boundary": "ED",
+      "stem": "A group of academics at your university has written an open letter calling for an institutional AI ethics policy. Currently, AI ethics is addressed only through updated academic integrity rules that restrict student AI use. The Vice-Chancellor asks you to recommend next steps.",
+      "response_options": [
+        {
+          "id": "GPOL-EA-ED-01-A",
+          "text": "You recommend expanding the academic integrity policy to include staff AI use and adding a section on data protection. You suggest the existing academic standards committee oversee this, as AI ethics is fundamentally about academic standards.",
+          "level": "emerging",
+          "is_nuisance": true,
+          "nuisance_type": "scope_narrowing",
+          "nuisance_explanation": "Sounds like a practical expansion. But framing AI ethics as an academic integrity issue narrows the scope dramatically. Data protection, fairness, human agency, safety, procurement, and institutional accountability require governance beyond academic standards."
+        },
+        {
+          "id": "GPOL-EA-ED-01-B",
+          "text": "You recommend establishing a cross-institutional AI governance working group with a mandate to develop a comprehensive AI ethics policy covering: acceptable use (staff and students), data protection (with AI-specific DPIA requirements), accountability (who approves AI deployments), transparency (when and how AI use is disclosed), and equity (bias assessment requirements). The group should report to the university executive and have authority to recommend halting AI deployments that do not meet ethical standards.",
+          "level": "developing",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "GPOL-EA-ED-01-C",
+          "text": "You recommend waiting for sector guidance (e.g. from the Russell Group, UUK, or JISC) before developing institutional policy, to ensure alignment with emerging best practice. In the meantime, you suggest individual faculties develop their own AI use guidelines.",
+          "level": "emerging",
+          "is_nuisance": true,
+          "nuisance_type": "deferred_governance",
+          "nuisance_explanation": "Sounds prudent and sector-aligned. But waiting for external guidance while AI use continues creates an accountability vacuum. Faculty-level guidelines without institutional coordination will be inconsistent and incomplete."
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "university"
+        ],
+        "region": [
+          "UK",
+          "EU",
+          "US"
+        ],
+        "institution_size": [
+          "medium",
+          "large"
+        ],
+        "respondent_role": [
+          "senior_leadership",
+          "policy_officer"
+        ],
+        "existing_ai_deployment": [
+          "limited",
+          "moderate"
+        ]
+      },
+      "discrimination_notes": "Discriminates between institutions that narrow AI ethics to academic integrity or defer governance (Emerging) and those that establish comprehensive, authoritative governance structures (Developing)."
+    },
+    {
+      "id": "GPOL-EA-ED-02",
+      "dimension_id": "gp-ethics",
+      "boundary": "ED",
+      "stem": "Your institution's IT department has been purchasing AI-powered tools for various departments: an AI chatbot for student enquiries, an AI scheduling tool for timetabling, and an AI analytics tool for marketing. Each was procured independently. A data protection officer raises concerns that no AI-specific data protection impact assessments were conducted and that the accountability for these AI deployments is unclear.",
+      "response_options": [
+        {
+          "id": "GPOL-EA-ED-02-A",
+          "text": "The IT director conducts retrospective DPIAs for the three tools and adds AI-specific questions to the IT procurement checklist. Accountability for each tool is assigned to the IT department since they procured the tools.",
+          "level": "emerging",
+          "is_nuisance": true,
+          "nuisance_type": "IT_centric_accountability",
+          "nuisance_explanation": "Sounds responsive: DPIAs are conducted and a checklist is added. But assigning accountability to IT for all AI tools regardless of their function conflates technical management with governance accountability. The marketing AI tool's decisions are a marketing responsibility; the student chatbot's decisions are a student services responsibility."
+        },
+        {
+          "id": "GPOL-EA-ED-02-B",
+          "text": "The institution establishes an AI governance framework: AI-specific DPIAs are mandated before procurement; each AI tool has a named institutional owner (not IT) who is accountable for its deployment and impact; the governance committee reviews all high-risk AI procurements; and a register of all institutional AI tools is created with risk classification, DPIA status, and named accountability.",
+          "level": "developing",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "GPOL-EA-ED-02-C",
+          "text": "The institution temporarily halts all new AI procurement until the DPO's concerns are addressed. A review of all existing AI tools is commissioned, and each department is asked to justify their AI tools. The IT procurement process is paused for AI-related purchases.",
+          "level": "emerging",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "university",
+          "college"
+        ],
+        "region": [
+          "EU",
+          "UK"
+        ],
+        "institution_size": [
+          "medium",
+          "large"
+        ],
+        "respondent_role": [
+          "IT_leadership",
+          "policy_officer",
+          "senior_leadership"
+        ],
+        "existing_ai_deployment": [
+          "limited",
+          "moderate"
+        ]
+      },
+      "discrimination_notes": "Discriminates between institutions that add AI considerations to existing IT processes (Emerging) and those that establish comprehensive governance frameworks with distributed accountability and AI registers (Developing)."
+    },
+    {
+      "id": "GPOL-EA-DE-01",
+      "dimension_id": "gp-ethics",
+      "boundary": "DE",
+      "stem": "Your university's AI ethics policy has been in place for 18 months. The annual review identifies that: the policy has been widely communicated; training completion is at 65%; two DPIAs have been conducted for new tools; but the AI governance committee has not been asked to review any deployment decisions, and no concerns have been raised through the designated channel.",
+      "response_options": [
+        {
+          "id": "GPOL-EA-DE-01-A",
+          "text": "The review concludes that the policy is working well: it has been communicated, training is progressing, and no concerns have been raised, suggesting AI deployments are meeting ethical standards. The committee recommends continuing current approach.",
+          "level": "developing",
+          "is_nuisance": true,
+          "nuisance_type": "silence_as_success",
+          "nuisance_explanation": "Sounds positive: widespread communication and no complaints. But the absence of governance committee involvement and no concerns raised could indicate that the governance mechanisms are bypassed or that staff do not trust or know how to use concern-raising channels. Silence does not equal compliance."
+        },
+        {
+          "id": "GPOL-EA-DE-01-B",
+          "text": "The review treats the absence of governance committee involvement and concern-raising as warning signs rather than success indicators. The committee commissions: an investigation into whether AI deployment decisions are being made without governance review; a survey of staff awareness and confidence in concern-raising mechanisms; and a self-assessment of whether the committee's scope and authority are adequate. Training is reviewed for effectiveness (not just completion). The committee reports to Senate on the gap between policy existence and governance impact.",
+          "level": "established",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "GPOL-EA-DE-01-C",
+          "text": "The review notes that 65% training completion needs improvement. A mandatory training requirement is introduced with a completion deadline. The governance committee increases its meeting frequency from quarterly to monthly to demonstrate active governance.",
+          "level": "developing",
+          "is_nuisance": true,
+          "nuisance_type": "activity_as_effectiveness",
+          "nuisance_explanation": "Sounds proactive: mandatory training and more frequent meetings. But increasing activity (more training, more meetings) does not address the core question of whether governance mechanisms are influencing decisions. Frequency is not effectiveness."
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "university"
+        ],
+        "region": [
+          "universal"
+        ],
+        "institution_size": [
+          "medium",
+          "large"
+        ],
+        "respondent_role": [
+          "senior_leadership",
+          "policy_officer"
+        ],
+        "existing_ai_deployment": [
+          "moderate",
+          "extensive"
+        ]
+      },
+      "discrimination_notes": "Discriminates between institutions that interpret governance activity metrics as success (Developing) and those that investigate whether governance mechanisms are actually influencing decisions and address gaps between policy existence and governance impact (Established)."
+    },
+    {
+      "id": "GPOL-EA-DE-02",
+      "dimension_id": "gp-ethics",
+      "boundary": "DE",
+      "stem": "A lecturer raises a formal concern through your institution's AI ethics concern-raising mechanism. They report that an AI-powered personalised learning system is systematically directing students from certain ethnic backgrounds toward less challenging content. The concern is substantiated by preliminary data analysis. This is the first formal concern raised through the mechanism.",
+      "response_options": [
+        {
+          "id": "GPOL-EA-DE-02-A",
+          "text": "The AI governance committee investigates, confirms the bias, and requires the tool to be reconfigured. The lecturer is thanked. The committee reports the incident and resolution to the Pro-Vice-Chancellor. The tool vendor is notified and asked to address the underlying model bias.",
+          "level": "developing",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "GPOL-EA-DE-02-B",
+          "text": "The AI governance committee conducts a full investigation including: impact assessment on affected students; review of whether the institution's pre-deployment risk assessment should have caught this; analysis of whether other AI tools have similar risks; a recorded decision (with rationale) on whether to suspend or modify the tool; communication to affected students about what happened and what was done; and a case study (de-identified) shared with the sector. The committee also reviews the concern-raising process: was it accessible? Did the lecturer face any barriers? How can it be strengthened? The outcome is reported to the university's governing body.",
+          "level": "established",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "GPOL-EA-DE-02-C",
+          "text": "The AI governance committee notes the concern and asks the IT team to work with the vendor to fix the bias. The committee thanks the lecturer for raising the issue and adds 'bias monitoring' to the committee's standing agenda. No communication to affected students is made because the institution does not want to cause alarm.",
+          "level": "developing",
+          "is_nuisance": true,
+          "nuisance_type": "quiet_remediation",
+          "nuisance_explanation": "Sounds measured and avoids panic. But failing to communicate with affected students denies them information about decisions that affected their education. Adding bias monitoring to a standing agenda is procedural, not impactful. And not reviewing how the pre-deployment process missed this means the same failure could recur."
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "university",
+          "college"
+        ],
+        "region": [
+          "universal"
+        ],
+        "institution_size": [
+          "medium",
+          "large"
+        ],
+        "respondent_role": [
+          "senior_leadership",
+          "policy_officer",
+          "academic_leadership"
+        ],
+        "existing_ai_deployment": [
+          "moderate",
+          "extensive"
+        ]
+      },
+      "discrimination_notes": "Discriminates between institutions that investigate and remediate individual incidents (Developing) and those that conduct comprehensive investigation with stakeholder communication, systemic review, sector contribution, and governance process improvement (Established)."
+    },
+    {
+      "id": "GPOL-EB-ED-01",
+      "dimension_id": "gp-evidence",
+      "boundary": "ED",
+      "stem": "Your institution is considering investing in an AI-powered adaptive learning platform for foundational STEM courses. The vendor presents impressive case studies from three universities, showing 15-20% improvement in pass rates. The cost is significant. The Pro-Vice-Chancellor for Education asks whether the evidence supports the investment.",
+      "response_options": [
+        {
+          "id": "GPOL-EB-ED-01-A",
+          "text": "You review the vendor case studies and confirm they appear credible. The three universities are well-regarded and the improvements are significant. You recommend proceeding, suggesting a two-year commitment with annual review of pass rates.",
+          "level": "emerging",
+          "is_nuisance": true,
+          "nuisance_type": "vendor_evidence_as_institutional_evidence",
+          "nuisance_explanation": "Sounds diligent: vendor evidence is reviewed and an evaluation plan is proposed. But vendor case studies are marketing. The recommended evaluation (annual pass rate review) cannot attribute changes to the AI tool without a comparison group or controlled design."
+        },
+        {
+          "id": "GPOL-EB-ED-01-B",
+          "text": "You note that vendor case studies are not transferable evidence. You commission a literature review on adaptive learning in STEM to identify what the independent evidence says. You propose a rigorous pilot: randomised at the section level across two semesters, measuring not just pass rates but learning gains, equity outcomes, and student engagement quality. You specify that the investment decision should be contingent on pilot findings. You budget evaluation costs into the proposal.",
+          "level": "developing",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "GPOL-EB-ED-01-C",
+          "text": "You recommend against the investment because AI in education is too new and the evidence base is insufficient. You suggest waiting until sector-wide evidence matures before making a commitment.",
+          "level": "emerging",
+          "is_nuisance": true,
+          "nuisance_type": "evidence_paralysis",
+          "nuisance_explanation": "Sounds cautious and evidence-focused. But refusing to generate evidence while waiting for others to do so contributes to the very evidence gap cited as the reason for inaction. Developing institutions generate evidence through structured pilots."
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "university",
+          "college"
+        ],
+        "region": [
+          "universal"
+        ],
+        "institution_size": [
+          "universal"
+        ],
+        "respondent_role": [
+          "senior_leadership",
+          "academic_leadership"
+        ],
+        "existing_ai_deployment": [
+          "none",
+          "limited"
+        ]
+      },
+      "discrimination_notes": "Discriminates between institutions that accept vendor evidence or refuse to generate their own (Emerging) and those that design rigorous, independent evaluation to inform investment decisions (Developing)."
+    },
+    {
+      "id": "GPOL-EB-ED-02",
+      "dimension_id": "gp-evidence",
+      "boundary": "ED",
+      "stem": "Your research institute has been using an AI tool for literature screening in systematic reviews for six months. Researchers report it saves significant time. The institute director wants to expand the tool's use to all research teams. You are asked to assess whether this is justified.",
+      "response_options": [
+        {
+          "id": "GPOL-EB-ED-02-A",
+          "text": "You survey current users and find that 85% report the tool saves time and 70% are satisfied with its accuracy. You recommend expansion based on positive user feedback.",
+          "level": "emerging",
+          "is_nuisance": true,
+          "nuisance_type": "satisfaction_as_evidence",
+          "nuisance_explanation": "Sounds data-driven: a survey was conducted. But user satisfaction is not evidence of research quality impact. The tool could save time while missing relevant papers, introducing systematic bias into reviews."
+        },
+        {
+          "id": "GPOL-EB-ED-02-B",
+          "text": "You design a validation study: for a sample of completed reviews, you compare the AI tool's screening results against manual screening by expert reviewers. You measure recall (what proportion of relevant papers did the AI find?), precision (what proportion of flagged papers were relevant?), and specificity (what types of papers does the AI miss?). You present findings showing the tool's actual performance characteristics, with recommendations on which types of reviews it is and is not suitable for.",
+          "level": "developing",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "GPOL-EB-ED-02-C",
+          "text": "You note that six months of informal use is too short to evaluate. You recommend continuing the pilot for another year before making an expansion decision, collecting more user feedback data.",
+          "level": "emerging",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "research_institute",
+          "university"
+        ],
+        "region": [
+          "universal"
+        ],
+        "institution_size": [
+          "universal"
+        ],
+        "respondent_role": [
+          "academic_leadership",
+          "senior_leadership"
+        ],
+        "existing_ai_deployment": [
+          "limited",
+          "moderate"
+        ]
+      },
+      "discrimination_notes": "Discriminates between institutions that use satisfaction surveys or time-based judgements (Emerging) and those that design validation studies measuring actual performance against research quality criteria (Developing)."
+    },
+    {
+      "id": "GPOL-EB-DE-01",
+      "dimension_id": "gp-evidence",
+      "boundary": "DE",
+      "stem": "Your university has completed three formal AI tool evaluations over the past two years. Findings have been positive for two tools and negative for one (which was discontinued). The Pro-Vice-Chancellor wants to use these evaluations to build the case for a major AI investment at the next board meeting.",
+      "response_options": [
+        {
+          "id": "GPOL-EB-DE-01-A",
+          "text": "You compile the three evaluation reports into a summary document highlighting the positive findings and the evidence-based decision to discontinue the unsuccessful tool. You present this as evidence of the institution's evidence-based approach to AI investment.",
+          "level": "developing",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "GPOL-EB-DE-01-B",
+          "text": "You develop a comprehensive evidence strategy document that: synthesises findings across all three evaluations, identifying common success factors and risk indicators; presents longitudinal data (not just pre/post) showing sustained impact; disaggregates results by student population to reveal differential impacts; connects evaluation findings to specific investment recommendations (invest in what works, do not invest in what does not); and establishes evaluation requirements for all future AI investments. You also commission a comparison with the external evidence base to contextualise institutional findings. The strategy is presented as a living document that will be updated as evidence accumulates.",
+          "level": "established",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "GPOL-EB-DE-01-C",
+          "text": "You commission an external research consultancy to review the institution's AI evaluation portfolio and produce a report for the board. The consultancy's report carries more weight with the board than internal evaluations.",
+          "level": "developing",
+          "is_nuisance": true,
+          "nuisance_type": "outsourced_evidence_culture",
+          "nuisance_explanation": "Sounds rigorous: external validation. But outsourcing evidence synthesis to a consultancy does not build internal evidence culture. Established institutions develop their own evidence strategies; external review supplements rather than substitutes."
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "university"
+        ],
+        "region": [
+          "universal"
+        ],
+        "institution_size": [
+          "medium",
+          "large"
+        ],
+        "respondent_role": [
+          "senior_leadership",
+          "academic_leadership"
+        ],
+        "existing_ai_deployment": [
+          "moderate",
+          "extensive"
+        ]
+      },
+      "discrimination_notes": "Discriminates between institutions that compile evaluation findings for decision support (Developing) and those that develop systematic evidence strategies with longitudinal analysis, equity disaggregation, external contextualisation, and embedded evaluation requirements (Established)."
+    },
+    {
+      "id": "GPOL-EB-DE-02",
+      "dimension_id": "gp-evidence",
+      "boundary": "DE",
+      "stem": "Your university has been evaluating AI tools for three years and has a growing evidence base. A national AI in education initiative invites your institution to contribute to a multi-institutional evidence synthesis. Your evaluations show mixed results: some tools improved outcomes, others did not, and one revealed unexpected negative impacts on student anxiety.",
+      "response_options": [
+        {
+          "id": "GPOL-EB-DE-02-A",
+          "text": "You share the positive evaluation findings with the national initiative. You decide not to share the negative findings or the anxiety data because they might reflect poorly on the institution and could discourage AI adoption.",
+          "level": "developing",
+          "is_nuisance": true,
+          "nuisance_type": "selective_evidence_sharing",
+          "nuisance_explanation": "Sounds strategic: sharing successes. But selective evidence sharing undermines the evidence base. If every institution shares only positive findings, the sector evidence base will be systematically biased, leading to poor decisions sector-wide."
+        },
+        {
+          "id": "GPOL-EB-DE-02-B",
+          "text": "You share all findings, including negative results and the unexpected anxiety impact. You contextualise the findings with methodology notes so other institutions can assess transferability. You propose that the national initiative establish protocols for publishing null and negative results alongside positive ones. You also offer to collaborate on developing shared evaluation methodologies to improve cross-institutional comparability.",
+          "level": "established",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "GPOL-EB-DE-02-C",
+          "text": "You share all evaluation reports with the national initiative as submitted, without contextualisation or additional analysis. You consider your contribution complete.",
+          "level": "developing",
+          "is_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ],
+      "context_tags": {
+        "institution_type": [
+          "university",
+          "research_institute"
+        ],
+        "region": [
+          "UK",
+          "EU"
+        ],
+        "institution_size": [
+          "medium",
+          "large"
+        ],
+        "respondent_role": [
+          "senior_leadership",
+          "academic_leadership"
+        ],
+        "existing_ai_deployment": [
+          "moderate",
+          "extensive"
+        ]
+      },
+      "discrimination_notes": "Discriminates between institutions that share evidence without active contribution to evidence quality (Developing) and those that contribute comprehensively including negative findings, propose improvements to sector evidence standards, and collaborate on shared methodologies (Established)."
+    }
+  ]
+}

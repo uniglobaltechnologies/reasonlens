@@ -1,0 +1,141 @@
+{
+  "framework_id": "iste-leaders",
+  "framework_name": "ISTE Standards for Education Leaders",
+  "license_note": "ISTE Standards \u00a9 2024 4.02, ISTE (International Society for Technology in Education), iste.org. All rights reserved. Educational use only. Commercial use requires separate ISTE licensing agreement.",
+  "assessment_paradigm": "met_not_met",
+  "note": "Standard 3.1 was renamed from 'Equity and Citizenship Advocate' to 'Digital Citizenship Advocate' in v4.02. Cross-framework mappings use the v4.02 name.",
+  "cross_framework_pairs": [
+    {
+      "target_framework_id": "maturity-the",
+      "target_framework_name": "Times Higher Education Digital Maturity Index",
+      "alignment_type": "complementary",
+      "alignment_rationale": "ISTE Standards for Education Leaders describes what effective individual leadership of technology integration looks like; THE Digital Maturity Index measures institutional digital maturity. Together they address both the individual and institutional dimensions of educational technology leadership. An institution can have strong individual ISTE Leaders without institutional digital maturity; conversely, institutional maturity can mask gaps in individual leadership capability.",
+      "standard_mappings": [
+        {
+          "source_standard_id": "iste-l-dc-advocate",
+          "source_standard_name": "Digital Citizenship Advocate",
+          "target_dimension_id": "the-dmi-governance",
+          "target_dimension_name": "Governance and Culture",
+          "alignment_strength": "strong",
+          "alignment_note": "ISTE Digital Citizenship Advocate (equitable access, ethical technology use, safe digital environments) maps to THE DMI Governance and Culture dimension. Leaders who meet this standard are articulating the values and norms that THE DMI Governance assesses at the institutional level. Strong alignment at the leadership behaviour level; divergence at the institutional policy/process level."
+        },
+        {
+          "source_standard_id": "iste-l-visionary",
+          "source_standard_name": "Visionary Planner",
+          "target_dimension_id": "the-dmi-strategy",
+          "target_dimension_name": "Strategy and Planning",
+          "alignment_strength": "strong",
+          "alignment_note": "ISTE Visionary Planner and THE DMI Strategy and Planning are the most tightly coupled pair in this mapping. Both require leaders to develop, communicate, and implement a coherent vision for technology in education. An institution with ISTE-standard Visionary Planners is expected to show stronger THE DMI Strategy performance; gaps between them signal planning capability without institutional uptake, or vice versa."
+        },
+        {
+          "source_standard_id": "iste-l-empowering",
+          "source_standard_name": "Empowering Leader",
+          "target_dimension_id": "the-dmi-people",
+          "target_dimension_name": "People and Change",
+          "alignment_strength": "strong",
+          "alignment_note": "ISTE Empowering Leader (empowering others to use technology for meaningful practice) maps directly to THE DMI People and Change. Both address the human side of digital transformation: recruiting, developing, and retaining digitally capable staff, and building a culture of innovation."
+        },
+        {
+          "source_standard_id": "iste-l-systems",
+          "source_standard_name": "Systems Designer",
+          "target_dimension_id": "the-dmi-infrastructure",
+          "target_dimension_name": "Infrastructure and Technology",
+          "alignment_strength": "moderate",
+          "alignment_note": "ISTE Systems Designer (building systems and processes that support digital learning) maps partially to THE DMI Infrastructure dimension. ISTE frames this at the policy and process level; THE DMI Infrastructure covers the physical and technical stack. The overlap is in the systems-thinking orientation: both require leaders to see technology as infrastructure, not tooling."
+        },
+        {
+          "source_standard_id": "iste-l-connected",
+          "source_standard_name": "Connected Learner",
+          "target_dimension_id": "the-dmi-external-engagement",
+          "target_dimension_name": "External Engagement and Partnerships",
+          "alignment_strength": "moderate",
+          "alignment_note": "ISTE Connected Learner (staying current through professional networks) maps to THE DMI External Engagement at the individual leader level. Institutions with connected leaders are better positioned on THE DMI External Engagement because those leaders bring in external knowledge and partnerships."
+        }
+      ],
+      "interpretive_template": "You have met {iste_met_count} of 5 ISTE Education Leader Standards. Your institution's THE Digital Maturity Index result is {the_dmi_level}. {gap_note} The most diagnostically useful gap is between ISTE Visionary Planner and THE DMI Strategy: if the standard is met but institutional strategy is low, the planning capability exists but has not yet been operationalised at scale. If strategy is high but the standard is not met, institutional momentum may be outpacing individual leadership capability.",
+      "gap_patterns": [
+        {
+          "pattern_id": "leader-strong-institution-lagging",
+          "label": "Strong Leader, Lagging Institution",
+          "condition": "iste_met_count >= 4 AND the_dmi_level IN ('Emerging', 'Developing')",
+          "interpretation": "Meeting most ISTE Leadership standards while the institution sits at Emerging or Developing THE DMI level suggests that effective leadership is in place but institutional conditions (infrastructure, culture, governance) are constraining impact. This is a structural/systems problem, not a leadership development problem. The leader likely needs support in navigating institutional inertia rather than improving their own practice."
+        },
+        {
+          "pattern_id": "institution-strong-leader-gap",
+          "label": "Strong Institution, Leadership Gaps",
+          "condition": "iste_met_count <= 2 AND the_dmi_level IN ('Enhanced', 'Advanced')",
+          "interpretation": "High institutional THE DMI alongside unmet ISTE leadership standards may reflect an institution where digital maturity has been driven by teams and infrastructure rather than strategic leadership. This creates fragility: maturity built without leadership anchoring is vulnerable to staff turnover and strategic drift. Leadership development investment is recommended."
+        },
+        {
+          "pattern_id": "visionary-systems-gap",
+          "label": "Vision Without Systems",
+          "condition": "iste_l_visionary_met == true AND iste_l_systems_met == false",
+          "interpretation": "Meeting Visionary Planner but not Systems Designer is a common gap in educational leaders who are strong communicators and advocates but less skilled at operational design and process. Vision without systems design tends to produce initiatives that are enthusiastically launched but poorly sustained."
+        }
+      ]
+    },
+    {
+      "target_framework_id": "ai-capability",
+      "target_framework_name": "QS AI Capability Index",
+      "alignment_type": "complementary",
+      "alignment_rationale": "QS AI Capability Index measures institutional AI capability and readiness from a global benchmarking perspective. ISTE Education Leaders measures individual leader capability to drive that change. The cross-framework view is most valuable where both have been assessed: it surfaces whether institutional AI capability is being actively led or is developing despite (or without) strategic leadership.",
+      "standard_mappings": [
+        {
+          "source_standard_id": "iste-l-visionary",
+          "source_standard_name": "Visionary Planner",
+          "target_dimension_id": "qs-strategy",
+          "target_dimension_name": "AI Strategy and Governance",
+          "alignment_strength": "strong",
+          "alignment_note": "ISTE Visionary Planner maps most directly to QS AI Strategy and Governance. Leaders who demonstrate this standard are expected to be actively shaping institutional AI strategy, not just responding to it. QS AI Governance assesses whether that strategy is visible and credible at an institutional level."
+        },
+        {
+          "source_standard_id": "iste-l-dc-advocate",
+          "source_standard_name": "Digital Citizenship Advocate",
+          "target_dimension_id": "qs-ethics",
+          "target_dimension_name": "AI Ethics and Responsible Use",
+          "alignment_strength": "strong",
+          "alignment_note": "ISTE Digital Citizenship Advocate and QS AI Ethics and Responsible Use address the same core leadership responsibility: ensuring technology is used equitably, safely, and ethically. Leaders meeting the ISTE standard are expected to be driving the institutional AI ethics posture that QS assesses."
+        },
+        {
+          "source_standard_id": "iste-l-empowering",
+          "source_standard_name": "Empowering Leader",
+          "target_dimension_id": "qs-people",
+          "target_dimension_name": "AI Capability in People",
+          "alignment_strength": "strong",
+          "alignment_note": "ISTE Empowering Leader maps to QS AI Capability in People: developing staff AI literacy and creating conditions where people can use AI effectively. Leaders meeting this standard are expected to show higher institutional scores on QS People capability."
+        },
+        {
+          "source_standard_id": "iste-l-systems",
+          "source_standard_name": "Systems Designer",
+          "target_dimension_id": "qs-infrastructure",
+          "target_dimension_name": "AI Infrastructure and Tools",
+          "alignment_strength": "moderate",
+          "alignment_note": "ISTE Systems Designer (designing policies and processes for digital learning) maps partially to QS AI Infrastructure. The overlap is in systems thinking and policy design; the technical infrastructure component of QS is beyond what ISTE Leaders directly addresses."
+        },
+        {
+          "source_standard_id": "iste-l-connected",
+          "source_standard_name": "Connected Learner",
+          "target_dimension_id": "qs-research",
+          "target_dimension_name": "AI in Research and Innovation",
+          "alignment_strength": "weak",
+          "alignment_note": "Weak alignment. ISTE Connected Learner focuses on personal professional development networks; QS AI Research and Innovation measures institutional research output and partnerships. The connection is indirect: connected leaders may bring in research partnerships, but the standard does not directly predict research capability."
+        }
+      ],
+      "interpretive_template": "Your ISTE Education Leaders result ({iste_met_count}/5 met) and your institution's QS AI Capability result ({qs_level}) together indicate {profile_description}. Institutions with strong QS AI Capability but unmet ISTE leadership standards may be riding sector momentum without internal leadership anchoring -- a fragility risk as AI governance requirements tighten. Institutions with strong ISTE leadership but lower QS AI Capability likely have the strategic direction in place but need investment in infrastructure and capability development.",
+      "gap_patterns": [
+        {
+          "pattern_id": "governance-gap",
+          "label": "AI Capability Without Governance",
+          "condition": "qs_level IN ('Advanced', 'Leading') AND iste_l_dc_advocate_met == false",
+          "interpretation": "High QS AI Capability alongside unmet Digital Citizenship Advocate standard is a governance risk indicator. The institution is deploying AI capability without the leadership-level ethical and equity oversight that the ISTE standard requires. As regulatory environments tighten (EU AI Act, UK AI governance expectations), this gap becomes a compliance and reputational risk."
+        },
+        {
+          "pattern_id": "vision-without-qs",
+          "label": "Strategic Vision, Limited Institutional Capability",
+          "condition": "iste_l_visionary_met == true AND qs_level IN ('Emerging', 'Basic')",
+          "interpretation": "Meeting Visionary Planner alongside low QS AI Capability suggests the strategy is articulated but not yet resourced or operationalised. This is an early-stage leadership situation: the leader has the capability and intent, but institutional capability is lagging. Investment in infrastructure, staff development, and AI tooling is needed to translate leadership vision into QS-measurable institutional performance."
+        }
+      ]
+    }
+  ]
+}

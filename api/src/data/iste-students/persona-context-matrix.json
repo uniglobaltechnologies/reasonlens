@@ -1,0 +1,60 @@
+{
+  "_meta": {
+    "file": "persona-context-matrix.json",
+    "framework_id": "iste-students",
+    "framework_name": "ISTE Standards for Students v4.02",
+    "purpose": "Maps assessment context factors to persona-specific prompt variations, scenario filtering, and report tone. Used by the ReasonLens assessment engine to tailor the experience to each respondent's context.",
+    "generated_for": "ReasonLens"
+  },
+  "context_factors": {},
+  "persona_mappings": [
+    {
+      "persona_id": "iste-students-secondary",
+      "label": "Secondary School Student",
+      "match_criteria": {
+        "study_level": [
+          "secondary"
+        ]
+      },
+      "scenario_tone": "Scenarios use school-based contexts. Language is accessible and direct. Avoid jargon. Reference school assignments, group projects, and peer interaction naturally.",
+      "report_tone": "Encouraging and forward-looking. Avoid language that feels like a school report. Use 'you' throughout. Connect each standard to real choices students make.",
+      "context_hints": {
+        "discipline": "Use to select subject-relevant scenario stems where available.",
+        "prior_tech_experience": "Use to calibrate assumed familiarity \u2014 avoid scenarios that presuppose tools a low-experience student would not have encountered."
+      }
+    },
+    {
+      "persona_id": "iste-students-post16",
+      "label": "Post-16 / Sixth Form Student",
+      "match_criteria": {
+        "study_level": [
+          "post-16",
+          "A-level",
+          "IB"
+        ]
+      },
+      "scenario_tone": "Scenarios can introduce more independent study and research contexts. Students are expected to make more autonomous choices. References to university preparation are appropriate.",
+      "report_tone": "Direct and peer-respectful. Acknowledge the student is approaching independent learning. Avoid being patronising.",
+      "context_hints": {
+        "discipline": "Can use subject-specific language appropriate to A-level or equivalent study.",
+        "prior_tech_experience": "Post-16 students generally have higher baseline tech experience \u2014 calibrate nuisance responses accordingly."
+      }
+    },
+    {
+      "persona_id": "iste-students-undergraduate",
+      "label": "Undergraduate Student",
+      "match_criteria": {
+        "study_level": [
+          "undergraduate",
+          "UG"
+        ]
+      },
+      "scenario_tone": "Scenarios use HE research, independent study, and group project contexts. Reference academic conventions, digital scholarship, and professional preparation.",
+      "report_tone": "Professional and peer-level. Acknowledge the student's capacity for self-directed learning. Report reads like a learning development resource, not a school assessment.",
+      "context_hints": {
+        "discipline": "Use discipline context to select domain-specific research and communication scenarios.",
+        "prior_tech_experience": "High baseline assumed. Attractive nuisance responses can be more sophisticated."
+      }
+    }
+  ]
+}

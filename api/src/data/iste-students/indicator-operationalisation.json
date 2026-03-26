@@ -1,0 +1,631 @@
+{
+  "_meta": {
+    "file": "indicator-operationalisation.json",
+    "framework_id": "iste-students",
+    "framework_name": "ISTE Standards for Students v4.02",
+    "total_indicators": 28,
+    "licensing_constraint": "ISTE Standards indicator text \u00a9 2024 4.02, ISTE (International Society for Technology in Education), iste.org. All rights reserved. ISTE permits free use for non-commercial educational purposes only. Commercial use requires separate ISTE licensing agreement. Observable behaviour descriptors (met_criteria, not_yet_met_criteria, partial_indicators) are original ReasonLens content.",
+    "generated_for": "ReasonLens",
+    "note": "indicator_source_text is ISTE copyright. All met_criteria, not_yet_met_criteria, and partial_indicators are original ReasonLens content."
+  },
+  "indicators": [
+    {
+      "indicator_id": "iste-s-emp-1a",
+      "standard_id": "iste-s-emp",
+      "standard": "Empowered Learner",
+      "indicator_letter": "a",
+      "indicator_source_text": "Students connect their learning needs, strengths and interests to their goals and use technology to help achieve them and reflect on their progress.",
+      "met_criteria": [
+        "Identifies specific personal learning strengths and gaps before selecting a goal",
+        "Sets a technology-mediated plan to work toward that goal with measurable steps",
+        "Actively reviews progress data or feedback and adjusts approach accordingly",
+        "Can articulate what they learned from a setback or feedback cycle"
+      ],
+      "not_yet_met_criteria": [
+        "Sets no personal learning goals; pursues assigned tasks only",
+        "Uses technology without connecting it to a learning purpose",
+        "Does not review or act on progress data or feedback",
+        "Cannot describe their own learning strengths or needs"
+      ],
+      "partial_indicators": [
+        "Tracks grades or completion but does not connect this to personal learning goals or reflection",
+        "Uses a tool because it is required, not because it serves a self-identified need",
+        "Reviews feedback after submission but does not change subsequent behaviour"
+      ]
+    },
+    {
+      "indicator_id": "iste-s-emp-1b",
+      "standard_id": "iste-s-emp",
+      "standard": "Empowered Learner",
+      "indicator_letter": "b",
+      "indicator_source_text": "Students build networks and customize their learning environments in ways that support the learning process.",
+      "met_criteria": [
+        "Deliberately connects with peers, mentors, or online communities that support their learning",
+        "Customises digital tools, spaces, or workflows based on how they learn best",
+        "Uses their network as a learning resource, not just a social one",
+        "Revisits and updates their learning environment as needs change"
+      ],
+      "not_yet_met_criteria": [
+        "Uses default tool settings without customisation",
+        "Does not seek or maintain connections that support learning",
+        "Social digital networks are entirely separate from learning contexts"
+      ],
+      "partial_indicators": [
+        "Joins study groups or follows educational accounts but does not use these connections actively for learning",
+        "Customises aesthetics (themes, colour schemes) rather than functional learning-support features"
+      ]
+    },
+    {
+      "indicator_id": "iste-s-emp-1c",
+      "standard_id": "iste-s-emp",
+      "standard": "Empowered Learner",
+      "indicator_letter": "c",
+      "indicator_source_text": "Students use technology to seek feedback that informs and improves their practice and to demonstrate their learning in a variety of ways.",
+      "met_criteria": [
+        "Actively seeks feedback using digital tools before a deadline",
+        "Uses multiple modalities to demonstrate learning (written, visual, audio, interactive)",
+        "Selects the demonstration format based on the audience and purpose, not just preference",
+        "Acts on feedback to produce a revised or improved output"
+      ],
+      "not_yet_met_criteria": [
+        "Waits for feedback to be provided without seeking it",
+        "Consistently uses the same format to demonstrate learning regardless of context",
+        "Does not revise work in response to feedback received"
+      ],
+      "partial_indicators": [
+        "Uses spell-check or grammar tools as feedback proxies but does not seek substantive formative feedback",
+        "Submits in an alternative format when explicitly offered one but does not initiate format choice"
+      ]
+    },
+    {
+      "indicator_id": "iste-s-emp-1d",
+      "standard_id": "iste-s-emp",
+      "standard": "Empowered Learner",
+      "indicator_letter": "d",
+      "indicator_source_text": "Students understand fundamental concepts of how technology works, demonstrate the ability to choose and use current technologies effectively, and are adept at thoughtfully exploring emerging technologies.",
+      "met_criteria": [
+        "Can explain in plain terms how a digital tool works (e.g., why a search engine ranks results, how AI generates text)",
+        "Selects tools based on fitness for purpose rather than familiarity",
+        "Explores a new technology with curiosity and can evaluate its potential use",
+        "Recognises when a familiar tool is no longer the best fit and looks for alternatives"
+      ],
+      "not_yet_met_criteria": [
+        "Uses technology without any conceptual understanding of how it works",
+        "Always defaults to familiar tools regardless of whether they fit the task",
+        "Is reluctant or anxious about exploring unfamiliar technologies"
+      ],
+      "partial_indicators": [
+        "Can follow tutorials for new tools but cannot explain the underlying concepts",
+        "Tries new tools when directed to but does not independently seek or evaluate emerging options"
+      ]
+    },
+    {
+      "indicator_id": "iste-s-dc-1a",
+      "standard_id": "iste-s-dc",
+      "standard": "Digital Citizen",
+      "indicator_letter": "a",
+      "indicator_source_text": "Students manage their digital identity and understand the lasting impact of their online behaviors on themselves and others and make safe, legal and ethical decisions in the digital world.",
+      "met_criteria": [
+        "Consciously curates their digital identity across platforms with awareness of lasting footprint",
+        "Can give examples of how online behaviour can have long-term consequences",
+        "Makes active choices about what to share, with whom, and on what platforms",
+        "Understands and applies legal and ethical standards in digital contexts (e.g., copyright, consent)"
+      ],
+      "not_yet_met_criteria": [
+        "Posts and interacts online without consideration of lasting impact",
+        "Has no awareness of digital footprint or identity management",
+        "Makes legal and ethical decisions based on 'everyone does it' rather than principles"
+      ],
+      "partial_indicators": [
+        "Uses a pseudonym or privacy setting on one platform but does not manage digital identity holistically",
+        "Knows about digital footprint as a concept but has not acted on it in their own practice"
+      ]
+    },
+    {
+      "indicator_id": "iste-s-dc-1b",
+      "standard_id": "iste-s-dc",
+      "standard": "Digital Citizen",
+      "indicator_letter": "b",
+      "indicator_source_text": "Students demonstrate empathetic, inclusive interactions online and use technology to responsibly contribute to their communities.",
+      "met_criteria": [
+        "Actively creates inclusive online interactions, not just refraining from exclusion",
+        "Uses technology to make a positive contribution to a community (local or global)",
+        "Intervenes constructively when online interactions become harmful or exclusionary",
+        "Considers impact on others before posting or responding"
+      ],
+      "not_yet_met_criteria": [
+        "Engages online in ways that passively or actively exclude others",
+        "Uses technology for consumption rather than contribution",
+        "Does not intervene or act when harmful interactions occur in their online communities"
+      ],
+      "partial_indicators": [
+        "Is personally respectful online but does not actively champion inclusion or take action when others are excluded",
+        "Contributes positively within assigned platforms but not beyond required contexts"
+      ]
+    },
+    {
+      "indicator_id": "iste-s-dc-1c",
+      "standard_id": "iste-s-dc",
+      "standard": "Digital Citizen",
+      "indicator_letter": "c",
+      "indicator_source_text": "Students safeguard their well-being by being intentional about what they do online and how much time they spend online.",
+      "met_criteria": [
+        "Makes active choices about online time use and has strategies to maintain healthy balance",
+        "Can identify when online activity is affecting wellbeing and takes corrective action",
+        "Distinguishes between purposeful and habitual digital engagement",
+        "Has personal norms for digital boundaries (e.g., offline time, notification management)"
+      ],
+      "not_yet_met_criteria": [
+        "Online time is unmonitored and habitual rather than intentional",
+        "Cannot identify connections between online behaviour and personal wellbeing",
+        "Has no strategies for managing digital engagement"
+      ],
+      "partial_indicators": [
+        "Is aware of screen time issues in general but has not developed personal strategies or norms",
+        "Uses wellbeing features on devices when prompted but not independently"
+      ]
+    },
+    {
+      "indicator_id": "iste-s-dc-1d",
+      "standard_id": "iste-s-dc",
+      "standard": "Digital Citizen",
+      "indicator_letter": "d",
+      "indicator_source_text": "Students take action to protect their digital privacy on devices and manage their personal data and security while online.",
+      "met_criteria": [
+        "Reviews and adjusts privacy settings on new platforms before engaging",
+        "Understands what data is collected by tools they use and makes informed decisions",
+        "Uses security practices actively (strong passwords, two-factor authentication, reviewing permissions)",
+        "Can explain the difference between sharing, selling, and storing of personal data"
+      ],
+      "not_yet_met_criteria": [
+        "Accepts default privacy settings without review",
+        "Does not know what personal data is being collected by tools they use",
+        "Has no active security practices beyond basic password use"
+      ],
+      "partial_indicators": [
+        "Uses a strong password but does not review privacy settings or understand data collection practices",
+        "Knows data privacy is important but has not implemented any active management practices"
+      ]
+    },
+    {
+      "indicator_id": "iste-s-kc-1a",
+      "standard_id": "iste-s-kc",
+      "standard": "Knowledge Constructor",
+      "indicator_letter": "a",
+      "indicator_source_text": "Students use effective research strategies to find resources that support their learning needs, personal interests and creative pursuits.",
+      "met_criteria": [
+        "Applies deliberate research strategies (Boolean operators, database filters, source type selection)",
+        "Adapts search strategy when initial results are insufficient",
+        "Locates domain-appropriate sources (e.g., academic databases for research, primary sources for history)",
+        "Can explain why a particular search strategy serves a given purpose"
+      ],
+      "not_yet_met_criteria": [
+        "Relies exclusively on a single search engine with basic keyword queries",
+        "Does not adapt strategy when searches do not yield useful results",
+        "Cannot articulate why they chose the sources they found"
+      ],
+      "partial_indicators": [
+        "Uses Google with some keyword variation but does not access specialist databases or apply systematic filters",
+        "Finds credible sources but by chance rather than deliberate strategy"
+      ]
+    },
+    {
+      "indicator_id": "iste-s-kc-1b",
+      "standard_id": "iste-s-kc",
+      "standard": "Knowledge Constructor",
+      "indicator_letter": "b",
+      "indicator_source_text": "Students evaluate the accuracy, validity, bias, origin, and relevance of digital content.",
+      "met_criteria": [
+        "Examines author credentials, funding sources, and publication context",
+        "Identifies bias, perspective, and underlying assumptions in sources",
+        "Distinguishes between primary, secondary, and opinion sources",
+        "Cross-references claims across independent sources before accepting them"
+      ],
+      "not_yet_met_criteria": [
+        "Accepts content at face value if it comes from a familiar or visually credible website",
+        "Does not examine who produced content or why",
+        "Cannot distinguish opinion from evidence-based claims"
+      ],
+      "partial_indicators": [
+        "Checks whether a site is HTTPS or ends in .gov/.edu but does not examine author or funding",
+        "Looks for recent publication dates as the primary quality signal"
+      ]
+    },
+    {
+      "indicator_id": "iste-s-kc-1c",
+      "standard_id": "iste-s-kc",
+      "standard": "Knowledge Constructor",
+      "indicator_letter": "c",
+      "indicator_source_text": "Students curate information from digital resources using a variety of tools and methods to create collections of artifacts that demonstrate meaningful connections or conclusions.",
+      "met_criteria": [
+        "Organises curated resources with annotations that explain connections between items",
+        "Uses curation tools purposefully to build collections that make an argument or represent a synthesis",
+        "Distinguishes curation from collection \u2014 the output demonstrates thinking, not just gathering",
+        "Can explain the logic or argument that their curated collection represents"
+      ],
+      "not_yet_met_criteria": [
+        "Saves links or copies content without annotation or synthesis",
+        "Cannot explain how the items in a collection relate to each other",
+        "Equates having more sources with doing more research"
+      ],
+      "partial_indicators": [
+        "Organises resources into labelled folders or categories but annotations are descriptive rather than analytical",
+        "Produces a bibliography rather than a curated collection that demonstrates constructed meaning"
+      ]
+    },
+    {
+      "indicator_id": "iste-s-kc-1d",
+      "standard_id": "iste-s-kc",
+      "standard": "Knowledge Constructor",
+      "indicator_letter": "d",
+      "indicator_source_text": "Students build knowledge by exploring real-world issues and gain experience in applying their learning in authentic settings.",
+      "met_criteria": [
+        "Connects classroom learning to real-world problems or questions",
+        "Applies concepts in contexts beyond academic tasks",
+        "Engages with communities, data, or contexts outside school as part of their learning",
+        "Reflects on how their learning changes or informs their understanding of a real issue"
+      ],
+      "not_yet_met_criteria": [
+        "Treats learning as exclusively academic and does not seek real-world connections",
+        "Cannot explain how what they are learning applies outside the classroom",
+        "Does not engage with external communities or real-world data sources"
+      ],
+      "partial_indicators": [
+        "Mentions a real-world connection in a project but does not actually engage with the real-world context",
+        "Applies learning to a classroom simulation but not to an authentic external context"
+      ]
+    },
+    {
+      "indicator_id": "iste-s-id-1a",
+      "standard_id": "iste-s-id",
+      "standard": "Innovative Designer",
+      "indicator_letter": "a",
+      "indicator_source_text": "Students know and use a deliberate design process for generating ideas, testing theories, creating innovative artifacts or solving authentic problems.",
+      "met_criteria": [
+        "Can name and follow a design process (e.g., design thinking, engineering design cycle)",
+        "Generates multiple ideas before selecting one, rather than implementing the first idea",
+        "Tests their design against criteria and revises based on results",
+        "Can articulate what each stage of the design process is for"
+      ],
+      "not_yet_met_criteria": [
+        "Moves directly from problem to solution without ideation or testing",
+        "Produces one idea and implements it without comparison or iteration",
+        "Cannot describe the steps they followed to arrive at their solution"
+      ],
+      "partial_indicators": [
+        "Knows the stages of a design process by name but does not apply them systematically in practice",
+        "Generates multiple ideas but selects based on preference rather than criteria"
+      ]
+    },
+    {
+      "indicator_id": "iste-s-id-1b",
+      "standard_id": "iste-s-id",
+      "standard": "Innovative Designer",
+      "indicator_letter": "b",
+      "indicator_source_text": "Students select and use digital tools to plan and manage a design process that considers design constraints and calculated risks.",
+      "met_criteria": [
+        "Selects a digital planning tool appropriate to the complexity of the design project",
+        "Explicitly identifies constraints (time, materials, technical limits) and incorporates them in the plan",
+        "Assesses and accepts calculated risks in design decisions rather than avoiding all uncertainty",
+        "Uses the tool to track progress and make adjustments throughout the process"
+      ],
+      "not_yet_met_criteria": [
+        "Plans informally without a digital tool or structured approach",
+        "Does not identify or account for design constraints",
+        "Avoids risky or innovative choices to stay in the safety of the familiar"
+      ],
+      "partial_indicators": [
+        "Uses a project management tool for task tracking but does not use it to manage design constraints or assess risk",
+        "Identifies constraints after they become problems rather than anticipating them in planning"
+      ]
+    },
+    {
+      "indicator_id": "iste-s-id-1c",
+      "standard_id": "iste-s-id",
+      "standard": "Innovative Designer",
+      "indicator_letter": "c",
+      "indicator_source_text": "Students develop, test and refine prototypes as part of a cyclical design process.",
+      "met_criteria": [
+        "Builds a prototype at an appropriate fidelity for the design stage",
+        "Tests the prototype with real users or against stated criteria, not just personal judgement",
+        "Uses test findings to make specific refinements to the prototype",
+        "Iterates at least twice before arriving at a final design"
+      ],
+      "not_yet_met_criteria": [
+        "Produces a final product without prototyping or testing",
+        "Tests only with themselves, not with end users or against external criteria",
+        "Does not revise after testing \u2014 treats the first prototype as the final version"
+      ],
+      "partial_indicators": [
+        "Builds a prototype and tests it with peers but treats their feedback as validation rather than input for revision",
+        "Revises surface features (appearance) rather than functional aspects identified through testing"
+      ]
+    },
+    {
+      "indicator_id": "iste-s-id-1d",
+      "standard_id": "iste-s-id",
+      "standard": "Innovative Designer",
+      "indicator_letter": "d",
+      "indicator_source_text": "Students exhibit a tolerance for ambiguity, perseverance and the capacity to work with open-ended problems.",
+      "met_criteria": [
+        "Continues working productively when a problem has no single correct answer",
+        "Bounces back from setbacks and failed attempts without abandoning the project",
+        "Reframes constraints or unexpected findings as design opportunities rather than blockers",
+        "Can describe what they learned from a failed attempt"
+      ],
+      "not_yet_met_criteria": [
+        "Seeks a definitive answer or clear instruction before proceeding with open-ended tasks",
+        "Abandons or significantly truncates a project after the first major obstacle",
+        "Treats setbacks as evidence that the project cannot succeed"
+      ],
+      "partial_indicators": [
+        "Perseveres in the face of difficulty but seeks adult validation before continuing rather than exercising independent judgement",
+        "Accepts ambiguity in low-stakes tasks but not in assessed ones"
+      ]
+    },
+    {
+      "indicator_id": "iste-s-ct-1a",
+      "standard_id": "iste-s-ct",
+      "standard": "Computational Thinker",
+      "indicator_letter": "a",
+      "indicator_source_text": "Students formulate problem definitions suited for technology-assisted methods such as data analysis, abstract models and algorithmic thinking in exploring and finding solutions.",
+      "met_criteria": [
+        "Identifies which aspects of a problem are suited to computational methods (data analysis, modelling, automation)",
+        "Reformulates a vague problem into a precise specification that a digital tool or algorithm could address",
+        "Distinguishes problems that benefit from computational approaches from those that do not",
+        "Uses abstraction to remove irrelevant detail before attempting a computational solution"
+      ],
+      "not_yet_met_criteria": [
+        "Approaches all problems the same way regardless of whether computational methods are appropriate",
+        "Cannot describe a problem in precise enough terms to be addressed computationally",
+        "Does not use abstraction \u2014 works with full complexity rather than building a model"
+      ],
+      "partial_indicators": [
+        "Identifies that a digital tool would help but does not reformulate the problem to fit computational methods",
+        "Uses abstraction by omitting detail without reasoning about which details matter"
+      ]
+    },
+    {
+      "indicator_id": "iste-s-ct-1b",
+      "standard_id": "iste-s-ct",
+      "standard": "Computational Thinker",
+      "indicator_letter": "b",
+      "indicator_source_text": "Students collect data or identify relevant data sets, use digital tools to analyze them, and represent data in various ways to facilitate problem-solving and decision-making.",
+      "met_criteria": [
+        "Identifies appropriate datasets for a problem and assesses their quality and relevance",
+        "Uses digital tools to conduct meaningful analysis beyond basic charting",
+        "Chooses data representations suited to the question (not just the default chart type)",
+        "Draws and communicates conclusions from data analysis that inform decisions"
+      ],
+      "not_yet_met_criteria": [
+        "Collects or uses data without critical assessment of its relevance or quality",
+        "Produces visualisations without analytical interpretation",
+        "Cannot explain what the data shows or what decisions it supports"
+      ],
+      "partial_indicators": [
+        "Creates charts from data using default tool settings without explaining why a particular chart type was selected",
+        "Identifies a trend in data but cannot explain its implications for decision-making"
+      ]
+    },
+    {
+      "indicator_id": "iste-s-ct-1c",
+      "standard_id": "iste-s-ct",
+      "standard": "Computational Thinker",
+      "indicator_letter": "c",
+      "indicator_source_text": "Students break problems into component parts, extract key information, and develop descriptive models to understand complex systems or facilitate problem-solving.",
+      "met_criteria": [
+        "Decomposes a complex problem into discrete, manageable sub-problems",
+        "Extracts only the information relevant to each sub-problem (abstraction)",
+        "Builds a model (diagram, flowchart, algorithm sketch) that captures the essential structure of the system",
+        "Uses the model to reason about the system before building or implementing a solution"
+      ],
+      "not_yet_met_criteria": [
+        "Attempts to solve complex problems as a whole without decomposition",
+        "Works with full information complexity without extracting what is relevant",
+        "Does not model systems \u2014 moves directly from problem to implementation"
+      ],
+      "partial_indicators": [
+        "Breaks a project into tasks on a to-do list but does not model the relationships between components or extract information",
+        "Draws a diagram of a system but uses it descriptively rather than to reason about the problem"
+      ]
+    },
+    {
+      "indicator_id": "iste-s-ct-1d",
+      "standard_id": "iste-s-ct",
+      "standard": "Computational Thinker",
+      "indicator_letter": "d",
+      "indicator_source_text": "Students understand how automation works and use algorithmic thinking to develop a sequence of steps to create and test automated solutions.",
+      "met_criteria": [
+        "Can explain how an automated process works (inputs, outputs, conditional logic)",
+        "Develops a step-by-step algorithm to solve a problem before implementing it",
+        "Tests an automated solution against edge cases, not just the expected scenario",
+        "Identifies where automation is and is not appropriate in a given context"
+      ],
+      "not_yet_met_criteria": [
+        "Uses automated tools without understanding how they work",
+        "Cannot produce a step-by-step description of a solution process",
+        "Does not test automated solutions \u2014 assumes they work as intended"
+      ],
+      "partial_indicators": [
+        "Can record a macro or use automation features in a tool but cannot explain the underlying logic",
+        "Writes sequential steps but does not include conditional logic or test for varied inputs"
+      ]
+    },
+    {
+      "indicator_id": "iste-s-cc-1a",
+      "standard_id": "iste-s-cc",
+      "standard": "Creative Communicator",
+      "indicator_letter": "a",
+      "indicator_source_text": "Students choose the appropriate platforms and digital tools for meeting the desired objectives of their creation or communication.",
+      "met_criteria": [
+        "Selects platforms based on the purpose, audience, and constraints of the communication",
+        "Can justify their platform choice with reference to the objective",
+        "Considers accessibility of the platform for the intended audience",
+        "Recognises when a chosen platform is not working and selects an alternative"
+      ],
+      "not_yet_met_criteria": [
+        "Uses the same platform regardless of purpose or audience",
+        "Cannot explain why they chose the platform they used",
+        "Does not consider whether their chosen platform is accessible to their audience"
+      ],
+      "partial_indicators": [
+        "Selects a different platform for each project but based on novelty or familiarity, not fitness for purpose",
+        "Considers audience but not platform affordances when making communication decisions"
+      ]
+    },
+    {
+      "indicator_id": "iste-s-cc-1b",
+      "standard_id": "iste-s-cc",
+      "standard": "Creative Communicator",
+      "indicator_letter": "b",
+      "indicator_source_text": "Students create original works or responsibly repurpose or remix digital resources into new creations.",
+      "met_criteria": [
+        "Creates digital content that is original in design, argument, or creative expression",
+        "When remixing, transforms the source material significantly and acknowledges it correctly",
+        "Understands and applies relevant licensing and attribution norms (e.g., Creative Commons)",
+        "Can explain what makes their work original even when it builds on existing sources"
+      ],
+      "not_yet_met_criteria": [
+        "Reproduces existing content with minimal or no modification",
+        "Does not attribute sources or understand attribution requirements",
+        "Cannot distinguish between reproducing, remixing, and creating"
+      ],
+      "partial_indicators": [
+        "Attributes sources correctly but does not transform them \u2014 the work is a collage rather than a synthesis",
+        "Changes aesthetics (colour, layout) of existing work without substantive transformation of content or argument"
+      ]
+    },
+    {
+      "indicator_id": "iste-s-cc-1c",
+      "standard_id": "iste-s-cc",
+      "standard": "Creative Communicator",
+      "indicator_letter": "c",
+      "indicator_source_text": "Students use digital tools to visually communicate complex ideas to others.",
+      "met_criteria": [
+        "Selects visual representation methods suited to the complexity and type of the idea",
+        "Produces visualisations that aid understanding rather than just illustrating what is already stated",
+        "Uses data visualisation, diagram, or interactive media to make a complex idea accessible",
+        "Can explain the design decisions behind their visual communication choices"
+      ],
+      "not_yet_met_criteria": [
+        "Uses default slide templates or generic images that do not aid comprehension",
+        "Cannot explain why they chose a particular visual format",
+        "Visual elements are decorative rather than communicative"
+      ],
+      "partial_indicators": [
+        "Creates a chart or diagram that accurately represents the data but does not explain what it means for the audience",
+        "Produces visually polished outputs that simplify rather than communicate complex ideas"
+      ]
+    },
+    {
+      "indicator_id": "iste-s-cc-1d",
+      "standard_id": "iste-s-cc",
+      "standard": "Creative Communicator",
+      "indicator_letter": "d",
+      "indicator_source_text": "Students publish or present content that customizes the message and medium for their intended audiences.",
+      "met_criteria": [
+        "Adapts both content and medium for each distinct audience",
+        "Can articulate how the same core message requires different treatment for different audiences",
+        "Considers how the audience will access and engage with the content when selecting the medium",
+        "Seeks or incorporates feedback from the intended audience to refine the communication"
+      ],
+      "not_yet_met_criteria": [
+        "Presents or publishes the same content in the same format regardless of audience",
+        "Adapts language informally but does not reconsider medium or structure",
+        "Does not account for how different audiences will actually encounter the content"
+      ],
+      "partial_indicators": [
+        "Simplifies language for a different audience but uses the same medium and format",
+        "Creates audience-specific versions when explicitly required but not independently"
+      ]
+    },
+    {
+      "indicator_id": "iste-s-gc-1a",
+      "standard_id": "iste-s-gc",
+      "standard": "Global Collaborator",
+      "indicator_letter": "a",
+      "indicator_source_text": "Students use digital tools to connect with peers from a variety of backgrounds, recognizing diverse viewpoints and broadening mutual understanding.",
+      "met_criteria": [
+        "Actively seeks connections with peers from different cultural, geographic, or social backgrounds",
+        "Uses digital tools purposefully to create these connections, not just to find information about different groups",
+        "Engages in genuine dialogue that leads to perspective shift or deepened understanding",
+        "Reflects on how diverse perspectives have changed or enriched their own thinking"
+      ],
+      "not_yet_met_criteria": [
+        "Collaborates only within their immediate peer group",
+        "Reads about diverse perspectives without engaging with people who hold them",
+        "Does not use digital tools to build cross-cultural connections"
+      ],
+      "partial_indicators": [
+        "Reads sources from different cultural contexts but does not use collaborative tools to engage directly with people from those contexts",
+        "Participates in a global online community but in a passive (comment, lurk) rather than connective way"
+      ]
+    },
+    {
+      "indicator_id": "iste-s-gc-1b",
+      "standard_id": "iste-s-gc",
+      "standard": "Global Collaborator",
+      "indicator_letter": "b",
+      "indicator_source_text": "Students use collaborative technologies to work with others, including peers, experts or community members, to examine issues and problems from multiple viewpoints.",
+      "met_criteria": [
+        "Uses collaborative tools (shared documents, video conferencing, discussion forums) to work with people outside their immediate context",
+        "Brings multiple viewpoints into the analysis of a problem rather than seeking confirmation",
+        "Engages with experts or community members \u2014 not just peer groups \u2014 using technology",
+        "Synthesises different perspectives into a more complete understanding of an issue"
+      ],
+      "not_yet_met_criteria": [
+        "Uses technology for one-way information gathering rather than collaborative examination",
+        "Does not seek or engage with viewpoints that challenge their existing perspective",
+        "Collaboration is limited to familiar peers"
+      ],
+      "partial_indicators": [
+        "Participates in a collaborative technology activity but does not seek out or synthesise multiple viewpoints within it",
+        "Connects with people from different contexts but uses the connection for information, not collaborative inquiry"
+      ]
+    },
+    {
+      "indicator_id": "iste-s-gc-1c",
+      "standard_id": "iste-s-gc",
+      "standard": "Global Collaborator",
+      "indicator_letter": "c",
+      "indicator_source_text": "Students contribute constructively to project teams, assuming various roles and responsibilities to work effectively toward a common goal.",
+      "met_criteria": [
+        "Takes on different roles across projects rather than always defaulting to one contribution type",
+        "Contributes in ways that actively move the team toward its goal, not just complete a personal task",
+        "Supports other team members and helps resolve disagreements constructively",
+        "Reflects on their contribution and adjusts it based on what the team needs"
+      ],
+      "not_yet_met_criteria": [
+        "Always takes the same role in team tasks",
+        "Completes their own portion without regard for the team's overall progress",
+        "Does not engage with team dynamics or support other members"
+      ],
+      "partial_indicators": [
+        "Completes assigned tasks reliably but does not flex roles, support others, or contribute beyond their designated scope",
+        "Takes on a leadership role when available but does not contribute constructively in supporting roles"
+      ]
+    },
+    {
+      "indicator_id": "iste-s-gc-1d",
+      "standard_id": "iste-s-gc",
+      "standard": "Global Collaborator",
+      "indicator_letter": "d",
+      "indicator_source_text": "Students explore local and global issues, and use collaborative technologies to work with others to investigate solutions.",
+      "met_criteria": [
+        "Identifies a real local or global issue that they explore as part of their learning",
+        "Uses collaborative technology to investigate the issue with partners outside their immediate context",
+        "Co-develops or evaluates potential solutions collaboratively rather than independently",
+        "Connects local and global dimensions of the issue in their analysis"
+      ],
+      "not_yet_met_criteria": [
+        "Studies issues as text-based academic topics without connecting them to the real world",
+        "Does not use collaborative technology to investigate or co-develop solutions",
+        "Analysis is individually produced without external collaborative input"
+      ],
+      "partial_indicators": [
+        "Researches a global issue and discusses it in class but does not use collaborative technology to work with partners outside school",
+        "Uses collaborative tools to communicate with peers about an issue but produces an individual rather than genuinely co-created analysis"
+      ]
+    }
+  ]
+}

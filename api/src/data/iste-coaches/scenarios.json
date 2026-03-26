@@ -1,0 +1,660 @@
+{
+  "_meta": {
+    "file": "scenarios.json",
+    "framework_id": "iste-coaches",
+    "framework_name": "ISTE Standards for Coaches v4.02",
+    "assessment_paradigm": "met/not-met. A=not_met, B=partially_met (attractive nuisance, scores as not_met), C=met.",
+    "total_scenarios": 14,
+    "scenarios_per_standard": 2,
+    "context_factors": [
+      "coaching_scope",
+      "institution_type",
+      "tech_expertise"
+    ],
+    "licensing_constraint": "ISTE Standards framework references \u00a9 2024 4.02, ISTE (iste.org). All rights reserved. Scenario stems and response options are original ReasonLens content. ISTE permits free use for non-commercial educational purposes only. Commercial use requires separate ISTE licensing.",
+    "generated_for": "ReasonLens"
+  },
+  "scenarios": [
+    {
+      "id": "ISTE-C-CHA-01",
+      "framework_id": "iste-coaches",
+      "standard_id": "iste-c-cha",
+      "standard_name": "Change Agent",
+      "target_standard": "Change Agent",
+      "primary_indicators": [
+        "iste-c-cha-4a",
+        "iste-c-cha-4c"
+      ],
+      "scenario_stem": "You are starting in a new coaching role at a school where technology use is inconsistent and staff attitudes range from enthusiastic to resistant. How do you begin?",
+      "context_tags": {
+        "coaching_scope": [
+          "school-wide"
+        ],
+        "institution_type": [
+          "secondary",
+          "primary"
+        ],
+        "tech_expertise": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I identify the most enthusiastic teachers, work intensively with them to showcase what is possible, and hope their success will inspire others.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I survey all staff to understand their current technology use and attitudes, then design a differentiated CPD programme based on the results \u2014 so everyone gets support appropriate to their starting point.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Assesses need and differentiates \u2014 looks like strong coaching practice. But designing a programme and delivering it to individuals does not build a shared vision or culture. The Change Agent standard requires coaches to facilitate collective ownership of a vision for technology-enhanced learning \u2014 not deliver personalised training that leaves each educator in their own lane. A culture requires everyone to be working toward something together, not just individually supported."
+        },
+        {
+          "id": "C",
+          "text": "Before any CPD I facilitate a whole-staff conversation \u2014 structured so every voice is heard, including sceptics \u2014 to surface what kind of learning environment staff want to create together. From that shared aspiration I help the group build a vision statement that is theirs. Coaching then becomes about helping each individual move toward that shared goal, with resistant staff framed as people whose concerns strengthen the vision rather than obstacles to it.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-C-CHA-02",
+      "framework_id": "iste-coaches",
+      "standard_id": "iste-c-cha",
+      "standard_name": "Change Agent",
+      "target_standard": "Change Agent",
+      "primary_indicators": [
+        "iste-c-cha-4b",
+        "iste-c-cha-4d"
+      ],
+      "scenario_stem": "After a successful coaching cycle, several teachers have developed excellent technology-integrated lessons. What do you do next?",
+      "context_tags": {
+        "coaching_scope": [
+          "school-wide",
+          "department"
+        ],
+        "institution_type": [
+          "any"
+        ],
+        "tech_expertise": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I continue coaching the same teachers, deepening their practice further \u2014 building on what is already working seems more productive than starting over with others.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I invite these teachers to present their lessons in a staff showcase so others can see what good technology integration looks like in practice.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Creates a recognition moment and spreads good practice \u2014 looks like effective culture-building. But a showcase is a one-off event, recognition is event-driven rather than systematic, and the teachers who benefited from coaching remain positioned as 'the good ones' rather than as contributors to a culture where all educators are on a growth journey. The standard requires systematic recognition tied to impact and a culture of collective ownership \u2014 not a talent show."
+        },
+        {
+          "id": "C",
+          "text": "I work with leadership to establish a formal recognition mechanism that surfaces and honours technology-enhanced practice across the school on an ongoing basis \u2014 linked to the shared vision we developed, not just impressive lessons. I also connect the recognised teachers with colleagues who want to grow in the same areas, so recognition becomes the seed of peer coaching relationships rather than a performance event.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-C-CNL-01",
+      "framework_id": "iste-coaches",
+      "standard_id": "iste-c-cnl",
+      "standard_name": "Connected Learner",
+      "target_standard": "Connected Learner",
+      "primary_indicators": [
+        "iste-c-cnl-4a",
+        "iste-c-cnl-4b"
+      ],
+      "scenario_stem": "A new generative AI tool has emerged that is being widely discussed in education. How do you, as a coach, engage with it?",
+      "context_tags": {
+        "coaching_scope": [
+          "any"
+        ],
+        "institution_type": [
+          "any"
+        ],
+        "tech_expertise": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I wait to see whether the school decides to adopt it before spending time on it \u2014 tools come and go and I do not want to invest in something that may not be approved.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I try the tool myself, explore what it can and cannot do, and note which of my teachers' coaching goals it might support \u2014 ready to introduce it if they ask.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Proactively explores the tool and connects it to coaching context \u2014 looks like a well-prepared coach. But solo exploration without connecting to professional learning networks or grounding in the ISTE Standards leaves the evaluation unsituated. The Connected Learner standard requires coaches to participate actively in professional networks to evaluate emerging technologies collectively and to build expertise that allows them to model the ISTE Standards \u2014 not just be personally ready to demo a new tool."
+        },
+        {
+          "id": "C",
+          "text": "I explore the tool myself, then bring it into my professional learning network \u2014 contributing a structured evaluation to a shared discussion and gathering others' perspectives on its pedagogical implications. I frame my engagement through the ISTE Standards: what does this tool enable for students as Empowered Learners, Creative Communicators, or Computational Thinkers? My conclusion informs how I introduce the tool to coaches and educators \u2014 with a framework, not just enthusiasm.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-C-CNL-02",
+      "framework_id": "iste-coaches",
+      "standard_id": "iste-c-cnl",
+      "standard_name": "Connected Learner",
+      "target_standard": "Connected Learner",
+      "primary_indicators": [
+        "iste-c-cnl-4c"
+      ],
+      "scenario_stem": "At the end of a coaching cycle you review your work with the teachers you have supported. What does this look like?",
+      "context_tags": {
+        "coaching_scope": [
+          "any"
+        ],
+        "institution_type": [
+          "any"
+        ],
+        "tech_expertise": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I ask each teacher whether they felt the coaching was useful and note their feedback for next time.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I review the goals we set at the start of the cycle with each teacher, assess how far they have progressed, and use this to plan the next cycle with them.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Returns to shared goals and uses progress to plan forward \u2014 looks exactly like the Connected Learner standard in action. But the reflection is directed entirely at the teacher's growth, not the coach's. The standard requires coaches to use shared goal reflection to continuously improve their own coaching practice \u2014 asking not just 'did they grow' but 'what did I do that helped, what hindered, and what would I change about how I coached this person?'"
+        },
+        {
+          "id": "C",
+          "text": "In end-of-cycle reviews with each teacher I examine both their progress and my contribution: What did I do that enabled their growth? Where did my coaching create confusion or miss what they needed? I document my coaching adaptations in a personal learning record, identifying specific adjustments I will make in the next cycle \u2014 and I share anonymised learning from this reflection with a peer coach so we can critique each other's approaches.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-C-CLB-01",
+      "framework_id": "iste-coaches",
+      "standard_id": "iste-c-clb",
+      "standard_name": "Collaborator",
+      "target_standard": "Collaborator",
+      "primary_indicators": [
+        "iste-c-clb-4a"
+      ],
+      "scenario_stem": "A teacher you are coaching is technically competent but seems reluctant to try anything new or take instructional risks. How do you approach this?",
+      "context_tags": {
+        "coaching_scope": [
+          "individual"
+        ],
+        "institution_type": [
+          "any"
+        ],
+        "tech_expertise": [
+          "medium",
+          "high"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I focus on the technical dimension \u2014 sharing more advanced tools and techniques so the teacher has more options to choose from.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I explore what the teacher is concerned about by asking open questions in coaching sessions, listening carefully to their reasoning, and validating their experience before suggesting new approaches.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Uses open questions and validation \u2014 looks like skilled coaching. But listening and validating builds rapport, not necessarily the depth of trust that enables instructional risk-taking. The standard requires establishing a coaching relationship where the educator genuinely feels safe to experiment and fail \u2014 which requires consistent, sustained trust-building, not just empathetic listening in sessions. A technically competent reluctant teacher needs the psychological safety to be imperfect, which is a culture built over time, not a coaching technique applied in a session."
+        },
+        {
+          "id": "C",
+          "text": "I shift my priority to the relationship \u2014 spending time understanding what professional experiences have shaped this teacher's caution before introducing any new challenge. I offer to co-teach a lesson with them so the first risk is shared, not solo. I make it clear that in our coaching relationship, a lesson that does not go as planned is data, not a failure \u2014 and I model this by openly discussing my own coaching mistakes. Only once the trust is visible in their willingness to try do I introduce more challenging instructional goals.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-C-CLB-02",
+      "framework_id": "iste-coaches",
+      "standard_id": "iste-c-clb",
+      "standard_name": "Collaborator",
+      "target_standard": "Collaborator",
+      "primary_indicators": [
+        "iste-c-clb-4c",
+        "iste-c-clb-4d"
+      ],
+      "scenario_stem": "A teacher asks you which platform they should use for collaborative student projects. How do you respond?",
+      "context_tags": {
+        "coaching_scope": [
+          "individual",
+          "department"
+        ],
+        "institution_type": [
+          "any"
+        ],
+        "tech_expertise": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I recommend the platform I have seen work well in most schools \u2014 it is widely used and there is good training available for it.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I ask about the teacher's subject, their students' age and tech confidence, and what kind of collaboration they want to support \u2014 then recommend the platform that best fits those criteria.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Contextualises the recommendation thoughtfully \u2014 looks exactly like personalised coaching. But a recommendation, however contextualised, is still a prescription. The Collaborator standard requires coaches to partner with educators in evaluating tool efficacy, not to be the knowledgeable advisor who recommends. This means working together to define evaluation criteria, test the tool in the specific context, and review evidence \u2014 not advising from expertise."
+        },
+        {
+          "id": "C",
+          "text": "I do not make a recommendation. Instead I partner with the teacher to define evaluation criteria together \u2014 what does effective collaboration look like for their specific students and subject? We then short-list two or three options, agree how we will trial each one, and plan how we will evaluate the impact on student collaboration quality after each trial. The teacher leads the evaluation; I support the process and help interpret the evidence.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-C-LDN-01",
+      "framework_id": "iste-coaches",
+      "standard_id": "iste-c-ldn",
+      "standard_name": "Learning Designer",
+      "target_standard": "Learning Designer",
+      "primary_indicators": [
+        "iste-c-ldn-4a"
+      ],
+      "scenario_stem": "A teacher asks you to review a project task they have designed and suggest improvements. What is your approach?",
+      "context_tags": {
+        "coaching_scope": [
+          "individual"
+        ],
+        "institution_type": [
+          "any"
+        ],
+        "tech_expertise": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I review the task, make notes on how it could be improved, and provide written feedback the teacher can act on.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I meet with the teacher, share my observations about the task's strengths and areas for development, and suggest specific redesign ideas they could try.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Shares observations and offers ideas \u2014 looks like coaching, not consultancy. But the improvement ideas are still the coach's, which means the teacher receives a better version of someone else's design. The Learning Designer standard requires coaches to collaborate in designing \u2014 which means the teacher develops their own design thinking through the process, not just implements the coach's suggestions. A co-design conversation produces both a better task and a more capable designer."
+        },
+        {
+          "id": "C",
+          "text": "I work through the redesign with the teacher as a collaborative design conversation, not a review-and-advise session. I ask questions that surface the design thinking: 'Who is the real audience for this work? What would a student need to do to genuinely demonstrate this competency rather than complete this task?' I bring instructional design principles into the conversation explicitly \u2014 naming them, explaining why they matter, and letting the teacher's answers drive the redesign. The final task is theirs, built through their thinking, with my questions as the scaffold.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-C-LDN-02",
+      "framework_id": "iste-coaches",
+      "standard_id": "iste-c-ldn",
+      "standard_name": "Learning Designer",
+      "target_standard": "Learning Designer",
+      "primary_indicators": [
+        "iste-c-ldn-4c",
+        "iste-c-ldn-4d"
+      ],
+      "scenario_stem": "A teacher is building a new online unit on the school VLE. How do you support them?",
+      "context_tags": {
+        "coaching_scope": [
+          "individual"
+        ],
+        "institution_type": [
+          "any"
+        ],
+        "tech_expertise": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I share a checklist of VLE good practice \u2014 clear navigation, accessible files, a logical task sequence \u2014 and review their draft against it.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I co-design the unit with the teacher, reviewing each section for pedagogical soundness, ensuring files are in accessible formats (PDF/Word with alt text), and suggesting where the sequence could be clearer.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Engages in co-design and checks accessibility \u2014 looks comprehensive. But 'accessible formats' is the compliance minimum \u2014 actual accessibility design means the learning environment works for students with diverse cognitive, sensory, and language needs, which requires deliberate design choices not just file format compliance. Equally, reviewing for 'pedagogical soundness' is different from applying and making explicit named instructional design principles. The standard requires modelling those principles so the teacher builds capacity to apply them independently."
+        },
+        {
+          "id": "C",
+          "text": "I co-design with the teacher and make two things explicit throughout: the accessibility design decisions \u2014 not just file formats but colour contrast, reading level, navigation predictability, and whether students with different sensory and learning needs could complete every activity without a workaround \u2014 and the instructional design principles behind each section, named and explained, so the teacher builds a reusable mental model of why we are making each design choice. I document the principles we applied in the unit's design notes.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-C-PLF-01",
+      "framework_id": "iste-coaches",
+      "standard_id": "iste-c-plf",
+      "standard_name": "Professional Learning Facilitator",
+      "target_standard": "Professional Learning Facilitator",
+      "primary_indicators": [
+        "iste-c-plf-4a"
+      ],
+      "scenario_stem": "You are designing a half-day CPD session for all staff on integrating AI tools into teaching. Where do you start?",
+      "context_tags": {
+        "coaching_scope": [
+          "school-wide"
+        ],
+        "institution_type": [
+          "any"
+        ],
+        "tech_expertise": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I design an engaging session that covers the main AI tools available, their benefits, and some hands-on activities to build confidence \u2014 I know from experience what staff generally find valuable in this area.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I send a short pre-session survey to staff asking what they already know about AI tools and what they most want to learn \u2014 then use the results to tailor the session content.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Conducts a needs survey and tailors content \u2014 looks like principled professional learning design. But a pre-session survey about what staff want to know addresses surface preferences, not deep professional learning needs. The standard requires a multi-method needs assessment including analysis of student outcomes, observation of practice, and professional growth goals \u2014 and the application of adult learning frameworks that address not just content but the cultural, social-emotional, and learning needs of educators as adult learners."
+        },
+        {
+          "id": "C",
+          "text": "Before designing anything I conduct a needs assessment using multiple methods: I review student outcome data to identify where AI tools might address real learning gaps, observe classroom practice to see where teachers are already adapting and where they are stuck, interview a cross-section of staff to understand their professional learning goals and anxiety levels, and review the school's AI policy context. I then apply an adult learning framework \u2014 choosing activities that respect educator expertise, connect to their real teaching contexts, and build on what they already do \u2014 before writing a single slide.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-C-PLF-02",
+      "framework_id": "iste-coaches",
+      "standard_id": "iste-c-plf",
+      "standard_name": "Professional Learning Facilitator",
+      "target_standard": "Professional Learning Facilitator",
+      "primary_indicators": [
+        "iste-c-plf-4c"
+      ],
+      "scenario_stem": "Six weeks after delivering a CPD programme on digital assessment tools, you want to know whether it made a difference. What do you do?",
+      "context_tags": {
+        "coaching_scope": [
+          "school-wide",
+          "department"
+        ],
+        "institution_type": [
+          "any"
+        ],
+        "tech_expertise": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I look at the evaluation forms from the day \u2014 average satisfaction was high \u2014 and take that as a good sign that the session was effective.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I follow up with participants via email six weeks later, asking whether they have used any of the tools from the session in their teaching and what the experience was like.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Follows up after a meaningful interval and asks about practice \u2014 looks like impact evaluation beyond the day. But self-reported adoption is an unreliable proxy for impact. The standard requires evaluating impact at the level of practice change and student learning outcomes \u2014 not just whether staff tried something. A follow-up survey about tool adoption does not tell you whether digital assessment improved the quality of feedback students received or whether teachers changed how they use data to personalise learning."
+        },
+        {
+          "id": "C",
+          "text": "Six weeks on I triangulate three evidence sources: I observe two or three classrooms specifically looking for changes in assessment practice that map to the CPD goals; I interview a sample of students about whether feedback feels more timely and specific; and I review anonymised assessment platform data to see whether formative check frequency has changed. I bring these findings to a post-programme reflection session with participants, connecting improvements and gaps explicitly to the school's technology vision \u2014 and I redesign the next CPD cycle based on what the evidence shows.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-C-DDM-01",
+      "framework_id": "iste-coaches",
+      "standard_id": "iste-c-ddm",
+      "standard_name": "Data-Driven Decision Maker",
+      "target_standard": "Data-Driven Decision Maker",
+      "primary_indicators": [
+        "iste-c-ddm-4b"
+      ],
+      "scenario_stem": "You are working with a teacher who has just received their class's standardised assessment data and is unsure what to do with it. What does your coaching look like?",
+      "context_tags": {
+        "coaching_scope": [
+          "individual"
+        ],
+        "institution_type": [
+          "any"
+        ],
+        "tech_expertise": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I walk through the data with the teacher, highlight the patterns I notice, and suggest which topics need re-teaching based on what the results show.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I guide the teacher through the data analysis process \u2014 asking questions to draw out their observations, helping them identify the questions with the highest failure rate, and supporting them to plan a re-teaching response.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Uses questions to develop teacher interpretation skills \u2014 looks like strong coaching. But identifying high-failure questions and planning re-teaching is still a class-level response to data. The standard requires coaches to help educators interpret data to support individual student learning \u2014 which means developing the teacher's capacity to identify what the data says about each student, triangulate that against other information, and adjust learning at an individual rather than class level."
+        },
+        {
+          "id": "C",
+          "text": "I coach the teacher through a structured interpretation process: first, what does the data say at the class level; then, which students' patterns differ from the class picture and what might explain that; then, what other information (formative evidence, conversations, prior attainment) helps triangulate what the standardised data shows; and finally, what is the most important next step for each student, not for the class as a whole. I also ask: what does this data not tell us, and where might we be at risk of acting on a misleading signal?",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-C-DDM-02",
+      "framework_id": "iste-coaches",
+      "standard_id": "iste-c-ddm",
+      "standard_name": "Data-Driven Decision Maker",
+      "target_standard": "Data-Driven Decision Maker",
+      "primary_indicators": [
+        "iste-c-ddm-4c"
+      ],
+      "scenario_stem": "A teacher you coach has a strong data dashboard showing class performance but students never see their own data. How do you address this?",
+      "context_tags": {
+        "coaching_scope": [
+          "individual"
+        ],
+        "institution_type": [
+          "any"
+        ],
+        "tech_expertise": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I suggest the teacher shares the class average with students at the start of units so they understand the standard being aimed for.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I recommend the teacher uses the platform to generate individual progress reports for each student and share these at the end of each unit.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Extends data to students individually \u2014 looks like a meaningful step toward student data agency. But end-of-unit reports are retrospective information delivery. Students receive their data passively, after the learning has happened, with no structure for using it to set goals or direct their next steps. The standard requires coaches to help educators empower students to use their own learning data actively and in real time \u2014 which requires pedagogically designed student-facing data experiences, not periodic reports."
+        },
+        {
+          "id": "C",
+          "text": "I work with the teacher to redesign the data experience so it is student-facing and action-oriented: students access a view of their own progress at the start of each lesson, use it to identify what they want to focus on, set a micro-goal, and reflect on it at the end. I help the teacher develop the vocabulary and facilitation moves to turn data from something students are shown into something students use \u2014 shifting the dashboard from a teacher management tool to a student learning tool.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-C-DCA-01",
+      "framework_id": "iste-coaches",
+      "standard_id": "iste-c-dca",
+      "standard_name": "Digital Citizen Advocate",
+      "target_standard": "Digital Citizen Advocate",
+      "primary_indicators": [
+        "iste-c-dca-4a"
+      ],
+      "scenario_stem": "You want to support educators to go beyond digital citizenship lessons toward giving students real digital agency in their communities. What do you do?",
+      "context_tags": {
+        "coaching_scope": [
+          "school-wide",
+          "department"
+        ],
+        "institution_type": [
+          "any"
+        ],
+        "tech_expertise": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I provide a bank of good digital citizenship lesson resources and activities that teachers can drop into their timetable at appropriate points in the year.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I coach teachers to design project-based learning units where students research a community issue and present their findings to the class or in a school assembly.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Moves toward project-based civic learning \u2014 looks like meaningful digital citizenship work. But presenting findings to a school audience is still a school-contained output. The standard requires coaches to help educators create pathways for students to use technology to address community challenges with real external impact \u2014 which means students interact with actual community stakeholders, not a simulated or contained audience. An assembly presentation is not a community-connected technology project."
+        },
+        {
+          "id": "C",
+          "text": "I help teachers identify genuine local issues where student technology capability can make a real contribution: a community mapping project shared with local government, a digital archive created for a neighbourhood organisation, or an accessible website built for a local charity. I support the teacher to manage the external partnership \u2014 including negotiating the project scope, managing data permissions, and ensuring the student output actually goes to and is used by the external partner. The community connection is designed in, not added as a frame.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-C-DCA-02",
+      "framework_id": "iste-coaches",
+      "standard_id": "iste-c-dca",
+      "standard_name": "Digital Citizen Advocate",
+      "target_standard": "Digital Citizen Advocate",
+      "primary_indicators": [
+        "iste-c-dca-4d"
+      ],
+      "scenario_stem": "You notice that staff across the school use a range of third-party apps with their classes but very few have thought about what data these apps collect from students. How do you address this as a coach?",
+      "context_tags": {
+        "coaching_scope": [
+          "school-wide"
+        ],
+        "institution_type": [
+          "any"
+        ],
+        "tech_expertise": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I refer the issue to the IT team, who are responsible for app approvals \u2014 data privacy is their domain, not mine as a learning coach.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I run a CPD session showing teachers how to check an app's privacy policy before using it with students and what to look for in the data collection section.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Builds teacher capability to check policies \u2014 looks like useful awareness-raising. But knowing how to read a privacy policy is a one-time skill, not an active data stewardship practice. The standard requires coaches to empower educators, leaders, and students with practical data management skills and digital profile curation agency \u2014 not just policy literacy. There is no engagement with students or leaders here, and the approach stops at awareness rather than building the habits and practices that constitute actual data protection."
+        },
+        {
+          "id": "C",
+          "text": "I address the issue at three levels: with students, by working with teachers to include student-facing conversations about what their data is, where it goes, and how to make intentional choices; with educators, by building a coaching protocol that makes data privacy a design criterion in any lesson where a new digital tool is introduced; and with leaders, by advocating for a procurement governance process that embeds data impact assessment before any tool reaches classrooms. I position this as a whole-community professional responsibility, not an IT or compliance issue.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    }
+  ]
+}

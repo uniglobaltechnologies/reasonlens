@@ -1,0 +1,51 @@
+{
+  "_meta": {
+    "file": "practitioner-language.json",
+    "framework_id": "iste-leaders",
+    "framework_name": "ISTE Standards for Education Leaders v4.02",
+    "purpose": "Human-readable labels and descriptions for UI rendering. Used in assessment reports, dashboard displays, and persona-facing explanations. Do not use framework indicator source text directly in user-facing UI \u2014 use these labels.",
+    "generated_for": "ReasonLens"
+  },
+  "standards": [
+    {
+      "standard_id": "iste-l-dca",
+      "standard_name": "Digital Citizenship Advocate",
+      "short_label": "Model and ensure responsible digital citizenship",
+      "report_summary_met": "You ensure all students have access to technology-confident educators and inclusive digital resources, model responsible digital practice in your own leadership behaviour, and embody the ethical and critical engagement with technology that you want to see throughout your school.",
+      "report_summary_not_met": "There is an opportunity to move from managing digital citizenship policy to embodying it \u2014 ensuring access and inclusion are systemic priorities rather than workarounds, and making your own technology use a deliberate model for the community.",
+      "coaching_prompt": "When did you last discuss your own technology use publicly with staff or students \u2014 modelling the digital citizenship practices you want to see?"
+    },
+    {
+      "standard_id": "iste-l-vp",
+      "standard_name": "Visionary Planner",
+      "short_label": "Build a community-owned technology vision",
+      "report_summary_met": "You engage a wide and diverse community to co-create a vision for technology-enhanced learning, build a collaborative strategic plan explicitly linked to learning outcomes, evaluate progress honestly against that plan, communicate transparently, and share your learning with peer leaders.",
+      "report_summary_not_met": "There is an opportunity to broaden how your technology vision is built \u2014 engaging students, families, and community partners, not just staff, and connecting every technology investment explicitly to the learning outcomes your community said they wanted.",
+      "coaching_prompt": "Can you point to a specific part of your technology strategy and explain directly which community aspiration it is designed to serve \u2014 and how you will know whether it is working?"
+    },
+    {
+      "standard_id": "iste-l-el",
+      "standard_name": "Empowering Leader",
+      "short_label": "Build a culture where everyone grows",
+      "report_summary_met": "You build teacher leadership and professional agency, develop staff competency explicitly grounded in the ISTE Standards for Educators, create a genuine culture of innovation and risk-taking, support technology use that serves diverse learners, and develop personalised real-time assessment infrastructure.",
+      "report_summary_not_met": "There is an opportunity to move from providing professional development to building professional agency \u2014 ensuring teachers own their growth, connecting CPD explicitly to the ISTE Standards, and creating a culture where imperfect innovation is valued, not just celebrated when it succeeds.",
+      "coaching_prompt": "What in your current culture makes it safe for an educator to try a technology-enhanced approach that does not work \u2014 and what happens when they do?"
+    },
+    {
+      "standard_id": "iste-l-sd",
+      "standard_name": "Systems Designer",
+      "short_label": "Build systems that sustain and protect",
+      "report_summary_met": "You guide teams to establish equitable technology policies, ensure infrastructure is sufficient and scalable, build active data governance capability across your staff, and establish partnerships that advance your strategic plan and create real-world opportunities for students.",
+      "report_summary_not_met": "There is an opportunity to develop your systems leadership \u2014 moving from reactive infrastructure management to proactive policy governance, building data stewardship as a whole-staff professional practice, and making partnerships strategic rather than operational.",
+      "coaching_prompt": "What governance process do you have for a teacher deciding whether to use a new digital tool with students \u2014 and what does it protect against?"
+    },
+    {
+      "standard_id": "iste-l-cl",
+      "standard_name": "Connected Learner",
+      "short_label": "Lead by learning continuously",
+      "report_summary_met": "You set specific personal learning goals to stay current on technology and learning science, participate actively in professional learning networks \u2014 contributing as well as learning \u2014 use technology for structured personal reflection, and develop change leadership capability that sustains continuous improvement.",
+      "report_summary_not_met": "There is an opportunity to move from staying informed to structured professional learning \u2014 setting goals, using technology for reflective practice, and engaging your professional network as a contributor and mentor, not just a consumer.",
+      "coaching_prompt": "What is your current personal learning goal \u2014 and how are you using technology to reflect on your progress toward it?"
+    }
+  ]
+}

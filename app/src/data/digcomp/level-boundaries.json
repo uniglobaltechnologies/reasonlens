@@ -1,0 +1,2018 @@
+[
+  {
+    "id": "dc-1-1-BI",
+    "competency_id": "dc-1-1",
+    "competency_name": "Browsing, searching and filtering information",
+    "area": "Information Search, Evaluation and Management",
+    "boundary": "BI",
+    "boundary_label": "Basic to Intermediate",
+    "lower_level": "basic",
+    "upper_level": "intermediate",
+    "key_discriminator": "At Basic level the user searches using simple keywords; at Intermediate they construct deliberate search strategies using Boolean logic and database-specific controlled vocabulary.",
+    "discriminator_type": "recognition_vs_application",
+    "what_changes": "Shift from reactive keyword entry to proactive strategy design; from single-database to multi-database systematic search; from undocumented to documented search methodology.",
+    "false_positives": [
+      {
+        "pattern": "Regular Google Scholar use",
+        "why_misleading": "Google Scholar feels academic and may indicate higher competence, but does not require Boolean searching or database selection skills",
+        "how_to_distinguish": "Ask whether the person uses subject headings, proximity operators, or documents their search strategy; Google Scholar-only users are almost always Basic"
+      },
+      {
+        "pattern": "Large reference lists",
+        "why_misleading": "Volume of references suggests extensive searching but may reflect time investment rather than search sophistication",
+        "how_to_distinguish": "Check whether references span multiple appropriate databases or are all from a single platform; examine whether search terms are documented"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Can correctly apply a Boolean AND query in a subject-relevant database and explain why they chose that database",
+      "strong": "Documented search strategy for a literature review showing multiple databases, Boolean operators, and date/document-type filters"
+    },
+    "regression_risk": "Medium -- search skills atrophy without regular use; researchers who move into non-research roles may regress to basic searching",
+    "assessment_difficulty": "Medium -- requires direct observation or documented output; self-report is unreliable",
+    "ai_context": "The boundary is increasingly tested by AI search tools; a student using Elicit with critical evaluation of its limitations may be functioning at Intermediate even without traditional Boolean skills"
+  },
+  {
+    "id": "dc-1-1-IA",
+    "competency_id": "dc-1-1",
+    "competency_name": "Browsing, searching and filtering information",
+    "area": "Information Search, Evaluation and Management",
+    "boundary": "IA",
+    "boundary_label": "Intermediate to Advanced",
+    "lower_level": "intermediate",
+    "upper_level": "advanced",
+    "key_discriminator": "At Intermediate level the user applies established search strategies; at Advanced they design and validate new search methodologies and teach others.",
+    "discriminator_type": "application_vs_critical_use",
+    "what_changes": "Shift from applying known methods to evaluating and extending them; from searching for one's own research to advising others; from using databases to understanding their indexing architecture and coverage limitations.",
+    "false_positives": [
+      {
+        "pattern": "Confident use of multiple databases",
+        "why_misleading": "Fluent multi-database searching may still be application of learned methods rather than critical evaluation of methodology",
+        "how_to_distinguish": "Ask whether the person can identify the specific limitations of each database they use and justify their database selection strategy for a novel research question"
+      },
+      {
+        "pattern": "Postdoctoral or senior researcher status",
+        "why_misleading": "Career stage does not guarantee advanced search competence; many senior researchers use Intermediate-level search skills throughout their careers",
+        "how_to_distinguish": "Evidence of teaching search methodology or contributing to systematic review search protocols distinguishes Advanced from Intermediate"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Can critique a peer's search strategy, identifying specific methodological weaknesses and suggesting improvements",
+      "strong": "Published or submitted systematic review search protocol with full justification of database and filter choices"
+    },
+    "regression_risk": "Low at Advanced level -- once attained, these skills are stable with minimal use",
+    "assessment_difficulty": "High -- requires expert peer review; most HE contexts lack assessors with sufficient expertise",
+    "ai_context": "Advanced searchers are actively integrating AI semantic search tools alongside traditional methods and can articulate when each is appropriate"
+  },
+  {
+    "id": "dc-1-1-AH",
+    "competency_id": "dc-1-1",
+    "competency_name": "Browsing, searching and filtering information",
+    "area": "Information Search, Evaluation and Management",
+    "boundary": "AH",
+    "boundary_label": "Advanced to Highly Advanced",
+    "lower_level": "advanced",
+    "upper_level": "highly_advanced",
+    "key_discriminator": "At Advanced level the user conducts and teaches expert systematic searching; at Highly Advanced they develop new search methodologies and shape professional discourse.",
+    "discriminator_type": "critical_use_vs_innovation",
+    "what_changes": "Shift from conducting excellent searches to publishing on search methodology; from teaching within existing frameworks to contributing to framework development; from institutional to sector or international leadership.",
+    "false_positives": [
+      {
+        "pattern": "Senior librarian or information scientist",
+        "why_misleading": "Professional role suggests high competence but does not guarantee methodological contribution or publication",
+        "how_to_distinguish": "Look for published methodological work, consortium membership, or evidence of shaping practice beyond own institution"
+      },
+      {
+        "pattern": "High volume of systematic review publications",
+        "why_misleading": "Conducting many systematic reviews demonstrates Advanced competence but not necessarily Highly Advanced unless accompanied by methodological innovation or leadership",
+        "how_to_distinguish": "Check whether the person has led methodological development in the field, not just applied existing methods prolifically"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Published work that introduces or validates a new search methodology component, adopted or cited by others",
+      "strong": "Leadership of a systematic review methodology consortium, national search guidelines authorship, or invited expert contribution to JRC or EPPI methodology development"
+    },
+    "regression_risk": "Very low -- Highly Advanced competence is sustained by ongoing professional contribution",
+    "assessment_difficulty": "Very high -- requires assessment by field-level peers with equivalent expertise",
+    "ai_context": "Highly Advanced searchers are contributing to the emerging methodological literature on AI's role in systematic search and evidence synthesis"
+  },
+  {
+    "id": "dc-1-2-BI",
+    "competency_id": "dc-1-2",
+    "competency_name": "Evaluating information",
+    "area": "Information Search, Evaluation and Management",
+    "boundary": "BI",
+    "boundary_label": "Basic to Intermediate",
+    "lower_level": "basic",
+    "upper_level": "intermediate",
+    "key_discriminator": "At Basic level evaluation is checklist-driven and surface-level; at Intermediate it is methodologically grounded and engages with research quality criteria.",
+    "discriminator_type": "recognition_vs_application",
+    "what_changes": "Shift from recognising obvious unreliability to applying structured frameworks; from trusting institutional affiliation to assessing methodological quality; from binary (reliable/unreliable) to nuanced quality assessment.",
+    "false_positives": [
+      {
+        "pattern": "Citing peer-reviewed journals only",
+        "why_misleading": "Citing only peer-reviewed sources may reflect instruction-following rather than genuine quality evaluation; the student may not understand why these sources are preferred",
+        "how_to_distinguish": "Ask the student to explain what quality indicators they used and why a specific paper is reliable; Basic users typically cannot articulate methodological reasoning"
+      },
+      {
+        "pattern": "Using the CRAAP test",
+        "why_misleading": "Applying a checklist tool can be done at Basic level by following instructions; genuine Intermediate evaluation involves understanding the reasoning behind criteria",
+        "how_to_distinguish": "Ask the student to evaluate a source not covered by the checklist or to explain why two sources with similar CRAAP scores differ in suitability for a specific purpose"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Can identify at least two specific methodological weaknesses in a provided research paper beyond surface features",
+      "strong": "Written critical evaluation of a body of literature demonstrating awareness of study design, sample limitations, and conflicts of interest"
+    },
+    "regression_risk": "Medium -- evaluation skills require active practice; without continued research engagement they may revert toward checklist application",
+    "assessment_difficulty": "Medium -- requires domain knowledge to assess well; generic assessors may miss discipline-specific quality criteria",
+    "ai_context": "The BI boundary now includes AI literacy: Intermediate evaluators actively check AI-generated summaries against primary sources, while Basic users may not think to do so"
+  },
+  {
+    "id": "dc-1-2-IA",
+    "competency_id": "dc-1-2",
+    "competency_name": "Evaluating information",
+    "area": "Information Search, Evaluation and Management",
+    "boundary": "IA",
+    "boundary_label": "Intermediate to Advanced",
+    "lower_level": "intermediate",
+    "upper_level": "advanced",
+    "key_discriminator": "At Intermediate level the evaluator applies quality frameworks correctly; at Advanced they engage with epistemological assumptions and synthesise across contradictory evidence.",
+    "discriminator_type": "application_vs_critical_use",
+    "what_changes": "Shift from applying frameworks to interrogating their assumptions; from evaluating individual studies to synthesising contradictory evidence bodies; from personal research practice to training and advising others.",
+    "false_positives": [
+      {
+        "pattern": "Completion of systematic review training",
+        "why_misleading": "Training in systematic review quality appraisal teaches Intermediate-level tools (CASP, GRADE); Advanced competence requires applying these tools critically and adapting them to novel evidence problems",
+        "how_to_distinguish": "Assess whether the person can handle a case where established quality appraisal tools give misleading results for a specific study type"
+      },
+      {
+        "pattern": "PhD-level critical reading skills",
+        "why_misleading": "PhD training develops Intermediate evaluation as a standard; Advanced involves contributing to evaluation methodology, not just applying it expertly",
+        "how_to_distinguish": "Look for evidence of advising others, designing quality appraisal processes, or critically engaging with the limitations of appraisal frameworks themselves"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Can use a validated quality appraisal tool (GRADE, CASP) on a complex evidence body and explain where the tool's assumptions do not hold for specific studies",
+      "strong": "Published systematic review with full quality appraisal section demonstrating expert handling of contradictory evidence and methodological heterogeneity"
+    },
+    "regression_risk": "Low -- Advanced evaluation skills are durable",
+    "assessment_difficulty": "Very high -- requires domain-expert peer review to distinguish genuine Advanced from confident Intermediate",
+    "ai_context": "Advanced evaluators critically assess AI systems as knowledge sources, not just AI-generated content; they evaluate training data provenance, model limitations, and the epistemological status of AI-generated claims"
+  },
+  {
+    "id": "dc-1-2-AH",
+    "competency_id": "dc-1-2",
+    "competency_name": "Evaluating information",
+    "area": "Information Search, Evaluation and Management",
+    "boundary": "AH",
+    "boundary_label": "Advanced to Highly Advanced",
+    "lower_level": "advanced",
+    "upper_level": "highly_advanced",
+    "key_discriminator": "At Advanced level the evaluator is an expert practitioner; at Highly Advanced they develop new frameworks and shape the scholarly discourse on information evaluation.",
+    "discriminator_type": "critical_use_vs_innovation",
+    "what_changes": "Shift from expert practice to framework development; from institutional guidance to sector or national policy influence; from applying evaluation theory to generating it.",
+    "false_positives": [
+      {
+        "pattern": "Many systematic reviews published",
+        "why_misleading": "Prolific systematic review publication demonstrates Advanced practice; Highly Advanced requires methodological innovation or leadership",
+        "how_to_distinguish": "Look for methodological papers, framework development, or contributions to evidence synthesis standards bodies"
+      },
+      {
+        "pattern": "Professor or Reader status",
+        "why_misleading": "Academic seniority correlates with but does not define Highly Advanced evaluation competence",
+        "how_to_distinguish": "Assess scholarly contribution to the field of evidence evaluation specifically, not general academic seniority"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Published work that advances the methodology or theory of information evaluation, adopted or cited by other practitioners",
+      "strong": "Membership of systematic review methodology consortium, authorship of national evidence standards, or published theory of knowledge evaluation in AI-mediated environments"
+    },
+    "regression_risk": "Very low",
+    "assessment_difficulty": "Very high -- peer assessment only",
+    "ai_context": "At this level, individuals are publishing on what rigorous information evaluation means when AI mediates much of our access to and representation of knowledge"
+  },
+  {
+    "id": "dc-1-3-BI",
+    "competency_id": "dc-1-3",
+    "competency_name": "Managing information",
+    "area": "Information Search, Evaluation and Management",
+    "boundary": "BI",
+    "boundary_label": "Basic to Intermediate",
+    "lower_level": "basic",
+    "upper_level": "intermediate",
+    "key_discriminator": "At Basic level information is saved informally without a retrieval system; at Intermediate a deliberate reference management and personal knowledge management system is in place.",
+    "discriminator_type": "recognition_vs_application",
+    "what_changes": "Shift from ad hoc saving to systematic organisation; from manual citation formatting to reference management software; from individual documents to project-structured knowledge systems.",
+    "false_positives": [
+      {
+        "pattern": "Large personal file collections",
+        "why_misleading": "Accumulation without retrieval strategy is not management; large unorganised archives are a Basic-level artefact despite representing significant digital activity",
+        "how_to_distinguish": "Ask the person to locate a specific paper from six months ago in under two minutes; inability to do so efficiently indicates Basic information management regardless of volume"
+      },
+      {
+        "pattern": "Using OneDrive or Google Drive",
+        "why_misleading": "Cloud storage is infrastructure, not an information management system; presence of cloud storage does not indicate Intermediate competence",
+        "how_to_distinguish": "Assess the folder structure, naming conventions, and whether a reference manager is integrated"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Consistent use of reference management software (Zotero, Mendeley, EndNote) with organised folders and tags for a research project",
+      "strong": "Research project with documented search-to-management workflow: database search connected to reference manager, annotated bibliography, organised folder structure"
+    },
+    "regression_risk": "High -- information management habits are fragile without consistent practice; researchers not currently engaged in intensive literature work may revert to ad hoc saving",
+    "assessment_difficulty": "Low -- directly observable through portfolio review, dissertation bibliographies, and reference manager sharing",
+    "ai_context": "The BI boundary now includes how AI outputs are managed: Intermediate users integrate AI tool outputs into their reference management system with provenance documentation"
+  },
+  {
+    "id": "dc-1-3-IA",
+    "competency_id": "dc-1-3",
+    "competency_name": "Managing information",
+    "area": "Information Search, Evaluation and Management",
+    "boundary": "IA",
+    "boundary_label": "Intermediate to Advanced",
+    "lower_level": "intermediate",
+    "upper_level": "advanced",
+    "key_discriminator": "At Intermediate level the user manages their own research information well; at Advanced they design systems for others and address funder/institutional data management requirements.",
+    "discriminator_type": "application_vs_critical_use",
+    "what_changes": "Shift from personal information management to team and project data management; from reference organising to research data management planning; from individual knowledge systems to shared institutional repositories.",
+    "false_positives": [
+      {
+        "pattern": "Experienced postgraduate researcher with tidy reference manager",
+        "why_misleading": "Excellent personal information management can plateau at Intermediate without the extension to team, institutional, and funder data management contexts",
+        "how_to_distinguish": "Ask whether the person has created a Data Management Plan or managed a shared team research library; absence of these indicates Intermediate rather than Advanced"
+      },
+      {
+        "pattern": "Using institutional repository for publication deposit",
+        "why_misleading": "Depositing publications is basic open access compliance; Advanced management involves contributing metadata quality, onboarding team members, and managing complex data governance",
+        "how_to_distinguish": "Assess whether the person understands FAIR principles and can apply them to a complex dataset beyond publications"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "DPIA or Data Management Plan submitted for a research project, demonstrating understanding of storage, sharing, and retention requirements",
+      "strong": "Funder-compliant research data management workflow for a completed project, including documentation of data organisation, sharing, and preservation according to FAIR principles"
+    },
+    "regression_risk": "Low -- Advanced management skills, once applied, are sustained by funder and institutional requirements",
+    "assessment_difficulty": "Medium -- DMP quality can be assessed by research data specialists",
+    "ai_context": "Advanced managers treat AI-generated outputs as a formal data type in their research data management framework, with provenance documentation and retention policies"
+  },
+  {
+    "id": "dc-1-3-AH",
+    "competency_id": "dc-1-3",
+    "competency_name": "Managing information",
+    "area": "Information Search, Evaluation and Management",
+    "boundary": "AH",
+    "boundary_label": "Advanced to Highly Advanced",
+    "lower_level": "advanced",
+    "upper_level": "highly_advanced",
+    "key_discriminator": "At Advanced level the user implements excellent data management; at Highly Advanced they shape the infrastructure and policy that others use.",
+    "discriminator_type": "critical_use_vs_innovation",
+    "what_changes": "Shift from implementing data management plans to designing institutional data management infrastructure; from FAIR compliance to FAIR infrastructure development; from local to national/international standards contribution.",
+    "false_positives": [
+      {
+        "pattern": "Research Data Manager role",
+        "why_misleading": "The job title suggests Advanced competence but Highly Advanced requires shaping national or international standards or infrastructure, not just excellent local implementation",
+        "how_to_distinguish": "Look for contributions to RDMF, DCC, RDA, or equivalent international research data management bodies"
+      },
+      {
+        "pattern": "Multiple FAIR-compliant datasets published",
+        "why_misleading": "Excellent data publication practice is Advanced; Highly Advanced involves contributing to the FAIR framework itself or to institutional infrastructure that enables others to achieve FAIR compliance",
+        "how_to_distinguish": "Assess scholarly contribution to data management standards, not just compliance with them"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Institutional open research data policy authored or contributed to, with evidence of implementation and adoption",
+      "strong": "Published contribution to international research data infrastructure standards or governance (RDA working group, DCC guidance, OpenAIRE) with demonstrable sector impact"
+    },
+    "regression_risk": "Very low",
+    "assessment_difficulty": "Very high",
+    "ai_context": "Highly Advanced information managers are shaping institutional policy on AI-generated data as a distinct data type with its own provenance, quality, and retention challenges"
+  },
+  {
+    "id": "dc-2-1-BI",
+    "competency_id": "dc-2-1",
+    "competency_name": "Interacting through and with digital technologies",
+    "area": "Communication and Collaboration",
+    "boundary": "BI",
+    "boundary_label": "Basic to Intermediate",
+    "lower_level": "basic",
+    "upper_level": "intermediate",
+    "key_discriminator": "At Basic level the user participates in digital communication when given a link or prompt; at Intermediate they select channels strategically and facilitate digital interactions.",
+    "discriminator_type": "recognition_vs_application",
+    "what_changes": "Shift from reactive participation to proactive channel selection; from joining meetings to facilitating them; from using provided communication structures to designing them.",
+    "false_positives": [
+      {
+        "pattern": "High volume of digital messages",
+        "why_misleading": "Frequent communication does not indicate strategic channel selection or facilitation capability",
+        "how_to_distinguish": "Assess whether the person makes deliberate choices between email, Teams chat, video call, and async document based on communication type and audience"
+      },
+      {
+        "pattern": "Fluent video call participation",
+        "why_misleading": "Comfortable video call use is achievable at Basic level; Intermediate involves managing the meeting, not just attending",
+        "how_to_distinguish": "Ask for evidence of organising and facilitating an online meeting, not just attending one"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Can explain why they would choose different channels for a time-sensitive urgent message vs a complex discussion vs a permanent record",
+      "strong": "Evidence of facilitating a synchronous online session with multiple participants, managing turn-taking and follow-up"
+    },
+    "regression_risk": "Low -- interaction skills are reinforced by daily practice",
+    "assessment_difficulty": "Medium -- observable through meeting participation and communication artefacts",
+    "ai_context": "The BI boundary includes AI communication tool awareness: Intermediate users actively use AI meeting summaries and AI-assisted translation while maintaining awareness of their limitations"
+  },
+  {
+    "id": "dc-2-1-IA",
+    "competency_id": "dc-2-1",
+    "competency_name": "Interacting through and with digital technologies",
+    "area": "Communication and Collaboration",
+    "boundary": "IA",
+    "boundary_label": "Intermediate to Advanced",
+    "lower_level": "intermediate",
+    "upper_level": "advanced",
+    "key_discriminator": "At Intermediate level the user is an effective digital communicator; at Advanced they design communication systems and critically evaluate tool implications.",
+    "discriminator_type": "application_vs_critical_use",
+    "what_changes": "Shift from effective participation to system design; from using communication tools to evaluating them critically for their organisational, ethical, and accessibility implications.",
+    "false_positives": [
+      {
+        "pattern": "Heavy Teams or Slack power user",
+        "why_misleading": "Advanced tool fluency may still be sophisticated application rather than critical design of communication architecture",
+        "how_to_distinguish": "Ask whether the person has designed a communication protocol for a team, not just used existing channels effectively"
+      },
+      {
+        "pattern": "Training others in Teams features",
+        "why_misleading": "Feature training is an Intermediate activity; Advanced communication expertise involves designing the overall communication environment, not just specific tool features",
+        "how_to_distinguish": "Look for evidence of designing communication norms, channel structures, and policy contributions, not just tool tutorials"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Has authored a communication protocol or digital working agreement for a team that includes rationale for channel and tool choices",
+      "strong": "Institutional communication policy contribution that addresses accessibility, data protection implications, and AI communication tool governance"
+    },
+    "regression_risk": "Low",
+    "assessment_difficulty": "High",
+    "ai_context": "Advanced communicators critically evaluate AI features in communication platforms (auto-summaries, AI-moderated discussions) for appropriateness and accuracy before institutional adoption"
+  },
+  {
+    "id": "dc-2-1-AH",
+    "competency_id": "dc-2-1",
+    "competency_name": "Interacting through and with digital technologies",
+    "area": "Communication and Collaboration",
+    "boundary": "AH",
+    "boundary_label": "Advanced to Highly Advanced",
+    "lower_level": "advanced",
+    "upper_level": "highly_advanced",
+    "key_discriminator": "At Advanced level the user designs excellent communication environments; at Highly Advanced they shape sector norms and contribute to scholarly or policy discourse.",
+    "discriminator_type": "critical_use_vs_innovation",
+    "what_changes": "Shift from institutional leadership to sector influence; from designing systems to publishing on or regulating the systems others design.",
+    "false_positives": [
+      {
+        "pattern": "Head of Digital Communications role",
+        "why_misleading": "Institutional leadership demonstrates Advanced practice; Highly Advanced requires sector or scholarly contribution beyond the institution",
+        "how_to_distinguish": "Look for published work, policy contributions, or standards body involvement"
+      },
+      {
+        "pattern": "Large professional network",
+        "why_misleading": "Network size is not competence; the quality and influence of scholarly or policy contribution matters",
+        "how_to_distinguish": "Assess publication or policy contribution record rather than social network metrics"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Published or widely cited framework on digital communication in HE, or formal advisory contribution to national communication policy",
+      "strong": "Scholarly publication on AI-mediated communication ethics, accessibility standards contribution, or regulatory advisory role"
+    },
+    "regression_risk": "Very low",
+    "assessment_difficulty": "Very high",
+    "ai_context": "Highly Advanced practitioners are contributing to the discourse on what AI-mediated communication means for human connection, authenticity, and professional accountability in HE"
+  },
+  {
+    "id": "dc-2-2-BI",
+    "competency_id": "dc-2-2",
+    "competency_name": "Sharing through digital technologies",
+    "area": "Communication and Collaboration",
+    "boundary": "BI",
+    "boundary_label": "Basic to Intermediate",
+    "lower_level": "basic",
+    "upper_level": "intermediate",
+    "key_discriminator": "At Basic level content is shared with permission controls applied; at Intermediate licences are understood and applied, and open sharing is practised.",
+    "discriminator_type": "recognition_vs_application",
+    "what_changes": "Shift from managed sharing to licensed open sharing; from knowing sharing exists to selecting appropriate licence types; from compliance to proactive open access practice.",
+    "false_positives": [
+      {
+        "pattern": "Uses OneDrive sharing settings correctly",
+        "why_misleading": "Access control is Basic-level sharing competence; Intermediate involves understanding licences for open sharing beyond institutional boundaries",
+        "how_to_distinguish": "Ask whether the person understands the difference between CC BY and CC BY-NC-ND and when they would choose each"
+      },
+      {
+        "pattern": "Publishes on ResearchGate",
+        "why_misleading": "Uploading to ResearchGate may be done without awareness of the legal or licensing implications",
+        "how_to_distinguish": "Ask whether the person selected a licence, checked publisher embargo, or understood green vs gold open access before uploading"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Can correctly select and apply a Creative Commons licence to an original piece of work and explain what permissions it grants",
+      "strong": "Open access publication deposited in institutional repository with correct licence and funder compliance documentation"
+    },
+    "regression_risk": "Medium -- licence knowledge requires periodic updating as funder mandates evolve",
+    "assessment_difficulty": "Medium -- licence practice is observable through deposit records",
+    "ai_context": "The BI boundary includes AI output sharing: Intermediate sharers understand that sharing AI-assisted work requires disclosure and appropriate licence consideration"
+  },
+  {
+    "id": "dc-2-2-IA",
+    "competency_id": "dc-2-2",
+    "competency_name": "Sharing through digital technologies",
+    "area": "Communication and Collaboration",
+    "boundary": "IA",
+    "boundary_label": "Intermediate to Advanced",
+    "lower_level": "intermediate",
+    "upper_level": "advanced",
+    "key_discriminator": "At Intermediate level the user shares their work correctly; at Advanced they advise others and design open sharing strategies.",
+    "discriminator_type": "application_vs_critical_use",
+    "what_changes": "Shift from personal compliance to institutional strategy; from selecting licences to advising on complex licence scenarios; from following mandates to designing data sharing workflows.",
+    "false_positives": [
+      {
+        "pattern": "Publishes all work open access",
+        "why_misleading": "Personal open access compliance is Intermediate; Advanced involves strategic design and advising others across complex scenarios",
+        "how_to_distinguish": "Ask whether the person advises others on publisher agreements, embargo management, or FAIR data sharing; if not, they are Intermediate"
+      },
+      {
+        "pattern": "Deposits all research data publicly",
+        "why_misleading": "Data deposit is good practice at Intermediate; Advanced involves understanding the FAIR principles in depth, negotiating data sharing agreements, and navigating privacy constraints",
+        "how_to_distinguish": "Ask about a scenario involving personal data in a dataset -- Advanced practitioners navigate anonymisation, consent, and sharing restrictions; Intermediate practitioners may not"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Can advise a colleague on the correct open access route for a paper with a specific funder requirement, including embargo and self-archiving options",
+      "strong": "FAIR-compliant research data package with full metadata, licence, and sharing documentation for a complex dataset"
+    },
+    "regression_risk": "Low",
+    "assessment_difficulty": "High",
+    "ai_context": "Advanced sharers navigate the evolving norms for sharing AI-assisted research outputs, including attribution and licence implications of AI-generated components"
+  },
+  {
+    "id": "dc-2-2-AH",
+    "competency_id": "dc-2-2",
+    "competency_name": "Sharing through digital technologies",
+    "area": "Communication and Collaboration",
+    "boundary": "AH",
+    "boundary_label": "Advanced to Highly Advanced",
+    "lower_level": "advanced",
+    "upper_level": "highly_advanced",
+    "key_discriminator": "At Advanced level the user implements expert open sharing; at Highly Advanced they shape international open science infrastructure and policy.",
+    "discriminator_type": "critical_use_vs_innovation",
+    "what_changes": "Shift from implementing excellent practice to building the infrastructure and governance that others rely on.",
+    "false_positives": [
+      {
+        "pattern": "Repository manager",
+        "why_misleading": "Operational repository management is Advanced; Highly Advanced involves governance of open science standards and infrastructure beyond one institution",
+        "how_to_distinguish": "Look for ORCID governance participation, DataCite or OpenAIRE involvement, or scholarly contribution to open science policy"
+      },
+      {
+        "pattern": "Many data deposits and publications",
+        "why_misleading": "Volume demonstrates practice; Highly Advanced requires sector shaping",
+        "how_to_distinguish": "Assess scholarly contribution to open science standards rather than quantity of deposits"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Published scholarly work on open science governance or formal contribution to international open science infrastructure",
+      "strong": "Governance role in OpenAIRE, DataCite, Creative Commons, or equivalent international open science infrastructure"
+    },
+    "regression_risk": "Very low",
+    "assessment_difficulty": "Very high",
+    "ai_context": "Highly Advanced practitioners are shaping the policy response to AI and open science: what provenance, attribution, and reproducibility standards are needed when AI mediates knowledge creation"
+  },
+  {
+    "id": "dc-2-3-BI",
+    "competency_id": "dc-2-3",
+    "competency_name": "Engaging in citizenship through digital technologies",
+    "area": "Communication and Collaboration",
+    "boundary": "BI",
+    "boundary_label": "Basic to Intermediate",
+    "lower_level": "basic",
+    "upper_level": "intermediate",
+    "key_discriminator": "At Basic level the user participates in digital civic activities when prompted; at Intermediate they engage critically and contribute proactively to digital civic spaces.",
+    "discriminator_type": "recognition_vs_application",
+    "what_changes": "Shift from passive participation to active, critical engagement; from completing surveys to contributing to consultations; from following institutional channels to critically evaluating civic digital information.",
+    "false_positives": [
+      {
+        "pattern": "Active social media user",
+        "why_misleading": "Social media activity is not civic participation; Intermediate digital citizenship involves contributing to governance processes, not social broadcasting",
+        "how_to_distinguish": "Ask for examples of contributing to institutional consultations, professional body governance, or civic technology initiatives"
+      },
+      {
+        "pattern": "Student union member",
+        "why_misleading": "Membership is Basic; active participation in student union digital governance and contributing to institutional decision-making is Intermediate",
+        "how_to_distinguish": "Ask whether the person has responded to consultations or contributed to governance processes, not just attended events"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Has submitted a response to an institutional or professional consultation through digital channels and can explain the process",
+      "strong": "Active engagement with professional community digital platforms showing constructive contribution to field-relevant discussions"
+    },
+    "regression_risk": "Medium -- civic digital engagement requires ongoing motivation",
+    "assessment_difficulty": "Medium",
+    "ai_context": "Intermediate citizens recognise AI-generated civic content and apply critical evaluation to algorithmically curated civic information"
+  },
+  {
+    "id": "dc-2-3-IA",
+    "competency_id": "dc-2-3",
+    "competency_name": "Engaging in citizenship through digital technologies",
+    "area": "Communication and Collaboration",
+    "boundary": "IA",
+    "boundary_label": "Intermediate to Advanced",
+    "lower_level": "intermediate",
+    "upper_level": "advanced",
+    "key_discriminator": "At Intermediate level the user is an active digital citizen; at Advanced they design and facilitate digital civic engagement initiatives.",
+    "discriminator_type": "application_vs_critical_use",
+    "what_changes": "Shift from participation to facilitation and advocacy; from engaging in civic digital spaces to designing and improving them.",
+    "false_positives": [
+      {
+        "pattern": "Active Twitter/X public intellectual",
+        "why_misleading": "Public digital commentary is a form of digital citizenship but not the same as designing inclusive civic participation processes",
+        "how_to_distinguish": "Ask for evidence of facilitating or designing a civic participation process, not just contributing to public discussion"
+      },
+      {
+        "pattern": "Regular consultation respondent",
+        "why_misleading": "Responding to consultations is Intermediate; Advanced involves designing consultations and advocacy for inclusive participation",
+        "how_to_distinguish": "Look for leadership of participation processes, design of engagement tools, or advocacy work"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Has designed or facilitated a digital civic engagement process with attention to inclusivity and documented outcomes",
+      "strong": "Published policy response, advocacy campaign, or research contribution on digital civic participation in HE"
+    },
+    "regression_risk": "Low",
+    "assessment_difficulty": "High",
+    "ai_context": "Advanced digital citizens advocate for AI-literate democratic participation and contribute to discourse on AI and democratic integrity"
+  },
+  {
+    "id": "dc-2-3-AH",
+    "competency_id": "dc-2-3",
+    "competency_name": "Engaging in citizenship through digital technologies",
+    "area": "Communication and Collaboration",
+    "boundary": "AH",
+    "boundary_label": "Advanced to Highly Advanced",
+    "lower_level": "advanced",
+    "upper_level": "highly_advanced",
+    "key_discriminator": "At Advanced level the user is a civic engagement leader; at Highly Advanced they shape national or international policy on digital democracy.",
+    "discriminator_type": "critical_use_vs_innovation",
+    "what_changes": "Shift from institutional leadership to sector or national policy influence.",
+    "false_positives": [
+      {
+        "pattern": "Active civic technology developer",
+        "why_misleading": "Building civic tech tools is Advanced; Highly Advanced involves shaping the governance and regulatory framework for digital civic participation",
+        "how_to_distinguish": "Look for policy advisory roles, published scholarship, or formal regulatory contribution"
+      },
+      {
+        "pattern": "Senior student engagement professional",
+        "why_misleading": "Institutional seniority in civic engagement is Advanced; sector or national influence distinguishes Highly Advanced",
+        "how_to_distinguish": "Assess national or international policy contribution rather than institutional role"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Formal contribution to national digital democracy policy or published scholarship on digital civic participation in HE",
+      "strong": "Advisory panel membership for digital democracy, AI regulation, or civic technology governance at national or international level"
+    },
+    "regression_risk": "Very low",
+    "assessment_difficulty": "Very high",
+    "ai_context": "At this level individuals are shaping national policy on AI and democratic participation"
+  },
+  {
+    "id": "dc-2-4-BI",
+    "competency_id": "dc-2-4",
+    "competency_name": "Collaborating through digital technologies",
+    "area": "Communication and Collaboration",
+    "boundary": "BI",
+    "boundary_label": "Basic to Intermediate",
+    "lower_level": "basic",
+    "upper_level": "intermediate",
+    "key_discriminator": "At Basic level collaboration tools are used when set up by others; at Intermediate the user coordinates digital projects and establishes collaborative norms.",
+    "discriminator_type": "recognition_vs_application",
+    "what_changes": "Shift from participation to coordination; from using shared tools to setting up and managing collaborative workflows and norms.",
+    "false_positives": [
+      {
+        "pattern": "Frequent shared document user",
+        "why_misleading": "Using shared documents is Basic; Intermediate involves coordinating workflows and establishing team norms around collaborative tools",
+        "how_to_distinguish": "Ask whether the person has set up a project management system or established collaborative working agreements for a team"
+      },
+      {
+        "pattern": "Regular Teams or Slack user",
+        "why_misleading": "Daily platform use is Basic; Intermediate coordination involves deliberate workflow design and task management",
+        "how_to_distinguish": "Ask for evidence of using a project management tool (Trello, Asana, MS Planner) to coordinate a team task with deadlines and responsibilities"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Can set up and manage a collaborative project space (shared document library, task board) for a small team and onboard others",
+      "strong": "Project management board or documented workflow showing coordinated multi-person task completion across an asynchronous team"
+    },
+    "regression_risk": "Low",
+    "assessment_difficulty": "Medium",
+    "ai_context": "Intermediate collaborators are establishing team norms for AI tool use in collaborative work including attribution and quality checking"
+  },
+  {
+    "id": "dc-2-4-IA",
+    "competency_id": "dc-2-4",
+    "competency_name": "Collaborating through digital technologies",
+    "area": "Communication and Collaboration",
+    "boundary": "IA",
+    "boundary_label": "Intermediate to Advanced",
+    "lower_level": "intermediate",
+    "upper_level": "advanced",
+    "key_discriminator": "At Intermediate level the user coordinates digital collaborations; at Advanced they design collaboration environments and lead complex interdisciplinary projects.",
+    "discriminator_type": "application_vs_critical_use",
+    "what_changes": "Shift from coordinating to designing; from single-team collaboration to leading complex interdisciplinary or international projects.",
+    "false_positives": [
+      {
+        "pattern": "Experienced project coordinator",
+        "why_misleading": "Operational coordination competence may plateau at Intermediate; Advanced design involves selecting and configuring tools for specific collaboration goals and managing interdisciplinary complexity",
+        "how_to_distinguish": "Ask whether the person has designed a collaboration environment from scratch for a specific project goal, including tool selection rationale and accessibility considerations"
+      },
+      {
+        "pattern": "Many collaborative publications",
+        "why_misleading": "High publication collaboration demonstrates research network engagement but not necessarily advanced digital collaboration design",
+        "how_to_distinguish": "Ask about the collaboration infrastructure used -- did they design it or use what was given?"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Has designed a digital collaboration environment for a research team or educational cohort with documented rationale for tool selection and configuration",
+      "strong": "Leadership of an interdisciplinary or international collaborative research project with documented collaboration infrastructure and evaluation"
+    },
+    "regression_risk": "Low",
+    "assessment_difficulty": "High",
+    "ai_context": "Advanced collaborators design ethical AI-human collaborative environments with explicit norms for attribution and quality assurance"
+  },
+  {
+    "id": "dc-2-4-AH",
+    "competency_id": "dc-2-4",
+    "competency_name": "Collaborating through digital technologies",
+    "area": "Communication and Collaboration",
+    "boundary": "AH",
+    "boundary_label": "Advanced to Highly Advanced",
+    "lower_level": "advanced",
+    "upper_level": "highly_advanced",
+    "key_discriminator": "At Advanced level the user leads complex collaborations; at Highly Advanced they shape the infrastructure and policy that enables digital collaboration at scale.",
+    "discriminator_type": "critical_use_vs_innovation",
+    "what_changes": "Shift from project leadership to infrastructure development and sector influence.",
+    "false_positives": [
+      {
+        "pattern": "PI on large international project",
+        "why_misleading": "Leading international research collaborations is Advanced; Highly Advanced involves contributing to the infrastructure and standards others use",
+        "how_to_distinguish": "Look for contributions to open science platforms, collaborative research standards, or scholarly work on the future of digital collaboration"
+      },
+      {
+        "pattern": "Active in many collaborative projects",
+        "why_misleading": "Volume of collaboration does not indicate infrastructure contribution",
+        "how_to_distinguish": "Assess contribution to collaboration tools, standards, or sector guidance rather than project count"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Published scholarly contribution to the theory or practice of digital collaboration in HE, or formal contribution to a national/international collaboration platform or standard",
+      "strong": "Leadership of a major open science infrastructure project or widely adopted collaboration framework for HE research"
+    },
+    "regression_risk": "Very low",
+    "assessment_difficulty": "Very high",
+    "ai_context": "Highly Advanced practitioners shape norms for human-AI collaborative knowledge production in research"
+  },
+  {
+    "id": "dc-2-5-BI",
+    "competency_id": "dc-2-5",
+    "competency_name": "Digital behaviour",
+    "area": "Communication and Collaboration",
+    "boundary": "BI",
+    "boundary_label": "Basic to Intermediate",
+    "lower_level": "basic",
+    "upper_level": "intermediate",
+    "key_discriminator": "At Basic level the user avoids obvious digital misconduct; at Intermediate they understand and can articulate institutional policy and model positive digital behaviour.",
+    "discriminator_type": "recognition_vs_application",
+    "what_changes": "Shift from avoiding obvious violations to actively modelling and explaining institutional norms; from reactive (don't do bad things) to proactive (actively cultivate positive digital culture).",
+    "false_positives": [
+      {
+        "pattern": "No conduct complaints",
+        "why_misleading": "Absence of complaints indicates Basic avoidance; Intermediate involves active modelling of positive norms and ability to support others",
+        "how_to_distinguish": "Ask whether the person can explain the reasoning behind institutional digital conduct policies and has helped others navigate conduct challenges"
+      },
+      {
+        "pattern": "Professional tone in all communications",
+        "why_misleading": "Good personal behaviour is Basic; Intermediate includes supporting and modelling for others in shared digital spaces",
+        "how_to_distinguish": "Look for evidence of addressing a conduct issue constructively or helping establish ground rules for a digital collaborative space"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Can explain institutional digital conduct policies, their rationale, and apply them to a non-obvious case scenario",
+      "strong": "Evidence of constructively addressing a digital conduct situation or helping a peer group establish positive digital norms"
+    },
+    "regression_risk": "Low",
+    "assessment_difficulty": "Medium",
+    "ai_context": "Intermediate digital behaviour includes understanding and applying institutional AI use policies and recognising AI-enabled misconduct"
+  },
+  {
+    "id": "dc-2-5-IA",
+    "competency_id": "dc-2-5",
+    "competency_name": "Digital behaviour",
+    "area": "Communication and Collaboration",
+    "boundary": "IA",
+    "boundary_label": "Intermediate to Advanced",
+    "lower_level": "intermediate",
+    "upper_level": "advanced",
+    "key_discriminator": "At Intermediate level the user models good behaviour and applies policy; at Advanced they design and deliver training and contribute to policy development.",
+    "discriminator_type": "application_vs_critical_use",
+    "what_changes": "Shift from personal practice to institutional contribution; from following policy to shaping it.",
+    "false_positives": [
+      {
+        "pattern": "Module tutor who sets digital ground rules",
+        "why_misleading": "Setting ground rules for a class is Intermediate; Advanced involves designing institutional frameworks and training programmes that work at scale",
+        "how_to_distinguish": "Ask whether the person has designed a training programme or policy document for digital behaviour that has been adopted institutionally"
+      },
+      {
+        "pattern": "Personal academic integrity commitment",
+        "why_misleading": "Personal commitment is Intermediate; Advanced involves institutional contribution to integrity policy and culture",
+        "how_to_distinguish": "Look for policy authorship, training programme design, or institutional leadership contributions"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Has designed and delivered a digital behaviour or AI integrity training programme for an institutional audience",
+      "strong": "Contribution to institutional digital conduct policy, social media guidelines, or AI use policy with evidence of adoption"
+    },
+    "regression_risk": "Low",
+    "assessment_difficulty": "High",
+    "ai_context": "Advanced practitioners design AI behaviour frameworks for their institutions covering disclosure, impersonation, and the integrity implications of AI-assisted communication"
+  },
+  {
+    "id": "dc-2-5-AH",
+    "competency_id": "dc-2-5",
+    "competency_name": "Digital behaviour",
+    "area": "Communication and Collaboration",
+    "boundary": "AH",
+    "boundary_label": "Advanced to Highly Advanced",
+    "lower_level": "advanced",
+    "upper_level": "highly_advanced",
+    "key_discriminator": "At Advanced level the user is an institutional digital culture leader; at Highly Advanced they shape national or international discourse on digital behaviour ethics.",
+    "discriminator_type": "critical_use_vs_innovation",
+    "what_changes": "Shift from institutional to sector or scholarly influence.",
+    "false_positives": [
+      {
+        "pattern": "Active in online safety networks",
+        "why_misleading": "Professional community involvement is Advanced; Highly Advanced involves published scholarship or formal policy contribution",
+        "how_to_distinguish": "Look for peer-reviewed publications, government advisory roles, or national standards contributions"
+      },
+      {
+        "pattern": "Senior student experience leader",
+        "why_misleading": "Institutional seniority in this area is Advanced; national or international discourse contribution distinguishes Highly Advanced",
+        "how_to_distinguish": "Assess publication and policy contribution beyond institution"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Published scholarly work on digital behaviour, online harm, or AI ethics in HE, or formal advisory contribution to sector-level digital conduct standards",
+      "strong": "Advisory role with Online Safety regulator, ICO, AI governance body, or equivalent national/international authority on digital conduct"
+    },
+    "regression_risk": "Very low",
+    "assessment_difficulty": "Very high",
+    "ai_context": "At this level individuals shape regulatory frameworks for AI-enabled online harm and the obligations of HE institutions to protect their communities"
+  },
+  {
+    "id": "dc-2-6-BI",
+    "competency_id": "dc-2-6",
+    "competency_name": "Managing digital identity",
+    "area": "Communication and Collaboration",
+    "boundary": "BI",
+    "boundary_label": "Basic to Intermediate",
+    "lower_level": "basic",
+    "upper_level": "intermediate",
+    "key_discriminator": "At Basic level identity is managed by maintaining institutional profiles; at Intermediate a proactive, strategic digital identity is constructed and maintained across professional platforms.",
+    "discriminator_type": "recognition_vs_application",
+    "what_changes": "Shift from maintaining assigned profiles to constructing strategic professional identity; from reactive to proactive identity management; from institutional to cross-platform identity curation.",
+    "false_positives": [
+      {
+        "pattern": "Active LinkedIn profile",
+        "why_misleading": "Having a LinkedIn profile meets a basic threshold; Intermediate involves strategic, consistent, and regularly curated professional identity across multiple relevant platforms",
+        "how_to_distinguish": "Check whether the profile is current, actively managed, and part of a coherent cross-platform professional identity strategy"
+      },
+      {
+        "pattern": "ORCID account created",
+        "why_misleading": "Creating an ORCID is an entry-level action; Intermediate involves actively maintaining it, connecting publications, and using it in professional contexts",
+        "how_to_distinguish": "Ask when the ORCID was last updated and how it is integrated into the researcher's professional workflow"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Maintains an active, strategically curated professional identity across at least two relevant platforms (ORCID + LinkedIn, or equivalent), updated within the past 6 months",
+      "strong": "Evidence of a deliberate digital presence audit and privacy management review, with a strategic narrative consistency across institutional and professional platforms"
+    },
+    "regression_risk": "Medium -- digital identity requires ongoing curation",
+    "assessment_difficulty": "Low -- directly observable through profile review",
+    "ai_context": "Intermediate users begin managing their AI-generated digital identity: checking how AI search and recommendation systems represent them and taking steps to ensure accuracy"
+  },
+  {
+    "id": "dc-2-6-IA",
+    "competency_id": "dc-2-6",
+    "competency_name": "Managing digital identity",
+    "area": "Communication and Collaboration",
+    "boundary": "IA",
+    "boundary_label": "Intermediate to Advanced",
+    "lower_level": "intermediate",
+    "upper_level": "advanced",
+    "key_discriminator": "At Intermediate level the user manages their own digital identity; at Advanced they manage complex, multi-audience identities and advise others.",
+    "discriminator_type": "application_vs_critical_use",
+    "what_changes": "Shift from personal management to strategic multi-audience navigation and advising; from maintaining profiles to managing reputation, boundaries, and complex identity situations.",
+    "false_positives": [
+      {
+        "pattern": "Active on multiple professional platforms",
+        "why_misleading": "Multi-platform presence is Intermediate; Advanced involves strategic navigation of complex identity situations (institutional vs personal boundary management, public intellectual role)",
+        "how_to_distinguish": "Ask whether the person has navigated a complex identity situation (responding to a reputational challenge online, managing the boundary between institutional and personal digital voice) and how they approached it"
+      },
+      {
+        "pattern": "Provides career advice to students",
+        "why_misleading": "General career advice may not include digital identity coaching; Advanced identity competence involves specifically advising on digital presence, platform choice, and privacy management for academic and professional contexts",
+        "how_to_distinguish": "Ask for specific examples of advising on digital identity development, not just generic career coaching"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Has advised a student or colleague through a digital identity development process including platform choice, content strategy, and privacy management",
+      "strong": "Evidence of strategic management of a complex digital identity across public, professional, and institutional audiences, including navigating a reputational or boundary challenge"
+    },
+    "regression_risk": "Low",
+    "assessment_difficulty": "High",
+    "ai_context": "Advanced identity managers actively monitor and manage how AI systems represent them and contribute to institutional guidance on AI-generated digital identity"
+  },
+  {
+    "id": "dc-2-6-AH",
+    "competency_id": "dc-2-6",
+    "competency_name": "Managing digital identity",
+    "area": "Communication and Collaboration",
+    "boundary": "AH",
+    "boundary_label": "Advanced to Highly Advanced",
+    "lower_level": "advanced",
+    "upper_level": "highly_advanced",
+    "key_discriminator": "At Advanced level the user manages complex digital identities and advises others; at Highly Advanced they shape institutional and sector policy on digital identity governance.",
+    "discriminator_type": "critical_use_vs_innovation",
+    "what_changes": "Shift from expert practice to policy influence and scholarly contribution.",
+    "false_positives": [
+      {
+        "pattern": "Digital presence expert consultant",
+        "why_misleading": "Commercial digital identity consulting is Advanced; Highly Advanced involves scholarly contribution to or institutional governance of digital identity frameworks",
+        "how_to_distinguish": "Look for published work on digital identity governance, data rights, or AI profiling in academic or policy contexts"
+      },
+      {
+        "pattern": "Senior HR leader with digital identity policy remit",
+        "why_misleading": "Institutional policy responsibility is Advanced; Highly Advanced requires sector or national influence",
+        "how_to_distinguish": "Assess national or international contribution"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Published scholarly work or policy contribution on digital identity governance, algorithmic profiling, or data rights in HE",
+      "strong": "Leadership of an institutional or sector-wide digital identity governance initiative, or formal advisory contribution to GDPR, AI Act, or data rights policy"
+    },
+    "regression_risk": "Very low",
+    "assessment_difficulty": "Very high",
+    "ai_context": "At this level individuals shape the rights framework for AI-generated digital identity, including contestability, accuracy obligations, and governance standards"
+  },
+  {
+    "id": "dc-3-1-BI",
+    "competency_id": "dc-3-1",
+    "competency_name": "Developing digital content",
+    "area": "Content Creation",
+    "boundary": "BI",
+    "boundary_label": "Basic to Intermediate",
+    "lower_level": "basic",
+    "upper_level": "intermediate",
+    "key_discriminator": "At Basic level digital content is created using templates for required tasks; at Intermediate purposeful, accessible content is produced for real audiences using appropriate formats.",
+    "discriminator_type": "recognition_vs_application",
+    "what_changes": "Shift from task completion to audience-oriented communication; from template use to format selection; from production to accessible, purpose-driven design.",
+    "false_positives": [
+      {
+        "pattern": "Polished assignment presentations",
+        "why_misleading": "Good-looking coursework may be template-based and not reflect independent format selection or accessibility awareness",
+        "how_to_distinguish": "Ask whether the person can explain why they chose the format and what accessibility features they applied; absence of accessibility consideration indicates Basic"
+      },
+      {
+        "pattern": "Regular social media posting",
+        "why_misleading": "Personal social media content production is not the same as producing purposeful professional or educational digital content",
+        "how_to_distinguish": "Ask for examples of producing digital content for a specific institutional or professional audience, with documented audience consideration and format justification"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Has produced a piece of digital content (video, infographic, interactive resource) for a specific real audience with documented format choice rationale and accessibility features applied",
+      "strong": "Digital portfolio or e-learning resource demonstrating consistent application of accessibility guidelines (alt text, captions, contrast) across multiple content types"
+    },
+    "regression_risk": "Medium",
+    "assessment_difficulty": "Medium",
+    "ai_context": "The BI boundary includes AI content tool awareness: Intermediate creators use AI generation tools with critical evaluation of accuracy, bias, and disclosure requirements"
+  },
+  {
+    "id": "dc-3-1-IA",
+    "competency_id": "dc-3-1",
+    "competency_name": "Developing digital content",
+    "area": "Content Creation",
+    "boundary": "IA",
+    "boundary_label": "Intermediate to Advanced",
+    "lower_level": "intermediate",
+    "upper_level": "advanced",
+    "key_discriminator": "At Intermediate level the user produces quality accessible content; at Advanced they lead complex production projects and develop institutional standards.",
+    "discriminator_type": "application_vs_critical_use",
+    "what_changes": "Shift from individual production to project leadership; from following standards to developing them; from creating for one's own audience to designing for institutional or public contexts.",
+    "false_positives": [
+      {
+        "pattern": "High-quality course materials",
+        "why_misleading": "Excellent personal content production is Intermediate; Advanced involves leading production projects, coordinating teams, and contributing to institutional content standards",
+        "how_to_distinguish": "Ask whether the person has led a multi-person content production project or contributed to institutional content quality frameworks"
+      },
+      {
+        "pattern": "e-learning module creator",
+        "why_misleading": "Creating e-learning modules is achievable at Intermediate; Advanced involves systematic quality assurance, accessibility auditing, and coordinating specialist contributors",
+        "how_to_distinguish": "Ask about the production process: was it solo or coordinated? Was it formally accessibility-tested? Was it evaluated against pedagogical quality criteria?"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Has led a complex digital content production project involving multiple contributors with documented quality assurance and accessibility processes",
+      "strong": "Institutional e-learning course or OER with formal accessibility audit, pedagogical quality review, and evidence of real audience impact"
+    },
+    "regression_risk": "Low",
+    "assessment_difficulty": "High",
+    "ai_context": "Advanced content producers design institutional AI content policies addressing disclosure, quality standards, and pedagogical integrity for AI-assisted production"
+  },
+  {
+    "id": "dc-3-1-AH",
+    "competency_id": "dc-3-1",
+    "competency_name": "Developing digital content",
+    "area": "Content Creation",
+    "boundary": "AH",
+    "boundary_label": "Advanced to Highly Advanced",
+    "lower_level": "advanced",
+    "upper_level": "highly_advanced",
+    "key_discriminator": "At Advanced level the user leads institutional content production; at Highly Advanced they shape the field through scholarly contribution and sector leadership.",
+    "discriminator_type": "critical_use_vs_innovation",
+    "what_changes": "Shift from institutional leadership to sector influence and scholarly contribution.",
+    "false_positives": [
+      {
+        "pattern": "Prolific OER contributor",
+        "why_misleading": "Contributing many OERs is Advanced practice; Highly Advanced involves shaping OER policy and infrastructure or publishing scholarly work on digital content design",
+        "how_to_distinguish": "Look for national OER leadership, scholarly publication on digital pedagogy, or framework development"
+      },
+      {
+        "pattern": "Award-winning digital content",
+        "why_misleading": "Excellent individual content is Advanced; Highly Advanced requires sector influence beyond the quality of individual outputs",
+        "how_to_distinguish": "Assess scholarly and policy contribution rather than individual output quality"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Published research or sector-leading resource on digital content design in HE, or leadership of a national OER initiative",
+      "strong": "UNESCO OER-aligned contribution, scholarly publication on AI and digital content production in education, or national digital curriculum policy contribution"
+    },
+    "regression_risk": "Very low",
+    "assessment_difficulty": "Very high",
+    "ai_context": "Highly Advanced content practitioners are shaping the scholarly discourse on AI and human creativity in educational content production"
+  },
+  {
+    "id": "dc-3-2-BI",
+    "competency_id": "dc-3-2",
+    "competency_name": "Integrating and re-elaborating digital content",
+    "area": "Content Creation",
+    "boundary": "BI",
+    "boundary_label": "Basic to Intermediate",
+    "lower_level": "basic",
+    "upper_level": "intermediate",
+    "key_discriminator": "At Basic level existing content is combined; at Intermediate it is synthesised and re-elaborated with original analytical contribution.",
+    "discriminator_type": "recognition_vs_application",
+    "what_changes": "Shift from collation to synthesis; from combining to transforming; from descriptive to analytical integration of sources.",
+    "false_positives": [
+      {
+        "pattern": "Long essays drawing on many sources",
+        "why_misleading": "Volume of sources does not indicate synthesis; many long essays are at Basic level because they describe rather than integrate",
+        "how_to_distinguish": "Check whether the student's own analysis connects the sources or whether each source is treated in isolation"
+      },
+      {
+        "pattern": "Correct referencing of adapted content",
+        "why_misleading": "Correct attribution is a Basic behaviour; Intermediate synthesis involves transformative intellectual contribution, not just accurate reference management",
+        "how_to_distinguish": "Ask the student to explain what they added to the sources they used; Intermediate users can articulate their synthesising contribution"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "A literature review or synthesis report that demonstrably goes beyond description to construct an original analytical framework connecting multiple sources",
+      "strong": "Adapted educational resource based on multiple OERs with documented adaptation rationale and added pedagogical value beyond the source materials"
+    },
+    "regression_risk": "Medium",
+    "assessment_difficulty": "Medium -- requires content-expert assessment",
+    "ai_context": "Intermediate users use AI synthesis tools with critical evaluation and explicit documentation of AI's contribution to the integration process"
+  },
+  {
+    "id": "dc-3-2-IA",
+    "competency_id": "dc-3-2",
+    "competency_name": "Integrating and re-elaborating digital content",
+    "area": "Content Creation",
+    "boundary": "IA",
+    "boundary_label": "Intermediate to Advanced",
+    "lower_level": "intermediate",
+    "upper_level": "advanced",
+    "key_discriminator": "At Intermediate level the user produces quality synthesis; at Advanced they conduct rigorous evidence synthesis with methodological sophistication.",
+    "discriminator_type": "application_vs_critical_use",
+    "what_changes": "Shift from analytical synthesis to methodologically rigorous evidence synthesis; from individual research practice to team and institutional knowledge production.",
+    "false_positives": [
+      {
+        "pattern": "Good literature reviews",
+        "why_misleading": "High-quality narrative literature reviews are Intermediate; Advanced requires systematic methodology including quality appraisal and reproducible synthesis",
+        "how_to_distinguish": "Ask whether the review used a formal quality appraisal tool (CASP, GRADE), documented inclusion criteria, and could be reproduced by another researcher following the methods"
+      },
+      {
+        "pattern": "Published review articles",
+        "why_misleading": "Published narrative reviews may be advanced within their discipline but not constitute Advanced re-elaboration unless they demonstrate systematic methodology",
+        "how_to_distinguish": "Check for methodological rigour indicators: PROSPERO registration, PRISMA reporting, formal quality appraisal"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Evidence synthesis using a formal quality appraisal framework with documented methodology that could be reproduced by another researcher",
+      "strong": "Published or registered systematic review or meta-analysis with full PRISMA reporting and formal quality appraisal"
+    },
+    "regression_risk": "Low",
+    "assessment_difficulty": "High",
+    "ai_context": "Advanced re-elaborators document AI tool contributions to synthesis processes with explicit methodological transparency"
+  },
+  {
+    "id": "dc-3-2-AH",
+    "competency_id": "dc-3-2",
+    "competency_name": "Integrating and re-elaborating digital content",
+    "area": "Content Creation",
+    "boundary": "AH",
+    "boundary_label": "Advanced to Highly Advanced",
+    "lower_level": "advanced",
+    "upper_level": "highly_advanced",
+    "key_discriminator": "At Advanced level the user conducts expert evidence synthesis; at Highly Advanced they shape synthesis methodology itself.",
+    "discriminator_type": "critical_use_vs_innovation",
+    "what_changes": "Shift from conducting systematic reviews to developing the methodology others use for conducting them.",
+    "false_positives": [
+      {
+        "pattern": "Many systematic reviews",
+        "why_misleading": "Prolific systematic review production demonstrates Advanced practice; Highly Advanced requires methodological contribution",
+        "how_to_distinguish": "Look for published methodology papers, consortium leadership, or Cochrane/Campbell Collaboration involvement"
+      },
+      {
+        "pattern": "Systematic review team leader",
+        "why_misleading": "Leading systematic review teams is Advanced; Highly Advanced involves contributing to the standards and methods the field uses",
+        "how_to_distinguish": "Assess methodological publication record and professional community leadership"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Published methodological contribution to evidence synthesis, adopted or cited by other practitioners or teams",
+      "strong": "Cochrane, Campbell, EPPI-Centre, or equivalent consortium membership with methodological contribution; or published epistemological work on AI and evidence synthesis"
+    },
+    "regression_risk": "Very low",
+    "assessment_difficulty": "Very high",
+    "ai_context": "Highly Advanced synthesis experts are shaping the epistemological and methodological standards for AI-assisted evidence synthesis"
+  },
+  {
+    "id": "dc-3-3-BI",
+    "competency_id": "dc-3-3",
+    "competency_name": "Copyright and licences",
+    "area": "Content Creation",
+    "boundary": "BI",
+    "boundary_label": "Basic to Intermediate",
+    "lower_level": "basic",
+    "upper_level": "intermediate",
+    "key_discriminator": "At Basic level copyright is avoided through attribution; at Intermediate licence types are understood and applied correctly.",
+    "discriminator_type": "recognition_vs_application",
+    "what_changes": "Shift from attribution-as-compliance to licence selection and application; from avoiding infringement to enabling appropriate reuse through correct licensing.",
+    "false_positives": [
+      {
+        "pattern": "Consistent referencing",
+        "why_misleading": "Attribution practice is Basic; Intermediate requires understanding of licence types, not just citation norms",
+        "how_to_distinguish": "Ask whether the person knows the difference between CC BY and CC BY-NC and when they would choose each for their own work"
+      },
+      {
+        "pattern": "Images sourced from Unsplash or Pexels",
+        "why_misleading": "Using free image sites is a Basic strategy; Intermediate copyright competence requires understanding the specific licence conditions of each platform and verifying them at source",
+        "how_to_distinguish": "Ask whether the person checked the specific licence for each image and whether they understand what commercial vs non-commercial means in that context"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Can correctly apply a CC licence to original work and explain the conditions it places on reuse; can identify the licence of a third-party resource and explain whether and how it can be adapted",
+      "strong": "Work published with correct CC licence choice with documented rationale; evidence of navigating an institutional licence for teaching material use"
+    },
+    "regression_risk": "Medium -- licence knowledge requires updating as mandates evolve",
+    "assessment_difficulty": "Medium",
+    "ai_context": "The BI boundary now includes awareness of AI copyright ambiguity: Intermediate users understand that the status of AI-generated content is unsettled and seek institutional guidance before sharing"
+  },
+  {
+    "id": "dc-3-3-IA",
+    "competency_id": "dc-3-3",
+    "competency_name": "Copyright and licences",
+    "area": "Content Creation",
+    "boundary": "IA",
+    "boundary_label": "Intermediate to Advanced",
+    "lower_level": "intermediate",
+    "upper_level": "advanced",
+    "key_discriminator": "At Intermediate level the user applies licences correctly; at Advanced they advise on complex copyright situations and contribute to institutional policy.",
+    "discriminator_type": "application_vs_critical_use",
+    "what_changes": "Shift from personal licence compliance to advising on complex scenarios and institutional policy contribution.",
+    "false_positives": [
+      {
+        "pattern": "All work published open access with CC",
+        "why_misleading": "Personal open access compliance is Intermediate; Advanced involves advising on complex scenarios including co-authored works, AI-assisted content, and student IP",
+        "how_to_distinguish": "Present a complex scenario (student IP, AI-generated content, co-authored work with multiple licence types) and assess whether the person can navigate it or seeks specialist advice"
+      },
+      {
+        "pattern": "Library copyright awareness qualification",
+        "why_misleading": "Formal training is valuable context but Advanced competence requires practical application in complex real-world scenarios, not just knowledge of principles",
+        "how_to_distinguish": "Assess advisory capacity in complex scenarios rather than knowledge recall"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Has successfully advised a colleague on a complex copyright scenario (publisher agreement negotiation, AI output sharing, student work IP) with appropriate referral to institutional specialist where needed",
+      "strong": "Institutional copyright or AI intellectual property guidance document authored or contributed to, with evidence of adoption"
+    },
+    "regression_risk": "Low",
+    "assessment_difficulty": "High",
+    "ai_context": "Advanced copyright practitioners develop institutional guidance on the legal and policy implications of AI-generated content, training data rights, and AI output ownership"
+  },
+  {
+    "id": "dc-3-3-AH",
+    "competency_id": "dc-3-3",
+    "competency_name": "Copyright and licences",
+    "area": "Content Creation",
+    "boundary": "AH",
+    "boundary_label": "Advanced to Highly Advanced",
+    "lower_level": "advanced",
+    "upper_level": "highly_advanced",
+    "key_discriminator": "At Advanced level the user advises expertly; at Highly Advanced they shape national or international copyright law and policy.",
+    "discriminator_type": "critical_use_vs_innovation",
+    "what_changes": "Shift from advising within existing law to contributing to the development of law and policy.",
+    "false_positives": [
+      {
+        "pattern": "Active Creative Commons advocate",
+        "why_misleading": "Advocating for CC is Advanced; Highly Advanced involves formal governance contribution or published scholarly work on copyright",
+        "how_to_distinguish": "Look for formal governance roles with CC, IPO consultation submissions, or peer-reviewed publications on copyright law"
+      },
+      {
+        "pattern": "IP specialist solicitor",
+        "why_misleading": "Legal practice demonstrates Advanced competence; Highly Advanced in an HE context additionally requires scholarly contribution or sector policy shaping",
+        "how_to_distinguish": "Assess publication record and policy advisory roles beyond client practice"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Published scholarly work on copyright law, open licensing, or AI and IP; or formal consultation response to national IP authority",
+      "strong": "Advisory role with national IP office, Creative Commons governance, WIPO, or equivalent international IP authority with documented contribution"
+    },
+    "regression_risk": "Very low",
+    "assessment_difficulty": "Very high",
+    "ai_context": "Highly Advanced practitioners are shaping the legal framework for AI and copyright: training data rights, AI output ownership, and what new regulatory instruments are required"
+  },
+  {
+    "id": "dc-3-4-BI",
+    "competency_id": "dc-3-4",
+    "competency_name": "Computational thinking and programming",
+    "area": "Content Creation",
+    "boundary": "BI",
+    "boundary_label": "Basic to Intermediate",
+    "lower_level": "basic",
+    "upper_level": "intermediate",
+    "key_discriminator": "At Basic level computational logic is understood and no-code tools are used; at Intermediate code is written and adapted to automate real research or professional tasks.",
+    "discriminator_type": "recognition_vs_application",
+    "what_changes": "Shift from understanding to writing; from no-code to scripted; from following algorithms to designing them in code.",
+    "false_positives": [
+      {
+        "pattern": "Excel power user",
+        "why_misleading": "Advanced Excel use (pivot tables, VLOOKUP, conditional formatting) reflects strong data skills but not necessarily scripting competence",
+        "how_to_distinguish": "Ask whether the person has written a Python, R, or SQL script for a task beyond Excel; if not, they are at Basic level for this competency"
+      },
+      {
+        "pattern": "Has completed a Python MOOC",
+        "why_misleading": "Course completion provides foundational knowledge but Intermediate competence requires applying scripting in authentic research or professional contexts",
+        "how_to_distinguish": "Ask for an example of a real task they automated with a script and how they validated the output"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Has written and run a Python or R script to automate a data processing task for a real research or professional purpose, and can explain what it does",
+      "strong": "GitHub repository showing version-controlled code for a research project with documentation and evidence of iterative development"
+    },
+    "regression_risk": "High -- scripting skills atrophy quickly without regular use",
+    "assessment_difficulty": "Low -- directly observable through code review",
+    "ai_context": "Intermediate programmers use AI coding assistants productively while developing the skill to read and evaluate AI-generated code critically before running it"
+  },
+  {
+    "id": "dc-3-4-IA",
+    "competency_id": "dc-3-4",
+    "competency_name": "Computational thinking and programming",
+    "area": "Content Creation",
+    "boundary": "IA",
+    "boundary_label": "Intermediate to Advanced",
+    "lower_level": "intermediate",
+    "upper_level": "advanced",
+    "key_discriminator": "At Intermediate level code is written for personal research use; at Advanced complex, well-documented, reproducible software is produced and others are taught.",
+    "discriminator_type": "application_vs_critical_use",
+    "what_changes": "Shift from functional scripting to engineering-quality code; from personal use to shared, reproducible, documented software; from using code to teaching computational methods.",
+    "false_positives": [
+      {
+        "pattern": "Long Python scripts that work",
+        "why_misleading": "Working code at any length does not indicate Advanced competence without engineering quality indicators: documentation, tests, version control, modularity",
+        "how_to_distinguish": "Check for docstrings, unit tests, README files, version control history, and dependency management; absence of these indicates Intermediate regardless of script length"
+      },
+      {
+        "pattern": "Teaches Python to undergraduates",
+        "why_misleading": "Introductory programming teaching can be delivered at Intermediate competence level; Advanced computational teaching involves research methods, reproducibility, and software engineering practices",
+        "how_to_distinguish": "Ask whether the teaching covers version control, testing, documentation, and reproducible research practices, not just syntax"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Publicly shared research code (GitHub) with documentation (README, docstrings), version control history, and reproducibility instructions following open code standards",
+      "strong": "Published computational research output meeting journal open code standards; or research software engineering course curriculum covering reproducibility, testing, and documentation"
+    },
+    "regression_risk": "Low",
+    "assessment_difficulty": "Medium -- code review is reliable",
+    "ai_context": "Advanced practitioners document AI coding tool use in code provenance and critically review AI-generated code as part of their quality assurance process"
+  },
+  {
+    "id": "dc-3-4-AH",
+    "competency_id": "dc-3-4",
+    "competency_name": "Computational thinking and programming",
+    "area": "Content Creation",
+    "boundary": "AH",
+    "boundary_label": "Advanced to Highly Advanced",
+    "lower_level": "advanced",
+    "upper_level": "highly_advanced",
+    "key_discriminator": "At Advanced level the user produces excellent research software; at Highly Advanced they contribute to the research software ecosystem and shape community standards.",
+    "discriminator_type": "critical_use_vs_innovation",
+    "what_changes": "Shift from producing quality software to building community infrastructure and contributing to the standards others follow.",
+    "false_positives": [
+      {
+        "pattern": "Many GitHub repositories",
+        "why_misleading": "Volume of public code demonstrates Advanced practice; Highly Advanced requires community adoption, citation, or standards contribution",
+        "how_to_distinguish": "Check whether any repositories are widely used, cited in publications, or contributed to by external researchers"
+      },
+      {
+        "pattern": "Research Software Engineer role",
+        "why_misleading": "RSE role designation is Advanced; Highly Advanced requires recognised community contribution or scholarly/policy influence",
+        "how_to_distinguish": "Look for contributions to RSE community standards, widely cited software, or published work on computational research methodology"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Research software that is widely adopted, formally cited, or contributed to by external researchers; or published methodological work on computational research practices",
+      "strong": "Leadership of a national computational infrastructure project, RSE community standards contribution, or widely cited methodological publication on AI-assisted computational research"
+    },
+    "regression_risk": "Very low",
+    "assessment_difficulty": "Very high",
+    "ai_context": "At this level individuals shape community standards for AI-assisted computational research including reproducibility, provenance documentation, and what it means for scientific validity"
+  },
+  {
+    "id": "dc-4-1-BI",
+    "competency_id": "dc-4-1",
+    "competency_name": "Protecting devices",
+    "area": "Safety, Wellbeing and Responsible Use",
+    "boundary": "BI",
+    "boundary_label": "Basic to Intermediate",
+    "lower_level": "basic",
+    "upper_level": "intermediate",
+    "key_discriminator": "At Basic level device security hygiene is maintained; at Intermediate multi-layered security is actively managed and phishing is identified and reported.",
+    "discriminator_type": "recognition_vs_application",
+    "what_changes": "Shift from passive security compliance to active threat identification; from update following to MFA management and network hygiene; from individual device to connected device and account security.",
+    "false_positives": [
+      {
+        "pattern": "Uses a strong password",
+        "why_misleading": "A strong password is Basic security; Intermediate requires MFA, VPN use in appropriate contexts, and active phishing detection",
+        "how_to_distinguish": "Ask whether the person uses MFA on all institutional accounts and whether they know how to identify and report a phishing email"
+      },
+      {
+        "pattern": "Has antivirus software",
+        "why_misleading": "Antivirus is one layer of Basic security; Intermediate security involves a multi-layered approach including network hygiene and social engineering awareness",
+        "how_to_distinguish": "Ask about MFA, VPN use, and most recent reported phishing attempt"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "MFA enabled on all institutional accounts; can identify a phishing email from a provided example and explain what indicators they used",
+      "strong": "Reported a phishing attempt to IT security with accurate and helpful details about indicators of compromise"
+    },
+    "regression_risk": "Low -- security habits are reinforced by institutional requirements",
+    "assessment_difficulty": "Low -- IT compliance systems verify MFA; phishing simulation tests provide direct evidence",
+    "ai_context": "Intermediate device protectors recognise AI-generated phishing content and understand that professional appearance is no longer a trust signal"
+  },
+  {
+    "id": "dc-4-1-IA",
+    "competency_id": "dc-4-1",
+    "competency_name": "Protecting devices",
+    "area": "Safety, Wellbeing and Responsible Use",
+    "boundary": "IA",
+    "boundary_label": "Intermediate to Advanced",
+    "lower_level": "intermediate",
+    "upper_level": "advanced",
+    "key_discriminator": "At Intermediate level the user protects their own devices; at Advanced they conduct risk assessments and design security training.",
+    "discriminator_type": "application_vs_critical_use",
+    "what_changes": "Shift from personal security to institutional security assessment; from following guidance to creating it.",
+    "false_positives": [
+      {
+        "pattern": "IT-literate staff who follow all security policies",
+        "why_misleading": "Full compliance with institutional security policy is Intermediate; Advanced requires the ability to conduct risk assessments and train others",
+        "how_to_distinguish": "Ask whether the person has conducted a security risk assessment for a research project or designed security awareness training"
+      },
+      {
+        "pattern": "Security-conscious researcher",
+        "why_misleading": "Personal security awareness is Intermediate; Advanced involves advising on new technology adoption implications and designing institutional guidance",
+        "how_to_distinguish": "Look for evidence of formal risk assessment contributions or training delivery"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Has conducted or contributed to a device security risk assessment for a research project, identifying specific risks and recommending proportionate mitigations",
+      "strong": "Security awareness training programme designed and delivered for staff or students; or contribution to institutional security policy addressing AI tool adoption"
+    },
+    "regression_risk": "Low",
+    "assessment_difficulty": "High",
+    "ai_context": "Advanced security practitioners assess AI tool adoption implications for endpoint security and develop institutional guidance on AI-enabled threat vectors"
+  },
+  {
+    "id": "dc-4-1-AH",
+    "competency_id": "dc-4-1",
+    "competency_name": "Protecting devices",
+    "area": "Safety, Wellbeing and Responsible Use",
+    "boundary": "AH",
+    "boundary_label": "Advanced to Highly Advanced",
+    "lower_level": "advanced",
+    "upper_level": "highly_advanced",
+    "key_discriminator": "At Advanced level the user advises on institutional device security; at Highly Advanced they shape sector-wide security strategy.",
+    "discriminator_type": "critical_use_vs_innovation",
+    "what_changes": "Shift from institutional to sector or national security strategy influence.",
+    "false_positives": [
+      {
+        "pattern": "Institutional CISO",
+        "why_misleading": "CISO role is Advanced to Highly Advanced depending on scope; Highly Advanced requires sector influence or published scholarly/policy contribution beyond the institution",
+        "how_to_distinguish": "Assess national or sector-level contribution: JISC security services involvement, NCSC advisory roles, or published work on HE security"
+      },
+      {
+        "pattern": "Active in professional security networks",
+        "why_misleading": "Professional community participation is Advanced; Highly Advanced requires formal standards or policy contribution",
+        "how_to_distinguish": "Look for formal advisory roles, standards contributions, or published work"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Formal contribution to national HE security strategy, JISC security working group, or published scholarly/policy work on HE device security",
+      "strong": "NCSC advisory role, JISC security programme leadership, or widely adopted institutional security framework authored"
+    },
+    "regression_risk": "Very low",
+    "assessment_difficulty": "Very high",
+    "ai_context": "Highly Advanced security practitioners shape national responses to AI-enabled security threats in HE including deepfake fraud, AI-generated phishing, and AI-embedded malware"
+  },
+  {
+    "id": "dc-4-2-BI",
+    "competency_id": "dc-4-2",
+    "competency_name": "Protecting personal data and privacy",
+    "area": "Safety, Wellbeing and Responsible Use",
+    "boundary": "BI",
+    "boundary_label": "Basic to Intermediate",
+    "lower_level": "basic",
+    "upper_level": "intermediate",
+    "key_discriminator": "At Basic level personal data is handled carefully; at Intermediate GDPR principles are applied to research and professional data collection and processing.",
+    "discriminator_type": "recognition_vs_application",
+    "what_changes": "Shift from personal data awareness to GDPR-compliant practice in research and professional contexts; from avoiding obvious mistakes to actively applying data minimisation, lawful basis, and impact assessment.",
+    "false_positives": [
+      {
+        "pattern": "Manages own privacy settings carefully",
+        "why_misleading": "Personal privacy management is Basic; Intermediate requires applying data protection law to research and professional data handling about other people",
+        "how_to_distinguish": "Ask whether the person has completed a DPIA or selected a lawful basis for processing personal data in a research or professional context"
+      },
+      {
+        "pattern": "Completed GDPR training",
+        "why_misleading": "Training provides awareness but Intermediate competence requires application; training completion without applied practice is a Basic-to-Intermediate threshold indicator",
+        "how_to_distinguish": "Ask for a specific example of applying GDPR principles to a real data collection activity"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Can identify the lawful basis for a specific data processing activity and explain what data minimisation requires in that context",
+      "strong": "DPIA completed for a research project with appropriate consultation of institutional DPO and implementation of recommended mitigations"
+    },
+    "regression_risk": "Medium -- data protection knowledge requires updating as law evolves",
+    "assessment_difficulty": "Medium",
+    "ai_context": "The BI boundary includes AI data protection awareness: Intermediate users check whether institutional AI tools are GDPR-compliant before entering personal data"
+  },
+  {
+    "id": "dc-4-2-IA",
+    "competency_id": "dc-4-2",
+    "competency_name": "Protecting personal data and privacy",
+    "area": "Safety, Wellbeing and Responsible Use",
+    "boundary": "IA",
+    "boundary_label": "Intermediate to Advanced",
+    "lower_level": "intermediate",
+    "upper_level": "advanced",
+    "key_discriminator": "At Intermediate level GDPR is applied to personal practice; at Advanced institutional data protection frameworks are designed and others are advised.",
+    "discriminator_type": "application_vs_critical_use",
+    "what_changes": "Shift from personal compliance to institutional framework design; from following DPIA guidance to creating it.",
+    "false_positives": [
+      {
+        "pattern": "Experienced researcher with multiple DPIA completions",
+        "why_misleading": "Completing DPIAs is Intermediate; Advanced involves designing DPIA processes, advising others, and contributing to institutional data governance frameworks",
+        "how_to_distinguish": "Ask whether the person has advised a colleague on a complex data scenario or contributed to institutional data protection policy"
+      },
+      {
+        "pattern": "DPO formal qualification",
+        "why_misleading": "Qualification provides Advanced-level knowledge but practice in institutional governance and complex advisory roles is required to demonstrate Advanced competence",
+        "how_to_distinguish": "Assess whether the person has used their qualification in active institutional advisory capacity, not just examined on knowledge"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Has designed a data protection framework for a research project or contributed to institutional data governance policy with evidence of advisory capacity for complex data scenarios",
+      "strong": "Institutional data protection policy contribution with evidence of advising on AI tool data processing, international transfer arrangements, or sensitive data research"
+    },
+    "regression_risk": "Low",
+    "assessment_difficulty": "High",
+    "ai_context": "Advanced data protection practitioners design institutional frameworks for AI tool compliance including Article 22 automated decision-making assessment and data residency management"
+  },
+  {
+    "id": "dc-4-2-AH",
+    "competency_id": "dc-4-2",
+    "competency_name": "Protecting personal data and privacy",
+    "area": "Safety, Wellbeing and Responsible Use",
+    "boundary": "AH",
+    "boundary_label": "Advanced to Highly Advanced",
+    "lower_level": "advanced",
+    "upper_level": "highly_advanced",
+    "key_discriminator": "At Advanced level institutional data protection practice is led; at Highly Advanced national or international data protection policy is shaped.",
+    "discriminator_type": "critical_use_vs_innovation",
+    "what_changes": "Shift from institutional governance to national or international policy influence.",
+    "false_positives": [
+      {
+        "pattern": "Experienced DPO",
+        "why_misleading": "Senior DPO practice is Advanced; Highly Advanced requires published scholarly contribution or formal regulatory advisory role",
+        "how_to_distinguish": "Look for ICO or EDPB advisory roles, published scholarship on privacy law, or formal contributions to AI Act data protection provisions"
+      },
+      {
+        "pattern": "Many DPIAs and policies authored",
+        "why_misleading": "Volume of institutional contribution is Advanced; national or international policy shaping distinguishes Highly Advanced",
+        "how_to_distinguish": "Assess regulatory and scholarly contribution beyond institution"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Published scholarly work on privacy law, AI and data protection, or formal consultation response to ICO, EDPB, or equivalent national/EU authority",
+      "strong": "Advisory role with data protection authority, AI Act working group, or equivalent; or widely cited scholarship on AI and GDPR"
+    },
+    "regression_risk": "Very low",
+    "assessment_difficulty": "Very high",
+    "ai_context": "Highly Advanced data protection practitioners are shaping the evolving legal framework for AI and privacy including foundation model training data, student algorithmic profiling, and synthetic data governance"
+  },
+  {
+    "id": "dc-4-3-BI",
+    "competency_id": "dc-4-3",
+    "competency_name": "Supporting wellbeing",
+    "area": "Safety, Wellbeing and Responsible Use",
+    "boundary": "BI",
+    "boundary_label": "Basic to Intermediate",
+    "lower_level": "basic",
+    "upper_level": "intermediate",
+    "key_discriminator": "At Basic level personal digital wellbeing is managed; at Intermediate others' wellbeing is actively supported and platform design is critically evaluated.",
+    "discriminator_type": "recognition_vs_application",
+    "what_changes": "Shift from personal to relational wellbeing responsibility; from managing one's own digital habits to supporting peers and designing inclusive digital environments.",
+    "false_positives": [
+      {
+        "pattern": "Good personal digital boundaries",
+        "why_misleading": "Personal wellbeing management is Basic; Intermediate requires noticing and responding to others' wellbeing challenges in digital environments",
+        "how_to_distinguish": "Ask whether the person has supported a peer or student experiencing a digital wellbeing challenge and how; inability to give a specific example indicates Basic"
+      },
+      {
+        "pattern": "Avoids social media overuse",
+        "why_misleading": "Personal moderation is Basic; Intermediate involves critically evaluating the design intent of platforms, not just managing personal use",
+        "how_to_distinguish": "Ask whether the person can articulate specific platform design features that undermine user wellbeing and how they have communicated this to others"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Can identify at least three specific platform design features that undermine wellbeing and explain why, and has supported a peer through a digital wellbeing challenge with appropriate signposting",
+      "strong": "Evidence of designing an accessible and inclusive digital learning or working environment with explicit attention to cognitive load, accessibility barriers, and notification hygiene"
+    },
+    "regression_risk": "Low",
+    "assessment_difficulty": "Medium",
+    "ai_context": "Intermediate wellbeing practitioners evaluate AI companion apps and AI-mediated feedback tools for their psychological implications and advise students accordingly"
+  },
+  {
+    "id": "dc-4-3-IA",
+    "competency_id": "dc-4-3",
+    "competency_name": "Supporting wellbeing",
+    "area": "Safety, Wellbeing and Responsible Use",
+    "boundary": "IA",
+    "boundary_label": "Intermediate to Advanced",
+    "lower_level": "intermediate",
+    "upper_level": "advanced",
+    "key_discriminator": "At Intermediate level digital wellbeing is supported in practice; at Advanced it is designed into environments and policy.",
+    "discriminator_type": "application_vs_critical_use",
+    "what_changes": "Shift from support to design and advocacy; from pastoral response to institutional policy contribution.",
+    "false_positives": [
+      {
+        "pattern": "Sets digital ground rules in online teaching",
+        "why_misleading": "Basic ground-setting is Intermediate; Advanced involves designing institutional wellbeing-by-design policies and evidence-based training programmes",
+        "how_to_distinguish": "Ask whether the person has designed a wellbeing training programme or contributed to institutional digital wellbeing policy beyond their own classroom"
+      },
+      {
+        "pattern": "Personal mental health awareness training",
+        "why_misleading": "General mental health awareness is valuable but not specifically digital wellbeing design; Advanced requires evidence-based digital wellbeing intervention design",
+        "how_to_distinguish": "Assess whether the person integrates digital wellbeing theory and evidence into their practice and institutional advocacy"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Has designed and delivered a digital wellbeing training programme grounded in evidence about platform design and technology-wellbeing relationships",
+      "strong": "Institutional digital wellbeing policy or right-to-disconnect guidance contributed to; or research/evaluation report on digital wellbeing interventions in HE"
+    },
+    "regression_risk": "Low",
+    "assessment_difficulty": "High",
+    "ai_context": "Advanced wellbeing practitioners design institutional frameworks for AI and student mental health including the psychological implications of AI feedback systems and AI companion applications"
+  },
+  {
+    "id": "dc-4-3-AH",
+    "competency_id": "dc-4-3",
+    "competency_name": "Supporting wellbeing",
+    "area": "Safety, Wellbeing and Responsible Use",
+    "boundary": "AH",
+    "boundary_label": "Advanced to Highly Advanced",
+    "lower_level": "advanced",
+    "upper_level": "highly_advanced",
+    "key_discriminator": "At Advanced level institutional digital wellbeing is led; at Highly Advanced national or international policy is shaped.",
+    "discriminator_type": "critical_use_vs_innovation",
+    "what_changes": "Shift from institutional to national or international discourse shaping.",
+    "false_positives": [
+      {
+        "pattern": "Senior student wellbeing professional",
+        "why_misleading": "Institutional seniority is Advanced; Highly Advanced requires national or scholarly contribution",
+        "how_to_distinguish": "Look for published research, WHO or equivalent advisory roles, or formal regulatory contribution to technology and wellbeing"
+      },
+      {
+        "pattern": "Active in digital wellbeing networks",
+        "why_misleading": "Professional community participation is Advanced; Highly Advanced requires scholarly or policy publication",
+        "how_to_distinguish": "Assess peer-reviewed publication or formal policy advisory record"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Published scholarly research on digital wellbeing in HE or formal policy contribution to technology and wellbeing regulation",
+      "strong": "Advisory role with WHO digital health programme, ICO wellbeing provisions, or Online Safety Act implementation; or landmark publication on AI and student mental health"
+    },
+    "regression_risk": "Very low",
+    "assessment_difficulty": "Very high",
+    "ai_context": "At this level individuals shape the regulatory and scholarly framework for AI companions, AI feedback systems, and what obligations HE institutions and AI developers have for user psychological wellbeing"
+  },
+  {
+    "id": "dc-4-4-BI",
+    "competency_id": "dc-4-4",
+    "competency_name": "Environmental impacts of digital technologies",
+    "area": "Safety, Wellbeing and Responsible Use",
+    "boundary": "BI",
+    "boundary_label": "Basic to Intermediate",
+    "lower_level": "basic",
+    "upper_level": "intermediate",
+    "key_discriminator": "At Basic level digital environmental impact is known; at Intermediate it is systematically factored into professional and academic technology decisions.",
+    "discriminator_type": "recognition_vs_application",
+    "what_changes": "Shift from awareness to criteria-driven decision-making; from knowing digital has environmental costs to evaluating those costs in tool selection and professional practice.",
+    "false_positives": [
+      {
+        "pattern": "Turns off devices at night",
+        "why_misleading": "Basic energy hygiene is a Basic indicator; Intermediate requires applying environmental criteria to tool selection and professional digital decisions",
+        "how_to_distinguish": "Ask whether the person has factored sustainability criteria into a tool selection or procurement recommendation"
+      },
+      {
+        "pattern": "Interested in sustainability topics",
+        "why_misleading": "Interest does not indicate changed behaviour; Intermediate requires evidence of applying sustainability criteria in digital decision-making",
+        "how_to_distinguish": "Ask for a specific example of a digital decision where environmental impact was explicitly considered alongside cost and functionality"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Can produce a written justification for a digital tool choice that includes environmental impact alongside functional and cost criteria",
+      "strong": "Contribution to an institutional sustainability committee or working group addressing digital technology environmental impact"
+    },
+    "regression_risk": "Medium",
+    "assessment_difficulty": "Medium",
+    "ai_context": "The BI boundary includes AI energy awareness: Intermediate users factor the energy cost of AI tool use into their sustainability assessments"
+  },
+  {
+    "id": "dc-4-4-IA",
+    "competency_id": "dc-4-4",
+    "competency_name": "Environmental impacts of digital technologies",
+    "area": "Safety, Wellbeing and Responsible Use",
+    "boundary": "IA",
+    "boundary_label": "Intermediate to Advanced",
+    "lower_level": "intermediate",
+    "upper_level": "advanced",
+    "key_discriminator": "At Intermediate level sustainability is applied in personal decisions; at Advanced institutional sustainability policy is designed.",
+    "discriminator_type": "application_vs_critical_use",
+    "what_changes": "Shift from personal practice to institutional policy and framework design; from applying criteria to developing them.",
+    "false_positives": [
+      {
+        "pattern": "Green IT enthusiast",
+        "why_misleading": "Personal enthusiasm and practice is Intermediate; Advanced involves designing institutional sustainability frameworks and critically evaluating provider claims",
+        "how_to_distinguish": "Ask whether the person has designed an institutional digital sustainability policy or conducted a lifecycle analysis of institutional digital infrastructure"
+      },
+      {
+        "pattern": "Procurement sustainability advocate",
+        "why_misleading": "Advocating for sustainability criteria in procurement is Intermediate; Advanced requires designing evaluation frameworks and critically assessing provider claims",
+        "how_to_distinguish": "Ask whether the person can critically evaluate a cloud provider's carbon neutrality claims using lifecycle analysis principles"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Has designed an institutional digital sustainability framework or policy contribution with explicit criteria for evaluating the environmental impact of digital tools and AI services",
+      "strong": "Research or evaluation report on digital environmental impact in HE with specific AI energy cost analysis and recommendations"
+    },
+    "regression_risk": "Low",
+    "assessment_difficulty": "High",
+    "ai_context": "Advanced environmental practitioners design institutional guidance on AI sustainability including energy cost assessment for AI tool adoption and AI infrastructure procurement criteria"
+  },
+  {
+    "id": "dc-4-4-AH",
+    "competency_id": "dc-4-4",
+    "competency_name": "Environmental impacts of digital technologies",
+    "area": "Safety, Wellbeing and Responsible Use",
+    "boundary": "AH",
+    "boundary_label": "Advanced to Highly Advanced",
+    "lower_level": "advanced",
+    "upper_level": "highly_advanced",
+    "key_discriminator": "At Advanced level institutional sustainability policy is led; at Highly Advanced national or international digital sustainability standards are shaped.",
+    "discriminator_type": "critical_use_vs_innovation",
+    "what_changes": "Shift from institutional to national or international policy and scholarly influence.",
+    "false_positives": [
+      {
+        "pattern": "Institutional sustainability director with digital remit",
+        "why_misleading": "Institutional sustainability leadership is Advanced; Highly Advanced requires national or scholarly contribution to digital sustainability standards",
+        "how_to_distinguish": "Look for published research on digital sustainability, IEA or OECD contribution, or national net zero strategy engagement"
+      },
+      {
+        "pattern": "Active in green IT community",
+        "why_misleading": "Community participation is Advanced; Highly Advanced requires published or policy-shaping contribution",
+        "how_to_distinguish": "Assess peer-reviewed publication or formal standards contribution record"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Published scholarly work on digital sustainability in HE or formal contribution to national or international digital sustainability standards or reporting frameworks",
+      "strong": "Advisory role with national net zero strategy digital workstream, IEA digital sector emissions reporting, or EU Green Deal digital implementation; or landmark publication on AI energy costs and environmental implications in HE"
+    },
+    "regression_risk": "Very low",
+    "assessment_difficulty": "Very high",
+    "ai_context": "Highly Advanced practitioners are shaping the regulatory and scholarly framework for AI environmental accountability including what disclosure and reporting standards should apply to AI energy use in HE contexts"
+  },
+  {
+    "id": "dc-5-1-BI",
+    "competency_id": "dc-5-1",
+    "competency_name": "Identifying and solving technical problems",
+    "area": "Problem Identification and Solving",
+    "boundary": "BI",
+    "boundary_label": "Basic to Intermediate",
+    "lower_level": "basic",
+    "upper_level": "intermediate",
+    "key_discriminator": "At Basic level help is sought after basic self-help; at Intermediate systematic diagnostic techniques are applied independently.",
+    "discriminator_type": "recognition_vs_application",
+    "what_changes": "Shift from following troubleshooting steps to designing diagnostic processes; from seeking help to resolving intermediate problems and documenting solutions.",
+    "false_positives": [
+      {
+        "pattern": "Restarts device when problems occur",
+        "why_misleading": "The restart reflex is Basic; Intermediate involves isolating variables to identify the root cause rather than applying fixes sequentially without diagnosis",
+        "how_to_distinguish": "Present a scenario where restart would not help (persistent access permission error) and ask how they would diagnose it; Intermediate users reason systematically rather than reaching for a single fix"
+      },
+      {
+        "pattern": "Uses Google to search error messages",
+        "why_misleading": "Searching error messages is a Basic troubleshooting step; Intermediate requires interpreting results, selecting appropriate solutions, and validating them before applying",
+        "how_to_distinguish": "Ask whether they evaluate the reliability of found solutions and test them in a safe environment before applying; Basic users may apply the first result without evaluation"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Can describe a systematic approach to diagnosing a technical problem: isolating whether it is device-specific, network-specific, account-specific, or software-specific",
+      "strong": "Documented troubleshooting log or knowledge base article showing systematic diagnosis and resolution of an intermediate technical problem not covered by standard IT documentation"
+    },
+    "regression_risk": "Medium -- diagnostic skills require active practice",
+    "assessment_difficulty": "Low -- observable through practical problem-solving tasks",
+    "ai_context": "Intermediate troubleshooters use AI strategically in diagnosis: providing full error context to AI tools, evaluating AI suggestions before applying them, and knowing when to escalate beyond AI-provided solutions"
+  },
+  {
+    "id": "dc-5-1-IA",
+    "competency_id": "dc-5-1",
+    "competency_name": "Identifying and solving technical problems",
+    "area": "Problem Identification and Solving",
+    "boundary": "IA",
+    "boundary_label": "Intermediate to Advanced",
+    "lower_level": "intermediate",
+    "upper_level": "advanced",
+    "key_discriminator": "At Intermediate level problems are diagnosed and resolved; at Advanced systematic institutional problem management processes are designed.",
+    "discriminator_type": "application_vs_critical_use",
+    "what_changes": "Shift from individual problem resolution to institutional knowledge management and systemic failure pattern identification.",
+    "false_positives": [
+      {
+        "pattern": "Reliable individual troubleshooter",
+        "why_misleading": "Being the person colleagues turn to for technical help is Intermediate competence; Advanced involves designing institutional troubleshooting frameworks and knowledge systems",
+        "how_to_distinguish": "Ask whether the person has conducted a root cause analysis, post-incident review, or contributed to a team knowledge management system for technical solutions"
+      },
+      {
+        "pattern": "IT-savvy academic or professional",
+        "why_misleading": "General technical confidence and problem resolution is Intermediate; Advanced requires systemic institutional contribution",
+        "how_to_distinguish": "Look for knowledge base contributions, post-incident reviews, or institutional troubleshooting framework design"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Has conducted or contributed to a formal root cause analysis or post-incident review for a significant technical failure, with recommendations for prevention",
+      "strong": "Institutional knowledge management system contribution that has demonstrably enabled others to resolve problems; or systemic vulnerability identification that prevented future failures"
+    },
+    "regression_risk": "Low",
+    "assessment_difficulty": "High",
+    "ai_context": "Advanced troubleshooters diagnose AI system failures: prompt design problems, output quality issues, model failure modes, and institutional guidance on AI system reliability management"
+  },
+  {
+    "id": "dc-5-1-AH",
+    "competency_id": "dc-5-1",
+    "competency_name": "Identifying and solving technical problems",
+    "area": "Problem Identification and Solving",
+    "boundary": "AH",
+    "boundary_label": "Advanced to Highly Advanced",
+    "lower_level": "advanced",
+    "upper_level": "highly_advanced",
+    "key_discriminator": "At Advanced level institutional problem management is led; at Highly Advanced sector-wide systems resilience standards are shaped.",
+    "discriminator_type": "critical_use_vs_innovation",
+    "what_changes": "Shift from institutional infrastructure leadership to sector or national standards contribution.",
+    "false_positives": [
+      {
+        "pattern": "CIO or IT director",
+        "why_misleading": "Institutional IT leadership is Advanced; Highly Advanced requires sector or scholarly contribution to technical problem-solving standards and frameworks",
+        "how_to_distinguish": "Look for JISC technical programme leadership, national research infrastructure governance, or published scholarly work on HE digital resilience"
+      },
+      {
+        "pattern": "Excellent institutional track record",
+        "why_misleading": "Track record demonstrates Advanced practice; Highly Advanced requires contribution that benefits the sector beyond the institution",
+        "how_to_distinguish": "Assess sector contribution and publication record"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Published scholarly or policy contribution on digital systems resilience in HE, or formal leadership of a national digital infrastructure resilience programme",
+      "strong": "JISC resilience programme leadership, national research computing infrastructure governance, or landmark publication on AI failure modes in academic contexts"
+    },
+    "regression_risk": "Very low",
+    "assessment_difficulty": "Very high",
+    "ai_context": "At this level individuals shape the emerging field of AI system reliability and failure classification in research and education including what institutional obligations exist when AI systems fail"
+  },
+  {
+    "id": "dc-5-2-BI",
+    "competency_id": "dc-5-2",
+    "competency_name": "Identifying needs and digital technological responses",
+    "area": "Problem Identification and Solving",
+    "boundary": "BI",
+    "boundary_label": "Basic to Intermediate",
+    "lower_level": "basic",
+    "upper_level": "intermediate",
+    "key_discriminator": "At Basic level the right tool is identified and accessed; at Intermediate structured needs analysis precedes tool selection.",
+    "discriminator_type": "recognition_vs_application",
+    "what_changes": "Shift from opportunistic tool adoption to structured needs analysis; from selecting the first option to evaluating multiple options against defined criteria.",
+    "false_positives": [
+      {
+        "pattern": "Regular adopter of new apps and tools",
+        "why_misleading": "Prolific tool adoption may reflect curiosity without evaluation; Intermediate requires structured needs analysis before selection",
+        "how_to_distinguish": "Ask whether the person has produced a tool evaluation matrix or can articulate the criteria they used to choose a specific tool versus alternatives"
+      },
+      {
+        "pattern": "Recommends tools to colleagues",
+        "why_misleading": "Informal recommendations may be based on personal preference rather than structured evaluation; Intermediate requires documented criteria-based evaluation",
+        "how_to_distinguish": "Ask for the specific evaluation criteria used for a recommendation and whether alternatives were formally assessed"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Can produce a tool evaluation matrix for a specific need, including functional requirements, data protection, accessibility, and cost criteria, with at least two options compared",
+      "strong": "Formal tool selection recommendation document with structured evaluation criteria and evidence of rejected alternatives with documented reasoning"
+    },
+    "regression_risk": "Medium",
+    "assessment_difficulty": "Low -- directly observable through evaluation documentation",
+    "ai_context": "Intermediate technology identifiers systematically evaluate AI tools against formal criteria before adoption rather than trialling them informally"
+  },
+  {
+    "id": "dc-5-2-IA",
+    "competency_id": "dc-5-2",
+    "competency_name": "Identifying needs and digital technological responses",
+    "area": "Problem Identification and Solving",
+    "boundary": "IA",
+    "boundary_label": "Intermediate to Advanced",
+    "lower_level": "intermediate",
+    "upper_level": "advanced",
+    "key_discriminator": "At Intermediate level tools are selected well; at Advanced technology needs analysis is led for teams and institutional ecosystems are designed.",
+    "discriminator_type": "application_vs_critical_use",
+    "what_changes": "Shift from personal tool selection to leading team or institutional technology strategy; from evaluating tools to designing evaluation frameworks.",
+    "false_positives": [
+      {
+        "pattern": "Technology enthusiast who evaluates tools before adopting",
+        "why_misleading": "Personal tool evaluation rigour is Intermediate; Advanced involves leading technology strategy for others and designing the evaluation process itself",
+        "how_to_distinguish": "Ask whether the person has led a technology needs analysis for a team or contributed to institutional technology strategy; absence indicates Intermediate"
+      },
+      {
+        "pattern": "Learning technologist with good tool knowledge",
+        "why_misleading": "Broad tool knowledge supports Intermediate competence; Advanced requires designing the technology selection process and advising at strategic level",
+        "how_to_distinguish": "Look for evidence of institutional technology strategy contribution, not just operational tool recommendation"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Has led a technology needs analysis for a team or project, producing a requirements specification and evaluation framework adopted by the team",
+      "strong": "Digital tool ecosystem design or institutional technology strategy contribution with documented alignment to institutional values including data protection, accessibility, and sustainability"
+    },
+    "regression_risk": "Low",
+    "assessment_difficulty": "High",
+    "ai_context": "Advanced technology identifiers lead institutional AI tool evaluation processes with structured governance frameworks"
+  },
+  {
+    "id": "dc-5-2-AH",
+    "competency_id": "dc-5-2",
+    "competency_name": "Identifying needs and digital technological responses",
+    "area": "Problem Identification and Solving",
+    "boundary": "AH",
+    "boundary_label": "Advanced to Highly Advanced",
+    "lower_level": "advanced",
+    "upper_level": "highly_advanced",
+    "key_discriminator": "At Advanced level institutional technology strategy is led; at Highly Advanced sector or national responsible technology adoption frameworks are shaped.",
+    "discriminator_type": "critical_use_vs_innovation",
+    "what_changes": "Shift from institutional to sector or national influence on technology adoption standards.",
+    "false_positives": [
+      {
+        "pattern": "CIO with strong responsible adoption track record",
+        "why_misleading": "Excellent institutional technology governance is Advanced; Highly Advanced requires contribution to national or international frameworks",
+        "how_to_distinguish": "Look for JISC, AI Strategy advisory roles, or published frameworks on responsible AI adoption in HE"
+      },
+      {
+        "pattern": "Active in edtech community",
+        "why_misleading": "Community engagement is Advanced; Highly Advanced requires formal policy or scholarly contribution",
+        "how_to_distinguish": "Assess publication and policy contribution record"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Published framework, policy contribution, or scholarly work on responsible technology adoption or AI governance in HE",
+      "strong": "JISC or national AI strategy advisory role; or widely adopted responsible AI procurement framework for HE with documented sector impact"
+    },
+    "regression_risk": "Very low",
+    "assessment_difficulty": "Very high",
+    "ai_context": "Highly Advanced practitioners shape national and international frameworks for responsible AI adoption in HE including evaluation standards, governance requirements, and what regulatory instruments are needed"
+  },
+  {
+    "id": "dc-5-3-BI",
+    "competency_id": "dc-5-3",
+    "competency_name": "Identifying creative solutions using digital technologies",
+    "area": "Problem Identification and Solving",
+    "boundary": "BI",
+    "boundary_label": "Basic to Intermediate",
+    "lower_level": "basic",
+    "upper_level": "intermediate",
+    "key_discriminator": "At Basic level digital alternatives are attempted experimentally; at Intermediate structured creative design processes produce documented novel digital workflows.",
+    "discriminator_type": "recognition_vs_application",
+    "what_changes": "Shift from experimental willingness to structured creative process; from trying a new tool to designing, prototyping, and evaluating a novel digital workflow or solution.",
+    "false_positives": [
+      {
+        "pattern": "Willingness to try new tools",
+        "why_misleading": "Openness to experimentation is a Basic indicator; Intermediate creative problem-solving involves structured iteration toward a defined solution goal",
+        "how_to_distinguish": "Ask for an example of a novel digital workflow the person designed, prototyped, and evaluated; inability to provide this indicates Basic"
+      },
+      {
+        "pattern": "Creative professional background",
+        "why_misleading": "Analogue creative skills transfer partially but not completely; Intermediate digital creative problem solving requires the digital-specific combination of tool knowledge and design thinking",
+        "how_to_distinguish": "Ask for specifically digital examples with documentation of the creative process"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Has designed and documented a novel digital workflow that addressed a specific academic or professional challenge, with evidence of iterative development and outcome evaluation",
+      "strong": "Digital solution prototype with user testing evidence and documented iteration based on feedback"
+    },
+    "regression_risk": "Medium",
+    "assessment_difficulty": "Medium",
+    "ai_context": "Intermediate creative problem solvers design human-AI workflows with intentional prompt engineering and quality curation processes"
+  },
+  {
+    "id": "dc-5-3-IA",
+    "competency_id": "dc-5-3",
+    "competency_name": "Identifying creative solutions using digital technologies",
+    "area": "Problem Identification and Solving",
+    "boundary": "IA",
+    "boundary_label": "Intermediate to Advanced",
+    "lower_level": "intermediate",
+    "upper_level": "advanced",
+    "key_discriminator": "At Intermediate level creative digital solutions are designed; at Advanced digital innovation is led for teams or institutions.",
+    "discriminator_type": "application_vs_critical_use",
+    "what_changes": "Shift from individual creative problem-solving to leading innovation processes for others; from creating solutions to facilitating creative processes and contributing to institutional innovation strategy.",
+    "false_positives": [
+      {
+        "pattern": "Creative educator with innovative teaching approaches",
+        "why_misleading": "Creative teaching practice is Intermediate; Advanced involves leading innovation processes, facilitating design sprints for others, and contributing to institutional innovation strategy",
+        "how_to_distinguish": "Ask whether the person has led a structured innovation process (hackathon, design sprint) for others, not just implemented their own creative teaching approaches"
+      },
+      {
+        "pattern": "Regular hackathon participant",
+        "why_misleading": "Participating in innovation events is Basic to Intermediate; Advanced involves designing and facilitating them",
+        "how_to_distinguish": "Ask whether the person has designed and facilitated a creative problem-solving event for others"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Has designed and facilitated a structured digital innovation process (hackathon, design sprint, co-design workshop) for a team or cohort with documented outcomes",
+      "strong": "Led a digital innovation project from problem identification through solution design, prototype, and evaluation with documented institutional or research impact"
+    },
+    "regression_risk": "Low",
+    "assessment_difficulty": "High",
+    "ai_context": "Advanced creative problem solvers lead institutional AI innovation initiatives with responsible innovation principles embedded in the design process"
+  },
+  {
+    "id": "dc-5-3-AH",
+    "competency_id": "dc-5-3",
+    "competency_name": "Identifying creative solutions using digital technologies",
+    "area": "Problem Identification and Solving",
+    "boundary": "AH",
+    "boundary_label": "Advanced to Highly Advanced",
+    "lower_level": "advanced",
+    "upper_level": "highly_advanced",
+    "key_discriminator": "At Advanced level digital innovation is led institutionally; at Highly Advanced the field is shaped through landmark contributions and sector influence.",
+    "discriminator_type": "critical_use_vs_innovation",
+    "what_changes": "Shift from institutional leadership to sector or scholarly influence on how digital innovation is understood and practised.",
+    "false_positives": [
+      {
+        "pattern": "Head of Digital Innovation",
+        "why_misleading": "Institutional innovation leadership is Advanced; Highly Advanced requires sector or scholarly contribution that shapes how others understand and practice digital innovation",
+        "how_to_distinguish": "Look for published scholarly work, national innovation programme leadership, or widely adopted innovation frameworks"
+      },
+      {
+        "pattern": "Many successful innovation projects",
+        "why_misleading": "Volume of innovation delivery is Advanced; Highly Advanced requires contribution to the conceptual and regulatory landscape of innovation",
+        "how_to_distinguish": "Assess publication and policy contribution record"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Published scholarly work on digital innovation in HE, or leadership of a national innovation programme that has demonstrably transformed sector practice",
+      "strong": "Landmark publication on human-AI creative collaboration in education; or leadership of a national digital innovation infrastructure initiative with documented sector impact"
+    },
+    "regression_risk": "Very low",
+    "assessment_difficulty": "Very high",
+    "ai_context": "At this level individuals shape the discourse on human creativity and AI, and how HE should develop the creative capabilities that complement rather than compete with generative AI"
+  },
+  {
+    "id": "dc-5-4-BI",
+    "competency_id": "dc-5-4",
+    "competency_name": "Identifying and addressing digital competence needs",
+    "area": "Problem Identification and Solving",
+    "boundary": "BI",
+    "boundary_label": "Basic to Intermediate",
+    "lower_level": "basic",
+    "upper_level": "intermediate",
+    "key_discriminator": "At Basic level personal competence gaps are recognised and training sought; at Intermediate structured self-assessment is used and peer support is offered.",
+    "discriminator_type": "recognition_vs_application",
+    "what_changes": "Shift from recognising personal gaps to conducting structured assessments; from seeking help to supporting others; from consuming training to evaluating its quality.",
+    "false_positives": [
+      {
+        "pattern": "Completes all available digital training",
+        "why_misleading": "Training compliance is Basic; Intermediate involves selecting training based on a structured needs assessment and evaluating its quality and relevance",
+        "how_to_distinguish": "Ask whether the person has conducted a framework-based self-assessment and used it to select targeted training rather than completing everything available"
+      },
+      {
+        "pattern": "Helps colleagues informally with digital tools",
+        "why_misleading": "Informal peer help reflects general digital confidence but not necessarily the structured approach to competence development that Intermediate requires",
+        "how_to_distinguish": "Ask whether the person has assessed a colleague's competence using a framework and designed a development approach based on that assessment"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Has completed a framework-based digital competence self-assessment (DigComp, JISC BDC), identified specific gaps, and created a targeted development plan with timeline and resources",
+      "strong": "Evidence of supporting a peer's digital competence development through structured needs identification, resource signposting, and follow-up, with reflection on the peer support process"
+    },
+    "regression_risk": "Low",
+    "assessment_difficulty": "Low -- documented self-assessments and development plans provide direct evidence",
+    "ai_context": "Intermediate competence developers use AI literacy frameworks to structure their own and others' AI-specific skill development"
+  },
+  {
+    "id": "dc-5-4-IA",
+    "competency_id": "dc-5-4",
+    "competency_name": "Identifying and addressing digital competence needs",
+    "area": "Problem Identification and Solving",
+    "boundary": "IA",
+    "boundary_label": "Intermediate to Advanced",
+    "lower_level": "intermediate",
+    "upper_level": "advanced",
+    "key_discriminator": "At Intermediate level individuals assess and support peer competence; at Advanced they design and deliver competence programmes at scale.",
+    "discriminator_type": "application_vs_critical_use",
+    "what_changes": "Shift from peer support to institutional programme design; from supporting individuals to conducting organisational needs analysis and delivering evaluated training.",
+    "false_positives": [
+      {
+        "pattern": "Active digital skills mentor",
+        "why_misleading": "Informal mentoring is Intermediate; Advanced involves designing and delivering structured training programmes with formal evaluation and evidence-based underpinning",
+        "how_to_distinguish": "Ask whether the person has designed a training programme (not just delivered content) with learning outcomes, needs analysis, and evaluation methodology"
+      },
+      {
+        "pattern": "Regular trainer and facilitator",
+        "why_misleading": "Delivering training is Intermediate to Advanced depending on how the training was designed; Advanced requires the full cycle of needs analysis, theory-informed design, delivery, and evaluation",
+        "how_to_distinguish": "Ask about the needs analysis that informed the training design and the evaluation evidence collected after delivery"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Has designed and delivered a digital competence development programme for a specific HE audience with documented needs analysis, learning design rationale, delivery evidence, and participant evaluation data",
+      "strong": "Institutional digital capability programme contribution with organisational needs analysis, theory-informed design, multi-cohort delivery, and evaluation evidence showing competence development"
+    },
+    "regression_risk": "Low",
+    "assessment_difficulty": "Medium",
+    "ai_context": "Advanced competence developers design AI literacy curricula addressing the full range of AI-specific competences required in contemporary HE practice"
+  },
+  {
+    "id": "dc-5-4-AH",
+    "competency_id": "dc-5-4",
+    "competency_name": "Identifying and addressing digital competence needs",
+    "area": "Problem Identification and Solving",
+    "boundary": "AH",
+    "boundary_label": "Advanced to Highly Advanced",
+    "lower_level": "advanced",
+    "upper_level": "highly_advanced",
+    "key_discriminator": "At Advanced level competence programmes are designed and delivered; at Highly Advanced the frameworks that guide competence development are shaped.",
+    "discriminator_type": "critical_use_vs_innovation",
+    "what_changes": "Shift from programme design to framework development; from institutional provision to sector or national influence on what digital competence means and how it should be developed.",
+    "false_positives": [
+      {
+        "pattern": "Experienced digital skills trainer",
+        "why_misleading": "Experienced training delivery is Advanced; Highly Advanced requires scholarly contribution to or formal governance of competence frameworks",
+        "how_to_distinguish": "Look for published scholarly work on digital competence, DigComp expert group involvement, or formal contribution to national digital skills strategy"
+      },
+      {
+        "pattern": "Senior learning technologist",
+        "why_misleading": "Senior institutional role is Advanced; Highly Advanced requires sector or scholarly influence on digital competence frameworks themselves",
+        "how_to_distinguish": "Assess published work and formal framework contribution record"
+      }
+    ],
+    "threshold_evidence": {
+      "minimum": "Published scholarly research on digital competence frameworks, assessment methodology, or digital literacy theory; or formal contribution to DigComp, JISC BDC, or equivalent national/international framework revision process",
+      "strong": "Leadership of a national or international digital competence framework development or validation process; or landmark publication on the future of digital competence in AI-augmented educational environments"
+    },
+    "regression_risk": "Very low",
+    "assessment_difficulty": "Very high",
+    "ai_context": "At this level individuals shape the evolution of digital competence frameworks themselves to address the AI literacy requirements of contemporary HE professionals"
+  }
+]

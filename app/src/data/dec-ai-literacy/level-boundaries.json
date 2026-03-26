@@ -1,0 +1,493 @@
+{
+  "framework_id": "dec-ai-literacy",
+  "framework_name": "DEC AI Literacy Framework",
+  "file_type": "level-boundaries",
+  "research_basis": {
+    "generated_at": "2026-03-26",
+    "authoring_method": "Original synthesis using the user brief and the THE DMI implementation reference as the structural benchmark.",
+    "licence_handling": "All rights reserved; reproduction without amendment permitted. This implementation uses original scenario and practitioner-language content informed by the framework structure."
+  },
+  "object_count": 15,
+  "objects": [
+    {
+      "boundary_id": "dec-understanding-ae",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-understanding",
+      "dimension_name": "Understanding AI and Data",
+      "boundary_code": "AE",
+      "from_level_id": "dec-understanding-awareness",
+      "to_level_id": "dec-understanding-exploration",
+      "from_level_name": "Awareness",
+      "to_level_name": "Exploration",
+      "key_discriminator": "In Understanding AI and Data, The key shift is from passive awareness to deliberate experimentation with reflection on what happened and why.",
+      "discriminator_type": "passive_awareness_vs_active_exploration",
+      "common_false_positives": [
+        {
+          "pattern": "Curiosity without testing",
+          "why_not_sufficient": "Interest in AI does not yet show structured experimentation."
+        },
+        {
+          "pattern": "Random trial and error",
+          "why_not_sufficient": "Trying many tools without criteria does not amount to meaningful exploration."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "Runs a purposeful comparison or trial using explicit criteria.",
+        "Can describe what changed after exploring more than one option or approach."
+      ],
+      "strong_threshold_evidence": [
+        "Keeps notes or evidence from exploration that inform later practice.",
+        "Connects observed results to task requirements rather than general preference."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "dec-understanding-ep",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-understanding",
+      "dimension_name": "Understanding AI and Data",
+      "boundary_code": "EP",
+      "from_level_id": "dec-understanding-exploration",
+      "to_level_id": "dec-understanding-practice",
+      "from_level_name": "Exploration",
+      "to_level_name": "Practice",
+      "key_discriminator": "In Understanding AI and Data, The key shift is from trying AI in episodes to integrating it in a dependable, repeatable way.",
+      "discriminator_type": "episodic_experimentation_vs_repeatable_practice",
+      "common_false_positives": [
+        {
+          "pattern": "Promising pilot",
+          "why_not_sufficient": "A successful experiment may not yet survive normal workload, constraints, or quality requirements."
+        },
+        {
+          "pattern": "Surface consistency",
+          "why_not_sufficient": "Repeating the same action is not enough if the reasoning and checks remain weak."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "Uses a repeatable workflow in authentic work or study.",
+        "Builds in quality checks, review steps, or context-specific constraints."
+      ],
+      "strong_threshold_evidence": [
+        "Applies the workflow across multiple cases with stable quality.",
+        "Can improve the workflow rather than just executing it."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "dec-understanding-pm",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-understanding",
+      "dimension_name": "Understanding AI and Data",
+      "boundary_code": "PM",
+      "from_level_id": "dec-understanding-practice",
+      "to_level_id": "dec-understanding-mastery",
+      "from_level_name": "Practice",
+      "to_level_name": "Mastery",
+      "key_discriminator": "In Understanding AI and Data, The key shift is from competent personal practice to creating exemplars, standards, or models that shape others' work.",
+      "discriminator_type": "competent_use_vs_field_shaping",
+      "common_false_positives": [
+        {
+          "pattern": "High output volume",
+          "why_not_sufficient": "Doing a lot of AI-supported work does not by itself amount to mastery."
+        },
+        {
+          "pattern": "Local optimisation",
+          "why_not_sufficient": "A strong individual method may still be too narrow to guide others or shape quality standards."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "Produces exemplars, guidance, or design choices that others can adopt.",
+        "Explains why a particular approach fits the field, task, or audience."
+      ],
+      "strong_threshold_evidence": [
+        "Mentors others or helps set standards for quality and responsible use.",
+        "Reworks practice in response to changing tools, evidence, or field expectations."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "dec-using-ae",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-using",
+      "dimension_name": "Using AI Tools",
+      "boundary_code": "AE",
+      "from_level_id": "dec-using-awareness",
+      "to_level_id": "dec-using-exploration",
+      "from_level_name": "Awareness",
+      "to_level_name": "Exploration",
+      "key_discriminator": "In Using AI Tools, The key shift is from passive awareness to deliberate experimentation with reflection on what happened and why.",
+      "discriminator_type": "passive_awareness_vs_active_exploration",
+      "common_false_positives": [
+        {
+          "pattern": "Curiosity without testing",
+          "why_not_sufficient": "Interest in AI does not yet show structured experimentation."
+        },
+        {
+          "pattern": "Random trial and error",
+          "why_not_sufficient": "Trying many tools without criteria does not amount to meaningful exploration."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "Runs a purposeful comparison or trial using explicit criteria.",
+        "Can describe what changed after exploring more than one option or approach."
+      ],
+      "strong_threshold_evidence": [
+        "Keeps notes or evidence from exploration that inform later practice.",
+        "Connects observed results to task requirements rather than general preference."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "dec-using-ep",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-using",
+      "dimension_name": "Using AI Tools",
+      "boundary_code": "EP",
+      "from_level_id": "dec-using-exploration",
+      "to_level_id": "dec-using-practice",
+      "from_level_name": "Exploration",
+      "to_level_name": "Practice",
+      "key_discriminator": "In Using AI Tools, The key shift is from trying AI in episodes to integrating it in a dependable, repeatable way.",
+      "discriminator_type": "episodic_experimentation_vs_repeatable_practice",
+      "common_false_positives": [
+        {
+          "pattern": "Promising pilot",
+          "why_not_sufficient": "A successful experiment may not yet survive normal workload, constraints, or quality requirements."
+        },
+        {
+          "pattern": "Surface consistency",
+          "why_not_sufficient": "Repeating the same action is not enough if the reasoning and checks remain weak."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "Uses a repeatable workflow in authentic work or study.",
+        "Builds in quality checks, review steps, or context-specific constraints."
+      ],
+      "strong_threshold_evidence": [
+        "Applies the workflow across multiple cases with stable quality.",
+        "Can improve the workflow rather than just executing it."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "dec-using-pm",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-using",
+      "dimension_name": "Using AI Tools",
+      "boundary_code": "PM",
+      "from_level_id": "dec-using-practice",
+      "to_level_id": "dec-using-mastery",
+      "from_level_name": "Practice",
+      "to_level_name": "Mastery",
+      "key_discriminator": "In Using AI Tools, The key shift is from competent personal practice to creating exemplars, standards, or models that shape others' work.",
+      "discriminator_type": "competent_use_vs_field_shaping",
+      "common_false_positives": [
+        {
+          "pattern": "High output volume",
+          "why_not_sufficient": "Doing a lot of AI-supported work does not by itself amount to mastery."
+        },
+        {
+          "pattern": "Local optimisation",
+          "why_not_sufficient": "A strong individual method may still be too narrow to guide others or shape quality standards."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "Produces exemplars, guidance, or design choices that others can adopt.",
+        "Explains why a particular approach fits the field, task, or audience."
+      ],
+      "strong_threshold_evidence": [
+        "Mentors others or helps set standards for quality and responsible use.",
+        "Reworks practice in response to changing tools, evidence, or field expectations."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "dec-creating-ae",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-creating",
+      "dimension_name": "Creating with AI",
+      "boundary_code": "AE",
+      "from_level_id": "dec-creating-awareness",
+      "to_level_id": "dec-creating-exploration",
+      "from_level_name": "Awareness",
+      "to_level_name": "Exploration",
+      "key_discriminator": "In Creating with AI, The key shift is from passive awareness to deliberate experimentation with reflection on what happened and why.",
+      "discriminator_type": "passive_awareness_vs_active_exploration",
+      "common_false_positives": [
+        {
+          "pattern": "Curiosity without testing",
+          "why_not_sufficient": "Interest in AI does not yet show structured experimentation."
+        },
+        {
+          "pattern": "Random trial and error",
+          "why_not_sufficient": "Trying many tools without criteria does not amount to meaningful exploration."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "Runs a purposeful comparison or trial using explicit criteria.",
+        "Can describe what changed after exploring more than one option or approach."
+      ],
+      "strong_threshold_evidence": [
+        "Keeps notes or evidence from exploration that inform later practice.",
+        "Connects observed results to task requirements rather than general preference."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "dec-creating-ep",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-creating",
+      "dimension_name": "Creating with AI",
+      "boundary_code": "EP",
+      "from_level_id": "dec-creating-exploration",
+      "to_level_id": "dec-creating-practice",
+      "from_level_name": "Exploration",
+      "to_level_name": "Practice",
+      "key_discriminator": "In Creating with AI, The key shift is from trying AI in episodes to integrating it in a dependable, repeatable way.",
+      "discriminator_type": "episodic_experimentation_vs_repeatable_practice",
+      "common_false_positives": [
+        {
+          "pattern": "Promising pilot",
+          "why_not_sufficient": "A successful experiment may not yet survive normal workload, constraints, or quality requirements."
+        },
+        {
+          "pattern": "Surface consistency",
+          "why_not_sufficient": "Repeating the same action is not enough if the reasoning and checks remain weak."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "Uses a repeatable workflow in authentic work or study.",
+        "Builds in quality checks, review steps, or context-specific constraints."
+      ],
+      "strong_threshold_evidence": [
+        "Applies the workflow across multiple cases with stable quality.",
+        "Can improve the workflow rather than just executing it."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "dec-creating-pm",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-creating",
+      "dimension_name": "Creating with AI",
+      "boundary_code": "PM",
+      "from_level_id": "dec-creating-practice",
+      "to_level_id": "dec-creating-mastery",
+      "from_level_name": "Practice",
+      "to_level_name": "Mastery",
+      "key_discriminator": "In Creating with AI, The key shift is from competent personal practice to creating exemplars, standards, or models that shape others' work.",
+      "discriminator_type": "competent_use_vs_field_shaping",
+      "common_false_positives": [
+        {
+          "pattern": "High output volume",
+          "why_not_sufficient": "Doing a lot of AI-supported work does not by itself amount to mastery."
+        },
+        {
+          "pattern": "Local optimisation",
+          "why_not_sufficient": "A strong individual method may still be too narrow to guide others or shape quality standards."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "Produces exemplars, guidance, or design choices that others can adopt.",
+        "Explains why a particular approach fits the field, task, or audience."
+      ],
+      "strong_threshold_evidence": [
+        "Mentors others or helps set standards for quality and responsible use.",
+        "Reworks practice in response to changing tools, evidence, or field expectations."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "dec-ethics-ae",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-ethics",
+      "dimension_name": "AI Ethics and Society",
+      "boundary_code": "AE",
+      "from_level_id": "dec-ethics-awareness",
+      "to_level_id": "dec-ethics-exploration",
+      "from_level_name": "Awareness",
+      "to_level_name": "Exploration",
+      "key_discriminator": "In AI Ethics and Society, The key shift is from passive awareness to deliberate experimentation with reflection on what happened and why.",
+      "discriminator_type": "passive_awareness_vs_active_exploration",
+      "common_false_positives": [
+        {
+          "pattern": "Curiosity without testing",
+          "why_not_sufficient": "Interest in AI does not yet show structured experimentation."
+        },
+        {
+          "pattern": "Random trial and error",
+          "why_not_sufficient": "Trying many tools without criteria does not amount to meaningful exploration."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "Runs a purposeful comparison or trial using explicit criteria.",
+        "Can describe what changed after exploring more than one option or approach."
+      ],
+      "strong_threshold_evidence": [
+        "Keeps notes or evidence from exploration that inform later practice.",
+        "Connects observed results to task requirements rather than general preference."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "dec-ethics-ep",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-ethics",
+      "dimension_name": "AI Ethics and Society",
+      "boundary_code": "EP",
+      "from_level_id": "dec-ethics-exploration",
+      "to_level_id": "dec-ethics-practice",
+      "from_level_name": "Exploration",
+      "to_level_name": "Practice",
+      "key_discriminator": "In AI Ethics and Society, The key shift is from trying AI in episodes to integrating it in a dependable, repeatable way.",
+      "discriminator_type": "episodic_experimentation_vs_repeatable_practice",
+      "common_false_positives": [
+        {
+          "pattern": "Promising pilot",
+          "why_not_sufficient": "A successful experiment may not yet survive normal workload, constraints, or quality requirements."
+        },
+        {
+          "pattern": "Surface consistency",
+          "why_not_sufficient": "Repeating the same action is not enough if the reasoning and checks remain weak."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "Uses a repeatable workflow in authentic work or study.",
+        "Builds in quality checks, review steps, or context-specific constraints."
+      ],
+      "strong_threshold_evidence": [
+        "Applies the workflow across multiple cases with stable quality.",
+        "Can improve the workflow rather than just executing it."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "dec-ethics-pm",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-ethics",
+      "dimension_name": "AI Ethics and Society",
+      "boundary_code": "PM",
+      "from_level_id": "dec-ethics-practice",
+      "to_level_id": "dec-ethics-mastery",
+      "from_level_name": "Practice",
+      "to_level_name": "Mastery",
+      "key_discriminator": "In AI Ethics and Society, The key shift is from competent personal practice to creating exemplars, standards, or models that shape others' work.",
+      "discriminator_type": "competent_use_vs_field_shaping",
+      "common_false_positives": [
+        {
+          "pattern": "High output volume",
+          "why_not_sufficient": "Doing a lot of AI-supported work does not by itself amount to mastery."
+        },
+        {
+          "pattern": "Local optimisation",
+          "why_not_sufficient": "A strong individual method may still be too narrow to guide others or shape quality standards."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "Produces exemplars, guidance, or design choices that others can adopt.",
+        "Explains why a particular approach fits the field, task, or audience."
+      ],
+      "strong_threshold_evidence": [
+        "Mentors others or helps set standards for quality and responsible use.",
+        "Reworks practice in response to changing tools, evidence, or field expectations."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "dec-discipline-ae",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-discipline",
+      "dimension_name": "AI in Discipline Contexts",
+      "boundary_code": "AE",
+      "from_level_id": "dec-discipline-awareness",
+      "to_level_id": "dec-discipline-exploration",
+      "from_level_name": "Awareness",
+      "to_level_name": "Exploration",
+      "key_discriminator": "In AI in Discipline Contexts, The key shift is from passive awareness to deliberate experimentation with reflection on what happened and why.",
+      "discriminator_type": "passive_awareness_vs_active_exploration",
+      "common_false_positives": [
+        {
+          "pattern": "Curiosity without testing",
+          "why_not_sufficient": "Interest in AI does not yet show structured experimentation."
+        },
+        {
+          "pattern": "Random trial and error",
+          "why_not_sufficient": "Trying many tools without criteria does not amount to meaningful exploration."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "Runs a purposeful comparison or trial using explicit criteria.",
+        "Can describe what changed after exploring more than one option or approach."
+      ],
+      "strong_threshold_evidence": [
+        "Keeps notes or evidence from exploration that inform later practice.",
+        "Connects observed results to task requirements rather than general preference."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "dec-discipline-ep",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-discipline",
+      "dimension_name": "AI in Discipline Contexts",
+      "boundary_code": "EP",
+      "from_level_id": "dec-discipline-exploration",
+      "to_level_id": "dec-discipline-practice",
+      "from_level_name": "Exploration",
+      "to_level_name": "Practice",
+      "key_discriminator": "In AI in Discipline Contexts, The key shift is from trying AI in episodes to integrating it in a dependable, repeatable way.",
+      "discriminator_type": "episodic_experimentation_vs_repeatable_practice",
+      "common_false_positives": [
+        {
+          "pattern": "Promising pilot",
+          "why_not_sufficient": "A successful experiment may not yet survive normal workload, constraints, or quality requirements."
+        },
+        {
+          "pattern": "Surface consistency",
+          "why_not_sufficient": "Repeating the same action is not enough if the reasoning and checks remain weak."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "Uses a repeatable workflow in authentic work or study.",
+        "Builds in quality checks, review steps, or context-specific constraints."
+      ],
+      "strong_threshold_evidence": [
+        "Applies the workflow across multiple cases with stable quality.",
+        "Can improve the workflow rather than just executing it."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "dec-discipline-pm",
+      "framework_id": "dec-ai-literacy",
+      "dimension_id": "dec-discipline",
+      "dimension_name": "AI in Discipline Contexts",
+      "boundary_code": "PM",
+      "from_level_id": "dec-discipline-practice",
+      "to_level_id": "dec-discipline-mastery",
+      "from_level_name": "Practice",
+      "to_level_name": "Mastery",
+      "key_discriminator": "In AI in Discipline Contexts, The key shift is from competent personal practice to creating exemplars, standards, or models that shape others' work.",
+      "discriminator_type": "competent_use_vs_field_shaping",
+      "common_false_positives": [
+        {
+          "pattern": "High output volume",
+          "why_not_sufficient": "Doing a lot of AI-supported work does not by itself amount to mastery."
+        },
+        {
+          "pattern": "Local optimisation",
+          "why_not_sufficient": "A strong individual method may still be too narrow to guide others or shape quality standards."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "Produces exemplars, guidance, or design choices that others can adopt.",
+        "Explains why a particular approach fits the field, task, or audience."
+      ],
+      "strong_threshold_evidence": [
+        "Mentors others or helps set standards for quality and responsible use.",
+        "Reworks practice in response to changing tools, evidence, or field expectations."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    }
+  ]
+}

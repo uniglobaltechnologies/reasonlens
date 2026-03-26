@@ -1,0 +1,62 @@
+{
+  "_meta": {
+    "file": "persona-context-matrix.json",
+    "framework_id": "iste-educators",
+    "framework_name": "ISTE Standards for Educators v4.02",
+    "purpose": "Maps assessment context factors to persona-specific prompt variations, scenario filtering, and report tone. Used by the ReasonLens assessment engine to tailor the experience to each respondent's context.",
+    "generated_for": "ReasonLens"
+  },
+  "context_factors": {},
+  "persona_mappings": [
+    {
+      "persona_id": "iste-educators-secondary",
+      "label": "Secondary School Teacher",
+      "match_criteria": {
+        "institution_level": [
+          "secondary",
+          "post-16"
+        ]
+      },
+      "scenario_tone": "Scenarios use classroom, departmental, and whole-school contexts. Reference timetable constraints, assessment pressures, and mixed-ability teaching.",
+      "report_tone": "Professional and collegial. Acknowledge the complexity of the secondary school context. Avoid implying the educator needs to do more \u2014 frame as 'opportunities to develop'.",
+      "context_hints": {
+        "subject_area": "Use to filter subject-relevant scenario stems. Humanities and science contexts available.",
+        "years_teaching": "Early-career teachers may need more scaffolding language. Experienced teachers can handle more challenging nuisance responses.",
+        "tech_confidence": "Low-confidence respondents: use scenarios where the attractive nuisance involves confidence-building but not full standard demonstration."
+      }
+    },
+    {
+      "persona_id": "iste-educators-primary",
+      "label": "Primary School Teacher",
+      "match_criteria": {
+        "institution_level": [
+          "primary",
+          "elementary"
+        ]
+      },
+      "scenario_tone": "Scenarios use whole-class, pastoral, and cross-curricular contexts. Avoid references to department structures. Student wellbeing and parental engagement are natural themes.",
+      "report_tone": "Warm and practically focused. Primary educators are often generalists \u2014 acknowledge breadth of role.",
+      "context_hints": {
+        "subject_area": "Less relevant at primary level \u2014 use general or cross-curricular scenarios.",
+        "tech_confidence": "Primary sector may have wider confidence variation \u2014 calibrate scenarios to stated confidence."
+      }
+    },
+    {
+      "persona_id": "iste-educators-HE",
+      "label": "Higher Education Educator",
+      "match_criteria": {
+        "institution_level": [
+          "HE",
+          "higher_education",
+          "university"
+        ]
+      },
+      "scenario_tone": "Scenarios use lecture, seminar, and online learning contexts. Reference academic freedom, research-teaching nexus, and student digital literacy in HE.",
+      "report_tone": "Peer-level and academically respectful. Avoid language that feels imported from schools. Connect to research-informed practice.",
+      "context_hints": {
+        "subject_area": "HE scenarios can use discipline-specific academic contexts (e.g., STEM lab, humanities seminar).",
+        "years_teaching": "Early-career HE educators may be research-primary \u2014 acknowledge this in coaching prompts."
+      }
+    }
+  ]
+}

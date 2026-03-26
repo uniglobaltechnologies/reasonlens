@@ -1,0 +1,584 @@
+{
+  "framework_id": "jisc-bdc-role-profiles",
+  "profile_id": "bdc-researcher",
+  "profile_name": "Jisc Building Digital Capability Researcher Profile",
+  "authoring_note": "Original boundary operationalisation informed by framework structure. Boundary wording is newly written for this deliverable.",
+  "boundaries": [
+    {
+      "boundary_id": "bdc-researcher-prof-dc",
+      "profile_id": "bdc-researcher",
+      "profile_name": "Jisc Building Digital Capability Researcher Profile",
+      "role_code": "RES",
+      "element_code": "PROF",
+      "element_name": "Digital Proficiency and Productivity",
+      "boundary_code": "DC",
+      "boundary_label": "Developing to Capable",
+      "from_level": "Developing",
+      "to_level": "Capable",
+      "discriminator_type": "assisted_to_independent",
+      "key_discriminator": "The shift is from getting routine work done with support to running dependable digital workflows independently.",
+      "critical_shift": {
+        "from": "Keeps essential digital tasks moving but still relies on prompts, familiar routines or local help when work becomes less predictable.",
+        "to": "Uses core tools independently, chooses sensible workflows and solves common issues without much interruption."
+      },
+      "role_context_focus": "reliable use of research tools and project workflows",
+      "common_false_positives": [
+        {
+          "pattern": "Repeated success with one familiar routine",
+          "why_not_enough": "This may show habit rather than independent control when the task changes."
+        },
+        {
+          "pattern": "Owning several devices or apps",
+          "why_not_enough": "Access and quantity do not show coherent workflow management."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "One repeatable setup in research software and devices that works across routine tasks without requiring rescue from other people.",
+          "Consistent organisation in reference and data tools so that the current version, deadline or next step can be found quickly."
+        ],
+        "strong": [
+          "Independent handling of a common problem in project files and workflows with a clear explanation of the chosen fix.",
+          "A short example showing that the workflow in reference and data tools remains reliable when the context changes slightly."
+        ],
+        "threshold_hint": "core research work continues without version or process confusion"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about reliable use of research tools and project workflows, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "familiarity_trap",
+          "tool_accumulation"
+        ],
+        "role_specific_note": "In Researcher contexts, evidence of capable practice should be visible through core research work continues without version or process confusion."
+      }
+    },
+    {
+      "boundary_id": "bdc-researcher-prof-cp",
+      "profile_id": "bdc-researcher",
+      "profile_name": "Jisc Building Digital Capability Researcher Profile",
+      "role_code": "RES",
+      "element_code": "PROF",
+      "element_name": "Digital Proficiency and Productivity",
+      "boundary_code": "CP",
+      "boundary_label": "Capable to Proficient",
+      "from_level": "Capable",
+      "to_level": "Proficient",
+      "discriminator_type": "independent_to_optimising",
+      "key_discriminator": "The shift is from competent personal use to improving, standardising or strategically refining digital workflows.",
+      "critical_shift": {
+        "from": "Uses core tools independently, chooses sensible workflows and solves common issues without much interruption.",
+        "to": "Optimises workflows, judges tool choices critically and improves practice for other people as well as for themselves."
+      },
+      "role_context_focus": "improving reproducibility, coordination or efficiency in research workflows",
+      "common_false_positives": [
+        {
+          "pattern": "A very efficient personal setup",
+          "why_not_enough": "A private workaround may still be fragile, exclusionary or impossible for others to follow."
+        },
+        {
+          "pattern": "Introducing a feature-rich new tool",
+          "why_not_enough": "More functionality is not the same as optimising the overall workflow."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "A practical improvement to reference and data tools that other people can follow with less friction.",
+          "A clear rationale for choosing or refining research software and devices based on fit, support and risk."
+        ],
+        "strong": [
+          "Before-and-after evidence that a shared workflow in project files and workflows became simpler, more reliable or more inclusive.",
+          "A lightweight standard, guidance note or review habit that helped sustain the improvement."
+        ],
+        "threshold_hint": "other researchers can follow or reuse the improved process"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about improving reproducibility, coordination or efficiency in research workflows, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "efficiency_without_sharing",
+          "novelty_over_workflow"
+        ],
+        "role_specific_note": "In Researcher contexts, evidence of proficient practice should be visible through other researchers can follow or reuse the improved process."
+      }
+    },
+    {
+      "boundary_id": "bdc-researcher-creat-dc",
+      "profile_id": "bdc-researcher",
+      "profile_name": "Jisc Building Digital Capability Researcher Profile",
+      "role_code": "RES",
+      "element_code": "CREAT",
+      "element_name": "Digital Creation, Problem-Solving and Innovation",
+      "boundary_code": "DC",
+      "boundary_label": "Developing to Capable",
+      "from_level": "Developing",
+      "to_level": "Capable",
+      "discriminator_type": "copying_to_purposeful_design",
+      "key_discriminator": "The shift is from editing or copying existing patterns to making deliberate design choices for a clear need.",
+      "critical_shift": {
+        "from": "Adapts existing materials or familiar methods to meet immediate needs, but design choices are still mostly guided by examples rather than by clear intent.",
+        "to": "Creates purposeful outputs or workflow changes that fit the user need, the task and the context."
+      },
+      "role_context_focus": "purposeful creation of digital methods, scripts or outputs",
+      "common_false_positives": [
+        {
+          "pattern": "Cosmetic editing of an existing asset",
+          "why_not_enough": "Surface change can leave the underlying design problem untouched."
+        },
+        {
+          "pattern": "Tool experimentation without a clear user need",
+          "why_not_enough": "Novelty alone does not demonstrate purposeful creation."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "An adapted or new analysis scripts or workflows with visible design choices linked to user need.",
+          "Evidence that digital research outputs improved the task beyond surface polish."
+        ],
+        "strong": [
+          "Feedback or testing notes showing refinement of methods prototypes or reproducible packages after use.",
+          "A short explanation of why the chosen design was more suitable than a copied default."
+        ],
+        "threshold_hint": "design decisions are tied to the research question"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about purposeful creation of digital methods, scripts or outputs, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "cosmetic_change",
+          "tool_first_experiment"
+        ],
+        "role_specific_note": "In Researcher contexts, evidence of capable practice should be visible through design decisions are tied to the research question."
+      }
+    },
+    {
+      "boundary_id": "bdc-researcher-creat-cp",
+      "profile_id": "bdc-researcher",
+      "profile_name": "Jisc Building Digital Capability Researcher Profile",
+      "role_code": "RES",
+      "element_code": "CREAT",
+      "element_name": "Digital Creation, Problem-Solving and Innovation",
+      "boundary_code": "CP",
+      "boundary_label": "Capable to Proficient",
+      "from_level": "Capable",
+      "to_level": "Proficient",
+      "discriminator_type": "purposeful_design_to_scalable_innovation",
+      "key_discriminator": "The shift is from producing effective one-off solutions to designing reusable or evaluative innovations.",
+      "critical_shift": {
+        "from": "Creates purposeful outputs or workflow changes that fit the user need, the task and the context.",
+        "to": "Designs reusable, evaluative and innovative solutions that improve practice beyond the immediate task."
+      },
+      "role_context_focus": "reusable, evaluative or open research solutions",
+      "common_false_positives": [
+        {
+          "pattern": "A polished one-off output",
+          "why_not_enough": "Quality in a single case does not prove reusability or evaluative improvement."
+        },
+        {
+          "pattern": "Copying a fashionable format from elsewhere",
+          "why_not_enough": "Borrowed forms still need local testing and evidence of value."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "A reusable or documented pattern created from analysis scripts or workflows.",
+          "Evidence that digital research outputs was evaluated rather than simply launched."
+        ],
+        "strong": [
+          "Adaptation, reuse or uptake of methods prototypes or reproducible packages by other people or contexts.",
+          "A decision record showing whether to scale, iterate or stop based on evidence."
+        ],
+        "threshold_hint": "methods or outputs are documented, testable or reusable"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about reusable, evaluative or open research solutions, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "one_off_polish",
+          "borrowed_format"
+        ],
+        "role_specific_note": "In Researcher contexts, evidence of proficient practice should be visible through methods or outputs are documented, testable or reusable."
+      }
+    },
+    {
+      "boundary_id": "bdc-researcher-learn-dc",
+      "profile_id": "bdc-researcher",
+      "profile_name": "Jisc Building Digital Capability Researcher Profile",
+      "role_code": "RES",
+      "element_code": "LEARN",
+      "element_name": "Digital Learning and Development",
+      "boundary_code": "DC",
+      "boundary_label": "Developing to Capable",
+      "from_level": "Developing",
+      "to_level": "Capable",
+      "discriminator_type": "reactive_to_planned_learning",
+      "key_discriminator": "The shift is from reactive just-enough learning to planned application of learning in practice.",
+      "critical_shift": {
+        "from": "Learns reactively when a new need appears and often stops once the immediate task is complete.",
+        "to": "Plans and applies digital development in a way that strengthens real practice over time."
+      },
+      "role_context_focus": "applying new digital methods or tools in research practice",
+      "common_false_positives": [
+        {
+          "pattern": "Completing training content",
+          "why_not_enough": "Attendance or completion does not prove transfer into practice."
+        },
+        {
+          "pattern": "Solving an immediate issue once",
+          "why_not_enough": "Just-enough learning can remain reactive if no longer-term application follows."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "Evidence that input from methods training led to a real change in practice.",
+          "A reflection from research practice experiments showing what was learned, applied and adjusted."
+        ],
+        "strong": [
+          "Repeated or sustained use of a new approach first explored through research practice experiments.",
+          "Contribution to scholarly peer learning that shows active engagement rather than attendance only."
+        ],
+        "threshold_hint": "learning changes what the researcher can now do reliably"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about applying new digital methods or tools in research practice, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "attendance_equals_learning",
+          "just_in_time_only"
+        ],
+        "role_specific_note": "In Researcher contexts, evidence of capable practice should be visible through learning changes what the researcher can now do reliably."
+      }
+    },
+    {
+      "boundary_id": "bdc-researcher-learn-cp",
+      "profile_id": "bdc-researcher",
+      "profile_name": "Jisc Building Digital Capability Researcher Profile",
+      "role_code": "RES",
+      "element_code": "LEARN",
+      "element_name": "Digital Learning and Development",
+      "boundary_code": "CP",
+      "boundary_label": "Capable to Proficient",
+      "from_level": "Capable",
+      "to_level": "Proficient",
+      "discriminator_type": "self_development_to_enabling_others",
+      "key_discriminator": "The shift is from managing one's own development to enabling and sustaining development in other people or groups.",
+      "critical_shift": {
+        "from": "Plans and applies digital development in a way that strengthens real practice over time.",
+        "to": "Creates conditions for shared digital learning, reflection and confidence building in others as well as in self."
+      },
+      "role_context_focus": "enabling method learning in teams or communities",
+      "common_false_positives": [
+        {
+          "pattern": "Giving informal tips to colleagues",
+          "why_not_enough": "Helpful advice is not yet the same as enabling structured development."
+        },
+        {
+          "pattern": "Running a single showcase session",
+          "why_not_enough": "Awareness activity without follow-up rarely changes practice sustainably."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "A structured peer or group activity using methods training or scholarly peer learning with a clear purpose.",
+          "Follow-up evidence that other people applied something from the learning process."
+        ],
+        "strong": [
+          "A sequenced development offer, not just a one-off event, using methods training or research practice experiments.",
+          "Adaptation of the learning support based on feedback, participation or observed needs."
+        ],
+        "threshold_hint": "others adopt or benefit from the learning structure"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about enabling method learning in teams or communities, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "tips_without_structure",
+          "awareness_as_action"
+        ],
+        "role_specific_note": "In Researcher contexts, evidence of proficient practice should be visible through others adopt or benefit from the learning structure."
+      }
+    },
+    {
+      "boundary_id": "bdc-researcher-lit-dc",
+      "profile_id": "bdc-researcher",
+      "profile_name": "Jisc Building Digital Capability Researcher Profile",
+      "role_code": "RES",
+      "element_code": "LIT",
+      "element_name": "Information, Data and Media Literacies",
+      "boundary_code": "DC",
+      "boundary_label": "Developing to Capable",
+      "from_level": "Developing",
+      "to_level": "Capable",
+      "discriminator_type": "finding_to_evaluating",
+      "key_discriminator": "The shift is from finding plausible information to evaluating and interpreting evidence deliberately.",
+      "critical_shift": {
+        "from": "Finds usable sources or data for immediate tasks, but evaluation of quality, limitations and relevance is still inconsistent.",
+        "to": "Judges source quality, data definitions and relevance deliberately, then uses evidence with care."
+      },
+      "role_context_focus": "critical use of literature, datasets and media claims",
+      "common_false_positives": [
+        {
+          "pattern": "Using sources that look authoritative",
+          "why_not_enough": "Presentation and confidence can mask weak or irrelevant evidence."
+        },
+        {
+          "pattern": "Producing attractive charts",
+          "why_not_enough": "Visual polish does not prove correct interpretation."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "A source or data trail from literature and data searches showing deliberate comparison rather than first-hit selection.",
+          "An interpretation of datasets or codebooks that checks definitions, timeframe or missing information."
+        ],
+        "strong": [
+          "A decision note using evidence syntheses that explains why some evidence was weighted more heavily.",
+          "A short explanation of limits or uncertainty in the evidence used."
+        ],
+        "threshold_hint": "provenance, quality and relevance are checked deliberately"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about critical use of literature, datasets and media claims, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "looks_authoritative",
+          "chart_equals_insight"
+        ],
+        "role_specific_note": "In Researcher contexts, evidence of capable practice should be visible through provenance, quality and relevance are checked deliberately."
+      }
+    },
+    {
+      "boundary_id": "bdc-researcher-lit-cp",
+      "profile_id": "bdc-researcher",
+      "profile_name": "Jisc Building Digital Capability Researcher Profile",
+      "role_code": "RES",
+      "element_code": "LIT",
+      "element_name": "Information, Data and Media Literacies",
+      "boundary_code": "CP",
+      "boundary_label": "Capable to Proficient",
+      "from_level": "Capable",
+      "to_level": "Proficient",
+      "discriminator_type": "evaluating_to_synthesising",
+      "key_discriminator": "The shift is from sound individual judgment to synthesis, interpretation and guidance that informs others.",
+      "critical_shift": {
+        "from": "Judges source quality, data definitions and relevance deliberately, then uses evidence with care.",
+        "to": "Synthesises information and data from multiple sources, explains uncertainty and helps others reason well with evidence."
+      },
+      "role_context_focus": "synthesis across evidence streams",
+      "common_false_positives": [
+        {
+          "pattern": "Discarding obviously biased sources",
+          "why_not_enough": "Critical literacy also requires weighing partial evidence, not only rejecting it."
+        },
+        {
+          "pattern": "Summarising one strong dataset clearly",
+          "why_not_enough": "A single-source summary is not the same as synthesis across evidence forms."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "A synthesis that combines more than one kind of evidence from literature and data searches or evidence syntheses.",
+          "An explanation of confidence, caveats or trade-offs for other people."
+        ],
+        "strong": [
+          "A briefing or summary in which contradictory evidence is handled transparently.",
+          "Evidence that others used the analysis from datasets or codebooks or evidence syntheses to make a sounder decision."
+        ],
+        "threshold_hint": "uncertainty, bias and method are explained for collaborators or audiences"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about synthesis across evidence streams, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "rejection_without_weighing",
+          "single_source_summary"
+        ],
+        "role_specific_note": "In Researcher contexts, evidence of proficient practice should be visible through uncertainty, bias and method are explained for collaborators or audiences."
+      }
+    },
+    {
+      "boundary_id": "bdc-researcher-comm-dc",
+      "profile_id": "bdc-researcher",
+      "profile_name": "Jisc Building Digital Capability Researcher Profile",
+      "role_code": "RES",
+      "element_code": "COMM",
+      "element_name": "Digital Communication, Collaboration and Participation",
+      "boundary_code": "DC",
+      "boundary_label": "Developing to Capable",
+      "from_level": "Developing",
+      "to_level": "Capable",
+      "discriminator_type": "participation_to_coordination",
+      "key_discriminator": "The shift is from habitual participation to intentional coordination and channel choice.",
+      "critical_shift": {
+        "from": "Uses common channels to stay in touch, but collaboration norms and channel choices are still mostly habitual.",
+        "to": "Chooses channels and collaboration methods intentionally to support the task, the audience and inclusive participation."
+      },
+      "role_context_focus": "purposeful co-authoring, project communication and network participation",
+      "common_false_positives": [
+        {
+          "pattern": "Being active on many channels",
+          "why_not_enough": "Activity can increase noise rather than improve coordination."
+        },
+        {
+          "pattern": "Replying quickly to messages",
+          "why_not_enough": "Speed alone does not show fit, clarity or inclusive participation."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "A clear channel or participation plan for co-authoring and project spaces.",
+          "Examples from research communities or networks showing that updates, current versions and decisions are easier to follow."
+        ],
+        "strong": [
+          "A working agreement or norm that improves participation in public engagement channels.",
+          "Evidence that the chosen communication pattern reduced confusion or duplication."
+        ],
+        "threshold_hint": "shared decisions and contributions are easier to track"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about purposeful co-authoring, project communication and network participation, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "more_channels_more_better",
+          "speed_over_fit"
+        ],
+        "role_specific_note": "In Researcher contexts, evidence of capable practice should be visible through shared decisions and contributions are easier to track."
+      }
+    },
+    {
+      "boundary_id": "bdc-researcher-comm-cp",
+      "profile_id": "bdc-researcher",
+      "profile_name": "Jisc Building Digital Capability Researcher Profile",
+      "role_code": "RES",
+      "element_code": "COMM",
+      "element_name": "Digital Communication, Collaboration and Participation",
+      "boundary_code": "CP",
+      "boundary_label": "Capable to Proficient",
+      "from_level": "Capable",
+      "to_level": "Proficient",
+      "discriminator_type": "coordination_to_facilitation",
+      "key_discriminator": "The shift is from communicating well oneself to facilitating collaboration and participation for groups.",
+      "critical_shift": {
+        "from": "Chooses channels and collaboration methods intentionally to support the task, the audience and inclusive participation.",
+        "to": "Facilitates productive collaboration or community participation and shapes better digital communication norms."
+      },
+      "role_context_focus": "facilitating collaborative research and scholarly participation",
+      "common_false_positives": [
+        {
+          "pattern": "Being the most visible contributor",
+          "why_not_enough": "Facilitation depends on enabling others, not on occupying the most space."
+        },
+        {
+          "pattern": "Launching a new community channel",
+          "why_not_enough": "A platform does not create a healthy collaboration culture by itself."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "A facilitated structure for research communities or networks or public engagement channels, not just active contribution by one person.",
+          "Evidence that participation, decision quality or inclusion improved."
+        ],
+        "strong": [
+          "Handled tension, exclusion or overload constructively within co-authoring and project spaces or public engagement channels.",
+          "A repeatable collaboration pattern that other groups can adopt."
+        ],
+        "threshold_hint": "collaboration norms support clarity, inclusion and contribution"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about facilitating collaborative research and scholarly participation, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "visibility_equals_facilitation",
+          "platform_equals_community"
+        ],
+        "role_specific_note": "In Researcher contexts, evidence of proficient practice should be visible through collaboration norms support clarity, inclusion and contribution."
+      }
+    },
+    {
+      "boundary_id": "bdc-researcher-id-dc",
+      "profile_id": "bdc-researcher",
+      "profile_name": "Jisc Building Digital Capability Researcher Profile",
+      "role_code": "RES",
+      "element_code": "ID",
+      "element_name": "Digital Identity and Wellbeing",
+      "boundary_code": "DC",
+      "boundary_label": "Developing to Capable",
+      "from_level": "Developing",
+      "to_level": "Capable",
+      "discriminator_type": "reactive_to_deliberate_management",
+      "key_discriminator": "The shift is from reactive self-protection to deliberate management of digital presence and habits.",
+      "critical_shift": {
+        "from": "Responds to digital identity or wellbeing issues after they arise, with actions that are often platform-specific or temporary.",
+        "to": "Manages presence, privacy, boundaries and digital habits deliberately across contexts."
+      },
+      "role_context_focus": "deliberate management of researcher presence, openness and wellbeing",
+      "common_false_positives": [
+        {
+          "pattern": "Changing one privacy setting after a problem",
+          "why_not_enough": "Reactive, platform-specific fixes do not show deliberate identity management."
+        },
+        {
+          "pattern": "Muting notifications temporarily",
+          "why_not_enough": "Short bursts of control can fade if habits and expectations remain unchanged."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "A deliberate review of researcher profiles and identifiers across more than one platform or context.",
+          "Sustained habits in reputation and openness choices that support healthier attention, availability or boundaries."
+        ],
+        "strong": [
+          "A coherent explanation of how workload and wellbeing practices choices align with role, values and risk.",
+          "Evidence that the same issue no longer recurs because the underlying habit changed."
+        ],
+        "threshold_hint": "identity choices match risk, recognition and role"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about deliberate management of researcher presence, openness and wellbeing, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "single_platform_fix",
+          "temporary_boundary"
+        ],
+        "role_specific_note": "In Researcher contexts, evidence of capable practice should be visible through identity choices match risk, recognition and role."
+      }
+    },
+    {
+      "boundary_id": "bdc-researcher-id-cp",
+      "profile_id": "bdc-researcher",
+      "profile_name": "Jisc Building Digital Capability Researcher Profile",
+      "role_code": "RES",
+      "element_code": "ID",
+      "element_name": "Digital Identity and Wellbeing",
+      "boundary_code": "CP",
+      "boundary_label": "Capable to Proficient",
+      "from_level": "Capable",
+      "to_level": "Proficient",
+      "discriminator_type": "deliberate_management_to_culture_shaping",
+      "key_discriminator": "The shift is from managing one's own identity and wellbeing to influencing norms, care and trust for others.",
+      "critical_shift": {
+        "from": "Manages presence, privacy, boundaries and digital habits deliberately across contexts.",
+        "to": "Models and shapes healthy, trustworthy and context-aware digital norms for wider groups or communities."
+      },
+      "role_context_focus": "modelling trustworthy and sustainable research participation",
+      "common_false_positives": [
+        {
+          "pattern": "Keeping one's own boundaries tidy",
+          "why_not_enough": "Personal practice does not by itself show culture-shaping influence."
+        },
+        {
+          "pattern": "Posting regularly with a polished profile",
+          "why_not_enough": "Visibility can increase risk or strain if not balanced with care and trust."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": [
+          "A contribution to shared norms or guidance related to workload and wellbeing practices.",
+          "Evidence that personal practice in researcher profiles and identifiers or reputation and openness choices is being used as a model for others."
+        ],
+        "strong": [
+          "A group-level change in digital conduct, boundaries or care influenced by the person's guidance.",
+          "A reflective account showing how visibility, trust and wellbeing were balanced for a wider community."
+        ],
+        "threshold_hint": "guidance or influence helps others balance openness, reputation and care"
+      },
+      "scenario_design_notes": {
+        "focus": "Write scenarios about modelling trustworthy and sustainable research participation, and make the user choose between the lower-level habit and the more purposeful higher-level response.",
+        "attractive_nuisance_patterns": [
+          "personal_habits_only",
+          "visibility_as_success"
+        ],
+        "role_specific_note": "In Researcher contexts, evidence of proficient practice should be visible through guidance or influence helps others balance openness, reputation and care."
+      }
+    }
+  ]
+}

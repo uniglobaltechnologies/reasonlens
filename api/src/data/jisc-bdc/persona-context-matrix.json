@@ -1,0 +1,267 @@
+{
+  "framework_id": "jisc-bdc-role-profiles",
+  "authoring_note": "The same five contextual factors are used across profiles, but their impact on scenario selection and interpretation varies by role profile.",
+  "factors": [
+    {
+      "factor": "role",
+      "type": "routing",
+      "values": [
+        "bdc-individual",
+        "bdc-teacher-he",
+        "bdc-researcher",
+        "bdc-professional-services",
+        "bdc-learning-technology",
+        "bdc-digital-leader",
+        "bdc-educational-developer"
+      ],
+      "global_effect": "Role is the primary routing factor because it determines which profile is used and whether role-specific scenarios substitute for universal scenarios.",
+      "profile_impacts": {
+        "bdc-individual": {
+          "salience": "critical",
+          "assessment_impact": "Use the full universal bank for selection. No role-specific substitutions are needed.",
+          "interpretation_impact": "Use broadly transferable language that works for staff or students.",
+          "scenario_selection_rule": "Deploy both universal scenarios for each element and boundary."
+        },
+        "bdc-teacher-he": {
+          "salience": "critical",
+          "assessment_impact": "Use the Teacher HE role-specific scenario as the primary scenario for each element and boundary, paired with the universal secondary scenario.",
+          "interpretation_impact": "Use role-specific language and examples appropriate to teachers and lecturers in higher education.",
+          "scenario_selection_rule": "Replace each universal 01 scenario with the Teacher HE role-specific 01 scenario, then keep universal 02 as the paired second scenario."
+        },
+        "bdc-researcher": {
+          "salience": "critical",
+          "assessment_impact": "Use the Researcher role-specific scenario as the primary scenario for each element and boundary, paired with the universal secondary scenario.",
+          "interpretation_impact": "Use role-specific language and examples appropriate to researchers and research-active staff or students.",
+          "scenario_selection_rule": "Replace each universal 01 scenario with the Researcher role-specific 01 scenario, then keep universal 02 as the paired second scenario."
+        },
+        "bdc-professional-services": {
+          "salience": "critical",
+          "assessment_impact": "Use the Professional Services role-specific scenario as the primary scenario for each element and boundary, paired with the universal secondary scenario.",
+          "interpretation_impact": "Use role-specific language and examples appropriate to professional, technical and administrative staff.",
+          "scenario_selection_rule": "Replace each universal 01 scenario with the Professional Services role-specific 01 scenario, then keep universal 02 as the paired second scenario."
+        },
+        "bdc-learning-technology": {
+          "salience": "critical",
+          "assessment_impact": "Use the Learning Technology role-specific scenario as the primary scenario for each element and boundary, paired with the universal secondary scenario.",
+          "interpretation_impact": "Use role-specific language and examples appropriate to learning technologists and allied digital learning practitioners.",
+          "scenario_selection_rule": "Replace each universal 01 scenario with the Learning Technology role-specific 01 scenario, then keep universal 02 as the paired second scenario."
+        },
+        "bdc-digital-leader": {
+          "salience": "critical",
+          "assessment_impact": "Use the Digital Leader role-specific scenario as the primary scenario for each element and boundary, paired with the universal secondary scenario.",
+          "interpretation_impact": "Use role-specific language and examples appropriate to formal or informal leaders shaping digital direction.",
+          "scenario_selection_rule": "Replace each universal 01 scenario with the Digital Leader role-specific 01 scenario, then keep universal 02 as the paired second scenario."
+        },
+        "bdc-educational-developer": {
+          "salience": "critical",
+          "assessment_impact": "Use the Educational Developer role-specific scenario as the primary scenario for each element and boundary, paired with the universal secondary scenario.",
+          "interpretation_impact": "Use role-specific language and examples appropriate to educational developers and academic development practitioners.",
+          "scenario_selection_rule": "Replace each universal 01 scenario with the Educational Developer role-specific 01 scenario, then keep universal 02 as the paired second scenario."
+        }
+      }
+    },
+    {
+      "factor": "subject_area",
+      "type": "contextualisation",
+      "values": [
+        "arts-humanities",
+        "social-sciences",
+        "STEM",
+        "professional-vocational",
+        "mixed-other"
+      ],
+      "global_effect": "Subject area changes examples, tools, evidence forms and common nuisances, but should not be allowed to weaken the intended standard.",
+      "profile_impacts": {
+        "bdc-individual": {
+          "salience": "medium",
+          "assessment_impact": "Subject area mainly changes examples, data sources and communication conventions rather than the underlying progression logic.",
+          "interpretation_impact": "Use local examples without relaxing the standard of evidence."
+        },
+        "bdc-teacher-he": {
+          "salience": "high",
+          "assessment_impact": "Subject area changes acceptable evidence, genres, risk points and the examples that feel authentic. Scenario wording should stay role-appropriate but allow disciplinary localisation.",
+          "interpretation_impact": "Use local examples without relaxing the standard of evidence."
+        },
+        "bdc-researcher": {
+          "salience": "high",
+          "assessment_impact": "Subject area changes acceptable evidence, genres, risk points and the examples that feel authentic. Scenario wording should stay role-appropriate but allow disciplinary localisation.",
+          "interpretation_impact": "Use local examples without relaxing the standard of evidence."
+        },
+        "bdc-professional-services": {
+          "salience": "low",
+          "assessment_impact": "Subject area has limited effect on the progression logic, though examples and terminology should still be localised where possible.",
+          "interpretation_impact": "Use local examples without relaxing the standard of evidence."
+        },
+        "bdc-learning-technology": {
+          "salience": "medium",
+          "assessment_impact": "Subject area mainly changes examples, data sources and communication conventions rather than the underlying progression logic.",
+          "interpretation_impact": "Use local examples without relaxing the standard of evidence."
+        },
+        "bdc-digital-leader": {
+          "salience": "low",
+          "assessment_impact": "Subject area has limited effect on the progression logic, though examples and terminology should still be localised where possible.",
+          "interpretation_impact": "Use local examples without relaxing the standard of evidence."
+        },
+        "bdc-educational-developer": {
+          "salience": "high",
+          "assessment_impact": "Subject area changes acceptable evidence, genres, risk points and the examples that feel authentic. Scenario wording should stay role-appropriate but allow disciplinary localisation.",
+          "interpretation_impact": "Use local examples without relaxing the standard of evidence."
+        }
+      }
+    },
+    {
+      "factor": "institution_type",
+      "type": "contextualisation",
+      "values": [
+        "university",
+        "college",
+        "research_institute",
+        "training_provider",
+        "specialist_provider",
+        "other"
+      ],
+      "global_effect": "Institution type affects governance, infrastructure, service expectations and scale, which changes how capability is expressed.",
+      "profile_impacts": {
+        "bdc-individual": {
+          "salience": "medium",
+          "assessment_impact": "Institution type affects priorities and support models but not the core boundary logic.",
+          "interpretation_impact": "Explain capability in relation to local structures and resources, especially where scale or governance differs."
+        },
+        "bdc-teacher-he": {
+          "salience": "medium",
+          "assessment_impact": "Institution type affects priorities and support models but not the core boundary logic.",
+          "interpretation_impact": "Explain capability in relation to local structures and resources, especially where scale or governance differs."
+        },
+        "bdc-researcher": {
+          "salience": "medium",
+          "assessment_impact": "Institution type affects priorities and support models but not the core boundary logic.",
+          "interpretation_impact": "Explain capability in relation to local structures and resources, especially where scale or governance differs."
+        },
+        "bdc-professional-services": {
+          "salience": "high",
+          "assessment_impact": "Institution type strongly shapes governance, service expectations, scale and the digital ecosystem available.",
+          "interpretation_impact": "Explain capability in relation to local structures and resources, especially where scale or governance differs."
+        },
+        "bdc-learning-technology": {
+          "salience": "high",
+          "assessment_impact": "Institution type strongly shapes governance, service expectations, scale and the digital ecosystem available.",
+          "interpretation_impact": "Explain capability in relation to local structures and resources, especially where scale or governance differs."
+        },
+        "bdc-digital-leader": {
+          "salience": "high",
+          "assessment_impact": "Institution type strongly shapes governance, service expectations, scale and the digital ecosystem available.",
+          "interpretation_impact": "Explain capability in relation to local structures and resources, especially where scale or governance differs."
+        },
+        "bdc-educational-developer": {
+          "salience": "medium",
+          "assessment_impact": "Institution type affects priorities and support models but not the core boundary logic.",
+          "interpretation_impact": "Explain capability in relation to local structures and resources, especially where scale or governance differs."
+        }
+      }
+    },
+    {
+      "factor": "institution_level",
+      "type": "routing_and_contextualisation",
+      "values": [
+        "HE",
+        "FE",
+        "skills",
+        "research",
+        "adult",
+        "other"
+      ],
+      "global_effect": "Institution level changes the teaching, service, regulatory and learner context in which evidence is generated.",
+      "profile_impacts": {
+        "bdc-individual": {
+          "salience": "medium",
+          "assessment_impact": "Institution level changes the setting of practice and which examples or constraints are most salient.",
+          "interpretation_impact": "Match examples and recommendations to the learner/staff stage and institutional remit."
+        },
+        "bdc-teacher-he": {
+          "salience": "critical",
+          "assessment_impact": "This profile is explicitly for higher education. Use HE examples and route other settings to a more suitable profile where possible.",
+          "interpretation_impact": "Match examples and recommendations to the learner/staff stage and institutional remit."
+        },
+        "bdc-researcher": {
+          "salience": "medium",
+          "assessment_impact": "Institution level changes the setting of practice and which examples or constraints are most salient.",
+          "interpretation_impact": "Match examples and recommendations to the learner/staff stage and institutional remit."
+        },
+        "bdc-professional-services": {
+          "salience": "medium",
+          "assessment_impact": "Institution level changes the setting of practice and which examples or constraints are most salient.",
+          "interpretation_impact": "Match examples and recommendations to the learner/staff stage and institutional remit."
+        },
+        "bdc-learning-technology": {
+          "salience": "high",
+          "assessment_impact": "Institution level changes curriculum, support and regulatory conditions enough to affect scenario fit and interpretation.",
+          "interpretation_impact": "Match examples and recommendations to the learner/staff stage and institutional remit."
+        },
+        "bdc-digital-leader": {
+          "salience": "medium",
+          "assessment_impact": "Institution level changes the setting of practice and which examples or constraints are most salient.",
+          "interpretation_impact": "Match examples and recommendations to the learner/staff stage and institutional remit."
+        },
+        "bdc-educational-developer": {
+          "salience": "high",
+          "assessment_impact": "Institution level changes curriculum, support and regulatory conditions enough to affect scenario fit and interpretation.",
+          "interpretation_impact": "Match examples and recommendations to the learner/staff stage and institutional remit."
+        }
+      }
+    },
+    {
+      "factor": "digital_confidence",
+      "type": "interpretive_modifier",
+      "values": [
+        "low",
+        "medium",
+        "high"
+      ],
+      "global_effect": "Digital confidence affects how people describe themselves and how much support they seek. It should inform language and scaffolding, not substitute for behavioural evidence.",
+      "profile_impacts": {
+        "bdc-individual": {
+          "salience": "high",
+          "assessment_impact": "Digital confidence should affect wording, support expectations and coaching, but not directly determine level assignment. Look for evidence of practice, because low confidence can hide capability and high confidence can exaggerate it.",
+          "interpretation_impact": "Use digital confidence to tune feedback tone, development scaffolding and scenario framing."
+        },
+        "bdc-teacher-he": {
+          "salience": "medium",
+          "assessment_impact": "Digital confidence should affect wording, support expectations and coaching, but not directly determine level assignment.",
+          "interpretation_impact": "Use digital confidence to tune feedback tone, development scaffolding and scenario framing."
+        },
+        "bdc-researcher": {
+          "salience": "medium",
+          "assessment_impact": "Digital confidence should affect wording, support expectations and coaching, but not directly determine level assignment.",
+          "interpretation_impact": "Use digital confidence to tune feedback tone, development scaffolding and scenario framing."
+        },
+        "bdc-professional-services": {
+          "salience": "medium",
+          "assessment_impact": "Digital confidence should affect wording, support expectations and coaching, but not directly determine level assignment.",
+          "interpretation_impact": "Use digital confidence to tune feedback tone, development scaffolding and scenario framing."
+        },
+        "bdc-learning-technology": {
+          "salience": "high",
+          "assessment_impact": "Digital confidence should affect wording, support expectations and coaching, but not directly determine level assignment. Look for evidence of practice, because low confidence can hide capability and high confidence can exaggerate it.",
+          "interpretation_impact": "Use digital confidence to tune feedback tone, development scaffolding and scenario framing."
+        },
+        "bdc-digital-leader": {
+          "salience": "medium",
+          "assessment_impact": "Digital confidence should affect wording, support expectations and coaching, but not directly determine level assignment.",
+          "interpretation_impact": "Use digital confidence to tune feedback tone, development scaffolding and scenario framing."
+        },
+        "bdc-educational-developer": {
+          "salience": "high",
+          "assessment_impact": "Digital confidence should affect wording, support expectations and coaching, but not directly determine level assignment. Look for evidence of practice, because low confidence can hide capability and high confidence can exaggerate it.",
+          "interpretation_impact": "Use digital confidence to tune feedback tone, development scaffolding and scenario framing."
+        }
+      }
+    }
+  ],
+  "interaction_notes": [
+    "Role is always evaluated first because it selects the most appropriate profile and scenario substitution pattern.",
+    "For specialised profiles, the role-specific scenario acts as the primary scenario and the universal 02 scenario remains the paired secondary scenario for the same element and boundary.",
+    "Digital confidence can create false positives and false negatives, so scoring should remain evidence-led and not confidence-led.",
+    "High subject-area sensitivity calls for local examples, not lower expectations.",
+    "Institution type and level matter most when they materially change platform mix, governance, scale or learner/service relationships."
+  ]
+}

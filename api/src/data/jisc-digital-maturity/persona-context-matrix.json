@@ -1,0 +1,202 @@
+{
+  "framework_id": "jisc-digital-maturity",
+  "framework_name": "Jisc Digital Maturity Model",
+  "research_basis": {
+    "generated_at": "2026-03-26",
+    "authoring_method": "Original synthesis using the user brief and the THE DMI implementation reference as the structural benchmark.",
+    "licence_handling": "Original implementation content informed by Jisc structure. Jisc digital maturity materials are published under terms including CC BY-NC-SA on the main toolkit page; scenarios and practitioner language here are independently written.",
+    "notes": [
+      "The source brief describes a 3-level model and requests 10 boundaries. This implementation therefore operationalises the two assessable adjacent boundaries in a 3-level model: Established to Enhanced (EM) and Enhanced to Mature (MM).",
+      "The brief also mentioned EE as a target-level code; that label is retained in metadata as an entry-threshold alias rather than a scored boundary."
+    ]
+  },
+  "factors": [
+    {
+      "factor": "institution_type",
+      "options": [
+        "university",
+        "FE_college",
+        "research_institute"
+      ],
+      "overall_effect": "institution_type changes which examples, evidence, and calibration rules are most appropriate without changing the core construct.",
+      "dimension_impacts": {
+        "jisc-culture": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of Organisational Digital Culture differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "jisc-innovation": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of Knowledge Creation & Innovation differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "jisc-development": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of Knowledge Development differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "jisc-management": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of Knowledge Management & Use differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        },
+        "jisc-exchange": {
+          "impact": "medium",
+          "how_it_changes_observation": "Available opportunities, governance constraints, and examples of Knowledge Exchange & Partnerships differ across institution types and levels.",
+          "calibration_rule": "Judge what is observable within the setting, while keeping expectations proportionate to role and remit."
+        }
+      }
+    },
+    {
+      "factor": "institution_size",
+      "options": [
+        "small",
+        "medium",
+        "large"
+      ],
+      "overall_effect": "institution_size changes which examples, evidence, and calibration rules are most appropriate without changing the core construct.",
+      "dimension_impacts": {
+        "jisc-culture": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex Organisational Digital Culture becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "jisc-innovation": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex Knowledge Creation & Innovation becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "jisc-development": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex Knowledge Development becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "jisc-management": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex Knowledge Management & Use becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "jisc-exchange": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex Knowledge Exchange & Partnerships becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        }
+      }
+    },
+    {
+      "factor": "region",
+      "options": [
+        "UK",
+        "Europe",
+        "Middle East",
+        "Africa",
+        "Asia-Pacific",
+        "North America",
+        "Latin America",
+        "other"
+      ],
+      "overall_effect": "region changes which examples, evidence, and calibration rules are most appropriate without changing the core construct.",
+      "dimension_impacts": {
+        "jisc-culture": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex Organisational Digital Culture becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "jisc-innovation": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex Knowledge Creation & Innovation becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "jisc-development": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex Knowledge Development becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "jisc-management": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex Knowledge Management & Use becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        },
+        "jisc-exchange": {
+          "impact": "medium",
+          "how_it_changes_observation": "Scale and regional context shape how visible and complex Knowledge Exchange & Partnerships becomes, especially for coordination and compliance.",
+          "calibration_rule": "Do not confuse scale-specific complexity with maturity or immaturity."
+        }
+      }
+    },
+    {
+      "factor": "respondent_role",
+      "options": [
+        "senior_leadership",
+        "faculty_lead",
+        "professional_services_lead",
+        "IT_or_digital_lead",
+        "research_lead"
+      ],
+      "overall_effect": "respondent_role changes which examples, evidence, and calibration rules are most appropriate without changing the core construct.",
+      "dimension_impacts": {
+        "jisc-culture": {
+          "impact": "high",
+          "how_it_changes_observation": "Organisational Digital Culture shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "jisc-innovation": {
+          "impact": "high",
+          "how_it_changes_observation": "Knowledge Creation & Innovation shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "jisc-development": {
+          "impact": "high",
+          "how_it_changes_observation": "Knowledge Development shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "jisc-management": {
+          "impact": "high",
+          "how_it_changes_observation": "Knowledge Management & Use shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        },
+        "jisc-exchange": {
+          "impact": "high",
+          "how_it_changes_observation": "Knowledge Exchange & Partnerships shows up differently across roles, so evidence should be taken from authentic decisions and artefacts rather than generic self-description.",
+          "calibration_rule": "Use role-relevant examples but do not lower the core standard."
+        }
+      }
+    },
+    {
+      "factor": "digital_transformation_stage",
+      "options": [
+        "early",
+        "mid",
+        "advanced"
+      ],
+      "overall_effect": "digital_transformation_stage changes which examples, evidence, and calibration rules are most appropriate without changing the core construct.",
+      "dimension_impacts": {
+        "jisc-culture": {
+          "impact": "high",
+          "how_it_changes_observation": "The current transformation stage changes whether Organisational Digital Culture is best evidenced through pilots, operational processes, or embedded governance.",
+          "calibration_rule": "Judge progression against coherent next steps, not against a fully mature end-state by default."
+        },
+        "jisc-innovation": {
+          "impact": "high",
+          "how_it_changes_observation": "The current transformation stage changes whether Knowledge Creation & Innovation is best evidenced through pilots, operational processes, or embedded governance.",
+          "calibration_rule": "Judge progression against coherent next steps, not against a fully mature end-state by default."
+        },
+        "jisc-development": {
+          "impact": "high",
+          "how_it_changes_observation": "The current transformation stage changes whether Knowledge Development is best evidenced through pilots, operational processes, or embedded governance.",
+          "calibration_rule": "Judge progression against coherent next steps, not against a fully mature end-state by default."
+        },
+        "jisc-management": {
+          "impact": "high",
+          "how_it_changes_observation": "The current transformation stage changes whether Knowledge Management & Use is best evidenced through pilots, operational processes, or embedded governance.",
+          "calibration_rule": "Judge progression against coherent next steps, not against a fully mature end-state by default."
+        },
+        "jisc-exchange": {
+          "impact": "high",
+          "how_it_changes_observation": "The current transformation stage changes whether Knowledge Exchange & Partnerships is best evidenced through pilots, operational processes, or embedded governance.",
+          "calibration_rule": "Judge progression against coherent next steps, not against a fully mature end-state by default."
+        }
+      }
+    }
+  ]
+}

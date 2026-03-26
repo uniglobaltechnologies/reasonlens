@@ -1,0 +1,347 @@
+{
+  "framework_id": "unesco-guidance-ai-education",
+  "framework_name": "UNESCO Guidance for AI in Education & Research",
+  "framework_source": "UNESCO (2023). Guidance for generative AI in education and research. UNESDOC pf0000386693. ISBN 978-92-3-100612-8.",
+  "reasonlens_implementation_note": "This file operationalises the UNESCO Guidance document for the ReasonLens platform as an institutional policy maturity assessment. The original UNESCO document is structured as regulatory guidance with policy measures and stakeholder frameworks, not as a maturity model. ReasonLens imposes a 4-dimension x 3-level maturity structure to enable comparable assessment alongside other institutional frameworks (THE DMI, QS AI Capability, JISC AI Maturity). The four dimensions synthesise UNESCO's eight policy action areas and four-stakeholder regulatory framework into assessable institutional governance dimensions. The three levels (Emerging/Developing/Established) are a ReasonLens construct informed by the JISC AI Maturity Model's stage-based approach.",
+  "dimensions": [
+    {
+      "id": "gp-human-centered",
+      "name": "Human-Centred AI",
+      "code": "HC",
+      "description": "The extent to which the institution ensures that AI deployment protects human agency, supports human decision-making, and centres educational relationships on human needs, values, and rights. Covers governance of AI-human interaction, protection of learner and staff autonomy, and human oversight mechanisms."
+    },
+    {
+      "id": "gp-safe-equitable",
+      "name": "Safe & Equitable",
+      "code": "SE",
+      "description": "The extent to which the institution implements mechanisms to ensure AI systems are safe, secure, inclusive, and equitable. Covers risk assessment, bias auditing, accessibility, digital divide mitigation, and protection of vulnerable populations including age-appropriate use."
+    },
+    {
+      "id": "gp-ethics",
+      "name": "Ethics & Accountability",
+      "code": "EA",
+      "description": "The extent to which the institution establishes ethical governance structures, accountability mechanisms, and regulatory compliance for AI use. Covers ethics committees, data protection, transparency requirements, AI use policies, academic integrity frameworks, and accountability chains."
+    },
+    {
+      "id": "gp-evidence",
+      "name": "Evidence-Based",
+      "code": "EB",
+      "description": "The extent to which the institution builds and uses evidence to inform AI adoption decisions, evaluates AI effectiveness through rigorous methods, and contributes to the broader knowledge base. Covers pilot evaluation, impact assessment, research partnerships, and evidence-informed policy development."
+    }
+  ],
+  "levels": [
+    {
+      "id_suffix": "emerging",
+      "name": "Emerging",
+      "order": 1,
+      "code": "E",
+      "description": "The institution recognises AI as relevant to education and research and has begun initial responses, but lacks coordinated policy, systematic governance, or evidence-based deployment. AI use is happening informally, and institutional responses are reactive or ad hoc."
+    },
+    {
+      "id_suffix": "developing",
+      "name": "Developing",
+      "order": 2,
+      "code": "D",
+      "description": "The institution has established initial policies, governance structures, and evaluation mechanisms for AI in education and research. Formal initiatives are underway but not yet comprehensive, institution-wide, or fully embedded in standard practice."
+    },
+    {
+      "id_suffix": "established",
+      "name": "Established",
+      "order": 3,
+      "code": "S",
+      "description": "The institution has comprehensive, embedded, and actively maintained AI governance, with evidence-driven policy, systematic safety and equity mechanisms, and continuous improvement processes. AI governance is integrated into institutional strategy and decision-making structures."
+    }
+  ],
+  "object_count": 12,
+  "structure": "4 dimensions x 3 levels",
+  "data": [
+    {
+      "id": "gp-human-centered-emerging",
+      "dimension_id": "gp-human-centered",
+      "level": "emerging",
+      "title": "Human-Centred AI: Emerging",
+      "plain_language_description": "AI tools are being adopted without formal consideration of their impact on human agency, learner autonomy, or educational relationships. Staff concerns exist but are not addressed through institutional mechanisms.",
+      "accurate_interpretations": [
+        "The institution has not yet formalised how it will ensure humans remain central to AI-mediated educational decisions.",
+        "AI adoption is happening but its impact on human agency is not being systematically assessed."
+      ],
+      "common_misinterpretations": [
+        "The institution opposes AI use.",
+        "The institution has comprehensive human-centred governance.",
+        "No one at the institution uses AI."
+      ],
+      "vocabulary": [
+        "human agency",
+        "learner autonomy",
+        "AI-mediated decisions",
+        "human oversight",
+        "automation"
+      ]
+    },
+    {
+      "id": "gp-human-centered-developing",
+      "dimension_id": "gp-human-centered",
+      "level": "developing",
+      "title": "Human-Centred AI: Developing",
+      "plain_language_description": "The institution has formal principles for human-AI interaction, classifies AI use by risk level, trains staff on override mechanisms, and informs students when AI is involved in decisions affecting them.",
+      "accurate_interpretations": [
+        "Formal human-centred AI governance is in place and being implemented, though not yet fully embedded.",
+        "The institution has initial structures to protect human agency in AI-mediated processes."
+      ],
+      "common_misinterpretations": [
+        "The institution has achieved mature human-centred governance.",
+        "The governance exists only on paper.",
+        "Human oversight is limited to IT security review."
+      ],
+      "vocabulary": [
+        "risk classification",
+        "override mechanism",
+        "transparency",
+        "human review",
+        "formal principles",
+        "high-risk AI"
+      ]
+    },
+    {
+      "id": "gp-human-centered-established",
+      "dimension_id": "gp-human-centered",
+      "level": "established",
+      "title": "Human-Centred AI: Established",
+      "plain_language_description": "Human oversight is embedded and audited across all high-risk AI uses. The institution's culture values human judgement, monitors AI impact longitudinally, and contributes to sector standards.",
+      "accurate_interpretations": [
+        "Human-centred governance is fully embedded, audited, and continuously improving.",
+        "The institution demonstrates mature integration of human agency protection into all AI governance."
+      ],
+      "common_misinterpretations": [
+        "The institution does not use AI.",
+        "Governance is static and does not evolve.",
+        "The institution has the most advanced AI tools in the sector."
+      ],
+      "vocabulary": [
+        "embedded governance",
+        "longitudinal monitoring",
+        "automation bias",
+        "continuous improvement",
+        "sector standards",
+        "cultural embedding"
+      ]
+    },
+    {
+      "id": "gp-safe-equitable-emerging",
+      "dimension_id": "gp-safe-equitable",
+      "level": "emerging",
+      "title": "Safe & Equitable: Emerging",
+      "plain_language_description": "AI tools are deployed without formal risk assessment for safety, bias, or equity. EDI frameworks do not address AI. Digital access disparities are not considered in AI deployment decisions.",
+      "accurate_interpretations": [
+        "The institution has not yet established systematic mechanisms to ensure AI is safe and equitable.",
+        "Safety and equity considerations are not formally part of AI deployment processes."
+      ],
+      "common_misinterpretations": [
+        "The institution has no AI.",
+        "Safety is managed through vendor certification.",
+        "EDI policies cover AI risks."
+      ],
+      "vocabulary": [
+        "risk assessment",
+        "bias",
+        "equity",
+        "digital divide",
+        "accessibility",
+        "discrimination"
+      ]
+    },
+    {
+      "id": "gp-safe-equitable-developing",
+      "dimension_id": "gp-safe-equitable",
+      "level": "developing",
+      "title": "Safe & Equitable: Developing",
+      "plain_language_description": "A risk assessment framework exists and is applied. At least one bias audit has been conducted. AI accessibility requirements are specified in procurement. Digital divide risks are documented.",
+      "accurate_interpretations": [
+        "Initial safety and equity mechanisms are in place and being implemented.",
+        "The institution has begun systematically assessing AI for safety and equity, though this is not yet comprehensive."
+      ],
+      "common_misinterpretations": [
+        "The institution has eliminated AI bias.",
+        "Risk assessment is complete.",
+        "One bias audit means all AI is fair."
+      ],
+      "vocabulary": [
+        "risk assessment framework",
+        "bias audit",
+        "procurement standards",
+        "accessibility",
+        "age appropriateness",
+        "equitable access"
+      ]
+    },
+    {
+      "id": "gp-safe-equitable-established",
+      "dimension_id": "gp-safe-equitable",
+      "level": "established",
+      "title": "Safe & Equitable: Established",
+      "plain_language_description": "Continuous monitoring is embedded. Annual equity impact assessments are conducted. Incident response protocols are tested. The institution contributes to sector safety standards.",
+      "accurate_interpretations": [
+        "Safety and equity governance is comprehensive, continuous, and actively maintained.",
+        "The institution demonstrates mature, embedded mechanisms for ensuring AI is safe and equitable."
+      ],
+      "common_misinterpretations": [
+        "The institution has zero AI risk.",
+        "No safety incidents have occurred.",
+        "Monitoring means checking uptime."
+      ],
+      "vocabulary": [
+        "continuous monitoring",
+        "incident response",
+        "equity impact assessment",
+        "supplier due diligence",
+        "sector contribution",
+        "disaggregated analysis"
+      ]
+    },
+    {
+      "id": "gp-ethics-emerging",
+      "dimension_id": "gp-ethics",
+      "level": "emerging",
+      "title": "Ethics & Accountability: Emerging",
+      "plain_language_description": "No formal AI ethics policy exists. Data protection for AI relies on generic mechanisms. Academic integrity policies mention AI but lack comprehensive guidance. No designated AI governance body exists.",
+      "accurate_interpretations": [
+        "The institution has not yet established formal AI ethics governance structures.",
+        "AI ethics is recognised as important but not yet addressed through coordinated institutional mechanisms."
+      ],
+      "common_misinterpretations": [
+        "The institution has comprehensive AI ethics governance.",
+        "AI is banned, so ethics governance is unnecessary.",
+        "IT manages AI ethics."
+      ],
+      "vocabulary": [
+        "ethics policy",
+        "data protection",
+        "academic integrity",
+        "governance body",
+        "accountability",
+        "DPIA"
+      ]
+    },
+    {
+      "id": "gp-ethics-developing",
+      "dimension_id": "gp-ethics",
+      "level": "developing",
+      "title": "Ethics & Accountability: Developing",
+      "plain_language_description": "A formal AI ethics policy is adopted. A governance body with terms of reference exists. AI-specific DPIAs are conducted. Nuanced academic integrity guidance is in place. An accountability chain is documented.",
+      "accurate_interpretations": [
+        "Formal ethics governance structures are established and being implemented.",
+        "The institution has initial but functional AI ethics governance."
+      ],
+      "common_misinterpretations": [
+        "Governance is fully embedded.",
+        "Policy adoption means implementation is complete.",
+        "A working group without authority constitutes governance."
+      ],
+      "vocabulary": [
+        "formal policy",
+        "governance body",
+        "terms of reference",
+        "accountability chain",
+        "DPIA",
+        "nuanced guidance",
+        "acceptable use"
+      ]
+    },
+    {
+      "id": "gp-ethics-established",
+      "dimension_id": "gp-ethics",
+      "level": "established",
+      "title": "Ethics & Accountability: Established",
+      "plain_language_description": "Ethics governance is integrated into institutional strategy. Policies are reviewed annually. Training is comprehensive and evaluated. Governance mechanisms demonstrably influence AI decisions. The institution contributes to sector standards.",
+      "accurate_interpretations": [
+        "Ethics governance is fully embedded, proven to influence decisions, and continuously improving.",
+        "The institution demonstrates mature, impactful AI ethics governance."
+      ],
+      "common_misinterpretations": [
+        "Complete documentation means established governance.",
+        "Established means governance is finished.",
+        "Annual review with no changes shows stability."
+      ],
+      "vocabulary": [
+        "strategic integration",
+        "policy review cycle",
+        "governance impact",
+        "sector contribution",
+        "concern-raising mechanisms",
+        "continuous adaptation"
+      ]
+    },
+    {
+      "id": "gp-evidence-emerging",
+      "dimension_id": "gp-evidence",
+      "level": "emerging",
+      "title": "Evidence-Based: Emerging",
+      "plain_language_description": "AI adoption decisions are based on marketing, peer behaviour, or enthusiasm rather than evidence of effectiveness. No formal evaluation of AI impact has been conducted.",
+      "accurate_interpretations": [
+        "The institution does not yet systematically gather or use evidence to inform AI decisions.",
+        "AI adoption is driven by factors other than evidence of impact in the institution's context."
+      ],
+      "common_misinterpretations": [
+        "The institution has robust AI evaluation.",
+        "Usage statistics prove AI is working.",
+        "Vendor case studies are sufficient evidence."
+      ],
+      "vocabulary": [
+        "evidence",
+        "evaluation",
+        "impact assessment",
+        "usage metrics",
+        "effectiveness",
+        "vendor claims"
+      ]
+    },
+    {
+      "id": "gp-evidence-developing",
+      "dimension_id": "gp-evidence",
+      "level": "developing",
+      "title": "Evidence-Based: Developing",
+      "plain_language_description": "Evaluation frameworks exist. At least one rigorous AI evaluation has been completed. Findings have informed a deployment decision. The institution engages with external evidence. Data infrastructure supports evaluation.",
+      "accurate_interpretations": [
+        "Initial evidence-based practice is established, with formal evaluation frameworks and at least one completed evaluation.",
+        "The institution has begun using evidence to inform AI decisions."
+      ],
+      "common_misinterpretations": [
+        "One evaluation means the institution is evidence-based.",
+        "Satisfaction surveys are rigorous evaluation.",
+        "Usage data is evidence of impact."
+      ],
+      "vocabulary": [
+        "evaluation framework",
+        "rigorous methods",
+        "outcome measures",
+        "evidence-informed decision",
+        "data infrastructure",
+        "external evidence"
+      ]
+    },
+    {
+      "id": "gp-evidence-established",
+      "dimension_id": "gp-evidence",
+      "level": "established",
+      "title": "Evidence-Based: Established",
+      "plain_language_description": "A systematic evidence strategy governs AI deployment. Longitudinal evaluation tracks impact over time. The institution contributes to external evidence. Evidence-to-decision trails are documented.",
+      "accurate_interpretations": [
+        "Evidence practice is comprehensive, longitudinal, and embedded in institutional decision-making.",
+        "The institution demonstrates mature evidence culture for AI governance."
+      ],
+      "common_misinterpretations": [
+        "Published research without institutional impact is evidence-based practice.",
+        "Longitudinal data collection is longitudinal evaluation.",
+        "All AI is proven effective."
+      ],
+      "vocabulary": [
+        "evidence strategy",
+        "longitudinal evaluation",
+        "external contribution",
+        "evidence-to-decision trail",
+        "context-specific methodology",
+        "cumulative evidence base"
+      ]
+    }
+  ]
+}

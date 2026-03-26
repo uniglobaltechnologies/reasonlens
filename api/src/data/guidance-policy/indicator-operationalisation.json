@@ -1,0 +1,1106 @@
+{
+  "framework_id": "unesco-guidance-ai-education",
+  "framework_name": "UNESCO Guidance for AI in Education & Research",
+  "framework_source": "UNESCO (2023). Guidance for generative AI in education and research. UNESDOC pf0000386693. ISBN 978-92-3-100612-8.",
+  "reasonlens_implementation_note": "This file operationalises the UNESCO Guidance document for the ReasonLens platform as an institutional policy maturity assessment. The original UNESCO document is structured as regulatory guidance with policy measures and stakeholder frameworks, not as a maturity model. ReasonLens imposes a 4-dimension x 3-level maturity structure to enable comparable assessment alongside other institutional frameworks (THE DMI, QS AI Capability, JISC AI Maturity). The four dimensions synthesise UNESCO's eight policy action areas and four-stakeholder regulatory framework into assessable institutional governance dimensions. The three levels (Emerging/Developing/Established) are a ReasonLens construct informed by the JISC AI Maturity Model's stage-based approach.",
+  "dimensions": [
+    {
+      "id": "gp-human-centered",
+      "name": "Human-Centred AI",
+      "code": "HC",
+      "description": "The extent to which the institution ensures that AI deployment protects human agency, supports human decision-making, and centres educational relationships on human needs, values, and rights. Covers governance of AI-human interaction, protection of learner and staff autonomy, and human oversight mechanisms."
+    },
+    {
+      "id": "gp-safe-equitable",
+      "name": "Safe & Equitable",
+      "code": "SE",
+      "description": "The extent to which the institution implements mechanisms to ensure AI systems are safe, secure, inclusive, and equitable. Covers risk assessment, bias auditing, accessibility, digital divide mitigation, and protection of vulnerable populations including age-appropriate use."
+    },
+    {
+      "id": "gp-ethics",
+      "name": "Ethics & Accountability",
+      "code": "EA",
+      "description": "The extent to which the institution establishes ethical governance structures, accountability mechanisms, and regulatory compliance for AI use. Covers ethics committees, data protection, transparency requirements, AI use policies, academic integrity frameworks, and accountability chains."
+    },
+    {
+      "id": "gp-evidence",
+      "name": "Evidence-Based",
+      "code": "EB",
+      "description": "The extent to which the institution builds and uses evidence to inform AI adoption decisions, evaluates AI effectiveness through rigorous methods, and contributes to the broader knowledge base. Covers pilot evaluation, impact assessment, research partnerships, and evidence-informed policy development."
+    }
+  ],
+  "levels": [
+    {
+      "id_suffix": "emerging",
+      "name": "Emerging",
+      "order": 1,
+      "code": "E",
+      "description": "The institution recognises AI as relevant to education and research and has begun initial responses, but lacks coordinated policy, systematic governance, or evidence-based deployment. AI use is happening informally, and institutional responses are reactive or ad hoc."
+    },
+    {
+      "id_suffix": "developing",
+      "name": "Developing",
+      "order": 2,
+      "code": "D",
+      "description": "The institution has established initial policies, governance structures, and evaluation mechanisms for AI in education and research. Formal initiatives are underway but not yet comprehensive, institution-wide, or fully embedded in standard practice."
+    },
+    {
+      "id_suffix": "established",
+      "name": "Established",
+      "order": 3,
+      "code": "S",
+      "description": "The institution has comprehensive, embedded, and actively maintained AI governance, with evidence-driven policy, systematic safety and equity mechanisms, and continuous improvement processes. AI governance is integrated into institutional strategy and decision-making structures."
+    }
+  ],
+  "object_count": 12,
+  "structure": "4 dimensions x 3 levels",
+  "data": [
+    {
+      "id": "gp-human-centered-emerging",
+      "dimension_id": "gp-human-centered",
+      "level": "emerging",
+      "level_order": 1,
+      "observable_behaviours": [
+        "AI tools are adopted by individual staff or departments without formal consideration of their impact on human agency, learner autonomy, or educational relationships.",
+        "The institution has no formal position on the role of AI in decision-making processes that affect students (e.g. admissions, assessment, progression).",
+        "Staff raise informal concerns about AI replacing human judgement in teaching or assessment, but these concerns are not addressed through institutional mechanisms.",
+        "Students experience AI-mediated educational decisions (e.g. automated feedback, plagiarism detection) without transparency about how AI is involved in those decisions."
+      ],
+      "context_dependencies": {
+        "institution_type": {
+          "impact": "MEDIUM",
+          "note": "Research institutes may face human-centred AI issues primarily in research governance. Schools face them in student-facing pedagogy. Universities face both."
+        },
+        "region": {
+          "impact": "HIGH",
+          "note": "EU institutions must consider AI Act requirements on human oversight for high-risk AI systems in education. UK institutions have softer guidance. US institutions have varied state-level requirements."
+        },
+        "institution_size": {
+          "impact": "MEDIUM",
+          "note": "Smaller institutions may have fewer AI-mediated decisions but also fewer resources to develop governance. Larger institutions face more complex coordination challenges."
+        },
+        "respondent_role": {
+          "impact": "HIGH",
+          "note": "Senior leadership may overestimate human-centred governance if they are not aware of departmental AI adoption. IT leadership may be aware of tools deployed but not their pedagogical impact. Academic leadership sees the teaching/learning impact most directly."
+        },
+        "existing_ai_deployment": {
+          "impact": "HIGH",
+          "note": "Institutions with no AI deployment are pre-emerging. Those with extensive deployment but no human-centred governance have an urgent gap between practice and policy."
+        }
+      },
+      "evidence_types": [
+        {
+          "type": "policy_document_review",
+          "description": "Review of existing policies for any mention of human oversight, human agency, or human-AI interaction principles in educational contexts."
+        },
+        {
+          "type": "stakeholder_interviews",
+          "description": "Interviews with staff and students about their experience of AI-mediated decisions and whether human oversight is visible."
+        },
+        {
+          "type": "ai_tool_inventory",
+          "description": "Inventory of AI tools in use with classification of which involve decisions affecting students."
+        }
+      ],
+      "common_misconceptions": [
+        {
+          "misconception": "If humans press the button to run the AI, that constitutes human oversight",
+          "frequency": "high",
+          "explanation": "Procedural involvement (clicking 'run') is not meaningful oversight. Human-centred governance requires the human to understand what the AI does, evaluate its output, and have the authority and competence to override it."
+        },
+        {
+          "misconception": "AI tools purchased from reputable vendors are inherently human-centred",
+          "frequency": "high",
+          "explanation": "Vendor quality does not guarantee that the tool is deployed in a human-centred way within the institution's specific context. Deployment decisions, configuration choices, and override mechanisms are institutional responsibilities."
+        },
+        {
+          "misconception": "Human-centred AI means not using AI",
+          "frequency": "medium",
+          "explanation": "Human-centred does not mean human-only. It means ensuring AI supports rather than supplants human agency, with appropriate oversight mechanisms."
+        }
+      ],
+      "cross_dimension_dependencies": [
+        {
+          "depends_on": "gp-ethics-emerging",
+          "relationship": "enabling",
+          "note": "Ethical governance structures provide the mechanisms through which human-centred principles are operationalised."
+        },
+        {
+          "depends_on": "gp-safe-equitable-emerging",
+          "relationship": "enabling",
+          "note": "Safety and equity mechanisms protect against harms that arise when human oversight is absent."
+        }
+      ],
+      "prerequisites": [
+        "Awareness that AI is being used in the institution",
+        "Recognition that AI-mediated decisions affect people"
+      ],
+      "respondent_note": "Senior leadership and academic leadership have the broadest visibility. IT leadership can identify tools in use. Policy officers may not be aware of informal AI adoption."
+    },
+    {
+      "id": "gp-human-centered-developing",
+      "dimension_id": "gp-human-centered",
+      "level": "developing",
+      "level_order": 2,
+      "observable_behaviours": [
+        "The institution has adopted formal principles for human-AI interaction in education that include human oversight requirements for consequential decisions.",
+        "A classification of AI use cases by risk level exists, distinguishing between low-risk (AI assists with non-consequential tasks) and high-risk (AI informs decisions about student assessment, progression, or access) uses.",
+        "Staff training on AI tools includes guidance on when and how to override AI recommendations, and the institution tracks whether override mechanisms are used.",
+        "Students are informed when AI is involved in decisions or processes that affect them, and mechanisms exist for students to request human review.",
+        "At least one formal human-AI interaction review has been conducted for a high-risk AI deployment (e.g. automated assessment, admissions screening)."
+      ],
+      "context_dependencies": {
+        "institution_type": {
+          "impact": "MEDIUM",
+          "note": "Universities face the widest range of AI use cases across teaching, research, and professional services. Colleges and schools may have simpler AI deployment landscapes."
+        },
+        "region": {
+          "impact": "VERY HIGH",
+          "note": "EU institutions must classify AI use by risk under the AI Act. UK institutions have ICO guidance on automated decision-making. US institutions face FERPA requirements for educational records. Regional variation fundamentally shapes what developing governance looks like."
+        },
+        "institution_size": {
+          "impact": "MEDIUM",
+          "note": "Large institutions need more formal classification systems. Small institutions may manage with less formal but still documented approaches."
+        },
+        "respondent_role": {
+          "impact": "HIGH",
+          "note": "Policy officers and senior leadership are best placed to assess institutional policy adoption. Academic leadership sees implementation in practice."
+        },
+        "existing_ai_deployment": {
+          "impact": "HIGH",
+          "note": "Institutions with moderate to extensive AI deployment have more urgent need and more material to govern. Limited deployment may allow simpler governance structures."
+        }
+      },
+      "evidence_types": [
+        {
+          "type": "human_ai_interaction_policy",
+          "description": "Documented policy or principles for human-AI interaction in educational contexts, including risk classification and oversight requirements."
+        },
+        {
+          "type": "staff_training_materials",
+          "description": "Training materials that include guidance on AI override mechanisms and when to exercise human judgement over AI recommendations."
+        },
+        {
+          "type": "student_transparency_mechanism",
+          "description": "Evidence that students are informed about AI involvement in processes affecting them, and documentation of human review request procedures."
+        },
+        {
+          "type": "human_override_audit",
+          "description": "Records showing that override mechanisms exist and have been used, with analysis of when and why overrides occurred."
+        }
+      ],
+      "common_misconceptions": [
+        {
+          "misconception": "A risk classification is a one-time exercise",
+          "frequency": "high",
+          "explanation": "Risk classifications must be reviewed as AI capabilities evolve, as deployment contexts change, and as evidence of impact accumulates. Static classifications become outdated."
+        },
+        {
+          "misconception": "Informing students about AI use is sufficient transparency",
+          "frequency": "medium",
+          "explanation": "Transparency requires not just notification but meaningful explanation of how AI contributes to decisions, and accessible mechanisms for students to seek human review."
+        },
+        {
+          "misconception": "Training staff once on AI override procedures ensures human oversight",
+          "frequency": "high",
+          "explanation": "Training without systemic support (time, authority, culture) leads to automation bias. Staff need ongoing support and institutional culture that values human judgement."
+        }
+      ],
+      "cross_dimension_dependencies": [
+        {
+          "depends_on": "gp-ethics-developing",
+          "relationship": "prerequisite",
+          "note": "Formal ethics governance is needed to establish and enforce human oversight requirements."
+        },
+        {
+          "depends_on": "gp-evidence-emerging",
+          "relationship": "enabling",
+          "note": "Evidence about AI tool performance helps inform which uses require stronger human oversight."
+        }
+      ],
+      "prerequisites": [
+        "Formal AI governance structures (even if basic)",
+        "Awareness of AI deployments across the institution",
+        "Staff with capacity to develop and implement human-AI interaction policies"
+      ],
+      "respondent_note": "Policy officers and senior leadership have the best visibility into institutional policy adoption. IT leadership can confirm technical implementation of transparency and override mechanisms."
+    },
+    {
+      "id": "gp-human-centered-established",
+      "dimension_id": "gp-human-centered",
+      "level": "established",
+      "level_order": 3,
+      "observable_behaviours": [
+        "Human oversight mechanisms are embedded in all high-risk AI deployments, with regular audits confirming that override mechanisms are functional, used, and effective.",
+        "The institution's AI risk classification is reviewed at least annually and updated when new AI capabilities, use cases, or evidence emerge.",
+        "A culture of human-centred AI use is evident across the institution: staff routinely exercise critical judgement over AI outputs, students understand their rights regarding AI-mediated decisions, and governance structures actively monitor for automation bias.",
+        "The institution contributes to sector-level human-centred AI standards and participates in cross-institutional initiatives on AI governance.",
+        "Longitudinal monitoring tracks the impact of AI deployment on educational relationships, staff professional identity, and learner agency over time."
+      ],
+      "context_dependencies": {
+        "institution_type": {
+          "impact": "MEDIUM",
+          "note": "Research institutes may demonstrate established practice through research governance mechanisms. Universities must demonstrate it across all institutional functions."
+        },
+        "region": {
+          "impact": "VERY HIGH",
+          "note": "Established governance looks different under EU AI Act (formal compliance frameworks, conformity assessments) versus UK (context-sensitive, principles-based) versus US (sector-specific, institution-driven)."
+        },
+        "institution_size": {
+          "impact": "MEDIUM",
+          "note": "Large institutions need more sophisticated monitoring and audit systems. Small institutions may achieve established status with leaner mechanisms if they are proportionate."
+        },
+        "respondent_role": {
+          "impact": "HIGH",
+          "note": "Senior leadership assesses strategic integration. Academic leadership assesses cultural embedding. IT leadership assesses technical monitoring."
+        },
+        "existing_ai_deployment": {
+          "impact": "HIGH",
+          "note": "Established governance is most meaningful when AI deployment is extensive, providing the complexity that tests whether governance mechanisms work in practice."
+        }
+      },
+      "evidence_types": [
+        {
+          "type": "human_oversight_audit_report",
+          "description": "Annual audit report on human oversight mechanisms across high-risk AI deployments, including override usage statistics and effectiveness analysis."
+        },
+        {
+          "type": "risk_classification_review_record",
+          "description": "Documented evidence of annual risk classification review with change log."
+        },
+        {
+          "type": "longitudinal_impact_assessment",
+          "description": "Multi-year assessment of AI's impact on educational relationships, staff practice, and learner autonomy."
+        },
+        {
+          "type": "sector_contribution_evidence",
+          "description": "Evidence of institutional contribution to sector standards, cross-institutional initiatives, or regulatory consultations on human-centred AI."
+        }
+      ],
+      "common_misconceptions": [
+        {
+          "misconception": "Full automation with good outcomes means human oversight is unnecessary",
+          "frequency": "medium",
+          "explanation": "Even well-performing AI systems require human oversight because: performance can change as contexts shift, human accountability is a governance requirement not an efficiency question, and human agency has intrinsic value in education."
+        },
+        {
+          "misconception": "Sector-leading means having the most advanced AI",
+          "frequency": "medium",
+          "explanation": "Established governance is about the quality of human-AI integration, not the sophistication of AI tools. An institution with simpler AI but excellent governance may be more established than one with cutting-edge AI but weak oversight."
+        }
+      ],
+      "cross_dimension_dependencies": [
+        {
+          "depends_on": "gp-ethics-established",
+          "relationship": "reinforcing",
+          "note": "Established ethics governance and established human-centred governance are mutually reinforcing."
+        },
+        {
+          "depends_on": "gp-evidence-established",
+          "relationship": "enabling",
+          "note": "Longitudinal evidence about AI impact informs and validates human-centred governance decisions."
+        },
+        {
+          "depends_on": "gp-safe-equitable-established",
+          "relationship": "reinforcing",
+          "note": "Comprehensive safety and equity mechanisms support human-centred governance by ensuring AI systems do not undermine the values human oversight is meant to protect."
+        }
+      ],
+      "prerequisites": [
+        "Developing-level human-centred governance fully operational",
+        "Institutional culture that values human judgement in AI-mediated processes",
+        "Capacity for longitudinal monitoring and sector engagement"
+      ],
+      "respondent_note": "All leadership roles contribute different perspectives. External validation (sector benchmarking, regulatory compliance confirmation) provides the strongest evidence."
+    },
+    {
+      "id": "gp-safe-equitable-emerging",
+      "dimension_id": "gp-safe-equitable",
+      "level": "emerging",
+      "level_order": 1,
+      "observable_behaviours": [
+        "AI tools are deployed without formal risk assessment for safety, bias, or equity implications.",
+        "No systematic audit of AI tools for discriminatory outcomes exists, though individual staff may raise concerns about specific tools informally.",
+        "The institution's existing equality, diversity, and inclusion (EDI) frameworks do not explicitly address AI-related risks.",
+        "Digital access disparities exist among students (device access, connectivity, digital skills) but these are not factored into AI deployment decisions."
+      ],
+      "context_dependencies": {
+        "institution_type": {
+          "impact": "MEDIUM",
+          "note": "Schools have additional child protection obligations. Universities face wider range of AI deployment types."
+        },
+        "region": {
+          "impact": "VERY HIGH",
+          "note": "EU AI Act mandates risk assessment for high-risk AI in education. UK has equalities duties under Equality Act 2010. US has Title VI and FERPA requirements. Africa may face acute digital divide challenges."
+        },
+        "institution_size": {
+          "impact": "MEDIUM",
+          "note": "Larger institutions have more diverse populations, increasing equity complexity but also more resources for governance."
+        },
+        "respondent_role": {
+          "impact": "HIGH",
+          "note": "IT leadership is best placed to assess tool deployment practices. Policy officers know about EDI frameworks. Academic leadership sees equity impacts on students."
+        },
+        "existing_ai_deployment": {
+          "impact": "HIGH",
+          "note": "More AI deployment without safety governance means more risk. Institutions with no deployment have fewer immediate safety concerns but should develop governance before deployment."
+        }
+      },
+      "evidence_types": [
+        {
+          "type": "risk_assessment_audit",
+          "description": "Review of whether any AI tools have undergone formal risk assessment before or after deployment."
+        },
+        {
+          "type": "edi_policy_review",
+          "description": "Review of EDI policies and strategies for any mention of AI, algorithmic, or automated decision-making risks."
+        }
+      ],
+      "common_misconceptions": [
+        {
+          "misconception": "Commercial AI tools have already been tested for bias so the institution does not need to",
+          "frequency": "high",
+          "explanation": "Vendor testing may not cover the institution's specific population, use case, or context. Bias is context-dependent and requires local evaluation."
+        },
+        {
+          "misconception": "Safety means cybersecurity only",
+          "frequency": "high",
+          "explanation": "AI safety in education includes bias and discrimination, academic integrity, student wellbeing impacts, and data protection, not just technical security."
+        },
+        {
+          "misconception": "Equity concerns can wait until AI is more widely deployed",
+          "frequency": "medium",
+          "explanation": "Equity issues are easiest to address before deployment scales. Retrofitting equity into established systems is significantly more difficult."
+        }
+      ],
+      "cross_dimension_dependencies": [
+        {
+          "depends_on": "gp-ethics-emerging",
+          "relationship": "enabling",
+          "note": "Ethical frameworks provide the principles that safety and equity mechanisms operationalise."
+        },
+        {
+          "depends_on": "gp-evidence-emerging",
+          "relationship": "enabling",
+          "note": "Evidence of AI impact is needed to identify safety and equity risks."
+        }
+      ],
+      "prerequisites": [
+        "Awareness that AI is in use at the institution",
+        "Existing EDI and safety infrastructure (even if not AI-specific)"
+      ],
+      "respondent_note": "IT leadership and policy officers have the broadest visibility. Student representatives can provide ground-level evidence of equity impacts."
+    },
+    {
+      "id": "gp-safe-equitable-developing",
+      "dimension_id": "gp-safe-equitable",
+      "level": "developing",
+      "level_order": 2,
+      "observable_behaviours": [
+        "A formal AI risk assessment framework exists and is applied to new AI tool acquisitions and high-risk deployments.",
+        "At least one bias audit has been conducted on an AI system used in education or student-facing services, with findings documented and acted upon.",
+        "AI accessibility requirements are specified in procurement standards, ensuring AI tools meet accessibility standards for students with disabilities.",
+        "The institution has identified and documented the digital divide risks associated with AI-dependent teaching or assessment methods.",
+        "Age-appropriateness policies exist for AI tools used with students under 18, following the UNESCO minimum age recommendation (13 years) or local regulations."
+      ],
+      "context_dependencies": {
+        "institution_type": {
+          "impact": "MEDIUM",
+          "note": "Schools must address age-appropriateness requirements most urgently. Universities face the broadest range of safety concerns."
+        },
+        "region": {
+          "impact": "VERY HIGH",
+          "note": "Risk assessment frameworks must align with regional regulations. EU AI Act, UK DSIT guidance, US state-level AI legislation all shape what 'developing' looks like."
+        },
+        "institution_size": {
+          "impact": "MEDIUM",
+          "note": "Larger institutions have more tools to assess but also more capacity. Small institutions may need to prioritise high-risk tools."
+        },
+        "respondent_role": {
+          "impact": "HIGH",
+          "note": "IT leadership knows about procurement standards and tool audits. Policy officers know about frameworks. Senior leadership sees strategic resource allocation."
+        },
+        "existing_ai_deployment": {
+          "impact": "HIGH",
+          "note": "Institutions with moderate deployment should be actively conducting bias audits. Those with extensive deployment have urgent need for comprehensive assessment."
+        }
+      },
+      "evidence_types": [
+        {
+          "type": "risk_assessment_framework",
+          "description": "Documented AI risk assessment framework with evidence of application to at least one AI deployment."
+        },
+        {
+          "type": "bias_audit_report",
+          "description": "Report of a bias audit conducted on an AI tool, including methodology, findings, and remediation actions."
+        },
+        {
+          "type": "procurement_standards",
+          "description": "Procurement specifications that include AI accessibility, safety, and equity requirements."
+        },
+        {
+          "type": "digital_divide_assessment",
+          "description": "Assessment of digital access disparities and their implications for AI-dependent education."
+        }
+      ],
+      "common_misconceptions": [
+        {
+          "misconception": "One successful bias audit means the institution's AI is fair",
+          "frequency": "medium",
+          "explanation": "Bias auditing must be ongoing because data distributions change, model behaviour shifts, and new use cases introduce new risks."
+        },
+        {
+          "misconception": "Meeting accessibility standards means AI is equitable",
+          "frequency": "medium",
+          "explanation": "Accessibility is necessary but not sufficient for equity. Equitable AI also requires fair outcomes across socioeconomic, racial, gender, and other dimensions."
+        },
+        {
+          "misconception": "The digital divide is a pre-existing problem, not an AI problem",
+          "frequency": "medium",
+          "explanation": "AI-dependent teaching can amplify digital divides by creating new requirements (devices, connectivity, AI literacy) that disadvantaged students are less able to meet."
+        }
+      ],
+      "cross_dimension_dependencies": [
+        {
+          "depends_on": "gp-ethics-developing",
+          "relationship": "prerequisite",
+          "note": "Formal ethics governance provides the mandate and structures for risk assessment and bias auditing."
+        },
+        {
+          "depends_on": "gp-evidence-developing",
+          "relationship": "enabling",
+          "note": "Evidence from AI evaluations informs risk assessment and bias audit priorities."
+        },
+        {
+          "depends_on": "gp-human-centered-developing",
+          "relationship": "reinforcing",
+          "note": "Human oversight mechanisms help identify safety and equity issues that automated monitoring may miss."
+        }
+      ],
+      "prerequisites": [
+        "Emerging safety and equity awareness",
+        "Formal governance structures capable of commissioning and acting on audits",
+        "Technical capacity for risk assessment"
+      ],
+      "respondent_note": "IT leadership and policy officers are best placed to assess. Procurement teams can confirm standard adoption. Student services can evidence digital divide impacts."
+    },
+    {
+      "id": "gp-safe-equitable-established",
+      "dimension_id": "gp-safe-equitable",
+      "level": "established",
+      "level_order": 3,
+      "observable_behaviours": [
+        "Continuous monitoring of AI systems for safety and equity is embedded in institutional practice, with automated alerts for performance degradation or emergent bias.",
+        "Regular (at least annual) equity impact assessments are conducted across all significant AI deployments, disaggregated by protected characteristics and socioeconomic indicators.",
+        "The institution has a documented incident response protocol for AI safety or equity failures, including escalation procedures, remediation steps, and communication plans.",
+        "AI procurement includes mandatory supplier due diligence on training data provenance, bias testing methodology, and ongoing monitoring commitments.",
+        "The institution actively contributes to sector safety standards and shares de-identified findings from bias audits and equity assessments with the broader community."
+      ],
+      "context_dependencies": {
+        "institution_type": {
+          "impact": "MEDIUM",
+          "note": "All institution types can reach established status with proportionate mechanisms. The complexity of monitoring varies with deployment breadth."
+        },
+        "region": {
+          "impact": "VERY HIGH",
+          "note": "Established governance must demonstrate regulatory compliance. EU institutions need AI Act conformity. UK institutions need demonstrable equalities impact assessment under public sector equality duty."
+        },
+        "institution_size": {
+          "impact": "MEDIUM",
+          "note": "Large institutions need more sophisticated monitoring infrastructure. Small institutions may achieve this with focused mechanisms for their AI portfolio."
+        },
+        "respondent_role": {
+          "impact": "MEDIUM",
+          "note": "All roles contribute. Senior leadership confirms strategic commitment. IT leadership confirms technical monitoring. Policy confirms compliance."
+        },
+        "existing_ai_deployment": {
+          "impact": "HIGH",
+          "note": "Established governance is most meaningful with extensive deployment that tests the monitoring and response systems."
+        }
+      },
+      "evidence_types": [
+        {
+          "type": "continuous_monitoring_system",
+          "description": "Documentation of automated monitoring systems for AI safety and equity, including alert mechanisms and response records."
+        },
+        {
+          "type": "annual_equity_impact_assessment",
+          "description": "Multi-year equity impact assessments with trend analysis and remediation tracking."
+        },
+        {
+          "type": "incident_response_protocol",
+          "description": "Documented and tested incident response protocol with evidence of activation (even if through simulation)."
+        },
+        {
+          "type": "sector_contribution",
+          "description": "Evidence of sharing safety and equity findings with the sector."
+        }
+      ],
+      "common_misconceptions": [
+        {
+          "misconception": "No reported incidents means the system is safe",
+          "frequency": "medium",
+          "explanation": "Absence of reports may indicate absence of detection mechanisms rather than absence of problems. Established institutions actively seek out issues rather than waiting for them to surface."
+        },
+        {
+          "misconception": "Established safety means zero risk",
+          "frequency": "medium",
+          "explanation": "All AI systems carry residual risk. Established governance means risk is identified, monitored, mitigated, and accepted with transparency, not eliminated."
+        }
+      ],
+      "cross_dimension_dependencies": [
+        {
+          "depends_on": "gp-safe-equitable-developing",
+          "relationship": "prerequisite",
+          "note": "Developing-level frameworks must be operational before continuous monitoring can be meaningful."
+        },
+        {
+          "depends_on": "gp-evidence-established",
+          "relationship": "reinforcing",
+          "note": "Robust evidence infrastructure supports and is supported by continuous safety monitoring."
+        },
+        {
+          "depends_on": "gp-ethics-established",
+          "relationship": "reinforcing",
+          "note": "Established ethical governance ensures safety findings are acted upon."
+        }
+      ],
+      "prerequisites": [
+        "Developing-level safety and equity governance fully operational",
+        "Technical capacity for continuous monitoring",
+        "Institutional culture of transparency about AI risks"
+      ],
+      "respondent_note": "IT leadership and policy officers confirm systems. External audit provides strongest validation."
+    },
+    {
+      "id": "gp-ethics-emerging",
+      "dimension_id": "gp-ethics",
+      "level": "emerging",
+      "level_order": 1,
+      "observable_behaviours": [
+        "No formal institutional AI ethics policy exists. Individual staff or departments may have informal guidelines but these are not coordinated.",
+        "Data protection compliance for AI tools relies on existing data protection mechanisms without AI-specific considerations (e.g. automated decision-making provisions of GDPR are not specifically addressed).",
+        "Academic integrity policies reference AI tools (typically prohibiting or restricting use) but do not provide comprehensive guidance on responsible AI use.",
+        "There is no designated accountability structure for AI governance: no committee, working group, or named individual with institutional responsibility for AI ethics."
+      ],
+      "context_dependencies": {
+        "institution_type": {
+          "impact": "MEDIUM",
+          "note": "Research institutes may have existing research ethics infrastructure that partially addresses AI. Schools may have simpler governance needs. Universities face the most complex governance challenges."
+        },
+        "region": {
+          "impact": "VERY HIGH",
+          "note": "EU GDPR's automated decision-making provisions (Article 22) create specific legal obligations. UK Data Protection Act 2018 has similar provisions. US lacks comprehensive federal AI regulation. Regional context fundamentally shapes what emerging ethics governance looks like."
+        },
+        "institution_size": {
+          "impact": "MEDIUM",
+          "note": "Smaller institutions may have less formal governance but also simpler AI landscapes. Larger institutions face coordination challenges."
+        },
+        "respondent_role": {
+          "impact": "HIGH",
+          "note": "Policy officers are most likely to be aware of governance gaps. IT leadership may be aware of data protection compliance status. Senior leadership may not know the detail of AI governance arrangements."
+        },
+        "existing_ai_deployment": {
+          "impact": "HIGH",
+          "note": "Institutions with significant AI deployment but no ethics governance have an urgent gap. Those with no deployment have an opportunity to develop governance before risks materialise."
+        }
+      },
+      "evidence_types": [
+        {
+          "type": "policy_scan",
+          "description": "Review of all institutional policies for AI-specific provisions, including data protection, academic integrity, procurement, and IT policies."
+        },
+        {
+          "type": "governance_structure_review",
+          "description": "Review of governance structures (committees, working groups, roles) for AI-specific responsibilities."
+        },
+        {
+          "type": "academic_integrity_policy",
+          "description": "Review of academic integrity policy for AI-related provisions."
+        }
+      ],
+      "common_misconceptions": [
+        {
+          "misconception": "Existing data protection compliance covers AI ethics",
+          "frequency": "high",
+          "explanation": "Data protection is necessary but not sufficient. AI ethics also covers fairness, accountability, transparency, human agency, and societal impact beyond data processing."
+        },
+        {
+          "misconception": "Banning AI use is an ethics policy",
+          "frequency": "high",
+          "explanation": "Prohibition addresses one risk (academic integrity) while ignoring others (equity, digital literacy, responsible use skills). It is also often unenforceable and may disadvantage students who comply."
+        },
+        {
+          "misconception": "AI ethics is a technology issue for IT to manage",
+          "frequency": "medium",
+          "explanation": "AI ethics spans teaching, research, student experience, human resources, and strategic governance. IT has a role but the issue requires institutional leadership."
+        }
+      ],
+      "cross_dimension_dependencies": [
+        {
+          "depends_on": null,
+          "relationship": "foundation",
+          "note": "Ethics governance is foundational: all other dimensions depend on ethical principles and accountability structures to function effectively."
+        }
+      ],
+      "prerequisites": [
+        "Awareness that AI raises ethical questions beyond existing policy frameworks",
+        "At least informal recognition that AI governance is needed"
+      ],
+      "respondent_note": "Policy officers have the best visibility into governance gaps. Senior leadership can confirm strategic awareness. Academic leadership can describe how policies affect teaching practice."
+    },
+    {
+      "id": "gp-ethics-developing",
+      "dimension_id": "gp-ethics",
+      "level": "developing",
+      "level_order": 2,
+      "observable_behaviours": [
+        "A formal institutional AI ethics policy or principles statement has been adopted, covering at minimum: acceptable use, data protection, academic integrity, transparency, and accountability.",
+        "A designated governance body (committee, working group, or role) has institutional responsibility for AI ethics oversight, with terms of reference and regular meeting schedule.",
+        "AI-specific data protection impact assessments (DPIAs) are conducted for new AI tool deployments that process personal data.",
+        "Academic integrity policies provide nuanced guidance on AI use (beyond simple prohibition), distinguishing between acceptable and unacceptable uses with reference to transparency and learning outcomes.",
+        "An accountability chain for AI deployment decisions is documented: who approves, who monitors, who is responsible for addressing issues."
+      ],
+      "context_dependencies": {
+        "institution_type": {
+          "impact": "MEDIUM",
+          "note": "Universities need broader governance structures covering teaching, research, and services. Colleges and schools may need simpler but equally formal structures."
+        },
+        "region": {
+          "impact": "VERY HIGH",
+          "note": "The form of ethics governance is shaped by legal context. EU institutions must comply with specific GDPR and AI Act provisions. UK institutions follow ICO guidance and sector-specific codes. US institutions face diverse federal and state requirements."
+        },
+        "institution_size": {
+          "impact": "MEDIUM",
+          "note": "Large institutions need formal committee structures. Small institutions may achieve equivalent governance through fewer, more integrated structures."
+        },
+        "respondent_role": {
+          "impact": "HIGH",
+          "note": "Policy officers are best placed to confirm policy adoption. Senior leadership confirms governance body establishment. IT leadership confirms DPIA implementation."
+        },
+        "existing_ai_deployment": {
+          "impact": "HIGH",
+          "note": "Developing ethics governance should be proportionate to AI deployment extent. Institutions with extensive deployment need more comprehensive structures."
+        }
+      },
+      "evidence_types": [
+        {
+          "type": "ai_ethics_policy",
+          "description": "Published institutional AI ethics policy or principles statement with adoption date and review schedule."
+        },
+        {
+          "type": "governance_body_tor",
+          "description": "Terms of reference for the AI governance body, including membership, scope, and reporting lines."
+        },
+        {
+          "type": "dpia_records",
+          "description": "Records of AI-specific data protection impact assessments conducted for AI tool deployments."
+        },
+        {
+          "type": "academic_integrity_guidance",
+          "description": "Updated academic integrity guidance with nuanced AI use provisions."
+        },
+        {
+          "type": "accountability_chain_document",
+          "description": "Documented accountability chain for AI deployment decisions."
+        }
+      ],
+      "common_misconceptions": [
+        {
+          "misconception": "Publishing a policy means it is implemented",
+          "frequency": "high",
+          "explanation": "Policy adoption without awareness, training, and enforcement is symbolic governance. Developing-level governance requires evidence of implementation, not just documentation."
+        },
+        {
+          "misconception": "A working group is sufficient governance",
+          "frequency": "medium",
+          "explanation": "Working groups are often advisory without decision-making authority. Effective governance requires clear authority, accountability, and the power to halt or modify AI deployments."
+        },
+        {
+          "misconception": "DPIAs are sufficient ethical oversight for AI",
+          "frequency": "medium",
+          "explanation": "DPIAs address data protection but not broader ethical concerns like fairness, educational appropriateness, or impact on human agency."
+        }
+      ],
+      "cross_dimension_dependencies": [
+        {
+          "depends_on": "gp-ethics-emerging",
+          "relationship": "prerequisite",
+          "note": "Awareness of governance gaps is prerequisite for developing formal structures."
+        },
+        {
+          "depends_on": "gp-human-centered-developing",
+          "relationship": "reinforcing",
+          "note": "Human-centred principles are operationalised through ethics governance."
+        },
+        {
+          "depends_on": "gp-safe-equitable-developing",
+          "relationship": "reinforcing",
+          "note": "Safety and equity mechanisms need ethical governance to mandate and enforce them."
+        }
+      ],
+      "prerequisites": [
+        "Institutional decision to invest in AI governance",
+        "Staff capacity (policy expertise, legal expertise, technical expertise) to develop governance structures"
+      ],
+      "respondent_note": "Policy officers can confirm policy and governance adoption. Senior leadership can confirm strategic commitment. IT leadership can confirm technical implementation."
+    },
+    {
+      "id": "gp-ethics-established",
+      "dimension_id": "gp-ethics",
+      "level": "established",
+      "level_order": 3,
+      "observable_behaviours": [
+        "AI ethics governance is integrated into institutional strategic decision-making, not a parallel or peripheral activity.",
+        "Regular (at least annual) policy review cycles incorporate new developments in AI capabilities, regulation, and sector practice.",
+        "Comprehensive training on AI ethics and responsible use is available to all staff and students, with participation tracked and evaluated for effectiveness.",
+        "The institution contributes to sector-level ethical governance development (e.g. Russell Group principles, sector consultations, regulatory responses).",
+        "Whistleblowing and concern-raising mechanisms specifically cover AI ethics issues, and evidence exists that these mechanisms are used without detriment.",
+        "The accountability chain is tested: there is evidence that AI deployment decisions have been modified or reversed based on ethical concerns raised through governance mechanisms."
+      ],
+      "context_dependencies": {
+        "institution_type": {
+          "impact": "MEDIUM",
+          "note": "All types can reach established status with proportionate governance. Research institutes need strong research ethics integration. Universities need comprehensive multi-function governance."
+        },
+        "region": {
+          "impact": "VERY HIGH",
+          "note": "Established governance must demonstrate full regulatory compliance plus sector leadership. What this means varies fundamentally by jurisdiction."
+        },
+        "institution_size": {
+          "impact": "MEDIUM",
+          "note": "Scale affects governance complexity but not the principle of established practice. Small institutions may lead through focused, high-quality governance."
+        },
+        "respondent_role": {
+          "impact": "MEDIUM",
+          "note": "All roles contribute perspectives on established governance. External validation is the strongest evidence."
+        },
+        "existing_ai_deployment": {
+          "impact": "HIGH",
+          "note": "Established governance is most credible when tested against extensive AI deployment."
+        }
+      },
+      "evidence_types": [
+        {
+          "type": "strategic_integration_evidence",
+          "description": "Evidence that AI ethics is considered in strategic planning, capital decisions, and institutional risk registers."
+        },
+        {
+          "type": "policy_review_cycle_records",
+          "description": "Records of annual policy reviews with change logs and rationale for updates."
+        },
+        {
+          "type": "training_participation_and_evaluation",
+          "description": "Training participation data disaggregated by role, and evaluation of training effectiveness."
+        },
+        {
+          "type": "governance_impact_evidence",
+          "description": "Evidence that governance mechanisms have actually influenced AI deployment decisions."
+        },
+        {
+          "type": "sector_contribution",
+          "description": "Evidence of contributing to sector ethics standards development."
+        }
+      ],
+      "common_misconceptions": [
+        {
+          "misconception": "Comprehensive documentation means established governance",
+          "frequency": "medium",
+          "explanation": "Documentation without evidence of impact is performative governance. Established status requires evidence that governance mechanisms change behaviour and decisions."
+        },
+        {
+          "misconception": "Established means finished",
+          "frequency": "medium",
+          "explanation": "AI governance requires continuous adaptation. Established means the processes for continuous improvement are embedded, not that a final state has been reached."
+        }
+      ],
+      "cross_dimension_dependencies": [
+        {
+          "depends_on": "gp-ethics-developing",
+          "relationship": "prerequisite",
+          "note": "All developing-level governance must be operational and tested."
+        },
+        {
+          "depends_on": "gp-human-centered-established",
+          "relationship": "reinforcing",
+          "note": "Established ethics governance and human-centred governance are mutually reinforcing."
+        },
+        {
+          "depends_on": "gp-evidence-established",
+          "relationship": "reinforcing",
+          "note": "Evidence-based governance informs and validates ethical governance decisions."
+        },
+        {
+          "depends_on": "gp-safe-equitable-established",
+          "relationship": "reinforcing",
+          "note": "Comprehensive safety and equity mechanisms require and support established ethical governance."
+        }
+      ],
+      "prerequisites": [
+        "Developing-level governance fully operational and tested",
+        "Institutional commitment to continuous governance improvement",
+        "Staff and student capacity for ethical engagement"
+      ],
+      "respondent_note": "External validation (regulatory compliance audit, sector benchmarking) provides the strongest evidence. Internal perspectives from all roles are valuable but may over-estimate."
+    },
+    {
+      "id": "gp-evidence-emerging",
+      "dimension_id": "gp-evidence",
+      "level": "emerging",
+      "level_order": 1,
+      "observable_behaviours": [
+        "AI adoption decisions are based on vendor marketing materials, peer institution behaviour, or leadership enthusiasm rather than evidence of effectiveness in the institution's context.",
+        "No formal evaluation of AI tool impact on student learning outcomes, staff workload, or institutional efficiency has been conducted.",
+        "Individual staff may have informal observations about AI tool effectiveness, but these are not systematically collected or analysed.",
+        "The institution does not contribute to or systematically engage with the evidence base on AI in education."
+      ],
+      "context_dependencies": {
+        "institution_type": {
+          "impact": "MEDIUM",
+          "note": "Research-intensive institutions may have research culture that enables evidence-gathering. Teaching-focused institutions may need to build evaluation capacity."
+        },
+        "region": {
+          "impact": "MEDIUM",
+          "note": "Some regions have national AI in education evaluation programmes that institutions can participate in (e.g. UK JISC evaluation support, EU Horizon projects)."
+        },
+        "institution_size": {
+          "impact": "MEDIUM",
+          "note": "Larger institutions have more internal research capacity. Smaller institutions may partner with others for evaluation."
+        },
+        "respondent_role": {
+          "impact": "HIGH",
+          "note": "Academic leadership is best placed to assess whether AI adoption is evidence-based. IT leadership may focus on technical functionality rather than educational impact. Senior leadership may not be aware of evaluation gaps."
+        },
+        "existing_ai_deployment": {
+          "impact": "HIGH",
+          "note": "Institutions with AI deployment but no evaluation evidence have a significant gap. Those without deployment have an opportunity to build evidence-gathering into deployment plans."
+        }
+      },
+      "evidence_types": [
+        {
+          "type": "decision_making_audit",
+          "description": "Review of how recent AI adoption decisions were made: what evidence was considered and what was not."
+        },
+        {
+          "type": "evaluation_capacity_assessment",
+          "description": "Assessment of the institution's capacity to evaluate AI tool effectiveness (research skills, data access, evaluation frameworks)."
+        }
+      ],
+      "common_misconceptions": [
+        {
+          "misconception": "Vendor case studies and peer adoption constitute evidence",
+          "frequency": "high",
+          "explanation": "Vendor evidence is marketing material, not independent evaluation. Peer adoption reflects their context, not yours. Evidence-based decisions require local evaluation in the institution's specific context."
+        },
+        {
+          "misconception": "Usage statistics prove AI is working",
+          "frequency": "high",
+          "explanation": "Adoption metrics (login counts, usage frequency) measure engagement, not effectiveness. High usage of an ineffective tool is not evidence of impact."
+        },
+        {
+          "misconception": "Evidence-gathering is a research activity unrelated to operational decisions",
+          "frequency": "medium",
+          "explanation": "Operational AI decisions should be informed by evidence. The distinction between 'research' and 'operational evaluation' should not prevent evidence from informing decisions."
+        }
+      ],
+      "cross_dimension_dependencies": [
+        {
+          "depends_on": null,
+          "relationship": "foundation",
+          "note": "Evidence capacity is foundational: it informs safety decisions, ethical governance, and human-centred design."
+        }
+      ],
+      "prerequisites": [
+        "Awareness that AI adoption should be evidence-informed",
+        "Basic capacity for evaluation (even if currently undeveloped)"
+      ],
+      "respondent_note": "Academic leadership and IT leadership have different but complementary perspectives on evidence gaps."
+    },
+    {
+      "id": "gp-evidence-developing",
+      "dimension_id": "gp-evidence",
+      "level": "developing",
+      "level_order": 2,
+      "observable_behaviours": [
+        "Formal evaluation frameworks exist for AI tool pilots, specifying learning outcome measures, user experience metrics, and equity impact indicators.",
+        "At least one AI deployment has been formally evaluated using appropriate methods (controlled comparison, pre-post with controls, or rigorous qualitative methods) rather than satisfaction surveys alone.",
+        "Evaluation findings have been used to inform at least one AI deployment decision (adopt, modify, or discontinue).",
+        "The institution engages with the external evidence base: staff review published research on AI in education, and evaluation frameworks reference established methodologies.",
+        "Data infrastructure supports evaluation: student outcome data, usage analytics, and contextual data can be linked (with appropriate privacy safeguards) for impact assessment."
+      ],
+      "context_dependencies": {
+        "institution_type": {
+          "impact": "MEDIUM",
+          "note": "Research institutes have strong evaluation capacity. Universities can leverage academic expertise. Colleges and schools may need external evaluation support."
+        },
+        "region": {
+          "impact": "MEDIUM",
+          "note": "Some regions have more developed AI in education evidence bases and evaluation support infrastructure."
+        },
+        "institution_size": {
+          "impact": "MEDIUM",
+          "note": "Larger institutions have more data and research capacity. Smaller institutions may need collaborative evaluation approaches."
+        },
+        "respondent_role": {
+          "impact": "HIGH",
+          "note": "Academic leadership and IT leadership are best placed to assess evaluation quality. Senior leadership can confirm strategic use of evidence in decisions."
+        },
+        "existing_ai_deployment": {
+          "impact": "HIGH",
+          "note": "More deployment provides more evaluation material. Institutions with extensive deployment need evaluation prioritisation frameworks."
+        }
+      },
+      "evidence_types": [
+        {
+          "type": "evaluation_framework",
+          "description": "Documented evaluation framework for AI tool pilots, including outcome measures, methods, and success criteria."
+        },
+        {
+          "type": "completed_evaluation_report",
+          "description": "At least one completed AI tool evaluation with methods, findings, and impact on deployment decision."
+        },
+        {
+          "type": "evidence_informed_decision",
+          "description": "Documented evidence of evaluation findings influencing an AI deployment decision."
+        },
+        {
+          "type": "data_infrastructure_assessment",
+          "description": "Assessment of the institution's data infrastructure for supporting AI impact evaluation."
+        }
+      ],
+      "common_misconceptions": [
+        {
+          "misconception": "Student satisfaction surveys constitute rigorous evaluation",
+          "frequency": "high",
+          "explanation": "Satisfaction measures perceptions, not impact. Students may be satisfied with tools that do not improve their learning, or dissatisfied with tools that do."
+        },
+        {
+          "misconception": "One positive evaluation validates all similar AI deployments",
+          "frequency": "medium",
+          "explanation": "Context matters. An AI tool that works well in one department, discipline, or student population may not work in another. Evidence must be context-specific."
+        },
+        {
+          "misconception": "Building evaluation capacity is too expensive for our institution",
+          "frequency": "medium",
+          "explanation": "Evaluation need not be expensive. Well-designed small-scale evaluations with appropriate methods can provide actionable evidence. The cost of not evaluating (failed deployments, wasted resources, student harm) often exceeds evaluation costs."
+        }
+      ],
+      "cross_dimension_dependencies": [
+        {
+          "depends_on": "gp-evidence-emerging",
+          "relationship": "prerequisite",
+          "note": "Awareness of evidence gaps and basic evaluation capacity must precede formal evaluation."
+        },
+        {
+          "depends_on": "gp-ethics-developing",
+          "relationship": "enabling",
+          "note": "Ethics governance provides the mandate for evaluation (accountability requires evidence) and the ethical framework for evaluation methods (privacy, consent)."
+        },
+        {
+          "depends_on": "gp-safe-equitable-developing",
+          "relationship": "reinforcing",
+          "note": "Safety and equity assessments both produce and consume evidence about AI impact."
+        }
+      ],
+      "prerequisites": [
+        "Emerging-level awareness of evidence gaps",
+        "Evaluation capacity (internal research skills or external partnerships)",
+        "Data infrastructure supporting outcome assessment"
+      ],
+      "respondent_note": "Academic leadership can assess evaluation quality. IT leadership can confirm data infrastructure readiness. Senior leadership can confirm strategic use of evidence."
+    },
+    {
+      "id": "gp-evidence-established",
+      "dimension_id": "gp-evidence",
+      "level": "established",
+      "level_order": 3,
+      "observable_behaviours": [
+        "A systematic evidence strategy governs AI deployment: all significant AI investments are evaluated, findings are published internally, and cumulative evidence informs institutional AI strategy.",
+        "Longitudinal evaluation tracks AI impact over time, including unintended consequences and differential impacts across student populations.",
+        "The institution contributes to the external evidence base through publications, conference presentations, or collaborative research on AI in education.",
+        "Evidence from AI evaluation feeds into budget, procurement, and strategic planning cycles, with documented links between evidence and decisions.",
+        "The institution has developed or adopted context-specific evaluation methodologies that go beyond generic satisfaction surveys, adapted to the institution's AI portfolio and educational context."
+      ],
+      "context_dependencies": {
+        "institution_type": {
+          "impact": "MEDIUM",
+          "note": "Research institutes and universities are best positioned for external evidence contribution. All types can achieve established internal evidence practice."
+        },
+        "region": {
+          "impact": "MEDIUM",
+          "note": "Regional research infrastructure and publication ecosystems affect the form of external contribution."
+        },
+        "institution_size": {
+          "impact": "MEDIUM",
+          "note": "Larger institutions can sustain more comprehensive evaluation programmes. Smaller institutions may lead in focused, high-quality evaluation of specific tools."
+        },
+        "respondent_role": {
+          "impact": "MEDIUM",
+          "note": "All roles contribute. Academic leadership confirms evaluation quality. Senior leadership confirms strategic integration. IT leadership confirms data infrastructure."
+        },
+        "existing_ai_deployment": {
+          "impact": "HIGH",
+          "note": "Established evidence practice is most meaningful with extensive deployment providing a rich evaluation portfolio."
+        }
+      },
+      "evidence_types": [
+        {
+          "type": "evidence_strategy_document",
+          "description": "Documented institutional evidence strategy for AI deployment, including evaluation priorities, methods, and reporting mechanisms."
+        },
+        {
+          "type": "longitudinal_evaluation_series",
+          "description": "Multi-year evaluation data showing AI impact trends, unintended consequences, and differential impacts."
+        },
+        {
+          "type": "external_publications",
+          "description": "Published evaluations of institutional AI deployment (journal articles, sector reports, conference presentations)."
+        },
+        {
+          "type": "evidence_to_decision_trail",
+          "description": "Documented links between evaluation evidence and strategic, budget, or procurement decisions."
+        }
+      ],
+      "common_misconceptions": [
+        {
+          "misconception": "Established evidence means all AI is proven effective",
+          "frequency": "medium",
+          "explanation": "Established evidence practice includes finding that some AI tools are not effective and acting on that finding. Evidence-based does not mean AI-positive."
+        },
+        {
+          "misconception": "Publishing research counts even if it does not influence internal decisions",
+          "frequency": "medium",
+          "explanation": "External contribution without internal impact is academic rather than institutional evidence practice. Established status requires both."
+        }
+      ],
+      "cross_dimension_dependencies": [
+        {
+          "depends_on": "gp-evidence-developing",
+          "relationship": "prerequisite",
+          "note": "Developing-level evaluation capacity and practice must be established."
+        },
+        {
+          "depends_on": "gp-ethics-established",
+          "relationship": "reinforcing",
+          "note": "Evidence informs ethical governance; ethical governance mandates evidence."
+        },
+        {
+          "depends_on": "gp-safe-equitable-established",
+          "relationship": "reinforcing",
+          "note": "Longitudinal evidence supports and is supported by continuous safety monitoring."
+        },
+        {
+          "depends_on": "gp-human-centered-established",
+          "relationship": "reinforcing",
+          "note": "Evidence about AI impact on human agency informs human-centred governance."
+        }
+      ],
+      "prerequisites": [
+        "Developing-level evidence practice fully operational",
+        "Research capacity for longitudinal evaluation",
+        "Institutional commitment to evidence-informed AI strategy"
+      ],
+      "respondent_note": "All roles provide partial views. External validation (published evaluations, sector recognition) provides strongest evidence."
+    }
+  ]
+}

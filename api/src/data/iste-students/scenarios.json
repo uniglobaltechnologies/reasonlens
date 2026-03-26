@@ -1,0 +1,716 @@
+{
+  "_meta": {
+    "file": "scenarios.json",
+    "framework_id": "iste-students",
+    "framework_name": "ISTE Standards for Students v4.02",
+    "assessment_paradigm": "met/not-met. Each scenario has 3 response options: not_met, partially_met, met. partially_met is the attractive nuisance \u2014 it sounds like meeting the standard but falls short. For scoring: partially_met counts as not_met (conservative). Raw response preserved for interpretive report.",
+    "total_scenarios": 14,
+    "scenarios_per_standard": 2,
+    "response_mapping": {
+      "A": "not_met",
+      "B": "partially_met (attractive nuisance)",
+      "C": "met"
+    },
+    "context_factors": [
+      "study_level",
+      "discipline",
+      "prior_tech_experience"
+    ],
+    "licensing_constraint": "ISTE Standards framework references \u00a9 2024 4.02, ISTE (iste.org). All rights reserved. Scenario stems and response options are original ReasonLens content. ISTE permits free use for non-commercial educational purposes only. Commercial use requires separate ISTE licensing. See iste.org/permissions-licensing.",
+    "generated_for": "ReasonLens"
+  },
+  "scenarios": [
+    {
+      "id": "ISTE-S-EMP-01",
+      "framework_id": "iste-students",
+      "standard_id": "iste-s-emp",
+      "standard_name": "Empowered Learner",
+      "target_standard": "Empowered Learner",
+      "primary_indicators": [
+        "iste-s-emp-1a",
+        "iste-s-emp-1c"
+      ],
+      "scenario_stem": "You want to improve your essay writing skills before the end of term. You have access to a range of digital tools and online resources. What do you do?",
+      "context_tags": {
+        "study_level": [
+          "secondary",
+          "post-16",
+          "undergraduate"
+        ],
+        "discipline": [
+          "humanities",
+          "social_sciences",
+          "general"
+        ],
+        "prior_tech_experience": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I keep writing essays as I normally would and see whether my grades improve over time \u2014 if they do not, I will ask the teacher for help.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I use an AI writing assistant to check my grammar and style after each essay, and I keep track of whether my marks are going up term by term.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Uses technology and monitors progress \u2014 this sounds purposeful. But progress tracking via grades is reactive and external rather than self-directed. There is no identification of personal learning strengths or gaps, no goal connected to those, and no reflective engagement with the feedback to change future behaviour. The standard requires intentional goal-setting grounded in self-knowledge, not just tracking an outcome."
+        },
+        {
+          "id": "C",
+          "text": "I review my recent essays, identify that my weakest area is structuring arguments, set a goal to improve paragraph cohesion by the end of term, use a combination of a writing rubric and a peer review platform to get targeted feedback after each draft, and each week I review what the feedback reveals about my progress and adjust my approach.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-S-EMP-02",
+      "framework_id": "iste-students",
+      "standard_id": "iste-s-emp",
+      "standard_name": "Empowered Learner",
+      "target_standard": "Empowered Learner",
+      "primary_indicators": [
+        "iste-s-emp-1b",
+        "iste-s-emp-1d"
+      ],
+      "scenario_stem": "You are working on a complex research project and notice that the digital tools you normally use are not giving you good results. What do you do?",
+      "context_tags": {
+        "study_level": [
+          "secondary",
+          "post-16",
+          "undergraduate"
+        ],
+        "discipline": [
+          "any"
+        ],
+        "prior_tech_experience": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I carry on with the tools I know \u2014 the results are not great but I have used these tools before and know how they work.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I search YouTube for tutorials on more advanced research tools, try a couple of new ones, and switch to the one that seems to produce better results.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Uses technology to find solutions and tries alternatives \u2014 this looks like tool exploration. But it is a solitary, trial-and-error approach without building a learning network or demonstrating understanding of why one tool works better than another for this type of task. The standard requires both customising the learning environment through network-building and developing conceptual understanding of how tools work."
+        },
+        {
+          "id": "C",
+          "text": "I seek out a student forum and a subject specialist community online where people discuss research methods, trial several tools with a clear sense of what I am testing each one for, compare how they surface information differently, and update my research toolkit \u2014 keeping notes on why each tool works better for specific purposes.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-S-DC-01",
+      "framework_id": "iste-students",
+      "standard_id": "iste-s-dc",
+      "standard_name": "Digital Citizen",
+      "target_standard": "Digital Citizen",
+      "primary_indicators": [
+        "iste-s-dc-1a",
+        "iste-s-dc-1d"
+      ],
+      "scenario_stem": "You are setting up a new online account for a class project that requires sharing your work publicly. What do you do before you start posting?",
+      "context_tags": {
+        "study_level": [
+          "secondary",
+          "post-16",
+          "undergraduate"
+        ],
+        "discipline": [
+          "any"
+        ],
+        "prior_tech_experience": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I create the account quickly using my full name and school email so it is easy for my teacher and classmates to find me, then start posting my work.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I use a username that does not include my last name and make sure only my class project posts are visible to the public \u2014 personal content stays private.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Shows basic awareness of identity management and makes a simple privacy choice \u2014 this looks responsible. But it treats privacy as a one-time setting rather than an ongoing practice. There is no review of the platform's data collection policies, no consideration of the lasting digital footprint this creates, and no systematic approach to privacy across all visible information. The standard requires active, informed management of digital identity and personal data, not just a pseudonym."
+        },
+        {
+          "id": "C",
+          "text": "I consider what digital footprint this account will create over time, choose a professional-style username, review every default privacy setting before enabling them, read the platform's data policy to understand what information it retains and shares, and decide consciously what I will and will not post \u2014 with awareness of how this content could be found or used in future.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-S-DC-02",
+      "framework_id": "iste-students",
+      "standard_id": "iste-s-dc",
+      "standard_name": "Digital Citizen",
+      "target_standard": "Digital Citizen",
+      "primary_indicators": [
+        "iste-s-dc-1b",
+        "iste-s-dc-1c"
+      ],
+      "scenario_stem": "During an online group project, one team member posts a comment that another member finds dismissive and hurtful. You notice this as an observer in the group chat. What do you do?",
+      "context_tags": {
+        "study_level": [
+          "secondary",
+          "post-16",
+          "undergraduate"
+        ],
+        "discipline": [
+          "any"
+        ],
+        "prior_tech_experience": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I ignore it \u2014 disagreements happen in group work and it is not my place to get involved in someone else's conflict.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I send a private message to the student who was hurt to check in on them and let them know I noticed and that the comment was not okay.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Shows empathy and personal care \u2014 this sounds like responsible digital citizenship. But it is a private, individual response that does not address the group dynamic or contribute to a more inclusive online community. The standard requires actively contributing to inclusive digital communities, not just personal kindness to individuals. The group space remains unchanged."
+        },
+        {
+          "id": "C",
+          "text": "I check in privately with the student who was hurt, then suggest to the group that we set some communication norms for the project so everyone feels respected in the shared space \u2014 and if dismissive behaviour continues, I raise it with the teacher, recognising that I have a responsibility to help keep our online environment inclusive for everyone.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-S-KC-01",
+      "framework_id": "iste-students",
+      "standard_id": "iste-s-kc",
+      "standard_name": "Knowledge Constructor",
+      "target_standard": "Knowledge Constructor",
+      "primary_indicators": [
+        "iste-s-kc-1b"
+      ],
+      "scenario_stem": "You are researching whether a new health supplement has genuine scientific support. You find several online articles that all endorse it. What do you do next?",
+      "context_tags": {
+        "study_level": [
+          "secondary",
+          "post-16",
+          "undergraduate"
+        ],
+        "discipline": [
+          "science",
+          "health",
+          "general"
+        ],
+        "prior_tech_experience": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I use the articles I found \u2014 they all reach the same conclusion, which suggests the evidence is strong.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I check whether the articles come from reputable health websites and look at how recently they were published before deciding whether to trust them.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Checks surface credibility markers (domain reputation, recency) \u2014 this looks like source evaluation. But it does not examine who funded the research, whether the authors have commercial connections to the supplement, what the underlying evidence quality is, or whether any independent or critical voices exist. Agreement among sources does not indicate validity if all sources share the same bias or origin. The standard requires evaluating accuracy, validity, bias, and origin \u2014 not just surface credibility."
+        },
+        {
+          "id": "C",
+          "text": "I check each article's author credentials, look for whether any are backed by the supplement's manufacturer, search specifically for peer-reviewed research (rather than opinion pieces or promotional content), look for sources that critically examine the supplement, and only then draw a provisional conclusion \u2014 noting where the evidence is strong and where it is limited.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-S-KC-02",
+      "framework_id": "iste-students",
+      "standard_id": "iste-s-kc",
+      "standard_name": "Knowledge Constructor",
+      "target_standard": "Knowledge Constructor",
+      "primary_indicators": [
+        "iste-s-kc-1c",
+        "iste-s-kc-1d"
+      ],
+      "scenario_stem": "You are building a digital portfolio for a project on local environmental issues. How do you approach it?",
+      "context_tags": {
+        "study_level": [
+          "secondary",
+          "post-16",
+          "undergraduate"
+        ],
+        "discipline": [
+          "geography",
+          "science",
+          "social_sciences",
+          "humanities"
+        ],
+        "prior_tech_experience": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I collect links to news articles about local environmental issues and organise them into a folder I label 'sources' \u2014 ready for the write-up.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I gather articles, photos, and data from local council websites, sort them into folders by topic (air quality, waste, water), and write a brief summary paragraph under each folder explaining what the sources cover.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Curates, organises, and adds descriptions \u2014 this looks like thoughtful research practice. But the summaries describe what the sources contain rather than what they mean in relation to each other. There is no evidence of constructed understanding: no argument, no synthesis of connections between topics, and no engagement with the issues as real-world problems. The standard requires demonstrating meaningful connections and conclusions through curation, not just organised summaries."
+        },
+        {
+          "id": "C",
+          "text": "I gather sources from council reports, local journalism, and environmental NGOs, annotate each with a note on what it adds to a central argument I am building, tag them by stakeholder perspective, build a visual map showing how the issues connect, and situate my findings within a real conversation I have joined \u2014 for example, by connecting with a local environmental group whose work I have been following.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-S-ID-01",
+      "framework_id": "iste-students",
+      "standard_id": "iste-s-id",
+      "standard_name": "Innovative Designer",
+      "target_standard": "Innovative Designer",
+      "primary_indicators": [
+        "iste-s-id-1a",
+        "iste-s-id-1c"
+      ],
+      "scenario_stem": "Your class has been asked to design a solution to reduce food waste in the school canteen. What is your approach?",
+      "context_tags": {
+        "study_level": [
+          "secondary",
+          "post-16"
+        ],
+        "discipline": [
+          "design",
+          "STEM",
+          "general"
+        ],
+        "prior_tech_experience": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I brainstorm a few ideas, pick the one that sounds most practical, and produce a poster presentation explaining what my solution would do.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I research existing food waste solutions, design a portion-choice system for the canteen, make a model of it, and test the idea with a few friends to see if they think it would work.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Researches, designs, and tests with peers \u2014 this looks like a design process. But asking friends if they 'like the idea' is not a structured test of whether the design works. There is no iteration based on findings, no criteria for success, and no cyclical refinement. The standard requires developing, testing, and refining prototypes through a cyclical design process \u2014 not a single round of peer opinion-gathering."
+        },
+        {
+          "id": "C",
+          "text": "I follow a design thinking process: interview canteen staff and students to understand the actual problem, generate three different solution concepts and evaluate them against criteria, build a low-fidelity prototype of the most promising one, test it with a small group using specific prompts, collect structured feedback, revise the prototype based on what I find, and document at each stage what I changed and why.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-S-ID-02",
+      "framework_id": "iste-students",
+      "standard_id": "iste-s-id",
+      "standard_name": "Innovative Designer",
+      "target_standard": "Innovative Designer",
+      "primary_indicators": [
+        "iste-s-id-1b",
+        "iste-s-id-1d"
+      ],
+      "scenario_stem": "You are mid-way through a design project when you discover that a key assumption you built the whole design around was wrong. What do you do?",
+      "context_tags": {
+        "study_level": [
+          "secondary",
+          "post-16",
+          "undergraduate"
+        ],
+        "discipline": [
+          "design",
+          "STEM",
+          "general"
+        ],
+        "prior_tech_experience": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I go back to the teacher to explain the situation and ask whether I can restart with a different brief, since the current project can no longer work as I had planned it.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I revise my design to work around the incorrect assumption, update my project plan in my digital task board to reflect the changes, and carry on from where I left off.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Adapts and uses a planning tool \u2014 this looks like resilience and organised project management. But adapting to a setback is not the same as reframing it as a design opportunity. There is no evidence of tolerance for ambiguity: the student is correcting toward a known answer rather than exploring the design space opened by the new constraint. The standard requires perseverance with open-ended problems and capacity to work with uncertainty \u2014 not just efficient recovery."
+        },
+        {
+          "id": "C",
+          "text": "I reframe the incorrect assumption as a design constraint \u2014 now a feature of the problem rather than a flaw in my plan. I use a mind-mapping tool to generate new design directions that work within this constraint, assess the trade-offs between two or three revised approaches, choose one based on my criteria, and document in my design journal what I learned from the unexpected turn and how it is making the final design stronger.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-S-CT-01",
+      "framework_id": "iste-students",
+      "standard_id": "iste-s-ct",
+      "standard_name": "Computational Thinker",
+      "target_standard": "Computational Thinker",
+      "primary_indicators": [
+        "iste-s-ct-1a",
+        "iste-s-ct-1c"
+      ],
+      "scenario_stem": "You want to build a simple tool to help your family track household spending. Where do you start?",
+      "context_tags": {
+        "study_level": [
+          "secondary",
+          "post-16",
+          "undergraduate"
+        ],
+        "discipline": [
+          "STEM",
+          "computing",
+          "general"
+        ],
+        "prior_tech_experience": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I search for a household budget app that already exists, download one that looks good, and set it up for my family to use.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I sketch out what the tool needs to do, list the main features (income tracking, expense categories, monthly totals), and start building a spreadsheet to capture those.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Defines requirements and begins building \u2014 this looks like structured problem-solving. But breaking a task into features is not the same as formulating a problem computationally. There is no abstraction (identifying what the system needs to model), no decomposition into logical sub-problems with defined inputs and outputs, and no model built before implementation begins. The standard requires formulating the problem in a way suited to computational methods, not just listing features."
+        },
+        {
+          "id": "C",
+          "text": "I start by decomposing the problem: I identify the key inputs (income streams, expense types, dates), the outputs needed (monthly summaries, alerts for overspending in a category), and the logic rules the system needs (e.g., flag when any category exceeds a defined threshold). I build an abstract model of this structure \u2014 like a diagram of how data flows \u2014 before writing any formulas or code, so the tool is well-structured from the start.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-S-CT-02",
+      "framework_id": "iste-students",
+      "standard_id": "iste-s-ct",
+      "standard_name": "Computational Thinker",
+      "target_standard": "Computational Thinker",
+      "primary_indicators": [
+        "iste-s-ct-1b",
+        "iste-s-ct-1d"
+      ],
+      "scenario_stem": "You need to find patterns in a large school attendance dataset for a data literacy assignment. How do you approach this?",
+      "context_tags": {
+        "study_level": [
+          "secondary",
+          "post-16",
+          "undergraduate"
+        ],
+        "discipline": [
+          "computing",
+          "STEM",
+          "social_sciences"
+        ],
+        "prior_tech_experience": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I open the spreadsheet and scroll through the rows, noting anything that looks unusual or that catches my attention.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I use Excel to group attendance records by month using a pivot table and create a bar chart so I can see which months had the highest absence rates.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Uses a digital tool for analysis and produces a meaningful visualisation \u2014 this looks like data analysis. But the approach is manual and undocumented: there is no step-by-step analytical logic, no algorithmic thinking about how to structure the analysis so it could be repeated or extended, and the chart is descriptive rather than conclusions-driven. The standard requires algorithmic thinking and understanding of automation, not just competent use of a spreadsheet."
+        },
+        {
+          "id": "C",
+          "text": "I define a clear analytical algorithm before I start: filter by student group, calculate absence rates per period, apply a threshold to flag anomalies, and produce a chart showing patterns over time. I then automate these steps using a spreadsheet macro so the full analysis can be rerun on any updated dataset without repeating the manual steps \u2014 and I document the logic so someone else could understand and modify it.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-S-CC-01",
+      "framework_id": "iste-students",
+      "standard_id": "iste-s-cc",
+      "standard_name": "Creative Communicator",
+      "target_standard": "Creative Communicator",
+      "primary_indicators": [
+        "iste-s-cc-1a",
+        "iste-s-cc-1d"
+      ],
+      "scenario_stem": "You need to share the results of your science project with three audiences: your class, a group of Year 7 students, and parents at an open evening. What do you do?",
+      "context_tags": {
+        "study_level": [
+          "secondary",
+          "post-16"
+        ],
+        "discipline": [
+          "science",
+          "general"
+        ],
+        "prior_tech_experience": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I create one clear PowerPoint presentation with my findings and use it for all three audiences \u2014 the content is the same, so the same slides should work.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I create a detailed slide deck for my class and then simplify the language in a second version for the Year 7 students \u2014 making sure the vocabulary is accessible for younger students.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Adapts content language for one audience \u2014 this sounds like audience-aware communication. But both outputs are slide decks, meaning the medium has not been reconsidered for either audience. The parents receive no adapted version at all. The standard requires customising both the message and the medium for each audience \u2014 recognising that younger students and parents will engage differently not just with language but with the format itself."
+        },
+        {
+          "id": "C",
+          "text": "I create three distinct outputs: a technical slide deck with data visualisations for my class, an interactive digital poster with visual analogies and minimal text for the Year 7 group, and a short narrated video with plain-language explanation for parents to watch at the open evening \u2014 choosing each format based on how each audience will access and engage with the content, not just what language level to use.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-S-CC-02",
+      "framework_id": "iste-students",
+      "standard_id": "iste-s-cc",
+      "standard_name": "Creative Communicator",
+      "target_standard": "Creative Communicator",
+      "primary_indicators": [
+        "iste-s-cc-1b",
+        "iste-s-cc-1c"
+      ],
+      "scenario_stem": "You are producing a digital artefact on climate migration for a humanities project. How do you approach the creative work?",
+      "context_tags": {
+        "study_level": [
+          "secondary",
+          "post-16",
+          "undergraduate"
+        ],
+        "discipline": [
+          "humanities",
+          "geography",
+          "social_sciences"
+        ],
+        "prior_tech_experience": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I find some good infographics about climate migration online and include them in my presentation with the source links \u2014 they already summarise the data clearly.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I take an existing infographic as a starting point, replace some of the data with more recent figures I found myself, redesign the colour scheme to fit my project theme, and include a note crediting the original.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Updates data and credits the source \u2014 this looks like responsible remixing. But the underlying structure, argument, and visual logic of the original infographic remain unchanged. Swapping data and changing colours is aesthetic modification, not substantive transformation. The standard requires creating original work or remixing in ways that represent a genuine new creation \u2014 one that communicates the student's own ideas and argument, not a restyled version of someone else's."
+        },
+        {
+          "id": "C",
+          "text": "I gather original data from UNHCR reports and peer-reviewed climate science, design my own infographic from scratch applying data visualisation principles I have researched, and add an interactive element \u2014 a clickable regional map \u2014 that allows viewers to explore migration patterns by area. Everything I submit is my own design, structured around a specific argument I am making about the relationship between climate events and displacement.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-S-GC-01",
+      "framework_id": "iste-students",
+      "standard_id": "iste-s-gc",
+      "standard_name": "Global Collaborator",
+      "target_standard": "Global Collaborator",
+      "primary_indicators": [
+        "iste-s-gc-1a",
+        "iste-s-gc-1b"
+      ],
+      "scenario_stem": "You are researching the global impact of fast fashion for a geography project, but all the sources you have found so far represent European and North American perspectives. What do you do?",
+      "context_tags": {
+        "study_level": [
+          "secondary",
+          "post-16",
+          "undergraduate"
+        ],
+        "discipline": [
+          "geography",
+          "humanities",
+          "social_sciences"
+        ],
+        "prior_tech_experience": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I use the sources I have \u2014 they seem thorough and cover the main environmental and economic arguments.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I search specifically for news articles and reports from fashion-producing countries such as Bangladesh, Cambodia, and Vietnam to find perspectives from those regions.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Deliberately seeks diverse perspectives \u2014 this looks like global awareness. But reading articles from other regions is not the same as using collaborative technology to engage with people from those contexts. The standard requires using digital tools to connect with peers from different backgrounds and examine issues through genuine multi-viewpoint collaboration \u2014 not just consuming secondary sources from a wider geographic range."
+        },
+        {
+          "id": "C",
+          "text": "I join an online student sustainability forum where I post specific questions about the garment industry experience to members in South and Southeast Asia, use a shared collaborative document to co-develop a section on manufacturing community perspectives with two students from different countries, and integrate those firsthand contributions into my project \u2014 clearly distinguishing them from secondary sources and reflecting on how they changed my analysis.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    },
+    {
+      "id": "ISTE-S-GC-02",
+      "framework_id": "iste-students",
+      "standard_id": "iste-s-gc",
+      "standard_name": "Global Collaborator",
+      "target_standard": "Global Collaborator",
+      "primary_indicators": [
+        "iste-s-gc-1c",
+        "iste-s-gc-1d"
+      ],
+      "scenario_stem": "You join an international online team project to develop a proposal for improving water access in a specific community. The team has members from four different countries. What is your approach?",
+      "context_tags": {
+        "study_level": [
+          "secondary",
+          "post-16",
+          "undergraduate"
+        ],
+        "discipline": [
+          "geography",
+          "humanities",
+          "STEM",
+          "general"
+        ],
+        "prior_tech_experience": [
+          "any"
+        ]
+      },
+      "responses": [
+        {
+          "id": "A",
+          "text": "I share my ideas in the group chat whenever I think of something useful and wait for the rest of the team to agree on a direction \u2014 collaboration with international peers is new to me and I do not want to overstep.",
+          "maps_to": "not_met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        },
+        {
+          "id": "B",
+          "text": "I suggest we divide the project into sections, volunteer to take on the research section, complete my part thoroughly and on time, and share it with the team for the final write-up.",
+          "maps_to": "partially_met",
+          "is_attractive_nuisance": true,
+          "nuisance_explanation": "Takes initiative, proposes a structure, and delivers a reliable contribution \u2014 this sounds like effective teamwork. But taking a fixed section and delivering it does not demonstrate constructive contribution to the team's overall direction or use of the diverse global knowledge present in the team. The student is completing a task in parallel rather than collaborating. The standard requires contributing constructively to team dynamics \u2014 including taking varied roles and ensuring the team's global diversity is genuinely used as a learning asset."
+        },
+        {
+          "id": "C",
+          "text": "I propose a shared workspace for the team, suggest we rotate who leads each phase so everyone takes different roles, actively ask the team member closest to the affected community to lead the needs analysis section because their lived context is the most relevant resource we have, and help the group reflect at the end on how our different national perspectives shaped the proposal \u2014 documenting this explicitly as part of our methodology.",
+          "maps_to": "met",
+          "is_attractive_nuisance": false,
+          "nuisance_explanation": null
+        }
+      ]
+    }
+  ]
+}

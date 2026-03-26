@@ -1,0 +1,266 @@
+{
+  "framework_id": "unesco-student-ai-competency",
+  "framework_name": "UNESCO AI Competency Framework for Students",
+  "framework_source": "UNESCO (2024). AI competency framework for students. UNESDOC pf0000391105. ISBN 978-92-3-100709-5.",
+  "reasonlens_implementation_note": "This file operationalises the UNESCO Student framework for the ReasonLens platform. Dimension names and level names are ReasonLens-specific adaptations of UNESCO terminology (Aspects mapped to Dimensions; Understand/Apply/Create mapped to Foundational/Intermediate/Advanced) to maintain consistency with the platform's multi-framework architecture.",
+  "dimensions": [
+    {
+      "id": "sc-use",
+      "name": "AI Use & Application",
+      "code": "USE",
+      "description": "The ability to select, operate, and critically evaluate AI tools and applications for learning, problem-solving, and daily life. Covers practical interaction with AI systems, prompt engineering, output evaluation, and integration of AI into academic workflows.",
+      "unesco_aspect": "AI techniques and applications"
+    },
+    {
+      "id": "sc-understanding",
+      "name": "AI Understanding",
+      "code": "UND",
+      "description": "Conceptual and technical knowledge of how AI systems work, including data, algorithms, machine learning paradigms, neural networks, and the relationship between AI capabilities and limitations. Covers both foundational literacy and deeper technical comprehension.",
+      "unesco_aspect": "Human-centred mindset"
+    },
+    {
+      "id": "sc-ethics",
+      "name": "AI Ethics & Values",
+      "code": "ETH",
+      "description": "The capacity to identify, reason about, and act on ethical issues raised by AI, including bias, fairness, privacy, transparency, environmental sustainability, and the societal impact of AI systems. Covers personal ethical practice and co-creation of ethical norms.",
+      "unesco_aspect": "Ethics of AI"
+    },
+    {
+      "id": "sc-design",
+      "name": "AI System Design",
+      "code": "DES",
+      "description": "The ability to scope AI problems, design AI system architectures, implement solutions, and evaluate outcomes through iterative feedback loops. Covers the full design cycle from problem definition through prototyping to evaluation and improvement.",
+      "unesco_aspect": "AI system design"
+    }
+  ],
+  "levels": [
+    {
+      "id_suffix": "foundational",
+      "name": "Foundational",
+      "order": 1,
+      "code": "F",
+      "description": "Students recognise AI in daily life, develop basic conceptual vocabulary, and form initial attitudes toward AI use. They can identify AI-powered tools, understand that AI involves data and algorithms, articulate basic ethical concerns, and describe what a simple AI system does.",
+      "unesco_level": "Understand"
+    },
+    {
+      "id_suffix": "intermediate",
+      "name": "Intermediate",
+      "order": 2,
+      "code": "I",
+      "description": "Students critically evaluate and purposefully apply AI tools across academic and personal contexts. They transfer knowledge to complex situations, assess AI outputs for quality and bias, practise responsible use aligned with regulations, and design basic AI-assisted solutions.",
+      "unesco_level": "Apply"
+    },
+    {
+      "id_suffix": "advanced",
+      "name": "Advanced",
+      "order": 3,
+      "code": "A",
+      "description": "Students create, customise, and evaluate AI solutions with attention to human-centred design, ethical robustness, and societal impact. They co-create ethical guidance, build functional AI prototypes, and critically assess when AI systems should or should not be deployed.",
+      "unesco_level": "Create"
+    }
+  ],
+  "object_count": 8,
+  "structure": "4 dimensions x 2 boundaries (FI, IA)",
+  "data": [
+    {
+      "id": "sc-use-fi",
+      "dimension_id": "sc-use",
+      "boundary": "FI",
+      "lower_level": "foundational",
+      "upper_level": "intermediate",
+      "discriminator": "The student moves from recognising AI tools and using them for simple tasks to purposefully selecting, configuring, and critically evaluating AI tools within structured academic workflows.",
+      "discriminator_type": "recognition_vs_purposeful_application",
+      "false_positives": [
+        {
+          "pattern": "Frequent use without critical evaluation",
+          "explanation": "A student who uses AI tools daily but never evaluates output quality, never compares tools, and never adjusts their approach based on results is still operating at the Foundational level. Volume of use does not equal purposeful application.",
+          "distinguishing_evidence": "Ask the student why they chose this specific tool for this task, and what they would do differently if the output were inadequate. Foundational students cannot articulate tool selection rationale or iteration strategies."
+        },
+        {
+          "pattern": "Sophisticated prompt copying without understanding",
+          "explanation": "A student who copies complex prompt templates from online sources without understanding why they work is mimicking Intermediate behaviour. They cannot adapt prompts to novel situations or explain their design choices.",
+          "distinguishing_evidence": "Present a novel task and ask the student to design a prompt from scratch. Foundational students with copied templates will struggle to transfer the pattern."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": "Student can explain why they chose a specific AI tool for a given task (not just 'it was recommended') and can identify at least one limitation of AI-generated output in their own work.",
+        "strong": "Student demonstrates a pattern of tool selection based on task requirements, iterates on prompts when outputs are unsatisfactory, and consistently evaluates AI-generated content before incorporating it into academic work."
+      }
+    },
+    {
+      "id": "sc-use-ia",
+      "dimension_id": "sc-use",
+      "boundary": "IA",
+      "lower_level": "intermediate",
+      "upper_level": "advanced",
+      "discriminator": "The student moves from applying AI tools within established workflows to customising, chaining, and critically evaluating AI-assisted methodologies, including principled decisions about when not to use AI.",
+      "discriminator_type": "application_vs_creation_and_critique",
+      "false_positives": [
+        {
+          "pattern": "Technical sophistication without critical judgement",
+          "explanation": "A student who can configure advanced AI tool settings but does not evaluate whether those configurations improve outcomes, or who uses AI for every task without considering appropriateness, is still at the Intermediate level. Advanced use requires methodological rigour, not just technical skill.",
+          "distinguishing_evidence": "Ask the student to evaluate the validity of an AI-assisted methodology. Intermediate students describe what they did; Advanced students assess whether it was the right approach and what could go wrong."
+        },
+        {
+          "pattern": "Mentoring that reproduces personal habits rather than adapting to context",
+          "explanation": "A student who shows peers exactly how they use AI without adapting guidance to the peer's needs, discipline, or skill level is sharing technique, not mentoring. Advanced mentoring requires diagnostic skill and contextual adaptation.",
+          "distinguishing_evidence": "Observe whether the student asks questions about the peer's context before offering guidance, and whether they adjust their recommendations accordingly."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": "Student demonstrates at least one instance of customising AI tool configuration for a specific task with rationale, AND at least one instance of choosing not to use AI for a task with principled justification.",
+        "strong": "Student designs multi-step AI workflows with documented human oversight points, evaluates AI-assisted methodology for validity and bias, and adapts AI guidance for peers across different contexts."
+      }
+    },
+    {
+      "id": "sc-understanding-fi",
+      "dimension_id": "sc-understanding",
+      "boundary": "FI",
+      "lower_level": "foundational",
+      "upper_level": "intermediate",
+      "discriminator": "The student moves from describing AI in general terms (it learns from data, it makes predictions) to explaining specific mechanisms (supervised vs unsupervised learning, how neural networks train, why hallucinations occur) with discipline-relevant examples.",
+      "discriminator_type": "general_description_vs_mechanism_explanation",
+      "false_positives": [
+        {
+          "pattern": "Memorised technical vocabulary without conceptual understanding",
+          "explanation": "A student who can define terms like 'neural network', 'backpropagation', and 'transformer' but cannot explain how these concepts relate to each other or to observable AI behaviour has memorised vocabulary, not developed understanding.",
+          "distinguishing_evidence": "Ask the student to explain a concept in their own words to a non-technical audience, or to predict what would happen if a specific aspect of the system changed. Vocabulary memorisation breaks down under transfer tasks."
+        },
+        {
+          "pattern": "Detailed knowledge of one AI system without transferable understanding",
+          "explanation": "A student who can explain exactly how ChatGPT works (from media coverage) but cannot generalise those concepts to other AI systems is demonstrating system-specific knowledge, not intermediate understanding.",
+          "distinguishing_evidence": "Present a different AI application (e.g. image recognition, recommendation system) and ask the student to explain how it might work. Foundational students with system-specific knowledge cannot transfer."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": "Student correctly distinguishes between at least two ML paradigms (e.g. supervised vs unsupervised) with examples, and can explain one specific mechanism (e.g. why AI can be biased, how a model is trained) beyond surface-level description.",
+        "strong": "Student explains multiple AI mechanisms with discipline-relevant examples, identifies failure modes of specific AI systems based on how they work, and corrects common misconceptions with technical reasoning."
+      }
+    },
+    {
+      "id": "sc-understanding-ia",
+      "dimension_id": "sc-understanding",
+      "boundary": "IA",
+      "lower_level": "intermediate",
+      "upper_level": "advanced",
+      "discriminator": "The student moves from explaining how AI systems work to critically evaluating AI research claims, assessing architectural trade-offs, and connecting technical capabilities to sociotechnical implications.",
+      "discriminator_type": "explanation_vs_critical_evaluation",
+      "false_positives": [
+        {
+          "pattern": "Ability to implement without ability to evaluate",
+          "explanation": "A student who can build an AI model following tutorials but cannot assess whether the approach is appropriate for the problem, or cannot critique the methodology of a published paper, is demonstrating implementation skill, not advanced understanding.",
+          "distinguishing_evidence": "Present a published AI paper with a subtle methodological flaw and ask the student to evaluate it. Intermediate students describe the method; Advanced students identify the flaw and explain its implications."
+        },
+        {
+          "pattern": "Philosophical critique without technical grounding",
+          "explanation": "A student who critiques AI from a purely philosophical or social perspective without connecting their arguments to specific technical mechanisms is demonstrating social critique, not advanced AI understanding. Both technical and critical dimensions are required.",
+          "distinguishing_evidence": "Ask the student to connect their ethical or social concern to a specific technical design choice. Advanced students bridge the technical and the social; Intermediate students keep them separate."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": "Student identifies a specific strength and a specific weakness in a published AI application or research paper, connecting technical details to broader implications.",
+        "strong": "Student evaluates architectural trade-offs for a proposed AI application, critiques published AI research with technical precision, and articulates how AI capabilities relate to sociotechnical systems."
+      }
+    },
+    {
+      "id": "sc-ethics-fi",
+      "dimension_id": "sc-ethics",
+      "boundary": "FI",
+      "lower_level": "foundational",
+      "upper_level": "intermediate",
+      "discriminator": "The student moves from identifying ethical issues to applying ethical frameworks and practising responsible AI use in their own academic work.",
+      "discriminator_type": "awareness_vs_applied_practice",
+      "false_positives": [
+        {
+          "pattern": "Ethical vocabulary without behavioural change",
+          "explanation": "A student who can discuss AI ethics eloquently in class but does not apply ethical reasoning to their own AI use (e.g. does not check for bias in outputs, does not consider privacy when sharing data with AI tools) is still at the Foundational level. Ethics must be practised, not just discussed.",
+          "distinguishing_evidence": "Examine the student's actual AI use practices, not just their stated positions. Do they check outputs for bias? Do they comply with institutional AI policies? Do they document their AI use?"
+        },
+        {
+          "pattern": "Compliance-driven behaviour without ethical reasoning",
+          "explanation": "A student who follows institutional AI policies because they are required to, without understanding or engaging with the ethical principles behind the policies, is demonstrating compliance, not ethical practice. They cannot adapt their behaviour to situations not covered by explicit rules.",
+          "distinguishing_evidence": "Present a novel AI ethics scenario not covered by institutional policy and ask what they would do and why. Compliance-driven students struggle without explicit rules; ethically practising students reason from principles."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": "Student applies at least one ethical principle to evaluate a real AI application or their own AI use, going beyond surface-level identification to reasoned analysis.",
+        "strong": "Student demonstrates consistent responsible AI practices in their academic work AND can apply named ethical frameworks to evaluate AI applications with reference to specific principles."
+      }
+    },
+    {
+      "id": "sc-ethics-ia",
+      "dimension_id": "sc-ethics",
+      "boundary": "IA",
+      "lower_level": "intermediate",
+      "upper_level": "advanced",
+      "discriminator": "The student moves from applying ethical frameworks to their own practice to co-creating ethical norms, critiquing governance frameworks, and embedding ethics by design in AI development.",
+      "discriminator_type": "personal_practice_vs_systemic_contribution",
+      "false_positives": [
+        {
+          "pattern": "Strong personal ethics without community impact",
+          "explanation": "A student with exemplary personal AI ethics practices who does not engage in co-creating norms, mentoring others, or critiquing systems is still at the Intermediate level. Advanced ethics requires systemic contribution, not just personal virtue.",
+          "distinguishing_evidence": "Look for evidence of influence beyond personal practice: co-authored guidelines, peer education, participation in governance discussions, or advocacy for policy changes."
+        },
+        {
+          "pattern": "Critique without construction",
+          "explanation": "A student who can identify problems with existing AI governance frameworks but cannot propose improvements or co-create alternatives is demonstrating critical awareness, not advanced ethical capability.",
+          "distinguishing_evidence": "After critique, can the student propose specific, actionable improvements? Do they engage constructively with the constraints that governance frameworks operate under?"
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": "Student contributes to co-creating ethical norms for AI use in at least one community context (classroom, department, study group) OR produces a substantive critique of an AI governance framework with constructive recommendations.",
+        "strong": "Student demonstrates ethics-by-design in an AI project, co-creates community AI norms, and critically engages with governance frameworks, connecting personal practice to systemic change."
+      }
+    },
+    {
+      "id": "sc-design-fi",
+      "dimension_id": "sc-design",
+      "boundary": "FI",
+      "lower_level": "foundational",
+      "upper_level": "intermediate",
+      "discriminator": "The student moves from assessing whether AI is appropriate for a problem and identifying needed components to designing actual system architectures with justified choices for data, model, and interface layers.",
+      "discriminator_type": "scoping_vs_architecture",
+      "false_positives": [
+        {
+          "pattern": "Detailed requirements list without design decisions",
+          "explanation": "A student who produces an exhaustive list of what an AI system should do but does not make design decisions about how it should be built is still at the Foundational level. Design requires translating requirements into architectural choices.",
+          "distinguishing_evidence": "Does the student's output include specific choices (e.g. 'use a classification model because...', 'collect data from X because...') or only descriptions of desired outcomes?"
+        },
+        {
+          "pattern": "Following a tutorial without understanding design rationale",
+          "explanation": "A student who builds an AI system by following step-by-step instructions without understanding why each step was chosen is demonstrating implementation, not design. They cannot adapt the approach to a different problem.",
+          "distinguishing_evidence": "Ask why a specific design choice was made. Foundational students say 'because the tutorial said so'; Intermediate students provide rationale connected to requirements and constraints."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": "Student produces a design document for a simple AI application that includes at least: model type selection with rationale, data source identification with quality assessment, and basic interface concept.",
+        "strong": "Student designs a complete AI system architecture with justified choices at each layer (data, model, interface), incorporating human oversight mechanisms and addressing ethical considerations in design decisions."
+      }
+    },
+    {
+      "id": "sc-design-ia",
+      "dimension_id": "sc-design",
+      "boundary": "IA",
+      "lower_level": "intermediate",
+      "upper_level": "advanced",
+      "discriminator": "The student moves from designing AI system architectures to evaluating deployed systems, iterating based on multi-stakeholder feedback, and making lifecycle decisions including when to restrict or decommission systems.",
+      "discriminator_type": "architecture_vs_lifecycle_management",
+      "false_positives": [
+        {
+          "pattern": "Iteration based only on technical metrics",
+          "explanation": "A student who iterates on model performance (accuracy, F1 score) without evaluating broader impacts (fairness, user experience, stakeholder satisfaction) is demonstrating technical optimisation, not advanced design. Advanced design requires multi-dimensional evaluation.",
+          "distinguishing_evidence": "Does the student's evaluation include non-technical criteria? Do they consult stakeholders beyond the development team? Do they consider unintended consequences?"
+        },
+        {
+          "pattern": "Planning for deployment without planning for monitoring or sunset",
+          "explanation": "A student who designs a deployment plan but has no strategy for monitoring, retraining, or decommissioning is still thinking in terms of project completion rather than system lifecycle.",
+          "distinguishing_evidence": "Ask what happens after deployment. Advanced students describe monitoring indicators, retraining triggers, and conditions under which the system should be shut down."
+        }
+      ],
+      "threshold_evidence": {
+        "minimum": "Student evaluates an AI system against both technical and non-technical criteria, AND articulates conditions under which the system should be modified or decommissioned.",
+        "strong": "Student designs and executes iteration cycles based on multi-stakeholder feedback, plans for the full system lifecycle including decommissioning, and demonstrates decision-making about when AI systems should not continue operating."
+      }
+    }
+  ]
+}

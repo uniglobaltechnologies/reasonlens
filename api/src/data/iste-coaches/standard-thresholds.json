@@ -1,0 +1,123 @@
+{
+  "_meta": {
+    "file": "standard-thresholds.json",
+    "framework_id": "iste-coaches",
+    "framework_name": "ISTE Standards for Coaches v4.02",
+    "replaces": "level-boundaries.json",
+    "assessment_paradigm": "met/not-met (binary). partially_met is treated as not_met for scoring.",
+    "licensing_constraint": "ISTE Standards text \u00a9 2024 4.02, ISTE (International Society for Technology in Education), iste.org. All rights reserved. ISTE permits free use for non-commercial educational purposes only. Commercial use requires separate ISTE licensing agreement. See iste.org/permissions-licensing. If ReasonLens operates commercial tiers, ISTE frameworks must be excluded from those tiers unless ISTE licensing is obtained.",
+    "generated_for": "ReasonLens"
+  },
+  "thresholds": [
+    {
+      "standard_id": "iste-c-cha",
+      "standard_name": "Change Agent",
+      "standard_number": "4.1",
+      "standard_source_text": "Coaches inspire educators and leaders to use technology to create equitable and ongoing access to high-quality learning.",
+      "indicators": [
+        "iste-c-cha-4a",
+        "iste-c-cha-4b",
+        "iste-c-cha-4c",
+        "iste-c-cha-4d",
+        "iste-c-cha-4e"
+      ],
+      "met_threshold_description": "The coach facilitates a shared vision and culture for technology-enhanced learning; promotes equitable use of digital tools; cultivates a coaching culture of collective ownership; recognises effective educators; and connects the right stakeholders to maximise technology's potential.",
+      "not_yet_met_description": "The coach delivers training on tools without building shared vision; does not address equity in technology access; works with individuals without building a culture; and does not connect stakeholders or recognise effective practice.",
+      "partial_met_description": "The coach addresses individual teacher concerns and shares examples of good practice, but does not facilitate collective vision-building or cultivate a coaching culture where technology serves shared educational goals.",
+      "scoring_note": "Binary: met or not_met."
+    },
+    {
+      "standard_id": "iste-c-cnl",
+      "standard_name": "Connected Learner",
+      "standard_number": "4.2",
+      "standard_source_text": "Coaches model the ISTE Standards for Students and the ISTE Standards for Educators and identify ways to improve their coaching practice.",
+      "indicators": [
+        "iste-c-cnl-4a",
+        "iste-c-cnl-4b",
+        "iste-c-cnl-4c"
+      ],
+      "met_threshold_description": "The coach pursues sustained professional learning to deepen expertise in the ISTE Standards; participates in active professional learning networks; and establishes shared goals with educators, reflecting on progress to continuously improve coaching practice.",
+      "not_yet_met_description": "The coach draws on existing expertise without sustained learning in the ISTE Standards; is not connected to external professional networks; and does not use shared goals or reflection as tools for improving their own coaching practice.",
+      "partial_met_description": "The coach attends CPD events and reads about the ISTE Standards, but is not actively embedded in a professional learning community and does not use structured goal-setting and reflection to improve their coaching practice.",
+      "scoring_note": "Binary: met or not_met."
+    },
+    {
+      "standard_id": "iste-c-clb",
+      "standard_name": "Collaborator",
+      "standard_number": "4.3",
+      "standard_source_text": "Coaches establish productive relationships with educators in order to improve instructional practice and learning outcomes.",
+      "indicators": [
+        "iste-c-clb-4a",
+        "iste-c-clb-4b",
+        "iste-c-clb-4c",
+        "iste-c-clb-4d"
+      ],
+      "met_threshold_description": "The coach builds trusting, respectful coaching relationships; partners to identify culturally relevant and developmentally appropriate digital content; evaluates tool efficacy rigorously; and personalises coaching support to each educator's context.",
+      "not_yet_met_description": "The coach delivers a standardised coaching programme without investing in relationship quality; recommends tools based on general reputation rather than contextual relevance; and does not personalise support based on educator needs.",
+      "partial_met_description": "The coach listens to educator concerns and recommends tools based on subject area, but does not build the trust needed for genuine instructional risk-taking or evaluate tool efficacy against student learning evidence.",
+      "scoring_note": "Binary: met or not_met."
+    },
+    {
+      "standard_id": "iste-c-ldn",
+      "standard_name": "Learning Designer",
+      "standard_number": "4.4",
+      "standard_source_text": "Coaches model and support educators to design learning experiences and environments to meet the needs and interests of all students.",
+      "indicators": [
+        "iste-c-ldn-4a",
+        "iste-c-ldn-4b",
+        "iste-c-ldn-4c",
+        "iste-c-ldn-4d"
+      ],
+      "met_threshold_description": "The coach co-designs authentic active learning experiences that foster student agency; helps educators build effective digital assessments with timely feedback; designs accessible digital environments for all learners; and models instructional design principles.",
+      "not_yet_met_description": "The coach shares existing lesson resources rather than co-designing experiences; does not address accessibility in digital environment design; and does not apply or model instructional design principles with educators.",
+      "partial_met_description": "The coach co-plans engaging learning experiences and improves assessment design, but does not systematically address accessibility requirements or model the instructional design principles underpinning the choices made.",
+      "scoring_note": "Binary: met or not_met."
+    },
+    {
+      "standard_id": "iste-c-plf",
+      "standard_name": "Professional Learning Facilitator",
+      "standard_number": "4.5",
+      "standard_source_text": "Coaches plan, provide and evaluate the impact of professional learning for educators and leaders to use technology to advance teaching and learning.",
+      "indicators": [
+        "iste-c-plf-4a",
+        "iste-c-plf-4b",
+        "iste-c-plf-4c"
+      ],
+      "met_threshold_description": "The coach designs professional learning based on robust needs assessment and adult learning frameworks; builds educator capacity to implement the ISTE Standards; and evaluates impact continuously to improve the professional learning programme.",
+      "not_yet_met_description": "The coach delivers professional learning based on assumed rather than assessed needs; does not frame sessions in adult learning principles; and evaluates sessions only through immediate satisfaction surveys.",
+      "partial_met_description": "The coach conducts a pre-session survey and designs interactive CPD, but does not use multi-method needs assessment, does not apply formal adult learning frameworks, and does not measure impact on practice or student outcomes.",
+      "scoring_note": "Binary: met or not_met."
+    },
+    {
+      "standard_id": "iste-c-ddm",
+      "standard_name": "Data-Driven Decision Maker",
+      "standard_number": "4.6",
+      "standard_source_text": "Coaches model and support the use of qualitative and quantitative data to inform their own instruction and professional learning.",
+      "indicators": [
+        "iste-c-ddm-4a",
+        "iste-c-ddm-4b",
+        "iste-c-ddm-4c"
+      ],
+      "met_threshold_description": "The coach models secure data collection and analysis practices; supports educators to interpret data critically and triangulate sources; and empowers students to use their own learning data for goal-setting.",
+      "not_yet_met_description": "The coach uses data only for reporting purposes; does not model critical data interpretation or security practices; and does not help educators or students use data as an active learning tool.",
+      "partial_met_description": "The coach runs data-interpretation workshops and helps teachers make instructional adjustments, but does not address data security practices, model how to identify misleading metrics, or extend data use to student-directed goal-setting.",
+      "scoring_note": "Binary: met or not_met."
+    },
+    {
+      "standard_id": "iste-c-dca",
+      "standard_name": "Digital Citizen Advocate",
+      "standard_number": "4.7",
+      "standard_source_text": "Coaches model digital citizenship and support educators and students in recognizing the responsibilities and opportunities inherent in living in a digital world.",
+      "indicators": [
+        "iste-c-dca-4a",
+        "iste-c-dca-4b",
+        "iste-c-dca-4c",
+        "iste-c-dca-4d"
+      ],
+      "met_threshold_description": "The coach creates pathways for students to address community challenges with technology; fosters inclusive online spaces and healthy technology balance; supports critical examination of online content and underlying biases; and empowers educators and students to protect personal data and curate intentional digital profiles.",
+      "not_yet_met_description": "The coach treats digital citizenship as a compliance topic; does not create community-facing project opportunities; and does not help educators or students develop critical information literacy or active data management practices.",
+      "partial_met_description": "The coach supports digital citizenship lessons and online safety awareness, but does not design real-world community-connected projects, develop critical source examination skills, or address the practical mechanics of personal data protection.",
+      "scoring_note": "Binary: met or not_met."
+    }
+  ]
+}

@@ -1,0 +1,337 @@
+{
+  "framework_id": "jisc-digital-maturity",
+  "framework_name": "Jisc Digital Maturity Model",
+  "file_type": "level-boundaries",
+  "research_basis": {
+    "generated_at": "2026-03-26",
+    "authoring_method": "Original synthesis using the user brief and the THE DMI implementation reference as the structural benchmark.",
+    "licence_handling": "Original implementation content informed by Jisc structure. Jisc digital maturity materials are published under terms including CC BY-NC-SA on the main toolkit page; scenarios and practitioner language here are independently written.",
+    "notes": [
+      "The source brief describes a 3-level model and requests 10 boundaries. This implementation therefore operationalises the two assessable adjacent boundaries in a 3-level model: Established to Enhanced (EM) and Enhanced to Mature (MM).",
+      "The brief also mentioned EE as a target-level code; that label is retained in metadata as an entry-threshold alias rather than a scored boundary."
+    ]
+  },
+  "object_count": 10,
+  "objects": [
+    {
+      "boundary_id": "jisc-culture-em",
+      "framework_id": "jisc-digital-maturity",
+      "dimension_id": "jisc-culture",
+      "dimension_name": "Organisational Digital Culture",
+      "boundary_code": "EM",
+      "from_level_id": "jisc-culture-established",
+      "to_level_id": "jisc-culture-enhanced",
+      "from_level_name": "Established",
+      "to_level_name": "Enhanced",
+      "key_discriminator": "In Organisational Digital Culture, The key shift is from emerging but uneven establishment to coordinated, cross-unit practice with clearer ownership.",
+      "discriminator_type": "stabilised_vs_coordinated",
+      "common_false_positives": [
+        {
+          "pattern": "Visible activity",
+          "why_not_sufficient": "Many initiatives can create the appearance of progress without any coordination or common direction."
+        },
+        {
+          "pattern": "Policy on paper",
+          "why_not_sufficient": "A policy or plan does not demonstrate enhanced maturity unless it changes decisions and behaviours."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "There is named ownership, a shared approach, and evidence from more than one unit.",
+        "Improvement decisions are informed by institution-level rather than purely local information."
+      ],
+      "strong_threshold_evidence": [
+        "Processes, support, and expectations are consistent across most of the institution.",
+        "Coordination reduces dependence on local champions."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "jisc-culture-mm",
+      "framework_id": "jisc-digital-maturity",
+      "dimension_id": "jisc-culture",
+      "dimension_name": "Organisational Digital Culture",
+      "boundary_code": "MM",
+      "from_level_id": "jisc-culture-enhanced",
+      "to_level_id": "jisc-culture-mature",
+      "from_level_name": "Enhanced",
+      "to_level_name": "Mature",
+      "key_discriminator": "In Organisational Digital Culture, The key shift is from coordination to integration, where the practice is embedded in normal planning, review, and improvement cycles.",
+      "discriminator_type": "coordinated_vs_integrated",
+      "common_false_positives": [
+        {
+          "pattern": "Well-run programme",
+          "why_not_sufficient": "A strong programme can still be separate from the institution's core operating model."
+        },
+        {
+          "pattern": "External reputation",
+          "why_not_sufficient": "Recognition from peers does not guarantee mature internal integration."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "The dimension is part of mainstream planning, accountability, and review.",
+        "Evidence leads to iterative improvement rather than periodic catch-up."
+      ],
+      "strong_threshold_evidence": [
+        "Partnership, benchmarking, or feedback loops systematically strengthen the approach.",
+        "The institution can sustain progress through turnover, scale, or environmental change."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "jisc-innovation-em",
+      "framework_id": "jisc-digital-maturity",
+      "dimension_id": "jisc-innovation",
+      "dimension_name": "Knowledge Creation & Innovation",
+      "boundary_code": "EM",
+      "from_level_id": "jisc-innovation-established",
+      "to_level_id": "jisc-innovation-enhanced",
+      "from_level_name": "Established",
+      "to_level_name": "Enhanced",
+      "key_discriminator": "In Knowledge Creation & Innovation, The key shift is from emerging but uneven establishment to coordinated, cross-unit practice with clearer ownership.",
+      "discriminator_type": "stabilised_vs_coordinated",
+      "common_false_positives": [
+        {
+          "pattern": "Visible activity",
+          "why_not_sufficient": "Many initiatives can create the appearance of progress without any coordination or common direction."
+        },
+        {
+          "pattern": "Policy on paper",
+          "why_not_sufficient": "A policy or plan does not demonstrate enhanced maturity unless it changes decisions and behaviours."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "There is named ownership, a shared approach, and evidence from more than one unit.",
+        "Improvement decisions are informed by institution-level rather than purely local information."
+      ],
+      "strong_threshold_evidence": [
+        "Processes, support, and expectations are consistent across most of the institution.",
+        "Coordination reduces dependence on local champions."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "jisc-innovation-mm",
+      "framework_id": "jisc-digital-maturity",
+      "dimension_id": "jisc-innovation",
+      "dimension_name": "Knowledge Creation & Innovation",
+      "boundary_code": "MM",
+      "from_level_id": "jisc-innovation-enhanced",
+      "to_level_id": "jisc-innovation-mature",
+      "from_level_name": "Enhanced",
+      "to_level_name": "Mature",
+      "key_discriminator": "In Knowledge Creation & Innovation, The key shift is from coordination to integration, where the practice is embedded in normal planning, review, and improvement cycles.",
+      "discriminator_type": "coordinated_vs_integrated",
+      "common_false_positives": [
+        {
+          "pattern": "Well-run programme",
+          "why_not_sufficient": "A strong programme can still be separate from the institution's core operating model."
+        },
+        {
+          "pattern": "External reputation",
+          "why_not_sufficient": "Recognition from peers does not guarantee mature internal integration."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "The dimension is part of mainstream planning, accountability, and review.",
+        "Evidence leads to iterative improvement rather than periodic catch-up."
+      ],
+      "strong_threshold_evidence": [
+        "Partnership, benchmarking, or feedback loops systematically strengthen the approach.",
+        "The institution can sustain progress through turnover, scale, or environmental change."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "jisc-development-em",
+      "framework_id": "jisc-digital-maturity",
+      "dimension_id": "jisc-development",
+      "dimension_name": "Knowledge Development",
+      "boundary_code": "EM",
+      "from_level_id": "jisc-development-established",
+      "to_level_id": "jisc-development-enhanced",
+      "from_level_name": "Established",
+      "to_level_name": "Enhanced",
+      "key_discriminator": "In Knowledge Development, The key shift is from emerging but uneven establishment to coordinated, cross-unit practice with clearer ownership.",
+      "discriminator_type": "stabilised_vs_coordinated",
+      "common_false_positives": [
+        {
+          "pattern": "Visible activity",
+          "why_not_sufficient": "Many initiatives can create the appearance of progress without any coordination or common direction."
+        },
+        {
+          "pattern": "Policy on paper",
+          "why_not_sufficient": "A policy or plan does not demonstrate enhanced maturity unless it changes decisions and behaviours."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "There is named ownership, a shared approach, and evidence from more than one unit.",
+        "Improvement decisions are informed by institution-level rather than purely local information."
+      ],
+      "strong_threshold_evidence": [
+        "Processes, support, and expectations are consistent across most of the institution.",
+        "Coordination reduces dependence on local champions."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "jisc-development-mm",
+      "framework_id": "jisc-digital-maturity",
+      "dimension_id": "jisc-development",
+      "dimension_name": "Knowledge Development",
+      "boundary_code": "MM",
+      "from_level_id": "jisc-development-enhanced",
+      "to_level_id": "jisc-development-mature",
+      "from_level_name": "Enhanced",
+      "to_level_name": "Mature",
+      "key_discriminator": "In Knowledge Development, The key shift is from coordination to integration, where the practice is embedded in normal planning, review, and improvement cycles.",
+      "discriminator_type": "coordinated_vs_integrated",
+      "common_false_positives": [
+        {
+          "pattern": "Well-run programme",
+          "why_not_sufficient": "A strong programme can still be separate from the institution's core operating model."
+        },
+        {
+          "pattern": "External reputation",
+          "why_not_sufficient": "Recognition from peers does not guarantee mature internal integration."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "The dimension is part of mainstream planning, accountability, and review.",
+        "Evidence leads to iterative improvement rather than periodic catch-up."
+      ],
+      "strong_threshold_evidence": [
+        "Partnership, benchmarking, or feedback loops systematically strengthen the approach.",
+        "The institution can sustain progress through turnover, scale, or environmental change."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "jisc-management-em",
+      "framework_id": "jisc-digital-maturity",
+      "dimension_id": "jisc-management",
+      "dimension_name": "Knowledge Management & Use",
+      "boundary_code": "EM",
+      "from_level_id": "jisc-management-established",
+      "to_level_id": "jisc-management-enhanced",
+      "from_level_name": "Established",
+      "to_level_name": "Enhanced",
+      "key_discriminator": "In Knowledge Management & Use, The key shift is from emerging but uneven establishment to coordinated, cross-unit practice with clearer ownership.",
+      "discriminator_type": "stabilised_vs_coordinated",
+      "common_false_positives": [
+        {
+          "pattern": "Visible activity",
+          "why_not_sufficient": "Many initiatives can create the appearance of progress without any coordination or common direction."
+        },
+        {
+          "pattern": "Policy on paper",
+          "why_not_sufficient": "A policy or plan does not demonstrate enhanced maturity unless it changes decisions and behaviours."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "There is named ownership, a shared approach, and evidence from more than one unit.",
+        "Improvement decisions are informed by institution-level rather than purely local information."
+      ],
+      "strong_threshold_evidence": [
+        "Processes, support, and expectations are consistent across most of the institution.",
+        "Coordination reduces dependence on local champions."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "jisc-management-mm",
+      "framework_id": "jisc-digital-maturity",
+      "dimension_id": "jisc-management",
+      "dimension_name": "Knowledge Management & Use",
+      "boundary_code": "MM",
+      "from_level_id": "jisc-management-enhanced",
+      "to_level_id": "jisc-management-mature",
+      "from_level_name": "Enhanced",
+      "to_level_name": "Mature",
+      "key_discriminator": "In Knowledge Management & Use, The key shift is from coordination to integration, where the practice is embedded in normal planning, review, and improvement cycles.",
+      "discriminator_type": "coordinated_vs_integrated",
+      "common_false_positives": [
+        {
+          "pattern": "Well-run programme",
+          "why_not_sufficient": "A strong programme can still be separate from the institution's core operating model."
+        },
+        {
+          "pattern": "External reputation",
+          "why_not_sufficient": "Recognition from peers does not guarantee mature internal integration."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "The dimension is part of mainstream planning, accountability, and review.",
+        "Evidence leads to iterative improvement rather than periodic catch-up."
+      ],
+      "strong_threshold_evidence": [
+        "Partnership, benchmarking, or feedback loops systematically strengthen the approach.",
+        "The institution can sustain progress through turnover, scale, or environmental change."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "jisc-exchange-em",
+      "framework_id": "jisc-digital-maturity",
+      "dimension_id": "jisc-exchange",
+      "dimension_name": "Knowledge Exchange & Partnerships",
+      "boundary_code": "EM",
+      "from_level_id": "jisc-exchange-established",
+      "to_level_id": "jisc-exchange-enhanced",
+      "from_level_name": "Established",
+      "to_level_name": "Enhanced",
+      "key_discriminator": "In Knowledge Exchange & Partnerships, The key shift is from emerging but uneven establishment to coordinated, cross-unit practice with clearer ownership.",
+      "discriminator_type": "stabilised_vs_coordinated",
+      "common_false_positives": [
+        {
+          "pattern": "Visible activity",
+          "why_not_sufficient": "Many initiatives can create the appearance of progress without any coordination or common direction."
+        },
+        {
+          "pattern": "Policy on paper",
+          "why_not_sufficient": "A policy or plan does not demonstrate enhanced maturity unless it changes decisions and behaviours."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "There is named ownership, a shared approach, and evidence from more than one unit.",
+        "Improvement decisions are informed by institution-level rather than purely local information."
+      ],
+      "strong_threshold_evidence": [
+        "Processes, support, and expectations are consistent across most of the institution.",
+        "Coordination reduces dependence on local champions."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    },
+    {
+      "boundary_id": "jisc-exchange-mm",
+      "framework_id": "jisc-digital-maturity",
+      "dimension_id": "jisc-exchange",
+      "dimension_name": "Knowledge Exchange & Partnerships",
+      "boundary_code": "MM",
+      "from_level_id": "jisc-exchange-enhanced",
+      "to_level_id": "jisc-exchange-mature",
+      "from_level_name": "Enhanced",
+      "to_level_name": "Mature",
+      "key_discriminator": "In Knowledge Exchange & Partnerships, The key shift is from coordination to integration, where the practice is embedded in normal planning, review, and improvement cycles.",
+      "discriminator_type": "coordinated_vs_integrated",
+      "common_false_positives": [
+        {
+          "pattern": "Well-run programme",
+          "why_not_sufficient": "A strong programme can still be separate from the institution's core operating model."
+        },
+        {
+          "pattern": "External reputation",
+          "why_not_sufficient": "Recognition from peers does not guarantee mature internal integration."
+        }
+      ],
+      "minimum_threshold_evidence": [
+        "The dimension is part of mainstream planning, accountability, and review.",
+        "Evidence leads to iterative improvement rather than periodic catch-up."
+      ],
+      "strong_threshold_evidence": [
+        "Partnership, benchmarking, or feedback loops systematically strengthen the approach.",
+        "The institution can sustain progress through turnover, scale, or environmental change."
+      ],
+      "decision_rule": "Assign the lower level when evidence is inconsistent, dependent on support, or confined to unusually favourable cases."
+    }
+  ]
+}

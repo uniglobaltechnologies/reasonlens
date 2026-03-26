@@ -1,0 +1,60 @@
+{
+  "_meta": {
+    "file": "persona-context-matrix.json",
+    "framework_id": "iste-leaders",
+    "framework_name": "ISTE Standards for Education Leaders v4.02",
+    "purpose": "Maps assessment context factors to persona-specific prompt variations, scenario filtering, and report tone. Used by the ReasonLens assessment engine to tailor the experience to each respondent's context.",
+    "generated_for": "ReasonLens"
+  },
+  "context_factors": {},
+  "persona_mappings": [
+    {
+      "persona_id": "iste-leaders-principal",
+      "label": "Headteacher / Principal",
+      "match_criteria": {
+        "leadership_level": [
+          "principal",
+          "head_teacher"
+        ]
+      },
+      "scenario_tone": "Scenarios involve whole-school culture, strategic decisions, and external accountability. Reference governors, Ofsted, and community stakeholders.",
+      "report_tone": "Strategic and leadership-level. Treat the respondent as an expert leader. Frame standard gaps as strategic development areas, not operational failures.",
+      "context_hints": {
+        "institution_size": "Large schools have more systemic complexity \u2014 use governance and systems-design scenarios for larger institutions.",
+        "institution_type": "Independent and maintained schools differ in governance structures \u2014 adjust scenario framing accordingly."
+      }
+    },
+    {
+      "persona_id": "iste-leaders-deputy",
+      "label": "Deputy Headteacher / Assistant Principal",
+      "match_criteria": {
+        "leadership_level": [
+          "deputy",
+          "assistant_principal"
+        ]
+      },
+      "scenario_tone": "Scenarios involve leading specific areas (CPD, curriculum, behaviour) with strategic influence but not full institutional accountability.",
+      "report_tone": "Growth-oriented. Acknowledge the deputy role as a strategic leadership development context. Use scenarios that involve influencing without full authority.",
+      "context_hints": {
+        "leadership_level": "Deputies may have more direct CPD and staff coaching responsibilities \u2014 weight Empowering Leader scenarios appropriately."
+      }
+    },
+    {
+      "persona_id": "iste-leaders-director",
+      "label": "MAT / District Director / Senior Leader",
+      "match_criteria": {
+        "leadership_level": [
+          "director",
+          "MAT_leader",
+          "district_superintendent",
+          "CEO"
+        ]
+      },
+      "scenario_tone": "Scenarios involve system-level decisions, multi-school governance, and strategic partnerships. Reference policy, procurement at scale, and cross-institution collaboration.",
+      "report_tone": "Systems-level and strategic. These leaders operate across institutions \u2014 avoid single-school framing. Reference sector leadership and collective impact.",
+      "context_hints": {
+        "institution_size": "Multi-academy trust or district context implies infrastructure and governance decisions at scale."
+      }
+    }
+  ]
+}

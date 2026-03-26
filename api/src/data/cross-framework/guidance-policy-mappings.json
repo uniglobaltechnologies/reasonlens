@@ -1,0 +1,307 @@
+{
+  "framework_id": "unesco-guidance-ai-education",
+  "framework_name": "UNESCO Guidance for AI in Education & Research",
+  "framework_source": "UNESCO (2023). Guidance for generative AI in education and research. UNESDOC pf0000386693. ISBN 978-92-3-100612-8.",
+  "reasonlens_implementation_note": "This file operationalises the UNESCO Guidance document for the ReasonLens platform as an institutional policy maturity assessment. The original UNESCO document is structured as regulatory guidance with policy measures and stakeholder frameworks, not as a maturity model. ReasonLens imposes a 4-dimension x 3-level maturity structure to enable comparable assessment alongside other institutional frameworks (THE DMI, QS AI Capability, JISC AI Maturity). The four dimensions synthesise UNESCO's eight policy action areas and four-stakeholder regulatory framework into assessable institutional governance dimensions. The three levels (Emerging/Developing/Established) are a ReasonLens construct informed by the JISC AI Maturity Model's stage-based approach.",
+  "dimensions": [
+    {
+      "id": "gp-human-centered",
+      "name": "Human-Centred AI",
+      "code": "HC",
+      "description": "The extent to which the institution ensures that AI deployment protects human agency, supports human decision-making, and centres educational relationships on human needs, values, and rights. Covers governance of AI-human interaction, protection of learner and staff autonomy, and human oversight mechanisms."
+    },
+    {
+      "id": "gp-safe-equitable",
+      "name": "Safe & Equitable",
+      "code": "SE",
+      "description": "The extent to which the institution implements mechanisms to ensure AI systems are safe, secure, inclusive, and equitable. Covers risk assessment, bias auditing, accessibility, digital divide mitigation, and protection of vulnerable populations including age-appropriate use."
+    },
+    {
+      "id": "gp-ethics",
+      "name": "Ethics & Accountability",
+      "code": "EA",
+      "description": "The extent to which the institution establishes ethical governance structures, accountability mechanisms, and regulatory compliance for AI use. Covers ethics committees, data protection, transparency requirements, AI use policies, academic integrity frameworks, and accountability chains."
+    },
+    {
+      "id": "gp-evidence",
+      "name": "Evidence-Based",
+      "code": "EB",
+      "description": "The extent to which the institution builds and uses evidence to inform AI adoption decisions, evaluates AI effectiveness through rigorous methods, and contributes to the broader knowledge base. Covers pilot evaluation, impact assessment, research partnerships, and evidence-informed policy development."
+    }
+  ],
+  "levels": [
+    {
+      "id_suffix": "emerging",
+      "name": "Emerging",
+      "order": 1,
+      "code": "E",
+      "description": "The institution recognises AI as relevant to education and research and has begun initial responses, but lacks coordinated policy, systematic governance, or evidence-based deployment. AI use is happening informally, and institutional responses are reactive or ad hoc."
+    },
+    {
+      "id_suffix": "developing",
+      "name": "Developing",
+      "order": 2,
+      "code": "D",
+      "description": "The institution has established initial policies, governance structures, and evaluation mechanisms for AI in education and research. Formal initiatives are underway but not yet comprehensive, institution-wide, or fully embedded in standard practice."
+    },
+    {
+      "id_suffix": "established",
+      "name": "Established",
+      "order": 3,
+      "code": "S",
+      "description": "The institution has comprehensive, embedded, and actively maintained AI governance, with evidence-driven policy, systematic safety and equity mechanisms, and continuous improvement processes. AI governance is integrated into institutional strategy and decision-making structures."
+    }
+  ],
+  "object_count": "~22 mappings + 2 non-mappings",
+  "target_frameworks": [
+    "THE DMI",
+    "QS AI Capability",
+    "JISC AI Maturity",
+    "UNESCO Student Framework",
+    "UNESCO CFT"
+  ],
+  "data": [
+    {
+      "source_id": "gp-human-centered",
+      "target_framework": "THE Digital Maturity Index",
+      "target_id": "the-pg-str",
+      "mapping_type": "institutional_maturity_peer",
+      "confidence": "moderate",
+      "direction": "bidirectional",
+      "rationale": "Human-Centred AI governance maps to THE DMI Planning & Governance: Strategy, as both address how the institution governs technology deployment at the strategic level.",
+      "what_transfers": "Both frameworks assess institutional maturity. THE DMI provides the broader digital maturity context within which AI governance sits. Institutions with higher DMI maturity in governance and data are better positioned for AI governance.",
+      "what_does_not_transfer": "THE DMI is technology-agnostic (all digital technology). UNESCO Guidance is AI-specific. DMI does not address AI-specific ethical, safety, or human agency concerns. DMI maturity levels (Incidental/Intentional/Integrated/Optimised) do not map neatly to UNESCO Guidance levels (Emerging/Developing/Established)."
+    },
+    {
+      "source_id": "gp-safe-equitable",
+      "target_framework": "THE Digital Maturity Index",
+      "target_id": "the-tl-tech",
+      "mapping_type": "institutional_maturity_peer",
+      "confidence": "moderate",
+      "direction": "unidirectional",
+      "rationale": "Safe & Equitable maps to Teaching & Learning: Technology and Professional Services: Technology, as safety and equity in AI are primarily manifested through technology deployment decisions.",
+      "what_transfers": "Both frameworks assess institutional maturity. THE DMI provides the broader digital maturity context within which AI governance sits. Institutions with higher DMI maturity in governance and data are better positioned for AI governance.",
+      "what_does_not_transfer": "THE DMI is technology-agnostic (all digital technology). UNESCO Guidance is AI-specific. DMI does not address AI-specific ethical, safety, or human agency concerns. DMI maturity levels (Incidental/Intentional/Integrated/Optimised) do not map neatly to UNESCO Guidance levels (Emerging/Developing/Established)."
+    },
+    {
+      "source_id": "gp-ethics",
+      "target_framework": "THE Digital Maturity Index",
+      "target_id": "the-pg-str",
+      "mapping_type": "institutional_maturity_peer",
+      "confidence": "strong",
+      "direction": "unidirectional",
+      "rationale": "Ethics & Accountability maps to Planning & Governance: Strategy, as ethical governance is a strategic governance function.",
+      "what_transfers": "Both frameworks assess institutional maturity. THE DMI provides the broader digital maturity context within which AI governance sits. Institutions with higher DMI maturity in governance and data are better positioned for AI governance.",
+      "what_does_not_transfer": "THE DMI is technology-agnostic (all digital technology). UNESCO Guidance is AI-specific. DMI does not address AI-specific ethical, safety, or human agency concerns. DMI maturity levels (Incidental/Intentional/Integrated/Optimised) do not map neatly to UNESCO Guidance levels (Emerging/Developing/Established)."
+    },
+    {
+      "source_id": "gp-ethics",
+      "target_framework": "THE Digital Maturity Index",
+      "target_id": "the-pg-people",
+      "mapping_type": "institutional_maturity_peer",
+      "confidence": "moderate",
+      "direction": "unidirectional",
+      "rationale": "Ethics & Accountability also maps to Planning & Governance: People & Culture, as ethics governance requires cultural embedding and staff capability.",
+      "what_transfers": "Both frameworks assess institutional maturity. THE DMI provides the broader digital maturity context within which AI governance sits. Institutions with higher DMI maturity in governance and data are better positioned for AI governance.",
+      "what_does_not_transfer": "THE DMI is technology-agnostic (all digital technology). UNESCO Guidance is AI-specific. DMI does not address AI-specific ethical, safety, or human agency concerns. DMI maturity levels (Incidental/Intentional/Integrated/Optimised) do not map neatly to UNESCO Guidance levels (Emerging/Developing/Established)."
+    },
+    {
+      "source_id": "gp-evidence",
+      "target_framework": "THE Digital Maturity Index",
+      "target_id": "the-pg-data",
+      "mapping_type": "institutional_maturity_peer",
+      "confidence": "strong",
+      "direction": "bidirectional",
+      "rationale": "Evidence-Based maps to Planning & Governance: Data, as both address the institution's capacity to use data and evidence for decision-making.",
+      "what_transfers": "Both frameworks assess institutional maturity. THE DMI provides the broader digital maturity context within which AI governance sits. Institutions with higher DMI maturity in governance and data are better positioned for AI governance.",
+      "what_does_not_transfer": "THE DMI is technology-agnostic (all digital technology). UNESCO Guidance is AI-specific. DMI does not address AI-specific ethical, safety, or human agency concerns. DMI maturity levels (Incidental/Intentional/Integrated/Optimised) do not map neatly to UNESCO Guidance levels (Emerging/Developing/Established)."
+    },
+    {
+      "source_id": "gp-evidence",
+      "target_framework": "THE Digital Maturity Index",
+      "target_id": "the-re-data",
+      "mapping_type": "institutional_maturity_peer",
+      "confidence": "moderate",
+      "direction": "unidirectional",
+      "rationale": "Evidence-Based also maps to Research: Data, as evidence-building leverages research methodology and data infrastructure.",
+      "what_transfers": "Both frameworks assess institutional maturity. THE DMI provides the broader digital maturity context within which AI governance sits. Institutions with higher DMI maturity in governance and data are better positioned for AI governance.",
+      "what_does_not_transfer": "THE DMI is technology-agnostic (all digital technology). UNESCO Guidance is AI-specific. DMI does not address AI-specific ethical, safety, or human agency concerns. DMI maturity levels (Incidental/Intentional/Integrated/Optimised) do not map neatly to UNESCO Guidance levels (Emerging/Developing/Established)."
+    },
+    {
+      "source_id": "gp-human-centered",
+      "target_framework": "QS AI Capability Framework",
+      "target_id": "qs-governance",
+      "mapping_type": "ai_institutional_peer",
+      "confidence": "moderate",
+      "direction": "bidirectional",
+      "rationale": "Human-Centred AI maps to QS AI Capability governance dimensions, both addressing institutional governance of AI deployment.",
+      "what_transfers": "Both frameworks assess institutional AI capability at the institutional level. QS focuses on competitive positioning and capability development; UNESCO Guidance focuses on ethical and responsible deployment. Together they provide a more complete picture.",
+      "what_does_not_transfer": "QS is competitive and benchmarking-oriented. UNESCO Guidance is normative and rights-based. Different philosophical foundations and different primary audiences (institutional leaders vs. policymakers)."
+    },
+    {
+      "source_id": "gp-safe-equitable",
+      "target_framework": "QS AI Capability Framework",
+      "target_id": "qs-infrastructure",
+      "mapping_type": "ai_institutional_peer",
+      "confidence": "moderate",
+      "direction": "unidirectional",
+      "rationale": "Safe & Equitable maps to QS infrastructure and risk management capabilities.",
+      "what_transfers": "Both frameworks assess institutional AI capability at the institutional level. QS focuses on competitive positioning and capability development; UNESCO Guidance focuses on ethical and responsible deployment. Together they provide a more complete picture.",
+      "what_does_not_transfer": "QS is competitive and benchmarking-oriented. UNESCO Guidance is normative and rights-based. Different philosophical foundations and different primary audiences (institutional leaders vs. policymakers)."
+    },
+    {
+      "source_id": "gp-ethics",
+      "target_framework": "QS AI Capability Framework",
+      "target_id": "qs-governance",
+      "mapping_type": "ai_institutional_peer",
+      "confidence": "strong",
+      "direction": "bidirectional",
+      "rationale": "Ethics & Accountability maps to QS governance and compliance capabilities.",
+      "what_transfers": "Both frameworks assess institutional AI capability at the institutional level. QS focuses on competitive positioning and capability development; UNESCO Guidance focuses on ethical and responsible deployment. Together they provide a more complete picture.",
+      "what_does_not_transfer": "QS is competitive and benchmarking-oriented. UNESCO Guidance is normative and rights-based. Different philosophical foundations and different primary audiences (institutional leaders vs. policymakers)."
+    },
+    {
+      "source_id": "gp-evidence",
+      "target_framework": "QS AI Capability Framework",
+      "target_id": "qs-analytics",
+      "mapping_type": "ai_institutional_peer",
+      "confidence": "moderate",
+      "direction": "bidirectional",
+      "rationale": "Evidence-Based maps to QS analytics and decision-support capabilities.",
+      "what_transfers": "Both frameworks assess institutional AI capability at the institutional level. QS focuses on competitive positioning and capability development; UNESCO Guidance focuses on ethical and responsible deployment. Together they provide a more complete picture.",
+      "what_does_not_transfer": "QS is competitive and benchmarking-oriented. UNESCO Guidance is normative and rights-based. Different philosophical foundations and different primary audiences (institutional leaders vs. policymakers)."
+    },
+    {
+      "source_id": "gp-human-centered",
+      "target_framework": "JISC AI Maturity Model (updated 2024)",
+      "target_id": "jisc-strategic-adoption",
+      "mapping_type": "institutional_maturity_peer",
+      "confidence": "moderate",
+      "direction": "bidirectional",
+      "rationale": "Human-Centred AI maps to JISC Strategic Adoption of AI, as both address institutional governance decisions about AI deployment.",
+      "what_transfers": "JISC is the closest structural peer: UK HE/FE focused, AI-specific, with maturity stages. JISC stages (Not Yet Started/Approaching/Experimenting/Operational/Embedded) provide a more granular progression than UNESCO Guidance's three levels. Thematic alignment is strong, especially around safe and responsible use.",
+      "what_does_not_transfer": "JISC is UK-specific with UK regulatory assumptions. UNESCO Guidance is global. JISC includes teaching/learning and professional services dimensions that UNESCO Guidance does not. UNESCO Guidance has stronger emphasis on human agency and evidence-building."
+    },
+    {
+      "source_id": "gp-safe-equitable",
+      "target_framework": "JISC AI Maturity Model (updated 2024)",
+      "target_id": "jisc-safe-responsible",
+      "mapping_type": "institutional_maturity_peer",
+      "confidence": "strong",
+      "direction": "bidirectional",
+      "rationale": "Safe & Equitable directly maps to JISC Safe and Responsible Use of AI, the closest thematic alignment across all mappings.",
+      "what_transfers": "JISC is the closest structural peer: UK HE/FE focused, AI-specific, with maturity stages. JISC stages (Not Yet Started/Approaching/Experimenting/Operational/Embedded) provide a more granular progression than UNESCO Guidance's three levels. Thematic alignment is strong, especially around safe and responsible use.",
+      "what_does_not_transfer": "JISC is UK-specific with UK regulatory assumptions. UNESCO Guidance is global. JISC includes teaching/learning and professional services dimensions that UNESCO Guidance does not. UNESCO Guidance has stronger emphasis on human agency and evidence-building."
+    },
+    {
+      "source_id": "gp-ethics",
+      "target_framework": "JISC AI Maturity Model (updated 2024)",
+      "target_id": "jisc-safe-responsible",
+      "mapping_type": "institutional_maturity_peer",
+      "confidence": "strong",
+      "direction": "bidirectional",
+      "rationale": "Ethics & Accountability maps to JISC Safe and Responsible Use, as both address ethical governance and accountability for AI.",
+      "what_transfers": "JISC is the closest structural peer: UK HE/FE focused, AI-specific, with maturity stages. JISC stages (Not Yet Started/Approaching/Experimenting/Operational/Embedded) provide a more granular progression than UNESCO Guidance's three levels. Thematic alignment is strong, especially around safe and responsible use.",
+      "what_does_not_transfer": "JISC is UK-specific with UK regulatory assumptions. UNESCO Guidance is global. JISC includes teaching/learning and professional services dimensions that UNESCO Guidance does not. UNESCO Guidance has stronger emphasis on human agency and evidence-building."
+    },
+    {
+      "source_id": "gp-evidence",
+      "target_framework": "JISC AI Maturity Model (updated 2024)",
+      "target_id": "jisc-strategic-adoption",
+      "mapping_type": "institutional_maturity_peer",
+      "confidence": "moderate",
+      "direction": "unidirectional",
+      "rationale": "Evidence-Based maps to JISC Strategic Adoption, as evidence-informed decisions are a core element of strategic AI adoption.",
+      "what_transfers": "JISC is the closest structural peer: UK HE/FE focused, AI-specific, with maturity stages. JISC stages (Not Yet Started/Approaching/Experimenting/Operational/Embedded) provide a more granular progression than UNESCO Guidance's three levels. Thematic alignment is strong, especially around safe and responsible use.",
+      "what_does_not_transfer": "JISC is UK-specific with UK regulatory assumptions. UNESCO Guidance is global. JISC includes teaching/learning and professional services dimensions that UNESCO Guidance does not. UNESCO Guidance has stronger emphasis on human agency and evidence-building."
+    },
+    {
+      "source_id": "gp-human-centered",
+      "target_framework": "UNESCO AI Competency Framework for Students (ReasonLens: sc-*)",
+      "target_id": "sc-understanding",
+      "mapping_type": "policy_competency_link",
+      "confidence": "moderate",
+      "direction": "unidirectional",
+      "rationale": "Institutional human-centred governance creates the conditions for student AI understanding by ensuring AI tools used in education maintain human agency and are transparent.",
+      "what_transfers": "Institutional policy creates the environment for student competency development. UNESCO explicitly links the Guidance document to the competency frameworks, particularly through policy measure 4 (develop AI competencies for learners). The policy-competency link is bidirectional: ethically competent students contribute to institutional ethical culture.",
+      "what_does_not_transfer": "Different unit of analysis (institution vs. individual). Different evidence types (institutional documents vs. student behaviours). Different respondent profiles (institutional leaders vs. students). The institutional framework cannot assess individual competency and vice versa."
+    },
+    {
+      "source_id": "gp-safe-equitable",
+      "target_framework": "UNESCO AI Competency Framework for Students (ReasonLens: sc-*)",
+      "target_id": "sc-use",
+      "mapping_type": "policy_competency_link",
+      "confidence": "strong",
+      "direction": "unidirectional",
+      "rationale": "Institutional safety and equity governance protects students during AI use by ensuring tools are safe, accessible, and equitable.",
+      "what_transfers": "Institutional policy creates the environment for student competency development. UNESCO explicitly links the Guidance document to the competency frameworks, particularly through policy measure 4 (develop AI competencies for learners). The policy-competency link is bidirectional: ethically competent students contribute to institutional ethical culture.",
+      "what_does_not_transfer": "Different unit of analysis (institution vs. individual). Different evidence types (institutional documents vs. student behaviours). Different respondent profiles (institutional leaders vs. students). The institutional framework cannot assess individual competency and vice versa."
+    },
+    {
+      "source_id": "gp-ethics",
+      "target_framework": "UNESCO AI Competency Framework for Students (ReasonLens: sc-*)",
+      "target_id": "sc-ethics",
+      "mapping_type": "policy_competency_link",
+      "confidence": "strong",
+      "direction": "bidirectional",
+      "rationale": "Institutional ethics governance provides the framework within which student ethical competency develops. Institutional norms shape student ethical practice.",
+      "what_transfers": "Institutional policy creates the environment for student competency development. UNESCO explicitly links the Guidance document to the competency frameworks, particularly through policy measure 4 (develop AI competencies for learners). The policy-competency link is bidirectional: ethically competent students contribute to institutional ethical culture.",
+      "what_does_not_transfer": "Different unit of analysis (institution vs. individual). Different evidence types (institutional documents vs. student behaviours). Different respondent profiles (institutional leaders vs. students). The institutional framework cannot assess individual competency and vice versa."
+    },
+    {
+      "source_id": "gp-evidence",
+      "target_framework": "UNESCO AI Competency Framework for Students (ReasonLens: sc-*)",
+      "target_id": "sc-design",
+      "mapping_type": "policy_competency_link",
+      "confidence": "moderate",
+      "direction": "unidirectional",
+      "rationale": "Institutional evidence practice models the rigorous evaluation that students learn through AI system design competency.",
+      "what_transfers": "Institutional policy creates the environment for student competency development. UNESCO explicitly links the Guidance document to the competency frameworks, particularly through policy measure 4 (develop AI competencies for learners). The policy-competency link is bidirectional: ethically competent students contribute to institutional ethical culture.",
+      "what_does_not_transfer": "Different unit of analysis (institution vs. individual). Different evidence types (institutional documents vs. student behaviours). Different respondent profiles (institutional leaders vs. students). The institutional framework cannot assess individual competency and vice versa."
+    },
+    {
+      "source_id": "gp-ethics",
+      "target_framework": "UNESCO AI Competency Framework for Teachers",
+      "target_id": "cft-ethics",
+      "mapping_type": "policy_competency_link",
+      "confidence": "strong",
+      "direction": "bidirectional",
+      "rationale": "Institutional ethics governance connects to teacher ethics competency. Teachers implement institutional ethics policies and develop student ethical competency.",
+      "what_transfers": "The Guidance document explicitly calls for building teacher capacity (policy measure 5). Teacher competency is both an enabler and an outcome of institutional policy. Teachers are the primary implementers of AI governance in educational contexts.",
+      "what_does_not_transfer": "Different unit of analysis. Teachers implement policy but do not set it. Institutional governance operates at a different level than individual teacher competency."
+    },
+    {
+      "source_id": "gp-evidence",
+      "target_framework": "UNESCO AI Competency Framework for Teachers",
+      "target_id": "cft-ai-pedagogy",
+      "mapping_type": "policy_competency_link",
+      "confidence": "moderate",
+      "direction": "bidirectional",
+      "rationale": "Institutional evidence practice connects to teacher AI pedagogy competency. Teachers who evaluate AI in their practice contribute to institutional evidence.",
+      "what_transfers": "The Guidance document explicitly calls for building teacher capacity (policy measure 5). Teacher competency is both an enabler and an outcome of institutional policy. Teachers are the primary implementers of AI governance in educational contexts.",
+      "what_does_not_transfer": "Different unit of analysis. Teachers implement policy but do not set it. Institutional governance operates at a different level than individual teacher competency."
+    },
+    {
+      "source_id": "gp-human-centered",
+      "target_framework": "ISTE Standards for Students (v4.02, 2024)",
+      "target_id": null,
+      "mapping_type": "non_mapping",
+      "confidence": "non_mapping",
+      "direction": null,
+      "rationale": "ISTE Standards for Students do not address institutional governance. ISTE's focus on individual student competency has no equivalent for institutional human-centred AI governance.",
+      "what_transfers": null,
+      "what_does_not_transfer": "ISTE is an individual student competency framework. The UNESCO Guidance assesses institutional policy. These operate at fundamentally different levels."
+    },
+    {
+      "source_id": "gp-evidence",
+      "target_framework": "DigComp 2.2 (EU/JRC, 2022)",
+      "target_id": null,
+      "mapping_type": "non_mapping",
+      "confidence": "non_mapping",
+      "direction": null,
+      "rationale": "DigComp is an individual digital competence framework without institutional evidence-building dimensions. No meaningful mapping exists.",
+      "what_transfers": null,
+      "what_does_not_transfer": "DigComp assesses individual digital competence. UNESCO Guidance assesses institutional policy governance. Different units of analysis with no overlap in evidence-building."
+    }
+  ]
+}

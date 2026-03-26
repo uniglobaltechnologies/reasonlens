@@ -1,0 +1,121 @@
+{
+  "_meta": {
+    "file": "standard-thresholds.json",
+    "framework_id": "iste-educators",
+    "framework_name": "ISTE Standards for Educators v4.02",
+    "replaces": "level-boundaries.json",
+    "assessment_paradigm": "met/not-met (binary). partially_met is treated as not_met for scoring.",
+    "licensing_constraint": "ISTE Standards text \u00a9 2024 4.02, ISTE (International Society for Technology in Education), iste.org. All rights reserved. ISTE permits free use for non-commercial educational purposes only. Commercial use requires separate ISTE licensing agreement. See iste.org/permissions-licensing. If ReasonLens operates commercial tiers, ISTE frameworks must be excluded from those tiers unless ISTE licensing is obtained.",
+    "generated_for": "ReasonLens"
+  },
+  "thresholds": [
+    {
+      "standard_id": "iste-e-lnr",
+      "standard_name": "Learner",
+      "standard_number": "2.1",
+      "standard_source_text": "Educators continually improve their practice by learning from and with others, and exploring proven and promising practices that leverage technology to improve student learning.",
+      "indicators": [
+        "iste-e-lnr-2a",
+        "iste-e-lnr-2b",
+        "iste-e-lnr-2c"
+      ],
+      "met_threshold_description": "The educator sets specific professional learning goals tied to technology-enhanced practice; participates actively in professional learning networks; and grounds their adoption decisions in current learning science research.",
+      "not_yet_met_description": "The educator attends training opportunistically without personal goals; is not connected to professional learning networks; and adopts tools based on convenience or peer recommendation rather than research evidence.",
+      "partial_met_description": "The educator sets goals and tries new tools, but does not connect to external professional networks or evaluate the research basis of what they're adopting.",
+      "scoring_note": "Binary: met or not_met."
+    },
+    {
+      "standard_id": "iste-e-ldr",
+      "standard_name": "Leader",
+      "standard_number": "2.2",
+      "standard_source_text": "Educators seek opportunities for leadership to support student empowerment and success and to improve teaching and learning.",
+      "indicators": [
+        "iste-e-ldr-2a",
+        "iste-e-ldr-2b",
+        "iste-e-ldr-2c"
+      ],
+      "met_threshold_description": "The educator actively shapes a shared vision for technology-enhanced learning with stakeholders; advocates for equitable access; and models critical evaluation and curation of digital resources for colleagues.",
+      "not_yet_met_description": "The educator uses technology effectively in their own classroom but does not actively seek leadership roles, advocate for equity, or model evaluative practice for others.",
+      "partial_met_description": "The educator shares their own practice and raises equity issues when they arise but does not actively engage stakeholders in a shared vision or systematically model resource evaluation processes.",
+      "scoring_note": "Binary: met or not_met."
+    },
+    {
+      "standard_id": "iste-e-cit",
+      "standard_name": "Citizen",
+      "standard_number": "2.3",
+      "standard_source_text": "Educators inspire students to positively contribute to and responsibly participate in the digital world.",
+      "indicators": [
+        "iste-e-cit-2a",
+        "iste-e-cit-2b",
+        "iste-e-cit-2c",
+        "iste-e-cit-2d"
+      ],
+      "met_threshold_description": "The educator creates learning experiences for positive digital contribution; fosters critical digital literacy; mentors students in safe, legal, and ethical digital practices; and models responsible management of digital identity and data.",
+      "not_yet_met_description": "The educator enforces acceptable use policy but does not design experiences for positive digital contribution or mentor students in developing their own ethical digital reasoning.",
+      "partial_met_description": "The educator runs digital citizenship lessons and references school policy but does not design for genuine student agency in ethical digital reasoning or model personal data management practices.",
+      "scoring_note": "Binary: met or not_met."
+    },
+    {
+      "standard_id": "iste-e-col",
+      "standard_name": "Collaborator",
+      "standard_number": "2.4",
+      "standard_source_text": "Educators dedicate time to collaborate with both colleagues and students to improve practice, discover and share resources and ideas, and solve problems.",
+      "indicators": [
+        "iste-e-col-2a",
+        "iste-e-col-2b",
+        "iste-e-col-2c",
+        "iste-e-col-2d"
+      ],
+      "met_threshold_description": "The educator dedicates time to collaborative planning with colleagues; co-learns new tools with students; uses collaborative technology to connect students with experts and global peers; and convenes a broad community including families to support learning goals.",
+      "not_yet_met_description": "The educator works primarily independently in planning and tool adoption; does not use collaborative technology to extend student learning beyond the classroom; and engages families only through one-way communication.",
+      "partial_met_description": "The educator collaborates with colleagues in planning and engages families, but does not co-learn technology with students or use collaborative tools to connect students with experts or global communities.",
+      "scoring_note": "Binary: met or not_met."
+    },
+    {
+      "standard_id": "iste-e-des",
+      "standard_name": "Designer",
+      "standard_number": "2.5",
+      "standard_source_text": "Educators design authentic, learner-driven activities and opportunities that use technology to accommodate learner variability.",
+      "indicators": [
+        "iste-e-des-2a",
+        "iste-e-des-2b",
+        "iste-e-des-2c"
+      ],
+      "met_threshold_description": "The educator uses technology to personalise learning for diverse needs; designs authentic activities with real-world application; and applies evidence-based instructional design principles to create equitable digital learning environments.",
+      "not_yet_met_description": "The educator designs activities uniformly, adds technology as an enrichment layer rather than as a tool for personalisation, and does not apply instructional design principles in digital environment planning.",
+      "partial_met_description": "The educator differentiates tasks and offers some choice, but does not use technology to personalise pathways based on learner data or ground digital environment design in instructional design evidence.",
+      "scoring_note": "Binary: met or not_met."
+    },
+    {
+      "standard_id": "iste-e-fac",
+      "standard_name": "Facilitator",
+      "standard_number": "2.6",
+      "standard_source_text": "Educators facilitate learning with technology to support student achievement of the ISTE Standards for Students.",
+      "indicators": [
+        "iste-e-fac-2a",
+        "iste-e-fac-2b",
+        "iste-e-fac-2c",
+        "iste-e-fac-2d"
+      ],
+      "met_threshold_description": "The educator fosters student ownership of learning goals; manages digital environments and platforms as pedagogical spaces; creates opportunities for computational thinking and design-process innovation; and models and nurtures creative expression through technology.",
+      "not_yet_met_description": "The educator directs learning with technology rather than facilitating it; does not create conditions for student agency; and uses digital tools primarily for content delivery rather than student-driven inquiry or creative expression.",
+      "partial_met_description": "The educator structures project-based or inquiry learning and provides tools, but does not actively facilitate student ownership of goals within the digital environment or embed computational thinking and creative expression as pedagogical objectives.",
+      "scoring_note": "Binary: met or not_met."
+    },
+    {
+      "standard_id": "iste-e-ana",
+      "standard_name": "Analyst",
+      "standard_number": "2.7",
+      "standard_source_text": "Educators understand and use data to drive their instruction and support students in achieving their learning goals.",
+      "indicators": [
+        "iste-e-ana-2a",
+        "iste-e-ana-2b",
+        "iste-e-ana-2c"
+      ],
+      "met_threshold_description": "The educator provides multiple technology-supported ways for students to demonstrate competency; designs and implements varied digital assessments with timely, actionable feedback; and uses assessment data to personalise learning and communicate with stakeholders.",
+      "not_yet_met_description": "The educator uses technology primarily for summative assessment and mark recording; feedback is infrequent, delayed, or generic; and student data is not used to adjust instruction or communicate personalised progress.",
+      "partial_met_description": "The educator uses digital rubrics for structured feedback and marks more efficiently, but does not offer varied demonstration modes, does not use aggregated data to adjust instruction, or does not share personalised data with students and families.",
+      "scoring_note": "Binary: met or not_met."
+    }
+  ]
+}
