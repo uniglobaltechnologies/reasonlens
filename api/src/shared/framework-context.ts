@@ -1006,90 +1006,90 @@ const frameworks: FrameworkContext[] = [
     overview: profile.overview,
     crossReferences: ["maturity-jisc-ai"],
     dimensions: [
-      { id: `${profile.id}-prof`, name: "Digital Proficiency and Productivity", description: "Using digital devices, networks, applications, AI, software and services effectively and productively", order: 1, levels: [
-        { id: `${profile.id}-prof-developing`, name: "Developing", description: "Awareness, exploration and guided experimentation with AI-enhanced productivity tools", order: 1, indicators: [
-          { id: `${profile.id}-prof-dev-1`, description: "Understand what AI is and how it relates to existing digital tools" },
-          { id: `${profile.id}-prof-dev-2`, description: "Identify AI-powered features in tools they already use" },
-          { id: `${profile.id}-prof-dev-3`, description: "Experiment with AI tools to enhance personal productivity" },
-          { id: `${profile.id}-prof-dev-4`, description: "Evaluate AI-generated outputs for accuracy and fitness for purpose" },
+      { id: "PROF", name: "Digital Proficiency and Productivity", description: "Using digital devices, networks, applications, AI, software and services effectively and productively", order: 1, levels: [
+        { id: "PROF-developing", name: "Developing", description: "Awareness, exploration and guided experimentation with AI-enhanced productivity tools", order: 1, indicators: [
+          { id: "PROF-dev-1", description: "Understand what AI is and how it relates to existing digital tools" },
+          { id: "PROF-dev-2", description: "Identify AI-powered features in tools they already use" },
+          { id: "PROF-dev-3", description: "Experiment with AI tools to enhance personal productivity" },
+          { id: "PROF-dev-4", description: "Evaluate AI-generated outputs for accuracy and fitness for purpose" },
         ]},
-        { id: `${profile.id}-prof-capable`, name: "Capable", description: "Confident, systematic AI-augmented professional practice", order: 2, indicators: [
-          { id: `${profile.id}-prof-cap-1`, description: "Integrate AI tools systematically into professional workflows" },
-          { id: `${profile.id}-prof-cap-2`, description: "Select appropriate AI and non-AI tools for different professional tasks" },
-          { id: `${profile.id}-prof-cap-3`, description: "Support colleagues in basic AI tool adoption" },
+        { id: "PROF-capable", name: "Capable", description: "Confident, systematic AI-augmented professional practice", order: 2, indicators: [
+          { id: "PROF-cap-1", description: "Integrate AI tools systematically into professional workflows" },
+          { id: "PROF-cap-2", description: "Select appropriate AI and non-AI tools for different professional tasks" },
+          { id: "PROF-cap-3", description: "Support colleagues in basic AI tool adoption" },
         ]},
-        { id: `${profile.id}-prof-proficient`, name: "Proficient", description: "Leading AI integration and shaping institutional strategy", order: 3, indicators: [
-          { id: `${profile.id}-prof-pro-1`, description: "Lead AI-enhanced productivity practices across a team or department" },
-          { id: `${profile.id}-prof-pro-2`, description: "Mentor colleagues in effective and responsible AI tool use" },
-          { id: `${profile.id}-prof-pro-3`, description: "Shape institutional and sector approaches to AI-enhanced productivity" },
-        ]},
-      ]},
-      { id: `${profile.id}-creation`, name: "Digital Creation, Problem-Solving and Innovation", description: "Digital production of content including AI-generated content; using digital evidence to solve problems", order: 2, levels: [
-        { id: `${profile.id}-creat-developing`, name: "Developing", description: "Understanding and experimenting with AI content generation", order: 1, indicators: [
-          { id: `${profile.id}-creat-dev-1`, description: "Understand how AI can generate and assist with content creation" },
-          { id: `${profile.id}-creat-dev-2`, description: "Experiment with AI tools for content creation including text, image and code generation" },
-          { id: `${profile.id}-creat-dev-3`, description: "Use AI to generate initial drafts or prototypes for professional tasks" },
-        ]},
-        { id: `${profile.id}-creat-capable`, name: "Capable", description: "Routine AI-enhanced creation and problem-solving", order: 2, indicators: [
-          { id: `${profile.id}-creat-cap-1`, description: "Integrate AI into creative and problem-solving workflows" },
-          { id: `${profile.id}-creat-cap-2`, description: "Evaluate AI-generated solutions critically before implementation" },
-        ]},
-        { id: `${profile.id}-creat-proficient`, name: "Proficient", description: "Leading AI innovation and shaping sector practices", order: 3, indicators: [
-          { id: `${profile.id}-creat-pro-1`, description: "Lead AI-enhanced innovation within team or department" },
-          { id: `${profile.id}-creat-pro-2`, description: "Develop frameworks for evaluating AI-generated content quality" },
-          { id: `${profile.id}-creat-pro-3`, description: "Pioneer new AI-enabled approaches to digital creation and innovation" },
+        { id: "PROF-proficient", name: "Proficient", description: "Leading AI integration and shaping institutional strategy", order: 3, indicators: [
+          { id: "PROF-pro-1", description: "Lead AI-enhanced productivity practices across a team or department" },
+          { id: "PROF-pro-2", description: "Mentor colleagues in effective and responsible AI tool use" },
+          { id: "PROF-pro-3", description: "Shape institutional and sector approaches to AI-enhanced productivity" },
         ]},
       ]},
-      { id: `${profile.id}-learning`, name: "Digital Learning and Development", description: "Learning in digital settings including AI-enhanced learning and digital teaching practices", order: 3, levels: [
-        { id: `${profile.id}-learn-developing`, name: "Developing", description: "Awareness and exploration of AI in learning", order: 1, indicators: [
-          { id: `${profile.id}-learn-dev-1`, description: "Understand how AI can support learning and professional development" },
-          { id: `${profile.id}-learn-dev-2`, description: "Experiment with AI-powered learning tools for personal development" },
+      { id: "CREAT", name: "Digital Creation, Problem-Solving and Innovation", description: "Digital production of content including AI-generated content; using digital evidence to solve problems", order: 2, levels: [
+        { id: "CREAT-developing", name: "Developing", description: "Understanding and experimenting with AI content generation", order: 1, indicators: [
+          { id: "CREAT-dev-1", description: "Understand how AI can generate and assist with content creation" },
+          { id: "CREAT-dev-2", description: "Experiment with AI tools for content creation including text, image and code generation" },
+          { id: "CREAT-dev-3", description: "Use AI to generate initial drafts or prototypes for professional tasks" },
         ]},
-        { id: `${profile.id}-learn-capable`, name: "Capable", description: "Systematic AI-enhanced learning practice", order: 2, indicators: [
-          { id: `${profile.id}-learn-cap-1`, description: "Integrate AI into CPD and learning activities systematically" },
+        { id: "CREAT-capable", name: "Capable", description: "Routine AI-enhanced creation and problem-solving", order: 2, indicators: [
+          { id: "CREAT-cap-1", description: "Integrate AI into creative and problem-solving workflows" },
+          { id: "CREAT-cap-2", description: "Evaluate AI-generated solutions critically before implementation" },
         ]},
-        { id: `${profile.id}-learn-proficient`, name: "Proficient", description: "Leading AI-enhanced learning approaches", order: 3, indicators: [
-          { id: `${profile.id}-learn-pro-1`, description: "Lead institutional approaches to AI-enhanced learning and development" },
-          { id: `${profile.id}-learn-pro-2`, description: "Shape sector approaches to AI in learning and professional development" },
-        ]},
-      ]},
-      { id: `${profile.id}-literacies`, name: "Information, Data and Media Literacies", description: "Finding, evaluating, managing and sharing digital information including AI-generated content", order: 4, levels: [
-        { id: `${profile.id}-lit-developing`, name: "Developing", order: 1, description: "Awareness and exploration of AI's impact on information", indicators: [
-          { id: `${profile.id}-lit-dev-1`, description: "Understand how AI affects information reliability and media authenticity" },
-          { id: `${profile.id}-lit-dev-2`, description: "Experiment with AI tools for information gathering and data analysis" },
-        ]},
-        { id: `${profile.id}-lit-capable`, name: "Capable", order: 2, description: "Systematic evaluation of AI-generated information", indicators: [
-          { id: `${profile.id}-lit-cap-1`, description: "Systematically evaluate AI-generated information for accuracy and bias" },
-        ]},
-        { id: `${profile.id}-lit-proficient`, name: "Proficient", order: 3, description: "Leading AI-era information literacy practices", indicators: [
-          { id: `${profile.id}-lit-pro-1`, description: "Lead institutional data literacy practices including AI-generated content evaluation" },
-          { id: `${profile.id}-lit-pro-2`, description: "Shape sector approaches to AI-era information and media literacy" },
+        { id: "CREAT-proficient", name: "Proficient", description: "Leading AI innovation and shaping sector practices", order: 3, indicators: [
+          { id: "CREAT-pro-1", description: "Lead AI-enhanced innovation within team or department" },
+          { id: "CREAT-pro-2", description: "Develop frameworks for evaluating AI-generated content quality" },
+          { id: "CREAT-pro-3", description: "Pioneer new AI-enabled approaches to digital creation and innovation" },
         ]},
       ]},
-      { id: `${profile.id}-comms`, name: "Digital Communication, Collaboration and Participation", description: "Communicating effectively in digital media including AI-powered collaboration tools", order: 5, levels: [
-        { id: `${profile.id}-com-developing`, name: "Developing", order: 1, description: "Awareness and exploration of AI collaboration tools", indicators: [
-          { id: `${profile.id}-com-dev-1`, description: "Understand how AI can enhance digital communication and collaboration" },
-          { id: `${profile.id}-com-dev-2`, description: "Experiment with AI-powered communication and collaboration tools" },
+      { id: "LEARN", name: "Digital Learning and Development", description: "Learning in digital settings including AI-enhanced learning and digital teaching practices", order: 3, levels: [
+        { id: "LEARN-developing", name: "Developing", description: "Awareness and exploration of AI in learning", order: 1, indicators: [
+          { id: "LEARN-dev-1", description: "Understand how AI can support learning and professional development" },
+          { id: "LEARN-dev-2", description: "Experiment with AI-powered learning tools for personal development" },
         ]},
-        { id: `${profile.id}-com-capable`, name: "Capable", order: 2, description: "Routine AI-enhanced collaboration", indicators: [
-          { id: `${profile.id}-com-cap-1`, description: "Integrate AI tools into team collaboration workflows" },
+        { id: "LEARN-capable", name: "Capable", description: "Systematic AI-enhanced learning practice", order: 2, indicators: [
+          { id: "LEARN-cap-1", description: "Integrate AI into CPD and learning activities systematically" },
         ]},
-        { id: `${profile.id}-com-proficient`, name: "Proficient", order: 3, description: "Leading AI-powered collaboration practices", indicators: [
-          { id: `${profile.id}-com-pro-1`, description: "Lead AI-enhanced collaboration practices across teams" },
-          { id: `${profile.id}-com-pro-2`, description: "Shape sector approaches to AI-powered collaboration and participation" },
+        { id: "LEARN-proficient", name: "Proficient", description: "Leading AI-enhanced learning approaches", order: 3, indicators: [
+          { id: "LEARN-pro-1", description: "Lead institutional approaches to AI-enhanced learning and development" },
+          { id: "LEARN-pro-2", description: "Shape sector approaches to AI in learning and professional development" },
         ]},
       ]},
-      { id: `${profile.id}-identity`, name: "Digital Identity and Wellbeing", description: "Managing professional digital identity and wellbeing in AI-mediated environments", order: 6, levels: [
-        { id: `${profile.id}-id-developing`, name: "Developing", order: 1, description: "Awareness and exploration of AI's impact on identity and wellbeing", indicators: [
-          { id: `${profile.id}-id-dev-1`, description: "Understand AI's impact on digital identity, privacy and wellbeing" },
-          { id: `${profile.id}-id-dev-2`, description: "Explore how AI affects personal data and digital footprint" },
+      { id: "LIT", name: "Information, Data and Media Literacies", description: "Finding, evaluating, managing and sharing digital information including AI-generated content", order: 4, levels: [
+        { id: "LIT-developing", name: "Developing", order: 1, description: "Awareness and exploration of AI's impact on information", indicators: [
+          { id: "LIT-dev-1", description: "Understand how AI affects information reliability and media authenticity" },
+          { id: "LIT-dev-2", description: "Experiment with AI tools for information gathering and data analysis" },
         ]},
-        { id: `${profile.id}-id-capable`, name: "Capable", order: 2, description: "Proactive management of digital identity in AI contexts", indicators: [
-          { id: `${profile.id}-id-cap-1`, description: "Manage digital identity and wellbeing proactively in AI-mediated environments" },
+        { id: "LIT-capable", name: "Capable", order: 2, description: "Systematic evaluation of AI-generated information", indicators: [
+          { id: "LIT-cap-1", description: "Systematically evaluate AI-generated information for accuracy and bias" },
         ]},
-        { id: `${profile.id}-id-proficient`, name: "Proficient", order: 3, description: "Leading digital wellbeing practices for AI era", indicators: [
-          { id: `${profile.id}-id-pro-1`, description: "Lead institutional digital wellbeing practices for AI-mediated work" },
-          { id: `${profile.id}-id-pro-2`, description: "Shape sector approaches to digital identity and wellbeing in AI era" },
+        { id: "LIT-proficient", name: "Proficient", order: 3, description: "Leading AI-era information literacy practices", indicators: [
+          { id: "LIT-pro-1", description: "Lead institutional data literacy practices including AI-generated content evaluation" },
+          { id: "LIT-pro-2", description: "Shape sector approaches to AI-era information and media literacy" },
+        ]},
+      ]},
+      { id: "COMM", name: "Digital Communication, Collaboration and Participation", description: "Communicating effectively in digital media including AI-powered collaboration tools", order: 5, levels: [
+        { id: "COMM-developing", name: "Developing", order: 1, description: "Awareness and exploration of AI collaboration tools", indicators: [
+          { id: "COMM-dev-1", description: "Understand how AI can enhance digital communication and collaboration" },
+          { id: "COMM-dev-2", description: "Experiment with AI-powered communication and collaboration tools" },
+        ]},
+        { id: "COMM-capable", name: "Capable", order: 2, description: "Routine AI-enhanced collaboration", indicators: [
+          { id: "COMM-cap-1", description: "Integrate AI tools into team collaboration workflows" },
+        ]},
+        { id: "COMM-proficient", name: "Proficient", order: 3, description: "Leading AI-powered collaboration practices", indicators: [
+          { id: "COMM-pro-1", description: "Lead AI-enhanced collaboration practices across teams" },
+          { id: "COMM-pro-2", description: "Shape sector approaches to AI-powered collaboration and participation" },
+        ]},
+      ]},
+      { id: "ID", name: "Digital Identity and Wellbeing", description: "Managing professional digital identity and wellbeing in AI-mediated environments", order: 6, levels: [
+        { id: "ID-developing", name: "Developing", order: 1, description: "Awareness and exploration of AI's impact on identity and wellbeing", indicators: [
+          { id: "ID-dev-1", description: "Understand AI's impact on digital identity, privacy and wellbeing" },
+          { id: "ID-dev-2", description: "Explore how AI affects personal data and digital footprint" },
+        ]},
+        { id: "ID-capable", name: "Capable", order: 2, description: "Proactive management of digital identity in AI contexts", indicators: [
+          { id: "ID-cap-1", description: "Manage digital identity and wellbeing proactively in AI-mediated environments" },
+        ]},
+        { id: "ID-proficient", name: "Proficient", order: 3, description: "Leading digital wellbeing practices for AI era", indicators: [
+          { id: "ID-pro-1", description: "Lead institutional digital wellbeing practices for AI-mediated work" },
+          { id: "ID-pro-2", description: "Shape sector approaches to digital identity and wellbeing in AI era" },
         ]},
       ]},
     ],
@@ -1234,7 +1234,7 @@ const frameworks: FrameworkContext[] = [
     overview: "7 standards with 28 indicators for student digital learning. Covers Empowered Learner, Digital Citizen, Knowledge Constructor, Innovative Designer, Computational Thinker, Creative Communicator, and Global Collaborator.",
     crossReferences: ["student-competency", "digcomp"],
     dimensions: [
-      { id: "iste-s-empowered", name: "Empowered Learner", description: "Leverage technology to take an active role in learning", order: 1, levels: [
+      { id: "iste-s-emp", name: "Empowered Learner", description: "Leverage technology to take an active role in learning", order: 1, levels: [
         { id: "iste-s-emp-prof", name: "Proficient", description: "Demonstrates standard", order: 1, indicators: [
           { id: "iste-s-emp-1a", description: "Articulate and set personal learning goals, develop strategies leveraging technology" },
           { id: "iste-s-emp-1b", description: "Build networks and customize learning environments" },
@@ -1242,7 +1242,7 @@ const frameworks: FrameworkContext[] = [
           { id: "iste-s-emp-1d", description: "Understand the fundamental concepts of technology operations and demonstrate the ability to transfer knowledge to new technologies and situations" },
         ]},
       ]},
-      { id: "iste-s-citizen", name: "Digital Citizen", description: "Recognise rights and responsibilities in a digital world", order: 2, levels: [
+      { id: "iste-s-dc", name: "Digital Citizen", description: "Recognise rights and responsibilities in a digital world", order: 2, levels: [
         { id: "iste-s-cit-prof", name: "Proficient", description: "Demonstrates standard", order: 1, indicators: [
           { id: "iste-s-cit-2a", description: "Cultivate and manage digital identity and reputation" },
           { id: "iste-s-cit-2b", description: "Engage in positive, safe, legal and ethical behaviour online" },
@@ -1250,7 +1250,7 @@ const frameworks: FrameworkContext[] = [
           { id: "iste-s-cit-2d", description: "Manage personal data to maintain digital privacy and security" },
         ]},
       ]},
-      { id: "iste-s-knowledge", name: "Knowledge Constructor", description: "Curate and construct knowledge using digital resources", order: 3, levels: [
+      { id: "iste-s-kc", name: "Knowledge Constructor", description: "Curate and construct knowledge using digital resources", order: 3, levels: [
         { id: "iste-s-know-prof", name: "Proficient", description: "Demonstrates standard", order: 1, indicators: [
           { id: "iste-s-know-3a", description: "Plan and employ effective research strategies" },
           { id: "iste-s-know-3b", description: "Evaluate the accuracy, perspective, credibility and relevance of information" },
@@ -1258,7 +1258,7 @@ const frameworks: FrameworkContext[] = [
           { id: "iste-s-know-3d", description: "Build knowledge by actively exploring real-world issues and problems" },
         ]},
       ]},
-      { id: "iste-s-designer", name: "Innovative Designer", description: "Use design process to solve problems", order: 4, levels: [
+      { id: "iste-s-id", name: "Innovative Designer", description: "Use design process to solve problems", order: 4, levels: [
         { id: "iste-s-des-prof", name: "Proficient", description: "Demonstrates standard", order: 1, indicators: [
           { id: "iste-s-des-4a", description: "Know and use a deliberate design process for generating ideas and solving problems" },
           { id: "iste-s-des-4b", description: "Select and use digital tools to plan and manage a design process" },
@@ -1266,7 +1266,7 @@ const frameworks: FrameworkContext[] = [
           { id: "iste-s-des-4d", description: "Exhibit a tolerance for ambiguity, perseverance and capacity to work with open-ended problems" },
         ]},
       ]},
-      { id: "iste-s-computational", name: "Computational Thinker", description: "Develop and employ strategies for understanding and solving problems with technology", order: 5, levels: [
+      { id: "iste-s-ct", name: "Computational Thinker", description: "Develop and employ strategies for understanding and solving problems with technology", order: 5, levels: [
         { id: "iste-s-comp-prof", name: "Proficient", description: "Demonstrates standard", order: 1, indicators: [
           { id: "iste-s-comp-5a", description: "Formulate problem definitions suited for technology-assisted methods" },
           { id: "iste-s-comp-5b", description: "Collect data or identify relevant data sets" },
@@ -1274,7 +1274,7 @@ const frameworks: FrameworkContext[] = [
           { id: "iste-s-comp-5d", description: "Understand how automation works and use algorithmic thinking to develop solutions" },
         ]},
       ]},
-      { id: "iste-s-communicator", name: "Creative Communicator", description: "Communicate clearly using variety of platforms and tools", order: 6, levels: [
+      { id: "iste-s-cc", name: "Creative Communicator", description: "Communicate clearly using variety of platforms and tools", order: 6, levels: [
         { id: "iste-s-comm-prof", name: "Proficient", description: "Demonstrates standard", order: 1, indicators: [
           { id: "iste-s-comm-6a", description: "Choose appropriate platforms and tools for meeting desired objectives" },
           { id: "iste-s-comm-6b", description: "Create original works or responsibly repurpose digital resources" },
@@ -1282,7 +1282,7 @@ const frameworks: FrameworkContext[] = [
           { id: "iste-s-comm-6d", description: "Publish or present content that customises the message for intended audiences" },
         ]},
       ]},
-      { id: "iste-s-collaborator", name: "Global Collaborator", description: "Use digital tools to broaden perspectives and enrich learning with others", order: 7, levels: [
+      { id: "iste-s-gc", name: "Global Collaborator", description: "Use digital tools to broaden perspectives and enrich learning with others", order: 7, levels: [
         { id: "iste-s-collab-prof", name: "Proficient", description: "Demonstrates standard", order: 1, indicators: [
           { id: "iste-s-collab-7a", description: "Use digital tools to connect with learners from diverse backgrounds" },
           { id: "iste-s-collab-7b", description: "Use collaborative technologies to work with others" },
@@ -1304,21 +1304,21 @@ const frameworks: FrameworkContext[] = [
     overview: "7 standards across Empowered Professional and Learning Catalyst groups, with 24 indicators. Covers Learner, Leader, Citizen, Collaborator, Designer, Facilitator, and Analyst roles.",
     crossReferences: ["teacher-competency", "iste-students"],
     dimensions: [
-      { id: "iste-e-learner", name: "Learner", description: "Continuously improve practice through learning", order: 1, levels: [
+      { id: "iste-e-lnr", name: "Learner", description: "Continuously improve practice through learning", order: 1, levels: [
         { id: "iste-e-learn-prof", name: "Proficient", description: "Demonstrates standard", order: 1, indicators: [
           { id: "iste-e-learn-1a", description: "Set professional learning goals to explore and apply pedagogical approaches enabled by technology" },
           { id: "iste-e-learn-1b", description: "Pursue professional interests by creating and actively participating in learning networks" },
           { id: "iste-e-learn-1c", description: "Stay current with research that supports improved student learning outcomes with technology" },
         ]},
       ]},
-      { id: "iste-e-leader", name: "Leader", description: "Seek opportunities for leadership in technology", order: 2, levels: [
+      { id: "iste-e-ldr", name: "Leader", description: "Seek opportunities for leadership in technology", order: 2, levels: [
         { id: "iste-e-lead-prof", name: "Proficient", description: "Demonstrates standard", order: 1, indicators: [
           { id: "iste-e-lead-2a", description: "Shape, advance and accelerate a shared vision for technology-empowered learning" },
           { id: "iste-e-lead-2b", description: "Advocate for equitable access to educational technology" },
           { id: "iste-e-lead-2c", description: "Model for colleagues the identification, exploration, evaluation and adoption of new digital resources" },
         ]},
       ]},
-      { id: "iste-e-citizen", name: "Citizen", description: "Inspire students to contribute positively to the digital world", order: 3, levels: [
+      { id: "iste-e-cit", name: "Citizen", description: "Inspire students to contribute positively to the digital world", order: 3, levels: [
         { id: "iste-e-cit-prof", name: "Proficient", description: "Demonstrates standard", order: 1, indicators: [
           { id: "iste-e-cit-3a", description: "Create experiences for learners to make positive, socially responsible contributions" },
           { id: "iste-e-cit-3b", description: "Establish a learning culture that promotes curiosity and critical examination of online resources" },
@@ -1326,7 +1326,7 @@ const frameworks: FrameworkContext[] = [
           { id: "iste-e-cit-3d", description: "Model and promote management of personal data and digital identity" },
         ]},
       ]},
-      { id: "iste-e-collaborator", name: "Collaborator", description: "Collaborate with colleagues and students to improve practice", order: 4, levels: [
+      { id: "iste-e-col", name: "Collaborator", description: "Collaborate with colleagues and students to improve practice", order: 4, levels: [
         { id: "iste-e-collab-prof", name: "Proficient", description: "Demonstrates standard", order: 1, indicators: [
           { id: "iste-e-collab-4a", description: "Dedicate planning time to collaborate with colleagues to create authentic learning experiences" },
           { id: "iste-e-collab-4b", description: "Collaborate and co-learn with students to discover and use new digital resources" },
@@ -1334,14 +1334,14 @@ const frameworks: FrameworkContext[] = [
           { id: "iste-e-collab-4d", description: "Demonstrate cultural competency interacting with students, parents and colleagues" },
         ]},
       ]},
-      { id: "iste-e-designer", name: "Designer", description: "Design authentic, learner-driven activities", order: 5, levels: [
+      { id: "iste-e-des", name: "Designer", description: "Design authentic, learner-driven activities", order: 5, levels: [
         { id: "iste-e-des-prof", name: "Proficient", description: "Demonstrates standard", order: 1, indicators: [
           { id: "iste-e-des-5a", description: "Use technology to create, adapt and personalise learning experiences" },
           { id: "iste-e-des-5b", description: "Design authentic learning activities that align with content area standards and use digital tools" },
           { id: "iste-e-des-5c", description: "Explore and apply instructional design principles to create innovative digital learning environments" },
         ]},
       ]},
-      { id: "iste-e-facilitator", name: "Facilitator", description: "Facilitate learning with technology", order: 6, levels: [
+      { id: "iste-e-fac", name: "Facilitator", description: "Facilitate learning with technology", order: 6, levels: [
         { id: "iste-e-fac-prof", name: "Proficient", description: "Demonstrates standard", order: 1, indicators: [
           { id: "iste-e-fac-6a", description: "Foster a culture where students take ownership of their learning goals in both independent and group settings" },
           { id: "iste-e-fac-6b", description: "Manage the use of technology and student learning strategies in digital platforms" },
@@ -1370,7 +1370,7 @@ const frameworks: FrameworkContext[] = [
     overview: "7 standards with 26 indicators for technology coaches. Covers Change Agent, Connected Learner, Collaborator, Learning Designer, Professional Learning Facilitator, Data-Driven Decision Maker, and Digital Citizen Advocate.",
     crossReferences: ["iste-educators", "teacher-competency"],
     dimensions: [
-      { id: "iste-c-change", name: "Change Agent", description: "Create a shared vision for technology integration", order: 1, levels: [
+      { id: "iste-c-cha", name: "Change Agent", description: "Create a shared vision for technology integration", order: 1, levels: [
         { id: "iste-c-cha-prof", name: "Proficient", description: "Demonstrates standard", order: 1, indicators: [
           { id: "iste-c-cha-1a", description: "Create a shared vision and culture for using technology to learn and accelerate transformation" },
           { id: "iste-c-cha-1b", description: "Facilitate equitable use of digital learning tools and content" },
@@ -1378,14 +1378,14 @@ const frameworks: FrameworkContext[] = [
           { id: "iste-c-cha-1d", description: "Recognize and remove barriers to equitable technology access" },
         ]},
       ]},
-      { id: "iste-c-connected", name: "Connected Learner", description: "Model continuous learning with technology", order: 2, levels: [
+      { id: "iste-c-cnl", name: "Connected Learner", description: "Model continuous learning with technology", order: 2, levels: [
         { id: "iste-c-con-prof", name: "Proficient", description: "Demonstrates standard", order: 1, indicators: [
           { id: "iste-c-con-2a", description: "Pursue professional learning to deepen expertise and leadership capacity" },
           { id: "iste-c-con-2b", description: "Actively participate in professional learning networks" },
           { id: "iste-c-con-2c", description: "Explore and apply emerging technologies and pedagogical approaches" },
         ]},
       ]},
-      { id: "iste-c-collaborator", name: "Collaborator", description: "Partner with educators to enhance practice", order: 3, levels: [
+      { id: "iste-c-clb", name: "Collaborator", description: "Partner with educators to enhance practice", order: 3, levels: [
         { id: "iste-c-col-prof", name: "Proficient", description: "Demonstrates standard", order: 1, indicators: [
           { id: "iste-c-col-3a", description: "Establish trusting and respectful coaching relationships" },
           { id: "iste-c-col-3b", description: "Partner with educators to identify digital learning needs" },
@@ -1393,7 +1393,7 @@ const frameworks: FrameworkContext[] = [
           { id: "iste-c-col-3d", description: "Personalize support based on educator needs" },
         ]},
       ]},
-      { id: "iste-c-designer", name: "Learning Designer", description: "Design innovative learning with technology", order: 4, levels: [
+      { id: "iste-c-ldn", name: "Learning Designer", description: "Design innovative learning with technology", order: 4, levels: [
         { id: "iste-c-des-prof", name: "Proficient", description: "Demonstrates standard", order: 1, indicators: [
           { id: "iste-c-des-4a", description: "Collaborate with educators to design learning experiences using technology" },
           { id: "iste-c-des-4b", description: "Collaborate with educators to design and develop digitally-rich assessments" },
@@ -1401,7 +1401,7 @@ const frameworks: FrameworkContext[] = [
           { id: "iste-c-des-4d", description: "Explore AI-powered tools to enhance teaching and learning" },
         ]},
       ]},
-      { id: "iste-c-facilitator", name: "Professional Learning Facilitator", description: "Facilitate professional development", order: 5, levels: [
+      { id: "iste-c-plf", name: "Professional Learning Facilitator", description: "Facilitate professional development", order: 5, levels: [
         { id: "iste-c-fac-prof", name: "Proficient", description: "Demonstrates standard", order: 1, indicators: [
           { id: "iste-c-fac-5a", description: "Design professional learning based on needs assessments" },
           { id: "iste-c-fac-5b", description: "Model effective use of technology for learning" },
@@ -1409,7 +1409,7 @@ const frameworks: FrameworkContext[] = [
           { id: "iste-c-fac-5d", description: "Evaluate professional learning impact on educator practice" },
         ]},
       ]},
-      { id: "iste-c-data", name: "Data-Driven Decision Maker", description: "Use data to inform coaching", order: 6, levels: [
+      { id: "iste-c-ddm", name: "Data-Driven Decision Maker", description: "Use data to inform coaching", order: 6, levels: [
         { id: "iste-c-dat-prof", name: "Proficient", description: "Demonstrates standard", order: 1, indicators: [
           { id: "iste-c-dat-6a", description: "Assist educators in using data to inform instruction" },
           { id: "iste-c-dat-6b", description: "Support educators in examining data for equity gaps" },
@@ -1417,7 +1417,7 @@ const frameworks: FrameworkContext[] = [
           { id: "iste-c-dat-6d", description: "Model ethical use of student data and privacy practices" },
         ]},
       ]},
-      { id: "iste-c-citizen", name: "Digital Citizen Advocate", description: "Model and promote digital citizenship", order: 7, levels: [
+      { id: "iste-c-dca", name: "Digital Citizen Advocate", description: "Model and promote digital citizenship", order: 7, levels: [
         { id: "iste-c-cit-prof", name: "Proficient", description: "Demonstrates standard", order: 1, indicators: [
           { id: "iste-c-cit-7a", description: "Inspire and encourage educators to promote digital citizenship" },
           { id: "iste-c-cit-7b", description: "Partner with educators to promote safe online behaviour" },
@@ -1438,7 +1438,7 @@ const frameworks: FrameworkContext[] = [
     overview: "5 standards with 23 indicators for education leaders. Covers Visionary Planner, Systems Designer, Empowering Leader, Connected Learner, and Equity and Citizenship Advocate.",
     crossReferences: ["iste-educators", "guidance-policy", "ai-capability"],
     dimensions: [
-      { id: "iste-l-visionary", name: "Visionary Planner", description: "Create a shared vision for educational technology", order: 1, levels: [
+      { id: "iste-l-vp", name: "Visionary Planner", description: "Create a shared vision for educational technology", order: 1, levels: [
         { id: "iste-l-vis-prof", name: "Proficient", description: "Demonstrates standard", order: 1, indicators: [
           { id: "iste-l-vis-1a", description: "Engage stakeholders in developing and adopting a shared vision" },
           { id: "iste-l-vis-1b", description: "Build on technology-savvy leaders and invest in capacity of others" },
@@ -1446,7 +1446,7 @@ const frameworks: FrameworkContext[] = [
           { id: "iste-l-vis-1d", description: "Share lessons learned with other education leaders" },
         ]},
       ]},
-      { id: "iste-l-systems", name: "Systems Designer", description: "Build teams and systems to implement technology vision", order: 2, levels: [
+      { id: "iste-l-sd", name: "Systems Designer", description: "Build teams and systems to implement technology vision", order: 2, levels: [
         { id: "iste-l-sys-prof", name: "Proficient", description: "Demonstrates standard", order: 1, indicators: [
           { id: "iste-l-sys-2a", description: "Build creative teams and systems to achieve technology vision" },
           { id: "iste-l-sys-2b", description: "Ensure robust infrastructure for security, privacy, and safety" },
@@ -1455,7 +1455,7 @@ const frameworks: FrameworkContext[] = [
           { id: "iste-l-sys-2e", description: "Make informed decisions about technology procurement" },
         ]},
       ]},
-      { id: "iste-l-empowering", name: "Empowering Leader", description: "Create a culture of innovation", order: 3, levels: [
+      { id: "iste-l-el", name: "Empowering Leader", description: "Create a culture of innovation", order: 3, levels: [
         { id: "iste-l-emp-prof", name: "Proficient", description: "Demonstrates standard", order: 1, indicators: [
           { id: "iste-l-emp-3a", description: "Empower educators to exercise professional agency in technology use" },
           { id: "iste-l-emp-3b", description: "Champion policies and provide resources for technology integration" },
@@ -1464,7 +1464,7 @@ const frameworks: FrameworkContext[] = [
           { id: "iste-l-emp-3e", description: "Develop shared understanding of how technology can enhance learning experiences" },
         ]},
       ]},
-      { id: "iste-l-connected", name: "Connected Learner", description: "Model and promote continuous learning", order: 4, levels: [
+      { id: "iste-l-cl", name: "Connected Learner", description: "Model and promote continuous learning", order: 4, levels: [
         { id: "iste-l-con-prof", name: "Proficient", description: "Demonstrates standard", order: 1, indicators: [
           { id: "iste-l-con-4a", description: "Set goals to remain current on emerging technologies for learning" },
           { id: "iste-l-con-4b", description: "Participate regularly in online professional learning networks" },
@@ -1472,7 +1472,7 @@ const frameworks: FrameworkContext[] = [
           { id: "iste-l-con-4d", description: "Develop the skills needed to lead and navigate change and promote digital age learning" },
         ]},
       ]},
-      { id: "iste-l-equity", name: "Equity & Citizenship Advocate", description: "Model and promote equitable and inclusive digital citizenship", order: 5, levels: [
+      { id: "iste-l-dca", name: "Equity & Citizenship Advocate", description: "Model and promote equitable and inclusive digital citizenship", order: 5, levels: [
         { id: "iste-l-eq-prof", name: "Proficient", description: "Demonstrates standard", order: 1, indicators: [
           { id: "iste-l-eq-5a", description: "Ensure equitable access to technology and digital resources" },
           { id: "iste-l-eq-5b", description: "Model digital citizenship by critically evaluating online resources" },
