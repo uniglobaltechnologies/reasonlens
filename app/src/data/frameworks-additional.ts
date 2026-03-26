@@ -25,19 +25,14 @@ const BDC_DIM_STYLE: Record<string, { icon: string; color: string }> = {
   "bdc-identity-wellbeing": { icon: "Shield", color: "text-cyan-600" },
 };
 
-// BDC JSON files use 5 AI maturity levels, but the correct JISC BDC individual
-// model uses 3 Discovery Tool levels: Developing / Capable / Proficient.
-// Mapping: level-1 + level-2 → Developing, level-3 → Capable, level-4 + level-5 → Proficient
-const BDC_LEVEL_MERGE: { id: string; name: string; description: string; order: number; sourceIds: string[] }[] = [
-  { id: "developing", name: "Developing", description: "Awareness, initial exploration and guided experimentation with AI tools", order: 1, sourceIds: ["level-1", "level-2"] },
-  { id: "capable", name: "Capable", description: "Confident, systematic and responsible AI-augmented professional practice", order: 2, sourceIds: ["level-3"] },
-  { id: "proficient", name: "Proficient", description: "Leading AI integration, mentoring others and shaping institutional strategy", order: 3, sourceIds: ["level-4", "level-5"] },
-];
+// BDC JSON files now use the correct JISC Discovery Tool 3-level model natively:
+// Developing / Capable / Proficient (no merge needed).
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 function buildBdcDimensions(source: any, frameworkId: string): FrameworkDimension[] {
   const aspects: any[] = source.aspects;
   const blocks: any[] = source.competency_blocks;
+  const levels: any[] = source.progression_levels;
 
   return aspects.map((aspect: any, i: number) => {
     const style = BDC_DIM_STYLE[aspect.id] ?? { icon: "Circle", color: "text-gray-600" };
@@ -48,46 +43,41 @@ function buildBdcDimensions(source: any, frameworkId: string): FrameworkDimensio
       order: i + 1,
       icon: style.icon,
       color: style.color,
-      levels: BDC_LEVEL_MERGE.map((merged) => {
-        // Collect indicators from all source levels that merge into this level
+      levels: levels.map((level: any) => {
+        const block = blocks.find(
+          (b: any) => b.aspect_id === aspect.id && b.level_id === level.id
+        );
         const indicators: { id: string; description: string }[] = [];
         const curricularGoals: { id: string; description: string }[] = [];
         const contextualActivities: { id: string; name: string; description: string }[] = [];
-        for (const srcId of merged.sourceIds) {
-          const block = blocks.find(
-            (b: any) => b.aspect_id === aspect.id && b.level_id === srcId
+
+        if (block) {
+          (block.curricular_goals ?? []).forEach((g: string, gi: number) => {
+            indicators.push({ id: `${frameworkId}-${aspect.id}-${level.id}-cg-${gi}`, description: g });
+            curricularGoals.push({ id: `${frameworkId}-${aspect.id}-${level.id}-cg-${gi}`, description: g });
+          });
+          (block.learning_objectives ?? []).forEach((lo: string, li: number) => {
+            indicators.push({ id: `${frameworkId}-${aspect.id}-${level.id}-lo-${li}`, description: lo });
+          });
+          (block.contextual_activities ?? []).forEach((activity: string, ai: number) =>
+            contextualActivities.push({
+              id: `${frameworkId}-${aspect.id}-${level.id}-ca-${ai}`,
+              name: activity,
+              description: activity,
+            })
           );
-          if (block) {
-            (block.curricular_goals ?? []).forEach((g: string, gi: number) => {
-              indicators.push({ id: `${frameworkId}-${aspect.id}-${merged.id}-cg${srcId}-${gi}`, description: g });
-              curricularGoals.push({
-                id: `${frameworkId}-${aspect.id}-${merged.id}-cg${srcId}-${gi}`,
-                description: g,
-              });
-            });
-            (block.learning_objectives ?? []).forEach((lo: string, li: number) => {
-              indicators.push({ id: `${frameworkId}-${aspect.id}-${merged.id}-lo${srcId}-${li}`, description: lo });
-            });
-            (block.contextual_activities ?? []).forEach((activity: string, ai: number) =>
-              contextualActivities.push({
-                id: `${frameworkId}-${aspect.id}-${merged.id}-ca${srcId}-${ai}`,
-                name: activity,
-                description: activity,
-              })
-            );
-          }
         }
         if (indicators.length === 0) {
           indicators.push({
-            id: `${frameworkId}-${aspect.id}-${merged.id}-f`,
-            description: `${aspect.name} at ${merged.name} level`,
+            id: `${frameworkId}-${aspect.id}-${level.id}-f`,
+            description: `${aspect.name} at ${level.name} level`,
           });
         }
         return {
-          id: `${frameworkId}-${aspect.id}-${merged.id}`,
-          name: merged.name,
-          description: merged.description,
-          order: merged.order,
+          id: `${frameworkId}-${aspect.id}-${level.id}`,
+          name: level.name,
+          description: level.description,
+          order: level.order,
           indicators,
           curricularGoals: curricularGoals.length > 0 ? curricularGoals : undefined,
           contextualActivities: contextualActivities.length > 0 ? contextualActivities : undefined,

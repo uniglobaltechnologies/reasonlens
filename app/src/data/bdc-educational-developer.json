@@ -230,177 +230,66 @@
   ],
   "progression_levels": [
     {
-      "id": "level-1",
+      "id": "developing",
       "order": 1,
-      "name": "Approaching and Understanding",
-      "description": "Interest in AI; understanding impact on other sectors. No formal AI activity. Basic digital capabilities developing at individual level. At institutional level, digital activities are dispersed and project-based.",
-      "target": "Foundational awareness of AI concepts and their relevance to role and organisation",
-      "overall_curricular_goal": "Develop understanding of what AI is, how it works at a basic level, and why it matters for education",
-      "data_maturity_expectation": "L1 Reactive: No formal data management; embryonic processes; data not viewed as important",
-      "source_terminology": {
-        "dt_model_level": "Emerging to Established (lower band)",
-        "bdc_org_level": "Emerging (early)",
-        "data_maturity_level": "L1 Reactive",
-        "discovery_tool_level": "Developing (early)",
-        "beetham_sharpe": "Access",
-        "cmmi": "Level 1 - Initial",
-        "educause_3d": "Digitize",
-        "hesa_data": "Chaotic",
-        "digiready": "DR-D (0-10)",
-        "jisc_elevation": "Pre-Foundations",
-        "qub_adaptation": "Planning to Emerging"
-      }
+      "name": "Developing",
+      "description": "Building awareness and early skills. Interest in AI and digital tools is forming. Basic capabilities developing through guided exploration and initial experimentation.",
+      "target": "Foundational awareness and active exploration of AI and digital tools within existing workflows",
+      "overall_curricular_goal": "Develop understanding and build practical skills through guided experimentation with AI tools relevant to role"
     },
     {
-      "id": "level-2",
+      "id": "capable",
       "order": 2,
-      "name": "Experimenting and Exploring",
-      "description": "Pilots within existing processes; data culture emerging; responsible AI processes established; initial AI guidance produced. Individuals actively experimenting with AI tools.",
-      "target": "Active exploration of AI tools and responsible use habits within existing workflows",
-      "overall_curricular_goal": "Build practical skills through guided experimentation with AI tools relevant to role",
-      "data_maturity_expectation": "L2 Working towards proactive: Nascent capability emerging; informal roles; some trust in key outputs",
-      "source_terminology": {
-        "dt_model_level": "Emerging to Established (upper band)",
-        "bdc_org_level": "Emerging (advanced)",
-        "data_maturity_level": "L2 Working towards proactive",
-        "discovery_tool_level": "Developing (advanced)",
-        "beetham_sharpe": "Functional Skills",
-        "cmmi": "Level 2 - Managed",
-        "educause_3d": "Digitize/Digitalize",
-        "hesa_data": "Reactive",
-        "digiready": "DR-C1 (10-30)",
-        "jisc_elevation": "Foundations",
-        "qub_adaptation": "Emerging to Established (Reactive)"
-      }
-    },
-    {
-      "id": "level-3",
-      "order": 3,
-      "name": "Operational",
-      "description": "Institutional AI principles established; systemic staff AI skills/literacy approach; everyday AI used institution-wide; task-specific AI for one or more processes. Confident, routine AI-augmented practice.",
+      "name": "Capable",
+      "description": "Competent and confident. Systematic integration of digital and AI tools into professional practice. Able to select appropriate tools, evaluate outputs, and work independently.",
       "target": "Routine, informed AI-augmented practice integrated into professional workflows",
-      "overall_curricular_goal": "Demonstrate confident, systematic and responsible application of AI within professional domain",
-      "data_maturity_expectation": "L3 Proactive: Data management embedded for key datasets; roles emerged; quality measurement patchy",
-      "source_terminology": {
-        "dt_model_level": "Established to Enhanced (full band)",
-        "bdc_org_level": "Established",
-        "data_maturity_level": "L3 Proactive",
-        "discovery_tool_level": "Capable",
-        "beetham_sharpe": "Practices",
-        "cmmi": "Level 3 - Defined",
-        "educause_3d": "Digitalize",
-        "hesa_data": "Stable",
-        "digiready": "DR-C3 (45-60)",
-        "jisc_elevation": "Transform",
-        "qub_adaptation": "Established to Enhanced (Proactive)"
-      }
+      "overall_curricular_goal": "Demonstrate confident, systematic and responsible application of AI within professional domain"
     },
     {
-      "id": "level-4",
-      "order": 4,
-      "name": "Embedded",
-      "description": "AI embedded in strategy (not standalone); data maturity allows AI consideration for all new systems; mature lifecycle management including procurement and continuous monitoring. Leading AI integration.",
-      "target": "AI-enhanced practice as default; strategic use; mentoring others; contributing to institutional AI strategy",
-      "overall_curricular_goal": "Lead AI integration in professional domain; contribute to organisational AI strategy and governance",
-      "data_maturity_expectation": "L4 Working towards integrated: Key organisational capability; most outputs automated; data governance formalised",
-      "source_terminology": {
-        "dt_model_level": "Enhanced to Mature (lower band)",
-        "bdc_org_level": "Enhanced (developing)",
-        "data_maturity_level": "L4 Working towards integrated",
-        "discovery_tool_level": "Proficient (developing)",
-        "beetham_sharpe": "Practices (advanced)",
-        "cmmi": "Level 4 - Quantitatively Managed",
-        "educause_3d": "Digitalize/Transform",
-        "hesa_data": "Proactive",
-        "digiready": "DR-B (60-90)",
-        "jisc_elevation": "Transform/Elevate",
-        "qub_adaptation": "Enhanced to Mature (Integrated) - lower"
-      }
-    },
-    {
-      "id": "level-5",
-      "order": 5,
-      "name": "Optimised/Transformed",
-      "description": "AI supports delivery of learning optimising outcomes for all learners; right tasks automated freeing staff for creativity and human interaction. Sector leadership in AI innovation.",
-      "target": "Innovative, transformative AI practice; optimised workflows; recognised leadership in AI application",
-      "overall_curricular_goal": "Shape sector practices; innovate transformative AI-enabled approaches; champion ethical and inclusive AI adoption",
-      "data_maturity_expectation": "L5 Integrated: Strategic capability; foundation for innovative services; predictive analytics; fully integrated",
-      "source_terminology": {
-        "dt_model_level": "Enhanced to Mature (upper band)",
-        "bdc_org_level": "Enhanced (mature)",
-        "data_maturity_level": "L5 Integrated",
-        "discovery_tool_level": "Proficient (mature)",
-        "beetham_sharpe": "Identity",
-        "cmmi": "Level 5 - Optimising",
-        "educause_3d": "Transform",
-        "hesa_data": "Predictive",
-        "digiready": "DR-A (90-100)",
-        "jisc_elevation": "Elevate",
-        "qub_adaptation": "Enhanced to Mature (Integrated) - upper"
-      }
+      "id": "proficient",
+      "order": 3,
+      "name": "Proficient",
+      "description": "Strong, advanced practice. Leading and mentoring others. Shaping institutional and sector approaches. Strategic perspective on digital and AI capability.",
+      "target": "AI-enhanced practice as default; strategic use; mentoring others; sector leadership in AI innovation",
+      "overall_curricular_goal": "Lead AI integration, shape sector practices, and champion ethical and inclusive AI adoption"
     }
   ],
   "competency_blocks": [
     {
-      "id": "block-1-1",
+      "id": "block-1",
       "aspect_id": "bdc-proficiency-productivity",
-      "level_id": "level-1",
-      "name": "Digital Proficiency and Productivity at Approaching and Understanding",
-      "description": "What digital proficiency and productivity looks like for educational developer roles at AI maturity level 1: Approaching and Understanding.",
+      "level_id": "developing",
+      "name": "Digital Proficiency and Productivity at Developing",
+      "description": "What digital proficiency and productivity looks like at the Developing level.",
       "curricular_goals": [
         "Understand what AI is and how it relates to existing digital tools and services",
-        "Recognise where AI features are already present in everyday tools"
-      ],
-      "learning_objectives": [
-        "Identify AI-powered features in tools they already use",
-        "Describe the basic concept of generative AI",
-        "Access and use institutional platforms and services"
-      ],
-      "contextual_activities": [
-        "Try an AI assistant for a simple productivity task",
-        "Complete AI awareness module in Discovery Tool",
-        "Identify AI features in Microsoft 365 or Google Workspace"
-      ],
-      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Educational Developer-specific capability statements extracted from https://repository.jisc.ac.uk/9824/1/2024_BDC_Educational_developer_profile.pdf. Bridges individual teacher capability and institutional strategy. Many educational developers both teach and support teaching. Supporting digital teaching development, curriculum design for digital capabilities, evaluation of innovations. Key enablers for moving institutions from AI maturity levels 2-3 to 4-5.",
-      "source_terminology": {
-        "original_level": "Developing (early)",
-        "mapping_band": "lower",
-        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 1."
-      }
-    },
-    {
-      "id": "block-1-2",
-      "aspect_id": "bdc-proficiency-productivity",
-      "level_id": "level-2",
-      "name": "Digital Proficiency and Productivity at Experimenting and Exploring",
-      "description": "What digital proficiency and productivity looks like for educational developer roles at AI maturity level 2: Experimenting and Exploring.",
-      "curricular_goals": [
+        "Recognise where AI features are already present in everyday tools",
         "Experiment with AI tools to enhance personal productivity",
         "Develop habits for evaluating AI tool outputs"
       ],
       "learning_objectives": [
+        "Identify AI-powered features in tools they already use",
+        "Describe the basic concept of generative AI",
+        "Access and use institutional platforms and services",
         "Use AI assistants for drafting, summarising or organising content",
         "Evaluate AI-generated outputs for accuracy and fitness for purpose",
         "Configure AI tools to support personal workflow preferences"
       ],
       "contextual_activities": [
+        "Try an AI assistant for a simple productivity task",
+        "Complete AI awareness module in Discovery Tool",
+        "Identify AI features in Microsoft 365 or Google Workspace",
         "Use Copilot to draft meeting notes or summarise documents",
         "Compare AI-generated output with manual approach for a routine task",
         "Explore AI features in specialist professional software"
-      ],
-      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Educational Developer-specific capability statements extracted from https://repository.jisc.ac.uk/9824/1/2024_BDC_Educational_developer_profile.pdf. Bridges individual teacher capability and institutional strategy. Many educational developers both teach and support teaching. Supporting digital teaching development, curriculum design for digital capabilities, evaluation of innovations. Key enablers for moving institutions from AI maturity levels 2-3 to 4-5.",
-      "source_terminology": {
-        "original_level": "Developing (advanced)",
-        "mapping_band": "upper",
-        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 2."
-      }
+      ]
     },
     {
-      "id": "block-1-3",
+      "id": "block-2",
       "aspect_id": "bdc-proficiency-productivity",
-      "level_id": "level-3",
-      "name": "Digital Proficiency and Productivity at Operational",
-      "description": "What digital proficiency and productivity looks like for educational developer roles at AI maturity level 3: Operational.",
+      "level_id": "capable",
+      "name": "Digital Proficiency and Productivity at Capable",
+      "description": "What digital proficiency and productivity looks like at the Capable level.",
       "curricular_goals": [
         "Integrate AI tools systematically into professional workflows",
         "Make informed decisions about when AI adds value and when it does not"
@@ -414,128 +303,72 @@
         "Build an AI-augmented workflow for a recurring professional process",
         "Conduct a personal AI tool audit identifying where AI helps and where it hinders",
         "Deliver a peer demonstration of an effective AI workflow"
-      ],
-      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Educational Developer-specific capability statements extracted from https://repository.jisc.ac.uk/9824/1/2024_BDC_Educational_developer_profile.pdf. Bridges individual teacher capability and institutional strategy. Many educational developers both teach and support teaching. Supporting digital teaching development, curriculum design for digital capabilities, evaluation of innovations. Key enablers for moving institutions from AI maturity levels 2-3 to 4-5.",
-      "source_terminology": {
-        "original_level": "Capable",
-        "mapping_band": "full",
-        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 3."
-      }
+      ]
     },
     {
-      "id": "block-1-4",
+      "id": "block-3",
       "aspect_id": "bdc-proficiency-productivity",
-      "level_id": "level-4",
-      "name": "Digital Proficiency and Productivity at Embedded",
-      "description": "What digital proficiency and productivity looks like for educational developer roles at AI maturity level 4: Embedded.",
+      "level_id": "proficient",
+      "name": "Digital Proficiency and Productivity at Proficient",
+      "description": "What digital proficiency and productivity looks like at the Proficient level.",
       "curricular_goals": [
         "Lead AI-enhanced productivity practices across a team or department",
-        "Contribute to institutional AI tool evaluation and procurement"
-      ],
-      "learning_objectives": [
-        "Mentor colleagues in effective and responsible AI tool use",
-        "Evaluate AI tools against institutional criteria (ethics, accessibility, sustainability, data protection)",
-        "Design workflows that optimise AI-human collaboration"
-      ],
-      "contextual_activities": [
-        "Lead a team workshop on AI-enhanced productivity",
-        "Contribute to an institutional AI tool evaluation process",
-        "Develop documentation for an AI-augmented departmental process"
-      ],
-      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Educational Developer-specific capability statements extracted from https://repository.jisc.ac.uk/9824/1/2024_BDC_Educational_developer_profile.pdf. Bridges individual teacher capability and institutional strategy. Many educational developers both teach and support teaching. Supporting digital teaching development, curriculum design for digital capabilities, evaluation of innovations. Key enablers for moving institutions from AI maturity levels 2-3 to 4-5.",
-      "source_terminology": {
-        "original_level": "Proficient (developing)",
-        "mapping_band": "lower",
-        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 4."
-      }
-    },
-    {
-      "id": "block-1-5",
-      "aspect_id": "bdc-proficiency-productivity",
-      "level_id": "level-5",
-      "name": "Digital Proficiency and Productivity at Optimised/Transformed",
-      "description": "What digital proficiency and productivity looks like for educational developer roles at AI maturity level 5: Optimised/Transformed.",
-      "curricular_goals": [
+        "Contribute to institutional AI tool evaluation and procurement",
         "Shape institutional and sector approaches to AI-enhanced productivity",
         "Innovate new AI-enabled workflows and processes"
       ],
       "learning_objectives": [
+        "Mentor colleagues in effective and responsible AI tool use",
+        "Evaluate AI tools against institutional criteria (ethics, accessibility, sustainability, data protection)",
+        "Design workflows that optimise AI-human collaboration",
         "Design strategic approaches to AI adoption that balance innovation with responsibility",
         "Contribute to sector guidance on AI tool use",
         "Champion accessible, inclusive and sustainable AI practices"
       ],
       "contextual_activities": [
+        "Lead a team workshop on AI-enhanced productivity",
+        "Contribute to an institutional AI tool evaluation process",
+        "Develop documentation for an AI-augmented departmental process",
         "Publish a case study on AI-enhanced professional practice",
         "Contribute to sector working group on AI in professional practice",
         "Lead institutional pilot of emerging AI tool with full evaluation framework"
-      ],
-      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Educational Developer-specific capability statements extracted from https://repository.jisc.ac.uk/9824/1/2024_BDC_Educational_developer_profile.pdf. Bridges individual teacher capability and institutional strategy. Many educational developers both teach and support teaching. Supporting digital teaching development, curriculum design for digital capabilities, evaluation of innovations. Key enablers for moving institutions from AI maturity levels 2-3 to 4-5.",
-      "source_terminology": {
-        "original_level": "Proficient (mature)",
-        "mapping_band": "upper",
-        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 5."
-      }
+      ]
     },
     {
-      "id": "block-2-1",
+      "id": "block-4",
       "aspect_id": "bdc-creation-innovation",
-      "level_id": "level-1",
-      "name": "Digital Creation, Problem-Solving and Innovation at Approaching and Understanding",
-      "description": "What digital creation, problem-solving and innovation looks like for educational developer roles at AI maturity level 1: Approaching and Understanding.",
+      "level_id": "developing",
+      "name": "Digital Creation, Problem-Solving and Innovation at Developing",
+      "description": "What digital creation, problem-solving and innovation looks like at the Developing level.",
       "curricular_goals": [
         "Understand how AI can generate and assist with content creation",
-        "Recognise the role of AI in evidence gathering and problem-solving"
-      ],
-      "learning_objectives": [
-        "Describe what AI-generated content is and how it is produced",
-        "Identify examples of AI use in research and problem-solving",
-        "Understand that AI outputs require human evaluation"
-      ],
-      "contextual_activities": [
-        "Examine examples of AI-generated text, images or code",
-        "Discuss the concept of AI hallucination and its implications",
-        "Review an example of AI-assisted data analysis"
-      ],
-      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Educational Developer-specific capability statements extracted from https://repository.jisc.ac.uk/9824/1/2024_BDC_Educational_developer_profile.pdf. Bridges individual teacher capability and institutional strategy. Many educational developers both teach and support teaching. Supporting digital teaching development, curriculum design for digital capabilities, evaluation of innovations. Key enablers for moving institutions from AI maturity levels 2-3 to 4-5.",
-      "source_terminology": {
-        "original_level": "Developing (early)",
-        "mapping_band": "lower",
-        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 1."
-      }
-    },
-    {
-      "id": "block-2-2",
-      "aspect_id": "bdc-creation-innovation",
-      "level_id": "level-2",
-      "name": "Digital Creation, Problem-Solving and Innovation at Experimenting and Exploring",
-      "description": "What digital creation, problem-solving and innovation looks like for educational developer roles at AI maturity level 2: Experimenting and Exploring.",
-      "curricular_goals": [
+        "Recognise the role of AI in evidence gathering and problem-solving",
         "Experiment with AI for content creation, editing and problem-solving",
         "Develop skills in evaluating AI-generated content and evidence"
       ],
       "learning_objectives": [
+        "Describe what AI-generated content is and how it is produced",
+        "Identify examples of AI use in research and problem-solving",
+        "Understand that AI outputs require human evaluation",
         "Use AI to draft, edit or enhance digital content",
         "Apply AI tools to gather or analyse evidence for a professional task",
         "Assess the quality and reliability of AI-generated outputs"
       ],
       "contextual_activities": [
+        "Examine examples of AI-generated text, images or code",
+        "Discuss the concept of AI hallucination and its implications",
+        "Review an example of AI-assisted data analysis",
         "Use generative AI to create a first draft then critically edit it",
         "Apply an AI tool to analyse a dataset or synthesise information",
         "Pilot an AI approach to a professional challenge and evaluate results"
-      ],
-      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Educational Developer-specific capability statements extracted from https://repository.jisc.ac.uk/9824/1/2024_BDC_Educational_developer_profile.pdf. Bridges individual teacher capability and institutional strategy. Many educational developers both teach and support teaching. Supporting digital teaching development, curriculum design for digital capabilities, evaluation of innovations. Key enablers for moving institutions from AI maturity levels 2-3 to 4-5.",
-      "source_terminology": {
-        "original_level": "Developing (advanced)",
-        "mapping_band": "upper",
-        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 2."
-      }
+      ]
     },
     {
-      "id": "block-2-3",
+      "id": "block-5",
       "aspect_id": "bdc-creation-innovation",
-      "level_id": "level-3",
-      "name": "Digital Creation, Problem-Solving and Innovation at Operational",
-      "description": "What digital creation, problem-solving and innovation looks like for educational developer roles at AI maturity level 3: Operational.",
+      "level_id": "capable",
+      "name": "Digital Creation, Problem-Solving and Innovation at Capable",
+      "description": "What digital creation, problem-solving and innovation looks like at the Capable level.",
       "curricular_goals": [
         "Produce professional content using AI where appropriate with critical oversight",
         "Apply AI-enhanced methods to research and problem-solving systematically"
@@ -549,128 +382,72 @@
         "Integrate AI into a content production pipeline with quality controls",
         "Use AI-assisted analysis to inform a professional decision",
         "Present findings on an AI application to a team or working group"
-      ],
-      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Educational Developer-specific capability statements extracted from https://repository.jisc.ac.uk/9824/1/2024_BDC_Educational_developer_profile.pdf. Bridges individual teacher capability and institutional strategy. Many educational developers both teach and support teaching. Supporting digital teaching development, curriculum design for digital capabilities, evaluation of innovations. Key enablers for moving institutions from AI maturity levels 2-3 to 4-5.",
-      "source_terminology": {
-        "original_level": "Capable",
-        "mapping_band": "full",
-        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 3."
-      }
+      ]
     },
     {
-      "id": "block-2-4",
+      "id": "block-6",
       "aspect_id": "bdc-creation-innovation",
-      "level_id": "level-4",
-      "name": "Digital Creation, Problem-Solving and Innovation at Embedded",
-      "description": "What digital creation, problem-solving and innovation looks like for educational developer roles at AI maturity level 4: Embedded.",
+      "level_id": "proficient",
+      "name": "Digital Creation, Problem-Solving and Innovation at Proficient",
+      "description": "What digital creation, problem-solving and innovation looks like at the Proficient level.",
       "curricular_goals": [
         "Lead creative approaches to AI-enhanced content and research",
-        "Drive evidence-based evaluation of AI innovation in professional practice"
-      ],
-      "learning_objectives": [
-        "Model creative approaches to AI-augmented content and problem-solving",
-        "Lead evaluation of AI applications and contribute to institutional knowledge",
-        "Generate new projects and ideas leveraging AI capabilities"
-      ],
-      "contextual_activities": [
-        "Lead an AI innovation project within the department",
-        "Develop an evaluation framework for AI use in professional practice",
-        "Act as an AI champion driving innovation and sharing practice"
-      ],
-      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Educational Developer-specific capability statements extracted from https://repository.jisc.ac.uk/9824/1/2024_BDC_Educational_developer_profile.pdf. Bridges individual teacher capability and institutional strategy. Many educational developers both teach and support teaching. Supporting digital teaching development, curriculum design for digital capabilities, evaluation of innovations. Key enablers for moving institutions from AI maturity levels 2-3 to 4-5.",
-      "source_terminology": {
-        "original_level": "Proficient (developing)",
-        "mapping_band": "lower",
-        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 4."
-      }
-    },
-    {
-      "id": "block-2-5",
-      "aspect_id": "bdc-creation-innovation",
-      "level_id": "level-5",
-      "name": "Digital Creation, Problem-Solving and Innovation at Optimised/Transformed",
-      "description": "What digital creation, problem-solving and innovation looks like for educational developer roles at AI maturity level 5: Optimised/Transformed.",
-      "curricular_goals": [
+        "Drive evidence-based evaluation of AI innovation in professional practice",
         "Shape sector understanding of AI-enabled creation and research",
         "Develop novel AI applications for professional domains"
       ],
       "learning_objectives": [
+        "Model creative approaches to AI-augmented content and problem-solving",
+        "Lead evaluation of AI applications and contribute to institutional knowledge",
+        "Generate new projects and ideas leveraging AI capabilities",
         "Contribute to sector discourse on AI in professional creation and research",
         "Innovate transformative AI approaches that others adopt",
         "Advocate for open, accessible and inclusive AI innovation"
       ],
       "contextual_activities": [
+        "Lead an AI innovation project within the department",
+        "Develop an evaluation framework for AI use in professional practice",
+        "Act as an AI champion driving innovation and sharing practice",
         "Publish research or guidance on AI-enhanced professional practice",
         "Develop a novel AI application adopted by others in the sector",
         "Lead a cross-institutional AI innovation initiative"
-      ],
-      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Educational Developer-specific capability statements extracted from https://repository.jisc.ac.uk/9824/1/2024_BDC_Educational_developer_profile.pdf. Bridges individual teacher capability and institutional strategy. Many educational developers both teach and support teaching. Supporting digital teaching development, curriculum design for digital capabilities, evaluation of innovations. Key enablers for moving institutions from AI maturity levels 2-3 to 4-5.",
-      "source_terminology": {
-        "original_level": "Proficient (mature)",
-        "mapping_band": "upper",
-        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 5."
-      }
+      ]
     },
     {
-      "id": "block-3-1",
+      "id": "block-7",
       "aspect_id": "bdc-learning-development",
-      "level_id": "level-1",
-      "name": "Digital Learning and Development at Approaching and Understanding",
-      "description": "What digital learning and development looks like for educational developer roles at AI maturity level 1: Approaching and Understanding.",
+      "level_id": "developing",
+      "name": "Digital Learning and Development at Developing",
+      "description": "What digital learning and development looks like at the Developing level.",
       "curricular_goals": [
         "Understand how AI is changing learning and professional development",
-        "Recognise AI's potential impact on teaching and learning"
-      ],
-      "learning_objectives": [
-        "Describe how AI tools might support personal learning and CPD",
-        "Identify examples of AI in educational contexts",
-        "Reflect on personal AI learning needs"
-      ],
-      "contextual_activities": [
-        "Complete an introductory AI literacy module",
-        "Explore an AI-powered learning platform",
-        "Discuss AI's impact on professional practice with peers"
-      ],
-      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Educational Developer-specific capability statements extracted from https://repository.jisc.ac.uk/9824/1/2024_BDC_Educational_developer_profile.pdf. Bridges individual teacher capability and institutional strategy. Many educational developers both teach and support teaching. Supporting digital teaching development, curriculum design for digital capabilities, evaluation of innovations. Key enablers for moving institutions from AI maturity levels 2-3 to 4-5.",
-      "source_terminology": {
-        "original_level": "Developing (early)",
-        "mapping_band": "lower",
-        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 1."
-      }
-    },
-    {
-      "id": "block-3-2",
-      "aspect_id": "bdc-learning-development",
-      "level_id": "level-2",
-      "name": "Digital Learning and Development at Experimenting and Exploring",
-      "description": "What digital learning and development looks like for educational developer roles at AI maturity level 2: Experimenting and Exploring.",
-      "curricular_goals": [
+        "Recognise AI's potential impact on teaching and learning",
         "Explore AI-enhanced learning experiences and teaching approaches",
         "Experiment with AI tools in learning, teaching or CPD contexts"
       ],
       "learning_objectives": [
+        "Describe how AI tools might support personal learning and CPD",
+        "Identify examples of AI in educational contexts",
+        "Reflect on personal AI learning needs",
         "Use AI tools to support personal learning or professional development",
         "Pilot AI tools in a teaching or learning support context",
         "Reflect on how AI changes learning and teaching practices"
       ],
       "contextual_activities": [
+        "Complete an introductory AI literacy module",
+        "Explore an AI-powered learning platform",
+        "Discuss AI's impact on professional practice with peers",
         "Use AI to create a personalised learning plan",
         "Pilot an AI tool in one teaching session and gather feedback",
         "Participate in an AI-focused CPD workshop or community event"
-      ],
-      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Educational Developer-specific capability statements extracted from https://repository.jisc.ac.uk/9824/1/2024_BDC_Educational_developer_profile.pdf. Bridges individual teacher capability and institutional strategy. Many educational developers both teach and support teaching. Supporting digital teaching development, curriculum design for digital capabilities, evaluation of innovations. Key enablers for moving institutions from AI maturity levels 2-3 to 4-5.",
-      "source_terminology": {
-        "original_level": "Developing (advanced)",
-        "mapping_band": "upper",
-        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 2."
-      }
+      ]
     },
     {
-      "id": "block-3-3",
+      "id": "block-8",
       "aspect_id": "bdc-learning-development",
-      "level_id": "level-3",
-      "name": "Digital Learning and Development at Operational",
-      "description": "What digital learning and development looks like for educational developer roles at AI maturity level 3: Operational.",
+      "level_id": "capable",
+      "name": "Digital Learning and Development at Capable",
+      "description": "What digital learning and development looks like at the Capable level.",
       "curricular_goals": [
         "Integrate AI tools routinely into learning, teaching and development",
         "Design learning experiences that build AI literacy"
@@ -684,128 +461,72 @@
         "Redesign a module activity to integrate AI tools with clear learning outcomes",
         "Develop AI literacy guidance for students in your discipline",
         "Use AI-assisted feedback on student work with human review"
-      ],
-      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Educational Developer-specific capability statements extracted from https://repository.jisc.ac.uk/9824/1/2024_BDC_Educational_developer_profile.pdf. Bridges individual teacher capability and institutional strategy. Many educational developers both teach and support teaching. Supporting digital teaching development, curriculum design for digital capabilities, evaluation of innovations. Key enablers for moving institutions from AI maturity levels 2-3 to 4-5.",
-      "source_terminology": {
-        "original_level": "Capable",
-        "mapping_band": "full",
-        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 3."
-      }
+      ]
     },
     {
-      "id": "block-3-4",
+      "id": "block-9",
       "aspect_id": "bdc-learning-development",
-      "level_id": "level-4",
-      "name": "Digital Learning and Development at Embedded",
-      "description": "What digital learning and development looks like for educational developer roles at AI maturity level 4: Embedded.",
+      "level_id": "proficient",
+      "name": "Digital Learning and Development at Proficient",
+      "description": "What digital learning and development looks like at the Proficient level.",
       "curricular_goals": [
         "Lead development of AI-enhanced pedagogies and curriculum",
-        "Mentor colleagues in AI-enhanced teaching and learning practices"
-      ],
-      "learning_objectives": [
-        "Design curriculum that embeds AI literacy outcomes",
-        "Lead CPD sessions on AI in learning and teaching",
-        "Use learning analytics and AI to personalise and improve learning"
-      ],
-      "contextual_activities": [
-        "Lead a curriculum review embedding AI literacy across a programme",
-        "Deliver a staff development programme on AI-enhanced pedagogy",
-        "Implement AI-driven personalised learning pathways for students"
-      ],
-      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Educational Developer-specific capability statements extracted from https://repository.jisc.ac.uk/9824/1/2024_BDC_Educational_developer_profile.pdf. Bridges individual teacher capability and institutional strategy. Many educational developers both teach and support teaching. Supporting digital teaching development, curriculum design for digital capabilities, evaluation of innovations. Key enablers for moving institutions from AI maturity levels 2-3 to 4-5.",
-      "source_terminology": {
-        "original_level": "Proficient (developing)",
-        "mapping_band": "lower",
-        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 4."
-      }
-    },
-    {
-      "id": "block-3-5",
-      "aspect_id": "bdc-learning-development",
-      "level_id": "level-5",
-      "name": "Digital Learning and Development at Optimised/Transformed",
-      "description": "What digital learning and development looks like for educational developer roles at AI maturity level 5: Optimised/Transformed.",
-      "curricular_goals": [
+        "Mentor colleagues in AI-enhanced teaching and learning practices",
         "Shape sector approaches to AI in learning and teaching",
         "Innovate transformative AI-enabled learning experiences"
       ],
       "learning_objectives": [
+        "Design curriculum that embeds AI literacy outcomes",
+        "Lead CPD sessions on AI in learning and teaching",
+        "Use learning analytics and AI to personalise and improve learning",
         "Lead research and scholarship on AI in education",
         "Develop AI-enhanced learning approaches adopted across the sector",
         "Champion equitable and inclusive AI-enhanced learning"
       ],
       "contextual_activities": [
+        "Lead a curriculum review embedding AI literacy across a programme",
+        "Deliver a staff development programme on AI-enhanced pedagogy",
+        "Implement AI-driven personalised learning pathways for students",
         "Publish on AI-enhanced pedagogy in a peer-reviewed outlet",
         "Lead a national or international project on AI in education",
         "Develop an open educational resource on AI literacy adopted by multiple institutions"
-      ],
-      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Educational Developer-specific capability statements extracted from https://repository.jisc.ac.uk/9824/1/2024_BDC_Educational_developer_profile.pdf. Bridges individual teacher capability and institutional strategy. Many educational developers both teach and support teaching. Supporting digital teaching development, curriculum design for digital capabilities, evaluation of innovations. Key enablers for moving institutions from AI maturity levels 2-3 to 4-5.",
-      "source_terminology": {
-        "original_level": "Proficient (mature)",
-        "mapping_band": "upper",
-        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 5."
-      }
+      ]
     },
     {
-      "id": "block-4-1",
+      "id": "block-10",
       "aspect_id": "bdc-literacies",
-      "level_id": "level-1",
-      "name": "Information, Data and Media Literacies at Approaching and Understanding",
-      "description": "What information, data and media literacies looks like for educational developer roles at AI maturity level 1: Approaching and Understanding.",
+      "level_id": "developing",
+      "name": "Information, Data and Media Literacies at Developing",
+      "description": "What information, data and media literacies looks like at the Developing level.",
       "curricular_goals": [
         "Understand that AI can generate information, data and media content",
-        "Recognise the need to evaluate AI outputs critically"
-      ],
-      "learning_objectives": [
-        "Describe how AI generates text, images and data",
-        "Identify the risk of AI hallucination and misinformation",
-        "Understand basic concepts of data quality and bias"
-      ],
-      "contextual_activities": [
-        "Examine examples of AI-generated vs human-generated content",
-        "Discuss deepfakes and AI-generated media in a group setting",
-        "Review a dataset for basic quality issues"
-      ],
-      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Educational Developer-specific capability statements extracted from https://repository.jisc.ac.uk/9824/1/2024_BDC_Educational_developer_profile.pdf. Bridges individual teacher capability and institutional strategy. Many educational developers both teach and support teaching. Supporting digital teaching development, curriculum design for digital capabilities, evaluation of innovations. Key enablers for moving institutions from AI maturity levels 2-3 to 4-5.",
-      "source_terminology": {
-        "original_level": "Developing (early)",
-        "mapping_band": "lower",
-        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 1."
-      }
-    },
-    {
-      "id": "block-4-2",
-      "aspect_id": "bdc-literacies",
-      "level_id": "level-2",
-      "name": "Information, Data and Media Literacies at Experimenting and Exploring",
-      "description": "What information, data and media literacies looks like for educational developer roles at AI maturity level 2: Experimenting and Exploring.",
-      "curricular_goals": [
+        "Recognise the need to evaluate AI outputs critically",
         "Experiment with AI tools for information discovery, data analysis and media creation",
         "Develop skills in critical evaluation of AI-generated content"
       ],
       "learning_objectives": [
+        "Describe how AI generates text, images and data",
+        "Identify the risk of AI hallucination and misinformation",
+        "Understand basic concepts of data quality and bias",
         "Use AI tools to search, filter and synthesise information",
         "Apply AI tools to explore or visualise data",
         "Evaluate AI-generated media content for accuracy and bias"
       ],
       "contextual_activities": [
+        "Examine examples of AI-generated vs human-generated content",
+        "Discuss deepfakes and AI-generated media in a group setting",
+        "Review a dataset for basic quality issues",
         "Use an AI research assistant to synthesise literature on a topic",
         "Explore a dataset using AI-assisted analysis tools",
         "Fact-check AI-generated content using established verification methods"
-      ],
-      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Educational Developer-specific capability statements extracted from https://repository.jisc.ac.uk/9824/1/2024_BDC_Educational_developer_profile.pdf. Bridges individual teacher capability and institutional strategy. Many educational developers both teach and support teaching. Supporting digital teaching development, curriculum design for digital capabilities, evaluation of innovations. Key enablers for moving institutions from AI maturity levels 2-3 to 4-5.",
-      "source_terminology": {
-        "original_level": "Developing (advanced)",
-        "mapping_band": "upper",
-        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 2."
-      }
+      ]
     },
     {
-      "id": "block-4-3",
+      "id": "block-11",
       "aspect_id": "bdc-literacies",
-      "level_id": "level-3",
-      "name": "Information, Data and Media Literacies at Operational",
-      "description": "What information, data and media literacies looks like for educational developer roles at AI maturity level 3: Operational.",
+      "level_id": "capable",
+      "name": "Information, Data and Media Literacies at Capable",
+      "description": "What information, data and media literacies looks like at the Capable level.",
       "curricular_goals": [
         "Apply AI tools confidently for information management, data analysis and media production",
         "Teach or support others in AI-related information and data literacy"
@@ -819,128 +540,72 @@
         "Build an AI-augmented literature review or evidence synthesis workflow",
         "Evaluate an AI system's data sources and potential biases",
         "Deliver training on evaluating AI-generated content"
-      ],
-      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Educational Developer-specific capability statements extracted from https://repository.jisc.ac.uk/9824/1/2024_BDC_Educational_developer_profile.pdf. Bridges individual teacher capability and institutional strategy. Many educational developers both teach and support teaching. Supporting digital teaching development, curriculum design for digital capabilities, evaluation of innovations. Key enablers for moving institutions from AI maturity levels 2-3 to 4-5.",
-      "source_terminology": {
-        "original_level": "Capable",
-        "mapping_band": "full",
-        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 3."
-      }
+      ]
     },
     {
-      "id": "block-4-4",
+      "id": "block-12",
       "aspect_id": "bdc-literacies",
-      "level_id": "level-4",
-      "name": "Information, Data and Media Literacies at Embedded",
-      "description": "What information, data and media literacies looks like for educational developer roles at AI maturity level 4: Embedded.",
+      "level_id": "proficient",
+      "name": "Information, Data and Media Literacies at Proficient",
+      "description": "What information, data and media literacies looks like at the Proficient level.",
       "curricular_goals": [
         "Lead data governance and AI ethics practices in information and media contexts",
-        "Design frameworks for evaluating AI-generated information"
-      ],
-      "learning_objectives": [
-        "Contribute to institutional data governance policy in AI contexts",
-        "Develop training or resources on AI, data and media literacies",
-        "Champion data-driven and AI-informed decision making"
-      ],
-      "contextual_activities": [
-        "Develop an institutional guide on evaluating AI-generated research outputs",
-        "Lead a data literacy programme that addresses AI-specific challenges",
-        "Contribute to a data governance review for AI deployment"
-      ],
-      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Educational Developer-specific capability statements extracted from https://repository.jisc.ac.uk/9824/1/2024_BDC_Educational_developer_profile.pdf. Bridges individual teacher capability and institutional strategy. Many educational developers both teach and support teaching. Supporting digital teaching development, curriculum design for digital capabilities, evaluation of innovations. Key enablers for moving institutions from AI maturity levels 2-3 to 4-5.",
-      "source_terminology": {
-        "original_level": "Proficient (developing)",
-        "mapping_band": "lower",
-        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 4."
-      }
-    },
-    {
-      "id": "block-4-5",
-      "aspect_id": "bdc-literacies",
-      "level_id": "level-5",
-      "name": "Information, Data and Media Literacies at Optimised/Transformed",
-      "description": "What information, data and media literacies looks like for educational developer roles at AI maturity level 5: Optimised/Transformed.",
-      "curricular_goals": [
+        "Design frameworks for evaluating AI-generated information",
         "Shape sector approaches to information, data and media literacy in the AI era",
         "Lead research on AI's impact on information ecosystems"
       ],
       "learning_objectives": [
+        "Contribute to institutional data governance policy in AI contexts",
+        "Develop training or resources on AI, data and media literacies",
+        "Champion data-driven and AI-informed decision making",
         "Contribute to sector frameworks for AI-era information and data literacy",
         "Innovate new approaches to AI-augmented data analysis and media evaluation",
         "Drive policy on responsible AI data use and algorithmic transparency"
       ],
       "contextual_activities": [
+        "Develop an institutional guide on evaluating AI-generated research outputs",
+        "Lead a data literacy programme that addresses AI-specific challenges",
+        "Contribute to a data governance review for AI deployment",
         "Lead a sector working group on AI and information literacy",
         "Publish research on AI's impact on data practices or media literacy",
         "Develop open resources on AI-era critical literacy adopted across institutions"
-      ],
-      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Educational Developer-specific capability statements extracted from https://repository.jisc.ac.uk/9824/1/2024_BDC_Educational_developer_profile.pdf. Bridges individual teacher capability and institutional strategy. Many educational developers both teach and support teaching. Supporting digital teaching development, curriculum design for digital capabilities, evaluation of innovations. Key enablers for moving institutions from AI maturity levels 2-3 to 4-5.",
-      "source_terminology": {
-        "original_level": "Proficient (mature)",
-        "mapping_band": "upper",
-        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 5."
-      }
+      ]
     },
     {
-      "id": "block-5-1",
+      "id": "block-13",
       "aspect_id": "bdc-communication-collaboration",
-      "level_id": "level-1",
-      "name": "Digital Communication, Collaboration and Participation at Approaching and Understanding",
-      "description": "What digital communication, collaboration and participation looks like for educational developer roles at AI maturity level 1: Approaching and Understanding.",
+      "level_id": "developing",
+      "name": "Digital Communication, Collaboration and Participation at Developing",
+      "description": "What digital communication, collaboration and participation looks like at the Developing level.",
       "curricular_goals": [
         "Understand how AI is changing digital communication and collaboration",
-        "Recognise AI-powered features in communication and collaboration tools"
-      ],
-      "learning_objectives": [
-        "Identify AI features in communication tools (e.g. smart compose, translation, transcription)",
-        "Describe how AI might enhance or complicate digital collaboration",
-        "Understand basic digital communication norms and accessibility needs"
-      ],
-      "contextual_activities": [
-        "Identify AI features in Teams, Zoom or email tools",
-        "Discuss how AI translation or transcription might help or hinder communication",
-        "Review accessibility features of AI-powered communication tools"
-      ],
-      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Educational Developer-specific capability statements extracted from https://repository.jisc.ac.uk/9824/1/2024_BDC_Educational_developer_profile.pdf. Bridges individual teacher capability and institutional strategy. Many educational developers both teach and support teaching. Supporting digital teaching development, curriculum design for digital capabilities, evaluation of innovations. Key enablers for moving institutions from AI maturity levels 2-3 to 4-5.",
-      "source_terminology": {
-        "original_level": "Developing (early)",
-        "mapping_band": "lower",
-        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 1."
-      }
-    },
-    {
-      "id": "block-5-2",
-      "aspect_id": "bdc-communication-collaboration",
-      "level_id": "level-2",
-      "name": "Digital Communication, Collaboration and Participation at Experimenting and Exploring",
-      "description": "What digital communication, collaboration and participation looks like for educational developer roles at AI maturity level 2: Experimenting and Exploring.",
-      "curricular_goals": [
+        "Recognise AI-powered features in communication and collaboration tools",
         "Experiment with AI-enhanced communication and collaboration tools",
         "Explore AI's role in professional networking and community participation"
       ],
       "learning_objectives": [
+        "Identify AI features in communication tools (e.g. smart compose, translation, transcription)",
+        "Describe how AI might enhance or complicate digital collaboration",
+        "Understand basic digital communication norms and accessibility needs",
         "Use AI tools to enhance written or visual communications",
         "Pilot AI-powered collaboration features (e.g. AI meeting summaries, co-authoring)",
         "Participate in discussions about AI in professional communities"
       ],
       "contextual_activities": [
+        "Identify AI features in Teams, Zoom or email tools",
+        "Discuss how AI translation or transcription might help or hinder communication",
+        "Review accessibility features of AI-powered communication tools",
         "Use AI to draft and refine a professional communication",
         "Try AI meeting summarisation or transcription for a team meeting",
         "Join an AI-focused professional community or discussion group"
-      ],
-      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Educational Developer-specific capability statements extracted from https://repository.jisc.ac.uk/9824/1/2024_BDC_Educational_developer_profile.pdf. Bridges individual teacher capability and institutional strategy. Many educational developers both teach and support teaching. Supporting digital teaching development, curriculum design for digital capabilities, evaluation of innovations. Key enablers for moving institutions from AI maturity levels 2-3 to 4-5.",
-      "source_terminology": {
-        "original_level": "Developing (advanced)",
-        "mapping_band": "upper",
-        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 2."
-      }
+      ]
     },
     {
-      "id": "block-5-3",
+      "id": "block-14",
       "aspect_id": "bdc-communication-collaboration",
-      "level_id": "level-3",
-      "name": "Digital Communication, Collaboration and Participation at Operational",
-      "description": "What digital communication, collaboration and participation looks like for educational developer roles at AI maturity level 3: Operational.",
+      "level_id": "capable",
+      "name": "Digital Communication, Collaboration and Participation at Capable",
+      "description": "What digital communication, collaboration and participation looks like at the Capable level.",
       "curricular_goals": [
         "Integrate AI tools into communication and collaboration workflows",
         "Participate actively in communities focused on AI in professional practice"
@@ -954,128 +619,72 @@
         "Develop team protocols for AI use in collaborative projects",
         "Use AI to produce accessible communications across languages or formats",
         "Present on AI-enhanced collaboration at a professional event"
-      ],
-      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Educational Developer-specific capability statements extracted from https://repository.jisc.ac.uk/9824/1/2024_BDC_Educational_developer_profile.pdf. Bridges individual teacher capability and institutional strategy. Many educational developers both teach and support teaching. Supporting digital teaching development, curriculum design for digital capabilities, evaluation of innovations. Key enablers for moving institutions from AI maturity levels 2-3 to 4-5.",
-      "source_terminology": {
-        "original_level": "Capable",
-        "mapping_band": "full",
-        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 3."
-      }
+      ]
     },
     {
-      "id": "block-5-4",
+      "id": "block-15",
       "aspect_id": "bdc-communication-collaboration",
-      "level_id": "level-4",
-      "name": "Digital Communication, Collaboration and Participation at Embedded",
-      "description": "What digital communication, collaboration and participation looks like for educational developer roles at AI maturity level 4: Embedded.",
+      "level_id": "proficient",
+      "name": "Digital Communication, Collaboration and Participation at Proficient",
+      "description": "What digital communication, collaboration and participation looks like at the Proficient level.",
       "curricular_goals": [
         "Lead AI-enhanced communication and collaboration strategies",
-        "Build and facilitate AI-focused professional communities"
-      ],
-      "learning_objectives": [
-        "Design communication strategies that leverage AI effectively",
-        "Lead collaborative processes that use AI tools inclusively",
-        "Facilitate communities of practice focused on AI in professional domains"
-      ],
-      "contextual_activities": [
-        "Lead development of institutional guidelines for AI in communications",
-        "Facilitate a cross-departmental AI community of practice",
-        "Design an AI-enhanced collaborative project framework"
-      ],
-      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Educational Developer-specific capability statements extracted from https://repository.jisc.ac.uk/9824/1/2024_BDC_Educational_developer_profile.pdf. Bridges individual teacher capability and institutional strategy. Many educational developers both teach and support teaching. Supporting digital teaching development, curriculum design for digital capabilities, evaluation of innovations. Key enablers for moving institutions from AI maturity levels 2-3 to 4-5.",
-      "source_terminology": {
-        "original_level": "Proficient (developing)",
-        "mapping_band": "lower",
-        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 4."
-      }
-    },
-    {
-      "id": "block-5-5",
-      "aspect_id": "bdc-communication-collaboration",
-      "level_id": "level-5",
-      "name": "Digital Communication, Collaboration and Participation at Optimised/Transformed",
-      "description": "What digital communication, collaboration and participation looks like for educational developer roles at AI maturity level 5: Optimised/Transformed.",
-      "curricular_goals": [
+        "Build and facilitate AI-focused professional communities",
         "Shape sector practices for AI-enabled communication and collaboration",
         "Innovate new models of AI-human collaborative practice"
       ],
       "learning_objectives": [
+        "Design communication strategies that leverage AI effectively",
+        "Lead collaborative processes that use AI tools inclusively",
+        "Facilitate communities of practice focused on AI in professional domains",
         "Lead cross-institutional AI collaboration initiatives",
         "Develop novel approaches to AI-human collaboration adopted by others",
         "Drive policy on ethical AI use in professional communication"
       ],
       "contextual_activities": [
+        "Lead development of institutional guidelines for AI in communications",
+        "Facilitate a cross-departmental AI community of practice",
+        "Design an AI-enhanced collaborative project framework",
         "Lead a sector collaboration project using AI-enhanced tools",
         "Publish on AI-human collaboration models in education",
         "Develop open guidance on inclusive AI-enabled collaboration"
-      ],
-      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Educational Developer-specific capability statements extracted from https://repository.jisc.ac.uk/9824/1/2024_BDC_Educational_developer_profile.pdf. Bridges individual teacher capability and institutional strategy. Many educational developers both teach and support teaching. Supporting digital teaching development, curriculum design for digital capabilities, evaluation of innovations. Key enablers for moving institutions from AI maturity levels 2-3 to 4-5.",
-      "source_terminology": {
-        "original_level": "Proficient (mature)",
-        "mapping_band": "upper",
-        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 5."
-      }
+      ]
     },
     {
-      "id": "block-6-1",
+      "id": "block-16",
       "aspect_id": "bdc-identity-wellbeing",
-      "level_id": "level-1",
-      "name": "Digital Identity and Wellbeing at Approaching and Understanding",
-      "description": "What digital identity and wellbeing looks like for educational developer roles at AI maturity level 1: Approaching and Understanding.",
+      "level_id": "developing",
+      "name": "Digital Identity and Wellbeing at Developing",
+      "description": "What digital identity and wellbeing looks like at the Developing level.",
       "curricular_goals": [
         "Understand how AI affects digital identity, privacy and wellbeing",
-        "Recognise AI-related risks to personal data and digital footprint"
-      ],
-      "learning_objectives": [
-        "Describe how AI systems use personal data",
-        "Identify basic risks to privacy from AI tools",
-        "Understand the concept of AI's impact on work patterns and wellbeing"
-      ],
-      "contextual_activities": [
-        "Review privacy settings for AI-enabled tools",
-        "Discuss how AI might affect professional identity and reputation",
-        "Reflect on personal experience of AI's impact on workload and wellbeing"
-      ],
-      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Educational Developer-specific capability statements extracted from https://repository.jisc.ac.uk/9824/1/2024_BDC_Educational_developer_profile.pdf. Bridges individual teacher capability and institutional strategy. Many educational developers both teach and support teaching. Supporting digital teaching development, curriculum design for digital capabilities, evaluation of innovations. Key enablers for moving institutions from AI maturity levels 2-3 to 4-5.",
-      "source_terminology": {
-        "original_level": "Developing (early)",
-        "mapping_band": "lower",
-        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 1."
-      }
-    },
-    {
-      "id": "block-6-2",
-      "aspect_id": "bdc-identity-wellbeing",
-      "level_id": "level-2",
-      "name": "Digital Identity and Wellbeing at Experimenting and Exploring",
-      "description": "What digital identity and wellbeing looks like for educational developer roles at AI maturity level 2: Experimenting and Exploring.",
-      "curricular_goals": [
+        "Recognise AI-related risks to personal data and digital footprint",
         "Explore how AI tools affect professional digital identity",
         "Develop strategies for maintaining wellbeing in AI-mediated environments"
       ],
       "learning_objectives": [
+        "Describe how AI systems use personal data",
+        "Identify basic risks to privacy from AI tools",
+        "Understand the concept of AI's impact on work patterns and wellbeing",
         "Manage digital footprint considering AI data collection",
         "Experiment with AI tools for professional profile management",
         "Develop personal strategies for AI-era digital wellbeing"
       ],
       "contextual_activities": [
+        "Review privacy settings for AI-enabled tools",
+        "Discuss how AI might affect professional identity and reputation",
+        "Reflect on personal experience of AI's impact on workload and wellbeing",
         "Audit personal data shared with AI tools and services",
         "Use AI to enhance professional profiles or portfolios",
         "Develop a personal AI-wellbeing strategy addressing screen time, automation anxiety, and workload"
-      ],
-      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Educational Developer-specific capability statements extracted from https://repository.jisc.ac.uk/9824/1/2024_BDC_Educational_developer_profile.pdf. Bridges individual teacher capability and institutional strategy. Many educational developers both teach and support teaching. Supporting digital teaching development, curriculum design for digital capabilities, evaluation of innovations. Key enablers for moving institutions from AI maturity levels 2-3 to 4-5.",
-      "source_terminology": {
-        "original_level": "Developing (advanced)",
-        "mapping_band": "upper",
-        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 2."
-      }
+      ]
     },
     {
-      "id": "block-6-3",
+      "id": "block-17",
       "aspect_id": "bdc-identity-wellbeing",
-      "level_id": "level-3",
-      "name": "Digital Identity and Wellbeing at Operational",
-      "description": "What digital identity and wellbeing looks like for educational developer roles at AI maturity level 3: Operational.",
+      "level_id": "capable",
+      "name": "Digital Identity and Wellbeing at Capable",
+      "description": "What digital identity and wellbeing looks like at the Capable level.",
       "curricular_goals": [
         "Manage digital identity effectively across AI-enhanced platforms",
         "Implement AI-era digital wellbeing strategies consistently"
@@ -1089,67 +698,36 @@
         "Maintain a professional digital presence that demonstrates AI capability",
         "Implement and model digital wellbeing practices for team members",
         "Deliver wellbeing-focused guidance on working with AI tools"
-      ],
-      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Educational Developer-specific capability statements extracted from https://repository.jisc.ac.uk/9824/1/2024_BDC_Educational_developer_profile.pdf. Bridges individual teacher capability and institutional strategy. Many educational developers both teach and support teaching. Supporting digital teaching development, curriculum design for digital capabilities, evaluation of innovations. Key enablers for moving institutions from AI maturity levels 2-3 to 4-5.",
-      "source_terminology": {
-        "original_level": "Capable",
-        "mapping_band": "full",
-        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 3."
-      }
+      ]
     },
     {
-      "id": "block-6-4",
+      "id": "block-18",
       "aspect_id": "bdc-identity-wellbeing",
-      "level_id": "level-4",
-      "name": "Digital Identity and Wellbeing at Embedded",
-      "description": "What digital identity and wellbeing looks like for educational developer roles at AI maturity level 4: Embedded.",
+      "level_id": "proficient",
+      "name": "Digital Identity and Wellbeing at Proficient",
+      "description": "What digital identity and wellbeing looks like at the Proficient level.",
       "curricular_goals": [
         "Lead institutional digital wellbeing and identity initiatives in the AI context",
-        "Champion ethical AI practices that protect identity and personal data"
-      ],
-      "learning_objectives": [
-        "Contribute to institutional policy on AI, identity and data protection",
-        "Develop frameworks for AI-aware digital citizenship",
-        "Mentor others in professional identity management in AI contexts"
-      ],
-      "contextual_activities": [
-        "Lead development of institutional AI wellbeing guidance",
-        "Contribute to DPIA processes for AI tool deployments",
-        "Design a digital citizenship programme that addresses AI"
-      ],
-      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Educational Developer-specific capability statements extracted from https://repository.jisc.ac.uk/9824/1/2024_BDC_Educational_developer_profile.pdf. Bridges individual teacher capability and institutional strategy. Many educational developers both teach and support teaching. Supporting digital teaching development, curriculum design for digital capabilities, evaluation of innovations. Key enablers for moving institutions from AI maturity levels 2-3 to 4-5.",
-      "source_terminology": {
-        "original_level": "Proficient (developing)",
-        "mapping_band": "lower",
-        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 4."
-      }
-    },
-    {
-      "id": "block-6-5",
-      "aspect_id": "bdc-identity-wellbeing",
-      "level_id": "level-5",
-      "name": "Digital Identity and Wellbeing at Optimised/Transformed",
-      "description": "What digital identity and wellbeing looks like for educational developer roles at AI maturity level 5: Optimised/Transformed.",
-      "curricular_goals": [
+        "Champion ethical AI practices that protect identity and personal data",
         "Shape sector policies on AI, identity and digital wellbeing",
         "Innovate approaches to human-centred AI that prioritise wellbeing"
       ],
       "learning_objectives": [
+        "Contribute to institutional policy on AI, identity and data protection",
+        "Develop frameworks for AI-aware digital citizenship",
+        "Mentor others in professional identity management in AI contexts",
         "Lead sector discourse on AI's impact on professional identity and wellbeing",
         "Develop innovative approaches to AI-human balance that others adopt",
         "Champion institutional cultures that balance AI adoption with staff and student wellbeing"
       ],
       "contextual_activities": [
+        "Lead development of institutional AI wellbeing guidance",
+        "Contribute to DPIA processes for AI tool deployments",
+        "Design a digital citizenship programme that addresses AI",
         "Publish on AI wellbeing or digital identity in AI contexts",
         "Lead a sector initiative on responsible AI and human flourishing",
         "Develop open resources on AI-era wellbeing adopted across institutions"
-      ],
-      "role_contextualisation_notes": "[POPULATE FROM PROFILE PDF] Replace generic content with BDC Educational Developer-specific capability statements extracted from https://repository.jisc.ac.uk/9824/1/2024_BDC_Educational_developer_profile.pdf. Bridges individual teacher capability and institutional strategy. Many educational developers both teach and support teaching. Supporting digital teaching development, curriculum design for digital capabilities, evaluation of innovations. Key enablers for moving institutions from AI maturity levels 2-3 to 4-5.",
-      "source_terminology": {
-        "original_level": "Proficient (mature)",
-        "mapping_band": "upper",
-        "mapping_notes": "Role profile does not define progression levels. Mapping synthesised from BDC generic + role-specific descriptors at AI maturity level 5."
-      }
+      ]
     }
   ],
   "metadata": {
