@@ -188,7 +188,13 @@ async function seedFramework(pool: Pool, dataDir: string, frameworkFilter?: stri
     }
     const stem = s.stem || s.scenario_stem || "";
     const question = s.question || "What would you most likely do?";
-    const contextTags = s.context_tags || {};
+    const contextTags = { ...(s.context_tags || {}) };
+
+    // For BDC, include applicable_profiles in context_tags for role-based filtering
+    const applicableProfiles = s.applicable_profiles || s.profile_scope;
+    if (applicableProfiles) {
+      contextTags.applicable_profiles = applicableProfiles;
+    }
 
     // For BDC, derive per-profile framework_id if profile_id present
     let effectiveFwId = dbFrameworkId;

@@ -93,6 +93,8 @@ async function handler(
         : await requireAuth(req);
 
       // Fetch active scenarios for this framework
+      // BDC role profiles: include universal (bdc-individual) + role-specific scenarios
+      const isBdcProfile = body.framework_id.startsWith("bdc-") && body.framework_id !== "bdc-individual";
       const scenarios = await query<{
         scenario_id: string;
         dimension_id: string;
@@ -102,11 +104,15 @@ async function handler(
         question: string;
         context_tags: Record<string, unknown>;
       }>(
-        "SELECT scenario_id, dimension_id, dimension_name, target_boundary, stem, question, context_tags FROM scenario_bank WHERE framework_id = $1 AND status = 'active' ORDER BY scenario_id",
+        isBdcProfile
+          ? "SELECT scenario_id, dimension_id, dimension_name, target_boundary, stem, question, context_tags FROM scenario_bank WHERE (framework_id = $1 OR framework_id = 'bdc-individual') AND status = 'active' ORDER BY scenario_id"
+          : "SELECT scenario_id, dimension_id, dimension_name, target_boundary, stem, question, context_tags FROM scenario_bank WHERE framework_id = $1 AND status = 'active' ORDER BY scenario_id",
         [body.framework_id]
       );
 
-      if (scenarios.length === 0) {
+      const filteredByRole = scenarios;
+
+      if (filteredByRole.length === 0) {
         return {
           status: 404,
           headers: { ...corsHeaders(req), "Content-Type": "application/json" },
@@ -132,7 +138,7 @@ async function handler(
       }
 
       // Fetch response options for each scenario (strip nuisance metadata)
-      const scenarioIds = scenarios.map((s) => s.scenario_id);
+      const scenarioIds = filteredByRole.map((s) => s.scenario_id);
       const responses = await query<{
         id: string;
         scenario_id: string;
@@ -172,8 +178,8 @@ async function handler(
       const fwPrefixes = PILLAR_PREFIX[body.framework_id] || {};
       const pillarPrefix = body.pillar_filter ? fwPrefixes[body.pillar_filter] : null;
       const filteredScenarios = pillarPrefix
-        ? scenarios.filter((s) => s.dimension_id.startsWith(pillarPrefix))
-        : scenarios;
+        ? filteredByRole.filter((s) => s.dimension_id.startsWith(pillarPrefix))
+        : filteredByRole;
 
       const selectedScenarios = body.framework_id === "maturity-the"
         ? selectTheScenarios(filteredScenarios, userContext ?? {})
