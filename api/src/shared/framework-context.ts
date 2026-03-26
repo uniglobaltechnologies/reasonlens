@@ -1190,35 +1190,136 @@ const frameworks: FrameworkContext[] = [
     overview: "5 competence areas, 21 competences, 4 proficiency bands (Basic→Highly Advanced). 362 competence statements and 523 learning outcomes. Includes AI relevance labels (14% AI-Explicit, 68% AI-Implicit). The EU reference framework for digital skills.",
     crossReferences: ["teacher-competency", "ailit", "dec-ai-literacy"],
     dimensions: [
-      { id: "dc-info", name: "Information & Data Literacy", description: "Browsing, searching, evaluating, managing data", order: 1, levels: [
-        { id: "dc-info-basic", name: "Basic", description: "Foundation (1–2)", order: 1, indicators: [{ id: "dc-info-b1", description: "Identify information needs and search using digital tools" }] },
-        { id: "dc-info-inter", name: "Intermediate", description: "Intermediate (3–4)", order: 2, indicators: [{ id: "dc-info-i1", description: "Evaluate reliability of information sources" }] },
-        { id: "dc-info-adv", name: "Advanced", description: "Advanced (5–6)", order: 3, indicators: [{ id: "dc-info-a1", description: "Develop strategies for complex information retrieval including AI-powered search" }] },
-        { id: "dc-info-hadv", name: "Highly Advanced", description: "Highly Specialised (7–8)", order: 4, indicators: [{ id: "dc-info-h1", description: "Create innovative solutions for knowledge management" }] },
+      // Area 1: Information & Data Literacy
+      { id: "dc-1-1", name: "Browsing, searching, filtering", description: "Browsing, searching, filtering data, information and digital content", order: 1, levels: [
+        { id: "dc-1-1-basic", name: "Basic", description: "Foundation", order: 1, indicators: [{ id: "dc-1-1-b1", description: "Identify information needs and use basic search strategies" }] },
+        { id: "dc-1-1-inter", name: "Intermediate", description: "Intermediate", order: 2, indicators: [{ id: "dc-1-1-i1", description: "Refine searches using filters and advanced operators" }] },
+        { id: "dc-1-1-adv", name: "Advanced", description: "Advanced", order: 3, indicators: [{ id: "dc-1-1-a1", description: "Develop complex search strategies including AI-powered tools" }] },
+        { id: "dc-1-1-hadv", name: "Highly Advanced", description: "Highly Specialised", order: 4, indicators: [{ id: "dc-1-1-h1", description: "Create innovative information retrieval solutions" }] },
       ]},
-      { id: "dc-comm", name: "Communication & Collaboration", description: "Interacting, sharing, engaging through digital tech", order: 2, levels: [
-        { id: "dc-comm-basic", name: "Basic", description: "Foundation", order: 1, indicators: [{ id: "dc-comm-b1", description: "Interact using basic digital communication tools" }] },
-        { id: "dc-comm-inter", name: "Intermediate", description: "Intermediate", order: 2, indicators: [{ id: "dc-comm-i1", description: "Share and collaborate using appropriate platforms" }] },
-        { id: "dc-comm-adv", name: "Advanced", description: "Advanced", order: 3, indicators: [{ id: "dc-comm-a1", description: "Manage digital identities and engage with AI-mediated communication" }] },
-        { id: "dc-comm-hadv", name: "Highly Advanced", description: "Highly Specialised", order: 4, indicators: [{ id: "dc-comm-h1", description: "Innovate communication strategies using emerging technologies" }] },
+      { id: "dc-1-2", name: "Evaluating data and information", description: "Evaluating data, information and digital content", order: 2, levels: [
+        { id: "dc-1-2-basic", name: "Basic", description: "Foundation", order: 1, indicators: [{ id: "dc-1-2-b1", description: "Recognise that not all online information is reliable" }] },
+        { id: "dc-1-2-inter", name: "Intermediate", description: "Intermediate", order: 2, indicators: [{ id: "dc-1-2-i1", description: "Evaluate source credibility using multiple criteria" }] },
+        { id: "dc-1-2-adv", name: "Advanced", description: "Advanced", order: 3, indicators: [{ id: "dc-1-2-a1", description: "Critically assess AI-generated content for accuracy and bias" }] },
+        { id: "dc-1-2-hadv", name: "Highly Advanced", description: "Highly Specialised", order: 4, indicators: [{ id: "dc-1-2-h1", description: "Develop frameworks for evaluating AI-generated information at scale" }] },
       ]},
-      { id: "dc-content", name: "Digital Content Creation", description: "Creating, editing, integrating digital content", order: 3, levels: [
-        { id: "dc-cont-basic", name: "Basic", description: "Foundation", order: 1, indicators: [{ id: "dc-cont-b1", description: "Create simple digital content" }] },
-        { id: "dc-cont-inter", name: "Intermediate", description: "Intermediate", order: 2, indicators: [{ id: "dc-cont-i1", description: "Modify and integrate content with copyright awareness" }] },
-        { id: "dc-cont-adv", name: "Advanced", description: "Advanced", order: 3, indicators: [{ id: "dc-cont-a1", description: "Create complex content using AI co-creation tools" }] },
-        { id: "dc-cont-hadv", name: "Highly Advanced", description: "Highly Specialised", order: 4, indicators: [{ id: "dc-cont-h1", description: "Develop innovative content solutions and programming approaches" }] },
+      { id: "dc-1-3", name: "Managing data and information", description: "Managing data, information and digital content", order: 3, levels: [
+        { id: "dc-1-3-basic", name: "Basic", description: "Foundation", order: 1, indicators: [{ id: "dc-1-3-b1", description: "Store and organise digital content using basic tools" }] },
+        { id: "dc-1-3-inter", name: "Intermediate", description: "Intermediate", order: 2, indicators: [{ id: "dc-1-3-i1", description: "Apply structured approaches to data management" }] },
+        { id: "dc-1-3-adv", name: "Advanced", description: "Advanced", order: 3, indicators: [{ id: "dc-1-3-a1", description: "Design data management strategies for professional contexts" }] },
+        { id: "dc-1-3-hadv", name: "Highly Advanced", description: "Highly Specialised", order: 4, indicators: [{ id: "dc-1-3-h1", description: "Create innovative knowledge management solutions" }] },
       ]},
-      { id: "dc-safety", name: "Safety", description: "Protecting devices, data, health, environment", order: 4, levels: [
-        { id: "dc-safe-basic", name: "Basic", description: "Foundation", order: 1, indicators: [{ id: "dc-safe-b1", description: "Protect devices and personal data at basic level" }] },
-        { id: "dc-safe-inter", name: "Intermediate", description: "Intermediate", order: 2, indicators: [{ id: "dc-safe-i1", description: "Apply security measures and manage digital wellbeing" }] },
-        { id: "dc-safe-adv", name: "Advanced", description: "Advanced", order: 3, indicators: [{ id: "dc-safe-a1", description: "Evaluate AI safety risks and implement mitigation strategies" }] },
-        { id: "dc-safe-hadv", name: "Highly Advanced", description: "Highly Specialised", order: 4, indicators: [{ id: "dc-safe-h1", description: "Develop organisational safety policies for AI systems" }] },
+      // Area 2: Communication & Collaboration
+      { id: "dc-2-1", name: "Interacting through digital technologies", description: "Interacting through digital technologies", order: 4, levels: [
+        { id: "dc-2-1-basic", name: "Basic", description: "Foundation", order: 1, indicators: [{ id: "dc-2-1-b1", description: "Use basic digital communication tools" }] },
+        { id: "dc-2-1-inter", name: "Intermediate", description: "Intermediate", order: 2, indicators: [{ id: "dc-2-1-i1", description: "Select appropriate communication tools for different contexts" }] },
+        { id: "dc-2-1-adv", name: "Advanced", description: "Advanced", order: 3, indicators: [{ id: "dc-2-1-a1", description: "Manage complex multi-platform communications" }] },
+        { id: "dc-2-1-hadv", name: "Highly Advanced", description: "Highly Specialised", order: 4, indicators: [{ id: "dc-2-1-h1", description: "Innovate digital interaction approaches" }] },
       ]},
-      { id: "dc-problem", name: "Problem Solving", description: "Solving technical problems, identifying needs, creativity", order: 5, levels: [
-        { id: "dc-prob-basic", name: "Basic", description: "Foundation", order: 1, indicators: [{ id: "dc-prob-b1", description: "Identify basic technical problems and digital needs" }] },
-        { id: "dc-prob-inter", name: "Intermediate", description: "Intermediate", order: 2, indicators: [{ id: "dc-prob-i1", description: "Select digital tools creatively to solve problems" }] },
-        { id: "dc-prob-adv", name: "Advanced", description: "Advanced", order: 3, indicators: [{ id: "dc-prob-a1", description: "Apply computational thinking and AI approaches to complex problems" }] },
-        { id: "dc-prob-hadv", name: "Highly Advanced", description: "Highly Specialised", order: 4, indicators: [{ id: "dc-prob-h1", description: "Create innovative solutions addressing digital competence gaps" }] },
+      { id: "dc-2-2", name: "Sharing through digital technologies", description: "Sharing through digital technologies", order: 5, levels: [
+        { id: "dc-2-2-basic", name: "Basic", description: "Foundation", order: 1, indicators: [{ id: "dc-2-2-b1", description: "Share content using basic digital tools" }] },
+        { id: "dc-2-2-inter", name: "Intermediate", description: "Intermediate", order: 2, indicators: [{ id: "dc-2-2-i1", description: "Share resources appropriately with attribution" }] },
+        { id: "dc-2-2-adv", name: "Advanced", description: "Advanced", order: 3, indicators: [{ id: "dc-2-2-a1", description: "Develop sharing strategies for professional communities" }] },
+        { id: "dc-2-2-hadv", name: "Highly Advanced", description: "Highly Specialised", order: 4, indicators: [{ id: "dc-2-2-h1", description: "Lead open knowledge sharing initiatives" }] },
+      ]},
+      { id: "dc-2-3", name: "Engaging in citizenship", description: "Engaging in citizenship through digital technologies", order: 6, levels: [
+        { id: "dc-2-3-basic", name: "Basic", description: "Foundation", order: 1, indicators: [{ id: "dc-2-3-b1", description: "Aware of digital public services and participation" }] },
+        { id: "dc-2-3-inter", name: "Intermediate", description: "Intermediate", order: 2, indicators: [{ id: "dc-2-3-i1", description: "Participate in digital civic and educational activities" }] },
+        { id: "dc-2-3-adv", name: "Advanced", description: "Advanced", order: 3, indicators: [{ id: "dc-2-3-a1", description: "Promote digital participation and inclusion" }] },
+        { id: "dc-2-3-hadv", name: "Highly Advanced", description: "Highly Specialised", order: 4, indicators: [{ id: "dc-2-3-h1", description: "Lead digital citizenship initiatives" }] },
+      ]},
+      { id: "dc-2-4", name: "Collaborating through digital technologies", description: "Collaborating through digital technologies", order: 7, levels: [
+        { id: "dc-2-4-basic", name: "Basic", description: "Foundation", order: 1, indicators: [{ id: "dc-2-4-b1", description: "Use basic collaborative tools" }] },
+        { id: "dc-2-4-inter", name: "Intermediate", description: "Intermediate", order: 2, indicators: [{ id: "dc-2-4-i1", description: "Collaborate effectively using shared platforms" }] },
+        { id: "dc-2-4-adv", name: "Advanced", description: "Advanced", order: 3, indicators: [{ id: "dc-2-4-a1", description: "Manage complex collaborative projects with AI tools" }] },
+        { id: "dc-2-4-hadv", name: "Highly Advanced", description: "Highly Specialised", order: 4, indicators: [{ id: "dc-2-4-h1", description: "Innovate collaborative approaches using emerging tech" }] },
+      ]},
+      { id: "dc-2-5", name: "Netiquette", description: "Netiquette", order: 8, levels: [
+        { id: "dc-2-5-basic", name: "Basic", description: "Foundation", order: 1, indicators: [{ id: "dc-2-5-b1", description: "Aware of basic norms for online interaction" }] },
+        { id: "dc-2-5-inter", name: "Intermediate", description: "Intermediate", order: 2, indicators: [{ id: "dc-2-5-i1", description: "Apply contextual communication norms across platforms" }] },
+        { id: "dc-2-5-adv", name: "Advanced", description: "Advanced", order: 3, indicators: [{ id: "dc-2-5-a1", description: "Navigate complex online social dynamics" }] },
+        { id: "dc-2-5-hadv", name: "Highly Advanced", description: "Highly Specialised", order: 4, indicators: [{ id: "dc-2-5-h1", description: "Develop norms for AI-mediated communication" }] },
+      ]},
+      { id: "dc-2-6", name: "Managing digital identity", description: "Managing digital identity", order: 9, levels: [
+        { id: "dc-2-6-basic", name: "Basic", description: "Foundation", order: 1, indicators: [{ id: "dc-2-6-b1", description: "Create and manage a basic digital identity" }] },
+        { id: "dc-2-6-inter", name: "Intermediate", description: "Intermediate", order: 2, indicators: [{ id: "dc-2-6-i1", description: "Manage multiple digital identities appropriately" }] },
+        { id: "dc-2-6-adv", name: "Advanced", description: "Advanced", order: 3, indicators: [{ id: "dc-2-6-a1", description: "Strategically manage professional digital presence" }] },
+        { id: "dc-2-6-hadv", name: "Highly Advanced", description: "Highly Specialised", order: 4, indicators: [{ id: "dc-2-6-h1", description: "Develop institutional digital identity strategies" }] },
+      ]},
+      // Area 3: Digital Content Creation
+      { id: "dc-3-1", name: "Developing digital content", description: "Developing digital content", order: 10, levels: [
+        { id: "dc-3-1-basic", name: "Basic", description: "Foundation", order: 1, indicators: [{ id: "dc-3-1-b1", description: "Create simple digital content in common formats" }] },
+        { id: "dc-3-1-inter", name: "Intermediate", description: "Intermediate", order: 2, indicators: [{ id: "dc-3-1-i1", description: "Create content using AI-assisted tools" }] },
+        { id: "dc-3-1-adv", name: "Advanced", description: "Advanced", order: 3, indicators: [{ id: "dc-3-1-a1", description: "Create complex multi-modal content with AI co-creation" }] },
+        { id: "dc-3-1-hadv", name: "Highly Advanced", description: "Highly Specialised", order: 4, indicators: [{ id: "dc-3-1-h1", description: "Pioneer innovative AI-enhanced content creation" }] },
+      ]},
+      { id: "dc-3-2", name: "Integrating and re-elaborating", description: "Integrating and re-elaborating digital content", order: 11, levels: [
+        { id: "dc-3-2-basic", name: "Basic", description: "Foundation", order: 1, indicators: [{ id: "dc-3-2-b1", description: "Modify existing digital content with basic tools" }] },
+        { id: "dc-3-2-inter", name: "Intermediate", description: "Intermediate", order: 2, indicators: [{ id: "dc-3-2-i1", description: "Integrate content from multiple sources with attribution" }] },
+        { id: "dc-3-2-adv", name: "Advanced", description: "Advanced", order: 3, indicators: [{ id: "dc-3-2-a1", description: "Remix and adapt content for different contexts and audiences" }] },
+        { id: "dc-3-2-hadv", name: "Highly Advanced", description: "Highly Specialised", order: 4, indicators: [{ id: "dc-3-2-h1", description: "Create innovative content integration frameworks" }] },
+      ]},
+      { id: "dc-3-3", name: "Copyright and licences", description: "Copyright and licences", order: 12, levels: [
+        { id: "dc-3-3-basic", name: "Basic", description: "Foundation", order: 1, indicators: [{ id: "dc-3-3-b1", description: "Aware that digital content has copyright rules" }] },
+        { id: "dc-3-3-inter", name: "Intermediate", description: "Intermediate", order: 2, indicators: [{ id: "dc-3-3-i1", description: "Apply Creative Commons and fair use in practice" }] },
+        { id: "dc-3-3-adv", name: "Advanced", description: "Advanced", order: 3, indicators: [{ id: "dc-3-3-a1", description: "Navigate complex IP issues including AI-generated content" }] },
+        { id: "dc-3-3-hadv", name: "Highly Advanced", description: "Highly Specialised", order: 4, indicators: [{ id: "dc-3-3-h1", description: "Develop institutional IP policies for AI content" }] },
+      ]},
+      { id: "dc-3-4", name: "Programming", description: "Programming", order: 13, levels: [
+        { id: "dc-3-4-basic", name: "Basic", description: "Foundation", order: 1, indicators: [{ id: "dc-3-4-b1", description: "Understand basic programming concepts" }] },
+        { id: "dc-3-4-inter", name: "Intermediate", description: "Intermediate", order: 2, indicators: [{ id: "dc-3-4-i1", description: "Write and modify simple programs or scripts" }] },
+        { id: "dc-3-4-adv", name: "Advanced", description: "Advanced", order: 3, indicators: [{ id: "dc-3-4-a1", description: "Develop solutions using AI-assisted coding tools" }] },
+        { id: "dc-3-4-hadv", name: "Highly Advanced", description: "Highly Specialised", order: 4, indicators: [{ id: "dc-3-4-h1", description: "Design complex systems leveraging AI programming tools" }] },
+      ]},
+      // Area 4: Safety
+      { id: "dc-4-1", name: "Protecting devices", description: "Protecting devices", order: 14, levels: [
+        { id: "dc-4-1-basic", name: "Basic", description: "Foundation", order: 1, indicators: [{ id: "dc-4-1-b1", description: "Apply basic device protection measures" }] },
+        { id: "dc-4-1-inter", name: "Intermediate", description: "Intermediate", order: 2, indicators: [{ id: "dc-4-1-i1", description: "Implement comprehensive device security" }] },
+        { id: "dc-4-1-adv", name: "Advanced", description: "Advanced", order: 3, indicators: [{ id: "dc-4-1-a1", description: "Manage security across multiple devices and contexts" }] },
+        { id: "dc-4-1-hadv", name: "Highly Advanced", description: "Highly Specialised", order: 4, indicators: [{ id: "dc-4-1-h1", description: "Develop organisational device security policies" }] },
+      ]},
+      { id: "dc-4-2", name: "Protecting personal data and privacy", description: "Protecting personal data and privacy", order: 15, levels: [
+        { id: "dc-4-2-basic", name: "Basic", description: "Foundation", order: 1, indicators: [{ id: "dc-4-2-b1", description: "Aware of personal data and basic privacy settings" }] },
+        { id: "dc-4-2-inter", name: "Intermediate", description: "Intermediate", order: 2, indicators: [{ id: "dc-4-2-i1", description: "Manage privacy settings and data sharing actively" }] },
+        { id: "dc-4-2-adv", name: "Advanced", description: "Advanced", order: 3, indicators: [{ id: "dc-4-2-a1", description: "Evaluate AI data practices and protect against data exploitation" }] },
+        { id: "dc-4-2-hadv", name: "Highly Advanced", description: "Highly Specialised", order: 4, indicators: [{ id: "dc-4-2-h1", description: "Develop data protection frameworks for AI systems" }] },
+      ]},
+      { id: "dc-4-3", name: "Protecting health and well-being", description: "Protecting health and well-being", order: 16, levels: [
+        { id: "dc-4-3-basic", name: "Basic", description: "Foundation", order: 1, indicators: [{ id: "dc-4-3-b1", description: "Aware of digital wellbeing risks" }] },
+        { id: "dc-4-3-inter", name: "Intermediate", description: "Intermediate", order: 2, indicators: [{ id: "dc-4-3-i1", description: "Manage screen time and digital boundaries" }] },
+        { id: "dc-4-3-adv", name: "Advanced", description: "Advanced", order: 3, indicators: [{ id: "dc-4-3-a1", description: "Evaluate AI impact on wellbeing and implement mitigations" }] },
+        { id: "dc-4-3-hadv", name: "Highly Advanced", description: "Highly Specialised", order: 4, indicators: [{ id: "dc-4-3-h1", description: "Lead digital wellbeing initiatives in professional contexts" }] },
+      ]},
+      { id: "dc-4-4", name: "Protecting the environment", description: "Protecting the environment", order: 17, levels: [
+        { id: "dc-4-4-basic", name: "Basic", description: "Foundation", order: 1, indicators: [{ id: "dc-4-4-b1", description: "Aware of environmental impact of digital technologies" }] },
+        { id: "dc-4-4-inter", name: "Intermediate", description: "Intermediate", order: 2, indicators: [{ id: "dc-4-4-i1", description: "Apply energy-efficient digital practices" }] },
+        { id: "dc-4-4-adv", name: "Advanced", description: "Advanced", order: 3, indicators: [{ id: "dc-4-4-a1", description: "Evaluate AI sustainability and environmental costs" }] },
+        { id: "dc-4-4-hadv", name: "Highly Advanced", description: "Highly Specialised", order: 4, indicators: [{ id: "dc-4-4-h1", description: "Develop sustainable digital and AI strategies" }] },
+      ]},
+      // Area 5: Problem Solving
+      { id: "dc-5-1", name: "Solving technical problems", description: "Solving technical problems", order: 18, levels: [
+        { id: "dc-5-1-basic", name: "Basic", description: "Foundation", order: 1, indicators: [{ id: "dc-5-1-b1", description: "Identify basic technical problems" }] },
+        { id: "dc-5-1-inter", name: "Intermediate", description: "Intermediate", order: 2, indicators: [{ id: "dc-5-1-i1", description: "Troubleshoot common technical issues independently" }] },
+        { id: "dc-5-1-adv", name: "Advanced", description: "Advanced", order: 3, indicators: [{ id: "dc-5-1-a1", description: "Diagnose and resolve complex technical issues" }] },
+        { id: "dc-5-1-hadv", name: "Highly Advanced", description: "Highly Specialised", order: 4, indicators: [{ id: "dc-5-1-h1", description: "Develop systematic technical problem-solving approaches" }] },
+      ]},
+      { id: "dc-5-2", name: "Identifying needs and technological responses", description: "Identifying needs and technological responses", order: 19, levels: [
+        { id: "dc-5-2-basic", name: "Basic", description: "Foundation", order: 1, indicators: [{ id: "dc-5-2-b1", description: "Identify digital needs and find basic tools" }] },
+        { id: "dc-5-2-inter", name: "Intermediate", description: "Intermediate", order: 2, indicators: [{ id: "dc-5-2-i1", description: "Evaluate digital tools against specific needs" }] },
+        { id: "dc-5-2-adv", name: "Advanced", description: "Advanced", order: 3, indicators: [{ id: "dc-5-2-a1", description: "Select and customize AI tools for complex professional needs" }] },
+        { id: "dc-5-2-hadv", name: "Highly Advanced", description: "Highly Specialised", order: 4, indicators: [{ id: "dc-5-2-h1", description: "Design novel technology solutions for emerging needs" }] },
+      ]},
+      { id: "dc-5-3", name: "Creatively using digital technologies", description: "Creatively using digital technologies", order: 20, levels: [
+        { id: "dc-5-3-basic", name: "Basic", description: "Foundation", order: 1, indicators: [{ id: "dc-5-3-b1", description: "Use digital tools for simple creative tasks" }] },
+        { id: "dc-5-3-inter", name: "Intermediate", description: "Intermediate", order: 2, indicators: [{ id: "dc-5-3-i1", description: "Apply digital tools creatively to solve problems" }] },
+        { id: "dc-5-3-adv", name: "Advanced", description: "Advanced", order: 3, indicators: [{ id: "dc-5-3-a1", description: "Innovate using AI and digital tools in novel ways" }] },
+        { id: "dc-5-3-hadv", name: "Highly Advanced", description: "Highly Specialised", order: 4, indicators: [{ id: "dc-5-3-h1", description: "Lead digital innovation and creative transformation" }] },
+      ]},
+      { id: "dc-5-4", name: "Identifying digital competence gaps", description: "Identifying digital competence gaps", order: 21, levels: [
+        { id: "dc-5-4-basic", name: "Basic", description: "Foundation", order: 1, indicators: [{ id: "dc-5-4-b1", description: "Aware of own digital competence limitations" }] },
+        { id: "dc-5-4-inter", name: "Intermediate", description: "Intermediate", order: 2, indicators: [{ id: "dc-5-4-i1", description: "Identify specific competence gaps and seek development" }] },
+        { id: "dc-5-4-adv", name: "Advanced", description: "Advanced", order: 3, indicators: [{ id: "dc-5-4-a1", description: "Plan systematic competence development including AI skills" }] },
+        { id: "dc-5-4-hadv", name: "Highly Advanced", description: "Highly Specialised", order: 4, indicators: [{ id: "dc-5-4-h1", description: "Develop institutional digital competence assessment frameworks" }] },
       ]},
     ],
   },
