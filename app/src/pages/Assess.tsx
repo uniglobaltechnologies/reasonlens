@@ -7,7 +7,7 @@ import { getFrameworkById, FRAMEWORKS } from "@/data/frameworks";
 import { apiPost } from "@/lib/api";
 
 // Frameworks that use guided triage instead of quick self-assessment
-const TRIAGE_FRAMEWORKS = new Set(["maturity-the"]);
+const TRIAGE_FRAMEWORKS = new Set(["maturity-the", "ai-capability", "digcomp"]);
 
 export default function Assess() {
   const { framework: frameworkId } = useParams<{ framework: string }>();
@@ -37,7 +37,17 @@ export default function Assess() {
 }
 
 // Frameworks that have scenario-based assessment available
-const SCENARIO_FRAMEWORKS = new Set(["teacher-competency", "maturity-the"]);
+const SCENARIO_FRAMEWORKS = new Set([
+  "teacher-competency", "maturity-the", "ai-capability",
+  "guidance-policy", "student-competency",
+  "ailit", "dec-ai-literacy",
+  "digcomp",
+  "jisc-ai-maturity", "jisc-digital-maturity",
+  "bdc-individual", "bdc-teacher-he", "bdc-researcher",
+  "bdc-professional-services", "bdc-learning-technology",
+  "bdc-digital-leader", "bdc-educational-developer",
+  "iste-students", "iste-educators", "iste-coaches", "iste-leaders",
+]);
 
 function FrameworkPicker() {
   const assessable = FRAMEWORKS.filter((f) => f.assessmentQuestions?.length > 0 && f.showInDashboard);
@@ -71,7 +81,7 @@ function FrameworkPicker() {
                     to={`/assess/scenario/${fw.id}`}
                     className="block py-2 px-3 text-sm text-center rounded-lg bg-primary/10 text-primary font-medium hover:bg-primary/20 transition-all"
                   >
-                    Scenario Assessment · ~{fw.id === "maturity-the" ? 40 : 15} min
+                    Scenario Assessment · ~{fw.id === "maturity-the" ? 40 : fw.id === "digcomp" ? 63 : Math.max(5, Math.ceil((fw.scenarioCount || 20) * 2))} min
                   </Link>
                 )}
               </div>

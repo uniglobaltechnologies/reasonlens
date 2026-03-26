@@ -19,6 +19,41 @@ import {
   buildQSPillarAnalysisMethodology,
   buildQSRecommendationsMethodology,
 } from "../shared/qs-interpretive-methodology";
+import {
+  buildDigCompExecutiveSummaryMethodology,
+  buildDigCompDimensionAnalysisMethodology,
+  buildDigCompRecommendationsMethodology,
+} from "../shared/digcomp-interpretive-methodology";
+import {
+  buildAILitDECExecutiveSummaryMethodology,
+  buildAILitDECDimensionAnalysisMethodology,
+  buildAILitDECRecommendationsMethodology,
+} from "../shared/ailit-dec-interpretive-methodology";
+import {
+  buildJISCExecutiveSummaryMethodology,
+  buildJISCDimensionAnalysisMethodology,
+  buildJISCRecommendationsMethodology,
+} from "../shared/jisc-maturity-interpretive-methodology";
+import {
+  buildBdcExecutiveSummaryMethodology,
+  buildBdcDimensionAnalysisMethodology,
+  buildBdcRecommendationsMethodology,
+} from "../shared/bdc-interpretive-methodology";
+import {
+  buildIsteExecutiveSummaryMethodology,
+  buildIsteDimensionAnalysisMethodology,
+  buildIsteRecommendationsMethodology,
+} from "../shared/iste-interpretive-methodology";
+import {
+  buildStudentExecutiveSummaryMethodology,
+  buildStudentDimensionAnalysisMethodology,
+  buildStudentRecommendationsMethodology,
+} from "../shared/student-interpretive-methodology";
+import {
+  buildGuidanceExecutiveSummaryMethodology,
+  buildGuidanceDimensionAnalysisMethodology,
+  buildGuidanceRecommendationsMethodology,
+} from "../shared/guidance-interpretive-methodology";
 
 // ── Framework-aware pillar mapping ──────────────────────────────────
 
@@ -43,27 +78,55 @@ const PILLAR_DB_ORDER: Record<string, string[]> = {
   "ai-capability": ["Teaching, Learning & Assessment", "Research & Scholarship", "Outreach & Operational Efficiency", "Governance & Human Commitment"],
 };
 
-const SUPPORTED_FRAMEWORKS = ["maturity-the", "ai-capability"];
+// All frameworks with interpretive methodology support
+const SUPPORTED_FRAMEWORKS = [
+  "maturity-the", "ai-capability",
+  "digcomp", "ailit", "dec-ai-literacy",
+  "guidance-policy", "student-competency",
+  "jisc-ai-maturity", "jisc-digital-maturity",
+  "bdc-individual", "bdc-teacher-he", "bdc-researcher",
+  "bdc-professional-services", "bdc-learning-technology",
+  "bdc-digital-leader", "bdc-educational-developer",
+  "iste-students", "iste-educators", "iste-coaches", "iste-leaders",
+];
 
 function derivePillar(dimensionId: string, frameworkId: string): string {
-  const map = PILLAR_MAPS[frameworkId] || PILLAR_MAPS["maturity-the"];
+  const map = PILLAR_MAPS[frameworkId];
+  if (!map) {
+    // For non-pillar frameworks, use dimension ID as its own group
+    return dimensionId;
+  }
   const prefix = dimensionId.split("-").slice(0, 2).join("-");
   return map[prefix] ?? "Unknown";
 }
 
 function getMethodologyBuilders(frameworkId: string) {
-  if (frameworkId === "ai-capability") {
-    return {
-      exec: buildQSExecutiveSummaryMethodology,
-      pillar: buildQSPillarAnalysisMethodology,
-      recs: buildQSRecommendationsMethodology,
-    };
+  switch (frameworkId) {
+    case "ai-capability":
+      return { exec: buildQSExecutiveSummaryMethodology, pillar: buildQSPillarAnalysisMethodology, recs: buildQSRecommendationsMethodology };
+    case "digcomp":
+      return { exec: buildDigCompExecutiveSummaryMethodology, pillar: buildDigCompDimensionAnalysisMethodology, recs: buildDigCompRecommendationsMethodology };
+    case "ailit":
+    case "dec-ai-literacy":
+      return { exec: buildAILitDECExecutiveSummaryMethodology, pillar: buildAILitDECDimensionAnalysisMethodology, recs: buildAILitDECRecommendationsMethodology };
+    case "jisc-ai-maturity":
+    case "jisc-digital-maturity":
+      return { exec: buildJISCExecutiveSummaryMethodology, pillar: buildJISCDimensionAnalysisMethodology, recs: buildJISCRecommendationsMethodology };
+    case "guidance-policy":
+      return { exec: buildGuidanceExecutiveSummaryMethodology, pillar: buildGuidanceDimensionAnalysisMethodology, recs: buildGuidanceRecommendationsMethodology };
+    case "student-competency":
+      return { exec: buildStudentExecutiveSummaryMethodology, pillar: buildStudentDimensionAnalysisMethodology, recs: buildStudentRecommendationsMethodology };
+    case "iste-students":
+    case "iste-educators":
+    case "iste-coaches":
+    case "iste-leaders":
+      return { exec: buildIsteExecutiveSummaryMethodology, pillar: buildIsteDimensionAnalysisMethodology, recs: buildIsteRecommendationsMethodology };
+    default:
+      if (frameworkId.startsWith("bdc-")) {
+        return { exec: buildBdcExecutiveSummaryMethodology, pillar: buildBdcDimensionAnalysisMethodology, recs: buildBdcRecommendationsMethodology };
+      }
+      return { exec: buildTheExecMethodology, pillar: buildThePillarMethodology, recs: buildTheRecsMethodology };
   }
-  return {
-    exec: buildTheExecMethodology,
-    pillar: buildThePillarMethodology,
-    recs: buildTheRecsMethodology,
-  };
 }
 
 // ── Data types ──────────────────────────────────────────────────────
@@ -569,26 +632,47 @@ async function handler(
       { timeoutMs: CALL_TIMEOUT }
     );
 
-    // Stage 2: Four pillar analyses in parallel (framework-aware pillar names)
-    const pillarNames = PILLAR_DB_ORDER[frameworkId] || PILLAR_DB_ORDER["maturity-the"];
+    // Stage 2: Pillar/dimension analyses
+    const pillarNames = PILLAR_DB_ORDER[frameworkId];
+    let tl: string, re: string, ps: string, pg: string;
 
-    const [tl, re, ps, pg] = await Promise.all(
-      pillarNames.map(pillar => {
-        const pillarDims = dimensionsWithPillar.filter(d => d.pillar === pillar);
-        const systemPrompt = [
-          methodology.pillar(),
-          contextBlock,
-          `PILLAR BEING ANALYSED: ${pillar}\n\n` + formatDimensionTable(pillarDims),
-          formatResponseDetail(responses, pillar),
-        ].join("\n\n");
+    if (pillarNames) {
+      // 4-pillar frameworks (THE, QS): parallel pillar analyses
+      [tl, re, ps, pg] = await Promise.all(
+        pillarNames.map(pillar => {
+          const pillarDims = dimensionsWithPillar.filter(d => d.pillar === pillar);
+          const systemPrompt = [
+            methodology.pillar(),
+            contextBlock,
+            `PILLAR BEING ANALYSED: ${pillar}\n\n` + formatDimensionTable(pillarDims),
+            formatResponseDetail(responses, pillar),
+          ].join("\n\n");
 
-        return generateContent(
-          systemPrompt,
-          [{ role: "user", content: buildPillarUserPrompt(pillar) }],
-          { timeoutMs: CALL_TIMEOUT }
-        );
-      })
-    );
+          return generateContent(
+            systemPrompt,
+            [{ role: "user", content: buildPillarUserPrompt(pillar) }],
+            { timeoutMs: CALL_TIMEOUT }
+          );
+        })
+      );
+    } else {
+      // Non-pillar frameworks: single dimension analysis covering all dimensions
+      const dimAnalysisPrompt = [
+        methodology.pillar(),
+        contextBlock,
+        dimTable,
+        formatResponseDetail(responses),
+      ].join("\n\n");
+
+      tl = await generateContent(
+        dimAnalysisPrompt,
+        [{ role: "user", content: `Produce the DIMENSION ANALYSIS section.\n\nAnalyse each dimension's results, cross-dimension patterns, and what the profile reveals about the individual/institution. Cite specific scenario responses and scored levels. 400-700 words.` }],
+        { timeoutMs: CALL_TIMEOUT }
+      );
+      re = "";
+      ps = "";
+      pg = "";
+    }
 
     // Stage 3: Strategic recommendations
     const recsSystemPrompt = [
