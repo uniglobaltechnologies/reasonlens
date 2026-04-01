@@ -1,0 +1,14 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit",
+        "command": "cd /Users/catorolea/Documents/GitHub/reasonlens/app && npx tsc --noEmit 2>&1 | head -20"
+      },
+      {
+        "matcher": "Write",
+        "command": "cd /Users/catorolea/Documents/GitHub/reasonlens/app && npx tsc --noEmit 2>&1 | head -20"
+      }
+    ]
+  }
+}
