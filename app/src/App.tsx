@@ -26,13 +26,12 @@ function App() {
   return (
     <BrowserRouter>
       <ErrorBoundary>
-      <PasswordGate>
       <Suspense fallback={<div className="min-h-screen bg-background" />}>
         <Routes>
           <Route path="/" element={<Hub />} />
-          {/* THE DMI dedicated entry */}
-          <Route path="/the-dmi" element={<Navigate to="/assess/scenario/maturity-the" replace />} />
-          <Route path="/the-dmi/interpretation/:sessionId" element={<TheInterpretation />} />
+          {/* THE DMI — password-gated */}
+          <Route path="/the-dmi" element={<PasswordGate><Navigate to="/assess/scenario/maturity-the" replace /></PasswordGate>} />
+          <Route path="/the-dmi/interpretation/:sessionId" element={<PasswordGate><TheInterpretation /></PasswordGate>} />
           {/* Audit */}
           <Route path="/audit" element={<Audit />} />
           <Route path="/audit/runs" element={<AuditRuns />} />
@@ -40,6 +39,7 @@ function App() {
           {/* Assessment */}
           <Route path="/assess" element={<Assess />} />
           <Route path="/assess/:framework" element={<Assess />} />
+          <Route path="/assess/scenario/maturity-the" element={<PasswordGate><ScenarioAssess /></PasswordGate>} />
           <Route path="/assess/scenario/:framework" element={<ScenarioAssess />} />
           <Route path="/learning-path/:frameworkId" element={<LearningPath />} />
           {/* Frameworks */}
@@ -60,7 +60,6 @@ function App() {
         </Routes>
       </Suspense>
       <Copilot />
-      </PasswordGate>
       </ErrorBoundary>
     </BrowserRouter>
   );
