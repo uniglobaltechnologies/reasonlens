@@ -55,10 +55,15 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        "aifge-navy": "var(--aifge-navy)",
+        "aifge-plum": "var(--aifge-plum)",
+        "aifge-teal": "var(--aifge-teal)",
+        "aifge-orange": "var(--aifge-orange)",
       },
       backgroundImage: {
         'gradient-hero': 'var(--gradient-hero)',
         'gradient-subtle': 'var(--gradient-subtle)',
+        'gradient-cta': 'linear-gradient(90deg, #ffb678, #ff8a3d)',
       },
       boxShadow: {
         'card': 'var(--shadow-card)',

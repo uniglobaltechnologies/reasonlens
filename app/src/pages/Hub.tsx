@@ -15,6 +15,7 @@ import {
 } from "lucide-react";
 import Header from "@/components/Header";
 import GlobeCanvas from "@/components/GlobeCanvas";
+import { aifgeLinks } from "@/lib/constants";
 
 /* ------------------------------------------------------------------ */
 /*  Custom hooks                                                       */
@@ -89,8 +90,8 @@ const actions = [
       "Run safety audits on any AI tool. Automated red-teaming with PETRI evaluates safety, bias, and compliance.",
     icon: Shield,
     href: "/audit",
-    accent: "border-t-[#0fa4c6]",
-    iconBg: "bg-[#0fa4c6]/10 text-[#0fa4c6]",
+    accent: "border-t-aifge-teal",
+    iconBg: "bg-aifge-teal/10 text-aifge-teal",
   },
   {
     title: "Assess Your AI Readiness",
@@ -98,8 +99,8 @@ const actions = [
       "Self-assess against 22 international frameworks. Get personalised learning paths based on your gaps.",
     icon: BarChart3,
     href: "/assess",
-    accent: "border-t-[#ff914d]",
-    iconBg: "bg-[#ff914d]/10 text-[#ff914d]",
+    accent: "border-t-aifge-orange",
+    iconBg: "bg-aifge-orange/10 text-aifge-orange",
   },
   {
     title: "Generate a Policy",
@@ -116,8 +117,8 @@ const actions = [
       "Browse all 22 AI literacy and digital competence frameworks. UNESCO, DigComp, JISC, ISTE, and more.",
     icon: Compass,
     href: "/frameworks",
-    accent: "border-t-[#0fa4c6]",
-    iconBg: "bg-[#0fa4c6]/10 text-[#0fa4c6]",
+    accent: "border-t-aifge-teal",
+    iconBg: "bg-aifge-teal/10 text-aifge-teal",
   },
   {
     title: "Can AI Do This?",
@@ -125,8 +126,8 @@ const actions = [
       "Evaluate any educational task for AI feasibility. Get safeguards, risks, and implementation guidance.",
     icon: HelpCircle,
     href: "/evaluate",
-    accent: "border-t-[#ff914d]",
-    iconBg: "bg-[#ff914d]/10 text-[#ff914d]",
+    accent: "border-t-aifge-orange",
+    iconBg: "bg-aifge-orange/10 text-aifge-orange",
   },
 ];
 
@@ -184,7 +185,7 @@ function StatCounter({ target, label }: { target: number; label: string }) {
     <div className="text-center px-6 py-4">
       <span
         ref={ref}
-        className="block text-4xl sm:text-5xl font-bold text-[#0fa4c6]"
+        className="block text-4xl sm:text-5xl font-bold text-aifge-teal"
       >
         {value}
       </span>
@@ -233,7 +234,7 @@ export default function Hub() {
             <div className="max-w-[680px]">
               <h1
                 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-[0.98] mb-4 text-white tracking-tight"
-                style={{ fontFamily: "'Roboto', 'Inter', system-ui, sans-serif", textWrap: "balance" as any }}
+                style={{ fontFamily: "'Roboto', 'Inter', system-ui, sans-serif", textWrap: "balance" } as React.CSSProperties}
               >
                 Navigate AI
                 <br />
@@ -260,7 +261,7 @@ export default function Hub() {
                   href="https://aiforglobaleducation.org"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#0fa4c6] hover:underline"
+                  className="text-aifge-teal hover:underline"
                 >
                   AI For Global Education
                 </a>
@@ -286,8 +287,8 @@ export default function Hub() {
               <div className="flex flex-wrap gap-4">
                 <Link
                   to="/assess"
-                  className="inline-flex items-center gap-2 px-6 py-3 text-white font-semibold rounded-full transition-all hover:shadow-lg hover:shadow-orange-500/30 hover:-translate-y-0.5"
-                  style={{ background: "linear-gradient(90deg, #ffb678, #ff8a3d)", boxShadow: "0 0 20px rgba(255,138,61,0.5)" }}
+                  className="inline-flex items-center gap-2 px-6 py-3 text-white font-semibold rounded-full bg-gradient-cta transition-all hover:shadow-lg hover:shadow-orange-500/30 hover:-translate-y-0.5"
+                  style={{ boxShadow: "0 0 20px rgba(255,138,61,0.5)" }}
                 >
                   Get Started
                   <ArrowRight className="h-4 w-4" />
@@ -356,7 +357,7 @@ export default function Hub() {
                   <p className="text-sm text-muted-foreground leading-relaxed mb-4">
                     {action.description}
                   </p>
-                  <span className="inline-flex items-center gap-1 text-sm font-medium text-[#0fa4c6] opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                  <span className="inline-flex items-center gap-1 text-sm font-medium text-aifge-teal opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                     Explore
                     <ArrowRight className="h-3.5 w-3.5 translate-x-0 group-hover:translate-x-1 transition-transform duration-300" />
                   </span>
@@ -388,9 +389,9 @@ export default function Hub() {
                   <div key={item.num} className="text-center relative">
                     <div className="flex flex-col items-center">
                       <div className="w-6 h-6 rounded-full flex items-center justify-center mb-3">
-                        <StepIcon className="h-5 w-5 text-[#0fa4c6]" />
+                        <StepIcon className="h-5 w-5 text-aifge-teal" />
                       </div>
-                      <div className="relative z-10 w-14 h-14 rounded-full bg-[#061233] text-white flex items-center justify-center text-xl font-bold ring-4 ring-[#0fa4c6]/20 mb-5">
+                      <div className="relative z-10 w-14 h-14 rounded-full bg-aifge-navy text-white flex items-center justify-center text-xl font-bold ring-4 ring-aifge-teal/20 mb-5">
                         {item.num}
                       </div>
                     </div>
@@ -455,8 +456,7 @@ export default function Hub() {
           <div className="flex flex-wrap justify-center gap-4">
             <Link
               to="/assess"
-              className="inline-flex items-center gap-2 px-6 py-3 text-white font-semibold rounded-full transition-all hover:shadow-lg hover:shadow-orange-500/30"
-              style={{ background: "linear-gradient(90deg, #ffb678, #ff8a3d)" }}
+              className="inline-flex items-center gap-2 px-6 py-3 text-white font-semibold rounded-full bg-gradient-cta transition-all hover:shadow-lg hover:shadow-orange-500/30"
             >
               Assess Your Readiness
               <ArrowRight className="h-4 w-4" />
@@ -472,13 +472,13 @@ export default function Hub() {
       </section>
 
       {/* ====== FOOTER ====== */}
-      <footer className="bg-[#061233] text-white border-t border-white/10 py-12">
+      <footer className="bg-aifge-navy text-white border-t border-white/10 py-12">
         <div className="container mx-auto px-4 sm:px-6">
           <div className="grid grid-cols-1 sm:grid-cols-4 gap-8 mb-8">
             {/* Brand */}
             <div>
               <div className="flex items-center gap-2 mb-3">
-                <ScanEye className="h-5 w-5 text-[#0fa4c6]" />
+                <ScanEye className="h-5 w-5 text-aifge-teal" />
                 <span className="font-bold text-white">ReasonLens</span>
               </div>
               <p className="text-sm text-white/60 leading-relaxed">
@@ -487,7 +487,7 @@ export default function Hub() {
                   href="https://aiforglobaleducation.org"
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-[#0fa4c6] hover:underline"
+                  className="text-aifge-teal hover:underline"
                 >
                   AI For Global Education
                 </a>
@@ -559,26 +559,13 @@ export default function Hub() {
                 AI For Global Education
               </h4>
               <ul className="space-y-2 text-sm text-white/60">
-                <li>
-                  <a href="https://aiforglobaleducation.org/courses/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 hover:text-white transition-colors">
-                    Courses <ExternalLink className="h-3 w-3 opacity-40" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://aiforglobaleducation.org/resources/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 hover:text-white transition-colors">
-                    Resources <ExternalLink className="h-3 w-3 opacity-40" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://aiforglobaleducation.org/volunteering/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 hover:text-white transition-colors">
-                    Volunteering <ExternalLink className="h-3 w-3 opacity-40" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://aiforglobaleducation.org/about-us/" target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 hover:text-white transition-colors">
-                    About Us <ExternalLink className="h-3 w-3 opacity-40" />
-                  </a>
-                </li>
+                {aifgeLinks.map((link) => (
+                  <li key={link.href}>
+                    <a href={link.href} target="_blank" rel="noopener noreferrer" className="inline-flex items-center gap-1 hover:text-white transition-colors">
+                      {link.label} <ExternalLink className="h-3 w-3 opacity-40" />
+                    </a>
+                  </li>
+                ))}
               </ul>
             </div>
           </div>
