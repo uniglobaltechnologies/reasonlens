@@ -7,7 +7,7 @@ Merged from LearnAI Scope + GlassRoom Lab, rebuilt on Azure (March 2026).
 
 ## Tech Stack
 
-- Frontend: React 19, TypeScript, Vite, Tailwind CSS
+- Frontend: React 19, TypeScript, Vite, Tailwind CSS, Three.js (globe)
 - API: 18 Azure Functions (Node.js 20, TypeScript)
 - Database: PostgreSQL 16 on Azure Flexible Server (25 tables)
 - AI: Azure OpenAI (gpt-5.2) for copilot, policy gen, learning paths
@@ -68,10 +68,20 @@ npm run build                # Production frontend build
 13. All 22 frameworks must stay in sync between frontend and API.
 14. PETRI callbacks use HMAC + timestamp with 5-minute drift tolerance.
 
+### Design System
+
+15. AIFGE brand colors are defined as CSS vars in `index.css` (`--aifge-navy`, `--aifge-teal`, `--aifge-orange`, `--aifge-plum`) and registered in `tailwind.config.ts`. Use Tailwind tokens (`bg-aifge-navy`, `text-aifge-teal`, etc.) — never hardcode hex values.
+16. Shared nav/AIFGE link arrays live in `app/src/lib/constants.ts`. Import from there — do not duplicate.
+17. CTA gradient is `bg-gradient-cta` in Tailwind — do not inline the gradient style.
+
+### Access Control
+
+18. The site is publicly accessible (no password gate). Only THE DMI routes (`/the-dmi`, `/the-dmi/interpretation/:id`, `/assess/scenario/maturity-the`) are gated behind `PasswordGate` (password: "earlyaccess").
+
 ### Autonomy
 
-15. Do not ask questions answerable from the codebase. Read first.
-16. When the user references a specific item, confirm which one if ambiguous.
+19. Do not ask questions answerable from the codebase. Read first.
+20. When the user references a specific item, confirm which one if ambiguous.
 
 ## Infrastructure Quick Reference
 
